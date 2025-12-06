@@ -1,4 +1,5 @@
 import * as admin from 'firebase-admin';
+import { Timestamp } from 'firebase-admin/firestore';
 
 const TEST_PATIENT_ID = 'sarah-mitchell-test';
 const TEST_EMAIL = 'sarah.mitchell@test.nvivo.health';
@@ -45,8 +46,8 @@ export async function seedTestPatient(): Promise<{
       displayName: 'Sarah Mitchell',
       role: 'patient',
       patientId: uid,
-      createdAt: admin.firestore.Timestamp.now(),
-      updatedAt: admin.firestore.Timestamp.now(),
+      createdAt: Timestamp.now(),
+      updatedAt: Timestamp.now(),
     });
     console.log('User document created');
 
@@ -59,8 +60,8 @@ export async function seedTestPatient(): Promise<{
       email: TEST_EMAIL,
       phone: '+1 (415) 555-0100',
       avatarUrl: null,
-      createdAt: admin.firestore.Timestamp.now(),
-      updatedAt: admin.firestore.Timestamp.now(),
+      createdAt: Timestamp.now(),
+      updatedAt: Timestamp.now(),
     });
     console.log('Patient document created');
 
@@ -115,7 +116,7 @@ export async function seedTestPatient(): Promise<{
     for (const member of careTeamMembers) {
       await db.collection('patients').doc(uid).collection('careTeam').doc(member.id).set({
         ...member,
-        createdAt: admin.firestore.Timestamp.now(),
+        createdAt: Timestamp.now(),
       });
     }
     console.log('Care team created:', careTeamMembers.length, 'members');
@@ -167,8 +168,8 @@ export async function seedTestPatient(): Promise<{
     for (const med of medications) {
       await db.collection('patients').doc(uid).collection('medications').doc(med.id).set({
         ...med,
-        startDate: admin.firestore.Timestamp.now(),
-        createdAt: admin.firestore.Timestamp.now(),
+        startDate: Timestamp.now(),
+        createdAt: Timestamp.now(),
       });
     }
     console.log('Medications created:', medications.length);
@@ -230,7 +231,7 @@ export async function seedTestPatient(): Promise<{
     for (const task of tasks) {
       await db.collection('patients').doc(uid).collection('lifestyleTasks').doc(task.id).set({
         ...task,
-        createdAt: admin.firestore.Timestamp.now(),
+        createdAt: Timestamp.now(),
       });
     }
     console.log('Lifestyle tasks created:', tasks.length);
@@ -241,7 +242,7 @@ export async function seedTestPatient(): Promise<{
       longestStreak: 23,
       lastActivityDate: new Date().toISOString().split('T')[0],
       streakStartDate: new Date(Date.now() - 7 * 24 * 60 * 60 * 1000).toISOString().split('T')[0],
-      updatedAt: admin.firestore.Timestamp.now(),
+      updatedAt: Timestamp.now(),
     });
     console.log('Streak created');
 
@@ -298,7 +299,7 @@ export async function seedTestPatient(): Promise<{
     for (const apt of appointments) {
       await db.collection('patients').doc(uid).collection('appointments').doc(apt.id).set({
         ...apt,
-        createdAt: admin.firestore.Timestamp.now(),
+        createdAt: Timestamp.now(),
       });
     }
     console.log('Appointments created:', appointments.length);
