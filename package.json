@@ -1,0 +1,16 @@
+{
+  "name": "nvivo-v2",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "dev": "pnpm --filter patient dev",
+    "build": "pnpm --filter patient build",
+    "type-check": "pnpm -r type-check",
+    "lint": "pnpm -r lint",
+    "emulators": "firebase emulators:start",
+    "functions:serve": "pnpm --filter functions serve"
+  },
+  "devDependencies": {
+    "typescript": "^5.3.3"
+  }
+}
