@@ -9,6 +9,9 @@ export default defineConfig({
       '@': path.resolve(__dirname, './src'),
     },
   },
+  optimizeDeps: {
+    include: ['firebase/app', 'firebase/auth', 'firebase/firestore'],
+  },
   server: {
     port: 5173,
   },

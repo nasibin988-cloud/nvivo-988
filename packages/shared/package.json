@@ -7,7 +7,11 @@
   "scripts": {
     "type-check": "tsc --noEmit"
   },
+  "peerDependencies": {
+    "firebase": "^10.0.0"
+  },
   "devDependencies": {
+    "firebase": "^10.7.1",
     "typescript": "^5.3.3"
   }
 }

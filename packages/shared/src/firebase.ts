@@ -1,6 +1,6 @@
-import { initializeApp, getApps, type FirebaseApp } from 'firebase/app';
-import { getAuth, connectAuthEmulator, type Auth } from 'firebase/auth';
-import { getFirestore, connectFirestoreEmulator, type Firestore } from 'firebase/firestore';
+import { initializeApp, getApps, getApp as getFirebaseApp } from 'firebase/app';
+import { getAuth, connectAuthEmulator } from 'firebase/auth';
+import { getFirestore, connectFirestoreEmulator } from 'firebase/firestore';
 
 const firebaseConfig = {
   apiKey: "AIzaSyDhwKJgyeE3Kzs_TfqkTPQWh8p4Y-4rpzE",
@@ -11,30 +11,28 @@ const firebaseConfig = {
   appId: "1:393703137106:web:25d32663c9c0512280248b"
 };
 
-let app: FirebaseApp | null = null;
-let auth: Auth | null = null;
-let db: Firestore | null = null;
+// Initialize Firebase app
+function initApp() {
+  if (getApps().length === 0) {
+    return initializeApp(firebaseConfig);
+  }
+  return getFirebaseApp();
+}
+
+const app = initApp();
+
 let emulatorsConnected = false;
 
-export function getApp(): FirebaseApp {
-  if (!app) {
-    app = getApps().length === 0 ? initializeApp(firebaseConfig) : getApps()[0];
-  }
+export function getApp() {
   return app;
 }
 
-export function getAuthInstance(): Auth {
-  if (!auth) {
-    auth = getAuth(getApp());
-  }
-  return auth;
+export function getAuthInstance() {
+  return getAuth(app);
 }
 
-export function getDb(): Firestore {
-  if (!db) {
-    db = getFirestore(getApp());
-  }
-  return db;
+export function getDb() {
+  return getFirestore(app);
 }
 
 export function connectEmulators(): void {
@@ -45,12 +43,19 @@ export function connectEmulators(): void {
 
   if (isLocalhost) {
     try {
-      connectAuthEmulator(getAuthInstance(), 'http://127.0.0.1:9099', { disableWarnings: true });
-      connectFirestoreEmulator(getDb(), '127.0.0.1', 8080);
+      const auth = getAuth(app);
+      const db = getFirestore(app);
+      connectAuthEmulator(auth, 'http://127.0.0.1:9099', { disableWarnings: true });
+      connectFirestoreEmulator(db, '127.0.0.1', 8080);
       emulatorsConnected = true;
-      console.log('Connected to Firebase emulators');
+      console.log('✅ Connected to Firebase emulators');
     } catch (error) {
-      console.warn('Failed to connect to emulators:', error);
+      if (error instanceof Error && error.message.includes('already been called')) {
+        emulatorsConnected = true;
+        console.log('✅ Firebase emulators already connected');
+      } else {
+        console.error('❌ Failed to connect to emulators:', error);
+      }
     }
   }
 }
