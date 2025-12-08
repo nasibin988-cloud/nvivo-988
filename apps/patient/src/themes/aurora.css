@@ -1,0 +1,99 @@
+/**
+ * Theme: Aurora - Subtle Gradient Backgrounds
+ * Dark with very subtle gradient overlays that shift like aurora borealis.
+ * Vibe: Dynamic, alive, premium. Subtle color shifts create depth.
+ */
+
+:root {
+  /* Backgrounds */
+  --color-background: #030712;
+  --color-surface: rgba(17, 24, 39, 0.8);
+  --color-surface-2: rgba(31, 41, 55, 0.7);
+  --color-surface-3: rgba(55, 65, 81, 0.6);
+
+  /* Borders - Subtle glass effect */
+  --color-border: rgba(255, 255, 255, 0.08);
+  --color-border-subtle: rgba(255, 255, 255, 0.04);
+  --color-border-strong: rgba(255, 255, 255, 0.12);
+
+  /* Text */
+  --color-text-primary: #F9FAFB;
+  --color-text-secondary: #9CA3AF;
+  --color-text-tertiary: #6B7280;
+  --color-text-muted: #4B5563;
+
+  /* Primary Accent - Indigo with glow */
+  --color-accent: #818CF8;
+  --color-accent-hover: #A5B4FC;
+  --color-accent-muted: rgba(129, 140, 248, 0.2);
+
+  /* Semantic Colors */
+  --color-success: #34D399;
+  --color-success-muted: rgba(52, 211, 153, 0.2);
+  --color-warning: #FBBF24;
+  --color-warning-muted: rgba(251, 191, 36, 0.2);
+  --color-error: #F87171;
+  --color-error-muted: rgba(248, 113, 113, 0.2);
+  --color-info: #60A5FA;
+  --color-info-muted: rgba(96, 165, 250, 0.2);
+
+  /* Health Metrics Colors - Aurora-inspired */
+  --color-cardiac: #F472B6;
+  --color-cardiac-muted: rgba(244, 114, 182, 0.2);
+  --color-sleep: #A78BFA;
+  --color-sleep-muted: rgba(167, 139, 250, 0.2);
+  --color-activity: #34D399;
+  --color-activity-muted: rgba(52, 211, 153, 0.2);
+  --color-nutrition: #FBBF24;
+  --color-nutrition-muted: rgba(251, 191, 36, 0.2);
+
+  /* Effects - Glass morphism */
+  --shadow-sm: 0 1px 2px rgba(0, 0, 0, 0.2);
+  --shadow-md: 0 4px 12px rgba(0, 0, 0, 0.3);
+  --shadow-lg: 0 10px 25px rgba(0, 0, 0, 0.4);
+  --shadow-glow: 0 0 30px rgba(129, 140, 248, 0.3);
+
+  /* Glass blur effect */
+  --blur-sm: blur(8px);
+  --blur-md: blur(12px);
+  --blur-lg: blur(20px);
+
+  /* Gradients - Aurora effect */
+  --gradient-card: linear-gradient(145deg, rgba(31, 41, 55, 0.5) 0%, rgba(17, 24, 39, 0.8) 100%);
+  --gradient-accent: linear-gradient(135deg, #818CF8 0%, #C084FC 50%, #F472B6 100%);
+  --gradient-aurora: radial-gradient(ellipse at top, rgba(129, 140, 248, 0.15) 0%, transparent 50%),
+                     radial-gradient(ellipse at bottom right, rgba(244, 114, 182, 0.1) 0%, transparent 50%),
+                     radial-gradient(ellipse at bottom left, rgba(52, 211, 153, 0.08) 0%, transparent 50%);
+
+  /* Radius */
+  --radius-sm: 8px;
+  --radius-md: 12px;
+  --radius-lg: 16px;
+  --radius-xl: 24px;
+  --radius-full: 9999px;
+
+  /* Transitions */
+  --transition-fast: 150ms ease;
+  --transition-base: 200ms ease;
+  --transition-slow: 300ms ease;
+}
+
+/* Aurora background effect for the app */
+.aurora-bg {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: var(--gradient-aurora);
+  pointer-events: none;
+  z-index: 0;
+}
+
+/* Glass card effect */
+.glass-card {
+  background: var(--color-surface);
+  backdrop-filter: var(--blur-md);
+  -webkit-backdrop-filter: var(--blur-md);
+  border: 1px solid var(--color-border);
+}

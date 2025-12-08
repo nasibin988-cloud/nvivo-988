@@ -1,111 +1,189 @@
+import { useNavigate } from 'react-router-dom';
 import { useAuth } from '../../contexts/AuthContext';
 import { usePatientProfile } from '../../hooks/usePatientProfile';
-import { LogOut, RefreshCw } from 'lucide-react';
+import {
+  useStreak,
+  useMicroWins,
+  useCompleteMicroWin,
+  useNextAppointment,
+  useCardiacHealth,
+  useCognitiveHealth,
+  useTodayWellnessLog,
+  useTodayMedicationStatus,
+  useTodayFoodLogStatus,
+} from '../../hooks/dashboard';
+import {
+  DashboardHero,
+  DashboardHeroSkeleton,
+  CardiacHealthPanel,
+  CardiacHealthPanelSkeleton,
+  CognitiveHealthPanel,
+  CognitiveHealthPanelSkeleton,
+  MicroWinsWidget,
+  MicroWinsWidgetSkeleton,
+  UpcomingCard,
+  UpcomingCardSkeleton,
+  AIInsightsPanel,
+} from '../../components/dashboard';
+import { Header, HeaderSkeleton } from '../../components/layout/Header';
+import { RefreshCw } from 'lucide-react';
 
 export default function DashboardScreen() {
+  const navigate = useNavigate();
   const { patientId, signOut } = useAuth();
-  const { data: profile, isLoading, error, refetch } = usePatientProfile(patientId);
 
-  // Time-based greeting
-  const getGreeting = () => {
-    const hour = new Date().getHours();
-    if (hour < 12) return 'Good morning';
-    if (hour < 17) return 'Good afternoon';
-    return 'Good evening';
-  };
+  // Data hooks
+  const {
+    data: profile,
+    isLoading: profileLoading,
+    error: profileError,
+    refetch: refetchProfile,
+  } = usePatientProfile(patientId);
 
-  if (isLoading) {
+  const { data: streak, isLoading: streakLoading } = useStreak(patientId);
+  const { data: wellnessLog, isLoading: wellnessLoading } = useTodayWellnessLog(patientId);
+  const { data: medicationStatus, isLoading: medicationLoading } = useTodayMedicationStatus(patientId);
+  const { data: foodLogStatus, isLoading: foodLogLoading } = useTodayFoodLogStatus(patientId);
+  const { data: microWins, isLoading: microWinsLoading } = useMicroWins(patientId);
+  const { data: appointment, isLoading: appointmentLoading } = useNextAppointment(patientId);
+  const { data: cardiacHealth, isLoading: cardiacLoading } = useCardiacHealth(patientId);
+  const { data: cognitiveHealth, isLoading: cognitiveLoading } = useCognitiveHealth(patientId);
+
+  // Mutations
+  const completeMicroWin = useCompleteMicroWin(patientId);
+
+  // Loading states
+  const isHeaderLoading = profileLoading;
+  const isHeroLoading = streakLoading || wellnessLoading || medicationLoading || foodLogLoading;
+
+  // Error state
+  if (profileError) {
     return (
       <div className="min-h-screen bg-background p-4 pb-24">
-        <div className="animate-pulse space-y-4">
-          <div className="h-8 bg-surface rounded w-2/3" />
-          <div className="h-4 bg-surface rounded w-1/2" />
-          <div className="h-32 bg-surface rounded-2xl mt-6" />
-          <div className="h-32 bg-surface rounded-2xl" />
-        </div>
-      </div>
-    );
-  }
-
-  if (error) {
-    return (
-      <div className="min-h-screen bg-background p-4 pb-24">
-        <div className="bg-red-500/10 border border-red-500/20 rounded-2xl p-4">
-          <p className="text-red-400">Failed to load profile</p>
+        <div className="bg-error-muted border border-error/20 rounded-theme-lg p-4">
+          <p className="text-error">Failed to load your profile</p>
           <button
-            onClick={() => refetch()}
-            className="mt-2 flex items-center gap-2 text-accent-purple"
+            onClick={() => refetchProfile()}
+            className="mt-3 flex items-center gap-2 text-accent text-sm font-medium"
           >
             <RefreshCw size={16} />
-            Retry
+            Try again
           </button>
         </div>
       </div>
     );
   }
 
+  // Handlers
+  const handleProfileClick = () => {
+    // TODO: Open profile modal/screen
+    signOut();
+  };
+
+  const handleNotificationsClick = () => {
+    navigate('/notifications');
+  };
+
+  const handleCompleteMicroWin = (challengeId: string) => {
+    completeMicroWin.mutate({ challengeId, action: 'complete' });
+  };
+
+  const handleSkipMicroWin = (challengeId: string) => {
+    completeMicroWin.mutate({ challengeId, action: 'skip' });
+  };
+
+  const handleUndoMicroWin = (challengeId: string) => {
+    completeMicroWin.mutate({ challengeId, action: 'undo' });
+  };
+
+  const handleViewAppointment = (id: string) => {
+    navigate(`/care/appointments/${id}`);
+  };
+
   return (
-    <div className="min-h-screen bg-background text-text-primary p-4 pb-24">
-      {/* Header */}
-      <div className="flex items-start justify-between mb-6">
-        <div>
-          <h1 className="text-2xl font-bold">
-            {getGreeting()}, {profile?.firstName ?? '--'}
-          </h1>
-          <p className="text-text-secondary text-sm mt-1">
-            Welcome to your health dashboard
-          </p>
+    <div className="min-h-screen bg-background pb-24">
+      <div className="px-4 pt-2">
+        {/* Header */}
+        {isHeaderLoading ? (
+          <HeaderSkeleton />
+        ) : (
+          <Header
+            firstName={profile?.firstName}
+            onProfileClick={handleProfileClick}
+            onNotificationsClick={handleNotificationsClick}
+            onSettingsClick={() => navigate('/settings')}
+            onSearchClick={() => navigate('/search')}
+            unreadCount={0}
+            streak={streak?.currentStreak ?? 0}
+            healthScore={wellnessLog ? Math.round((wellnessLog.mood + wellnessLog.energy + wellnessLog.sleepQuality) / 3 * 10) : 80}
+            medicationsToday={medicationStatus?.takenDoses ?? 0}
+            appointmentsToday={appointment ? 1 : 0}
+            avatarUrl={profile?.avatarUrl ?? undefined}
+          />
+        )}
+
+        {/* Main Content */}
+        <div className="space-y-4 mt-4">
+          {/* Dashboard Hero - Vitality, Streak, Meals, Meds */}
+          {isHeroLoading ? (
+            <DashboardHeroSkeleton />
+          ) : (
+            <DashboardHero
+              wellnessLog={wellnessLog}
+              streak={streak}
+              medicationStatus={medicationStatus}
+              foodLogStatus={foodLogStatus}
+            />
+          )}
+
+          {/* Micro-Wins */}
+          {microWinsLoading ? (
+            <MicroWinsWidgetSkeleton />
+          ) : (
+            <MicroWinsWidget
+              microWins={microWins}
+              onComplete={handleCompleteMicroWin}
+              onSkip={handleSkipMicroWin}
+              onUndo={handleUndoMicroWin}
+            />
+          )}
+
+          {/* AI Insights */}
+          <AIInsightsPanel onViewMore={() => navigate('/insights')} />
+
+          {/* Cardiac Health Panel */}
+          {cardiacLoading ? (
+            <CardiacHealthPanelSkeleton />
+          ) : (
+            <CardiacHealthPanel
+              data={cardiacHealth}
+              onViewMore={() => navigate('/health?category=cardiac')}
+            />
+          )}
+
+          {/* Cognitive Health Panel */}
+          {cognitiveLoading ? (
+            <CognitiveHealthPanelSkeleton />
+          ) : (
+            <CognitiveHealthPanel
+              data={cognitiveHealth}
+              onViewMore={() => navigate('/health?category=cognitive')}
+            />
+          )}
+
+          {/* Upcoming Appointment */}
+          {appointmentLoading ? (
+            <UpcomingCardSkeleton />
+          ) : (
+            <UpcomingCard
+              appointment={appointment}
+              onViewMore={() => navigate('/care?tab=appointments')}
+              onViewAppointment={handleViewAppointment}
+              design={1}
+            />
+          )}
         </div>
-        <button
-          onClick={signOut}
-          className="p-2 rounded-xl bg-surface hover:bg-surface-elevated"
-          title="Sign out"
-        >
-          <LogOut size={20} className="text-text-muted" />
-        </button>
       </div>
-
-      {/* Profile Card */}
-      <div className="bg-surface rounded-2xl p-4 border border-border mb-4">
-        <h2 className="text-lg font-semibold mb-3">Your Profile</h2>
-        <div className="space-y-2 text-sm">
-          <ProfileRow label="Name" value={profile ? `${profile.firstName} ${profile.lastName}` : '--'} />
-          <ProfileRow label="Email" value={profile?.email ?? '--'} />
-          <ProfileRow label="Phone" value={profile?.phone ?? '--'} />
-          <ProfileRow label="Patient ID" value={patientId ?? '--'} />
-        </div>
-      </div>
-
-      {/* Placeholder sections */}
-      <div className="bg-surface rounded-2xl p-4 border border-border mb-4">
-        <h2 className="text-lg font-semibold mb-2">Today's Tasks</h2>
-        <p className="text-text-secondary text-sm">
-          Task data will be displayed here after Phase 8 (Care Tab).
-        </p>
-      </div>
-
-      <div className="bg-surface rounded-2xl p-4 border border-border mb-4">
-        <h2 className="text-lg font-semibold mb-2">Health Metrics</h2>
-        <p className="text-text-secondary text-sm">
-          Health data will be displayed here after Phase 6 (Health Tab).
-        </p>
-      </div>
-
-      <div className="bg-surface rounded-2xl p-4 border border-border">
-        <h2 className="text-lg font-semibold mb-2">Upcoming Appointments</h2>
-        <p className="text-text-secondary text-sm">
-          Appointments will be displayed here after Phase 11.
-        </p>
-      </div>
-    </div>
-  );
-}
-
-function ProfileRow({ label, value }: { label: string; value: string }) {
-  return (
-    <div className="flex justify-between">
-      <span className="text-text-secondary">{label}</span>
-      <span className="text-text-primary">{value}</span>
     </div>
   );
 }

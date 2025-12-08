@@ -1,6 +1,7 @@
 import { initializeApp, getApps, getApp as getFirebaseApp } from 'firebase/app';
 import { getAuth, connectAuthEmulator } from 'firebase/auth';
 import { getFirestore, connectFirestoreEmulator } from 'firebase/firestore';
+import { getFunctions as getFirebaseFunctions, connectFunctionsEmulator } from 'firebase/functions';
 
 const firebaseConfig = {
   apiKey: "AIzaSyDhwKJgyeE3Kzs_TfqkTPQWh8p4Y-4rpzE",
@@ -35,6 +36,10 @@ export function getDb() {
   return getFirestore(app);
 }
 
+export function getFunctions() {
+  return getFirebaseFunctions(app);
+}
+
 export function connectEmulators(): void {
   if (emulatorsConnected) return;
 
@@ -45,8 +50,10 @@ export function connectEmulators(): void {
     try {
       const auth = getAuth(app);
       const db = getFirestore(app);
+      const functions = getFirebaseFunctions(app);
       connectAuthEmulator(auth, 'http://127.0.0.1:9099', { disableWarnings: true });
       connectFirestoreEmulator(db, '127.0.0.1', 8080);
+      connectFunctionsEmulator(functions, '127.0.0.1', 5001);
       emulatorsConnected = true;
       console.log('✅ Connected to Firebase emulators');
     } catch (error) {

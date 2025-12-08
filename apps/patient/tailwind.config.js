@@ -7,22 +7,78 @@ export default {
   theme: {
     extend: {
       colors: {
-        // Aura Dark theme colors
-        background: '#050811',
-        surface: '#0A0F1C',
-        'surface-elevated': '#111827',
-        border: 'rgba(255, 255, 255, 0.08)',
-        'text-primary': '#EDEDED',
-        'text-secondary': '#A1A1AA',
-        'text-muted': '#71717A',
-        accent: {
-          purple: '#8B5CF6',
-          'purple-light': '#A78BFA',
-          cyan: '#06B6D4',
-          green: '#10B981',
-          red: '#EF4444',
-          orange: '#F97316',
+        // Theme-aware colors (use CSS variables)
+        background: 'var(--color-background)',
+        surface: {
+          DEFAULT: 'var(--color-surface)',
+          2: 'var(--color-surface-2)',
+          3: 'var(--color-surface-3)',
         },
+        border: {
+          DEFAULT: 'var(--color-border)',
+          subtle: 'var(--color-border-subtle)',
+          strong: 'var(--color-border-strong)',
+        },
+        text: {
+          primary: 'var(--color-text-primary)',
+          secondary: 'var(--color-text-secondary)',
+          tertiary: 'var(--color-text-tertiary)',
+          muted: 'var(--color-text-muted)',
+        },
+        accent: {
+          DEFAULT: 'var(--color-accent)',
+          hover: 'var(--color-accent-hover)',
+          muted: 'var(--color-accent-muted)',
+        },
+        // Semantic
+        success: {
+          DEFAULT: 'var(--color-success)',
+          muted: 'var(--color-success-muted)',
+        },
+        warning: {
+          DEFAULT: 'var(--color-warning)',
+          muted: 'var(--color-warning-muted)',
+        },
+        error: {
+          DEFAULT: 'var(--color-error)',
+          muted: 'var(--color-error-muted)',
+        },
+        info: {
+          DEFAULT: 'var(--color-info)',
+          muted: 'var(--color-info-muted)',
+        },
+        // Health metrics
+        cardiac: {
+          DEFAULT: 'var(--color-cardiac)',
+          muted: 'var(--color-cardiac-muted)',
+        },
+        sleep: {
+          DEFAULT: 'var(--color-sleep)',
+          muted: 'var(--color-sleep-muted)',
+        },
+        activity: {
+          DEFAULT: 'var(--color-activity)',
+          muted: 'var(--color-activity-muted)',
+        },
+        nutrition: {
+          DEFAULT: 'var(--color-nutrition)',
+          muted: 'var(--color-nutrition-muted)',
+        },
+      },
+      borderRadius: {
+        'theme-sm': 'var(--radius-sm)',
+        'theme-md': 'var(--radius-md)',
+        'theme-lg': 'var(--radius-lg)',
+        'theme-xl': 'var(--radius-xl)',
+      },
+      boxShadow: {
+        'card': 'var(--shadow-md)',
+        'glow': 'var(--shadow-glow)',
+      },
+      transitionDuration: {
+        'fast': '150ms',
+        'base': '200ms',
+        'slow': '300ms',
       },
     },
   },

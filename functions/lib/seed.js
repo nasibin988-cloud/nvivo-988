@@ -271,6 +271,7 @@ async function seedTestPatient() {
                 id: 'apt-1',
                 providerId: 'care-team-1',
                 providerName: 'Dr. James Chen',
+                providerPhoto: 'https://images.unsplash.com/photo-1612349317150-e413f6a5b16d?w=150&h=150&fit=crop&crop=face',
                 type: 'in-person',
                 specialty: 'Cardiology',
                 reason: 'Follow-up visit',
@@ -278,14 +279,26 @@ async function seedTestPatient() {
                 time: '10:00',
                 duration: 30,
                 status: 'confirmed',
-                location: '456 Medical Plaza, Suite 200, San Francisco, CA',
+                location: {
+                    name: 'NVIVO Heart Center',
+                    address: '456 Medical Plaza, Suite 200',
+                    city: 'San Francisco',
+                    state: 'CA',
+                    zip: '94102',
+                    coordinates: {
+                        lat: 37.7849,
+                        lng: -122.4094,
+                    },
+                },
                 videoCallUrl: null,
-                notes: 'Review lipid panel results',
+                notes: 'Review lipid panel results and discuss medication adjustments',
+                prepInstructions: 'Please fast for 8 hours before your appointment. Bring a list of all current medications.',
             },
             {
                 id: 'apt-2',
                 providerId: 'care-team-2',
                 providerName: 'Dr. Emily Rodriguez',
+                providerPhoto: 'https://images.unsplash.com/photo-1559839734-2b71ea197ec2?w=150&h=150&fit=crop&crop=face',
                 type: 'telehealth',
                 specialty: 'Primary Care',
                 reason: 'Lab review',
@@ -295,12 +308,14 @@ async function seedTestPatient() {
                 status: 'confirmed',
                 location: null,
                 videoCallUrl: 'https://meet.nvivo.health/apt-2',
-                notes: 'Review HbA1c results',
+                notes: 'Review HbA1c results and metabolic panel',
+                prepInstructions: 'Have your recent lab results ready. Find a quiet space with good lighting.',
             },
             {
                 id: 'apt-3',
                 providerId: 'care-team-4',
                 providerName: 'Michael Park, RD',
+                providerPhoto: 'https://images.unsplash.com/photo-1537368910025-700350fe46c7?w=150&h=150&fit=crop&crop=face',
                 type: 'in-person',
                 specialty: 'Nutrition',
                 reason: 'Diet coaching',
@@ -308,9 +323,20 @@ async function seedTestPatient() {
                 time: '11:00',
                 duration: 45,
                 status: 'scheduled',
-                location: '456 Medical Plaza, Suite 150, San Francisco, CA',
+                location: {
+                    name: 'NVIVO Wellness Center',
+                    address: '456 Medical Plaza, Suite 150',
+                    city: 'San Francisco',
+                    state: 'CA',
+                    zip: '94102',
+                    coordinates: {
+                        lat: 37.7849,
+                        lng: -122.4094,
+                    },
+                },
                 videoCallUrl: null,
-                notes: 'Diet optimization session',
+                notes: 'Diet optimization session focusing on heart-healthy eating',
+                prepInstructions: 'Keep a 3-day food journal before your visit. Bring any dietary supplements you take.',
             },
         ];
         for (const apt of appointments) {
@@ -320,6 +346,321 @@ async function seedTestPatient() {
             });
         }
         console.log('Appointments created:', appointments.length);
+        // 9. Create cardiac health data
+        // Generate blood pressure trend (30 days)
+        const generateBloodPressureTrend = () => {
+            const trend = [];
+            let systolic = 138;
+            let diastolic = 88;
+            for (let i = 29; i >= 0; i--) {
+                const date = new Date(today);
+                date.setDate(date.getDate() - i);
+                const sysVar = Math.random() * 8 - 4;
+                const diaVar = Math.random() * 6 - 3;
+                systolic = Math.max(110, Math.min(145, systolic + sysVar - 0.15));
+                diastolic = Math.max(68, Math.min(92, diastolic + diaVar - 0.1));
+                trend.push({
+                    date: date.toISOString().split('T')[0],
+                    systolic: Math.round(systolic),
+                    diastolic: Math.round(diastolic),
+                });
+            }
+            return trend;
+        };
+        // Generate LDL trend (12 months)
+        const generateLDLTrend = () => {
+            const trend = [];
+            let ldl = 142;
+            for (let i = 11; i >= 0; i--) {
+                const date = new Date(today);
+                date.setMonth(date.getMonth() - i);
+                const variation = Math.random() * 10 - 5;
+                ldl = Math.max(55, Math.min(160, ldl + variation - 6));
+                trend.push({
+                    date: date.toISOString().split('T')[0],
+                    value: Math.round(ldl),
+                });
+            }
+            return trend;
+        };
+        const bloodPressureTrend = generateBloodPressureTrend();
+        const ldlTrend = generateLDLTrend();
+        const latestBP = bloodPressureTrend[bloodPressureTrend.length - 1];
+        const latestLDL = ldlTrend[ldlTrend.length - 1].value;
+        // Calculate trend directions
+        const bpFirst7Avg = bloodPressureTrend.slice(0, 7).reduce((sum, bp) => sum + bp.systolic, 0) / 7;
+        const bpLast7Avg = bloodPressureTrend.slice(-7).reduce((sum, bp) => sum + bp.systolic, 0) / 7;
+        const bpTrendDirection = bpLast7Avg < bpFirst7Avg - 3 ? 'decreasing' : bpLast7Avg > bpFirst7Avg + 3 ? 'increasing' : 'stable';
+        const ldlFirst3Avg = ldlTrend.slice(0, 3).reduce((sum, l) => sum + l.value, 0) / 3;
+        const ldlLast3Avg = ldlTrend.slice(-3).reduce((sum, l) => sum + l.value, 0) / 3;
+        const ldlTrendDirection = ldlLast3Avg < ldlFirst3Avg - 5 ? 'decreasing' : ldlLast3Avg > ldlFirst3Avg + 5 ? 'increasing' : 'stable';
+        await db.collection('patients').doc(uid).collection('cardiacHealth').doc('latest').set({
+            plaqueData: {
+                tpv: 245, // Total Plaque Volume mm³
+                cadRads: 2,
+                cadRadsDescription: 'Mild stenosis (25-49%) with non-obstructive CAD. Low-attenuation plaque present.',
+                ffr: 0.88, // Fractional Flow Reserve
+                pav: 18.5, // Percent Atheroma Volume %
+                lrnc: 3.2, // Low Radiodensity NonCalcified plaque mm³
+                scanDate: new Date(today.getTime() - 45 * 24 * 60 * 60 * 1000).toISOString().split('T')[0],
+            },
+            lipidPanel: {
+                ldl: latestLDL,
+                hdl: 58,
+                triglycerides: 128,
+                totalCholesterol: latestLDL + 58 + Math.round(128 / 5),
+                testDate: new Date(today.getTime() - 7 * 24 * 60 * 60 * 1000).toISOString().split('T')[0],
+            },
+            metabolic: {
+                hba1c: 5.4,
+                fastingGlucose: 98,
+                testDate: new Date(today.getTime() - 14 * 24 * 60 * 60 * 1000).toISOString().split('T')[0],
+            },
+            biomarkers: {
+                apoB: 82,
+                hsCRP: 0.8,
+                lpA: 24,
+                testDate: new Date(today.getTime() - 21 * 24 * 60 * 60 * 1000).toISOString().split('T')[0],
+            },
+            bloodPressureTrend,
+            bloodPressureTrendDirection: bpTrendDirection,
+            latestBloodPressure: `${latestBP.systolic}/${latestBP.diastolic}`,
+            ldlTrend,
+            ldlTrendDirection,
+            updatedAt: firestore_1.Timestamp.now(),
+        });
+        console.log('Cardiac health data created with BP trend:', bloodPressureTrend.length, 'LDL trend:', ldlTrend.length);
+        // 10. Create cognitive health data
+        const generateMoodTrend = () => {
+            const trend = [];
+            for (let i = 0; i < 30; i++) {
+                trend.push(Math.round((6 + Math.random() * 3 + (i / 30) * 1.5) * 10) / 10);
+            }
+            return trend;
+        };
+        const generateSleepData = () => {
+            const quality = [];
+            const hours = [];
+            for (let i = 0; i < 30; i++) {
+                quality.push(Math.round((6.5 + Math.random() * 3) * 10) / 10);
+                hours.push(Math.round((6.5 + Math.random() * 2.5) * 10) / 10);
+            }
+            return { quality, hours };
+        };
+        const sleepData = generateSleepData();
+        await db.collection('patients').doc(uid).collection('cognitiveHealth').doc('latest').set({
+            brainMRI: {
+                status: 'Normal',
+                date: new Date(today.getTime() - 60 * 24 * 60 * 60 * 1000).toISOString().split('T')[0],
+                findings: 'No evidence of infarct, mass, or hemorrhage. Normal brain parenchyma with age-appropriate volume.',
+            },
+            cognitiveAssessment: {
+                moca: 28, // Montreal Cognitive Assessment (out of 30)
+                date: new Date(today.getTime() - 45 * 24 * 60 * 60 * 1000).toISOString().split('T')[0],
+            },
+            strokeRisk: {
+                bloodPressure: {
+                    value: '118/76',
+                    status: 'on-target',
+                },
+                carotidPlaque: {
+                    value: 'None',
+                    status: 'on-target',
+                },
+                hba1c: {
+                    value: 5.8,
+                    status: 'attention',
+                },
+            },
+            mentalHealth: {
+                dass21: {
+                    depression: 4,
+                    anxiety: 6,
+                    stress: 10,
+                    date: new Date(today.getTime() - 14 * 24 * 60 * 60 * 1000).toISOString().split('T')[0],
+                },
+                qols: {
+                    score: 82,
+                    date: new Date(today.getTime() - 14 * 24 * 60 * 60 * 1000).toISOString().split('T')[0],
+                },
+                moodTrend: generateMoodTrend(),
+                sleepQuality: sleepData.quality,
+                sleepHours: sleepData.hours,
+            },
+            updatedAt: firestore_1.Timestamp.now(),
+        });
+        console.log('Cognitive health data created');
+        // 11. Create wellness logs (for vitality ring)
+        // Vitality = (mood + energy + sleepQuality) / 3 * 10, targeting 80
+        // So mood=8, energy=8, sleepQuality=8 => (24/3)*10 = 80
+        const wellnessLogs = [];
+        for (let i = 0; i < 7; i++) {
+            const logDate = new Date(today.getTime() - i * 24 * 60 * 60 * 1000);
+            wellnessLogs.push({
+                id: `wellness-${logDate.toISOString().split('T')[0]}`,
+                date: logDate.toISOString().split('T')[0],
+                mood: 8,
+                energy: 8,
+                sleepQuality: 8,
+                stress: 2.5,
+                symptoms: i === 0 ? [] : i === 1 ? ['mild fatigue'] : [],
+                notes: i === 0 ? 'Feeling great today!' : null,
+            });
+        }
+        for (const log of wellnessLogs) {
+            await db.collection('patients').doc(uid).collection('wellnessLogs').doc(log.id).set({
+                ...log,
+                createdAt: firestore_1.Timestamp.now(),
+            });
+        }
+        console.log('Wellness logs created:', wellnessLogs.length);
+        // 12. Create food logs (for food logging status)
+        const foodLogs = [];
+        // Today's meals (partially logged)
+        const todayStr = today.toISOString().split('T')[0];
+        foodLogs.push({
+            id: `food-${todayStr}-breakfast`,
+            date: todayStr,
+            mealType: 'breakfast',
+            description: 'Oatmeal with berries and walnuts',
+            calories: 420,
+            loggedAt: new Date(today.getFullYear(), today.getMonth(), today.getDate(), 8, 30).toISOString(),
+        }, {
+            id: `food-${todayStr}-lunch`,
+            date: todayStr,
+            mealType: 'lunch',
+            description: 'Mediterranean salad with grilled chicken',
+            calories: 580,
+            loggedAt: new Date(today.getFullYear(), today.getMonth(), today.getDate(), 12, 45).toISOString(),
+        });
+        // Yesterday's meals (fully logged)
+        const yesterdayDate = new Date(today.getTime() - 24 * 60 * 60 * 1000);
+        const yesterdayStr = yesterdayDate.toISOString().split('T')[0];
+        foodLogs.push({
+            id: `food-${yesterdayStr}-breakfast`,
+            date: yesterdayStr,
+            mealType: 'breakfast',
+            description: 'Greek yogurt parfait with granola',
+            calories: 380,
+            loggedAt: new Date(yesterdayDate.getFullYear(), yesterdayDate.getMonth(), yesterdayDate.getDate(), 7, 45).toISOString(),
+        }, {
+            id: `food-${yesterdayStr}-lunch`,
+            date: yesterdayStr,
+            mealType: 'lunch',
+            description: 'Quinoa bowl with roasted vegetables',
+            calories: 520,
+            loggedAt: new Date(yesterdayDate.getFullYear(), yesterdayDate.getMonth(), yesterdayDate.getDate(), 12, 30).toISOString(),
+        }, {
+            id: `food-${yesterdayStr}-dinner`,
+            date: yesterdayStr,
+            mealType: 'dinner',
+            description: 'Baked salmon with asparagus',
+            calories: 640,
+            loggedAt: new Date(yesterdayDate.getFullYear(), yesterdayDate.getMonth(), yesterdayDate.getDate(), 19, 15).toISOString(),
+        }, {
+            id: `food-${yesterdayStr}-snack`,
+            date: yesterdayStr,
+            mealType: 'snack',
+            description: 'Apple with almond butter',
+            calories: 180,
+            loggedAt: new Date(yesterdayDate.getFullYear(), yesterdayDate.getMonth(), yesterdayDate.getDate(), 15, 30).toISOString(),
+        });
+        for (const log of foodLogs) {
+            await db.collection('patients').doc(uid).collection('foodLogs').doc(log.id).set({
+                ...log,
+                createdAt: firestore_1.Timestamp.now(),
+            });
+        }
+        console.log('Food logs created:', foodLogs.length);
+        // 13. Create medication logs (for medication status)
+        const medicationLogs = [];
+        // Today's medication logs (morning meds taken, evening pending)
+        const todayMorningTime = new Date(today.getFullYear(), today.getMonth(), today.getDate(), 8, 15);
+        medicationLogs.push({
+            id: `medlog-${todayStr}-med1`,
+            date: todayStr,
+            medicationId: 'med-1',
+            medicationName: 'Lisinopril',
+            dosage: '10mg',
+            scheduledTime: '08:00',
+            takenAt: todayMorningTime.toISOString(),
+            status: 'taken',
+        }, {
+            id: `medlog-${todayStr}-med3`,
+            date: todayStr,
+            medicationId: 'med-3',
+            medicationName: 'Aspirin',
+            dosage: '81mg',
+            scheduledTime: '08:00',
+            takenAt: todayMorningTime.toISOString(),
+            status: 'taken',
+        }, {
+            id: `medlog-${todayStr}-med4-morning`,
+            date: todayStr,
+            medicationId: 'med-4',
+            medicationName: 'Metformin',
+            dosage: '500mg',
+            scheduledTime: '08:00',
+            takenAt: todayMorningTime.toISOString(),
+            status: 'taken',
+        });
+        // Yesterday's medication logs (all taken)
+        const yesterdayMorning = new Date(yesterdayDate.getFullYear(), yesterdayDate.getMonth(), yesterdayDate.getDate(), 8, 10);
+        const yesterdayEvening = new Date(yesterdayDate.getFullYear(), yesterdayDate.getMonth(), yesterdayDate.getDate(), 18, 5);
+        const yesterdayBedtime = new Date(yesterdayDate.getFullYear(), yesterdayDate.getMonth(), yesterdayDate.getDate(), 21, 15);
+        medicationLogs.push({
+            id: `medlog-${yesterdayStr}-med1`,
+            date: yesterdayStr,
+            medicationId: 'med-1',
+            medicationName: 'Lisinopril',
+            dosage: '10mg',
+            scheduledTime: '08:00',
+            takenAt: yesterdayMorning.toISOString(),
+            status: 'taken',
+        }, {
+            id: `medlog-${yesterdayStr}-med2`,
+            date: yesterdayStr,
+            medicationId: 'med-2',
+            medicationName: 'Atorvastatin',
+            dosage: '40mg',
+            scheduledTime: '21:00',
+            takenAt: yesterdayBedtime.toISOString(),
+            status: 'taken',
+        }, {
+            id: `medlog-${yesterdayStr}-med3`,
+            date: yesterdayStr,
+            medicationId: 'med-3',
+            medicationName: 'Aspirin',
+            dosage: '81mg',
+            scheduledTime: '08:00',
+            takenAt: yesterdayMorning.toISOString(),
+            status: 'taken',
+        }, {
+            id: `medlog-${yesterdayStr}-med4-morning`,
+            date: yesterdayStr,
+            medicationId: 'med-4',
+            medicationName: 'Metformin',
+            dosage: '500mg',
+            scheduledTime: '08:00',
+            takenAt: yesterdayMorning.toISOString(),
+            status: 'taken',
+        }, {
+            id: `medlog-${yesterdayStr}-med4-evening`,
+            date: yesterdayStr,
+            medicationId: 'med-4',
+            medicationName: 'Metformin',
+            dosage: '500mg',
+            scheduledTime: '18:00',
+            takenAt: yesterdayEvening.toISOString(),
+            status: 'taken',
+        });
+        for (const log of medicationLogs) {
+            await db.collection('patients').doc(uid).collection('medicationLogs').doc(log.id).set({
+                ...log,
+                createdAt: firestore_1.Timestamp.now(),
+            });
+        }
+        console.log('Medication logs created:', medicationLogs.length);
         console.log('Test patient seed completed successfully');
         return {
             success: true,
@@ -361,6 +702,11 @@ async function deleteTestPatient() {
             'streaks',
             'healthMetrics',
             'conversations',
+            'cardiacHealth',
+            'cognitiveHealth',
+            'wellnessLogs',
+            'foodLogs',
+            'medicationLogs',
         ];
         for (const subcoll of subcollections) {
             const docs = await db.collection('patients').doc(TEST_PATIENT_ID).collection(subcoll).listDocuments();

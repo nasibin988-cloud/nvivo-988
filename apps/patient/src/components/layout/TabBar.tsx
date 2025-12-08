@@ -24,8 +24,8 @@ export default function TabBar() {
             <NavLink
               key={path}
               to={path}
-              className={`flex flex-col items-center justify-center flex-1 h-full ${
-                isActive ? 'text-accent-purple' : 'text-text-muted'
+              className={`flex flex-col items-center justify-center flex-1 h-full transition-base ${
+                isActive ? 'text-accent' : 'text-text-muted hover:text-text-secondary'
               }`}
             >
               <Icon size={24} />

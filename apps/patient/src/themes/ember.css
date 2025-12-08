@@ -1,0 +1,71 @@
+/**
+ * Theme: Ember - Warm Dark
+ * Dark with warm undertones - less clinical, more inviting.
+ * Vibe: Warm, welcoming, organic. Feels healthy without being clinical.
+ */
+
+:root {
+  /* Backgrounds - Warm stone tones */
+  --color-background: #0C0A09;
+  --color-surface: #1C1917;
+  --color-surface-2: #292524;
+  --color-surface-3: #3A3533;
+
+  /* Borders */
+  --color-border: #44403C;
+  --color-border-subtle: #292524;
+  --color-border-strong: #57534E;
+
+  /* Text - Warm whites */
+  --color-text-primary: #FAFAF9;
+  --color-text-secondary: #A8A29E;
+  --color-text-tertiary: #78716C;
+  --color-text-muted: #57534E;
+
+  /* Primary Accent - Warm Orange */
+  --color-accent: #F97316;
+  --color-accent-hover: #FB923C;
+  --color-accent-muted: rgba(249, 115, 22, 0.15);
+
+  /* Semantic Colors - Warm palette */
+  --color-success: #84CC16;
+  --color-success-muted: rgba(132, 204, 22, 0.15);
+  --color-warning: #FBBF24;
+  --color-warning-muted: rgba(251, 191, 36, 0.15);
+  --color-error: #F87171;
+  --color-error-muted: rgba(248, 113, 113, 0.15);
+  --color-info: #06B6D4;
+  --color-info-muted: rgba(6, 182, 212, 0.15);
+
+  /* Health Metrics Colors - Organic */
+  --color-cardiac: #FB7185;
+  --color-cardiac-muted: rgba(251, 113, 133, 0.15);
+  --color-sleep: #A78BFA;
+  --color-sleep-muted: rgba(167, 139, 250, 0.15);
+  --color-activity: #84CC16;
+  --color-activity-muted: rgba(132, 204, 22, 0.15);
+  --color-nutrition: #FBBF24;
+  --color-nutrition-muted: rgba(251, 191, 36, 0.15);
+
+  /* Effects */
+  --shadow-sm: 0 1px 2px rgba(12, 10, 9, 0.3);
+  --shadow-md: 0 4px 6px rgba(12, 10, 9, 0.4);
+  --shadow-lg: 0 10px 15px rgba(12, 10, 9, 0.5);
+  --shadow-glow: 0 0 20px rgba(249, 115, 22, 0.2);
+
+  /* Gradients */
+  --gradient-card: linear-gradient(145deg, #1C1917 0%, #0C0A09 100%);
+  --gradient-accent: linear-gradient(135deg, #F97316 0%, #EA580C 100%);
+
+  /* Radius - Slightly softer, organic */
+  --radius-sm: 8px;
+  --radius-md: 12px;
+  --radius-lg: 18px;
+  --radius-xl: 26px;
+  --radius-full: 9999px;
+
+  /* Transitions */
+  --transition-fast: 150ms ease;
+  --transition-base: 200ms ease;
+  --transition-slow: 300ms ease;
+}

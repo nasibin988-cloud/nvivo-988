@@ -1,0 +1,71 @@
+/**
+ * Theme: Obsidian - Deep Luxury Dark
+ * Inspired by Arc Browser and Linear. Ultra-dark with subtle depth.
+ * Vibe: Professional, calm, premium. Like a high-end car dashboard at night.
+ */
+
+:root {
+  /* Backgrounds */
+  --color-background: #0A0A0B;
+  --color-surface: #141416;
+  --color-surface-2: #1C1C1F;
+  --color-surface-3: #242428;
+
+  /* Borders */
+  --color-border: #2A2A2E;
+  --color-border-subtle: #1E1E22;
+  --color-border-strong: #3A3A40;
+
+  /* Text */
+  --color-text-primary: #FAFAFA;
+  --color-text-secondary: #A1A1A6;
+  --color-text-tertiary: #5C5C66;
+  --color-text-muted: #3C3C44;
+
+  /* Primary Accent - Indigo */
+  --color-accent: #6366F1;
+  --color-accent-hover: #818CF8;
+  --color-accent-muted: rgba(99, 102, 241, 0.15);
+
+  /* Semantic Colors */
+  --color-success: #22C55E;
+  --color-success-muted: rgba(34, 197, 94, 0.15);
+  --color-warning: #F59E0B;
+  --color-warning-muted: rgba(245, 158, 11, 0.15);
+  --color-error: #EF4444;
+  --color-error-muted: rgba(239, 68, 68, 0.15);
+  --color-info: #3B82F6;
+  --color-info-muted: rgba(59, 130, 246, 0.15);
+
+  /* Health Metrics Colors */
+  --color-cardiac: #F43F5E;
+  --color-cardiac-muted: rgba(244, 63, 94, 0.15);
+  --color-sleep: #8B5CF6;
+  --color-sleep-muted: rgba(139, 92, 246, 0.15);
+  --color-activity: #10B981;
+  --color-activity-muted: rgba(16, 185, 129, 0.15);
+  --color-nutrition: #F59E0B;
+  --color-nutrition-muted: rgba(245, 158, 11, 0.15);
+
+  /* Effects */
+  --shadow-sm: 0 1px 2px rgba(0, 0, 0, 0.3);
+  --shadow-md: 0 4px 6px rgba(0, 0, 0, 0.4);
+  --shadow-lg: 0 10px 15px rgba(0, 0, 0, 0.5);
+  --shadow-glow: 0 0 20px rgba(99, 102, 241, 0.2);
+
+  /* Gradients */
+  --gradient-card: linear-gradient(145deg, #141416 0%, #0A0A0B 100%);
+  --gradient-accent: linear-gradient(135deg, #6366F1 0%, #8B5CF6 100%);
+
+  /* Radius */
+  --radius-sm: 6px;
+  --radius-md: 10px;
+  --radius-lg: 14px;
+  --radius-xl: 20px;
+  --radius-full: 9999px;
+
+  /* Transitions */
+  --transition-fast: 150ms ease;
+  --transition-base: 200ms ease;
+  --transition-slow: 300ms ease;
+}

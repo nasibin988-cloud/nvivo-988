@@ -1,8 +1,10 @@
 import { Routes, Route, Navigate } from 'react-router-dom';
 import { useAuth } from './contexts/AuthContext';
+import { DesignVariantProvider, useDesignVariants } from './contexts/DesignVariantContext';
 import LoginScreen from './screens/Login/LoginScreen';
 import DashboardScreen from './screens/Dashboard/DashboardScreen';
-import TabBar from './components/layout/TabBar';
+import { BottomNav } from './components/layout/BottomNav';
+import { VariantSelector } from './components/dev/VariantSelector';
 
 function ProtectedRoute({ children }: { children: React.ReactNode }) {
   const { user, loading } = useAuth();
@@ -22,8 +24,9 @@ function ProtectedRoute({ children }: { children: React.ReactNode }) {
   return <>{children}</>;
 }
 
-export default function App() {
+function AppContent() {
   const { user, loading } = useAuth();
+  const { variants } = useDesignVariants();
 
   if (loading) {
     return (
@@ -70,17 +73,28 @@ export default function App() {
           }
         />
         <Route
-          path="/more"
+          path="/learn"
           element={
             <ProtectedRoute>
-              <PlaceholderScreen title="More" />
+              <PlaceholderScreen title="Learn" />
             </ProtectedRoute>
           }
         />
+        {/* Legacy more route redirects to learn */}
+        <Route path="/more" element={<Navigate to="/learn" replace />} />
       </Routes>
 
-      {user && <TabBar />}
+      {user && <BottomNav variant={variants.nav} />}
+      {user && <VariantSelector />}
     </div>
+  );
+}
+
+export default function App() {
+  return (
+    <DesignVariantProvider>
+      <AppContent />
+    </DesignVariantProvider>
   );
 }
 
