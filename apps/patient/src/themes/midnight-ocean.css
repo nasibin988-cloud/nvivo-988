@@ -6,21 +6,21 @@
 
 :root {
   /* Backgrounds */
-  --color-background: #0B1120;
-  --color-surface: #121A2E;
-  --color-surface-2: #1A2540;
-  --color-surface-3: #223052;
+  --color-background: #050810;
+  --color-surface: #0D1526;
+  --color-surface-2: #162033;
+  --color-surface-3: #1F2D45;
 
   /* Borders */
-  --color-border: #243352;
-  --color-border-subtle: #1A2540;
-  --color-border-strong: #2E4066;
+  --color-border: #3A506E;
+  --color-border-subtle: #2A3D5C;
+  --color-border-strong: #4A6080;
 
   /* Text */
   --color-text-primary: #E2E8F0;
-  --color-text-secondary: #94A3B8;
-  --color-text-tertiary: #64748B;
-  --color-text-muted: #475569;
+  --color-text-secondary: #B8C5D6;
+  --color-text-tertiary: #8A9BB0;
+  --color-text-muted: #94A3B8;
 
   /* Primary Accent - Sky Blue */
   --color-accent: #38BDF8;

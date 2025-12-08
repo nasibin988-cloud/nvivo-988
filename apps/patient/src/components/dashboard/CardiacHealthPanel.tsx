@@ -9,25 +9,13 @@ interface CardiacHealthPanelProps {
   onViewMore?: () => void;
 }
 
-// Status color helpers using centralized colors
-function getStatusColor(value: number, target: number, higher: 'good' | 'bad'): string {
-  if (higher === 'bad') {
-    if (value <= target) return 'text-success';
-    if (value <= target * 1.2) return 'text-warning';
-    return 'text-error';
-  }
-  if (value >= target) return 'text-success';
-  if (value >= target * 0.8) return 'text-warning';
-  return 'text-error';
-}
-
 function getStatusBadge(value: number, target: number, higher: 'good' | 'bad'): { color: string; label: string } {
   if (higher === 'bad') {
     if (value <= target) return { color: colors.success, label: 'On Target' };
     if (value <= target * 1.2) return { color: colors.warning, label: 'Elevated' };
     return { color: colors.error, label: 'High' };
   }
-  if (value >= target) return { color: colors.success, label: 'Optimal' };
+  if (value >= target) return { color: colors.success, label: 'On Target' };
   if (value >= target * 0.8) return { color: colors.warning, label: 'Low' };
   return { color: colors.error, label: 'Very Low' };
 }
@@ -39,7 +27,7 @@ function TrendLabel({ direction, color = 'text-text-secondary' }: { direction?: 
   const config: Record<TrendDirection, { icon: typeof TrendingUp; label: string; color: string }> = {
     increasing: { icon: TrendingUp, label: 'Increasing', color: colors.warning },
     decreasing: { icon: TrendingDown, label: 'Decreasing', color: colors.success },
-    stable: { icon: Minus, label: 'Stable', color: colors.info },
+    stable: { icon: Minus, label: 'Stable', color: colors.textSecondary },
   };
 
   const { icon: Icon, label, color: trendColor } = config[direction];
@@ -162,17 +150,17 @@ interface MetricCardProps {
   color?: string;
 }
 
-function MetricCard({ label, value, unit, target, higher, icon: Icon, color = 'text-text-primary' }: MetricCardProps) {
+function MetricCard({ label, value, unit, target, higher, icon: Icon }: MetricCardProps) {
   const val = value ?? 0;
   const status = getStatusBadge(val, target, higher);
 
   return (
-    <div className="bg-surface-2/40 backdrop-blur-sm rounded-theme-lg border border-border/30 p-4 hover:bg-surface-2/60 transition-all duration-300">
+    <div className="bg-surface-2/40 backdrop-blur-sm rounded-theme-lg border border-white/10 p-4 hover:bg-surface-2/60 transition-all duration-300">
       <div className="flex items-start justify-between mb-2">
         <div className="flex items-center gap-2">
           {Icon && (
-            <div className={`p-1.5 rounded-theme-sm bg-gradient-to-br ${color.includes('cardiac') ? 'from-cardiac/10 to-cardiac/5' : color.includes('info') ? 'from-info/10 to-info/5' : 'from-warning/10 to-warning/5'}`}>
-              <Icon size={14} className={color} />
+            <div className="p-1.5 rounded-theme-sm bg-gradient-to-br from-surface-3/50 to-surface-2/50">
+              <Icon size={14} className="text-text-primary" />
             </div>
           )}
           <span className="text-xs text-text-muted font-medium">{label}</span>
@@ -180,7 +168,7 @@ function MetricCard({ label, value, unit, target, higher, icon: Icon, color = 't
         <span className="text-xs font-semibold" style={{ color: status.color }}>{status.label}</span>
       </div>
       <div className="flex items-baseline gap-1">
-        <span className={`text-2xl font-bold ${getStatusColor(val, target, higher)}`}>
+        <span className="text-2xl font-bold text-text-primary">
           {value ?? '—'}
         </span>
         <span className="text-xs text-text-muted">{unit}</span>
@@ -188,8 +176,11 @@ function MetricCard({ label, value, unit, target, higher, icon: Icon, color = 't
       <div className="mt-2 flex items-center gap-2">
         <div className="flex-1 h-1.5 bg-surface-3 rounded-full overflow-hidden">
           <div
-            className={`h-full rounded-full transition-all duration-500 ${val <= target ? 'bg-gradient-to-r from-success to-success' : val <= target * 1.2 ? 'bg-gradient-to-r from-warning to-warning' : 'bg-gradient-to-r from-error to-error'}`}
-            style={{ width: `${Math.min((val / (target * 2)) * 100, 100)}%` }}
+            className="h-full rounded-full transition-all duration-500"
+            style={{
+              width: `${Math.min((val / (target * 2)) * 100, 100)}%`,
+              backgroundColor: status.color
+            }}
           />
         </div>
         <span className="text-xs text-text-tertiary">Target: {higher === 'bad' ? '<' : '>'}{target}</span>
@@ -239,7 +230,7 @@ export function CardiacHealthPanel({ data, onViewMore }: CardiacHealthPanelProps
               <h4 className="text-xs font-bold text-cardiac uppercase tracking-wider">Coronary CT Angiography</h4>
             </div>
 
-            <div className="bg-surface-2/50 backdrop-blur-sm rounded-theme-lg border border-border/50 p-4">
+            <div className="bg-surface-2/50 backdrop-blur-sm rounded-theme-lg border border-white/10 p-4">
               <div className="flex items-start justify-between mb-4">
                 <div>
                   <h5 className="text-sm font-bold text-text-primary">CCTA Results</h5>
@@ -248,8 +239,8 @@ export function CardiacHealthPanel({ data, onViewMore }: CardiacHealthPanelProps
                     <span className="text-xs text-text-muted">{formatDate(plaqueData?.scanDate)}</span>
                   </div>
                 </div>
-                <div className={`px-3 py-1.5 rounded-theme-md border ${plaqueData?.cadRads <= 2 ? 'bg-success/10 border-success/20' : plaqueData?.cadRads <= 3 ? 'bg-warning/10 border-warning/20' : 'bg-error/10 border-error/20'}`}>
-                  <span className={`text-sm font-bold ${plaqueData?.cadRads <= 2 ? 'text-success' : plaqueData?.cadRads <= 3 ? 'text-warning' : 'text-error'}`}>
+                <div className="px-3 py-1.5 rounded-theme-md border border-white/10 bg-surface-2/50">
+                  <span className="text-sm font-bold text-text-primary">
                     CAD-RADS {plaqueData?.cadRads ?? '—'}
                   </span>
                 </div>
@@ -262,7 +253,7 @@ export function CardiacHealthPanel({ data, onViewMore }: CardiacHealthPanelProps
                 </div>
                 <div className="text-center p-3 bg-surface/50 rounded-theme-md">
                   <p className="text-xs text-text-tertiary mb-1">FFR-CT</p>
-                  <p className={`text-xl font-bold ${(plaqueData?.ffr ?? 1) >= 0.8 ? 'text-success' : 'text-warning'}`}>
+                  <p className="text-xl font-bold text-text-primary">
                     {plaqueData?.ffr ?? '—'}
                   </p>
                 </div>
@@ -272,14 +263,14 @@ export function CardiacHealthPanel({ data, onViewMore }: CardiacHealthPanelProps
                 </div>
                 <div className="text-center p-3 bg-surface/50 rounded-theme-md">
                   <p className="text-xs text-text-tertiary mb-1">LRNC</p>
-                  <p className={`text-xl font-bold ${(plaqueData?.lrnc ?? 0) <= 4 ? 'text-success' : 'text-warning'}`}>
+                  <p className="text-xl font-bold text-text-primary">
                     {plaqueData?.lrnc ?? '—'}<span className="text-xs text-text-muted ml-1">mm³</span>
                   </p>
                 </div>
               </div>
 
               {plaqueData?.cadRadsDescription && (
-                <p className="text-xs text-text-tertiary mt-4 pt-3 border-t border-border/50 leading-relaxed">{plaqueData.cadRadsDescription}</p>
+                <p className="text-xs text-text-tertiary mt-4 pt-3 border-t border-white/10 leading-relaxed">{plaqueData.cadRadsDescription}</p>
               )}
             </div>
           </div>
@@ -287,8 +278,8 @@ export function CardiacHealthPanel({ data, onViewMore }: CardiacHealthPanelProps
           {/* SECTION 2: Lab Results Grid */}
           <div className="space-y-3">
             <div className="flex items-center gap-2">
-              <Beaker size={16} className="text-info" strokeWidth={2.5} />
-              <h4 className="text-xs font-bold text-info uppercase tracking-wider">Laboratory Results</h4>
+              <Beaker size={16} className="text-text-primary" strokeWidth={2.5} />
+              <h4 className="text-xs font-bold text-text-primary uppercase tracking-wider">Laboratory Results</h4>
             </div>
 
             <div className="grid grid-cols-2 lg:grid-cols-3 gap-3">
@@ -304,12 +295,12 @@ export function CardiacHealthPanel({ data, onViewMore }: CardiacHealthPanelProps
           {/* SECTION 3: Trend Graphs */}
           <div className="space-y-3">
             <div className="flex items-center gap-2">
-              <TrendingUp size={16} className="text-success" strokeWidth={2.5} />
-              <h4 className="text-xs font-bold text-success uppercase tracking-wider">Trends</h4>
+              <TrendingUp size={16} className="text-text-primary" strokeWidth={2.5} />
+              <h4 className="text-xs font-bold text-text-primary uppercase tracking-wider">Trends</h4>
             </div>
 
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-3">
-              <div className="bg-surface-2/50 backdrop-blur-sm rounded-theme-lg border border-border/50 p-4">
+              <div className="bg-surface-2/50 backdrop-blur-sm rounded-theme-lg border border-white/10 p-4">
                 <div className="flex items-center justify-between mb-3">
                   <div>
                     <h5 className="text-sm font-bold text-text-primary">Blood Pressure</h5>
@@ -330,7 +321,7 @@ export function CardiacHealthPanel({ data, onViewMore }: CardiacHealthPanelProps
                 </div>
               </div>
 
-              <div className="bg-surface-2/50 backdrop-blur-sm rounded-theme-lg border border-border/50 p-4">
+              <div className="bg-surface-2/50 backdrop-blur-sm rounded-theme-lg border border-white/10 p-4">
                 <div className="flex items-center justify-between mb-3">
                   <div>
                     <h5 className="text-sm font-bold text-text-primary">LDL Cholesterol</h5>
@@ -360,7 +351,7 @@ export function CardiacHealthPanelSkeleton() {
           </div>
           <div className="space-y-3">
             <div className="w-40 h-4 skeleton rounded" />
-            <div className="bg-surface-2/50 rounded-theme-lg border border-border/50 p-4">
+            <div className="bg-surface-2/50 rounded-theme-lg border border-white/10 p-4">
               <div className="w-32 h-5 skeleton rounded mb-3" />
               <div className="grid grid-cols-4 gap-3">
                 {[1, 2, 3, 4].map((i) => (

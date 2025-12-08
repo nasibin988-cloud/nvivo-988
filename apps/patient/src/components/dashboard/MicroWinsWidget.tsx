@@ -48,7 +48,7 @@ export function MicroWinsWidget({
       <div className="relative bg-gradient-to-br from-surface via-surface to-surface-2 rounded-theme-xl border border-border p-5 shadow-card">
         <div className="mb-4">
           <h3 className="font-bold text-text-primary">Micro-Wins</h3>
-          <p className="text-xs text-accent">Personalized for you</p>
+          <p className="text-xs text-purple-400">Personalized for you</p>
         </div>
         <div className="flex items-center gap-3 p-4 rounded-xl bg-white/[0.02] border border-white/[0.05]">
           <div className="p-2 rounded-lg bg-accent/10 border border-accent/20">
@@ -86,10 +86,10 @@ export function MicroWinsWidget({
       <div className="relative flex items-center justify-between mb-5">
         <div>
           <h3 className="font-bold text-text-primary">Micro-Wins</h3>
-          <p className="text-xs text-accent">Personalized for you</p>
+          <p className="text-xs text-purple-400">Personalized for you</p>
         </div>
-        <div className="flex items-center justify-center px-3 py-1 rounded-full bg-success/10 border border-success/20">
-          <span className="text-[11px] font-semibold text-success">{completedCount}/{challenges.length}</span>
+        <div className="flex items-center justify-center px-3 py-1 rounded-full bg-surface-2 border border-border">
+          <span className="text-[11px] font-semibold text-text-primary">{completedCount}/{challenges.length}</span>
         </div>
       </div>
 
@@ -256,7 +256,7 @@ function AllCompleteState({ completedCount, total }: { completedCount: number; t
       {/* Header */}
       <div className="relative mb-4">
         <h3 className="font-bold text-text-primary">Micro-Wins</h3>
-        <p className="text-xs text-accent">Personalized for you</p>
+        <p className="text-xs text-purple-400">Personalized for you</p>
       </div>
 
       {/* Celebration content */}

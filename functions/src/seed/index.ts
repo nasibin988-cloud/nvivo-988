@@ -33,7 +33,7 @@ export async function seedTestPatient(): Promise<{ success: boolean; patientId: 
     await seedMicroWins({
       patientId: TEST_PATIENT_ID,
       daysToSeed: 7,
-      challengesPerDay: 3,
+      challengesPerDay: 5,
       completionRate: 0.7,
     });
 

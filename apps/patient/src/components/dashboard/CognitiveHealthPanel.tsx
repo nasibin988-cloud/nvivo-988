@@ -27,7 +27,7 @@ function TrendLabel({ direction, color = 'text-text-secondary' }: { direction?: 
   const config: Record<TrendDirection, { icon: typeof TrendingUp; label: string; colorClass: string }> = {
     increasing: { icon: TrendingUp, label: 'Increasing', colorClass: 'text-success' },
     decreasing: { icon: TrendingDown, label: 'Decreasing', colorClass: 'text-warning' },
-    stable: { icon: Minus, label: 'Stable', colorClass: 'text-info' },
+    stable: { icon: Minus, label: 'Stable', colorClass: 'text-text-secondary' },
   };
 
   const { icon: Icon, label, colorClass } = config[direction];
@@ -48,12 +48,6 @@ function formatDate(dateString: string | undefined): string {
   const day = String(date.getDate()).padStart(2, '0');
   const year = String(date.getFullYear()).slice(-2);
   return `${month}/${day}/${year}`;
-}
-
-function getStatusColor(status: RiskStatus): string {
-  if (status === 'on-target') return 'text-success';
-  if (status === 'attention') return 'text-warning';
-  return 'text-error';
 }
 
 function getStatusLabel(status: RiskStatus): { label: string; color: string } {
@@ -80,13 +74,6 @@ function getDassColor(score: number, thresholds: { normal: number; mild: number;
   if (score <= thresholds.mild) return '#06B6D4'; // info - cyan
   if (score <= thresholds.moderate) return '#F59E0B'; // warning - amber
   return '#EF4444'; // error - red
-}
-
-function getDassTextColor(score: number, thresholds: { normal: number; mild: number; moderate: number }): string {
-  if (score <= thresholds.normal) return 'text-success';
-  if (score <= thresholds.mild) return 'text-info';
-  if (score <= thresholds.moderate) return 'text-warning';
-  return 'text-error';
 }
 
 // Dual-line graph component for trends (with labels)
@@ -266,7 +253,7 @@ export function CognitiveHealthPanel({ data, onViewMore }: CognitiveHealthPanelP
 
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-3">
               {/* Brain MRI */}
-              <div className="bg-surface-2/50 backdrop-blur-sm rounded-theme-lg border border-border/50 p-4 hover:bg-surface-2 transition-all duration-300">
+              <div className="bg-surface-2/50 backdrop-blur-sm rounded-theme-lg border border-white/10 p-4 hover:bg-surface-2 transition-all duration-300">
                 <div className="flex items-start justify-between mb-2">
                   <div className="flex items-center gap-2">
                     <div className="p-1.5 rounded-theme-sm bg-gradient-to-br from-info/10 to-info/5 border border-info/20">
@@ -288,7 +275,7 @@ export function CognitiveHealthPanel({ data, onViewMore }: CognitiveHealthPanelP
               </div>
 
               {/* MoCA */}
-              <div className="bg-surface-2/50 backdrop-blur-sm rounded-theme-lg border border-border/50 p-4 hover:bg-surface-2 transition-all duration-300">
+              <div className="bg-surface-2/50 backdrop-blur-sm rounded-theme-lg border border-white/10 p-4 hover:bg-surface-2 transition-all duration-300">
                 <div className="flex items-start justify-between mb-2">
                   <div>
                     <p className="text-xs text-text-tertiary mb-1">Cognitive Function (MoCA)</p>
@@ -307,7 +294,7 @@ export function CognitiveHealthPanel({ data, onViewMore }: CognitiveHealthPanelP
                     </span>
                   </div>
                 </div>
-                <div className="h-2 bg-surface-3 rounded-full overflow-hidden border border-border/50">
+                <div className="h-2 bg-surface-3 rounded-full overflow-hidden border border-white/10">
                   <div
                     className="h-full bg-gradient-to-r from-sleep to-accent rounded-full transition-all duration-700"
                     style={{ width: `${((cognitiveAssessment?.moca ?? 0) / 30) * 100}%` }}
@@ -320,11 +307,11 @@ export function CognitiveHealthPanel({ data, onViewMore }: CognitiveHealthPanelP
           {/* PILLAR 2: Stroke Prevention */}
           <div className="space-y-3">
             <div className="flex items-center gap-2">
-              <Activity size={16} className="text-error" strokeWidth={2.5} />
-              <h4 className="text-xs font-bold text-error uppercase tracking-wider">Stroke Prevention</h4>
+              <Activity size={16} className="text-text-primary" strokeWidth={2.5} />
+              <h4 className="text-xs font-bold text-text-primary uppercase tracking-wider">Stroke Prevention</h4>
             </div>
 
-            <div className="bg-surface-2/50 backdrop-blur-sm rounded-theme-lg border border-border/50 p-4 hover:bg-surface-2 transition-all duration-300">
+            <div className="bg-surface-2/50 backdrop-blur-sm rounded-theme-lg border border-white/10 p-4 hover:bg-surface-2 transition-all duration-300">
               <div className="flex flex-col md:flex-row divide-y md:divide-y-0 md:divide-x divide-border/50">
                 <div className="pb-3 md:pb-0 md:pr-6 flex-1">
                   <div className="flex items-center justify-between mb-1">
@@ -334,7 +321,7 @@ export function CognitiveHealthPanel({ data, onViewMore }: CognitiveHealthPanelP
                     </span>
                   </div>
                   <div className="flex items-baseline gap-2 mb-0.5">
-                    <span className={`text-xl font-bold ${getStatusColor(strokeRisk?.bloodPressure?.status ?? 'on-target')}`}>
+                    <span className="text-xl font-bold text-text-primary">
                       {strokeRisk?.bloodPressure?.value ?? '—'}
                     </span>
                     <span className="text-xs text-text-muted">mmHg</span>
@@ -350,7 +337,7 @@ export function CognitiveHealthPanel({ data, onViewMore }: CognitiveHealthPanelP
                     </span>
                   </div>
                   <div className="flex items-baseline gap-2 mb-0.5">
-                    <span className={`text-xl font-bold ${getStatusColor(strokeRisk?.hba1c?.status ?? 'on-target')}`}>
+                    <span className="text-xl font-bold text-text-primary">
                       {strokeRisk?.hba1c?.value ?? '—'}
                     </span>
                     <span className="text-xs text-text-muted">%</span>
@@ -366,7 +353,7 @@ export function CognitiveHealthPanel({ data, onViewMore }: CognitiveHealthPanelP
                     </span>
                   </div>
                   <div className="flex items-baseline gap-2 mb-0.5">
-                    <span className={`text-xl font-bold ${getStatusColor(strokeRisk?.carotidPlaque?.status ?? 'on-target')}`}>
+                    <span className="text-xl font-bold text-text-primary">
                       {strokeRisk?.carotidPlaque?.value === 'None' ? 'No Plaque' : strokeRisk?.carotidPlaque?.value ?? '—'}
                     </span>
                   </div>
@@ -378,12 +365,12 @@ export function CognitiveHealthPanel({ data, onViewMore }: CognitiveHealthPanelP
           {/* PILLAR 3: Mental Wellbeing */}
           <div className="space-y-3">
             <div className="flex items-center gap-2">
-              <Heart size={16} className="text-success" strokeWidth={2.5} />
-              <h4 className="text-xs font-bold text-success uppercase tracking-wider">Mental Wellbeing</h4>
+              <Heart size={16} className="text-text-primary" strokeWidth={2.5} />
+              <h4 className="text-xs font-bold text-text-primary uppercase tracking-wider">Mental Wellbeing</h4>
             </div>
 
             {/* DASS-21 */}
-            <div className="bg-surface-2/50 backdrop-blur-sm rounded-theme-lg border border-border/50 p-4 hover:bg-surface-2 transition-all duration-300">
+            <div className="bg-surface-2/50 backdrop-blur-sm rounded-theme-lg border border-white/10 p-4 hover:bg-surface-2 transition-all duration-300">
               <div className="flex items-center justify-between mb-4">
                 <div>
                   <h5 className="text-sm font-bold text-text-primary">Mental Health Assessment (DASS-21)</h5>
@@ -399,12 +386,12 @@ export function CognitiveHealthPanel({ data, onViewMore }: CognitiveHealthPanelP
                 <div>
                   <div className="flex items-center justify-between mb-1">
                     <p className="text-xs font-medium text-text-secondary">Depression</p>
-                    <span className={`text-xs font-bold ${getDassTextColor(mentalHealth?.dass21?.depression ?? 0, { normal: 9, mild: 13, moderate: 20 })}`}>
+                    <span className="text-xs font-bold text-text-primary">
                       {getDassLabel(mentalHealth?.dass21?.depression ?? 0, { normal: 9, mild: 13, moderate: 20 })}
                     </span>
                   </div>
                   <div className="flex items-center gap-2">
-                    <div className="flex-1 h-1.5 bg-surface-3 rounded-full overflow-hidden border border-border/30">
+                    <div className="flex-1 h-1.5 bg-surface-3 rounded-full overflow-hidden border border-white/10">
                       <div
                         className="h-full rounded-full transition-all duration-700"
                         style={{
@@ -413,7 +400,7 @@ export function CognitiveHealthPanel({ data, onViewMore }: CognitiveHealthPanelP
                         }}
                       />
                     </div>
-                    <span className={`text-sm font-bold ${getDassTextColor(mentalHealth?.dass21?.depression ?? 0, { normal: 9, mild: 13, moderate: 20 })}`}>
+                    <span className="text-sm font-bold text-text-primary">
                       {mentalHealth?.dass21?.depression ?? '—'}<span className="text-text-muted font-normal">/42</span>
                     </span>
                   </div>
@@ -423,12 +410,12 @@ export function CognitiveHealthPanel({ data, onViewMore }: CognitiveHealthPanelP
                 <div>
                   <div className="flex items-center justify-between mb-1">
                     <p className="text-xs font-medium text-text-secondary">Anxiety</p>
-                    <span className={`text-xs font-bold ${getDassTextColor(mentalHealth?.dass21?.anxiety ?? 0, { normal: 7, mild: 9, moderate: 14 })}`}>
+                    <span className="text-xs font-bold text-text-primary">
                       {getDassLabel(mentalHealth?.dass21?.anxiety ?? 0, { normal: 7, mild: 9, moderate: 14 })}
                     </span>
                   </div>
                   <div className="flex items-center gap-2">
-                    <div className="flex-1 h-1.5 bg-surface-3 rounded-full overflow-hidden border border-border/30">
+                    <div className="flex-1 h-1.5 bg-surface-3 rounded-full overflow-hidden border border-white/10">
                       <div
                         className="h-full rounded-full transition-all duration-700"
                         style={{
@@ -437,7 +424,7 @@ export function CognitiveHealthPanel({ data, onViewMore }: CognitiveHealthPanelP
                         }}
                       />
                     </div>
-                    <span className={`text-sm font-bold ${getDassTextColor(mentalHealth?.dass21?.anxiety ?? 0, { normal: 7, mild: 9, moderate: 14 })}`}>
+                    <span className="text-sm font-bold text-text-primary">
                       {mentalHealth?.dass21?.anxiety ?? '—'}<span className="text-text-muted font-normal">/42</span>
                     </span>
                   </div>
@@ -447,12 +434,12 @@ export function CognitiveHealthPanel({ data, onViewMore }: CognitiveHealthPanelP
                 <div>
                   <div className="flex items-center justify-between mb-1">
                     <p className="text-xs font-medium text-text-secondary">Stress</p>
-                    <span className={`text-xs font-bold ${getDassTextColor(mentalHealth?.dass21?.stress ?? 0, { normal: 14, mild: 18, moderate: 25 })}`}>
+                    <span className="text-xs font-bold text-text-primary">
                       {getDassLabel(mentalHealth?.dass21?.stress ?? 0, { normal: 14, mild: 18, moderate: 25 })}
                     </span>
                   </div>
                   <div className="flex items-center gap-2">
-                    <div className="flex-1 h-1.5 bg-surface-3 rounded-full overflow-hidden border border-border/30">
+                    <div className="flex-1 h-1.5 bg-surface-3 rounded-full overflow-hidden border border-white/10">
                       <div
                         className="h-full rounded-full transition-all duration-700"
                         style={{
@@ -461,7 +448,7 @@ export function CognitiveHealthPanel({ data, onViewMore }: CognitiveHealthPanelP
                         }}
                       />
                     </div>
-                    <span className={`text-sm font-bold ${getDassTextColor(mentalHealth?.dass21?.stress ?? 0, { normal: 14, mild: 18, moderate: 25 })}`}>
+                    <span className="text-sm font-bold text-text-primary">
                       {mentalHealth?.dass21?.stress ?? '—'}<span className="text-text-muted font-normal">/42</span>
                     </span>
                   </div>
@@ -472,7 +459,7 @@ export function CognitiveHealthPanel({ data, onViewMore }: CognitiveHealthPanelP
             {/* LINE GRAPH Charts Grid */}
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-3">
               {/* Sleep Quality + Hours Chart */}
-              <div className="bg-surface-2/50 backdrop-blur-sm rounded-theme-lg border border-border/50 p-4 hover:bg-surface-2 transition-all duration-300">
+              <div className="bg-surface-2/50 backdrop-blur-sm rounded-theme-lg border border-white/10 p-4 hover:bg-surface-2 transition-all duration-300">
                 <div className="flex items-center justify-between mb-3">
                   <div>
                     <h5 className="text-sm font-bold text-text-primary">Sleep</h5>
@@ -493,7 +480,7 @@ export function CognitiveHealthPanel({ data, onViewMore }: CognitiveHealthPanelP
               </div>
 
               {/* Mood + Vitality Chart */}
-              <div className="bg-surface-2/50 backdrop-blur-sm rounded-theme-lg border border-border/50 p-4 hover:bg-surface-2 transition-all duration-300">
+              <div className="bg-surface-2/50 backdrop-blur-sm rounded-theme-lg border border-white/10 p-4 hover:bg-surface-2 transition-all duration-300">
                 <div className="flex items-center justify-between mb-3">
                   <div>
                     <h5 className="text-sm font-bold text-text-primary">Mood & Vitality</h5>
@@ -532,7 +519,7 @@ export function CognitiveHealthPanelSkeleton() {
             <div className="w-40 h-4 skeleton rounded" />
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-3">
               {[1, 2].map((i) => (
-                <div key={i} className="bg-surface-2/50 rounded-theme-lg border border-border/50 p-4">
+                <div key={i} className="bg-surface-2/50 rounded-theme-lg border border-white/10 p-4">
                   <div className="w-24 h-4 skeleton rounded mb-2" />
                   <div className="w-16 h-8 skeleton rounded" />
                 </div>

@@ -36,7 +36,7 @@ function Orb({
         style={{ backgroundColor: color }}
       />
       {/* Orb */}
-      <div className="relative w-[52px] h-[52px] rounded-full bg-surface-elevated border border-white/5 flex flex-col items-center justify-center overflow-hidden">
+      <div className="relative w-[52px] h-[52px] rounded-full bg-surface-2 border border-white/5 flex flex-col items-center justify-center overflow-hidden">
         {progress !== undefined && (
           <div
             className="absolute bottom-0 left-0 right-0 transition-all duration-700"
@@ -139,11 +139,11 @@ export function DashboardHeroSkeleton(): JSX.Element {
       <div className="grid grid-cols-[1fr_1fr_auto_1fr_1fr] gap-2 items-center min-h-[180px]">
         {/* Streak skeleton */}
         <div className="flex justify-center">
-          <div className="w-16 h-16 rounded-full bg-surface-elevated" />
+          <div className="w-16 h-16 rounded-full bg-surface-2" />
         </div>
         {/* Sleep skeleton */}
         <div className="flex justify-center">
-          <div className="w-[52px] h-[52px] rounded-full bg-surface-elevated" />
+          <div className="w-[52px] h-[52px] rounded-full bg-surface-2" />
         </div>
         {/* Ring skeleton */}
         <div className="flex justify-center">
@@ -151,11 +151,11 @@ export function DashboardHeroSkeleton(): JSX.Element {
         </div>
         {/* Meals skeleton */}
         <div className="flex justify-center">
-          <div className="w-[52px] h-[52px] rounded-full bg-surface-elevated" />
+          <div className="w-[52px] h-[52px] rounded-full bg-surface-2" />
         </div>
         {/* Meds skeleton */}
         <div className="flex justify-center">
-          <div className="w-[52px] h-[52px] rounded-full bg-surface-elevated" />
+          <div className="w-[52px] h-[52px] rounded-full bg-surface-2" />
         </div>
       </div>
     </div>

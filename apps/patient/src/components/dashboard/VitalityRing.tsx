@@ -761,11 +761,11 @@ export function VitalityRingSkeleton({
           />
         </svg>
         <div className="absolute inset-0 flex flex-col items-center justify-center gap-2">
-          <div className="w-14 h-10 bg-surface-elevated rounded" />
-          <div className="w-16 h-4 bg-surface-elevated rounded" />
+          <div className="w-14 h-10 bg-surface-2 rounded" />
+          <div className="w-16 h-4 bg-surface-2 rounded" />
         </div>
       </div>
-      <div className="w-14 h-3 bg-surface-elevated rounded mt-3" />
+      <div className="w-14 h-3 bg-surface-2 rounded mt-3" />
     </div>
   );
 }

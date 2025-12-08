@@ -4,7 +4,6 @@ import { DesignVariantProvider, useDesignVariants } from './contexts/DesignVaria
 import LoginScreen from './screens/Login/LoginScreen';
 import DashboardScreen from './screens/Dashboard/DashboardScreen';
 import { BottomNav } from './components/layout/BottomNav';
-import { VariantSelector } from './components/dev/VariantSelector';
 
 function ProtectedRoute({ children }: { children: React.ReactNode }) {
   const { user, loading } = useAuth();
@@ -85,7 +84,6 @@ function AppContent() {
       </Routes>
 
       {user && <BottomNav variant={variants.nav} />}
-      {user && <VariantSelector />}
     </div>
   );
 }

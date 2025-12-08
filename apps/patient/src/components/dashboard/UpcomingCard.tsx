@@ -220,7 +220,7 @@ function Design1({
             onClick={() => onViewAppointment?.(appointment!.id)}
             className="w-full text-left"
           >
-            <div className="bg-surface-2/50 backdrop-blur-sm rounded-theme-lg border border-border/50 p-4 hover:bg-surface-2 transition-all duration-300">
+            <div className="bg-surface-2/50 backdrop-blur-sm rounded-theme-lg border border-white/10 p-4 hover:bg-surface-2 transition-all duration-300">
               <div className="flex items-start gap-4">
                 {/* Provider Photo */}
                 <div className="relative flex-shrink-0">
@@ -249,11 +249,7 @@ function Design1({
                       <p className="text-sm text-text-secondary">{appointment!.specialty}</p>
                     </div>
                     <span
-                      className={`flex-shrink-0 text-xs px-2.5 py-1 rounded-full font-medium ${
-                        isTelehealth
-                          ? 'bg-accent-muted text-accent'
-                          : 'bg-success-muted text-success'
-                      }`}
+                      className="flex-shrink-0 text-xs px-2.5 py-1 rounded-full font-medium bg-surface-2 border border-border text-text-primary"
                     >
                       {isTelehealth ? 'Video' : 'In-person'}
                     </span>
@@ -267,9 +263,9 @@ function Design1({
               </div>
 
               {/* Date/Time Row */}
-              <div className="flex items-center gap-6 mt-4 pt-4 border-t border-border/50">
+              <div className="flex items-center gap-6 mt-4 pt-4 border-t border-white/10">
                 <div className="flex items-center gap-2">
-                  <Calendar size={14} className="text-info" />
+                  <Calendar size={14} className="text-text-tertiary" />
                   <span className="text-sm font-medium text-text-primary">
                     {formatDate(appointment!.date)}
                   </span>
@@ -294,10 +290,10 @@ function Design1({
             {!isTelehealth && appointment!.location && (
               <button
                 onClick={() => handleOpenMaps(appointment!.location!)}
-                className="flex-1 flex items-center justify-center gap-2 py-3 px-4 bg-gradient-to-r from-success/10 to-success/5 hover:from-success/20 hover:to-success/10 border border-success/20 rounded-theme-md transition-all duration-300 group/btn"
+                className="flex-1 flex items-center justify-center gap-2 py-3 px-4 bg-gradient-to-r from-surface-2 to-surface-2/80 hover:from-surface-3 hover:to-surface-2 border border-border rounded-theme-md transition-all duration-300 group/btn"
               >
-                <Navigation size={16} className="text-success group-hover/btn:scale-110 transition-transform" />
-                <span className="text-sm font-medium text-success">Get Directions</span>
+                <Navigation size={16} className="text-text-primary group-hover/btn:scale-110 transition-transform" />
+                <span className="text-sm font-medium text-text-primary">Get Directions</span>
               </button>
             )}
 
@@ -317,16 +313,16 @@ function Design1({
             {/* Add to Calendar Button */}
             <button
               onClick={() => handleAddToCalendar(appointment!)}
-              className="flex-1 flex items-center justify-center gap-2 py-3 px-4 bg-gradient-to-r from-info/10 to-info/5 hover:from-info/20 hover:to-info/10 border border-info/20 rounded-theme-md transition-all duration-300 group/btn"
+              className="flex-1 flex items-center justify-center gap-2 py-3 px-4 bg-gradient-to-r from-surface-2 to-surface-2/80 hover:from-surface-3 hover:to-surface-2 border border-border rounded-theme-md transition-all duration-300 group/btn"
             >
-              <CalendarPlus size={16} className="text-info group-hover/btn:scale-110 transition-transform" />
-              <span className="text-sm font-medium text-info">Add to Calendar</span>
+              <CalendarPlus size={16} className="text-text-primary group-hover/btn:scale-110 transition-transform" />
+              <span className="text-sm font-medium text-text-primary">Add to Calendar</span>
             </button>
           </div>
 
           {/* Location Preview (for in-person) */}
           {!isTelehealth && appointment!.location && (
-            <div className="mt-4 p-3 bg-surface-2/30 rounded-theme-md border border-border/30">
+            <div className="mt-4 p-3 bg-surface-2/30 rounded-theme-md border border-white/10">
               <div className="flex items-start gap-2">
                 <MapPin size={14} className="text-text-tertiary mt-0.5 flex-shrink-0" />
                 <div className="text-xs text-text-tertiary">
@@ -402,7 +398,7 @@ function Design2({
               </div>
 
               {/* Content */}
-              <div className="flex-1 bg-surface-2/50 backdrop-blur-sm rounded-theme-lg border border-border/50 p-4 hover:bg-surface-2 transition-all duration-300">
+              <div className="flex-1 bg-surface-2/50 backdrop-blur-sm rounded-theme-lg border border-white/10 p-4 hover:bg-surface-2 transition-all duration-300">
                 <div className="flex items-start gap-3">
                   {appointment!.providerPhoto ? (
                     <img
@@ -559,7 +555,7 @@ function Design3({
             onClick={() => onViewAppointment?.(appointment!.id)}
             className="w-full text-left"
           >
-            <div className="flex items-center gap-4 p-4 bg-surface-2/50 backdrop-blur-sm rounded-theme-lg border border-border/50 hover:bg-surface-2 transition-all duration-300">
+            <div className="flex items-center gap-4 p-4 bg-surface-2/50 backdrop-blur-sm rounded-theme-lg border border-white/10 hover:bg-surface-2 transition-all duration-300">
               {appointment!.providerPhoto ? (
                 <img
                   src={appointment!.providerPhoto}
@@ -599,7 +595,7 @@ function Design3({
           </button>
 
           {showDetails && (
-            <div className="mt-3 p-4 bg-surface-2/30 rounded-theme-md border border-border/30 space-y-3">
+            <div className="mt-3 p-4 bg-surface-2/30 rounded-theme-md border border-white/10 space-y-3">
               {appointment!.prepInstructions && (
                 <div>
                   <p className="text-xs font-medium text-text-secondary mb-1">Preparation</p>
@@ -705,7 +701,7 @@ export function UpcomingCardSkeleton(): JSX.Element {
           </div>
         </div>
 
-        <div className="bg-surface-2/50 rounded-theme-lg border border-border/50 p-4">
+        <div className="bg-surface-2/50 rounded-theme-lg border border-white/10 p-4">
           <div className="flex items-start gap-4">
             <div className="w-14 h-14 skeleton rounded-full" />
             <div className="flex-1">
@@ -714,7 +710,7 @@ export function UpcomingCardSkeleton(): JSX.Element {
               <div className="w-full h-3 skeleton rounded mt-3" />
             </div>
           </div>
-          <div className="flex gap-6 mt-4 pt-4 border-t border-border/50">
+          <div className="flex gap-6 mt-4 pt-4 border-t border-white/10">
             {[1, 2, 3].map((i) => (
               <div key={i} className="flex items-center gap-2">
                 <div className="w-4 h-4 skeleton rounded" />
