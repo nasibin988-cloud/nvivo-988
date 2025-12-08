@@ -130,9 +130,9 @@ function TrendLineGraph({
         {showArea && (
           <path d={areaPath} fill={`url(#fill-cardiac-${color}-${label})`} stroke="none" />
         )}
-        <path d={path} fill="none" stroke={`url(#gradient-cardiac-${color}-${label})`} strokeWidth="2" strokeLinecap="round" />
+        <path d={path} fill="none" stroke={`url(#gradient-cardiac-${color}-${label})`} strokeWidth="1.5" strokeLinecap="round" />
         {path2 && (
-          <path d={path2} fill="none" stroke={`var(--color-${color2 || 'info'})`} strokeWidth="2" strokeLinecap="round" />
+          <path d={path2} fill="none" stroke={`var(--color-${color2 || 'info'})`} strokeWidth="1.5" strokeLinecap="round" />
         )}
       </svg>
     </div>

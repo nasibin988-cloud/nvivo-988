@@ -10,6 +10,7 @@ import SchedulerTab from './SchedulerTab';
 import TelehealthTab from './TelehealthTab';
 import MessagingTab from './MessagingTab';
 import FamilyHubTab from './FamilyHubTab';
+import TabBanner from '../../components/layout/TabBanner';
 
 type CareTab = 'team' | 'scheduler' | 'telehealth' | 'messaging' | 'family';
 
@@ -27,14 +28,11 @@ export default function CareScreen() {
   return (
     <div className="min-h-screen bg-background text-text-primary pb-24">
       {/* Header */}
-      <div className="px-4 pt-4 pb-2">
-        <h1 className="text-2xl font-bold text-text-primary">Care</h1>
-        <p className="text-sm text-text-secondary mt-1">Manage your care team and appointments</p>
-      </div>
+      <TabBanner tab="care" design={2} />
 
       {/* Tab Navigation */}
       <div className="px-4 py-3">
-        <div className="flex gap-2 overflow-x-auto no-scrollbar">
+        <div className="grid grid-cols-5 gap-2">
           {tabs.map((tab) => {
             const Icon = tab.icon;
             const isActive = activeTab === tab.id;
@@ -42,14 +40,14 @@ export default function CareScreen() {
               <button
                 key={tab.id}
                 onClick={() => setActiveTab(tab.id)}
-                className={`flex items-center gap-2 px-4 py-2.5 rounded-xl whitespace-nowrap transition-all duration-200 ${
+                className={`flex flex-col items-center gap-1 py-2.5 rounded-xl transition-all duration-200 ${
                   isActive
                     ? 'bg-accent/15 border border-accent/30 text-accent'
                     : 'bg-surface border border-border text-text-secondary hover:bg-surface-2 hover:text-text-primary'
                 }`}
               >
                 <Icon size={16} />
-                <span className="text-sm font-medium">{tab.label}</span>
+                <span className="text-[11px] font-medium">{tab.label}</span>
               </button>
             );
           })}

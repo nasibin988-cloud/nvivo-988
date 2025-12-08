@@ -163,9 +163,9 @@ function DualTrendLineGraph({
             <path d={areaPath} fill={`url(#fill-cog-${uniqueId})`} stroke="none" />
           )}
           {/* Line 1 */}
-          {path1 && <path d={path1} fill="none" stroke={color1} strokeWidth="2" strokeLinecap="round" />}
+          {path1 && <path d={path1} fill="none" stroke={color1} strokeWidth="1.5" strokeLinecap="round" />}
           {/* Line 2 */}
-          {path2 && <path d={path2} fill="none" stroke={color2} strokeWidth="2" strokeLinecap="round" />}
+          {path2 && <path d={path2} fill="none" stroke={color2} strokeWidth="1.5" strokeLinecap="round" />}
         </svg>
       </div>
       {/* Legend */}

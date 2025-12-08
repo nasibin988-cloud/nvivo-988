@@ -134,7 +134,7 @@ export default function TelehealthTab() {
                     </div>
                   </div>
                   {apt.canJoin ? (
-                    <button className="flex items-center gap-2 px-5 py-2.5 rounded-xl bg-gradient-to-r from-emerald-500 to-emerald-600 text-white text-sm font-medium shadow-[0_4px_16px_rgba(16,185,129,0.3)] hover:shadow-[0_6px_20px_rgba(16,185,129,0.4)] hover:scale-[1.02] transition-all">
+                    <button className="flex items-center gap-2 px-5 py-2.5 rounded-xl bg-emerald-500/15 border border-emerald-500/30 text-emerald-400 text-sm font-medium hover:bg-emerald-500/25 hover:border-emerald-500/50 transition-all">
                       <Video size={16} />
                       Join Now
                     </button>

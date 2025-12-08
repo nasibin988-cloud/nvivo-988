@@ -93,9 +93,12 @@ interface Attachment {
 
 export default function MessagingTab() {
   const [selectedConvo, setSelectedConvo] = useState<string | null>(null);
+  const [showNewMessage, setShowNewMessage] = useState(false);
   const [messageInput, setMessageInput] = useState('');
   const [showEmojiPicker, setShowEmojiPicker] = useState(false);
   const [attachments, setAttachments] = useState<Attachment[]>([]);
+  const [newMessageRecipient, setNewMessageRecipient] = useState('');
+  const [newMessageText, setNewMessageText] = useState('');
   const fileInputRef = useRef<HTMLInputElement>(null);
   const imageInputRef = useRef<HTMLInputElement>(null);
 
@@ -135,6 +138,122 @@ export default function MessagingTab() {
     if (bytes < 1024 * 1024) return (bytes / 1024).toFixed(1) + ' KB';
     return (bytes / (1024 * 1024)).toFixed(1) + ' MB';
   };
+
+  // New Message View
+  if (showNewMessage) {
+    const availableRecipients = [
+      { id: '1', name: 'Dr. Elizabeth Warren', title: 'Primary Care Physician', avatarUrl: 'https://images.unsplash.com/photo-1594824476967-48c8b964273f?w=200&h=200&fit=crop&crop=face&q=80' },
+      { id: '2', name: 'Sarah Bennett', title: 'Care Coordinator', avatarUrl: 'https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=200&h=200&fit=crop&crop=face&q=80' },
+      { id: '3', name: 'Dr. Michael Anderson', title: 'Cardiologist', avatarUrl: 'https://images.unsplash.com/photo-1612349317150-e413f6a5b16d?w=200&h=200&fit=crop&crop=face&q=80' },
+      { id: '4', name: 'Dr. Jennifer Collins', title: 'Nutritionist', avatarUrl: 'https://images.unsplash.com/photo-1551836022-d5d88e9218df?w=200&h=200&fit=crop&crop=face&q=80' },
+      { id: '5', name: 'Dr. Robert Campbell', title: 'Psychologist', avatarUrl: 'https://images.unsplash.com/photo-1622253692010-333f2da6031d?w=200&h=200&fit=crop&crop=face&q=80' },
+    ];
+
+    return (
+      <div className="flex flex-col h-[calc(100vh-220px)] -mx-4 -my-2">
+        {/* Header */}
+        <div className="relative px-4 py-3 bg-gradient-to-b from-surface to-transparent border-b border-white/[0.04]">
+          <div className="relative flex items-center gap-3">
+            <button
+              onClick={() => {
+                setShowNewMessage(false);
+                setNewMessageRecipient('');
+                setNewMessageText('');
+              }}
+              className="p-2 -ml-2 rounded-xl hover:bg-white/[0.06] text-text-secondary hover:text-text-primary transition-all"
+            >
+              <ArrowLeft size={20} />
+            </button>
+            <div className="flex-1">
+              <h4 className="font-medium text-text-primary">New Message</h4>
+              <p className="text-xs text-text-muted">Select a recipient</p>
+            </div>
+          </div>
+        </div>
+
+        {/* Recipient Selection */}
+        {!newMessageRecipient ? (
+          <div className="flex-1 overflow-y-auto px-4 py-4 space-y-2">
+            <p className="text-xs text-text-muted mb-3 px-1">Your Care Team</p>
+            {availableRecipients.map((recipient) => (
+              <button
+                key={recipient.id}
+                onClick={() => setNewMessageRecipient(recipient.id)}
+                className="w-full flex items-center gap-3 p-3 rounded-xl bg-surface border border-white/[0.04] hover:bg-surface-2 hover:border-white/[0.08] transition-all text-left"
+              >
+                <img
+                  src={recipient.avatarUrl}
+                  alt={recipient.name}
+                  className="w-10 h-10 rounded-full object-cover ring-2 ring-white/5"
+                />
+                <div className="flex-1">
+                  <h4 className="text-sm font-medium text-text-primary">{recipient.name}</h4>
+                  <p className="text-xs text-text-muted">{recipient.title}</p>
+                </div>
+              </button>
+            ))}
+          </div>
+        ) : (
+          <>
+            {/* Selected Recipient */}
+            <div className="px-4 py-3 border-b border-white/[0.04]">
+              <div className="flex items-center gap-3">
+                <span className="text-xs text-text-muted">To:</span>
+                <div className="flex items-center gap-2 px-3 py-1.5 rounded-full bg-blue-500/10 border border-blue-500/20">
+                  <img
+                    src={availableRecipients.find(r => r.id === newMessageRecipient)?.avatarUrl}
+                    alt=""
+                    className="w-5 h-5 rounded-full object-cover"
+                  />
+                  <span className="text-xs text-blue-400 font-medium">
+                    {availableRecipients.find(r => r.id === newMessageRecipient)?.name}
+                  </span>
+                  <button
+                    onClick={() => setNewMessageRecipient('')}
+                    className="ml-1 text-blue-400/60 hover:text-blue-400"
+                  >
+                    <X size={12} />
+                  </button>
+                </div>
+              </div>
+            </div>
+
+            {/* Message Compose Area */}
+            <div className="flex-1 px-4 py-4">
+              <textarea
+                value={newMessageText}
+                onChange={(e) => setNewMessageText(e.target.value)}
+                placeholder="Type your message..."
+                className="w-full h-full min-h-[200px] bg-transparent text-sm text-text-primary placeholder:text-text-muted focus:outline-none resize-none"
+                autoFocus
+              />
+            </div>
+
+            {/* Send Button */}
+            <div className="px-4 py-3 border-t border-white/[0.04]">
+              <button
+                onClick={() => {
+                  // In real app, would send the message
+                  setShowNewMessage(false);
+                  setNewMessageRecipient('');
+                  setNewMessageText('');
+                }}
+                disabled={!newMessageText.trim()}
+                className={`w-full py-3 rounded-xl text-sm font-medium transition-all flex items-center justify-center gap-2 ${
+                  newMessageText.trim()
+                    ? 'bg-blue-500/15 border border-blue-500/30 text-blue-400 hover:bg-blue-500/25'
+                    : 'bg-surface border border-border text-text-muted cursor-not-allowed'
+                }`}
+              >
+                <Send size={16} />
+                Send Message
+              </button>
+            </div>
+          </>
+        )}
+      </div>
+    );
+  }
 
   // Conversation Detail View
   if (activeConvo) {
@@ -348,7 +467,10 @@ export default function MessagingTab() {
             className="w-full pl-10 pr-4 py-3 bg-surface rounded-xl border border-white/[0.04] text-sm text-text-primary placeholder:text-text-muted focus:outline-none focus:border-blue-500/30 focus:shadow-[0_0_20px_rgba(59,130,246,0.1)] transition-all"
           />
         </div>
-        <button className="flex items-center gap-2 px-4 py-3 rounded-xl bg-gradient-to-r from-blue-500 to-blue-600 text-white text-sm font-medium shadow-[0_4px_16px_rgba(59,130,246,0.3)] hover:shadow-[0_6px_20px_rgba(59,130,246,0.4)] hover:scale-[1.02] transition-all">
+        <button
+          onClick={() => setShowNewMessage(true)}
+          className="flex items-center gap-2 px-4 py-3 rounded-xl bg-blue-500/15 border border-blue-500/30 text-blue-400 text-sm font-medium hover:bg-blue-500/25 hover:border-blue-500/50 transition-all"
+        >
           <Plus size={18} />
           New
         </button>

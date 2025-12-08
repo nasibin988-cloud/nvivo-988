@@ -36,3 +36,13 @@ export {
   type FoodLog,
   type MealType,
 } from './useFoodLogStatus';
+export {
+  useHealthTrends,
+  getSparklineData,
+  calculateTrendChange,
+  type TimeRange,
+  type MetricCategory,
+  type MetricDataPoint,
+  type LatestMetric,
+  type HealthTrendsData,
+} from './useHealthTrends';

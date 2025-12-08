@@ -7,8 +7,6 @@ import { useState } from 'react';
 import {
   BookOpen,
   Search,
-  Clock,
-  ChevronRight,
   Sparkles,
   Heart,
   Brain,
@@ -24,6 +22,7 @@ import {
 import { useArticles, useArticleCategories, useRecommendedArticles } from '../../hooks/learn/useArticles';
 import ArticleCard from './components/ArticleCard';
 import ArticleDetail from './components/ArticleDetail';
+import TabBanner from '../../components/layout/TabBanner';
 
 // Category icon mapping
 const categoryIcons: Record<string, React.ComponentType<{ size?: number; className?: string }>> = {
@@ -126,6 +125,23 @@ export function getCategoryColor(category: string) {
   return categoryColors[category] || defaultCategoryColor;
 }
 
+// Category sort order (first = highest priority)
+const categorySortOrder: string[] = [
+  'Heart Health',
+  'Brain Health',
+  'Lifestyle',
+  'Nutrition',
+  'Exercise',
+  'Mental Health',
+  'Medications',
+  'Imaging',
+];
+
+function getCategorySortIndex(category: string): number {
+  const index = categorySortOrder.indexOf(category);
+  return index === -1 ? 999 : index; // Unknown categories go to the end
+}
+
 export default function LearnScreen() {
   const [selectedCategory, setSelectedCategory] = useState<string>('all');
   const [selectedArticleId, setSelectedArticleId] = useState<string | null>(null);
@@ -137,16 +153,18 @@ export default function LearnScreen() {
     selectedCategory === 'all' ? undefined : selectedCategory
   );
 
-  // Filter articles by search query
-  const filteredArticles = allArticles.filter((article) => {
-    if (!searchQuery) return true;
-    const query = searchQuery.toLowerCase();
-    return (
-      article.title.toLowerCase().includes(query) ||
-      article.snippet.toLowerCase().includes(query) ||
-      article.tags.some((tag) => tag.toLowerCase().includes(query))
-    );
-  });
+  // Filter and sort articles by search query and category
+  const filteredArticles = allArticles
+    .filter((article) => {
+      if (!searchQuery) return true;
+      const query = searchQuery.toLowerCase();
+      return (
+        article.title.toLowerCase().includes(query) ||
+        article.snippet.toLowerCase().includes(query) ||
+        article.tags.some((tag) => tag.toLowerCase().includes(query))
+      );
+    })
+    .sort((a, b) => getCategorySortIndex(a.category) - getCategorySortIndex(b.category));
 
   // If an article is selected, show the detail view
   if (selectedArticleId) {
@@ -161,17 +179,7 @@ export default function LearnScreen() {
   return (
     <div className="min-h-screen bg-background text-text-primary pb-24">
       {/* Header */}
-      <div className="px-4 pt-4 pb-2">
-        <div className="flex items-center gap-3 mb-1">
-          <div className="p-2 rounded-xl bg-amber-500/10 border border-amber-500/20">
-            <BookOpen size={20} className="text-amber-400" />
-          </div>
-          <div>
-            <h1 className="text-2xl font-bold text-text-primary">Learn</h1>
-            <p className="text-sm text-text-secondary">Health education tailored for you</p>
-          </div>
-        </div>
-      </div>
+      <TabBanner tab="learn" design={2} />
 
       {/* Search Bar */}
       <div className="px-4 py-3">
@@ -209,65 +217,39 @@ export default function LearnScreen() {
             </div>
           ) : (
             <div className="grid grid-cols-3 gap-3">
-              {recommendedArticles.slice(0, 6).map((article) => {
-                const colors = getCategoryColor(article.category);
-                return (
-                  <button
-                    key={article.id}
-                    onClick={() => setSelectedArticleId(article.id)}
-                    className={`relative overflow-hidden rounded-2xl ${colors.bg} border ${colors.border} p-3 text-left hover:${colors.borderActive} transition-all group`}
-                  >
-                    <div className={`absolute top-0 right-0 w-16 h-16 ${colors.glow} rounded-full blur-2xl -translate-y-1/2 translate-x-1/2 opacity-60 group-hover:opacity-100 transition-opacity`} />
-                    <div className="relative">
-                      {article.imageUrl && (
-                        <img
-                          src={article.imageUrl}
-                          alt={article.title}
-                          className="w-full h-20 object-cover rounded-xl mb-2"
-                        />
-                      )}
-                      <h3 className="font-medium text-text-primary text-xs line-clamp-2 mb-1.5">
-                        {article.title}
-                      </h3>
-                      <div className="flex items-center justify-between">
-                        <span className={`text-[10px] ${colors.text} ${colors.bg} px-1.5 py-0.5 rounded-full`}>
-                          {article.category}
-                        </span>
-                        <div className="flex items-center gap-1 text-text-muted">
-                          <Clock size={10} />
-                          <span className="text-[10px]">{article.readTime}</span>
-                        </div>
-                      </div>
-                    </div>
-                  </button>
-                );
-              })}
+              {recommendedArticles.slice(0, 6).map((article) => (
+                <ArticleCard
+                  key={article.id}
+                  article={article}
+                  onClick={() => setSelectedArticleId(article.id)}
+                />
+              ))}
             </div>
           )}
         </div>
       )}
 
       {/* Category Tabs */}
-      <div className="px-4 py-2">
-        <div className="flex gap-2 overflow-x-auto no-scrollbar pb-2">
+      <div className="px-4 py-3">
+        <div className="grid grid-cols-5 gap-2">
           <button
             onClick={() => setSelectedCategory('all')}
-            className={`flex items-center gap-2 px-4 py-2.5 rounded-xl whitespace-nowrap transition-all duration-200 ${
+            className={`flex flex-col items-center gap-1 py-2.5 rounded-xl transition-all duration-200 ${
               selectedCategory === 'all'
                 ? 'bg-amber-500/15 border border-amber-500/30 text-amber-400'
                 : 'bg-surface border border-border text-text-secondary hover:bg-surface-2 hover:text-text-primary'
             }`}
           >
             <BookOpen size={16} />
-            <span className="text-sm font-medium">All</span>
+            <span className="text-[11px] font-medium">All</span>
           </button>
 
           {categoriesLoading ? (
-            <div className="flex items-center px-4">
+            <div className="col-span-4 flex items-center justify-center py-4">
               <Loader2 size={16} className="text-text-muted animate-spin" />
             </div>
           ) : (
-            categories.map((category) => {
+            categories.slice(0, 4).map((category) => {
               const IconComponent = categoryIcons[category.icon] || FileText;
               const isSelected = selectedCategory === category.name;
               const colors = getCategoryColor(category.name);
@@ -275,15 +257,14 @@ export default function LearnScreen() {
                 <button
                   key={category.id}
                   onClick={() => setSelectedCategory(category.name)}
-                  className={`flex items-center gap-2 px-4 py-2.5 rounded-xl whitespace-nowrap transition-all duration-200 ${
+                  className={`flex flex-col items-center gap-1 py-2.5 rounded-xl transition-all duration-200 ${
                     isSelected
                       ? `${colors.bg} border ${colors.borderActive} ${colors.text}`
                       : `bg-surface border border-border text-text-secondary ${colors.bgHover} hover:text-text-primary`
                   }`}
                 >
                   <IconComponent size={16} />
-                  <span className="text-sm font-medium">{category.name}</span>
-                  <span className={`text-xs ${isSelected ? colors.text : 'text-text-muted'} opacity-70`}>({category.articleCount})</span>
+                  <span className="text-[11px] font-medium">{category.name}</span>
                 </button>
               );
             })
