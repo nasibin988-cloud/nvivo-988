@@ -3,6 +3,8 @@ import { useAuth } from './contexts/AuthContext';
 import { DesignVariantProvider, useDesignVariants } from './contexts/DesignVariantContext';
 import LoginScreen from './screens/Login/LoginScreen';
 import DashboardScreen from './screens/Dashboard/DashboardScreen';
+import CareScreen from './screens/Care';
+import LearnScreen from './screens/Learn/LearnScreen';
 import { BottomNav } from './components/layout/BottomNav';
 
 function ProtectedRoute({ children }: { children: React.ReactNode }) {
@@ -67,7 +69,7 @@ function AppContent() {
           path="/care"
           element={
             <ProtectedRoute>
-              <PlaceholderScreen title="Care" />
+              <CareScreen />
             </ProtectedRoute>
           }
         />
@@ -75,7 +77,7 @@ function AppContent() {
           path="/learn"
           element={
             <ProtectedRoute>
-              <PlaceholderScreen title="Learn" />
+              <LearnScreen />
             </ProtectedRoute>
           }
         />
