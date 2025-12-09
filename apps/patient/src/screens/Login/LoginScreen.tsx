@@ -1,6 +1,12 @@
 import { useState, type FormEvent } from 'react';
+import { createUserWithEmailAndPassword } from 'firebase/auth';
 import { useAuth } from '../../contexts/AuthContext';
+import { getAuthInstance } from '@nvivo/shared';
 import { Heart } from 'lucide-react';
+
+// Test user credentials for development (from seed.ts)
+const TEST_EMAIL = 'sarah.mitchell@test.nvivo.health';
+const TEST_PASSWORD = 'TestPatient2024!';
 
 export default function LoginScreen() {
   const { signIn } = useAuth();
@@ -23,6 +29,30 @@ export default function LoginScreen() {
       setLoading(false);
     }
   };
+
+  const handleDevLogin = async () => {
+    setError(null);
+    setLoading(true);
+
+    try {
+      // Try to sign in first
+      await signIn(TEST_EMAIL, TEST_PASSWORD);
+    } catch {
+      // If sign-in fails, create the user first then sign in
+      try {
+        const auth = getAuthInstance();
+        await createUserWithEmailAndPassword(auth, TEST_EMAIL, TEST_PASSWORD);
+        // User is automatically signed in after creation
+      } catch (createError) {
+        setError(createError instanceof Error ? createError.message : 'Failed to create dev user');
+      }
+    } finally {
+      setLoading(false);
+    }
+  };
+
+  const isLocalhost = typeof window !== 'undefined' &&
+    (window.location.hostname === 'localhost' || window.location.hostname === '127.0.0.1');
 
   return (
     <div className="min-h-screen bg-background flex flex-col items-center justify-center p-6">
@@ -84,10 +114,23 @@ export default function LoginScreen() {
         </button>
       </form>
 
-      {/* Dev hint */}
-      <p className="mt-8 text-text-muted text-xs text-center">
-        Development mode: Use test credentials after seeding
-      </p>
+      {/* Dev Login - Only shown in development */}
+      {isLocalhost && (
+        <div className="mt-8 text-center">
+          <p className="text-text-muted text-xs mb-3">Development Mode</p>
+          <button
+            type="button"
+            onClick={handleDevLogin}
+            disabled={loading}
+            className="px-4 py-2 bg-surface border border-accent-purple/50 text-accent-purple text-sm rounded-lg hover:bg-accent-purple/10 disabled:opacity-50"
+          >
+            Dev Login (Test User)
+          </button>
+          <p className="text-text-muted text-xs mt-2">
+            {TEST_EMAIL} / {TEST_PASSWORD}
+          </p>
+        </div>
+      )}
     </div>
   );
 }

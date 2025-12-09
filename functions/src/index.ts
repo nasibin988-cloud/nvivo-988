@@ -6,6 +6,7 @@ import * as careDataFunctions from './domains/care/careData';
 import { seedCareData, clearCareData } from './seed/seedCareData';
 import { clearMicroWins, seedMicroWins } from './seed/seedMicroWins';
 import { seedHealthTrends, clearHealthTrends } from './seed/seedHealthTrends';
+import { analyzeFoodPhoto as analyzeFoodPhotoFn, openaiApiKey } from './domains/ai/foodAnalysis';
 
 // Initialize Firebase Admin
 admin.initializeApp();
@@ -346,6 +347,41 @@ export const clearCareDataFn = https.onCall(
     } catch (error) {
       console.error('Error clearing care data:', error);
       throw new https.HttpsError('internal', 'Failed to clear care data');
+    }
+  }
+);
+
+// ============================================================================
+// AI FOOD ANALYSIS FUNCTIONS
+// ============================================================================
+
+/**
+ * Analyze a food photo using GPT-4 Vision
+ * Returns nutritional information for detected food items
+ */
+export const analyzeFoodPhoto = https.onCall(
+  {
+    cors: true,
+    secrets: [openaiApiKey],
+  },
+  async (request) => {
+    const { imageBase64 } = request.data ?? {};
+
+    if (!imageBase64) {
+      throw new https.HttpsError('invalid-argument', 'Image data is required');
+    }
+
+    // Validate base64 string (basic check)
+    if (typeof imageBase64 !== 'string' || imageBase64.length < 100) {
+      throw new https.HttpsError('invalid-argument', 'Invalid image data');
+    }
+
+    try {
+      const result = await analyzeFoodPhotoFn(imageBase64);
+      return result;
+    } catch (error) {
+      console.error('Error analyzing food photo:', error);
+      throw new https.HttpsError('internal', 'Failed to analyze food photo');
     }
   }
 );
