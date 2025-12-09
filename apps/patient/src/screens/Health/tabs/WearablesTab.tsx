@@ -17,7 +17,6 @@ import {
   Heart,
   Moon,
   Footprints,
-  Flame,
   Droplets,
   Settings,
   X,
@@ -294,7 +293,8 @@ function ConnectedDeviceCard({ device, expanded, onToggle }: {
 // Available Device Card
 function AvailableDeviceCard({ device }: { device: AvailableDevice }) {
   const Icon = device.icon;
-  const categoryConfig = deviceCategories[device.category];
+  const _categoryConfig = deviceCategories[device.category];
+  void _categoryConfig;
 
   return (
     <button className="bg-surface rounded-xl border border-border p-4 text-left hover:border-cyan-500/30 hover:bg-cyan-500/5 transition-all group">

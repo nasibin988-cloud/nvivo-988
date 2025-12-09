@@ -102,11 +102,11 @@ export function useWellnessHistory(patientId: string | null, days = 365) {
       const snapshot = await getDocs(q);
 
       const history: Record<string, WellnessLog> = {};
-      snapshot.docs.forEach((doc) => {
-        const data = doc.data() as WellnessLog;
+      snapshot.docs.forEach((docSnapshot) => {
+        const data = docSnapshot.data() as Omit<WellnessLog, 'id'>;
         history[data.date] = {
-          id: doc.id,
           ...data,
+          id: docSnapshot.id,
         };
       });
 

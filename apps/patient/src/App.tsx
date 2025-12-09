@@ -8,7 +8,7 @@ import JournalScreen from './screens/Journal/JournalScreen';
 import CareScreen from './screens/Care';
 import LearnScreen from './screens/Learn/LearnScreen';
 import { BottomNav } from './components/layout/BottomNav';
-import TabBanner, { TabBannerPreview } from './components/layout/TabBanner';
+import TabBanner from './components/layout/TabBanner';
 
 function ProtectedRoute({ children }: { children: React.ReactNode }) {
   const { user, loading } = useAuth();
@@ -111,7 +111,7 @@ export default function App() {
 }
 
 // Placeholder for tabs we haven't built yet
-function PlaceholderScreen({ title }: { title: string }) {
+function _PlaceholderScreen({ title }: { title: string }) {
   return (
     <div className="min-h-screen bg-background text-text-primary p-4 pb-24">
       <h1 className="text-2xl font-bold">{title}</h1>
@@ -119,6 +119,7 @@ function PlaceholderScreen({ title }: { title: string }) {
     </div>
   );
 }
+void _PlaceholderScreen;
 
 // Banner design preview - shows all 4 designs for all 4 tabs
 function BannerDesignPreview() {

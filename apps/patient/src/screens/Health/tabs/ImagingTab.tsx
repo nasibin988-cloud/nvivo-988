@@ -804,7 +804,7 @@ function BrainMRIDetailView({ onClose }: { onClose: () => void }) {
 
 // Imaging Card Component
 function ImagingCard({
-  type,
+  type: _type,
   title,
   subtitle,
   icon: Icon,

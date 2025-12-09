@@ -13,6 +13,7 @@ const testPatient_1 = require("./config/testPatient");
 const seedMicroWins_1 = require("./seedMicroWins");
 const seedCareData_1 = require("./seedCareData");
 const seedCardiacHealth_1 = require("./seedCardiacHealth");
+const seedHealthTrends_1 = require("./seedHealthTrends");
 /**
  * Seed all test data for the test patient
  */
@@ -31,7 +32,7 @@ async function seedTestPatient() {
         await (0, seedMicroWins_1.seedMicroWins)({
             patientId: testPatient_1.TEST_PATIENT_ID,
             daysToSeed: 7,
-            challengesPerDay: 3,
+            challengesPerDay: 5,
             completionRate: 0.7,
         });
         // 4. Seed streak data
@@ -46,6 +47,9 @@ async function seedTestPatient() {
         // 7. Seed cardiac health data (plaque, lipids, biomarkers, BP/LDL trends)
         console.log('Seeding cardiac health data...');
         await (0, seedCardiacHealth_1.seedCardiacHealth)({ patientId: testPatient_1.TEST_PATIENT_ID });
+        // 8. Seed comprehensive health trends (365 days of metrics)
+        console.log('Seeding health trends data...');
+        await (0, seedHealthTrends_1.seedHealthTrends)({ patientId: testPatient_1.TEST_PATIENT_ID, daysToSeed: 365 });
         console.log('Test patient seed complete!');
         return { success: true, patientId: testPatient_1.TEST_PATIENT_ID };
     }
@@ -67,6 +71,8 @@ async function deleteTestPatient() {
         await (0, seedCareData_1.clearCareData)(testPatient_1.TEST_PATIENT_ID);
         // Clear cardiac health data
         await (0, seedCardiacHealth_1.clearCardiacHealth)(testPatient_1.TEST_PATIENT_ID);
+        // Clear health trends
+        await (0, seedHealthTrends_1.clearHealthTrends)(testPatient_1.TEST_PATIENT_ID);
         // Clear streaks
         const streaksSnapshot = await db
             .collection('patients')

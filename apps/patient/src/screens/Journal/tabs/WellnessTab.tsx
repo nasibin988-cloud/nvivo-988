@@ -6,7 +6,7 @@
 import { useState, useEffect, useRef, useCallback, useMemo } from 'react';
 import { createPortal } from 'react-dom';
 import { useAuth } from '../../../contexts/AuthContext';
-import { useWellnessHistory, type WellnessLog as FirestoreWellnessLog } from '../../../hooks/dashboard/useWellnessLog';
+import { useWellnessHistory } from '../../../hooks/dashboard/useWellnessLog';
 import {
   Moon,
   Heart,
@@ -1469,7 +1469,6 @@ function MindfulnessPlayer({
         {/* Sound Selector */}
         <div className="grid grid-cols-7 gap-1.5 mb-8 w-full max-w-md">
           {soundOptions.map(({ id, label, icon: SoundIcon }) => {
-            const actualSound = id === 'default' ? defaultSound : id;
             const isSelected = id === 'default'
               ? selectedSound === defaultSound
               : selectedSound === id;
@@ -1715,7 +1714,7 @@ function EmptyState({ date, onLog }: { date: string; onLog: () => void }) {
 
 export default function WellnessTab() {
   const { patientId } = useAuth();
-  const { data: firestoreHistory, isLoading } = useWellnessHistory(patientId);
+  const { data: firestoreHistory } = useWellnessHistory(patientId);
 
   // Convert Firestore data to local WellnessLog format
   const history = useMemo(() => {

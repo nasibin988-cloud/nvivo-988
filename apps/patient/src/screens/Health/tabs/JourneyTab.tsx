@@ -11,7 +11,6 @@ import {
   Heart,
   Activity,
   Award,
-  Calendar,
   Target,
   CheckCircle2,
   ChevronRight,

@@ -152,7 +152,6 @@ export default function ArticleDetail({ articleId, onBack }: ArticleDetailProps)
     const lines = cleanContent.split('\n');
     const elements: JSX.Element[] = [];
     let listItems: string[] = [];
-    let isInList = false;
     let quizIndex = 0;
     let inQuizSection = false;
 
@@ -194,7 +193,6 @@ export default function ArticleDetail({ articleId, onBack }: ArticleDetailProps)
       // Check for quiz placeholder
       if (trimmedLine.includes('{{QUIZ_PLACEHOLDER}}')) {
         flushList();
-        isInList = false;
         // Render the quiz questions for this section
         if (inQuizSection && quizIndex < quizzes.length) {
           // Render all remaining quizzes for this section
@@ -219,14 +217,12 @@ export default function ArticleDetail({ articleId, onBack }: ArticleDetailProps)
       // Empty line
       if (!trimmedLine) {
         flushList();
-        isInList = false;
         return;
       }
 
       // H2 heading
       if (trimmedLine.startsWith('## ')) {
         flushList();
-        isInList = false;
         const text = trimmedLine.replace('## ', '');
         elements.push(
           <h2
@@ -242,7 +238,6 @@ export default function ArticleDetail({ articleId, onBack }: ArticleDetailProps)
       // H3 heading - check for quiz section
       if (trimmedLine.startsWith('### ')) {
         flushList();
-        isInList = false;
         const text = trimmedLine.replace('### ', '');
 
         // Check if this is a quiz section
@@ -304,7 +299,6 @@ export default function ArticleDetail({ articleId, onBack }: ArticleDetailProps)
 
       // List item
       if (trimmedLine.startsWith('* ') || trimmedLine.startsWith('- ')) {
-        isInList = true;
         const itemText = trimmedLine.replace(/^[\*\-]\s+/, '');
         listItems.push(itemText);
         return;
@@ -312,7 +306,6 @@ export default function ArticleDetail({ articleId, onBack }: ArticleDetailProps)
 
       // Numbered list item
       if (/^\d+\.\s/.test(trimmedLine)) {
-        isInList = true;
         const itemText = trimmedLine.replace(/^\d+\.\s+/, '');
         listItems.push(itemText);
         return;
@@ -320,7 +313,6 @@ export default function ArticleDetail({ articleId, onBack }: ArticleDetailProps)
 
       // Regular paragraph
       flushList();
-      isInList = false;
 
       elements.push(
         <p

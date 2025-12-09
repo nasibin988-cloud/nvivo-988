@@ -25,7 +25,7 @@ import ArticleDetail from './components/ArticleDetail';
 import TabBanner from '../../components/layout/TabBanner';
 
 // Category icon mapping
-const categoryIcons: Record<string, React.ComponentType<{ size?: number; className?: string }>> = {
+const categoryIcons: Record<string, React.ComponentType<Record<string, unknown>>> = {
   Heart: Heart,
   Brain: Brain,
   Apple: Apple,

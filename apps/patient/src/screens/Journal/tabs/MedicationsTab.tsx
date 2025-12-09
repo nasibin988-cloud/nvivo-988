@@ -15,7 +15,6 @@ import {
   Flame,
   ChevronDown,
   Bell,
-  Plus,
   Info,
   Target,
   Award,
@@ -124,7 +123,8 @@ function MedicationCard({
 }) {
   const [isExpanded, setIsExpanded] = useState(false);
   const config = statusConfig[medication.status];
-  const StatusIcon = config.icon;
+  const _StatusIcon = config.icon;
+  void _StatusIcon;
 
   return (
     <div className={`bg-surface rounded-2xl border ${medication.status === 'pending' ? 'border-amber-500/30' : 'border-border'} overflow-hidden`}>

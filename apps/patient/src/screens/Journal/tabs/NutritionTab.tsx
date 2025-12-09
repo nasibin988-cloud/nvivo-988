@@ -19,7 +19,6 @@ import {
   Wheat,
   Sparkles,
   X,
-  ChevronRight,
   ChevronDown,
   Clock,
   Trash2,

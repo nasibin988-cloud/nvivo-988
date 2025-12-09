@@ -3,7 +3,7 @@
  */
 
 import { useState, useRef } from 'react';
-import { Search, Plus, CheckCheck, ArrowLeft, Send, Paperclip, Image, Smile, X, File, FileText, FileImage } from 'lucide-react';
+import { Search, Plus, CheckCheck, ArrowLeft, Send, Paperclip, Image, Smile, X, File, FileText } from 'lucide-react';
 
 // Common emojis for quick access
 const emojiCategories = [

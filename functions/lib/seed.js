@@ -490,28 +490,79 @@ async function seedTestPatient() {
             updatedAt: firestore_1.Timestamp.now(),
         });
         console.log('Cognitive health data created');
-        // 11. Create wellness logs (for vitality ring)
-        // Vitality = (mood + energy + sleepQuality) / 3 * 10, targeting 80
-        // So mood=8, energy=8, sleepQuality=8 => (24/3)*10 = 80
+        // 11. Create wellness logs (365 days of deterministic data)
+        // Using seeded random for consistency across runs
+        const seededRandom = (seed) => {
+            const x = Math.sin(seed) * 10000;
+            return x - Math.floor(x);
+        };
+        const POSITIVE_TAGS = ['Gym', 'Sauna', 'Nature', 'Social', 'Nutrition', 'Reading', 'Creative', 'Hydrated', 'Meditation', 'Good sleep', 'Outdoors', 'Stretching', 'Journaling', 'Music', 'Friends', 'Gratitude'];
+        const NEGATIVE_TAGS = ['Conflict', 'Illness', 'Sedentary', 'Tired', 'Poor sleep', 'No exercise', 'Stress', 'Skipped meal', 'Alcohol', 'Anxious', 'Screens', 'Junk food', 'Lonely', 'Rushed', 'Caffeine', 'Late night'];
+        const SYMPTOM_OPTIONS = ['Headache', 'Fatigue', 'Anxiety', 'Nausea', 'Insomnia', 'Dizziness', 'Back pain', 'Joint pain', 'Brain fog', 'Bloating', 'Cramps', 'Congestion', 'Shortness', 'Palpitations', 'Weakness', 'Chills'];
         const wellnessLogs = [];
-        for (let i = 0; i < 7; i++) {
+        for (let i = 0; i < 365; i++) {
             const logDate = new Date(today.getTime() - i * 24 * 60 * 60 * 1000);
+            const dateStr = logDate.toISOString().split('T')[0];
+            const seed = i + 12345; // Fixed seed for determinism
+            // Create realistic variations with weekly patterns
+            const dayOfWeek = logDate.getDay();
+            const weekendBoost = (dayOfWeek === 0 || dayOfWeek === 6) ? 0.5 : 0;
+            const seasonalFactor = Math.sin(i / 30 * Math.PI) * 0.3; // Monthly cycle
+            // Base values with deterministic variation
+            const baseMood = 6.5 + seasonalFactor + weekendBoost;
+            const baseEnergy = 6.0 + seasonalFactor + weekendBoost;
+            const baseStress = 4.5 - seasonalFactor - weekendBoost * 0.5;
+            const baseSleepQuality = 6.5 + seasonalFactor + weekendBoost * 0.3;
+            const mood = Math.round(Math.max(1, Math.min(10, baseMood + (seededRandom(seed) * 3 - 1.5))));
+            const energy = Math.round(Math.max(1, Math.min(10, baseEnergy + (seededRandom(seed + 1) * 3 - 1.5))));
+            const stress = Math.round(Math.max(1, Math.min(10, baseStress + (seededRandom(seed + 2) * 3 - 1.5))));
+            const sleepQuality = Math.round(Math.max(1, Math.min(10, baseSleepQuality + (seededRandom(seed + 3) * 3 - 1.5))));
+            const sleepHours = Math.round((6.5 + seededRandom(seed + 4) * 2.5) * 4) / 4; // 15-min increments
+            // Deterministic tag selection
+            const tags = [];
+            const numPositive = Math.floor(seededRandom(seed + 5) * 3);
+            const numNegative = Math.floor(seededRandom(seed + 6) * 2);
+            for (let t = 0; t < numPositive; t++) {
+                const tagIndex = Math.floor(seededRandom(seed + 10 + t) * POSITIVE_TAGS.length);
+                if (!tags.includes(POSITIVE_TAGS[tagIndex]))
+                    tags.push(POSITIVE_TAGS[tagIndex]);
+            }
+            for (let t = 0; t < numNegative; t++) {
+                const tagIndex = Math.floor(seededRandom(seed + 20 + t) * NEGATIVE_TAGS.length);
+                if (!tags.includes(NEGATIVE_TAGS[tagIndex]))
+                    tags.push(NEGATIVE_TAGS[tagIndex]);
+            }
+            // Deterministic symptom selection
+            const symptoms = [];
+            const numSymptoms = Math.floor(seededRandom(seed + 7) * 2);
+            for (let s = 0; s < numSymptoms; s++) {
+                const symIndex = Math.floor(seededRandom(seed + 30 + s) * SYMPTOM_OPTIONS.length);
+                if (!symptoms.includes(SYMPTOM_OPTIONS[symIndex]))
+                    symptoms.push(SYMPTOM_OPTIONS[symIndex]);
+            }
             wellnessLogs.push({
-                id: `wellness-${logDate.toISOString().split('T')[0]}`,
-                date: logDate.toISOString().split('T')[0],
-                mood: 8,
-                energy: 8,
-                sleepQuality: 8,
-                stress: 2.5,
-                symptoms: i === 0 ? [] : i === 1 ? ['mild fatigue'] : [],
+                id: `wellness-${dateStr}`,
+                date: dateStr,
+                mood,
+                energy,
+                stress,
+                sleepQuality,
+                sleepHours,
+                tags,
+                symptoms,
                 notes: i === 0 ? 'Feeling great today!' : null,
             });
         }
-        for (const log of wellnessLogs) {
-            await db.collection('patients').doc(uid).collection('wellnessLogs').doc(log.id).set({
-                ...log,
-                createdAt: firestore_1.Timestamp.now(),
-            });
+        // Batch write for efficiency
+        const batchSize = 500;
+        for (let i = 0; i < wellnessLogs.length; i += batchSize) {
+            const batch = db.batch();
+            const chunk = wellnessLogs.slice(i, i + batchSize);
+            for (const log of chunk) {
+                const ref = db.collection('patients').doc(uid).collection('wellnessLogs').doc(log.id);
+                batch.set(ref, { ...log, createdAt: firestore_1.Timestamp.now() });
+            }
+            await batch.commit();
         }
         console.log('Wellness logs created:', wellnessLogs.length);
         // 12. Create food logs (for food logging status)

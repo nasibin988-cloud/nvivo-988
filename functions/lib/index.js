@@ -33,7 +33,7 @@ var __importStar = (this && this.__importStar) || (function () {
     };
 })();
 Object.defineProperty(exports, "__esModule", { value: true });
-exports.clearCareDataFn = exports.seedCareDataFn = exports.getAppointmentsFn = exports.getCarePlanGoalsFn = exports.completeTaskFn = exports.getTasksFn = exports.logMedicationDoseFn = exports.getMedicationScheduleFn = exports.getMedicationsFn = exports.getCareTeamFn = exports.getCareDataFn = exports.completeMicroWin = exports.getDailyMicroWins = exports.reseedMicroWinsFn = exports.deleteTestPatientFn = exports.seedTestPatientFn = void 0;
+exports.clearCareDataFn = exports.seedCareDataFn = exports.getAppointmentsFn = exports.getCarePlanGoalsFn = exports.completeTaskFn = exports.getTasksFn = exports.logMedicationDoseFn = exports.getMedicationScheduleFn = exports.getMedicationsFn = exports.getCareTeamFn = exports.getCareDataFn = exports.completeMicroWin = exports.getDailyMicroWins = exports.reseedHealthTrendsFn = exports.reseedMicroWinsFn = exports.deleteTestPatientFn = exports.seedTestPatientFn = void 0;
 const admin = __importStar(require("firebase-admin"));
 const v2_1 = require("firebase-functions/v2");
 const seed_1 = require("./seed");
@@ -41,6 +41,7 @@ const dailyMicroWins_1 = require("./domains/gamification/dailyMicroWins");
 const careDataFunctions = __importStar(require("./domains/care/careData"));
 const seedCareData_1 = require("./seed/seedCareData");
 const seedMicroWins_1 = require("./seed/seedMicroWins");
+const seedHealthTrends_1 = require("./seed/seedHealthTrends");
 // Initialize Firebase Admin
 admin.initializeApp();
 // Export seed functions (only for development)
@@ -66,6 +67,22 @@ exports.reseedMicroWinsFn = v2_1.https.onCall({ cors: true }, async (request) =>
         completionRate: 0.7,
     });
     return { success: true, message: 'MicroWins reseeded successfully' };
+});
+/**
+ * Reseed Health Trends for test patient - clears existing and regenerates 365 days of data
+ */
+exports.reseedHealthTrendsFn = v2_1.https.onCall({ cors: true }, async (request) => {
+    var _a, _b;
+    const patientId = ((_a = request.data) === null || _a === void 0 ? void 0 : _a.patientId) || 'sarah-mitchell-test';
+    const daysToSeed = ((_b = request.data) === null || _b === void 0 ? void 0 : _b.daysToSeed) || 365;
+    // Clear existing health trends
+    await (0, seedHealthTrends_1.clearHealthTrends)(patientId);
+    // Reseed with new data
+    await (0, seedHealthTrends_1.seedHealthTrends)({
+        patientId,
+        daysToSeed,
+    });
+    return { success: true, message: `Health trends reseeded (${daysToSeed} days)` };
 });
 // ============================================================================
 // MICRO-WINS FUNCTIONS

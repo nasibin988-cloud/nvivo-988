@@ -4,7 +4,7 @@
  * 4 design variants for selection
  */
 
-import { LucideIcon, Heart, BookOpen, Users, GraduationCap, Activity, Brain, Stethoscope } from 'lucide-react';
+import { BookOpen, GraduationCap, Activity, Stethoscope } from 'lucide-react';
 
 // Tab configuration with colors and icons
 export const tabConfig = {

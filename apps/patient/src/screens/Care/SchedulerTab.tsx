@@ -144,7 +144,7 @@ export default function SchedulerTab() {
     medicationChanges: '',
     additionalNotes: '',
   });
-  const [selectedSlotId, setSelectedSlotId] = useState<string | null>(null);
+  const [, setSelectedSlotId] = useState<string | null>(null);
   const [showCancelModal, setShowCancelModal] = useState<string | null>(null);
   const [showSlotModal, setShowSlotModal] = useState<string | null>(null);
 

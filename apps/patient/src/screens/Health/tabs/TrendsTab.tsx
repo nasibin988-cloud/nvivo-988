@@ -389,7 +389,7 @@ function downsampleWithAveraging(data: number[], targetPoints: number): number[]
 }
 
 // Build metric props
-function buildMetricProps(config: MetricConfig, trendsData: HealthTrendsData | undefined, timeRange: TimeRange): MetricCardProps {
+function buildMetricProps(config: MetricConfig, trendsData: HealthTrendsData | undefined, _timeRange: TimeRange): MetricCardProps {
   // Handle sparse data (imaging metrics with few data points)
   if (config.sparseData) {
     const currentValue = config.sparseData[config.sparseData.length - 1];
