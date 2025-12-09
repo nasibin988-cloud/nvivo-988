@@ -7,7 +7,7 @@ interface DashboardHeroProps {
   streak: Streak | null | undefined;
   medicationStatus: MedicationStatus | null | undefined;
   foodLogStatus: FoodLogStatus | null | undefined;
-  ringVariant?: 1 | 2 | 3 | 4;
+  ringVariant?: 1 | 2 | 3 | 4 | 5;
   ringAnimation?: 0 | 1 | 2 | 3 | 4;
   onLogMeal?: () => void;
   onLogMedication?: () => void;

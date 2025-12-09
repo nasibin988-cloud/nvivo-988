@@ -366,12 +366,12 @@ export const CHALLENGE_LIBRARY: ChallengeTemplate[] = [
   },
   {
     id: 'mf-007',
-    title: 'Notice 5 pleasant moments today',
-    description: 'Throughout today, pause to notice 5 small pleasant moments: warm sunlight, a good smell, a friendly face, comfortable clothing, a tasty bite. Mentally label each one: "This is pleasant."',
+    title: 'Write down 5 pleasant moments before bed',
+    description: 'Tonight before bed, grab a pen and paper. Write down 5 small pleasant things that happened today: a warm drink, comfortable clothing, a kind word, sunlight through a window, a good meal. Be specific about each one.',
     category: 'mindfulness',
     difficulty: 'easy',
     estimatedMinutes: 5,
-    tags: ['awareness', 'positivity', 'presence'],
+    tags: ['awareness', 'positivity', 'journaling'],
   },
 
   // ============================================================================
@@ -446,8 +446,8 @@ export const CHALLENGE_LIBRARY: ChallengeTemplate[] = [
   },
   {
     id: 'so-003',
-    title: 'Give a genuine compliment today',
-    description: 'Compliment someone today - in person, by phone, or text. Make it specific and genuine: Not "You\'re nice" but "I really appreciated how you helped me with [specific thing]" or "That color looks great on you."',
+    title: 'Text someone a specific compliment right now',
+    description: 'Open your phone and text someone a specific, genuine compliment in the next 2 minutes. Examples: "I really appreciated how you helped me with [specific thing]" or "I was thinking about how you always [positive trait]. Thank you for being you." Hit send before moving on.',
     category: 'social',
     difficulty: 'easy',
     estimatedMinutes: 2,
@@ -455,8 +455,8 @@ export const CHALLENGE_LIBRARY: ChallengeTemplate[] = [
   },
   {
     id: 'so-004',
-    title: 'Ask someone how they\'re really doing',
-    description: 'Ask someone close to you "How are you really doing?" Then listen without immediately offering advice. Acknowledge what they share: "That sounds hard" or "I\'m glad that\'s going well." Just listen.',
+    title: 'Have a 5-minute check-in conversation',
+    description: 'Right now, call or text a family member, friend, or coworker. Ask: "How are you really doing lately?" Then listen for at least 2 minutes without offering advice. Respond with: "That sounds [hard/exciting/stressful]" to show you heard them. Thank them for sharing.',
     category: 'social',
     difficulty: 'easy',
     estimatedMinutes: 10,

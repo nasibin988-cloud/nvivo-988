@@ -9,6 +9,8 @@ export interface WellnessLog {
   energy: number;
   stress: number;
   sleepQuality: number;
+  sleepHours?: number;
+  tags?: string[];
   symptoms: string[];
   notes: string | null;
 }
@@ -73,5 +75,44 @@ export function useTodayWellnessLog(patientId: string | null) {
     },
     enabled: !!patientId,
     staleTime: 2 * 60 * 1000,
+  });
+}
+
+export function useWellnessHistory(patientId: string | null, days = 365) {
+  return useQuery({
+    queryKey: ['wellness-history', patientId, days],
+    queryFn: async (): Promise<Record<string, WellnessLog>> => {
+      if (!patientId) return {};
+
+      const db = getDb();
+      const logsRef = collection(db, 'patients', patientId, 'wellnessLogs');
+
+      // Get logs from the last N days
+      const startDate = new Date();
+      startDate.setDate(startDate.getDate() - days);
+      const startDateStr = startDate.toISOString().split('T')[0];
+
+      const q = query(
+        logsRef,
+        where('date', '>=', startDateStr),
+        orderBy('date', 'desc'),
+        limit(days)
+      );
+
+      const snapshot = await getDocs(q);
+
+      const history: Record<string, WellnessLog> = {};
+      snapshot.docs.forEach((doc) => {
+        const data = doc.data() as WellnessLog;
+        history[data.date] = {
+          id: doc.id,
+          ...data,
+        };
+      });
+
+      return history;
+    },
+    enabled: !!patientId,
+    staleTime: 5 * 60 * 1000,
   });
 }

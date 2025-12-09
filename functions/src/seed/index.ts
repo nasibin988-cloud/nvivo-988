@@ -10,6 +10,7 @@ import { TEST_PATIENT_ID, TEST_PATIENT_PROFILE, TEST_CLINICIAN_ID, TEST_CLINICIA
 import { seedMicroWins, clearMicroWins } from './seedMicroWins';
 import { seedCareData, clearCareData } from './seedCareData';
 import { seedCardiacHealth, clearCardiacHealth } from './seedCardiacHealth';
+import { seedHealthTrends, clearHealthTrends } from './seedHealthTrends';
 
 /**
  * Seed all test data for the test patient
@@ -53,6 +54,10 @@ export async function seedTestPatient(): Promise<{ success: boolean; patientId: 
     console.log('Seeding cardiac health data...');
     await seedCardiacHealth({ patientId: TEST_PATIENT_ID });
 
+    // 8. Seed comprehensive health trends (365 days of metrics)
+    console.log('Seeding health trends data...');
+    await seedHealthTrends({ patientId: TEST_PATIENT_ID, daysToSeed: 365 });
+
     console.log('Test patient seed complete!');
     return { success: true, patientId: TEST_PATIENT_ID };
   } catch (error) {
@@ -78,6 +83,9 @@ export async function deleteTestPatient(): Promise<{ success: boolean }> {
 
     // Clear cardiac health data
     await clearCardiacHealth(TEST_PATIENT_ID);
+
+    // Clear health trends
+    await clearHealthTrends(TEST_PATIENT_ID);
 
     // Clear streaks
     const streaksSnapshot = await db

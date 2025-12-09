@@ -304,7 +304,7 @@ export function CardiacHealthPanel({ data, onViewMore }: CardiacHealthPanelProps
                 <div className="flex items-center justify-between mb-3">
                   <div>
                     <h5 className="text-sm font-bold text-text-primary">Blood Pressure</h5>
-                    <p className="text-xs text-text-muted mt-0.5">Last 30 days • {latestBloodPressure ?? '—'} mmHg</p>
+                    <p className="text-xs text-text-muted mt-0.5">Last month • {latestBloodPressure ?? '—'} mmHg</p>
                   </div>
                   <TrendLabel direction={bloodPressureTrendDirection} color="auto" />
                 </div>

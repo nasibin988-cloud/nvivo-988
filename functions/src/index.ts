@@ -5,6 +5,7 @@ import { getOrInitializeDailyMicroWins, updateMicroWinChallenge } from './domain
 import * as careDataFunctions from './domains/care/careData';
 import { seedCareData, clearCareData } from './seed/seedCareData';
 import { clearMicroWins, seedMicroWins } from './seed/seedMicroWins';
+import { seedHealthTrends, clearHealthTrends } from './seed/seedHealthTrends';
 
 // Initialize Firebase Admin
 admin.initializeApp();
@@ -36,6 +37,25 @@ export const reseedMicroWinsFn = https.onCall({ cors: true }, async (request) =>
   });
 
   return { success: true, message: 'MicroWins reseeded successfully' };
+});
+
+/**
+ * Reseed Health Trends for test patient - clears existing and regenerates 365 days of data
+ */
+export const reseedHealthTrendsFn = https.onCall({ cors: true }, async (request) => {
+  const patientId = request.data?.patientId || 'sarah-mitchell-test';
+  const daysToSeed = request.data?.daysToSeed || 365;
+
+  // Clear existing health trends
+  await clearHealthTrends(patientId);
+
+  // Reseed with new data
+  await seedHealthTrends({
+    patientId,
+    daysToSeed,
+  });
+
+  return { success: true, message: `Health trends reseeded (${daysToSeed} days)` };
 });
 
 // ============================================================================

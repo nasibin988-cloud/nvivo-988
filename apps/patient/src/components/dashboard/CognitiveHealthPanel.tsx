@@ -193,16 +193,18 @@ export function CognitiveHealthPanel({ data, onViewMore }: CognitiveHealthPanelP
   const moodTrend = mentalHealth?.moodTrend || [];
   const sleepQuality = mentalHealth?.sleepQuality || [];
 
-  // Generate sleep hours data (scaled from quality - typically 5-9 hours)
-  // Using seeded pseudo-random for consistency
+  // Use real sleep hours from wellness logs if available, otherwise derive from quality
   const sleepHours = useMemo(() => {
+    if (mentalHealth?.sleepHours && mentalHealth.sleepHours.length > 0) {
+      return mentalHealth.sleepHours;
+    }
+    // Fallback: generate sleep hours data (scaled from quality - typically 5-9 hours)
     return sleepQuality.map((quality, i) => {
-      // Use index as seed for consistent "random" variation
       const seed = Math.sin(i * 12.9898) * 43758.5453;
       const variation = (seed - Math.floor(seed) - 0.5) * 0.8;
       return 5 + (quality / 10) * 4 + variation;
     });
-  }, [sleepQuality]);
+  }, [mentalHealth?.sleepHours, sleepQuality]);
 
   // Generate vitality data (correlated with mood but slightly different)
   const vitalityTrend = useMemo(() => {
@@ -463,7 +465,7 @@ export function CognitiveHealthPanel({ data, onViewMore }: CognitiveHealthPanelP
                 <div className="flex items-center justify-between mb-3">
                   <div>
                     <h5 className="text-sm font-bold text-text-primary">Sleep</h5>
-                    <p className="text-xs text-text-muted mt-0.5">Last 30 days</p>
+                    <p className="text-xs text-text-muted mt-0.5">Last month</p>
                   </div>
                   <TrendLabel direction={sleepTrendDirection} color="auto" />
                 </div>
@@ -484,7 +486,7 @@ export function CognitiveHealthPanel({ data, onViewMore }: CognitiveHealthPanelP
                 <div className="flex items-center justify-between mb-3">
                   <div>
                     <h5 className="text-sm font-bold text-text-primary">Mood & Vitality</h5>
-                    <p className="text-xs text-text-muted mt-0.5">Last 30 days</p>
+                    <p className="text-xs text-text-muted mt-0.5">Last month</p>
                   </div>
                   <TrendLabel direction={moodTrendDirection} color="auto" />
                 </div>

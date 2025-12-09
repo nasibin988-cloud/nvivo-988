@@ -7,6 +7,10 @@ import { useState } from 'react';
 import { Smile, Apple, Dumbbell, Pill, ClipboardList } from 'lucide-react';
 import TabBanner from '../../components/layout/TabBanner';
 import WellnessTab from './tabs/WellnessTab';
+import NutritionTab from './tabs/NutritionTab';
+import ActivityTab from './tabs/ActivityTab';
+import MedicationsTab from './tabs/MedicationsTab';
+import AssessmentsTab from './tabs/AssessmentsTab';
 
 type JournalTab = 'wellness' | 'nutrition' | 'activity' | 'medications' | 'assessments';
 
@@ -17,55 +21,6 @@ const tabs: { id: JournalTab; label: string; icon: typeof Smile }[] = [
   { id: 'medications', label: 'Meds', icon: Pill },
   { id: 'assessments', label: 'Assess', icon: ClipboardList },
 ];
-
-// Placeholder tabs (to be implemented)
-function NutritionTab() {
-  return (
-    <div className="flex flex-col items-center justify-center py-20">
-      <Apple size={48} className="text-emerald-400 mb-4" />
-      <h3 className="text-lg font-semibold text-text-primary mb-2">Nutrition Tracking</h3>
-      <p className="text-sm text-text-muted text-center">
-        Log meals, track macros, and analyze nutrition
-      </p>
-    </div>
-  );
-}
-
-function ActivityTab() {
-  return (
-    <div className="flex flex-col items-center justify-center py-20">
-      <Dumbbell size={48} className="text-sky-400 mb-4" />
-      <h3 className="text-lg font-semibold text-text-primary mb-2">Activity Log</h3>
-      <p className="text-sm text-text-muted text-center">
-        Track workouts, steps, and physical activity
-      </p>
-    </div>
-  );
-}
-
-function MedicationsTab() {
-  return (
-    <div className="flex flex-col items-center justify-center py-20">
-      <Pill size={48} className="text-rose-400 mb-4" />
-      <h3 className="text-lg font-semibold text-text-primary mb-2">Medication Tracker</h3>
-      <p className="text-sm text-text-muted text-center">
-        Track adherence and manage prescriptions
-      </p>
-    </div>
-  );
-}
-
-function AssessmentsTab() {
-  return (
-    <div className="flex flex-col items-center justify-center py-20">
-      <ClipboardList size={48} className="text-amber-400 mb-4" />
-      <h3 className="text-lg font-semibold text-text-primary mb-2">Assessments</h3>
-      <p className="text-sm text-text-muted text-center">
-        Complete health questionnaires and track goals
-      </p>
-    </div>
-  );
-}
 
 export default function JournalScreen() {
   const [activeTab, setActiveTab] = useState<JournalTab>('wellness');

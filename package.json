@@ -11,6 +11,10 @@
     "functions:serve": "pnpm --filter functions serve"
   },
   "devDependencies": {
+    "@types/node": "^24.10.1",
+    "firebase-admin": "^12.7.0",
+    "openai": "^6.10.0",
+    "ts-node": "^10.9.2",
     "typescript": "^5.3.3"
   }
 }
