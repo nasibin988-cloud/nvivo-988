@@ -30,8 +30,6 @@ import { Confetti } from '../../../components/animations';
 // Modular imports
 import {
   ViewMode,
-  TimeRange,
-  TIME_RANGE_DAYS,
   MACRO_COLORS,
 } from '../nutrition';
 
@@ -49,7 +47,12 @@ import {
   MacroGoalsModal,
 } from '../nutrition/modals';
 
-import { WeeklyChart } from '../nutrition/history';
+import {
+  WeeklyChart,
+  NutritionCalendarHeatmap,
+  NutritionTrends,
+  MealTimelineFeed,
+} from '../nutrition/history';
 
 // ============================================================================
 // MAIN COMPONENT
@@ -57,7 +60,6 @@ import { WeeklyChart } from '../nutrition/history';
 
 export default function NutritionTab(): React.ReactElement {
   const [view, setView] = useState<ViewMode>('today');
-  const [timeRange, setTimeRange] = useState<TimeRange>('1W');
   const [showLogModal, setShowLogModal] = useState(false);
   const [showSearchModal, setShowSearchModal] = useState(false);
   const [showPhotoModal, setShowPhotoModal] = useState(false);
@@ -73,7 +75,8 @@ export default function NutritionTab(): React.ReactElement {
   const { logs, isLoading, dailyTotals, addLog, updateLog, deleteLog, isAdding, isUpdating } = useFoodLogs(today);
   const { data: targets, isLoading: targetsLoading } = useNutritionTargets();
   const { glasses: waterGlasses, updateWater, isUpdating: isUpdatingWater } = useWaterIntake(today);
-  const { data: historyData } = useFoodLogsHistory(TIME_RANGE_DAYS[timeRange]);
+  // Fetch 180 days of history for trends (NutritionTrends handles time range selection)
+  const { data: historyData } = useFoodLogsHistory(180);
   const { data: waterStreakData } = useWaterStreak(targets?.water || 8);
 
   // Use targets or defaults, with custom overrides
@@ -351,28 +354,8 @@ export default function NutritionTab(): React.ReactElement {
           </div>
         </>
       ) : (
-        <>
-          {/* Time Range Selector */}
-          <div className="flex gap-2">
-            {(['1W', '1M', '3M'] as TimeRange[]).map((range) => (
-              <button
-                key={range}
-                onClick={() => setTimeRange(range)}
-                className={`px-4 py-2 rounded-lg text-sm font-medium transition-all ${
-                  timeRange === range
-                    ? 'bg-emerald-500/15 text-emerald-400 border border-emerald-500/30'
-                    : 'bg-white/[0.03] text-text-muted border border-white/[0.06] hover:bg-white/[0.06]'
-                }`}
-              >
-                {range}
-              </button>
-            ))}
-          </div>
-
-          {/* Weekly Chart */}
-          <WeeklyChart data={weeklyChartData} target={nutritionTargets.calories} />
-
-          {/* Weekly Stats */}
+        <div className="space-y-6">
+          {/* Quick Stats Row */}
           <div className="grid grid-cols-3 gap-3">
             {[
               {
@@ -397,16 +380,47 @@ export default function NutritionTab(): React.ReactElement {
                 label: 'Days Logged'
               },
             ].map(({ icon: IconComponent, color, bg, value, label }) => (
-              <div key={label} className="bg-white/[0.03] backdrop-blur-sm rounded-xl border border-white/[0.06] p-4 text-center">
-                <div className={`w-10 h-10 mx-auto rounded-full ${bg} flex items-center justify-center mb-2`}>
-                  <IconComponent size={20} className={color} />
+              <div key={label} className="bg-white/[0.03] backdrop-blur-sm rounded-xl border border-white/[0.06] p-3 text-center">
+                <div className={`w-8 h-8 mx-auto rounded-full ${bg} flex items-center justify-center mb-1.5`}>
+                  <IconComponent size={16} className={color} />
                 </div>
-                <span className="text-lg font-bold text-text-primary block">{value.toLocaleString()}</span>
-                <span className="text-[10px] text-text-muted">{label}</span>
+                <span className="text-base font-bold text-text-primary block">{value.toLocaleString()}</span>
+                <span className="text-[9px] text-text-muted">{label}</span>
               </div>
             ))}
           </div>
-        </>
+
+          {/* Calendar Heatmap */}
+          <NutritionCalendarHeatmap
+            history={historyData || []}
+            targets={{
+              calories: nutritionTargets.calories,
+              protein: nutritionTargets.protein,
+              carbs: nutritionTargets.carbs,
+              fat: nutritionTargets.fat,
+            }}
+            onSelectDate={() => {
+              // TODO: Could switch to "today" view for selected date
+            }}
+          />
+
+          {/* Weekly Chart */}
+          <WeeklyChart data={weeklyChartData} target={nutritionTargets.calories} />
+
+          {/* Nutrition Trends */}
+          <NutritionTrends
+            history={historyData || []}
+            targets={nutritionTargets}
+          />
+
+          {/* Meal Timeline Feed */}
+          <MealTimelineFeed
+            history={historyData || []}
+            onSelectDate={() => {
+              // TODO: Could switch to "today" view for selected date
+            }}
+          />
+        </div>
       )}
 
       {/* Modals */}
