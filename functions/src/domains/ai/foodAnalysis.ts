@@ -1,5 +1,5 @@
 /**
- * AI Food Analysis using OpenAI GPT-4 Vision
+ * AI Food Analysis using OpenAI Vision
  * Analyzes food photos to estimate nutritional content
  */
 
@@ -7,6 +7,7 @@ import OpenAI from 'openai';
 import { defineSecret } from 'firebase-functions/params';
 import * as dotenv from 'dotenv';
 import * as path from 'path';
+import { OPENAI_CONFIG } from '../../config/openai';
 
 // Load .env file for local development (try both functions dir and root)
 dotenv.config({ path: path.resolve(__dirname, '../../.env') });
@@ -107,7 +108,7 @@ export async function analyzeFoodPhoto(imageBase64: string): Promise<FoodAnalysi
 
   try {
     const response = await openai.chat.completions.create({
-      model: 'gpt-4o',
+      model: OPENAI_CONFIG.vision.model,
       messages: [
         {
           role: 'user',
