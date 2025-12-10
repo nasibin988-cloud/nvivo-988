@@ -16,7 +16,6 @@ import {
   X,
   ChevronRight,
   ChevronLeft,
-  TrendingUp,
   Brain,
   Waves,
   Star,
@@ -29,13 +28,13 @@ import {
   Minus,
   Mic,
   Square,
-  Calendar,
   Flame,
   Check,
   AlertCircle,
   Loader2,
   CloudRain,
   TreePine,
+  Calendar,
 } from 'lucide-react';
 import { VitalityRing } from '../../../components/dashboard/VitalityRing';
 
@@ -292,21 +291,6 @@ function formatDate(dateStr: string): string {
   return date.toLocaleDateString('en-US', { weekday: 'short', month: 'short', day: 'numeric' });
 }
 
-function getScoreColor(score: number): string {
-  if (score >= 8) return 'text-emerald-400';
-  if (score >= 6) return 'text-cyan-400';
-  if (score >= 4) return 'text-amber-400';
-  return 'text-rose-400';
-}
-
-function getStressColor(score: number): string {
-  // Inverse for stress - lower is better
-  if (score <= 3) return 'text-emerald-400';
-  if (score <= 5) return 'text-cyan-400';
-  if (score <= 7) return 'text-amber-400';
-  return 'text-rose-400';
-}
-
 // ============================================================================
 // COMPONENTS
 // ============================================================================
@@ -318,10 +302,23 @@ function capitalize(str: string): string {
 
 // Compact Score Display (no icons, clean design)
 function ScoreDisplay({ log }: { log: WellnessLog }) {
+  // 7-tier color gradient (same as vitality) - values are 1-10, so multiply by 10
+  const getScoreColor = (score: number, isStress = false): string => {
+    // For stress, invert: high stress = low score (bad)
+    const normalizedScore = isStress ? (10 - score) * 10 : score * 10;
+    if (normalizedScore >= 90) return '#22c55e'; // Bright Green - Excellent
+    if (normalizedScore >= 80) return '#10b981'; // Emerald - Great
+    if (normalizedScore >= 70) return '#14b8a6'; // Teal - Good
+    if (normalizedScore >= 60) return '#eab308'; // Yellow - Fair
+    if (normalizedScore >= 50) return '#f97316'; // Orange - Needs Work
+    if (normalizedScore >= 40) return '#ef4444'; // Light Red - Poor
+    return '#dc2626'; // Red - Critical
+  };
+
   const scores = [
     { label: 'Mood', value: log.mood, color: getScoreColor(log.mood) },
     { label: 'Energy', value: log.energy, color: getScoreColor(log.energy) },
-    { label: 'Stress', value: log.stress, color: getStressColor(log.stress) },
+    { label: 'Stress', value: log.stress, color: getScoreColor(log.stress, true) },
     { label: 'Sleep', value: log.sleepQuality, color: getScoreColor(log.sleepQuality), suffix: ` · ${log.sleepHours.toFixed(1)}h` },
   ];
 
@@ -330,7 +327,7 @@ function ScoreDisplay({ log }: { log: WellnessLog }) {
       {scores.map(({ label, value, color, suffix }) => (
         <div key={label} className="text-center">
           <span className="text-[10px] text-text-muted uppercase tracking-wider font-medium block mb-1">{label}</span>
-          <div className={`text-xl font-bold ${color}`}>
+          <div className="text-xl font-bold" style={{ color }}>
             {value}
             <span className="text-xs text-text-muted font-normal">/10{suffix || ''}</span>
           </div>
@@ -459,7 +456,7 @@ function WellnessMetricCard({
   label: string;
   value: string;
   unit: string;
-  change: number; // Percentage change from previous period
+  change: number; // Point change from previous period
   changeGood: boolean; // Whether this change direction is good for this metric
   sparklineData: number[];
   color: string;
@@ -485,7 +482,7 @@ function WellnessMetricCard({
           <span className="text-xs text-text-muted">{unit}</span>
           {change !== 0 && (
             <span className={`text-xs font-medium ${changeColor}`}>
-              {changeSign}{change.toFixed(1)}%
+              {changeSign}{change.toFixed(1)}
             </span>
           )}
         </div>
@@ -573,9 +570,8 @@ function calculatePeriodChange(
   }
   const previousAvg = calculateAverage(previousData);
 
-  // Calculate percentage change
-  if (previousAvg === 0) return { currentAvg, change: 0 };
-  const change = ((currentAvg - previousAvg) / previousAvg) * 100;
+  // Calculate point change (difference between current and previous average)
+  const change = currentAvg - previousAvg;
 
   return { currentAvg, change };
 }
@@ -609,8 +605,7 @@ function WellnessTrends({ history }: { history: Record<string, WellnessLog> }) {
     <div className="space-y-4">
       {/* Header with Time Range Selector */}
       <div className="flex items-center justify-between">
-        <h3 className="text-sm font-bold text-text-primary flex items-center gap-2">
-          <TrendingUp size={14} className="text-cyan-400" />
+        <h3 className="text-sm font-bold text-text-primary">
           Wellness Trends
         </h3>
         <div className="flex gap-1">
@@ -677,90 +672,522 @@ function WellnessTrends({ history }: { history: Record<string, WellnessLog> }) {
   );
 }
 
-// History Calendar
-function HistoryCalendar({
+// Calendar Heatmap (GitHub-style)
+function CalendarHeatmap({
   history,
-  selectedDate,
   onSelectDate,
 }: {
   history: Record<string, WellnessLog>;
-  selectedDate: string;
   onSelectDate: (date: string) => void;
 }) {
-  const [weekOffset, setWeekOffset] = useState(0);
+  const [monthOffset, setMonthOffset] = useState(0);
 
-  const getWeekDays = () => {
-    const days: { date: string; dayNum: number; dayName: string; hasLog: boolean }[] = [];
-    const startDate = new Date();
-    startDate.setDate(startDate.getDate() - (weekOffset * 7));
-
-    for (let i = 6; i >= 0; i--) {
-      const date = new Date(startDate);
-      date.setDate(date.getDate() - i);
-      const dateStr = date.toISOString().split('T')[0];
-      days.push({
-        date: dateStr,
-        dayNum: date.getDate(),
-        dayName: date.toLocaleDateString('en-US', { weekday: 'short' }).slice(0, 2),
-        hasLog: !!history[dateStr],
-      });
-    }
-    return days;
+  // Get wellness score (average of mood, energy, sleepQuality - inverse stress)
+  const getWellnessScore = (log: WellnessLog): number => {
+    const positiveAvg = (log.mood + log.energy + log.sleepQuality) / 3;
+    const stressAdjusted = (10 - log.stress) / 10; // Convert stress to positive factor
+    return positiveAvg * (0.7 + stressAdjusted * 0.3); // Weighted average
   };
 
-  const weekDays = getWeekDays();
-  const todayStr = new Date().toISOString().split('T')[0];
+  // Get color based on wellness score (7-tier gradient, same as vitality)
+  const getHeatmapColor = (score: number | null): { bg: string; color: string } => {
+    if (score === null) return { bg: 'rgba(255,255,255,0.02)', color: 'transparent' };
+    // Score is 1-10, multiply by 10 for 0-100 scale
+    const normalizedScore = score * 10;
+    if (normalizedScore >= 90) return { bg: 'rgba(34,197,94,0.5)', color: '#22c55e' };   // Bright Green
+    if (normalizedScore >= 80) return { bg: 'rgba(16,185,129,0.5)', color: '#10b981' }; // Emerald
+    if (normalizedScore >= 70) return { bg: 'rgba(20,184,166,0.5)', color: '#14b8a6' }; // Teal
+    if (normalizedScore >= 60) return { bg: 'rgba(234,179,8,0.5)', color: '#eab308' };   // Yellow
+    if (normalizedScore >= 50) return { bg: 'rgba(249,115,22,0.5)', color: '#f97316' }; // Orange
+    if (normalizedScore >= 40) return { bg: 'rgba(239,68,68,0.5)', color: '#ef4444' };  // Light Red
+    return { bg: 'rgba(220,38,38,0.5)', color: '#dc2626' };                              // Red
+  };
+
+  // Generate calendar grid for the month
+  const getMonthData = () => {
+    const targetDate = new Date();
+    targetDate.setMonth(targetDate.getMonth() - monthOffset);
+    const year = targetDate.getFullYear();
+    const month = targetDate.getMonth();
+
+    const firstDay = new Date(year, month, 1);
+    const lastDay = new Date(year, month + 1, 0);
+    const startPadding = firstDay.getDay(); // 0 = Sunday
+
+    const days: { date: string | null; dayNum: number | null; score: number | null }[] = [];
+
+    // Add padding for days before the month starts
+    for (let i = 0; i < startPadding; i++) {
+      days.push({ date: null, dayNum: null, score: null });
+    }
+
+    // Add days of the month
+    for (let d = 1; d <= lastDay.getDate(); d++) {
+      const dateStr = `${year}-${String(month + 1).padStart(2, '0')}-${String(d).padStart(2, '0')}`;
+      const log = history[dateStr];
+      days.push({
+        date: dateStr,
+        dayNum: d,
+        score: log ? getWellnessScore(log) : null,
+      });
+    }
+
+    return {
+      monthName: targetDate.toLocaleDateString('en-US', { month: 'long', year: 'numeric' }),
+      days,
+    };
+  };
+
+  const { monthName, days } = getMonthData();
+  const weekDays = ['S', 'M', 'T', 'W', 'T', 'F', 'S'];
 
   return (
     <div className="rounded-2xl p-4 bg-surface border border-border">
-      <div className="flex items-center justify-between mb-4">
+      {/* Header */}
+      <div className="flex items-center justify-between mb-3">
         <button
-          onClick={() => setWeekOffset(w => w + 1)}
-          className="p-2 rounded-xl bg-surface-2 border border-border text-text-muted hover:text-text-primary transition-colors"
+          onClick={() => setMonthOffset(m => m + 1)}
+          className="p-1.5 rounded-lg bg-surface-2 border border-border text-text-muted hover:text-text-primary transition-colors"
         >
-          <ChevronLeft size={16} />
+          <ChevronLeft size={14} />
         </button>
-        <h3 className="text-sm font-bold text-text-primary flex items-center gap-2">
-          <Calendar size={14} className="text-violet-400" />
-          History
-        </h3>
+        <h3 className="text-sm font-bold text-text-primary">{monthName}</h3>
         <button
-          onClick={() => setWeekOffset(w => Math.max(0, w - 1))}
-          disabled={weekOffset === 0}
-          className="p-2 rounded-xl bg-surface-2 border border-border text-text-muted hover:text-text-primary transition-colors disabled:opacity-30"
+          onClick={() => setMonthOffset(m => Math.max(0, m - 1))}
+          disabled={monthOffset === 0}
+          className="p-1.5 rounded-lg bg-surface-2 border border-border text-text-muted hover:text-text-primary transition-colors disabled:opacity-30"
         >
-          <ChevronRight size={16} />
+          <ChevronRight size={14} />
         </button>
       </div>
 
-      <div className="grid grid-cols-7 gap-2">
-        {weekDays.map((day) => {
-          const isSelected = day.date === selectedDate;
-          const isToday = day.date === todayStr;
+      {/* Weekday headers */}
+      <div className="grid grid-cols-7 gap-1 mb-1">
+        {weekDays.map((day, i) => (
+          <div key={i} className="text-[9px] text-text-muted text-center font-medium py-1">
+            {day}
+          </div>
+        ))}
+      </div>
+
+      {/* Calendar grid - compact */}
+      <div className="grid grid-cols-7 gap-1">
+        {days.map((day, i) => {
+          const heatmapStyle = getHeatmapColor(day.score);
           return (
             <button
-              key={day.date}
-              onClick={() => onSelectDate(day.date)}
-              className={`flex flex-col items-center py-2 px-1 rounded-xl transition-all ${
-                isSelected
-                  ? 'bg-violet-500/20 border border-violet-500/40'
-                  : day.hasLog
-                    ? 'bg-surface-2 border border-border hover:border-violet-500/30'
-                    : 'bg-surface-2/50 border border-transparent opacity-50'
-              }`}
+              key={i}
+              onClick={() => day.date && onSelectDate(day.date)}
+              disabled={!day.date}
+              className={`h-8 rounded flex items-center justify-center text-[10px] font-medium transition-all ${
+                day.date ? 'hover:ring-1 hover:ring-violet-500/50 cursor-pointer' : 'cursor-default'
+              } ${day.score !== null ? 'text-text-primary' : 'text-text-muted/50'}`}
+              style={{ backgroundColor: heatmapStyle.bg }}
             >
-              <span className="text-[9px] text-text-muted uppercase">{day.dayName}</span>
-              <span className={`text-sm font-bold ${isToday ? 'text-violet-400' : 'text-text-primary'}`}>
-                {day.dayNum}
-              </span>
-              {day.hasLog && (
-                <div className="w-1.5 h-1.5 rounded-full bg-emerald-400 mt-1" />
-              )}
+              {day.dayNum}
             </button>
           );
         })}
       </div>
+
+      {/* Legend - 7-tier gradient */}
+      <div className="flex items-center justify-center gap-2 mt-3 pt-2 border-t border-border">
+        <span className="text-[9px] text-text-muted">Low</span>
+        <div className="flex gap-0.5">
+          <div className="w-2.5 h-2.5 rounded-sm" style={{ backgroundColor: 'rgba(220,38,38,0.5)' }} />
+          <div className="w-2.5 h-2.5 rounded-sm" style={{ backgroundColor: 'rgba(239,68,68,0.5)' }} />
+          <div className="w-2.5 h-2.5 rounded-sm" style={{ backgroundColor: 'rgba(249,115,22,0.5)' }} />
+          <div className="w-2.5 h-2.5 rounded-sm" style={{ backgroundColor: 'rgba(234,179,8,0.5)' }} />
+          <div className="w-2.5 h-2.5 rounded-sm" style={{ backgroundColor: 'rgba(20,184,166,0.5)' }} />
+          <div className="w-2.5 h-2.5 rounded-sm" style={{ backgroundColor: 'rgba(16,185,129,0.5)' }} />
+          <div className="w-2.5 h-2.5 rounded-sm" style={{ backgroundColor: 'rgba(34,197,94,0.5)' }} />
+        </div>
+        <span className="text-[9px] text-text-muted">High</span>
+      </div>
     </div>
+  );
+}
+
+// Timeline Entry Card - Compact Pill Style
+function TimelineEntryCard({
+  log,
+  onEdit,
+}: {
+  log: WellnessLog;
+  onEdit: () => void;
+}) {
+  // Calculate vitality score (0-100)
+  const vitalityScore = Math.round(((log.mood + log.energy + log.sleepQuality + (10 - log.stress)) / 4) * 10);
+
+  // 7-tier color gradient for vitality score
+  const getVitalityColor = (score: number): string => {
+    if (score >= 90) return '#22c55e'; // Bright Green - Excellent
+    if (score >= 80) return '#10b981'; // Emerald - Great
+    if (score >= 70) return '#14b8a6'; // Teal - Good
+    if (score >= 60) return '#eab308'; // Yellow - Fair
+    if (score >= 50) return '#f97316'; // Orange - Needs Work
+    if (score >= 40) return '#ef4444'; // Light Red - Poor
+    return '#dc2626'; // Red - Critical
+  };
+  const vitalityColor = getVitalityColor(vitalityScore);
+
+  const dateObj = new Date(log.date);
+  const dayNum = dateObj.getDate();
+  const dayName = dateObj.toLocaleDateString('en-US', { weekday: 'short' });
+  const monthShort = dateObj.toLocaleDateString('en-US', { month: 'short' });
+  const year = dateObj.getFullYear();
+  const currentYear = new Date().getFullYear();
+  const showYear = year !== currentYear;
+
+  return (
+    <button
+      onClick={onEdit}
+      className="w-full flex items-center gap-3 p-3 rounded-xl bg-white/[0.02] border border-white/[0.04] hover:bg-white/[0.04] hover:border-violet-500/20 transition-all text-left group"
+    >
+      {/* Date tile */}
+      <div className="flex-shrink-0 w-14 rounded-xl bg-white/[0.03] border border-white/[0.06] flex flex-col items-center py-2">
+        <span className="text-[10px] text-violet-400 font-medium uppercase">{dayName}</span>
+        <span className="text-xl font-bold text-text-primary leading-none">{dayNum}</span>
+        <span className="text-[9px] text-text-muted uppercase">{monthShort}{showYear ? ` ${year}` : ''}</span>
+      </div>
+
+      {/* Metrics */}
+      <div className="flex items-center gap-2">
+        <div className="w-12 text-center py-1.5 rounded-lg bg-emerald-500/10 border border-emerald-500/15">
+          <div className="text-sm font-bold text-emerald-400">{log.mood}</div>
+          <div className="text-[8px] text-text-muted uppercase">Mood</div>
+        </div>
+        <div className="w-12 text-center py-1.5 rounded-lg bg-amber-500/10 border border-amber-500/15">
+          <div className="text-sm font-bold text-amber-400">{log.energy}</div>
+          <div className="text-[8px] text-text-muted uppercase">Energy</div>
+        </div>
+        <div className="w-12 text-center py-1.5 rounded-lg bg-rose-500/10 border border-rose-500/15">
+          <div className="text-sm font-bold text-rose-400">{log.stress}</div>
+          <div className="text-[8px] text-text-muted uppercase">Stress</div>
+        </div>
+        <div className="w-12 text-center py-1.5 rounded-lg bg-violet-500/10 border border-violet-500/15">
+          <div className="text-sm font-bold text-violet-400">{log.sleepQuality}</div>
+          <div className="text-[8px] text-text-muted uppercase">Sleep</div>
+        </div>
+        <div className="w-12 text-center py-1.5 rounded-lg bg-cyan-500/10 border border-cyan-500/15">
+          <div className="text-sm font-bold text-cyan-400">{log.sleepHours.toFixed(1)}</div>
+          <div className="text-[8px] text-text-muted uppercase">Hours</div>
+        </div>
+      </div>
+
+      {/* Tags */}
+      <div className="flex-1 flex flex-wrap gap-1.5 justify-end">
+        {log.tags.slice(0, 3).map(tag => (
+          <span
+            key={tag}
+            className={`px-2 py-1 rounded-md text-xs font-medium ${
+              NEGATIVE_TAGS.includes(tag)
+                ? 'bg-rose-500/10 text-rose-400 border border-rose-500/20'
+                : 'bg-emerald-500/10 text-emerald-400 border border-emerald-500/20'
+            }`}
+          >
+            {tag}
+          </span>
+        ))}
+        {log.tags.length > 3 && (
+          <span className="px-2 py-1 rounded-md text-xs text-text-muted bg-white/[0.03]">+{log.tags.length - 3}</span>
+        )}
+      </div>
+
+      {/* Vitality Score */}
+      <div className="flex-shrink-0 w-14 h-14 rounded-xl flex flex-col items-center justify-center" style={{ background: `${vitalityColor}10`, border: `1px solid ${vitalityColor}30` }}>
+        <span className="text-xl font-bold leading-none" style={{ color: vitalityColor }}>{vitalityScore}</span>
+        <span className="text-[7px] text-text-muted uppercase">Vitality</span>
+      </div>
+    </button>
+  );
+}
+
+// Full Calendar Browser Modal
+function FullCalendarModal({
+  history,
+  onSelectDate,
+  onClose,
+}: {
+  history: Record<string, WellnessLog>;
+  onSelectDate: (date: string) => void;
+  onClose: () => void;
+}) {
+  const [selectedYear, setSelectedYear] = useState(new Date().getFullYear());
+  const [selectedMonth, setSelectedMonth] = useState(new Date().getMonth());
+
+  // Get vitality color for a log
+  const getVitalityColor = (log: WellnessLog): string => {
+    const score = Math.round(((log.mood + log.energy + log.sleepQuality + (10 - log.stress)) / 4) * 10);
+    if (score >= 90) return '#22c55e';
+    if (score >= 80) return '#10b981';
+    if (score >= 70) return '#14b8a6';
+    if (score >= 60) return '#eab308';
+    if (score >= 50) return '#f97316';
+    if (score >= 40) return '#ef4444';
+    return '#dc2626';
+  };
+
+  // Get years that have entries
+  const yearsWithEntries = useMemo(() => {
+    const years = new Set<number>();
+    Object.keys(history).forEach(date => {
+      years.add(new Date(date).getFullYear());
+    });
+    return Array.from(years).sort((a, b) => b - a);
+  }, [history]);
+
+  // Generate calendar for selected month
+  const calendarDays = useMemo(() => {
+    const firstDay = new Date(selectedYear, selectedMonth, 1);
+    const lastDay = new Date(selectedYear, selectedMonth + 1, 0);
+    const startPadding = firstDay.getDay();
+    const days: { date: string | null; dayNum: number | null; log: WellnessLog | null }[] = [];
+
+    for (let i = 0; i < startPadding; i++) {
+      days.push({ date: null, dayNum: null, log: null });
+    }
+
+    for (let d = 1; d <= lastDay.getDate(); d++) {
+      const dateStr = `${selectedYear}-${String(selectedMonth + 1).padStart(2, '0')}-${String(d).padStart(2, '0')}`;
+      days.push({ date: dateStr, dayNum: d, log: history[dateStr] || null });
+    }
+
+    return days;
+  }, [selectedYear, selectedMonth, history]);
+
+  const monthNames = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'];
+
+  const handleDateClick = (date: string) => {
+    onSelectDate(date);
+    onClose();
+  };
+
+  const goToPrevMonth = () => {
+    if (selectedMonth === 0) {
+      setSelectedMonth(11);
+      setSelectedYear(y => y - 1);
+    } else {
+      setSelectedMonth(m => m - 1);
+    }
+  };
+
+  const goToNextMonth = () => {
+    if (selectedMonth === 11) {
+      setSelectedMonth(0);
+      setSelectedYear(y => y + 1);
+    } else {
+      setSelectedMonth(m => m + 1);
+    }
+  };
+
+  return createPortal(
+    <div className="fixed inset-0 z-50 flex items-center justify-center p-4">
+      {/* Backdrop */}
+      <div className="absolute inset-0 bg-black/80 backdrop-blur-sm" onClick={onClose} />
+
+      {/* Modal */}
+      <div className="relative w-full max-w-lg bg-surface border border-border rounded-3xl overflow-hidden shadow-2xl animate-in fade-in zoom-in-95 duration-200">
+        {/* Header */}
+        <div className="flex items-center justify-between p-5 border-b border-border bg-gradient-to-b from-white/[0.03] to-transparent">
+          <div className="flex items-center gap-3">
+            <div className="w-10 h-10 rounded-xl bg-violet-500/20 flex items-center justify-center">
+              <Calendar size={20} className="text-violet-400" />
+            </div>
+            <div>
+              <h2 className="text-lg font-bold text-text-primary">Browse All Entries</h2>
+              <p className="text-xs text-text-muted">{Object.keys(history).length} total logs</p>
+            </div>
+          </div>
+          <button
+            onClick={onClose}
+            className="w-8 h-8 rounded-full bg-white/[0.05] hover:bg-white/[0.1] flex items-center justify-center transition-colors"
+          >
+            <X size={18} className="text-text-muted" />
+          </button>
+        </div>
+
+        {/* Year Selector */}
+        {yearsWithEntries.length > 1 && (
+          <div className="flex items-center justify-center gap-2 p-3 border-b border-border">
+            {yearsWithEntries.map(year => (
+              <button
+                key={year}
+                onClick={() => setSelectedYear(year)}
+                className={`px-4 py-1.5 rounded-full text-sm font-medium transition-all ${
+                  selectedYear === year
+                    ? 'bg-violet-500 text-white'
+                    : 'bg-white/[0.05] text-text-muted hover:bg-white/[0.1]'
+                }`}
+              >
+                {year}
+              </button>
+            ))}
+          </div>
+        )}
+
+        {/* Month Navigation */}
+        <div className="flex items-center justify-between px-5 py-4">
+          <button
+            onClick={goToPrevMonth}
+            className="w-9 h-9 rounded-full bg-white/[0.05] hover:bg-white/[0.1] flex items-center justify-center transition-colors"
+          >
+            <ChevronLeft size={18} className="text-text-muted" />
+          </button>
+          <span className="text-base font-semibold text-text-primary">
+            {monthNames[selectedMonth]} {selectedYear}
+          </span>
+          <button
+            onClick={goToNextMonth}
+            className="w-9 h-9 rounded-full bg-white/[0.05] hover:bg-white/[0.1] flex items-center justify-center transition-colors"
+          >
+            <ChevronRight size={18} className="text-text-muted" />
+          </button>
+        </div>
+
+        {/* Calendar Grid */}
+        <div className="px-5 pb-5">
+          {/* Day Headers */}
+          <div className="grid grid-cols-7 gap-1 mb-2">
+            {['S', 'M', 'T', 'W', 'T', 'F', 'S'].map((day, i) => (
+              <div key={i} className="text-center text-[10px] font-medium text-text-muted uppercase py-1">
+                {day}
+              </div>
+            ))}
+          </div>
+
+          {/* Days */}
+          <div className="grid grid-cols-7 gap-1">
+            {calendarDays.map((day, i) => {
+              const hasLog = day.log !== null;
+              const color = hasLog ? getVitalityColor(day.log!) : 'transparent';
+              const isToday = day.date === new Date().toISOString().split('T')[0];
+
+              return (
+                <button
+                  key={i}
+                  onClick={() => day.date && handleDateClick(day.date)}
+                  disabled={!day.date}
+                  className={`aspect-square rounded-lg flex items-center justify-center text-sm font-medium transition-all relative ${
+                    day.date
+                      ? hasLog
+                        ? 'hover:ring-2 hover:ring-violet-500/50 cursor-pointer'
+                        : 'text-text-muted/40 hover:bg-white/[0.05] cursor-pointer'
+                      : ''
+                  } ${isToday ? 'ring-1 ring-violet-500/50' : ''}`}
+                  style={hasLog ? { backgroundColor: `${color}40`, color } : {}}
+                >
+                  {day.dayNum}
+                  {hasLog && (
+                    <div
+                      className="absolute bottom-1 left-1/2 -translate-x-1/2 w-1 h-1 rounded-full"
+                      style={{ backgroundColor: color }}
+                    />
+                  )}
+                </button>
+              );
+            })}
+          </div>
+        </div>
+
+        {/* Legend */}
+        <div className="px-5 pb-5">
+          <div className="flex items-center justify-center gap-3 py-3 rounded-xl bg-white/[0.02] border border-white/[0.04]">
+            <span className="text-[10px] text-text-muted">Vitality:</span>
+            <div className="flex items-center gap-1">
+              <div className="w-3 h-3 rounded" style={{ backgroundColor: 'rgba(220,38,38,0.4)' }} />
+              <div className="w-3 h-3 rounded" style={{ backgroundColor: 'rgba(239,68,68,0.4)' }} />
+              <div className="w-3 h-3 rounded" style={{ backgroundColor: 'rgba(249,115,22,0.4)' }} />
+              <div className="w-3 h-3 rounded" style={{ backgroundColor: 'rgba(234,179,8,0.4)' }} />
+              <div className="w-3 h-3 rounded" style={{ backgroundColor: 'rgba(20,184,166,0.4)' }} />
+              <div className="w-3 h-3 rounded" style={{ backgroundColor: 'rgba(16,185,129,0.4)' }} />
+              <div className="w-3 h-3 rounded" style={{ backgroundColor: 'rgba(34,197,94,0.4)' }} />
+            </div>
+            <div className="flex gap-4 text-[10px] text-text-muted">
+              <span>Low</span>
+              <span>High</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>,
+    document.body
+  );
+}
+
+// Timeline Feed (Collapsible)
+function TimelineFeed({
+  history,
+  onSelectDate,
+}: {
+  history: Record<string, WellnessLog>;
+  onSelectDate: (date: string) => void;
+}) {
+  const [isExpanded, setIsExpanded] = useState(true);
+  const [showCalendarModal, setShowCalendarModal] = useState(false);
+
+  // Get all entries sorted by date (newest first)
+  const entries = useMemo(() => {
+    return Object.values(history)
+      .sort((a, b) => new Date(b.date).getTime() - new Date(a.date).getTime());
+  }, [history]);
+
+  if (entries.length === 0) {
+    return null; // Don't show if no entries
+  }
+
+  return (
+    <>
+      <div className="rounded-2xl bg-surface border border-border overflow-hidden">
+        {/* Header */}
+        <div className="flex items-center justify-between p-4 border-b border-border">
+          <button
+            onClick={() => setIsExpanded(!isExpanded)}
+            className="flex items-center gap-2 hover:opacity-80 transition-opacity"
+          >
+            <span className="text-sm font-bold text-text-primary">Recent Entries</span>
+            <span className="text-xs text-text-muted">({entries.length})</span>
+            <ChevronRight
+              size={16}
+              className={`text-text-muted transition-transform duration-200 ${isExpanded ? 'rotate-90' : ''}`}
+            />
+          </button>
+        </div>
+
+        {/* Collapsible Content */}
+        {isExpanded && (
+          <div className="p-4 space-y-2">
+            {entries.slice(0, 10).map(log => (
+              <TimelineEntryCard
+                key={log.id}
+                log={log}
+                onEdit={() => onSelectDate(log.date)}
+              />
+            ))}
+
+            {/* View All Button */}
+            {entries.length > 10 && (
+              <button
+                onClick={() => setShowCalendarModal(true)}
+                className="w-full mt-3 py-3 rounded-xl bg-gradient-to-r from-violet-500/10 to-purple-500/10 border border-violet-500/20 hover:border-violet-500/40 flex items-center justify-center gap-2 transition-all group"
+              >
+                <Calendar size={16} className="text-violet-400 group-hover:scale-110 transition-transform" />
+                <span className="text-sm font-medium text-violet-400">Browse All {entries.length} Entries</span>
+              </button>
+            )}
+          </div>
+        )}
+      </div>
+
+      {/* Full Calendar Modal */}
+      {showCalendarModal && (
+        <FullCalendarModal
+          history={history}
+          onSelectDate={onSelectDate}
+          onClose={() => setShowCalendarModal(false)}
+        />
+      )}
+    </>
   );
 }
 
@@ -1716,6 +2143,9 @@ export default function WellnessTab() {
   const { patientId } = useAuth();
   const { data: firestoreHistory } = useWellnessHistory(patientId);
 
+  // View toggle state
+  const [view, setView] = useState<'today' | 'history'>('today');
+
   // Convert Firestore data to local WellnessLog format
   const history = useMemo(() => {
     if (!firestoreHistory) return {};
@@ -1798,112 +2228,159 @@ export default function WellnessTab() {
         </div>
       )}
 
-      {/* Vitality Section with Scores Below */}
-      <div className="rounded-2xl p-5 bg-surface border border-border relative overflow-hidden">
-        <div className="absolute top-0 right-0 w-40 h-40 bg-violet-500/10 rounded-full blur-[80px] pointer-events-none" />
-
-        <div className="mb-4">
-          <h3 className="text-base font-bold text-text-primary">{formatDate(selectedDate)}&apos;s Wellness</h3>
-        </div>
-
-        {selectedLog ? (
-          <>
-            <div className="flex justify-center">
-              <VitalityRing
-                wellnessLog={{
-                  id: selectedLog.id,
-                  date: selectedLog.date,
-                  mood: selectedLog.mood,
-                  energy: selectedLog.energy,
-                  stress: selectedLog.stress,
-                  sleepQuality: selectedLog.sleepQuality,
-                  symptoms: selectedLog.symptoms,
-                  notes: selectedLog.notes || null,
-                }}
-                size={160}
-                strokeWidth={10}
-                variant={4}
-                animation={1}
-              />
-            </div>
-            <ScoreDisplay log={selectedLog} />
-
-            {/* Tags + Body signals row with Log button */}
-            <div className="mt-4 pt-4 border-t border-border flex items-center gap-3">
-              {/* Tags and body signals on the left - sorted by length (shorter first) */}
-              <div className="flex-1 flex flex-wrap gap-1.5">
-                {/* Positive/Negative Tags - sorted by length */}
-                {[...selectedLog.tags].sort((a, b) => a.length - b.length).map(t => {
-                  const isNegative = NEGATIVE_TAGS.includes(t);
-                  return (
-                    <span
-                      key={t}
-                      className={`min-w-[88px] px-2.5 py-1 rounded-lg text-[11px] font-medium text-center ${
-                        isNegative
-                          ? 'bg-rose-500/10 border border-rose-500/20 text-rose-400'
-                          : 'bg-emerald-500/10 border border-emerald-500/20 text-emerald-400'
-                      }`}
-                    >
-                      {capitalize(t)}
-                    </span>
-                  );
-                })}
-                {/* Body signals - sorted by length */}
-                {[...selectedLog.symptoms].sort((a, b) => a.length - b.length).map(s => (
-                  <span key={s} className="min-w-[88px] px-2.5 py-1 rounded-lg text-[11px] font-medium text-center bg-amber-500/10 border border-amber-500/20 text-amber-400">
-                    {capitalize(s)}
-                  </span>
-                ))}
-              </div>
-              {/* Log/Edit button on the right */}
-              <button
-                onClick={() => setShowLogModal(true)}
-                className="px-5 py-2.5 rounded-xl text-sm font-semibold bg-violet-500/15 border border-violet-500/30 text-violet-300 transition-all hover:bg-violet-500/20 active:scale-[0.98] whitespace-nowrap backdrop-blur-sm"
-              >
-                {selectedLog ? 'Edit Log' : 'Log Now'}
-              </button>
-            </div>
-          </>
-        ) : (
-          <EmptyState date={selectedDate} onLog={() => setShowLogModal(true)} />
-        )}
+      {/* View Toggle */}
+      <div className="flex bg-white/[0.02] backdrop-blur-sm rounded-xl p-1 border border-white/[0.04]">
+        <button
+          onClick={() => setView('today')}
+          className={`flex-1 py-2.5 rounded-lg text-sm font-semibold transition-all duration-300 ${
+            view === 'today'
+              ? 'bg-white/[0.08] text-violet-400 border border-violet-500/20 shadow-[0_0_15px_rgba(139,92,246,0.15)]'
+              : 'text-text-muted hover:text-text-primary hover:bg-white/[0.03]'
+          }`}
+        >
+          Today
+        </button>
+        <button
+          onClick={() => setView('history')}
+          className={`flex-1 py-2.5 rounded-lg text-sm font-semibold transition-all duration-300 ${
+            view === 'history'
+              ? 'bg-white/[0.08] text-violet-400 border border-violet-500/20 shadow-[0_0_15px_rgba(139,92,246,0.15)]'
+              : 'text-text-muted hover:text-text-primary hover:bg-white/[0.03]'
+          }`}
+        >
+          History
+        </button>
       </div>
 
-      {/* Streak Display */}
-      <StreakDisplay streak={streak} />
+      {/* TODAY VIEW */}
+      {view === 'today' && (
+        <>
+          {/* Vitality Section with Scores Below */}
+          <div className="rounded-2xl p-5 bg-surface border border-border relative overflow-hidden">
+            <div className="absolute top-0 right-0 w-40 h-40 bg-violet-500/10 rounded-full blur-[80px] pointer-events-none" />
 
-      {/* Mindfulness Section (Neuro-Library) */}
-      <div className="space-y-4">
-        <div className="flex items-center gap-3 px-1">
-          <div className="p-2 bg-cyan-500/10 rounded-lg text-cyan-400">
-            <Brain size={18} />
+            <div className="mb-4">
+              <h3 className="text-base font-bold text-text-primary">Today&apos;s Wellness</h3>
+            </div>
+
+            {selectedLog ? (
+              <>
+                <div className="flex justify-center">
+                  <VitalityRing
+                    wellnessLog={{
+                      id: selectedLog.id,
+                      date: selectedLog.date,
+                      mood: selectedLog.mood,
+                      energy: selectedLog.energy,
+                      stress: selectedLog.stress,
+                      sleepQuality: selectedLog.sleepQuality,
+                      symptoms: selectedLog.symptoms,
+                      notes: selectedLog.notes || null,
+                    }}
+                    size={160}
+                    strokeWidth={10}
+                    variant={4}
+                    animation={1}
+                  />
+                </div>
+                <ScoreDisplay log={selectedLog} />
+
+                {/* Tags + Body signals row with Log button */}
+                <div className="mt-4 pt-4 border-t border-border flex items-center gap-3">
+                  {/* Tags and body signals on the left - sorted by length (shorter first) */}
+                  <div className="flex-1 flex flex-wrap gap-1.5">
+                    {/* Positive/Negative Tags - sorted by length */}
+                    {[...selectedLog.tags].sort((a, b) => a.length - b.length).map(t => {
+                      const isNegative = NEGATIVE_TAGS.includes(t);
+                      return (
+                        <span
+                          key={t}
+                          className={`min-w-[88px] px-2.5 py-1 rounded-lg text-[11px] font-medium text-center ${
+                            isNegative
+                              ? 'bg-rose-500/10 border border-rose-500/20 text-rose-400'
+                              : 'bg-emerald-500/10 border border-emerald-500/20 text-emerald-400'
+                          }`}
+                        >
+                          {capitalize(t)}
+                        </span>
+                      );
+                    })}
+                    {/* Body signals - sorted by length */}
+                    {[...selectedLog.symptoms].sort((a, b) => a.length - b.length).map(s => (
+                      <span key={s} className="min-w-[88px] px-2.5 py-1 rounded-lg text-[11px] font-medium text-center bg-amber-500/10 border border-amber-500/20 text-amber-400">
+                        {capitalize(s)}
+                      </span>
+                    ))}
+                  </div>
+                  {/* Log/Edit button on the right */}
+                  <button
+                    onClick={() => setShowLogModal(true)}
+                    className="px-5 py-2.5 rounded-xl text-sm font-semibold bg-violet-500/15 border border-violet-500/30 text-violet-300 transition-all hover:bg-violet-500/20 active:scale-[0.98] whitespace-nowrap backdrop-blur-sm"
+                  >
+                    {selectedLog ? 'Edit Log' : 'Log Now'}
+                  </button>
+                </div>
+              </>
+            ) : (
+              <EmptyState date={selectedDate} onLog={() => setShowLogModal(true)} />
+            )}
           </div>
-          <h3 className="text-sm font-bold uppercase text-text-primary tracking-widest">Neuro-Library</h3>
-        </div>
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3">
-          {mindfulnessModules.map((module) => (
-            <MindfulnessCard
-              key={module.id}
-              module={module}
-              isFavorite={favoriteIds.includes(module.id)}
-              onToggleFavorite={() => setFavoriteIds(prev =>
-                prev.includes(module.id) ? prev.filter(f => f !== module.id) : [...prev, module.id]
-              )}
-              onPlay={() => setActiveSession(module)}
-            />
-          ))}
-        </div>
-      </div>
 
-      {/* History Calendar */}
-      <HistoryCalendar
-        history={mergedHistory}
-        selectedDate={selectedDate}
-        onSelectDate={setSelectedDate}
-      />
+          {/* Streak Display */}
+          <StreakDisplay streak={streak} />
 
-      {/* Weekly Line Chart */}
-      <WellnessTrends history={mergedHistory} />
+          {/* Mindfulness Section (Neuro-Library) */}
+          <div className="space-y-4">
+            <div className="flex items-center gap-3 px-1">
+              <div className="p-2 bg-cyan-500/10 rounded-lg text-cyan-400">
+                <Brain size={18} />
+              </div>
+              <h3 className="text-sm font-bold uppercase text-text-primary tracking-widest">Neuro-Library</h3>
+            </div>
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3">
+              {mindfulnessModules.map((module) => (
+                <MindfulnessCard
+                  key={module.id}
+                  module={module}
+                  isFavorite={favoriteIds.includes(module.id)}
+                  onToggleFavorite={() => setFavoriteIds(prev =>
+                    prev.includes(module.id) ? prev.filter(f => f !== module.id) : [...prev, module.id]
+                  )}
+                  onPlay={() => setActiveSession(module)}
+                />
+              ))}
+            </div>
+          </div>
+        </>
+      )}
+
+      {/* HISTORY VIEW */}
+      {view === 'history' && (
+        <>
+          {/* Calendar Heatmap (GitHub-style) */}
+          <CalendarHeatmap
+            history={mergedHistory}
+            onSelectDate={(date) => {
+              setSelectedDate(date);
+              if (mergedHistory[date]) {
+                setShowLogModal(true);
+              }
+            }}
+          />
+
+          {/* Wellness Trends (Charts) */}
+          <WellnessTrends history={mergedHistory} />
+
+          {/* Timeline Feed (Recent Entries) */}
+          <TimelineFeed
+            history={mergedHistory}
+            onSelectDate={(date) => {
+              setSelectedDate(date);
+              setShowLogModal(true);
+            }}
+          />
+        </>
+      )}
 
       {/* Modals */}
       {showLogModal && (

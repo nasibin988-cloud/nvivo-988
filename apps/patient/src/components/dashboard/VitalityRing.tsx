@@ -16,21 +16,27 @@ interface ScoreColors {
   label: string;
 }
 
-// 5 distinct color categories based on vitality score
+// 7-tier color gradient for vitality score
 function getScoreColors(score: number): ScoreColors {
   if (score >= 90) {
-    return { main: '#10B981', secondary: '#34D399', label: 'Optimal' }; // Emerald
+    return { main: '#22c55e', secondary: '#4ade80', label: 'Excellent' }; // Bright Green
   }
   if (score >= 80) {
-    return { main: '#3B82F6', secondary: '#60A5FA', label: 'High' }; // Blue
+    return { main: '#10b981', secondary: '#34d399', label: 'Great' }; // Emerald
+  }
+  if (score >= 70) {
+    return { main: '#14b8a6', secondary: '#2dd4bf', label: 'Good' }; // Teal
   }
   if (score >= 60) {
-    return { main: '#8B5CF6', secondary: '#A78BFA', label: 'Good' }; // Purple
+    return { main: '#eab308', secondary: '#facc15', label: 'Fair' }; // Yellow
+  }
+  if (score >= 50) {
+    return { main: '#f97316', secondary: '#fb923c', label: 'Needs Work' }; // Orange
   }
   if (score >= 40) {
-    return { main: '#F59E0B', secondary: '#FBBF24', label: 'Moderate' }; // Amber
+    return { main: '#ef4444', secondary: '#f87171', label: 'Poor' }; // Light Red
   }
-  return { main: '#EF4444', secondary: '#F87171', label: 'Low' }; // Red
+  return { main: '#dc2626', secondary: '#f87171', label: 'Critical' }; // Red
 }
 
 function calculateVitalityScore(log: WellnessLog): number {
