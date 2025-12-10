@@ -17,14 +17,16 @@ service cloud.firestore {
       }
     }
 
-    // Articles collection - any authenticated user can read
+    // Articles collection - public read for educational content
     match /articles/{articleId} {
-      allow read: if request.auth != null;
+      allow read: if true;
+      allow write: if false;
     }
 
-    // Article categories collection - any authenticated user can read
+    // Article categories collection - public read
     match /articleCategories/{categoryId} {
-      allow read: if request.auth != null;
+      allow read: if true;
+      allow write: if false;
     }
   }
 }

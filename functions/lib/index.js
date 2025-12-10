@@ -33,7 +33,7 @@ var __importStar = (this && this.__importStar) || (function () {
     };
 })();
 Object.defineProperty(exports, "__esModule", { value: true });
-exports.clearCareDataFn = exports.seedCareDataFn = exports.getAppointmentsFn = exports.getCarePlanGoalsFn = exports.completeTaskFn = exports.getTasksFn = exports.logMedicationDoseFn = exports.getMedicationScheduleFn = exports.getMedicationsFn = exports.getCareTeamFn = exports.getCareDataFn = exports.completeMicroWin = exports.getDailyMicroWins = exports.reseedHealthTrendsFn = exports.reseedMicroWinsFn = exports.deleteTestPatientFn = exports.seedTestPatientFn = void 0;
+exports.searchFoods = exports.analyzeFoodPhoto = exports.clearCareDataFn = exports.seedCareDataFn = exports.getAppointmentsFn = exports.getCarePlanGoalsFn = exports.completeTaskFn = exports.getTasksFn = exports.logMedicationDoseFn = exports.getMedicationScheduleFn = exports.getMedicationsFn = exports.getCareTeamFn = exports.getCareDataFn = exports.completeMicroWin = exports.getDailyMicroWins = exports.reseedHealthTrendsFn = exports.reseedMicroWinsFn = exports.deleteTestPatientFn = exports.seedTestPatientFn = void 0;
 const admin = __importStar(require("firebase-admin"));
 const v2_1 = require("firebase-functions/v2");
 const seed_1 = require("./seed");
@@ -42,6 +42,8 @@ const careDataFunctions = __importStar(require("./domains/care/careData"));
 const seedCareData_1 = require("./seed/seedCareData");
 const seedMicroWins_1 = require("./seed/seedMicroWins");
 const seedHealthTrends_1 = require("./seed/seedHealthTrends");
+const foodAnalysis_1 = require("./domains/ai/foodAnalysis");
+const foodSearch_1 = require("./domains/ai/foodSearch");
 // Initialize Firebase Admin
 admin.initializeApp();
 // Export seed functions (only for development)
@@ -329,6 +331,60 @@ exports.clearCareDataFn = v2_1.https.onCall({ cors: true }, async (request) => {
     catch (error) {
         console.error('Error clearing care data:', error);
         throw new v2_1.https.HttpsError('internal', 'Failed to clear care data');
+    }
+});
+// ============================================================================
+// AI FOOD ANALYSIS FUNCTIONS
+// ============================================================================
+/**
+ * Analyze a food photo using GPT-4 Vision
+ * Returns nutritional information for detected food items
+ */
+exports.analyzeFoodPhoto = v2_1.https.onCall({
+    cors: true,
+    secrets: [foodAnalysis_1.openaiApiKey],
+}, async (request) => {
+    var _a;
+    const { imageBase64 } = (_a = request.data) !== null && _a !== void 0 ? _a : {};
+    if (!imageBase64) {
+        throw new v2_1.https.HttpsError('invalid-argument', 'Image data is required');
+    }
+    // Validate base64 string (basic check)
+    if (typeof imageBase64 !== 'string' || imageBase64.length < 100) {
+        throw new v2_1.https.HttpsError('invalid-argument', 'Invalid image data');
+    }
+    try {
+        const result = await (0, foodAnalysis_1.analyzeFoodPhoto)(imageBase64);
+        return result;
+    }
+    catch (error) {
+        console.error('Error analyzing food photo:', error);
+        throw new v2_1.https.HttpsError('internal', 'Failed to analyze food photo');
+    }
+});
+/**
+ * Search foods using USDA FoodData Central
+ * Returns foods matching the query with nutrition information
+ */
+exports.searchFoods = v2_1.https.onCall({
+    cors: true,
+    secrets: [foodSearch_1.usdaApiKey],
+}, async (request) => {
+    var _a;
+    const { query, limit } = (_a = request.data) !== null && _a !== void 0 ? _a : {};
+    if (!query || typeof query !== 'string') {
+        throw new v2_1.https.HttpsError('invalid-argument', 'Search query is required');
+    }
+    if (query.length < 2) {
+        throw new v2_1.https.HttpsError('invalid-argument', 'Query must be at least 2 characters');
+    }
+    try {
+        const results = await (0, foodSearch_1.searchFoods)(query, limit || 15);
+        return results;
+    }
+    catch (error) {
+        console.error('Error searching foods:', error);
+        throw new v2_1.https.HttpsError('internal', 'Failed to search foods');
     }
 });
 //# sourceMappingURL=index.js.map

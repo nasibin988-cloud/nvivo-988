@@ -32,8 +32,8 @@ if (fs.existsSync(serviceAccountPath)) {
 const bucket = admin.storage().bucket();
 const db = admin.firestore();
 
-// Read articles from JSON
-const articlesPath = '/Users/bwv988/nvivo/apps/patient/src/data/articles.json';
+// Read articles from the current repo
+const articlesPath = path.join(__dirname, '../apps/patient/src/data/articles.json');
 const articles = JSON.parse(fs.readFileSync(articlesPath, 'utf8'));
 
 // Category to visual style mapping

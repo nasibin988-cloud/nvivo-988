@@ -6,12 +6,12 @@
  */
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.TEST_CLINICIAN_PROFILE = exports.TEST_CLINICIAN_ID = exports.TEST_PATIENT_PROFILE = exports.TEST_PATIENT_ID = void 0;
-exports.TEST_PATIENT_ID = 'test-patient-001';
+exports.TEST_PATIENT_ID = 'sarah-mitchell-test';
 exports.TEST_PATIENT_PROFILE = {
     id: exports.TEST_PATIENT_ID,
     firstName: 'Sarah',
-    lastName: 'Johnson',
-    email: 'sarah.johnson@example.com',
+    lastName: 'Mitchell',
+    email: 'sarah.mitchell@test.nvivo.health',
     dateOfBirth: '1985-03-15',
     gender: 'female',
     phone: '+1 (555) 123-4567',

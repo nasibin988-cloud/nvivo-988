@@ -36,8 +36,8 @@ if (process.env.FIRESTORE_EMULATOR_HOST) {
   console.log('Using Firestore emulator');
 }
 
-// Read articles from the old repo
-const articlesPath = '/Users/bwv988/nvivo/apps/patient/src/data/articles.json';
+// Read articles from the current repo
+const articlesPath = path.join(__dirname, '../apps/patient/src/data/articles.json');
 
 interface Article {
   id: string;

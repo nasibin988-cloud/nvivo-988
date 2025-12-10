@@ -4,22 +4,37 @@
  *
  * Usage:
  *   cd /Users/bwv988/nvivo/nvivo-988
- *   FIRESTORE_EMULATOR_HOST="127.0.0.1:8080" node scripts/seedArticles.cjs
+ *   node scripts/seedArticles.cjs           # Seeds to emulator (default)
+ *   node scripts/seedArticles.cjs --prod    # Seeds to production
  */
 
-const admin = require('firebase-admin');
 const fs = require('fs');
 const path = require('path');
 
+// Check if targeting production
+const isProduction = process.argv.includes('--prod');
+
+// For emulator, set env var BEFORE requiring firebase-admin
+if (!isProduction) {
+  process.env.FIRESTORE_EMULATOR_HOST = '127.0.0.1:8080';
+  console.log('Targeting EMULATOR at 127.0.0.1:8080');
+}
+
+const admin = require('firebase-admin');
+
 // Initialize Firebase Admin
-const serviceAccountPath = path.join(__dirname, '../serviceAccountKey.json');
-if (fs.existsSync(serviceAccountPath)) {
+if (isProduction) {
+  const serviceAccountPath = path.join(__dirname, '../serviceAccountKey.json');
+  if (!fs.existsSync(serviceAccountPath)) {
+    console.error('ERROR: serviceAccountKey.json not found for production mode');
+    process.exit(1);
+  }
   const serviceAccount = JSON.parse(fs.readFileSync(serviceAccountPath, 'utf8'));
   admin.initializeApp({
     credential: admin.credential.cert(serviceAccount),
   });
+  console.log('Targeting PRODUCTION');
 } else {
-  // Use default credentials (for emulator)
   admin.initializeApp({
     projectId: 'nvivo-988',
   });
@@ -34,6 +49,17 @@ if (process.env.FIRESTORE_EMULATOR_HOST) {
 
 // Read articles from the old repo
 const articlesPath = '/Users/bwv988/nvivo/apps/patient/src/data/articles.json';
+// Local images folder (generated AI thumbnails)
+const localImagesDir = path.join(__dirname, '../apps/patient/public/images/articles');
+
+// Get local image path for an article (if it exists)
+function getLocalImageUrl(articleId) {
+  const localImagePath = path.join(localImagesDir, `${articleId}.png`);
+  if (fs.existsSync(localImagePath)) {
+    return `/images/articles/${articleId}.png`;
+  }
+  return null;
+}
 
 async function seedArticles() {
   console.log('Reading articles from:', articlesPath);
@@ -42,6 +68,10 @@ async function seedArticles() {
   const articles = JSON.parse(articlesRaw);
 
   console.log(`Found ${articles.length} articles\n`);
+
+  // Check for local images
+  const localImagesCount = articles.filter(a => getLocalImageUrl(a.id)).length;
+  console.log(`Found ${localImagesCount} local AI-generated images\n`);
 
   // Get unique categories
   const categories = [...new Set(articles.map(a => a.category))];
@@ -57,8 +87,11 @@ async function seedArticles() {
 
     for (const article of articleBatch) {
       const docRef = db.collection('articles').doc(article.id);
+      // Use local image if available, otherwise fall back to original
+      const localImageUrl = getLocalImageUrl(article.id);
       batch.set(docRef, {
         ...article,
+        imageUrl: localImageUrl || article.imageUrl,
         createdAt: admin.firestore.FieldValue.serverTimestamp(),
         updatedAt: admin.firestore.FieldValue.serverTimestamp(),
         // Add searchable lowercase fields

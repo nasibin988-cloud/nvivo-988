@@ -7,6 +7,7 @@ import { seedCareData, clearCareData } from './seed/seedCareData';
 import { clearMicroWins, seedMicroWins } from './seed/seedMicroWins';
 import { seedHealthTrends, clearHealthTrends } from './seed/seedHealthTrends';
 import { analyzeFoodPhoto as analyzeFoodPhotoFn, openaiApiKey } from './domains/ai/foodAnalysis';
+import { searchFoods as searchFoodsFn, usdaApiKey } from './domains/ai/foodSearch';
 
 // Initialize Firebase Admin
 admin.initializeApp();
@@ -382,6 +383,36 @@ export const analyzeFoodPhoto = https.onCall(
     } catch (error) {
       console.error('Error analyzing food photo:', error);
       throw new https.HttpsError('internal', 'Failed to analyze food photo');
+    }
+  }
+);
+
+/**
+ * Search foods using USDA FoodData Central
+ * Returns foods matching the query with nutrition information
+ */
+export const searchFoods = https.onCall(
+  {
+    cors: true,
+    secrets: [usdaApiKey],
+  },
+  async (request) => {
+    const { query, limit } = request.data ?? {};
+
+    if (!query || typeof query !== 'string') {
+      throw new https.HttpsError('invalid-argument', 'Search query is required');
+    }
+
+    if (query.length < 2) {
+      throw new https.HttpsError('invalid-argument', 'Query must be at least 2 characters');
+    }
+
+    try {
+      const results = await searchFoodsFn(query, limit || 15);
+      return results;
+    } catch (error) {
+      console.error('Error searching foods:', error);
+      throw new https.HttpsError('internal', 'Failed to search foods');
     }
   }
 );

@@ -116,26 +116,31 @@ export default function FoodSearchModal({ onClose, onSelect }: FoodSearchModalPr
   };
 
   return (
-    <div className="fixed inset-0 z-[100] flex items-end sm:items-center justify-center bg-black/80 backdrop-blur-sm">
+    <div className="fixed inset-0 z-[100] flex items-end sm:items-center justify-center bg-black/70 backdrop-blur-md">
       <div className="absolute inset-0" onClick={onClose} />
 
-      <div className="relative w-full max-w-lg bg-surface rounded-t-3xl sm:rounded-2xl border border-white/[0.06] overflow-hidden max-h-[90vh] flex flex-col shadow-2xl">
+      <div className="relative w-full max-w-lg bg-white/[0.03] backdrop-blur-xl rounded-t-3xl sm:rounded-2xl border border-white/[0.06] overflow-hidden max-h-[90vh] flex flex-col shadow-2xl">
         {/* Header */}
-        <div className="p-5 border-b border-border flex justify-between items-center shrink-0 bg-white/[0.02]">
-          <div>
-            <h2 className="text-lg font-bold text-text-primary">Search Foods</h2>
-            <p className="text-xs text-text-muted">400k+ foods from USDA database</p>
+        <div className="p-5 border-b border-white/[0.04] flex justify-between items-center shrink-0">
+          <div className="flex items-center gap-3">
+            <div className="p-2 rounded-xl bg-blue-500/10">
+              <Search size={18} className="text-blue-400" />
+            </div>
+            <div>
+              <h2 className="text-lg font-bold text-text-primary">Search Foods</h2>
+              <p className="text-xs text-text-muted">400k+ foods from USDA database</p>
+            </div>
           </div>
           <button
             onClick={onClose}
-            className="p-2 rounded-xl bg-surface-2 border border-border text-text-muted hover:text-text-primary transition-all"
+            className="p-2 rounded-xl bg-white/[0.03] border border-white/[0.04] text-text-muted hover:text-text-primary hover:bg-white/[0.06] transition-all"
           >
             <X size={18} />
           </button>
         </div>
 
         {/* Search Input */}
-        <div className="p-4 border-b border-border bg-white/[0.01]">
+        <div className="p-4 border-b border-white/[0.04]">
           <div className="relative">
             <Search size={18} className="absolute left-4 top-1/2 -translate-y-1/2 text-text-muted" />
             <input
@@ -144,16 +149,16 @@ export default function FoodSearchModal({ onClose, onSelect }: FoodSearchModalPr
               value={query}
               onChange={(e) => handleQueryChange(e.target.value)}
               placeholder="Search for a food..."
-              className="w-full pl-11 pr-4 py-3.5 rounded-xl text-sm bg-surface-2 border border-border text-text-primary placeholder-text-muted focus:outline-none focus:border-emerald-500/50 transition-colors"
+              className="w-full pl-11 pr-4 py-3.5 rounded-xl text-sm bg-white/[0.02] border border-white/[0.04] text-text-primary placeholder-text-muted focus:outline-none focus:border-blue-500/30 focus:bg-white/[0.03] transition-all"
             />
             {isLoading && (
-              <Loader2 size={18} className="absolute right-4 top-1/2 -translate-y-1/2 text-emerald-400 animate-spin" />
+              <Loader2 size={18} className="absolute right-4 top-1/2 -translate-y-1/2 text-blue-400 animate-spin" />
             )}
           </div>
 
           {/* Quick actions */}
           <div className="flex gap-2 mt-3">
-            <button className="flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-violet-500/15 border border-violet-500/30 text-violet-400 text-xs font-medium hover:bg-violet-500/20 transition-colors">
+            <button className="flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-white/[0.02] border border-violet-500/20 text-violet-400 text-xs font-medium hover:bg-violet-500/10 transition-colors">
               <Barcode size={12} />
               Scan Barcode
             </button>
@@ -171,7 +176,7 @@ export default function FoodSearchModal({ onClose, onSelect }: FoodSearchModalPr
                   <button
                     key={term}
                     onClick={() => handleQueryChange(term)}
-                    className="px-3 py-1.5 rounded-lg bg-surface-2 border border-border text-text-secondary text-xs hover:bg-surface transition-colors"
+                    className="px-3 py-1.5 rounded-lg bg-white/[0.02] border border-white/[0.04] text-text-secondary text-xs hover:bg-white/[0.04] transition-colors"
                   >
                     {term}
                   </button>
@@ -194,10 +199,10 @@ export default function FoodSearchModal({ onClose, onSelect }: FoodSearchModalPr
             <button
               key={`${food.fdcId || index}`}
               onClick={() => handleSelect(food)}
-              className={`w-full p-4 rounded-xl text-left transition-all ${
+              className={`w-full p-4 rounded-xl text-left transition-all duration-300 ${
                 selectedFood === food
-                  ? 'bg-emerald-500/15 border-2 border-emerald-500/50'
-                  : 'bg-surface-2 border border-border hover:bg-surface'
+                  ? 'bg-white/[0.06] border border-blue-500/30 shadow-[0_0_15px_rgba(59,130,246,0.1)]'
+                  : 'bg-white/[0.02] border border-white/[0.04] hover:bg-white/[0.04]'
               }`}
             >
               <div className="flex items-start justify-between gap-3">
@@ -229,7 +234,7 @@ export default function FoodSearchModal({ onClose, onSelect }: FoodSearchModalPr
                 </div>
 
                 {selectedFood === food ? (
-                  <div className="p-1.5 rounded-full bg-emerald-500 text-white">
+                  <div className="p-1.5 rounded-full bg-blue-500/20 border border-blue-500/30 text-blue-400">
                     <Check size={14} />
                   </div>
                 ) : (
@@ -241,13 +246,20 @@ export default function FoodSearchModal({ onClose, onSelect }: FoodSearchModalPr
         </div>
 
         {/* Footer */}
-        <div className="p-4 border-t border-border bg-white/[0.02] shrink-0">
+        <div className="p-4 border-t border-white/[0.04] shrink-0">
           <button
             onClick={handleConfirm}
             disabled={!selectedFood}
-            className="w-full py-3.5 rounded-2xl font-bold text-base bg-gradient-to-r from-emerald-500 to-teal-500 text-white transition-all hover:scale-[1.02] active:scale-[0.98] disabled:opacity-40 disabled:cursor-not-allowed disabled:hover:scale-100 shadow-lg shadow-emerald-500/25"
+            className="w-full py-3.5 rounded-xl font-semibold text-sm bg-white/[0.06] border border-blue-500/30 text-blue-400 transition-all duration-300 hover:bg-blue-500/10 hover:border-blue-500/40 hover:shadow-[0_0_20px_rgba(59,130,246,0.15)] active:scale-[0.98] disabled:opacity-40 disabled:cursor-not-allowed flex items-center justify-center gap-2"
           >
-            {selectedFood ? `Add ${selectedFood.name.split(',')[0]}` : 'Select a Food'}
+            {selectedFood ? (
+              <>
+                <Check size={16} />
+                Add {selectedFood.name.split(',')[0]}
+              </>
+            ) : (
+              'Select a Food'
+            )}
           </button>
         </div>
       </div>

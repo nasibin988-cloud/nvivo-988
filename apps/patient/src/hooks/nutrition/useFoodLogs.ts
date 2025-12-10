@@ -154,7 +154,7 @@ export function useFoodLogs(date: string = getDateString()) {
 
       return { id, ...updates, updatedAt: now };
     },
-    onSuccess: (updatedLog) => {
+    onSuccess: () => {
       queryClient.invalidateQueries({ queryKey: ['foodLogs', user?.uid] });
     },
   });
