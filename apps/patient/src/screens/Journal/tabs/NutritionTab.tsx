@@ -24,11 +24,12 @@ import {
   Settings,
   FileText,
   Scale,
+  Sparkles,
 } from 'lucide-react';
 import { ViewToggle } from '@nvivo/ui';
 import { useFoodLogs, useWaterIntake, useFoodLogsHistory, useWaterStreak, type FoodLog, type MealType } from '../../../hooks/nutrition';
 import { useNutritionTargets, type NutritionTargets } from '../../../hooks/nutrition';
-import { FoodSearchModal, PhotoAnalysisModal, MenuScannerModal, FoodComparisonModal } from '../../Journal/food/components';
+import { FoodSearchModal, PhotoAnalysisModal, MenuScannerModal, FoodComparisonModal, SmartFeaturesModal } from '../../Journal/food/components';
 import type { MenuItem } from '../../Journal/food/components/menu-scanner';
 import { Confetti } from '../../../components/animations';
 
@@ -70,6 +71,7 @@ export default function NutritionTab(): React.ReactElement {
   const [showPhotoModal, setShowPhotoModal] = useState(false);
   const [showMenuScanner, setShowMenuScanner] = useState(false);
   const [showFoodComparison, setShowFoodComparison] = useState(false);
+  const [showSmartFeatures, setShowSmartFeatures] = useState(false);
   const [showGoalsModal, setShowGoalsModal] = useState(false);
   const [customTargets, setCustomTargets] = useState<Partial<NutritionTargets> | null>(null);
   const [editingMeal, setEditingMeal] = useState<FoodLog | null>(null);
@@ -203,6 +205,33 @@ export default function NutritionTab(): React.ReactElement {
       await addLog(meal);
     }
     setShowMenuScanner(false);
+  };
+
+  // Handle smart features add
+  const handleSmartFeaturesAdd = async (food: {
+    name: string;
+    calories: number;
+    protein: number;
+    carbs: number;
+    fat: number;
+    fiber: number | null;
+    sugar: number | null;
+    sodium: number | null;
+  }) => {
+    const meal: Omit<FoodLog, 'id' | 'createdAt' | 'updatedAt'> = {
+      mealType: 'snack' as MealType,
+      description: food.name,
+      date: today,
+      time: new Date().toLocaleTimeString('en-US', { hour: 'numeric', minute: '2-digit' }),
+      calories: food.calories,
+      protein: food.protein,
+      carbs: food.carbs,
+      fat: food.fat,
+      fiber: food.fiber,
+      sugar: food.sugar,
+      sodium: food.sodium,
+    };
+    await addLog(meal);
   };
 
   // Loading state
@@ -388,14 +417,23 @@ export default function NutritionTab(): React.ReactElement {
             </button>
           </div>
 
-          {/* Food Compare Button */}
-          <button
-            onClick={() => setShowFoodComparison(true)}
-            className="w-full py-2.5 rounded-xl bg-gradient-to-r from-amber-500/[0.06] to-orange-500/[0.04] border border-amber-500/20 hover:border-amber-500/30 flex items-center justify-center gap-2 transition-all group"
-          >
-            <Scale size={16} className="text-amber-400 group-hover:scale-110 transition-transform" />
-            <span className="text-xs font-medium text-amber-400">Compare Foods & See Health Grades</span>
-          </button>
+          {/* Smart Features & Food Compare Buttons */}
+          <div className="grid grid-cols-2 gap-2">
+            <button
+              onClick={() => setShowSmartFeatures(true)}
+              className="py-2.5 rounded-xl bg-gradient-to-r from-violet-500/[0.08] to-purple-500/[0.05] border border-violet-500/20 hover:border-violet-500/30 flex items-center justify-center gap-2 transition-all group"
+            >
+              <Sparkles size={16} className="text-violet-400 group-hover:scale-110 transition-transform" />
+              <span className="text-xs font-medium text-violet-400">Smart Add</span>
+            </button>
+            <button
+              onClick={() => setShowFoodComparison(true)}
+              className="py-2.5 rounded-xl bg-gradient-to-r from-amber-500/[0.06] to-orange-500/[0.04] border border-amber-500/20 hover:border-amber-500/30 flex items-center justify-center gap-2 transition-all group"
+            >
+              <Scale size={16} className="text-amber-400 group-hover:scale-110 transition-transform" />
+              <span className="text-xs font-medium text-amber-400">Compare</span>
+            </button>
+          </div>
 
           {/* Meals List with Timeline */}
           <div className="space-y-3">
@@ -527,6 +565,27 @@ export default function NutritionTab(): React.ReactElement {
       {showFoodComparison && (
         <FoodComparisonModal
           onClose={() => setShowFoodComparison(false)}
+        />
+      )}
+
+      {showSmartFeatures && (
+        <SmartFeaturesModal
+          onClose={() => setShowSmartFeatures(false)}
+          onAddFood={handleSmartFeaturesAdd}
+          currentTotals={{
+            calories: dailyTotals.calories,
+            protein: dailyTotals.protein,
+            carbs: dailyTotals.carbs,
+            fat: dailyTotals.fat,
+            fiber: dailyTotals.fiber,
+          }}
+          targets={{
+            calories: nutritionTargets.calories,
+            protein: nutritionTargets.protein,
+            carbs: nutritionTargets.carbs,
+            fat: nutritionTargets.fat,
+            fiber: nutritionTargets.fiber,
+          }}
         />
       )}
 
