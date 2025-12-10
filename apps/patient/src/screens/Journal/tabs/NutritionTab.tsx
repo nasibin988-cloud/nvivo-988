@@ -15,6 +15,8 @@ import {
   Wheat,
   Droplets,
   Leaf,
+  Candy,
+  Zap,
   Search,
   Flame,
   Target,
@@ -134,7 +136,7 @@ export default function NutritionTab(): React.ReactElement {
   };
 
   // Handle food search selection
-  const handleFoodSelected = async (food: { name: string; nutrition: { calories: number; protein: number; carbohydrates: number; fat: number; fiber?: number } }) => {
+  const handleFoodSelected = async (food: { name: string; nutrition: { calories: number; protein: number; carbohydrates: number; fat: number; fiber?: number; sugar?: number; sodium?: number } }) => {
     const meal: Omit<FoodLog, 'id' | 'createdAt' | 'updatedAt'> = {
       mealType: 'snack',
       description: food.name,
@@ -145,14 +147,15 @@ export default function NutritionTab(): React.ReactElement {
       carbs: food.nutrition.carbohydrates,
       fat: food.nutrition.fat,
       fiber: food.nutrition.fiber || null,
-      sodium: null,
+      sugar: food.nutrition.sugar || null,
+      sodium: food.nutrition.sodium || null,
     };
     await addLog(meal);
     setShowSearchModal(false);
   };
 
   // Handle photo analysis result
-  const handlePhotoAnalysis = async (result: { items: { name: string; calories: number; protein: number; carbs: number; fat: number; fiber?: number }[]; mealType: string; totalCalories: number; totalProtein: number; totalCarbs: number; totalFat: number }) => {
+  const handlePhotoAnalysis = async (result: { items: { name: string; calories: number; protein: number; carbs: number; fat: number; fiber?: number; sugar?: number }[]; mealType: string; totalCalories: number; totalProtein: number; totalCarbs: number; totalFat: number; totalSugar?: number }) => {
     const description = result.items.map(i => i.name).join(', ');
     const meal: Omit<FoodLog, 'id' | 'createdAt' | 'updatedAt'> = {
       mealType: (result.mealType as MealType) || 'snack',
@@ -164,6 +167,7 @@ export default function NutritionTab(): React.ReactElement {
       carbs: result.totalCarbs,
       fat: result.totalFat,
       fiber: null,
+      sugar: result.totalSugar || null,
       sodium: null,
       isAiAnalyzed: true,
       aiConfidence: 0.85,
@@ -246,8 +250,8 @@ export default function NutritionTab(): React.ReactElement {
                 )}
               </div>
 
-              {/* Macro Orbs - Fill from bottom like dashboard */}
-              <div className="flex justify-around px-2">
+              {/* Macro Orbs - 2x3 Grid for all nutrients */}
+              <div className="grid grid-cols-3 gap-3 px-1">
                 <MacroOrb
                   label="Protein"
                   current={dailyTotals.protein}
@@ -264,7 +268,7 @@ export default function NutritionTab(): React.ReactElement {
                   unit="g"
                   color={MACRO_COLORS.carbs}
                   icon={Wheat}
-                  delay={100}
+                  delay={50}
                 />
                 <MacroOrb
                   label="Fat"
@@ -273,7 +277,7 @@ export default function NutritionTab(): React.ReactElement {
                   unit="g"
                   color={MACRO_COLORS.fat}
                   icon={Droplets}
-                  delay={200}
+                  delay={100}
                 />
                 <MacroOrb
                   label="Fiber"
@@ -282,7 +286,27 @@ export default function NutritionTab(): React.ReactElement {
                   unit="g"
                   color={MACRO_COLORS.fiber}
                   icon={Leaf}
-                  delay={300}
+                  delay={150}
+                />
+                <MacroOrb
+                  label="Sugar"
+                  current={dailyTotals.sugar}
+                  target={nutritionTargets.sugar || 50}
+                  unit="g"
+                  color={MACRO_COLORS.sugar}
+                  icon={Candy}
+                  delay={200}
+                  invertProgress
+                />
+                <MacroOrb
+                  label="Sodium"
+                  current={dailyTotals.sodium}
+                  target={nutritionTargets.sodium}
+                  unit="mg"
+                  color={MACRO_COLORS.sodium}
+                  icon={Zap}
+                  delay={250}
+                  invertProgress
                 />
               </div>
             </div>

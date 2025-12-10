@@ -34,6 +34,7 @@ export interface FoodLog {
   fat: number | null;
   fiber: number | null;
   sodium: number | null;
+  sugar: number | null;
   photoUrl?: string;
   isAiAnalyzed?: boolean;
   aiConfidence?: number;
@@ -61,6 +62,7 @@ export interface DailyFoodData {
     fat: number;
     fiber: number;
     sodium: number;
+    sugar: number;
   };
 }
 
@@ -188,9 +190,10 @@ export function useFoodLogs(date: string = getDateString()) {
       fat: acc.fat + (log.fat || 0),
       fiber: acc.fiber + (log.fiber || 0),
       sodium: acc.sodium + (log.sodium || 0),
+      sugar: acc.sugar + (log.sugar || 0),
     }),
-    { calories: 0, protein: 0, carbs: 0, fat: 0, fiber: 0, sodium: 0 }
-  ) || { calories: 0, protein: 0, carbs: 0, fat: 0, fiber: 0, sodium: 0 };
+    { calories: 0, protein: 0, carbs: 0, fat: 0, fiber: 0, sodium: 0, sugar: 0 }
+  ) || { calories: 0, protein: 0, carbs: 0, fat: 0, fiber: 0, sodium: 0, sugar: 0 };
 
   return {
     logs: logsQuery.data || [],
@@ -256,8 +259,9 @@ export function useFoodLogsHistory(days: number = 7) {
             fat: acc.fat + (log.fat || 0),
             fiber: acc.fiber + (log.fiber || 0),
             sodium: acc.sodium + (log.sodium || 0),
+            sugar: acc.sugar + (log.sugar || 0),
           }),
-          { calories: 0, protein: 0, carbs: 0, fat: 0, fiber: 0, sodium: 0 }
+          { calories: 0, protein: 0, carbs: 0, fat: 0, fiber: 0, sodium: 0, sugar: 0 }
         );
 
         dailyData.push({ date: dateStr, meals, totals });

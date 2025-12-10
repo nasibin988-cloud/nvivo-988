@@ -71,6 +71,8 @@ export const MACRO_COLORS = {
   carbs: '#f59e0b',    // Amber
   fat: '#3b82f6',      // Blue
   fiber: '#10b981',    // Emerald
+  sugar: '#a855f7',    // Purple
+  sodium: '#ef4444',   // Red
   calories: '#10b981', // Emerald
 } as const;
 

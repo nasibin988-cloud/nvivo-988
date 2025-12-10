@@ -25,6 +25,9 @@ export function LogMealModal({
   const [protein, setProtein] = useState('');
   const [carbs, setCarbs] = useState('');
   const [fat, setFat] = useState('');
+  const [fiber, setFiber] = useState('');
+  const [sugar, setSugar] = useState('');
+  const [sodium, setSodium] = useState('');
 
   const today = new Date().toISOString().split('T')[0];
 
@@ -38,8 +41,9 @@ export function LogMealModal({
       protein: protein ? parseInt(protein) : null,
       carbs: carbs ? parseInt(carbs) : null,
       fat: fat ? parseInt(fat) : null,
-      fiber: null,
-      sodium: null,
+      fiber: fiber ? parseInt(fiber) : null,
+      sugar: sugar ? parseInt(sugar) : null,
+      sodium: sodium ? parseInt(sodium) : null,
       time: new Date().toLocaleTimeString('en-US', { hour: 'numeric', minute: '2-digit' }),
     });
   };
@@ -113,6 +117,9 @@ export function LogMealModal({
                 { value: protein, setter: setProtein, placeholder: 'Protein', unit: 'g' },
                 { value: carbs, setter: setCarbs, placeholder: 'Carbs', unit: 'g' },
                 { value: fat, setter: setFat, placeholder: 'Fat', unit: 'g' },
+                { value: fiber, setter: setFiber, placeholder: 'Fiber', unit: 'g' },
+                { value: sugar, setter: setSugar, placeholder: 'Sugar', unit: 'g' },
+                { value: sodium, setter: setSodium, placeholder: 'Sodium', unit: 'mg' },
               ].map(({ value, setter, placeholder, unit }) => (
                 <div key={placeholder} className="relative">
                   <input
