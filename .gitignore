@@ -38,3 +38,4 @@ coverage/
 # Emulator data
 emulator-data/
 serviceAccountKey.json
+.env.functions
