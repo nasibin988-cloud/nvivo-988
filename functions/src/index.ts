@@ -7,6 +7,7 @@ import { seedCareData, clearCareData } from './seed/seedCareData';
 import { clearMicroWins, seedMicroWins } from './seed/seedMicroWins';
 import { seedHealthTrends, clearHealthTrends } from './seed/seedHealthTrends';
 import { analyzeFoodPhoto as analyzeFoodPhotoFn, openaiApiKey } from './domains/ai/foodAnalysis';
+import { scanMenuPhoto as scanMenuPhotoFn, menuScanApiKey } from './domains/ai/menuScanning';
 import { searchFoods as searchFoodsFn, usdaApiKey } from './domains/ai/foodSearch';
 
 // Initialize Firebase Admin
@@ -383,6 +384,37 @@ export const analyzeFoodPhoto = https.onCall(
     } catch (error) {
       console.error('Error analyzing food photo:', error);
       throw new https.HttpsError('internal', 'Failed to analyze food photo');
+    }
+  }
+);
+
+/**
+ * Scan a restaurant menu photo using GPT-4 Vision
+ * Returns extracted menu items with estimated nutritional information
+ */
+export const scanMenuPhoto = https.onCall(
+  {
+    cors: true,
+    secrets: [menuScanApiKey],
+  },
+  async (request) => {
+    const { imageBase64 } = request.data ?? {};
+
+    if (!imageBase64) {
+      throw new https.HttpsError('invalid-argument', 'Image data is required');
+    }
+
+    // Validate base64 string (basic check)
+    if (typeof imageBase64 !== 'string' || imageBase64.length < 100) {
+      throw new https.HttpsError('invalid-argument', 'Invalid image data');
+    }
+
+    try {
+      const result = await scanMenuPhotoFn(imageBase64);
+      return result;
+    } catch (error) {
+      console.error('Error scanning menu photo:', error);
+      throw new https.HttpsError('internal', 'Failed to scan menu photo');
     }
   }
 );
