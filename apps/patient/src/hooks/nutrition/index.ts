@@ -19,3 +19,5 @@ export {
   DEFAULT_TARGETS,
   type NutritionTargets,
 } from './useNutritionTargets';
+
+export { useWaterStreak } from './useWaterStreak';

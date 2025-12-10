@@ -74,6 +74,14 @@ export const MACRO_COLORS = {
   calories: '#10b981', // Emerald
 } as const;
 
+// Meal type gradient backgrounds (warm for breakfast, cool for dinner)
+export const MEAL_GRADIENT_BG: Record<MealType, string> = {
+  breakfast: 'bg-gradient-to-br from-amber-500/[0.08] via-orange-500/[0.04] to-transparent',
+  lunch: 'bg-gradient-to-br from-emerald-500/[0.06] via-teal-500/[0.03] to-transparent',
+  snack: 'bg-gradient-to-br from-rose-500/[0.06] via-pink-500/[0.03] to-transparent',
+  dinner: 'bg-gradient-to-br from-indigo-500/[0.08] via-purple-500/[0.04] to-transparent',
+} as const;
+
 // ============================================================================
 // UTILITY FUNCTIONS
 // ============================================================================

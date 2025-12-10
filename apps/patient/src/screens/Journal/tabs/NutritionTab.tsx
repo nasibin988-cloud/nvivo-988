@@ -1,12 +1,12 @@
 /**
  * Nutrition Tab - Food and Nutrition Tracking
  * Features: AI photo analysis, USDA search, animated macro orbs, meal timeline,
- * water tracker, Firestore persistence
+ * water tracker, Firestore persistence, goal celebration confetti
  *
  * Modularized version - components extracted to separate files
  */
 
-import { useState, useMemo } from 'react';
+import { useState, useMemo, useEffect, useRef } from 'react';
 import {
   Apple,
   Camera,
@@ -22,9 +22,10 @@ import {
   Settings,
 } from 'lucide-react';
 import { ViewToggle } from '@nvivo/ui';
-import { useFoodLogs, useWaterIntake, useFoodLogsHistory, type FoodLog, type MealType } from '../../../hooks/nutrition';
+import { useFoodLogs, useWaterIntake, useFoodLogsHistory, useWaterStreak, type FoodLog, type MealType } from '../../../hooks/nutrition';
 import { useNutritionTargets, type NutritionTargets } from '../../../hooks/nutrition';
 import { FoodSearchModal, PhotoAnalysisModal } from '../../Journal/food/components';
+import { Confetti } from '../../../components/animations';
 
 // Modular imports
 import {
@@ -63,6 +64,8 @@ export default function NutritionTab(): React.ReactElement {
   const [showGoalsModal, setShowGoalsModal] = useState(false);
   const [customTargets, setCustomTargets] = useState<Partial<NutritionTargets> | null>(null);
   const [editingMeal, setEditingMeal] = useState<FoodLog | null>(null);
+  const [showConfetti, setShowConfetti] = useState(false);
+  const hasTriggeredConfetti = useRef(false);
 
   const today = new Date().toISOString().split('T')[0];
 
@@ -71,6 +74,7 @@ export default function NutritionTab(): React.ReactElement {
   const { data: targets, isLoading: targetsLoading } = useNutritionTargets();
   const { glasses: waterGlasses, updateWater, isUpdating: isUpdatingWater } = useWaterIntake(today);
   const { data: historyData } = useFoodLogsHistory(TIME_RANGE_DAYS[timeRange]);
+  const { data: waterStreakData } = useWaterStreak(targets?.water || 8);
 
   // Use targets or defaults, with custom overrides
   const defaultTargets: NutritionTargets = {
@@ -90,6 +94,23 @@ export default function NutritionTab(): React.ReactElement {
 
   // Calculate calorie percentage
   const caloriePercentage = Math.round((dailyTotals.calories / nutritionTargets.calories) * 100);
+
+  // Calculate if all main macros are at/above 95% of target (goal achievement)
+  const isGoalAchieved = useMemo(() => {
+    const caloriesOk = dailyTotals.calories >= nutritionTargets.calories * 0.95 && dailyTotals.calories <= nutritionTargets.calories * 1.2;
+    const proteinOk = dailyTotals.protein >= nutritionTargets.protein * 0.95;
+    const carbsOk = dailyTotals.carbs >= nutritionTargets.carbs * 0.95;
+    const fatOk = dailyTotals.fat >= nutritionTargets.fat * 0.95;
+    return caloriesOk && proteinOk && carbsOk && fatOk;
+  }, [dailyTotals, nutritionTargets]);
+
+  // Trigger confetti when goals are achieved (only once per session)
+  useEffect(() => {
+    if (isGoalAchieved && !hasTriggeredConfetti.current && !isLoading) {
+      hasTriggeredConfetti.current = true;
+      setShowConfetti(true);
+    }
+  }, [isGoalAchieved, isLoading]);
 
   // Prepare weekly chart data
   const weeklyChartData = useMemo(() => {
@@ -155,6 +176,13 @@ export default function NutritionTab(): React.ReactElement {
 
   return (
     <div className="space-y-4 pb-4">
+      {/* Goal Achievement Confetti */}
+      <Confetti
+        active={showConfetti}
+        onComplete={() => setShowConfetti(false)}
+        colors={[MACRO_COLORS.protein, MACRO_COLORS.carbs, MACRO_COLORS.fat, MACRO_COLORS.fiber, '#10b981']}
+      />
+
       {/* View Toggle */}
       <ViewToggle
         options={[
@@ -263,6 +291,7 @@ export default function NutritionTab(): React.ReactElement {
             target={nutritionTargets.water}
             onUpdate={updateWater}
             isUpdating={isUpdatingWater}
+            streak={waterStreakData?.currentStreak || 0}
           />
 
           {/* Quick Add Buttons */}
@@ -311,6 +340,7 @@ export default function NutritionTab(): React.ReactElement {
                     meal={meal}
                     onDelete={deleteLog}
                     onEdit={setEditingMeal}
+                    onQuickUpdate={(id, updates) => updateLog({ id, ...updates })}
                     isFirst={index === 0}
                     isLast={index === logs.length - 1}
                     previousMealTime={index > 0 ? logs[index - 1].time : undefined}
