@@ -7,7 +7,7 @@ import { seedCareData, clearCareData } from './seed/seedCareData';
 import { clearMicroWins, seedMicroWins } from './seed/seedMicroWins';
 import { seedHealthTrends, clearHealthTrends } from './seed/seedHealthTrends';
 import { analyzeFoodPhoto as analyzeFoodPhotoFn, openaiApiKey } from './domains/ai/foodAnalysis';
-import { scanMenuPhoto as scanMenuPhotoFn, menuScanApiKey } from './domains/ai/menuScanning';
+import { scanMenuPhoto as scanMenuPhotoFn } from './domains/ai/menuScanning';
 import { searchFoods as searchFoodsFn, usdaApiKey } from './domains/ai/foodSearch';
 
 // Initialize Firebase Admin
@@ -395,7 +395,7 @@ export const analyzeFoodPhoto = https.onCall(
 export const scanMenuPhoto = https.onCall(
   {
     cors: true,
-    secrets: [menuScanApiKey],
+    secrets: [openaiApiKey],
   },
   async (request) => {
     const { imageBase64 } = request.data ?? {};

@@ -10,7 +10,7 @@
     "type-check": "tsc --noEmit"
   },
   "engines": {
-    "node": "18"
+    "node": "20"
   },
   "dependencies": {
     "dotenv": "^17.2.3",

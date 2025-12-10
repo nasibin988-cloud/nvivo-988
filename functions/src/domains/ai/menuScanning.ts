@@ -5,36 +5,19 @@
 
 import OpenAI from 'openai';
 import { defineSecret } from 'firebase-functions/params';
-import * as dotenv from 'dotenv';
-import * as path from 'path';
 import { OPENAI_CONFIG } from '../../config/openai';
-
-// Load .env file for local development
-dotenv.config({ path: path.resolve(__dirname, '../../.env') });
-dotenv.config({ path: path.resolve(process.cwd(), 'functions/.env') });
-dotenv.config();
 
 // Define OpenAI API key as a secret (for production)
 const openaiApiKey = defineSecret('OPENAI_API_KEY');
 
 /**
- * Get API key - uses env var for local dev, secret for production
+ * Get API key from Firebase secret
  */
 function getApiKey(): string {
-  const envKey = process.env.OPENAI_API_KEY;
-  if (envKey) {
-    return envKey;
+  const secretValue = openaiApiKey.value();
+  if (secretValue) {
+    return secretValue;
   }
-
-  try {
-    const secretValue = openaiApiKey.value();
-    if (secretValue) {
-      return secretValue;
-    }
-  } catch {
-    // Secret not available in emulator
-  }
-
   throw new Error('OpenAI API key not configured');
 }
 
@@ -217,5 +200,3 @@ export async function scanMenuPhoto(imageBase64: string): Promise<MenuScanResult
   }
 }
 
-// Export the secret for use in the Cloud Function
-export { openaiApiKey as menuScanApiKey };
