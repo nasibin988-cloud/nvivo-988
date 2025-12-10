@@ -7,9 +7,9 @@
 
 /**
  * The OpenAI model to use for all AI operations.
- * Updated: December 2024
+ * Updated: December 2025
  */
-export const OPENAI_MODEL = 'gpt-5.1-2025-11-1';
+export const OPENAI_MODEL = 'gpt-5.1-2025-11-13';
 
 /**
  * Model configuration for different use cases
