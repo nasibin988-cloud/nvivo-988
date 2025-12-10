@@ -4,6 +4,7 @@
  */
 
 import { useState } from 'react';
+import { ViewToggle } from '@nvivo/ui';
 import {
   type Questionnaire,
   type QuestionnaireStatus,
@@ -72,28 +73,16 @@ export default function AssessmentsTab(): React.ReactElement {
       </div>
 
       {/* View Toggle */}
-      <div className="flex bg-surface-2 rounded-xl p-1">
-        <button
-          onClick={() => setView('pending')}
-          className={`flex-1 py-2.5 rounded-lg text-sm font-semibold transition-all ${
-            view === 'pending'
-              ? 'bg-amber-500 text-white shadow-lg shadow-amber-500/25'
-              : 'text-text-muted hover:text-text-primary'
-          }`}
-        >
-          Pending ({pendingQuestionnaires.length})
-        </button>
-        <button
-          onClick={() => setView('history')}
-          className={`flex-1 py-2.5 rounded-lg text-sm font-semibold transition-all ${
-            view === 'history'
-              ? 'bg-amber-500 text-white shadow-lg shadow-amber-500/25'
-              : 'text-text-muted hover:text-text-primary'
-          }`}
-        >
-          History ({completedQuestionnaires.length})
-        </button>
-      </div>
+      <ViewToggle
+        options={[
+          { value: 'pending', label: `Pending (${pendingQuestionnaires.length})` },
+          { value: 'history', label: `History (${completedQuestionnaires.length})` },
+        ]}
+        value={view}
+        onChange={setView}
+        color="amber"
+        variant="solid"
+      />
 
       {/* View Content */}
       {view === 'pending' ? (

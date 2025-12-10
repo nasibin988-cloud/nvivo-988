@@ -1,6 +1,6 @@
 import { useNavigate } from 'react-router-dom';
 import { useAuth } from '../../contexts/AuthContext';
-import { usePatientProfile } from '../../hooks/usePatientProfile';
+import { usePatientProfile } from '../../hooks/patient';
 import {
   useStreak,
   useMicroWins,
@@ -30,7 +30,7 @@ import { RefreshCw } from 'lucide-react';
 
 export default function DashboardScreen() {
   const navigate = useNavigate();
-  const { patientId, signOut } = useAuth();
+  const { patientId } = useAuth();
 
   // Data hooks
   const {
@@ -76,8 +76,8 @@ export default function DashboardScreen() {
 
   // Handlers
   const handleProfileClick = () => {
-    // TODO: Open profile modal/screen
-    signOut();
+    // Navigate to profile settings - sign out is available there
+    navigate('/settings/profile');
   };
 
   const handleNotificationsClick = () => {

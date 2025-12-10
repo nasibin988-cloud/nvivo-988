@@ -47,8 +47,8 @@ if (process.env.FIRESTORE_EMULATOR_HOST) {
   console.log('Using Firestore emulator at:', process.env.FIRESTORE_EMULATOR_HOST);
 }
 
-// Read articles from the old repo
-const articlesPath = '/Users/bwv988/nvivo/apps/patient/src/data/articles.json';
+// Read articles from local data folder
+const articlesPath = path.join(__dirname, '../apps/patient/src/data/articles.json');
 // Local images folder (generated AI thumbnails)
 const localImagesDir = path.join(__dirname, '../apps/patient/public/images/articles');
 

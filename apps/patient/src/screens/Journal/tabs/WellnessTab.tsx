@@ -6,7 +6,8 @@
  */
 
 import { useState, useCallback, useMemo } from 'react';
-import { Check, Brain } from 'lucide-react';
+import { Check, Brain, AlertCircle } from 'lucide-react';
+import { ViewToggle } from '@nvivo/ui';
 import { useAuth } from '../../../contexts/AuthContext';
 import { useWellnessHistory } from '../../../hooks/dashboard/useWellnessLog';
 import { VitalityRing } from '../../../components/dashboard/VitalityRing';
@@ -87,6 +88,7 @@ export default function WellnessTab(): React.ReactElement {
   const [favoriteIds, setFavoriteIds] = useState<string[]>(['mindfulness-11', 'mindfulness-06']);
   const [isSaving, setIsSaving] = useState(false);
   const [showSuccess, setShowSuccess] = useState(false);
+  const [error, setError] = useState<string | null>(null);
 
   // Merge Firestore history with local (newly saved) history
   const mergedHistory = useMemo(() => ({ ...history, ...localHistory }), [history, localHistory]);
@@ -95,37 +97,46 @@ export default function WellnessTab(): React.ReactElement {
 
   const handleSaveLog = useCallback(async (data: Partial<HistoryLog>) => {
     setIsSaving(true);
-    // Simulate API call
-    await new Promise(resolve => setTimeout(resolve, 800));
+    setError(null);
 
-    const newLog: HistoryLog = {
-      id: selectedDate,
-      date: selectedDate,
-      mood: data.mood || 7,
-      energy: data.energy || 7,
-      stress: data.stress || 4,
-      sleepQuality: data.sleepQuality || 7,
-      sleepHours: data.sleepHours || 7,
-      symptoms: data.symptoms || [],
-      notes: data.notes || '',
-      voiceNoteUrl: data.voiceNoteUrl,
-      tags: data.tags || [],
-      createdAt: new Date().toISOString(),
-    };
+    try {
+      // Simulate API call
+      await new Promise(resolve => setTimeout(resolve, 800));
 
-    setLocalHistory(prev => ({ ...prev, [selectedDate]: newLog }));
-    setIsSaving(false);
-    setShowLogModal(false);
-    setShowSuccess(true);
-    setTimeout(() => setShowSuccess(false), 2000);
+      const newLog: HistoryLog = {
+        id: selectedDate,
+        date: selectedDate,
+        mood: data.mood || 7,
+        energy: data.energy || 7,
+        stress: data.stress || 4,
+        sleepQuality: data.sleepQuality || 7,
+        sleepHours: data.sleepHours || 7,
+        symptoms: data.symptoms || [],
+        notes: data.notes || '',
+        voiceNoteUrl: data.voiceNoteUrl,
+        tags: data.tags || [],
+        createdAt: new Date().toISOString(),
+      };
 
-    // Update streak if logging today
-    if (selectedDate === today) {
-      setStreak(prev => ({
-        ...prev,
-        currentStreak: prev.currentStreak + 1,
-        lastActivityDate: today,
-      }));
+      setLocalHistory(prev => ({ ...prev, [selectedDate]: newLog }));
+      setShowLogModal(false);
+      setShowSuccess(true);
+      setTimeout(() => setShowSuccess(false), 2000);
+
+      // Update streak if logging today
+      if (selectedDate === today) {
+        setStreak(prev => ({
+          ...prev,
+          currentStreak: prev.currentStreak + 1,
+          lastActivityDate: today,
+        }));
+      }
+    } catch (err) {
+      const message = err instanceof Error ? err.message : 'Failed to save log';
+      setError(message);
+      console.error('Error saving wellness log:', err);
+    } finally {
+      setIsSaving(false);
     }
   }, [selectedDate]);
 
@@ -139,29 +150,26 @@ export default function WellnessTab(): React.ReactElement {
         </div>
       )}
 
+      {/* Error Toast */}
+      {error && (
+        <div className="fixed top-20 left-1/2 -translate-x-1/2 z-[200] px-4 py-2 rounded-xl bg-rose-500/20 border border-rose-500/40 text-rose-400 text-sm font-medium flex items-center gap-2 animate-fadeIn">
+          <AlertCircle size={16} />
+          {error}
+          <button onClick={() => setError(null)} className="ml-2 hover:text-rose-300">×</button>
+        </div>
+      )}
+
       {/* View Toggle */}
-      <div className="flex bg-white/[0.02] backdrop-blur-sm rounded-xl p-1 border border-white/[0.04]">
-        <button
-          onClick={() => setView('today')}
-          className={`flex-1 py-2.5 rounded-lg text-sm font-semibold transition-all duration-300 ${
-            view === 'today'
-              ? 'bg-white/[0.08] text-violet-400 border border-violet-500/20 shadow-[0_0_15px_rgba(139,92,246,0.15)]'
-              : 'text-text-muted hover:text-text-primary hover:bg-white/[0.03]'
-          }`}
-        >
-          Today
-        </button>
-        <button
-          onClick={() => setView('history')}
-          className={`flex-1 py-2.5 rounded-lg text-sm font-semibold transition-all duration-300 ${
-            view === 'history'
-              ? 'bg-white/[0.08] text-violet-400 border border-violet-500/20 shadow-[0_0_15px_rgba(139,92,246,0.15)]'
-              : 'text-text-muted hover:text-text-primary hover:bg-white/[0.03]'
-          }`}
-        >
-          History
-        </button>
-      </div>
+      <ViewToggle
+        options={[
+          { value: 'today', label: 'Today' },
+          { value: 'history', label: 'History' },
+        ]}
+        value={view}
+        onChange={setView}
+        color="violet"
+        variant="glass"
+      />
 
       {/* TODAY VIEW */}
       {view === 'today' && (

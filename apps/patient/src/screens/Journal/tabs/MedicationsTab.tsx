@@ -4,6 +4,7 @@
  */
 
 import { useState } from 'react';
+import { ViewToggle } from '@nvivo/ui';
 import {
   type Medication,
   type MedicationStatus,
@@ -45,28 +46,16 @@ export default function MedicationsTab(): React.ReactElement {
   return (
     <div className="space-y-4 pb-4">
       {/* View Toggle */}
-      <div className="flex bg-surface-2 rounded-xl p-1">
-        <button
-          onClick={() => setView('today')}
-          className={`flex-1 py-2.5 rounded-lg text-sm font-semibold transition-all ${
-            view === 'today'
-              ? 'bg-rose-500 text-white shadow-lg shadow-rose-500/25'
-              : 'text-text-muted hover:text-text-primary'
-          }`}
-        >
-          Today
-        </button>
-        <button
-          onClick={() => setView('history')}
-          className={`flex-1 py-2.5 rounded-lg text-sm font-semibold transition-all ${
-            view === 'history'
-              ? 'bg-rose-500 text-white shadow-lg shadow-rose-500/25'
-              : 'text-text-muted hover:text-text-primary'
-          }`}
-        >
-          History
-        </button>
-      </div>
+      <ViewToggle
+        options={[
+          { value: 'today', label: 'Today' },
+          { value: 'history', label: 'History' },
+        ]}
+        value={view}
+        onChange={setView}
+        color="rose"
+        variant="solid"
+      />
 
       {view === 'today' ? (
         <TodayView

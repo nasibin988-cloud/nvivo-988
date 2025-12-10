@@ -4,6 +4,7 @@
  */
 
 import { useState } from 'react';
+import { ViewToggle } from '@nvivo/ui';
 import {
   type ExerciseLog,
   type ViewMode,
@@ -42,28 +43,16 @@ export default function ActivityTab(): React.ReactElement {
   return (
     <div className="space-y-4 pb-4">
       {/* View Toggle */}
-      <div className="flex bg-surface-2 rounded-xl p-1">
-        <button
-          onClick={() => setView('today')}
-          className={`flex-1 py-2.5 rounded-lg text-sm font-semibold transition-all ${
-            view === 'today'
-              ? 'bg-sky-500 text-white shadow-lg shadow-sky-500/25'
-              : 'text-text-muted hover:text-text-primary'
-          }`}
-        >
-          Today
-        </button>
-        <button
-          onClick={() => setView('week')}
-          className={`flex-1 py-2.5 rounded-lg text-sm font-semibold transition-all ${
-            view === 'week'
-              ? 'bg-sky-500 text-white shadow-lg shadow-sky-500/25'
-              : 'text-text-muted hover:text-text-primary'
-          }`}
-        >
-          This Week
-        </button>
-      </div>
+      <ViewToggle
+        options={[
+          { value: 'today', label: 'Today' },
+          { value: 'week', label: 'This Week' },
+        ]}
+        value={view}
+        onChange={setView}
+        color="sky"
+        variant="solid"
+      />
 
       {/* View Content */}
       {view === 'today' ? (

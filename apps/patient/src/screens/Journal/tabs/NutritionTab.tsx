@@ -21,6 +21,7 @@ import {
   Calendar,
   Settings,
 } from 'lucide-react';
+import { ViewToggle } from '@nvivo/ui';
 import { useFoodLogs, useWaterIntake, useFoodLogsHistory, type FoodLog, type MealType } from '../../../hooks/nutrition';
 import { useNutritionTargets, type NutritionTargets } from '../../../hooks/nutrition';
 import { FoodSearchModal, PhotoAnalysisModal } from '../../Journal/food/components';
@@ -155,28 +156,16 @@ export default function NutritionTab(): React.ReactElement {
   return (
     <div className="space-y-4 pb-4">
       {/* View Toggle */}
-      <div className="flex bg-white/[0.02] backdrop-blur-sm rounded-xl p-1 border border-white/[0.04]">
-        <button
-          onClick={() => setView('today')}
-          className={`flex-1 py-2.5 rounded-lg text-sm font-semibold transition-all duration-300 ${
-            view === 'today'
-              ? 'bg-white/[0.08] text-emerald-400 border border-emerald-500/20 shadow-[0_0_15px_rgba(16,185,129,0.15)]'
-              : 'text-text-muted hover:text-text-primary hover:bg-white/[0.03]'
-          }`}
-        >
-          Today
-        </button>
-        <button
-          onClick={() => setView('history')}
-          className={`flex-1 py-2.5 rounded-lg text-sm font-semibold transition-all duration-300 ${
-            view === 'history'
-              ? 'bg-white/[0.08] text-emerald-400 border border-emerald-500/20 shadow-[0_0_15px_rgba(16,185,129,0.15)]'
-              : 'text-text-muted hover:text-text-primary hover:bg-white/[0.03]'
-          }`}
-        >
-          History
-        </button>
-      </div>
+      <ViewToggle
+        options={[
+          { value: 'today', label: 'Today' },
+          { value: 'history', label: 'History' },
+        ]}
+        value={view}
+        onChange={setView}
+        color="emerald"
+        variant="glass"
+      />
 
       {view === 'today' ? (
         <>

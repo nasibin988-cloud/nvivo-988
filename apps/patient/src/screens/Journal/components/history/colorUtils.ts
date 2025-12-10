@@ -1,7 +1,11 @@
 /**
  * Shared color utilities for history components
  * 7-tier color gradient system based on vitality score
+ *
+ * Can be used with any numeric score on a 0-100 or 0-10 scale
  */
+
+import type { BaseHistoryEntry, ScoreCalculator } from './types';
 
 /**
  * Get vitality color based on score (0-100 scale)
@@ -15,6 +19,48 @@ export function getVitalityColor(score: number): string {
   if (score >= 40) return '#ef4444'; // Light Red - Poor
   return '#dc2626'; // Red - Critical
 }
+
+/**
+ * Generic score calculator factory
+ * Creates a score calculator for different entry types
+ */
+export function createScoreCalculator<T extends BaseHistoryEntry>(
+  calculator: ScoreCalculator<T>
+): ScoreCalculator<T> {
+  return calculator;
+}
+
+/**
+ * Pre-built score calculators for common entry types
+ */
+export const scoreCalculators = {
+  /** Wellness score based on mood, energy, sleep, and inverted stress */
+  wellness: (entry: { mood: number; energy: number; stress: number; sleepQuality: number }): number => {
+    const positiveAvg = (entry.mood + entry.energy + entry.sleepQuality) / 3;
+    const stressAdjusted = (10 - entry.stress) / 10;
+    return positiveAvg * (0.7 + stressAdjusted * 0.3);
+  },
+
+  /** Nutrition score based on calories vs target */
+  nutrition: (entry: { totalCalories: number; targetCalories: number }): number => {
+    const ratio = entry.totalCalories / entry.targetCalories;
+    // Perfect score at 100%, declining for over/under
+    if (ratio >= 0.9 && ratio <= 1.1) return 10;
+    if (ratio >= 0.8 && ratio <= 1.2) return 8;
+    if (ratio >= 0.7 && ratio <= 1.3) return 6;
+    return Math.max(0, 10 - Math.abs(1 - ratio) * 10);
+  },
+
+  /** Activity score based on minutes vs target */
+  activity: (entry: { totalMinutes: number; targetMinutes: number }): number => {
+    return Math.min(10, (entry.totalMinutes / entry.targetMinutes) * 10);
+  },
+
+  /** Medication adherence score */
+  medication: (entry: { taken: number; total: number }): number => {
+    return entry.total > 0 ? (entry.taken / entry.total) * 10 : 10;
+  },
+};
 
 /**
  * Get heatmap color with background and foreground

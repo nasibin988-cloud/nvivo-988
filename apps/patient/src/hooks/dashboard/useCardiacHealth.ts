@@ -1,6 +1,8 @@
 import { useQuery } from '@tanstack/react-query';
 import { doc, getDoc } from 'firebase/firestore';
-import { getDb } from '@nvivo/shared';
+import { getDb, createLogger } from '@nvivo/shared';
+
+const log = createLogger('useCardiacHealth');
 
 export interface PlaqueData {
   tpv: number; // Total Plaque Volume mm³
@@ -70,12 +72,12 @@ export function useCardiacHealth(patientId: string | null) {
       const snapshot = await getDoc(cardiacRef);
 
       if (!snapshot.exists()) {
-        console.log('[useCardiacHealth] No document found for patientId:', patientId);
+        log.debug('No document found for patientId:', patientId);
         return null;
       }
 
       const data = snapshot.data() as CardiacHealth;
-      console.log('[useCardiacHealth] Data fetched:', {
+      log.debug('Data fetched', {
         patientId,
         hasBPTrend: !!data.bloodPressureTrend,
         bpTrendLength: data.bloodPressureTrend?.length,

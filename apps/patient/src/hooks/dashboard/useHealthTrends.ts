@@ -1,6 +1,8 @@
 import { useQuery } from '@tanstack/react-query';
 import { collection, query, where, getDocs, orderBy, doc, getDoc } from 'firebase/firestore';
-import { getDb } from '@nvivo/shared';
+import { getDb, createLogger } from '@nvivo/shared';
+
+const log = createLogger('useHealthTrends');
 
 export type TimeRange = '1W' | '1M' | '3M' | '6M' | '1Y';
 
@@ -110,7 +112,7 @@ export function useHealthTrends(patientId: string | null, timeRange: TimeRange =
         }
       });
 
-      console.log('[useHealthTrends] Fetched data:', {
+      log.debug('Fetched data', {
         patientId,
         timeRange,
         startDate: startDateStr,

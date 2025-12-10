@@ -13,8 +13,14 @@ import {
   AlertCircle,
   BookOpen,
 } from 'lucide-react';
-import { useState, useCallback } from 'react';
+import { useState, useCallback, useEffect } from 'react';
 import { useArticle } from '../../../hooks/learn/useArticles';
+import { useAuth } from '../../../contexts/AuthContext';
+import { doc, setDoc, getDoc } from 'firebase/firestore';
+import { getDb, createLogger } from '@nvivo/shared';
+
+const log = createLogger('ArticleDetail');
+
 import { getCategoryColor } from '../LearnScreen';
 import QuizQuestion from './QuizQuestion';
 
@@ -33,12 +39,57 @@ interface ArticleDetailProps {
 
 export default function ArticleDetail({ articleId, onBack }: ArticleDetailProps) {
   const { article, loading, error } = useArticle(articleId);
+  const { patientId } = useAuth();
   const [isBookmarked, setIsBookmarked] = useState(false);
+  const [bookmarkLoading, setBookmarkLoading] = useState(false);
 
-  const handleBookmark = useCallback(() => {
-    setIsBookmarked((prev) => !prev);
-    // TODO: Save bookmark state to Firebase
-  }, []);
+  // Load bookmark state on mount
+  useEffect(() => {
+    if (!patientId || !articleId) return;
+
+    const loadBookmarkState = async () => {
+      try {
+        const db = getDb();
+        const bookmarkRef = doc(db, 'patients', patientId, 'bookmarks', articleId);
+        const snapshot = await getDoc(bookmarkRef);
+        setIsBookmarked(snapshot.exists());
+      } catch (err) {
+        log.error('Failed to load bookmark state', err);
+      }
+    };
+
+    loadBookmarkState();
+  }, [patientId, articleId]);
+
+  const handleBookmark = useCallback(async () => {
+    if (!patientId || bookmarkLoading) return;
+
+    setBookmarkLoading(true);
+    const newBookmarkState = !isBookmarked;
+    setIsBookmarked(newBookmarkState); // Optimistic update
+
+    try {
+      const db = getDb();
+      const bookmarkRef = doc(db, 'patients', patientId, 'bookmarks', articleId);
+
+      if (newBookmarkState) {
+        await setDoc(bookmarkRef, {
+          articleId,
+          bookmarkedAt: new Date().toISOString(),
+        });
+      } else {
+        // Remove bookmark by setting empty doc (or use deleteDoc)
+        await setDoc(bookmarkRef, { deleted: true });
+      }
+      log.debug('Bookmark updated', { articleId, isBookmarked: newBookmarkState });
+    } catch (err) {
+      // Revert on error
+      setIsBookmarked(!newBookmarkState);
+      log.error('Failed to update bookmark', err);
+    } finally {
+      setBookmarkLoading(false);
+    }
+  }, [patientId, articleId, isBookmarked, bookmarkLoading]);
 
   const handleShare = useCallback(async () => {
     if (!article) return;
