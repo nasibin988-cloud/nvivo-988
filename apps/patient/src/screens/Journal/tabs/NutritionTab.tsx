@@ -22,11 +22,13 @@ import {
   Target,
   Calendar,
   Settings,
+  FileText,
 } from 'lucide-react';
 import { ViewToggle } from '@nvivo/ui';
 import { useFoodLogs, useWaterIntake, useFoodLogsHistory, useWaterStreak, type FoodLog, type MealType } from '../../../hooks/nutrition';
 import { useNutritionTargets, type NutritionTargets } from '../../../hooks/nutrition';
-import { FoodSearchModal, PhotoAnalysisModal } from '../../Journal/food/components';
+import { FoodSearchModal, PhotoAnalysisModal, MenuScannerModal } from '../../Journal/food/components';
+import type { MenuItem } from '../../Journal/food/components/menu-scanner';
 import { Confetti } from '../../../components/animations';
 
 // Modular imports
@@ -65,6 +67,7 @@ export default function NutritionTab(): React.ReactElement {
   const [showLogModal, setShowLogModal] = useState(false);
   const [showSearchModal, setShowSearchModal] = useState(false);
   const [showPhotoModal, setShowPhotoModal] = useState(false);
+  const [showMenuScanner, setShowMenuScanner] = useState(false);
   const [showGoalsModal, setShowGoalsModal] = useState(false);
   const [customTargets, setCustomTargets] = useState<Partial<NutritionTargets> | null>(null);
   const [editingMeal, setEditingMeal] = useState<FoodLog | null>(null);
@@ -174,6 +177,30 @@ export default function NutritionTab(): React.ReactElement {
     };
     await addLog(meal);
     setShowPhotoModal(false);
+  };
+
+  // Handle menu scanner results
+  const handleMenuScannerConfirm = async (items: MenuItem[]) => {
+    // Add each selected menu item as a food log
+    for (const item of items) {
+      const meal: Omit<FoodLog, 'id' | 'createdAt' | 'updatedAt'> = {
+        mealType: 'snack' as MealType, // User can edit later
+        description: item.name,
+        date: today,
+        time: new Date().toLocaleTimeString('en-US', { hour: 'numeric', minute: '2-digit' }),
+        calories: item.calories || null,
+        protein: item.protein || null,
+        carbs: item.carbs || null,
+        fat: item.fat || null,
+        fiber: item.fiber || null,
+        sugar: item.sugar || null,
+        sodium: item.sodium || null,
+        isAiAnalyzed: true,
+        aiConfidence: item.confidence,
+      };
+      await addLog(meal);
+    }
+    setShowMenuScanner(false);
   };
 
   // Loading state
@@ -322,31 +349,40 @@ export default function NutritionTab(): React.ReactElement {
           />
 
           {/* Quick Add Buttons */}
-          <div className="grid grid-cols-3 gap-2.5">
+          <div className="grid grid-cols-4 gap-2">
             <button
               onClick={() => setShowLogModal(true)}
-              className="group relative flex flex-col items-center justify-center gap-1.5 py-3.5 rounded-xl bg-white/[0.02] border border-white/[0.04] text-text-primary hover:bg-white/[0.04] hover:border-emerald-500/20 transition-all duration-300"
+              className="group relative flex flex-col items-center justify-center gap-1 py-3 rounded-xl bg-white/[0.02] border border-white/[0.04] text-text-primary hover:bg-white/[0.04] hover:border-emerald-500/20 transition-all duration-300"
             >
               <div className="absolute inset-0 rounded-xl bg-emerald-500/5 opacity-0 group-hover:opacity-100 transition-opacity" />
-              <Plus size={20} className="text-emerald-400 relative z-10" />
-              <span className="text-xs font-medium relative z-10">Log Meal</span>
+              <Plus size={18} className="text-emerald-400 relative z-10" />
+              <span className="text-[10px] font-medium relative z-10">Log</span>
             </button>
             <button
               onClick={() => setShowSearchModal(true)}
-              className="group relative flex flex-col items-center justify-center gap-1.5 py-3.5 rounded-xl bg-white/[0.02] border border-white/[0.04] text-text-primary hover:bg-white/[0.04] hover:border-blue-500/20 transition-all duration-300"
+              className="group relative flex flex-col items-center justify-center gap-1 py-3 rounded-xl bg-white/[0.02] border border-white/[0.04] text-text-primary hover:bg-white/[0.04] hover:border-blue-500/20 transition-all duration-300"
             >
               <div className="absolute inset-0 rounded-xl bg-blue-500/5 opacity-0 group-hover:opacity-100 transition-opacity" />
-              <Search size={20} className="text-blue-400 relative z-10" />
-              <span className="text-xs font-medium relative z-10">Search</span>
+              <Search size={18} className="text-blue-400 relative z-10" />
+              <span className="text-[10px] font-medium relative z-10">Search</span>
             </button>
             <button
               onClick={() => setShowPhotoModal(true)}
-              className="group relative flex flex-col items-center justify-center gap-1.5 py-3.5 rounded-xl bg-white/[0.02] border border-violet-500/20 text-violet-400 hover:bg-white/[0.04] hover:border-violet-500/30 transition-all duration-300"
+              className="group relative flex flex-col items-center justify-center gap-1 py-3 rounded-xl bg-white/[0.02] border border-violet-500/20 text-violet-400 hover:bg-white/[0.04] hover:border-violet-500/30 transition-all duration-300"
             >
               <div className="absolute inset-0 rounded-xl bg-violet-500/5 opacity-0 group-hover:opacity-100 transition-opacity" />
-              <div className="absolute -top-1 -right-1 px-1.5 py-0.5 rounded-full bg-violet-500/20 border border-violet-500/30 text-[8px] font-bold text-violet-300">AI</div>
-              <Camera size={20} className="relative z-10" />
-              <span className="text-xs font-medium relative z-10">Photo</span>
+              <div className="absolute -top-1 -right-1 px-1 py-0.5 rounded-full bg-violet-500/20 border border-violet-500/30 text-[7px] font-bold text-violet-300">AI</div>
+              <Camera size={18} className="relative z-10" />
+              <span className="text-[10px] font-medium relative z-10">Photo</span>
+            </button>
+            <button
+              onClick={() => setShowMenuScanner(true)}
+              className="group relative flex flex-col items-center justify-center gap-1 py-3 rounded-xl bg-white/[0.02] border border-teal-500/20 text-teal-400 hover:bg-white/[0.04] hover:border-teal-500/30 transition-all duration-300"
+            >
+              <div className="absolute inset-0 rounded-xl bg-teal-500/5 opacity-0 group-hover:opacity-100 transition-opacity" />
+              <div className="absolute -top-1 -right-1 px-1 py-0.5 rounded-full bg-teal-500/20 border border-teal-500/30 text-[7px] font-bold text-teal-300">OCR</div>
+              <FileText size={18} className="relative z-10" />
+              <span className="text-[10px] font-medium relative z-10">Menu</span>
             </button>
           </div>
 
@@ -467,6 +503,13 @@ export default function NutritionTab(): React.ReactElement {
         <PhotoAnalysisModal
           onClose={() => setShowPhotoModal(false)}
           onConfirm={handlePhotoAnalysis}
+        />
+      )}
+
+      {showMenuScanner && (
+        <MenuScannerModal
+          onClose={() => setShowMenuScanner(false)}
+          onConfirm={handleMenuScannerConfirm}
         />
       )}
 
