@@ -13,33 +13,34 @@ export const OPENAI_MODEL = 'gpt-5.1-2025-11-13';
 
 /**
  * Model configuration for different use cases
+ * Note: Using max_completion_tokens (not max_tokens) for GPT-5.x models
  */
 export const OPENAI_CONFIG = {
   // Vision tasks (food analysis, menu scanning)
   vision: {
     model: OPENAI_MODEL,
-    maxTokens: 2000,
+    maxCompletionTokens: 2000,
     temperature: 0.3, // Lower for more consistent results
   },
 
   // Extraction tasks (parsing structured data)
   extraction: {
     model: OPENAI_MODEL,
-    maxTokens: 4000,
+    maxCompletionTokens: 4000,
     temperature: 0.2,
   },
 
   // Generation tasks (recommendations, summaries)
   generation: {
     model: OPENAI_MODEL,
-    maxTokens: 1500,
+    maxCompletionTokens: 1500,
     temperature: 0.4,
   },
 
   // Assessment tasks (health scoring, analysis)
   assessment: {
     model: OPENAI_MODEL,
-    maxTokens: 2000,
+    maxCompletionTokens: 2000,
     temperature: 0.3,
   },
 } as const;

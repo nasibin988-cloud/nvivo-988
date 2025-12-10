@@ -145,7 +145,7 @@ export async function scanMenuPhoto(imageBase64: string): Promise<MenuScanResult
           ],
         },
       ],
-      max_tokens: OPENAI_CONFIG.vision.maxTokens,
+      max_completion_tokens: OPENAI_CONFIG.vision.maxCompletionTokens,
       temperature: OPENAI_CONFIG.vision.temperature,
     });
 

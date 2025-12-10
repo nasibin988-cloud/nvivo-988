@@ -108,7 +108,7 @@ export async function analyzeFoodPhoto(imageBase64: string): Promise<FoodAnalysi
           ],
         },
       ],
-      max_tokens: 1000,
+      max_completion_tokens: 1000,
       temperature: 0.3, // Lower temperature for more consistent results
     });
 

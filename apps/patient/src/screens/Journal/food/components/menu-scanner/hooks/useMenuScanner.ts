@@ -117,6 +117,9 @@ export function useMenuScanner(): UseMenuScannerReturn {
       setStep('review');
     } catch (err) {
       console.error('Menu scan failed:', err);
+      // Show the actual error in development
+      const errorMessage = err instanceof Error ? err.message : 'Unknown error';
+      console.error('Menu scan error details:', errorMessage);
       // Fall back to mock data for demo purposes
       const mockResult = getMockScanResult();
       setResult(mockResult);
