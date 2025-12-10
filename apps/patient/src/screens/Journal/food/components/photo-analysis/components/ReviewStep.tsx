@@ -1,6 +1,7 @@
 /**
  * ReviewStep Component
  * Review and edit analysis results
+ * NOTE: Tier selector moved to CaptureStep (before analysis)
  */
 
 import { RotateCcw } from 'lucide-react';
@@ -59,7 +60,7 @@ export default function ReviewStep({
         onTimeChange={onTimeChange}
       />
 
-      {/* Total summary */}
+      {/* Total summary - uses detailLevel from result */}
       <NutritionSummary result={result} />
 
       {/* Detected items */}

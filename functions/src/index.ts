@@ -1,12 +1,12 @@
 import * as admin from 'firebase-admin';
 import { https } from 'firebase-functions/v2';
-import { seedTestPatient, deleteTestPatient } from './seed';
+import { seedTestPatient, deleteTestPatient, seedArticles } from './seed';
 import { getOrInitializeDailyMicroWins, updateMicroWinChallenge } from './domains/gamification/dailyMicroWins';
 import * as careDataFunctions from './domains/care/careData';
 import { seedCareData, clearCareData } from './seed/seedCareData';
 import { clearMicroWins, seedMicroWins } from './seed/seedMicroWins';
 import { seedHealthTrends, clearHealthTrends } from './seed/seedHealthTrends';
-import { analyzeFoodPhoto as analyzeFoodPhotoFn, openaiApiKey } from './domains/ai/foodAnalysis';
+import { analyzeFoodPhoto as analyzeFoodPhotoFn, analyzeFoodText as analyzeFoodTextFn, openaiApiKey } from './domains/ai/foodAnalysis';
 import { scanMenuPhoto as scanMenuPhotoFn } from './domains/ai/menuScanning';
 import { searchFoods as searchFoodsFn, usdaApiKey } from './domains/ai/foodSearch';
 
@@ -15,11 +15,19 @@ admin.initializeApp();
 
 // Export seed functions (only for development)
 export const seedTestPatientFn = https.onCall({ cors: true }, async () => {
-  return seedTestPatient();
+  // Seed test patient
+  const patientResult = await seedTestPatient();
+  // Also seed articles
+  await seedArticles();
+  return patientResult;
 });
 
 export const deleteTestPatientFn = https.onCall({ cors: true }, async () => {
   return deleteTestPatient();
+});
+
+export const seedArticlesFn = https.onCall({ cors: true }, async () => {
+  return seedArticles();
 });
 
 /**
@@ -360,6 +368,12 @@ export const clearCareDataFn = https.onCall(
 /**
  * Analyze a food photo using GPT-4 Vision
  * Returns nutritional information for detected food items
+ *
+ * @param imageBase64 - Base64 encoded image data
+ * @param detailLevel - Nutrition detail level: 'essential' | 'extended' | 'complete'
+ *   - essential: Basic macros (calories, protein, carbs, fat, fiber, sugar, sodium)
+ *   - extended: + fat breakdown, key minerals (potassium, calcium, iron, magnesium)
+ *   - complete: + all vitamins, trace minerals, fatty acid details
  */
 export const analyzeFoodPhoto = https.onCall(
   {
@@ -367,7 +381,7 @@ export const analyzeFoodPhoto = https.onCall(
     secrets: [openaiApiKey],
   },
   async (request) => {
-    const { imageBase64 } = request.data ?? {};
+    const { imageBase64, detailLevel = 'essential' } = request.data ?? {};
 
     if (!imageBase64) {
       throw new https.HttpsError('invalid-argument', 'Image data is required');
@@ -378,8 +392,14 @@ export const analyzeFoodPhoto = https.onCall(
       throw new https.HttpsError('invalid-argument', 'Invalid image data');
     }
 
+    // Validate detail level
+    const validLevels = ['essential', 'extended', 'complete'];
+    if (!validLevels.includes(detailLevel)) {
+      throw new https.HttpsError('invalid-argument', 'Invalid detail level. Must be: essential, extended, or complete');
+    }
+
     try {
-      const result = await analyzeFoodPhotoFn(imageBase64);
+      const result = await analyzeFoodPhotoFn(imageBase64, detailLevel);
       return result;
     } catch (error) {
       console.error('Error analyzing food photo:', error);
@@ -422,6 +442,13 @@ export const scanMenuPhoto = https.onCall(
 /**
  * Search foods using USDA FoodData Central
  * Returns foods matching the query with nutrition information
+ *
+ * @param query - Search query string
+ * @param limit - Max number of results (default 15)
+ * @param detailLevel - Nutrition detail level: 'essential' | 'extended' | 'complete'
+ *   - essential: Basic macros (calories, protein, carbs, fat, fiber, sugar, sodium)
+ *   - extended: + fat breakdown, key minerals (potassium, calcium, iron, magnesium)
+ *   - complete: + all vitamins, trace minerals, fatty acid details
  */
 export const searchFoods = https.onCall(
   {
@@ -429,7 +456,7 @@ export const searchFoods = https.onCall(
     secrets: [usdaApiKey],
   },
   async (request) => {
-    const { query, limit } = request.data ?? {};
+    const { query, limit, detailLevel = 'essential' } = request.data ?? {};
 
     if (!query || typeof query !== 'string') {
       throw new https.HttpsError('invalid-argument', 'Search query is required');
@@ -439,12 +466,72 @@ export const searchFoods = https.onCall(
       throw new https.HttpsError('invalid-argument', 'Query must be at least 2 characters');
     }
 
+    // Validate detail level
+    const validLevels = ['essential', 'extended', 'complete'];
+    if (!validLevels.includes(detailLevel)) {
+      throw new https.HttpsError('invalid-argument', 'Invalid detail level. Must be: essential, extended, or complete');
+    }
+
     try {
-      const results = await searchFoodsFn(query, limit || 15);
+      const results = await searchFoodsFn(query, limit || 15, detailLevel);
       return results;
     } catch (error) {
       console.error('Error searching foods:', error);
       throw new https.HttpsError('internal', 'Failed to search foods');
+    }
+  }
+);
+
+/**
+ * Analyze food from text description using AI
+ * Takes a natural language food description and returns nutritional estimates
+ * Uses typical portion sizes for common foods when not specified
+ *
+ * Examples:
+ * - "grilled chicken breast with rice and broccoli"
+ * - "2 eggs, toast with butter, orange juice"
+ * - "caesar salad"
+ *
+ * @param foodDescription - Natural language description of food
+ * @param detailLevel - Nutrition detail level: 'essential' | 'extended' | 'complete'
+ *   - essential: Basic macros (calories, protein, carbs, fat, fiber, sugar, sodium)
+ *   - extended: + fat breakdown, key minerals (potassium, calcium, iron, magnesium)
+ *   - complete: + all vitamins, trace minerals, fatty acid details
+ *
+ * Returns items with servingMultiplier field that can be adjusted by user
+ */
+export const analyzeFoodText = https.onCall(
+  {
+    cors: true,
+    secrets: [openaiApiKey],
+  },
+  async (request) => {
+    const { foodDescription, detailLevel = 'essential' } = request.data ?? {};
+
+    if (!foodDescription) {
+      throw new https.HttpsError('invalid-argument', 'Food description is required');
+    }
+
+    if (typeof foodDescription !== 'string' || foodDescription.length < 2) {
+      throw new https.HttpsError('invalid-argument', 'Food description must be at least 2 characters');
+    }
+
+    if (foodDescription.length > 500) {
+      throw new https.HttpsError('invalid-argument', 'Food description must be less than 500 characters');
+    }
+
+    // Validate detail level
+    const validLevels = ['essential', 'extended', 'complete'];
+    if (!validLevels.includes(detailLevel)) {
+      throw new https.HttpsError('invalid-argument', 'Invalid detail level. Must be: essential, extended, or complete');
+    }
+
+    try {
+      const result = await analyzeFoodTextFn(foodDescription, detailLevel);
+      return result;
+    } catch (error) {
+      console.error('Error analyzing food text:', error);
+      throw new https.HttpsError('internal', 'Failed to analyze food description');
     }
   }
 );

@@ -33,3 +33,16 @@ export {
 
 // Patient profile hooks
 export * from './patient';
+
+// AI Food Analysis hook (shared across food logging and comparison)
+export { useFoodAI } from './useFoodAI';
+export type {
+  AnalyzedFoodItem,
+  FoodAnalysisResult,
+  UseFoodAIReturn,
+  UseFoodAIOptions,
+  NutritionDetailLevel,
+  EssentialNutrition,
+  ExtendedNutrition,
+  CompleteNutrition,
+} from './useFoodAI';

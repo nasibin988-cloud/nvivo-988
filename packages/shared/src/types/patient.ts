@@ -1,4 +1,86 @@
 import type { Timestamp } from 'firebase/firestore';
+import type { NutritionDetailLevel } from './models/nutrition';
+
+/**
+ * Patient app settings - stored in Firestore patients/{patientId}/settings
+ */
+export interface PatientSettings {
+  nutrition: NutritionSettings;
+  notifications: NotificationSettings;
+  privacy: PrivacySettings;
+  updatedAt: Timestamp;
+}
+
+/**
+ * Nutrition-specific settings
+ */
+export interface NutritionSettings {
+  /** Detail level for AI food analysis: essential, extended, complete */
+  detailLevel: NutritionDetailLevel;
+  /** Daily calorie goal */
+  dailyCalorieGoal: number;
+  /** Macro targets as percentages (should sum to ~100) */
+  macroTargets: {
+    protein: number; // percentage
+    carbs: number;   // percentage
+    fat: number;     // percentage
+  };
+  /** Whether to track specific micronutrients */
+  trackMicronutrients: boolean;
+  /** Specific nutrients to highlight in UI */
+  highlightedNutrients: string[];
+}
+
+/**
+ * Notification settings
+ */
+export interface NotificationSettings {
+  mealReminders: boolean;
+  medicationReminders: boolean;
+  appointmentReminders: boolean;
+  healthInsights: boolean;
+  quietHoursStart: string | null; // HH:mm format
+  quietHoursEnd: string | null;   // HH:mm format
+}
+
+/**
+ * Privacy settings
+ */
+export interface PrivacySettings {
+  shareHealthDataWithCareTeam: boolean;
+  shareHealthDataWithFamily: boolean;
+  allowAnonymousDataForResearch: boolean;
+}
+
+/**
+ * Default patient settings
+ */
+export const DEFAULT_PATIENT_SETTINGS: Omit<PatientSettings, 'updatedAt'> = {
+  nutrition: {
+    detailLevel: 'essential',
+    dailyCalorieGoal: 2000,
+    macroTargets: {
+      protein: 25,
+      carbs: 50,
+      fat: 25,
+    },
+    trackMicronutrients: false,
+    highlightedNutrients: [],
+  },
+  notifications: {
+    mealReminders: true,
+    medicationReminders: true,
+    appointmentReminders: true,
+    healthInsights: true,
+    quietHoursStart: null,
+    quietHoursEnd: null,
+  },
+  privacy: {
+    shareHealthDataWithCareTeam: true,
+    shareHealthDataWithFamily: false,
+    allowAnonymousDataForResearch: false,
+  },
+};
 
 export interface User {
   uid: string;

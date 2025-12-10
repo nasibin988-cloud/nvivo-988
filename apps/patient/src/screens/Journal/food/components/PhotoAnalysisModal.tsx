@@ -1,6 +1,7 @@
 /**
  * Photo Analysis Modal
  * AI-powered food photo analysis using GPT-4 Vision
+ * Detail level is selected BEFORE analysis to optimize AI usage
  */
 
 import { useRef } from 'react';
@@ -32,6 +33,7 @@ export default function PhotoAnalysisModal({ onClose, onConfirm }: PhotoAnalysis
     selectedMealType,
     eatenAt,
     editingItem,
+    detailLevel,
     setImageData,
     analyzeImage,
     handleRetry,
@@ -41,6 +43,7 @@ export default function PhotoAnalysisModal({ onClose, onConfirm }: PhotoAnalysis
     setSelectedMealType,
     setEatenAt,
     setEditingItem,
+    setDetailLevel,
     getConfirmResult,
   } = usePhotoAnalysis();
 
@@ -76,9 +79,9 @@ export default function PhotoAnalysisModal({ onClose, onConfirm }: PhotoAnalysis
   const getStepDescription = (): string => {
     switch (step) {
       case 'capture':
-        return 'Take a photo of your meal';
+        return 'Select detail level & take photo';
       case 'analyzing':
-        return 'Analyzing your food...';
+        return `Analyzing (${detailLevel} mode)...`;
       case 'review':
         return 'Review & adjust';
     }
@@ -116,6 +119,8 @@ export default function PhotoAnalysisModal({ onClose, onConfirm }: PhotoAnalysis
               isStreaming={isStreaming}
               imageData={imageData}
               error={error || cameraError}
+              detailLevel={detailLevel}
+              onDetailLevelChange={setDetailLevel}
               onStartCamera={startCamera}
               onCapturePhoto={handleCapturePhoto}
               onFileUpload={handleFileUpload}

@@ -32,9 +32,13 @@ var __importStar = (this && this.__importStar) || (function () {
         return result;
     };
 })();
+var __importDefault = (this && this.__importDefault) || function (mod) {
+    return (mod && mod.__esModule) ? mod : { "default": mod };
+};
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.seedTestPatient = seedTestPatient;
 exports.deleteTestPatient = deleteTestPatient;
+exports.seedArticles = seedArticles;
 const admin = __importStar(require("firebase-admin"));
 const firestore_1 = require("firebase-admin/firestore");
 const TEST_PATIENT_ID = 'sarah-mitchell-test';
@@ -775,6 +779,73 @@ async function deleteTestPatient() {
     }
     catch (error) {
         console.error('Delete failed:', error);
+        throw error;
+    }
+}
+// Import articles data
+const articles_json_1 = __importDefault(require("./data/articles.json"));
+/**
+ * Seed articles to Firestore
+ */
+async function seedArticles() {
+    const db = admin.firestore();
+    console.log('Seeding articles...');
+    // Transform articles to use local gemini images
+    const articles = articles_json_1.default.map((article) => {
+        // Replace unsplash URLs with local gemini images
+        // article-001 -> /images/articles/article-001.png
+        return {
+            ...article,
+            imageUrl: `/images/articles/${article.id}.png`,
+        };
+    });
+    try {
+        // Batch write articles
+        const batchSize = 500;
+        for (let i = 0; i < articles.length; i += batchSize) {
+            const batch = db.batch();
+            const chunk = articles.slice(i, i + batchSize);
+            for (const article of chunk) {
+                const ref = db.collection('articles').doc(article.id);
+                batch.set(ref, {
+                    ...article,
+                    createdAt: firestore_1.Timestamp.now(),
+                    updatedAt: firestore_1.Timestamp.now(),
+                });
+            }
+            await batch.commit();
+        }
+        // Count articles per category
+        const categoryCounts = {};
+        for (const article of articles) {
+            const cat = article.category;
+            categoryCounts[cat] = (categoryCounts[cat] || 0) + 1;
+        }
+        // Seed article categories with accurate counts
+        const categoryData = [
+            { id: 'heart-health', name: 'Heart Health', icon: 'heart', articleCount: categoryCounts['Heart Health'] || 0 },
+            { id: 'brain-health', name: 'Brain Health', icon: 'brain', articleCount: categoryCounts['Brain Health'] || 0 },
+            { id: 'metabolic-health', name: 'Metabolic Health', icon: 'activity', articleCount: categoryCounts['Metabolic Health'] || 0 },
+            { id: 'nutrition', name: 'Nutrition', icon: 'apple', articleCount: categoryCounts['Nutrition'] || 0 },
+            { id: 'exercise', name: 'Exercise', icon: 'dumbbell', articleCount: categoryCounts['Exercise'] || 0 },
+            { id: 'sleep', name: 'Sleep', icon: 'moon', articleCount: categoryCounts['Sleep'] || 0 },
+            { id: 'stress', name: 'Stress Management', icon: 'wind', articleCount: categoryCounts['Stress Management'] || 0 },
+        ];
+        const catBatch = db.batch();
+        for (const cat of categoryData) {
+            const ref = db.collection('articleCategories').doc(cat.id);
+            catBatch.set(ref, cat);
+        }
+        await catBatch.commit();
+        console.log('Articles seeded:', articles.length);
+        return {
+            success: true,
+            count: articles.length,
+            message: `Seeded ${articles.length} articles and ${categoryData.length} categories`,
+        };
+    }
+    catch (error) {
+        console.error('Article seed failed:', error);
         throw error;
     }
 }

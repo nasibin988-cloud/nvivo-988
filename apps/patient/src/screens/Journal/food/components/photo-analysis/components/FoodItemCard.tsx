@@ -5,7 +5,7 @@
 
 import { ChevronDown, Plus, Minus } from 'lucide-react';
 import type { AnalyzedFood } from '../types';
-import { MACRO_CONFIGS, PORTION_PRESETS } from '../data';
+import { MACRO_CONFIGS } from '../data';
 
 interface FoodItemCardProps {
   item: AnalyzedFood;
@@ -131,23 +131,6 @@ export default function FoodItemCard({
                 <Plus size={14} />
               </button>
             </div>
-          </div>
-
-          {/* Quick portion buttons */}
-          <div className="flex gap-2">
-            {PORTION_PRESETS.map((qty) => (
-              <button
-                key={qty}
-                onClick={() => onPortionChange(qty)}
-                className={`flex-1 py-1.5 rounded-lg text-xs font-medium transition-all ${
-                  item.quantity === qty
-                    ? 'bg-violet-500/[0.15] border border-violet-500/40 text-violet-400'
-                    : 'bg-white/[0.02] border border-white/[0.06] text-text-muted hover:text-text-primary hover:bg-white/[0.04] hover:border-white/[0.1]'
-                }`}
-              >
-                {qty}x
-              </button>
-            ))}
           </div>
 
           {/* Macros edit */}

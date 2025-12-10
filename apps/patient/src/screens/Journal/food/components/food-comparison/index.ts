@@ -18,4 +18,5 @@ export {
   ConditionImpactCard,
   FoodAnalysisCard,
   FoodInputForm,
+  FoodCaptureModal,
 } from './components';

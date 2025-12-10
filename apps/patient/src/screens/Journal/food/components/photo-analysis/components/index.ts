@@ -8,3 +8,4 @@ export { default as ReviewStep } from './ReviewStep';
 export { default as FoodItemCard } from './FoodItemCard';
 export { default as NutritionSummary } from './NutritionSummary';
 export { default as MealTypeSelector } from './MealTypeSelector';
+export { default as NutritionTierSelector } from './NutritionTierSelector';

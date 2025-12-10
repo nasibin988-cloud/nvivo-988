@@ -7,3 +7,4 @@ export { NutrientScoreBar } from './NutrientScoreBar';
 export { ConditionImpactCard } from './ConditionImpactCard';
 export { FoodAnalysisCard } from './FoodAnalysisCard';
 export { FoodInputForm } from './FoodInputForm';
+export { FoodCaptureModal } from './FoodCaptureModal';

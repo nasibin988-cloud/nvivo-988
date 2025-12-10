@@ -9,49 +9,79 @@ Object.defineProperty(exports, "__esModule", { value: true });
 exports.seedTestPatient = seedTestPatient;
 exports.deleteTestPatient = deleteTestPatient;
 const firestore_1 = require("firebase-admin/firestore");
+const auth_1 = require("firebase-admin/auth");
 const testPatient_1 = require("./config/testPatient");
 const seedMicroWins_1 = require("./seedMicroWins");
 const seedCareData_1 = require("./seedCareData");
 const seedCardiacHealth_1 = require("./seedCardiacHealth");
 const seedHealthTrends_1 = require("./seedHealthTrends");
+// Test credentials
+const TEST_EMAIL = 'sarah.mitchell@test.nvivo.health';
+const TEST_PASSWORD = 'TestPatient2024!';
 /**
  * Seed all test data for the test patient
  */
 async function seedTestPatient() {
     const db = (0, firestore_1.getFirestore)();
+    const auth = (0, auth_1.getAuth)();
     console.log('Starting test patient seed...');
     try {
-        // 1. Create patient profile
+        // 1. Create or get Firebase Auth user
+        let authUser;
+        try {
+            authUser = await auth.getUserByEmail(TEST_EMAIL);
+            console.log('Found existing auth user:', authUser.uid);
+        }
+        catch (_a) {
+            // User doesn't exist, create it
+            authUser = await auth.createUser({
+                email: TEST_EMAIL,
+                password: TEST_PASSWORD,
+                displayName: `${testPatient_1.TEST_PATIENT_PROFILE.firstName} ${testPatient_1.TEST_PATIENT_PROFILE.lastName}`,
+            });
+            console.log('Created new auth user:', authUser.uid);
+        }
+        const patientId = authUser.uid;
+        // 2. Create patient profile with Auth UID as document ID
         console.log('Creating patient profile...');
-        await db.collection('patients').doc(testPatient_1.TEST_PATIENT_ID).set(testPatient_1.TEST_PATIENT_PROFILE);
-        // 2. Create test clinician
+        await db.collection('patients').doc(patientId).set({
+            ...testPatient_1.TEST_PATIENT_PROFILE,
+            id: patientId,
+        });
+        // 3. Create test clinician
         console.log('Creating test clinician...');
         await db.collection('clinicians').doc(testPatient_1.TEST_CLINICIAN_ID).set(testPatient_1.TEST_CLINICIAN_PROFILE);
-        // 3. Seed MicroWins (7 days of history + today)
+        // 4. Seed MicroWins (7 days of history + today)
         console.log('Seeding MicroWins...');
         await (0, seedMicroWins_1.seedMicroWins)({
-            patientId: testPatient_1.TEST_PATIENT_ID,
+            patientId,
             daysToSeed: 7,
             challengesPerDay: 5,
             completionRate: 0.7,
         });
-        // 4. Seed streak data
+        // 5. Seed streak data
         console.log('Seeding streak data...');
-        await seedStreakData(testPatient_1.TEST_PATIENT_ID);
-        // 5. Seed wellness logs
+        await seedStreakData(patientId);
+        // 6. Seed wellness logs
         console.log('Seeding wellness logs...');
-        await seedWellnessLogs(testPatient_1.TEST_PATIENT_ID);
-        // 6. Seed care data (care team, medications, tasks, goals, appointments)
+        await seedWellnessLogs(patientId);
+        // 7. Seed care data (care team, medications, tasks, goals, appointments)
         console.log('Seeding care data...');
-        await (0, seedCareData_1.seedCareData)({ patientId: testPatient_1.TEST_PATIENT_ID });
-        // 7. Seed cardiac health data (plaque, lipids, biomarkers, BP/LDL trends)
+        await (0, seedCareData_1.seedCareData)({ patientId });
+        // 8. Seed cardiac health data (plaque, lipids, biomarkers, BP/LDL trends)
         console.log('Seeding cardiac health data...');
-        await (0, seedCardiacHealth_1.seedCardiacHealth)({ patientId: testPatient_1.TEST_PATIENT_ID });
-        // 8. Seed comprehensive health trends (365 days of metrics)
+        await (0, seedCardiacHealth_1.seedCardiacHealth)({ patientId });
+        // 9. Seed comprehensive health trends (365 days of metrics)
         console.log('Seeding health trends data...');
-        await (0, seedHealthTrends_1.seedHealthTrends)({ patientId: testPatient_1.TEST_PATIENT_ID, daysToSeed: 365 });
+        await (0, seedHealthTrends_1.seedHealthTrends)({ patientId, daysToSeed: 365 });
         console.log('Test patient seed complete!');
-        return { success: true, patientId: testPatient_1.TEST_PATIENT_ID };
+        return {
+            success: true,
+            patientId,
+            email: TEST_EMAIL,
+            password: TEST_PASSWORD,
+            message: `Test patient ${testPatient_1.TEST_PATIENT_PROFILE.firstName} ${testPatient_1.TEST_PATIENT_PROFILE.lastName} created successfully`,
+        };
     }
     catch (error) {
         console.error('Error seeding test patient:', error);
@@ -63,20 +93,34 @@ async function seedTestPatient() {
  */
 async function deleteTestPatient() {
     const db = (0, firestore_1.getFirestore)();
+    const auth = (0, auth_1.getAuth)();
     console.log('Deleting test patient data...');
     try {
+        // Get the auth user to find the patient ID
+        let patientId;
+        try {
+            const authUser = await auth.getUserByEmail(TEST_EMAIL);
+            patientId = authUser.uid;
+            // Delete the auth user
+            await auth.deleteUser(patientId);
+            console.log('Deleted auth user:', patientId);
+        }
+        catch (_a) {
+            console.log('Auth user not found, skipping auth deletion');
+            return { success: true };
+        }
         // Clear MicroWins
-        await (0, seedMicroWins_1.clearMicroWins)(testPatient_1.TEST_PATIENT_ID);
+        await (0, seedMicroWins_1.clearMicroWins)(patientId);
         // Clear care data
-        await (0, seedCareData_1.clearCareData)(testPatient_1.TEST_PATIENT_ID);
+        await (0, seedCareData_1.clearCareData)(patientId);
         // Clear cardiac health data
-        await (0, seedCardiacHealth_1.clearCardiacHealth)(testPatient_1.TEST_PATIENT_ID);
+        await (0, seedCardiacHealth_1.clearCardiacHealth)(patientId);
         // Clear health trends
-        await (0, seedHealthTrends_1.clearHealthTrends)(testPatient_1.TEST_PATIENT_ID);
+        await (0, seedHealthTrends_1.clearHealthTrends)(patientId);
         // Clear streaks
         const streaksSnapshot = await db
             .collection('patients')
-            .doc(testPatient_1.TEST_PATIENT_ID)
+            .doc(patientId)
             .collection('streaks')
             .get();
         const streaksBatch = db.batch();
@@ -85,14 +129,14 @@ async function deleteTestPatient() {
         // Clear wellness logs
         const wellnessSnapshot = await db
             .collection('patients')
-            .doc(testPatient_1.TEST_PATIENT_ID)
+            .doc(patientId)
             .collection('wellnessLogs')
             .get();
         const wellnessBatch = db.batch();
         wellnessSnapshot.docs.forEach((doc) => wellnessBatch.delete(doc.ref));
         await wellnessBatch.commit();
         // Delete patient document
-        await db.collection('patients').doc(testPatient_1.TEST_PATIENT_ID).delete();
+        await db.collection('patients').doc(patientId).delete();
         // Delete clinician document
         await db.collection('clinicians').doc(testPatient_1.TEST_CLINICIAN_ID).delete();
         console.log('Test patient data deleted!');

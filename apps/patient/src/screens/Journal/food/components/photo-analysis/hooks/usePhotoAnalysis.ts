@@ -1,22 +1,23 @@
 /**
  * usePhotoAnalysis Hook
- * State management and analysis logic
+ * State management and analysis logic - NO mock data fallback
  */
 
 import { useState, useCallback } from 'react';
 import { httpsCallable } from 'firebase/functions';
 import { getFunctions } from '@nvivo/shared';
-import type { AnalysisResult, AnalyzedFood, MealType, AnalysisStep } from '../types';
-import { getMockAnalysisResult } from '../data';
+import type { AnalysisResult, AnalyzedFood, MealType, AnalysisStep, NutritionDetailLevel } from '../types';
 
 interface UsePhotoAnalysisReturn {
   step: AnalysisStep;
   imageData: string | null;
   result: AnalysisResult | null;
   error: string | null;
+  isAnalyzing: boolean;
   selectedMealType: MealType;
   eatenAt: string;
   editingItem: number | null;
+  detailLevel: NutritionDetailLevel;
   setImageData: (data: string | null) => void;
   analyzeImage: (base64: string) => Promise<void>;
   handleRetry: () => void;
@@ -26,6 +27,7 @@ interface UsePhotoAnalysisReturn {
   setSelectedMealType: (type: MealType) => void;
   setEatenAt: (time: string) => void;
   setEditingItem: (index: number | null) => void;
+  setDetailLevel: (level: NutritionDetailLevel) => void;
   getConfirmResult: () => AnalysisResult | null;
 }
 
@@ -34,16 +36,107 @@ function getCurrentTime(): string {
   return `${now.getHours().toString().padStart(2, '0')}:${now.getMinutes().toString().padStart(2, '0')}`;
 }
 
-function recalculateTotals(items: AnalyzedFood[]): Pick<AnalysisResult, 'totalCalories' | 'totalProtein' | 'totalCarbs' | 'totalFat'> {
-  return items.reduce(
-    (acc, item) => ({
-      totalCalories: acc.totalCalories + item.calories,
-      totalProtein: acc.totalProtein + item.protein,
-      totalCarbs: acc.totalCarbs + item.carbs,
-      totalFat: acc.totalFat + item.fat,
-    }),
-    { totalCalories: 0, totalProtein: 0, totalCarbs: 0, totalFat: 0 }
-  );
+function recalculateTotals(items: AnalyzedFood[], detailLevel: NutritionDetailLevel): Partial<AnalysisResult> {
+  const totals: Partial<AnalysisResult> = {
+    totalCalories: 0,
+    totalProtein: 0,
+    totalCarbs: 0,
+    totalFat: 0,
+    totalFiber: 0,
+    totalSugar: 0,
+    totalSodium: 0,
+  };
+
+  // Extended totals
+  if (detailLevel !== 'essential') {
+    totals.totalSaturatedFat = 0;
+    totals.totalTransFat = 0;
+    totals.totalCholesterol = 0;
+    totals.totalPotassium = 0;
+    totals.totalCalcium = 0;
+    totals.totalIron = 0;
+    totals.totalMagnesium = 0;
+    totals.totalZinc = 0;
+    totals.totalVitaminA = 0;
+    totals.totalVitaminC = 0;
+    totals.totalVitaminD = 0;
+  }
+
+  // Complete totals
+  if (detailLevel === 'complete') {
+    totals.totalMonounsaturatedFat = 0;
+    totals.totalPolyunsaturatedFat = 0;
+    totals.totalOmega3 = 0;
+    totals.totalOmega6 = 0;
+    totals.totalAddedSugar = 0;
+    totals.totalPhosphorus = 0;
+    totals.totalCopper = 0;
+    totals.totalManganese = 0;
+    totals.totalSelenium = 0;
+    totals.totalVitaminE = 0;
+    totals.totalVitaminK = 0;
+    totals.totalThiamin = 0;
+    totals.totalRiboflavin = 0;
+    totals.totalNiacin = 0;
+    totals.totalVitaminB6 = 0;
+    totals.totalFolate = 0;
+    totals.totalVitaminB12 = 0;
+    totals.totalCholine = 0;
+    totals.totalWater = 0;
+    totals.totalCaffeine = 0;
+  }
+
+  for (const item of items) {
+    // Essential
+    totals.totalCalories = (totals.totalCalories ?? 0) + item.calories;
+    totals.totalProtein = (totals.totalProtein ?? 0) + item.protein;
+    totals.totalCarbs = (totals.totalCarbs ?? 0) + item.carbs;
+    totals.totalFat = (totals.totalFat ?? 0) + item.fat;
+    totals.totalFiber = (totals.totalFiber ?? 0) + (item.fiber ?? 0);
+    totals.totalSugar = (totals.totalSugar ?? 0) + (item.sugar ?? 0);
+    totals.totalSodium = (totals.totalSodium ?? 0) + (item.sodium ?? 0);
+
+    // Extended
+    if (detailLevel !== 'essential') {
+      totals.totalSaturatedFat = (totals.totalSaturatedFat ?? 0) + (item.saturatedFat ?? 0);
+      totals.totalTransFat = (totals.totalTransFat ?? 0) + (item.transFat ?? 0);
+      totals.totalCholesterol = (totals.totalCholesterol ?? 0) + (item.cholesterol ?? 0);
+      totals.totalPotassium = (totals.totalPotassium ?? 0) + (item.potassium ?? 0);
+      totals.totalCalcium = (totals.totalCalcium ?? 0) + (item.calcium ?? 0);
+      totals.totalIron = (totals.totalIron ?? 0) + (item.iron ?? 0);
+      totals.totalMagnesium = (totals.totalMagnesium ?? 0) + (item.magnesium ?? 0);
+      totals.totalZinc = (totals.totalZinc ?? 0) + (item.zinc ?? 0);
+      totals.totalVitaminA = (totals.totalVitaminA ?? 0) + (item.vitaminA ?? 0);
+      totals.totalVitaminC = (totals.totalVitaminC ?? 0) + (item.vitaminC ?? 0);
+      totals.totalVitaminD = (totals.totalVitaminD ?? 0) + (item.vitaminD ?? 0);
+    }
+
+    // Complete
+    if (detailLevel === 'complete') {
+      totals.totalMonounsaturatedFat = (totals.totalMonounsaturatedFat ?? 0) + (item.monounsaturatedFat ?? 0);
+      totals.totalPolyunsaturatedFat = (totals.totalPolyunsaturatedFat ?? 0) + (item.polyunsaturatedFat ?? 0);
+      totals.totalOmega3 = (totals.totalOmega3 ?? 0) + (item.omega3 ?? 0);
+      totals.totalOmega6 = (totals.totalOmega6 ?? 0) + (item.omega6 ?? 0);
+      totals.totalAddedSugar = (totals.totalAddedSugar ?? 0) + (item.addedSugar ?? 0);
+      totals.totalPhosphorus = (totals.totalPhosphorus ?? 0) + (item.phosphorus ?? 0);
+      totals.totalCopper = (totals.totalCopper ?? 0) + (item.copper ?? 0);
+      totals.totalManganese = (totals.totalManganese ?? 0) + (item.manganese ?? 0);
+      totals.totalSelenium = (totals.totalSelenium ?? 0) + (item.selenium ?? 0);
+      totals.totalVitaminE = (totals.totalVitaminE ?? 0) + (item.vitaminE ?? 0);
+      totals.totalVitaminK = (totals.totalVitaminK ?? 0) + (item.vitaminK ?? 0);
+      totals.totalThiamin = (totals.totalThiamin ?? 0) + (item.thiamin ?? 0);
+      totals.totalRiboflavin = (totals.totalRiboflavin ?? 0) + (item.riboflavin ?? 0);
+      totals.totalNiacin = (totals.totalNiacin ?? 0) + (item.niacin ?? 0);
+      totals.totalVitaminB6 = (totals.totalVitaminB6 ?? 0) + (item.vitaminB6 ?? 0);
+      totals.totalFolate = (totals.totalFolate ?? 0) + (item.folate ?? 0);
+      totals.totalVitaminB12 = (totals.totalVitaminB12 ?? 0) + (item.vitaminB12 ?? 0);
+      totals.totalCholine = (totals.totalCholine ?? 0) + (item.choline ?? 0);
+      totals.totalWater = (totals.totalWater ?? 0) + (item.water ?? 0);
+      totals.totalCaffeine = (totals.totalCaffeine ?? 0) + (item.caffeine ?? 0);
+    }
+  }
+
+  return totals;
 }
 
 export function usePhotoAnalysis(): UsePhotoAnalysisReturn {
@@ -51,23 +144,30 @@ export function usePhotoAnalysis(): UsePhotoAnalysisReturn {
   const [imageData, setImageData] = useState<string | null>(null);
   const [result, setResult] = useState<AnalysisResult | null>(null);
   const [error, setError] = useState<string | null>(null);
+  const [isAnalyzing, setIsAnalyzing] = useState(false);
   const [editingItem, setEditingItem] = useState<number | null>(null);
   const [selectedMealType, setSelectedMealType] = useState<MealType>('lunch');
   const [eatenAt, setEatenAt] = useState<string>(getCurrentTime);
+  const [detailLevel, setDetailLevel] = useState<NutritionDetailLevel>('essential');
 
   const analyzeImage = useCallback(async (base64: string) => {
     setStep('analyzing');
     setError(null);
+    setIsAnalyzing(true);
 
     try {
       const functions = getFunctions();
-      const analyzeFn = httpsCallable<{ imageBase64: string }, AnalysisResult>(
-        functions,
-        'analyzeFoodPhoto'
-      );
+      const analyzeFn = httpsCallable<
+        { imageBase64: string; detailLevel: NutritionDetailLevel },
+        AnalysisResult
+      >(functions, 'analyzeFoodPhoto');
 
       const imageContent = base64.split(',')[1];
-      const response = await analyzeFn({ imageBase64: imageContent });
+      const response = await analyzeFn({
+        imageBase64: imageContent,
+        detailLevel, // Pass the detail level to the AI function
+      });
+
       setResult(response.data);
 
       if (response.data.mealType && response.data.mealType !== 'unknown') {
@@ -76,14 +176,14 @@ export function usePhotoAnalysis(): UsePhotoAnalysisReturn {
       setStep('review');
     } catch (err) {
       console.error('Analysis failed:', err);
-      const mockResult = getMockAnalysisResult();
-      setResult(mockResult);
-      if (mockResult.mealType && mockResult.mealType !== 'unknown') {
-        setSelectedMealType(mockResult.mealType as MealType);
-      }
-      setStep('review');
+      // NO mock data fallback - show error to user
+      const errorMessage = err instanceof Error ? err.message : 'Failed to analyze food photo. Please try again.';
+      setError(errorMessage);
+      setStep('capture'); // Go back to capture step on error
+    } finally {
+      setIsAnalyzing(false);
     }
-  }, []);
+  }, [detailLevel]);
 
   const handleRetry = useCallback(() => {
     setImageData(null);
@@ -97,7 +197,7 @@ export function usePhotoAnalysis(): UsePhotoAnalysisReturn {
 
     const newItems = [...result.items];
     newItems[index] = { ...newItems[index], ...updates };
-    const totals = recalculateTotals(newItems);
+    const totals = recalculateTotals(newItems, result.detailLevel);
 
     setResult({ ...result, items: newItems, ...totals });
     setEditingItem(null);
@@ -107,7 +207,7 @@ export function usePhotoAnalysis(): UsePhotoAnalysisReturn {
     if (!result) return;
 
     const newItems = result.items.filter((_, i) => i !== index);
-    const totals = recalculateTotals(newItems);
+    const totals = recalculateTotals(newItems, result.detailLevel);
 
     setResult({ ...result, items: newItems, ...totals });
   }, [result]);
@@ -118,6 +218,7 @@ export function usePhotoAnalysis(): UsePhotoAnalysisReturn {
     const item = result.items[index];
     const multiplier = newQuantity / item.quantity;
 
+    // Scale all numeric nutritional values
     const updatedItem: AnalyzedFood = {
       ...item,
       quantity: newQuantity,
@@ -126,20 +227,22 @@ export function usePhotoAnalysis(): UsePhotoAnalysisReturn {
       carbs: Math.round(item.carbs * multiplier * 10) / 10,
       fat: Math.round(item.fat * multiplier * 10) / 10,
       fiber: item.fiber ? Math.round(item.fiber * multiplier * 10) / 10 : undefined,
+      sugar: item.sugar ? Math.round(item.sugar * multiplier * 10) / 10 : undefined,
+      sodium: item.sodium ? Math.round(item.sodium * multiplier) : undefined,
+      // Extended nutrients
+      saturatedFat: item.saturatedFat ? Math.round(item.saturatedFat * multiplier * 10) / 10 : undefined,
+      cholesterol: item.cholesterol ? Math.round(item.cholesterol * multiplier) : undefined,
+      potassium: item.potassium ? Math.round(item.potassium * multiplier) : undefined,
+      calcium: item.calcium ? Math.round(item.calcium * multiplier) : undefined,
+      iron: item.iron ? Math.round(item.iron * multiplier * 10) / 10 : undefined,
+      // Add more as needed...
     };
 
     const newItems = [...result.items];
     newItems[index] = updatedItem;
 
-    const totals = recalculateTotals(newItems);
-    setResult({
-      ...result,
-      items: newItems,
-      totalCalories: Math.round(totals.totalCalories),
-      totalProtein: Math.round(totals.totalProtein * 10) / 10,
-      totalCarbs: Math.round(totals.totalCarbs * 10) / 10,
-      totalFat: Math.round(totals.totalFat * 10) / 10,
-    });
+    const totals = recalculateTotals(newItems, result.detailLevel);
+    setResult({ ...result, items: newItems, ...totals });
   }, [result]);
 
   const getConfirmResult = useCallback((): AnalysisResult | null => {
@@ -156,9 +259,11 @@ export function usePhotoAnalysis(): UsePhotoAnalysisReturn {
     imageData,
     result,
     error,
+    isAnalyzing,
     selectedMealType,
     eatenAt,
     editingItem,
+    detailLevel,
     setImageData,
     analyzeImage,
     handleRetry,
@@ -168,6 +273,7 @@ export function usePhotoAnalysis(): UsePhotoAnalysisReturn {
     setSelectedMealType,
     setEatenAt,
     setEditingItem,
+    setDetailLevel,
     getConfirmResult,
   };
 }
