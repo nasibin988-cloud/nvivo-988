@@ -36,7 +36,7 @@ Object.defineProperty(exports, "__esModule", { value: true });
 exports.evaluateNutritionWeek = exports.getNutrientInfo = exports.getNutritionTargets = exports.evaluateNutritionDay = exports.analyzeFoodText = exports.searchFoods = exports.scanMenuPhoto = exports.analyzeFoodPhoto = exports.clearCareDataFn = exports.seedCareDataFn = exports.getAppointmentsFn = exports.getCarePlanGoalsFn = exports.completeTaskFn = exports.getTasksFn = exports.logMedicationDoseFn = exports.getMedicationScheduleFn = exports.getMedicationsFn = exports.getCareTeamFn = exports.getCareDataFn = exports.completeMicroWin = exports.getDailyMicroWins = exports.reseedHealthTrendsFn = exports.reseedMicroWinsFn = exports.seedArticlesFn = exports.deleteTestPatientFn = exports.seedTestPatientFn = void 0;
 const admin = __importStar(require("firebase-admin"));
 const v2_1 = require("firebase-functions/v2");
-const seed_1 = require("./seed");
+const index_1 = require("./seed/index");
 const dailyMicroWins_1 = require("./domains/gamification/dailyMicroWins");
 const careDataFunctions = __importStar(require("./domains/care/careData"));
 const seedCareData_1 = require("./seed/seedCareData");
@@ -56,16 +56,16 @@ admin.initializeApp();
 // Export seed functions (only for development)
 exports.seedTestPatientFn = v2_1.https.onCall({ cors: true }, async () => {
     // Seed test patient
-    const patientResult = await (0, seed_1.seedTestPatient)();
+    const patientResult = await (0, index_1.seedTestPatient)();
     // Also seed articles
-    await (0, seed_1.seedArticles)();
+    await (0, index_1.seedArticles)();
     return patientResult;
 });
 exports.deleteTestPatientFn = v2_1.https.onCall({ cors: true }, async () => {
-    return (0, seed_1.deleteTestPatient)();
+    return (0, index_1.deleteTestPatient)();
 });
 exports.seedArticlesFn = v2_1.https.onCall({ cors: true }, async () => {
-    return (0, seed_1.seedArticles)();
+    return (0, index_1.seedArticles)();
 });
 /**
  * Reseed MicroWins for test patient - clears existing and regenerates with new challenges

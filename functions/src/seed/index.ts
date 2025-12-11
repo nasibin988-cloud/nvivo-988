@@ -12,6 +12,8 @@ import { seedMicroWins, clearMicroWins } from './seedMicroWins';
 import { seedCareData, clearCareData } from './seedCareData';
 import { seedCardiacHealth, clearCardiacHealth } from './seedCardiacHealth';
 import { seedHealthTrends, clearHealthTrends } from './seedHealthTrends';
+// Re-export seedArticles for convenience
+export { seedArticles, clearArticles } from './seedArticles';
 
 // Test credentials
 const TEST_EMAIL = 'sarah.mitchell@test.nvivo.health';

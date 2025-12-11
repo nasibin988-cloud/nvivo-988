@@ -1,6 +1,6 @@
 import * as admin from 'firebase-admin';
 import { https } from 'firebase-functions/v2';
-import { seedTestPatient, deleteTestPatient, seedArticles } from './seed';
+import { seedTestPatient, deleteTestPatient, seedArticles } from './seed/index';
 import { getOrInitializeDailyMicroWins, updateMicroWinChallenge } from './domains/gamification/dailyMicroWins';
 import * as careDataFunctions from './domains/care/careData';
 import { seedCareData, clearCareData } from './seed/seedCareData';

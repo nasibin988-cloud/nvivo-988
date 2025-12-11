@@ -6,6 +6,7 @@
  * Includes: profile, health data, appointments, medications, messages, MicroWins, etc.
  */
 Object.defineProperty(exports, "__esModule", { value: true });
+exports.clearArticles = exports.seedArticles = void 0;
 exports.seedTestPatient = seedTestPatient;
 exports.deleteTestPatient = deleteTestPatient;
 const firestore_1 = require("firebase-admin/firestore");
@@ -15,6 +16,10 @@ const seedMicroWins_1 = require("./seedMicroWins");
 const seedCareData_1 = require("./seedCareData");
 const seedCardiacHealth_1 = require("./seedCardiacHealth");
 const seedHealthTrends_1 = require("./seedHealthTrends");
+// Re-export seedArticles for convenience
+var seedArticles_1 = require("./seedArticles");
+Object.defineProperty(exports, "seedArticles", { enumerable: true, get: function () { return seedArticles_1.seedArticles; } });
+Object.defineProperty(exports, "clearArticles", { enumerable: true, get: function () { return seedArticles_1.clearArticles; } });
 // Test credentials
 const TEST_EMAIL = 'sarah.mitchell@test.nvivo.health';
 const TEST_PASSWORD = 'TestPatient2024!';
