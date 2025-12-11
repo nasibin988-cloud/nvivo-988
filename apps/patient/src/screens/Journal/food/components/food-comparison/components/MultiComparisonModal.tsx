@@ -1,5 +1,5 @@
 /**
- * MultiComparisonModal - Compare multiple food items (2-5)
+ * MultiComparisonModal - Compare multiple food items (2-4)
  * Add all foods first, then analyze in parallel
  * Uses wellness-focused scoring system
  */
@@ -19,16 +19,19 @@ import {
   Activity,
   Bone,
   Shield,
+  UtensilsCrossed,
 } from 'lucide-react';
 import { useState } from 'react';
 import { useMultiFoodComparison } from '../hooks';
 import { usePersonalizedDV } from '../../../../../../hooks/nutrition/usePersonalizedDV';
 import { FoodInputCard } from './FoodInputCard';
 import { ComparisonResultsView } from './ComparisonResultsView';
-import type { WellnessFocus } from '../types';
+import type { WellnessFocus, FoodLogItem } from '../types';
 
 interface MultiComparisonModalProps {
   onClose: () => void;
+  /** Callback when user wants to add selected foods to their food log */
+  onAddToLog?: (items: FoodLogItem[]) => void;
 }
 
 // Wellness focus options with icons and descriptions (10 total)
@@ -50,8 +53,9 @@ const WELLNESS_FOCUSES: {
   { value: 'anti_inflammatory', label: 'Anti-Inflam.', icon: Shield, description: 'Reduce inflammation' },
 ];
 
-export function MultiComparisonModal({ onClose }: MultiComparisonModalProps): React.ReactElement {
+export function MultiComparisonModal({ onClose, onAddToLog }: MultiComparisonModalProps): React.ReactElement {
   const [showSettings, setShowSettings] = useState(false);
+  const [selectedForLog, setSelectedForLog] = useState<Set<number>>(new Set());
 
   const {
     items,
@@ -85,6 +89,41 @@ export function MultiComparisonModal({ onClose }: MultiComparisonModalProps): Re
     setUserFocuses([focus]);
   };
 
+  // Toggle selection for adding to food log
+  const toggleFoodSelection = (index: number) => {
+    setSelectedForLog(prev => {
+      const next = new Set(prev);
+      if (next.has(index)) {
+        next.delete(index);
+      } else {
+        next.add(index);
+      }
+      return next;
+    });
+  };
+
+  // Handle adding selected foods to the log
+  const handleAddToLog = () => {
+    if (!comparisonResult || !onAddToLog || selectedForLog.size === 0) return;
+
+    const itemsToAdd: FoodLogItem[] = Array.from(selectedForLog).map(index => {
+      const item = comparisonResult.items[index];
+      return {
+        name: item.name,
+        calories: item.calories,
+        protein: item.protein,
+        carbs: item.carbs,
+        fat: item.fat,
+        fiber: item.fiber ?? null,
+        sugar: item.sugar ?? null,
+        sodium: item.sodium ?? null,
+      };
+    });
+
+    onAddToLog(itemsToAdd);
+    onClose();
+  };
+
   return (
     <div className="fixed inset-0 z-50 flex items-end sm:items-center justify-center">
       {/* Backdrop */}
@@ -97,7 +136,7 @@ export function MultiComparisonModal({ onClose }: MultiComparisonModalProps): Re
           <div>
             <h2 className="text-lg font-semibold text-text-primary">Compare Foods</h2>
             <p className="text-xs text-text-muted mt-0.5">
-              Add 2-5 foods, then analyze them all at once
+              Add 2-4 foods, then analyze them all at once
             </p>
           </div>
           <div className="flex items-center gap-2">
@@ -237,6 +276,8 @@ export function MultiComparisonModal({ onClose }: MultiComparisonModalProps): Re
                   selectedFocuses={userFocuses}
                   personalizedDVs={personalizedDVs}
                   isPersonalized={isPersonalized}
+                  selectedForLog={onAddToLog ? selectedForLog : undefined}
+                  onToggleSelection={onAddToLog ? toggleFoodSelection : undefined}
                 />
               </>
             )}
@@ -275,6 +316,31 @@ export function MultiComparisonModal({ onClose }: MultiComparisonModalProps): Re
             {readyCount >= 2 && pendingCount === 0 && !isAnalyzing && (
               <p className="text-xs text-text-muted text-center mt-2">
                 Scroll down to see your comparison results
+              </p>
+            )}
+          </div>
+        )}
+
+        {/* Footer for Adding to Food Log */}
+        {comparisonResult && onAddToLog && (
+          <div className="p-4 border-t border-white/[0.08]">
+            <button
+              onClick={handleAddToLog}
+              disabled={selectedForLog.size === 0}
+              className={`w-full py-3 rounded-xl font-semibold text-sm flex items-center justify-center gap-2 transition-all ${
+                selectedForLog.size > 0
+                  ? 'bg-gradient-to-r from-emerald-500 to-teal-500 text-white shadow-lg shadow-emerald-500/25 hover:shadow-emerald-500/40'
+                  : 'bg-white/[0.04] text-text-muted cursor-not-allowed'
+              }`}
+            >
+              <UtensilsCrossed size={18} />
+              {selectedForLog.size > 0
+                ? `Add ${selectedForLog.size} Food${selectedForLog.size > 1 ? 's' : ''} to Log`
+                : 'Select Foods to Add'}
+            </button>
+            {selectedForLog.size === 0 && (
+              <p className="text-xs text-text-muted text-center mt-2">
+                Tap foods in the ranking above to select them
               </p>
             )}
           </div>

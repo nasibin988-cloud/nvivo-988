@@ -25,67 +25,6 @@ interface UseMenuScannerReturn {
   getSelectedItems: () => MenuItem[];
 }
 
-// Mock response for development/fallback
-function getMockScanResult(): MenuScanResult {
-  return {
-    restaurant: {
-      name: 'Sample Restaurant',
-      logoDetected: false,
-      confidence: 0.7,
-      cuisine: 'American',
-    },
-    menuItems: [
-      {
-        id: generateId(),
-        name: 'Grilled Chicken Salad',
-        description: 'Mixed greens with grilled chicken, tomatoes, and house dressing',
-        price: '$12.99',
-        calories: 420,
-        protein: 35,
-        carbs: 18,
-        fat: 22,
-        fiber: 4,
-        sugar: 6,
-        sodium: 680,
-        isSelected: false,
-        confidence: 0.85,
-      },
-      {
-        id: generateId(),
-        name: 'Classic Burger',
-        description: 'Angus beef patty with lettuce, tomato, and special sauce',
-        price: '$14.99',
-        calories: 780,
-        protein: 42,
-        carbs: 45,
-        fat: 48,
-        fiber: 2,
-        sugar: 8,
-        sodium: 1120,
-        isSelected: false,
-        confidence: 0.82,
-      },
-      {
-        id: generateId(),
-        name: 'Caesar Salad',
-        description: 'Romaine lettuce with parmesan and croutons',
-        price: '$9.99',
-        calories: 320,
-        protein: 12,
-        carbs: 22,
-        fat: 24,
-        fiber: 3,
-        sugar: 4,
-        sodium: 580,
-        isSelected: false,
-        confidence: 0.88,
-      },
-    ],
-    rawText: 'MENU\n\nGrilled Chicken Salad - $12.99\nMixed greens with grilled chicken...\n\nClassic Burger - $14.99\nAngus beef patty...',
-    scanConfidence: 0.75,
-  };
-}
-
 export function useMenuScanner(): UseMenuScannerReturn {
   const [step, setStep] = useState<ScanStep>('capture');
   const [imageData, setImageData] = useState<string | null>(null);
@@ -117,13 +56,9 @@ export function useMenuScanner(): UseMenuScannerReturn {
       setStep('review');
     } catch (err) {
       console.error('Menu scan failed:', err);
-      // Show the actual error in development
-      const errorMessage = err instanceof Error ? err.message : 'Unknown error';
-      console.error('Menu scan error details:', errorMessage);
-      // Fall back to mock data for demo purposes
-      const mockResult = getMockScanResult();
-      setResult(mockResult);
-      setStep('review');
+      const errorMessage = err instanceof Error ? err.message : 'Failed to scan menu';
+      setError(errorMessage);
+      setStep('capture');
     }
   }, []);
 

@@ -3,8 +3,8 @@
  * Enhanced visualization with insights, bar charts, AI analysis, and smart commentary
  */
 
-import { Trophy, Sparkles, Flame, Beef, Wheat, Droplets, Cookie, Zap, Award, TrendingDown, TrendingUp, Loader2, Brain, ChevronDown, ChevronUp, AlertTriangle, type LucideIcon } from 'lucide-react';
-import { useMemo, useState } from 'react';
+import { Trophy, Sparkles, Flame, Beef, Wheat, Droplets, Cookie, Zap, Award, TrendingDown, TrendingUp, Loader2, Brain, AlertTriangle, Check, Heart, Pill, type LucideIcon } from 'lucide-react';
+import { useMemo } from 'react';
 import type { MultiComparisonResult, FoodHealthProfile, WellnessFocus } from '../types';
 import { HealthGradeBadge } from './HealthGradeBadge';
 import { FOCUS_LABELS } from '../utils';
@@ -19,6 +19,10 @@ interface ComparisonResultsViewProps {
   personalizedDVs?: PersonalizedDVs;
   /** Whether the DVs are personalized (shows indicator in UI) */
   isPersonalized?: boolean;
+  /** Set of selected indices for adding to food log */
+  selectedForLog?: Set<number>;
+  /** Callback when food selection is toggled */
+  onToggleSelection?: (index: number) => void;
 }
 
 /**
@@ -109,8 +113,10 @@ const LIMIT_NUTRIENTS = [
 ] as const;
 
 // Nutrients with no DV that should show special text instead of percentage
+// Empty string means no % shown, but also no warning text
 const NO_DV_DISPLAY: Record<string, string> = {
   transFat: 'Minimize',
+  cholesterol: '', // No DV per 2015-2020 guidelines - just show value
 };
 
 // Fat breakdown, cholesterol, and other compounds (combined into one group)
@@ -171,7 +177,6 @@ const ITEM_COLORS = [
   { bg: 'bg-blue-500', text: 'text-blue-400', light: 'bg-blue-500/20' },
   { bg: 'bg-emerald-500', text: 'text-emerald-400', light: 'bg-emerald-500/20' },
   { bg: 'bg-amber-500', text: 'text-amber-400', light: 'bg-amber-500/20' },
-  { bg: 'bg-rose-500', text: 'text-rose-400', light: 'bg-rose-500/20' },
 ];
 
 // =============================================================================
@@ -249,8 +254,8 @@ function NutrientBarCharts({
 
                 return (
                   <div key={idx} className="flex items-center gap-2">
-                    <div className="w-20 text-right flex items-center justify-end gap-1">
-                      <span className={`text-[10px] font-medium ${isBest ? 'text-emerald-400' : 'text-text-muted'}`}>
+                    <div className={`w-20 text-right flex items-center justify-end gap-1 ${isBest ? `${itemColors.light} px-1.5 py-0.5 rounded-md` : ''}`}>
+                      <span className={`text-[10px] font-medium ${isBest ? itemColors.text : 'text-text-muted'}`}>
                         {formattedValue}{unit}
                       </span>
                       {percentDv > 0 && (
@@ -265,10 +270,6 @@ function NutrientBarCharts({
                         style={{ width: `${percentage}%` }}
                       />
                     </div>
-                    {isBest && (
-                      <span className="text-[8px] font-bold text-emerald-400 w-6">★</span>
-                    )}
-                    {!isBest && <span className="w-6" />}
                   </div>
                 );
               })}
@@ -287,25 +288,37 @@ interface TableNutrientConfig {
 }
 
 /**
- * Nutrient Value Table with % DV and threshold coloring
+ * Get column width class based on number of items (2-4)
  */
-function NutrientValueTable({
+function getColumnWidthClass(itemCount: number): string {
+  switch (itemCount) {
+    case 2: return 'w-20'; // 80px each
+    case 3: return 'w-16'; // 64px each
+    case 4: return 'w-14'; // 56px each
+    default: return 'w-16';
+  }
+}
+
+/**
+ * Nutrient Comparison Section - Non-collapsible table with numbered column headers
+ */
+function NutrientComparisonSection({
   nutrients,
   items,
   title,
+  icon: Icon,
+  iconColor,
   nutrientType,
-  defaultExpanded = false,
   dvs,
 }: {
   nutrients: readonly TableNutrientConfig[];
   items: FoodHealthProfile[];
   title: string;
+  icon: LucideIcon;
+  iconColor: string;
   nutrientType: NutrientType;
-  defaultExpanded?: boolean;
   dvs: PersonalizedDVs;
-}): React.ReactElement {
-  const [isExpanded, setIsExpanded] = useState(defaultExpanded);
-
+}): React.ReactElement | null {
   // Filter to nutrients with data
   const availableNutrients = nutrients.filter(({ key }) => {
     return items.some(item => {
@@ -315,132 +328,104 @@ function NutrientValueTable({
   });
 
   if (availableNutrients.length === 0) {
-    return <></>;
+    return null;
   }
 
   // For 'limit' nutrients, lower is better; for 'beneficial', higher is better; 'neutral' has no winner
   const lowerBetter = nutrientType === 'limit' ? true : nutrientType === 'beneficial' ? false : null;
+  const colWidth = getColumnWidthClass(items.length);
 
   return (
-    <div className="border-t border-white/[0.06] pt-3 mt-3">
-      <button
-        onClick={() => setIsExpanded(!isExpanded)}
-        className="flex items-center justify-between w-full text-left group mb-2"
-      >
+    <div className="pt-5 mt-4 border-t border-white/[0.06]">
+      {/* Section header with numbered column badges */}
+      <div className="flex items-center justify-between mb-3">
         <div className="flex items-center gap-2">
-          {nutrientType === 'limit' && (
-            <AlertTriangle size={12} className="text-amber-400" />
-          )}
+          <Icon size={14} style={{ color: iconColor }} />
           <span className="text-[10px] font-medium text-text-muted uppercase tracking-wider">
             {title}
           </span>
-          <span className="text-[9px] text-text-muted">({availableNutrients.length})</span>
         </div>
-        <div className="flex items-center gap-1 text-text-muted">
-          {isExpanded ? (
-            <ChevronUp size={12} className="group-hover:text-text-secondary transition-colors" />
-          ) : (
-            <ChevronDown size={12} className="group-hover:text-text-secondary transition-colors" />
-          )}
+        {/* Numbered column headers */}
+        <div className="flex items-center gap-1">
+          {items.map((_, idx) => {
+            const colors = ITEM_COLORS[idx % ITEM_COLORS.length];
+            return (
+              <div
+                key={idx}
+                className={`${colWidth} flex justify-center`}
+              >
+                <div className={`w-5 h-5 rounded-md flex items-center justify-center text-[10px] font-bold ${colors.light} ${colors.text}`}>
+                  {idx + 1}
+                </div>
+              </div>
+            );
+          })}
         </div>
-      </button>
+      </div>
 
-      {isExpanded && (
-        <div className="overflow-x-auto">
-          <table className="w-full text-xs">
-            <thead>
-              <tr className="border-b border-white/[0.06]">
-                <th className="text-left py-1.5 pr-2 text-text-muted font-medium">Nutrient</th>
-                {items.map((item, idx) => (
-                  <th key={idx} className="text-right py-1.5 px-1 text-text-muted font-medium min-w-[70px]">
-                    <span className="truncate block max-w-[70px]" title={item.name}>
-                      {item.name.length > 10 ? item.name.slice(0, 8) + '...' : item.name}
-                    </span>
-                  </th>
-                ))}
-              </tr>
-            </thead>
-            <tbody>
-              {availableNutrients.map(({ key, label, unit }) => {
-                const values = items.map(item => {
-                  const val = item[key as keyof FoodHealthProfile];
-                  return typeof val === 'number' ? val : 0;
-                });
-                const maxVal = Math.max(...values);
-                const minVal = Math.min(...values);
+      {/* Nutrient rows */}
+      <div className="space-y-0">
+        {availableNutrients.map(({ key, label, unit }) => {
+          const values = items.map(item => {
+            const val = item[key as keyof FoodHealthProfile];
+            return typeof val === 'number' ? val : 0;
+          });
+          const maxVal = Math.max(...values);
+          const minVal = Math.min(...values);
 
-                // For neutral nutrients (lowerBetter === null), no winner is determined
-                const bestIdx = lowerBetter === null
-                  ? -1 // No winner for neutral nutrients
-                  : lowerBetter
-                  ? values.indexOf(minVal)
-                  : values.indexOf(maxVal);
+          // For neutral nutrients (lowerBetter === null), no winner is determined
+          const bestIdx = lowerBetter === null
+            ? -1
+            : lowerBetter
+            ? values.indexOf(minVal)
+            : values.indexOf(maxVal);
 
-                const isTie = lowerBetter !== null && values.filter(v => v === (lowerBetter ? minVal : maxVal)).length > 1;
+          const isTie = lowerBetter !== null && values.filter(v => v === (lowerBetter ? minVal : maxVal)).length > 1;
 
-                // Check if this nutrient has no DV (like trans fat)
-                const noDvText = NO_DV_DISPLAY[key];
+          // Check if this nutrient has no DV (like trans fat)
+          const noDvText = NO_DV_DISPLAY[key];
 
-                return (
-                  <tr key={key} className="border-b border-white/[0.04]">
-                    <td className="py-1.5 pr-2 text-text-secondary">{label}</td>
-                    {values.map((value, idx) => {
-                      const isBest = lowerBetter !== null && idx === bestIdx && !isTie && maxVal !== minVal;
-                      const percentDv = noDvText ? 0 : getPercentDV(value, key, dvs);
+          // Format label with unit
+          const labelWithUnit = unit ? `${label} (${unit})` : label;
 
-                      // For trans fat (no DV), color based on absolute value: 0 = green, any amount = red
-                      const colorClass = noDvText
-                        ? value === 0 ? 'text-emerald-400' : 'text-red-400'
-                        : getThresholdColor(value, key, dvs);
+          return (
+            <div key={key} className="flex items-center justify-between py-2 border-b border-white/[0.04] last:border-0">
+              <span className="text-xs text-text-secondary flex-1">{labelWithUnit}</span>
+              <div className="flex items-center gap-1">
+                {values.map((value, idx) => {
+                  const isBest = lowerBetter !== null && idx === bestIdx && !isTie && maxVal !== minVal;
+                  const percentDv = noDvText ? 0 : getPercentDV(value, key, dvs);
 
-                      return (
-                        <td
-                          key={idx}
-                          className={`text-right py-1.5 px-1 ${colorClass} ${isBest ? 'font-bold' : ''}`}
-                        >
-                          <div className="flex flex-col items-end">
-                            <span>
-                              {formatNum(value)}{unit}
-                              {isBest && <span className="ml-0.5 text-[8px]">★</span>}
-                            </span>
-                            {noDvText && value > 0 ? (
-                              <span className="text-[9px] text-red-400">
-                                ({noDvText})
-                              </span>
-                            ) : percentDv > 0 ? (
-                              <span className={`text-[9px] ${colorClass}`}>
-                                ({percentDv}%)
-                              </span>
-                            ) : null}
-                          </div>
-                        </td>
-                      );
-                    })}
-                  </tr>
-                );
-              })}
-            </tbody>
-          </table>
+                  // For trans fat (no DV), color based on absolute value: 0 = green, any amount = red
+                  const colorClass = noDvText
+                    ? value === 0 ? 'text-emerald-400' : 'text-red-400'
+                    : getThresholdColor(value, key, dvs);
 
-          {/* Legend for this nutrient type (only show for limit/beneficial) */}
-          {nutrientType !== 'neutral' && (
-            <div className="mt-2 text-[9px] text-text-muted">
-              {nutrientType === 'limit' ? (
-                <>
-                  <span className="text-emerald-400">●</span> Low (≤5% DV) &nbsp;
-                  <span className="text-amber-400">●</span> High (15-25%) &nbsp;
-                  <span className="text-red-400">●</span> Very High (&gt;25%)
-                </>
-              ) : (
-                <>
-                  <span className="text-emerald-400">●</span> Good source (≥20% DV) &nbsp;
-                  <span className="text-text-muted">●</span> Low (&lt;10%)
-                </>
-              )}
+                  const colors = ITEM_COLORS[idx % ITEM_COLORS.length];
+
+                  return (
+                    <div
+                      key={idx}
+                      className={`${colWidth} flex flex-col items-center`}
+                    >
+                      <span
+                        className={`text-xs ${colorClass} ${isBest ? `${colors.light} px-1.5 py-0.5 rounded-md font-medium` : ''}`}
+                      >
+                        {formatNum(value)}
+                      </span>
+                      {noDvText && value > 0 ? (
+                        <span className="text-[9px] text-red-400">({noDvText})</span>
+                      ) : noDvText === undefined && percentDv > 0 ? (
+                        <span className={`text-[9px] ${colorClass}`}>({percentDv}%)</span>
+                      ) : null}
+                    </div>
+                  );
+                })}
+              </div>
             </div>
-          )}
-        </div>
-      )}
+          );
+        })}
+      </div>
     </div>
   );
 }
@@ -455,6 +440,8 @@ export function ComparisonResultsView({
   selectedFocuses = ['balanced'],
   personalizedDVs,
   isPersonalized = false,
+  selectedForLog,
+  onToggleSelection,
 }: ComparisonResultsViewProps): React.ReactElement {
   const winner = result.items[result.rankings[0]?.index];
   const runnerUp = result.items[result.rankings[1]?.index];
@@ -532,32 +519,54 @@ export function ComparisonResultsView({
 
       {/* Rankings Podium */}
       <div className="bg-white/[0.02] rounded-xl border border-white/[0.08] p-3">
-        <div className="flex items-center gap-2 mb-3">
-          <Award size={14} className="text-violet-400" />
-          <h3 className="font-semibold text-text-primary text-xs uppercase tracking-wider">Rankings</h3>
+        <div className="flex items-center justify-between mb-3">
+          <div className="flex items-center gap-2">
+            <Award size={14} className="text-violet-400" />
+            <h3 className="font-semibold text-text-primary text-xs uppercase tracking-wider">Rankings</h3>
+          </div>
+          {onToggleSelection && (
+            <span className="text-[9px] text-text-muted">Tap to add to log</span>
+          )}
         </div>
         <div className="flex gap-2">
           {result.rankings.map((ranking, idx) => {
             const profile = result.items[ranking.index];
             const colors = ITEM_COLORS[idx % ITEM_COLORS.length];
+            const isSelected = selectedForLog?.has(ranking.index);
+            const canSelect = !!onToggleSelection;
             return (
-              <div
+              <button
                 key={ranking.index}
-                className={`flex-1 p-2.5 rounded-xl border transition-all ${
-                  idx === 0
+                onClick={() => onToggleSelection?.(ranking.index)}
+                disabled={!canSelect}
+                className={`flex-1 p-2.5 rounded-xl border transition-all text-left ${
+                  isSelected
+                    ? 'bg-emerald-500/15 border-emerald-500/40 ring-1 ring-emerald-500/30'
+                    : idx === 0
                     ? 'bg-yellow-500/[0.08] border-yellow-500/30'
                     : 'bg-white/[0.02] border-white/[0.06]'
-                }`}
+                } ${canSelect ? 'hover:border-white/20 active:scale-[0.98]' : ''}`}
               >
-                <div className="flex items-center gap-2 mb-1.5">
-                  <div className={`w-5 h-5 rounded-md flex items-center justify-center text-[10px] font-bold ${colors.light} ${colors.text}`}>
-                    {idx + 1}
+                <div className="flex items-center justify-between mb-1.5">
+                  <div className="flex items-center gap-2">
+                    <div className={`w-5 h-5 rounded-md flex items-center justify-center text-[10px] font-bold ${colors.light} ${colors.text}`}>
+                      {idx + 1}
+                    </div>
+                    <HealthGradeBadge grade={ranking.grade} size="sm" />
                   </div>
-                  <HealthGradeBadge grade={ranking.grade} size="sm" />
+                  {canSelect && (
+                    <div className={`w-4 h-4 rounded-full border flex items-center justify-center transition-all ${
+                      isSelected
+                        ? 'bg-emerald-500 border-emerald-500'
+                        : 'border-white/20'
+                    }`}>
+                      {isSelected && <Check size={10} className="text-white" />}
+                    </div>
+                  )}
                 </div>
                 <p className="text-xs font-medium text-text-primary truncate">{profile.name}</p>
                 <p className="text-[10px] text-text-muted">{formatNum(profile.calories)} cal</p>
-              </div>
+              </button>
             );
           })}
         </div>
@@ -595,14 +604,16 @@ export function ComparisonResultsView({
           )}
         </div>
 
-        {/* Legend */}
-        <div className="flex flex-wrap gap-2 mb-4">
+        {/* Legend - Numbered badges with full names */}
+        <div className="flex flex-wrap gap-3 mb-4">
           {result.items.map((item, idx) => {
             const colors = ITEM_COLORS[idx % ITEM_COLORS.length];
             return (
               <div key={idx} className="flex items-center gap-1.5">
-                <div className={`w-2.5 h-2.5 rounded-sm ${colors.bg}`} />
-                <span className="text-[10px] text-text-muted truncate max-w-[80px]">{item.name}</span>
+                <div className={`w-5 h-5 rounded-md flex items-center justify-center text-[10px] font-bold ${colors.light} ${colors.text}`}>
+                  {idx + 1}
+                </div>
+                <span className="text-[10px] text-text-secondary">{item.name}</span>
               </div>
             );
           })}
@@ -613,34 +624,48 @@ export function ComparisonResultsView({
           <NutrientBarCharts nutrients={PRIMARY_NUTRIENTS} items={result.items} dvs={dvs} />
         </div>
 
-        {/* Nutrients to Limit (collapsible, expanded by default) */}
-        <NutrientValueTable
+        {/* Nutrients to Limit */}
+        <NutrientComparisonSection
           nutrients={LIMIT_NUTRIENTS}
           items={result.items}
           title="Nutrients to Limit"
+          icon={AlertTriangle}
+          iconColor="#fbbf24"
           nutrientType="limit"
-          defaultExpanded={true}
           dvs={dvs}
         />
 
-        {/* Fat Breakdown, Cholesterol & Other Compounds (combined) */}
-        <NutrientValueTable
+        {/* Fat Breakdown & Other */}
+        <NutrientComparisonSection
           nutrients={FAT_AND_OTHER_NUTRIENTS}
           items={result.items}
           title="Fat Breakdown & Other"
+          icon={Droplets}
+          iconColor="#60a5fa"
           nutrientType="neutral"
-          defaultExpanded={false}
           dvs={dvs}
         />
 
-        {/* Vitamins & Minerals (combined) */}
-        <NutrientValueTable
-          nutrients={VITAMINS_AND_MINERALS}
+        {/* Vitamins */}
+        <NutrientComparisonSection
+          nutrients={VITAMINS_AND_MINERALS.filter(n => n.key.startsWith('vitamin') || ['thiamin', 'riboflavin', 'niacin', 'pantothenicAcid', 'biotin', 'folate', 'choline'].includes(n.key))}
           items={result.items}
-          title="Vitamins & Minerals"
-          dvs={dvs}
+          title="Vitamins"
+          icon={Heart}
+          iconColor="#fb7185"
           nutrientType="beneficial"
-          defaultExpanded={false}
+          dvs={dvs}
+        />
+
+        {/* Minerals */}
+        <NutrientComparisonSection
+          nutrients={VITAMINS_AND_MINERALS.filter(n => !n.key.startsWith('vitamin') && !['thiamin', 'riboflavin', 'niacin', 'pantothenicAcid', 'biotin', 'folate', 'choline'].includes(n.key))}
+          items={result.items}
+          title="Minerals"
+          icon={Pill}
+          iconColor="#a78bfa"
+          nutrientType="beneficial"
+          dvs={dvs}
         />
       </div>
 

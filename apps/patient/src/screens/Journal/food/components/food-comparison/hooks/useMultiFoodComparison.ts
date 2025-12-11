@@ -1,6 +1,6 @@
 /**
  * useMultiFoodComparison Hook
- * State management for comparing multiple food items (2-5)
+ * State management for comparing multiple food items (2-4)
  * Supports parallel analysis with focus-based scoring
  */
 
@@ -26,7 +26,7 @@ import {
   generateAiRecommendation,
 } from '../utils';
 
-const MAX_ITEMS = 5;
+const MAX_ITEMS = 4;
 const MIN_ITEMS_FOR_COMPARE = 2;
 
 function generateId(): string {
@@ -518,7 +518,7 @@ export function useMultiFoodComparison(): UseMultiFoodComparisonReturn {
     >(functions, 'analyzeFoodPhoto');
 
     const analyzeFoodText = httpsCallable<
-      { description: string },
+      { foodDescription: string },
       { items: ExtendedFoodItem[]; totalCalories: number; totalProtein: number; totalCarbs: number; totalFat: number }
     >(functions, 'analyzeFoodText');
 
@@ -546,7 +546,7 @@ export function useMultiFoodComparison(): UseMultiFoodComparisonReturn {
             nutritionData = combineNutrients(result.items, combinedName);
           }
         } else if (item.inputMethod === 'text' && item.textDescription) {
-          const response = await analyzeFoodText({ description: item.textDescription });
+          const response = await analyzeFoodText({ foodDescription: item.textDescription });
           const result = response.data;
 
           if (result.items.length === 1) {

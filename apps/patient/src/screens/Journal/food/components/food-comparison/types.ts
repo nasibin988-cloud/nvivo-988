@@ -245,6 +245,20 @@ export interface FoodInputItem {
   healthProfile?: FoodHealthProfile;
 }
 
+/** Food item data for adding to food log */
+export interface FoodLogItem {
+  name: string;
+  calories: number;
+  protein: number;
+  carbs: number;
+  fat: number;
+  fiber: number | null;
+  sugar: number | null;
+  sodium: number | null;
+}
+
 export interface FoodComparisonModalProps {
   onClose: () => void;
+  /** Callback when user wants to add selected foods to their food log */
+  onAddToLog?: (items: FoodLogItem[]) => void;
 }

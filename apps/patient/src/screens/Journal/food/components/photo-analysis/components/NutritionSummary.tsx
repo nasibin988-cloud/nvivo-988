@@ -22,33 +22,66 @@ interface NutritionSummaryProps {
   onDisplayLevelChange: (level: NutritionDetailLevel) => void;
 }
 
+type NutrientType = 'limit' | 'beneficial' | 'neutral';
+
+/**
+ * Get color class based on % DV and nutrient type (clinical thresholds)
+ * - LIMIT nutrients: low = green, high = red (sat fat, sodium, cholesterol, sugar)
+ * - BENEFICIAL nutrients: low = muted, high = green (fiber, protein, vitamins, minerals)
+ * - NEUTRAL nutrients: no special coloring
+ */
+function getThresholdColorClass(value: number, dailyValue: number | undefined, type: NutrientType): string {
+  if (!dailyValue || dailyValue === 0) return 'text-text-secondary';
+
+  const percentDv = (value / dailyValue) * 100;
+
+  if (type === 'limit') {
+    // For sat fat, sodium, cholesterol, trans fat, sugar - lower is better
+    if (percentDv <= 5) return 'text-emerald-400'; // Very low - excellent
+    if (percentDv <= 15) return 'text-teal-400'; // Low - good
+    if (percentDv <= 25) return 'text-amber-400'; // Moderate - caution
+    return 'text-red-400'; // High - concern
+  } else if (type === 'beneficial') {
+    // For fiber, protein, vitamins, minerals - higher is better
+    if (percentDv >= 20) return 'text-emerald-400'; // Good source
+    if (percentDv >= 10) return 'text-teal-400'; // Contains some
+    return 'text-text-muted'; // Low
+  }
+  // Neutral - no special coloring
+  return 'text-text-secondary';
+}
+
 interface NutrientRowProps {
   label: string;
   value: number | undefined;
   unit: string;
-  color: string;
   dailyValue?: number;
+  /** Nutrient type determines coloring logic */
+  nutrientType?: NutrientType;
   /** For nutrients with no DV (like trans fat), show this warning text instead of % */
   noDVWarning?: string;
 }
 
-function NutrientRow({ label, value, unit, color, dailyValue, noDVWarning }: NutrientRowProps): React.ReactElement | null {
+function NutrientRow({ label, value, unit, dailyValue, nutrientType = 'neutral', noDVWarning }: NutrientRowProps): React.ReactElement | null {
   if (value === undefined) return null;
 
   const percentage = dailyValue ? Math.round((value / dailyValue) * 100) : null;
+  const colorClass = getThresholdColorClass(value, dailyValue, nutrientType);
+
+  // Format label with unit
+  const labelWithUnit = unit ? `${label} (${unit})` : label;
 
   return (
     <div className="flex items-center justify-between py-1.5 border-b border-white/[0.04] last:border-0">
-      <span className="text-xs text-text-secondary">{label}</span>
+      <span className="text-xs text-text-secondary">{labelWithUnit}</span>
       <div className="flex items-center gap-2">
-        <span className="text-xs font-semibold" style={{ color }}>
+        <span className={`text-xs font-semibold ${colorClass}`}>
           {typeof value === 'number' ? (value % 1 === 0 ? value : value.toFixed(1)) : value}
-          {unit && <span className="text-text-muted ml-0.5">{unit}</span>}
         </span>
         {noDVWarning && value > 0 ? (
           <span className="text-[10px] text-red-400">({noDVWarning})</span>
         ) : percentage !== null && percentage > 0 ? (
-          <span className="text-[10px] text-text-muted">({percentage}%)</span>
+          <span className={`text-[10px] ${colorClass === 'text-text-secondary' || colorClass === 'text-text-muted' ? 'text-text-muted' : colorClass}`}>({percentage}%)</span>
         ) : null}
       </div>
     </div>
@@ -174,24 +207,24 @@ export default function NutritionSummary({ result, displayLevel, onDisplayLevelC
 
       {/* Essential Additional (always shown) */}
       <NutrientSection title="Nutrition Facts" icon={Leaf} iconColor="#34d399">
-        <NutrientRow label={cfg.fiber.label} value={result.totalFiber} unit={cfg.fiber.unit} color={cfg.fiber.color} dailyValue={getDV('fiber', personalizedDVs, cfg.fiber.dailyValue)} />
-        <NutrientRow label={cfg.sugar.label} value={result.totalSugar} unit={cfg.sugar.unit} color={cfg.sugar.color} dailyValue={getDV('sugar', personalizedDVs, cfg.sugar.dailyValue)} />
-        <NutrientRow label={cfg.sodium.label} value={result.totalSodium} unit={cfg.sodium.unit} color={cfg.sodium.color} dailyValue={getDV('sodium', personalizedDVs, cfg.sodium.dailyValue)} />
+        <NutrientRow label={cfg.fiber.label} value={result.totalFiber} unit={cfg.fiber.unit} dailyValue={getDV('fiber', personalizedDVs, cfg.fiber.dailyValue)} nutrientType="beneficial" />
+        <NutrientRow label={cfg.sugar.label} value={result.totalSugar} unit={cfg.sugar.unit} dailyValue={getDV('sugar', personalizedDVs, cfg.sugar.dailyValue)} nutrientType="limit" />
+        <NutrientRow label={cfg.sodium.label} value={result.totalSodium} unit={cfg.sodium.unit} dailyValue={getDV('sodium', personalizedDVs, cfg.sodium.dailyValue)} nutrientType="limit" />
       </NutrientSection>
 
       {/* Extended: Fat Breakdown */}
       {showExtended && (
         <NutrientSection title="Fat Breakdown" icon={Droplets} iconColor="#60a5fa">
-          <NutrientRow label={cfg.saturatedFat.label} value={result.totalSaturatedFat} unit={cfg.saturatedFat.unit} color={cfg.saturatedFat.color} dailyValue={getDV('saturatedFat', personalizedDVs, cfg.saturatedFat.dailyValue)} />
-          <NutrientRow label={cfg.transFat.label} value={result.totalTransFat} unit={cfg.transFat.unit} color={cfg.transFat.color} noDVWarning="Minimize" />
-          <NutrientRow label={cfg.cholesterol.label} value={result.totalCholesterol} unit={cfg.cholesterol.unit} color={cfg.cholesterol.color} dailyValue={getDV('cholesterol', personalizedDVs, cfg.cholesterol.dailyValue)} />
+          <NutrientRow label={cfg.saturatedFat.label} value={result.totalSaturatedFat} unit={cfg.saturatedFat.unit} dailyValue={getDV('saturatedFat', personalizedDVs, cfg.saturatedFat.dailyValue)} nutrientType="limit" />
+          <NutrientRow label={cfg.transFat.label} value={result.totalTransFat} unit={cfg.transFat.unit} nutrientType="limit" noDVWarning="Minimize" />
+          <NutrientRow label={cfg.cholesterol.label} value={result.totalCholesterol} unit={cfg.cholesterol.unit} dailyValue={getDV('cholesterol', personalizedDVs, cfg.cholesterol.dailyValue)} nutrientType="limit" />
           {showComplete && (
             <>
-              <NutrientRow label={cfg.monounsaturatedFat.label} value={result.totalMonounsaturatedFat} unit={cfg.monounsaturatedFat.unit} color={cfg.monounsaturatedFat.color} />
-              <NutrientRow label={cfg.polyunsaturatedFat.label} value={result.totalPolyunsaturatedFat} unit={cfg.polyunsaturatedFat.unit} color={cfg.polyunsaturatedFat.color} />
-              <NutrientRow label={cfg.omega3.label} value={result.totalOmega3} unit={cfg.omega3.unit} color={cfg.omega3.color} dailyValue={getDV('omega3', personalizedDVs, cfg.omega3.dailyValue)} />
-              <NutrientRow label={cfg.omega6.label} value={result.totalOmega6} unit={cfg.omega6.unit} color={cfg.omega6.color} dailyValue={getDV('omega6', personalizedDVs, cfg.omega6.dailyValue)} />
-              <NutrientRow label={cfg.epaDha.label} value={result.totalEpaDha} unit={cfg.epaDha.unit} color={cfg.epaDha.color} dailyValue={getDV('epaDha', personalizedDVs, cfg.epaDha.dailyValue)} />
+              <NutrientRow label={cfg.monounsaturatedFat.label} value={result.totalMonounsaturatedFat} unit={cfg.monounsaturatedFat.unit} nutrientType="beneficial" />
+              <NutrientRow label={cfg.polyunsaturatedFat.label} value={result.totalPolyunsaturatedFat} unit={cfg.polyunsaturatedFat.unit} nutrientType="beneficial" />
+              <NutrientRow label={cfg.omega3.label} value={result.totalOmega3} unit={cfg.omega3.unit} dailyValue={getDV('omega3', personalizedDVs, cfg.omega3.dailyValue)} nutrientType="beneficial" />
+              <NutrientRow label={cfg.omega6.label} value={result.totalOmega6} unit={cfg.omega6.unit} dailyValue={getDV('omega6', personalizedDVs, cfg.omega6.dailyValue)} nutrientType="neutral" />
+              <NutrientRow label={cfg.epaDha.label} value={result.totalEpaDha} unit={cfg.epaDha.unit} dailyValue={getDV('epaDha', personalizedDVs, cfg.epaDha.dailyValue)} nutrientType="beneficial" />
             </>
           )}
         </NutrientSection>
@@ -200,17 +233,17 @@ export default function NutritionSummary({ result, displayLevel, onDisplayLevelC
       {/* Extended: Minerals */}
       {showExtended && (
         <NutrientSection title="Minerals" icon={Pill} iconColor="#a78bfa">
-          <NutrientRow label={cfg.potassium.label} value={result.totalPotassium} unit={cfg.potassium.unit} color={cfg.potassium.color} dailyValue={getDV('potassium', personalizedDVs, cfg.potassium.dailyValue)} />
-          <NutrientRow label={cfg.calcium.label} value={result.totalCalcium} unit={cfg.calcium.unit} color={cfg.calcium.color} dailyValue={getDV('calcium', personalizedDVs, cfg.calcium.dailyValue)} />
-          <NutrientRow label={cfg.iron.label} value={result.totalIron} unit={cfg.iron.unit} color={cfg.iron.color} dailyValue={getDV('iron', personalizedDVs, cfg.iron.dailyValue)} />
-          <NutrientRow label={cfg.magnesium.label} value={result.totalMagnesium} unit={cfg.magnesium.unit} color={cfg.magnesium.color} dailyValue={getDV('magnesium', personalizedDVs, cfg.magnesium.dailyValue)} />
-          <NutrientRow label={cfg.zinc.label} value={result.totalZinc} unit={cfg.zinc.unit} color={cfg.zinc.color} dailyValue={getDV('zinc', personalizedDVs, cfg.zinc.dailyValue)} />
+          <NutrientRow label={cfg.potassium.label} value={result.totalPotassium} unit={cfg.potassium.unit} dailyValue={getDV('potassium', personalizedDVs, cfg.potassium.dailyValue)} nutrientType="beneficial" />
+          <NutrientRow label={cfg.calcium.label} value={result.totalCalcium} unit={cfg.calcium.unit} dailyValue={getDV('calcium', personalizedDVs, cfg.calcium.dailyValue)} nutrientType="beneficial" />
+          <NutrientRow label={cfg.iron.label} value={result.totalIron} unit={cfg.iron.unit} dailyValue={getDV('iron', personalizedDVs, cfg.iron.dailyValue)} nutrientType="beneficial" />
+          <NutrientRow label={cfg.magnesium.label} value={result.totalMagnesium} unit={cfg.magnesium.unit} dailyValue={getDV('magnesium', personalizedDVs, cfg.magnesium.dailyValue)} nutrientType="beneficial" />
+          <NutrientRow label={cfg.zinc.label} value={result.totalZinc} unit={cfg.zinc.unit} dailyValue={getDV('zinc', personalizedDVs, cfg.zinc.dailyValue)} nutrientType="beneficial" />
           {showComplete && (
             <>
-              <NutrientRow label={cfg.phosphorus.label} value={result.totalPhosphorus} unit={cfg.phosphorus.unit} color={cfg.phosphorus.color} dailyValue={getDV('phosphorus', personalizedDVs, cfg.phosphorus.dailyValue)} />
-              <NutrientRow label={cfg.copper.label} value={result.totalCopper} unit={cfg.copper.unit} color={cfg.copper.color} dailyValue={getDV('copper', personalizedDVs, cfg.copper.dailyValue)} />
-              <NutrientRow label={cfg.manganese.label} value={result.totalManganese} unit={cfg.manganese.unit} color={cfg.manganese.color} dailyValue={getDV('manganese', personalizedDVs, cfg.manganese.dailyValue)} />
-              <NutrientRow label={cfg.selenium.label} value={result.totalSelenium} unit={cfg.selenium.unit} color={cfg.selenium.color} dailyValue={getDV('selenium', personalizedDVs, cfg.selenium.dailyValue)} />
+              <NutrientRow label={cfg.phosphorus.label} value={result.totalPhosphorus} unit={cfg.phosphorus.unit} dailyValue={getDV('phosphorus', personalizedDVs, cfg.phosphorus.dailyValue)} nutrientType="beneficial" />
+              <NutrientRow label={cfg.copper.label} value={result.totalCopper} unit={cfg.copper.unit} dailyValue={getDV('copper', personalizedDVs, cfg.copper.dailyValue)} nutrientType="beneficial" />
+              <NutrientRow label={cfg.manganese.label} value={result.totalManganese} unit={cfg.manganese.unit} dailyValue={getDV('manganese', personalizedDVs, cfg.manganese.dailyValue)} nutrientType="beneficial" />
+              <NutrientRow label={cfg.selenium.label} value={result.totalSelenium} unit={cfg.selenium.unit} dailyValue={getDV('selenium', personalizedDVs, cfg.selenium.dailyValue)} nutrientType="beneficial" />
             </>
           )}
         </NutrientSection>
@@ -219,20 +252,20 @@ export default function NutritionSummary({ result, displayLevel, onDisplayLevelC
       {/* Extended: Vitamins */}
       {showExtended && (
         <NutrientSection title="Vitamins" icon={Heart} iconColor="#fb7185">
-          <NutrientRow label={cfg.vitaminA.label} value={result.totalVitaminA} unit={cfg.vitaminA.unit} color={cfg.vitaminA.color} dailyValue={getDV('vitaminA', personalizedDVs, cfg.vitaminA.dailyValue)} />
-          <NutrientRow label={cfg.vitaminC.label} value={result.totalVitaminC} unit={cfg.vitaminC.unit} color={cfg.vitaminC.color} dailyValue={getDV('vitaminC', personalizedDVs, cfg.vitaminC.dailyValue)} />
-          <NutrientRow label={cfg.vitaminD.label} value={result.totalVitaminD} unit={cfg.vitaminD.unit} color={cfg.vitaminD.color} dailyValue={getDV('vitaminD', personalizedDVs, cfg.vitaminD.dailyValue)} />
+          <NutrientRow label={cfg.vitaminA.label} value={result.totalVitaminA} unit={cfg.vitaminA.unit} dailyValue={getDV('vitaminA', personalizedDVs, cfg.vitaminA.dailyValue)} nutrientType="beneficial" />
+          <NutrientRow label={cfg.vitaminC.label} value={result.totalVitaminC} unit={cfg.vitaminC.unit} dailyValue={getDV('vitaminC', personalizedDVs, cfg.vitaminC.dailyValue)} nutrientType="beneficial" />
+          <NutrientRow label={cfg.vitaminD.label} value={result.totalVitaminD} unit={cfg.vitaminD.unit} dailyValue={getDV('vitaminD', personalizedDVs, cfg.vitaminD.dailyValue)} nutrientType="beneficial" />
           {showComplete && (
             <>
-              <NutrientRow label={cfg.vitaminE.label} value={result.totalVitaminE} unit={cfg.vitaminE.unit} color={cfg.vitaminE.color} dailyValue={getDV('vitaminE', personalizedDVs, cfg.vitaminE.dailyValue)} />
-              <NutrientRow label={cfg.vitaminK.label} value={result.totalVitaminK} unit={cfg.vitaminK.unit} color={cfg.vitaminK.color} dailyValue={getDV('vitaminK', personalizedDVs, cfg.vitaminK.dailyValue)} />
-              <NutrientRow label={cfg.thiamin.label} value={result.totalThiamin} unit={cfg.thiamin.unit} color={cfg.thiamin.color} dailyValue={getDV('thiamin', personalizedDVs, cfg.thiamin.dailyValue)} />
-              <NutrientRow label={cfg.riboflavin.label} value={result.totalRiboflavin} unit={cfg.riboflavin.unit} color={cfg.riboflavin.color} dailyValue={getDV('riboflavin', personalizedDVs, cfg.riboflavin.dailyValue)} />
-              <NutrientRow label={cfg.niacin.label} value={result.totalNiacin} unit={cfg.niacin.unit} color={cfg.niacin.color} dailyValue={getDV('niacin', personalizedDVs, cfg.niacin.dailyValue)} />
-              <NutrientRow label={cfg.vitaminB6.label} value={result.totalVitaminB6} unit={cfg.vitaminB6.unit} color={cfg.vitaminB6.color} dailyValue={getDV('vitaminB6', personalizedDVs, cfg.vitaminB6.dailyValue)} />
-              <NutrientRow label={cfg.folate.label} value={result.totalFolate} unit={cfg.folate.unit} color={cfg.folate.color} dailyValue={getDV('folate', personalizedDVs, cfg.folate.dailyValue)} />
-              <NutrientRow label={cfg.vitaminB12.label} value={result.totalVitaminB12} unit={cfg.vitaminB12.unit} color={cfg.vitaminB12.color} dailyValue={getDV('vitaminB12', personalizedDVs, cfg.vitaminB12.dailyValue)} />
-              <NutrientRow label={cfg.choline.label} value={result.totalCholine} unit={cfg.choline.unit} color={cfg.choline.color} dailyValue={getDV('choline', personalizedDVs, cfg.choline.dailyValue)} />
+              <NutrientRow label={cfg.vitaminE.label} value={result.totalVitaminE} unit={cfg.vitaminE.unit} dailyValue={getDV('vitaminE', personalizedDVs, cfg.vitaminE.dailyValue)} nutrientType="beneficial" />
+              <NutrientRow label={cfg.vitaminK.label} value={result.totalVitaminK} unit={cfg.vitaminK.unit} dailyValue={getDV('vitaminK', personalizedDVs, cfg.vitaminK.dailyValue)} nutrientType="beneficial" />
+              <NutrientRow label={cfg.thiamin.label} value={result.totalThiamin} unit={cfg.thiamin.unit} dailyValue={getDV('thiamin', personalizedDVs, cfg.thiamin.dailyValue)} nutrientType="beneficial" />
+              <NutrientRow label={cfg.riboflavin.label} value={result.totalRiboflavin} unit={cfg.riboflavin.unit} dailyValue={getDV('riboflavin', personalizedDVs, cfg.riboflavin.dailyValue)} nutrientType="beneficial" />
+              <NutrientRow label={cfg.niacin.label} value={result.totalNiacin} unit={cfg.niacin.unit} dailyValue={getDV('niacin', personalizedDVs, cfg.niacin.dailyValue)} nutrientType="beneficial" />
+              <NutrientRow label={cfg.vitaminB6.label} value={result.totalVitaminB6} unit={cfg.vitaminB6.unit} dailyValue={getDV('vitaminB6', personalizedDVs, cfg.vitaminB6.dailyValue)} nutrientType="beneficial" />
+              <NutrientRow label={cfg.folate.label} value={result.totalFolate} unit={cfg.folate.unit} dailyValue={getDV('folate', personalizedDVs, cfg.folate.dailyValue)} nutrientType="beneficial" />
+              <NutrientRow label={cfg.vitaminB12.label} value={result.totalVitaminB12} unit={cfg.vitaminB12.unit} dailyValue={getDV('vitaminB12', personalizedDVs, cfg.vitaminB12.dailyValue)} nutrientType="beneficial" />
+              <NutrientRow label={cfg.choline.label} value={result.totalCholine} unit={cfg.choline.unit} dailyValue={getDV('choline', personalizedDVs, cfg.choline.dailyValue)} nutrientType="beneficial" />
             </>
           )}
         </NutrientSection>
@@ -241,10 +274,10 @@ export default function NutritionSummary({ result, displayLevel, onDisplayLevelC
       {/* Complete: Other */}
       {showComplete && (result.totalCaffeine !== undefined || result.totalWater !== undefined) && (
         <NutrientSection title="Other" icon={Activity} iconColor="#22d3ee">
-          <NutrientRow label={cfg.caffeine.label} value={result.totalCaffeine} unit={cfg.caffeine.unit} color={cfg.caffeine.color} dailyValue={getDV('caffeine', personalizedDVs, cfg.caffeine.dailyValue)} />
-          <NutrientRow label={cfg.water.label} value={result.totalWater} unit={cfg.water.unit} color={cfg.water.color} dailyValue={getDV('water', personalizedDVs, cfg.water.dailyValue)} />
+          <NutrientRow label={cfg.caffeine.label} value={result.totalCaffeine} unit={cfg.caffeine.unit} dailyValue={getDV('caffeine', personalizedDVs, cfg.caffeine.dailyValue)} nutrientType="limit" />
+          <NutrientRow label={cfg.water.label} value={result.totalWater} unit={cfg.water.unit} dailyValue={getDV('water', personalizedDVs, cfg.water.dailyValue)} nutrientType="beneficial" />
           {result.totalAddedSugar !== undefined && (
-            <NutrientRow label={cfg.addedSugar.label} value={result.totalAddedSugar} unit={cfg.addedSugar.unit} color={cfg.addedSugar.color} dailyValue={getDV('addedSugar', personalizedDVs, cfg.addedSugar.dailyValue)} />
+            <NutrientRow label={cfg.addedSugar.label} value={result.totalAddedSugar} unit={cfg.addedSugar.unit} dailyValue={getDV('addedSugar', personalizedDVs, cfg.addedSugar.dailyValue)} nutrientType="limit" />
           )}
         </NutrientSection>
       )}

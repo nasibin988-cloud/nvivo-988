@@ -10,14 +10,12 @@ import { useState, useMemo, useEffect, useRef } from 'react';
 import {
   Apple,
   Camera,
-  Plus,
   Beef,
   Wheat,
   Droplets,
   Leaf,
   Candy,
   Zap,
-  Search,
   Flame,
   Target,
   Calendar,
@@ -26,11 +24,12 @@ import {
   Scale,
   Sparkles,
   Calculator,
+  Wand2,
 } from 'lucide-react';
 import { ViewToggle } from '@nvivo/ui';
 import { useFoodLogs, useWaterIntake, useFoodLogsHistory, useWaterStreak, type FoodLog, type MealType } from '../../../hooks/nutrition';
 import { useNutritionTargets, type NutritionTargets } from '../../../hooks/nutrition';
-import { FoodSearchModal, PhotoAnalysisModal, MenuScannerModal, FoodComparisonModal, SmartFeaturesModal } from '../../Journal/food/components';
+import { PhotoAnalysisModal, MenuScannerModal, FoodComparisonModal, SmartFeaturesModal, TextAnalysisModal } from '../../Journal/food/components';
 import type { MenuItem } from '../../Journal/food/components/menu-scanner';
 import { Confetti } from '../../../components/animations';
 
@@ -53,7 +52,6 @@ import {
 } from '../nutrition/components';
 
 import {
-  LogMealModal,
   EditMealModal,
   MacroGoalsModal,
   DVCalculatorModal,
@@ -72,10 +70,9 @@ import {
 
 export default function NutritionTab(): React.ReactElement {
   const [view, setView] = useState<ViewMode>('today');
-  const [showLogModal, setShowLogModal] = useState(false);
-  const [showSearchModal, setShowSearchModal] = useState(false);
   const [showPhotoModal, setShowPhotoModal] = useState(false);
   const [showMenuScanner, setShowMenuScanner] = useState(false);
+  const [showTextAnalysis, setShowTextAnalysis] = useState(false);
   const [showFoodComparison, setShowFoodComparison] = useState(false);
   const [showSmartFeatures, setShowSmartFeatures] = useState(false);
   const [showDVCalculator, setShowDVCalculator] = useState(false);
@@ -89,7 +86,7 @@ export default function NutritionTab(): React.ReactElement {
   const today = new Date().toISOString().split('T')[0];
 
   // Data hooks
-  const { logs, isLoading, dailyTotals, addLog, updateLog, deleteLog, isAdding, isUpdating } = useFoodLogs(today);
+  const { logs, isLoading, dailyTotals, addLog, updateLog, deleteLog, isUpdating } = useFoodLogs(today);
   const { data: targets, isLoading: targetsLoading } = useNutritionTargets();
   const { glasses: waterGlasses, updateWater, isUpdating: isUpdatingWater } = useWaterIntake(today);
   // Fetch 180 days of history for trends (NutritionTrends handles time range selection)
@@ -157,46 +154,37 @@ export default function NutritionTab(): React.ReactElement {
     return map;
   }, [historyData]);
 
-  // Handle save from log modal
-  const handleSaveMeal = async (meal: Omit<FoodLog, 'id' | 'createdAt' | 'updatedAt'>) => {
-    await addLog(meal);
-    setShowLogModal(false);
-  };
-
-  // Handle food search selection
-  const handleFoodSelected = async (food: { name: string; nutrition: { calories: number; protein: number; carbohydrates: number; fat: number; fiber?: number; sugar?: number; sodium?: number } }) => {
-    const meal: Omit<FoodLog, 'id' | 'createdAt' | 'updatedAt'> = {
-      mealType: 'snack',
-      description: food.name,
-      date: today,
-      time: new Date().toLocaleTimeString('en-US', { hour: 'numeric', minute: '2-digit' }),
-      calories: food.nutrition.calories,
-      protein: food.nutrition.protein,
-      carbs: food.nutrition.carbohydrates,
-      fat: food.nutrition.fat,
-      fiber: food.nutrition.fiber || null,
-      sugar: food.nutrition.sugar || null,
-      sodium: food.nutrition.sodium || null,
-    };
-    await addLog(meal);
-    setShowSearchModal(false);
-  };
-
-  // Handle photo analysis result
-  const handlePhotoAnalysis = async (result: { items: { name: string; calories: number; protein: number; carbs: number; fat: number; fiber?: number; sugar?: number }[]; mealType: string; totalCalories: number; totalProtein: number; totalCarbs: number; totalFat: number; totalSugar?: number }) => {
+  // Handle photo/text analysis result (both use AnalysisResult type)
+  const handlePhotoAnalysis = async (result: {
+    items: { name: string; calories: number; protein: number; carbs: number; fat: number; fiber?: number; sugar?: number; sodium?: number }[];
+    mealType: string;
+    eatenAt?: string;
+    totalCalories: number;
+    totalProtein: number;
+    totalCarbs: number;
+    totalFat: number;
+    totalFiber?: number;
+    totalSugar?: number;
+    totalSodium?: number;
+  }) => {
     const description = result.items.map(i => i.name).join(', ');
+    // Use eatenAt time if provided, otherwise current time
+    const time = result.eatenAt
+      ? new Date(`1970-01-01T${result.eatenAt}`).toLocaleTimeString('en-US', { hour: 'numeric', minute: '2-digit' })
+      : new Date().toLocaleTimeString('en-US', { hour: 'numeric', minute: '2-digit' });
+
     const meal: Omit<FoodLog, 'id' | 'createdAt' | 'updatedAt'> = {
       mealType: (result.mealType as MealType) || 'snack',
       description,
       date: today,
-      time: new Date().toLocaleTimeString('en-US', { hour: 'numeric', minute: '2-digit' }),
+      time,
       calories: result.totalCalories,
       protein: result.totalProtein,
       carbs: result.totalCarbs,
       fat: result.totalFat,
-      fiber: null,
-      sugar: result.totalSugar || null,
-      sodium: null,
+      fiber: result.totalFiber ?? null,
+      sugar: result.totalSugar ?? null,
+      sodium: result.totalSodium ?? null,
       isAiAnalyzed: true,
       aiConfidence: 0.85,
     };
@@ -413,66 +401,62 @@ export default function NutritionTab(): React.ReactElement {
             onNutrientTap={(nutrientId) => setSelectedNutrient(nutrientId)}
           />
 
-          {/* Quick Add Buttons */}
-          <div className="grid grid-cols-4 gap-2">
-            <button
-              onClick={() => setShowLogModal(true)}
-              className="group relative flex flex-col items-center justify-center gap-1 py-3 rounded-xl bg-white/[0.02] border border-white/[0.04] text-text-primary hover:bg-white/[0.04] hover:border-emerald-500/20 transition-all duration-300"
-            >
-              <div className="absolute inset-0 rounded-xl bg-emerald-500/5 opacity-0 group-hover:opacity-100 transition-opacity" />
-              <Plus size={18} className="text-emerald-400 relative z-10" />
-              <span className="text-[10px] font-medium relative z-10">Log</span>
-            </button>
-            <button
-              onClick={() => setShowSearchModal(true)}
-              className="group relative flex flex-col items-center justify-center gap-1 py-3 rounded-xl bg-white/[0.02] border border-white/[0.04] text-text-primary hover:bg-white/[0.04] hover:border-blue-500/20 transition-all duration-300"
-            >
-              <div className="absolute inset-0 rounded-xl bg-blue-500/5 opacity-0 group-hover:opacity-100 transition-opacity" />
-              <Search size={18} className="text-blue-400 relative z-10" />
-              <span className="text-[10px] font-medium relative z-10">Search</span>
-            </button>
+          {/* Quick Actions - 3x2 Grid */}
+          <div className="grid grid-cols-3 gap-2">
+            {/* Row 1: AI Input Methods */}
             <button
               onClick={() => setShowPhotoModal(true)}
-              className="group relative flex flex-col items-center justify-center gap-1 py-3 rounded-xl bg-white/[0.02] border border-violet-500/20 text-violet-400 hover:bg-white/[0.04] hover:border-violet-500/30 transition-all duration-300"
+              className="group relative flex flex-col items-center justify-center gap-1.5 py-3.5 rounded-xl bg-white/[0.02] border border-violet-500/20 text-violet-400 hover:bg-white/[0.04] hover:border-violet-500/30 transition-all duration-300"
             >
               <div className="absolute inset-0 rounded-xl bg-violet-500/5 opacity-0 group-hover:opacity-100 transition-opacity" />
-              <div className="absolute -top-1 -right-1 px-1 py-0.5 rounded-full bg-violet-500/20 border border-violet-500/30 text-[7px] font-bold text-violet-300">AI</div>
-              <Camera size={18} className="relative z-10" />
-              <span className="text-[10px] font-medium relative z-10">Photo</span>
+              <div className="absolute -top-1 -right-1 px-1.5 py-0.5 rounded-full bg-violet-500/20 border border-violet-500/30 text-[7px] font-bold text-violet-300">AI</div>
+              <Camera size={20} className="relative z-10" />
+              <span className="text-xs font-medium relative z-10">Photo</span>
+            </button>
+            <button
+              onClick={() => setShowTextAnalysis(true)}
+              className="group relative flex flex-col items-center justify-center gap-1.5 py-3.5 rounded-xl bg-white/[0.02] border border-purple-500/20 text-purple-400 hover:bg-white/[0.04] hover:border-purple-500/30 transition-all duration-300"
+            >
+              <div className="absolute inset-0 rounded-xl bg-purple-500/5 opacity-0 group-hover:opacity-100 transition-opacity" />
+              <div className="absolute -top-1 -right-1 px-1.5 py-0.5 rounded-full bg-purple-500/20 border border-purple-500/30 text-[7px] font-bold text-purple-300">AI</div>
+              <Wand2 size={20} className="relative z-10" />
+              <span className="text-xs font-medium relative z-10">Describe</span>
             </button>
             <button
               onClick={() => setShowMenuScanner(true)}
-              className="group relative flex flex-col items-center justify-center gap-1 py-3 rounded-xl bg-white/[0.02] border border-teal-500/20 text-teal-400 hover:bg-white/[0.04] hover:border-teal-500/30 transition-all duration-300"
+              className="group relative flex flex-col items-center justify-center gap-1.5 py-3.5 rounded-xl bg-white/[0.02] border border-teal-500/20 text-teal-400 hover:bg-white/[0.04] hover:border-teal-500/30 transition-all duration-300"
             >
               <div className="absolute inset-0 rounded-xl bg-teal-500/5 opacity-0 group-hover:opacity-100 transition-opacity" />
-              <div className="absolute -top-1 -right-1 px-1 py-0.5 rounded-full bg-teal-500/20 border border-teal-500/30 text-[7px] font-bold text-teal-300">OCR</div>
-              <FileText size={18} className="relative z-10" />
-              <span className="text-[10px] font-medium relative z-10">Menu</span>
+              <div className="absolute -top-1 -right-1 px-1.5 py-0.5 rounded-full bg-teal-500/20 border border-teal-500/30 text-[7px] font-bold text-teal-300">AI</div>
+              <FileText size={20} className="relative z-10" />
+              <span className="text-xs font-medium relative z-10">Menu</span>
             </button>
-          </div>
 
-          {/* Smart Features, Food Compare, & DV Calculator Buttons */}
-          <div className="grid grid-cols-3 gap-2">
+            {/* Row 2: Tools */}
             <button
               onClick={() => setShowSmartFeatures(true)}
-              className="py-2.5 rounded-xl bg-gradient-to-r from-violet-500/[0.08] to-purple-500/[0.05] border border-violet-500/20 hover:border-violet-500/30 flex items-center justify-center gap-2 transition-all group"
+              className="group relative flex flex-col items-center justify-center gap-1.5 py-3.5 rounded-xl bg-white/[0.02] border border-emerald-500/20 text-emerald-400 hover:bg-white/[0.04] hover:border-emerald-500/30 transition-all duration-300"
             >
-              <Sparkles size={16} className="text-violet-400 group-hover:scale-110 transition-transform" />
-              <span className="text-xs font-medium text-violet-400">Smart Add</span>
+              <div className="absolute inset-0 rounded-xl bg-emerald-500/5 opacity-0 group-hover:opacity-100 transition-opacity" />
+              <Sparkles size={20} className="relative z-10" />
+              <span className="text-xs font-medium relative z-10">Smart Add</span>
             </button>
             <button
               onClick={() => setShowFoodComparison(true)}
-              className="py-2.5 rounded-xl bg-gradient-to-r from-amber-500/[0.06] to-orange-500/[0.04] border border-amber-500/20 hover:border-amber-500/30 flex items-center justify-center gap-2 transition-all group"
+              className="group relative flex flex-col items-center justify-center gap-1.5 py-3.5 rounded-xl bg-white/[0.02] border border-amber-500/20 text-amber-400 hover:bg-white/[0.04] hover:border-amber-500/30 transition-all duration-300"
             >
-              <Scale size={16} className="text-amber-400 group-hover:scale-110 transition-transform" />
-              <span className="text-xs font-medium text-amber-400">Compare</span>
+              <div className="absolute inset-0 rounded-xl bg-amber-500/5 opacity-0 group-hover:opacity-100 transition-opacity" />
+              <div className="absolute -top-1 -right-1 px-1.5 py-0.5 rounded-full bg-amber-500/20 border border-amber-500/30 text-[7px] font-bold text-amber-300">AI</div>
+              <Scale size={20} className="relative z-10" />
+              <span className="text-xs font-medium relative z-10">Compare</span>
             </button>
             <button
               onClick={() => setShowDVCalculator(true)}
-              className="py-2.5 rounded-xl bg-gradient-to-r from-cyan-500/[0.06] to-blue-500/[0.04] border border-cyan-500/20 hover:border-cyan-500/30 flex items-center justify-center gap-2 transition-all group"
+              className="group relative flex flex-col items-center justify-center gap-1.5 py-3.5 rounded-xl bg-white/[0.02] border border-cyan-500/20 text-cyan-400 hover:bg-white/[0.04] hover:border-cyan-500/30 transition-all duration-300"
             >
-              <Calculator size={16} className="text-cyan-400 group-hover:scale-110 transition-transform" />
-              <span className="text-xs font-medium text-cyan-400">My DVs</span>
+              <div className="absolute inset-0 rounded-xl bg-cyan-500/5 opacity-0 group-hover:opacity-100 transition-opacity" />
+              <Calculator size={20} className="relative z-10" />
+              <span className="text-xs font-medium relative z-10">My DVs</span>
             </button>
           </div>
 
@@ -484,7 +468,7 @@ export default function NutritionTab(): React.ReactElement {
             </h4>
 
             {logs.length === 0 ? (
-              <EmptyState onAddMeal={() => setShowLogModal(true)} />
+              <EmptyState onAddMeal={() => setShowTextAnalysis(true)} />
             ) : (
               <div className="space-y-3">
                 {logs.map((meal, index) => (
@@ -579,21 +563,6 @@ export default function NutritionTab(): React.ReactElement {
       )}
 
       {/* Modals */}
-      {showLogModal && (
-        <LogMealModal
-          onClose={() => setShowLogModal(false)}
-          onSave={handleSaveMeal}
-          isSaving={isAdding}
-        />
-      )}
-
-      {showSearchModal && (
-        <FoodSearchModal
-          onClose={() => setShowSearchModal(false)}
-          onSelect={handleFoodSelected}
-        />
-      )}
-
       {showPhotoModal && (
         <PhotoAnalysisModal
           onClose={() => setShowPhotoModal(false)}
@@ -605,6 +574,13 @@ export default function NutritionTab(): React.ReactElement {
         <MenuScannerModal
           onClose={() => setShowMenuScanner(false)}
           onConfirm={handleMenuScannerConfirm}
+        />
+      )}
+
+      {showTextAnalysis && (
+        <TextAnalysisModal
+          onClose={() => setShowTextAnalysis(false)}
+          onConfirm={handlePhotoAnalysis}
         />
       )}
 

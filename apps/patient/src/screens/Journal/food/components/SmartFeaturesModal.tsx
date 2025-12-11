@@ -3,7 +3,7 @@
  * Unified modal for barcode scanning, favorites, recurring meals, and AI suggestions
  */
 
-import { useState } from 'react';
+import { useState, useCallback, useRef, useEffect } from 'react';
 import {
   X,
   Barcode,
@@ -12,7 +12,16 @@ import {
   Sparkles,
   Plus,
   Search,
+  Loader2,
+  Apple,
+  Flame,
+  Beef,
+  Wheat,
+  Droplets,
+  Check,
 } from 'lucide-react';
+import { httpsCallable } from 'firebase/functions';
+import { getFunctions } from '@nvivo/shared';
 import {
   useFavorites,
   useRecurringMeals,
@@ -29,6 +38,37 @@ import {
   type BarcodeProduct,
   type RecurringMeal,
 } from './smart-features';
+
+interface FoodSearchResult {
+  name: string;
+  fdcId?: string;
+  brandName?: string;
+  nutrition: {
+    calories: number;
+    protein: number;
+    carbohydrates: number;
+    fat: number;
+    fiber?: number;
+    sodium?: number;
+  };
+}
+
+// Mock results for demo/fallback
+function getMockResults(query: string): FoodSearchResult[] {
+  const mockFoods: FoodSearchResult[] = [
+    { name: 'Chicken breast, grilled', nutrition: { calories: 165, protein: 31, carbohydrates: 0, fat: 3.6, fiber: 0 } },
+    { name: 'Brown rice, cooked', nutrition: { calories: 216, protein: 5, carbohydrates: 45, fat: 1.8, fiber: 3.5 } },
+    { name: 'Salmon, Atlantic, baked', nutrition: { calories: 208, protein: 20, carbohydrates: 0, fat: 13, fiber: 0 } },
+    { name: 'Broccoli, steamed', nutrition: { calories: 55, protein: 3.7, carbohydrates: 11, fat: 0.6, fiber: 5.1 } },
+    { name: 'Greek yogurt, plain', nutrition: { calories: 100, protein: 17, carbohydrates: 6, fat: 0.7, fiber: 0 } },
+    { name: 'Avocado, raw', nutrition: { calories: 160, protein: 2, carbohydrates: 9, fat: 15, fiber: 7 } },
+    { name: 'Eggs, scrambled', nutrition: { calories: 147, protein: 10, carbohydrates: 2, fat: 11, fiber: 0 } },
+    { name: 'Banana, raw', nutrition: { calories: 89, protein: 1.1, carbohydrates: 23, fat: 0.3, fiber: 2.6 } },
+    { name: 'Oatmeal, cooked', nutrition: { calories: 158, protein: 6, carbohydrates: 27, fat: 3, fiber: 4 } },
+    { name: 'Spinach, raw', nutrition: { calories: 23, protein: 2.9, carbohydrates: 3.6, fat: 0.4, fiber: 2.2 } },
+  ];
+  return mockFoods.filter((food) => food.name.toLowerCase().includes(query.toLowerCase()));
+}
 
 interface SmartFeaturesModalProps {
   onClose: () => void;
@@ -64,8 +104,23 @@ export default function SmartFeaturesModal({
   currentTotals,
   targets,
 }: SmartFeaturesModalProps): React.ReactElement {
-  const [activeTab, setActiveTab] = useState<SmartFeatureView | 'barcode'>('suggestions');
+  const [activeTab, setActiveTab] = useState<SmartFeatureView | 'barcode' | 'search'>('suggestions');
   const [searchQuery, setSearchQuery] = useState('');
+
+  // Search state
+  const [usdaQuery, setUsdaQuery] = useState('');
+  const [usdaResults, setUsdaResults] = useState<FoodSearchResult[]>([]);
+  const [isSearching, setIsSearching] = useState(false);
+  const [selectedSearchFood, setSelectedSearchFood] = useState<FoodSearchResult | null>(null);
+  const debounceRef = useRef<NodeJS.Timeout>();
+  const searchInputRef = useRef<HTMLInputElement>(null);
+
+  // Focus search input when switching to search tab
+  useEffect(() => {
+    if (activeTab === 'search') {
+      setTimeout(() => searchInputRef.current?.focus(), 100);
+    }
+  }, [activeTab]);
 
   // Hooks
   const { favorites, removeFavorite, useFavorite, searchFavorites } = useFavorites();
@@ -148,13 +203,65 @@ export default function SmartFeaturesModal({
     });
   };
 
+  // USDA Search functions
+  const searchFoods = useCallback(async (query: string) => {
+    if (query.length < 2) {
+      setUsdaResults([]);
+      return;
+    }
+
+    setIsSearching(true);
+    try {
+      const functions = getFunctions();
+      const searchFn = httpsCallable<{ query: string; limit?: number }, FoodSearchResult[]>(
+        functions,
+        'searchFoods'
+      );
+      const response = await searchFn({ query, limit: 15 });
+      setUsdaResults(response.data);
+    } catch (error) {
+      console.error('Food search failed:', error);
+      setUsdaResults(getMockResults(query));
+    } finally {
+      setIsSearching(false);
+    }
+  }, []);
+
+  const handleUsdaQueryChange = (value: string) => {
+    setUsdaQuery(value);
+    setSelectedSearchFood(null);
+    if (debounceRef.current) {
+      clearTimeout(debounceRef.current);
+    }
+    debounceRef.current = setTimeout(() => {
+      searchFoods(value);
+    }, 300);
+  };
+
+  const handleAddSearchFood = (food: FoodSearchResult) => {
+    onAddFood({
+      name: food.name,
+      calories: food.nutrition.calories,
+      protein: food.nutrition.protein,
+      carbs: food.nutrition.carbohydrates,
+      fat: food.nutrition.fat,
+      fiber: food.nutrition.fiber ?? null,
+      sugar: null,
+      sodium: food.nutrition.sodium ?? null,
+    });
+    setSelectedSearchFood(null);
+    setUsdaQuery('');
+    setUsdaResults([]);
+  };
+
   // Filter favorites by search
   const filteredFavorites = searchQuery ? searchFavorites(searchQuery) : favorites;
 
   const tabs = [
-    { id: 'suggestions' as const, label: 'Suggestions', icon: Sparkles, color: 'violet' },
+    { id: 'search' as const, label: 'Search', icon: Search, color: 'blue' },
+    { id: 'suggestions' as const, label: 'For You', icon: Sparkles, color: 'violet' },
     { id: 'favorites' as const, label: 'Favorites', icon: Heart, color: 'rose' },
-    { id: 'recurring' as const, label: 'Recurring', icon: Repeat, color: 'blue' },
+    { id: 'recurring' as const, label: 'Recurring', icon: Repeat, color: 'cyan' },
     { id: 'barcode' as const, label: 'Barcode', icon: Barcode, color: 'teal' },
   ];
 
@@ -204,6 +311,99 @@ export default function SmartFeaturesModal({
 
         {/* Content */}
         <div className="flex-1 overflow-y-auto p-5">
+          {/* Search Tab */}
+          {activeTab === 'search' && (
+            <div className="space-y-3">
+              {/* Search Input */}
+              <div className="relative">
+                <Search size={16} className="absolute left-3 top-1/2 -translate-y-1/2 text-text-muted" />
+                <input
+                  ref={searchInputRef}
+                  type="text"
+                  value={usdaQuery}
+                  onChange={(e) => handleUsdaQueryChange(e.target.value)}
+                  placeholder="Search 400k+ foods (USDA database)..."
+                  className="w-full pl-10 pr-4 py-3 rounded-xl text-sm bg-white/[0.02] border border-white/[0.06] text-text-primary placeholder-text-muted focus:outline-none focus:border-blue-500/30 transition-all"
+                />
+                {isSearching && (
+                  <Loader2 size={16} className="absolute right-3 top-1/2 -translate-y-1/2 text-blue-400 animate-spin" />
+                )}
+              </div>
+
+              {/* No query state */}
+              {usdaQuery.length < 2 && !isSearching && usdaResults.length === 0 && (
+                <div className="text-center py-8">
+                  <Search size={32} className="text-blue-400/50 mx-auto mb-3" />
+                  <p className="text-sm text-text-muted">Type to search for foods</p>
+                  <p className="text-xs text-text-muted mt-1">e.g., "chicken breast", "brown rice"</p>
+                </div>
+              )}
+
+              {/* No results state */}
+              {usdaQuery.length >= 2 && !isSearching && usdaResults.length === 0 && (
+                <div className="text-center py-8">
+                  <Apple size={32} className="text-text-muted/50 mx-auto mb-3" />
+                  <p className="text-sm text-text-muted">No foods found for "{usdaQuery}"</p>
+                  <p className="text-xs text-text-muted mt-1">Try a different search term</p>
+                </div>
+              )}
+
+              {/* Results list */}
+              {usdaResults.map((food, index) => (
+                <button
+                  key={`${food.fdcId || index}`}
+                  onClick={() => setSelectedSearchFood(selectedSearchFood === food ? null : food)}
+                  className={`w-full p-3 rounded-xl text-left transition-all ${
+                    selectedSearchFood === food
+                      ? 'bg-blue-500/10 border border-blue-500/30'
+                      : 'bg-white/[0.02] border border-white/[0.04] hover:bg-white/[0.04]'
+                  }`}
+                >
+                  <div className="flex items-start justify-between gap-2">
+                    <div className="flex-1 min-w-0">
+                      <p className="text-sm font-medium text-text-primary truncate">{food.name}</p>
+                      {food.brandName && (
+                        <p className="text-xs text-text-muted truncate">{food.brandName}</p>
+                      )}
+                      <div className="flex items-center gap-2 mt-1.5 flex-wrap">
+                        <span className="text-xs text-amber-400 flex items-center gap-0.5">
+                          <Flame size={10} />
+                          {food.nutrition.calories}
+                        </span>
+                        <span className="text-xs text-rose-400 flex items-center gap-0.5">
+                          <Beef size={10} />
+                          {food.nutrition.protein}g
+                        </span>
+                        <span className="text-xs text-amber-400/70 flex items-center gap-0.5">
+                          <Wheat size={10} />
+                          {food.nutrition.carbohydrates}g
+                        </span>
+                        <span className="text-xs text-blue-400 flex items-center gap-0.5">
+                          <Droplets size={10} />
+                          {food.nutrition.fat}g
+                        </span>
+                      </div>
+                    </div>
+                    {selectedSearchFood === food ? (
+                      <button
+                        onClick={(e) => {
+                          e.stopPropagation();
+                          handleAddSearchFood(food);
+                        }}
+                        className="shrink-0 px-3 py-1.5 rounded-lg bg-blue-500/20 border border-blue-500/30 text-blue-400 text-xs font-medium hover:bg-blue-500/30 transition-all flex items-center gap-1"
+                      >
+                        <Check size={12} />
+                        Add
+                      </button>
+                    ) : (
+                      <Plus size={16} className="shrink-0 text-text-muted mt-1" />
+                    )}
+                  </div>
+                </button>
+              ))}
+            </div>
+          )}
+
           {/* Suggestions Tab */}
           {activeTab === 'suggestions' && (
             <div className="space-y-4">

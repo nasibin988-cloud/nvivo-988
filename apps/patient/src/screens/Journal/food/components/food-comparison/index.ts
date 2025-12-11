@@ -9,7 +9,7 @@ export * from './types';
 export * from './utils';
 
 // Hooks
-export { useFoodComparison, useMultiFoodComparison } from './hooks';
+export { useMultiFoodComparison } from './hooks';
 
 // Components
 export {
