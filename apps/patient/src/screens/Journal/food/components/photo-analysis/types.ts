@@ -6,6 +6,30 @@
 export type NutritionDetailLevel = 'essential' | 'extended' | 'complete';
 
 /**
+ * Feature flags for photo analysis
+ */
+export const PHOTO_ANALYSIS_FEATURES = {
+  /** Enable ingredient breakdown for analyzed foods (increases API output tokens ~2-3x) */
+  INGREDIENT_BREAKDOWN: false,
+} as const;
+
+/**
+ * Individual ingredient within a food item
+ * Used when INGREDIENT_BREAKDOWN feature is enabled
+ */
+export interface FoodIngredient {
+  name: string;
+  quantity: number;
+  unit: string;
+  calories: number;
+  protein: number;
+  carbs: number;
+  fat: number;
+  /** Percentage of the total dish this ingredient represents */
+  percentOfDish?: number;
+}
+
+/**
  * Comprehensive nutrition data for a single food item
  * Based on USDA nutrient database standards
  */
@@ -32,8 +56,9 @@ export interface AnalyzedFood {
   monounsaturatedFat?: number;
   polyunsaturatedFat?: number;
   transFat?: number;
-  omega3?: number;
+  omega3?: number;         // ALA (plant omega-3) in g
   omega6?: number;
+  epaDha?: number;         // EPA + DHA (fish oil omega-3) in mg
   cholesterol?: number;
 
   // === MINERALS ===
@@ -92,6 +117,9 @@ export interface AnalyzedFood {
   // Serving info
   servingSize?: string;
   servingWeight?: number;   // g
+
+  // Ingredient breakdown (only populated when INGREDIENT_BREAKDOWN feature is enabled)
+  ingredients?: FoodIngredient[];
 }
 
 /**
@@ -115,8 +143,9 @@ export interface AnalysisResult {
   totalMonounsaturatedFat?: number;
   totalPolyunsaturatedFat?: number;
   totalTransFat?: number;
-  totalOmega3?: number;
+  totalOmega3?: number;      // ALA in g
   totalOmega6?: number;
+  totalEpaDha?: number;      // EPA + DHA in mg
   totalCholesterol?: number;
 
   // === MINERAL TOTALS ===

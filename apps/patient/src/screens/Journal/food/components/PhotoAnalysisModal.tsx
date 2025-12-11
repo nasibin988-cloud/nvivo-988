@@ -22,6 +22,7 @@ export default function PhotoAnalysisModal({ onClose, onConfirm }: PhotoAnalysis
     videoRef,
     isStreaming,
     startCamera,
+    stopCamera,
     capturePhoto,
     cameraError,
   } = useCamera();
@@ -121,6 +122,7 @@ export default function PhotoAnalysisModal({ onClose, onConfirm }: PhotoAnalysis
               imageData={imageData}
               error={error || cameraError}
               onStartCamera={startCamera}
+              onStopCamera={stopCamera}
               onCapturePhoto={handleCapturePhoto}
               onFileUpload={handleFileUpload}
               fileInputRef={fileInputRef}

@@ -33,7 +33,7 @@ var __importStar = (this && this.__importStar) || (function () {
     };
 })();
 Object.defineProperty(exports, "__esModule", { value: true });
-exports.evaluateNutritionWeek = exports.getNutrientInfo = exports.getNutritionTargets = exports.evaluateNutritionDay = exports.analyzeFoodText = exports.searchFoods = exports.scanMenuPhoto = exports.analyzeFoodPhoto = exports.clearCareDataFn = exports.seedCareDataFn = exports.getAppointmentsFn = exports.getCarePlanGoalsFn = exports.completeTaskFn = exports.getTasksFn = exports.logMedicationDoseFn = exports.getMedicationScheduleFn = exports.getMedicationsFn = exports.getCareTeamFn = exports.getCareDataFn = exports.completeMicroWin = exports.getDailyMicroWins = exports.reseedHealthTrendsFn = exports.reseedMicroWinsFn = exports.seedArticlesFn = exports.deleteTestPatientFn = exports.seedTestPatientFn = void 0;
+exports.evaluateNutritionWeek = exports.getNutrientInfo = exports.getNutritionTargets = exports.evaluateNutritionDay = exports.gradeFoodAI = exports.compareFoodsAI = exports.analyzeFoodText = exports.searchFoods = exports.scanMenuPhoto = exports.analyzeFoodPhoto = exports.clearCareDataFn = exports.seedCareDataFn = exports.getAppointmentsFn = exports.getCarePlanGoalsFn = exports.completeTaskFn = exports.getTasksFn = exports.logMedicationDoseFn = exports.getMedicationScheduleFn = exports.getMedicationsFn = exports.getCareTeamFn = exports.getCareDataFn = exports.completeMicroWin = exports.getDailyMicroWins = exports.reseedHealthTrendsFn = exports.reseedMicroWinsFn = exports.seedArticlesFn = exports.deleteTestPatientFn = exports.seedTestPatientFn = void 0;
 const admin = __importStar(require("firebase-admin"));
 const v2_1 = require("firebase-functions/v2");
 const index_1 = require("./seed/index");
@@ -45,6 +45,8 @@ const seedHealthTrends_1 = require("./seed/seedHealthTrends");
 const foodAnalysis_1 = require("./domains/ai/foodAnalysis");
 const menuScanning_1 = require("./domains/ai/menuScanning");
 const foodSearch_1 = require("./domains/ai/foodSearch");
+const foodComparison_1 = require("./domains/ai/foodComparison");
+const gradingRubric_1 = require("./domains/ai/gradingRubric");
 // Nutrition evaluation functions
 const nutrition_1 = require("./domains/nutrition");
 Object.defineProperty(exports, "evaluateNutritionDay", { enumerable: true, get: function () { return nutrition_1.evaluateNutritionDay; } });
@@ -387,7 +389,16 @@ exports.analyzeFoodPhoto = v2_1.https.onCall({
     }
     catch (error) {
         console.error('Error analyzing food photo:', error);
-        throw new v2_1.https.HttpsError('internal', 'Failed to analyze food photo');
+        // Pass through meaningful error messages
+        const errorMessage = error instanceof Error ? error.message : 'Failed to analyze food photo';
+        // Use 'failed-precondition' for user-actionable errors
+        const isUserActionable = errorMessage.toLowerCase().includes('no food') ||
+            errorMessage.toLowerCase().includes('too many items') ||
+            errorMessage.toLowerCase().includes('fewer food items');
+        if (isUserActionable) {
+            throw new v2_1.https.HttpsError('failed-precondition', errorMessage);
+        }
+        throw new v2_1.https.HttpsError('internal', errorMessage);
     }
 });
 /**
@@ -500,6 +511,103 @@ exports.analyzeFoodText = v2_1.https.onCall({
     catch (error) {
         console.error('Error analyzing food text:', error);
         throw new v2_1.https.HttpsError('internal', 'Failed to analyze food description');
+    }
+});
+/**
+ * Compare multiple foods using AI to provide contextual insights
+ * Takes analyzed food data and user's wellness focuses, returns AI-generated comparison
+ *
+ * @param foods - Array of food nutrition data (2-5 foods)
+ * @param userFocuses - Array of wellness focus IDs the user cares about
+ *
+ * Returns:
+ * - verdict: Summary of which food is better and why
+ * - winnerIndex: Index of the best food (0-based) or null
+ * - contextualAnalysis: Deeper analysis of tradeoffs
+ * - focusInsights: Insights specific to each selected focus
+ * - surprises: Interesting nutritional facts
+ * - recommendation: Optional practical tip
+ */
+exports.compareFoodsAI = v2_1.https.onCall({
+    cors: true,
+    secrets: [foodComparison_1.openaiApiKeyComparison],
+}, async (request) => {
+    var _a;
+    const { foods, userFocuses = ['balanced'] } = (_a = request.data) !== null && _a !== void 0 ? _a : {};
+    if (!foods || !Array.isArray(foods)) {
+        throw new v2_1.https.HttpsError('invalid-argument', 'Foods array is required');
+    }
+    if (foods.length < 2 || foods.length > 5) {
+        throw new v2_1.https.HttpsError('invalid-argument', 'Must provide 2-5 foods for comparison');
+    }
+    // Validate each food has required fields
+    for (const food of foods) {
+        if (!food.name || typeof food.calories !== 'number') {
+            throw new v2_1.https.HttpsError('invalid-argument', 'Each food must have name and calories');
+        }
+    }
+    // Validate focuses
+    const validFocuses = [
+        'muscle_building',
+        'heart_health',
+        'energy_endurance',
+        'weight_management',
+        'brain_focus',
+        'gut_health',
+        'blood_sugar_balance',
+        'bone_joint_support',
+        'anti_inflammatory',
+        'balanced',
+    ];
+    const focuses = userFocuses.filter((f) => validFocuses.includes(f));
+    try {
+        const result = await (0, foodComparison_1.compareFoodsWithAI)(foods, focuses);
+        return result;
+    }
+    catch (error) {
+        console.error('Error comparing foods with AI:', error);
+        throw new v2_1.https.HttpsError('internal', 'Failed to compare foods');
+    }
+});
+/**
+ * Grade a food for all 10 wellness focuses using AI
+ *
+ * Uses GPT-4o-mini for cost efficiency (~$0.0003 per grading)
+ * Returns grades A-F for each focus based on a consistent rubric
+ *
+ * Params:
+ * - nutrition: GradingNutritionData with name, calories, protein, carbs, fat, fiber, sugar, sodium
+ *   and optional: saturatedFat, transFat, cholesterol, potassium, calcium, iron, magnesium
+ *
+ * Returns:
+ * - focusGrades: Record<WellnessFocus, HealthGrade> (A-F for each of 10 focuses)
+ * - overallGrade: HealthGrade (overall wellness grade)
+ * - primaryConcerns: string[] (up to 3 main nutritional concerns)
+ * - strengths: string[] (up to 3 nutritional strengths)
+ */
+exports.gradeFoodAI = v2_1.https.onCall({
+    cors: true,
+    secrets: [gradingRubric_1.openaiApiKeyGrading],
+}, async (request) => {
+    var _a;
+    const { nutrition } = (_a = request.data) !== null && _a !== void 0 ? _a : {};
+    if (!nutrition || typeof nutrition !== 'object') {
+        throw new v2_1.https.HttpsError('invalid-argument', 'Nutrition data is required');
+    }
+    // Validate required fields
+    const requiredFields = ['name', 'calories', 'protein', 'carbs', 'fat', 'fiber', 'sugar', 'sodium'];
+    for (const field of requiredFields) {
+        if (nutrition[field] === undefined || nutrition[field] === null) {
+            throw new v2_1.https.HttpsError('invalid-argument', `Missing required field: ${field}`);
+        }
+    }
+    try {
+        const result = await (0, gradingRubric_1.gradeFoodWithAI)(nutrition);
+        return result;
+    }
+    catch (error) {
+        console.error('Error grading food with AI:', error);
+        throw new v2_1.https.HttpsError('internal', 'Failed to grade food');
     }
 });
 //# sourceMappingURL=index.js.map

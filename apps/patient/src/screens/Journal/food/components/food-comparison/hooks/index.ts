@@ -3,3 +3,4 @@
  */
 
 export { useFoodComparison } from './useFoodComparison';
+export { useMultiFoodComparison } from './useMultiFoodComparison';

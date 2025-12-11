@@ -2,7 +2,7 @@
  * ScanCaptureStep - Camera/gallery capture for menu scanning
  */
 
-import { Camera, Image, FileText } from 'lucide-react';
+import { Camera, Image, FileText, CameraOff } from 'lucide-react';
 
 interface ScanCaptureStepProps {
   videoRef: React.RefObject<HTMLVideoElement>;
@@ -10,6 +10,7 @@ interface ScanCaptureStepProps {
   imageData: string | null;
   error: string | null;
   onStartCamera: () => void;
+  onStopCamera: () => void;
   onCapturePhoto: () => void;
   onFileUpload: (event: React.ChangeEvent<HTMLInputElement>) => void;
   fileInputRef: React.RefObject<HTMLInputElement>;
@@ -21,6 +22,7 @@ export function ScanCaptureStep({
   imageData,
   error,
   onStartCamera,
+  onStopCamera,
   onCapturePhoto,
   onFileUpload,
   fileInputRef,
@@ -91,32 +93,40 @@ export function ScanCaptureStep({
       </div>
 
       {/* Action buttons */}
-      <div className="grid grid-cols-2 gap-3">
+      <div className="flex gap-3">
         {!isStreaming ? (
           <>
             <button
               onClick={onStartCamera}
-              className="flex items-center justify-center gap-2 py-3.5 rounded-xl bg-gradient-to-r from-teal-500/90 to-cyan-500/90 text-white font-semibold text-sm shadow-lg shadow-teal-500/20 hover:shadow-teal-500/30 active:scale-[0.98] transition-all"
+              className="flex-1 flex items-center justify-center gap-2 py-3.5 rounded-xl bg-gradient-to-r from-teal-500/90 to-cyan-500/90 text-white font-semibold text-sm shadow-lg shadow-teal-500/20 hover:shadow-teal-500/30 active:scale-[0.98] transition-all"
             >
               <Camera size={18} />
               Camera
             </button>
             <button
               onClick={() => fileInputRef.current?.click()}
-              className="flex items-center justify-center gap-2 py-3.5 rounded-xl bg-white/[0.04] border border-white/[0.08] text-text-primary font-semibold text-sm hover:bg-white/[0.06] active:scale-[0.98] transition-all"
+              className="flex-1 flex items-center justify-center gap-2 py-3.5 rounded-xl bg-white/[0.04] border border-white/[0.08] text-text-primary font-semibold text-sm hover:bg-white/[0.06] active:scale-[0.98] transition-all"
             >
               <Image size={18} />
               Gallery
             </button>
           </>
         ) : (
-          <button
-            onClick={onCapturePhoto}
-            className="col-span-2 flex items-center justify-center gap-2 py-4 rounded-xl bg-gradient-to-r from-teal-500/90 to-cyan-500/90 text-white font-bold text-sm shadow-lg shadow-teal-500/20 hover:shadow-teal-500/30 active:scale-[0.98] transition-all"
-          >
-            <Camera size={20} />
-            Capture Menu
-          </button>
+          <>
+            <button
+              onClick={onStopCamera}
+              className="py-3.5 px-4 rounded-xl bg-white/[0.04] border border-white/[0.08] text-text-muted hover:bg-white/[0.06] hover:text-text-primary active:scale-[0.98] transition-all"
+            >
+              <CameraOff size={18} />
+            </button>
+            <button
+              onClick={onCapturePhoto}
+              className="flex-1 flex items-center justify-center gap-2 py-4 rounded-xl bg-gradient-to-r from-teal-500/90 to-cyan-500/90 text-white font-bold text-sm shadow-lg shadow-teal-500/20 hover:shadow-teal-500/30 active:scale-[0.98] transition-all"
+            >
+              <Camera size={20} />
+              Capture Menu
+            </button>
+          </>
         )}
       </div>
 

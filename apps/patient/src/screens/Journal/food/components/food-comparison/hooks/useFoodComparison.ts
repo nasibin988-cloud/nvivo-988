@@ -42,7 +42,7 @@ export function useFoodComparison(): UseFoodComparisonReturn {
 
   const analyzeFood = useCallback(
     (food: FoodInput, slot: 1 | 2) => {
-      const { grade, reason } = calculateHealthGrade(food);
+      const { grade, reason, overallScore, focusScores } = calculateHealthGrade(food, ['balanced']);
       const nutrientScores = calculateNutrientScores(food);
       const conditionImpacts = calculateConditionImpacts(food, userConditions);
 
@@ -50,6 +50,9 @@ export function useFoodComparison(): UseFoodComparisonReturn {
         ...food,
         healthGrade: grade,
         gradeReason: reason,
+        overallScore,
+        focusScores,
+        focusImpacts: [], // Legacy hook - no focus impacts
         nutrientScores,
         conditionImpacts,
         alternatives: generateAlternatives({ ...food, healthGrade: grade }),

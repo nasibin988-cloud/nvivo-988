@@ -29,6 +29,7 @@ export default function MenuScannerModal({
     videoRef,
     isStreaming,
     startCamera,
+    stopCamera,
     capturePhoto,
     cameraError,
   } = useCamera();
@@ -122,6 +123,7 @@ export default function MenuScannerModal({
               imageData={imageData}
               error={error || cameraError}
               onStartCamera={startCamera}
+              onStopCamera={stopCamera}
               onCapturePhoto={handleCapturePhoto}
               onFileUpload={handleFileUpload}
               fileInputRef={fileInputRef}

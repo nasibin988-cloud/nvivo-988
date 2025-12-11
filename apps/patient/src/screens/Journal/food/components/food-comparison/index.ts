@@ -9,7 +9,7 @@ export * from './types';
 export * from './utils';
 
 // Hooks
-export { useFoodComparison } from './hooks';
+export { useFoodComparison, useMultiFoodComparison } from './hooks';
 
 // Components
 export {
@@ -19,4 +19,7 @@ export {
   FoodAnalysisCard,
   FoodInputForm,
   FoodCaptureModal,
+  FoodInputCard,
+  ComparisonResultsView,
+  MultiComparisonModal,
 } from './components';

@@ -7,11 +7,12 @@
 
 import { getFirestore } from 'firebase-admin/firestore';
 import { getAuth } from 'firebase-admin/auth';
-import { TEST_PATIENT_PROFILE, TEST_CLINICIAN_ID, TEST_CLINICIAN_PROFILE } from './config/testPatient';
+import { TEST_PATIENT_PROFILE, TEST_CLINICIAN_ID, TEST_CLINICIAN_PROFILE, TEST_PATIENT_NUTRITION_PROFILE } from './config/testPatient';
 import { seedMicroWins, clearMicroWins } from './seedMicroWins';
 import { seedCareData, clearCareData } from './seedCareData';
 import { seedCardiacHealth, clearCardiacHealth } from './seedCardiacHealth';
 import { seedHealthTrends, clearHealthTrends } from './seedHealthTrends';
+import { seedNutritionTargets, clearNutritionTargets } from './seedNutritionTargets';
 // Re-export seedArticles for convenience
 export { seedArticles, clearArticles } from './seedArticles';
 
@@ -86,6 +87,13 @@ export async function seedTestPatient(): Promise<{ success: boolean; patientId: 
     console.log('Seeding health trends data...');
     await seedHealthTrends({ patientId, daysToSeed: 365 });
 
+    // 10. Seed personalized nutrition targets (DRI-based)
+    console.log('Seeding nutrition targets...');
+    await seedNutritionTargets({
+      patientId,
+      nutritionProfile: TEST_PATIENT_NUTRITION_PROFILE,
+    });
+
     console.log('Test patient seed complete!');
     return {
       success: true,
@@ -134,6 +142,9 @@ export async function deleteTestPatient(): Promise<{ success: boolean }> {
 
     // Clear health trends
     await clearHealthTrends(patientId);
+
+    // Clear nutrition targets
+    await clearNutritionTargets(patientId);
 
     // Clear streaks
     const streaksSnapshot = await db

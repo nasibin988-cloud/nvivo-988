@@ -71,3 +71,14 @@ export {
   formatScoreWithEmoji,
   type WeeklyNutritionData,
 } from './useWeeklyNutrition';
+
+// Personalized Daily Values for food comparison
+export {
+  usePersonalizedDV,
+  useDVConfig,
+  usePercentDV,
+  personalizedDVKeys,
+  FDA_BASELINE_DVS,
+  type DVConfig,
+  type PersonalizedDVs,
+} from './usePersonalizedDV';

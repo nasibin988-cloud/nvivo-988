@@ -6,16 +6,20 @@
  * Update the model version here to change it everywhere.
  */
 Object.defineProperty(exports, "__esModule", { value: true });
-exports.OPENAI_CONFIG = exports.OPENAI_MODEL = void 0;
+exports.OPENAI_CONFIG = exports.OPENAI_MODEL_MINI = exports.OPENAI_MODEL = void 0;
 exports.getModelConfig = getModelConfig;
 /**
- * The OpenAI model to use for all AI operations.
+ * The OpenAI model to use for complex AI operations.
  * Updated: December 2025
  */
 exports.OPENAI_MODEL = 'gpt-5.1-2025-11-13';
 /**
+ * Mini model for simple, cost-effective tasks (grading, comparisons)
+ * GPT-4o-mini is ~10-20x cheaper than full models
+ */
+exports.OPENAI_MODEL_MINI = 'gpt-4o-mini';
+/**
  * Model configuration for different use cases
- * Note: Using max_completion_tokens (not max_tokens) for GPT-5.x models
  */
 exports.OPENAI_CONFIG = {
     // Vision tasks (food analysis, menu scanning)
@@ -40,6 +44,18 @@ exports.OPENAI_CONFIG = {
     assessment: {
         model: exports.OPENAI_MODEL,
         maxCompletionTokens: 2000,
+        temperature: 0.3,
+    },
+    // Simple grading tasks (use mini model for cost savings)
+    grading: {
+        model: exports.OPENAI_MODEL_MINI,
+        maxCompletionTokens: 500,
+        temperature: 0.2, // Low temp for consistent grading
+    },
+    // Simple comparison/verdict tasks (use mini model)
+    comparison: {
+        model: exports.OPENAI_MODEL_MINI,
+        maxCompletionTokens: 400,
         temperature: 0.3,
     },
 };

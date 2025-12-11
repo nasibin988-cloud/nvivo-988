@@ -4,6 +4,8 @@
  * Central configuration for the test patient used in development/seeding.
  */
 
+import type { NutritionUserProfile, ActivityLevel, NutritionGoal } from '../../types/nutrition';
+
 export const TEST_PATIENT_ID = 'sarah-mitchell-test';
 
 export const TEST_PATIENT_PROFILE = {
@@ -27,6 +29,32 @@ export const TEST_PATIENT_PROFILE = {
   },
   createdAt: new Date(),
   updatedAt: new Date(),
+};
+
+/**
+ * Test patient nutrition profile for DRI calculations
+ *
+ * Sarah Mitchell (39F):
+ * - 165 cm (5'5"), 62 kg (137 lbs)
+ * - Moderately active (exercises 3-4x/week)
+ * - Goal: Maintenance with heart health focus
+ * - No special conditions
+ *
+ * This generates personalized nutrition targets based on:
+ * - Mifflin-St Jeor for calorie needs (~1750 kcal)
+ * - Age/sex-specific DRIs for micronutrients
+ */
+export const TEST_PATIENT_NUTRITION_PROFILE: NutritionUserProfile = {
+  userId: TEST_PATIENT_ID, // Will be replaced with actual auth UID
+  dateOfBirth: '1985-03-15',
+  sex: 'female',
+  weightKg: 62,
+  heightCm: 165,
+  activityLevel: 'moderate' as ActivityLevel,
+  goal: 'maintenance' as NutritionGoal,
+  isPregnant: false,
+  isLactating: false,
+  conditions: [], // No special conditions for test patient
 };
 
 export const TEST_CLINICIAN_ID = 'test-clinician-001';

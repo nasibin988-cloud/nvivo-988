@@ -9,6 +9,8 @@ import { seedHealthTrends, clearHealthTrends } from './seed/seedHealthTrends';
 import { analyzeFoodPhoto as analyzeFoodPhotoFn, analyzeFoodText as analyzeFoodTextFn, openaiApiKey } from './domains/ai/foodAnalysis';
 import { scanMenuPhoto as scanMenuPhotoFn } from './domains/ai/menuScanning';
 import { searchFoods as searchFoodsFn, usdaApiKey } from './domains/ai/foodSearch';
+import { compareFoodsWithAI, openaiApiKeyComparison, type WellnessFocus, type ComparisonFoodData } from './domains/ai/foodComparison';
+import { gradeFoodWithAI, openaiApiKeyGrading, type GradingNutritionData } from './domains/ai/gradingRubric';
 
 // Nutrition evaluation functions
 import {
@@ -414,7 +416,17 @@ export const analyzeFoodPhoto = https.onCall(
       return result;
     } catch (error) {
       console.error('Error analyzing food photo:', error);
-      throw new https.HttpsError('internal', 'Failed to analyze food photo');
+      // Pass through meaningful error messages
+      const errorMessage = error instanceof Error ? error.message : 'Failed to analyze food photo';
+      // Use 'failed-precondition' for user-actionable errors
+      const isUserActionable =
+        errorMessage.toLowerCase().includes('no food') ||
+        errorMessage.toLowerCase().includes('too many items') ||
+        errorMessage.toLowerCase().includes('fewer food items');
+      if (isUserActionable) {
+        throw new https.HttpsError('failed-precondition', errorMessage);
+      }
+      throw new https.HttpsError('internal', errorMessage);
     }
   }
 );
@@ -545,6 +557,117 @@ export const analyzeFoodText = https.onCall(
     } catch (error) {
       console.error('Error analyzing food text:', error);
       throw new https.HttpsError('internal', 'Failed to analyze food description');
+    }
+  }
+);
+
+/**
+ * Compare multiple foods using AI to provide contextual insights
+ * Takes analyzed food data and user's wellness focuses, returns AI-generated comparison
+ *
+ * @param foods - Array of food nutrition data (2-5 foods)
+ * @param userFocuses - Array of wellness focus IDs the user cares about
+ *
+ * Returns:
+ * - verdict: Summary of which food is better and why
+ * - winnerIndex: Index of the best food (0-based) or null
+ * - contextualAnalysis: Deeper analysis of tradeoffs
+ * - focusInsights: Insights specific to each selected focus
+ * - surprises: Interesting nutritional facts
+ * - recommendation: Optional practical tip
+ */
+export const compareFoodsAI = https.onCall(
+  {
+    cors: true,
+    secrets: [openaiApiKeyComparison],
+  },
+  async (request) => {
+    const { foods, userFocuses = ['balanced'] } = request.data ?? {};
+
+    if (!foods || !Array.isArray(foods)) {
+      throw new https.HttpsError('invalid-argument', 'Foods array is required');
+    }
+
+    if (foods.length < 2 || foods.length > 5) {
+      throw new https.HttpsError('invalid-argument', 'Must provide 2-5 foods for comparison');
+    }
+
+    // Validate each food has required fields
+    for (const food of foods) {
+      if (!food.name || typeof food.calories !== 'number') {
+        throw new https.HttpsError('invalid-argument', 'Each food must have name and calories');
+      }
+    }
+
+    // Validate focuses
+    const validFocuses: WellnessFocus[] = [
+      'muscle_building',
+      'heart_health',
+      'energy_endurance',
+      'weight_management',
+      'brain_focus',
+      'gut_health',
+      'blood_sugar_balance',
+      'bone_joint_support',
+      'anti_inflammatory',
+      'balanced',
+    ];
+    const focuses = (userFocuses as string[]).filter((f): f is WellnessFocus =>
+      validFocuses.includes(f as WellnessFocus)
+    );
+
+    try {
+      const result = await compareFoodsWithAI(foods as ComparisonFoodData[], focuses);
+      return result;
+    } catch (error) {
+      console.error('Error comparing foods with AI:', error);
+      throw new https.HttpsError('internal', 'Failed to compare foods');
+    }
+  }
+);
+
+/**
+ * Grade a food for all 10 wellness focuses using AI
+ *
+ * Uses GPT-4o-mini for cost efficiency (~$0.0003 per grading)
+ * Returns grades A-F for each focus based on a consistent rubric
+ *
+ * Params:
+ * - nutrition: GradingNutritionData with name, calories, protein, carbs, fat, fiber, sugar, sodium
+ *   and optional: saturatedFat, transFat, cholesterol, potassium, calcium, iron, magnesium
+ *
+ * Returns:
+ * - focusGrades: Record<WellnessFocus, HealthGrade> (A-F for each of 10 focuses)
+ * - overallGrade: HealthGrade (overall wellness grade)
+ * - primaryConcerns: string[] (up to 3 main nutritional concerns)
+ * - strengths: string[] (up to 3 nutritional strengths)
+ */
+export const gradeFoodAI = https.onCall(
+  {
+    cors: true,
+    secrets: [openaiApiKeyGrading],
+  },
+  async (request) => {
+    const { nutrition } = request.data ?? {};
+
+    if (!nutrition || typeof nutrition !== 'object') {
+      throw new https.HttpsError('invalid-argument', 'Nutrition data is required');
+    }
+
+    // Validate required fields
+    const requiredFields = ['name', 'calories', 'protein', 'carbs', 'fat', 'fiber', 'sugar', 'sodium'];
+    for (const field of requiredFields) {
+      if (nutrition[field] === undefined || nutrition[field] === null) {
+        throw new https.HttpsError('invalid-argument', `Missing required field: ${field}`);
+      }
+    }
+
+    try {
+      const result = await gradeFoodWithAI(nutrition as GradingNutritionData);
+      return result;
+    } catch (error) {
+      console.error('Error grading food with AI:', error);
+      throw new https.HttpsError('internal', 'Failed to grade food');
     }
   }
 );

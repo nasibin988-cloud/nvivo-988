@@ -16,6 +16,7 @@ const seedMicroWins_1 = require("./seedMicroWins");
 const seedCareData_1 = require("./seedCareData");
 const seedCardiacHealth_1 = require("./seedCardiacHealth");
 const seedHealthTrends_1 = require("./seedHealthTrends");
+const seedNutritionTargets_1 = require("./seedNutritionTargets");
 // Re-export seedArticles for convenience
 var seedArticles_1 = require("./seedArticles");
 Object.defineProperty(exports, "seedArticles", { enumerable: true, get: function () { return seedArticles_1.seedArticles; } });
@@ -79,6 +80,12 @@ async function seedTestPatient() {
         // 9. Seed comprehensive health trends (365 days of metrics)
         console.log('Seeding health trends data...');
         await (0, seedHealthTrends_1.seedHealthTrends)({ patientId, daysToSeed: 365 });
+        // 10. Seed personalized nutrition targets (DRI-based)
+        console.log('Seeding nutrition targets...');
+        await (0, seedNutritionTargets_1.seedNutritionTargets)({
+            patientId,
+            nutritionProfile: testPatient_1.TEST_PATIENT_NUTRITION_PROFILE,
+        });
         console.log('Test patient seed complete!');
         return {
             success: true,
@@ -122,6 +129,8 @@ async function deleteTestPatient() {
         await (0, seedCardiacHealth_1.clearCardiacHealth)(patientId);
         // Clear health trends
         await (0, seedHealthTrends_1.clearHealthTrends)(patientId);
+        // Clear nutrition targets
+        await (0, seedNutritionTargets_1.clearNutritionTargets)(patientId);
         // Clear streaks
         const streaksSnapshot = await db
             .collection('patients')

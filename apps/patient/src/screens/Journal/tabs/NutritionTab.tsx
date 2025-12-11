@@ -25,6 +25,7 @@ import {
   FileText,
   Scale,
   Sparkles,
+  Calculator,
 } from 'lucide-react';
 import { ViewToggle } from '@nvivo/ui';
 import { useFoodLogs, useWaterIntake, useFoodLogsHistory, useWaterStreak, type FoodLog, type MealType } from '../../../hooks/nutrition';
@@ -55,6 +56,7 @@ import {
   LogMealModal,
   EditMealModal,
   MacroGoalsModal,
+  DVCalculatorModal,
 } from '../nutrition/modals';
 
 import {
@@ -76,6 +78,7 @@ export default function NutritionTab(): React.ReactElement {
   const [showMenuScanner, setShowMenuScanner] = useState(false);
   const [showFoodComparison, setShowFoodComparison] = useState(false);
   const [showSmartFeatures, setShowSmartFeatures] = useState(false);
+  const [showDVCalculator, setShowDVCalculator] = useState(false);
   const [showGoalsModal, setShowGoalsModal] = useState(false);
   const [customTargets, setCustomTargets] = useState<Partial<NutritionTargets> | null>(null);
   const [editingMeal, setEditingMeal] = useState<FoodLog | null>(null);
@@ -448,8 +451,8 @@ export default function NutritionTab(): React.ReactElement {
             </button>
           </div>
 
-          {/* Smart Features & Food Compare Buttons */}
-          <div className="grid grid-cols-2 gap-2">
+          {/* Smart Features, Food Compare, & DV Calculator Buttons */}
+          <div className="grid grid-cols-3 gap-2">
             <button
               onClick={() => setShowSmartFeatures(true)}
               className="py-2.5 rounded-xl bg-gradient-to-r from-violet-500/[0.08] to-purple-500/[0.05] border border-violet-500/20 hover:border-violet-500/30 flex items-center justify-center gap-2 transition-all group"
@@ -463,6 +466,13 @@ export default function NutritionTab(): React.ReactElement {
             >
               <Scale size={16} className="text-amber-400 group-hover:scale-110 transition-transform" />
               <span className="text-xs font-medium text-amber-400">Compare</span>
+            </button>
+            <button
+              onClick={() => setShowDVCalculator(true)}
+              className="py-2.5 rounded-xl bg-gradient-to-r from-cyan-500/[0.06] to-blue-500/[0.04] border border-cyan-500/20 hover:border-cyan-500/30 flex items-center justify-center gap-2 transition-all group"
+            >
+              <Calculator size={16} className="text-cyan-400 group-hover:scale-110 transition-transform" />
+              <span className="text-xs font-medium text-cyan-400">My DVs</span>
             </button>
           </div>
 
@@ -651,6 +661,17 @@ export default function NutritionTab(): React.ReactElement {
           nutrientId={selectedNutrient}
           currentIntake={dailyTotals[selectedNutrient as keyof typeof dailyTotals]}
           onClose={() => setSelectedNutrient(null)}
+        />
+      )}
+
+      {/* DV Calculator Modal */}
+      {showDVCalculator && (
+        <DVCalculatorModal
+          onClose={() => setShowDVCalculator(false)}
+          onSaved={() => {
+            // Could trigger a refetch of nutrition targets here
+            console.log('Personalized DVs saved');
+          }}
         />
       )}
     </div>

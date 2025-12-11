@@ -5,7 +5,7 @@
  */
 
 import { useState, useEffect, useRef, useCallback } from 'react';
-import { X, Camera, Image, Loader2, RefreshCw, Check, AlertCircle } from 'lucide-react';
+import { X, Camera, Image, Loader2, RefreshCw, Check, AlertCircle, CameraOff } from 'lucide-react';
 import { useFoodAI, type AnalyzedFoodItem } from '../../../../../../hooks/useFoodAI';
 
 interface FoodCaptureModalProps {
@@ -135,13 +135,12 @@ export function FoodCaptureModal({
     startCamera();
   };
 
-  // Start camera on mount
+  // Cleanup camera on unmount (but don't auto-start)
   useEffect(() => {
-    startCamera();
     return () => {
       stopCamera();
     };
-  }, [startCamera, stopCamera]);
+  }, [stopCamera]);
 
   return (
     <div className="fixed inset-0 z-[110] flex items-end sm:items-center justify-center bg-black/90 backdrop-blur-md">
@@ -217,14 +216,31 @@ export function FoodCaptureModal({
                   <Image size={18} />
                   Upload
                 </button>
-                <button
-                  onClick={capturePhoto}
-                  disabled={!isStreaming}
-                  className="flex-1 py-3 rounded-xl font-semibold text-sm bg-emerald-500/15 border border-emerald-500/30 text-emerald-400 hover:bg-emerald-500/20 disabled:opacity-40 disabled:cursor-not-allowed transition-all flex items-center justify-center gap-2"
-                >
-                  <Camera size={18} />
-                  Capture
-                </button>
+                {isStreaming ? (
+                  <>
+                    <button
+                      onClick={stopCamera}
+                      className="py-3 px-4 rounded-xl font-medium text-sm bg-white/[0.04] border border-white/[0.08] text-text-muted hover:bg-white/[0.06] hover:text-text-primary transition-all flex items-center justify-center gap-2"
+                    >
+                      <CameraOff size={18} />
+                    </button>
+                    <button
+                      onClick={capturePhoto}
+                      className="flex-1 py-3 rounded-xl font-semibold text-sm bg-emerald-500/15 border border-emerald-500/30 text-emerald-400 hover:bg-emerald-500/20 transition-all flex items-center justify-center gap-2"
+                    >
+                      <Camera size={18} />
+                      Capture
+                    </button>
+                  </>
+                ) : (
+                  <button
+                    onClick={startCamera}
+                    className="flex-1 py-3 rounded-xl font-semibold text-sm bg-emerald-500/15 border border-emerald-500/30 text-emerald-400 hover:bg-emerald-500/20 transition-all flex items-center justify-center gap-2"
+                  >
+                    <Camera size={18} />
+                    Open Camera
+                  </button>
+                )}
               </div>
 
               <input

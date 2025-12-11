@@ -7,6 +7,9 @@
 import { Sun, Coffee, Sunset, Moon } from 'lucide-react';
 import type { MealTypeConfig, MacroConfig } from './types';
 
+// Re-export feature flags from types
+export { PHOTO_ANALYSIS_FEATURES } from './types';
+
 export const MEAL_TYPES: MealTypeConfig[] = [
   { type: 'breakfast', label: 'Breakfast', icon: Sun, color: 'amber' },
   { type: 'lunch', label: 'Lunch', icon: Coffee, color: 'emerald' },
@@ -65,9 +68,10 @@ export const NUTRIENT_DISPLAY_CONFIG = {
   saturatedFat: { label: 'Saturated Fat', unit: 'g', color: '#f97316', dailyValue: 20 },
   monounsaturatedFat: { label: 'Monounsat. Fat', unit: 'g', color: '#84cc16', dailyValue: undefined },
   polyunsaturatedFat: { label: 'Polyunsat. Fat', unit: 'g', color: '#22d3ee', dailyValue: undefined },
-  transFat: { label: 'Trans Fat', unit: 'g', color: '#ef4444', dailyValue: 0 },
-  omega3: { label: 'Omega-3', unit: 'g', color: '#06b6d4', dailyValue: 1.6 },
+  transFat: { label: 'Trans Fat', unit: 'g', color: '#ef4444', dailyValue: 0, noDV: true, warningText: 'Minimize' },
+  omega3: { label: 'Omega-3 (ALA)', unit: 'g', color: '#06b6d4', dailyValue: 1.6 },
   omega6: { label: 'Omega-6', unit: 'g', color: '#8b5cf6', dailyValue: 17 },
+  epaDha: { label: 'EPA + DHA', unit: 'mg', color: '#0ea5e9', dailyValue: 500, source: 'AHA' },
   cholesterol: { label: 'Cholesterol', unit: 'mg', color: '#dc2626', dailyValue: 300 },
 
   // Minerals

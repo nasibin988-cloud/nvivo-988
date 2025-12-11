@@ -11,6 +11,20 @@
  *   3. Tiered model selection (simple vs complex meals)
  */
 
+// ============================================================================
+// FEATURE FLAGS
+// ============================================================================
+
+/**
+ * Feature flags for food analysis
+ * Set ENABLE_INGREDIENT_BREAKDOWN to true to request ingredient-level breakdown
+ * This increases output tokens ~2-3x but provides detailed ingredient analysis
+ */
+export const FOOD_ANALYSIS_FEATURES = {
+  /** Enable ingredient breakdown for analyzed foods */
+  ENABLE_INGREDIENT_BREAKDOWN: false,
+} as const;
+
 import OpenAI from 'openai';
 import { defineSecret } from 'firebase-functions/params';
 import { OPENAI_CONFIG } from '../../config/openai';
@@ -98,6 +112,22 @@ export interface CompleteNutritionFields extends ExtendedNutritionFields {
   water?: number;
 }
 
+/**
+ * Individual ingredient within a food item
+ * Only populated when ENABLE_INGREDIENT_BREAKDOWN is true
+ */
+export interface FoodIngredient {
+  name: string;
+  quantity: number;
+  unit: string;
+  calories: number;
+  protein: number;
+  carbs: number;
+  fat: number;
+  /** Percentage of the total dish this ingredient represents (0-100) */
+  percentOfDish?: number;
+}
+
 export interface AnalyzedFood extends Partial<CompleteNutritionFields> {
   name: string;
   quantity: number;
@@ -109,6 +139,8 @@ export interface AnalyzedFood extends Partial<CompleteNutritionFields> {
   fiber?: number;
   confidence: number;
   servingMultiplier?: number;
+  /** Ingredient breakdown (only present when ENABLE_INGREDIENT_BREAKDOWN is true) */
+  ingredients?: FoodIngredient[];
 }
 
 export interface FoodAnalysisResult {
@@ -164,12 +196,34 @@ export interface FoodAnalysisResult {
 // ============================================================================
 
 /**
+ * Ingredient JSON structure (only used when feature is enabled)
+ */
+const INGREDIENT_JSON_STRUCTURE = `{
+        "name": "Ingredient Name",
+        "quantity": 100,
+        "unit": "g",
+        "calories": 50,
+        "protein": 2,
+        "carbs": 8,
+        "fat": 1,
+        "percentOfDish": 25
+      }`;
+
+/**
  * Complete JSON structure for food analysis response
  */
-const COMPLETE_JSON_STRUCTURE = `{
+function getCompleteJsonStructure(): string {
+  const ingredientsField = FOOD_ANALYSIS_FEATURES.ENABLE_INGREDIENT_BREAKDOWN
+    ? `,
+      "ingredients": [
+        ${INGREDIENT_JSON_STRUCTURE}
+      ]`
+    : '';
+
+  return `{
       "name": "Food Name",
       "quantity": 1,
-      "unit": "serving size",
+      "unit": "burger",
       "calories": 200,
       "protein": 10,
       "carbs": 25,
@@ -207,8 +261,9 @@ const COMPLETE_JSON_STRUCTURE = `{
       "alcohol": 0,
       "water": 50,
       "servingMultiplier": 1.0,
-      "confidence": 0.85
+      "confidence": 0.85${ingredientsField}
     }`;
+}
 
 /**
  * Complete nutrient request list
@@ -268,25 +323,63 @@ OTHER:
 39. Your confidence level (0-1) in the identification`;
 
 /**
+ * Ingredient breakdown instructions (only used when feature is enabled)
+ */
+const INGREDIENT_BREAKDOWN_INSTRUCTIONS = `
+40. For composite dishes (e.g., pasta alfredo, sandwiches, salads), also provide an "ingredients" array breaking down the main components:
+    - Each ingredient should have: name, quantity (in grams), unit, calories, protein, carbs, fat
+    - Include percentOfDish (0-100) showing what portion of the total dish each ingredient represents
+    - The sum of all ingredient calories should approximately equal the total dish calories
+    - Focus on the 3-8 main ingredients, not every minor component`;
+
+/**
  * Generate food analysis prompt - always returns complete nutrition
  */
 function getFoodAnalysisPrompt(): string {
+  const ingredientInstructions = FOOD_ANALYSIS_FEATURES.ENABLE_INGREDIENT_BREAKDOWN
+    ? INGREDIENT_BREAKDOWN_INSTRUCTIONS
+    : '';
+
   return `You are a nutrition expert analyzing a food photo. Analyze this image and provide comprehensive nutrition including all vitamins, minerals, and micronutrients.
 
-For each food item you can identify, provide:
-${COMPLETE_NUTRIENT_LIST}
+IMPORTANT RULES:
+
+1. Identify foods as complete dishes, NOT broken down by ingredients:
+   - A cheeseburger is ONE item called "Cheeseburger", not separate bun, patty, cheese, lettuce, etc.
+   - A sandwich is ONE item, not bread + fillings
+   - A salad is ONE item (e.g., "Caesar Salad"), not lettuce + croutons + dressing
+   - A pizza slice is ONE item, not crust + sauce + cheese + toppings
+   - Only list SEPARATE food types as separate items (e.g., "Burger" and "French Fries" and "Soda" = 3 items)
+
+2. COUNT ALL visible items and set the quantity accordingly:
+   - If there are 3 tacos, set quantity: 3 (not 1)
+   - If there are 2 slices of pizza, set quantity: 2
+   - If there's a plate of 12 cookies, set quantity: 12
+   - The nutrition values should reflect the TOTAL for all items of that type
+
+3. Use SIMPLE units based on count:
+   - For countable items use the item name as unit: "burger", "taco", "slice", "cookie", "egg"
+   - For non-countable items use standard measures: "cup", "bowl", "oz", "serving"
+   - Do NOT include descriptions in the unit (no "approx 1/3 lb patty with bacon...")
+
+4. If NO FOOD is visible in the image (e.g., a selfie, landscape, object, or unclear image):
+   - Return an empty items array: "items": []
+   - This is important - do not make up food if none is visible
+
+For each food item (as a complete dish), provide:
+${COMPLETE_NUTRIENT_LIST}${ingredientInstructions}
 
 Also determine the meal type based on the foods present (breakfast, lunch, dinner, snack, or unknown).
 
 Respond ONLY with a valid JSON object in this exact format:
 {
   "items": [
-    ${COMPLETE_JSON_STRUCTURE}
+    ${getCompleteJsonStructure()}
   ],
   "mealType": "lunch"
 }
 
-Be accurate with portion sizes and nutritional values based on USDA data. If you cannot identify a food item clearly, still make your best estimate but use a lower confidence score.`;
+Be accurate with portion sizes and nutritional values based on USDA data. The nutrition should reflect the COMPLETE dish (all components combined). If you cannot identify a food item clearly, still make your best estimate but use a lower confidence score.`;
 }
 
 // Default prompt (exported for testing/reference)
@@ -541,11 +634,11 @@ function calculateTotals(items: AnalyzedFood[]): CompleteTotals {
 const MODEL_CONFIG = {
   fast: {
     model: 'gpt-4o-mini',
-    maxCompletionTokens: 2000,
+    maxCompletionTokens: 3000,
   },
   full: {
     model: OPENAI_CONFIG.vision.model,
-    maxCompletionTokens: 2000,
+    maxCompletionTokens: 4000,
   },
 } as const;
 
@@ -611,9 +704,42 @@ export async function analyzeFoodPhoto(
       temperature: 0.3,
     });
 
-    const content = response.choices[0]?.message?.content;
+    const choice = response.choices[0];
+    const content = choice?.message?.content;
+
+    // Always log response info for debugging
+    console.log('OpenAI response received:', {
+      model: response.model,
+      finishReason: choice?.finish_reason,
+      hasContent: !!content,
+      contentLength: content?.length ?? 0,
+      choicesCount: response.choices.length,
+    });
+
     if (!content) {
-      throw new Error('No response from OpenAI');
+      console.error('OpenAI empty response details:', JSON.stringify({
+        choices: response.choices,
+        usage: response.usage,
+        model: response.model,
+      }, null, 2));
+
+      // Check if it was a content moderation issue
+      if (choice?.finish_reason === 'content_filter') {
+        throw new Error('Image was flagged by content filter. Please try a different photo.');
+      }
+
+      // Check if response was cut off
+      if (choice?.finish_reason === 'length') {
+        throw new Error('Response was truncated. Please try again.');
+      }
+
+      throw new Error('No response from OpenAI. The image may not have been recognized as food.');
+    }
+
+    // Check if response was truncated (even with content)
+    if (choice?.finish_reason === 'length') {
+      console.warn('Response truncated - finish_reason is "length"');
+      throw new Error('Too many items to analyze at once. Please take a photo of fewer food items (1-5 items works best).');
     }
 
     return parseAnalysisResponse(content);
@@ -630,10 +756,15 @@ export async function analyzeFoodPhoto(
 /**
  * Text-based food analysis prompt
  */
-const TEXT_ANALYSIS_PROMPT = `You are a nutrition expert. Analyze the following food description and provide comprehensive nutrition including all vitamins, minerals, and micronutrients.
+function getTextAnalysisPrompt(): string {
+  const ingredientInstructions = FOOD_ANALYSIS_FEATURES.ENABLE_INGREDIENT_BREAKDOWN
+    ? INGREDIENT_BREAKDOWN_INSTRUCTIONS
+    : '';
+
+  return `You are a nutrition expert. Analyze the following food description and provide comprehensive nutrition including all vitamins, minerals, and micronutrients.
 
 For each food item in the description, provide:
-${COMPLETE_NUTRIENT_LIST}
+${COMPLETE_NUTRIENT_LIST}${ingredientInstructions}
 
 Use typical/average portion sizes that people commonly eat:
 - A typical breakfast egg = 1 large egg
@@ -646,16 +777,17 @@ Use typical/average portion sizes that people commonly eat:
 Respond ONLY with a valid JSON object in this exact format:
 {
   "items": [
-    ${COMPLETE_JSON_STRUCTURE}
+    ${getCompleteJsonStructure()}
   ],
   "mealType": "lunch",
   "description": "Brief description of the meal"
 }
 
 Be accurate with nutritional values based on USDA data when possible. If quantities are specified in the input, use those instead of typical portions.`;
+}
 
 // Default text prompt (exported for testing/reference)
-export const TEXT_FOOD_ANALYSIS_PROMPT = TEXT_ANALYSIS_PROMPT;
+export const TEXT_FOOD_ANALYSIS_PROMPT = getTextAnalysisPrompt();
 
 /**
  * Analyze a text description of food
@@ -730,7 +862,7 @@ async function callTextAnalysisAI(
     const response = await openai.chat.completions.create({
       model: config.model,
       messages: [
-        { role: 'system', content: TEXT_ANALYSIS_PROMPT },
+        { role: 'system', content: getTextAnalysisPrompt() },
         { role: 'user', content: `Analyze this food: ${foodDescription}` },
       ],
       max_completion_tokens: config.maxCompletionTokens,
@@ -754,6 +886,30 @@ async function callTextAnalysisAI(
 // ============================================================================
 
 /**
+ * Parse ingredients array from item (only when feature is enabled)
+ */
+function parseIngredients(rawIngredients: unknown): FoodIngredient[] | undefined {
+  if (!FOOD_ANALYSIS_FEATURES.ENABLE_INGREDIENT_BREAKDOWN) {
+    return undefined;
+  }
+
+  if (!Array.isArray(rawIngredients) || rawIngredients.length === 0) {
+    return undefined;
+  }
+
+  return rawIngredients.map((ing: Record<string, unknown>) => ({
+    name: String(ing.name || 'Unknown ingredient'),
+    quantity: Number(ing.quantity) || 0,
+    unit: String(ing.unit || 'g'),
+    calories: Math.round(Number(ing.calories) || 0),
+    protein: Math.round((Number(ing.protein) || 0) * 10) / 10,
+    carbs: Math.round((Number(ing.carbs) || 0) * 10) / 10,
+    fat: Math.round((Number(ing.fat) || 0) * 10) / 10,
+    percentOfDish: ing.percentOfDish ? Math.round(Number(ing.percentOfDish)) : undefined,
+  }));
+}
+
+/**
  * Parse AI response into FoodAnalysisResult
  */
 function parseAnalysisResponse(content: string): FoodAnalysisResult {
@@ -762,10 +918,17 @@ function parseAnalysisResponse(content: string): FoodAnalysisResult {
     throw new Error('Could not parse JSON from response');
   }
 
-  const parsed = JSON.parse(jsonMatch[0]);
+  let parsed;
+  try {
+    parsed = JSON.parse(jsonMatch[0]);
+  } catch (parseError) {
+    console.error('JSON parse error - likely truncated response:', parseError);
+    throw new Error('Too many items to analyze at once. Please take a photo of fewer food items (1-5 items works best).');
+  }
 
   const items: AnalyzedFood[] = (parsed.items || []).map((item: Record<string, unknown>) => {
     const nutritionFields = parseNutritionFields(item);
+    const ingredients = parseIngredients(item.ingredients);
 
     return {
       name: String(item.name || 'Unknown food'),
@@ -774,8 +937,14 @@ function parseAnalysisResponse(content: string): FoodAnalysisResult {
       ...nutritionFields,
       servingMultiplier: Number(item.servingMultiplier) || 1,
       confidence: Math.min(1, Math.max(0, Number(item.confidence) || 0.7)),
+      ...(ingredients && { ingredients }),
     };
   });
+
+  // Handle case where no food was detected in the image
+  if (items.length === 0) {
+    throw new Error('No food detected in this image. Please take a photo of food or a meal.');
+  }
 
   const totals = calculateTotals(items);
 

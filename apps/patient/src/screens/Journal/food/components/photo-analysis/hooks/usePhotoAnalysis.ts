@@ -182,7 +182,23 @@ export function usePhotoAnalysis(): UsePhotoAnalysisReturn {
     } catch (err) {
       console.error('Analysis failed:', err);
       // NO mock data fallback - show error to user
-      const errorMessage = err instanceof Error ? err.message : 'Failed to analyze food photo. Please try again.';
+      // Firebase callable functions wrap errors - extract the actual message
+      let errorMessage = 'Failed to analyze food photo. Please try again.';
+      if (err && typeof err === 'object') {
+        // Firebase errors have a 'message' property with the actual error
+        const firebaseErr = err as { message?: string; details?: string };
+        if (firebaseErr.message) {
+          // Check if it's a "no food detected" type error
+          if (firebaseErr.message.toLowerCase().includes('no food')) {
+            errorMessage = firebaseErr.message;
+          } else if (firebaseErr.message.includes('internal')) {
+            // Generic internal error - provide helpful message
+            errorMessage = 'Could not analyze this image. Please try a clearer photo of food.';
+          } else {
+            errorMessage = firebaseErr.message;
+          }
+        }
+      }
       setError(errorMessage);
       setStep('capture'); // Go back to capture step on error
     } finally {
@@ -205,7 +221,6 @@ export function usePhotoAnalysis(): UsePhotoAnalysisReturn {
     const totals = recalculateTotals(newItems, result.detailLevel);
 
     setResult({ ...result, items: newItems, ...totals });
-    setEditingItem(null);
   }, [result]);
 
   const handleRemoveItem = useCallback((index: number) => {
