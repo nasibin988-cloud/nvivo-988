@@ -1,19 +1,16 @@
 /**
  * CaptureStep Component
- * Photo capture and upload interface with nutrition detail level selection
+ * Photo capture and upload interface
+ * Note: Nutrition detail level selection moved to ReviewStep (shown AFTER analysis)
  */
 
 import { Camera, Upload, AlertCircle } from 'lucide-react';
-import type { NutritionDetailLevel } from '../types';
-import NutritionTierSelector from './NutritionTierSelector';
 
 interface CaptureStepProps {
   videoRef: React.RefObject<HTMLVideoElement>;
   isStreaming: boolean;
   imageData: string | null;
   error: string | null;
-  detailLevel: NutritionDetailLevel;
-  onDetailLevelChange: (level: NutritionDetailLevel) => void;
   onStartCamera: () => void;
   onCapturePhoto: () => void;
   onFileUpload: (event: React.ChangeEvent<HTMLInputElement>) => void;
@@ -25,8 +22,6 @@ export default function CaptureStep({
   isStreaming,
   imageData,
   error,
-  detailLevel,
-  onDetailLevelChange,
   onStartCamera,
   onCapturePhoto,
   onFileUpload,
@@ -34,11 +29,6 @@ export default function CaptureStep({
 }: CaptureStepProps): React.ReactElement {
   return (
     <div className="p-5 space-y-4">
-      {/* Nutrition Detail Level Selector - BEFORE taking photo */}
-      <NutritionTierSelector
-        selectedTier={detailLevel}
-        onTierChange={onDetailLevelChange}
-      />
 
       {/* Camera preview or placeholder */}
       <div className="aspect-[4/3] rounded-2xl overflow-hidden bg-gradient-to-br from-white/[0.02] to-white/[0.01] border border-white/[0.06] relative">

@@ -1,7 +1,8 @@
 /**
  * Photo Analysis Modal
  * AI-powered food photo analysis using GPT-4 Vision
- * Detail level is selected BEFORE analysis to optimize AI usage
+ * Analysis always returns complete nutrition data (35+ nutrients)
+ * User can toggle display level AFTER analysis to see more/less detail
  */
 
 import { useRef } from 'react';
@@ -33,7 +34,7 @@ export default function PhotoAnalysisModal({ onClose, onConfirm }: PhotoAnalysis
     selectedMealType,
     eatenAt,
     editingItem,
-    detailLevel,
+    displayLevel,
     setImageData,
     analyzeImage,
     handleRetry,
@@ -43,7 +44,7 @@ export default function PhotoAnalysisModal({ onClose, onConfirm }: PhotoAnalysis
     setSelectedMealType,
     setEatenAt,
     setEditingItem,
-    setDetailLevel,
+    setDisplayLevel,
     getConfirmResult,
   } = usePhotoAnalysis();
 
@@ -79,11 +80,11 @@ export default function PhotoAnalysisModal({ onClose, onConfirm }: PhotoAnalysis
   const getStepDescription = (): string => {
     switch (step) {
       case 'capture':
-        return 'Select detail level & take photo';
+        return 'Take or upload a food photo';
       case 'analyzing':
-        return `Analyzing (${detailLevel} mode)...`;
+        return 'Analyzing your food...';
       case 'review':
-        return 'Review & adjust';
+        return 'Review & adjust results';
     }
   };
 
@@ -119,8 +120,6 @@ export default function PhotoAnalysisModal({ onClose, onConfirm }: PhotoAnalysis
               isStreaming={isStreaming}
               imageData={imageData}
               error={error || cameraError}
-              detailLevel={detailLevel}
-              onDetailLevelChange={setDetailLevel}
               onStartCamera={startCamera}
               onCapturePhoto={handleCapturePhoto}
               onFileUpload={handleFileUpload}
@@ -139,6 +138,8 @@ export default function PhotoAnalysisModal({ onClose, onConfirm }: PhotoAnalysis
               selectedMealType={selectedMealType}
               eatenAt={eatenAt}
               editingItem={editingItem}
+              displayLevel={displayLevel}
+              onDisplayLevelChange={setDisplayLevel}
               onRetry={handleRetry}
               onMealTypeChange={setSelectedMealType}
               onTimeChange={setEatenAt}

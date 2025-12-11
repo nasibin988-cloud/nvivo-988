@@ -1,6 +1,9 @@
 /**
  * usePhotoAnalysis Hook
  * State management and analysis logic - NO mock data fallback
+ *
+ * Note: Analysis always returns complete nutrition data (35+ nutrients).
+ * The displayLevel is only used to filter what the UI shows to the user.
  */
 
 import { useState, useCallback } from 'react';
@@ -17,7 +20,7 @@ interface UsePhotoAnalysisReturn {
   selectedMealType: MealType;
   eatenAt: string;
   editingItem: number | null;
-  detailLevel: NutritionDetailLevel;
+  displayLevel: NutritionDetailLevel;
   setImageData: (data: string | null) => void;
   analyzeImage: (base64: string) => Promise<void>;
   handleRetry: () => void;
@@ -27,7 +30,7 @@ interface UsePhotoAnalysisReturn {
   setSelectedMealType: (type: MealType) => void;
   setEatenAt: (time: string) => void;
   setEditingItem: (index: number | null) => void;
-  setDetailLevel: (level: NutritionDetailLevel) => void;
+  setDisplayLevel: (level: NutritionDetailLevel) => void;
   getConfirmResult: () => AnalysisResult | null;
 }
 
@@ -148,7 +151,8 @@ export function usePhotoAnalysis(): UsePhotoAnalysisReturn {
   const [editingItem, setEditingItem] = useState<number | null>(null);
   const [selectedMealType, setSelectedMealType] = useState<MealType>('lunch');
   const [eatenAt, setEatenAt] = useState<string>(getCurrentTime);
-  const [detailLevel, setDetailLevel] = useState<NutritionDetailLevel>('essential');
+  // Display level controls UI filtering only - analysis always returns complete data
+  const [displayLevel, setDisplayLevel] = useState<NutritionDetailLevel>('essential');
 
   const analyzeImage = useCallback(async (base64: string) => {
     setStep('analyzing');
@@ -158,14 +162,15 @@ export function usePhotoAnalysis(): UsePhotoAnalysisReturn {
     try {
       const functions = getFunctions();
       const analyzeFn = httpsCallable<
-        { imageBase64: string; detailLevel: NutritionDetailLevel },
+        { imageBase64: string },
         AnalysisResult
       >(functions, 'analyzeFoodPhoto');
 
       const imageContent = base64.split(',')[1];
+      // Note: Analysis always returns complete nutrition data (35+ nutrients)
+      // The displayLevel only controls what the UI shows after analysis
       const response = await analyzeFn({
         imageBase64: imageContent,
-        detailLevel, // Pass the detail level to the AI function
       });
 
       setResult(response.data);
@@ -183,7 +188,7 @@ export function usePhotoAnalysis(): UsePhotoAnalysisReturn {
     } finally {
       setIsAnalyzing(false);
     }
-  }, [detailLevel]);
+  }, []);
 
   const handleRetry = useCallback(() => {
     setImageData(null);
@@ -263,7 +268,7 @@ export function usePhotoAnalysis(): UsePhotoAnalysisReturn {
     selectedMealType,
     eatenAt,
     editingItem,
-    detailLevel,
+    displayLevel,
     setImageData,
     analyzeImage,
     handleRetry,
@@ -273,7 +278,7 @@ export function usePhotoAnalysis(): UsePhotoAnalysisReturn {
     setSelectedMealType,
     setEatenAt,
     setEditingItem,
-    setDetailLevel,
+    setDisplayLevel,
     getConfirmResult,
   };
 }

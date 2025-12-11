@@ -1,18 +1,21 @@
 /**
  * NutritionSummary Component
- * Displays comprehensive nutrition data based on the analysis result's detail level
+ * Displays comprehensive nutrition data with user-toggleable detail level
+ * Analysis always returns complete data; this component filters what to display
  * - Essential: Calories, protein, carbs, fat, fiber, sugar, sodium
  * - Extended: + Vitamins, minerals, fat breakdown
  * - Complete: + All micronutrients, bioactive compounds, metadata
  */
 
 import type { LucideIcon } from 'lucide-react';
-import { Sparkles, Flame, Beef, Wheat, Droplets, Leaf, Heart, Pill, Activity } from 'lucide-react';
-import type { AnalysisResult } from '../types';
+import { Sparkles, Flame, Beef, Wheat, Droplets, Leaf, Heart, Pill, Activity, ChevronDown, ChevronUp } from 'lucide-react';
+import type { AnalysisResult, NutritionDetailLevel } from '../types';
 import { NUTRIENT_DISPLAY_CONFIG } from '../data';
 
 interface NutritionSummaryProps {
   result: AnalysisResult;
+  displayLevel: NutritionDetailLevel;
+  onDisplayLevelChange: (level: NutritionDetailLevel) => void;
 }
 
 interface NutrientRowProps {
@@ -65,24 +68,40 @@ function NutrientSection({ title, icon: Icon, iconColor, children }: NutrientSec
   );
 }
 
-export default function NutritionSummary({ result }: NutritionSummaryProps): React.ReactElement {
-  const { detailLevel } = result;
-  const showExtended = detailLevel === 'extended' || detailLevel === 'complete';
-  const showComplete = detailLevel === 'complete';
+export default function NutritionSummary({ result, displayLevel, onDisplayLevelChange }: NutritionSummaryProps): React.ReactElement {
+  // Display level controls what we show (user can toggle after analysis)
+  const showExtended = displayLevel === 'extended' || displayLevel === 'complete';
+  const showComplete = displayLevel === 'complete';
 
   const cfg = NUTRIENT_DISPLAY_CONFIG;
 
+  // Cycle through detail levels: essential -> extended -> complete -> essential
+  const cycleDetailLevel = () => {
+    const levels: NutritionDetailLevel[] = ['essential', 'extended', 'complete'];
+    const currentIndex = levels.indexOf(displayLevel);
+    const nextIndex = (currentIndex + 1) % levels.length;
+    onDisplayLevelChange(levels[nextIndex]);
+  };
+
   return (
     <div className="p-4 rounded-2xl bg-gradient-to-br from-violet-500/10 via-purple-500/5 to-fuchsia-500/10 border border-violet-500/20">
-      {/* Header */}
+      {/* Header with expandable detail level toggle */}
       <div className="flex items-center justify-between mb-4">
         <div className="flex items-center gap-2">
           <Sparkles size={14} className="text-violet-400" />
           <span className="text-xs font-semibold text-violet-300 uppercase tracking-wider">AI Analysis</span>
         </div>
-        <span className="text-[10px] px-2 py-0.5 rounded-full bg-violet-500/20 text-violet-300 capitalize">
-          {detailLevel}
-        </span>
+        <button
+          onClick={cycleDetailLevel}
+          className="flex items-center gap-1.5 text-[10px] px-2.5 py-1 rounded-full bg-violet-500/20 text-violet-300 capitalize hover:bg-violet-500/30 transition-colors"
+        >
+          {displayLevel}
+          {showComplete ? (
+            <ChevronUp size={12} />
+          ) : (
+            <ChevronDown size={12} />
+          )}
+        </button>
       </div>
 
       {/* Calories Hero */}

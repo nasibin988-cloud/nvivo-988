@@ -1,0 +1,466 @@
+{
+  "schemaVersion": "1.0",
+  "generatedFrom": ["DRI-Based Nutrient Evaluation Reference.docx", "Comprehensive DRI.docx"],
+  "lastUpdated": "2025-12-11",
+  "guidelineComparison": {
+    "sodium": {
+      "aha": { "value": 1500, "unit": "mg", "notes": "Ideal for most adults; <2,300 mg max" },
+      "dga_2020_2025": { "value": 2300, "unit": "mg", "notes": "Upper limit for general population" },
+      "who": { "value": 2000, "unit": "mg", "notes": "<5 g salt/day; Strong recommendation 2012" }
+    },
+    "saturated_fat": {
+      "aha": { "value": 6, "unit": "percent_of_calories", "notes": "For LDL lowering; 10% for general" },
+      "dga_2020_2025": { "value": 10, "unit": "percent_of_calories", "notes": "Ages 2+" },
+      "who": { "value": 10, "unit": "percent_of_calories", "notes": "2023 guideline" }
+    },
+    "added_sugars": {
+      "aha": { "value": 6, "unit": "percent_of_calories", "notes": "~25g women, ~36g men" },
+      "dga_2020_2025": { "value": 10, "unit": "percent_of_calories", "notes": "Ages 2+" },
+      "who": { "value": 10, "unit": "percent_of_calories", "notes": "Ideally <5%; Strong recommendation 2015" }
+    },
+    "trans_fat": {
+      "aha": { "recommendation": "eliminate" },
+      "dga_2020_2025": { "recommendation": "minimize" },
+      "who": { "value": 1, "unit": "percent_of_calories", "notes": "<2.2 g/day; 2023 guideline" }
+    },
+    "potassium": {
+      "who": { "value": 3510, "unit": "mg", "notes": "90 mmol/day; Conditional 2012" }
+    },
+    "fiber": {
+      "who": { "value": 25, "unit": "g", "notes": "Adults; 2023 guideline" }
+    },
+    "total_fat": {
+      "who": { "value": 30, "unit": "percent_of_calories", "notes": "Upper limit; 2023 guideline" }
+    }
+  },
+  "whoGuidelines": [
+    {
+      "nutrientId": "sodium",
+      "recommendation": "less_than",
+      "value": 2000,
+      "unit": "mg",
+      "strength": "strong",
+      "year": 2012,
+      "notes": ["Equivalent to <5 g salt/day"]
+    },
+    {
+      "nutrientId": "free_sugars",
+      "recommendation": "less_than",
+      "value": 10,
+      "unit": "percent_of_calories",
+      "strength": "strong",
+      "year": 2015,
+      "notes": ["Free sugars = added + naturally present in honey, syrups, fruit juices"]
+    },
+    {
+      "nutrientId": "free_sugars",
+      "recommendation": "conditional_less_than",
+      "value": 5,
+      "unit": "percent_of_calories",
+      "strength": "conditional",
+      "year": 2015,
+      "notes": ["Additional benefits for dental health"]
+    },
+    {
+      "nutrientId": "saturated_fat",
+      "recommendation": "less_than",
+      "value": 10,
+      "unit": "percent_of_calories",
+      "year": 2023
+    },
+    {
+      "nutrientId": "trans_fat",
+      "recommendation": "less_than",
+      "value": 1,
+      "unit": "percent_of_calories",
+      "year": 2023,
+      "notes": ["Equivalent to <2.2 g/day on 2000 kcal diet"]
+    },
+    {
+      "nutrientId": "total_fat",
+      "recommendation": "less_than_or_equal",
+      "value": 30,
+      "unit": "percent_of_calories",
+      "year": 2023
+    },
+    {
+      "nutrientId": "potassium",
+      "recommendation": "at_least",
+      "value": 3510,
+      "unit": "mg",
+      "strength": "conditional",
+      "year": 2012,
+      "notes": ["90 mmol/day"]
+    },
+    {
+      "nutrientId": "fiber",
+      "recommendation": "at_least",
+      "value": 25,
+      "unit": "g",
+      "year": 2023,
+      "notes": ["For adults"]
+    }
+  ],
+  "conditionOverrides": {
+    "ckd_stage_3_4": {
+      "condition": "Chronic Kidney Disease Stage 3-4",
+      "source": "KDOQI 2020",
+      "gfrRange": "15-59 mL/min/1.73m2",
+      "modifications": [
+        {
+          "nutrientId": "sodium",
+          "target": 2300,
+          "unit": "mg",
+          "direction": "max"
+        },
+        {
+          "nutrientId": "potassium",
+          "target": null,
+          "unit": "mg",
+          "direction": "individualized",
+          "notes": ["Monitor serum levels; restrict if hyperkalemia"]
+        },
+        {
+          "nutrientId": "phosphorus",
+          "targetMin": 800,
+          "targetMax": 1000,
+          "unit": "mg",
+          "direction": "restrict",
+          "notes": ["When serum phosphorus elevated"]
+        },
+        {
+          "nutrientId": "protein",
+          "targetMin": 0.55,
+          "targetMax": 0.8,
+          "unit": "g_per_kg",
+          "direction": "restrict",
+          "notes": ["Lower protein intake may slow CKD progression"]
+        },
+        {
+          "nutrientId": "calcium",
+          "targetMin": 800,
+          "targetMax": 1000,
+          "unit": "mg",
+          "direction": "limit"
+        }
+      ],
+      "warnings": [
+        "DASH diet NOT recommended for GFR <60 mL/min/1.73m2 due to high potassium/phosphorus content"
+      ]
+    },
+    "ckd_stage_5_dialysis": {
+      "condition": "Chronic Kidney Disease Stage 5/Dialysis",
+      "source": "KDOQI 2020",
+      "gfrRange": "<15 mL/min/1.73m2 or on dialysis",
+      "modifications": [
+        {
+          "nutrientId": "sodium",
+          "target": 2300,
+          "unit": "mg",
+          "direction": "max"
+        },
+        {
+          "nutrientId": "potassium",
+          "target": null,
+          "unit": "mg",
+          "direction": "restrict",
+          "notes": ["Restrict if serum potassium >5.5 mmol/L"]
+        },
+        {
+          "nutrientId": "phosphorus",
+          "targetMin": 800,
+          "targetMax": 1000,
+          "unit": "mg",
+          "direction": "restrict"
+        },
+        {
+          "nutrientId": "protein",
+          "targetMin": 1.0,
+          "targetMax": 1.2,
+          "unit": "g_per_kg",
+          "direction": "ensure_adequate",
+          "notes": ["Higher protein needs during dialysis to compensate for losses"]
+        },
+        {
+          "nutrientId": "calcium",
+          "target": null,
+          "unit": "mg",
+          "direction": "individualized"
+        }
+      ]
+    },
+    "hypertension": {
+      "condition": "Hypertension",
+      "source": "DASH Diet Guidelines",
+      "modifications": [
+        {
+          "nutrientId": "sodium",
+          "target": 2300,
+          "targetIdeal": 1500,
+          "unit": "mg",
+          "direction": "max",
+          "notes": ["<1,500 mg ideal for maximal BP reduction"]
+        },
+        {
+          "nutrientId": "potassium",
+          "target": 4700,
+          "unit": "mg",
+          "direction": "target"
+        },
+        {
+          "nutrientId": "calcium",
+          "target": 1250,
+          "unit": "mg",
+          "direction": "target"
+        },
+        {
+          "nutrientId": "magnesium",
+          "target": 500,
+          "unit": "mg",
+          "direction": "target"
+        },
+        {
+          "nutrientId": "fiber",
+          "target": 30,
+          "unit": "g",
+          "direction": "target"
+        }
+      ],
+      "warnings": [
+        "If CKD present (GFR <60), do NOT follow full DASH diet due to potassium/phosphorus"
+      ]
+    },
+    "diabetes_type_2": {
+      "condition": "Type 2 Diabetes",
+      "source": "ADA 2024 Standards of Care",
+      "modifications": [
+        {
+          "nutrientId": "carbohydrate",
+          "target": 130,
+          "unit": "g",
+          "direction": "minimum",
+          "notes": ["Individualized; focus on quality not just quantity"]
+        },
+        {
+          "nutrientId": "fiber",
+          "targetMin": 25,
+          "targetMax": 30,
+          "targetOptimal": 50,
+          "unit": "g",
+          "direction": "target",
+          "notes": ["Higher fiber improves glycemic control; optimal 30-50 g/day"]
+        },
+        {
+          "nutrientId": "added_sugars",
+          "target": null,
+          "unit": "g",
+          "direction": "minimize"
+        }
+      ]
+    },
+    "diabetes_with_dkd": {
+      "condition": "Diabetes with Diabetic Kidney Disease",
+      "source": "ADA 2024",
+      "modifications": [
+        {
+          "nutrientId": "protein",
+          "target": 0.8,
+          "unit": "g_per_kg",
+          "direction": "max",
+          "notes": ["Protein restriction may slow DKD progression"]
+        }
+      ]
+    },
+    "pregnancy": {
+      "condition": "Pregnancy",
+      "source": "IOM DRI, ACOG",
+      "modifications": [
+        {
+          "nutrientId": "folate",
+          "target": 600,
+          "unit": "mcg_dfe",
+          "direction": "rda",
+          "notes": ["Start before conception for NTD prevention"]
+        },
+        {
+          "nutrientId": "iron",
+          "target": 27,
+          "unit": "mg",
+          "direction": "rda",
+          "notes": ["Critical for fetal development and maternal blood volume"]
+        },
+        {
+          "nutrientId": "iodine",
+          "target": 220,
+          "unit": "mcg",
+          "direction": "rda",
+          "notes": ["Essential for fetal brain development"]
+        },
+        {
+          "nutrientId": "choline",
+          "target": 450,
+          "unit": "mg",
+          "direction": "ai",
+          "notes": ["Most prenatal vitamins contain inadequate choline"]
+        },
+        {
+          "nutrientId": "dha",
+          "targetMin": 200,
+          "targetMax": 300,
+          "unit": "mg",
+          "direction": "target",
+          "notes": ["Neural development; encourage fatty fish or supplement"]
+        },
+        {
+          "nutrientId": "vitamin_a",
+          "target": 3000,
+          "unit": "mcg_rae",
+          "direction": "max",
+          "notes": ["LIMIT preformed vitamin A - teratogenic at high doses"]
+        }
+      ],
+      "warnings": [
+        "Avoid preformed vitamin A >3,000 mcg RAE/day - teratogenic risk",
+        "Avoid high-mercury fish (shark, swordfish, king mackerel, tilefish)",
+        "Limit caffeine to <200 mg/day"
+      ]
+    },
+    "lactation": {
+      "condition": "Lactation",
+      "source": "IOM DRI",
+      "modifications": [
+        {
+          "nutrientId": "vitamin_a",
+          "target": 1300,
+          "unit": "mcg_rae",
+          "direction": "rda"
+        },
+        {
+          "nutrientId": "vitamin_c",
+          "target": 120,
+          "unit": "mg",
+          "direction": "rda"
+        },
+        {
+          "nutrientId": "choline",
+          "target": 550,
+          "unit": "mg",
+          "direction": "ai"
+        },
+        {
+          "nutrientId": "iodine",
+          "target": 290,
+          "unit": "mcg",
+          "direction": "rda"
+        }
+      ]
+    },
+    "elderly_65_plus": {
+      "condition": "Adults 65 years and older",
+      "source": "Various geriatric nutrition guidelines",
+      "modifications": [
+        {
+          "nutrientId": "protein",
+          "targetMin": 1.0,
+          "targetMax": 1.2,
+          "unit": "g_per_kg",
+          "direction": "target",
+          "notes": ["Higher protein needs for sarcopenia prevention; some recommend up to 1.5 g/kg for frail elderly"]
+        },
+        {
+          "nutrientId": "vitamin_d",
+          "targetMin": 800,
+          "targetMax": 1000,
+          "unit": "IU",
+          "direction": "target",
+          "notes": ["Reduced skin synthesis with age; RDA is 20 mcg (800 IU) for 71+"]
+        },
+        {
+          "nutrientId": "vitamin_b12",
+          "target": null,
+          "direction": "supplement_often_needed",
+          "notes": ["Absorption declines with age; consider supplementation or fortified foods"]
+        },
+        {
+          "nutrientId": "calcium",
+          "target": 1200,
+          "unit": "mg",
+          "direction": "rda",
+          "notes": ["Women 51+ and all adults 70+ need 1,200 mg for bone health"]
+        }
+      ]
+    }
+  },
+  "nutrientClassifications": {
+    "beneficial": [
+      "vitamin_c",
+      "vitamin_d",
+      "thiamin",
+      "folate",
+      "vitamin_b12",
+      "choline",
+      "calcium",
+      "magnesium",
+      "potassium",
+      "zinc",
+      "iodine",
+      "fiber",
+      "protein"
+    ],
+    "risk": [
+      "sodium",
+      "saturated_fat",
+      "trans_fat",
+      "added_sugars",
+      "vitamin_a",
+      "vitamin_e",
+      "niacin",
+      "vitamin_b6"
+    ],
+    "neutral": [
+      "total_fat",
+      "cholesterol",
+      "carbohydrate",
+      "total_sugars",
+      "vitamin_k",
+      "riboflavin",
+      "pantothenic_acid",
+      "biotin",
+      "phosphorus",
+      "chloride",
+      "copper",
+      "manganese",
+      "selenium",
+      "chromium",
+      "molybdenum",
+      "fluoride"
+    ],
+    "context_dependent": {
+      "iron": {
+        "defaultClassification": "beneficial",
+        "notes": "Encourage for deficient populations; avoid excess in men/postmenopausal women"
+      },
+      "potassium": {
+        "defaultClassification": "beneficial",
+        "notes": "BP benefits but restrict in CKD/hyperkalemia"
+      },
+      "phosphorus": {
+        "defaultClassification": "neutral",
+        "notes": "Restrict in CKD when serum phosphorus elevated"
+      }
+    }
+  },
+  "evaluationAlgorithm": {
+    "intakeVsTarget": {
+      "inadequate": { "threshold": 67, "operator": "less_than", "description": "<67% of RDA/AI" },
+      "below_target": { "thresholdMin": 67, "thresholdMax": 100, "description": "67-99% of RDA/AI" },
+      "adequate": { "thresholdMin": 100, "thresholdMax": 200, "description": "100-199% of RDA/AI" },
+      "high": { "thresholdMin": 200, "thresholdMax": "UL", "description": ">=200% RDA and <UL" },
+      "excess": { "threshold": "UL", "operator": "greater_than_or_equal", "description": ">=UL (warning)" }
+    },
+    "noUlRule": {
+      "description": "If UL = ND (Not Determinable), flag only if >400% RDA",
+      "threshold": 400
+    }
+  }
+}

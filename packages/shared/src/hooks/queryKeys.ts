@@ -97,6 +97,17 @@ export const familyKeys = {
 };
 
 /**
+ * Nutrition evaluation query keys (DRI-based system)
+ */
+export const nutritionEvalKeys = {
+  all: ['nutritionEval'] as const,
+  targets: (uid: string) => [...nutritionEvalKeys.all, 'targets', uid] as const,
+  dayEval: (uid: string, date: string) => [...nutritionEvalKeys.all, 'day', uid, date] as const,
+  weekEval: (uid: string, startDate: string) => [...nutritionEvalKeys.all, 'week', uid, startDate] as const,
+  nutrientInfo: (nutrientId: string) => [...nutritionEvalKeys.all, 'info', nutrientId] as const,
+};
+
+/**
  * Master query keys object - for invalidating entire domains
  */
 export const queryKeys = {
@@ -109,4 +120,5 @@ export const queryKeys = {
   articles: articleKeys,
   careTeam: careTeamKeys,
   family: familyKeys,
+  nutritionEval: nutritionEvalKeys,
 } as const;

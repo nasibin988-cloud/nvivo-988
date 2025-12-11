@@ -1,11 +1,11 @@
 /**
  * ReviewStep Component
  * Review and edit analysis results
- * NOTE: Tier selector moved to CaptureStep (before analysis)
+ * Includes nutrition detail level toggle (shown AFTER analysis)
  */
 
 import { RotateCcw } from 'lucide-react';
-import type { AnalysisResult, AnalyzedFood, MealType } from '../types';
+import type { AnalysisResult, AnalyzedFood, MealType, NutritionDetailLevel } from '../types';
 import NutritionSummary from './NutritionSummary';
 import MealTypeSelector from './MealTypeSelector';
 import FoodItemCard from './FoodItemCard';
@@ -16,6 +16,8 @@ interface ReviewStepProps {
   selectedMealType: MealType;
   eatenAt: string;
   editingItem: number | null;
+  displayLevel: NutritionDetailLevel;
+  onDisplayLevelChange: (level: NutritionDetailLevel) => void;
   onRetry: () => void;
   onMealTypeChange: (type: MealType) => void;
   onTimeChange: (time: string) => void;
@@ -31,6 +33,8 @@ export default function ReviewStep({
   selectedMealType,
   eatenAt,
   editingItem,
+  displayLevel,
+  onDisplayLevelChange,
   onRetry,
   onMealTypeChange,
   onTimeChange,
@@ -60,8 +64,12 @@ export default function ReviewStep({
         onTimeChange={onTimeChange}
       />
 
-      {/* Total summary - uses detailLevel from result */}
-      <NutritionSummary result={result} />
+      {/* Total summary - with toggleable detail level (shown AFTER analysis) */}
+      <NutritionSummary
+        result={result}
+        displayLevel={displayLevel}
+        onDisplayLevelChange={onDisplayLevelChange}
+      />
 
       {/* Detected items */}
       <div className="space-y-2">

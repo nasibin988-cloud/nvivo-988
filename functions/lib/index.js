@@ -33,7 +33,7 @@ var __importStar = (this && this.__importStar) || (function () {
     };
 })();
 Object.defineProperty(exports, "__esModule", { value: true });
-exports.analyzeFoodText = exports.searchFoods = exports.scanMenuPhoto = exports.analyzeFoodPhoto = exports.clearCareDataFn = exports.seedCareDataFn = exports.getAppointmentsFn = exports.getCarePlanGoalsFn = exports.completeTaskFn = exports.getTasksFn = exports.logMedicationDoseFn = exports.getMedicationScheduleFn = exports.getMedicationsFn = exports.getCareTeamFn = exports.getCareDataFn = exports.completeMicroWin = exports.getDailyMicroWins = exports.reseedHealthTrendsFn = exports.reseedMicroWinsFn = exports.seedArticlesFn = exports.deleteTestPatientFn = exports.seedTestPatientFn = void 0;
+exports.evaluateNutritionWeek = exports.getNutrientInfo = exports.getNutritionTargets = exports.evaluateNutritionDay = exports.analyzeFoodText = exports.searchFoods = exports.scanMenuPhoto = exports.analyzeFoodPhoto = exports.clearCareDataFn = exports.seedCareDataFn = exports.getAppointmentsFn = exports.getCarePlanGoalsFn = exports.completeTaskFn = exports.getTasksFn = exports.logMedicationDoseFn = exports.getMedicationScheduleFn = exports.getMedicationsFn = exports.getCareTeamFn = exports.getCareDataFn = exports.completeMicroWin = exports.getDailyMicroWins = exports.reseedHealthTrendsFn = exports.reseedMicroWinsFn = exports.seedArticlesFn = exports.deleteTestPatientFn = exports.seedTestPatientFn = void 0;
 const admin = __importStar(require("firebase-admin"));
 const v2_1 = require("firebase-functions/v2");
 const seed_1 = require("./seed");
@@ -45,6 +45,12 @@ const seedHealthTrends_1 = require("./seed/seedHealthTrends");
 const foodAnalysis_1 = require("./domains/ai/foodAnalysis");
 const menuScanning_1 = require("./domains/ai/menuScanning");
 const foodSearch_1 = require("./domains/ai/foodSearch");
+// Nutrition evaluation functions
+const nutrition_1 = require("./domains/nutrition");
+Object.defineProperty(exports, "evaluateNutritionDay", { enumerable: true, get: function () { return nutrition_1.evaluateNutritionDay; } });
+Object.defineProperty(exports, "getNutritionTargets", { enumerable: true, get: function () { return nutrition_1.getNutritionTargets; } });
+Object.defineProperty(exports, "getNutrientInfo", { enumerable: true, get: function () { return nutrition_1.getNutrientInfo; } });
+Object.defineProperty(exports, "evaluateNutritionWeek", { enumerable: true, get: function () { return nutrition_1.evaluateNutritionWeek; } });
 // Initialize Firebase Admin
 admin.initializeApp();
 // Export seed functions (only for development)
@@ -373,7 +379,10 @@ exports.analyzeFoodPhoto = v2_1.https.onCall({
         throw new v2_1.https.HttpsError('invalid-argument', 'Invalid detail level. Must be: essential, extended, or complete');
     }
     try {
-        const result = await (0, foodAnalysis_1.analyzeFoodPhoto)(imageBase64, detailLevel);
+        // Note: detailLevel is accepted for backward compatibility but analysis always returns complete data
+        // The UI filters what to display based on user preference
+        // Photo analysis always uses 'full' model for best accuracy
+        const result = await (0, foodAnalysis_1.analyzeFoodPhoto)(imageBase64, 'full');
         return result;
     }
     catch (error) {
@@ -483,7 +492,9 @@ exports.analyzeFoodText = v2_1.https.onCall({
         throw new v2_1.https.HttpsError('invalid-argument', 'Invalid detail level. Must be: essential, extended, or complete');
     }
     try {
-        const result = await (0, foodAnalysis_1.analyzeFoodText)(foodDescription, detailLevel);
+        // Note: detailLevel is accepted for backward compatibility but analysis always returns complete data
+        // The UI filters what to display based on user preference
+        const result = await (0, foodAnalysis_1.analyzeFoodText)(foodDescription, false);
         return result;
     }
     catch (error) {

@@ -3,3 +3,4 @@ export * from './patient';
 export * from './care';
 export * from './health';
 export * from './messaging';
+export * from './nutrition';

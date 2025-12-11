@@ -1,0 +1,391 @@
+{
+  "schemaVersion": "1.0",
+  "generatedFrom": ["DRI-Based Nutrient Evaluation Reference.docx", "Comprehensive DRI.docx"],
+  "lastUpdated": "2025-12-11",
+  "regulatoryBasis": "21 CFR 101.9",
+  "effectiveDate": "2020-01-01",
+  "referenceCalories": 2000,
+  "populations": {
+    "adults_and_children_4plus": {
+      "description": "Adults and children 4 years and older",
+      "referenceCalories": 2000
+    },
+    "children_1_3": {
+      "description": "Children 1-3 years",
+      "referenceCalories": 1000
+    },
+    "infants": {
+      "description": "Infants under 12 months",
+      "referenceCalories": null
+    },
+    "pregnancy_lactation": {
+      "description": "Pregnant and lactating women",
+      "referenceCalories": 2000
+    }
+  },
+  "dailyValues": [
+    {
+      "nutrientId": "total_fat",
+      "unit": "g",
+      "adults_and_children_4plus": 78,
+      "children_1_3": 39,
+      "infants": 30,
+      "pregnancy_lactation": 78,
+      "source": "FDA 21 CFR 101.9"
+    },
+    {
+      "nutrientId": "saturated_fat",
+      "unit": "g",
+      "adults_and_children_4plus": 20,
+      "children_1_3": 10,
+      "infants": null,
+      "pregnancy_lactation": 20,
+      "source": "FDA 21 CFR 101.9"
+    },
+    {
+      "nutrientId": "trans_fat",
+      "unit": "g",
+      "adults_and_children_4plus": null,
+      "children_1_3": null,
+      "infants": null,
+      "pregnancy_lactation": null,
+      "source": "FDA 21 CFR 101.9",
+      "notes": ["No DV established; recommendation is to consume as little as possible"]
+    },
+    {
+      "nutrientId": "cholesterol",
+      "unit": "mg",
+      "adults_and_children_4plus": 300,
+      "children_1_3": 300,
+      "infants": null,
+      "pregnancy_lactation": 300,
+      "source": "FDA 21 CFR 101.9"
+    },
+    {
+      "nutrientId": "sodium",
+      "unit": "mg",
+      "adults_and_children_4plus": 2300,
+      "children_1_3": 1500,
+      "infants": null,
+      "pregnancy_lactation": 2300,
+      "source": "FDA 21 CFR 101.9"
+    },
+    {
+      "nutrientId": "carbohydrate",
+      "unit": "g",
+      "adults_and_children_4plus": 275,
+      "children_1_3": 150,
+      "infants": 95,
+      "pregnancy_lactation": 275,
+      "source": "FDA 21 CFR 101.9"
+    },
+    {
+      "nutrientId": "fiber",
+      "unit": "g",
+      "adults_and_children_4plus": 28,
+      "children_1_3": 14,
+      "infants": null,
+      "pregnancy_lactation": 28,
+      "source": "FDA 21 CFR 101.9"
+    },
+    {
+      "nutrientId": "total_sugars",
+      "unit": "g",
+      "adults_and_children_4plus": null,
+      "children_1_3": null,
+      "infants": null,
+      "pregnancy_lactation": null,
+      "source": "FDA 21 CFR 101.9",
+      "notes": ["No DV established for total sugars; intrinsic sugars are acceptable"]
+    },
+    {
+      "nutrientId": "added_sugars",
+      "unit": "g",
+      "adults_and_children_4plus": 50,
+      "children_1_3": 25,
+      "infants": null,
+      "pregnancy_lactation": 50,
+      "source": "FDA 21 CFR 101.9"
+    },
+    {
+      "nutrientId": "protein",
+      "unit": "g",
+      "adults_and_children_4plus": 50,
+      "children_1_3": 13,
+      "infants": 11,
+      "pregnancy_lactation": 71,
+      "source": "FDA 21 CFR 101.9"
+    },
+    {
+      "nutrientId": "vitamin_a",
+      "unit": "mcg_rae",
+      "adults_and_children_4plus": 900,
+      "children_1_3": 300,
+      "infants": 500,
+      "pregnancy_lactation": 1300,
+      "source": "FDA 21 CFR 101.9"
+    },
+    {
+      "nutrientId": "vitamin_c",
+      "unit": "mg",
+      "adults_and_children_4plus": 90,
+      "children_1_3": 15,
+      "infants": 50,
+      "pregnancy_lactation": 120,
+      "source": "FDA 21 CFR 101.9"
+    },
+    {
+      "nutrientId": "vitamin_d",
+      "unit": "mcg",
+      "adults_and_children_4plus": 20,
+      "children_1_3": 15,
+      "infants": 10,
+      "pregnancy_lactation": 15,
+      "source": "FDA 21 CFR 101.9"
+    },
+    {
+      "nutrientId": "vitamin_e",
+      "unit": "mg",
+      "adults_and_children_4plus": 15,
+      "children_1_3": 6,
+      "infants": 5,
+      "pregnancy_lactation": 19,
+      "source": "FDA 21 CFR 101.9"
+    },
+    {
+      "nutrientId": "vitamin_k",
+      "unit": "mcg",
+      "adults_and_children_4plus": 120,
+      "children_1_3": 30,
+      "infants": 2.5,
+      "pregnancy_lactation": 90,
+      "source": "FDA 21 CFR 101.9"
+    },
+    {
+      "nutrientId": "thiamin",
+      "unit": "mg",
+      "adults_and_children_4plus": 1.2,
+      "children_1_3": 0.5,
+      "infants": 0.3,
+      "pregnancy_lactation": 1.4,
+      "source": "FDA 21 CFR 101.9"
+    },
+    {
+      "nutrientId": "riboflavin",
+      "unit": "mg",
+      "adults_and_children_4plus": 1.3,
+      "children_1_3": 0.5,
+      "infants": 0.4,
+      "pregnancy_lactation": 1.6,
+      "source": "FDA 21 CFR 101.9"
+    },
+    {
+      "nutrientId": "niacin",
+      "unit": "mg_ne",
+      "adults_and_children_4plus": 16,
+      "children_1_3": 6,
+      "infants": 4,
+      "pregnancy_lactation": 18,
+      "source": "FDA 21 CFR 101.9"
+    },
+    {
+      "nutrientId": "vitamin_b6",
+      "unit": "mg",
+      "adults_and_children_4plus": 1.7,
+      "children_1_3": 0.5,
+      "infants": 0.3,
+      "pregnancy_lactation": 2.0,
+      "source": "FDA 21 CFR 101.9"
+    },
+    {
+      "nutrientId": "folate",
+      "unit": "mcg_dfe",
+      "adults_and_children_4plus": 400,
+      "children_1_3": 150,
+      "infants": 80,
+      "pregnancy_lactation": 600,
+      "source": "FDA 21 CFR 101.9"
+    },
+    {
+      "nutrientId": "vitamin_b12",
+      "unit": "mcg",
+      "adults_and_children_4plus": 2.4,
+      "children_1_3": 0.9,
+      "infants": 0.5,
+      "pregnancy_lactation": 2.8,
+      "source": "FDA 21 CFR 101.9"
+    },
+    {
+      "nutrientId": "biotin",
+      "unit": "mcg",
+      "adults_and_children_4plus": 30,
+      "children_1_3": 8,
+      "infants": 6,
+      "pregnancy_lactation": 35,
+      "source": "FDA 21 CFR 101.9"
+    },
+    {
+      "nutrientId": "pantothenic_acid",
+      "unit": "mg",
+      "adults_and_children_4plus": 5,
+      "children_1_3": 2,
+      "infants": 1.8,
+      "pregnancy_lactation": 7,
+      "source": "FDA 21 CFR 101.9"
+    },
+    {
+      "nutrientId": "choline",
+      "unit": "mg",
+      "adults_and_children_4plus": 550,
+      "children_1_3": 200,
+      "infants": 150,
+      "pregnancy_lactation": 550,
+      "source": "FDA 21 CFR 101.9"
+    },
+    {
+      "nutrientId": "calcium",
+      "unit": "mg",
+      "adults_and_children_4plus": 1300,
+      "children_1_3": 700,
+      "infants": 260,
+      "pregnancy_lactation": 1300,
+      "source": "FDA 21 CFR 101.9"
+    },
+    {
+      "nutrientId": "iron",
+      "unit": "mg",
+      "adults_and_children_4plus": 18,
+      "children_1_3": 7,
+      "infants": 11,
+      "pregnancy_lactation": 27,
+      "source": "FDA 21 CFR 101.9"
+    },
+    {
+      "nutrientId": "phosphorus",
+      "unit": "mg",
+      "adults_and_children_4plus": 1250,
+      "children_1_3": 460,
+      "infants": 275,
+      "pregnancy_lactation": 1250,
+      "source": "FDA 21 CFR 101.9"
+    },
+    {
+      "nutrientId": "iodine",
+      "unit": "mcg",
+      "adults_and_children_4plus": 150,
+      "children_1_3": 90,
+      "infants": 130,
+      "pregnancy_lactation": 290,
+      "source": "FDA 21 CFR 101.9"
+    },
+    {
+      "nutrientId": "magnesium",
+      "unit": "mg",
+      "adults_and_children_4plus": 420,
+      "children_1_3": 80,
+      "infants": 75,
+      "pregnancy_lactation": 400,
+      "source": "FDA 21 CFR 101.9"
+    },
+    {
+      "nutrientId": "zinc",
+      "unit": "mg",
+      "adults_and_children_4plus": 11,
+      "children_1_3": 3,
+      "infants": 3,
+      "pregnancy_lactation": 13,
+      "source": "FDA 21 CFR 101.9"
+    },
+    {
+      "nutrientId": "selenium",
+      "unit": "mcg",
+      "adults_and_children_4plus": 55,
+      "children_1_3": 20,
+      "infants": 20,
+      "pregnancy_lactation": 70,
+      "source": "FDA 21 CFR 101.9"
+    },
+    {
+      "nutrientId": "copper",
+      "unit": "mg",
+      "adults_and_children_4plus": 0.9,
+      "children_1_3": 0.3,
+      "infants": 0.2,
+      "pregnancy_lactation": 1.3,
+      "source": "FDA 21 CFR 101.9"
+    },
+    {
+      "nutrientId": "manganese",
+      "unit": "mg",
+      "adults_and_children_4plus": 2.3,
+      "children_1_3": 1.2,
+      "infants": 0.6,
+      "pregnancy_lactation": 2.6,
+      "source": "FDA 21 CFR 101.9"
+    },
+    {
+      "nutrientId": "chromium",
+      "unit": "mcg",
+      "adults_and_children_4plus": 35,
+      "children_1_3": 11,
+      "infants": 5.5,
+      "pregnancy_lactation": 45,
+      "source": "FDA 21 CFR 101.9"
+    },
+    {
+      "nutrientId": "molybdenum",
+      "unit": "mcg",
+      "adults_and_children_4plus": 45,
+      "children_1_3": 17,
+      "infants": 3,
+      "pregnancy_lactation": 50,
+      "source": "FDA 21 CFR 101.9"
+    },
+    {
+      "nutrientId": "chloride",
+      "unit": "mg",
+      "adults_and_children_4plus": 2300,
+      "children_1_3": 1500,
+      "infants": 570,
+      "pregnancy_lactation": 2300,
+      "source": "FDA 21 CFR 101.9"
+    },
+    {
+      "nutrientId": "potassium",
+      "unit": "mg",
+      "adults_and_children_4plus": 4700,
+      "children_1_3": 3000,
+      "infants": 700,
+      "pregnancy_lactation": 5100,
+      "source": "FDA 21 CFR 101.9"
+    },
+    {
+      "nutrientId": "fluoride",
+      "unit": "mg",
+      "adults_and_children_4plus": 4,
+      "children_1_3": null,
+      "infants": null,
+      "pregnancy_lactation": null,
+      "source": "FDA Guidance",
+      "notes": ["DV for voluntary labeling only; not mandated on Nutrition Facts label"]
+    }
+  ],
+  "percentDvClassification": {
+    "free": {
+      "threshold": 0,
+      "description": "Contains none or trivial amounts"
+    },
+    "low": {
+      "threshold": 5,
+      "description": "5% DV or less per serving is considered low"
+    },
+    "good_source": {
+      "threshold": 10,
+      "description": "10-19% DV per serving"
+    },
+    "high": {
+      "threshold": 20,
+      "description": "20% DV or more per serving is considered high"
+    }
+  }
+}

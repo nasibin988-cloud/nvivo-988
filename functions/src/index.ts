@@ -10,6 +10,14 @@ import { analyzeFoodPhoto as analyzeFoodPhotoFn, analyzeFoodText as analyzeFoodT
 import { scanMenuPhoto as scanMenuPhotoFn } from './domains/ai/menuScanning';
 import { searchFoods as searchFoodsFn, usdaApiKey } from './domains/ai/foodSearch';
 
+// Nutrition evaluation functions
+import {
+  evaluateNutritionDay,
+  getNutritionTargets,
+  getNutrientInfo,
+  evaluateNutritionWeek,
+} from './domains/nutrition';
+
 // Initialize Firebase Admin
 admin.initializeApp();
 
@@ -399,7 +407,10 @@ export const analyzeFoodPhoto = https.onCall(
     }
 
     try {
-      const result = await analyzeFoodPhotoFn(imageBase64, detailLevel);
+      // Note: detailLevel is accepted for backward compatibility but analysis always returns complete data
+      // The UI filters what to display based on user preference
+      // Photo analysis always uses 'full' model for best accuracy
+      const result = await analyzeFoodPhotoFn(imageBase64, 'full');
       return result;
     } catch (error) {
       console.error('Error analyzing food photo:', error);
@@ -527,7 +538,9 @@ export const analyzeFoodText = https.onCall(
     }
 
     try {
-      const result = await analyzeFoodTextFn(foodDescription, detailLevel);
+      // Note: detailLevel is accepted for backward compatibility but analysis always returns complete data
+      // The UI filters what to display based on user preference
+      const result = await analyzeFoodTextFn(foodDescription, false);
       return result;
     } catch (error) {
       console.error('Error analyzing food text:', error);
@@ -535,3 +548,31 @@ export const analyzeFoodText = https.onCall(
     }
   }
 );
+
+// ============================================================================
+// NUTRITION EVALUATION FUNCTIONS
+// ============================================================================
+
+/**
+ * Evaluate a single day's nutrition intake
+ * Returns full evaluation with score, highlights, gaps, and summary
+ */
+export { evaluateNutritionDay };
+
+/**
+ * Get personalized nutrition targets for a user
+ * Based on age, sex, activity level, and goals
+ */
+export { getNutritionTargets };
+
+/**
+ * Get educational information about a specific nutrient
+ * Includes what it does, why it matters, and food sources
+ */
+export { getNutrientInfo };
+
+/**
+ * Evaluate multiple days of nutrition intake (up to 14 days)
+ * Returns daily evaluations, average score, best day, and trend
+ */
+export { evaluateNutritionWeek };

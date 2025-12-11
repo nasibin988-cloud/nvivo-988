@@ -1,0 +1,1663 @@
+{
+  "schemaVersion": "1.0",
+  "nutrients": [
+    {
+      "nutrientId": "calories",
+      "displayName": "Energy",
+      "shortName": "Calories",
+      "category": "other",
+      "unit": "kcal",
+      "usdaNutrientId": null,
+      "classification": "neutral",
+      "hasDRI": false,
+      "hasUL": false,
+      "hasFDA_DV": true,
+      "driTypes": [],
+      "defaultTargetSource": "FDA_DV",
+      "labeling": {
+        "hasPercentDV": false,
+        "dvUnit": "kcal"
+      },
+      "notes": [
+        "Individual energy needs vary by age, sex, weight, height, and activity level; use EER formulas.",
+        "2000 kcal is a standard reference diet for labeling, but actual needs vary widely.",
+        "No RDA/AI established; Estimated Energy Requirements (EER) must be calculated per person."
+      ],
+      "clinicalInterpretation": {
+        "importance": "Energy (calories) is fundamental for all bodily functions - basal metabolism, physical activity, growth, and tissue repair. Caloric balance (intake vs. expenditure) determines weight status.",
+        "deficiencySigns": "Insufficient energy intake leads to weight loss, muscle wasting, fatigue, weakened immunity, and in severe cases, malnutrition (kwashiorkor, marasmus). In children, chronic energy deficit causes stunted growth.",
+        "excessRisks": "Chronic energy excess leads to weight gain and obesity, which increases risk of type 2 diabetes, cardiovascular disease, certain cancers, sleep apnea, and joint problems. Even modest excess (100 kcal/day) can cause ~10 lb weight gain per year.",
+        "foodSources": "All foods provide energy. Macronutrient energy: carbohydrates and protein provide 4 kcal/g, fats provide 9 kcal/g, alcohol provides 7 kcal/g.",
+        "specialConsiderations": "Energy needs are highly individual - use Estimated Energy Requirements (EER) formulas based on age, sex, weight, height, and activity level. 2000 kcal is a reference, not a recommendation. Weight loss requires caloric deficit (~500 kcal/day for ~1 lb/week loss). Very low calorie diets (<1200 kcal) should be medically supervised."
+      },
+      "warningFlags": {
+        "pregnancy": null,
+        "ckd": null,
+        "elderly": "Energy needs typically decrease with age due to reduced activity and metabolic rate.",
+        "drugInteractions": []
+      }
+    },
+    {
+      "nutrientId": "protein",
+      "displayName": "Protein",
+      "shortName": "Protein",
+      "category": "macronutrient",
+      "unit": "g",
+      "usdaNutrientId": null,
+      "classification": "beneficial",
+      "hasDRI": true,
+      "hasUL": false,
+      "hasFDA_DV": true,
+      "driTypes": ["RDA", "AI", "AMDR"],
+      "defaultTargetSource": "DRI",
+      "labeling": {
+        "hasPercentDV": true,
+        "dvUnit": "g"
+      },
+      "notes": [
+        "RDA is approximately 0.8 g/kg body weight for adults (56 g for 70 kg male, 46 g for 57 kg female).",
+        "Higher needs during growth, pregnancy, lactation, and for elderly (1.0-1.2 g/kg for sarcopenia prevention).",
+        "AMDR: 10-35% of calories for adults, 10-30% for children 4-18, 5-20% for children 1-3.",
+        "No UL established, but extremely high intakes can stress kidneys in susceptible individuals."
+      ],
+      "clinicalInterpretation": {
+        "importance": "Vital for maintaining muscle mass, immune proteins, enzymes, and hormones.",
+        "deficiencySigns": "Inadequate protein (<RDA) can lead to muscle wasting, poor wound healing, and in children, stunted growth. Older adults particularly need sufficient protein to prevent frailty.",
+        "excessRisks": "Excess protein beyond the AMDR (especially >2 g/kg) in healthy people is generally metabolized for energy or excreted, but can stress kidneys in those with renal impairment.",
+        "foodSources": "High-quality sources include meat, poultry, fish, eggs, dairy, legumes, and soy. Vegetarians should combine legumes + grains to get all essential amino acids.",
+        "specialConsiderations": "In kidney disease, recommended protein may be lower than the DRI to reduce waste buildup – those cases require individualized targets."
+      },
+      "warningFlags": {
+        "pregnancy": "RDA increases to 71 g/day (approximately 1.1 g/kg) during pregnancy and lactation.",
+        "ckd": "CKD 3-4 non-dialysis: restrict to 0.55-0.8 g/kg/day. CKD 5/dialysis: 1.0-1.2 g/kg/day.",
+        "elderly": "Higher intake of 1.0-1.2 g/kg/day recommended for sarcopenia prevention.",
+        "drugInteractions": []
+      }
+    },
+    {
+      "nutrientId": "carbohydrate",
+      "displayName": "Carbohydrate",
+      "shortName": "Carbs",
+      "category": "macronutrient",
+      "unit": "g",
+      "usdaNutrientId": null,
+      "classification": "beneficial",
+      "hasDRI": true,
+      "hasUL": false,
+      "hasFDA_DV": true,
+      "driTypes": ["RDA", "AI", "AMDR"],
+      "defaultTargetSource": "DRI",
+      "labeling": {
+        "hasPercentDV": true,
+        "dvUnit": "g"
+      },
+      "notes": [
+        "RDA of 130 g/day is minimum to supply the brain with glucose.",
+        "AMDR: 45-65% of calories for all ages 1 year and older.",
+        "No UL established; excess carbs contribute to excess calories.",
+        "Focus on quality: whole grains, fiber-rich sources preferred."
+      ],
+      "clinicalInterpretation": {
+        "importance": "The primary fuel for the brain and red blood cells. The brain alone needs ~130 g glucose/day, hence the RDA.",
+        "deficiencySigns": "Very low-carb diets (<130 g) can induce ketosis; this can be therapeutic for some (e.g., epilepsy) or used for weight loss, but generally at least moderate carbs are recommended for most, especially active individuals.",
+        "excessRisks": "No upper limit on carbs per se, but diets >65% carbs might displace fats/proteins and cause triglyceride elevations in some. High refined carb and sugar intake contributes to obesity and metabolic issues.",
+        "foodSources": "Whole grains (oats, brown rice, quinoa), legumes, fruits, vegetables, and starchy vegetables. Fiber-rich carbs carry essential micronutrients.",
+        "specialConsiderations": "Quality matters – choose whole grains over refined. For diabetics, total carb amount and distribution across meals is crucial for blood sugar management."
+      },
+      "warningFlags": {
+        "pregnancy": "RDA increases to 175 g/day during pregnancy, 210 g/day during lactation.",
+        "ckd": null,
+        "elderly": null,
+        "drugInteractions": []
+      }
+    },
+    {
+      "nutrientId": "fiber",
+      "displayName": "Dietary Fiber",
+      "shortName": "Fiber",
+      "category": "macronutrient",
+      "unit": "g",
+      "usdaNutrientId": null,
+      "classification": "beneficial",
+      "hasDRI": true,
+      "hasUL": false,
+      "hasFDA_DV": true,
+      "driTypes": ["AI"],
+      "defaultTargetSource": "DRI",
+      "labeling": {
+        "hasPercentDV": true,
+        "dvUnit": "g"
+      },
+      "notes": [
+        "AI based on 14 g per 1000 kcal of intake (e.g., 28 g for 2000 kcal diet).",
+        "Most populations under-consume fiber; it's a shortfall nutrient.",
+        "No UL established; excess fiber may cause GI discomfort in some individuals.",
+        "Aids digestion, promotes satiety, helps control blood sugar and cholesterol."
+      ],
+      "clinicalInterpretation": {
+        "importance": "Key for gastrointestinal health, bowel regularity, and feeding beneficial gut bacteria. High fiber diets are linked to lower risk of heart disease, type 2 diabetes, and colon cancer.",
+        "deficiencySigns": "Too little fiber (<15 g/day) often correlates with diets low in fruits, vegetables, and whole grains, and can cause constipation.",
+        "excessRisks": "Excess fiber (>50 g) might cause bloating or interfere with mineral absorption (phytates), but this is rarely a concern except in heavy supplement use or extremely high-fiber diets.",
+        "foodSources": "Soluble fiber: oats, beans, fruits, psyllium. Insoluble fiber: whole grains, vegetables, wheat bran. A variety of both types is recommended.",
+        "specialConsiderations": "Increase fiber gradually and with adequate water to avoid GI discomfort. For diabetics, higher fiber (30-50 g/day) improves glycemic control."
+      },
+      "warningFlags": {
+        "pregnancy": "AI is 28 g/day during pregnancy, 29 g/day during lactation.",
+        "ckd": null,
+        "elderly": "AI decreases to 21-30 g/day for adults 51+ based on lower caloric needs.",
+        "drugInteractions": []
+      }
+    },
+    {
+      "nutrientId": "total_fat",
+      "displayName": "Total Fat",
+      "shortName": "Fat",
+      "category": "macronutrient",
+      "unit": "g",
+      "usdaNutrientId": null,
+      "classification": "neutral",
+      "hasDRI": true,
+      "hasUL": false,
+      "hasFDA_DV": true,
+      "driTypes": ["AI", "AMDR"],
+      "defaultTargetSource": "DRI",
+      "labeling": {
+        "hasPercentDV": true,
+        "dvUnit": "g"
+      },
+      "notes": [
+        "Infants have AI (31 g for 0-6 mo, 30 g for 7-12 mo) reflecting breast milk composition.",
+        "For ages 2+, no RDA/AI; use AMDR (20-35% of calories for adults, 25-35% for children 4-18, 30-40% for 1-3 yr).",
+        "No UL established, but high intake can lead to excess calories.",
+        "Focus on type: emphasize unsaturated fats, limit saturated and trans fats."
+      ],
+      "clinicalInterpretation": {
+        "importance": "Essential for absorbing fat-soluble vitamins (A, D, E, K) and provides essential fatty acids. Fats also make meals satisfying (satiety).",
+        "deficiencySigns": "Extremely low fat intake (<15% of calories) can impair absorption of fat-soluble vitamins and is not recommended long-term.",
+        "excessRisks": "Very high fat (>35% for most) might raise LDL if saturated fat is high, and lead to calorie excess. Types of fat matter more than total amount.",
+        "foodSources": "Emphasize unsaturated fats: olive oil, nuts, avocado, fatty fish. Limit saturated fat (butter, fatty red meat) and avoid trans fats.",
+        "specialConsiderations": "Tailor fat intake to individual tolerance and health goals. Higher MUFA/PUFA is beneficial for metabolic health; lower total fat may help with gallbladder issues."
+      },
+      "warningFlags": {
+        "pregnancy": null,
+        "ckd": null,
+        "elderly": null,
+        "drugInteractions": []
+      }
+    },
+    {
+      "nutrientId": "saturated_fat",
+      "displayName": "Saturated Fat",
+      "shortName": "Sat Fat",
+      "category": "macronutrient",
+      "unit": "g",
+      "usdaNutrientId": null,
+      "classification": "risk",
+      "hasDRI": false,
+      "hasUL": false,
+      "hasFDA_DV": true,
+      "driTypes": [],
+      "defaultTargetSource": "FDA_DV",
+      "labeling": {
+        "hasPercentDV": true,
+        "dvUnit": "g"
+      },
+      "notes": [
+        "No RDA or AI; should be as low as possible while meeting essential fat needs.",
+        "DGA recommends <10% of calories from saturated fat (approximately 20 g on 2000 kcal diet).",
+        "AHA recommends 5-6% for individuals with elevated LDL or heart disease risk.",
+        "Raises LDL cholesterol and cardiovascular disease risk."
+      ],
+      "clinicalInterpretation": {
+        "importance": "A type of fat that raises LDL ('bad') cholesterol, contributing to atherosclerosis.",
+        "deficiencySigns": "Not a concern – saturated fat is not essential. No deficiency state exists.",
+        "excessRisks": "Major sources include animal fats (marbled meat, high-fat dairy) and certain oils (palm, coconut). High intake is associated with increased cardiovascular disease risk.",
+        "foodSources": "Fatty cuts of beef/pork, butter, cheese, cream, coconut oil, palm oil, processed baked goods.",
+        "specialConsiderations": "Aim <10% of calories. For individuals with high LDL or heart disease risk, AHA recommends <7%. Replacing saturated fat with polyunsaturated fat (e.g., soybean oil, fatty fish) reduces cardiovascular events."
+      },
+      "warningFlags": {
+        "pregnancy": null,
+        "ckd": null,
+        "elderly": null,
+        "drugInteractions": []
+      }
+    },
+    {
+      "nutrientId": "trans_fat",
+      "displayName": "Trans Fat",
+      "shortName": "Trans Fat",
+      "category": "macronutrient",
+      "unit": "g",
+      "usdaNutrientId": null,
+      "classification": "risk",
+      "hasDRI": false,
+      "hasUL": false,
+      "hasFDA_DV": false,
+      "driTypes": [],
+      "defaultTargetSource": "DRI",
+      "labeling": {
+        "hasPercentDV": false,
+        "dvUnit": "g"
+      },
+      "notes": [
+        "No safe level of intake; recommendation is to consume 0 g if possible.",
+        "Artificial trans fats (partially hydrogenated oils) significantly increase heart disease risk.",
+        "Raises LDL cholesterol and lowers HDL cholesterol.",
+        "FDA banned industrial trans fats in foods in 2018.",
+        "WHO recommends <1% of total energy (<2.2 g/day on 2000 kcal diet)."
+      ],
+      "clinicalInterpretation": {
+        "importance": "Industrial trans fats have no nutritional benefit and are harmful to cardiovascular health.",
+        "deficiencySigns": "Not applicable – trans fat is not a nutrient. There is no deficiency state.",
+        "excessRisks": "Industrial trans fats both raise LDL and lower HDL cholesterol, markedly increasing heart disease risk. Even 1 g/day of trans fat is associated with ~12% higher CHD risk.",
+        "foodSources": "Partially hydrogenated vegetable oils (largely banned), some margarines, shortening, fried foods, baked goods. Small amounts occur naturally in ruminant animal foods.",
+        "specialConsiderations": "Aim for 0 g. If any trans fat appears in foods, advise switching products. Many countries have banned industrial trans fats."
+      },
+      "warningFlags": {
+        "pregnancy": null,
+        "ckd": null,
+        "elderly": null,
+        "drugInteractions": []
+      }
+    },
+    {
+      "nutrientId": "cholesterol",
+      "displayName": "Cholesterol",
+      "shortName": "Cholesterol",
+      "category": "macronutrient",
+      "unit": "mg",
+      "usdaNutrientId": null,
+      "classification": "neutral",
+      "hasDRI": false,
+      "hasUL": false,
+      "hasFDA_DV": true,
+      "driTypes": [],
+      "defaultTargetSource": "FDA_DV",
+      "labeling": {
+        "hasPercentDV": true,
+        "dvUnit": "mg"
+      },
+      "notes": [
+        "No specific DRI limit; DGA advises 'as low as possible' within a healthy eating pattern.",
+        "Historical DV of 300 mg/day used as upper benchmark.",
+        "Focus on overall dietary pattern rather than strict cholesterol limits.",
+        "Saturated and trans fats have greater impact on blood cholesterol than dietary cholesterol."
+      ],
+      "clinicalInterpretation": {
+        "importance": "Cholesterol is not an essential nutrient – the body synthesizes adequate amounts. It's tracked primarily due to historical associations with heart disease.",
+        "deficiencySigns": "Not applicable – the body produces sufficient cholesterol. No deficiency state exists.",
+        "excessRisks": "Dietary cholesterol has modest effect on blood cholesterol for most people. However, some individuals are 'hyper-responders.' High intake (>600 mg/day) combined with elevated LDL may warrant reduction.",
+        "foodSources": "Egg yolks (~185 mg per egg), liver and organ meats, shellfish (especially shrimp), full-fat dairy.",
+        "specialConsiderations": "Current guidelines have removed strict limits, emphasizing overall diet pattern. Saturated and trans fats have greater impact on blood LDL than dietary cholesterol. Moderate intake within a healthy diet is generally acceptable."
+      },
+      "warningFlags": {
+        "pregnancy": null,
+        "ckd": null,
+        "elderly": null,
+        "drugInteractions": []
+      }
+    },
+    {
+      "nutrientId": "total_sugars",
+      "displayName": "Total Sugars",
+      "shortName": "Sugars",
+      "category": "macronutrient",
+      "unit": "g",
+      "usdaNutrientId": null,
+      "classification": "neutral",
+      "hasDRI": false,
+      "hasUL": false,
+      "hasFDA_DV": false,
+      "driTypes": [],
+      "defaultTargetSource": "DRI",
+      "labeling": {
+        "hasPercentDV": false,
+        "dvUnit": "g"
+      },
+      "notes": [
+        "No DV specified for total sugars (includes intrinsic sugars which are acceptable).",
+        "Intrinsic sugars in whole fruits, vegetables, and dairy are not limited.",
+        "Focus is on limiting added sugars rather than total sugars."
+      ],
+      "clinicalInterpretation": {
+        "importance": "Total sugars include both naturally occurring sugars (in fruits, vegetables, dairy) and added sugars. The distinction matters for health.",
+        "deficiencySigns": "Not applicable – sugar is not essential. The body can produce glucose from other nutrients.",
+        "excessRisks": "Excess sugar consumption, particularly from added sugars, contributes to obesity, dental caries, and metabolic syndrome.",
+        "foodSources": "Natural sources: fruits (fructose), dairy (lactose), vegetables. These come packaged with fiber, vitamins, and minerals.",
+        "specialConsiderations": "Intrinsic sugars in whole foods are not a concern. Focus on limiting added sugars rather than total sugars. The glycemic response of natural sugars in whole foods is moderated by fiber."
+      },
+      "warningFlags": {
+        "pregnancy": null,
+        "ckd": null,
+        "elderly": null,
+        "drugInteractions": []
+      }
+    },
+    {
+      "nutrientId": "added_sugars",
+      "displayName": "Added Sugars",
+      "shortName": "Added Sugars",
+      "category": "macronutrient",
+      "unit": "g",
+      "usdaNutrientId": null,
+      "classification": "risk",
+      "hasDRI": false,
+      "hasUL": false,
+      "hasFDA_DV": true,
+      "driTypes": [],
+      "defaultTargetSource": "FDA_DV",
+      "labeling": {
+        "hasPercentDV": true,
+        "dvUnit": "g"
+      },
+      "notes": [
+        "DGA recommends <10% of calories from added sugars (50 g on 2000 kcal diet).",
+        "AHA recommends ~6% (25 g for women, 36 g for men) for better heart health.",
+        "WHO recommends <10% of total energy, with conditional recommendation of <5% for additional benefits.",
+        "Avoid added sugars for children under 2 years."
+      ],
+      "clinicalInterpretation": {
+        "importance": "Added sugars provide calories but no essential nutrients. They are a 'limit' nutrient for health.",
+        "deficiencySigns": "Not applicable – added sugars are not essential. No deficiency state exists.",
+        "excessRisks": "High added sugar intake contributes to weight gain, dental caries, type 2 diabetes, cardiovascular disease, and fatty liver disease. It displaces more nutritious foods.",
+        "foodSources": "Sugar-sweetened beverages, candy, baked goods, cereals, flavored yogurts, sauces (ketchup, BBQ sauce), processed foods with added sugars.",
+        "specialConsiderations": "DGA recommends <10% of calories; AHA recommends ~6% (25 g women, 36 g men). WHO suggests additional dental health benefits at <5%. Avoid added sugars entirely for children under 2 years."
+      },
+      "warningFlags": {
+        "pregnancy": null,
+        "ckd": null,
+        "elderly": null,
+        "drugInteractions": []
+      }
+    },
+    {
+      "nutrientId": "linoleic_acid",
+      "displayName": "Linoleic Acid (Omega-6)",
+      "shortName": "Omega-6",
+      "category": "fatty_acid",
+      "unit": "g",
+      "usdaNutrientId": null,
+      "classification": "beneficial",
+      "hasDRI": true,
+      "hasUL": false,
+      "hasFDA_DV": false,
+      "driTypes": ["AI", "AMDR"],
+      "defaultTargetSource": "DRI",
+      "labeling": {
+        "hasPercentDV": false,
+        "dvUnit": "g"
+      },
+      "notes": [
+        "Essential fatty acid required for cell membranes and eicosanoid production.",
+        "AI: 17 g/day for adult men, 12 g/day for adult women (19-50).",
+        "AMDR: 5-10% of energy for all ages.",
+        "No UL established.",
+        "Common sources: vegetable oils, nuts, seeds."
+      ],
+      "clinicalInterpretation": {
+        "importance": "An essential PUFA used in cell membranes and making signaling molecules (eicosanoids). The most abundant polyunsaturated fat in the diet.",
+        "deficiencySigns": "Deficiency is extremely rare in developed countries. Theoretical signs include scaly dermatitis and poor wound healing.",
+        "excessRisks": "No UL established. Very high omega-6 relative to omega-3 (>15:1 ratio) might theoretically promote inflammation, though evidence for replacing saturated fat with omega-6 shows cardiovascular benefit.",
+        "foodSources": "Vegetable oils (soybean, corn, safflower, sunflower), nuts, seeds.",
+        "specialConsiderations": "Most people get adequate to excess omega-6. Focus on overall unsaturated vs saturated fat balance rather than micro-managing the n-6:n-3 ratio unless it's extremely unbalanced."
+      },
+      "warningFlags": {
+        "pregnancy": "AI is 13 g/day during pregnancy and lactation.",
+        "ckd": null,
+        "elderly": "AI decreases slightly to 14 g/day for men 51+, 11 g/day for women 51+.",
+        "drugInteractions": []
+      }
+    },
+    {
+      "nutrientId": "alpha_linolenic_acid",
+      "displayName": "Alpha-Linolenic Acid (Omega-3)",
+      "shortName": "ALA",
+      "category": "fatty_acid",
+      "unit": "g",
+      "usdaNutrientId": null,
+      "classification": "beneficial",
+      "hasDRI": true,
+      "hasUL": false,
+      "hasFDA_DV": false,
+      "driTypes": ["AI", "AMDR"],
+      "defaultTargetSource": "DRI",
+      "labeling": {
+        "hasPercentDV": false,
+        "dvUnit": "g"
+      },
+      "notes": [
+        "Essential omega-3 fatty acid important for brain and heart health.",
+        "AI: 1.6 g/day for adult men, 1.1 g/day for adult women.",
+        "AMDR: 0.6-1.2% of energy; up to 10% can be EPA/DHA for equivalent benefit.",
+        "Can be converted to EPA/DHA but inefficiently.",
+        "Sources: flaxseed, walnuts, chia seeds, canola oil."
+      ],
+      "clinicalInterpretation": {
+        "importance": "Essential omega-3 fatty acid for brain structure, anti-inflammatory effects, and cardiovascular health. ALA from plant sources can partially convert to EPA/DHA, but conversion is limited (~5-15%).",
+        "deficiencySigns": "Deficiency is rare but can cause scaly dermatitis, growth retardation. More common concern is suboptimal intake for cardiovascular benefits.",
+        "excessRisks": "No UL established. Very high doses (>3 g EPA/DHA from supplements) may thin blood slightly, but dietary ALA is generally safe.",
+        "foodSources": "Flaxseed and flaxseed oil (richest plant source), chia seeds, walnuts, canola oil, soybeans.",
+        "specialConsiderations": "For vegetarians and vegans, ensure adequate ALA intake. Consider algal DHA supplements for pregnant women or those concerned about brain/eye health, since ALA-to-DHA conversion is inefficient."
+      },
+      "warningFlags": {
+        "pregnancy": "AI increases to 1.4 g/day during pregnancy, 1.3 g/day during lactation.",
+        "ckd": null,
+        "elderly": null,
+        "drugInteractions": []
+      }
+    },
+    {
+      "nutrientId": "epa_dha",
+      "displayName": "EPA + DHA (Long-chain Omega-3)",
+      "shortName": "EPA/DHA",
+      "category": "fatty_acid",
+      "unit": "mg",
+      "usdaNutrientId": null,
+      "classification": "beneficial",
+      "hasDRI": false,
+      "hasUL": false,
+      "hasFDA_DV": false,
+      "driTypes": [],
+      "defaultTargetSource": "DRI",
+      "labeling": {
+        "hasPercentDV": false,
+        "dvUnit": "mg"
+      },
+      "notes": [
+        "No formal DRI established, but recommended for cardiovascular and neural health.",
+        "Pregnancy: 200-300 mg DHA specifically recommended for fetal neural development.",
+        "AHA recommends 2 servings of fatty fish per week (approximately 500 mg EPA+DHA/day).",
+        "Up to 10% of the ALA AMDR can be consumed as EPA/DHA."
+      ],
+      "clinicalInterpretation": {
+        "importance": "Long-chain omega-3s essential for brain structure (DHA) and anti-inflammatory effects (EPA). Directly support cardiovascular health, cognitive function, and fetal development.",
+        "deficiencySigns": "Low intake is associated with higher cardiovascular risk and may affect cognitive function. In infants, inadequate DHA may affect visual and neurological development.",
+        "excessRisks": "No UL, but very high doses (>3 g EPA/DHA daily) can thin blood and increase bleeding risk, especially with anticoagulants.",
+        "foodSources": "Fatty fish (salmon, mackerel, sardines, herring, anchovies), fish oil supplements, algal oil (vegetarian source).",
+        "specialConsiderations": "AHA recommends 2 servings of fatty fish per week (~500 mg EPA+DHA/day). Pregnant women should consume 200-300 mg DHA for fetal brain development. Vegans can use algal DHA supplements."
+      },
+      "warningFlags": {
+        "pregnancy": "200-300 mg DHA specifically recommended for fetal neural development.",
+        "ckd": null,
+        "elderly": null,
+        "drugInteractions": ["High doses (>3 g/day) may increase bleeding risk, especially with anticoagulants."]
+      }
+    },
+    {
+      "nutrientId": "vitamin_a",
+      "displayName": "Vitamin A",
+      "shortName": "Vit A",
+      "category": "vitamin",
+      "unit": "mcg RAE",
+      "usdaNutrientId": null,
+      "classification": "beneficial",
+      "hasDRI": true,
+      "hasUL": true,
+      "hasFDA_DV": true,
+      "driTypes": ["RDA", "AI", "UL"],
+      "defaultTargetSource": "DRI",
+      "labeling": {
+        "hasPercentDV": true,
+        "dvUnit": "mcg RAE"
+      },
+      "notes": [
+        "Essential for vision, immune function, and skin health.",
+        "RDA: 900 mcg RAE for adult men, 700 mcg RAE for adult women.",
+        "UL of 3000 mcg RAE applies to preformed vitamin A (retinol) only.",
+        "1 RAE = 1 mcg retinol = 12 mcg beta-carotene.",
+        "Carotenoid forms (provitamin A from plants) have no UL and are not toxic."
+      ],
+      "clinicalInterpretation": {
+        "importance": "Crucial for vision (especially night vision via rhodopsin), immune function, and epithelial cell health (skin, mucous membranes).",
+        "deficiencySigns": "Night blindness progressing to permanent blindness (xerophthalmia), increased infection risk and severity. Deficiency is rare in developed countries except in malabsorption or very restrictive diets.",
+        "excessRisks": "Excess preformed vitamin A (retinol) can cause acute toxicity (nausea, dizziness, headache) or chronic toxicity (liver damage, hair loss, bone pain). In pregnancy, even moderately excessive intake is teratogenic.",
+        "foodSources": "Preformed (retinol): liver, fish, eggs, fortified dairy. Provitamin A (carotenoids): orange/yellow vegetables (carrots, sweet potato), leafy greens, cantaloupe.",
+        "specialConsiderations": "Carotenoids from foods have no UL and are not toxic. High-dose beta-carotene supplements increased lung cancer risk in smokers – avoid. In pregnancy, strictly avoid >3000 mcg preformed vitamin A."
+      },
+      "warningFlags": {
+        "pregnancy": "CRITICAL: UL of 3000 mcg preformed vitamin A during pregnancy due to teratogenicity. Avoid high-dose retinol supplements.",
+        "ckd": null,
+        "elderly": null,
+        "drugInteractions": []
+      }
+    },
+    {
+      "nutrientId": "vitamin_c",
+      "displayName": "Vitamin C",
+      "shortName": "Vit C",
+      "category": "vitamin",
+      "unit": "mg",
+      "usdaNutrientId": null,
+      "classification": "beneficial",
+      "hasDRI": true,
+      "hasUL": true,
+      "hasFDA_DV": true,
+      "driTypes": ["RDA", "AI", "UL"],
+      "defaultTargetSource": "DRI",
+      "labeling": {
+        "hasPercentDV": true,
+        "dvUnit": "mg"
+      },
+      "notes": [
+        "Antioxidant needed for collagen synthesis, immune function, and iron absorption.",
+        "RDA: 90 mg for adult men, 75 mg for adult women.",
+        "Smokers require an additional 35 mg/day above RDA.",
+        "UL: 2000 mg/day (high doses may cause GI upset, kidney stones).",
+        "Water-soluble; excess above needs is excreted."
+      ],
+      "clinicalInterpretation": {
+        "importance": "Important for collagen synthesis (wound healing, skin integrity), acts as an antioxidant, and enhances iron absorption. Supports immune function.",
+        "deficiencySigns": "Scurvy can develop in ~1-3 months of <10 mg/day: bleeding gums, bruising, joint pain, poor wound healing. Now rare but can occur in severely malnourished individuals or very restricted diets.",
+        "excessRisks": "Excess (>2000 mg) is mostly excreted but may cause diarrhea and, in predisposed individuals, could contribute to kidney stone formation (as vitamin C metabolizes to oxalate).",
+        "foodSources": "Citrus fruits, strawberries, kiwi, bell peppers, broccoli, tomatoes, cabbage.",
+        "specialConsiderations": "Smokers have higher requirements (add 35 mg to RDA) due to increased oxidative stress. Megadoses (1-2 g) for colds are generally harmless aside from GI upset, but show limited benefit."
+      },
+      "warningFlags": {
+        "pregnancy": "RDA increases to 85 mg during pregnancy, 120 mg during lactation.",
+        "ckd": null,
+        "elderly": null,
+        "drugInteractions": []
+      }
+    },
+    {
+      "nutrientId": "vitamin_d",
+      "displayName": "Vitamin D",
+      "shortName": "Vit D",
+      "category": "vitamin",
+      "unit": "mcg",
+      "usdaNutrientId": null,
+      "classification": "beneficial",
+      "hasDRI": true,
+      "hasUL": true,
+      "hasFDA_DV": true,
+      "driTypes": ["RDA", "AI", "UL"],
+      "defaultTargetSource": "DRI",
+      "labeling": {
+        "hasPercentDV": true,
+        "dvUnit": "mcg"
+      },
+      "notes": [
+        "Crucial for calcium absorption and bone health (1 mcg = 40 IU).",
+        "RDA: 15 mcg (600 IU) for ages 1-70, 20 mcg (800 IU) for 71+.",
+        "UL: 100 mcg (4000 IU) for ages 9+.",
+        "Deficiency is common; causes rickets in children, osteomalacia in adults.",
+        "Sun exposure can produce vitamin D; not accounted in dietary intake.",
+        "2011 update from National Academies."
+      ],
+      "clinicalInterpretation": {
+        "importance": "Functions as a hormone regulating calcium and phosphorus balance; essential for bone health, muscle function, and emerging evidence shows importance in immunity.",
+        "deficiencySigns": "Deficiency is common, especially in older adults, darker-skinned individuals, and those with limited sun exposure. Causes rickets in children (soft bones, skeletal deformities) and osteomalacia in adults (bone pain, fractures, muscle weakness).",
+        "excessRisks": "Above UL (100 mcg/4000 IU), risk of hypercalcemia increases, which can cause calcification of soft tissues and kidney stones. Extremely high chronic intake (>10,000 IU/day) carries high toxicity risk.",
+        "foodSources": "Dietary sources are limited: fatty fish (salmon, mackerel), egg yolks, fortified milk and cereals. Sun exposure (UVB) produces vitamin D in skin but varies by latitude, season, and skin pigmentation.",
+        "specialConsiderations": "Many experts suggest 800-1000 IU for optimal blood levels. Adults 71+ need 800 IU. Check 25(OH)D blood level if deficiency suspected (<20 ng/mL = deficient). Supplementation often needed in northern latitudes and for indoor/older populations."
+      },
+      "warningFlags": {
+        "pregnancy": "RDA remains 15 mcg (600 IU) during pregnancy and lactation.",
+        "ckd": null,
+        "elderly": "RDA increases to 20 mcg (800 IU) for adults 71+. Reduced skin synthesis with age.",
+        "drugInteractions": []
+      }
+    },
+    {
+      "nutrientId": "vitamin_e",
+      "displayName": "Vitamin E",
+      "shortName": "Vit E",
+      "category": "vitamin",
+      "unit": "mg",
+      "usdaNutrientId": null,
+      "classification": "beneficial",
+      "hasDRI": true,
+      "hasUL": true,
+      "hasFDA_DV": true,
+      "driTypes": ["RDA", "AI", "UL"],
+      "defaultTargetSource": "DRI",
+      "labeling": {
+        "hasPercentDV": true,
+        "dvUnit": "mg"
+      },
+      "notes": [
+        "Antioxidant protecting cell membranes (measured as alpha-tocopherol).",
+        "RDA: 15 mg for adults, 19 mg during lactation.",
+        "UL: 1000 mg of synthetic alpha-tocopherol from supplements only.",
+        "High doses may impair blood clotting by antagonizing vitamin K.",
+        "Deficiency is rare; occurs with fat malabsorption."
+      ],
+      "clinicalInterpretation": {
+        "importance": "A fat-soluble antioxidant protecting cell membranes from free radical damage. Important for immune function and skin health.",
+        "deficiencySigns": "Deficiency is rare except in fat malabsorption disorders or genetic anomalies, causing peripheral neuropathy and ataxia.",
+        "excessRisks": "High doses (>400 IU/day) might slightly increase mortality in some studies. Main risk is bleeding tendency, especially when taken with anticoagulants, because vitamin E can antagonize vitamin K's clotting role.",
+        "foodSources": "Vegetable oils (sunflower, safflower, wheat germ oil), nuts and seeds (almonds, sunflower seeds), green leafy vegetables.",
+        "specialConsiderations": "Get vitamin E from foods rather than supplements. Supplementation >400 IU/day long-term is not advised without medical indication. High doses pose bleeding risk in patients on anticoagulants."
+      },
+      "warningFlags": {
+        "pregnancy": "RDA remains 15 mg during pregnancy.",
+        "ckd": null,
+        "elderly": null,
+        "drugInteractions": ["High doses may increase bleeding risk, especially with anticoagulants."]
+      }
+    },
+    {
+      "nutrientId": "vitamin_k",
+      "displayName": "Vitamin K",
+      "shortName": "Vit K",
+      "category": "vitamin",
+      "unit": "mcg",
+      "usdaNutrientId": null,
+      "classification": "beneficial",
+      "hasDRI": true,
+      "hasUL": false,
+      "hasFDA_DV": true,
+      "driTypes": ["AI"],
+      "defaultTargetSource": "DRI",
+      "labeling": {
+        "hasPercentDV": true,
+        "dvUnit": "mcg"
+      },
+      "notes": [
+        "Required for blood clotting and bone protein synthesis.",
+        "All values are AIs (insufficient data for EAR/RDA).",
+        "AI: 120 mcg for adult men, 90 mcg for adult women.",
+        "No UL established (no toxicity from food forms).",
+        "Infants receive vitamin K injection at birth to prevent bleeding."
+      ],
+      "clinicalInterpretation": {
+        "importance": "Required for blood clotting (activates clotting factors) and bone protein synthesis (osteocalcin). Partially produced by gut bacteria.",
+        "deficiencySigns": "Deficiency manifests as bleeding diathesis (easy bruising, bleeding) – rare in adults except with certain drugs, long-term antibiotics, or liver disease. Newborns receive vitamin K injection to prevent hemorrhagic disease.",
+        "excessRisks": "No UL established because no known toxicity from food forms. High supplement doses don't appear harmful.",
+        "foodSources": "K1 (phylloquinone): leafy greens (kale, spinach, collards, lettuce), broccoli. K2 (menaquinone): fermented foods (natto), cheese, egg yolks.",
+        "specialConsiderations": "Patients on warfarin must keep vitamin K intake consistent to avoid INR fluctuations. If intake is near zero (avoidance of greens), mention importance for bone health and that gut production may not suffice."
+      },
+      "warningFlags": {
+        "pregnancy": "AI is 75-90 mcg during pregnancy and lactation.",
+        "ckd": null,
+        "elderly": null,
+        "drugInteractions": ["Vitamin K intake must be consistent for patients on warfarin (antagonizes anticoagulant effect)."]
+      }
+    },
+    {
+      "nutrientId": "thiamin",
+      "displayName": "Thiamin (Vitamin B1)",
+      "shortName": "B1",
+      "category": "vitamin",
+      "unit": "mg",
+      "usdaNutrientId": null,
+      "classification": "beneficial",
+      "hasDRI": true,
+      "hasUL": false,
+      "hasFDA_DV": true,
+      "driTypes": ["RDA", "AI"],
+      "defaultTargetSource": "DRI",
+      "labeling": {
+        "hasPercentDV": true,
+        "dvUnit": "mg"
+      },
+      "notes": [
+        "B-vitamin involved in energy metabolism (coenzyme TPP).",
+        "RDA: 1.2 mg for adult men, 1.1 mg for adult women.",
+        "No UL (excess is water-soluble and excreted).",
+        "Deficiency causes beriberi or Wernicke-Korsakoff syndrome (common in alcoholics)."
+      ],
+      "clinicalInterpretation": {
+        "importance": "B-vitamin involved in energy metabolism (coenzyme thiamine pyrophosphate in TCA cycle) and crucial for nerve function.",
+        "deficiencySigns": "Deficiency causes beriberi – dry (neurological: peripheral neuropathy, weakness) or wet (cardiovascular: edema, heart failure). Wernicke-Korsakoff syndrome is common in chronic alcoholics (poor intake + impaired absorption).",
+        "excessRisks": "No UL established. Excess B1 is water-soluble and readily excreted. No toxicity known.",
+        "foodSources": "Whole grains, fortified breads and cereals, legumes, pork, nuts, seeds.",
+        "specialConsiderations": "Deficiency is rare in developed countries with varied diets. Heavy alcohol users may need thiamin supplementation to prevent Wernicke's encephalopathy."
+      },
+      "warningFlags": {
+        "pregnancy": "RDA increases to 1.4 mg during pregnancy and lactation.",
+        "ckd": null,
+        "elderly": null,
+        "drugInteractions": []
+      }
+    },
+    {
+      "nutrientId": "riboflavin",
+      "displayName": "Riboflavin (Vitamin B2)",
+      "shortName": "B2",
+      "category": "vitamin",
+      "unit": "mg",
+      "usdaNutrientId": null,
+      "classification": "beneficial",
+      "hasDRI": true,
+      "hasUL": false,
+      "hasFDA_DV": true,
+      "driTypes": ["RDA", "AI"],
+      "defaultTargetSource": "DRI",
+      "labeling": {
+        "hasPercentDV": true,
+        "dvUnit": "mg"
+      },
+      "notes": [
+        "B-vitamin needed for energy production and cellular function (coenzyme FAD/FMN).",
+        "RDA: 1.3 mg for adult men, 1.1 mg for adult women.",
+        "No UL (excess not reported to be harmful; water-soluble).",
+        "Deficiency (ariboflavinosis) causes sore throat, mouth sores, skin cracks."
+      ],
+      "clinicalInterpretation": {
+        "importance": "B-vitamin needed for energy production and cellular function as coenzymes FAD and FMN in redox reactions.",
+        "deficiencySigns": "Deficiency (ariboflavinosis) signs: cracked mouth corners (angular stomatitis), sore throat, glossitis (magenta tongue), often occurring with other B deficiencies. Indicates poor diet quality.",
+        "excessRisks": "No UL established. Excess riboflavin is water-soluble and excreted. High intake may cause bright yellow urine (benign).",
+        "foodSources": "Dairy products (milk, yogurt, cheese), eggs, lean meats, green vegetables (spinach, asparagus), fortified cereals.",
+        "specialConsiderations": "Those avoiding both dairy and meat should ensure riboflavin from nuts, mushrooms, spinach, or fortified foods. Some migraine sufferers take high-dose riboflavin (~400 mg) as prophylactic – still safe."
+      },
+      "warningFlags": {
+        "pregnancy": "RDA increases to 1.4 mg during pregnancy, 1.6 mg during lactation.",
+        "ckd": null,
+        "elderly": null,
+        "drugInteractions": []
+      }
+    },
+    {
+      "nutrientId": "niacin",
+      "displayName": "Niacin (Vitamin B3)",
+      "shortName": "B3",
+      "category": "vitamin",
+      "unit": "mg NE",
+      "usdaNutrientId": null,
+      "classification": "beneficial",
+      "hasDRI": true,
+      "hasUL": true,
+      "hasFDA_DV": true,
+      "driTypes": ["RDA", "AI", "UL"],
+      "defaultTargetSource": "DRI",
+      "labeling": {
+        "hasPercentDV": true,
+        "dvUnit": "mg NE"
+      },
+      "notes": [
+        "Used in NAD/NADP coenzymes for metabolism.",
+        "RDA given in Niacin Equivalents: 1 NE = 1 mg niacin or 60 mg tryptophan.",
+        "RDA: 16 mg NE for adult men, 14 mg NE for adult women.",
+        "UL: 35 mg/day applies to supplemental/synthetic niacin only (to prevent flushing).",
+        "Deficiency causes pellagra (dermatitis, diarrhea, dementia).",
+        "High-dose nicotinic acid can cause skin flushing and liver toxicity."
+      ],
+      "clinicalInterpretation": {
+        "importance": "Key for NAD/NADP coenzymes used in practically all metabolic pathways. Can be synthesized from tryptophan (60 mg Trp = 1 mg niacin).",
+        "deficiencySigns": "Deficiency causes pellagra (4 D's): Dermatitis (photosensitive rash), Diarrhea, Dementia, and Death if untreated. Historically common in maize-based diets; now rare in developed world. Seen in alcoholism or very restricted diets.",
+        "excessRisks": "UL 35 mg applies to supplemental nicotinic acid to prevent flushing. High-dose nicotinic acid (1-3 g/day for cholesterol therapy) can cause liver toxicity. Niacin from food does not cause toxicity.",
+        "foodSources": "Meat (chicken, turkey, beef), fish (tuna, salmon), fortified cereals, peanuts, mushrooms. Body can convert tryptophan from protein-rich foods.",
+        "specialConsiderations": "Diets adequate in protein usually prevent deficiency. If taking >35 mg supplement, warn of possible flushing; >1000 mg requires medical supervision due to liver risk. Flush-free niacin (inositol hexaniacinate) doesn't lower cholesterol."
+      },
+      "warningFlags": {
+        "pregnancy": "RDA increases to 18 mg NE during pregnancy, 17 mg NE during lactation. UL remains 30-35 mg.",
+        "ckd": null,
+        "elderly": null,
+        "drugInteractions": []
+      }
+    },
+    {
+      "nutrientId": "vitamin_b6",
+      "displayName": "Vitamin B6 (Pyridoxine)",
+      "shortName": "B6",
+      "category": "vitamin",
+      "unit": "mg",
+      "usdaNutrientId": null,
+      "classification": "beneficial",
+      "hasDRI": true,
+      "hasUL": true,
+      "hasFDA_DV": true,
+      "driTypes": ["RDA", "AI", "UL"],
+      "defaultTargetSource": "DRI",
+      "labeling": {
+        "hasPercentDV": true,
+        "dvUnit": "mg"
+      },
+      "notes": [
+        "Needed for amino acid metabolism, neurotransmitter synthesis, and hemoglobin formation.",
+        "RDA: 1.3 mg for adults 19-50, increasing to 1.7 mg (men) / 1.5 mg (women) after age 50.",
+        "UL: 100 mg (high doses from supplements can cause sensory neuropathy).",
+        "Deficiency can cause microcytic anemia, depression, dermatitis."
+      ],
+      "clinicalInterpretation": {
+        "importance": "Involved in amino acid metabolism (transamination), neurotransmitter synthesis (serotonin, dopamine), hemoglobin formation, and glycogen breakdown. Modulates homocysteine levels with folate and B12.",
+        "deficiencySigns": "Mild deficiency: microcytic anemia, cracks at mouth corners, depression, confusion. Severe deficiency: seizures (seen in infants on deficient formula historically). Can occur in alcoholism, malabsorption, or with certain medications (isoniazid).",
+        "excessRisks": "UL 100 mg. High-dose B6 supplements (>100 mg chronically) can cause sensory neuropathy – ironically, toxicity symptoms mimic deficiency (numbness, tingling in extremities).",
+        "foodSources": "Poultry, fish, potatoes, starchy vegetables, bananas, chickpeas, fortified cereals.",
+        "specialConsiderations": "RDA increases after age 50 (less efficient utilization). Do not exceed ~100 mg/day unless medically indicated. Some use 50-100 mg for PMS or morning sickness – usually fine short-term. If taking >500 mg (some energy drinks), warn to cut back."
+      },
+      "warningFlags": {
+        "pregnancy": "RDA increases to 1.9 mg during pregnancy, 2.0 mg during lactation. UL is 80-100 mg.",
+        "ckd": null,
+        "elderly": "RDA increases to 1.7 mg (men) / 1.5 mg (women) after age 50 due to less efficient utilization.",
+        "drugInteractions": []
+      }
+    },
+    {
+      "nutrientId": "folate",
+      "displayName": "Folate (Vitamin B9)",
+      "shortName": "Folate",
+      "category": "vitamin",
+      "unit": "mcg DFE",
+      "usdaNutrientId": null,
+      "classification": "beneficial",
+      "hasDRI": true,
+      "hasUL": true,
+      "hasFDA_DV": true,
+      "driTypes": ["RDA", "AI", "UL"],
+      "defaultTargetSource": "DRI",
+      "labeling": {
+        "hasPercentDV": true,
+        "dvUnit": "mcg DFE"
+      },
+      "notes": [
+        "Vital for DNA synthesis and cell division.",
+        "RDA: 400 mcg DFE (Dietary Folate Equivalents) for adults.",
+        "UL: 1000 mcg/day applies to synthetic folic acid only (can mask B12 deficiency).",
+        "No adverse effects from natural food folate.",
+        "Women of childbearing age should get 400 mcg folic acid from supplements/fortified foods."
+      ],
+      "clinicalInterpretation": {
+        "importance": "Essential for one-carbon metabolism – needed for DNA synthesis, especially critical in rapidly dividing cells. Critical in pregnancy to prevent neural tube defects in the fetus.",
+        "deficiencySigns": "Megaloblastic anemia (same as B12), elevated homocysteine (CVD risk factor), glossitis. In pregnancy: neural tube defects (spina bifida, anencephaly). Can occur in alcoholism, malabsorption, or poor diet (low in leafy greens).",
+        "excessRisks": "UL 1000 mcg applies to synthetic folic acid only – because high folic acid can mask B12 deficiency (fixes anemia but neurological damage progresses). Natural food folate has no toxicity.",
+        "foodSources": "Leafy green vegetables (spinach, asparagus, Brussels sprouts), legumes, fortified grains and cereals, liver.",
+        "specialConsiderations": "Women who can become pregnant should take 400 mcg folic acid from supplements/fortified foods to prevent NTDs. If taking >1 mg supplement, ensure B12 status is adequate. Low-carb or gluten-free diets may miss fortified grain sources."
+      },
+      "warningFlags": {
+        "pregnancy": "CRITICAL: RDA increases to 600 mcg DFE during pregnancy. Start before conception to prevent neural tube defects.",
+        "ckd": null,
+        "elderly": "Excess folic acid can mask B12 deficiency, which is more common in elderly.",
+        "drugInteractions": []
+      }
+    },
+    {
+      "nutrientId": "vitamin_b12",
+      "displayName": "Vitamin B12 (Cobalamin)",
+      "shortName": "B12",
+      "category": "vitamin",
+      "unit": "mcg",
+      "usdaNutrientId": null,
+      "classification": "beneficial",
+      "hasDRI": true,
+      "hasUL": false,
+      "hasFDA_DV": true,
+      "driTypes": ["RDA", "AI"],
+      "defaultTargetSource": "DRI",
+      "labeling": {
+        "hasPercentDV": true,
+        "dvUnit": "mcg"
+      },
+      "notes": [
+        "Required for red blood cell formation and neurological function.",
+        "RDA: 2.4 mcg for adults.",
+        "No UL (no toxicity from high doses known).",
+        "Deficiency causes megaloblastic anemia and nerve damage.",
+        "Vegans need B12-fortified foods or supplements.",
+        "10-30% of older adults malabsorb food-bound B12."
+      ],
+      "clinicalInterpretation": {
+        "importance": "Required for neurological function (myelin synthesis), red blood cell formation, and in methylation (with folate) – converts homocysteine to methionine.",
+        "deficiencySigns": "Deficiency causes megaloblastic anemia and neurological symptoms: numbness, gait problems, cognitive disturbances, memory loss. Neuro damage can be irreversible if not caught early. Deficiency is a major concern for vegans and elderly.",
+        "excessRisks": "No UL established. No toxicity known even at high doses. Water-soluble, and high-dose supplements (500+ mcg) are common and safe.",
+        "foodSources": "Found only in animal-derived foods: meat, fish, poultry, dairy, eggs. Vegans must use B12-fortified foods (plant milks, nutritional yeast, cereals) or supplements.",
+        "specialConsiderations": "Vegans are at high risk without supplementation. 10-30% of adults >50 malabsorb food-bound B12; they should use supplements or fortified foods. Metformin and proton pump inhibitors reduce absorption – monitor B12 status."
+      },
+      "warningFlags": {
+        "pregnancy": "RDA increases to 2.6 mcg during pregnancy, 2.8 mcg during lactation.",
+        "ckd": null,
+        "elderly": "Adults >50 should meet RDA mainly from fortified foods or supplements due to malabsorption of food-bound B12.",
+        "drugInteractions": ["Metformin and proton pump inhibitors can reduce B12 absorption."]
+      }
+    },
+    {
+      "nutrientId": "pantothenic_acid",
+      "displayName": "Pantothenic Acid (Vitamin B5)",
+      "shortName": "B5",
+      "category": "vitamin",
+      "unit": "mg",
+      "usdaNutrientId": null,
+      "classification": "beneficial",
+      "hasDRI": true,
+      "hasUL": false,
+      "hasFDA_DV": true,
+      "driTypes": ["AI"],
+      "defaultTargetSource": "DRI",
+      "labeling": {
+        "hasPercentDV": true,
+        "dvUnit": "mg"
+      },
+      "notes": [
+        "Part of coenzyme A, critical for metabolism.",
+        "AI: 5 mg for adults (insufficient data for EAR/RDA).",
+        "No UL (very high doses have no reported adverse effects).",
+        "Widespread in foods; deficiency is extremely rare."
+      ],
+      "clinicalInterpretation": {
+        "importance": "Part of coenzyme A, critical for metabolism of fats, carbohydrates, and proteins. Found in almost all foods ('pan' = everywhere).",
+        "deficiencySigns": "Deficiency is extremely rare – seen only in extreme malnutrition. Causes general malaise, irritability, and 'burning feet' syndrome (documented in WWII prisoners on polished rice diets).",
+        "excessRisks": "No UL established. Very high doses have no reported adverse effects.",
+        "foodSources": "Widespread: meat, poultry, fish, whole grains, legumes, dairy, eggs, vegetables. Almost any varied diet provides adequate B5.",
+        "specialConsiderations": "Not a common concern. If someone is fatigued, it's unlikely due to B5 deficiency specifically. Most multivitamins contain B5, but supplementation is rarely needed."
+      },
+      "warningFlags": {
+        "pregnancy": "AI increases to 6 mg during pregnancy, 7 mg during lactation.",
+        "ckd": null,
+        "elderly": null,
+        "drugInteractions": []
+      }
+    },
+    {
+      "nutrientId": "biotin",
+      "displayName": "Biotin (Vitamin B7)",
+      "shortName": "Biotin",
+      "category": "vitamin",
+      "unit": "mcg",
+      "usdaNutrientId": null,
+      "classification": "beneficial",
+      "hasDRI": true,
+      "hasUL": false,
+      "hasFDA_DV": true,
+      "driTypes": ["AI"],
+      "defaultTargetSource": "DRI",
+      "labeling": {
+        "hasPercentDV": true,
+        "dvUnit": "mcg"
+      },
+      "notes": [
+        "Cofactor for carboxylation enzymes (important in fat and carbohydrate metabolism).",
+        "AI: 30 mcg for adults.",
+        "No UL (no toxicity observed even at high doses).",
+        "Produced by gut bacteria and found in many foods; deficiency is very rare.",
+        "Raw egg whites contain avidin which can bind biotin."
+      ],
+      "clinicalInterpretation": {
+        "importance": "A cofactor for carboxylase enzymes important in gluconeogenesis and fatty acid synthesis. Produced by gut bacteria and found in many foods.",
+        "deficiencySigns": "Deficiency is very rare in the general population. Signs: hair loss, scaly dermatitis, depression, numbness/tingling. Can occur with prolonged raw egg white consumption (avidin binds biotin) or extremely restricted diets.",
+        "excessRisks": "No UL, no toxicity even at high doses (5-10 mg used therapeutically). However, extremely high biotin intake can interfere with some lab tests (troponin, thyroid hormones), causing false results.",
+        "foodSources": "Eggs (cooked), liver, nuts (almonds, peanuts), soybeans, whole grains, cauliflower. Gut bacteria also produce some biotin.",
+        "specialConsiderations": "Hair and nail supplements often contain 5000+ mcg – not harmful but above what's needed; extra biotin doesn't further strengthen hair if already sufficient. If on high-dose biotin, inform lab before certain tests."
+      },
+      "warningFlags": {
+        "pregnancy": "AI remains 30 mcg during pregnancy, increases to 35 mcg during lactation.",
+        "ckd": null,
+        "elderly": null,
+        "drugInteractions": ["High-dose biotin supplements can interfere with certain lab tests (troponin, thyroid hormones)."]
+      }
+    },
+    {
+      "nutrientId": "choline",
+      "displayName": "Choline",
+      "shortName": "Choline",
+      "category": "vitamin",
+      "unit": "mg",
+      "usdaNutrientId": null,
+      "classification": "beneficial",
+      "hasDRI": true,
+      "hasUL": true,
+      "hasFDA_DV": true,
+      "driTypes": ["AI", "UL"],
+      "defaultTargetSource": "DRI",
+      "labeling": {
+        "hasPercentDV": true,
+        "dvUnit": "mg"
+      },
+      "notes": [
+        "Vital for cell membranes (phosphatidylcholine) and neurotransmitter acetylcholine.",
+        "AI: 550 mg for adult men, 425 mg for adult women.",
+        "UL: 3500 mg for adults (higher intakes can cause fishy body odor, hypotension, liver damage).",
+        "Many people fall short of AI; main sources are eggs, meat, fish.",
+        "Most prenatal supplements are inadequate in choline."
+      ],
+      "clinicalInterpretation": {
+        "importance": "Essential for formation of acetylcholine (neurotransmitter), phosphatidylcholine in cell membranes, and VLDL particles. Also needed for methylation (with folate/B12).",
+        "deficiencySigns": "True choline deficiency (fatty liver, muscle damage) is uncommon except in experimental settings. However, many people fall short of AI. Marginal intake in pregnancy could affect fetal brain development.",
+        "excessRisks": "UL 3500 mg. Excessive choline can cause fishy body odor, hypotension, sweating, and TMAO-related issues which may promote cardiovascular disease in theory.",
+        "foodSources": "Egg yolks (~125 mg each – richest common source), liver, meat, fish, soybeans, nuts/beans, cruciferous vegetables.",
+        "specialConsiderations": "Many people fall short of AI; eggs are a nutrient-dense source. Most prenatal vitamins contain inadequate choline – pregnant women should seek dietary sources. Vegetarians/vegans should emphasize soy, quinoa, and cruciferous vegetables."
+      },
+      "warningFlags": {
+        "pregnancy": "AI increases to 450 mg during pregnancy, 550 mg during lactation. Critical for fetal brain development.",
+        "ckd": null,
+        "elderly": null,
+        "drugInteractions": []
+      }
+    },
+    {
+      "nutrientId": "calcium",
+      "displayName": "Calcium",
+      "shortName": "Calcium",
+      "category": "mineral",
+      "unit": "mg",
+      "usdaNutrientId": null,
+      "classification": "beneficial",
+      "hasDRI": true,
+      "hasUL": true,
+      "hasFDA_DV": true,
+      "driTypes": ["RDA", "AI", "UL"],
+      "defaultTargetSource": "DRI",
+      "labeling": {
+        "hasPercentDV": true,
+        "dvUnit": "mg"
+      },
+      "notes": [
+        "Critical for bone and teeth, muscle contraction, and nerve signaling.",
+        "RDA: 1000 mg for adults 19-50, 1200 mg for women 51+ and all adults 71+, 1300 mg for ages 9-18.",
+        "UL: 2000-2500 mg for adults (excess can cause kidney stones or calcification).",
+        "Often under-consumed, especially in teenage girls and older adults.",
+        "2011 update from National Academies."
+      ],
+      "clinicalInterpretation": {
+        "importance": "The most abundant mineral in the body (99% in bones/teeth). Critical for bone structure, muscle contraction, nerve transmission, and hormonal secretion. Blood calcium is tightly regulated.",
+        "deficiencySigns": "If dietary intake is low, body leaches calcium from bones, leading to osteopenia/osteoporosis over time, increasing fracture risk. Severe deficiency can cause tetany (muscle spasms).",
+        "excessRisks": "UL 2000-2500 mg. Intakes above that can cause kidney stones and may increase cardiovascular calcification risk, especially from supplements rather than food.",
+        "foodSources": "Dairy (milk, yogurt, cheese), fortified plant milks, calcium-set tofu, leafy greens (kale, bok choy – not spinach due to oxalates), canned fish with bones (sardines, salmon).",
+        "specialConsiderations": "Adolescents need 1300 mg for peak bone mass; women 51+ and all adults 71+ need 1200 mg. Calcium works with vitamin D – ensure adequate D for absorption. >1200 mg/day total may not yield extra bone benefit but could raise kidney stone risk."
+      },
+      "warningFlags": {
+        "pregnancy": "RDA is 1000 mg for pregnant women 19-50 (same as non-pregnant); 1300 mg for pregnant teens.",
+        "ckd": "CKD patients: 800-1000 mg/day, individualized based on serum levels.",
+        "elderly": "RDA increases to 1200 mg for women 51+ and all adults 71+.",
+        "drugInteractions": ["Calcium can interfere with absorption of certain antibiotics, thyroid medications, and bisphosphonates."]
+      }
+    },
+    {
+      "nutrientId": "iron",
+      "displayName": "Iron",
+      "shortName": "Iron",
+      "category": "mineral",
+      "unit": "mg",
+      "usdaNutrientId": null,
+      "classification": "beneficial",
+      "hasDRI": true,
+      "hasUL": true,
+      "hasFDA_DV": true,
+      "driTypes": ["RDA", "AI", "UL"],
+      "defaultTargetSource": "DRI",
+      "labeling": {
+        "hasPercentDV": true,
+        "dvUnit": "mg"
+      },
+      "notes": [
+        "Needed for hemoglobin and oxygen transport.",
+        "RDA: 8 mg for adult men and postmenopausal women, 18 mg for women 19-50 (menstrual losses).",
+        "UL: 45 mg for adults, 40 mg for children (excess can cause GI irritation, liver damage).",
+        "Iron deficiency anemia is common if intake/absorption is low.",
+        "Vegetarians may need ~1.8x higher intake due to lower bioavailability of non-heme iron."
+      ],
+      "clinicalInterpretation": {
+        "importance": "Integral to hemoglobin in red blood cells (oxygen transport) and myoglobin in muscles; also necessary for various enzymes (cytochromes). Iron deficiency is the most common nutrient deficiency worldwide.",
+        "deficiencySigns": "Iron-deficiency anemia: fatigue, weakness, pallor, decreased immunity, pica (craving non-food like ice), shortness of breath. At-risk: menstruating females, pregnant women, infants/toddlers, vegetarians.",
+        "excessRisks": "UL 45 mg (40 mg for children). Excess can cause GI irritation (constipation, nausea) and, chronically, liver damage (hemosiderosis). Iron supplements are a leading cause of fatal poisoning in children.",
+        "foodSources": "Heme iron (best absorbed): red meat, poultry, seafood. Non-heme iron: legumes, spinach, fortified cereals. Combine with vitamin C to enhance non-heme absorption.",
+        "specialConsiderations": "Premenopausal women often fall short of 18 mg RDA. Vegetarians need ~1.8x higher intake (lower bioavailability). Avoid iron with tea/coffee or calcium at same meal. People with hemochromatosis should avoid extra iron."
+      },
+      "warningFlags": {
+        "pregnancy": "RDA increases to 27 mg during pregnancy to supply fetus and increased blood volume.",
+        "ckd": null,
+        "elderly": "RDA decreases to 8 mg for postmenopausal women.",
+        "drugInteractions": ["Iron supplements can reduce absorption of thyroid medications, quinolones, and tetracyclines."]
+      }
+    },
+    {
+      "nutrientId": "magnesium",
+      "displayName": "Magnesium",
+      "shortName": "Magnesium",
+      "category": "mineral",
+      "unit": "mg",
+      "usdaNutrientId": null,
+      "classification": "beneficial",
+      "hasDRI": true,
+      "hasUL": true,
+      "hasFDA_DV": true,
+      "driTypes": ["RDA", "AI", "UL"],
+      "defaultTargetSource": "DRI",
+      "labeling": {
+        "hasPercentDV": true,
+        "dvUnit": "mg"
+      },
+      "notes": [
+        "Involved in hundreds of enzyme reactions, muscle and nerve function, and bone health.",
+        "RDA: 400-420 mg for adult men, 310-320 mg for adult women.",
+        "UL: 350 mg applies ONLY to supplemental magnesium (not food/water sources).",
+        "Many diets are marginal in magnesium.",
+        "Deficiency can cause muscle cramps, fatigue; linked to risk of osteoporosis.",
+        "Excess from supplements can cause diarrhea."
+      ],
+      "clinicalInterpretation": {
+        "importance": "Involved in over 300 enzymatic reactions – energy production, DNA/RNA synthesis, nerve and muscle function (natural calcium antagonist in muscle cells), and bone structure (~60% in bone).",
+        "deficiencySigns": "Chronic low Mg is associated with hypertension, arrhythmias, insulin resistance, migraines. Overt deficiency can cause muscle cramps, tremors, personality changes, and arrhythmias. Often coexists with other deficiencies.",
+        "excessRisks": "UL 350 mg applies ONLY to supplemental magnesium (not food). Excess from supplements often causes diarrhea (think Milk of Magnesia). Dietary Mg doesn't cause diarrhea.",
+        "foodSources": "Nuts and seeds (almonds, pumpkin seeds), legumes, whole grains, leafy greens (chlorophyll contains Mg), dark chocolate.",
+        "specialConsiderations": "Marginal intake is common (especially with processed-food diets). If muscle cramps or high BP issues, consider magnesium-rich foods or supplements (100-200 mg). Mg glycinate is less laxative than Mg oxide. Diuretics can deplete Mg."
+      },
+      "warningFlags": {
+        "pregnancy": "RDA is 350-400 mg during pregnancy. UL still applies only to supplements.",
+        "ckd": null,
+        "elderly": null,
+        "drugInteractions": ["Magnesium can interfere with absorption of bisphosphonates and some antibiotics."]
+      }
+    },
+    {
+      "nutrientId": "phosphorus",
+      "displayName": "Phosphorus",
+      "shortName": "Phosphorus",
+      "category": "mineral",
+      "unit": "mg",
+      "usdaNutrientId": null,
+      "classification": "beneficial",
+      "hasDRI": true,
+      "hasUL": true,
+      "hasFDA_DV": true,
+      "driTypes": ["RDA", "AI", "UL"],
+      "defaultTargetSource": "DRI",
+      "labeling": {
+        "hasPercentDV": true,
+        "dvUnit": "mg"
+      },
+      "notes": [
+        "Major mineral in bones (as phosphate) and in energy molecules (ATP).",
+        "RDA: 700 mg for adults 19+, 1250 mg for ages 9-18.",
+        "UL: 4000 mg for ages 9-70, 3000 mg for >70.",
+        "Generally abundant in diets; deficiency is rare.",
+        "Excessive phosphorus from additives can disturb calcium metabolism."
+      ],
+      "clinicalInterpretation": {
+        "importance": "A major component of bones (as calcium phosphate) and energy molecules (ATP, ADP), cell membranes (phospholipids), and DNA/RNA. Second most abundant mineral in body.",
+        "deficiencySigns": "Deficiency is rare – would cause bone pain, weakness, mainly in near-starvation or certain genetic disorders. Most diets have plenty of phosphorus (often more than calcium).",
+        "excessRisks": "UL 4000 mg (3000 mg for >70). Excessive phosphorus (especially from processed food additives) may have long-term cardiovascular or kidney effects. High P with low Ca can stimulate PTH and bone resorption.",
+        "foodSources": "Protein-rich foods (meat, poultry, fish, dairy, eggs, legumes), grains, nuts. Also in phosphate additives in processed foods and colas.",
+        "specialConsiderations": "Generally not a concern. If CKD present, severely limit phosphorus (800-1000 mg) to prevent renal bone disease. Balance phosphorus with calcium intake and limit soda/processed foods if ratio is unfavorable."
+      },
+      "warningFlags": {
+        "pregnancy": "RDA is 700 mg for pregnant women 19+, 1250 mg for pregnant teens. UL is 3500 mg during pregnancy.",
+        "ckd": "CKD patients: Restrict to 800-1000 mg/day when serum phosphorus is elevated.",
+        "elderly": "UL decreases to 3000 mg for adults >70.",
+        "drugInteractions": []
+      }
+    },
+    {
+      "nutrientId": "zinc",
+      "displayName": "Zinc",
+      "shortName": "Zinc",
+      "category": "mineral",
+      "unit": "mg",
+      "usdaNutrientId": null,
+      "classification": "beneficial",
+      "hasDRI": true,
+      "hasUL": true,
+      "hasFDA_DV": true,
+      "driTypes": ["RDA", "AI", "UL"],
+      "defaultTargetSource": "DRI",
+      "labeling": {
+        "hasPercentDV": true,
+        "dvUnit": "mg"
+      },
+      "notes": [
+        "Needed for immune function, wound healing, taste acuity, and DNA synthesis.",
+        "RDA: 11 mg for adult men, 8 mg for adult women.",
+        "UL: 40 mg for adults (excessive zinc can cause copper deficiency and immune dysfunction).",
+        "Vegetarians may require up to 50% more due to lower bioavailability.",
+        "High-dose zinc supplements should be used with caution long-term."
+      ],
+      "clinicalInterpretation": {
+        "importance": "Involved in immune function (zinc deficiency impairs immune cells), antioxidant enzymes (SOD), protein synthesis, wound healing, DNA synthesis, and taste/smell. Crucial for sexual development in males.",
+        "deficiencySigns": "Growth retardation, delayed sexual maturation, hair loss, diarrhea, eye/skin lesions, impaired appetite/taste. Seen in malnourished populations; in developed world, can occur in alcoholics, malabsorption, or strict vegetarians.",
+        "excessRisks": "UL 40 mg (to prevent copper deficiency, as high zinc competes with copper absorption). >50-100 mg can cause nausea; chronic high doses can suppress immune function and induce copper deficiency.",
+        "foodSources": "Oysters (extremely high), red meat, poultry, beans, nuts, whole grains. Plant zinc is less absorbed due to phytates.",
+        "specialConsiderations": "Vegetarians have ~50% higher zinc needs (lower bioavailability). If taking >40 mg regularly (multi + zinc cold lozenges), scale back after short term. Long-term high-dose zinc requires copper supplementation."
+      },
+      "warningFlags": {
+        "pregnancy": "RDA increases to 11-12 mg during pregnancy, 12-13 mg during lactation.",
+        "ckd": null,
+        "elderly": null,
+        "drugInteractions": ["High zinc supplementation (>50 mg) can induce copper deficiency."]
+      }
+    },
+    {
+      "nutrientId": "selenium",
+      "displayName": "Selenium",
+      "shortName": "Selenium",
+      "category": "mineral",
+      "unit": "mcg",
+      "usdaNutrientId": null,
+      "classification": "beneficial",
+      "hasDRI": true,
+      "hasUL": true,
+      "hasFDA_DV": true,
+      "driTypes": ["RDA", "AI", "UL"],
+      "defaultTargetSource": "DRI",
+      "labeling": {
+        "hasPercentDV": true,
+        "dvUnit": "mcg"
+      },
+      "notes": [
+        "Important for antioxidant enzymes (glutathione peroxidase) and thyroid hormone metabolism.",
+        "RDA: 55 mcg for adults.",
+        "UL: 400 mcg (chronic high intake causes selenosis: hair/nail brittleness, garlic breath, neurological issues).",
+        "Content in foods varies with soil selenium levels.",
+        "Brazil nuts are exceptionally high in selenium."
+      ],
+      "clinicalInterpretation": {
+        "importance": "Integral to antioxidant enzymes (glutathione peroxidase), thyroid hormone metabolism (converts T4 to active T3), and supports immune function.",
+        "deficiencySigns": "Deficiency is rare in US (adequate soil selenium). Low selenium can contribute to thyroid issues (selenoproteins protect thyroid from oxidative damage) and was historically linked to Keshan disease (cardiomyopathy in selenium-deficient regions of China).",
+        "excessRisks": "UL 400 mcg. Chronic excess (selenosis) causes brittle hair/nails, garlic odor breath, neurological abnormalities. Can occur from misformulated supplements or excessive Brazil nut consumption.",
+        "foodSources": "Brazil nuts (exceptionally high – one nut can have 90+ mcg!), seafood, organ meats, cereal grains (content varies with soil selenium).",
+        "specialConsiderations": "Don't routinely eat >3-4 Brazil nuts a day. Most multivitamins have 50-200 mcg – fine, but be cautious above that. High-dose selenium (200 mcg) for cancer prevention didn't pan out and may increase diabetes risk."
+      },
+      "warningFlags": {
+        "pregnancy": "RDA increases to 60 mcg during pregnancy, 70 mcg during lactation.",
+        "ckd": null,
+        "elderly": null,
+        "drugInteractions": []
+      }
+    },
+    {
+      "nutrientId": "copper",
+      "displayName": "Copper",
+      "shortName": "Copper",
+      "category": "mineral",
+      "unit": "mcg",
+      "usdaNutrientId": null,
+      "classification": "beneficial",
+      "hasDRI": true,
+      "hasUL": true,
+      "hasFDA_DV": true,
+      "driTypes": ["RDA", "AI", "UL"],
+      "defaultTargetSource": "DRI",
+      "labeling": {
+        "hasPercentDV": true,
+        "dvUnit": "mg"
+      },
+      "notes": [
+        "Component of many enzymes for iron metabolism, antioxidant defense, and connective tissue.",
+        "RDA: 900 mcg (0.9 mg) for adults.",
+        "UL: 10,000 mcg (10 mg) - chronic high intake can cause liver damage.",
+        "Deficiency is rare; can cause anemia and neutropenia.",
+        "Wilson's disease patients must avoid excess copper."
+      ],
+      "clinicalInterpretation": {
+        "importance": "Important for iron metabolism (ceruloplasmin), antioxidant defense (SOD), collagen formation (lysyl oxidase), pigment formation (tyrosinase), and connective tissue integrity.",
+        "deficiencySigns": "Deficiency (not common) can cause anemia not responsive to iron, leukopenia (low white cells), osteoporosis, hair depigmentation, neurological problems. Can occur with excess zinc supplement use (Zn blocks Cu absorption) or in Menkes disease.",
+        "excessRisks": "UL 10 mg. Chronic high intake can cause GI upset and liver damage. Wilson's disease (genetic copper accumulation) requires strict copper avoidance.",
+        "foodSources": "Organ meats (liver), shellfish (oysters, lobster), nuts (cashews), seeds, legumes, chocolate. Also from copper pipes in water.",
+        "specialConsiderations": "If taking high zinc without copper, add some copper to prevent deficiency. Typical zinc:copper supplement ratio is 10:1. Wilson's disease patients must avoid copper."
+      },
+      "warningFlags": {
+        "pregnancy": "RDA increases to 1000 mcg during pregnancy, 1300 mcg during lactation.",
+        "ckd": null,
+        "elderly": null,
+        "drugInteractions": ["High zinc supplementation can induce copper deficiency."]
+      }
+    },
+    {
+      "nutrientId": "manganese",
+      "displayName": "Manganese",
+      "shortName": "Manganese",
+      "category": "mineral",
+      "unit": "mg",
+      "usdaNutrientId": null,
+      "classification": "beneficial",
+      "hasDRI": true,
+      "hasUL": true,
+      "hasFDA_DV": true,
+      "driTypes": ["AI", "UL"],
+      "defaultTargetSource": "DRI",
+      "labeling": {
+        "hasPercentDV": true,
+        "dvUnit": "mg"
+      },
+      "notes": [
+        "Trace mineral involved in bone formation, amino acid metabolism, and antioxidant enzymes.",
+        "All values are AIs (insufficient data for EAR/RDA).",
+        "AI: 2.3 mg for adult men, 1.8 mg for adult women.",
+        "UL: 11 mg for adults (excess can cause neurological symptoms similar to Parkinson's).",
+        "Deficiency is very rare."
+      ],
+      "clinicalInterpretation": {
+        "importance": "A trace mineral for bone formation, free radical defense (Mn-SOD in mitochondria), and metabolism of amino acids, cholesterol, and carbohydrates.",
+        "deficiencySigns": "Deficiency in humans is not well-documented (very rare) – would possibly cause poor bone/cartilage formation and growth issues.",
+        "excessRisks": "UL 11 mg. Manganese toxicity is seen in miners inhaling Mn dust (leads to neurological Parkinson-like syndrome). Oral over-supplementation can also cause neurological symptoms if very high.",
+        "foodSources": "Whole grains, legumes, rice, leafy vegetables, tea, nuts. Less in animal foods.",
+        "specialConsiderations": "Some joint supplements include manganese (~2-5 mg) for cartilage synthesis – that's fine. Just don't take >11 mg. Toxicity is more of an occupational hazard (inhalation) than dietary concern."
+      },
+      "warningFlags": {
+        "pregnancy": "AI is 2.0 mg during pregnancy, 2.6 mg during lactation.",
+        "ckd": null,
+        "elderly": null,
+        "drugInteractions": []
+      }
+    },
+    {
+      "nutrientId": "chromium",
+      "displayName": "Chromium",
+      "shortName": "Chromium",
+      "category": "mineral",
+      "unit": "mcg",
+      "usdaNutrientId": null,
+      "classification": "neutral",
+      "hasDRI": true,
+      "hasUL": false,
+      "hasFDA_DV": true,
+      "driTypes": ["AI"],
+      "defaultTargetSource": "DRI",
+      "labeling": {
+        "hasPercentDV": true,
+        "dvUnit": "mcg"
+      },
+      "notes": [
+        "May enhance insulin action; uncertain essential status.",
+        "All values are AIs.",
+        "AI: 35 mcg for adult men, 25 mcg for adult women.",
+        "No UL established.",
+        "Deficiency is essentially unknown in healthy populations."
+      ],
+      "clinicalInterpretation": {
+        "importance": "May enhance insulin action and glucose metabolism. Its essential status in humans is uncertain, though it has biological activity.",
+        "deficiencySigns": "Deficiency is essentially unknown in healthy populations. There is no well-documented deficiency syndrome in humans.",
+        "excessRisks": "No UL established. Toxicity from chromium at dietary levels is not a concern.",
+        "foodSources": "Broccoli, grape juice, whole grains, brewer's yeast, meat. Content in foods varies widely.",
+        "specialConsiderations": "Some people take chromium supplements (200-500 mcg) for blood sugar control or weight loss – evidence of benefit is weak. Generally safe but not strongly evidence-based for therapeutic use."
+      },
+      "warningFlags": {
+        "pregnancy": "AI increases to 29-30 mcg during pregnancy, 44-45 mcg during lactation.",
+        "ckd": null,
+        "elderly": "AI decreases to 30 mcg for men 51+, 20 mcg for women 51+.",
+        "drugInteractions": []
+      }
+    },
+    {
+      "nutrientId": "molybdenum",
+      "displayName": "Molybdenum",
+      "shortName": "Molybdenum",
+      "category": "mineral",
+      "unit": "mcg",
+      "usdaNutrientId": null,
+      "classification": "neutral",
+      "hasDRI": true,
+      "hasUL": true,
+      "hasFDA_DV": true,
+      "driTypes": ["RDA", "UL"],
+      "defaultTargetSource": "DRI",
+      "labeling": {
+        "hasPercentDV": true,
+        "dvUnit": "mcg"
+      },
+      "notes": [
+        "Cofactor for several enzymes.",
+        "RDA: 45 mcg for adults.",
+        "UL: 2000 mcg for adults.",
+        "Deficiency is essentially unknown."
+      ],
+      "clinicalInterpretation": {
+        "importance": "A cofactor for several enzymes involved in purine metabolism and sulfite detoxification.",
+        "deficiencySigns": "Deficiency is essentially unknown in humans eating normal diets. A very rare genetic disorder (molybdenum cofactor deficiency) causes severe neurological problems.",
+        "excessRisks": "UL 2000 mcg. Toxicity from dietary molybdenum is not a practical concern. Very high intakes might interfere with copper metabolism.",
+        "foodSources": "Legumes, grains, nuts, dairy. Content depends on soil molybdenum.",
+        "specialConsiderations": "Not a nutrient of concern for most people. Adequate intake is easily achieved from varied diets."
+      },
+      "warningFlags": {
+        "pregnancy": "RDA increases to 50 mcg during pregnancy and lactation.",
+        "ckd": null,
+        "elderly": null,
+        "drugInteractions": []
+      }
+    },
+    {
+      "nutrientId": "iodine",
+      "displayName": "Iodine",
+      "shortName": "Iodine",
+      "category": "mineral",
+      "unit": "mcg",
+      "usdaNutrientId": null,
+      "classification": "beneficial",
+      "hasDRI": true,
+      "hasUL": true,
+      "hasFDA_DV": true,
+      "driTypes": ["RDA", "AI", "UL"],
+      "defaultTargetSource": "DRI",
+      "labeling": {
+        "hasPercentDV": true,
+        "dvUnit": "mcg"
+      },
+      "notes": [
+        "Required for thyroid hormone synthesis (critical for growth, development, metabolism).",
+        "RDA: 150 mcg for adults.",
+        "UL: 1100 mcg for adults (excess can disrupt thyroid function).",
+        "Deficiency leads to goiter and hypothyroidism; in pregnancy, severe deficiency causes cretinism.",
+        "Iodized salt is primary source in many regions."
+      ],
+      "clinicalInterpretation": {
+        "importance": "Crucial for thyroid hormone synthesis (T3, T4) which regulate metabolism, growth, and development. Iodine deficiency is the leading cause of preventable intellectual disability globally.",
+        "deficiencySigns": "Deficiency causes goiter (thyroid enlargement) and hypothyroidism. In pregnancy, severe deficiency can seriously affect fetal brain development (cretinism). Even mild deficiency can cause goiter and subtle cognitive effects.",
+        "excessRisks": "UL 1100 mcg. Chronic excess can induce hypo- or hyperthyroidism or thyroiditis (U-shaped risk curve). Seaweed can be extremely high (some kelp has 2000+ mcg per sheet).",
+        "foodSources": "Iodized salt (~76 mcg per 1/4 tsp), dairy (~85 mcg/cup milk – from cattle feed and sanitizing solutions), seafood, seaweed (varies widely).",
+        "specialConsiderations": "Groups at risk: those using non-iodized sea salt, avoiding salt, or living in iodine-poor soil regions without seafood/dairy. Pregnant women need 220-250 mcg. Don't take multiple kelp supplements. Big iodine changes can affect thyroid medication dosing."
+      },
+      "warningFlags": {
+        "pregnancy": "CRITICAL: RDA increases to 220 mcg during pregnancy, 290 mcg during lactation for proper fetal brain development.",
+        "ckd": null,
+        "elderly": null,
+        "drugInteractions": []
+      }
+    },
+    {
+      "nutrientId": "sodium",
+      "displayName": "Sodium",
+      "shortName": "Sodium",
+      "category": "mineral",
+      "unit": "mg",
+      "usdaNutrientId": null,
+      "classification": "risk",
+      "hasDRI": true,
+      "hasUL": false,
+      "hasFDA_DV": true,
+      "driTypes": ["AI", "CDRR"],
+      "defaultTargetSource": "DRI",
+      "labeling": {
+        "hasPercentDV": true,
+        "dvUnit": "mg"
+      },
+      "notes": [
+        "Primary extracellular electrolyte regulating fluid balance and blood pressure.",
+        "AI: 1500 mg/day for adults 14+ (physiologically only 200-500 mg/day needed).",
+        "CDRR: 2300 mg/day - reduce intake if exceeding this level (replaces traditional UL concept, 2019 update).",
+        "AHA recommends ideally <1500 mg/day for adults with or at risk of hypertension.",
+        "WHO recommends <2000 mg/day.",
+        ">70% of dietary sodium comes from processed foods."
+      ],
+      "clinicalInterpretation": {
+        "importance": "Primary regulator of extracellular volume and blood pressure. While some sodium is essential (~500 mg/day for basic losses), excess is a major contributor to hypertension and stroke.",
+        "deficiencySigns": "True deficiency (hyponatremia) arises only with prolonged heavy sweating + water-only intake, or certain illnesses. Typical diets provide far more than needed.",
+        "excessRisks": "CDRR 2300 mg – above this, risk of high BP rises. AHA recommends ideally <1500 mg for adults with or at risk of hypertension. Some individuals are 'salt-sensitive' (common in older adults, African Americans, those with hypertension/diabetes).",
+        "foodSources": "Processed foods (>70% of dietary sodium), restaurant meals, canned foods, deli meats, condiments, chips. Even bread can contribute significantly.",
+        "specialConsiderations": "Reducing toward 2300 mg yields health benefits; 1500 mg is ideal for salt-sensitive individuals. Athletes/heavy sweaters may need more during intense exercise. Focus on reducing processed foods and choosing low-sodium options."
+      },
+      "warningFlags": {
+        "pregnancy": "AI is 1500 mg, CDRR remains 2300 mg during pregnancy and lactation.",
+        "ckd": "CKD patients: Restrict to <2300 mg/day for all stages.",
+        "elderly": null,
+        "drugInteractions": []
+      }
+    },
+    {
+      "nutrientId": "potassium",
+      "displayName": "Potassium",
+      "shortName": "Potassium",
+      "category": "mineral",
+      "unit": "mg",
+      "usdaNutrientId": null,
+      "classification": "beneficial",
+      "hasDRI": true,
+      "hasUL": false,
+      "hasFDA_DV": true,
+      "driTypes": ["AI"],
+      "defaultTargetSource": "DRI",
+      "labeling": {
+        "hasPercentDV": true,
+        "dvUnit": "mg"
+      },
+      "notes": [
+        "Essential electrolyte for fluid balance, nerve transmission, and muscle function.",
+        "AI: 3400 mg for adult men, 2600 mg for adult women (2019 update).",
+        "FDA DV: 4700 mg (based on older recommendations; AHA/DASH still recommend 4700 mg for hypertension).",
+        "Higher intake helps counteract sodium's effect on blood pressure.",
+        "No UL for healthy individuals (kidneys excrete excess).",
+        "Most people fall short of the AI/DV."
+      ],
+      "clinicalInterpretation": {
+        "importance": "A crucial intracellular electrolyte that lowers blood pressure (inverse relationship with sodium), and is needed for muscle contraction and nerve impulses. High potassium intake blunts sodium's BP-raising effect.",
+        "deficiencySigns": "Hypokalemia (low blood potassium) causes muscle weakness, cramps, arrhythmias. Dietary potassium deficiency alone is rare but can occur with prolonged vomiting, diarrhea, or diuretic use.",
+        "excessRisks": "No UL for healthy individuals because kidneys excrete excess. However, hyperkalemia is dangerous (cardiac arrhythmias) in those with impaired kidney function or on certain medications.",
+        "foodSources": "Fruits (banana ~420 mg, avocado ~970 mg per half, orange), vegetables (potato ~900 mg, spinach, squash), legumes (~600-800 mg/cup), dairy (~380 mg/cup milk).",
+        "specialConsiderations": "Most people don't reach AI/DV because of low fruit/vegetable intake. DASH diet aims for 4700 mg for BP control. CKD patients must restrict potassium. Those on ACE inhibitors, ARBs, or potassium-sparing diuretics need monitoring."
+      },
+      "warningFlags": {
+        "pregnancy": "AI is 2900 mg during pregnancy, 2800 mg during lactation.",
+        "ckd": "CRITICAL: CKD patients must restrict potassium if serum levels >5.5 mmol/L to prevent hyperkalemia. DASH diet NOT recommended for GFR <60.",
+        "elderly": null,
+        "drugInteractions": ["ACE inhibitors, ARBs, and potassium-sparing diuretics can increase serum potassium."]
+      }
+    },
+    {
+      "nutrientId": "chloride",
+      "displayName": "Chloride",
+      "shortName": "Chloride",
+      "category": "mineral",
+      "unit": "mg",
+      "usdaNutrientId": null,
+      "classification": "neutral",
+      "hasDRI": true,
+      "hasUL": true,
+      "hasFDA_DV": true,
+      "driTypes": ["AI", "UL"],
+      "defaultTargetSource": "DRI",
+      "labeling": {
+        "hasPercentDV": true,
+        "dvUnit": "mg"
+      },
+      "notes": [
+        "Main extracellular anion, essential for fluid balance and stomach acid (HCl).",
+        "AI: 2300 mg for adults 14-50, decreasing with age.",
+        "UL: 3600 mg for adults.",
+        "Intake parallels sodium (table salt is 40% sodium, 60% chloride).",
+        "Risk classification follows sodium recommendations."
+      ],
+      "clinicalInterpretation": {
+        "importance": "Partner to sodium (NaCl). Helps maintain osmotic balance and is needed to produce stomach acid (HCl) for digestion. Requirements parallel sodium.",
+        "deficiencySigns": "Isolated chloride deficiency is extremely rare. Hypochloremia can occur with prolonged vomiting (loss of stomach acid) and causes metabolic alkalosis.",
+        "excessRisks": "High chloride (like high sodium from salt) can contribute to blood pressure issues, though sodium is the primary concern. No separate UL concern beyond sodium.",
+        "foodSources": "Table salt (NaCl - 60% chloride), processed foods, seaweed, tomatoes, lettuce, celery, olives.",
+        "specialConsiderations": "Since salt is Na+Cl-, limiting salt intake addresses both nutrients. The app doesn't need to emphasize chloride separately; fold recommendations into sodium advice. Chloride needs are automatically met when sodium is adequate."
+      },
+      "warningFlags": {
+        "pregnancy": "AI is 2300 mg during pregnancy and lactation.",
+        "ckd": null,
+        "elderly": "AI decreases to 2000 mg for ages 51-70, 1800 mg for 71+.",
+        "drugInteractions": []
+      }
+    },
+    {
+      "nutrientId": "fluoride",
+      "displayName": "Fluoride",
+      "shortName": "Fluoride",
+      "category": "mineral",
+      "unit": "mg",
+      "usdaNutrientId": null,
+      "classification": "beneficial",
+      "hasDRI": true,
+      "hasUL": true,
+      "hasFDA_DV": false,
+      "driTypes": ["AI", "UL"],
+      "defaultTargetSource": "DRI",
+      "labeling": {
+        "hasPercentDV": false,
+        "dvUnit": "mg"
+      },
+      "notes": [
+        "Helps strengthen tooth enamel and prevent dental caries.",
+        "AI: 4 mg for adult men, 3 mg for adult women.",
+        "UL: 10 mg for adults (chronic excess causes fluorosis of teeth/bones).",
+        "Major source is fluoridated water, tea, and seafood.",
+        "FDA allows voluntary fluoride labeling; not mandatory on nutrition labels."
+      ],
+      "clinicalInterpretation": {
+        "importance": "Beneficial for dental health by hardening tooth enamel and reducing cavity risk. Not traditionally essential (no deficiency disease besides increased cavity susceptibility), but considered beneficial for public health.",
+        "deficiencySigns": "No true deficiency disease. Low fluoride areas with poor dental hygiene have higher rates of dental caries (cavities).",
+        "excessRisks": "UL 10 mg. Chronic excess causes fluorosis - mottled/stained teeth in children during tooth development, and skeletal fluorosis with very high chronic exposure (bone pain, stiffness). Tea plant accumulates fluoride; heavy tea drinkers can get several mg.",
+        "foodSources": "Fluoridated water (~0.7 ppm gives ~3 mg/day if drinking 4L), tea (can be high), seafood, some foods prepared with fluoridated water.",
+        "specialConsiderations": "More of a public health measure than individual nutrition concern. In non-fluoridated areas, fluoride toothpaste or supplements (especially for children) help prevent cavities. Don't swallow large amounts of toothpaste. Not typically tracked in food apps due to limited food composition data."
+      },
+      "warningFlags": {
+        "pregnancy": "AI is 3 mg during pregnancy and lactation.",
+        "ckd": null,
+        "elderly": null,
+        "drugInteractions": []
+      }
+    },
+    {
+      "nutrientId": "total_water",
+      "displayName": "Water",
+      "shortName": "Water",
+      "category": "other",
+      "unit": "L",
+      "usdaNutrientId": null,
+      "classification": "beneficial",
+      "hasDRI": true,
+      "hasUL": false,
+      "hasFDA_DV": false,
+      "driTypes": ["AI"],
+      "defaultTargetSource": "DRI",
+      "labeling": {
+        "hasPercentDV": false,
+        "dvUnit": "L"
+      },
+      "notes": [
+        "AI for total water (from all sources including beverages and food moisture).",
+        "AI: 3.7 L for adult men, 2.7 L for adult women.",
+        "No UL established.",
+        "Needs increase with physical activity, heat exposure, and illness."
+      ],
+      "clinicalInterpretation": {
+        "importance": "Essential for virtually all bodily functions - temperature regulation, nutrient transport, waste removal, joint lubrication, and cellular metabolism. Even mild dehydration impairs physical and cognitive performance.",
+        "deficiencySigns": "Dehydration symptoms: thirst, dark urine, fatigue, headache, dizziness, dry mouth. Severe dehydration can cause confusion, rapid heartbeat, and is a medical emergency. Chronic mild dehydration may contribute to kidney stones and constipation.",
+        "excessRisks": "Overhydration (water intoxication/hyponatremia) is rare but can occur with excessive water intake during endurance events without electrolyte replacement. Symptoms: nausea, headache, confusion, seizures.",
+        "foodSources": "Plain water, beverages (coffee, tea, milk, juice count toward total), and food moisture (~20% of intake from foods like fruits, vegetables, soups).",
+        "specialConsiderations": "AI includes all water sources. Actual needs vary by climate, activity level, body size, and health status. Athletes and heavy sweaters need more. Older adults may have reduced thirst sensation - encourage regular fluid intake. Coffee and tea count despite mild diuretic effect."
+      },
+      "warningFlags": {
+        "pregnancy": "AI is 3.0 L during pregnancy, 3.8 L during lactation.",
+        "ckd": null,
+        "elderly": null,
+        "drugInteractions": []
+      }
+    },
+    {
+      "nutrientId": "alcohol",
+      "displayName": "Alcohol",
+      "shortName": "Alcohol",
+      "category": "other",
+      "unit": "g",
+      "usdaNutrientId": null,
+      "classification": "risk",
+      "hasDRI": false,
+      "hasUL": false,
+      "hasFDA_DV": false,
+      "driTypes": [],
+      "defaultTargetSource": "DRI",
+      "labeling": {
+        "hasPercentDV": false,
+        "dvUnit": "g"
+      },
+      "notes": [
+        "Provides 7 kcal/g but no essential nutrients.",
+        "If consumed, DGA recommends up to 1 drink/day for women, 2 for men.",
+        "Not recommended to start drinking for any perceived health benefits."
+      ],
+      "clinicalInterpretation": {
+        "importance": "Not a nutrient - provides 7 kcal/g but no essential nutrients. Alcohol is a psychoactive substance that affects the liver, brain, and other organs. There is no nutritional requirement for alcohol.",
+        "deficiencySigns": "Not applicable - alcohol is not essential. No deficiency state exists.",
+        "excessRisks": "Excessive consumption increases risk of liver disease, certain cancers, heart disease, accidents, and addiction. Even moderate intake may increase breast cancer risk. Chronic heavy drinking causes cirrhosis, pancreatitis, cardiomyopathy, and brain damage.",
+        "foodSources": "Beer, wine, spirits, cocktails. One standard drink = 14g pure alcohol = 12 oz beer, 5 oz wine, or 1.5 oz spirits.",
+        "specialConsiderations": "DGA: if consumed, limit to 1 drink/day (women) or 2 drinks/day (men). Not recommended to start drinking for health benefits. Absolutely contraindicated in pregnancy (fetal alcohol spectrum disorders), with certain medications, liver disease, or history of addiction. Heavy drinking depletes B vitamins, especially thiamin."
+      },
+      "warningFlags": {
+        "pregnancy": "CRITICAL: Avoid alcohol completely during pregnancy due to risk of fetal alcohol spectrum disorders.",
+        "ckd": null,
+        "elderly": null,
+        "drugInteractions": ["Interacts with many medications including sedatives, pain medications, and blood thinners."]
+      }
+    }
+  ]
+}

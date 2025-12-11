@@ -45,6 +45,10 @@ import {
   WaterTracker,
   NutritionSkeleton,
   EmptyState,
+  DailyScoreCard,
+  HighlightsGapsPanel,
+  NutrientInfoModal,
+  WeeklySummaryCard,
 } from '../nutrition/components';
 
 import {
@@ -76,6 +80,7 @@ export default function NutritionTab(): React.ReactElement {
   const [customTargets, setCustomTargets] = useState<Partial<NutritionTargets> | null>(null);
   const [editingMeal, setEditingMeal] = useState<FoodLog | null>(null);
   const [showConfetti, setShowConfetti] = useState(false);
+  const [selectedNutrient, setSelectedNutrient] = useState<string | null>(null);
   const hasTriggeredConfetti = useRef(false);
 
   const today = new Date().toISOString().split('T')[0];
@@ -134,6 +139,19 @@ export default function NutritionTab(): React.ReactElement {
       date: d.date,
       calories: d.totals.calories,
     }));
+  }, [historyData]);
+
+  // Prepare daily totals Map for WeeklySummaryCard
+  const dailyTotalsMap = useMemo(() => {
+    const map = new Map<string, Record<string, number>>();
+    if (!historyData) return map;
+
+    for (const day of historyData) {
+      if (day.meals.length > 0) {
+        map.set(day.date, day.totals);
+      }
+    }
+    return map;
   }, [historyData]);
 
   // Handle save from log modal
@@ -379,6 +397,19 @@ export default function NutritionTab(): React.ReactElement {
             streak={waterStreakData?.currentStreak || 0}
           />
 
+          {/* DRI-Based Nutrition Score - Shows personalized evaluation */}
+          <DailyScoreCard
+            date={today}
+            totals={dailyTotals}
+          />
+
+          {/* Highlights & Gaps - What you did well and areas to improve */}
+          <HighlightsGapsPanel
+            date={today}
+            totals={dailyTotals}
+            onNutrientTap={(nutrientId) => setSelectedNutrient(nutrientId)}
+          />
+
           {/* Quick Add Buttons */}
           <div className="grid grid-cols-4 gap-2">
             <button
@@ -464,6 +495,11 @@ export default function NutritionTab(): React.ReactElement {
         </>
       ) : (
         <div className="space-y-6">
+          {/* Weekly DRI-Based Summary */}
+          <WeeklySummaryCard
+            dailyTotals={dailyTotalsMap}
+          />
+
           {/* Quick Stats Row */}
           <div className="grid grid-cols-3 gap-3">
             {[
@@ -606,6 +642,15 @@ export default function NutritionTab(): React.ReactElement {
             setEditingMeal(null);
           }}
           isSaving={isUpdating}
+        />
+      )}
+
+      {/* Nutrient Info Modal - Educational content */}
+      {selectedNutrient && (
+        <NutrientInfoModal
+          nutrientId={selectedNutrient}
+          currentIntake={dailyTotals[selectedNutrient as keyof typeof dailyTotals]}
+          onClose={() => setSelectedNutrient(null)}
         />
       )}
     </div>

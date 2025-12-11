@@ -1,12 +1,21 @@
 /**
  * AI Food Analysis using OpenAI Vision
  * Analyzes food photos to estimate nutritional content
- * Supports tiered nutrition detail levels: essential, extended, complete
+ *
+ * ARCHITECTURE:
+ * - All analysis returns COMPLETE nutrition data (35+ nutrients)
+ * - UI displays "essential" view by default, user can toggle to see more
+ * - Cost optimizations:
+ *   1. Common foods lookup (no AI needed)
+ *   2. Cache for text-based analysis
+ *   3. Tiered model selection (simple vs complex meals)
  */
 
 import OpenAI from 'openai';
 import { defineSecret } from 'firebase-functions/params';
 import { OPENAI_CONFIG } from '../../config/openai';
+import { getCommonFood, normalizeForLookup } from '../nutrition/commonFoodsLookup';
+import { getCachedFoodAnalysis, setCachedFoodAnalysis } from '../nutrition/foodAnalysisCache';
 
 // Define OpenAI API key as a secret (for production)
 const openaiApiKey = defineSecret('OPENAI_API_KEY');
@@ -23,9 +32,17 @@ function getApiKey(): string {
 }
 
 /**
- * Nutrition detail level for AI analysis
+ * Nutrition detail level - kept for UI display purposes only
+ * All analysis now returns complete data; UI filters what to show
  */
 export type NutritionDetailLevel = 'essential' | 'extended' | 'complete';
+
+/**
+ * Model tier for cost optimization
+ * - 'fast': Use cheaper model for simple, single-item foods
+ * - 'full': Use full model for complex plates with multiple items
+ */
+export type ModelTier = 'fast' | 'full';
 
 /**
  * Essential nutrition fields (Tier 1)
@@ -143,51 +160,13 @@ export interface FoodAnalysisResult {
 }
 
 // ============================================================================
-// TIERED PROMPT GENERATION
+// PROMPT GENERATION - Always returns complete nutrition data
 // ============================================================================
 
 /**
- * Generate JSON structure based on nutrition detail level
+ * Complete JSON structure for food analysis response
  */
-function getJSONStructureForLevel(level: NutritionDetailLevel): string {
-  const essential = `{
-      "name": "Food Name",
-      "quantity": 1,
-      "unit": "serving size",
-      "calories": 200,
-      "protein": 10,
-      "carbs": 25,
-      "fat": 5,
-      "fiber": 3,
-      "sugar": 2,
-      "sodium": 300,
-      "servingMultiplier": 1.0,
-      "confidence": 0.85
-    }`;
-
-  const extended = `{
-      "name": "Food Name",
-      "quantity": 1,
-      "unit": "serving size",
-      "calories": 200,
-      "protein": 10,
-      "carbs": 25,
-      "fat": 5,
-      "fiber": 3,
-      "sugar": 2,
-      "sodium": 300,
-      "saturatedFat": 2,
-      "transFat": 0,
-      "cholesterol": 50,
-      "potassium": 400,
-      "calcium": 100,
-      "iron": 2,
-      "magnesium": 30,
-      "servingMultiplier": 1.0,
-      "confidence": 0.85
-    }`;
-
-  const complete = `{
+const COMPLETE_JSON_STRUCTURE = `{
       "name": "Food Name",
       "quantity": 1,
       "unit": "serving size",
@@ -231,56 +210,10 @@ function getJSONStructureForLevel(level: NutritionDetailLevel): string {
       "confidence": 0.85
     }`;
 
-  switch (level) {
-    case 'essential': return essential;
-    case 'extended': return extended;
-    case 'complete': return complete;
-  }
-}
-
 /**
- * Generate nutrient request list based on level
+ * Complete nutrient request list
  */
-function getNutrientListForLevel(level: NutritionDetailLevel): string {
-  const essential = `
-1. Name of the food item
-2. Estimated quantity and unit (e.g., "1 cup", "6 oz", "2 slices")
-3. Calories (kcal)
-4. Protein (g)
-5. Carbohydrates (g)
-6. Fat (g)
-7. Fiber (g)
-8. Sugar (g)
-9. Sodium (mg)
-10. Your confidence level (0-1) in the identification`;
-
-  const extended = `
-1. Name of the food item
-2. Estimated quantity and unit (e.g., "1 cup", "6 oz", "2 slices")
-
-MACRONUTRIENTS:
-3. Calories (kcal)
-4. Protein (g)
-5. Carbohydrates (g)
-6. Fat (g)
-7. Fiber (g)
-8. Sugar (g)
-9. Sodium (mg)
-
-FAT BREAKDOWN:
-10. Saturated Fat (g)
-11. Trans Fat (g)
-12. Cholesterol (mg)
-
-KEY MINERALS:
-13. Potassium (mg)
-14. Calcium (mg)
-15. Iron (mg)
-16. Magnesium (mg)
-
-17. Your confidence level (0-1) in the identification`;
-
-  const complete = `
+const COMPLETE_NUTRIENT_LIST = `
 1. Name of the food item
 2. Estimated quantity and unit (e.g., "1 cup", "6 oz", "2 slices")
 
@@ -334,34 +267,21 @@ OTHER:
 
 39. Your confidence level (0-1) in the identification`;
 
-  switch (level) {
-    case 'essential': return essential;
-    case 'extended': return extended;
-    case 'complete': return complete;
-  }
-}
-
 /**
- * Generate food analysis prompt based on nutrition detail level
+ * Generate food analysis prompt - always returns complete nutrition
  */
-function getFoodAnalysisPrompt(level: NutritionDetailLevel): string {
-  const levelDescriptions: Record<NutritionDetailLevel, string> = {
-    essential: 'basic macronutrients',
-    extended: 'macronutrients plus fat breakdown and key minerals',
-    complete: 'comprehensive nutrition including all vitamins, minerals, and micronutrients',
-  };
-
-  return `You are a nutrition expert analyzing a food photo. Analyze this image and provide ${levelDescriptions[level]}.
+function getFoodAnalysisPrompt(): string {
+  return `You are a nutrition expert analyzing a food photo. Analyze this image and provide comprehensive nutrition including all vitamins, minerals, and micronutrients.
 
 For each food item you can identify, provide:
-${getNutrientListForLevel(level)}
+${COMPLETE_NUTRIENT_LIST}
 
 Also determine the meal type based on the foods present (breakfast, lunch, dinner, snack, or unknown).
 
 Respond ONLY with a valid JSON object in this exact format:
 {
   "items": [
-    ${getJSONStructureForLevel(level)}
+    ${COMPLETE_JSON_STRUCTURE}
   ],
   "mealType": "lunch"
 }
@@ -369,8 +289,8 @@ Respond ONLY with a valid JSON object in this exact format:
 Be accurate with portion sizes and nutritional values based on USDA data. If you cannot identify a food item clearly, still make your best estimate but use a lower confidence score.`;
 }
 
-// Default prompt for backward compatibility (exported for testing/reference)
-export const FOOD_ANALYSIS_PROMPT = getFoodAnalysisPrompt('essential');
+// Default prompt (exported for testing/reference)
+export const FOOD_ANALYSIS_PROMPT = getFoodAnalysisPrompt();
 
 /**
  * Parse a nutrition value with appropriate rounding
@@ -384,11 +304,11 @@ function parseNutrientValue(value: unknown, decimals: number = 1): number | unde
 }
 
 /**
- * Parse nutrition fields from API response based on detail level
+ * Parse all nutrition fields from API response (always complete)
  */
-function parseNutritionFields(item: Record<string, unknown>, level: NutritionDetailLevel): Partial<CompleteNutritionFields> {
-  const nutrition: Partial<CompleteNutritionFields> = {
-    // Essential fields (always present)
+function parseNutritionFields(item: Record<string, unknown>): Partial<CompleteNutritionFields> {
+  return {
+    // Essential fields
     calories: Math.round(Number(item.calories) || 0),
     protein: parseNutrientValue(item.protein) || 0,
     carbs: parseNutrientValue(item.carbs) || 0,
@@ -396,61 +316,54 @@ function parseNutritionFields(item: Record<string, unknown>, level: NutritionDet
     fiber: parseNutrientValue(item.fiber) || 0,
     sugar: parseNutrientValue(item.sugar) || 0,
     sodium: Math.round(Number(item.sodium) || 0),
-  };
 
-  // Extended fields
-  if (level === 'extended' || level === 'complete') {
-    nutrition.saturatedFat = parseNutrientValue(item.saturatedFat) || 0;
-    nutrition.transFat = parseNutrientValue(item.transFat) || 0;
-    nutrition.cholesterol = Math.round(Number(item.cholesterol) || 0);
-    nutrition.potassium = Math.round(Number(item.potassium) || 0);
-    nutrition.calcium = Math.round(Number(item.calcium) || 0);
-    nutrition.iron = parseNutrientValue(item.iron) || 0;
-    nutrition.magnesium = Math.round(Number(item.magnesium) || 0);
-  }
+    // Extended fields
+    saturatedFat: parseNutrientValue(item.saturatedFat) || 0,
+    transFat: parseNutrientValue(item.transFat) || 0,
+    cholesterol: Math.round(Number(item.cholesterol) || 0),
+    potassium: Math.round(Number(item.potassium) || 0),
+    calcium: Math.round(Number(item.calcium) || 0),
+    iron: parseNutrientValue(item.iron) || 0,
+    magnesium: Math.round(Number(item.magnesium) || 0),
 
-  // Complete fields
-  if (level === 'complete') {
-    // Fat details
-    nutrition.monounsaturatedFat = parseNutrientValue(item.monounsaturatedFat);
-    nutrition.polyunsaturatedFat = parseNutrientValue(item.polyunsaturatedFat);
+    // Complete fields - Fat details
+    monounsaturatedFat: parseNutrientValue(item.monounsaturatedFat),
+    polyunsaturatedFat: parseNutrientValue(item.polyunsaturatedFat),
 
     // Vitamins (fat-soluble)
-    nutrition.vitaminA = parseNutrientValue(item.vitaminA);
-    nutrition.vitaminD = parseNutrientValue(item.vitaminD);
-    nutrition.vitaminE = parseNutrientValue(item.vitaminE);
-    nutrition.vitaminK = parseNutrientValue(item.vitaminK);
+    vitaminA: parseNutrientValue(item.vitaminA),
+    vitaminD: parseNutrientValue(item.vitaminD),
+    vitaminE: parseNutrientValue(item.vitaminE),
+    vitaminK: parseNutrientValue(item.vitaminK),
 
     // Vitamins (water-soluble)
-    nutrition.vitaminC = parseNutrientValue(item.vitaminC);
-    nutrition.thiamin = parseNutrientValue(item.thiamin, 2);
-    nutrition.riboflavin = parseNutrientValue(item.riboflavin, 2);
-    nutrition.niacin = parseNutrientValue(item.niacin);
-    nutrition.vitaminB6 = parseNutrientValue(item.vitaminB6, 2);
-    nutrition.folate = parseNutrientValue(item.folate);
-    nutrition.vitaminB12 = parseNutrientValue(item.vitaminB12, 2);
-    nutrition.choline = parseNutrientValue(item.choline);
+    vitaminC: parseNutrientValue(item.vitaminC),
+    thiamin: parseNutrientValue(item.thiamin, 2),
+    riboflavin: parseNutrientValue(item.riboflavin, 2),
+    niacin: parseNutrientValue(item.niacin),
+    vitaminB6: parseNutrientValue(item.vitaminB6, 2),
+    folate: parseNutrientValue(item.folate),
+    vitaminB12: parseNutrientValue(item.vitaminB12, 2),
+    choline: parseNutrientValue(item.choline),
 
     // Trace minerals
-    nutrition.zinc = parseNutrientValue(item.zinc);
-    nutrition.phosphorus = parseNutrientValue(item.phosphorus);
-    nutrition.selenium = parseNutrientValue(item.selenium);
-    nutrition.copper = parseNutrientValue(item.copper, 2);
-    nutrition.manganese = parseNutrientValue(item.manganese, 2);
+    zinc: parseNutrientValue(item.zinc),
+    phosphorus: parseNutrientValue(item.phosphorus),
+    selenium: parseNutrientValue(item.selenium),
+    copper: parseNutrientValue(item.copper, 2),
+    manganese: parseNutrientValue(item.manganese, 2),
 
     // Other
-    nutrition.caffeine = parseNutrientValue(item.caffeine);
-    nutrition.alcohol = parseNutrientValue(item.alcohol);
-    nutrition.water = parseNutrientValue(item.water);
-  }
-
-  return nutrition;
+    caffeine: parseNutrientValue(item.caffeine),
+    alcohol: parseNutrientValue(item.alcohol),
+    water: parseNutrientValue(item.water),
+  };
 }
 
 /**
- * Essential totals type (always required)
+ * Complete totals type - all nutrients always calculated
  */
-interface EssentialTotals {
+interface CompleteTotals {
   totalCalories: number;
   totalProtein: number;
   totalCarbs: number;
@@ -458,18 +371,46 @@ interface EssentialTotals {
   totalFiber: number;
   totalSugar: number;
   totalSodium: number;
+  totalSaturatedFat: number;
+  totalTransFat: number;
+  totalCholesterol: number;
+  totalPotassium: number;
+  totalCalcium: number;
+  totalIron: number;
+  totalMagnesium: number;
+  totalZinc: number;
+  totalVitaminA: number;
+  totalVitaminC: number;
+  totalVitaminD: number;
+  totalMonounsaturatedFat: number;
+  totalPolyunsaturatedFat: number;
+  totalVitaminE: number;
+  totalVitaminK: number;
+  totalThiamin: number;
+  totalRiboflavin: number;
+  totalNiacin: number;
+  totalVitaminB6: number;
+  totalFolate: number;
+  totalVitaminB12: number;
+  totalCholine: number;
+  totalPhosphorus: number;
+  totalSelenium: number;
+  totalCopper: number;
+  totalManganese: number;
+  totalCaffeine: number;
+  totalWater: number;
 }
 
 /**
- * Calculate all tier-appropriate totals from food items
+ * Calculate all totals from food items (always complete)
  */
-function calculateTotals(items: AnalyzedFood[], detailLevel: NutritionDetailLevel): EssentialTotals & Partial<Omit<FoodAnalysisResult, keyof EssentialTotals | 'items' | 'mealType' | 'detailLevel'>> {
+function calculateTotals(items: AnalyzedFood[]): CompleteTotals {
   const round = (n: number, decimals: number = 1): number => {
     const factor = Math.pow(10, decimals);
     return Math.round(n * factor) / factor;
   };
 
-  // Essential totals (always calculated)
+  // Initialize all totals
   let totalCalories = 0;
   let totalProtein = 0;
   let totalCarbs = 0;
@@ -477,8 +418,6 @@ function calculateTotals(items: AnalyzedFood[], detailLevel: NutritionDetailLeve
   let totalFiber = 0;
   let totalSugar = 0;
   let totalSodium = 0;
-
-  // Extended totals
   let totalSaturatedFat = 0;
   let totalTransFat = 0;
   let totalCholesterol = 0;
@@ -490,8 +429,6 @@ function calculateTotals(items: AnalyzedFood[], detailLevel: NutritionDetailLeve
   let totalVitaminA = 0;
   let totalVitaminC = 0;
   let totalVitaminD = 0;
-
-  // Complete totals
   let totalMonounsaturatedFat = 0;
   let totalPolyunsaturatedFat = 0;
   let totalVitaminE = 0;
@@ -521,44 +458,39 @@ function calculateTotals(items: AnalyzedFood[], detailLevel: NutritionDetailLeve
     totalSodium += item.sodium || 0;
 
     // Extended
-    if (detailLevel === 'extended' || detailLevel === 'complete') {
-      totalSaturatedFat += item.saturatedFat || 0;
-      totalTransFat += item.transFat || 0;
-      totalCholesterol += item.cholesterol || 0;
-      totalPotassium += item.potassium || 0;
-      totalCalcium += item.calcium || 0;
-      totalIron += item.iron || 0;
-      totalMagnesium += item.magnesium || 0;
-      totalZinc += item.zinc || 0;
-      totalVitaminA += item.vitaminA || 0;
-      totalVitaminC += item.vitaminC || 0;
-      totalVitaminD += item.vitaminD || 0;
-    }
+    totalSaturatedFat += item.saturatedFat || 0;
+    totalTransFat += item.transFat || 0;
+    totalCholesterol += item.cholesterol || 0;
+    totalPotassium += item.potassium || 0;
+    totalCalcium += item.calcium || 0;
+    totalIron += item.iron || 0;
+    totalMagnesium += item.magnesium || 0;
+    totalZinc += item.zinc || 0;
+    totalVitaminA += item.vitaminA || 0;
+    totalVitaminC += item.vitaminC || 0;
+    totalVitaminD += item.vitaminD || 0;
 
     // Complete
-    if (detailLevel === 'complete') {
-      totalMonounsaturatedFat += item.monounsaturatedFat || 0;
-      totalPolyunsaturatedFat += item.polyunsaturatedFat || 0;
-      totalVitaminE += item.vitaminE || 0;
-      totalVitaminK += item.vitaminK || 0;
-      totalThiamin += item.thiamin || 0;
-      totalRiboflavin += item.riboflavin || 0;
-      totalNiacin += item.niacin || 0;
-      totalVitaminB6 += item.vitaminB6 || 0;
-      totalFolate += item.folate || 0;
-      totalVitaminB12 += item.vitaminB12 || 0;
-      totalCholine += item.choline || 0;
-      totalPhosphorus += item.phosphorus || 0;
-      totalSelenium += item.selenium || 0;
-      totalCopper += item.copper || 0;
-      totalManganese += item.manganese || 0;
-      totalCaffeine += item.caffeine || 0;
-      totalWater += item.water || 0;
-    }
+    totalMonounsaturatedFat += item.monounsaturatedFat || 0;
+    totalPolyunsaturatedFat += item.polyunsaturatedFat || 0;
+    totalVitaminE += item.vitaminE || 0;
+    totalVitaminK += item.vitaminK || 0;
+    totalThiamin += item.thiamin || 0;
+    totalRiboflavin += item.riboflavin || 0;
+    totalNiacin += item.niacin || 0;
+    totalVitaminB6 += item.vitaminB6 || 0;
+    totalFolate += item.folate || 0;
+    totalVitaminB12 += item.vitaminB12 || 0;
+    totalCholine += item.choline || 0;
+    totalPhosphorus += item.phosphorus || 0;
+    totalSelenium += item.selenium || 0;
+    totalCopper += item.copper || 0;
+    totalManganese += item.manganese || 0;
+    totalCaffeine += item.caffeine || 0;
+    totalWater += item.water || 0;
   }
 
-  // Build result - essential totals are always present
-  const essential: EssentialTotals = {
+  return {
     totalCalories: Math.round(totalCalories),
     totalProtein: round(totalProtein),
     totalCarbs: round(totalCarbs),
@@ -566,82 +498,105 @@ function calculateTotals(items: AnalyzedFood[], detailLevel: NutritionDetailLeve
     totalFiber: round(totalFiber),
     totalSugar: round(totalSugar),
     totalSodium: Math.round(totalSodium),
+    totalSaturatedFat: round(totalSaturatedFat),
+    totalTransFat: round(totalTransFat),
+    totalCholesterol: Math.round(totalCholesterol),
+    totalPotassium: Math.round(totalPotassium),
+    totalCalcium: Math.round(totalCalcium),
+    totalIron: round(totalIron),
+    totalMagnesium: Math.round(totalMagnesium),
+    totalZinc: round(totalZinc),
+    totalVitaminA: round(totalVitaminA),
+    totalVitaminC: round(totalVitaminC),
+    totalVitaminD: round(totalVitaminD),
+    totalMonounsaturatedFat: round(totalMonounsaturatedFat),
+    totalPolyunsaturatedFat: round(totalPolyunsaturatedFat),
+    totalVitaminE: round(totalVitaminE),
+    totalVitaminK: round(totalVitaminK),
+    totalThiamin: round(totalThiamin, 2),
+    totalRiboflavin: round(totalRiboflavin, 2),
+    totalNiacin: round(totalNiacin),
+    totalVitaminB6: round(totalVitaminB6, 2),
+    totalFolate: round(totalFolate),
+    totalVitaminB12: round(totalVitaminB12, 2),
+    totalCholine: round(totalCholine),
+    totalPhosphorus: Math.round(totalPhosphorus),
+    totalSelenium: round(totalSelenium),
+    totalCopper: round(totalCopper, 2),
+    totalManganese: round(totalManganese, 2),
+    totalCaffeine: round(totalCaffeine),
+    totalWater: round(totalWater),
   };
-
-  // Extended totals (optional)
-  const extended: Partial<FoodAnalysisResult> = {};
-  if (detailLevel === 'extended' || detailLevel === 'complete') {
-    extended.totalSaturatedFat = round(totalSaturatedFat);
-    extended.totalTransFat = round(totalTransFat);
-    extended.totalCholesterol = Math.round(totalCholesterol);
-    extended.totalPotassium = Math.round(totalPotassium);
-    extended.totalCalcium = Math.round(totalCalcium);
-    extended.totalIron = round(totalIron);
-    extended.totalMagnesium = Math.round(totalMagnesium);
-    extended.totalZinc = round(totalZinc);
-    extended.totalVitaminA = round(totalVitaminA);
-    extended.totalVitaminC = round(totalVitaminC);
-    extended.totalVitaminD = round(totalVitaminD);
-  }
-
-  // Complete totals (optional)
-  const complete: Partial<FoodAnalysisResult> = {};
-  if (detailLevel === 'complete') {
-    complete.totalMonounsaturatedFat = round(totalMonounsaturatedFat);
-    complete.totalPolyunsaturatedFat = round(totalPolyunsaturatedFat);
-    complete.totalVitaminE = round(totalVitaminE);
-    complete.totalVitaminK = round(totalVitaminK);
-    complete.totalThiamin = round(totalThiamin, 2);
-    complete.totalRiboflavin = round(totalRiboflavin, 2);
-    complete.totalNiacin = round(totalNiacin);
-    complete.totalVitaminB6 = round(totalVitaminB6, 2);
-    complete.totalFolate = round(totalFolate);
-    complete.totalVitaminB12 = round(totalVitaminB12, 2);
-    complete.totalCholine = round(totalCholine);
-    complete.totalPhosphorus = Math.round(totalPhosphorus);
-    complete.totalSelenium = round(totalSelenium);
-    complete.totalCopper = round(totalCopper, 2);
-    complete.totalManganese = round(totalManganese, 2);
-    complete.totalCaffeine = round(totalCaffeine);
-    complete.totalWater = round(totalWater);
-  }
-
-  return { ...essential, ...extended, ...complete };
 }
 
+// ============================================================================
+// MODEL SELECTION - Cost optimization
+// ============================================================================
+
 /**
- * Analyze a food photo using GPT-4 Vision
+ * Model configuration for tiered selection
+ * - fast: GPT-4o-mini for simple, single-item foods (cheaper)
+ * - full: GPT-5.1 for complex plates (more accurate)
+ */
+const MODEL_CONFIG = {
+  fast: {
+    model: 'gpt-4o-mini',
+    maxCompletionTokens: 2000,
+  },
+  full: {
+    model: OPENAI_CONFIG.vision.model,
+    maxCompletionTokens: 2000,
+  },
+} as const;
+
+/**
+ * Determine if a food description is simple (single item) or complex (multiple items)
+ */
+function isSimpleFood(description: string): boolean {
+  const normalizedDesc = description.toLowerCase().trim();
+
+  // Check for conjunctions that indicate multiple items
+  const multiItemIndicators = [' and ', ' with ', ' plus ', ',', '&', '\n'];
+  for (const indicator of multiItemIndicators) {
+    if (normalizedDesc.includes(indicator)) {
+      return false;
+    }
+  }
+
+  // Check word count - simple foods are usually 1-4 words
+  const wordCount = normalizedDesc.split(/\s+/).length;
+  return wordCount <= 4;
+}
+
+// ============================================================================
+// PHOTO ANALYSIS
+// ============================================================================
+
+/**
+ * Analyze a food photo using GPT Vision
+ * Always returns complete nutrition data (35+ nutrients)
+ *
  * @param imageBase64 - Base64 encoded image
- * @param detailLevel - Nutrition detail level (essential, extended, complete)
+ * @param modelTier - Optional model tier override ('fast' or 'full'). Default: 'full' for photos
  */
 export async function analyzeFoodPhoto(
   imageBase64: string,
-  detailLevel: NutritionDetailLevel = 'essential'
+  modelTier: ModelTier = 'full'
 ): Promise<FoodAnalysisResult> {
-  // Get the API key (env var for local, secret for production)
   const apiKey = getApiKey();
+  const openai = new OpenAI({ apiKey });
 
-  const openai = new OpenAI({
-    apiKey,
-  });
-
-  // Use tiered prompt based on detail level
-  const prompt = getFoodAnalysisPrompt(detailLevel);
-
-  // Increase token limit for complete analysis
-  const maxTokens = detailLevel === 'complete' ? 2000 : detailLevel === 'extended' ? 1500 : 1000;
+  const config = MODEL_CONFIG[modelTier];
+  const prompt = getFoodAnalysisPrompt();
 
   try {
     const response = await openai.chat.completions.create({
-      model: OPENAI_CONFIG.vision.model,
+      model: config.model,
       messages: [
         {
           role: 'user',
           content: [
-            {
-              type: 'text',
-              text: prompt,
-            },
+            { type: 'text', text: prompt },
             {
               type: 'image_url',
               image_url: {
@@ -652,71 +607,33 @@ export async function analyzeFoodPhoto(
           ],
         },
       ],
-      max_completion_tokens: maxTokens,
-      temperature: 0.3, // Lower temperature for more consistent results
+      max_completion_tokens: config.maxCompletionTokens,
+      temperature: 0.3,
     });
 
     const content = response.choices[0]?.message?.content;
-
     if (!content) {
       throw new Error('No response from OpenAI');
     }
 
-    // Parse JSON from the response
-    const jsonMatch = content.match(/\{[\s\S]*\}/);
-    if (!jsonMatch) {
-      throw new Error('Could not parse JSON from response');
-    }
-
-    const parsed = JSON.parse(jsonMatch[0]);
-
-    // Validate and transform the response with full nutrition fields
-    const items: AnalyzedFood[] = (parsed.items || []).map((item: Record<string, unknown>) => {
-      const nutritionFields = parseNutritionFields(item, detailLevel);
-
-      return {
-        name: String(item.name || 'Unknown food'),
-        quantity: Number(item.quantity) || 1,
-        unit: String(item.unit || 'serving'),
-        ...nutritionFields,
-        servingMultiplier: Number(item.servingMultiplier) || 1,
-        confidence: Math.min(1, Math.max(0, Number(item.confidence) || 0.5)),
-      };
-    });
-
-    // Calculate all tier-appropriate totals
-    const totals = calculateTotals(items, detailLevel);
-
-    const mealType = ['breakfast', 'lunch', 'dinner', 'snack'].includes(parsed.mealType)
-      ? parsed.mealType
-      : 'unknown';
-
-    return {
-      items,
-      detailLevel,
-      ...totals,
-      mealType,
-    };
+    return parseAnalysisResponse(content);
   } catch (error) {
     console.error('Food analysis error:', error);
     throw error;
   }
 }
 
-/**
- * Generate text-based food analysis prompt based on nutrition detail level
- */
-function getTextFoodAnalysisPrompt(level: NutritionDetailLevel): string {
-  const levelDescriptions: Record<NutritionDetailLevel, string> = {
-    essential: 'basic macronutrients',
-    extended: 'macronutrients plus fat breakdown and key minerals',
-    complete: 'comprehensive nutrition including all vitamins, minerals, and micronutrients',
-  };
+// ============================================================================
+// TEXT ANALYSIS - with lookup and cache optimizations
+// ============================================================================
 
-  return `You are a nutrition expert. Analyze the following food description and provide ${levelDescriptions[level]}.
+/**
+ * Text-based food analysis prompt
+ */
+const TEXT_ANALYSIS_PROMPT = `You are a nutrition expert. Analyze the following food description and provide comprehensive nutrition including all vitamins, minerals, and micronutrients.
 
 For each food item in the description, provide:
-${getNutrientListForLevel(level)}
+${COMPLETE_NUTRIENT_LIST}
 
 Use typical/average portion sizes that people commonly eat:
 - A typical breakfast egg = 1 large egg
@@ -729,102 +646,149 @@ Use typical/average portion sizes that people commonly eat:
 Respond ONLY with a valid JSON object in this exact format:
 {
   "items": [
-    ${getJSONStructureForLevel(level)}
+    ${COMPLETE_JSON_STRUCTURE}
   ],
   "mealType": "lunch",
   "description": "Brief description of the meal"
 }
 
 Be accurate with nutritional values based on USDA data when possible. If quantities are specified in the input, use those instead of typical portions.`;
-}
 
-// Default text prompt for backward compatibility (exported for testing/reference)
-export const TEXT_FOOD_ANALYSIS_PROMPT = getTextFoodAnalysisPrompt('essential');
+// Default text prompt (exported for testing/reference)
+export const TEXT_FOOD_ANALYSIS_PROMPT = TEXT_ANALYSIS_PROMPT;
 
 /**
- * Analyze a text description of food using GPT
+ * Analyze a text description of food
+ * Implements cost optimizations:
+ * 1. Common foods lookup (no AI needed)
+ * 2. Cache for previously analyzed foods
+ * 3. Tiered model selection (simple vs complex)
+ *
  * @param foodDescription - Text description of food
- * @param detailLevel - Nutrition detail level (essential, extended, complete)
+ * @param skipCache - Skip cache lookup (for testing)
  */
 export async function analyzeFoodText(
   foodDescription: string,
-  detailLevel: NutritionDetailLevel = 'essential'
-): Promise<FoodAnalysisResult & { description?: string }> {
+  skipCache: boolean = false
+): Promise<FoodAnalysisResult & { description?: string; source?: 'lookup' | 'cache' | 'ai' }> {
+  const normalizedDesc = normalizeForLookup(foodDescription);
+
+  // OPTION 4: Try common foods lookup first (FREE - no AI call)
+  const lookupResult = getCommonFood(normalizedDesc);
+  if (lookupResult) {
+    console.log(`[FoodAnalysis] Lookup hit for: ${normalizedDesc}`);
+    return {
+      ...lookupResult,
+      description: foodDescription,
+      source: 'lookup',
+    };
+  }
+
+  // OPTION 3: Try cache lookup (FREE - no AI call)
+  if (!skipCache) {
+    const cachedResult = await getCachedFoodAnalysis(normalizedDesc);
+    if (cachedResult) {
+      console.log(`[FoodAnalysis] Cache hit for: ${normalizedDesc}`);
+      return {
+        ...cachedResult,
+        description: foodDescription,
+        source: 'cache',
+      };
+    }
+  }
+
+  // OPTION 2: Determine model tier based on complexity
+  const isSimple = isSimpleFood(foodDescription);
+  const modelTier: ModelTier = isSimple ? 'fast' : 'full';
+  console.log(`[FoodAnalysis] AI call (${modelTier}) for: ${foodDescription.substring(0, 50)}...`);
+
+  // Call AI
+  const result = await callTextAnalysisAI(foodDescription, modelTier);
+
+  // Cache the result for future use
+  await setCachedFoodAnalysis(normalizedDesc, result);
+
+  return {
+    ...result,
+    description: foodDescription,
+    source: 'ai',
+  };
+}
+
+/**
+ * Internal: Call AI for text-based food analysis
+ */
+async function callTextAnalysisAI(
+  foodDescription: string,
+  modelTier: ModelTier
+): Promise<FoodAnalysisResult> {
   const apiKey = getApiKey();
-
-  const openai = new OpenAI({
-    apiKey,
-  });
-
-  // Use tiered prompt based on detail level
-  const prompt = getTextFoodAnalysisPrompt(detailLevel);
-
-  // Increase token limit for complete analysis
-  const maxTokens = detailLevel === 'complete' ? 2000 : detailLevel === 'extended' ? 1500 : 1000;
+  const openai = new OpenAI({ apiKey });
+  const config = MODEL_CONFIG[modelTier];
 
   try {
     const response = await openai.chat.completions.create({
-      model: OPENAI_CONFIG.vision.model, // Use same model for consistency
+      model: config.model,
       messages: [
-        {
-          role: 'system',
-          content: prompt,
-        },
-        {
-          role: 'user',
-          content: `Analyze this food: ${foodDescription}`,
-        },
+        { role: 'system', content: TEXT_ANALYSIS_PROMPT },
+        { role: 'user', content: `Analyze this food: ${foodDescription}` },
       ],
-      max_completion_tokens: maxTokens,
+      max_completion_tokens: config.maxCompletionTokens,
       temperature: 0.3,
     });
 
     const content = response.choices[0]?.message?.content;
-
     if (!content) {
       throw new Error('No response from OpenAI');
     }
 
-    // Parse JSON from the response
-    const jsonMatch = content.match(/\{[\s\S]*\}/);
-    if (!jsonMatch) {
-      throw new Error('Could not parse JSON from response');
-    }
-
-    const parsed = JSON.parse(jsonMatch[0]);
-
-    // Validate and transform the response with full nutrition fields
-    const items: AnalyzedFood[] = (parsed.items || []).map((item: Record<string, unknown>) => {
-      const nutritionFields = parseNutritionFields(item, detailLevel);
-
-      return {
-        name: String(item.name || 'Unknown food'),
-        quantity: Number(item.quantity) || 1,
-        unit: String(item.unit || 'serving'),
-        ...nutritionFields,
-        servingMultiplier: Number(item.servingMultiplier) || 1,
-        confidence: Math.min(1, Math.max(0, Number(item.confidence) || 0.8)),
-      };
-    });
-
-    // Calculate all tier-appropriate totals
-    const totals = calculateTotals(items, detailLevel);
-
-    const mealType = ['breakfast', 'lunch', 'dinner', 'snack'].includes(parsed.mealType)
-      ? parsed.mealType
-      : 'unknown';
-
-    return {
-      items,
-      detailLevel,
-      ...totals,
-      mealType,
-      description: parsed.description || foodDescription,
-    };
+    return parseAnalysisResponse(content);
   } catch (error) {
     console.error('Text food analysis error:', error);
     throw error;
   }
+}
+
+// ============================================================================
+// RESPONSE PARSING
+// ============================================================================
+
+/**
+ * Parse AI response into FoodAnalysisResult
+ */
+function parseAnalysisResponse(content: string): FoodAnalysisResult {
+  const jsonMatch = content.match(/\{[\s\S]*\}/);
+  if (!jsonMatch) {
+    throw new Error('Could not parse JSON from response');
+  }
+
+  const parsed = JSON.parse(jsonMatch[0]);
+
+  const items: AnalyzedFood[] = (parsed.items || []).map((item: Record<string, unknown>) => {
+    const nutritionFields = parseNutritionFields(item);
+
+    return {
+      name: String(item.name || 'Unknown food'),
+      quantity: Number(item.quantity) || 1,
+      unit: String(item.unit || 'serving'),
+      ...nutritionFields,
+      servingMultiplier: Number(item.servingMultiplier) || 1,
+      confidence: Math.min(1, Math.max(0, Number(item.confidence) || 0.7)),
+    };
+  });
+
+  const totals = calculateTotals(items);
+
+  const mealType = ['breakfast', 'lunch', 'dinner', 'snack'].includes(parsed.mealType)
+    ? parsed.mealType
+    : 'unknown';
+
+  return {
+    items,
+    detailLevel: 'complete', // Always complete now
+    ...totals,
+    mealType,
+  };
 }
 
 // Export the secret for use in the Cloud Function
