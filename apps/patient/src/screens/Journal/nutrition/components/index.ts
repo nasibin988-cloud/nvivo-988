@@ -16,3 +16,6 @@ export { HighlightsGapsPanel } from './HighlightsGapsPanel';
 export { NutrientInfoModal } from './NutrientInfoModal';
 export { WeeklySummaryCard } from './WeeklySummaryCard';
 export { NutritionDashboardWidget } from './NutritionDashboardWidget';
+
+// Food log design experiments
+export * from './designs';

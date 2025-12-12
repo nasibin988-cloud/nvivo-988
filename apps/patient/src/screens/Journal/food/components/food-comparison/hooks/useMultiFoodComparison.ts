@@ -33,6 +33,48 @@ function generateId(): string {
   return `food-${Date.now()}-${Math.random().toString(36).slice(2, 9)}`;
 }
 
+/**
+ * Extract a short, clean food name from a potentially long description
+ * Examples:
+ * - "Hunter Chicken (chicken breast with mushrooms and bacon)" → "Hunter Chicken"
+ * - "1/3 lb Bacon Cheeseburger with sesame bun and lettuce" → "Bacon Cheeseburger"
+ * - "Grilled Salmon Fillet" → "Grilled Salmon Fillet"
+ */
+function getShortFoodName(fullName: string): string {
+  // Remove anything in parentheses
+  let name = fullName.replace(/\s*\([^)]*\)/g, '').trim();
+
+  // Remove common prefixes like "1/3 lb", "8 oz", "Large", etc.
+  name = name.replace(/^(\d+\/?\d*\s*(lb|oz|g|ml|pc|pcs|piece|pieces|slice|slices)\.?\s+)/i, '').trim();
+  name = name.replace(/^(small|medium|large|extra large|xl|sm|md|lg)\s+/i, '').trim();
+
+  // Remove "with" and everything after it
+  const withIndex = name.toLowerCase().indexOf(' with ');
+  if (withIndex > 0) {
+    name = name.substring(0, withIndex).trim();
+  }
+
+  // Remove "and" clauses at the end
+  const andIndex = name.toLowerCase().lastIndexOf(' and ');
+  if (andIndex > name.length * 0.6) { // Only if "and" is in the last 40% of the string
+    name = name.substring(0, andIndex).trim();
+  }
+
+  // Truncate if still too long (max ~25 chars for display)
+  if (name.length > 30) {
+    // Try to cut at a word boundary
+    const truncated = name.substring(0, 27);
+    const lastSpace = truncated.lastIndexOf(' ');
+    if (lastSpace > 15) {
+      name = truncated.substring(0, lastSpace);
+    } else {
+      name = truncated;
+    }
+  }
+
+  return name || fullName.substring(0, 25); // Fallback to truncated original
+}
+
 function createEmptyItem(): FoodInputItem {
   return {
     id: generateId(),
@@ -44,10 +86,11 @@ function createEmptyItem(): FoodInputItem {
 /**
  * Helper to extract all extended nutrition data from a food item
  * Handles undefined values gracefully
+ * Uses short food names for cleaner display
  */
 function extractAllNutrients(food: ExtendedFoodItem): ExtendedNutritionData {
   return {
-    name: food.name,
+    name: getShortFoodName(food.name),
     calories: food.calories,
     protein: food.protein,
     carbs: food.carbs,
@@ -114,15 +157,23 @@ function extractAllNutrients(food: ExtendedFoodItem): ExtendedNutritionData {
 
 /**
  * Helper to combine nutrients from multiple food items
+ * Uses short food names for cleaner display
  */
-function combineNutrients(items: ExtendedFoodItem[], combinedName: string): ExtendedNutritionData {
+function combineNutrients(items: ExtendedFoodItem[], _combinedName: string): ExtendedNutritionData {
   const sumOptional = (getter: (item: ExtendedFoodItem) => number | undefined): number | undefined => {
     const sum = items.reduce((acc, item) => acc + (getter(item) ?? 0), 0);
     return sum > 0 ? sum : undefined;
   };
 
+  // Create short combined name from short individual names
+  const shortNames = items.map(i => getShortFoodName(i.name));
+  const shortCombinedName = shortNames.join(' + ');
+  const finalName = shortCombinedName.length > 30
+    ? shortNames[0] + ' + more'
+    : shortCombinedName;
+
   return {
-    name: combinedName.length > 40 ? combinedName.slice(0, 37) + '...' : combinedName,
+    name: finalName,
     calories: items.reduce((sum, i) => sum + i.calories, 0),
     protein: items.reduce((sum, i) => sum + i.protein, 0),
     carbs: items.reduce((sum, i) => sum + i.carbs, 0),

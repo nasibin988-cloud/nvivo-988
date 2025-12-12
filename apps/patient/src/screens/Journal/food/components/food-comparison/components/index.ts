@@ -11,3 +11,4 @@ export { FoodCaptureModal } from './FoodCaptureModal';
 export { FoodInputCard } from './FoodInputCard';
 export { ComparisonResultsView } from './ComparisonResultsView';
 export { MultiComparisonModal } from './MultiComparisonModal';
+export { FocusSelector } from './FocusSelector';

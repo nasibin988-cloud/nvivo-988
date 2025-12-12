@@ -2,13 +2,16 @@
  * ReviewStep Component
  * Review and edit analysis results
  * Includes nutrition detail level toggle (shown AFTER analysis)
+ * Displays health grade based on selected wellness focus
  */
 
 import { RotateCcw } from 'lucide-react';
 import type { AnalysisResult, AnalyzedFood, MealType, NutritionDetailLevel } from '../types';
+import type { WellnessFocus } from '../../food-comparison/types';
 import NutritionSummary from './NutritionSummary';
 import MealTypeSelector from './MealTypeSelector';
 import FoodItemCard from './FoodItemCard';
+import { GradeDisplay } from '../../shared';
 
 interface ReviewStepProps {
   imageData: string;
@@ -17,6 +20,7 @@ interface ReviewStepProps {
   eatenAt: string;
   editingItem: number | null;
   displayLevel: NutritionDetailLevel;
+  selectedFocus: WellnessFocus;
   onDisplayLevelChange: (level: NutritionDetailLevel) => void;
   onRetry: () => void;
   onMealTypeChange: (type: MealType) => void;
@@ -34,6 +38,7 @@ export default function ReviewStep({
   eatenAt,
   editingItem,
   displayLevel,
+  selectedFocus,
   onDisplayLevelChange,
   onRetry,
   onMealTypeChange,
@@ -62,6 +67,27 @@ export default function ReviewStep({
         eatenAt={eatenAt}
         onMealTypeChange={onMealTypeChange}
         onTimeChange={onTimeChange}
+      />
+
+      {/* Health Grade based on focus */}
+      <GradeDisplay
+        nutrition={{
+          calories: result.totalCalories,
+          protein: result.totalProtein,
+          carbs: result.totalCarbs,
+          fat: result.totalFat,
+          fiber: result.totalFiber,
+          sugar: result.totalSugar,
+          sodium: result.totalSodium,
+          saturatedFat: result.totalSaturatedFat,
+          transFat: result.totalTransFat,
+          cholesterol: result.totalCholesterol,
+          potassium: result.totalPotassium,
+          calcium: result.totalCalcium,
+          iron: result.totalIron,
+          magnesium: result.totalMagnesium,
+        }}
+        focus={selectedFocus}
       />
 
       {/* Total summary - with toggleable detail level (shown AFTER analysis) */}

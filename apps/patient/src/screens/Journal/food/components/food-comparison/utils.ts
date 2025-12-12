@@ -695,6 +695,37 @@ export function generateAlternatives(food: {
 // ============================================
 
 /**
+ * Build a complete FoodHealthProfile from basic nutrition data
+ * This is the main entry point for creating profiles from menu items or other sources
+ */
+export function buildFoodHealthProfile(
+  food: ExtendedNutritionData,
+  focuses: WellnessFocus[] = ['balanced']
+): FoodHealthProfile {
+  const { grade, reason, overallScore, focusScores } = calculateHealthGrade(food, focuses);
+  const nutrientScores = calculateNutrientScores(food);
+  const focusImpacts = calculateFocusImpacts(food, focuses);
+  const conditionImpacts = calculateConditionImpacts(food, []); // No legacy conditions
+  const alternatives = generateAlternatives({ ...food, healthGrade: grade });
+
+  const profile: FoodHealthProfile = {
+    ...food,
+    healthGrade: grade,
+    gradeReason: reason,
+    overallScore,
+    focusScores,
+    nutrientScores,
+    focusImpacts,
+    conditionImpacts,
+    alternatives,
+  };
+
+  profile.aiRecommendation = generateAiRecommendation(profile);
+
+  return profile;
+}
+
+/**
  * Generate AI recommendation based on profile
  */
 export function generateAiRecommendation(profile: FoodHealthProfile): string {

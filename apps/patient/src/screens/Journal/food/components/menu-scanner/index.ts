@@ -17,4 +17,5 @@ export {
   ScanningStep,
   ReviewStep,
   MenuItemCard,
+  AnalyzeStep,
 } from './components';

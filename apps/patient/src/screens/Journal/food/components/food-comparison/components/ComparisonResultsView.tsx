@@ -528,7 +528,12 @@ export function ComparisonResultsView({
             <span className="text-[9px] text-text-muted">Tap to add to log</span>
           )}
         </div>
-        <div className="flex gap-2">
+        {/* Grid layout for 2-4 items - responsive to prevent overflow */}
+        <div className={`grid gap-2 ${
+          result.rankings.length === 2 ? 'grid-cols-2' :
+          result.rankings.length === 3 ? 'grid-cols-3' :
+          'grid-cols-2 sm:grid-cols-4'
+        }`}>
           {result.rankings.map((ranking, idx) => {
             const profile = result.items[ranking.index];
             const colors = ITEM_COLORS[idx % ITEM_COLORS.length];
@@ -539,7 +544,7 @@ export function ComparisonResultsView({
                 key={ranking.index}
                 onClick={() => onToggleSelection?.(ranking.index)}
                 disabled={!canSelect}
-                className={`flex-1 p-2.5 rounded-xl border transition-all text-left ${
+                className={`p-2 sm:p-2.5 rounded-xl border transition-all text-left min-w-0 ${
                   isSelected
                     ? 'bg-emerald-500/15 border-emerald-500/40 ring-1 ring-emerald-500/30'
                     : idx === 0
@@ -547,25 +552,26 @@ export function ComparisonResultsView({
                     : 'bg-white/[0.02] border-white/[0.06]'
                 } ${canSelect ? 'hover:border-white/20 active:scale-[0.98]' : ''}`}
               >
-                <div className="flex items-center justify-between mb-1.5">
-                  <div className="flex items-center gap-2">
-                    <div className={`w-5 h-5 rounded-md flex items-center justify-center text-[10px] font-bold ${colors.light} ${colors.text}`}>
+                <div className="flex items-center justify-between mb-1 sm:mb-1.5">
+                  <div className="flex items-center gap-1 sm:gap-2">
+                    <div className={`w-4 h-4 sm:w-5 sm:h-5 rounded-md flex items-center justify-center text-[9px] sm:text-[10px] font-bold shrink-0 ${colors.light} ${colors.text}`}>
                       {idx + 1}
                     </div>
                     <HealthGradeBadge grade={ranking.grade} size="sm" />
                   </div>
                   {canSelect && (
-                    <div className={`w-4 h-4 rounded-full border flex items-center justify-center transition-all ${
+                    <div className={`w-3.5 h-3.5 sm:w-4 sm:h-4 rounded-full border flex items-center justify-center transition-all shrink-0 ${
                       isSelected
                         ? 'bg-emerald-500 border-emerald-500'
                         : 'border-white/20'
                     }`}>
-                      {isSelected && <Check size={10} className="text-white" />}
+                      {isSelected && <Check size={8} className="text-white sm:hidden" />}
+                      {isSelected && <Check size={10} className="text-white hidden sm:block" />}
                     </div>
                   )}
                 </div>
-                <p className="text-xs font-medium text-text-primary truncate">{profile.name}</p>
-                <p className="text-[10px] text-text-muted">{formatNum(profile.calories)} cal</p>
+                <p className="text-[10px] sm:text-xs font-medium text-text-primary truncate">{profile.name}</p>
+                <p className="text-[9px] sm:text-[10px] text-text-muted">{formatNum(profile.calories)} cal</p>
               </button>
             );
           })}

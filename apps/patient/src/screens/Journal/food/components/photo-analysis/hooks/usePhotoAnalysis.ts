@@ -10,6 +10,7 @@ import { useState, useCallback } from 'react';
 import { httpsCallable } from 'firebase/functions';
 import { getFunctions } from '@nvivo/shared';
 import type { AnalysisResult, AnalyzedFood, MealType, AnalysisStep, NutritionDetailLevel } from '../types';
+import type { WellnessFocus } from '../../food-comparison/types';
 
 interface UsePhotoAnalysisReturn {
   step: AnalysisStep;
@@ -21,6 +22,7 @@ interface UsePhotoAnalysisReturn {
   eatenAt: string;
   editingItem: number | null;
   displayLevel: NutritionDetailLevel;
+  selectedFocus: WellnessFocus;
   setImageData: (data: string | null) => void;
   analyzeImage: (base64: string) => Promise<void>;
   handleRetry: () => void;
@@ -31,6 +33,7 @@ interface UsePhotoAnalysisReturn {
   setEatenAt: (time: string) => void;
   setEditingItem: (index: number | null) => void;
   setDisplayLevel: (level: NutritionDetailLevel) => void;
+  setSelectedFocus: (focus: WellnessFocus) => void;
   getConfirmResult: () => AnalysisResult | null;
 }
 
@@ -153,6 +156,8 @@ export function usePhotoAnalysis(): UsePhotoAnalysisReturn {
   const [eatenAt, setEatenAt] = useState<string>(getCurrentTime);
   // Display level controls UI filtering only - analysis always returns complete data
   const [displayLevel, setDisplayLevel] = useState<NutritionDetailLevel>('essential');
+  // Wellness focus for health grading
+  const [selectedFocus, setSelectedFocus] = useState<WellnessFocus>('balanced');
 
   const analyzeImage = useCallback(async (base64: string) => {
     setStep('analyzing');
@@ -284,6 +289,7 @@ export function usePhotoAnalysis(): UsePhotoAnalysisReturn {
     eatenAt,
     editingItem,
     displayLevel,
+    selectedFocus,
     setImageData,
     analyzeImage,
     handleRetry,
@@ -294,6 +300,7 @@ export function usePhotoAnalysis(): UsePhotoAnalysisReturn {
     setEatenAt,
     setEditingItem,
     setDisplayLevel,
+    setSelectedFocus,
     getConfirmResult,
   };
 }

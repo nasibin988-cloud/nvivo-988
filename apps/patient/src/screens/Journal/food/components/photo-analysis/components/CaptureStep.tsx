@@ -16,6 +16,8 @@ interface CaptureStepProps {
   onCapturePhoto: () => void;
   onFileUpload: (event: React.ChangeEvent<HTMLInputElement>) => void;
   fileInputRef: React.RefObject<HTMLInputElement>;
+  /** Extra content to render before action buttons */
+  extraContent?: React.ReactNode;
 }
 
 export default function CaptureStep({
@@ -28,6 +30,7 @@ export default function CaptureStep({
   onCapturePhoto,
   onFileUpload,
   fileInputRef,
+  extraContent,
 }: CaptureStepProps): React.ReactElement {
   return (
     <CaptureStepBase
@@ -42,6 +45,7 @@ export default function CaptureStep({
       fileInputRef={fileInputRef}
       themeColor="violet"
       captureLabel="Capture"
+      extraContent={extraContent}
     />
   );
 }

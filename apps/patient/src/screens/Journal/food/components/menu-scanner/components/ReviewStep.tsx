@@ -4,29 +4,35 @@
 
 import { Store, RefreshCw, CheckSquare, Square, Utensils } from 'lucide-react';
 import type { MenuScanResult, MenuItem } from '../types';
+import type { WellnessFocus } from '../../food-comparison/types';
 import { MenuItemCard } from './MenuItemCard';
+import { FocusSelector } from '../../food-comparison/components/FocusSelector';
 import { getConfidenceColor, getConfidenceBg, formatConfidence } from '../utils';
 
 interface ReviewStepProps {
   imageData: string;
   result: MenuScanResult;
   selectedCount: number;
+  selectedFocus: WellnessFocus;
   onRetry: () => void;
   onToggleItem: (itemId: string) => void;
   onSelectAll: () => void;
   onDeselectAll: () => void;
   onUpdateItem: (itemId: string, updates: Partial<MenuItem>) => void;
+  onFocusChange: (focus: WellnessFocus) => void;
 }
 
 export function ReviewStep({
   imageData,
   result,
   selectedCount,
+  selectedFocus,
   onRetry,
   onToggleItem,
   onSelectAll,
   onDeselectAll,
   onUpdateItem,
+  onFocusChange,
 }: ReviewStepProps): React.ReactElement {
   const hasSelected = selectedCount > 0;
   const allSelected = selectedCount === result.menuItems.length;
@@ -93,8 +99,8 @@ export function ReviewStep({
             {result.menuItems.length} items found
           </span>
           {hasSelected && (
-            <span className="text-xs text-teal-400 font-medium">
-              ({selectedCount} selected)
+            <span className={`text-xs font-medium ${selectedCount >= 4 ? 'text-amber-400' : 'text-teal-400'}`}>
+              ({selectedCount}/4 selected)
             </span>
           )}
         </div>
@@ -165,6 +171,17 @@ export function ReviewStep({
               </div>
             ))}
           </div>
+        </div>
+      )}
+
+      {/* Focus Selector - shows when 2+ items selected for comparison */}
+      {selectedCount >= 2 && (
+        <div className="p-4">
+          <FocusSelector
+            selectedFocus={selectedFocus}
+            onFocusChange={onFocusChange}
+            colorTheme="teal"
+          />
         </div>
       )}
     </div>

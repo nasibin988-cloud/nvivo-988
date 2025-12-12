@@ -1,9 +1,8 @@
 /**
  * ScanCaptureStep - Camera/gallery capture for menu scanning
- * Uses shared CaptureStepBase with teal theme
+ * Uses shared CaptureStepBase with teal theme (matching Photo AI layout)
  */
 
-import { FileText } from 'lucide-react';
 import { CaptureStepBase } from '../../shared';
 
 interface ScanCaptureStepProps {
@@ -17,12 +16,6 @@ interface ScanCaptureStepProps {
   onFileUpload: (event: React.ChangeEvent<HTMLInputElement>) => void;
   fileInputRef: React.RefObject<HTMLInputElement>;
 }
-
-const MENU_SCAN_TIPS = [
-  'Hold camera steady and ensure good lighting',
-  'Include menu item names and prices if visible',
-  'Nutrition info will be estimated if not shown',
-];
 
 export function ScanCaptureStep({
   videoRef,
@@ -47,13 +40,7 @@ export function ScanCaptureStep({
       onFileUpload={onFileUpload}
       fileInputRef={fileInputRef}
       themeColor="teal"
-      emptyIcon={FileText}
-      emptyText="Point camera at menu"
-      emptySubtext="or upload from gallery"
-      tips={MENU_SCAN_TIPS}
       captureLabel="Capture Menu"
-      compact
-      showDashedOverlay
     />
   );
 }

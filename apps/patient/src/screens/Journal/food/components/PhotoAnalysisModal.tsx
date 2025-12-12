@@ -3,9 +3,11 @@
  * AI-powered food photo analysis using GPT-4 Vision
  * Analysis always returns complete nutrition data (35+ nutrients)
  * User can toggle display level AFTER analysis to see more/less detail
+ * Includes wellness focus selection for health grading
  */
 
-import { useRef } from 'react';
+import { useRef, useEffect } from 'react';
+import { createPortal } from 'react-dom';
 import { X, Sparkles, Check } from 'lucide-react';
 import {
   type PhotoAnalysisModalProps,
@@ -15,6 +17,7 @@ import {
   AnalyzingStep,
   ReviewStep,
 } from './photo-analysis';
+import { FocusSelector } from './food-comparison/components/FocusSelector';
 
 export default function PhotoAnalysisModal({ onClose, onConfirm }: PhotoAnalysisModalProps): React.ReactElement {
   const fileInputRef = useRef<HTMLInputElement>(null);
@@ -36,6 +39,7 @@ export default function PhotoAnalysisModal({ onClose, onConfirm }: PhotoAnalysis
     eatenAt,
     editingItem,
     displayLevel,
+    selectedFocus,
     setImageData,
     analyzeImage,
     handleRetry,
@@ -46,6 +50,7 @@ export default function PhotoAnalysisModal({ onClose, onConfirm }: PhotoAnalysis
     setEatenAt,
     setEditingItem,
     setDisplayLevel,
+    setSelectedFocus,
     getConfirmResult,
   } = usePhotoAnalysis();
 
@@ -89,8 +94,17 @@ export default function PhotoAnalysisModal({ onClose, onConfirm }: PhotoAnalysis
     }
   };
 
-  return (
-    <div className="fixed inset-0 z-[100] flex items-end sm:items-center justify-center bg-black/80 backdrop-blur-md">
+  // Lock body scroll when modal is open
+  useEffect(() => {
+    const originalStyle = window.getComputedStyle(document.body).overflow;
+    document.body.style.overflow = 'hidden';
+    return () => {
+      document.body.style.overflow = originalStyle;
+    };
+  }, []);
+
+  return createPortal(
+    <div className="fixed inset-0 z-[9999] flex items-center justify-center bg-black/90 backdrop-blur-md" style={{ width: '100vw', height: '100vh' }}>
       <div className="absolute inset-0" onClick={onClose} />
 
       <div className="relative w-full max-w-lg bg-surface rounded-t-3xl sm:rounded-2xl border border-white/[0.08] overflow-hidden max-h-[95vh] flex flex-col shadow-2xl">
@@ -126,6 +140,15 @@ export default function PhotoAnalysisModal({ onClose, onConfirm }: PhotoAnalysis
               onCapturePhoto={handleCapturePhoto}
               onFileUpload={handleFileUpload}
               fileInputRef={fileInputRef}
+              extraContent={
+                <div className="px-4 py-4">
+                  <FocusSelector
+                    selectedFocus={selectedFocus}
+                    onFocusChange={setSelectedFocus}
+                    colorTheme="violet"
+                  />
+                </div>
+              }
             />
           )}
 
@@ -141,6 +164,7 @@ export default function PhotoAnalysisModal({ onClose, onConfirm }: PhotoAnalysis
               eatenAt={eatenAt}
               editingItem={editingItem}
               displayLevel={displayLevel}
+              selectedFocus={selectedFocus}
               onDisplayLevelChange={setDisplayLevel}
               onRetry={handleRetry}
               onMealTypeChange={setSelectedMealType}
@@ -166,6 +190,7 @@ export default function PhotoAnalysisModal({ onClose, onConfirm }: PhotoAnalysis
           </div>
         )}
       </div>
-    </div>
+    </div>,
+    document.body
   );
 }

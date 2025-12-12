@@ -9,23 +9,15 @@ import {
   Plus,
   Zap,
   RotateCcw,
-  Settings2,
-  Dumbbell,
-  Heart,
-  Battery,
-  Scale,
-  Brain,
-  Leaf,
-  Activity,
-  Bone,
-  Shield,
   UtensilsCrossed,
 } from 'lucide-react';
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
+import { createPortal } from 'react-dom';
 import { useMultiFoodComparison } from '../hooks';
 import { usePersonalizedDV } from '../../../../../../hooks/nutrition/usePersonalizedDV';
 import { FoodInputCard } from './FoodInputCard';
 import { ComparisonResultsView } from './ComparisonResultsView';
+import { FocusSelector } from './FocusSelector';
 import type { WellnessFocus, FoodLogItem } from '../types';
 
 interface MultiComparisonModalProps {
@@ -34,27 +26,7 @@ interface MultiComparisonModalProps {
   onAddToLog?: (items: FoodLogItem[]) => void;
 }
 
-// Wellness focus options with icons and descriptions (10 total)
-const WELLNESS_FOCUSES: {
-  value: WellnessFocus;
-  label: string;
-  icon: typeof Heart;
-  description: string;
-}[] = [
-  { value: 'balanced', label: 'Balanced', icon: Scale, description: 'Overall nutrition balance' },
-  { value: 'muscle_building', label: 'Muscle Building', icon: Dumbbell, description: 'High protein for growth' },
-  { value: 'heart_health', label: 'Heart Health', icon: Heart, description: 'Low sodium & sat fat' },
-  { value: 'energy_endurance', label: 'Energy', icon: Battery, description: 'Sustained energy' },
-  { value: 'weight_management', label: 'Weight Mgmt', icon: Scale, description: 'Calorie-conscious' },
-  { value: 'brain_focus', label: 'Brain & Focus', icon: Brain, description: 'Cognitive support' },
-  { value: 'gut_health', label: 'Gut Health', icon: Leaf, description: 'Fiber & prebiotics' },
-  { value: 'blood_sugar_balance', label: 'Blood Sugar', icon: Activity, description: 'Low glycemic impact' },
-  { value: 'bone_joint_support', label: 'Bone & Joint', icon: Bone, description: 'Calcium & vitamin D' },
-  { value: 'anti_inflammatory', label: 'Anti-Inflam.', icon: Shield, description: 'Reduce inflammation' },
-];
-
 export function MultiComparisonModal({ onClose, onAddToLog }: MultiComparisonModalProps): React.ReactElement {
-  const [showSettings, setShowSettings] = useState(false);
   const [selectedForLog, setSelectedForLog] = useState<Set<number>>(new Set());
 
   const {
@@ -124,10 +96,19 @@ export function MultiComparisonModal({ onClose, onAddToLog }: MultiComparisonMod
     onClose();
   };
 
-  return (
-    <div className="fixed inset-0 z-50 flex items-end sm:items-center justify-center">
+  // Lock body scroll when modal is open
+  useEffect(() => {
+    const originalStyle = window.getComputedStyle(document.body).overflow;
+    document.body.style.overflow = 'hidden';
+    return () => {
+      document.body.style.overflow = originalStyle;
+    };
+  }, []);
+
+  return createPortal(
+    <div className="fixed inset-0 z-[9999] flex items-center justify-center bg-black/90 backdrop-blur-md" style={{ width: '100vw', height: '100vh' }}>
       {/* Backdrop */}
-      <div className="absolute inset-0 bg-black/60 backdrop-blur-sm" onClick={onClose} />
+      <div className="absolute inset-0" onClick={onClose} />
 
       {/* Modal Content */}
       <div className="relative w-full max-w-lg max-h-[90vh] bg-bg-primary rounded-t-2xl sm:rounded-2xl shadow-xl overflow-hidden flex flex-col">
@@ -139,78 +120,17 @@ export function MultiComparisonModal({ onClose, onAddToLog }: MultiComparisonMod
               Add 2-4 foods, then analyze them all at once
             </p>
           </div>
-          <div className="flex items-center gap-2">
-            <button
-              onClick={() => setShowSettings(!showSettings)}
-              className={`p-2 rounded-lg transition-all ${
-                showSettings
-                  ? 'bg-violet-500/20 text-violet-400'
-                  : 'text-text-muted hover:text-text-primary hover:bg-white/[0.06]'
-              }`}
-            >
-              <Settings2 size={18} />
-            </button>
-            <button
-              onClick={onClose}
-              className="p-2 rounded-lg text-text-muted hover:text-text-primary hover:bg-white/[0.06] transition-all"
-            >
-              <X size={20} />
-            </button>
-          </div>
+          <button
+            onClick={onClose}
+            className="p-2 rounded-lg text-text-muted hover:text-text-primary hover:bg-white/[0.06] transition-all"
+          >
+            <X size={20} />
+          </button>
         </div>
 
         {/* Scrollable Content */}
         <div className="flex-1 overflow-y-auto">
           <div className="p-4 space-y-4">
-            {/* Settings Panel - Single Focus Selector */}
-            {showSettings && (
-              <div className="bg-white/[0.02] rounded-xl border border-white/[0.08] p-4">
-                <p className="text-xs font-medium text-text-primary mb-1">What's Your Focus?</p>
-                <p className="text-xs text-text-muted mb-3">
-                  Choose one priority to optimize your comparison
-                </p>
-                <div className="grid grid-cols-2 gap-2">
-                  {WELLNESS_FOCUSES.map(({ value, label, icon: Icon, description }) => {
-                    const isActive = selectedFocus === value;
-                    return (
-                      <button
-                        key={value}
-                        onClick={() => handleFocusSelect(value)}
-                        className={`p-2.5 rounded-xl text-left transition-all ${
-                          isActive
-                            ? 'bg-violet-500/15 border border-violet-500/30'
-                            : 'bg-white/[0.02] border border-white/[0.06] hover:border-white/[0.12]'
-                        }`}
-                      >
-                        <div className="flex items-center gap-2 mb-0.5">
-                          {/* Radio indicator */}
-                          <div className={`w-3.5 h-3.5 rounded-full border-2 flex items-center justify-center ${
-                            isActive ? 'border-violet-400' : 'border-white/20'
-                          }`}>
-                            {isActive && <div className="w-1.5 h-1.5 rounded-full bg-violet-400" />}
-                          </div>
-                          <Icon
-                            size={14}
-                            className={isActive ? 'text-violet-400' : 'text-text-muted'}
-                          />
-                          <span
-                            className={`text-xs font-medium ${
-                              isActive ? 'text-violet-400' : 'text-text-primary'
-                            }`}
-                          >
-                            {label}
-                          </span>
-                        </div>
-                        <p className="text-[10px] text-text-muted leading-relaxed pl-[22px]">
-                          {description}
-                        </p>
-                      </button>
-                    );
-                  })}
-                </div>
-              </div>
-            )}
-
             {/* Food Input Cards */}
             {!comparisonResult && (
               <>
@@ -253,6 +173,15 @@ export function MultiComparisonModal({ onClose, onAddToLog }: MultiComparisonMod
                       Start Over
                     </button>
                   </div>
+                )}
+
+                {/* Focus Selector - shows when 2+ items have data (pending or ready) */}
+                {pendingCount + readyCount >= 2 && !isAnalyzing && (
+                  <FocusSelector
+                    selectedFocus={selectedFocus}
+                    onFocusChange={handleFocusSelect}
+                    colorTheme="violet"
+                  />
                 )}
               </>
             )}
@@ -346,6 +275,7 @@ export function MultiComparisonModal({ onClose, onAddToLog }: MultiComparisonMod
           </div>
         )}
       </div>
-    </div>
+    </div>,
+    document.body
   );
 }

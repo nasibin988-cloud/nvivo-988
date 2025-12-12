@@ -41,7 +41,6 @@ import {
 
 import {
   MacroOrb,
-  MealCard,
   WaterTracker,
   NutritionSkeleton,
   EmptyState,
@@ -49,6 +48,7 @@ import {
   HighlightsGapsPanel,
   NutrientInfoModal,
   WeeklySummaryCard,
+  Design16_Grid,
 } from '../nutrition/components';
 
 import {
@@ -470,20 +470,12 @@ export default function NutritionTab(): React.ReactElement {
             {logs.length === 0 ? (
               <EmptyState onAddMeal={() => setShowTextAnalysis(true)} />
             ) : (
-              <div className="space-y-3">
-                {logs.map((meal, index) => (
-                  <MealCard
-                    key={meal.id}
-                    meal={meal}
-                    onDelete={deleteLog}
-                    onEdit={setEditingMeal}
-                    onQuickUpdate={(id, updates) => updateLog({ id, ...updates })}
-                    isFirst={index === 0}
-                    isLast={index === logs.length - 1}
-                    previousMealTime={index > 0 ? logs[index - 1].time : undefined}
-                  />
-                ))}
-              </div>
+              <Design16_Grid
+                meals={logs}
+                onDelete={deleteLog}
+                onEdit={setEditingMeal}
+                targets={nutritionTargets}
+              />
             )}
           </div>
         </>

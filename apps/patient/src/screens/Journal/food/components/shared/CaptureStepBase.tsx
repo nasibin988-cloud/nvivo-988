@@ -20,13 +20,13 @@ const THEME_COLORS = {
     tipsBorder: 'border-violet-500/10',
   },
   teal: {
-    cornerBorder: 'border-teal-400',
+    cornerBorder: 'border-teal-400/70',
     emptyGradient: 'from-teal-500/[0.03] to-transparent',
     emptyIcon: 'text-teal-400/40',
-    primaryBtnBg: 'bg-gradient-to-r from-teal-500/90 to-cyan-500/90',
-    primaryBtnBorder: '',
-    primaryBtnText: 'text-white',
-    primaryBtnHover: 'shadow-lg shadow-teal-500/20 hover:shadow-teal-500/30',
+    primaryBtnBg: 'bg-teal-500/15',
+    primaryBtnBorder: 'border-teal-500/30',
+    primaryBtnText: 'text-teal-400',
+    primaryBtnHover: 'hover:bg-teal-500/20',
     tipsAccent: 'text-teal-400',
     tipsBg: 'bg-teal-500/[0.06]',
     tipsBorder: 'border-teal-500/10',
@@ -73,6 +73,8 @@ interface CaptureStepBaseProps {
   compact?: boolean;
   /** Show dashed border overlay when streaming */
   showDashedOverlay?: boolean;
+  /** Extra content to render before action buttons (e.g., FocusSelector) */
+  extraContent?: React.ReactNode;
 }
 
 export function CaptureStepBase({
@@ -93,6 +95,7 @@ export function CaptureStepBase({
   captureLabel = 'Capture',
   compact = false,
   showDashedOverlay = false,
+  extraContent,
 }: CaptureStepBaseProps): React.ReactElement {
   const colors = THEME_COLORS[themeColor];
 
@@ -175,6 +178,9 @@ export function CaptureStepBase({
           </ul>
         </div>
       )}
+
+      {/* Extra content slot (e.g., FocusSelector) */}
+      {extraContent}
 
       {/* Action buttons */}
       <div className={`${compact ? 'p-4' : ''} flex gap-3`}>

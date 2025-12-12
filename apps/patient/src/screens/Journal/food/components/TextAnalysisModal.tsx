@@ -3,13 +3,17 @@
  * Output format matches PhotoAnalysisModal (minus confidence %)
  */
 
-import { useState, useCallback } from 'react';
-import { X, Wand2, Loader2, AlertCircle, Edit3, Check } from 'lucide-react';
+import { useState, useCallback, useEffect } from 'react';
+import { createPortal } from 'react-dom';
+import { X, Wand2, AlertCircle, Edit3, Check } from 'lucide-react';
 import { getFunctions, httpsCallable } from 'firebase/functions';
 import type { AnalysisResult, AnalyzedFood, MealType, NutritionDetailLevel } from './photo-analysis/types';
+import type { WellnessFocus } from './food-comparison/types';
 import NutritionSummary from './photo-analysis/components/NutritionSummary';
 import MealTypeSelector from './photo-analysis/components/MealTypeSelector';
 import TextFoodItemCard from './TextFoodItemCard';
+import { AnalyzingAnimation, GradeDisplay } from './shared';
+import { FocusSelector } from './food-comparison/components/FocusSelector';
 
 interface TextAnalysisModalProps {
   onClose: () => void;
@@ -85,6 +89,7 @@ export function TextAnalysisModal({ onClose, onConfirm }: TextAnalysisModalProps
   const [eatenAt, setEatenAt] = useState<string>(getCurrentTime);
   const [editingItem, setEditingItem] = useState<number | null>(null);
   const [displayLevel, setDisplayLevel] = useState<NutritionDetailLevel>('essential');
+  const [selectedFocus, setSelectedFocus] = useState<WellnessFocus>('balanced');
   const [manualData, setManualData] = useState({
     name: '',
     calories: '',
@@ -255,8 +260,17 @@ export function TextAnalysisModal({ onClose, onConfirm }: TextAnalysisModalProps
     }
   };
 
-  return (
-    <div className="fixed inset-0 z-[100] flex items-end sm:items-center justify-center bg-black/80 backdrop-blur-md">
+  // Lock body scroll when modal is open
+  useEffect(() => {
+    const originalStyle = window.getComputedStyle(document.body).overflow;
+    document.body.style.overflow = 'hidden';
+    return () => {
+      document.body.style.overflow = originalStyle;
+    };
+  }, []);
+
+  return createPortal(
+    <div className="fixed inset-0 z-[9999] flex items-center justify-center bg-black/90 backdrop-blur-md" style={{ width: '100vw', height: '100vh' }}>
       <div className="absolute inset-0" onClick={onClose} />
 
       <div className="relative w-full max-w-lg bg-surface rounded-t-3xl sm:rounded-2xl border border-white/[0.08] overflow-hidden max-h-[95vh] flex flex-col shadow-2xl">
@@ -303,6 +317,13 @@ export function TextAnalysisModal({ onClose, onConfirm }: TextAnalysisModalProps
                 eatenAt={eatenAt}
                 onMealTypeChange={setSelectedMealType}
                 onTimeChange={setEatenAt}
+              />
+
+              {/* Focus Selector - shown before analysis */}
+              <FocusSelector
+                selectedFocus={selectedFocus}
+                onFocusChange={setSelectedFocus}
+                colorTheme="violet"
               />
 
               {/* Manual Entry Option */}
@@ -380,15 +401,12 @@ export function TextAnalysisModal({ onClose, onConfirm }: TextAnalysisModalProps
 
           {/* Analyzing Step */}
           {step === 'analyzing' && (
-            <div className="flex flex-col items-center justify-center py-16 px-5">
-              <div className="w-16 h-16 rounded-2xl bg-violet-500/15 flex items-center justify-center mb-4">
-                <Loader2 size={28} className="text-violet-400 animate-spin" />
-              </div>
-              <p className="text-sm font-medium text-text-primary mb-1">Analyzing your food...</p>
-              <p className="text-xs text-text-muted text-center max-w-xs">
-                AI is estimating the nutritional content
-              </p>
-            </div>
+            <AnalyzingAnimation
+              icon={Wand2}
+              title="Analyzing your food..."
+              subtitle="AI is estimating the nutritional content"
+              colorTheme="violet"
+            />
           )}
 
           {/* Review Step */}
@@ -411,6 +429,27 @@ export function TextAnalysisModal({ onClose, onConfirm }: TextAnalysisModalProps
                 eatenAt={eatenAt}
                 onMealTypeChange={setSelectedMealType}
                 onTimeChange={setEatenAt}
+              />
+
+              {/* Health Grade based on focus */}
+              <GradeDisplay
+                nutrition={{
+                  calories: result.totalCalories,
+                  protein: result.totalProtein,
+                  carbs: result.totalCarbs,
+                  fat: result.totalFat,
+                  fiber: result.totalFiber,
+                  sugar: result.totalSugar,
+                  sodium: result.totalSodium,
+                  saturatedFat: result.totalSaturatedFat,
+                  transFat: result.totalTransFat,
+                  cholesterol: result.totalCholesterol,
+                  potassium: result.totalPotassium,
+                  calcium: result.totalCalcium,
+                  iron: result.totalIron,
+                  magnesium: result.totalMagnesium,
+                }}
+                focus={selectedFocus}
               />
 
               {/* Total summary - with toggleable detail level */}
@@ -504,6 +543,7 @@ export function TextAnalysisModal({ onClose, onConfirm }: TextAnalysisModalProps
           )}
         </div>
       </div>
-    </div>
+    </div>,
+    document.body
   );
 }

@@ -3,7 +3,7 @@
  * Type definitions for restaurant menu OCR scanning
  */
 
-export type ScanStep = 'capture' | 'scanning' | 'review';
+export type ScanStep = 'capture' | 'scanning' | 'review' | 'analyze';
 
 export interface MenuItem {
   id: string;
