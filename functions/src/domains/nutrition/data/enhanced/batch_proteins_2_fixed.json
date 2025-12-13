@@ -1,0 +1,1212 @@
+{
+  "turkey_breast": {
+    "name": "Turkey Breast, roasted",
+    "calories": 135,
+    "protein": 30.1,
+    "carbs": 0,
+    "fat": 1.8,
+    "fiber": 0,
+    "sugar": 0,
+    "sodium": 63,
+    "calcium": 14,
+    "iron": 1.4,
+    "potassium": 302,
+    "vitaminC": 0,
+    "vitaminA": 0,
+    "saturatedFat": 0.5,
+    "cholesterol": 71,
+    "transFat": 0,
+    "servingSize": "100g",
+    "servingUnit": "g",
+    "novaGroup": 1,
+    "glycemicIndex": 0,
+    "glycemicLoad": 0,
+    "omega3": 0.03,
+    "omega6": 0.35,
+    "isOrganic": false,
+    "isGlutenFree": true,
+    "isDairyFree": true,
+    "isVegan": false,
+    "isVegetarian": false,
+    "commonAllergens": [],
+    "focusGrades": {
+      "balanced": {
+        "grade": "A",
+        "score": 92,
+        "insight": "Excellent lean protein with minimal fat and zero carbs. Perfect macronutrient balance for muscle maintenance.",
+        "pros": [
+          "Very high protein (30g per 100g)",
+          "Extremely low in fat (1.8g)",
+          "Zero carbohydrates and sugar",
+          "Low in sodium (63mg)"
+        ],
+        "cons": [
+          "No fiber content",
+          "Minimal vitamins and minerals",
+          "Contains cholesterol (71mg)"
+        ]
+      },
+      "lowCarb": {
+        "grade": "A+",
+        "score": 100,
+        "insight": "Perfect for low-carb diets with zero carbohydrates and exceptional protein content.",
+        "pros": [
+          "Zero carbohydrates",
+          "Zero sugar",
+          "Zero glycemic impact",
+          "High protein to keep you satiated"
+        ],
+        "cons": [
+          "No dietary fiber"
+        ]
+      },
+      "highProtein": {
+        "grade": "A+",
+        "score": 98,
+        "insight": "Outstanding protein source with 30g per serving and excellent protein-to-calorie ratio.",
+        "pros": [
+          "Very high protein density (30.1g)",
+          "Low fat enhances protein percentage",
+          "Complete amino acid profile",
+          "Minimal calories from non-protein sources"
+        ],
+        "cons": [
+          "Can be dry if overcooked"
+        ]
+      },
+      "heartHealthy": {
+        "grade": "A",
+        "score": 88,
+        "insight": "Heart-healthy lean protein with low saturated fat, though moderate cholesterol content.",
+        "pros": [
+          "Very low saturated fat (0.5g)",
+          "Low sodium (63mg)",
+          "Good potassium content (302mg)",
+          "Zero trans fat"
+        ],
+        "cons": [
+          "Contains 71mg cholesterol",
+          "Low omega-3 fatty acids",
+          "Minimal cardiovascular-supporting nutrients"
+        ]
+      },
+      "diabeticFriendly": {
+        "grade": "A+",
+        "score": 96,
+        "insight": "Ideal for blood sugar management with zero glycemic impact and high protein for satiety.",
+        "pros": [
+          "Zero glycemic index/load",
+          "No carbohydrates or sugar",
+          "High protein stabilizes blood sugar",
+          "Low in sodium"
+        ],
+        "cons": [
+          "No fiber to slow digestion",
+          "Should be paired with vegetables"
+        ]
+      },
+      "antiInflammatory": {
+        "grade": "B",
+        "score": 72,
+        "insight": "Neutral anti-inflammatory profile. Lean protein with low omega-3s and moderate omega-6s.",
+        "pros": [
+          "Unprocessed whole food (NOVA 1)",
+          "Low saturated fat reduces inflammation",
+          "No added inflammatory ingredients",
+          "Good selenium content"
+        ],
+        "cons": [
+          "Low omega-3 fatty acids (0.03g)",
+          "Moderate omega-6 to omega-3 ratio (12:1)",
+          "Lacks anti-inflammatory phytonutrients",
+          "No antioxidant vitamins"
+        ]
+      },
+      "gut": {
+        "grade": "C",
+        "score": 65,
+        "insight": "Animal protein with no prebiotic fiber. Good for protein absorption but needs fiber-rich sides.",
+        "pros": [
+          "Easy to digest lean protein",
+          "Low fat reduces digestive burden",
+          "Unprocessed minimizes gut irritation",
+          "Provides glutamine for gut lining"
+        ],
+        "cons": [
+          "Zero dietary fiber",
+          "No prebiotics or probiotics",
+          "Animal protein can alter gut microbiome",
+          "Should be paired with vegetables for balance"
+        ]
+      },
+      "metabolic": {
+        "grade": "A",
+        "score": 90,
+        "insight": "Excellent for metabolic health with high thermic effect of protein and zero glycemic impact.",
+        "pros": [
+          "High protein boosts metabolism (30% TEF)",
+          "Zero impact on insulin levels",
+          "Good for lean muscle maintenance",
+          "Low calorie density supports weight management"
+        ],
+        "cons": [
+          "Lacks metabolism-boosting B vitamins",
+          "No fiber to support metabolic health",
+          "Minimal magnesium content"
+        ]
+      },
+      "longevity": {
+        "grade": "B+",
+        "score": 82,
+        "insight": "Good lean protein for longevity, though lacks diverse micronutrients and phytochemicals.",
+        "pros": [
+          "High-quality complete protein",
+          "Low in saturated fat",
+          "Selenium supports antioxidant function",
+          "Unprocessed whole food"
+        ],
+        "cons": [
+          "Low in longevity-associated vitamins",
+          "No polyphenols or antioxidants",
+          "Higher animal protein intake may not align with all longevity diets",
+          "Lacks diverse micronutrients"
+        ]
+      },
+      "athletic": {
+        "grade": "A",
+        "score": 94,
+        "insight": "Premium lean protein for muscle recovery and athletic performance with minimal fat.",
+        "pros": [
+          "Very high protein for muscle repair (30g)",
+          "Low fat maximizes protein calories",
+          "Good potassium for electrolyte balance (302mg)",
+          "Iron supports oxygen transport (1.4mg)"
+        ],
+        "cons": [
+          "No carbohydrates for glycogen replenishment",
+          "Low in electrolytes (sodium, magnesium)",
+          "Minimal B vitamins for energy metabolism"
+        ]
+      }
+    }
+  },
+  "turkey": {
+    "name": "Turkey, ground, 93% lean",
+    "calories": 176,
+    "protein": 23.5,
+    "carbs": 0,
+    "fat": 8.3,
+    "fiber": 0,
+    "sugar": 0,
+    "sodium": 88,
+    "calcium": 18,
+    "iron": 1.6,
+    "potassium": 270,
+    "vitaminC": 0,
+    "vitaminA": 0,
+    "saturatedFat": 2.3,
+    "cholesterol": 84,
+    "transFat": 0,
+    "servingSize": "100g",
+    "servingUnit": "g",
+    "novaGroup": 1,
+    "glycemicIndex": 0,
+    "glycemicLoad": 0,
+    "omega3": 0.07,
+    "omega6": 1.8,
+    "isOrganic": false,
+    "isGlutenFree": true,
+    "isDairyFree": true,
+    "isVegan": false,
+    "isVegetarian": false,
+    "commonAllergens": [],
+    "focusGrades": {
+      "balanced": {
+        "grade": "A-",
+        "score": 88,
+        "insight": "Well-balanced lean protein with moderate fat content. Good macronutrient profile for everyday meals.",
+        "pros": [
+          "High protein content (23.5g)",
+          "Moderate healthy fats (8.3g)",
+          "Zero carbohydrates",
+          "Low sodium (88mg)"
+        ],
+        "cons": [
+          "Higher fat than turkey breast",
+          "No fiber or micronutrients",
+          "Contains cholesterol (84mg)"
+        ]
+      },
+      "lowCarb": {
+        "grade": "A+",
+        "score": 100,
+        "insight": "Perfect zero-carb protein source ideal for ketogenic and low-carb diets.",
+        "pros": [
+          "Zero carbohydrates",
+          "Zero sugar",
+          "No glycemic impact",
+          "Good fat content for keto"
+        ],
+        "cons": [
+          "No dietary fiber"
+        ]
+      },
+      "highProtein": {
+        "grade": "A",
+        "score": 92,
+        "insight": "Excellent protein source with good density and complete amino acid profile.",
+        "pros": [
+          "High protein (23.5g per 100g)",
+          "Complete amino acids",
+          "Good protein-to-calorie ratio (53%)",
+          "Versatile for meal prep"
+        ],
+        "cons": [
+          "Lower protein density than turkey breast",
+          "Higher fat reduces protein percentage"
+        ]
+      },
+      "heartHealthy": {
+        "grade": "B+",
+        "score": 80,
+        "insight": "Good lean protein choice, though moderate saturated fat and cholesterol require portion awareness.",
+        "pros": [
+          "Lean meat option (93% lean)",
+          "Low sodium (88mg)",
+          "Zero trans fat",
+          "Good potassium content (270mg)"
+        ],
+        "cons": [
+          "Contains 2.3g saturated fat",
+          "84mg cholesterol per serving",
+          "Low omega-3 fatty acids",
+          "Omega-6 to omega-3 ratio is 26:1"
+        ]
+      },
+      "diabeticFriendly": {
+        "grade": "A+",
+        "score": 95,
+        "insight": "Excellent for diabetes management with zero glycemic impact and blood sugar-stabilizing protein.",
+        "pros": [
+          "Zero carbohydrates and sugar",
+          "No glycemic index/load",
+          "High protein prevents blood sugar spikes",
+          "Moderate fat slows digestion"
+        ],
+        "cons": [
+          "No fiber content",
+          "Higher saturated fat than breast meat"
+        ]
+      },
+      "antiInflammatory": {
+        "grade": "C+",
+        "score": 68,
+        "insight": "Neutral to mildly pro-inflammatory due to omega-6 dominance and saturated fat content.",
+        "pros": [
+          "Unprocessed whole food",
+          "Provides selenium (antioxidant)",
+          "No added inflammatory ingredients",
+          "Some anti-inflammatory omega-3s"
+        ],
+        "cons": [
+          "High omega-6 to omega-3 ratio (26:1)",
+          "Moderate saturated fat (2.3g)",
+          "No anti-inflammatory phytonutrients",
+          "Lacks antioxidant vitamins"
+        ]
+      },
+      "gut": {
+        "grade": "C",
+        "score": 62,
+        "insight": "Digestible protein but lacks fiber and probiotics. Should be paired with vegetables.",
+        "pros": [
+          "Easily digestible protein",
+          "Unprocessed minimizes additives",
+          "Provides glutamine for gut health",
+          "Moderate fat aids nutrient absorption"
+        ],
+        "cons": [
+          "Zero dietary fiber",
+          "No prebiotics or probiotics",
+          "Animal protein may reduce beneficial bacteria",
+          "Higher fat than breast meat"
+        ]
+      },
+      "metabolic": {
+        "grade": "A-",
+        "score": 87,
+        "insight": "Very good for metabolism with high protein thermic effect, though slightly higher fat than breast.",
+        "pros": [
+          "High protein boosts metabolism",
+          "Zero glycemic impact",
+          "Supports lean muscle mass",
+          "Good for satiety and weight management"
+        ],
+        "cons": [
+          "More calories than turkey breast",
+          "Lacks B vitamins for energy metabolism",
+          "No metabolism-boosting minerals",
+          "Higher fat reduces metabolic advantage"
+        ]
+      },
+      "longevity": {
+        "grade": "B",
+        "score": 78,
+        "insight": "Moderate longevity food. Good protein but lacks micronutrients and has moderate saturated fat.",
+        "pros": [
+          "Quality complete protein",
+          "Unprocessed whole food",
+          "Provides selenium",
+          "Supports muscle maintenance with age"
+        ],
+        "cons": [
+          "Moderate saturated fat intake",
+          "Lacks longevity-associated antioxidants",
+          "No phytonutrients or polyphenols",
+          "Higher animal protein may not align with Blue Zone diets"
+        ]
+      },
+      "athletic": {
+        "grade": "A-",
+        "score": 90,
+        "insight": "Great protein for athletes with good macros for muscle recovery, though higher fat than breast.",
+        "pros": [
+          "High protein for muscle repair (23.5g)",
+          "Provides iron for oxygen transport (1.6mg)",
+          "Good potassium for electrolytes (270mg)",
+          "Moderate fat for hormone production"
+        ],
+        "cons": [
+          "No carbohydrates for glycogen",
+          "Lower protein density than breast",
+          "Minimal B vitamins for energy",
+          "Low in performance-enhancing nutrients"
+        ]
+      }
+    }
+  },
+  "pork_chop": {
+    "name": "Pork Chop, broiled, lean only",
+    "calories": 197,
+    "protein": 29.3,
+    "carbs": 0,
+    "fat": 7.7,
+    "fiber": 0,
+    "sugar": 0,
+    "sodium": 61,
+    "calcium": 21,
+    "iron": 0.9,
+    "potassium": 423,
+    "vitaminC": 0.6,
+    "vitaminA": 2,
+    "saturatedFat": 2.7,
+    "cholesterol": 83,
+    "transFat": 0,
+    "servingSize": "100g",
+    "servingUnit": "g",
+    "novaGroup": 1,
+    "glycemicIndex": 0,
+    "glycemicLoad": 0,
+    "omega3": 0.05,
+    "omega6": 1.2,
+    "isOrganic": false,
+    "isGlutenFree": true,
+    "isDairyFree": true,
+    "isVegan": false,
+    "isVegetarian": false,
+    "commonAllergens": [],
+    "focusGrades": {
+      "balanced": {
+        "grade": "A-",
+        "score": 86,
+        "insight": "Excellent lean protein with good macronutrient balance and high micronutrient content.",
+        "pros": [
+          "Very high protein (29.3g)",
+          "Moderate fat content (7.7g)",
+          "Zero carbohydrates",
+          "Excellent potassium (423mg)"
+        ],
+        "cons": [
+          "Moderate saturated fat (2.7g)",
+          "Contains cholesterol (83mg)",
+          "No fiber content"
+        ]
+      },
+      "lowCarb": {
+        "grade": "A+",
+        "score": 100,
+        "insight": "Perfect for low-carb and ketogenic diets with zero carbs and good protein-to-fat ratio.",
+        "pros": [
+          "Zero carbohydrates",
+          "Zero sugar",
+          "No glycemic impact",
+          "High protein with moderate fat"
+        ],
+        "cons": [
+          "No dietary fiber"
+        ]
+      },
+      "highProtein": {
+        "grade": "A",
+        "score": 94,
+        "insight": "Outstanding protein source with very high density and complete amino acid profile.",
+        "pros": [
+          "Very high protein content (29.3g)",
+          "Excellent protein-to-calorie ratio (59%)",
+          "Complete amino acids",
+          "Rich in thiamine for protein metabolism"
+        ],
+        "cons": [
+          "Higher fat than chicken breast",
+          "Slightly lower protein than turkey breast"
+        ]
+      },
+      "heartHealthy": {
+        "grade": "B",
+        "score": 76,
+        "insight": "Decent heart health option when lean, though moderate saturated fat and cholesterol require moderation.",
+        "pros": [
+          "Very high potassium (423mg) for blood pressure",
+          "Low sodium (61mg)",
+          "Zero trans fat",
+          "Rich in thiamine (heart muscle function)"
+        ],
+        "cons": [
+          "Contains 2.7g saturated fat",
+          "83mg cholesterol",
+          "Low omega-3 fatty acids",
+          "Omega-6 to omega-3 ratio is 24:1"
+        ]
+      },
+      "diabeticFriendly": {
+        "grade": "A+",
+        "score": 96,
+        "insight": "Excellent for diabetes with zero glycemic impact and high protein for blood sugar stability.",
+        "pros": [
+          "Zero carbohydrates and sugar",
+          "No glycemic index/load",
+          "High protein stabilizes blood sugar",
+          "Rich in thiamine for glucose metabolism"
+        ],
+        "cons": [
+          "No fiber content",
+          "Moderate saturated fat"
+        ]
+      },
+      "antiInflammatory": {
+        "grade": "C+",
+        "score": 70,
+        "insight": "Neutral anti-inflammatory profile. Lean unprocessed meat with low omega-3s.",
+        "pros": [
+          "Unprocessed whole food (NOVA 1)",
+          "Provides selenium (antioxidant)",
+          "Rich in B vitamins (reduce inflammation)",
+          "No added inflammatory ingredients"
+        ],
+        "cons": [
+          "Low omega-3 fatty acids (0.05g)",
+          "High omega-6 to omega-3 ratio (24:1)",
+          "Moderate saturated fat",
+          "Lacks anti-inflammatory phytonutrients"
+        ]
+      },
+      "gut": {
+        "grade": "C",
+        "score": 64,
+        "insight": "Digestible lean protein but lacks gut-supporting fiber and probiotics.",
+        "pros": [
+          "Easily digestible protein",
+          "Unprocessed minimizes gut irritants",
+          "Provides glutamine and glycine",
+          "Rich in B vitamins for gut lining"
+        ],
+        "cons": [
+          "Zero dietary fiber",
+          "No prebiotics or probiotics",
+          "Animal protein may alter microbiome",
+          "Should be paired with vegetables"
+        ]
+      },
+      "metabolic": {
+        "grade": "A",
+        "score": 89,
+        "insight": "Excellent for metabolism with high protein thermic effect and B vitamins for energy production.",
+        "pros": [
+          "High protein boosts metabolism (30% TEF)",
+          "Rich in thiamine for energy metabolism",
+          "Zero glycemic impact",
+          "Supports lean muscle mass"
+        ],
+        "cons": [
+          "No fiber for metabolic health",
+          "Moderate calorie density",
+          "Lacks magnesium and other minerals"
+        ]
+      },
+      "longevity": {
+        "grade": "B",
+        "score": 80,
+        "insight": "Good protein for healthy aging with B vitamins and selenium, though moderate saturated fat.",
+        "pros": [
+          "High-quality complete protein",
+          "Rich in thiamine and B6",
+          "Provides selenium (antioxidant)",
+          "Unprocessed whole food"
+        ],
+        "cons": [
+          "Moderate saturated fat",
+          "Lacks longevity-associated antioxidants",
+          "No polyphenols or phytonutrients",
+          "Red meat consumption debated in longevity research"
+        ]
+      },
+      "athletic": {
+        "grade": "A",
+        "score": 92,
+        "insight": "Excellent athletic protein with high density, B vitamins for energy, and electrolytes.",
+        "pros": [
+          "Very high protein for recovery (29.3g)",
+          "Excellent potassium for electrolytes (423mg)",
+          "Rich in thiamine for energy metabolism",
+          "Good iron for oxygen transport"
+        ],
+        "cons": [
+          "No carbohydrates for glycogen",
+          "Moderate fat content",
+          "Lower iron than beef",
+          "Lacks vitamin C for iron absorption"
+        ]
+      }
+    }
+  },
+  "pork": {
+    "name": "Pork, ground, 80% lean",
+    "calories": 263,
+    "protein": 18.0,
+    "carbs": 0,
+    "fat": 20.8,
+    "fiber": 0,
+    "sugar": 0,
+    "sodium": 62,
+    "calcium": 15,
+    "iron": 1.1,
+    "potassium": 287,
+    "vitaminC": 0,
+    "vitaminA": 2,
+    "saturatedFat": 7.6,
+    "cholesterol": 75,
+    "transFat": 0,
+    "servingSize": "100g",
+    "servingUnit": "g",
+    "novaGroup": 1,
+    "glycemicIndex": 0,
+    "glycemicLoad": 0,
+    "omega3": 0.08,
+    "omega6": 2.5,
+    "isOrganic": false,
+    "isGlutenFree": true,
+    "isDairyFree": true,
+    "isVegan": false,
+    "isVegetarian": false,
+    "commonAllergens": [],
+    "focusGrades": {
+      "balanced": {
+        "grade": "C+",
+        "score": 68,
+        "insight": "Moderate protein with high fat content. Better lean options available for balanced nutrition.",
+        "pros": [
+          "Good protein content (18g)",
+          "Zero carbohydrates",
+          "Low sodium (62mg)",
+          "Provides B vitamins"
+        ],
+        "cons": [
+          "High total fat (20.8g)",
+          "High saturated fat (7.6g - 38% DV)",
+          "High calorie density",
+          "No fiber or significant micronutrients"
+        ]
+      },
+      "lowCarb": {
+        "grade": "A",
+        "score": 95,
+        "insight": "Excellent for ketogenic diets with zero carbs and high fat content for ketosis.",
+        "pros": [
+          "Zero carbohydrates",
+          "Zero sugar",
+          "No glycemic impact",
+          "High fat supports ketosis (20.8g)"
+        ],
+        "cons": [
+          "High saturated fat may affect cholesterol",
+          "Very high calorie density"
+        ]
+      },
+      "highProtein": {
+        "grade": "C+",
+        "score": 70,
+        "insight": "Moderate protein source but high fat reduces protein efficiency and adds excess calories.",
+        "pros": [
+          "Decent protein content (18g)",
+          "Complete amino acid profile",
+          "Rich in thiamine",
+          "Zero carbs maximize protein percentage"
+        ],
+        "cons": [
+          "Low protein-to-calorie ratio (27%)",
+          "High fat overshadows protein",
+          "More calories than lean proteins",
+          "Not ideal for lean muscle building"
+        ]
+      },
+      "heartHealthy": {
+        "grade": "D+",
+        "score": 58,
+        "insight": "Poor choice for heart health due to high saturated fat content, despite low sodium.",
+        "pros": [
+          "Low sodium (62mg)",
+          "Zero trans fat",
+          "Good potassium (287mg)",
+          "Provides B vitamins for heart function"
+        ],
+        "cons": [
+          "Very high saturated fat (7.6g - 38% DV)",
+          "75mg cholesterol",
+          "Low omega-3 fatty acids",
+          "Poor omega-6 to omega-3 ratio (31:1)",
+          "High calorie density increases CVD risk"
+        ]
+      },
+      "diabeticFriendly": {
+        "grade": "B+",
+        "score": 84,
+        "insight": "Good for blood sugar control with zero carbs, though high saturated fat is a concern.",
+        "pros": [
+          "Zero carbohydrates and sugar",
+          "No glycemic impact",
+          "Protein and fat stabilize blood sugar",
+          "Rich in thiamine for glucose metabolism"
+        ],
+        "cons": [
+          "High saturated fat increases insulin resistance risk",
+          "High calorie density",
+          "No fiber content"
+        ]
+      },
+      "antiInflammatory": {
+        "grade": "D",
+        "score": 52,
+        "insight": "Pro-inflammatory food due to high saturated fat and poor omega ratio. Use sparingly.",
+        "pros": [
+          "Unprocessed whole food",
+          "Provides selenium",
+          "Contains some omega-3s (0.08g)",
+          "Rich in B vitamins"
+        ],
+        "cons": [
+          "High saturated fat (7.6g) promotes inflammation",
+          "Very poor omega-6 to omega-3 ratio (31:1)",
+          "No anti-inflammatory compounds",
+          "High calorie density linked to inflammation",
+          "Lacks antioxidants"
+        ]
+      },
+      "gut": {
+        "grade": "C-",
+        "score": 60,
+        "insight": "High fat content slows digestion and may irritate gut. Lacks prebiotic fiber.",
+        "pros": [
+          "Provides glutamine for gut lining",
+          "Unprocessed minimizes additives",
+          "B vitamins support gut health",
+          "Easily digestible protein"
+        ],
+        "cons": [
+          "Zero dietary fiber",
+          "High fat slows gut motility",
+          "No prebiotics or probiotics",
+          "Animal protein may reduce beneficial bacteria",
+          "Saturated fat may increase inflammation"
+        ]
+      },
+      "metabolic": {
+        "grade": "C",
+        "score": 66,
+        "insight": "Mixed metabolic effects. Protein boosts metabolism but high fat and calories are concerning.",
+        "pros": [
+          "Protein has thermic effect",
+          "Zero glycemic impact",
+          "Rich in thiamine for energy metabolism",
+          "Supports muscle mass"
+        ],
+        "cons": [
+          "High calorie density (263 per 100g)",
+          "High saturated fat may impair metabolism",
+          "No fiber for metabolic health",
+          "Excess fat reduces metabolic advantage",
+          "May contribute to insulin resistance"
+        ]
+      },
+      "longevity": {
+        "grade": "D+",
+        "score": 56,
+        "insight": "Poor longevity food due to high saturated fat. Research links high-fat red meat to shorter lifespan.",
+        "pros": [
+          "Provides complete protein",
+          "Rich in B vitamins",
+          "Unprocessed whole food",
+          "Provides selenium"
+        ],
+        "cons": [
+          "High saturated fat (7.6g) linked to CVD",
+          "Lacks longevity-associated nutrients",
+          "No antioxidants or polyphenols",
+          "High-fat red meat consumption associated with reduced lifespan",
+          "No phytonutrients"
+        ]
+      },
+      "athletic": {
+        "grade": "C+",
+        "score": 72,
+        "insight": "Adequate protein for athletes but high fat adds unnecessary calories without performance benefits.",
+        "pros": [
+          "Decent protein for recovery (18g)",
+          "Provides iron for oxygen transport",
+          "Rich in thiamine for energy",
+          "Good potassium (287mg)"
+        ],
+        "cons": [
+          "Low protein-to-calorie ratio",
+          "High fat reduces performance food efficiency",
+          "No carbohydrates for glycogen",
+          "High saturated fat may impair recovery",
+          "Excess calories for lean athletes"
+        ]
+      }
+    }
+  },
+  "bacon": {
+    "name": "Bacon, cooked",
+    "calories": 541,
+    "protein": 37.0,
+    "carbs": 1.4,
+    "fat": 41.8,
+    "fiber": 0,
+    "sugar": 0,
+    "sodium": 1717,
+    "calcium": 11,
+    "iron": 1.4,
+    "potassium": 565,
+    "vitaminC": 0,
+    "vitaminA": 0,
+    "saturatedFat": 13.7,
+    "cholesterol": 110,
+    "transFat": 0,
+    "servingSize": "100g",
+    "servingUnit": "g",
+    "novaGroup": 4,
+    "glycemicIndex": 0,
+    "glycemicLoad": 0,
+    "omega3": 0.2,
+    "omega6": 7.8,
+    "isOrganic": false,
+    "isGlutenFree": true,
+    "isDairyFree": true,
+    "isVegan": false,
+    "isVegetarian": false,
+    "commonAllergens": [],
+    "focusGrades": {
+      "balanced": {
+        "grade": "F",
+        "score": 32,
+        "insight": "Highly unbalanced nutrition dominated by fat and sodium. Ultra-processed with minimal nutritional value.",
+        "pros": [
+          "High protein content (37g)",
+          "Low carbohydrate content",
+          "Provides some potassium (565mg)"
+        ],
+        "cons": [
+          "Extremely high fat (41.8g)",
+          "Very high saturated fat (13.7g - 69% DV)",
+          "Extremely high sodium (1717mg - 75% DV)",
+          "Ultra-processed (NOVA 4)",
+          "Very high calorie density (541 per 100g)",
+          "Contains nitrites/nitrates"
+        ]
+      },
+      "lowCarb": {
+        "grade": "C",
+        "score": 65,
+        "insight": "Very low carb but health concerns from processing, sodium, and saturated fat outweigh benefits.",
+        "pros": [
+          "Very low carbohydrates (1.4g)",
+          "Near-zero sugar",
+          "No glycemic impact",
+          "High fat for ketosis"
+        ],
+        "cons": [
+          "Extremely high sodium (1717mg)",
+          "Ultra-processed with preservatives",
+          "Very high saturated fat",
+          "Contains nitrites linked to health issues"
+        ]
+      },
+      "highProtein": {
+        "grade": "D",
+        "score": 54,
+        "insight": "High protein content is overshadowed by excessive fat, sodium, and ultra-processing.",
+        "pros": [
+          "High protein (37g)",
+          "Complete amino acids",
+          "Protein-rich for muscle maintenance"
+        ],
+        "cons": [
+          "Poor protein-to-calorie ratio (27%)",
+          "Excessive fat reduces protein quality",
+          "Ultra-processed reduces bioavailability",
+          "Very high sodium",
+          "Contains carcinogenic compounds when cooked"
+        ]
+      },
+      "heartHealthy": {
+        "grade": "F",
+        "score": 18,
+        "insight": "One of the worst foods for heart health. High sodium, saturated fat, and processing significantly increase CVD risk.",
+        "pros": [
+          "Contains some potassium (565mg)"
+        ],
+        "cons": [
+          "Extremely high sodium (1717mg - major CVD risk)",
+          "Very high saturated fat (13.7g - 69% DV)",
+          "110mg cholesterol",
+          "Poor omega-6 to omega-3 ratio (39:1)",
+          "Ultra-processed meats linked to heart disease",
+          "Contains nitrites that form harmful compounds",
+          "High calorie density promotes weight gain"
+        ]
+      },
+      "diabeticFriendly": {
+        "grade": "D-",
+        "score": 48,
+        "insight": "Low glycemic impact but high sodium and saturated fat increase diabetes complications risk.",
+        "pros": [
+          "Very low carbohydrates (1.4g)",
+          "Minimal glycemic impact",
+          "High protein can stabilize blood sugar"
+        ],
+        "cons": [
+          "Extremely high sodium damages kidneys (diabetes risk)",
+          "High saturated fat increases insulin resistance",
+          "Ultra-processed meats linked to type 2 diabetes",
+          "Contains AGEs (advanced glycation end-products)",
+          "Very high calorie density"
+        ]
+      },
+      "antiInflammatory": {
+        "grade": "F",
+        "score": 22,
+        "insight": "Highly pro-inflammatory due to processing, high omega-6, saturated fat, and nitrites.",
+        "pros": [
+          "Contains some omega-3s (0.2g)"
+        ],
+        "cons": [
+          "Ultra-processed with inflammatory additives",
+          "Very high saturated fat (13.7g)",
+          "Poor omega-6 to omega-3 ratio (39:1)",
+          "Contains nitrites that promote inflammation",
+          "High sodium increases inflammation",
+          "Cooking creates inflammatory AGEs and PAHs",
+          "Lacks anti-inflammatory nutrients"
+        ]
+      },
+      "gut": {
+        "grade": "F",
+        "score": 28,
+        "insight": "Extremely harmful to gut health due to processing, preservatives, high fat, and sodium.",
+        "pros": [
+          "Provides some protein for gut lining"
+        ],
+        "cons": [
+          "Zero dietary fiber",
+          "Ultra-processed damages gut microbiome",
+          "Nitrites and preservatives harm gut bacteria",
+          "Very high sodium disrupts gut barrier",
+          "High saturated fat reduces bacterial diversity",
+          "No prebiotics or probiotics",
+          "Processed meats linked to gut inflammation"
+        ]
+      },
+      "metabolic": {
+        "grade": "F",
+        "score": 25,
+        "insight": "Severely impairs metabolic health through inflammation, insulin resistance, and gut disruption.",
+        "pros": [
+          "High protein has thermic effect",
+          "Low glycemic impact"
+        ],
+        "cons": [
+          "Very high calorie density (541 per 100g)",
+          "High saturated fat impairs insulin sensitivity",
+          "Ultra-processed disrupts metabolism",
+          "Extremely high sodium affects fluid balance",
+          "No fiber for metabolic health",
+          "Contains AGEs that damage metabolism",
+          "Processed meats linked to obesity"
+        ]
+      },
+      "longevity": {
+        "grade": "F",
+        "score": 15,
+        "insight": "Strong evidence links processed meats like bacon to increased mortality and chronic disease risk.",
+        "pros": [
+          "Provides some protein and B vitamins"
+        ],
+        "cons": [
+          "Classified as Group 1 carcinogen (processed meat)",
+          "Strongly linked to colorectal cancer",
+          "Associated with increased all-cause mortality",
+          "Ultra-processed foods reduce lifespan",
+          "High sodium increases CVD death risk",
+          "Contains harmful nitrosamines",
+          "No longevity-promoting nutrients",
+          "Opposite of Blue Zone dietary patterns"
+        ]
+      },
+      "athletic": {
+        "grade": "D-",
+        "score": 46,
+        "insight": "High protein is negated by excessive sodium, fat, and calories that impair athletic performance.",
+        "pros": [
+          "High protein content (37g)",
+          "Provides iron (1.4mg)",
+          "Good potassium (565mg)",
+          "Low carb won't spike insulin"
+        ],
+        "cons": [
+          "Extremely high sodium causes water retention",
+          "Very high fat slows digestion pre-workout",
+          "High saturated fat impairs recovery",
+          "No carbohydrates for glycogen",
+          "Ultra-processed reduces nutrient quality",
+          "Very high calorie density",
+          "Contains inflammatory compounds"
+        ]
+      }
+    }
+  },
+  "sausage": {
+    "name": "Sausage, pork, cooked",
+    "calories": 339,
+    "protein": 19.4,
+    "carbs": 2.8,
+    "fat": 28.3,
+    "fiber": 0,
+    "sugar": 0,
+    "sodium": 828,
+    "calcium": 21,
+    "iron": 1.5,
+    "potassium": 251,
+    "vitaminC": 0,
+    "vitaminA": 0,
+    "saturatedFat": 9.9,
+    "cholesterol": 78,
+    "transFat": 0,
+    "servingSize": "100g",
+    "servingUnit": "g",
+    "novaGroup": 4,
+    "glycemicIndex": 0,
+    "glycemicLoad": 0,
+    "omega3": 0.15,
+    "omega6": 4.2,
+    "isOrganic": false,
+    "isGlutenFree": false,
+    "isDairyFree": true,
+    "isVegan": false,
+    "isVegetarian": false,
+    "commonAllergens": ["gluten"],
+    "focusGrades": {
+      "balanced": {
+        "grade": "D",
+        "score": 45,
+        "insight": "Poor nutritional balance with excessive fat, sodium, and processing. Better protein sources available.",
+        "pros": [
+          "Decent protein content (19.4g)",
+          "Moderate carbohydrate content (2.8g)",
+          "Provides iron (1.5mg)"
+        ],
+        "cons": [
+          "Very high total fat (28.3g)",
+          "High saturated fat (9.9g - 50% DV)",
+          "Very high sodium (828mg - 36% DV)",
+          "Ultra-processed (NOVA 4)",
+          "High calorie density (339 per 100g)",
+          "Contains preservatives and additives"
+        ]
+      },
+      "lowCarb": {
+        "grade": "C-",
+        "score": 62,
+        "insight": "Low carb content but health risks from sodium, saturated fat, and processing are significant.",
+        "pros": [
+          "Low carbohydrates (2.8g)",
+          "Zero sugar",
+          "Minimal glycemic impact",
+          "High fat supports ketosis"
+        ],
+        "cons": [
+          "Very high sodium (828mg)",
+          "Ultra-processed with additives",
+          "High saturated fat (9.9g)",
+          "Often contains fillers and binders",
+          "May contain hidden carbs from ingredients"
+        ]
+      },
+      "highProtein": {
+        "grade": "D+",
+        "score": 58,
+        "insight": "Moderate protein but poor protein quality due to fat, additives, and ultra-processing.",
+        "pros": [
+          "Decent protein content (19.4g)",
+          "Complete amino acids",
+          "Provides B vitamins"
+        ],
+        "cons": [
+          "Poor protein-to-calorie ratio (23%)",
+          "Very high fat dilutes protein",
+          "Ultra-processed reduces quality",
+          "High sodium and additives",
+          "Often contains meat by-products"
+        ]
+      },
+      "heartHealthy": {
+        "grade": "F",
+        "score": 28,
+        "insight": "Very poor for heart health due to high sodium, saturated fat, and ultra-processing.",
+        "pros": [
+          "Provides some potassium (251mg)",
+          "Zero trans fat"
+        ],
+        "cons": [
+          "Very high sodium (828mg - major CVD risk)",
+          "High saturated fat (9.9g - 50% DV)",
+          "78mg cholesterol",
+          "Poor omega-6 to omega-3 ratio (28:1)",
+          "Ultra-processed meats strongly linked to CVD",
+          "High calorie density",
+          "Contains nitrites and preservatives"
+        ]
+      },
+      "diabeticFriendly": {
+        "grade": "D",
+        "score": 52,
+        "insight": "Low glycemic but high sodium and saturated fat increase diabetes complication risks.",
+        "pros": [
+          "Low carbohydrates (2.8g)",
+          "Low glycemic impact",
+          "Protein helps stabilize blood sugar"
+        ],
+        "cons": [
+          "Very high sodium (kidney damage risk)",
+          "High saturated fat increases insulin resistance",
+          "Ultra-processed meats linked to type 2 diabetes",
+          "Contains AGEs from cooking",
+          "High calorie density promotes weight gain",
+          "Additives may affect glucose metabolism"
+        ]
+      },
+      "antiInflammatory": {
+        "grade": "F",
+        "score": 30,
+        "insight": "Highly pro-inflammatory due to processing, omega-6 dominance, saturated fat, and additives.",
+        "pros": [
+          "Contains some omega-3s (0.15g)",
+          "Provides selenium"
+        ],
+        "cons": [
+          "Ultra-processed with inflammatory additives",
+          "High saturated fat (9.9g)",
+          "Poor omega-6 to omega-3 ratio (28:1)",
+          "Very high sodium promotes inflammation",
+          "Contains nitrites and preservatives",
+          "Cooking creates inflammatory compounds",
+          "Lacks anti-inflammatory nutrients"
+        ]
+      },
+      "gut": {
+        "grade": "F",
+        "score": 35,
+        "insight": "Harmful to gut microbiome due to processing, additives, high fat, and sodium.",
+        "pros": [
+          "Provides protein for gut lining",
+          "Some B vitamins"
+        ],
+        "cons": [
+          "Zero dietary fiber",
+          "Ultra-processed damages microbiome",
+          "Preservatives and additives harm gut bacteria",
+          "Very high sodium disrupts gut barrier",
+          "High saturated fat reduces bacterial diversity",
+          "No prebiotics or probiotics",
+          "Processed meats linked to gut inflammation and cancer"
+        ]
+      },
+      "metabolic": {
+        "grade": "D-",
+        "score": 42,
+        "insight": "Impairs metabolic health through high calories, saturated fat, sodium, and ultra-processing.",
+        "pros": [
+          "Protein has thermic effect",
+          "Low glycemic impact",
+          "Provides B vitamins for metabolism"
+        ],
+        "cons": [
+          "High calorie density (339 per 100g)",
+          "High saturated fat impairs insulin sensitivity",
+          "Ultra-processed disrupts metabolism",
+          "Very high sodium affects fluid balance",
+          "No fiber for metabolic health",
+          "Additives may disrupt hormones",
+          "Linked to obesity and metabolic syndrome"
+        ]
+      },
+      "longevity": {
+        "grade": "F",
+        "score": 24,
+        "insight": "Strong evidence links processed meats to increased mortality, cancer, and chronic disease.",
+        "pros": [
+          "Provides protein and B vitamins"
+        ],
+        "cons": [
+          "Classified as Group 1 carcinogen (processed meat)",
+          "Linked to colorectal and stomach cancer",
+          "Associated with increased all-cause mortality",
+          "Ultra-processed foods reduce lifespan",
+          "High sodium increases death risk",
+          "Contains carcinogenic nitrosamines",
+          "No longevity-promoting nutrients",
+          "Opposite of healthy dietary patterns"
+        ]
+      },
+      "athletic": {
+        "grade": "D",
+        "score": 50,
+        "insight": "Moderate protein is negated by high fat, sodium, and processing that impair performance.",
+        "pros": [
+          "Decent protein content (19.4g)",
+          "Provides iron for oxygen transport (1.5mg)",
+          "Low carb won't spike blood sugar",
+          "Some B vitamins for energy"
+        ],
+        "cons": [
+          "Very high sodium causes bloating and water retention",
+          "High fat slows digestion and energy",
+          "High saturated fat impairs recovery",
+          "Ultra-processed reduces nutrient absorption",
+          "No carbohydrates for glycogen replenishment",
+          "High calorie density without performance benefits",
+          "Contains inflammatory additives"
+        ]
+      }
+    }
+  }
+}

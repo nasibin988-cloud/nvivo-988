@@ -126,13 +126,16 @@ baseValue, targetValue) {
                 return baseValue + totalChange * 0.5 - totalChange * 0.25 * setbackProgress;
             }
             // Recovery and beyond
-            const recoveryProgress = (progress - 0.5) / 0.5;
-            return baseValue + totalChange * 0.25 + totalChange * 0.75 * recoveryProgress;
-        case 'fluctuating':
+            {
+                const recoveryProgress = (progress - 0.5) / 0.5;
+                return baseValue + totalChange * 0.25 + totalChange * 0.75 * recoveryProgress;
+            }
+        case 'fluctuating': {
             // Overall trend but with waves
             const baseProgress = baseValue + totalChange * progress;
             const wave = Math.sin(progress * 8 * Math.PI) * totalChange * 0.15;
             return baseProgress + wave;
+        }
         case 'seasonal':
             // Strong seasonal component plus mild overall trend
             return baseValue + totalChange * progress * 0.7;

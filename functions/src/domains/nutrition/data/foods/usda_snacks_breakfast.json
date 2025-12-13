@@ -1,0 +1,277 @@
+{
+  "validationDate": "2025-12-12",
+  "source": "USDA FoodData Central",
+  "note": "All values are per 100g edible portion. All FDC IDs verified from USDA FoodData Central database.",
+  "foods": {
+    "tortilla_chips": {
+      "fdcId": "167558",
+      "name": "Snacks, tortilla chips, plain, white corn, salted",
+      "category": "snacks",
+      "nutritionPer100g": {
+        "calories": 472,
+        "protein": 7.1,
+        "totalFat": 20.68,
+        "saturatedFat": 2.81,
+        "carbohydrates": 67.78,
+        "fiber": 5.4,
+        "sugars": 0.78,
+        "calcium": 106,
+        "iron": 1.52,
+        "potassium": 182,
+        "sodium": 328
+      }
+    },
+    "cheese_puffs": {
+      "fdcId": "167949",
+      "name": "Snacks, corn-based, extruded, puffs or twists, cheese-flavor",
+      "category": "snacks",
+      "nutritionPer100g": {
+        "calories": 567,
+        "protein": 5.46,
+        "totalFat": 36.5,
+        "saturatedFat": 6.0,
+        "carbohydrates": 54.5,
+        "fiber": 0.8,
+        "sugars": 4.5,
+        "calcium": 53,
+        "iron": 1.69,
+        "potassium": 180,
+        "sodium": 928
+      }
+    },
+    "rice_cakes": {
+      "fdcId": "170250",
+      "name": "Snacks, rice cakes, brown rice, plain, unsalted",
+      "category": "snacks",
+      "nutritionPer100g": {
+        "calories": 387,
+        "protein": 8.2,
+        "totalFat": 2.8,
+        "saturatedFat": 0.57,
+        "carbohydrates": 81.5,
+        "fiber": 4.2,
+        "sugars": 0.88,
+        "calcium": 11,
+        "iron": 1.49,
+        "potassium": 290,
+        "sodium": 26
+      }
+    },
+    "graham_crackers": {
+      "fdcId": "174957",
+      "name": "Cookies, graham crackers, plain or honey (includes cinnamon)",
+      "category": "snacks",
+      "nutritionPer100g": {
+        "calories": 430,
+        "protein": 6.69,
+        "totalFat": 10.6,
+        "saturatedFat": 1.63,
+        "carbohydrates": 77.66,
+        "fiber": 3.4,
+        "sugars": 24.85,
+        "calcium": 77,
+        "iron": 3.78,
+        "potassium": 170,
+        "sodium": 516
+      }
+    },
+    "animal_crackers": {
+      "fdcId": "168014",
+      "name": "Cookies, animal crackers (includes arrowroot, tea biscuits)",
+      "category": "snacks",
+      "nutritionPer100g": {
+        "calories": 446,
+        "protein": 6.9,
+        "totalFat": 13.8,
+        "saturatedFat": 3.6,
+        "carbohydrates": 74.1,
+        "fiber": 1.1,
+        "sugars": 23.3,
+        "calcium": 43,
+        "iron": 2.75,
+        "potassium": 120,
+        "sodium": 335
+      }
+    },
+    "beef_jerky": {
+      "fdcId": "167536",
+      "name": "Snacks, beef jerky, chopped and formed",
+      "category": "snacks",
+      "nutritionPer100g": {
+        "calories": 410,
+        "protein": 33.2,
+        "totalFat": 25.6,
+        "saturatedFat": 10.85,
+        "carbohydrates": 11.0,
+        "fiber": 1.8,
+        "sugars": 9.0,
+        "calcium": 20,
+        "iron": 5.42,
+        "potassium": 597,
+        "sodium": 1785
+      }
+    },
+    "pork_rinds": {
+      "fdcId": "167961",
+      "name": "Snacks, pork skins, plain",
+      "category": "snacks",
+      "nutritionPer100g": {
+        "calories": 544,
+        "protein": 61.3,
+        "totalFat": 31.3,
+        "saturatedFat": 11.4,
+        "carbohydrates": 0.0,
+        "fiber": 0.0,
+        "sugars": 0.0,
+        "calcium": 30,
+        "iron": 0.88,
+        "potassium": 127,
+        "sodium": 1820
+      }
+    },
+    "dried_mango": {
+      "fdcId": "169091",
+      "name": "Mango, dried, sweetened",
+      "category": "snacks",
+      "nutritionPer100g": {
+        "calories": 319,
+        "protein": 2.45,
+        "totalFat": 1.18,
+        "saturatedFat": 0.29,
+        "carbohydrates": 78.6,
+        "fiber": 2.4,
+        "sugars": 66.3,
+        "calcium": 0,
+        "iron": 0.23,
+        "potassium": 279,
+        "sodium": 162
+      }
+    },
+    "raisins": {
+      "fdcId": "168165",
+      "name": "Raisins, dark, seedless (Includes foods for USDA's Food Distribution Program)",
+      "category": "snacks",
+      "nutritionPer100g": {
+        "calories": 299,
+        "protein": 3.3,
+        "totalFat": 0.25,
+        "saturatedFat": 0.094,
+        "carbohydrates": 79.32,
+        "fiber": 4.5,
+        "sugars": 65.18,
+        "calcium": 62,
+        "iron": 1.79,
+        "potassium": 744,
+        "sodium": 26
+      }
+    },
+    "dried_apricots": {
+      "fdcId": "173941",
+      "name": "Apricots, dried, sulfured, uncooked",
+      "category": "snacks",
+      "nutritionPer100g": {
+        "calories": 241,
+        "protein": 3.39,
+        "totalFat": 0.51,
+        "saturatedFat": 0.02,
+        "carbohydrates": 62.64,
+        "fiber": 7.3,
+        "sugars": 53.44,
+        "calcium": 55,
+        "iron": 2.66,
+        "potassium": 1162,
+        "sodium": 10
+      }
+    },
+    "cream_of_wheat": {
+      "fdcId": "173902",
+      "name": "Cereals, CREAM OF WHEAT, instant, prepared with water, without salt",
+      "category": "breakfast",
+      "nutritionPer100g": {
+        "calories": 52,
+        "protein": 1.46,
+        "totalFat": 0.21,
+        "saturatedFat": 0.03,
+        "carbohydrates": 10.66,
+        "fiber": 0.6,
+        "sugars": 0.2,
+        "calcium": 41,
+        "iron": 4.26,
+        "potassium": 38,
+        "sodium": 3
+      }
+    },
+    "grits": {
+      "fdcId": "171673",
+      "name": "Cereals, corn grits, yellow, regular, quick, enriched, cooked with water, with salt",
+      "category": "breakfast",
+      "nutritionPer100g": {
+        "calories": 59,
+        "protein": 1.38,
+        "totalFat": 0.18,
+        "saturatedFat": 0.03,
+        "carbohydrates": 12.67,
+        "fiber": 0.5,
+        "sugars": 0.16,
+        "calcium": 2,
+        "iron": 0.69,
+        "potassium": 27,
+        "sodium": 171
+      }
+    },
+    "belgian_waffle": {
+      "fdcId": "175039",
+      "name": "Waffles, plain, prepared from recipe",
+      "category": "breakfast",
+      "nutritionPer100g": {
+        "calories": 388,
+        "protein": 10.53,
+        "totalFat": 18.8,
+        "saturatedFat": 3.82,
+        "carbohydrates": 43.87,
+        "fiber": 1.7,
+        "sugars": 7.0,
+        "calcium": 340,
+        "iron": 3.08,
+        "potassium": 212,
+        "sodium": 681
+      }
+    },
+    "cinnamon_roll": {
+      "fdcId": "167940",
+      "name": "Cinnamon buns, frosted (includes honey buns)",
+      "category": "breakfast",
+      "nutritionPer100g": {
+        "calories": 452,
+        "protein": 4.45,
+        "totalFat": 26.61,
+        "saturatedFat": 12.65,
+        "carbohydrates": 48.6,
+        "fiber": 1.2,
+        "sugars": 25.7,
+        "calcium": 183,
+        "iron": 1.37,
+        "potassium": 102,
+        "sodium": 305
+      }
+    },
+    "blueberry_pancake": {
+      "fdcId": "172773",
+      "name": "Pancakes, blueberry, prepared from recipe",
+      "category": "breakfast",
+      "nutritionPer100g": {
+        "calories": 222,
+        "protein": 6.0,
+        "totalFat": 9.0,
+        "saturatedFat": 2.0,
+        "carbohydrates": 29.0,
+        "fiber": 1.5,
+        "sugars": 8.0,
+        "calcium": 206,
+        "iron": 1.7,
+        "potassium": 138,
+        "sodium": 412
+      }
+    }
+  }
+}

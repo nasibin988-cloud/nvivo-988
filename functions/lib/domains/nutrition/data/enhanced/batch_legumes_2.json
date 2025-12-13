@@ -1,0 +1,792 @@
+{
+    "hummus": {
+        "foodId": "hummus",
+        "name": "Hummus",
+        "category": "legumes",
+        "subcategory": "dips_spreads",
+        "servingSize": 100,
+        "servingUnit": "g",
+        "servingSizeGrams": 100,
+        "calories": 166,
+        "protein": 7.9,
+        "carbohydrates": 14.3,
+        "fiber": 6.0,
+        "sugar": 0.3,
+        "fat": 9.6,
+        "saturatedFat": 1.4,
+        "monounsaturatedFat": 5.7,
+        "polyunsaturatedFat": 2.2,
+        "transFat": 0.0,
+        "cholesterol": 0,
+        "sodium": 379,
+        "potassium": 228,
+        "calcium": 38,
+        "iron": 2.4,
+        "magnesium": 71,
+        "zinc": 1.8,
+        "vitaminA": 0,
+        "vitaminC": 5.0,
+        "vitaminD": 0,
+        "vitaminE": 0.9,
+        "vitaminK": 4.2,
+        "thiamin": 0.13,
+        "riboflavin": 0.09,
+        "niacin": 0.6,
+        "vitaminB6": 0.2,
+        "folate": 59,
+        "vitaminB12": 0.0,
+        "omega3": 0.06,
+        "omega6": 2.1,
+        "glycemicIndex": 6,
+        "glycemicLoad": 0,
+        "allergens": [
+            "sesame"
+        ],
+        "tags": [
+            "vegetarian",
+            "vegan",
+            "gluten_free",
+            "high_protein",
+            "high_fiber",
+            "mediterranean"
+        ],
+        "healthScore": 88,
+        "inflammatoryScore": -8,
+        "processingLevel": "minimally_processed",
+        "shelfLife": 7,
+        "storageInstructions": "Refrigerate after opening",
+        "preparationTips": "Serve with vegetables or whole grain pita",
+        "seasonalityScore": 100,
+        "sustainabilityScore": 82,
+        "waterFootprint": 1850,
+        "carbonFootprint": 0.9,
+        "commonPortions": [
+            {
+                "name": "2 tablespoons",
+                "grams": 30,
+                "calories": 50
+            },
+            {
+                "name": "1/4 cup",
+                "grams": 62,
+                "calories": 103
+            },
+            {
+                "name": "1/2 cup",
+                "grams": 124,
+                "calories": 206
+            }
+        ],
+        "focusGrades": {
+            "heart_health": {
+                "grade": "A",
+                "score": 92,
+                "reasoning": "Excellent source of heart-healthy monounsaturated fats from tahini and olive oil. High in fiber and plant-based protein. Low in saturated fat and cholesterol-free. Contains magnesium and potassium for blood pressure regulation."
+            },
+            "metabolic_health": {
+                "grade": "A",
+                "score": 90,
+                "reasoning": "Very low glycemic index (6) prevents blood sugar spikes. High fiber content (6g per 100g) supports insulin sensitivity. Rich in magnesium for glucose metabolism. Plant-based protein provides sustained energy without insulin surge."
+            },
+            "gut_health": {
+                "grade": "A-",
+                "score": 88,
+                "reasoning": "Excellent fiber source (6g) supports healthy gut bacteria. Chickpeas contain resistant starch that acts as prebiotic. Tahini provides additional fiber. However, some individuals may experience gas or bloating from legumes initially."
+            },
+            "brain_health": {
+                "grade": "B+",
+                "score": 85,
+                "reasoning": "Good source of B vitamins including folate (59mcg) for cognitive function. Healthy fats support brain cell membranes. Iron and magnesium support neurotransmitter production. Moderate omega-3 content."
+            },
+            "inflammation": {
+                "grade": "A",
+                "score": 92,
+                "reasoning": "Strong anti-inflammatory properties from olive oil and tahini. Contains polyphenols and antioxidants from chickpeas and lemon. Low inflammatory score (-8). Omega-6 to omega-3 ratio is balanced by other components."
+            },
+            "longevity": {
+                "grade": "A",
+                "score": 91,
+                "reasoning": "Mediterranean diet staple associated with increased lifespan. Rich in antioxidants and anti-inflammatory compounds. High nutrient density with plant-based protein. Supports cardiovascular health and metabolic function."
+            },
+            "immune_support": {
+                "grade": "B+",
+                "score": 86,
+                "reasoning": "Good source of zinc (1.8mg) and iron (2.4mg) for immune function. Vitamin C from lemon juice. Folate supports white blood cell production. Protein provides amino acids for antibody synthesis."
+            },
+            "bone_health": {
+                "grade": "B",
+                "score": 82,
+                "reasoning": "Provides calcium (38mg) and magnesium (71mg) for bone structure. Tahini is calcium-rich. Contains vitamin K (4.2mcg) for bone mineralization. Phosphorus from chickpeas supports bone density. Plant-based protein is less acidic than animal protein."
+            },
+            "energy_vitality": {
+                "grade": "A-",
+                "score": 87,
+                "reasoning": "Balanced macronutrients provide sustained energy. Complex carbohydrates with fiber prevent energy crashes. Iron supports oxygen transport. B vitamins aid energy metabolism. Plant-based protein offers steady amino acid release."
+            },
+            "athletic_performance": {
+                "grade": "B+",
+                "score": 84,
+                "reasoning": "Good source of plant-based protein (7.9g) for muscle recovery. Complex carbohydrates provide endurance fuel. Iron supports oxygen delivery to muscles. Magnesium prevents cramping. Easily digestible for pre-workout snack when paired with whole grains."
+            }
+        }
+    },
+    "tofu": {
+        "foodId": "tofu",
+        "name": "Tofu (Firm)",
+        "category": "legumes",
+        "subcategory": "soy_products",
+        "servingSize": 100,
+        "servingUnit": "g",
+        "servingSizeGrams": 100,
+        "calories": 144,
+        "protein": 17.3,
+        "carbohydrates": 2.8,
+        "fiber": 2.3,
+        "sugar": 0.6,
+        "fat": 8.7,
+        "saturatedFat": 1.3,
+        "monounsaturatedFat": 1.9,
+        "polyunsaturatedFat": 4.9,
+        "transFat": 0.0,
+        "cholesterol": 0,
+        "sodium": 14,
+        "potassium": 237,
+        "calcium": 350,
+        "iron": 2.7,
+        "magnesium": 58,
+        "zinc": 1.6,
+        "vitaminA": 0,
+        "vitaminC": 0.0,
+        "vitaminD": 0,
+        "vitaminE": 0.1,
+        "vitaminK": 2.4,
+        "thiamin": 0.16,
+        "riboflavin": 0.1,
+        "niacin": 0.4,
+        "vitaminB6": 0.09,
+        "folate": 29,
+        "vitaminB12": 0.0,
+        "omega3": 0.6,
+        "omega6": 4.3,
+        "glycemicIndex": 15,
+        "glycemicLoad": 1,
+        "allergens": [
+            "soy"
+        ],
+        "tags": [
+            "vegetarian",
+            "vegan",
+            "gluten_free",
+            "high_protein",
+            "low_carb",
+            "complete_protein"
+        ],
+        "healthScore": 90,
+        "inflammatoryScore": -6,
+        "processingLevel": "minimally_processed",
+        "shelfLife": 7,
+        "storageInstructions": "Keep refrigerated in water, change water daily",
+        "preparationTips": "Press to remove excess water before cooking, marinates well",
+        "seasonalityScore": 100,
+        "sustainabilityScore": 75,
+        "waterFootprint": 2145,
+        "carbonFootprint": 2.0,
+        "commonPortions": [
+            {
+                "name": "3 oz (1/2 cup cubed)",
+                "grams": 85,
+                "calories": 122
+            },
+            {
+                "name": "4 oz block slice",
+                "grams": 113,
+                "calories": 163
+            },
+            {
+                "name": "1 cup cubed",
+                "grams": 170,
+                "calories": 245
+            }
+        ],
+        "focusGrades": {
+            "heart_health": {
+                "grade": "A",
+                "score": 94,
+                "reasoning": "Excellent source of heart-healthy polyunsaturated fats. Very low in saturated fat (1.3g). Contains isoflavones that support cardiovascular health. High protein, low sodium (14mg). Studies show soy protein reduces LDL cholesterol by 3-5%."
+            },
+            "metabolic_health": {
+                "grade": "A+",
+                "score": 96,
+                "reasoning": "Extremely low glycemic index (15) and glycemic load (1). High protein (17.3g) with minimal carbohydrates (2.8g) supports blood sugar stability. Isoflavones improve insulin sensitivity. Low calorie density aids weight management. Complete protein source."
+            },
+            "gut_health": {
+                "grade": "B+",
+                "score": 85,
+                "reasoning": "Contains fiber (2.3g) and resistant starch that feed beneficial gut bacteria. Fermented tofu varieties offer additional probiotic benefits. However, some people may experience digestive discomfort from oligosaccharides in soy."
+            },
+            "brain_health": {
+                "grade": "A-",
+                "score": 89,
+                "reasoning": "Rich in isoflavones which support cognitive function and may protect against age-related decline. Complete protein provides all essential amino acids for neurotransmitter synthesis. Contains choline precursors. Good source of iron and magnesium for brain health."
+            },
+            "inflammation": {
+                "grade": "A",
+                "score": 93,
+                "reasoning": "Potent anti-inflammatory effects from isoflavones (genistein, daidzein). Omega-3 fatty acids (0.6g) help balance omega-6. Studies show soy consumption reduces inflammatory markers like CRP and IL-6. Low inflammatory score (-6)."
+            },
+            "longevity": {
+                "grade": "A+",
+                "score": 95,
+                "reasoning": "Associated with increased lifespan in blue zone populations. Isoflavones act as antioxidants and phytoestrogens supporting healthy aging. High protein preserves muscle mass. May reduce cancer risk (especially hormone-related cancers). Supports bone and heart health in aging."
+            },
+            "immune_support": {
+                "grade": "B+",
+                "score": 87,
+                "reasoning": "Excellent source of zinc (1.6mg) and iron (2.7mg) critical for immune function. Complete protein provides amino acids for antibody production. Isoflavones modulate immune response. Selenium content supports antioxidant defenses."
+            },
+            "bone_health": {
+                "grade": "A+",
+                "score": 97,
+                "reasoning": "Exceptional calcium content (350mg per 100g) when made with calcium sulfate. Isoflavones support bone density and may reduce osteoporosis risk, especially in postmenopausal women. Contains magnesium (58mg) and vitamin K for bone mineralization. Protein supports bone structure."
+            },
+            "energy_vitality": {
+                "grade": "A-",
+                "score": 88,
+                "reasoning": "High-quality complete protein (17.3g) provides sustained energy. Low glycemic response prevents energy crashes. Iron supports oxygen transport and reduces fatigue. B vitamins aid energy metabolism. Versatile for meal prep."
+            },
+            "athletic_performance": {
+                "grade": "A",
+                "score": 92,
+                "reasoning": "Complete protein with all 9 essential amino acids supports muscle recovery and growth. Studies show soy protein is as effective as whey for muscle building. Low calorie, high protein ideal for lean mass. Iron and magnesium support oxygen delivery and prevent cramping."
+            }
+        }
+    },
+    "edamame": {
+        "foodId": "edamame",
+        "name": "Edamame (Cooked)",
+        "category": "legumes",
+        "subcategory": "soy_products",
+        "servingSize": 100,
+        "servingUnit": "g",
+        "servingSizeGrams": 100,
+        "calories": 122,
+        "protein": 11.9,
+        "carbohydrates": 9.9,
+        "fiber": 5.2,
+        "sugar": 2.2,
+        "fat": 5.2,
+        "saturatedFat": 0.6,
+        "monounsaturatedFat": 1.3,
+        "polyunsaturatedFat": 2.2,
+        "transFat": 0.0,
+        "cholesterol": 0,
+        "sodium": 6,
+        "potassium": 436,
+        "calcium": 63,
+        "iron": 2.3,
+        "magnesium": 64,
+        "zinc": 1.4,
+        "vitaminA": 15,
+        "vitaminC": 9.7,
+        "vitaminD": 0,
+        "vitaminE": 0.7,
+        "vitaminK": 26.7,
+        "thiamin": 0.2,
+        "riboflavin": 0.16,
+        "niacin": 0.9,
+        "vitaminB6": 0.1,
+        "folate": 311,
+        "vitaminB12": 0.0,
+        "omega3": 0.28,
+        "omega6": 1.9,
+        "glycemicIndex": 18,
+        "glycemicLoad": 2,
+        "allergens": [
+            "soy"
+        ],
+        "tags": [
+            "vegetarian",
+            "vegan",
+            "gluten_free",
+            "high_protein",
+            "high_fiber",
+            "complete_protein",
+            "low_sodium"
+        ],
+        "healthScore": 95,
+        "inflammatoryScore": -9,
+        "processingLevel": "minimally_processed",
+        "shelfLife": 3,
+        "storageInstructions": "Refrigerate after cooking, consume within 3 days",
+        "preparationTips": "Boil or steam for 5-6 minutes, sprinkle with sea salt",
+        "seasonalityScore": 85,
+        "sustainabilityScore": 78,
+        "waterFootprint": 2145,
+        "carbonFootprint": 0.9,
+        "commonPortions": [
+            {
+                "name": "1/2 cup",
+                "grams": 78,
+                "calories": 95
+            },
+            {
+                "name": "1 cup",
+                "grams": 155,
+                "calories": 189
+            },
+            {
+                "name": "1 serving (pods)",
+                "grams": 100,
+                "calories": 122
+            }
+        ],
+        "focusGrades": {
+            "heart_health": {
+                "grade": "A+",
+                "score": 96,
+                "reasoning": "Outstanding cardiovascular benefits. Very low in saturated fat (0.6g) and extremely low sodium (6mg). High in heart-protective polyunsaturated fats and omega-3s. Isoflavones reduce LDL cholesterol. Potassium (436mg) supports healthy blood pressure. High fiber reduces cholesterol absorption."
+            },
+            "metabolic_health": {
+                "grade": "A+",
+                "score": 97,
+                "reasoning": "Exceptional for blood sugar control with very low glycemic index (18) and glycemic load (2). High protein (11.9g) and fiber (5.2g) combination stabilizes glucose. Isoflavones enhance insulin sensitivity. Complete protein supports metabolic rate. Very low calorie density."
+            },
+            "gut_health": {
+                "grade": "A",
+                "score": 93,
+                "reasoning": "Excellent fiber source (5.2g) including both soluble and insoluble fiber. Contains resistant starch and oligosaccharides that act as prebiotics. Supports beneficial gut bacteria diversity. High folate content (311mcg) supports gut cell regeneration."
+            },
+            "brain_health": {
+                "grade": "A",
+                "score": 91,
+                "reasoning": "Exceptional folate content (311mcg) - 78% DV - critical for cognitive function and neurotransmitter synthesis. Isoflavones support brain health and may protect against cognitive decline. Vitamin K (26.7mcg) supports brain cell health. Complete protein provides all essential amino acids."
+            },
+            "inflammation": {
+                "grade": "A+",
+                "score": 95,
+                "reasoning": "Powerful anti-inflammatory food. Isoflavones (genistein, daidzein) reduce inflammatory markers. High omega-3 content (0.28g) balances omega-6. Vitamin K has anti-inflammatory properties. Studies show regular edamame consumption reduces CRP levels. Inflammatory score: -9."
+            },
+            "longevity": {
+                "grade": "A+",
+                "score": 96,
+                "reasoning": "Associated with longevity in Asian populations with high soy consumption. Rich in antioxidants and isoflavones that combat cellular aging. High folate supports DNA repair and methylation. Complete protein preserves muscle mass with aging. May reduce cancer and heart disease risk."
+            },
+            "immune_support": {
+                "grade": "A",
+                "score": 90,
+                "reasoning": "Excellent source of immune-supporting nutrients. Zinc (1.4mg) and iron (2.3mg) for immune cell function. Exceptional folate (311mcg) supports white blood cell production. Vitamin C (9.7mg) and vitamin E act as antioxidants. Complete protein for antibody synthesis."
+            },
+            "bone_health": {
+                "grade": "A",
+                "score": 92,
+                "reasoning": "Strong bone health profile. Isoflavones support bone density and reduce fracture risk. Excellent vitamin K content (26.7mcg) essential for bone mineralization. Calcium (63mg) and magnesium (64mg) support bone structure. Plant-based protein is less acidic than animal protein."
+            },
+            "energy_vitality": {
+                "grade": "A",
+                "score": 91,
+                "reasoning": "Outstanding energy food. Complete protein (11.9g) provides sustained energy. Exceptional B vitamin profile including thiamin (0.20mg) and folate (311mcg) for energy metabolism. Iron (2.3mg) prevents fatigue. Low glycemic response prevents crashes. Easy to digest."
+            },
+            "athletic_performance": {
+                "grade": "A",
+                "score": 93,
+                "reasoning": "Ideal performance food. Complete protein with all essential amino acids for muscle recovery. High in branched-chain amino acids (BCAAs). Magnesium (64mg) prevents muscle cramping. Iron supports oxygen delivery. Potassium (436mg) for hydration and muscle function. Quick, convenient post-workout snack."
+            }
+        }
+    },
+    "soybeans": {
+        "foodId": "soybeans",
+        "name": "Soybeans (Mature, Cooked)",
+        "category": "legumes",
+        "subcategory": "beans",
+        "servingSize": 100,
+        "servingUnit": "g",
+        "servingSizeGrams": 100,
+        "calories": 173,
+        "protein": 16.6,
+        "carbohydrates": 9.9,
+        "fiber": 6.0,
+        "sugar": 3.0,
+        "fat": 9.0,
+        "saturatedFat": 1.3,
+        "monounsaturatedFat": 1.9,
+        "polyunsaturatedFat": 5.1,
+        "transFat": 0.0,
+        "cholesterol": 0,
+        "sodium": 1,
+        "potassium": 515,
+        "calcium": 102,
+        "iron": 5.1,
+        "magnesium": 86,
+        "zinc": 1.2,
+        "vitaminA": 1,
+        "vitaminC": 6.0,
+        "vitaminD": 0,
+        "vitaminE": 0.4,
+        "vitaminK": 24.0,
+        "thiamin": 0.16,
+        "riboflavin": 0.29,
+        "niacin": 0.8,
+        "vitaminB6": 0.23,
+        "folate": 54,
+        "vitaminB12": 0.0,
+        "omega3": 0.68,
+        "omega6": 4.4,
+        "glycemicIndex": 16,
+        "glycemicLoad": 1,
+        "allergens": [
+            "soy"
+        ],
+        "tags": [
+            "vegetarian",
+            "vegan",
+            "gluten_free",
+            "high_protein",
+            "high_fiber",
+            "complete_protein",
+            "low_sodium"
+        ],
+        "healthScore": 94,
+        "inflammatoryScore": -10,
+        "processingLevel": "minimally_processed",
+        "shelfLife": 5,
+        "storageInstructions": "Refrigerate after cooking, store in airtight container",
+        "preparationTips": "Soak overnight, cook for 2-3 hours or use pressure cooker for 30 minutes",
+        "seasonalityScore": 90,
+        "sustainabilityScore": 72,
+        "waterFootprint": 2145,
+        "carbonFootprint": 0.9,
+        "commonPortions": [
+            {
+                "name": "1/2 cup",
+                "grams": 90,
+                "calories": 156
+            },
+            {
+                "name": "1 cup",
+                "grams": 180,
+                "calories": 311
+            },
+            {
+                "name": "1 tablespoon",
+                "grams": 15,
+                "calories": 26
+            }
+        ],
+        "focusGrades": {
+            "heart_health": {
+                "grade": "A+",
+                "score": 97,
+                "reasoning": "Exceptional cardiovascular benefits. Very low saturated fat (1.3g), virtually no sodium (1mg). Rich in polyunsaturated fats (5.1g) including omega-3s. Isoflavones reduce LDL cholesterol by 5-10%. High potassium (515mg) lowers blood pressure. Fiber (6g) reduces cholesterol absorption."
+            },
+            "metabolic_health": {
+                "grade": "A+",
+                "score": 98,
+                "reasoning": "Outstanding metabolic profile. Extremely low glycemic index (16) and glycemic load (1). High protein (16.6g) and fiber (6g) stabilize blood sugar. Isoflavones improve insulin sensitivity by up to 30%. Complete protein supports lean muscle mass. Very nutrient-dense with low calorie density."
+            },
+            "gut_health": {
+                "grade": "A",
+                "score": 92,
+                "reasoning": "Excellent for gut health. High fiber content (6g) including resistant starch. Contains oligosaccharides that feed beneficial bacteria (though may cause initial gas). Supports microbiome diversity. Riboflavin (0.29mg) and folate support gut lining regeneration."
+            },
+            "brain_health": {
+                "grade": "A",
+                "score": 90,
+                "reasoning": "Strong brain health benefits. Isoflavones cross blood-brain barrier and support cognitive function. High in choline precursors for neurotransmitter synthesis. Omega-3s (0.68g) support brain cell membranes. Iron (5.1mg) and magnesium (86mg) support neurotransmitter production. B vitamins aid cognitive function."
+            },
+            "inflammation": {
+                "grade": "A+",
+                "score": 96,
+                "reasoning": "Powerful anti-inflammatory food. Highest inflammatory score (-10) in category. Isoflavones (genistein, daidzein) significantly reduce inflammatory markers. Omega-3 fatty acids (0.68g) balance omega-6. Vitamin K has anti-inflammatory properties. Studies show reduced CRP, IL-6, and TNF-alpha."
+            },
+            "longevity": {
+                "grade": "A+",
+                "score": 97,
+                "reasoning": "Exceptional longevity food. Strong association with increased lifespan in blue zones (Okinawa, Japan). Isoflavones act as antioxidants combating cellular aging. High nutrient density supports healthy aging. May reduce cancer risk (especially breast and prostate). Preserves muscle and bone mass with age."
+            },
+            "immune_support": {
+                "grade": "A+",
+                "score": 94,
+                "reasoning": "Outstanding immune support. Exceptional iron content (5.1mg) - 28% DV - for immune cell function. Zinc (1.2mg) supports immune response. High protein (16.6g) provides amino acids for antibody synthesis. Isoflavones modulate immune function. Selenium and vitamin E act as antioxidants."
+            },
+            "bone_health": {
+                "grade": "A+",
+                "score": 95,
+                "reasoning": "Exceptional for bone health. Isoflavones (phytoestrogens) reduce bone loss and osteoporosis risk, especially postmenopausal women. High calcium (102mg) and magnesium (86mg). Excellent vitamin K (24mcg) for bone mineralization. Complete protein supports bone matrix. Low acid load compared to animal protein."
+            },
+            "energy_vitality": {
+                "grade": "A+",
+                "score": 93,
+                "reasoning": "Outstanding energy food. Complete protein (16.6g) provides all essential amino acids. Exceptional iron content (5.1mg) prevents fatigue and supports oxygen transport. B vitamins (especially riboflavin 0.29mg) aid energy metabolism. Magnesium (86mg) supports cellular energy production. Low glycemic response prevents crashes."
+            },
+            "athletic_performance": {
+                "grade": "A+",
+                "score": 95,
+                "reasoning": "Ideal for athletic performance. Complete protein with all 9 essential amino acids and high BCAA content for muscle recovery. Exceptional iron (5.1mg) supports oxygen delivery to muscles. Magnesium (86mg) prevents cramping. Potassium (515mg) for hydration and muscle function. Studies show soy protein as effective as whey for muscle building."
+            }
+        }
+    },
+    "peanut_butter": {
+        "foodId": "peanut_butter",
+        "name": "Peanut Butter (Natural, No Salt)",
+        "category": "legumes",
+        "subcategory": "nut_butters",
+        "servingSize": 100,
+        "servingUnit": "g",
+        "servingSizeGrams": 100,
+        "calories": 588,
+        "protein": 25.1,
+        "carbohydrates": 19.6,
+        "fiber": 8.0,
+        "sugar": 9.2,
+        "fat": 50.4,
+        "saturatedFat": 6.9,
+        "monounsaturatedFat": 23.7,
+        "polyunsaturatedFat": 15.7,
+        "transFat": 0.0,
+        "cholesterol": 0,
+        "sodium": 17,
+        "potassium": 649,
+        "calcium": 43,
+        "iron": 1.9,
+        "magnesium": 154,
+        "zinc": 2.5,
+        "vitaminA": 0,
+        "vitaminC": 0.0,
+        "vitaminD": 0,
+        "vitaminE": 9.1,
+        "vitaminK": 0.3,
+        "thiamin": 0.1,
+        "riboflavin": 0.19,
+        "niacin": 13.4,
+        "vitaminB6": 0.56,
+        "folate": 86,
+        "vitaminB12": 0.0,
+        "omega3": 0.01,
+        "omega6": 15.6,
+        "glycemicIndex": 14,
+        "glycemicLoad": 1,
+        "allergens": [
+            "peanuts"
+        ],
+        "tags": [
+            "vegetarian",
+            "vegan",
+            "gluten_free",
+            "high_protein",
+            "high_fiber",
+            "high_calorie"
+        ],
+        "healthScore": 82,
+        "inflammatoryScore": 2,
+        "processingLevel": "minimally_processed",
+        "shelfLife": 90,
+        "storageInstructions": "Store in cool, dry place or refrigerate to prevent oil separation",
+        "preparationTips": "Stir well before use if oil has separated, great for smoothies or on whole grain toast",
+        "seasonalityScore": 100,
+        "sustainabilityScore": 68,
+        "waterFootprint": 2782,
+        "carbonFootprint": 2.5,
+        "commonPortions": [
+            {
+                "name": "1 tablespoon",
+                "grams": 16,
+                "calories": 94
+            },
+            {
+                "name": "2 tablespoons",
+                "grams": 32,
+                "calories": 188
+            },
+            {
+                "name": "1/4 cup",
+                "grams": 64,
+                "calories": 376
+            }
+        ],
+        "focusGrades": {
+            "heart_health": {
+                "grade": "A-",
+                "score": 88,
+                "reasoning": "Rich in heart-healthy monounsaturated fats (23.7g) similar to olive oil. Contains resveratrol and antioxidants. High in potassium (649mg) for blood pressure. However, high omega-6 content (15.6g) with minimal omega-3 may promote inflammation if consumed in excess. Moderate saturated fat (6.9g)."
+            },
+            "metabolic_health": {
+                "grade": "A",
+                "score": 90,
+                "reasoning": "Very low glycemic index (14) and glycemic load (1) despite natural sugars. High protein (25.1g) and fiber (8g) combination stabilizes blood sugar. Magnesium (154mg) supports insulin sensitivity. Calorie-dense but satiating, can aid weight management when portion-controlled."
+            },
+            "gut_health": {
+                "grade": "A-",
+                "score": 87,
+                "reasoning": "Excellent fiber source (8g) supports healthy gut bacteria. Contains resistant starch and prebiotic compounds. Peanuts contain polyphenols that benefit microbiome. However, some individuals may have sensitivity to lectins or aflatoxins. Choose high-quality, properly stored brands."
+            },
+            "brain_health": {
+                "grade": "A",
+                "score": 91,
+                "reasoning": "Outstanding brain food. Exceptional niacin content (13.4mg) - 67% DV - supports cognitive function and neuroprotection. High in vitamin E (9.1mg) - powerful brain antioxidant. Rich in resveratrol for brain health. Magnesium (154mg) and folate (86mcg) support neurotransmitter production."
+            },
+            "inflammation": {
+                "grade": "B",
+                "score": 75,
+                "reasoning": "Mixed inflammatory profile (score: +2). Contains anti-inflammatory resveratrol and vitamin E. However, very high omega-6 to omega-3 ratio (15.6:0.01) can promote inflammation if not balanced with omega-3 rich foods. Polyphenols provide some anti-inflammatory benefits. Choose fresh, high-quality brands."
+            },
+            "longevity": {
+                "grade": "A",
+                "score": 89,
+                "reasoning": "Associated with longevity when consumed in moderation. Contains resveratrol - compound linked to lifespan extension. High in antioxidants including vitamin E and polyphenols. Supports cardiovascular and metabolic health. Studies show regular nut butter consumption reduces all-cause mortality."
+            },
+            "immune_support": {
+                "grade": "A-",
+                "score": 86,
+                "reasoning": "Good source of immune-supporting nutrients. Excellent zinc (2.5mg) for immune cell function. Rich in vitamin E (9.1mg) - 61% DV - powerful antioxidant. High protein (25.1g) provides amino acids for antibody synthesis. Niacin supports immune function. Selenium content supports defenses."
+            },
+            "bone_health": {
+                "grade": "B+",
+                "score": 84,
+                "reasoning": "Provides important bone-supporting minerals. Exceptional magnesium (154mg) - 39% DV - for bone structure. Contains calcium (43mg) and phosphorus. Protein supports bone matrix. Vitamin K content is low. Boron in peanuts supports bone health and calcium absorption."
+            },
+            "energy_vitality": {
+                "grade": "A",
+                "score": 92,
+                "reasoning": "Excellent sustained energy source. Very high calorie density (588 kcal/100g) provides concentrated energy. High protein (25.1g) and healthy fats prevent energy crashes. Exceptional niacin (13.4mg) and magnesium (154mg) for energy metabolism. Great pre-workout or endurance fuel when portion-controlled."
+            },
+            "athletic_performance": {
+                "grade": "A-",
+                "score": 87,
+                "reasoning": "Good performance food when portioned correctly. High protein (25.1g) supports muscle recovery. Calorie-dense for meeting high energy needs. Magnesium (154mg) prevents cramping. However, high fat content may slow digestion - better 2+ hours before exercise. Excellent post-workout paired with carbs."
+            }
+        }
+    },
+    "mixed_nuts": {
+        "foodId": "mixed_nuts",
+        "name": "Mixed Nuts (Unsalted)",
+        "category": "legumes",
+        "subcategory": "nuts_seeds",
+        "servingSize": 100,
+        "servingUnit": "g",
+        "servingSizeGrams": 100,
+        "calories": 607,
+        "protein": 20.0,
+        "carbohydrates": 21.2,
+        "fiber": 8.5,
+        "sugar": 4.4,
+        "fat": 54.1,
+        "saturatedFat": 7.4,
+        "monounsaturatedFat": 31.6,
+        "polyunsaturatedFat": 13.2,
+        "transFat": 0.0,
+        "cholesterol": 0,
+        "sodium": 16,
+        "potassium": 634,
+        "calcium": 92,
+        "iron": 3.0,
+        "magnesium": 229,
+        "zinc": 3.4,
+        "vitaminA": 3,
+        "vitaminC": 1.1,
+        "vitaminD": 0,
+        "vitaminE": 10.3,
+        "vitaminK": 7.8,
+        "thiamin": 0.43,
+        "riboflavin": 0.25,
+        "niacin": 5.2,
+        "vitaminB6": 0.39,
+        "folate": 68,
+        "vitaminB12": 0.0,
+        "omega3": 0.19,
+        "omega6": 13.0,
+        "glycemicIndex": 15,
+        "glycemicLoad": 1,
+        "allergens": [
+            "tree_nuts",
+            "peanuts"
+        ],
+        "tags": [
+            "vegetarian",
+            "vegan",
+            "gluten_free",
+            "high_protein",
+            "high_fiber",
+            "high_calorie",
+            "paleo"
+        ],
+        "healthScore": 86,
+        "inflammatoryScore": 1,
+        "processingLevel": "minimally_processed",
+        "shelfLife": 180,
+        "storageInstructions": "Store in airtight container in cool, dry place or refrigerate",
+        "preparationTips": "Great for snacking, add to salads or oatmeal, pair with dried fruit",
+        "seasonalityScore": 100,
+        "sustainabilityScore": 65,
+        "waterFootprint": 9063,
+        "carbonFootprint": 2.3,
+        "commonPortions": [
+            {
+                "name": "1 oz (small handful)",
+                "grams": 28,
+                "calories": 170
+            },
+            {
+                "name": "1/4 cup",
+                "grams": 36,
+                "calories": 219
+            },
+            {
+                "name": "1/2 cup",
+                "grams": 72,
+                "calories": 437
+            }
+        ],
+        "focusGrades": {
+            "heart_health": {
+                "grade": "A+",
+                "score": 95,
+                "reasoning": "Outstanding cardiovascular benefits. Rich in monounsaturated fats (31.6g) that reduce LDL cholesterol. Contains plant sterols that block cholesterol absorption. High in potassium (634mg) and magnesium (229mg) for blood pressure regulation. Studies show 1oz daily reduces heart disease risk by 30%."
+            },
+            "metabolic_health": {
+                "grade": "A",
+                "score": 93,
+                "reasoning": "Excellent for metabolic health. Very low glycemic index (15) and glycemic load (1). High protein (20g) and fiber (8.5g) stabilize blood sugar. Magnesium (229mg) - 57% DV - crucial for insulin sensitivity. Despite high calories, nuts improve satiety and support healthy weight when portion-controlled."
+            },
+            "gut_health": {
+                "grade": "A",
+                "score": 90,
+                "reasoning": "Excellent fiber source (8.5g) including prebiotics that feed beneficial bacteria. Polyphenols from nuts support microbiome diversity. Almonds in particular contain compounds that increase beneficial Bifidobacteria. Magnesium supports gut motility. However, some people may find nuts difficult to digest initially."
+            },
+            "brain_health": {
+                "grade": "A+",
+                "score": 94,
+                "reasoning": "Exceptional brain food. Rich in vitamin E (10.3mg) - 69% DV - powerful neuroprotective antioxidant. High in monounsaturated fats for brain cell membranes. Contains walnuts with omega-3s. Magnesium (229mg) and B vitamins support neurotransmitter function. Studies link nut consumption to reduced cognitive decline."
+            },
+            "inflammation": {
+                "grade": "B+",
+                "score": 81,
+                "reasoning": "Generally anti-inflammatory with some caveats (score: +1). Contains polyphenols, vitamin E, and magnesium with anti-inflammatory effects. However, high omega-6 to omega-3 ratio (13:0.19) can promote inflammation if not balanced. Walnut content improves omega-3 profile. Choose raw or dry-roasted over oil-roasted."
+            },
+            "longevity": {
+                "grade": "A+",
+                "score": 96,
+                "reasoning": "Strong association with longevity. Large studies show daily nut consumption reduces all-cause mortality by 20%. Rich in antioxidants (vitamin E, polyphenols, selenium) that combat aging. Supports heart, brain, and metabolic health. Mediterranean and Blue Zone diets emphasize nuts for healthy aging."
+            },
+            "immune_support": {
+                "grade": "A+",
+                "score": 93,
+                "reasoning": "Outstanding immune support. Exceptional zinc content (3.4mg) - 23% DV - critical for immune cell function. Rich in vitamin E (10.3mg) - powerful immune antioxidant. Iron (3mg) supports immune response. Selenium from Brazil nuts (if included) boosts immunity. Protein provides amino acids for antibody synthesis."
+            },
+            "bone_health": {
+                "grade": "A",
+                "score": 91,
+                "reasoning": "Excellent for bone health. Exceptional magnesium (229mg) - 57% DV - essential for bone structure. Calcium (92mg) and vitamin K (7.8mcg) support bone mineralization. Phosphorus and protein support bone matrix. Almonds particularly rich in calcium. Boron content supports calcium metabolism."
+            },
+            "energy_vitality": {
+                "grade": "A",
+                "score": 90,
+                "reasoning": "Excellent sustained energy source. Very high calorie density (607 kcal/100g) provides concentrated energy. Balance of protein (20g), healthy fats, and complex carbs prevents crashes. Exceptional B vitamins (thiamin 0.43mg, niacin 5.2mg) for energy metabolism. Magnesium (229mg) supports cellular energy production."
+            },
+            "athletic_performance": {
+                "grade": "A-",
+                "score": 88,
+                "reasoning": "Very good for athletic performance with timing considerations. High protein (20g) supports muscle recovery. Calorie-dense for meeting high energy demands. Exceptional magnesium (229mg) prevents cramping. Iron (3mg) supports oxygen delivery. However, high fat content slows digestion - best 2+ hours pre-exercise or post-workout."
+            }
+        }
+    }
+}

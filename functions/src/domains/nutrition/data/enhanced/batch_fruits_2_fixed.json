@@ -1,0 +1,932 @@
+{
+  "pineapple": {
+    "name": "Pineapple, raw",
+    "fdcId": "169124",
+    "quantity": 1,
+    "unit": "cup chunks (165g)",
+    "mealType": "snack",
+    "foodGroups": ["fruit"],
+    "subCategory": "tropical_fruit",
+    "calories": 83,
+    "protein": 0.9,
+    "carbs": 21.6,
+    "fat": 0.2,
+    "fiber": 2.3,
+    "sugar": 16.3,
+    "sodium": 2,
+    "saturatedFat": 0,
+    "transFat": 0,
+    "cholesterol": 0,
+    "potassium": 180,
+    "calcium": 21,
+    "iron": 0.5,
+    "magnesium": 20,
+    "zinc": 0.2,
+    "vitaminA": 10,
+    "vitaminC": 78.9,
+    "vitaminD": 0,
+    "vitaminE": 0.03,
+    "vitaminK": 1.2,
+    "thiamin": 0.13,
+    "riboflavin": 0.05,
+    "niacin": 0.8,
+    "vitaminB6": 0.19,
+    "folate": 30,
+    "vitaminB12": 0,
+    "choline": 9.1,
+    "phosphorus": 13,
+    "selenium": 0.2,
+    "copper": 0.18,
+    "manganese": 1.5,
+    "caffeine": 0,
+    "water": 142,
+    "monounsaturatedFat": 0.03,
+    "polyunsaturatedFat": 0.04,
+    "omega3": { "ala": 0.04, "epa": 0, "dha": 0 },
+    "omega6": { "linoleicAcid": 0.02 },
+    "omegaRatio": 0.5,
+    "glycemicIndex": 66,
+    "glycemicLoad": 6,
+    "glycemicCategory": "medium",
+    "nutrientDensityScore": 26.4,
+    "satietyScore": 64,
+    "inflammatoryIndex": -2.3,
+    "novaClass": 1,
+    "oracScore": 562,
+    "dietaryTags": ["vegan", "gluten_free", "paleo", "whole30", "raw"],
+    "allergens": [],
+    "insight": "A tropical enzyme powerhouse delivering 131% DV of vitamin C plus bromelain for digestion and inflammation, with exceptional manganese for bone and metabolism.",
+    "focusGrades": {
+      "balanced": {
+        "grade": "A-",
+        "score": 87,
+        "insight": "Outstanding vitamin C (131% DV) and manganese (65% DV) plus bromelain enzyme create exceptional nutritional value. Good fiber (2.3g) balances natural sugars.",
+        "pros": ["Exceptional vitamin C (78.9mg)", "Outstanding manganese (1.5mg)", "Unique bromelain enzyme", "Good fiber (2.3g)"],
+        "cons": ["Moderate sugar content (16.3g)", "Low protein"]
+      },
+      "heart_health": {
+        "grade": "A",
+        "score": 91,
+        "insight": "Bromelain reduces inflammation and blood clotting risk, exceptional vitamin C supports arterial health, fiber aids cholesterol reduction, and zero saturated fat.",
+        "pros": ["Bromelain reduces blood clot risk", "Exceptional vitamin C for arterial walls", "Fiber lowers cholesterol", "Zero saturated fat"],
+        "cons": []
+      },
+      "muscle_building": {
+        "grade": "C+",
+        "score": 72,
+        "insight": "Bromelain enzyme reduces muscle soreness and aids protein digestion. Minimal protein (0.9g) but vitamin C (78.9mg) supports collagen in muscle tissue.",
+        "pros": ["Bromelain reduces muscle inflammation", "Aids protein digestion", "Vitamin C for muscle tissue repair"],
+        "cons": ["Very low protein (0.9g)", "Won't build muscle alone", "Needs protein pairing"]
+      },
+      "energy": {
+        "grade": "B+",
+        "score": 84,
+        "insight": "Natural sugars with good fiber (2.3g) provide sustained energy. B vitamins (thiamin, B6) support energy metabolism. Manganese aids carb metabolism.",
+        "pros": ["Balanced sugar-to-fiber ratio", "B vitamins for energy production", "Manganese aids metabolism", "Hydrating (86% water)"],
+        "cons": ["May cause brief energy dip if eaten alone"]
+      },
+      "weight_management": {
+        "grade": "B+",
+        "score": 82,
+        "insight": "Only 83 calories per cup with good fiber (2.3g) creates solid satiety. Bromelain may aid protein digestion and metabolism. Volume satisfies cravings.",
+        "pros": ["Low calorie density (83 per cup)", "Good fiber creates satiety", "Bromelain aids digestion", "High water content"],
+        "cons": ["Sugar content (16.3g) may trigger cravings", "Easy to overeat when sweet"]
+      },
+      "brain_focus": {
+        "grade": "B+",
+        "score": 83,
+        "insight": "Exceptional vitamin C (78.9mg) supports neurotransmitter synthesis. Manganese crucial for brain function. Bromelain may reduce neuroinflammation.",
+        "pros": ["Vitamin C for neurotransmitters", "Manganese for brain function", "Anti-inflammatory for brain health", "Folate (30mcg) supports cognition"],
+        "cons": ["No omega-3 fatty acids", "Limited B vitamins besides B6"]
+      },
+      "gut_health": {
+        "grade": "A-",
+        "score": 88,
+        "insight": "Bromelain enzyme aids protein digestion powerfully. Good fiber (2.3g) feeds beneficial bacteria. Anti-inflammatory properties soothe digestive tract.",
+        "pros": ["Bromelain aids protein digestion", "Good fiber (2.3g) feeds gut bacteria", "Anti-inflammatory for gut lining", "Enzymes support digestion"],
+        "cons": ["Excess may cause mouth irritation", "Acidic for some people"]
+      },
+      "blood_sugar": {
+        "grade": "B",
+        "score": 79,
+        "insight": "Medium GI (66) but low glycemic load (6) from reasonable fiber (2.3g). Manganese supports glucose metabolism. Bromelain may improve insulin sensitivity.",
+        "pros": ["Low glycemic load (6)", "Fiber slows sugar absorption", "Manganese aids glucose metabolism"],
+        "cons": ["Medium GI (66)", "Sugar content (16.3g) requires moderation", "Easy to overeat when ripe"]
+      },
+      "bone_joint": {
+        "grade": "A",
+        "score": 92,
+        "insight": "Exceptional manganese (1.5mg, 65% DV) critical for bone formation and cartilage. Bromelain reduces joint inflammation and swelling powerfully. Vitamin C aids collagen.",
+        "pros": ["Exceptional manganese for bones (65% DV)", "Bromelain reduces joint inflammation", "Vitamin C for collagen synthesis", "Copper supports bone matrix"],
+        "cons": ["Modest calcium content (21mg)"]
+      },
+      "anti_inflammatory": {
+        "grade": "A",
+        "score": 94,
+        "insight": "Bromelain is one of nature's most powerful anti-inflammatory enzymes, clinically proven to reduce inflammation. Exceptional vitamin C and polyphenols amplify benefits.",
+        "pros": ["Bromelain powerfully reduces inflammation", "Exceptional vitamin C antioxidant", "Multiple polyphenols", "Strong anti-inflammatory index (-2.3)"],
+        "cons": []
+      }
+    },
+    "bioavailability": {
+      "bromelain": "Most concentrated in core; absorption enhanced when taken away from food for inflammation benefits",
+      "vitaminC": "Enhanced absorption with bioflavonoids"
+    },
+    "pairWith": [
+      { "food": "greek_yogurt", "reason": "Protein balances sugar, probiotics complement bromelain for digestion" },
+      { "food": "cottage_cheese", "reason": "Bromelain aids protein digestion while adding satiety" },
+      { "food": "ginger", "reason": "Amplifies anti-inflammatory benefits" }
+    ],
+    "avoidWith": [
+      { "food": "blood_thinners", "reason": "Bromelain may enhance anticoagulant effects" }
+    ],
+    "bestTiming": {
+      "preWorkout": true,
+      "postWorkout": true,
+      "morning": true,
+      "beforeBed": false
+    },
+    "digestionTime": "medium",
+    "portionVisual": "1 cup chunks equals size of a baseball",
+    "tips": {
+      "storage": "Whole pineapple lasts 2-3 days at room temp, 5-7 days refrigerated; cut pieces 3-4 days in airtight container",
+      "selection": "Should smell sweet at base, leaves pull out easily when ripe, golden color, heavy for size",
+      "preparation": "Remove core for tenderness or eat it for maximum bromelain; grill slices to caramelize sugars and reduce acidity"
+    }
+  },
+  "peach": {
+    "name": "Peach, raw",
+    "fdcId": "169918",
+    "quantity": 1,
+    "unit": "medium (150g)",
+    "mealType": "snack",
+    "foodGroups": ["fruit"],
+    "subCategory": "stone_fruit",
+    "calories": 59,
+    "protein": 1.4,
+    "carbs": 14.3,
+    "fat": 0.4,
+    "fiber": 2.3,
+    "sugar": 12.6,
+    "sodium": 0,
+    "saturatedFat": 0,
+    "transFat": 0,
+    "cholesterol": 0,
+    "potassium": 285,
+    "calcium": 9,
+    "iron": 0.4,
+    "magnesium": 14,
+    "zinc": 0.3,
+    "vitaminA": 24,
+    "vitaminC": 9.9,
+    "vitaminD": 0,
+    "vitaminE": 1.1,
+    "vitaminK": 3.9,
+    "thiamin": 0.04,
+    "riboflavin": 0.05,
+    "niacin": 1.2,
+    "vitaminB6": 0.04,
+    "folate": 6,
+    "vitaminB12": 0,
+    "choline": 9.3,
+    "phosphorus": 30,
+    "selenium": 0.2,
+    "copper": 0.1,
+    "manganese": 0.09,
+    "caffeine": 0,
+    "water": 133,
+    "monounsaturatedFat": 0.09,
+    "polyunsaturatedFat": 0.1,
+    "omega3": { "ala": 0.03, "epa": 0, "dha": 0 },
+    "omega6": { "linoleicAcid": 0.07 },
+    "omegaRatio": 2.3,
+    "glycemicIndex": 42,
+    "glycemicLoad": 5,
+    "glycemicCategory": "low",
+    "nutrientDensityScore": 18.7,
+    "satietyScore": 72,
+    "inflammatoryIndex": -1.4,
+    "novaClass": 1,
+    "oracScore": 1814,
+    "dietaryTags": ["vegan", "gluten_free", "paleo", "whole30", "raw"],
+    "allergens": ["birch_pollen_cross_reactivity"],
+    "insight": "A low-calorie, high-water fruit with exceptional antioxidants and good fiber, delivering skin-supporting vitamin A and unique polyphenols for metabolic health.",
+    "focusGrades": {
+      "balanced": {
+        "grade": "B+",
+        "score": 85,
+        "insight": "Low calories (59) with good fiber (2.3g), decent potassium (285mg), and strong antioxidant profile (ORAC 1814). Well-balanced sugar-to-fiber ratio.",
+        "pros": ["Very low calorie (59)", "Good fiber (2.3g)", "Strong antioxidants (ORAC 1814)", "Good potassium (285mg)"],
+        "cons": ["Modest vitamin content", "Low protein"]
+      },
+      "heart_health": {
+        "grade": "A-",
+        "score": 88,
+        "insight": "Polyphenols and anthocyanins protect cardiovascular health. Good potassium (285mg) with zero sodium supports blood pressure. Fiber aids cholesterol reduction.",
+        "pros": ["Polyphenols for heart protection", "Excellent potassium-sodium ratio", "Fiber lowers cholesterol", "Zero saturated fat"],
+        "cons": []
+      },
+      "muscle_building": {
+        "grade": "C",
+        "score": 68,
+        "insight": "Low protein (1.4g) limits muscle-building value. Potassium (285mg) helps prevent cramps and supports muscle function during recovery.",
+        "pros": ["Potassium prevents muscle cramps", "Hydrating for recovery (89% water)", "Low calorie for lean gains"],
+        "cons": ["Low protein (1.4g)", "Won't build muscle alone", "Must pair with protein"]
+      },
+      "energy": {
+        "grade": "B",
+        "score": 81,
+        "insight": "Natural sugars with good fiber (2.3g) provide moderate sustained energy. High water content (89%) fights fatigue. Niacin supports energy metabolism.",
+        "pros": ["Balanced sugar-to-fiber ratio", "Hydrating (89% water)", "Niacin aids energy production"],
+        "cons": ["Modest energy density", "May not sustain intense activity"]
+      },
+      "weight_management": {
+        "grade": "A-",
+        "score": 89,
+        "insight": "Only 59 calories with excellent satiety from fiber (2.3g) and high water (89%). Sweet taste satisfies cravings without caloric impact. Very filling.",
+        "pros": ["Very low calorie (59)", "Excellent satiety from fiber and water", "Satisfies sweet cravings", "High volume-to-calorie ratio"],
+        "cons": ["Easy to overeat multiple servings"]
+      },
+      "brain_focus": {
+        "grade": "B",
+        "score": 78,
+        "insight": "Polyphenols may protect against cognitive decline. Niacin supports neurotransmitter function. Antioxidants reduce brain oxidative stress.",
+        "pros": ["Polyphenols for neuroprotection", "Strong antioxidants (ORAC 1814)", "Niacin for brain function"],
+        "cons": ["No omega-3 fatty acids", "Limited B vitamins", "Modest folate"]
+      },
+      "gut_health": {
+        "grade": "B+",
+        "score": 83,
+        "insight": "Good fiber (2.3g) supports gut motility and feeds beneficial bacteria. Polyphenols benefit microbiome diversity. Gentle on digestion with high water content.",
+        "pros": ["Good fiber (2.3g)", "Polyphenols support microbiome", "High water aids digestion", "Gentle on stomach"],
+        "cons": ["Skin may irritate some people", "Not as high in prebiotics as some fruits"]
+      },
+      "blood_sugar": {
+        "grade": "A-",
+        "score": 86,
+        "insight": "Low GI (42) and low glycemic load (5) make this excellent for blood sugar control. Good fiber (2.3g) slows sugar absorption. Polyphenols may improve insulin sensitivity.",
+        "pros": ["Low glycemic index (42)", "Low glycemic load (5)", "Fiber slows absorption", "Polyphenols aid insulin sensitivity"],
+        "cons": ["Sugar content (12.6g) requires portion awareness"]
+      },
+      "bone_joint": {
+        "grade": "B",
+        "score": 79,
+        "insight": "Vitamin K (3.9mcg) supports bone health. Polyphenols and antioxidants reduce joint inflammation. Vitamin C aids collagen synthesis.",
+        "pros": ["Vitamin K for bones", "Anti-inflammatory polyphenols", "Vitamin C for collagen"],
+        "cons": ["Low calcium (9mg)", "Modest mineral content"]
+      },
+      "anti_inflammatory": {
+        "grade": "A",
+        "score": 91,
+        "insight": "Exceptional ORAC score (1814) with polyphenols, anthocyanins, and chlorogenic acid deliver powerful anti-inflammatory benefits. Vitamin E provides additional antioxidant support.",
+        "pros": ["Exceptional ORAC score (1814)", "Multiple polyphenols fight inflammation", "Vitamin E antioxidant", "Strong anti-inflammatory index (-1.4)"],
+        "cons": []
+      }
+    },
+    "bioavailability": {
+      "vitaminA": "Beta-carotene absorption enhanced with small amount of fat",
+      "polyphenols": "Better absorbed from ripe peaches; skin contains concentrated antioxidants"
+    },
+    "pairWith": [
+      { "food": "cottage_cheese", "reason": "Protein balances sugar and creates satisfying snack" },
+      { "food": "almonds", "reason": "Healthy fats enhance nutrient absorption and add satiety" },
+      { "food": "yogurt", "reason": "Probiotics complement prebiotic fiber" }
+    ],
+    "avoidWith": [
+      { "food": "birch_allergen_sensitive", "reason": "May cause oral allergy syndrome in birch pollen-sensitive individuals" }
+    ],
+    "bestTiming": {
+      "preWorkout": true,
+      "postWorkout": false,
+      "morning": true,
+      "beforeBed": false
+    },
+    "digestionTime": "fast",
+    "portionVisual": "1 medium peach fits in palm of hand",
+    "tips": {
+      "storage": "Ripen at room temp until fragrant, then refrigerate for up to 5 days; don't refrigerate unripe peaches",
+      "selection": "Should yield slightly to gentle pressure, smell fragrant, avoid green or very hard peaches",
+      "preparation": "Eat skin for maximum fiber and antioxidants; grill or roast to concentrate flavors; freeze slices for smoothies"
+    }
+  },
+  "peaches": {
+    "name": "Peach, raw",
+    "fdcId": "169918",
+    "quantity": 1,
+    "unit": "medium (150g)",
+    "mealType": "snack",
+    "foodGroups": ["fruit"],
+    "subCategory": "stone_fruit",
+    "calories": 59,
+    "protein": 1.4,
+    "carbs": 14.3,
+    "fat": 0.4,
+    "fiber": 2.3,
+    "sugar": 12.6,
+    "sodium": 0,
+    "saturatedFat": 0,
+    "transFat": 0,
+    "cholesterol": 0,
+    "potassium": 285,
+    "calcium": 9,
+    "iron": 0.4,
+    "magnesium": 14,
+    "zinc": 0.3,
+    "vitaminA": 24,
+    "vitaminC": 9.9,
+    "vitaminD": 0,
+    "vitaminE": 1.1,
+    "vitaminK": 3.9,
+    "thiamin": 0.04,
+    "riboflavin": 0.05,
+    "niacin": 1.2,
+    "vitaminB6": 0.04,
+    "folate": 6,
+    "vitaminB12": 0,
+    "choline": 9.3,
+    "phosphorus": 30,
+    "selenium": 0.2,
+    "copper": 0.1,
+    "manganese": 0.09,
+    "caffeine": 0,
+    "water": 133,
+    "monounsaturatedFat": 0.09,
+    "polyunsaturatedFat": 0.1,
+    "omega3": { "ala": 0.03, "epa": 0, "dha": 0 },
+    "omega6": { "linoleicAcid": 0.07 },
+    "omegaRatio": 2.3,
+    "glycemicIndex": 42,
+    "glycemicLoad": 5,
+    "glycemicCategory": "low",
+    "nutrientDensityScore": 18.7,
+    "satietyScore": 72,
+    "inflammatoryIndex": -1.4,
+    "novaClass": 1,
+    "oracScore": 1814,
+    "dietaryTags": ["vegan", "gluten_free", "paleo", "whole30", "raw"],
+    "allergens": ["birch_pollen_cross_reactivity"],
+    "insight": "A low-calorie, high-water fruit with exceptional antioxidants and good fiber, delivering skin-supporting vitamin A and unique polyphenols for metabolic health.",
+    "focusGrades": {
+      "balanced": {
+        "grade": "B+",
+        "score": 85,
+        "insight": "Low calories (59) with good fiber (2.3g), decent potassium (285mg), and strong antioxidant profile (ORAC 1814). Well-balanced sugar-to-fiber ratio.",
+        "pros": ["Very low calorie (59)", "Good fiber (2.3g)", "Strong antioxidants (ORAC 1814)", "Good potassium (285mg)"],
+        "cons": ["Modest vitamin content", "Low protein"]
+      },
+      "heart_health": {
+        "grade": "A-",
+        "score": 88,
+        "insight": "Polyphenols and anthocyanins protect cardiovascular health. Good potassium (285mg) with zero sodium supports blood pressure. Fiber aids cholesterol reduction.",
+        "pros": ["Polyphenols for heart protection", "Excellent potassium-sodium ratio", "Fiber lowers cholesterol", "Zero saturated fat"],
+        "cons": []
+      },
+      "muscle_building": {
+        "grade": "C",
+        "score": 68,
+        "insight": "Low protein (1.4g) limits muscle-building value. Potassium (285mg) helps prevent cramps and supports muscle function during recovery.",
+        "pros": ["Potassium prevents muscle cramps", "Hydrating for recovery (89% water)", "Low calorie for lean gains"],
+        "cons": ["Low protein (1.4g)", "Won't build muscle alone", "Must pair with protein"]
+      },
+      "energy": {
+        "grade": "B",
+        "score": 81,
+        "insight": "Natural sugars with good fiber (2.3g) provide moderate sustained energy. High water content (89%) fights fatigue. Niacin supports energy metabolism.",
+        "pros": ["Balanced sugar-to-fiber ratio", "Hydrating (89% water)", "Niacin aids energy production"],
+        "cons": ["Modest energy density", "May not sustain intense activity"]
+      },
+      "weight_management": {
+        "grade": "A-",
+        "score": 89,
+        "insight": "Only 59 calories with excellent satiety from fiber (2.3g) and high water (89%). Sweet taste satisfies cravings without caloric impact. Very filling.",
+        "pros": ["Very low calorie (59)", "Excellent satiety from fiber and water", "Satisfies sweet cravings", "High volume-to-calorie ratio"],
+        "cons": ["Easy to overeat multiple servings"]
+      },
+      "brain_focus": {
+        "grade": "B",
+        "score": 78,
+        "insight": "Polyphenols may protect against cognitive decline. Niacin supports neurotransmitter function. Antioxidants reduce brain oxidative stress.",
+        "pros": ["Polyphenols for neuroprotection", "Strong antioxidants (ORAC 1814)", "Niacin for brain function"],
+        "cons": ["No omega-3 fatty acids", "Limited B vitamins", "Modest folate"]
+      },
+      "gut_health": {
+        "grade": "B+",
+        "score": 83,
+        "insight": "Good fiber (2.3g) supports gut motility and feeds beneficial bacteria. Polyphenols benefit microbiome diversity. Gentle on digestion with high water content.",
+        "pros": ["Good fiber (2.3g)", "Polyphenols support microbiome", "High water aids digestion", "Gentle on stomach"],
+        "cons": ["Skin may irritate some people", "Not as high in prebiotics as some fruits"]
+      },
+      "blood_sugar": {
+        "grade": "A-",
+        "score": 86,
+        "insight": "Low GI (42) and low glycemic load (5) make this excellent for blood sugar control. Good fiber (2.3g) slows sugar absorption. Polyphenols may improve insulin sensitivity.",
+        "pros": ["Low glycemic index (42)", "Low glycemic load (5)", "Fiber slows absorption", "Polyphenols aid insulin sensitivity"],
+        "cons": ["Sugar content (12.6g) requires portion awareness"]
+      },
+      "bone_joint": {
+        "grade": "B",
+        "score": 79,
+        "insight": "Vitamin K (3.9mcg) supports bone health. Polyphenols and antioxidants reduce joint inflammation. Vitamin C aids collagen synthesis.",
+        "pros": ["Vitamin K for bones", "Anti-inflammatory polyphenols", "Vitamin C for collagen"],
+        "cons": ["Low calcium (9mg)", "Modest mineral content"]
+      },
+      "anti_inflammatory": {
+        "grade": "A",
+        "score": 91,
+        "insight": "Exceptional ORAC score (1814) with polyphenols, anthocyanins, and chlorogenic acid deliver powerful anti-inflammatory benefits. Vitamin E provides additional antioxidant support.",
+        "pros": ["Exceptional ORAC score (1814)", "Multiple polyphenols fight inflammation", "Vitamin E antioxidant", "Strong anti-inflammatory index (-1.4)"],
+        "cons": []
+      }
+    },
+    "bioavailability": {
+      "vitaminA": "Beta-carotene absorption enhanced with small amount of fat",
+      "polyphenols": "Better absorbed from ripe peaches; skin contains concentrated antioxidants"
+    },
+    "pairWith": [
+      { "food": "cottage_cheese", "reason": "Protein balances sugar and creates satisfying snack" },
+      { "food": "almonds", "reason": "Healthy fats enhance nutrient absorption and add satiety" },
+      { "food": "yogurt", "reason": "Probiotics complement prebiotic fiber" }
+    ],
+    "avoidWith": [
+      { "food": "birch_allergen_sensitive", "reason": "May cause oral allergy syndrome in birch pollen-sensitive individuals" }
+    ],
+    "bestTiming": {
+      "preWorkout": true,
+      "postWorkout": false,
+      "morning": true,
+      "beforeBed": false
+    },
+    "digestionTime": "fast",
+    "portionVisual": "1 medium peach fits in palm of hand",
+    "tips": {
+      "storage": "Ripen at room temp until fragrant, then refrigerate for up to 5 days; don't refrigerate unripe peaches",
+      "selection": "Should yield slightly to gentle pressure, smell fragrant, avoid green or very hard peaches",
+      "preparation": "Eat skin for maximum fiber and antioxidants; grill or roast to concentrate flavors; freeze slices for smoothies"
+    }
+  },
+  "pear": {
+    "name": "Pear, raw",
+    "fdcId": "169118",
+    "quantity": 1,
+    "unit": "medium (178g)",
+    "mealType": "snack",
+    "foodGroups": ["fruit"],
+    "subCategory": "pome_fruit",
+    "calories": 101,
+    "protein": 0.6,
+    "carbs": 27,
+    "fat": 0.2,
+    "fiber": 5.5,
+    "sugar": 17.2,
+    "sodium": 2,
+    "saturatedFat": 0,
+    "transFat": 0,
+    "cholesterol": 0,
+    "potassium": 206,
+    "calcium": 16,
+    "iron": 0.3,
+    "magnesium": 13,
+    "zinc": 0.2,
+    "vitaminA": 2,
+    "vitaminC": 7.7,
+    "vitaminD": 0,
+    "vitaminE": 0.2,
+    "vitaminK": 7.8,
+    "thiamin": 0.02,
+    "riboflavin": 0.05,
+    "niacin": 0.3,
+    "vitaminB6": 0.05,
+    "folate": 13,
+    "vitaminB12": 0,
+    "choline": 9.8,
+    "phosphorus": 21,
+    "selenium": 0.2,
+    "copper": 0.14,
+    "manganese": 0.09,
+    "caffeine": 0,
+    "water": 149,
+    "monounsaturatedFat": 0.04,
+    "polyunsaturatedFat": 0.09,
+    "omega3": { "ala": 0.02, "epa": 0, "dha": 0 },
+    "omega6": { "linoleicAcid": 0.06 },
+    "omegaRatio": 3,
+    "glycemicIndex": 38,
+    "glycemicLoad": 4,
+    "glycemicCategory": "low",
+    "nutrientDensityScore": 14.2,
+    "satietyScore": 86,
+    "inflammatoryIndex": -0.9,
+    "novaClass": 1,
+    "oracScore": 2941,
+    "dietaryTags": ["vegan", "gluten_free", "paleo", "whole30", "raw"],
+    "allergens": ["birch_pollen_cross_reactivity"],
+    "insight": "The ultimate fiber champion delivering 22% DV per fruit with exceptional satiety, plus unique pectin for cholesterol reduction and gut health.",
+    "focusGrades": {
+      "balanced": {
+        "grade": "A",
+        "score": 90,
+        "insight": "Exceptional fiber (5.5g, 22% DV) creates outstanding satiety and nutritional balance. Strong antioxidant profile (ORAC 2941) with good potassium (206mg).",
+        "pros": ["Exceptional fiber (5.5g, 22% DV)", "Outstanding ORAC score (2941)", "Good potassium (206mg)", "Excellent satiety"],
+        "cons": ["Modest vitamin content", "Low protein"]
+      },
+      "heart_health": {
+        "grade": "A",
+        "score": 93,
+        "insight": "Exceptional soluble fiber (pectin) powerfully lowers LDL cholesterol. Potassium supports blood pressure. Polyphenols protect arterial health. Zero saturated fat.",
+        "pros": ["Pectin dramatically lowers cholesterol", "Good potassium for blood pressure", "Polyphenols protect arteries", "Zero saturated fat"],
+        "cons": []
+      },
+      "muscle_building": {
+        "grade": "D+",
+        "score": 62,
+        "insight": "Very low protein (0.6g) offers minimal muscle-building value. Potassium (206mg) helps prevent cramps. Good for lean gains due to low calories.",
+        "pros": ["Potassium prevents cramps", "Hydrating for recovery (84% water)", "Low calorie for cutting"],
+        "cons": ["Very low protein (0.6g)", "Won't build muscle alone", "Must pair with protein source"]
+      },
+      "energy": {
+        "grade": "B+",
+        "score": 83,
+        "insight": "Exceptional fiber (5.5g) provides sustained energy release from natural sugars. High water (84%) fights fatigue. Steady glucose without spikes.",
+        "pros": ["Exceptional fiber for sustained energy", "No energy crash", "Hydrating (84% water)", "Steady blood sugar"],
+        "cons": ["Modest energy density"]
+      },
+      "weight_management": {
+        "grade": "A",
+        "score": 94,
+        "insight": "Exceptional satiety from outstanding fiber (5.5g) combined with high water (84%) creates powerful fullness. Only 101 calories. Pectin reduces appetite hormones.",
+        "pros": ["Exceptional fiber creates fullness (5.5g)", "Outstanding satiety score (86)", "Pectin reduces appetite", "High water-to-calorie ratio"],
+        "cons": ["Sugar content (17.2g) if eating multiple"]
+      },
+      "brain_focus": {
+        "grade": "B",
+        "score": 80,
+        "insight": "Polyphenols and antioxidants protect against cognitive decline. Fiber stabilizes blood sugar for steady focus. Copper supports neurotransmitter function.",
+        "pros": ["Strong antioxidants (ORAC 2941)", "Fiber stabilizes blood sugar", "Copper for neurotransmitters"],
+        "cons": ["No omega-3 fatty acids", "Limited B vitamins", "Modest folate"]
+      },
+      "gut_health": {
+        "grade": "A",
+        "score": 95,
+        "insight": "Exceptional fiber (5.5g) with high pectin content powerfully feeds beneficial bacteria and improves gut motility. One of the best fruits for digestive health.",
+        "pros": ["Exceptional fiber (5.5g, 22% DV)", "Pectin acts as powerful prebiotic", "Improves gut motility", "Feeds beneficial bacteria"],
+        "cons": ["May cause gas in sensitive individuals"]
+      },
+      "blood_sugar": {
+        "grade": "A",
+        "score": 92,
+        "insight": "Very low GI (38) and low glycemic load (4) from exceptional fiber (5.5g). Pectin dramatically slows sugar absorption. Excellent for diabetes management.",
+        "pros": ["Very low glycemic index (38)", "Low glycemic load (4)", "Exceptional fiber (5.5g)", "Pectin slows sugar absorption dramatically"],
+        "cons": []
+      },
+      "bone_joint": {
+        "grade": "B",
+        "score": 78,
+        "insight": "Vitamin K (7.8mcg) supports bone mineralization. Strong antioxidants reduce joint inflammation. Copper aids collagen formation.",
+        "pros": ["Vitamin K for bone health", "Anti-inflammatory polyphenols", "Copper for collagen"],
+        "cons": ["Low calcium (16mg)", "Modest mineral content"]
+      },
+      "anti_inflammatory": {
+        "grade": "A",
+        "score": 90,
+        "insight": "Outstanding ORAC score (2941) with quercetin, catechins, and chlorogenic acid deliver powerful anti-inflammatory benefits. Fiber reduces systemic inflammation.",
+        "pros": ["Outstanding ORAC score (2941)", "Quercetin fights inflammation", "Multiple polyphenols", "Fiber reduces inflammation"],
+        "cons": []
+      }
+    },
+    "bioavailability": {
+      "fiber": "Pectin in skin and flesh; eat with skin for maximum benefit",
+      "polyphenols": "Concentrated in skin; better absorbed from ripe pears"
+    },
+    "pairWith": [
+      { "food": "cheese", "reason": "Classic pairing adds protein and fat for balanced snack" },
+      { "food": "walnuts", "reason": "Adds omega-3, protein, and enhances polyphenol absorption" },
+      { "food": "almond_butter", "reason": "Protein and healthy fats create complete, satisfying snack" }
+    ],
+    "avoidWith": [
+      { "food": "birch_allergen_sensitive", "reason": "May cause oral allergy syndrome in birch pollen-sensitive individuals" }
+    ],
+    "bestTiming": {
+      "preWorkout": false,
+      "postWorkout": false,
+      "morning": true,
+      "beforeBed": true
+    },
+    "digestionTime": "medium",
+    "portionVisual": "1 medium pear fits in palm, about size of a light bulb",
+    "tips": {
+      "storage": "Ripen at room temp until neck yields to gentle pressure, then refrigerate for up to 5 days",
+      "selection": "Press gently near stem—should yield slightly when ripe; avoid bruised or very soft pears",
+      "preparation": "Eat skin for maximum fiber and antioxidants; ripen faster by placing in paper bag with banana"
+    }
+  },
+  "pears": {
+    "name": "Pear, raw",
+    "fdcId": "169118",
+    "quantity": 1,
+    "unit": "medium (178g)",
+    "mealType": "snack",
+    "foodGroups": ["fruit"],
+    "subCategory": "pome_fruit",
+    "calories": 101,
+    "protein": 0.6,
+    "carbs": 27,
+    "fat": 0.2,
+    "fiber": 5.5,
+    "sugar": 17.2,
+    "sodium": 2,
+    "saturatedFat": 0,
+    "transFat": 0,
+    "cholesterol": 0,
+    "potassium": 206,
+    "calcium": 16,
+    "iron": 0.3,
+    "magnesium": 13,
+    "zinc": 0.2,
+    "vitaminA": 2,
+    "vitaminC": 7.7,
+    "vitaminD": 0,
+    "vitaminE": 0.2,
+    "vitaminK": 7.8,
+    "thiamin": 0.02,
+    "riboflavin": 0.05,
+    "niacin": 0.3,
+    "vitaminB6": 0.05,
+    "folate": 13,
+    "vitaminB12": 0,
+    "choline": 9.8,
+    "phosphorus": 21,
+    "selenium": 0.2,
+    "copper": 0.14,
+    "manganese": 0.09,
+    "caffeine": 0,
+    "water": 149,
+    "monounsaturatedFat": 0.04,
+    "polyunsaturatedFat": 0.09,
+    "omega3": { "ala": 0.02, "epa": 0, "dha": 0 },
+    "omega6": { "linoleicAcid": 0.06 },
+    "omegaRatio": 3,
+    "glycemicIndex": 38,
+    "glycemicLoad": 4,
+    "glycemicCategory": "low",
+    "nutrientDensityScore": 14.2,
+    "satietyScore": 86,
+    "inflammatoryIndex": -0.9,
+    "novaClass": 1,
+    "oracScore": 2941,
+    "dietaryTags": ["vegan", "gluten_free", "paleo", "whole30", "raw"],
+    "allergens": ["birch_pollen_cross_reactivity"],
+    "insight": "The ultimate fiber champion delivering 22% DV per fruit with exceptional satiety, plus unique pectin for cholesterol reduction and gut health.",
+    "focusGrades": {
+      "balanced": {
+        "grade": "A",
+        "score": 90,
+        "insight": "Exceptional fiber (5.5g, 22% DV) creates outstanding satiety and nutritional balance. Strong antioxidant profile (ORAC 2941) with good potassium (206mg).",
+        "pros": ["Exceptional fiber (5.5g, 22% DV)", "Outstanding ORAC score (2941)", "Good potassium (206mg)", "Excellent satiety"],
+        "cons": ["Modest vitamin content", "Low protein"]
+      },
+      "heart_health": {
+        "grade": "A",
+        "score": 93,
+        "insight": "Exceptional soluble fiber (pectin) powerfully lowers LDL cholesterol. Potassium supports blood pressure. Polyphenols protect arterial health. Zero saturated fat.",
+        "pros": ["Pectin dramatically lowers cholesterol", "Good potassium for blood pressure", "Polyphenols protect arteries", "Zero saturated fat"],
+        "cons": []
+      },
+      "muscle_building": {
+        "grade": "D+",
+        "score": 62,
+        "insight": "Very low protein (0.6g) offers minimal muscle-building value. Potassium (206mg) helps prevent cramps. Good for lean gains due to low calories.",
+        "pros": ["Potassium prevents cramps", "Hydrating for recovery (84% water)", "Low calorie for cutting"],
+        "cons": ["Very low protein (0.6g)", "Won't build muscle alone", "Must pair with protein source"]
+      },
+      "energy": {
+        "grade": "B+",
+        "score": 83,
+        "insight": "Exceptional fiber (5.5g) provides sustained energy release from natural sugars. High water (84%) fights fatigue. Steady glucose without spikes.",
+        "pros": ["Exceptional fiber for sustained energy", "No energy crash", "Hydrating (84% water)", "Steady blood sugar"],
+        "cons": ["Modest energy density"]
+      },
+      "weight_management": {
+        "grade": "A",
+        "score": 94,
+        "insight": "Exceptional satiety from outstanding fiber (5.5g) combined with high water (84%) creates powerful fullness. Only 101 calories. Pectin reduces appetite hormones.",
+        "pros": ["Exceptional fiber creates fullness (5.5g)", "Outstanding satiety score (86)", "Pectin reduces appetite", "High water-to-calorie ratio"],
+        "cons": ["Sugar content (17.2g) if eating multiple"]
+      },
+      "brain_focus": {
+        "grade": "B",
+        "score": 80,
+        "insight": "Polyphenols and antioxidants protect against cognitive decline. Fiber stabilizes blood sugar for steady focus. Copper supports neurotransmitter function.",
+        "pros": ["Strong antioxidants (ORAC 2941)", "Fiber stabilizes blood sugar", "Copper for neurotransmitters"],
+        "cons": ["No omega-3 fatty acids", "Limited B vitamins", "Modest folate"]
+      },
+      "gut_health": {
+        "grade": "A",
+        "score": 95,
+        "insight": "Exceptional fiber (5.5g) with high pectin content powerfully feeds beneficial bacteria and improves gut motility. One of the best fruits for digestive health.",
+        "pros": ["Exceptional fiber (5.5g, 22% DV)", "Pectin acts as powerful prebiotic", "Improves gut motility", "Feeds beneficial bacteria"],
+        "cons": ["May cause gas in sensitive individuals"]
+      },
+      "blood_sugar": {
+        "grade": "A",
+        "score": 92,
+        "insight": "Very low GI (38) and low glycemic load (4) from exceptional fiber (5.5g). Pectin dramatically slows sugar absorption. Excellent for diabetes management.",
+        "pros": ["Very low glycemic index (38)", "Low glycemic load (4)", "Exceptional fiber (5.5g)", "Pectin slows sugar absorption dramatically"],
+        "cons": []
+      },
+      "bone_joint": {
+        "grade": "B",
+        "score": 78,
+        "insight": "Vitamin K (7.8mcg) supports bone mineralization. Strong antioxidants reduce joint inflammation. Copper aids collagen formation.",
+        "pros": ["Vitamin K for bone health", "Anti-inflammatory polyphenols", "Copper for collagen"],
+        "cons": ["Low calcium (16mg)", "Modest mineral content"]
+      },
+      "anti_inflammatory": {
+        "grade": "A",
+        "score": 90,
+        "insight": "Outstanding ORAC score (2941) with quercetin, catechins, and chlorogenic acid deliver powerful anti-inflammatory benefits. Fiber reduces systemic inflammation.",
+        "pros": ["Outstanding ORAC score (2941)", "Quercetin fights inflammation", "Multiple polyphenols", "Fiber reduces inflammation"],
+        "cons": []
+      }
+    },
+    "bioavailability": {
+      "fiber": "Pectin in skin and flesh; eat with skin for maximum benefit",
+      "polyphenols": "Concentrated in skin; better absorbed from ripe pears"
+    },
+    "pairWith": [
+      { "food": "cheese", "reason": "Classic pairing adds protein and fat for balanced snack" },
+      { "food": "walnuts", "reason": "Adds omega-3, protein, and enhances polyphenol absorption" },
+      { "food": "almond_butter", "reason": "Protein and healthy fats create complete, satisfying snack" }
+    ],
+    "avoidWith": [
+      { "food": "birch_allergen_sensitive", "reason": "May cause oral allergy syndrome in birch pollen-sensitive individuals" }
+    ],
+    "bestTiming": {
+      "preWorkout": false,
+      "postWorkout": false,
+      "morning": true,
+      "beforeBed": true
+    },
+    "digestionTime": "medium",
+    "portionVisual": "1 medium pear fits in palm, about size of a light bulb",
+    "tips": {
+      "storage": "Ripen at room temp until neck yields to gentle pressure, then refrigerate for up to 5 days",
+      "selection": "Press gently near stem—should yield slightly when ripe; avoid bruised or very soft pears",
+      "preparation": "Eat skin for maximum fiber and antioxidants; ripen faster by placing in paper bag with banana"
+    }
+  },
+  "raspberry": {
+    "name": "Raspberries, raw",
+    "fdcId": "167755",
+    "quantity": 1,
+    "unit": "cup (123g)",
+    "mealType": "snack",
+    "foodGroups": ["fruit"],
+    "subCategory": "berry",
+    "calories": 64,
+    "protein": 1.5,
+    "carbs": 14.7,
+    "fat": 0.8,
+    "fiber": 8,
+    "sugar": 5.4,
+    "sodium": 1,
+    "saturatedFat": 0.02,
+    "transFat": 0,
+    "cholesterol": 0,
+    "potassium": 186,
+    "calcium": 31,
+    "iron": 0.9,
+    "magnesium": 27,
+    "zinc": 0.5,
+    "vitaminA": 2,
+    "vitaminC": 32.2,
+    "vitaminD": 0,
+    "vitaminE": 1.1,
+    "vitaminK": 9.6,
+    "thiamin": 0.04,
+    "riboflavin": 0.05,
+    "niacin": 0.7,
+    "vitaminB6": 0.07,
+    "folate": 26,
+    "vitaminB12": 0,
+    "choline": 15.4,
+    "phosphorus": 36,
+    "selenium": 0.2,
+    "copper": 0.11,
+    "manganese": 0.8,
+    "caffeine": 0,
+    "water": 106,
+    "monounsaturatedFat": 0.06,
+    "polyunsaturatedFat": 0.46,
+    "omega3": { "ala": 0.16, "epa": 0, "dha": 0 },
+    "omega6": { "linoleicAcid": 0.25 },
+    "omegaRatio": 1.6,
+    "glycemicIndex": 25,
+    "glycemicLoad": 2,
+    "glycemicCategory": "low",
+    "nutrientDensityScore": 42.8,
+    "satietyScore": 91,
+    "inflammatoryIndex": -3.8,
+    "novaClass": 1,
+    "oracScore": 5065,
+    "dietaryTags": ["vegan", "gluten_free", "paleo", "whole30", "raw", "keto_friendly"],
+    "allergens": [],
+    "insight": "The ultimate superfruit combining exceptional fiber (8g, 32% DV), extraordinarily low sugar, and the highest antioxidant power with unique ellagic acid for cancer prevention.",
+    "focusGrades": {
+      "balanced": {
+        "grade": "A+",
+        "score": 97,
+        "insight": "Exceptional fiber (8g, 32% DV) with remarkably low sugar (5.4g) creates perfect nutritional balance. Outstanding antioxidants (ORAC 5065) and micronutrients.",
+        "pros": ["Exceptional fiber (8g, 32% DV)", "Remarkably low sugar (5.4g)", "Outstanding ORAC (5065)", "Excellent vitamin C (32mg)"],
+        "cons": []
+      },
+      "heart_health": {
+        "grade": "A+",
+        "score": 96,
+        "insight": "Exceptional fiber lowers cholesterol, ellagic acid and anthocyanins protect cardiovascular system powerfully. Polyphenols improve blood flow. Zero saturated fat.",
+        "pros": ["Exceptional fiber lowers cholesterol", "Ellagic acid protects heart", "Anthocyanins reduce heart disease risk", "Zero saturated fat"],
+        "cons": []
+      },
+      "muscle_building": {
+        "grade": "C+",
+        "score": 71,
+        "insight": "Low protein (1.5g) but exceptional antioxidants (ORAC 5065) reduce exercise-induced oxidative stress. Vitamin C (32mg) supports collagen in muscle tissue.",
+        "pros": ["Antioxidants reduce exercise stress", "Vitamin C for muscle tissue", "Low calorie for lean gains"],
+        "cons": ["Low protein (1.5g)", "Won't build muscle alone", "Must pair with protein"]
+      },
+      "energy": {
+        "grade": "A-",
+        "score": 88,
+        "insight": "Exceptional fiber (8g) provides sustained energy without blood sugar spikes. Very low sugar (5.4g) prevents crashes. Manganese supports energy metabolism.",
+        "pros": ["Exceptional fiber for sustained energy", "Very low sugar prevents crashes", "Manganese aids metabolism", "No energy dips"],
+        "cons": ["Lower energy density than some fruits"]
+      },
+      "weight_management": {
+        "grade": "A+",
+        "score": 98,
+        "insight": "Only 64 calories with exceptional fiber (8g) and very low sugar (5.4g) create outstanding satiety. One of the best fruits for weight loss. High volume-to-calorie ratio.",
+        "pros": ["Outstanding satiety score (91)", "Exceptional fiber (8g)", "Very low sugar (5.4g)", "Only 64 calories"],
+        "cons": []
+      },
+      "brain_focus": {
+        "grade": "A",
+        "score": 91,
+        "insight": "Exceptional polyphenols and anthocyanins powerfully protect against cognitive decline. Vitamin C supports neurotransmitters. Fiber stabilizes blood sugar for focus.",
+        "pros": ["Polyphenols protect brain powerfully", "Outstanding ORAC (5065)", "Vitamin C for neurotransmitters", "Fiber stabilizes focus"],
+        "cons": ["No omega-3 DHA/EPA"]
+      },
+      "gut_health": {
+        "grade": "A+",
+        "score": 97,
+        "insight": "Exceptional fiber (8g, 32% DV) powerfully feeds beneficial bacteria. Ellagic acid and polyphenols improve microbiome diversity. Anti-inflammatory for gut lining.",
+        "pros": ["Exceptional fiber (8g, 32% DV)", "Powerful prebiotic effects", "Polyphenols improve microbiome", "Anti-inflammatory for gut"],
+        "cons": ["Seeds may irritate some people"]
+      },
+      "blood_sugar": {
+        "grade": "A+",
+        "score": 99,
+        "insight": "Very low GI (25) and glycemic load (2) with exceptional fiber (8g) and very low sugar (5.4g). Absolutely excellent for diabetes management.",
+        "pros": ["Very low glycemic index (25)", "Exceptional fiber (8g)", "Very low sugar (5.4g)", "Glycemic load only 2"],
+        "cons": []
+      },
+      "bone_joint": {
+        "grade": "A",
+        "score": 90,
+        "insight": "Exceptional anti-inflammatory properties (index -3.8) powerfully protect joints. Vitamin K, manganese, and magnesium support bone health. Vitamin C aids collagen.",
+        "pros": ["Exceptional anti-inflammatory for joints", "Vitamin K and manganese for bones", "Vitamin C for collagen", "Magnesium (27mg)"],
+        "cons": ["Modest calcium (31mg)"]
+      },
+      "anti_inflammatory": {
+        "grade": "A+",
+        "score": 99,
+        "insight": "Exceptional ORAC score (5065) with ellagic acid, anthocyanins, and quercetin deliver extraordinary anti-inflammatory power. One of nature's most potent anti-inflammatory foods.",
+        "pros": ["Exceptional ORAC score (5065)", "Ellagic acid fights inflammation", "Outstanding anti-inflammatory index (-3.8)", "Multiple powerful polyphenols"],
+        "cons": []
+      }
+    },
+    "bioavailability": {
+      "ellagicAcid": "Better absorbed from fresh berries; enhanced with vitamin C",
+      "anthocyanins": "Fat enhances absorption; pair with yogurt or nuts"
+    },
+    "pairWith": [
+      { "food": "greek_yogurt", "reason": "Protein balances carbs, probiotics complement fiber, fat enhances polyphenol absorption" },
+      { "food": "chia_seeds", "reason": "Adds omega-3 and creates complete superfood combination" },
+      { "food": "dark_chocolate", "reason": "Amplifies antioxidant benefits and improves absorption" }
+    ],
+    "avoidWith": [
+      { "food": "high_oxalate_sensitive", "reason": "Contains oxalates which may contribute to kidney stones in susceptible individuals" }
+    ],
+    "bestTiming": {
+      "preWorkout": false,
+      "postWorkout": true,
+      "morning": true,
+      "beforeBed": true
+    },
+    "digestionTime": "fast",
+    "portionVisual": "1 cup equals size of a baseball or 1 closed fist",
+    "tips": {
+      "storage": "Refrigerate unwashed in shallow container for 2-3 days; freeze for up to 12 months",
+      "selection": "Choose plump, firm berries with bright color; avoid mushy, moldy, or leaking berries",
+      "preparation": "Rinse just before eating to prevent mold; freeze on tray before bagging for smoothies; eat whole for maximum fiber"
+    }
+  }
+}

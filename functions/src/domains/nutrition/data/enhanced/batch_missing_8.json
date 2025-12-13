@@ -1,0 +1,584 @@
+{
+  "sardines": {
+    "name": "Sardines",
+    "calories": 208,
+    "protein": 24.6,
+    "carbs": 0,
+    "fat": 11.5,
+    "fiber": 0,
+    "sugar": 0,
+    "sodium": 307,
+    "saturatedFat": 1.5,
+    "cholesterol": 142,
+    "potassium": 397,
+    "calcium": 382,
+    "iron": 2.9,
+    "magnesium": 39,
+    "vitaminA": 108,
+    "vitaminC": 0,
+    "vitaminD": 4.8,
+    "vitaminB12": 8.9,
+    "glycemicIndex": 0,
+    "glycemicLoad": 0,
+    "allergens": ["fish"],
+    "servingSize": 100,
+    "servingUnit": "g",
+    "focusGrades": {
+      "balanced": {
+        "grade": "A",
+        "score": 92,
+        "insight": "Exceptional nutrient density with complete protein, omega-3s, and nearly 40% daily calcium in a small serving",
+        "pros": ["Zero carbs, complete protein source", "Rich in omega-3 EPA and DHA", "Excellent calcium and vitamin D for nutrient synergy"],
+        "cons": ["High sodium from canning process", "Fishy taste may limit palatability"]
+      },
+      "heart_health": {
+        "grade": "A+",
+        "score": 97,
+        "insight": "One of the best heart foods available - 1.5g omega-3s per serving reduce triglycerides and inflammation",
+        "pros": ["EPA/DHA omega-3s lower cardiovascular risk by 20-30%", "Low saturated fat (1.5g) with healthy PUFA ratio", "Potassium and magnesium support blood pressure"],
+        "cons": ["Sodium content (307mg) requires monitoring for hypertension", "Cholesterol (142mg) though dietary impact is minimal with omega-3s"]
+      },
+      "muscle_building": {
+        "grade": "A",
+        "score": 94,
+        "insight": "Premium protein source with 24.6g per 100g - complete amino acid profile with high leucine for muscle protein synthesis",
+        "pros": ["Complete protein with optimal BCAA ratios", "Vitamin D (4.8mcg) enhances muscle function and recovery", "Omega-3s reduce exercise-induced inflammation"],
+        "cons": ["No carbs for glycogen replenishment post-workout", "Requires pairing with complex carbs for optimal anabolic response"]
+      },
+      "energy": {
+        "grade": "B+",
+        "score": 86,
+        "insight": "Provides sustained energy through healthy fats and protein without blood sugar spikes - ideal for stable all-day fuel",
+        "pros": ["High calorie density (208 kcal) for energy needs", "B12 (8.9mcg - 370% DV) critical for energy metabolism", "Iron (2.9mg) prevents fatigue from anemia"],
+        "cons": ["Zero carbs mean no quick energy for high-intensity activities", "Requires 2-3 hours for complete digestion and energy release"]
+      },
+      "weight_management": {
+        "grade": "A-",
+        "score": 88,
+        "insight": "High protein (24.6g) and healthy fats increase satiety for 4-6 hours while boosting metabolism by 20-30%",
+        "pros": ["Protein has highest thermic effect (30% calories burned in digestion)", "Omega-3s improve insulin sensitivity and fat oxidation", "Zero carbs prevent insulin spikes that promote fat storage"],
+        "cons": ["Calorie-dense (208 kcal/100g) requires portion awareness", "Sodium may cause temporary water retention"]
+      },
+      "brain_focus": {
+        "grade": "A",
+        "score": 93,
+        "insight": "Omega-3 DHA is a primary structural component of brain cell membranes - sardines provide 1000mg+ per serving",
+        "pros": ["DHA improves cognitive function and memory retention", "B12 (370% DV) essential for neurotransmitter synthesis", "Vitamin D supports mood regulation and neuroprotection"],
+        "cons": ["Benefits accumulate over weeks/months, not immediate", "Mercury content low but present in all fish"]
+      },
+      "gut_health": {
+        "grade": "B",
+        "score": 78,
+        "insight": "Zero fiber but omega-3s reduce gut inflammation and support intestinal barrier integrity",
+        "pros": ["Anti-inflammatory omega-3s heal leaky gut syndrome", "Protein feeds beneficial gut bacteria indirectly", "Vitamin D modulates gut immune response"],
+        "cons": ["No fiber means no direct prebiotic benefits", "High sodium may alter gut microbiome composition", "Canning process destroys some heat-sensitive nutrients"]
+      },
+      "blood_sugar": {
+        "grade": "A+",
+        "score": 98,
+        "insight": "Zero glycemic impact - perfect for diabetics with omega-3s improving insulin sensitivity by 15-25%",
+        "pros": ["Zero carbs eliminate blood sugar spikes entirely", "Omega-3s enhance insulin receptor sensitivity", "Protein slows gastric emptying when paired with carbs"],
+        "cons": ["Must be combined with low-GI carbs for balanced meals", "No standalone role in stabilizing existing blood sugar"]
+      },
+      "bone_joint": {
+        "grade": "A+",
+        "score": 96,
+        "insight": "Exceptional bone support with 382mg calcium (38% DV) plus vitamin D for absorption - rare combination in whole foods",
+        "pros": ["Calcium + D synergy maximizes bone mineral density", "Omega-3s reduce inflammatory joint pain in arthritis", "Edible bones provide bioavailable calcium phosphate", "Vitamin D (4.8mcg) critical for calcium metabolism"],
+        "cons": ["Sodium may increase urinary calcium loss slightly", "Requires vitamin K2 (not present) for optimal calcium utilization"]
+      },
+      "anti_inflammatory": {
+        "grade": "A+",
+        "score": 97,
+        "insight": "Elite anti-inflammatory food with 1.5g omega-3s per serving - clinically proven to reduce CRP and IL-6 markers",
+        "pros": ["EPA/DHA omega-3s are precursors to anti-inflammatory resolvins", "Studies show 30-40% reduction in inflammatory markers", "Low omega-6 to omega-3 ratio (ideal <4:1)", "Selenium (52mcg) provides antioxidant protection"],
+        "cons": ["Requires consistent intake (3-4x/week) for sustained effects", "Canning in vegetable oil may add pro-inflammatory omega-6s"]
+      }
+    }
+  },
+  "skim_milk": {
+    "name": "Skim Milk",
+    "calories": 34,
+    "protein": 3.4,
+    "carbs": 5.0,
+    "fat": 0.1,
+    "fiber": 0,
+    "sugar": 5.0,
+    "sodium": 42,
+    "saturatedFat": 0.1,
+    "cholesterol": 2,
+    "potassium": 150,
+    "calcium": 125,
+    "iron": 0.03,
+    "magnesium": 11,
+    "vitaminA": 15,
+    "vitaminC": 0,
+    "vitaminD": 1.3,
+    "vitaminB12": 0.5,
+    "glycemicIndex": 32,
+    "glycemicLoad": 4,
+    "allergens": ["milk"],
+    "servingSize": 100,
+    "servingUnit": "ml",
+    "focusGrades": {
+      "balanced": {
+        "grade": "B+",
+        "score": 85,
+        "insight": "Excellent calcium and protein with minimal fat, but natural milk sugar (lactose) limits versatility for some diets",
+        "pros": ["Low calorie (34 kcal) with quality protein", "Fortified with vitamin D for calcium absorption", "Complete amino acid profile"],
+        "cons": ["All 5g carbs are sugar (lactose)", "Zero fat reduces satiety", "65% of adults have some lactose intolerance"]
+      },
+      "heart_health": {
+        "grade": "B+",
+        "score": 84,
+        "insight": "Nearly fat-free (0.1g) eliminates saturated fat concerns while providing potassium for blood pressure control",
+        "pros": ["Minimal saturated fat (0.1g) vs 3.1g in whole milk", "Potassium (150mg) helps counteract sodium effects", "Low cholesterol (2mg) safe for hyperlipidemia"],
+        "cons": ["Removes beneficial CLA (conjugated linoleic acid) found in milk fat", "No omega-3s for anti-inflammatory benefits", "Some studies suggest low-fat dairy less protective than full-fat"]
+      },
+      "muscle_building": {
+        "grade": "B",
+        "score": 82,
+        "insight": "Decent protein (3.4g/100ml) with fast-absorbing whey and slow casein, but requires large volumes for workout recovery",
+        "pros": ["20% whey (fast) + 80% casein (slow) protein blend", "Leucine content supports muscle protein synthesis", "Carbs (5g) provide small glycogen boost"],
+        "cons": ["Need 700ml+ for 20g protein target post-workout", "Low fat reduces testosterone production for muscle growth", "Lactose may cause bloating during training"]
+      },
+      "energy": {
+        "grade": "C+",
+        "score": 72,
+        "insight": "Low calorie density (34 kcal/100ml) and minimal fat means quick digestion but short-lived energy",
+        "pros": ["Fast-digesting carbs for quick pre-workout fuel", "B12 (0.5mcg) supports energy metabolism", "Hydrating fluid for electrolyte balance"],
+        "cons": ["Very low calorie density requires high volume", "No fat for sustained energy release", "Lactose sugar provides minimal energy compared to complex carbs"]
+      },
+      "weight_management": {
+        "grade": "A-",
+        "score": 88,
+        "insight": "Exceptional for weight loss - high protein-to-calorie ratio (10% protein by weight) with minimal fat and sugar",
+        "pros": ["Only 34 calories per 100ml enables large, satisfying servings", "Protein increases satiety and thermic effect", "Calcium (125mg) linked to fat oxidation in studies"],
+        "cons": ["Low fat reduces satiety compared to whole milk", "Lactose sugar (5g) can trigger cravings in some people", "Liquid calories less filling than solid foods"]
+      },
+      "brain_focus": {
+        "grade": "C+",
+        "score": 71,
+        "insight": "Provides B12 for neurotransmitter synthesis but lacks healthy fats critical for brain structure and function",
+        "pros": ["B12 (0.5mcg - 20% DV) supports myelin sheath production", "Protein provides amino acids for neurotransmitters", "Lactose provides quick glucose for brain fuel"],
+        "cons": ["No omega-3 DHA for cognitive enhancement", "Removed fat eliminates fat-soluble nutrient absorption", "Quick sugar spike and crash affects focus stability"]
+      },
+      "gut_health": {
+        "grade": "C-",
+        "score": 65,
+        "insight": "Problematic for gut health - 65% of adults lack lactase enzyme causing bloating, gas, and inflammation",
+        "pros": ["Protein feeds beneficial gut bacteria", "Calcium supports intestinal barrier function", "Liquid form easy to digest for some"],
+        "cons": ["Lactose intolerance causes gut inflammation in majority", "No fiber for microbiome support", "Pasteurization destroys natural probiotics", "A1 casein linked to digestive discomfort in studies"]
+      },
+      "blood_sugar": {
+        "grade": "B",
+        "score": 80,
+        "insight": "Low glycemic index (32) and protein slow lactose absorption, but all 5g carbs are simple sugar",
+        "pros": ["Protein slows gastric emptying and sugar absorption", "Low GI (32) compared to most beverages", "Minimal impact on insulin when consumed alone"],
+        "cons": ["All carbs are lactose (milk sugar) with no fiber buffer", "Liquid form absorbs faster than solid foods", "Glycemic response varies with lactase production"]
+      },
+      "bone_joint": {
+        "grade": "A",
+        "score": 91,
+        "insight": "Gold standard for bone health - bioavailable calcium (125mg) with vitamin D fortification ensures optimal absorption",
+        "pros": ["Calcium + vitamin D combination maximizes bone density", "Phosphorus (101mg) works with calcium for bone matrix", "Vitamin D (1.3mcg) critical for calcium metabolism", "Protein supports bone structure beyond minerals"],
+        "cons": ["Some studies suggest dairy increases fracture risk (controversial)", "Vitamin K2 (not present) needed for calcium utilization", "Acidic byproducts may leach calcium (debated theory)"]
+      },
+      "anti_inflammatory": {
+        "grade": "C",
+        "score": 68,
+        "insight": "Mixed effects - dairy proteins can trigger inflammation in sensitive individuals while calcium may reduce inflammatory markers",
+        "pros": ["Calcium linked to lower CRP in some studies", "Low fat removes potential inflammatory lipids", "Bioactive peptides in casein have anti-inflammatory properties"],
+        "cons": ["A1 casein triggers inflammation in lactose-intolerant individuals", "Dairy sensitivity affects 30-50% of population", "No omega-3s or polyphenols for anti-inflammatory action", "Hormones and antibiotics in conventional milk may increase inflammation"]
+      }
+    }
+  },
+  "soda": {
+    "name": "Soda",
+    "calories": 41,
+    "protein": 0,
+    "carbs": 10.6,
+    "fat": 0,
+    "fiber": 0,
+    "sugar": 10.6,
+    "sodium": 4,
+    "saturatedFat": 0,
+    "cholesterol": 0,
+    "potassium": 2,
+    "calcium": 2,
+    "iron": 0.1,
+    "magnesium": 1,
+    "vitaminA": 0,
+    "vitaminC": 0,
+    "vitaminD": 0,
+    "vitaminB12": 0,
+    "glycemicIndex": 63,
+    "glycemicLoad": 16,
+    "allergens": [],
+    "servingSize": 100,
+    "servingUnit": "ml",
+    "focusGrades": {
+      "balanced": {
+        "grade": "F",
+        "score": 15,
+        "insight": "Nutritionally void - pure liquid sugar with zero vitamins, minerals, protein, or fiber providing only empty calories",
+        "pros": ["Low sodium (4mg) safe for hypertension", "Zero fat and cholesterol", "Provides quick hydration"],
+        "cons": ["All 41 calories from added sugar with no nutrients", "No protein, fiber, or healthy fats", "Acidic pH (2.5-3.5) erodes tooth enamel", "Displaces nutrient-dense beverages in diet"]
+      },
+      "heart_health": {
+        "grade": "F",
+        "score": 8,
+        "insight": "Dangerous for cardiovascular health - high sugar intake increases heart disease risk by 38% and stroke risk by 16%",
+        "pros": ["Zero fat and cholesterol technically safe", "Low sodium doesn't raise blood pressure directly"],
+        "cons": ["10.6g sugar per 100ml drives triglyceride production", "Daily consumption linked to 20% higher heart disease mortality", "High fructose increases LDL oxidation and arterial inflammation", "Caffeine (in colas) may raise blood pressure acutely", "Phosphoric acid may impair vascular function"]
+      },
+      "muscle_building": {
+        "grade": "D-",
+        "score": 35,
+        "insight": "Zero protein and nutrients make it useless for muscle building - only potential use is fast carbs immediately post-workout",
+        "pros": ["Quick-absorbing sugar can replenish glycogen post-workout", "Caffeine (in colas) may enhance workout performance", "Liquid form provides rapid nutrient delivery"],
+        "cons": ["Zero protein for muscle repair and synthesis", "No amino acids or BCAAs", "High sugar without protein promotes fat storage instead", "Acidic carbonation may impair protein absorption"]
+      },
+      "energy": {
+        "grade": "D",
+        "score": 40,
+        "insight": "Provides immediate sugar rush followed by energy crash within 30-60 minutes due to insulin spike",
+        "pros": ["Fast-absorbing sugar provides instant energy boost", "Caffeine (in colas - 10mg/100ml) enhances alertness", "Carbonation may improve perceived energy"],
+        "cons": ["Blood sugar spike triggers insulin crash and fatigue", "No sustained energy from protein or fat", "Caffeine dependency and tolerance develop quickly", "Energy crash often worse than initial fatigue"]
+      },
+      "weight_management": {
+        "grade": "F",
+        "score": 5,
+        "insight": "One of the worst beverages for weight - liquid sugar bypasses satiety signals leading to 200+ extra calories daily",
+        "pros": ["Zero fat technically low calorie per 100ml", "Can replace higher-calorie beverages in theory"],
+        "cons": ["Liquid calories don't trigger satiety hormones", "One can (355ml) = 146 empty calories + sugar crash cravings", "Fructose bypasses leptin signaling promoting overeating", "Daily soda linked to 1lb weight gain per month", "High sugar drives insulin resistance and fat storage"]
+      },
+      "brain_focus": {
+        "grade": "D-",
+        "score": 33,
+        "insight": "Brief caffeine and sugar boost followed by cognitive impairment from blood sugar crash and inflammatory effects",
+        "pros": ["Caffeine (in colas) temporarily improves alertness and reaction time", "Quick glucose provides immediate brain fuel", "Carbonation may enhance perceived mental clarity"],
+        "cons": ["Sugar crash impairs concentration within 1-2 hours", "High sugar linked to cognitive decline and dementia risk", "No B vitamins, omega-3s, or antioxidants for brain health", "Artificial colors linked to ADHD symptoms in children", "Insulin spikes disrupt neurotransmitter balance"]
+      },
+      "gut_health": {
+        "grade": "F",
+        "score": 12,
+        "insight": "Actively harms gut health - sugar feeds pathogenic bacteria while artificial sweeteners and acids damage microbiome",
+        "pros": ["Carbonation may aid digestion for some people", "Hydrating fluid prevents constipation"],
+        "cons": ["High sugar feeds Candida and harmful bacteria", "Artificial sweeteners (in diet versions) kill beneficial bacteria", "Phosphoric acid disrupts gut pH and mineral absorption", "Zero fiber starves beneficial microbes", "Studies show soda drinkers have 20% less microbial diversity"]
+      },
+      "blood_sugar": {
+        "grade": "F",
+        "score": 3,
+        "insight": "Catastrophic for blood sugar - 10.6g pure sugar with GI of 63 causes rapid spike and crash promoting insulin resistance",
+        "pros": ["Can quickly raise blood sugar during hypoglycemic emergency"],
+        "cons": ["High glycemic index (63) and load (16) spike blood sugar rapidly", "Liquid sugar absorbed faster than solid foods", "No fiber or protein to slow absorption", "Daily consumption increases diabetes risk by 26%", "Fructose drives hepatic insulin resistance", "One can equals 40g sugar - more than daily recommended limit"]
+      },
+      "bone_joint": {
+        "grade": "F",
+        "score": 10,
+        "insight": "Highly destructive to bones - phosphoric acid leaches calcium while displacing milk and calcium-rich beverages",
+        "pros": ["Minimal direct impact in very small quantities"],
+        "cons": ["Phosphoric acid binds calcium and promotes urinary loss", "Displaces calcium-rich beverages (milk, fortified drinks)", "Cola drinkers have 4% lower bone density in hips", "High sugar increases inflammatory joint pain", "Caffeine increases urinary calcium excretion", "Zero vitamin D or calcium for bone support"]
+      },
+      "anti_inflammatory": {
+        "grade": "F",
+        "score": 7,
+        "insight": "Pro-inflammatory beverage - high sugar triggers systemic inflammation while additives worsen inflammatory response",
+        "pros": ["Hydration supports cellular anti-inflammatory processes technically"],
+        "cons": ["High sugar raises CRP and inflammatory cytokines by 87%", "Fructose drives hepatic inflammation and fatty liver", "Artificial colors and preservatives trigger immune response", "Advanced glycation end-products (AGEs) from caramel color", "Daily soda linked to chronic inflammatory diseases", "Zero antioxidants or anti-inflammatory compounds"]
+      }
+    }
+  },
+  "syrup": {
+    "name": "Syrup",
+    "calories": 260,
+    "protein": 0,
+    "carbs": 67.0,
+    "fat": 0.1,
+    "fiber": 0,
+    "sugar": 60.0,
+    "sodium": 9,
+    "saturatedFat": 0,
+    "cholesterol": 0,
+    "potassium": 42,
+    "calcium": 67,
+    "iron": 1.2,
+    "magnesium": 14,
+    "vitaminA": 0,
+    "vitaminC": 0,
+    "vitaminD": 0,
+    "vitaminB12": 0,
+    "glycemicIndex": 54,
+    "glycemicLoad": 36,
+    "allergens": [],
+    "servingSize": 100,
+    "servingUnit": "g",
+    "focusGrades": {
+      "balanced": {
+        "grade": "F",
+        "score": 18,
+        "insight": "Concentrated sugar with minimal nutrients - 260 calories of nearly pure carbohydrates with trace minerals from maple sap",
+        "pros": ["Pure maple syrup contains trace minerals (calcium, iron, magnesium)", "Lower glycemic index (54) than table sugar (65)", "Contains 24+ antioxidant compounds in real maple syrup"],
+        "cons": ["90% of calories from sugar with zero protein or healthy fats", "Typical serving (2 tbsp = 40g) contains 104 calories and 24g sugar", "Pancake syrup (imitation) has zero nutrients - all corn syrup", "No fiber to slow sugar absorption"]
+      },
+      "heart_health": {
+        "grade": "F",
+        "score": 12,
+        "insight": "High sugar content drives triglyceride production and inflammation - frequent consumption increases cardiovascular disease risk significantly",
+        "pros": ["Zero saturated fat and cholesterol", "Real maple syrup contains polyphenols with mild cardioprotective effects", "Potassium (42mg) provides minor blood pressure benefit"],
+        "cons": ["60g sugar per 100g raises triglycerides and VLDL cholesterol", "High glycemic load (36) promotes insulin resistance", "Fructose component increases hepatic lipogenesis", "No omega-3s or heart-protective nutrients", "2 tbsp serving exceeds WHO daily added sugar limit"]
+      },
+      "muscle_building": {
+        "grade": "D",
+        "score": 38,
+        "insight": "Zero protein makes it useless for muscle synthesis - only potential role is post-workout glycogen replenishment",
+        "pros": ["Fast-absorbing carbs (67g) can rapidly restore muscle glycogen", "Liquid-like consistency enables quick digestion", "Minerals (calcium, magnesium) support muscle contraction"],
+        "cons": ["Absolutely zero protein for muscle repair", "No amino acids or BCAAs", "High sugar without protein promotes fat storage", "Must be paired with 20-30g protein for anabolic effect", "Inferior to complex carbs for sustained muscle energy"]
+      },
+      "energy": {
+        "grade": "C-",
+        "score": 62,
+        "insight": "Provides rapid energy spike from concentrated sugar but leads to crash within 1-2 hours without sustained fuel",
+        "pros": ["Very high calorie density (260/100g) for quick energy", "Fast-digesting simple sugars enter bloodstream rapidly", "Lower GI (54) than pure glucose means slightly slower release", "Manganese (33% DV in real maple) supports energy metabolism"],
+        "cons": ["Massive insulin spike followed by energy crash", "No protein or fat for sustained energy", "Pure sugar energy lasts 30-60 minutes maximum", "Frequent use leads to blood sugar dysregulation"]
+      },
+      "weight_management": {
+        "grade": "F",
+        "score": 8,
+        "insight": "Extremely calorie-dense (260/100g) pure sugar source that promotes fat storage and provides zero satiety",
+        "pros": ["Can be used in tiny amounts for sweetness", "Real maple has slightly more nutrients than refined sugar"],
+        "cons": ["2 tbsp (40g) = 104 calories of pure sugar", "Zero protein or fiber means no satiety", "Liquid consistency bypasses chewing and fullness signals", "Fructose promotes visceral fat accumulation", "Easy to overconsume - typical use exceeds healthy portions", "Triggers insulin spike promoting fat storage"]
+      },
+      "brain_focus": {
+        "grade": "D",
+        "score": 37,
+        "insight": "Brief glucose boost for brain energy followed by cognitive impairment from blood sugar crash and inflammation",
+        "pros": ["Quick glucose provides immediate brain fuel", "Manganese (in real maple) supports neurotransmitter synthesis", "Antioxidants in maple syrup may reduce oxidative stress"],
+        "cons": ["Blood sugar crash impairs concentration and memory", "High sugar linked to cognitive decline and Alzheimer's risk", "No omega-3s, B vitamins, or brain-protective nutrients", "Insulin spikes disrupt neurotransmitter balance", "Inflammation from sugar damages neurons over time"]
+      },
+      "gut_health": {
+        "grade": "D-",
+        "score": 35,
+        "insight": "High sugar content feeds harmful bacteria and yeast while providing zero fiber for beneficial microbes",
+        "pros": ["Real maple syrup contains oligosaccharides with prebiotic potential", "Polyphenols in maple may have mild anti-inflammatory gut effects", "No artificial additives in pure maple"],
+        "cons": ["60g sugar per 100g feeds Candida and pathogenic bacteria", "Zero fiber starves beneficial bacteria", "Imitation pancake syrup contains high fructose corn syrup (worse)", "Sugar disrupts gut microbiome diversity", "May worsen SIBO and dysbiosis"]
+      },
+      "blood_sugar": {
+        "grade": "F",
+        "score": 6,
+        "insight": "Extremely high glycemic load (36) causes severe blood sugar spikes - one serving exceeds safe carb limits for diabetics",
+        "pros": ["Lower GI (54) than table sugar (65) due to sucrose composition", "Real maple contains minerals that may slightly improve insulin response"],
+        "cons": ["67g carbs per 100g with 60g pure sugar", "Glycemic load of 36 is extremely high (>20 is high)", "2 tbsp serving = 26g carbs and GL of 14", "No fiber or protein to slow absorption", "Frequent use drives insulin resistance and prediabetes", "Dangerous for diabetics - causes rapid glucose spikes"]
+      },
+      "bone_joint": {
+        "grade": "D+",
+        "score": 45,
+        "insight": "Real maple provides calcium (67mg) and manganese (33% DV) for bone health, but high sugar promotes inflammation",
+        "pros": ["Calcium (67mg per 100g) supports bone density", "Manganese (0.8mg - 33% DV) critical for bone formation", "Magnesium (14mg) aids calcium absorption", "Zinc (1.5mg) supports collagen synthesis"],
+        "cons": ["High sugar increases inflammatory joint pain", "Sugar may increase urinary calcium loss", "No vitamin D or K2 for calcium utilization", "Imitation syrups have zero minerals", "Inflammation from sugar damages cartilage over time"]
+      },
+      "anti_inflammatory": {
+        "grade": "D-",
+        "score": 32,
+        "insight": "Real maple contains 24 antioxidant compounds but high sugar content triggers inflammatory pathways that outweigh benefits",
+        "pros": ["Pure maple syrup contains polyphenols and lignans", "Antioxidants like quebecol unique to maple", "Some anti-inflammatory properties in concentrated phenolic extracts"],
+        "cons": ["60g sugar per 100g raises inflammatory markers (CRP, IL-6)", "Sugar drives AGE formation and oxidative stress", "Fructose promotes hepatic inflammation", "Anti-inflammatory compounds present in trace amounts only", "Imitation syrups have zero antioxidants and worse inflammation"]
+      }
+    }
+  },
+  "tea": {
+    "name": "Tea",
+    "calories": 1,
+    "protein": 0,
+    "carbs": 0.3,
+    "fat": 0,
+    "fiber": 0,
+    "sugar": 0,
+    "sodium": 3,
+    "saturatedFat": 0,
+    "cholesterol": 0,
+    "potassium": 21,
+    "calcium": 0,
+    "iron": 0.02,
+    "magnesium": 1,
+    "vitaminA": 0,
+    "vitaminC": 0,
+    "vitaminD": 0,
+    "vitaminB12": 0,
+    "glycemicIndex": 0,
+    "glycemicLoad": 0,
+    "allergens": [],
+    "servingSize": 100,
+    "servingUnit": "ml",
+    "focusGrades": {
+      "balanced": {
+        "grade": "A",
+        "score": 90,
+        "insight": "Nearly zero calories with powerful polyphenol antioxidants - one of the healthiest beverages for overall wellness",
+        "pros": ["Virtually calorie-free (1 kcal/100ml) for unlimited consumption", "Rich in catechins (EGCG) and flavonoids with disease-fighting properties", "Provides hydration without sugar or additives", "L-theanine amino acid promotes calm focus"],
+        "cons": ["Minimal macronutrients (zero protein/fat)", "Caffeine (20-50mg per cup) may cause sensitivity", "Tannins can reduce iron absorption from plant foods"]
+      },
+      "heart_health": {
+        "grade": "A+",
+        "score": 95,
+        "insight": "One of the best heart-protective beverages - daily tea consumption reduces heart disease risk by 20% and stroke by 35%",
+        "pros": ["Catechins improve endothelial function and blood flow", "Reduces LDL oxidation by 10-15% preventing plaque formation", "Lowers blood pressure by 2-3 mmHg in regular drinkers", "Anti-platelet effects reduce clot formation", "Green tea linked to 31% lower cardiovascular mortality"],
+        "cons": ["Caffeine may raise blood pressure acutely in sensitive individuals", "Benefits require consistent daily intake (3+ cups)", "Added sugar/milk negates health benefits"]
+      },
+      "muscle_building": {
+        "grade": "C",
+        "score": 68,
+        "insight": "Zero protein but catechins may enhance exercise recovery and reduce muscle damage from oxidative stress",
+        "pros": ["EGCG reduces exercise-induced muscle soreness by 45%", "Caffeine (in green/black tea) improves workout performance", "L-theanine reduces cortisol preventing muscle breakdown", "Antioxidants speed recovery from intense training"],
+        "cons": ["Absolutely zero protein for muscle synthesis", "No amino acids or BCAAs", "Must be combined with protein sources", "Tannins may interfere with protein absorption if consumed with meals"]
+      },
+      "energy": {
+        "grade": "B+",
+        "score": 84,
+        "insight": "Provides clean, sustained energy from caffeine (20-50mg) plus L-theanine for smooth focus without jitters or crash",
+        "pros": ["Caffeine boosts alertness and metabolism", "L-theanine balances caffeine preventing anxiety and crash", "Lower caffeine than coffee (50mg vs 95mg) for gentle energy", "Polyphenols support mitochondrial energy production"],
+        "cons": ["Energy effect mild compared to coffee or energy drinks", "Caffeine tolerance develops with daily use", "Nearly zero calories means no fuel for physical energy", "Effects last 3-4 hours requiring multiple cups"]
+      },
+      "weight_management": {
+        "grade": "A",
+        "score": 93,
+        "insight": "Excellent weight loss aid - green tea increases fat oxidation by 17% and metabolism by 4-5% with zero calories",
+        "pros": ["EGCG + caffeine synergistically increase fat burning", "Thermogenic effect burns extra 70-100 calories daily", "Zero calories allows unlimited consumption", "Reduces appetite and cravings in studies", "Targets visceral belly fat specifically"],
+        "cons": ["Effects are modest (1-3 lbs over 12 weeks)", "Requires 3-5 cups daily for metabolic benefits", "Added sweeteners negate calorie advantage", "Not a magic solution without diet and exercise"]
+      },
+      "brain_focus": {
+        "grade": "A",
+        "score": 91,
+        "insight": "Unique caffeine + L-theanine combination enhances focus, memory, and attention while promoting calm alertness",
+        "pros": ["L-theanine increases alpha brain waves for relaxed focus", "Caffeine + L-theanine improve reaction time by 20%", "EGCG protects neurons from oxidative damage", "Regular intake linked to 50% lower Alzheimer's risk", "Improves working memory and attention span"],
+        "cons": ["Caffeine may cause anxiety in sensitive individuals", "Benefits accumulate over months/years of regular use", "Excessive intake (>5 cups) may disrupt sleep and cognition", "Iron inhibition may affect brain function if deficient"]
+      },
+      "gut_health": {
+        "grade": "B+",
+        "score": 83,
+        "insight": "Polyphenols act as prebiotics feeding beneficial bacteria while catechins have antimicrobial effects against pathogens",
+        "pros": ["Polyphenols increase Bifidobacteria and Lactobacillus by 30%", "Catechins inhibit harmful bacteria (H. pylori, C. diff)", "Anti-inflammatory effects reduce gut inflammation", "May improve intestinal barrier function"],
+        "cons": ["Tannins can cause upset stomach in sensitive individuals", "Excessive intake may reduce nutrient absorption", "Caffeine may worsen IBS symptoms for some", "Zero fiber for direct microbiome support"]
+      },
+      "blood_sugar": {
+        "grade": "A",
+        "score": 92,
+        "insight": "Zero sugar with EGCG improving insulin sensitivity by 15-20% and reducing diabetes risk by 18% in daily drinkers",
+        "pros": ["Zero glycemic impact - safe for diabetics", "EGCG enhances insulin receptor sensitivity", "Reduces glucose absorption in intestines by inhibiting enzymes", "Lowers fasting blood sugar by 5% in studies", "Polyphenols reduce post-meal blood sugar spikes"],
+        "cons": ["Must be consumed unsweetened for benefits", "Caffeine may transiently raise blood sugar in some", "Benefits require consistent long-term intake"]
+      },
+      "bone_joint": {
+        "grade": "B+",
+        "score": 83,
+        "insight": "Tea drinkers have 30% lower osteoporosis risk - polyphenols stimulate bone-building cells and reduce inflammation",
+        "pros": ["Catechins stimulate osteoblast activity increasing bone density", "Anti-inflammatory effects reduce arthritis pain by 25%", "Fluoride content (varies) may strengthen tooth enamel", "Regular intake linked to fewer fractures in elderly"],
+        "cons": ["Minimal calcium content for bone building", "Tannins may reduce calcium absorption from foods", "Excessive fluoride (in some teas) may harm bones", "No vitamin D or K2 for calcium metabolism"]
+      },
+      "anti_inflammatory": {
+        "grade": "A+",
+        "score": 96,
+        "insight": "Elite anti-inflammatory beverage - EGCG and polyphenols reduce inflammatory markers by 30-50% in clinical studies",
+        "pros": ["EGCG inhibits NF-kB inflammatory pathway", "Reduces CRP, IL-6, and TNF-alpha by 30-50%", "3+ cups daily linked to lower chronic disease risk", "Polyphenols neutralize free radicals preventing oxidative stress", "Green tea more anti-inflammatory than black (higher EGCG)"],
+        "cons": ["Benefits require 3-5 cups daily for sustained effects", "Brewing temperature affects polyphenol content", "Added milk may bind catechins reducing bioavailability", "Black tea has less EGCG than green (oxidation destroys some)"]
+      }
+    }
+  },
+  "trout": {
+    "name": "Trout",
+    "calories": 148,
+    "protein": 20.5,
+    "carbs": 0,
+    "fat": 6.6,
+    "fiber": 0,
+    "sugar": 0,
+    "sodium": 67,
+    "saturatedFat": 1.9,
+    "cholesterol": 59,
+    "potassium": 394,
+    "calcium": 67,
+    "iron": 0.7,
+    "magnesium": 26,
+    "vitaminA": 19,
+    "vitaminC": 0,
+    "vitaminD": 16.2,
+    "vitaminB12": 4.5,
+    "glycemicIndex": 0,
+    "glycemicLoad": 0,
+    "allergens": ["fish"],
+    "servingSize": 100,
+    "servingUnit": "g",
+    "focusGrades": {
+      "balanced": {
+        "grade": "A",
+        "score": 93,
+        "insight": "Exceptional nutrient profile - complete protein, omega-3s, and one of the highest vitamin D sources in nature",
+        "pros": ["Complete protein (20.5g) with all essential amino acids", "Rich omega-3 EPA/DHA (1-2g depending on species)", "Vitamin D (16.2mcg = 216% DV) - among top food sources", "Balanced macros with zero carbs"],
+        "cons": ["Moderate mercury in some species (lake trout higher)", "Requires proper cooking to avoid parasites", "Farm-raised may have lower omega-3 and PCB contamination"]
+      },
+      "heart_health": {
+        "grade": "A+",
+        "score": 96,
+        "insight": "Outstanding heart protection - omega-3s reduce cardiovascular mortality by 30% while vitamin D supports vascular health",
+        "pros": ["1-2g omega-3s per serving reduce triglycerides by 20-30%", "EPA/DHA lower inflammation and prevent arrhythmias", "Potassium (394mg) and magnesium (26mg) regulate blood pressure", "Low saturated fat (1.9g) with healthy PUFA ratio", "Wild trout has ideal omega-6:3 ratio (<1:1)"],
+        "cons": ["Cholesterol (59mg) though dietary impact minimal with omega-3s", "Sodium (67mg) higher in smoked varieties", "Farm-raised may have inflammatory omega-6 if grain-fed"]
+      },
+      "muscle_building": {
+        "grade": "A",
+        "score": 92,
+        "insight": "Premium lean protein source with 20.5g complete protein and vitamin D enhancing muscle strength and recovery",
+        "pros": ["Complete protein with optimal leucine for muscle synthesis", "Vitamin D (216% DV) improves muscle function by 20%", "Omega-3s reduce DOMS and exercise-induced inflammation", "Low fat (6.6g) ideal for lean muscle gains"],
+        "cons": ["Zero carbs require pairing with complex carbs post-workout", "Lower protein density than chicken breast (20.5g vs 31g)", "Moderate calorie density limits high-volume muscle-building diets"]
+      },
+      "energy": {
+        "grade": "B+",
+        "score": 85,
+        "insight": "Provides sustained energy through healthy fats and protein with exceptional B12 (188% DV) for energy metabolism",
+        "pros": ["B12 (4.5mcg = 188% DV) critical for ATP production", "Omega-3s improve mitochondrial efficiency", "Moderate calories (148) with high nutrient density", "Protein provides 4-6 hour satiety and stable energy"],
+        "cons": ["Zero carbs mean no quick energy for high-intensity exercise", "Fat and protein digest slowly (2-3 hours)", "Lower calorie density than fattier fish like salmon"]
+      },
+      "weight_management": {
+        "grade": "A",
+        "score": 90,
+        "insight": "Excellent for weight loss - high protein (20.5g) increases satiety and metabolism while omega-3s enhance fat oxidation",
+        "pros": ["Protein has 30% thermic effect burning calories during digestion", "Omega-3s improve insulin sensitivity and fat burning", "Moderate calories (148) with high nutrient density", "Zero carbs prevent insulin-driven fat storage", "Vitamin D deficiency linked to obesity - trout prevents this"],
+        "cons": ["Higher calories than ultra-lean proteins (cod, tilapia)", "Preparation method matters (frying adds calories)", "Portion control needed with higher-fat species"]
+      },
+      "brain_focus": {
+        "grade": "A+",
+        "score": 95,
+        "insight": "Elite brain food - omega-3 DHA is structural component of neurons while B12 supports neurotransmitter synthesis",
+        "pros": ["DHA (500-1000mg) improves memory, focus, and learning", "B12 (188% DV) prevents cognitive decline and brain fog", "Vitamin D supports mood regulation and depression prevention", "Omega-3s reduce Alzheimer's risk by 47% in studies", "Low mercury (rainbow trout) safer than larger fish"],
+        "cons": ["Benefits accumulate over weeks/months of regular intake", "Lake trout has higher mercury than rainbow/brook trout", "Cooking may reduce omega-3 content slightly"]
+      },
+      "gut_health": {
+        "grade": "B",
+        "score": 79,
+        "insight": "Zero fiber but omega-3s powerfully reduce intestinal inflammation and support gut barrier integrity",
+        "pros": ["Anti-inflammatory omega-3s heal leaky gut and IBD", "Protein provides amino acids for gut lining repair", "Vitamin D modulates gut immune response", "Low in FODMAPs for IBS-friendly diets"],
+        "cons": ["No fiber for microbiome support", "No prebiotics or probiotics", "Histamine in improperly stored fish may trigger gut issues", "Parasites (rare) require proper cooking to 145°F"]
+      },
+      "blood_sugar": {
+        "grade": "A+",
+        "score": 97,
+        "insight": "Perfect for blood sugar control - zero carbs with omega-3s improving insulin sensitivity by 20-25%",
+        "pros": ["Zero glycemic impact - ideal for diabetics", "Omega-3s enhance insulin receptor sensitivity", "Protein slows gastric emptying stabilizing blood sugar", "Vitamin D improves beta-cell function in pancreas", "Studies show fish consumption lowers diabetes risk"],
+        "cons": ["Must combine with low-GI carbs for complete meals", "No standalone role in raising low blood sugar", "Preparation matters (breading adds carbs and spikes GI)"]
+      },
+      "bone_joint": {
+        "grade": "A+",
+        "score": 94,
+        "insight": "Exceptional bone support - vitamin D (216% DV) maximizes calcium absorption while omega-3s reduce inflammatory joint pain",
+        "pros": ["Vitamin D (16.2mcg) critical for bone mineral density", "Omega-3s reduce arthritis pain by 30% in studies", "Calcium (67mg) and phosphorus (271mg) build bone matrix", "Protein supports bone structure beyond minerals", "Anti-inflammatory effects protect cartilage"],
+        "cons": ["Lower calcium than sardines (no edible bones)", "Requires vitamin K2 (not present) for optimal calcium use", "Farm-raised may have lower vitamin D than wild"]
+      },
+      "anti_inflammatory": {
+        "grade": "A+",
+        "score": 95,
+        "insight": "Elite anti-inflammatory food - EPA/DHA omega-3s reduce inflammatory markers by 30-40% in clinical trials",
+        "pros": ["Omega-3s are precursors to anti-inflammatory resolvins and protectins", "Studies show 30-40% reduction in CRP and IL-6", "Ideal omega-6:3 ratio (wild trout <1:1)", "Vitamin D has potent anti-inflammatory immune effects", "Selenium (12.6mcg) provides antioxidant protection"],
+        "cons": ["Requires 2-3 servings weekly for sustained benefits", "Farm-raised trout may have higher omega-6 (inflammatory)", "Cooking at high heat may oxidize omega-3s reducing benefits"]
+      }
+    }
+  }
+}

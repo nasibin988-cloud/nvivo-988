@@ -1,0 +1,1242 @@
+{
+  "chili": {
+    "name": "Chili with Beans",
+    "calories": 90,
+    "protein": 6.5,
+    "carbs": 12,
+    "fat": 2,
+    "fiber": 4.2,
+    "sugar": 3.5,
+    "sodium": 380,
+    "saturatedFat": 0.6,
+    "cholesterol": 15,
+    "potassium": 340,
+    "calcium": 45,
+    "iron": 1.8,
+    "magnesium": 38,
+    "vitaminA": 280,
+    "vitaminC": 12,
+    "vitaminD": 0,
+    "vitaminB12": 0.3,
+    "glycemicIndex": 39,
+    "glycemicLoad": 5,
+    "allergens": [],
+    "servingSize": 250,
+    "servingUnit": "g",
+    "focusGrades": {
+      "balanced": {
+        "grade": "A-",
+        "score": 88,
+        "insight": "Excellent macronutrient balance with protein from beans and meat, complex carbs, and moderate fat. High fiber content promotes satiety and digestive health.",
+        "pros": [
+          "Complete protein from bean-meat combination",
+          "High fiber (4.2g) supports gut health",
+          "Rich in iron and magnesium",
+          "Low glycemic index prevents blood sugar spikes"
+        ],
+        "cons": [
+          "High sodium content (380mg per 100g)",
+          "Nutritional quality varies by preparation method",
+          "May cause digestive discomfort in sensitive individuals"
+        ]
+      },
+      "heart_health": {
+        "grade": "B+",
+        "score": 85,
+        "insight": "Bean-based fiber and low saturated fat benefit cardiovascular health, though sodium levels require monitoring for those with hypertension.",
+        "pros": [
+          "Soluble fiber helps reduce LDL cholesterol",
+          "Low saturated fat (0.6g)",
+          "Potassium supports healthy blood pressure",
+          "Lycopene from tomatoes protects arterial health"
+        ],
+        "cons": [
+          "Sodium content can elevate blood pressure",
+          "Processed versions may contain additives",
+          "Cholesterol present from meat component"
+        ]
+      },
+      "muscle_building": {
+        "grade": "B",
+        "score": 82,
+        "insight": "Moderate protein content (6.5g) from beans and meat provides both complete and incomplete proteins. Iron supports oxygen delivery to muscles during workouts.",
+        "pros": [
+          "Complete amino acid profile from bean-meat combo",
+          "Iron enhances oxygen transport for performance",
+          "Magnesium supports muscle contraction",
+          "Complex carbs fuel sustained training"
+        ],
+        "cons": [
+          "Protein content lower than pure meat sources",
+          "Not optimal for immediate post-workout recovery",
+          "May cause bloating during training periods"
+        ]
+      },
+      "energy": {
+        "grade": "A-",
+        "score": 90,
+        "insight": "Low glycemic index (39) provides steady energy release without crashes. Complex carbs and protein combination sustains energy for 3-4 hours.",
+        "pros": [
+          "Low glycemic load prevents energy crashes",
+          "Fiber slows carb absorption for sustained fuel",
+          "B-vitamins support energy metabolism",
+          "Iron combats fatigue and improves stamina"
+        ],
+        "cons": [
+          "Not ideal for rapid pre-workout energy",
+          "Heavy feeling may reduce immediate activity",
+          "Digestion requires significant energy initially"
+        ]
+      },
+      "weight_management": {
+        "grade": "A",
+        "score": 92,
+        "insight": "Outstanding satiety factor with only 90 calories per 100g. High fiber (4.2g) and protein (6.5g) combination keeps hunger at bay for hours while maintaining lean muscle mass.",
+        "pros": [
+          "Very low calorie density (90 cal/100g)",
+          "High satiety index from fiber and protein",
+          "Thermogenic spices boost metabolism",
+          "Volume eating friendly for large portions"
+        ],
+        "cons": [
+          "Sodium may cause water retention",
+          "Commercial versions often higher in fat",
+          "Bean content may cause temporary bloating"
+        ]
+      },
+      "brain_focus": {
+        "grade": "B",
+        "score": 80,
+        "insight": "Stable blood sugar from low GI supports consistent cognitive function. Iron and B-vitamins aid neurotransmitter production, though not a primary brain food.",
+        "pros": [
+          "Stable glucose prevents mental fog",
+          "Iron supports cognitive performance",
+          "Magnesium reduces stress and anxiety",
+          "Capsaicin may enhance alertness"
+        ],
+        "cons": [
+          "Lacks omega-3 fatty acids for brain health",
+          "No direct nootropic compounds",
+          "Heavy meal may cause post-lunch drowsiness"
+        ]
+      },
+      "gut_health": {
+        "grade": "A-",
+        "score": 88,
+        "insight": "Exceptional prebiotic fiber from beans feeds beneficial gut bacteria. Resistant starch in beans promotes healthy microbiome diversity and regular bowel movements.",
+        "pros": [
+          "High prebiotic fiber feeds probiotics",
+          "Resistant starch in beans supports colon health",
+          "Promotes regular bowel movements",
+          "Diverse plant compounds support microbiome"
+        ],
+        "cons": [
+          "May cause gas and bloating initially",
+          "FODMAP content problematic for IBS sufferers",
+          "Requires gradual introduction for sensitive guts"
+        ]
+      },
+      "blood_sugar": {
+        "grade": "A",
+        "score": 93,
+        "insight": "Excellent glycemic control with GI of 39. Fiber and protein slow carbohydrate absorption significantly, making it ideal for diabetics and insulin-sensitive individuals.",
+        "pros": [
+          "Very low glycemic index (39)",
+          "Fiber blunts insulin response",
+          "Protein slows glucose absorption",
+          "Chromium in beans improves insulin sensitivity"
+        ],
+        "cons": [
+          "Portion size matters for total carb load",
+          "Added sugar in some recipes raises GI",
+          "Individual response varies with toppings"
+        ]
+      },
+      "bone_joint": {
+        "grade": "B-",
+        "score": 75,
+        "insight": "Moderate calcium (45mg) and magnesium support bone density, but lacks vitamin D and K. Anti-inflammatory compounds in tomatoes and spices may benefit joint health.",
+        "pros": [
+          "Magnesium aids calcium absorption",
+          "Lycopene reduces inflammatory joint markers",
+          "Capsaicin provides natural pain relief",
+          "Protein supports bone matrix formation"
+        ],
+        "cons": [
+          "Low calcium compared to dairy sources",
+          "No vitamin D for calcium absorption",
+          "Lacks vitamin K for bone mineralization"
+        ]
+      },
+      "anti_inflammatory": {
+        "grade": "A-",
+        "score": 88,
+        "insight": "Capsaicin from chili peppers powerfully reduces inflammatory markers. Lycopene, fiber, and antioxidants from tomatoes and beans create a potent anti-inflammatory meal.",
+        "pros": [
+          "Capsaicin blocks inflammatory pathways",
+          "Lycopene reduces systemic inflammation",
+          "Fiber lowers CRP inflammatory markers",
+          "Antioxidants from beans combat oxidative stress"
+        ],
+        "cons": [
+          "May irritate sensitive digestive systems",
+          "Nightshade sensitivity in some individuals",
+          "Sodium can promote inflammation if excessive"
+        ]
+      }
+    }
+  },
+  "chocolate": {
+    "name": "Dark Chocolate (70-85% Cacao)",
+    "calories": 598,
+    "protein": 7.8,
+    "carbs": 45.9,
+    "fat": 42.6,
+    "fiber": 10.9,
+    "sugar": 24,
+    "sodium": 20,
+    "saturatedFat": 24.5,
+    "cholesterol": 2,
+    "potassium": 715,
+    "calcium": 73,
+    "iron": 11.9,
+    "magnesium": 228,
+    "vitaminA": 39,
+    "vitaminC": 0,
+    "vitaminD": 0,
+    "vitaminB12": 0.3,
+    "glycemicIndex": 23,
+    "glycemicLoad": 6,
+    "allergens": ["milk"],
+    "servingSize": 30,
+    "servingUnit": "g",
+    "focusGrades": {
+      "balanced": {
+        "grade": "C+",
+        "score": 72,
+        "insight": "High in beneficial flavonoids and minerals but extremely calorie-dense at 598 cal/100g. Excellent in small portions (20-30g) but not suitable as a dietary staple.",
+        "pros": [
+          "Rich in antioxidant flavonoids",
+          "Excellent source of magnesium (228mg)",
+          "High iron content (11.9mg)",
+          "Low glycemic index (23) despite sweetness"
+        ],
+        "cons": [
+          "Very high calorie density (598 cal/100g)",
+          "High saturated fat (24.5g)",
+          "Easy to overconsume due to palatability",
+          "Contains caffeine and theobromine"
+        ]
+      },
+      "heart_health": {
+        "grade": "B+",
+        "score": 86,
+        "insight": "Paradoxically heart-healthy despite saturated fat due to stearic acid and flavonoids. Epicatechins improve endothelial function and reduce blood pressure significantly.",
+        "pros": [
+          "Flavonoids improve blood vessel elasticity",
+          "Reduces LDL oxidation and arterial plaque",
+          "Lowers blood pressure through nitric oxide",
+          "Stearic acid doesn't raise cholesterol"
+        ],
+        "cons": [
+          "High saturated fat may concern some physicians",
+          "Calories can lead to weight gain affecting heart",
+          "Sugar content in lower-cacao varieties",
+          "Caffeine may affect heart rate"
+        ]
+      },
+      "muscle_building": {
+        "grade": "D+",
+        "score": 58,
+        "insight": "Poor protein-to-calorie ratio (7.8g protein per 598 calories) makes it inefficient for muscle growth. Magnesium helps muscle function but fat content limits usefulness.",
+        "pros": [
+          "Magnesium supports muscle contraction",
+          "Iron aids oxygen delivery to muscles",
+          "Antioxidants reduce exercise-induced oxidative stress",
+          "Some protein from cacao solids"
+        ],
+        "cons": [
+          "Very poor protein-to-calorie ratio",
+          "High fat slows digestion for recovery",
+          "Not suitable as post-workout nutrition",
+          "Saturated fat may impair insulin sensitivity"
+        ]
+      },
+      "energy": {
+        "grade": "B-",
+        "score": 78,
+        "insight": "Provides quick energy from sugar plus sustained release from fat. Theobromine and caffeine boost alertness, but crash risk exists with high-sugar varieties.",
+        "pros": [
+          "Theobromine provides gentle stimulation",
+          "Natural caffeine enhances alertness",
+          "Fat provides sustained energy release",
+          "Low GI prevents rapid blood sugar spikes"
+        ],
+        "cons": [
+          "Sugar content can cause energy crashes",
+          "Caffeine sensitivity varies by individual",
+          "Heavy feeling from high fat content",
+          "Not ideal for immediate pre-exercise energy"
+        ]
+      },
+      "weight_management": {
+        "grade": "D",
+        "score": 55,
+        "insight": "Extremely calorie-dense at 598 cal/100g makes weight management challenging. Small portions (20-30g) can fit into diets, but overconsumption is common and sabotages weight loss.",
+        "pros": [
+          "High satiety from fat and fiber",
+          "Flavonoids may slightly boost metabolism",
+          "Can satisfy sweet cravings in small amounts",
+          "Low GI prevents hunger-inducing blood sugar swings"
+        ],
+        "cons": [
+          "Extremely high calorie density",
+          "Highly palatable leading to overconsumption",
+          "Easy to exceed portion control",
+          "Fat content provides 9 calories per gram"
+        ]
+      },
+      "brain_focus": {
+        "grade": "A-",
+        "score": 90,
+        "insight": "Exceptional cognitive enhancer through multiple mechanisms: flavonoids increase cerebral blood flow, theobromine improves alertness, and magnesium supports neurotransmitter function.",
+        "pros": [
+          "Flavonoids increase brain blood flow by 8%",
+          "Theobromine enhances focus without jitters",
+          "Magnesium supports learning and memory",
+          "Phenylethylamine improves mood and concentration"
+        ],
+        "cons": [
+          "Caffeine can cause anxiety in sensitive individuals",
+          "Sugar crash may impair focus later",
+          "Timing matters for optimal cognitive effects",
+          "Individual response to stimulants varies"
+        ]
+      },
+      "gut_health": {
+        "grade": "B+",
+        "score": 84,
+        "insight": "High fiber (10.9g) and prebiotic properties support beneficial gut bacteria. Polyphenols act as prebiotics, fermenting into anti-inflammatory compounds in the colon.",
+        "pros": [
+          "High fiber feeds gut microbiome",
+          "Polyphenols act as powerful prebiotics",
+          "Increases Bifidobacteria populations",
+          "Reduces gut inflammation markers"
+        ],
+        "cons": [
+          "May cause digestive upset in large amounts",
+          "Caffeine can increase bowel motility",
+          "Some individuals sensitive to theobromine",
+          "Added milk reduces polyphenol absorption"
+        ]
+      },
+      "blood_sugar": {
+        "grade": "B",
+        "score": 81,
+        "insight": "Remarkably low glycemic index (23) despite sugar content due to fat and fiber slowing absorption. Flavonoids improve insulin sensitivity, but portion control is critical.",
+        "pros": [
+          "Very low glycemic index (23)",
+          "Fat slows sugar absorption significantly",
+          "Flavonoids improve insulin sensitivity",
+          "Fiber reduces glycemic impact"
+        ],
+        "cons": [
+          "Still contains 24g sugar per 100g",
+          "Easy to overconsume sugar in larger portions",
+          "Milk chocolate varieties have higher GI",
+          "Individual glycemic response varies"
+        ]
+      },
+      "bone_joint": {
+        "grade": "B",
+        "score": 80,
+        "insight": "Excellent magnesium content (228mg) supports bone density and calcium absorption. Anti-inflammatory flavonoids may reduce arthritis markers, though calcium levels are moderate.",
+        "pros": [
+          "Very high magnesium for bone formation",
+          "Flavonoids reduce joint inflammation",
+          "Iron supports bone marrow health",
+          "Antioxidants protect cartilage from damage"
+        ],
+        "cons": [
+          "Moderate calcium levels (73mg)",
+          "No vitamin D for calcium absorption",
+          "Oxalates may reduce mineral absorption",
+          "High intake could displace bone-building foods"
+        ]
+      },
+      "anti_inflammatory": {
+        "grade": "A",
+        "score": 93,
+        "insight": "One of the richest sources of anti-inflammatory polyphenols and flavonoids. Regular consumption (20-30g daily) significantly reduces CRP and other inflammatory markers.",
+        "pros": [
+          "Extremely high polyphenol content",
+          "Flavonoids reduce CRP inflammatory markers",
+          "Epicatechins suppress inflammatory pathways",
+          "Antioxidants combat oxidative inflammation"
+        ],
+        "cons": [
+          "Benefits require high-cacao varieties (70%+)",
+          "Sugar in lower-cacao varieties promotes inflammation",
+          "Overconsumption leads to weight gain and inflammation",
+          "Processing can reduce polyphenol content"
+        ]
+      }
+    }
+  },
+  "chocolate_cake": {
+    "name": "Chocolate Cake with Frosting",
+    "calories": 371,
+    "protein": 4.5,
+    "carbs": 50.7,
+    "fat": 17.3,
+    "fiber": 1.8,
+    "sugar": 35.4,
+    "sodium": 336,
+    "saturatedFat": 5.2,
+    "cholesterol": 37,
+    "potassium": 138,
+    "calcium": 54,
+    "iron": 1.9,
+    "magnesium": 35,
+    "vitaminA": 108,
+    "vitaminC": 0.2,
+    "vitaminD": 0.2,
+    "vitaminB12": 0.1,
+    "glycemicIndex": 68,
+    "glycemicLoad": 34,
+    "allergens": ["wheat", "eggs", "milk"],
+    "servingSize": 80,
+    "servingUnit": "g",
+    "focusGrades": {
+      "balanced": {
+        "grade": "D",
+        "score": 50,
+        "insight": "Nutritionally unbalanced with 35.4g sugar per 100g and minimal protein (4.5g). High glycemic load of 34 causes rapid blood sugar spikes. Occasional treat only, not regular food.",
+        "pros": [
+          "Provides quick energy from carbohydrates",
+          "Contains some minerals from cocoa",
+          "Eggs provide small amount of protein",
+          "Can fit into flexible dieting (IIFYM)"
+        ],
+        "cons": [
+          "Extremely high sugar content (35.4g)",
+          "Poor protein-to-carb ratio",
+          "High calorie density (371 cal/100g)",
+          "Minimal fiber (1.8g) and micronutrients",
+          "High glycemic load causes metabolic stress"
+        ]
+      },
+      "heart_health": {
+        "grade": "F",
+        "score": 35,
+        "insight": "Actively harmful to cardiovascular health with high sugar, refined flour, and saturated fat combination. Promotes inflammation, insulin resistance, and arterial damage.",
+        "pros": [
+          "Small amounts of cocoa flavonoids present",
+          "Occasional consumption unlikely to cause harm"
+        ],
+        "cons": [
+          "High sugar damages arterial endothelium",
+          "Refined flour causes inflammation",
+          "Trans fats may be present in frosting",
+          "High glycemic load strains cardiovascular system",
+          "Sodium contributes to blood pressure elevation",
+          "Promotes LDL cholesterol oxidation"
+        ]
+      },
+      "muscle_building": {
+        "grade": "F",
+        "score": 40,
+        "insight": "Terrible protein-to-calorie ratio (4.5g protein per 371 calories). Sugar and refined carbs spike insulin without providing muscle-building nutrients. Actively undermines body composition.",
+        "pros": [
+          "Eggs provide complete protein (though minimal)",
+          "High calories could support bulking phase",
+          "Simple carbs for immediate glycogen replenishment"
+        ],
+        "cons": [
+          "Extremely poor protein quality and quantity",
+          "Sugar promotes fat storage over muscle gain",
+          "Lacks branched-chain amino acids",
+          "Insulin spike without amino acids wastes anabolic window",
+          "Empty calories displace nutrient-dense muscle foods"
+        ]
+      },
+      "energy": {
+        "grade": "D-",
+        "score": 52,
+        "insight": "Provides rapid but unsustainable energy spike from high sugar content. Glycemic load of 34 guarantees crash within 1-2 hours, leading to fatigue and further cravings.",
+        "pros": [
+          "Immediate glucose availability for quick energy",
+          "Simple carbs absorb rapidly",
+          "Can help in extreme low-blood-sugar emergencies"
+        ],
+        "cons": [
+          "Severe energy crash within 1-2 hours",
+          "High glycemic load (34) destabilizes blood sugar",
+          "Creates dependence on sugar for energy",
+          "Fatigue and brain fog follow initial spike",
+          "Disrupts natural energy regulation"
+        ]
+      },
+      "weight_management": {
+        "grade": "F",
+        "score": 30,
+        "insight": "One of the worst foods for weight management. Hyper-palatable combination of sugar and fat overrides satiety signals. 371 calories per 100g with minimal satiety factor.",
+        "pros": [
+          "Can fit into calorie budget if strictly portioned",
+          "Satisfies sweet cravings (though creates more)"
+        ],
+        "cons": [
+          "Extremely high calorie density",
+          "Hyper-palatable fat-sugar combo drives overeating",
+          "Zero satiety - hunger returns quickly",
+          "Sugar triggers insulin-driven fat storage",
+          "Displaces filling, nutritious foods",
+          "Creates cravings and dependency cycle"
+        ]
+      },
+      "brain_focus": {
+        "grade": "D-",
+        "score": 48,
+        "insight": "Initial glucose rush provides brief mental clarity followed by severe cognitive impairment. Sugar crash causes brain fog, difficulty concentrating, and mood instability.",
+        "pros": [
+          "Brief glucose boost to brain (15-30 minutes)",
+          "Small amount of cocoa flavonoids",
+          "Can provide comfort and mood lift temporarily"
+        ],
+        "cons": [
+          "Severe brain fog after sugar crash",
+          "Impaired focus and concentration post-spike",
+          "Blood sugar instability affects neurotransmitters",
+          "Mood swings and irritability common",
+          "Creates brain dependency on sugar",
+          "Inflammation affects cognitive function"
+        ]
+      },
+      "gut_health": {
+        "grade": "D",
+        "score": 55,
+        "insight": "Low fiber (1.8g) and high sugar (35.4g) combination disrupts gut microbiome. Feeds harmful bacteria while starving beneficial species, promoting dysbiosis.",
+        "pros": [
+          "Minimal fiber from cocoa powder",
+          "Small amounts of prebiotics from wheat"
+        ],
+        "cons": [
+          "High sugar feeds pathogenic bacteria",
+          "Low fiber starves beneficial microbes",
+          "Refined flour lacks resistant starch",
+          "Promotes gut dysbiosis and inflammation",
+          "Sugar alcohols in frosting may cause diarrhea",
+          "Disrupts microbiome diversity"
+        ]
+      },
+      "blood_sugar": {
+        "grade": "F",
+        "score": 25,
+        "insight": "Catastrophic for blood sugar control with GI of 68 and GL of 34. Refined flour and sugar combination causes rapid glucose spike followed by reactive hypoglycemia.",
+        "pros": [
+          "Can reverse severe hypoglycemia quickly",
+          "Small portion could fit into post-workout window"
+        ],
+        "cons": [
+          "High glycemic index (68) causes rapid spike",
+          "Very high glycemic load (34) overwhelms insulin",
+          "Promotes insulin resistance over time",
+          "Reactive hypoglycemia common 2-3 hours later",
+          "Increases diabetes risk with regular consumption",
+          "No fiber or protein to slow absorption"
+        ]
+      },
+      "bone_joint": {
+        "grade": "D+",
+        "score": 60,
+        "insight": "Minimal bone-building nutrients and high sugar actually leaches calcium from bones. Inflammation from sugar and refined carbs may worsen joint pain and arthritis.",
+        "pros": [
+          "Contains some calcium from milk (54mg)",
+          "Eggs provide vitamin D (minimal)",
+          "Magnesium from cocoa powder (35mg)"
+        ],
+        "cons": [
+          "Sugar causes calcium excretion in urine",
+          "Inflammation worsens arthritis symptoms",
+          "Phosphoric acid may reduce calcium absorption",
+          "Weight gain from calories stresses joints",
+          "No vitamin K for bone mineralization",
+          "AGEs from baking damage cartilage"
+        ]
+      },
+      "anti_inflammatory": {
+        "grade": "F",
+        "score": 32,
+        "insight": "Highly pro-inflammatory due to high sugar, refined flour, and omega-6 vegetable oils. Regular consumption significantly elevates CRP, IL-6, and other inflammatory markers.",
+        "pros": [
+          "Trace amounts of cocoa polyphenols",
+          "Minimal anti-inflammatory compounds from eggs"
+        ],
+        "cons": [
+          "High sugar drives systemic inflammation",
+          "Refined flour triggers inflammatory response",
+          "Omega-6 oils promote inflammatory pathways",
+          "AGEs from high-heat baking cause oxidative stress",
+          "Insulin spikes activate inflammatory cascades",
+          "Disrupts anti-inflammatory gut bacteria"
+        ]
+      }
+    }
+  },
+  "chocolate_chip_cookie": {
+    "name": "Chocolate Chip Cookie",
+    "calories": 488,
+    "protein": 5.9,
+    "carbs": 66.6,
+    "fat": 21.6,
+    "fiber": 2.3,
+    "sugar": 38.4,
+    "sodium": 390,
+    "saturatedFat": 8.1,
+    "cholesterol": 37,
+    "potassium": 154,
+    "calcium": 35,
+    "iron": 2.8,
+    "magnesium": 34,
+    "vitaminA": 95,
+    "vitaminC": 0.1,
+    "vitaminD": 0.1,
+    "vitaminB12": 0.1,
+    "glycemicIndex": 64,
+    "glycemicLoad": 43,
+    "allergens": ["wheat", "eggs", "milk", "soy"],
+    "servingSize": 40,
+    "servingUnit": "g",
+    "focusGrades": {
+      "balanced": {
+        "grade": "F",
+        "score": 38,
+        "insight": "Nutritionally bankrupt with 488 calories per 100g, 38.4g sugar, and minimal protein (5.9g). Glycemic load of 43 is among the highest of common foods. Pure indulgence with no redeeming nutritional value.",
+        "pros": [
+          "Provides immediate energy from simple carbs",
+          "Small amounts of iron from enriched flour",
+          "Contains some minerals from chocolate chips"
+        ],
+        "cons": [
+          "Extremely high sugar (38.4g per 100g)",
+          "Very high calorie density (488 cal/100g)",
+          "Massive glycemic load (43) causes metabolic chaos",
+          "Minimal protein (5.9g) and fiber (2.3g)",
+          "High sodium (390mg) with no offsetting nutrients",
+          "Hyper-palatable formulation drives addiction"
+        ]
+      },
+      "heart_health": {
+        "grade": "F",
+        "score": 28,
+        "insight": "Severely detrimental to cardiovascular health. High sugar, trans fats from shortening, and refined flour create perfect storm for atherosclerosis and heart disease.",
+        "pros": [
+          "Trace flavonoids from chocolate chips",
+          "Single cookie occasionally unlikely to cause acute harm"
+        ],
+        "cons": [
+          "Trans fats may be present in commercial varieties",
+          "High sugar oxidizes LDL cholesterol",
+          "Refined flour spikes triglycerides",
+          "Saturated fat (8.1g) raises cholesterol",
+          "Sodium elevates blood pressure",
+          "Promotes arterial inflammation and plaque",
+          "Insulin resistance from sugar damages vessels"
+        ]
+      },
+      "muscle_building": {
+        "grade": "F",
+        "score": 35,
+        "insight": "Catastrophic protein-to-calorie ratio of 5.9g per 488 calories (1.2%). Sugar causes insulin spike without amino acids, promoting fat storage instead of muscle protein synthesis.",
+        "pros": [
+          "Extreme calorie surplus could support mass gain",
+          "Simple carbs for immediate post-workout glycogen",
+          "Eggs provide minimal complete protein"
+        ],
+        "cons": [
+          "Disastrous protein-to-calorie ratio (1.2%)",
+          "Sugar promotes fat gain over muscle growth",
+          "Lacks leucine and BCAAs for muscle synthesis",
+          "Insulin spike wasted without amino acids",
+          "Inflammation impairs recovery and growth",
+          "Empty calories displace quality muscle-building foods"
+        ]
+      },
+      "energy": {
+        "grade": "F",
+        "score": 42,
+        "insight": "Extreme glycemic load of 43 guarantees rapid blood sugar spike followed by severe crash. Creates vicious cycle of energy highs and lows with increasing dependency.",
+        "pros": [
+          "Provides rapid glucose for emergency energy",
+          "Can reverse acute hypoglycemia",
+          "Fat provides some sustained energy release"
+        ],
+        "cons": [
+          "Catastrophic glycemic load (43) among highest of foods",
+          "Severe energy crash within 90 minutes guaranteed",
+          "Creates sugar addiction and energy dependency",
+          "Brain fog and fatigue post-crash",
+          "Disrupts natural energy homeostasis",
+          "Repeated consumption leads to chronic fatigue"
+        ]
+      },
+      "weight_management": {
+        "grade": "F",
+        "score": 22,
+        "insight": "One of the absolute worst foods for weight management. Engineered for maximum palatability with sugar-fat-salt combination that hijacks brain reward systems and overrides all satiety signals.",
+        "pros": [
+          "Can technically fit into calorie budget if measured",
+          "Provides brief psychological satisfaction"
+        ],
+        "cons": [
+          "Extremely high calorie density (488 cal/100g)",
+          "Engineered to override natural satiety signals",
+          "Sugar-fat combination maximally addictive",
+          "Zero satiety - creates more hunger",
+          "Triggers dopamine response driving overconsumption",
+          "One cookie leads to entire package consumption",
+          "Insulin spike drives fat storage aggressively"
+        ]
+      },
+      "brain_focus": {
+        "grade": "F",
+        "score": 38,
+        "insight": "Brief sugar high provides 20-30 minutes of alertness followed by severe cognitive impairment. Blood sugar crash causes brain fog, poor decision-making, and impaired executive function.",
+        "pros": [
+          "Immediate glucose availability for brain",
+          "Brief dopamine release improves mood temporarily",
+          "Small amount of cocoa flavonoids"
+        ],
+        "cons": [
+          "Severe brain fog after inevitable crash",
+          "Impaired concentration and focus post-spike",
+          "Mood instability and irritability common",
+          "Sugar addiction affects dopamine regulation",
+          "Inflammation impairs cognitive function",
+          "Disrupts neurotransmitter production",
+          "Creates dependency on sugar for mental clarity"
+        ]
+      },
+      "gut_health": {
+        "grade": "D-",
+        "score": 52,
+        "insight": "High sugar content (38.4g) feeds pathogenic gut bacteria while low fiber (2.3g) starves beneficial species. Promotes dysbiosis, inflammation, and leaky gut syndrome.",
+        "pros": [
+          "Minimal fiber from wheat flour (2.3g)",
+          "Trace prebiotics from chocolate",
+          "Small amounts of resistant starch if cooled"
+        ],
+        "cons": [
+          "Very high sugar promotes pathogenic bacteria overgrowth",
+          "Low fiber provides minimal prebiotic support",
+          "Refined flour lacks resistant starch",
+          "Emulsifiers damage gut lining",
+          "Sugar alcohols may cause GI distress",
+          "Promotes intestinal permeability (leaky gut)",
+          "Disrupts microbiome diversity significantly"
+        ]
+      },
+      "blood_sugar": {
+        "grade": "F",
+        "score": 20,
+        "insight": "Catastrophic for glycemic control with GI of 64 and astronomical GL of 43. Single cookie can spike blood sugar 60-80 mg/dL in non-diabetics, much higher in diabetics.",
+        "pros": [
+          "Can treat severe hypoglycemia emergencies",
+          "Glucose available for diabetic low blood sugar rescue"
+        ],
+        "cons": [
+          "Extreme glycemic load (43) among worst foods",
+          "High glycemic index (64) causes rapid spike",
+          "Overwhelms insulin response capacity",
+          "Promotes insulin resistance with regular intake",
+          "Reactive hypoglycemia common 2-3 hours later",
+          "Significantly increases diabetes risk",
+          "No fiber, protein, or fat to slow absorption",
+          "Damages pancreatic beta cells over time"
+        ]
+      },
+      "bone_joint": {
+        "grade": "D",
+        "score": 56,
+        "insight": "Actively harmful to bone and joint health. High sugar causes calcium loss through urine, while inflammation from refined carbs exacerbates arthritis and joint pain.",
+        "pros": [
+          "Contains some calcium from milk powder (35mg)",
+          "Iron from enriched flour (2.8mg)",
+          "Trace magnesium from chocolate (34mg)"
+        ],
+        "cons": [
+          "Sugar causes urinary calcium excretion",
+          "AGEs from baking damage collagen and cartilage",
+          "Inflammation worsens arthritis symptoms",
+          "Weight gain from calories stresses joints",
+          "Omega-6 oils promote inflammatory prostaglandins",
+          "Phosphoric acid may impair calcium absorption",
+          "No vitamin D or K for bone health"
+        ]
+      },
+      "anti_inflammatory": {
+        "grade": "F",
+        "score": 25,
+        "insight": "Extremely pro-inflammatory due to high sugar, refined flour, and omega-6 vegetable oils. Single cookie can elevate inflammatory markers (CRP, IL-6) for 24-48 hours.",
+        "pros": [
+          "Minimal cocoa flavonoids have anti-inflammatory properties",
+          "Trace antioxidants from chocolate chips"
+        ],
+        "cons": [
+          "Very high sugar drives systemic inflammation",
+          "Refined wheat flour triggers inflammatory cascades",
+          "Omega-6 oils (soybean, palm) promote inflammation",
+          "AGEs from high-temp baking cause oxidative damage",
+          "Trans fats in commercial versions highly inflammatory",
+          "Insulin spikes activate pro-inflammatory pathways",
+          "Disrupts anti-inflammatory gut bacteria balance",
+          "Elevates CRP, IL-6, and TNF-alpha markers"
+        ]
+      }
+    }
+  },
+  "coffee": {
+    "name": "Coffee (Black, Brewed)",
+    "calories": 2,
+    "protein": 0.3,
+    "carbs": 0,
+    "fat": 0.05,
+    "fiber": 0,
+    "sugar": 0,
+    "sodium": 5,
+    "saturatedFat": 0,
+    "cholesterol": 0,
+    "potassium": 116,
+    "calcium": 5,
+    "iron": 0.02,
+    "magnesium": 8,
+    "vitaminA": 0,
+    "vitaminC": 0,
+    "vitaminD": 0,
+    "vitaminB12": 0,
+    "glycemicIndex": 0,
+    "glycemicLoad": 0,
+    "allergens": [],
+    "servingSize": 240,
+    "servingUnit": "ml",
+    "focusGrades": {
+      "balanced": {
+        "grade": "B+",
+        "score": 85,
+        "insight": "Zero calories with powerful bioactive compounds including caffeine, chlorogenic acids, and antioxidants. Enhances physical and mental performance without macronutrient impact.",
+        "pros": [
+          "Zero calories allows unlimited consumption",
+          "Rich in antioxidants (polyphenols)",
+          "Caffeine enhances metabolism",
+          "No sugar or macronutrients to disrupt diet",
+          "Potassium supports electrolyte balance"
+        ],
+        "cons": [
+          "Caffeine tolerance develops with regular use",
+          "Can cause anxiety and jitters in sensitive individuals",
+          "May disrupt sleep if consumed after 2 PM",
+          "Acidic nature may irritate stomach",
+          "Dependency and withdrawal headaches common"
+        ]
+      },
+      "heart_health": {
+        "grade": "A-",
+        "score": 88,
+        "insight": "Moderate consumption (3-5 cups daily) reduces cardiovascular disease risk by 15-20%. Chlorogenic acids improve endothelial function and reduce arterial stiffness.",
+        "pros": [
+          "Reduces heart disease risk by 15-20%",
+          "Chlorogenic acids improve vessel elasticity",
+          "Antioxidants prevent LDL oxidation",
+          "May reduce stroke risk by 20%",
+          "Lowers inflammation markers (CRP)"
+        ],
+        "cons": [
+          "Unfiltered coffee raises LDL cholesterol (cafestol)",
+          "Excessive intake may increase blood pressure acutely",
+          "Caffeine can trigger arrhythmias in sensitive individuals",
+          "May interfere with blood pressure medications",
+          "Timing matters for cardiovascular benefits"
+        ]
+      },
+      "muscle_building": {
+        "grade": "B+",
+        "score": 84,
+        "insight": "Caffeine enhances strength performance by 3-5% and reduces perceived exertion. Increases fat oxidation during training, sparing muscle glycogen for high-intensity work.",
+        "pros": [
+          "Increases strength and power output 3-5%",
+          "Reduces perceived exertion during training",
+          "Enhances fat oxidation sparing glycogen",
+          "Improves endurance and time to fatigue",
+          "Boosts adrenaline for intense workouts"
+        ],
+        "cons": [
+          "Zero protein content for muscle building",
+          "No direct muscle growth properties",
+          "Tolerance reduces ergogenic effects",
+          "May impair sleep needed for recovery",
+          "Dehydration risk if overused pre-workout"
+        ]
+      },
+      "energy": {
+        "grade": "A",
+        "score": 93,
+        "insight": "Gold standard for sustained energy enhancement. Caffeine blocks adenosine receptors, preventing fatigue signals while increasing dopamine and adrenaline for alertness and vigor.",
+        "pros": [
+          "Blocks adenosine to prevent fatigue perception",
+          "Increases dopamine for motivation and drive",
+          "Boosts adrenaline for physical energy",
+          "Effects last 4-6 hours per cup",
+          "Enhances fat oxidation for sustained fuel",
+          "No sugar crash unlike energy drinks"
+        ],
+        "cons": [
+          "Tolerance reduces energy-boosting effects",
+          "Withdrawal causes severe fatigue",
+          "Afternoon consumption disrupts sleep",
+          "Crash can occur when effects wear off",
+          "Individual metabolism varies (CYP1A2 gene)"
+        ]
+      },
+      "weight_management": {
+        "grade": "A",
+        "score": 92,
+        "insight": "Exceptional weight loss aid with zero calories. Increases metabolic rate 3-11%, enhances fat oxidation 10-29%, and suppresses appetite. Black coffee accelerates fat loss significantly.",
+        "pros": [
+          "Zero calories in black form",
+          "Increases resting metabolic rate 3-11%",
+          "Enhances fat oxidation by 10-29%",
+          "Suppresses appetite for 3-4 hours",
+          "Improves exercise performance for calorie burn",
+          "Chlorogenic acids slow carb absorption"
+        ],
+        "cons": [
+          "Adding sugar/cream negates calorie benefits",
+          "Tolerance reduces metabolic effects",
+          "May increase cortisol affecting fat storage",
+          "Can disrupt sleep impairing weight loss",
+          "Stress eating may increase with caffeine jitters"
+        ]
+      },
+      "brain_focus": {
+        "grade": "A",
+        "score": 95,
+        "insight": "Premier cognitive enhancer blocking adenosine fatigue signals while boosting dopamine, norepinephrine, and serotonin. Improves reaction time, vigilance, and logical reasoning 10-15%.",
+        "pros": [
+          "Blocks adenosine improving alertness",
+          "Increases dopamine enhancing focus",
+          "Improves reaction time and accuracy",
+          "Enhances working memory and processing speed",
+          "Neuroprotective against Alzheimer's (40% risk reduction)",
+          "Boosts mood and motivation"
+        ],
+        "cons": [
+          "Anxiety and jitters impair focus in sensitive users",
+          "Tolerance reduces cognitive benefits",
+          "Withdrawal causes brain fog and headaches",
+          "Overconsumption leads to scattered thinking",
+          "Disrupted sleep impairs next-day cognition"
+        ]
+      },
+      "gut_health": {
+        "grade": "B-",
+        "score": 74,
+        "insight": "Contains powerful prebiotics and polyphenols that increase Bifidobacteria populations. However, acidity and caffeine can irritate sensitive digestive systems and increase motility.",
+        "pros": [
+          "Polyphenols act as prebiotics",
+          "Increases beneficial Bifidobacteria",
+          "Chlorogenic acids support gut lining",
+          "Antioxidants reduce gut inflammation",
+          "May reduce liver disease risk"
+        ],
+        "cons": [
+          "Acidity irritates sensitive stomachs",
+          "Caffeine increases bowel motility (laxative effect)",
+          "Can trigger acid reflux and heartburn",
+          "May worsen IBS symptoms in some",
+          "Empty stomach consumption causes irritation"
+        ]
+      },
+      "blood_sugar": {
+        "grade": "A-",
+        "score": 88,
+        "insight": "Zero glycemic impact with powerful insulin-sensitizing effects. Chlorogenic acids slow glucose absorption and improve insulin sensitivity, reducing type 2 diabetes risk by 25-30%.",
+        "pros": [
+          "Zero glycemic index and load",
+          "Reduces type 2 diabetes risk 25-30%",
+          "Chlorogenic acids improve insulin sensitivity",
+          "Slows carbohydrate absorption in gut",
+          "Enhances glucose uptake by muscles",
+          "No blood sugar spike or crash"
+        ],
+        "cons": [
+          "May cause reactive hypoglycemia in diabetics",
+          "Caffeine can acutely raise blood sugar temporarily",
+          "Timing with meals affects glucose response",
+          "Individual response varies significantly",
+          "Adding sugar negates all benefits"
+        ]
+      },
+      "bone_joint": {
+        "grade": "C+",
+        "score": 70,
+        "insight": "Moderate effects on bone health - may slightly reduce calcium absorption but also provides antioxidants that protect cartilage. Association with reduced gout risk (40%) is significant benefit.",
+        "pros": [
+          "Reduces gout risk by 40% (uric acid lowering)",
+          "Antioxidants protect joint cartilage",
+          "Anti-inflammatory effects benefit arthritis",
+          "May reduce osteoarthritis pain",
+          "Chlorogenic acids support collagen"
+        ],
+        "cons": [
+          "Caffeine increases urinary calcium loss",
+          "May reduce bone density with excessive intake (>4 cups)",
+          "Acidic nature may leach minerals",
+          "Can interfere with calcium absorption timing",
+          "Needs adequate calcium intake to offset effects"
+        ]
+      },
+      "anti_inflammatory": {
+        "grade": "A-",
+        "score": 90,
+        "insight": "Exceptionally rich in anti-inflammatory polyphenols and chlorogenic acids. Regular consumption (3-5 cups) significantly reduces CRP, IL-6, and TNF-alpha inflammatory markers.",
+        "pros": [
+          "Very high in anti-inflammatory polyphenols",
+          "Chlorogenic acids suppress inflammatory pathways",
+          "Reduces CRP inflammatory markers significantly",
+          "Protects against chronic inflammatory diseases",
+          "Antioxidants combat oxidative inflammation",
+          "May reduce liver inflammation and fibrosis"
+        ],
+        "cons": [
+          "Excessive intake may increase cortisol (pro-inflammatory)",
+          "Unfiltered coffee contains inflammatory diterpenes",
+          "Individual inflammatory response varies",
+          "Stress from caffeine can promote inflammation",
+          "Timing and dosage matter for anti-inflammatory effects"
+        ]
+      }
+    }
+  },
+  "coke": {
+    "name": "Coca-Cola (Regular)",
+    "calories": 41,
+    "protein": 0,
+    "carbs": 10.6,
+    "fat": 0,
+    "fiber": 0,
+    "sugar": 10.6,
+    "sodium": 11,
+    "saturatedFat": 0,
+    "cholesterol": 0,
+    "potassium": 2,
+    "calcium": 3,
+    "iron": 0.04,
+    "magnesium": 1,
+    "vitaminA": 0,
+    "vitaminC": 0,
+    "vitaminD": 0,
+    "vitaminB12": 0,
+    "glycemicIndex": 63,
+    "glycemicLoad": 16,
+    "allergens": [],
+    "servingSize": 355,
+    "servingUnit": "ml",
+    "focusGrades": {
+      "balanced": {
+        "grade": "F",
+        "score": 15,
+        "insight": "Zero nutritional value with only sugar and artificial ingredients. 10.6g sugar per 100ml (39g per can) provides empty calories without vitamins, minerals, protein, or fiber.",
+        "pros": [
+          "Provides immediate energy from simple sugars",
+          "Caffeine provides mild alertness boost",
+          "Hydrating fluid component"
+        ],
+        "cons": [
+          "100% of calories from sugar (zero nutrients)",
+          "No protein, fiber, vitamins, or minerals",
+          "High fructose corn syrup linked to metabolic disease",
+          "Phosphoric acid depletes minerals",
+          "Artificial colors and preservatives",
+          "Displaces nutritious beverages like water or milk"
+        ]
+      },
+      "heart_health": {
+        "grade": "F",
+        "score": 10,
+        "insight": "Actively harmful to cardiovascular health. Daily consumption increases heart disease risk by 20% and stroke risk by 16%. Sugar damages arterial endothelium and promotes atherosclerosis.",
+        "pros": [
+          "Caffeine may provide minimal cardiovascular benefits",
+          "Fluid intake supports blood volume"
+        ],
+        "cons": [
+          "Increases heart disease risk 20% with daily intake",
+          "Raises stroke risk by 16%",
+          "Sugar damages arterial lining directly",
+          "Promotes LDL oxidation and plaque formation",
+          "Raises triglycerides significantly",
+          "Increases blood pressure through insulin resistance",
+          "Fructose especially harmful to cardiovascular system",
+          "Promotes visceral fat accumulation around organs"
+        ]
+      },
+      "muscle_building": {
+        "grade": "F",
+        "score": 20,
+        "insight": "Zero protein with sugar that promotes fat storage over muscle growth. Insulin spike without amino acids is completely wasted for muscle building. Actively counterproductive.",
+        "pros": [
+          "Simple sugars could replenish glycogen post-workout",
+          "Caffeine may enhance workout performance minimally",
+          "Immediate glucose availability"
+        ],
+        "cons": [
+          "Zero protein for muscle synthesis",
+          "Sugar promotes fat storage over muscle growth",
+          "No amino acids for recovery",
+          "Insulin spike wasted without protein",
+          "Displaces protein shakes and recovery nutrition",
+          "Inflammation impairs muscle recovery",
+          "Dehydrating effect from caffeine and sugar"
+        ]
+      },
+      "energy": {
+        "grade": "F",
+        "score": 35,
+        "insight": "Brief 30-minute energy spike from sugar and caffeine followed by severe crash. Glycemic load of 16 per serving guarantees blood sugar rollercoaster and energy dependency.",
+        "pros": [
+          "Immediate glucose and caffeine boost",
+          "Rapid energy availability within 15 minutes",
+          "May help acute low blood sugar episodes"
+        ],
+        "cons": [
+          "Severe energy crash within 30-60 minutes",
+          "High glycemic load (16) destabilizes blood sugar",
+          "Creates dependency and cravings",
+          "Fatigue worse than before consumption",
+          "Disrupts natural energy regulation",
+          "Caffeine tolerance reduces effectiveness",
+          "Reactive hypoglycemia common after spike"
+        ]
+      },
+      "weight_management": {
+        "grade": "F",
+        "score": 8,
+        "insight": "One of the worst beverages for weight management. Liquid calories don't trigger satiety, and one can (145 calories) provides zero fullness while spiking insulin for fat storage.",
+        "pros": [
+          "Low calorie density compared to solid foods (41 cal/100ml)",
+          "Could fit into strict calorie budget theoretically"
+        ],
+        "cons": [
+          "Liquid calories provide zero satiety",
+          "Sugar spikes insulin driving fat storage",
+          "One can = 145 empty calories with no fullness",
+          "Increases hunger and cravings within 1 hour",
+          "Daily intake linked to 60% increased obesity risk",
+          "Fructose bypasses satiety signaling",
+          "Promotes dangerous visceral fat accumulation",
+          "Creates sugar addiction and overconsumption"
+        ]
+      },
+      "brain_focus": {
+        "grade": "D-",
+        "score": 45,
+        "insight": "Brief 20-30 minute mental boost from sugar and caffeine followed by cognitive impairment. Brain fog, poor concentration, and mood instability common after crash.",
+        "pros": [
+          "Immediate glucose to brain for quick clarity",
+          "Caffeine improves alertness briefly (20-30 min)",
+          "May help acute mental fatigue temporarily",
+          "Dopamine release provides mood lift"
+        ],
+        "cons": [
+          "Severe brain fog after sugar crash",
+          "Impaired focus and concentration post-spike",
+          "Mood swings and irritability common",
+          "Creates dependency on sugar for mental function",
+          "Inflammation affects cognitive performance",
+          "Disrupts neurotransmitter balance",
+          "Regular intake linked to cognitive decline",
+          "Artificial sweeteners (in diet version) may harm cognition"
+        ]
+      },
+      "gut_health": {
+        "grade": "F",
+        "score": 18,
+        "insight": "Highly damaging to gut microbiome. High fructose corn syrup feeds pathogenic bacteria, phosphoric acid damages gut lining, and artificial ingredients disrupt beneficial species.",
+        "pros": [
+          "Provides hydration (water component)",
+          "Carbonation may aid temporary digestion"
+        ],
+        "cons": [
+          "High fructose corn syrup promotes pathogenic bacteria",
+          "Zero fiber starves beneficial gut microbes",
+          "Phosphoric acid damages intestinal lining",
+          "Artificial colors and preservatives harm microbiome",
+          "Sugar causes dysbiosis and inflammation",
+          "Promotes leaky gut syndrome",
+          "Carbonation may cause bloating and gas",
+          "Disrupts gut-brain axis communication"
+        ]
+      },
+      "blood_sugar": {
+        "grade": "F",
+        "score": 12,
+        "insight": "Catastrophic for glycemic control. Liquid sugar absorbs faster than solid food, spiking blood sugar 50-70 mg/dL within 15 minutes. Daily intake increases diabetes risk by 26%.",
+        "pros": [
+          "Can rapidly treat severe hypoglycemia",
+          "Glucose immediately available for emergencies"
+        ],
+        "cons": [
+          "Extremely rapid blood sugar spike (15 minutes)",
+          "High glycemic index (63) for a beverage",
+          "Glycemic load of 16 per 100ml (57 per can)",
+          "Increases type 2 diabetes risk 26% with daily intake",
+          "Liquid sugar bypasses normal digestion slowing",
+          "Promotes insulin resistance aggressively",
+          "Reactive hypoglycemia guaranteed 1-2 hours later",
+          "Damages pancreatic beta cells over time",
+          "Fructose especially harmful to insulin sensitivity"
+        ]
+      },
+      "bone_joint": {
+        "grade": "F",
+        "score": 22,
+        "insight": "Severely harmful to bone health. Phosphoric acid directly leaches calcium from bones, while sugar increases calcium excretion. Daily intake linked to increased fracture risk and osteoporosis.",
+        "pros": [
+          "Provides minimal hydration for joint lubrication",
+          "Trace calcium content (3mg - essentially zero)"
+        ],
+        "cons": [
+          "Phosphoric acid leaches calcium from bones directly",
+          "Sugar increases urinary calcium excretion",
+          "Displaces calcium-rich beverages like milk",
+          "Linked to reduced bone mineral density",
+          "Increases fracture risk with regular consumption",
+          "Inflammation worsens arthritis symptoms",
+          "Weight gain from calories stresses joints",
+          "Caffeine increases calcium loss in urine",
+          "No bone-building nutrients whatsoever"
+        ]
+      },
+      "anti_inflammatory": {
+        "grade": "F",
+        "score": 8,
+        "insight": "Extremely pro-inflammatory. High fructose corn syrup triggers systemic inflammation, elevating CRP, IL-6, and TNF-alpha markers. Regular consumption linked to chronic inflammatory diseases.",
+        "pros": [
+          "None - no anti-inflammatory properties whatsoever",
+          "Hydration component may dilute inflammatory markers minimally"
+        ],
+        "cons": [
+          "High fructose corn syrup highly inflammatory",
+          "Sugar activates inflammatory pathways systemically",
+          "Elevates CRP markers significantly",
+          "Increases IL-6 and TNF-alpha cytokines",
+          "AGEs from caramel coloring promote oxidation",
+          "Disrupts anti-inflammatory gut bacteria",
+          "Promotes visceral fat (highly inflammatory)",
+          "Insulin spikes activate inflammatory cascades",
+          "Linked to increased risk of inflammatory diseases",
+          "Phosphoric acid may promote inflammation"
+        ]
+      }
+    }
+  }
+}

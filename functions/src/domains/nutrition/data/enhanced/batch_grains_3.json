@@ -1,0 +1,783 @@
+{
+  "quinoa": {
+    "name": "Quinoa, cooked",
+    "category": "grains",
+    "defaultServing": {
+      "amount": 1,
+      "unit": "cup",
+      "grams": 185
+    },
+    "servingSizes": [
+      {
+        "amount": 1,
+        "unit": "cup",
+        "grams": 185,
+        "label": "1 cup cooked"
+      },
+      {
+        "amount": 0.5,
+        "unit": "cup",
+        "grams": 92.5,
+        "label": "1/2 cup cooked"
+      },
+      {
+        "amount": 100,
+        "unit": "g",
+        "grams": 100,
+        "label": "100g"
+      }
+    ],
+    "nutrition": {
+      "calories": 222,
+      "protein": 8.14,
+      "carbs": 39.41,
+      "fiber": 5.2,
+      "sugars": 1.61,
+      "addedSugars": 0,
+      "fat": 3.55,
+      "saturatedFat": 0.42,
+      "transFat": 0,
+      "polyunsaturatedFat": 2.01,
+      "monounsaturatedFat": 0.97,
+      "cholesterol": 0,
+      "sodium": 13,
+      "potassium": 318,
+      "vitaminA": 5,
+      "vitaminC": 0,
+      "vitaminD": 0,
+      "calcium": 31,
+      "iron": 2.76,
+      "magnesium": 118,
+      "zinc": 2.02,
+      "folate": 78,
+      "omega3": 0.26,
+      "omega6": 1.75
+    },
+    "glycemicIndex": 53,
+    "glycemicLoad": 13,
+    "insulinIndex": 45,
+    "inflammationScore": -2,
+    "allergens": [],
+    "dietaryTags": [
+      "gluten-free",
+      "vegan",
+      "vegetarian",
+      "high-fiber",
+      "high-protein",
+      "whole-grain"
+    ],
+    "healthScore": 88,
+    "processingLevel": "minimally_processed",
+    "shelfLife": "cooked_refrigerated_3_5_days",
+    "sustainabilityScore": 85,
+    "focusGrades": {
+      "heart_health": {
+        "grade": "A",
+        "score": 90,
+        "reasoning": "Excellent for heart health: very low sodium (13mg), zero cholesterol, high fiber (5.2g), rich in magnesium (118mg) and potassium (318mg). Contains healthy unsaturated fats and omega-3 fatty acids. Complete protein source with anti-inflammatory properties."
+      },
+      "diabetes_management": {
+        "grade": "A-",
+        "score": 88,
+        "reasoning": "Very good for diabetes: moderate glycemic index (53), low glycemic load (13), high fiber content slows glucose absorption. Rich in magnesium which improves insulin sensitivity. Complete protein helps stabilize blood sugar. Low in simple sugars."
+      },
+      "weight_management": {
+        "grade": "A",
+        "score": 92,
+        "reasoning": "Outstanding for weight management: high protein (8.1g) and fiber (5.2g) promote satiety. Nutrient-dense with moderate calories (222 per cup). Low glycemic response prevents hunger spikes. Complete amino acid profile supports metabolism."
+      },
+      "gut_health": {
+        "grade": "A",
+        "score": 90,
+        "reasoning": "Excellent for gut health: high fiber (5.2g) feeds beneficial bacteria. Contains resistant starch and prebiotics. Anti-inflammatory properties support gut lining. Gluten-free makes it easier to digest for sensitive individuals."
+      },
+      "athletic_performance": {
+        "grade": "A",
+        "score": 91,
+        "reasoning": "Superior for athletes: complete protein (8.1g) with all essential amino acids for recovery. Complex carbs (39g) provide sustained energy. Rich in iron (2.76mg), magnesium (118mg), and zinc (2.02mg) for oxygen transport and muscle function. Good electrolyte balance."
+      },
+      "brain_health": {
+        "grade": "A-",
+        "score": 87,
+        "reasoning": "Very good for brain health: high in magnesium and iron supporting cognitive function. Contains omega-3 fatty acids for brain structure. B-vitamins including folate (78mcg) for neurotransmitter production. Complex carbs provide steady glucose for brain energy."
+      },
+      "inflammation": {
+        "grade": "A",
+        "score": 93,
+        "reasoning": "Exceptional anti-inflammatory food: negative inflammation score (-2). Rich in antioxidants including quercetin and kaempferol. Good omega-3 to omega-6 ratio. Magnesium and zinc reduce inflammatory markers. Gluten-free reduces inflammation triggers."
+      },
+      "immune_health": {
+        "grade": "A-",
+        "score": 88,
+        "reasoning": "Very good for immunity: high in zinc (2.02mg), iron (2.76mg), and magnesium (118mg) - key immune minerals. Complete protein supports antibody production. Antioxidants combat oxidative stress. Fiber supports gut-immune axis."
+      },
+      "bone_health": {
+        "grade": "B+",
+        "score": 82,
+        "reasoning": "Good for bones: provides magnesium (118mg) for calcium absorption, phosphorus for bone matrix. Contains manganese for bone formation. Moderate calcium (31mg). Protein supports bone structure. Alkaline-forming helps maintain bone mineral density."
+      },
+      "skin_health": {
+        "grade": "B+",
+        "score": 84,
+        "reasoning": "Good for skin: complete protein supports collagen production. Iron and zinc promote wound healing and skin renewal. Antioxidants protect against UV damage. B-vitamins support skin cell turnover. Anti-inflammatory properties reduce skin issues."
+      }
+    },
+    "warnings": [],
+    "notes": "Quinoa is a complete protein containing all nine essential amino acids, making it exceptional for vegetarians and vegans. Naturally gluten-free ancient grain. Rinse before cooking to remove saponins. One of the most nutrient-dense grains available."
+  },
+  "tortilla": {
+    "name": "Flour tortilla",
+    "category": "grains",
+    "defaultServing": {
+      "amount": 1,
+      "unit": "tortilla",
+      "grams": 49
+    },
+    "servingSizes": [
+      {
+        "amount": 1,
+        "unit": "tortilla",
+        "grams": 49,
+        "label": "1 medium tortilla (8 inch)"
+      },
+      {
+        "amount": 2,
+        "unit": "tortilla",
+        "grams": 98,
+        "label": "2 tortillas"
+      },
+      {
+        "amount": 1,
+        "unit": "large",
+        "grams": 71,
+        "label": "1 large tortilla (10 inch)"
+      }
+    ],
+    "nutrition": {
+      "calories": 159,
+      "protein": 4.32,
+      "carbs": 26.39,
+      "fiber": 1.6,
+      "sugars": 1.86,
+      "addedSugars": 0.5,
+      "fat": 3.87,
+      "saturatedFat": 0.95,
+      "transFat": 0,
+      "polyunsaturatedFat": 1.32,
+      "monounsaturatedFat": 1.36,
+      "cholesterol": 0,
+      "sodium": 391,
+      "potassium": 88,
+      "vitaminA": 0,
+      "vitaminC": 0,
+      "vitaminD": 0,
+      "calcium": 80,
+      "iron": 1.76,
+      "magnesium": 15,
+      "zinc": 0.44,
+      "folate": 74,
+      "omega3": 0.08,
+      "omega6": 1.24
+    },
+    "glycemicIndex": 52,
+    "glycemicLoad": 14,
+    "insulinIndex": 58,
+    "inflammationScore": 1,
+    "allergens": [
+      "wheat",
+      "gluten"
+    ],
+    "dietaryTags": [
+      "vegetarian",
+      "vegan"
+    ],
+    "healthScore": 48,
+    "processingLevel": "processed",
+    "shelfLife": "room_temp_7_days_refrigerated_30_days",
+    "sustainabilityScore": 55,
+    "focusGrades": {
+      "heart_health": {
+        "grade": "C",
+        "score": 52,
+        "reasoning": "Moderate concerns for heart health: high sodium (391mg per tortilla, 17% DV) can raise blood pressure. Low fiber (1.6g). Contains some healthy unsaturated fats but also saturated fat. Enriched with folate which supports cardiovascular health. Better than white bread but not optimal."
+      },
+      "diabetes_management": {
+        "grade": "C+",
+        "score": 58,
+        "reasoning": "Fair for diabetes: moderate glycemic index (52) and glycemic load (14). Made from refined flour causes faster blood sugar rise than whole grain. Low fiber (1.6g) doesn't slow glucose absorption much. Higher insulin response (58). Better choices available for blood sugar control."
+      },
+      "weight_management": {
+        "grade": "C",
+        "score": 54,
+        "reasoning": "Moderate for weight management: refined carbs (26g) with low fiber (1.6g) don't promote lasting fullness. 159 calories per tortilla adds up quickly. Low protein (4.3g) and fiber mean less satiety. Can fit into balanced diet but portion control important."
+      },
+      "gut_health": {
+        "grade": "C-",
+        "score": 48,
+        "reasoning": "Below average for gut health: low fiber (1.6g) doesn't support microbiome well. Made from refined flour lacking beneficial compounds. Contains gluten which causes issues for sensitive individuals. Minimal prebiotic content. Whole grain options much better."
+      },
+      "athletic_performance": {
+        "grade": "B-",
+        "score": 70,
+        "reasoning": "Decent for athletes: provides quick-digesting carbs (26g) for immediate energy. Enriched with iron (1.76mg) for oxygen transport. Low fiber allows faster digestion pre-workout. Convenient portable format. However, whole grain options provide more sustained energy."
+      },
+      "brain_health": {
+        "grade": "C+",
+        "score": 60,
+        "reasoning": "Fair for brain health: enriched with folate (74mcg) important for neurotransmitters. Provides quick glucose for brain energy. However, high sodium may affect cognition. Low in B-vitamins, magnesium, and omega-3s compared to whole grain alternatives."
+      },
+      "inflammation": {
+        "grade": "C-",
+        "score": 47,
+        "reasoning": "Slightly pro-inflammatory: positive inflammation score (1). Made from refined wheat which can trigger inflammation. High sodium content. Poor omega-3 to omega-6 ratio. Contains gluten which causes inflammation in sensitive individuals. Lacks anti-inflammatory compounds."
+      },
+      "immune_health": {
+        "grade": "C",
+        "score": 53,
+        "reasoning": "Moderate for immunity: provides iron (1.76mg) and zinc (0.44mg) but in modest amounts. Enriched with folate supports immune cells. However, refined grains lack the nutrients and fiber that support gut-immune connection. High sodium may suppress immune function."
+      },
+      "bone_health": {
+        "grade": "C+",
+        "score": 62,
+        "reasoning": "Fair for bones: provides calcium (80mg, 6% DV) from enrichment. Contains phosphorus for bone matrix. However, high sodium (391mg) increases calcium loss through urine. Low magnesium. Refined grain lacks nutrients that support bone density."
+      },
+      "skin_health": {
+        "grade": "C",
+        "score": 55,
+        "reasoning": "Moderate for skin: provides some iron for oxygen delivery to skin. Enriched with B-vitamins for cell renewal. However, refined carbs can spike blood sugar affecting skin health. High sodium may cause puffiness. Lacks antioxidants and healthy fats for skin protection."
+      }
+    },
+    "warnings": [
+      "High in sodium (391mg per tortilla, 17% DV)",
+      "Contains gluten - avoid if celiac or gluten-sensitive",
+      "Made from refined flour, not whole grain"
+    ],
+    "notes": "Standard flour tortilla made from enriched wheat flour. Often contains vegetable shortening or oil. Check labels for whole wheat versions which have more fiber and nutrients. Can be part of balanced diet when used with nutrient-dense fillings like vegetables and lean proteins."
+  },
+  "flour_tortilla": {
+    "name": "Flour tortilla, whole wheat",
+    "category": "grains",
+    "defaultServing": {
+      "amount": 1,
+      "unit": "tortilla",
+      "grams": 52
+    },
+    "servingSizes": [
+      {
+        "amount": 1,
+        "unit": "tortilla",
+        "grams": 52,
+        "label": "1 medium tortilla (8 inch)"
+      },
+      {
+        "amount": 2,
+        "unit": "tortilla",
+        "grams": 104,
+        "label": "2 tortillas"
+      },
+      {
+        "amount": 1,
+        "unit": "large",
+        "grams": 75,
+        "label": "1 large tortilla (10 inch)"
+      }
+    ],
+    "nutrition": {
+      "calories": 147,
+      "protein": 4.94,
+      "carbs": 24.44,
+      "fiber": 3.1,
+      "sugars": 0.52,
+      "addedSugars": 0,
+      "fat": 3.54,
+      "saturatedFat": 0.57,
+      "transFat": 0,
+      "polyunsaturatedFat": 1.45,
+      "monounsaturatedFat": 1.26,
+      "cholesterol": 0,
+      "sodium": 364,
+      "potassium": 126,
+      "vitaminA": 0,
+      "vitaminC": 0,
+      "vitaminD": 0,
+      "calcium": 47,
+      "iron": 1.67,
+      "magnesium": 38,
+      "zinc": 0.83,
+      "folate": 18,
+      "omega3": 0.12,
+      "omega6": 1.33
+    },
+    "glycemicIndex": 48,
+    "glycemicLoad": 12,
+    "insulinIndex": 52,
+    "inflammationScore": 0,
+    "allergens": [
+      "wheat",
+      "gluten"
+    ],
+    "dietaryTags": [
+      "vegetarian",
+      "vegan",
+      "whole-grain"
+    ],
+    "healthScore": 62,
+    "processingLevel": "processed",
+    "shelfLife": "room_temp_7_days_refrigerated_30_days",
+    "sustainabilityScore": 60,
+    "focusGrades": {
+      "heart_health": {
+        "grade": "C+",
+        "score": 65,
+        "reasoning": "Fair for heart health: still high in sodium (364mg per tortilla, 16% DV) which can raise blood pressure. However, whole wheat provides more fiber (3.1g) to help lower cholesterol. Zero cholesterol. Contains healthy unsaturated fats. Better than white flour version but sodium remains a concern."
+      },
+      "diabetes_management": {
+        "grade": "B-",
+        "score": 72,
+        "reasoning": "Good for diabetes: lower glycemic index (48) and glycemic load (12) than white flour. Higher fiber (3.1g) slows glucose absorption. Whole grains improve insulin sensitivity. Very low in sugars (0.52g). Better choice than refined flour tortillas for blood sugar control."
+      },
+      "weight_management": {
+        "grade": "B-",
+        "score": 71,
+        "reasoning": "Good for weight management: higher fiber (3.1g) and protein (4.9g) promote satiety compared to white flour. Slightly fewer calories (147). Whole grains increase metabolism. Better nutrient density means more satisfaction per calorie. Good choice for balanced eating."
+      },
+      "gut_health": {
+        "grade": "B",
+        "score": 74,
+        "reasoning": "Good for gut health: nearly double the fiber (3.1g) of white flour tortillas feeds beneficial bacteria. Whole wheat contains prebiotics and resistant starch. However, still contains gluten. Better microbiome support than refined grains but not optimal fiber levels."
+      },
+      "athletic_performance": {
+        "grade": "B",
+        "score": 75,
+        "reasoning": "Good for athletes: complex carbs (24g) provide more sustained energy than refined flour. Higher protein (4.9g) aids recovery. More iron (1.67mg), magnesium (38mg), and zinc (0.83mg) for muscle function. Good pre-workout option that digests at moderate pace."
+      },
+      "brain_health": {
+        "grade": "B-",
+        "score": 68,
+        "reasoning": "Good for brain health: whole grains provide steady glucose for brain energy without spikes. More magnesium (38mg) supports cognitive function. B-vitamins from whole wheat support neurotransmitters. However, still relatively high in sodium which may affect cognition."
+      },
+      "inflammation": {
+        "grade": "B-",
+        "score": 68,
+        "reasoning": "Decent for inflammation: neutral inflammation score (0). Whole grains contain anti-inflammatory compounds like phenolic acids. Better fiber supports anti-inflammatory gut bacteria. However, still contains gluten and relatively high sodium. Improved omega-3 content compared to refined version."
+      },
+      "immune_health": {
+        "grade": "B-",
+        "score": 70,
+        "reasoning": "Good for immunity: whole wheat provides more zinc (0.83mg), iron (1.67mg), and magnesium (38mg) for immune function. Higher fiber supports gut-immune axis. Contains selenium and antioxidants. Better nutrient density than refined flour supports overall immune resilience."
+      },
+      "bone_health": {
+        "grade": "C+",
+        "score": 64,
+        "reasoning": "Fair for bones: provides magnesium (38mg) and phosphorus for bone health. Whole grains contain phytates which can reduce mineral absorption, but also provide minerals. High sodium (364mg) increases calcium loss. Moderate calcium (47mg). Better than refined but not optimal."
+      },
+      "skin_health": {
+        "grade": "B-",
+        "score": 68,
+        "reasoning": "Good for skin: whole wheat provides more zinc (0.83mg) for wound healing and skin renewal. B-vitamins and antioxidants support skin health. Better blood sugar control prevents glycation damage. Iron supports oxygen delivery. Improved nutrient profile over refined flour benefits skin."
+      }
+    },
+    "warnings": [
+      "High in sodium (364mg per tortilla, 16% DV)",
+      "Contains gluten - avoid if celiac or gluten-sensitive"
+    ],
+    "notes": "Whole wheat flour tortilla provides significantly more fiber and nutrients than regular white flour tortillas. Look for '100% whole wheat' on label - some products blend whole and refined wheat. Better choice for blood sugar control and sustained energy. Pairs well with protein and vegetables for balanced meals."
+  },
+  "bagel": {
+    "name": "Bagel, plain",
+    "category": "grains",
+    "defaultServing": {
+      "amount": 1,
+      "unit": "bagel",
+      "grams": 98
+    },
+    "servingSizes": [
+      {
+        "amount": 1,
+        "unit": "bagel",
+        "grams": 98,
+        "label": "1 medium bagel (3-4 inch)"
+      },
+      {
+        "amount": 0.5,
+        "unit": "bagel",
+        "grams": 49,
+        "label": "1/2 bagel"
+      },
+      {
+        "amount": 1,
+        "unit": "large",
+        "grams": 114,
+        "label": "1 large bagel (4.5 inch)"
+      }
+    ],
+    "nutrition": {
+      "calories": 277,
+      "protein": 10.55,
+      "carbs": 54.54,
+      "fiber": 2.3,
+      "sugars": 5.15,
+      "addedSugars": 2.5,
+      "fat": 1.67,
+      "saturatedFat": 0.25,
+      "transFat": 0,
+      "polyunsaturatedFat": 0.75,
+      "monounsaturatedFat": 0.29,
+      "cholesterol": 0,
+      "sodium": 475,
+      "potassium": 105,
+      "vitaminA": 0,
+      "vitaminC": 0,
+      "vitaminD": 0,
+      "calcium": 13,
+      "iron": 3.18,
+      "magnesium": 24,
+      "zinc": 0.81,
+      "folate": 133,
+      "omega3": 0.06,
+      "omega6": 0.69
+    },
+    "glycemicIndex": 72,
+    "glycemicLoad": 25,
+    "insulinIndex": 73,
+    "inflammationScore": 2,
+    "allergens": [
+      "wheat",
+      "gluten"
+    ],
+    "dietaryTags": [
+      "vegetarian",
+      "vegan"
+    ],
+    "healthScore": 42,
+    "processingLevel": "processed",
+    "shelfLife": "room_temp_3_5_days_frozen_3_months",
+    "sustainabilityScore": 52,
+    "focusGrades": {
+      "heart_health": {
+        "grade": "D+",
+        "score": 42,
+        "reasoning": "Poor for heart health: very high sodium (475mg per bagel, 21% DV) significantly raises blood pressure risk. High glycemic impact stresses cardiovascular system. Low in fiber (2.3g) doesn't help lower cholesterol. Very low in heart-healthy fats. Dense calorie load (277) without protective nutrients."
+      },
+      "diabetes_management": {
+        "grade": "D",
+        "score": 38,
+        "reasoning": "Poor for diabetes: high glycemic index (72) and very high glycemic load (25) cause rapid blood sugar spike. Made from refined flour. High insulin response (73). Large carb load (54.5g) relative to fiber (2.3g). Contains added sugars. Not recommended for blood sugar control."
+      },
+      "weight_management": {
+        "grade": "D+",
+        "score": 44,
+        "reasoning": "Poor for weight management: calorie-dense (277) with low satiety value. High glycemic load causes hunger rebound. Low fiber (2.3g) doesn't promote fullness. Large refined carb load (54.5g) without filling nutrients. Easy to overeat with toppings. Better options available."
+      },
+      "gut_health": {
+        "grade": "D+",
+        "score": 45,
+        "reasoning": "Poor for gut health: low fiber (2.3g) doesn't support microbiome. Made from refined enriched flour lacking beneficial compounds. High sodium may alter gut bacteria. Contains gluten. Minimal prebiotic value. Whole grain options much better for digestive health."
+      },
+      "athletic_performance": {
+        "grade": "C+",
+        "score": 64,
+        "reasoning": "Fair for athletes: high carb content (54.5g) provides quick energy. Good protein (10.5g) for a grain product. Enriched with iron (3.18mg) for oxygen transport. Dense calories useful for fuel. However, high glycemic response and sodium not ideal. Better pre-race options exist."
+      },
+      "brain_health": {
+        "grade": "C-",
+        "score": 50,
+        "reasoning": "Below average for brain health: high glycemic load causes blood sugar fluctuations affecting cognition. Very high sodium (475mg) may impair cognitive function and increase stroke risk. Enriched with folate (133mcg) which supports brain health. However, refined grain lacks protective nutrients and B-vitamins."
+      },
+      "inflammation": {
+        "grade": "D+",
+        "score": 43,
+        "reasoning": "Pro-inflammatory: positive inflammation score (2). Made from refined wheat. High glycemic load triggers inflammatory response. Very high sodium promotes inflammation. Contains gluten. Poor omega-3 to omega-6 ratio. Lacks anti-inflammatory compounds found in whole grains."
+      },
+      "immune_health": {
+        "grade": "C-",
+        "score": 48,
+        "reasoning": "Below average for immunity: provides iron (3.18mg) and zinc (0.81mg) but offset by high sodium which may suppress immune function. Refined grain lacks nutrients that support immune system. High glycemic load affects immune response. Better immune-supporting grain options available."
+      },
+      "bone_health": {
+        "grade": "D+",
+        "score": 44,
+        "reasoning": "Poor for bones: very low calcium (13mg, 1% DV). Very high sodium (475mg) increases calcium loss through urine, harming bone density. Low magnesium (24mg). Refined grain lacks nutrients that support bone health. Not a good choice for bone support."
+      },
+      "skin_health": {
+        "grade": "C-",
+        "score": 50,
+        "reasoning": "Below average for skin: high glycemic load (25) causes blood sugar spikes that damage skin through glycation. High sodium may cause puffiness. Provides some iron and zinc but lacks antioxidants and healthy fats. Refined grain doesn't support skin health well."
+      }
+    },
+    "warnings": [
+      "Very high in sodium (475mg per bagel, 21% DV)",
+      "High glycemic index and load - causes rapid blood sugar spike",
+      "Contains gluten - avoid if celiac or gluten-sensitive",
+      "Made from refined flour",
+      "Large serving size - consider eating half with protein"
+    ],
+    "notes": "Plain bagels are made from refined enriched wheat flour and boiled before baking, creating their dense, chewy texture. One bagel equals 3-4 slices of bread in carbohydrates. Consider whole wheat or whole grain varieties for more fiber and nutrients. Best paired with protein (nut butter, eggs, smoked salmon) and vegetables to balance the high carb content."
+  },
+  "cereal": {
+    "name": "Breakfast cereal, whole grain",
+    "category": "grains",
+    "defaultServing": {
+      "amount": 1,
+      "unit": "cup",
+      "grams": 50
+    },
+    "servingSizes": [
+      {
+        "amount": 1,
+        "unit": "cup",
+        "grams": 50,
+        "label": "1 cup"
+      },
+      {
+        "amount": 0.75,
+        "unit": "cup",
+        "grams": 37.5,
+        "label": "3/4 cup"
+      },
+      {
+        "amount": 1.5,
+        "unit": "cup",
+        "grams": 75,
+        "label": "1.5 cups"
+      }
+    ],
+    "nutrition": {
+      "calories": 186,
+      "protein": 5.5,
+      "carbs": 40.0,
+      "fiber": 5.0,
+      "sugars": 6.0,
+      "addedSugars": 4.5,
+      "fat": 2.0,
+      "saturatedFat": 0.35,
+      "transFat": 0,
+      "polyunsaturatedFat": 0.85,
+      "monounsaturatedFat": 0.55,
+      "cholesterol": 0,
+      "sodium": 240,
+      "potassium": 180,
+      "vitaminA": 225,
+      "vitaminC": 18,
+      "vitaminD": 2.5,
+      "calcium": 100,
+      "iron": 16.2,
+      "magnesium": 60,
+      "zinc": 3.75,
+      "folate": 400,
+      "omega3": 0.08,
+      "omega6": 0.77
+    },
+    "glycemicIndex": 58,
+    "glycemicLoad": 15,
+    "insulinIndex": 62,
+    "inflammationScore": 0,
+    "allergens": [
+      "wheat",
+      "gluten"
+    ],
+    "dietaryTags": [
+      "vegetarian",
+      "vegan",
+      "whole-grain",
+      "fortified"
+    ],
+    "healthScore": 68,
+    "processingLevel": "processed",
+    "shelfLife": "room_temp_6_12_months_unopened",
+    "sustainabilityScore": 58,
+    "focusGrades": {
+      "heart_health": {
+        "grade": "B",
+        "score": 75,
+        "reasoning": "Good for heart health: whole grain provides good fiber (5g) to lower cholesterol. Zero cholesterol. Fortified with folate (400mcg, 100% DV) which lowers homocysteine. Moderate sodium (240mg, 10% DV). Contains healthy unsaturated fats. Better with low-fat milk for complete heart-healthy breakfast."
+      },
+      "diabetes_management": {
+        "grade": "B-",
+        "score": 70,
+        "reasoning": "Good for diabetes: moderate glycemic index (58) and load (15). High fiber (5g) slows glucose absorption. Whole grains improve insulin sensitivity. However, contains added sugars (4.5g). Pairing with protein (milk, nuts) further stabilizes blood sugar. Better than refined cereals but watch portion size."
+      },
+      "weight_management": {
+        "grade": "B",
+        "score": 73,
+        "reasoning": "Good for weight management: high fiber (5g) promotes satiety and fullness. Reasonable calories (186 per cup). Whole grains support metabolism. However, easy to over-pour - measure portions. Adding protein (milk, yogurt) increases satiety. Good breakfast choice when portion-controlled."
+      },
+      "gut_health": {
+        "grade": "B+",
+        "score": 78,
+        "reasoning": "Very good for gut health: high fiber (5g) feeds beneficial bacteria. Whole grains contain prebiotics and resistant starch. Supports regular bowel movements. Contains beneficial compounds from whole grain. However, still contains gluten. Pairs well with yogurt for probiotic boost."
+      },
+      "athletic_performance": {
+        "grade": "B+",
+        "score": 80,
+        "reasoning": "Very good for athletes: provides quick energy from carbs (40g) with fiber for sustained release. Heavily fortified with iron (16.2mg, 90% DV) for oxygen transport. Good zinc (3.75mg) and B-vitamins for energy metabolism. Convenient pre-workout meal with milk for complete protein."
+      },
+      "brain_health": {
+        "grade": "B+",
+        "score": 81,
+        "reasoning": "Very good for brain health: heavily fortified with B-vitamins and folate (400mcg, 100% DV) essential for neurotransmitters. Good iron (16.2mg) for oxygen to brain. Whole grains provide steady glucose without spikes. Magnesium (60mg) supports cognitive function. Excellent breakfast for brain fuel."
+      },
+      "inflammation": {
+        "grade": "B",
+        "score": 73,
+        "reasoning": "Good for inflammation: neutral inflammation score (0). Whole grains contain anti-inflammatory compounds. Good fiber supports anti-inflammatory gut bacteria. However, contains added sugars which can promote inflammation. Moderate sodium. Better than refined cereals but added sugar is concern."
+      },
+      "immune_health": {
+        "grade": "A-",
+        "score": 85,
+        "reasoning": "Very good for immunity: heavily fortified with immune-supporting nutrients. Excellent zinc (3.75mg, 34% DV), iron (16.2mg, 90% DV), vitamin A (225mcg, 25% DV), vitamin C (18mg, 20% DV), and vitamin D (2.5mcg, 13% DV). High fiber supports gut-immune axis. Complete immune breakfast."
+      },
+      "bone_health": {
+        "grade": "B+",
+        "score": 78,
+        "reasoning": "Very good for bones: fortified with calcium (100mg, 8% DV) and vitamin D (2.5mcg, 13% DV) for absorption. Good magnesium (60mg) and phosphorus. When eaten with milk, provides significant calcium and protein for bone health. Moderate sodium doesn't compromise benefits."
+      },
+      "skin_health": {
+        "grade": "B",
+        "score": 74,
+        "reasoning": "Good for skin: fortified with vitamin A (225mcg) for skin cell turnover and repair. Good zinc (3.75mg) for wound healing. B-vitamins support skin renewal. Iron delivers oxygen to skin. However, added sugars can affect skin through glycation. Overall nutrient density supports healthy skin."
+      }
+    },
+    "warnings": [
+      "Contains added sugars (4.5g) - look for lower sugar options",
+      "Contains gluten - avoid if celiac or gluten-sensitive",
+      "Easy to over-portion - measure servings",
+      "Fortification levels vary by brand"
+    ],
+    "notes": "Generic whole grain breakfast cereal, typically flakes or puffs made from whole wheat, oats, or other whole grains. Heavily fortified with vitamins and minerals. Nutritional profile varies significantly by brand - check labels for fiber (aim for 3g+), sugar (aim for <6g), and sodium (<200mg). Best consumed with low-fat milk or yogurt and fresh fruit for complete nutrition."
+  },
+  "breakfast_cereal": {
+    "name": "Breakfast cereal, high fiber",
+    "category": "grains",
+    "defaultServing": {
+      "amount": 0.5,
+      "unit": "cup",
+      "grams": 31
+    },
+    "servingSizes": [
+      {
+        "amount": 0.5,
+        "unit": "cup",
+        "grams": 31,
+        "label": "1/2 cup"
+      },
+      {
+        "amount": 0.75,
+        "unit": "cup",
+        "grams": 46.5,
+        "label": "3/4 cup"
+      },
+      {
+        "amount": 1,
+        "unit": "cup",
+        "grams": 62,
+        "label": "1 cup"
+      }
+    ],
+    "nutrition": {
+      "calories": 97,
+      "protein": 3.72,
+      "carbs": 24.8,
+      "fiber": 9.3,
+      "sugars": 0.62,
+      "addedSugars": 0,
+      "fat": 0.93,
+      "saturatedFat": 0.19,
+      "transFat": 0,
+      "polyunsaturatedFat": 0.43,
+      "monounsaturatedFat": 0.19,
+      "cholesterol": 0,
+      "sodium": 161,
+      "potassium": 155,
+      "vitaminA": 186,
+      "vitaminC": 37.2,
+      "vitaminD": 6.2,
+      "calcium": 62,
+      "iron": 13.95,
+      "magnesium": 62,
+      "zinc": 3.1,
+      "folate": 248,
+      "omega3": 0.05,
+      "omega6": 0.38
+    },
+    "glycemicIndex": 42,
+    "glycemicLoad": 8,
+    "insulinIndex": 48,
+    "inflammationScore": -1,
+    "allergens": [
+      "wheat",
+      "gluten"
+    ],
+    "dietaryTags": [
+      "vegetarian",
+      "vegan",
+      "whole-grain",
+      "high-fiber",
+      "fortified",
+      "low-sugar"
+    ],
+    "healthScore": 84,
+    "processingLevel": "processed",
+    "shelfLife": "room_temp_6_12_months_unopened",
+    "sustainabilityScore": 62,
+    "focusGrades": {
+      "heart_health": {
+        "grade": "A-",
+        "score": 88,
+        "reasoning": "Excellent for heart health: very high fiber (9.3g, 33% DV) significantly lowers cholesterol and blood pressure. Zero cholesterol and very low fat. Fortified with folate (248mcg, 62% DV) which lowers homocysteine. Moderate sodium (161mg, 7% DV). Supports cardiovascular health when eaten regularly."
+      },
+      "diabetes_management": {
+        "grade": "A",
+        "score": 92,
+        "reasoning": "Outstanding for diabetes: low glycemic index (42) and low glycemic load (8) prevent blood sugar spikes. Exceptionally high fiber (9.3g) slows glucose absorption dramatically. Nearly zero sugar (0.62g), no added sugars. Whole grain improves insulin sensitivity. One of the best breakfast choices for blood sugar control."
+      },
+      "weight_management": {
+        "grade": "A",
+        "score": 90,
+        "reasoning": "Excellent for weight management: very high fiber (9.3g) creates strong satiety with low calories (97 per half cup). Absorbs water in stomach increasing fullness. Low glycemic response prevents hunger rebounds. Nearly fat-free. Supports gut bacteria that improve metabolism. Top choice for weight control."
+      },
+      "gut_health": {
+        "grade": "A",
+        "score": 93,
+        "reasoning": "Exceptional for gut health: very high fiber (9.3g, 33% DV) feeds beneficial bacteria extensively. Contains wheat bran with prebiotics. Supports regular bowel movements and prevents constipation. Whole grain provides resistant starch. One of the best cereals for microbiome health. However, contains gluten."
+      },
+      "athletic_performance": {
+        "grade": "B",
+        "score": 76,
+        "reasoning": "Good for athletes: provides sustained energy from complex carbs (24.8g). Very high fiber slows digestion - better for endurance than quick energy. Heavily fortified with iron (13.95mg, 78% DV) for oxygen transport. Good zinc and B-vitamins. Better for pre-training than immediate pre-competition."
+      },
+      "brain_health": {
+        "grade": "A-",
+        "score": 86,
+        "reasoning": "Excellent for brain health: low glycemic load provides steady brain glucose without crashes. Heavily fortified with B-vitamins and folate (248mcg, 62% DV) for neurotransmitter production. Good iron (13.95mg) for oxygen to brain. Magnesium (62mg) supports cognitive function. Fiber supports gut-brain axis."
+      },
+      "inflammation": {
+        "grade": "A-",
+        "score": 87,
+        "reasoning": "Very good for inflammation: negative inflammation score (-1). Very high fiber (9.3g) supports anti-inflammatory gut bacteria. Whole grain contains anti-inflammatory compounds. Nearly zero sugar prevents inflammatory spikes. However, contains gluten. Low glycemic load reduces inflammatory markers."
+      },
+      "immune_health": {
+        "grade": "A",
+        "score": 90,
+        "reasoning": "Excellent for immunity: heavily fortified with immune-supporting nutrients. High zinc (3.1mg, 28% DV), exceptional iron (13.95mg, 78% DV), vitamin A (186mcg, 21% DV), vitamin C (37.2mg, 41% DV), and vitamin D (6.2mcg, 31% DV). Very high fiber supports gut-immune connection."
+      },
+      "bone_health": {
+        "grade": "B+",
+        "score": 80,
+        "reasoning": "Very good for bones: fortified with calcium (62mg, 5% DV) and good vitamin D (6.2mcg, 31% DV) for absorption. Provides magnesium (62mg, 15% DV) and phosphorus. Moderate sodium (161mg) doesn't significantly harm bones. When eaten with milk, becomes excellent bone-supporting meal."
+      },
+      "skin_health": {
+        "grade": "B+",
+        "score": 82,
+        "reasoning": "Very good for skin: fortified with vitamin A (186mcg) and vitamin C (37.2mg) for collagen production. Good zinc (3.1mg) for wound healing and skin renewal. B-vitamins support cell turnover. Very low sugar prevents glycation damage. High fiber improves skin through gut health. Nutrient-dense for skin support."
+      }
+    },
+    "warnings": [
+      "Very high fiber (9.3g) - increase water intake to prevent constipation",
+      "Contains gluten - avoid if celiac or gluten-sensitive",
+      "Start with smaller portions if not used to high fiber",
+      "May cause bloating initially until gut adapts"
+    ],
+    "notes": "High-fiber breakfast cereal (like All-Bran, Fiber One, or similar wheat bran cereals). Contains wheat bran as primary ingredient. Exceptionally high in fiber - one serving provides 33% of daily needs. Fortified with vitamins and minerals. Very low in sugar compared to most cereals. Best consumed with milk or yogurt and fruit. Increase fiber intake gradually to allow digestive system to adapt. Excellent choice for digestive health, blood sugar control, and weight management."
+  }
+}

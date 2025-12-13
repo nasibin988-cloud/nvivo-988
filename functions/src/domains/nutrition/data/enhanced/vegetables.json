@@ -1,0 +1,2401 @@
+{
+  "broccoli": {
+    "name": "Broccoli, raw",
+    "fdcId": "170379",
+    "quantity": 1,
+    "unit": "cup chopped (91g)",
+    "mealType": "side",
+    "foodGroups": ["vegetable"],
+    "subCategory": "cruciferous",
+    "calories": 31,
+    "protein": 2.5,
+    "carbs": 6,
+    "fat": 0.4,
+    "fiber": 2.4,
+    "sugar": 1.5,
+    "sodium": 30,
+    "saturatedFat": 0.04,
+    "transFat": 0,
+    "cholesterol": 0,
+    "potassium": 288,
+    "calcium": 43,
+    "iron": 0.7,
+    "magnesium": 19,
+    "zinc": 0.4,
+    "vitaminA": 567,
+    "vitaminC": 81.2,
+    "vitaminD": 0,
+    "vitaminE": 0.7,
+    "vitaminK": 92.5,
+    "thiamin": 0.07,
+    "riboflavin": 0.1,
+    "niacin": 0.6,
+    "vitaminB6": 0.16,
+    "folate": 57,
+    "vitaminB12": 0,
+    "choline": 17,
+    "phosphorus": 60,
+    "selenium": 2.3,
+    "copper": 0.05,
+    "manganese": 0.19,
+    "caffeine": 0,
+    "water": 89,
+    "monounsaturatedFat": 0.01,
+    "polyunsaturatedFat": 0.04,
+    "omega3": { "ala": 0.02, "epa": 0, "dha": 0 },
+    "omega6": { "linoleicAcid": 0.02 },
+    "omegaRatio": 1.0,
+    "glycemicIndex": 15,
+    "glycemicLoad": 1,
+    "glycemicCategory": "low",
+    "nutrientDensityScore": 52.3,
+    "satietyScore": 78,
+    "inflammatoryIndex": -3.5,
+    "novaClass": 1,
+    "oracScore": 1510,
+    "dietaryTags": ["vegan", "gluten_free", "keto", "paleo", "whole30", "low_fodmap"],
+    "allergens": [],
+    "insight": "A nutritional powerhouse—exceptional vitamin C and K with cancer-fighting sulforaphane. One of the most nutrient-dense foods on Earth.",
+    "focusGrades": {
+      "balanced": {
+        "grade": "A",
+        "score": 93,
+        "insight": "Exceptional nutrient density with high fiber, vitamins C and K, and very low calories. Hard to beat.",
+        "pros": ["Very high vitamin C (135% DV)", "Excellent vitamin K", "High fiber for calories"],
+        "cons": ["Low in protein", "Minimal fat-soluble vitamin D"]
+      },
+      "heart_health": {
+        "grade": "A+",
+        "score": 97,
+        "insight": "Stellar potassium (288mg), fiber, and virtually no sodium. Sulforaphane compounds support arterial health.",
+        "pros": ["Excellent potassium", "High fiber", "Anti-inflammatory compounds", "Zero saturated fat"],
+        "cons": []
+      },
+      "muscle_building": {
+        "grade": "C+",
+        "score": 73,
+        "insight": "2.5g protein is decent for a vegetable but won't build muscle. Great side dish to pair with protein sources.",
+        "pros": ["Decent vegetable protein", "Good micronutrients for recovery"],
+        "cons": ["Insufficient protein alone", "Very low calories"]
+      },
+      "energy": {
+        "grade": "B+",
+        "score": 84,
+        "insight": "Good B-vitamins and iron for energy metabolism. Low-GI carbs provide steady fuel without crashes.",
+        "pros": ["B-vitamins support energy", "Iron for oxygen transport", "Steady energy release"],
+        "cons": ["Low total calories for energy needs"]
+      },
+      "weight_management": {
+        "grade": "A+",
+        "score": 98,
+        "insight": "Only 31 calories per cup with 2.4g fiber = exceptional satiety per calorie. A dieter's best friend.",
+        "pros": ["Extremely low calorie", "High fiber", "High volume/water content"],
+        "cons": []
+      },
+      "brain_focus": {
+        "grade": "A-",
+        "score": 88,
+        "insight": "High antioxidants (vitamin C, sulforaphane) protect brain cells. Good folate supports cognition.",
+        "pros": ["High antioxidants", "Good folate", "Anti-inflammatory"],
+        "cons": ["No omega-3", "No B12"]
+      },
+      "gut_health": {
+        "grade": "A",
+        "score": 92,
+        "insight": "2.4g fiber per cup plus prebiotic compounds support a healthy microbiome. Sulforaphane may benefit gut lining.",
+        "pros": ["Good fiber content", "Prebiotic compounds", "Gut-protective sulforaphane"],
+        "cons": ["Can cause gas in some people"]
+      },
+      "blood_sugar": {
+        "grade": "A+",
+        "score": 97,
+        "insight": "GI of 15 is extremely low. High fiber, minimal sugar (1.5g). Perfect for blood sugar management.",
+        "pros": ["Very low GI (15)", "Minimal sugar", "High fiber"],
+        "cons": []
+      },
+      "bone_joint": {
+        "grade": "A-",
+        "score": 89,
+        "insight": "Excellent vitamin K (92.5mcg, 103% DV) crucial for bone protein synthesis. Good calcium and vitamin C for collagen.",
+        "pros": ["Outstanding vitamin K", "Good calcium", "Vitamin C for collagen"],
+        "cons": ["No vitamin D"]
+      },
+      "anti_inflammatory": {
+        "grade": "A+",
+        "score": 96,
+        "insight": "Sulforaphane is a potent anti-inflammatory compound. High antioxidants, no omega-6 concerns. Top tier.",
+        "pros": ["Sulforaphane anti-inflammatory", "High vitamin C", "Excellent ORAC score"],
+        "cons": []
+      }
+    },
+    "bioavailability": {
+      "iron": { "type": "non-heme", "absorption": "moderate", "tip": "Already contains vitamin C to aid absorption" },
+      "calcium": { "absorption": "moderate", "tip": "Oxalates are low in broccoli, so calcium absorbs well" }
+    },
+    "pairWith": [
+      { "food": "olive_oil", "reason": "Fat helps absorb fat-soluble vitamins A, E, K" },
+      { "food": "garlic", "reason": "Combined anti-inflammatory compounds enhance benefits" },
+      { "food": "chicken", "reason": "Complete the meal with lean protein" }
+    ],
+    "avoidWith": [],
+    "bestTiming": {
+      "preWorkout": false,
+      "postWorkout": true,
+      "morning": true,
+      "beforeBed": true
+    },
+    "digestionTime": "medium",
+    "portionVisual": "1 cup = about the size of a baseball",
+    "tips": {
+      "storage": "Refrigerate unwashed in a loose bag for up to 5 days",
+      "cooking": "Lightly steam (3-4 min) to preserve nutrients; avoid boiling",
+      "prepTip": "Chop and let sit 5 min before cooking to maximize sulforaphane"
+    },
+    "commonMistakes": [
+      "Overcooking destroys vitamin C and sulforaphane",
+      "Boiling leaches water-soluble nutrients into water"
+    ],
+    "cautions": {
+      "warfarin": "High vitamin K—maintain consistent intake if on blood thinners",
+      "thyroid": "Goitrogens may affect thyroid if eaten raw in large amounts",
+      "ibs": "May cause gas and bloating"
+    },
+    "pregnancySafe": true,
+    "pregnancyNotes": "Excellent choice—high folate supports fetal development",
+    "drugInteractions": [
+      { "drug": "Warfarin", "severity": "moderate", "reason": "Vitamin K affects blood clotting—keep intake consistent" }
+    ],
+    "pediatric": {
+      "ageAppropriate": "6+ months (steamed and pureed)",
+      "chokingRisk": "low when cooked soft",
+      "commonAllergen": false
+    }
+  },
+  "broccoli_cooked": {
+    "name": "Broccoli, cooked",
+    "fdcId": "169967",
+    "quantity": 1,
+    "unit": "cup chopped (156g)",
+    "mealType": "side",
+    "foodGroups": ["vegetable"],
+    "subCategory": "cruciferous",
+    "calories": 55,
+    "protein": 3.7,
+    "carbs": 11.2,
+    "fat": 0.6,
+    "fiber": 5.1,
+    "sugar": 2.2,
+    "sodium": 64,
+    "saturatedFat": 0.08,
+    "transFat": 0,
+    "cholesterol": 0,
+    "potassium": 457,
+    "calcium": 62,
+    "iron": 1.1,
+    "magnesium": 33,
+    "zinc": 0.6,
+    "vitaminA": 1207,
+    "vitaminC": 101,
+    "vitaminD": 0,
+    "vitaminE": 1.5,
+    "vitaminK": 220,
+    "thiamin": 0.09,
+    "riboflavin": 0.2,
+    "niacin": 0.9,
+    "vitaminB6": 0.28,
+    "folate": 168,
+    "vitaminB12": 0,
+    "choline": 63,
+    "phosphorus": 105,
+    "selenium": 3.2,
+    "copper": 0.08,
+    "manganese": 0.34,
+    "caffeine": 0,
+    "water": 139,
+    "monounsaturatedFat": 0.02,
+    "polyunsaturatedFat": 0.06,
+    "omega3": { "ala": 0.03, "epa": 0, "dha": 0 },
+    "omega6": { "linoleicAcid": 0.03 },
+    "omegaRatio": 1.0,
+    "glycemicIndex": 15,
+    "glycemicLoad": 2,
+    "glycemicCategory": "low",
+    "nutrientDensityScore": 54.8,
+    "satietyScore": 82,
+    "inflammatoryIndex": -3.8,
+    "novaClass": 1,
+    "oracScore": 1362,
+    "dietaryTags": ["vegan", "gluten_free", "keto", "paleo", "whole30", "low_fodmap"],
+    "allergens": [],
+    "insight": "Cooking concentrates nutrients—even higher vitamin K, folate, and fiber than raw. Steaming preserves most benefits.",
+    "focusGrades": {
+      "balanced": {
+        "grade": "A+",
+        "score": 95,
+        "insight": "Cooking concentrates nutrients—exceptional vitamin K (244% DV), folate (42% DV), and fiber (5.1g).",
+        "pros": ["Outstanding vitamin K", "Very high folate", "Excellent fiber", "More bioavailable nutrients"],
+        "cons": ["Slightly reduced vitamin C from cooking"]
+      },
+      "heart_health": {
+        "grade": "A+",
+        "score": 98,
+        "insight": "Outstanding potassium (457mg), fiber (5.1g), and virtually no sodium. Ideal for cardiovascular health.",
+        "pros": ["Excellent potassium:sodium ratio", "High fiber", "Zero saturated fat", "Anti-inflammatory"],
+        "cons": []
+      },
+      "muscle_building": {
+        "grade": "B-",
+        "score": 77,
+        "insight": "3.7g protein is better than raw but still insufficient alone. Excellent micronutrients for recovery.",
+        "pros": ["Better protein than raw", "Good for muscle recovery", "High in magnesium"],
+        "cons": ["Still low total protein", "Low calories"]
+      },
+      "energy": {
+        "grade": "A-",
+        "score": 87,
+        "insight": "Enhanced B-vitamins from cooking support energy metabolism. Good iron and magnesium.",
+        "pros": ["Good B-vitamin complex", "Iron for oxygen transport", "Magnesium for ATP production"],
+        "cons": ["Still low in total calories"]
+      },
+      "weight_management": {
+        "grade": "A+",
+        "score": 99,
+        "insight": "Only 55 calories with 5.1g fiber = exceptional satiety. High volume, high water content.",
+        "pros": ["Very low calorie density", "Outstanding fiber", "High water content", "Very filling"],
+        "cons": []
+      },
+      "brain_focus": {
+        "grade": "A",
+        "score": 91,
+        "insight": "Exceptional folate (168mcg) crucial for cognition. High antioxidants protect brain cells.",
+        "pros": ["Outstanding folate", "High choline", "Strong antioxidants", "Good B6"],
+        "cons": ["No B12", "No omega-3"]
+      },
+      "gut_health": {
+        "grade": "A+",
+        "score": 96,
+        "insight": "5.1g fiber per cup is outstanding. Prebiotic compounds feed beneficial gut bacteria.",
+        "pros": ["Excellent fiber content", "Prebiotic benefits", "Supports microbiome diversity"],
+        "cons": ["May cause gas in sensitive individuals"]
+      },
+      "blood_sugar": {
+        "grade": "A+",
+        "score": 98,
+        "insight": "GI of 15, high fiber (5.1g), minimal sugar (2.2g). Exceptional for blood sugar control.",
+        "pros": ["Very low GI", "High fiber", "Low sugar", "Slow digestion"],
+        "cons": []
+      },
+      "bone_joint": {
+        "grade": "A+",
+        "score": 95,
+        "insight": "Outstanding vitamin K (220mcg, 244% DV) essential for bone protein synthesis. Good calcium.",
+        "pros": ["Exceptional vitamin K", "Good calcium", "Vitamin C for collagen", "Magnesium for bone density"],
+        "cons": []
+      },
+      "anti_inflammatory": {
+        "grade": "A+",
+        "score": 97,
+        "insight": "High sulforaphane, excellent vitamin C (101mg). One of the most anti-inflammatory foods available.",
+        "pros": ["Potent sulforaphane", "High vitamin C", "Excellent antioxidants", "Strong ORAC score"],
+        "cons": []
+      }
+    },
+    "bioavailability": {
+      "iron": { "type": "non-heme", "absorption": "moderate", "tip": "High vitamin C content enhances iron absorption" },
+      "calcium": { "absorption": "good", "tip": "Cooking reduces oxalates, improving calcium bioavailability" }
+    },
+    "pairWith": [
+      { "food": "olive_oil", "reason": "Fat enhances absorption of vitamins A, E, K" },
+      { "food": "lemon", "reason": "Vitamin C further boosts iron absorption" },
+      { "food": "salmon", "reason": "Complete meal with omega-3 and protein" }
+    ],
+    "avoidWith": [],
+    "bestTiming": {
+      "preWorkout": false,
+      "postWorkout": true,
+      "morning": true,
+      "beforeBed": true
+    },
+    "digestionTime": "medium",
+    "portionVisual": "1 cup = about the size of a baseball",
+    "tips": {
+      "storage": "Refrigerate cooked broccoli for up to 3 days in airtight container",
+      "cooking": "Steam 5-7 minutes for best nutrient retention; avoid boiling",
+      "prepTip": "Add lemon juice after cooking to preserve color and boost iron absorption"
+    },
+    "commonMistakes": [
+      "Overcooking makes it mushy and destroys nutrients",
+      "Boiling leaches vitamins into water"
+    ],
+    "cautions": {
+      "warfarin": "Very high vitamin K—maintain consistent intake if on blood thinners",
+      "thyroid": "Cooking reduces goitrogens but don't eat huge amounts if hypothyroid",
+      "ibs": "May cause gas and bloating"
+    },
+    "pregnancySafe": true,
+    "pregnancyNotes": "Excellent choice—outstanding folate (42% DV) supports fetal development",
+    "drugInteractions": [
+      { "drug": "Warfarin", "severity": "moderate", "reason": "Very high vitamin K affects blood clotting—keep intake consistent" }
+    ],
+    "pediatric": {
+      "ageAppropriate": "6+ months (steamed and pureed)",
+      "chokingRisk": "low when cooked soft",
+      "commonAllergen": false
+    }
+  },
+  "spinach": {
+    "name": "Spinach, cooked",
+    "fdcId": "168462",
+    "quantity": 1,
+    "unit": "cup (180g)",
+    "mealType": "side",
+    "foodGroups": ["vegetable"],
+    "subCategory": "leafy_green",
+    "calories": 41,
+    "protein": 5.4,
+    "carbs": 6.8,
+    "fat": 0.5,
+    "fiber": 4.3,
+    "sugar": 0.8,
+    "sodium": 126,
+    "saturatedFat": 0.08,
+    "transFat": 0,
+    "cholesterol": 0,
+    "potassium": 839,
+    "calcium": 245,
+    "iron": 6.4,
+    "magnesium": 157,
+    "zinc": 1.4,
+    "vitaminA": 943,
+    "vitaminC": 17.6,
+    "vitaminD": 0,
+    "vitaminE": 3.7,
+    "vitaminK": 888,
+    "thiamin": 0.17,
+    "riboflavin": 0.42,
+    "niacin": 0.9,
+    "vitaminB6": 0.44,
+    "folate": 263,
+    "vitaminB12": 0,
+    "choline": 35,
+    "phosphorus": 101,
+    "selenium": 2.9,
+    "copper": 0.31,
+    "manganese": 1.7,
+    "caffeine": 0,
+    "water": 164,
+    "monounsaturatedFat": 0.01,
+    "polyunsaturatedFat": 0.21,
+    "omega3": { "ala": 0.17, "epa": 0, "dha": 0 },
+    "omega6": { "linoleicAcid": 0.03 },
+    "omegaRatio": 5.7,
+    "glycemicIndex": 15,
+    "glycemicLoad": 1,
+    "glycemicCategory": "low",
+    "nutrientDensityScore": 86.4,
+    "satietyScore": 85,
+    "inflammatoryIndex": -4.2,
+    "novaClass": 1,
+    "oracScore": 1515,
+    "dietaryTags": ["vegan", "gluten_free", "keto", "paleo", "whole30"],
+    "allergens": [],
+    "insight": "One of the most nutrient-dense foods on Earth—exceptional vitamin K (987% DV), iron, folate, and magnesium. Popeye was right.",
+    "focusGrades": {
+      "balanced": {
+        "grade": "A+",
+        "score": 98,
+        "insight": "Off-the-charts nutrient density. Exceptional iron (36% DV), folate (66% DV), vitamin K (987% DV), magnesium (37% DV).",
+        "pros": ["Outstanding vitamin K", "Exceptional iron", "Very high folate", "Excellent magnesium", "High protein for vegetable"],
+        "cons": ["Higher sodium than other vegetables"]
+      },
+      "heart_health": {
+        "grade": "A+",
+        "score": 99,
+        "insight": "Outstanding potassium (839mg), magnesium (157mg), and nitrates that support blood pressure and arterial health.",
+        "pros": ["Exceptional potassium", "Outstanding magnesium", "Nitrates support circulation", "High folate"],
+        "cons": []
+      },
+      "muscle_building": {
+        "grade": "B",
+        "score": 82,
+        "insight": "5.4g protein is excellent for a vegetable. Nitrates may improve exercise performance and muscle oxygen delivery.",
+        "pros": ["High vegetable protein", "Nitrates for performance", "Good iron for oxygen transport", "Magnesium for muscle function"],
+        "cons": ["Still insufficient protein alone", "Low calories"]
+      },
+      "energy": {
+        "grade": "A",
+        "score": 92,
+        "insight": "Outstanding iron (6.4mg, 36% DV) crucial for oxygen transport. Excellent B-vitamins and magnesium for ATP production.",
+        "pros": ["Exceptional iron", "Great B-vitamin complex", "High magnesium", "Nitrates improve oxygen efficiency"],
+        "cons": ["Non-heme iron absorbs less efficiently"]
+      },
+      "weight_management": {
+        "grade": "A+",
+        "score": 99,
+        "insight": "Only 41 calories with 5.4g protein and 4.3g fiber. Exceptional satiety and nutrient density.",
+        "pros": ["Very low calorie", "High protein for vegetable", "Good fiber", "High water content"],
+        "cons": []
+      },
+      "brain_focus": {
+        "grade": "A+",
+        "score": 94,
+        "insight": "Exceptional folate (263mcg, 66% DV) and nitrates support cognition and blood flow to brain. High antioxidants.",
+        "pros": ["Outstanding folate", "Nitrates improve brain blood flow", "High antioxidants", "Good B6 and choline"],
+        "cons": ["No B12", "Minimal omega-3"]
+      },
+      "gut_health": {
+        "grade": "A",
+        "score": 93,
+        "insight": "4.3g fiber plus prebiotic compounds support microbiome. Magnesium aids digestive motility.",
+        "pros": ["Good fiber content", "Prebiotic benefits", "Magnesium for motility", "Anti-inflammatory"],
+        "cons": ["Oxalates may irritate sensitive guts"]
+      },
+      "blood_sugar": {
+        "grade": "A+",
+        "score": 99,
+        "insight": "GI of 15, minimal sugar (0.8g), high fiber. Nitrates may improve insulin sensitivity. Perfect for diabetics.",
+        "pros": ["Very low GI", "Minimal sugar", "Good fiber", "May improve insulin sensitivity"],
+        "cons": []
+      },
+      "bone_joint": {
+        "grade": "A+",
+        "score": 97,
+        "insight": "Extraordinary vitamin K (888mcg, 987% DV) crucial for bone protein synthesis. Excellent calcium and magnesium.",
+        "pros": ["Off-the-charts vitamin K", "Excellent calcium", "Outstanding magnesium", "Good vitamin C for collagen"],
+        "cons": ["Oxalates reduce calcium absorption somewhat"]
+      },
+      "anti_inflammatory": {
+        "grade": "A+",
+        "score": 98,
+        "insight": "Exceptional antioxidants, high vitamin E, excellent omega-3:6 ratio (5.7:1). Strong anti-inflammatory profile.",
+        "pros": ["Outstanding antioxidants", "Excellent ORAC score", "Good omega-3:6 ratio", "High vitamin E"],
+        "cons": []
+      }
+    },
+    "bioavailability": {
+      "iron": { "type": "non-heme", "absorption": "low-moderate", "tip": "Pair with vitamin C (citrus, tomatoes) to boost absorption. Cooking helps." },
+      "calcium": { "absorption": "low", "tip": "High oxalates bind calcium—only ~5% absorbs. Not a primary calcium source." }
+    },
+    "pairWith": [
+      { "food": "lemon", "reason": "Vitamin C dramatically boosts iron absorption" },
+      { "food": "olive_oil", "reason": "Fat helps absorb vitamins A, E, K" },
+      { "food": "garlic", "reason": "Enhances anti-inflammatory benefits" }
+    ],
+    "avoidWith": [
+      { "food": "dairy", "reason": "Calcium competes with iron absorption" }
+    ],
+    "bestTiming": {
+      "preWorkout": false,
+      "postWorkout": true,
+      "morning": true,
+      "beforeBed": true
+    },
+    "digestionTime": "medium",
+    "portionVisual": "1 cup cooked = about the size of a baseball (cooks down from ~6 cups raw)",
+    "tips": {
+      "storage": "Refrigerate fresh spinach for 3-5 days; cooked for 3 days",
+      "cooking": "Lightly steam or sauté to preserve nutrients; cooking reduces volume 90%",
+      "prepTip": "Add acid (lemon, vinegar) after cooking to preserve bright green color"
+    },
+    "commonMistakes": [
+      "Not pairing with vitamin C to boost iron absorption",
+      "Relying on it for calcium (oxalates block absorption)"
+    ],
+    "cautions": {
+      "kidneyStones": "Very high oxalates—avoid if prone to calcium oxalate kidney stones",
+      "warfarin": "Extremely high vitamin K—maintain consistent intake if on blood thinners",
+      "gout": "Contains purines—moderate intake if prone to gout"
+    },
+    "pregnancySafe": true,
+    "pregnancyNotes": "Excellent choice—outstanding folate (66% DV) and iron support fetal development",
+    "drugInteractions": [
+      { "drug": "Warfarin", "severity": "high", "reason": "Extremely high vitamin K affects blood clotting—keep intake very consistent" },
+      { "drug": "Thyroid medications", "severity": "low", "reason": "May slightly interfere with absorption—separate by 2-4 hours" }
+    ],
+    "pediatric": {
+      "ageAppropriate": "6+ months (cooked and pureed)",
+      "chokingRisk": "low when cooked",
+      "commonAllergen": false
+    }
+  },
+  "spinach_raw": {
+    "name": "Spinach, raw",
+    "fdcId": "168462",
+    "quantity": 1,
+    "unit": "cup (30g)",
+    "mealType": "side",
+    "foodGroups": ["vegetable"],
+    "subCategory": "leafy_green",
+    "calories": 7,
+    "protein": 0.9,
+    "carbs": 1.1,
+    "fat": 0.1,
+    "fiber": 0.7,
+    "sugar": 0.1,
+    "sodium": 24,
+    "saturatedFat": 0.01,
+    "transFat": 0,
+    "cholesterol": 0,
+    "potassium": 167,
+    "calcium": 30,
+    "iron": 0.8,
+    "magnesium": 24,
+    "zinc": 0.2,
+    "vitaminA": 141,
+    "vitaminC": 8.4,
+    "vitaminD": 0,
+    "vitaminE": 0.6,
+    "vitaminK": 145,
+    "thiamin": 0.02,
+    "riboflavin": 0.06,
+    "niacin": 0.2,
+    "vitaminB6": 0.06,
+    "folate": 58,
+    "vitaminB12": 0,
+    "choline": 6,
+    "phosphorus": 15,
+    "selenium": 0.3,
+    "copper": 0.04,
+    "manganese": 0.27,
+    "caffeine": 0,
+    "water": 27,
+    "monounsaturatedFat": 0.003,
+    "polyunsaturatedFat": 0.047,
+    "omega3": { "ala": 0.04, "epa": 0, "dha": 0 },
+    "omega6": { "linoleicAcid": 0.007 },
+    "omegaRatio": 5.7,
+    "glycemicIndex": 15,
+    "glycemicLoad": 0,
+    "glycemicCategory": "low",
+    "nutrientDensityScore": 82.1,
+    "satietyScore": 65,
+    "inflammatoryIndex": -4.0,
+    "novaClass": 1,
+    "oracScore": 1515,
+    "dietaryTags": ["vegan", "gluten_free", "keto", "paleo", "whole30", "raw"],
+    "allergens": [],
+    "insight": "Nutrient-dense raw greens—excellent vitamin K (161% DV) and folate. Raw preserves vitamin C but cooking concentrates other nutrients.",
+    "focusGrades": {
+      "balanced": {
+        "grade": "A",
+        "score": 91,
+        "insight": "Outstanding nutrient density for only 7 calories. Excellent vitamin K (161% DV), good folate (15% DV) and iron.",
+        "pros": ["Exceptional vitamin K", "Very low calorie", "Good folate", "Preserves vitamin C"],
+        "cons": ["Lower nutrient concentration than cooked", "Less bioavailable nutrients"]
+      },
+      "heart_health": {
+        "grade": "A+",
+        "score": 96,
+        "insight": "Good potassium, virtually no sodium, and nitrates that support blood pressure. Zero saturated fat.",
+        "pros": ["Good potassium", "Very low sodium", "Nitrates for circulation", "Zero saturated fat"],
+        "cons": []
+      },
+      "muscle_building": {
+        "grade": "C",
+        "score": 70,
+        "insight": "Only 0.9g protein per cup raw. Nitrates may help performance but insufficient protein alone.",
+        "pros": ["Nitrates may improve exercise performance", "Low calorie for cutting"],
+        "cons": ["Very low protein", "Very low calories", "Need large volume"]
+      },
+      "energy": {
+        "grade": "B",
+        "score": 80,
+        "insight": "Good iron (0.8mg) and some B-vitamins, but you'd need to eat a lot. Better cooked for energy needs.",
+        "pros": ["Good iron for calories", "Nitrates improve oxygen efficiency", "Preserves B-vitamins"],
+        "cons": ["Very low calories", "Less bioavailable nutrients raw"]
+      },
+      "weight_management": {
+        "grade": "A+",
+        "score": 99,
+        "insight": "Only 7 calories per cup! You can eat massive volumes for minimal calories. Perfect for volume eating.",
+        "pros": ["Extremely low calorie", "High water content", "Good fiber for calories", "Very filling"],
+        "cons": []
+      },
+      "brain_focus": {
+        "grade": "A-",
+        "score": 88,
+        "insight": "Good folate (58mcg) and nitrates support brain blood flow. Raw preserves vitamin C for antioxidants.",
+        "pros": ["Good folate", "Nitrates improve brain circulation", "Preserves vitamin C", "High antioxidants"],
+        "cons": ["No B12", "Minimal choline in small serving"]
+      },
+      "gut_health": {
+        "grade": "B+",
+        "score": 86,
+        "insight": "0.7g fiber per cup is decent for raw greens. Raw enzymes may benefit digestion but can irritate some.",
+        "pros": ["Good fiber for calories", "Raw enzymes aid digestion", "Prebiotic benefits"],
+        "cons": ["Oxalates may irritate sensitive guts", "Need large volume for significant fiber"]
+      },
+      "blood_sugar": {
+        "grade": "A+",
+        "score": 99,
+        "insight": "GI of 15, almost no sugar (0.1g), good fiber. Perfect for blood sugar control.",
+        "pros": ["Very low GI", "Almost no sugar", "Good fiber", "Minimal carbs"],
+        "cons": []
+      },
+      "bone_joint": {
+        "grade": "A-",
+        "score": 89,
+        "insight": "Excellent vitamin K (145mcg, 161% DV) for bone protein synthesis. Calcium present but poorly absorbed due to oxalates.",
+        "pros": ["Excellent vitamin K", "Good calcium content", "Vitamin C for collagen"],
+        "cons": ["Oxalates reduce calcium absorption", "Better bioavailability when cooked"]
+      },
+      "anti_inflammatory": {
+        "grade": "A+",
+        "score": 97,
+        "insight": "Raw preserves maximum antioxidants and vitamin C. Excellent omega-3:6 ratio (5.7:1). Very anti-inflammatory.",
+        "pros": ["Maximum antioxidants raw", "Excellent ORAC score", "Good omega-3:6 ratio", "High vitamin E"],
+        "cons": []
+      }
+    },
+    "bioavailability": {
+      "iron": { "type": "non-heme", "absorption": "low", "tip": "Pair with vitamin C (citrus) or cook to improve absorption" },
+      "calcium": { "absorption": "very-low", "tip": "Oxalates bind calcium—cooking reduces oxalates and improves absorption" }
+    },
+    "pairWith": [
+      { "food": "strawberries", "reason": "Vitamin C boosts iron absorption in salads" },
+      { "food": "olive_oil", "reason": "Fat helps absorb vitamins A, E, K" },
+      { "food": "avocado", "reason": "Healthy fats enhance nutrient absorption" }
+    ],
+    "avoidWith": [],
+    "bestTiming": {
+      "preWorkout": false,
+      "postWorkout": true,
+      "morning": true,
+      "beforeBed": true
+    },
+    "digestionTime": "fast",
+    "portionVisual": "1 cup raw = about the size of a baseball (very light, only 30g)",
+    "tips": {
+      "storage": "Refrigerate unwashed in a loose bag for 3-5 days; wash just before use",
+      "cooking": "Add to salads raw or wilt into dishes at the end of cooking",
+      "prepTip": "Massage with lemon juice to tenderize and reduce bitterness"
+    },
+    "commonMistakes": [
+      "Not washing thoroughly (can harbor dirt and bacteria)",
+      "Expecting it to be a primary calcium source (oxalates block absorption)"
+    ],
+    "cautions": {
+      "kidneyStones": "High oxalates—avoid if prone to calcium oxalate kidney stones",
+      "warfarin": "High vitamin K—maintain consistent intake if on blood thinners",
+      "foodSafety": "Wash thoroughly—spinach is high-risk for E. coli contamination"
+    },
+    "pregnancySafe": true,
+    "pregnancyNotes": "Good folate (15% DV) but wash very thoroughly to avoid foodborne illness",
+    "drugInteractions": [
+      { "drug": "Warfarin", "severity": "moderate", "reason": "High vitamin K affects blood clotting—keep intake consistent" }
+    ],
+    "pediatric": {
+      "ageAppropriate": "12+ months raw in small amounts",
+      "chokingRisk": "low when chopped finely",
+      "commonAllergen": false
+    }
+  },
+  "carrot": {
+    "name": "Carrot, raw",
+    "fdcId": "170393",
+    "quantity": 1,
+    "unit": "medium (61g)",
+    "mealType": "snack",
+    "foodGroups": ["vegetable"],
+    "subCategory": "root_vegetable",
+    "calories": 25,
+    "protein": 0.6,
+    "carbs": 6,
+    "fat": 0.1,
+    "fiber": 1.7,
+    "sugar": 2.9,
+    "sodium": 42,
+    "saturatedFat": 0.02,
+    "transFat": 0,
+    "cholesterol": 0,
+    "potassium": 195,
+    "calcium": 20,
+    "iron": 0.2,
+    "magnesium": 7,
+    "zinc": 0.1,
+    "vitaminA": 509,
+    "vitaminC": 3.6,
+    "vitaminD": 0,
+    "vitaminE": 0.4,
+    "vitaminK": 8.1,
+    "thiamin": 0.04,
+    "riboflavin": 0.04,
+    "niacin": 0.6,
+    "vitaminB6": 0.08,
+    "folate": 12,
+    "vitaminB12": 0,
+    "choline": 5.5,
+    "phosphorus": 21,
+    "selenium": 0.1,
+    "copper": 0.03,
+    "manganese": 0.09,
+    "caffeine": 0,
+    "water": 54,
+    "monounsaturatedFat": 0.007,
+    "polyunsaturatedFat": 0.07,
+    "omega3": { "ala": 0.001, "epa": 0, "dha": 0 },
+    "omega6": { "linoleicAcid": 0.069 },
+    "omegaRatio": 0.01,
+    "glycemicIndex": 35,
+    "glycemicLoad": 2,
+    "glycemicCategory": "low",
+    "nutrientDensityScore": 42.7,
+    "satietyScore": 68,
+    "inflammatoryIndex": -2.1,
+    "novaClass": 1,
+    "oracScore": 666,
+    "dietaryTags": ["vegan", "gluten_free", "keto", "paleo", "whole30", "raw"],
+    "allergens": [],
+    "insight": "A beta-carotene superstar—one carrot provides 104% DV of vitamin A for vision and immune health. Crunchy, portable, perfect snack.",
+    "focusGrades": {
+      "balanced": {
+        "grade": "A-",
+        "score": 87,
+        "insight": "Exceptional vitamin A (509mcg, 104% DV) from beta-carotene. Good fiber, very low calorie, naturally sweet.",
+        "pros": ["Outstanding vitamin A", "Good fiber", "Low calorie", "Natural sweetness"],
+        "cons": ["Low in most other vitamins", "Minimal protein"]
+      },
+      "heart_health": {
+        "grade": "A",
+        "score": 90,
+        "insight": "Good potassium (195mg), fiber (1.7g), and beta-carotene antioxidants support cardiovascular health.",
+        "pros": ["Good potassium", "Good fiber", "Antioxidants", "Very low sodium"],
+        "cons": []
+      },
+      "muscle_building": {
+        "grade": "D+",
+        "score": 63,
+        "insight": "Only 0.6g protein and 25 calories. Not for muscle building—just a crunchy snack.",
+        "pros": ["Low calorie for cutting", "Provides some micronutrients"],
+        "cons": ["Very low protein", "Very low calories", "Not muscle-building food"]
+      },
+      "energy": {
+        "grade": "B-",
+        "score": 77,
+        "insight": "Natural sugars (2.9g) provide quick energy. Beta-carotene supports immune function but limited B-vitamins.",
+        "pros": ["Quick natural energy", "Supports immune function", "Easy to digest"],
+        "cons": ["Low in B-vitamins", "Low total calories"]
+      },
+      "weight_management": {
+        "grade": "A+",
+        "score": 96,
+        "insight": "Only 25 calories with satisfying crunch and fiber. Perfect low-calorie snack that curbs hunger.",
+        "pros": ["Very low calorie", "Good fiber", "High water content", "Satisfying crunch"],
+        "cons": []
+      },
+      "brain_focus": {
+        "grade": "B+",
+        "score": 84,
+        "insight": "Exceptional beta-carotene antioxidants protect brain cells. Limited B-vitamins but good for neuroprotection.",
+        "pros": ["Outstanding antioxidants", "Neuroprotective beta-carotene", "Good snack for focus"],
+        "cons": ["Low in B-vitamins", "No omega-3", "No choline"]
+      },
+      "gut_health": {
+        "grade": "A-",
+        "score": 88,
+        "insight": "1.7g fiber plus pectin (a prebiotic fiber) feeds beneficial gut bacteria. Raw crunch aids digestion.",
+        "pros": ["Good fiber", "Prebiotic pectin", "Raw enzymes", "Promotes regularity"],
+        "cons": ["Need to chew well"]
+      },
+      "blood_sugar": {
+        "grade": "A",
+        "score": 90,
+        "insight": "GI of 35 is low. Fiber (1.7g) slows sugar absorption despite natural sweetness (2.9g sugar). Good choice.",
+        "pros": ["Low GI (35)", "Good fiber", "Slow sugar release"],
+        "cons": ["Contains natural sugars"]
+      },
+      "bone_joint": {
+        "grade": "C+",
+        "score": 74,
+        "insight": "Vitamin A supports bone remodeling but low in calcium, vitamin D, and K. Not a bone-health superstar.",
+        "pros": ["Vitamin A for bone remodeling", "Some calcium"],
+        "cons": ["Low calcium", "Minimal vitamin K", "No vitamin D"]
+      },
+      "anti_inflammatory": {
+        "grade": "A-",
+        "score": 88,
+        "insight": "Excellent beta-carotene antioxidants fight inflammation. Good ORAC score. Low omega-3 but minimal omega-6.",
+        "pros": ["Outstanding beta-carotene", "Good ORAC score", "Antioxidant-rich"],
+        "cons": ["Poor omega-3:6 ratio", "No omega-3"]
+      }
+    },
+    "bioavailability": {
+      "vitaminA": { "absorption": "moderate-high", "tip": "Beta-carotene absorbs better with fat—dip in hummus or eat with nuts" }
+    },
+    "pairWith": [
+      { "food": "hummus", "reason": "Fat enhances beta-carotene absorption" },
+      { "food": "olive_oil", "reason": "Cooking with fat increases vitamin A absorption up to 6x" },
+      { "food": "peanut_butter", "reason": "Healthy fats boost nutrient absorption" }
+    ],
+    "avoidWith": [],
+    "bestTiming": {
+      "preWorkout": true,
+      "postWorkout": false,
+      "morning": true,
+      "beforeBed": true
+    },
+    "digestionTime": "medium",
+    "portionVisual": "1 medium carrot = about the length of your hand",
+    "tips": {
+      "storage": "Refrigerate in a plastic bag for up to 3 weeks; remove greens if attached",
+      "cooking": "Eat raw for crunch or cook to increase beta-carotene bioavailability",
+      "prepTip": "Peel only if dirty—most nutrients are near the skin"
+    },
+    "commonMistakes": [
+      "Eating without fat (limits vitamin A absorption)",
+      "Over-peeling removes nutrients near skin"
+    ],
+    "cautions": {
+      "carotenemia": "Eating excessive amounts can turn skin orange (harmless but cosmetic)",
+      "allergies": "Rare but can cross-react with birch pollen allergies"
+    },
+    "pregnancySafe": true,
+    "pregnancyNotes": "Excellent—vitamin A supports fetal development. Don't overconsume (>10,000 IU/day can be harmful).",
+    "drugInteractions": [],
+    "pediatric": {
+      "ageAppropriate": "6+ months (cooked and pureed), 12+ months (raw sticks with supervision)",
+      "chokingRisk": "moderate raw—cut into thin sticks, supervise closely",
+      "commonAllergen": false
+    }
+  },
+  "carrots": {
+    "name": "Carrots, raw",
+    "fdcId": "170393",
+    "quantity": 1,
+    "unit": "cup chopped (128g)",
+    "mealType": "side",
+    "foodGroups": ["vegetable"],
+    "subCategory": "root_vegetable",
+    "calories": 52,
+    "protein": 1.2,
+    "carbs": 12.3,
+    "fat": 0.3,
+    "fiber": 3.6,
+    "sugar": 6.1,
+    "sodium": 88,
+    "saturatedFat": 0.05,
+    "transFat": 0,
+    "cholesterol": 0,
+    "potassium": 410,
+    "calcium": 42,
+    "iron": 0.4,
+    "magnesium": 15,
+    "zinc": 0.3,
+    "vitaminA": 1069,
+    "vitaminC": 7.6,
+    "vitaminD": 0,
+    "vitaminE": 0.8,
+    "vitaminK": 17,
+    "thiamin": 0.08,
+    "riboflavin": 0.07,
+    "niacin": 1.3,
+    "vitaminB6": 0.18,
+    "folate": 24,
+    "vitaminB12": 0,
+    "choline": 11.3,
+    "phosphorus": 45,
+    "selenium": 0.1,
+    "copper": 0.06,
+    "manganese": 0.18,
+    "caffeine": 0,
+    "water": 113,
+    "monounsaturatedFat": 0.015,
+    "polyunsaturatedFat": 0.15,
+    "omega3": { "ala": 0.003, "epa": 0, "dha": 0 },
+    "omega6": { "linoleicAcid": 0.145 },
+    "omegaRatio": 0.02,
+    "glycemicIndex": 35,
+    "glycemicLoad": 4,
+    "glycemicCategory": "low",
+    "nutrientDensityScore": 42.7,
+    "satietyScore": 72,
+    "inflammatoryIndex": -2.1,
+    "novaClass": 1,
+    "oracScore": 666,
+    "dietaryTags": ["vegan", "gluten_free", "keto", "paleo", "whole30", "raw"],
+    "allergens": [],
+    "insight": "A beta-carotene powerhouse—one cup provides 218% DV of vitamin A for vision and immune health. Crunchy, naturally sweet, nutrient-dense.",
+    "focusGrades": {
+      "balanced": {
+        "grade": "A-",
+        "score": 87,
+        "insight": "Exceptional vitamin A (1069mcg, 218% DV) from beta-carotene. Good fiber (3.6g), very low calorie, naturally sweet.",
+        "pros": ["Outstanding vitamin A", "Good fiber", "Low calorie", "Natural sweetness"],
+        "cons": ["Low in most other vitamins", "Minimal protein"]
+      },
+      "heart_health": {
+        "grade": "A",
+        "score": 90,
+        "insight": "Good potassium (410mg), fiber (3.6g), and beta-carotene antioxidants support cardiovascular health.",
+        "pros": ["Good potassium", "Good fiber", "Antioxidants", "Very low sodium"],
+        "cons": []
+      },
+      "muscle_building": {
+        "grade": "D+",
+        "score": 63,
+        "insight": "Only 1.2g protein and 52 calories. Not for muscle building—just a healthy side or snack.",
+        "pros": ["Low calorie for cutting", "Provides some micronutrients"],
+        "cons": ["Very low protein", "Low calories", "Not muscle-building food"]
+      },
+      "energy": {
+        "grade": "B-",
+        "score": 77,
+        "insight": "Natural sugars (6.1g) provide quick energy. Beta-carotene supports immune function but limited B-vitamins.",
+        "pros": ["Quick natural energy", "Supports immune function", "Easy to digest"],
+        "cons": ["Low in B-vitamins", "Moderate total calories"]
+      },
+      "weight_management": {
+        "grade": "A+",
+        "score": 96,
+        "insight": "Only 52 calories per cup with satisfying crunch and fiber (3.6g). Perfect low-calorie snack or side.",
+        "pros": ["Very low calorie", "Good fiber", "High water content", "Satisfying crunch"],
+        "cons": []
+      },
+      "brain_focus": {
+        "grade": "B+",
+        "score": 84,
+        "insight": "Exceptional beta-carotene antioxidants protect brain cells. Limited B-vitamins but good for neuroprotection.",
+        "pros": ["Outstanding antioxidants", "Neuroprotective beta-carotene", "Good snack for focus"],
+        "cons": ["Low in B-vitamins", "No omega-3", "Minimal choline"]
+      },
+      "gut_health": {
+        "grade": "A-",
+        "score": 88,
+        "insight": "3.6g fiber plus pectin (a prebiotic fiber) feeds beneficial gut bacteria. Raw crunch aids digestion.",
+        "pros": ["Good fiber", "Prebiotic pectin", "Raw enzymes", "Promotes regularity"],
+        "cons": ["Need to chew well"]
+      },
+      "blood_sugar": {
+        "grade": "A",
+        "score": 90,
+        "insight": "GI of 35 is low. Fiber (3.6g) slows sugar absorption despite natural sweetness (6.1g sugar). Good choice.",
+        "pros": ["Low GI (35)", "Good fiber", "Slow sugar release"],
+        "cons": ["Contains natural sugars"]
+      },
+      "bone_joint": {
+        "grade": "C+",
+        "score": 74,
+        "insight": "Vitamin A supports bone remodeling but low in calcium, vitamin D, and K. Not a bone-health superstar.",
+        "pros": ["Vitamin A for bone remodeling", "Some calcium"],
+        "cons": ["Low calcium", "Minimal vitamin K", "No vitamin D"]
+      },
+      "anti_inflammatory": {
+        "grade": "A-",
+        "score": 88,
+        "insight": "Excellent beta-carotene antioxidants fight inflammation. Good ORAC score. Low omega-3 but minimal omega-6.",
+        "pros": ["Outstanding beta-carotene", "Good ORAC score", "Antioxidant-rich"],
+        "cons": ["Poor omega-3:6 ratio", "No omega-3"]
+      }
+    },
+    "bioavailability": {
+      "vitaminA": { "absorption": "moderate-high", "tip": "Beta-carotene absorbs better with fat—cook with oil or pair with hummus" }
+    },
+    "pairWith": [
+      { "food": "hummus", "reason": "Fat enhances beta-carotene absorption" },
+      { "food": "olive_oil", "reason": "Cooking with fat increases vitamin A absorption up to 6x" },
+      { "food": "ranch_dressing", "reason": "Healthy fats boost nutrient absorption" }
+    ],
+    "avoidWith": [],
+    "bestTiming": {
+      "preWorkout": true,
+      "postWorkout": false,
+      "morning": true,
+      "beforeBed": true
+    },
+    "digestionTime": "medium",
+    "portionVisual": "1 cup chopped = about the size of a baseball",
+    "tips": {
+      "storage": "Refrigerate in a plastic bag for up to 3 weeks; remove greens if attached",
+      "cooking": "Eat raw for crunch or cook to increase beta-carotene bioavailability",
+      "prepTip": "Peel only if dirty—most nutrients are near the skin"
+    },
+    "commonMistakes": [
+      "Eating without fat (limits vitamin A absorption)",
+      "Over-peeling removes nutrients near skin"
+    ],
+    "cautions": {
+      "carotenemia": "Eating excessive amounts can turn skin orange (harmless but cosmetic)",
+      "allergies": "Rare but can cross-react with birch pollen allergies"
+    },
+    "pregnancySafe": true,
+    "pregnancyNotes": "Excellent—vitamin A supports fetal development. Don't overconsume (>10,000 IU/day can be harmful).",
+    "drugInteractions": [],
+    "pediatric": {
+      "ageAppropriate": "6+ months (cooked and pureed), 12+ months (raw chopped with supervision)",
+      "chokingRisk": "moderate raw—chop small, supervise closely",
+      "commonAllergen": false
+    }
+  },
+  "tomato": {
+    "name": "Tomato, raw",
+    "fdcId": "170457",
+    "quantity": 1,
+    "unit": "medium (123g)",
+    "mealType": "snack",
+    "foodGroups": ["vegetable"],
+    "subCategory": "fruit_vegetable",
+    "calories": 22,
+    "protein": 1.1,
+    "carbs": 4.8,
+    "fat": 0.2,
+    "fiber": 1.5,
+    "sugar": 3.2,
+    "sodium": 6,
+    "saturatedFat": 0.03,
+    "transFat": 0,
+    "cholesterol": 0,
+    "potassium": 292,
+    "calcium": 12,
+    "iron": 0.3,
+    "magnesium": 14,
+    "zinc": 0.2,
+    "vitaminA": 52,
+    "vitaminC": 17.0,
+    "vitaminD": 0,
+    "vitaminE": 0.7,
+    "vitaminK": 9.7,
+    "thiamin": 0.05,
+    "riboflavin": 0.02,
+    "niacin": 0.7,
+    "vitaminB6": 0.1,
+    "folate": 18,
+    "vitaminB12": 0,
+    "choline": 8.1,
+    "phosphorus": 30,
+    "selenium": 0.1,
+    "copper": 0.07,
+    "manganese": 0.14,
+    "caffeine": 0,
+    "water": 116,
+    "monounsaturatedFat": 0.03,
+    "polyunsaturatedFat": 0.09,
+    "omega3": { "ala": 0.003, "epa": 0, "dha": 0 },
+    "omega6": { "linoleicAcid": 0.099 },
+    "omegaRatio": 0.03,
+    "glycemicIndex": 38,
+    "glycemicLoad": 2,
+    "glycemicCategory": "low",
+    "nutrientDensityScore": 38.6,
+    "satietyScore": 70,
+    "inflammatoryIndex": -2.8,
+    "novaClass": 1,
+    "oracScore": 546,
+    "dietaryTags": ["vegan", "gluten_free", "keto", "paleo", "whole30", "raw"],
+    "allergens": [],
+    "insight": "A lycopene superstar—powerful antioxidant for heart and prostate health. Cooking actually increases lycopene bioavailability.",
+    "focusGrades": {
+      "balanced": {
+        "grade": "A-",
+        "score": 87,
+        "insight": "Excellent vitamin C (28% DV), good potassium, and lycopene antioxidants. Very low calorie and naturally flavorful.",
+        "pros": ["Excellent vitamin C", "Good potassium", "Lycopene antioxidant", "Very low calorie"],
+        "cons": ["Low in most other vitamins", "Minimal protein"]
+      },
+      "heart_health": {
+        "grade": "A+",
+        "score": 95,
+        "insight": "Outstanding lycopene reduces LDL oxidation. Good potassium (292mg), virtually no sodium. Excellent for heart health.",
+        "pros": ["Outstanding lycopene", "Good potassium", "Very low sodium", "Supports healthy cholesterol"],
+        "cons": []
+      },
+      "muscle_building": {
+        "grade": "D",
+        "score": 62,
+        "insight": "Only 1.1g protein and 22 calories. Not for muscle building—just a healthy addition to meals.",
+        "pros": ["Lycopene may reduce exercise oxidative stress", "Low calorie for cutting"],
+        "cons": ["Very low protein", "Very low calories", "Not muscle-building food"]
+      },
+      "energy": {
+        "grade": "C+",
+        "score": 75,
+        "insight": "Natural sugars (3.2g) provide quick energy but limited B-vitamins and calories. Better as a side than energy source.",
+        "pros": ["Quick natural energy", "Easy to digest", "Hydrating"],
+        "cons": ["Low in B-vitamins", "Low total calories", "Minimal iron"]
+      },
+      "weight_management": {
+        "grade": "A+",
+        "score": 97,
+        "insight": "Only 22 calories per tomato with high water content (94%). Satisfying and flavorful for minimal calories.",
+        "pros": ["Very low calorie", "High water content", "Good fiber", "Naturally flavorful"],
+        "cons": []
+      },
+      "brain_focus": {
+        "grade": "A-",
+        "score": 88,
+        "insight": "Lycopene antioxidants protect brain cells and may reduce cognitive decline. Good vitamin C supports cognition.",
+        "pros": ["Outstanding lycopene", "Good vitamin C", "Neuroprotective antioxidants"],
+        "cons": ["Low in B-vitamins", "No omega-3", "Minimal choline"]
+      },
+      "gut_health": {
+        "grade": "B+",
+        "score": 85,
+        "insight": "1.5g fiber plus high water content (94%) supports digestion. Easy to digest for most people.",
+        "pros": ["Good fiber", "High water content", "Easy to digest", "Supports regularity"],
+        "cons": ["Acidic—may irritate sensitive stomachs or GERD"]
+      },
+      "blood_sugar": {
+        "grade": "A",
+        "score": 92,
+        "insight": "GI of 38 is low. Fiber slows sugar absorption despite natural sweetness (3.2g). Good for diabetics.",
+        "pros": ["Low GI (38)", "Good fiber", "Slow sugar release", "Minimal carbs"],
+        "cons": []
+      },
+      "bone_joint": {
+        "grade": "C",
+        "score": 72,
+        "insight": "Lycopene may benefit bone density but low in calcium, vitamin D, and K. Not a primary bone-health food.",
+        "pros": ["Lycopene may support bone density", "Some vitamin K", "Vitamin C for collagen"],
+        "cons": ["Very low calcium", "Minimal vitamin K", "No vitamin D"]
+      },
+      "anti_inflammatory": {
+        "grade": "A+",
+        "score": 96,
+        "insight": "Exceptional lycopene is one of the most powerful anti-inflammatory antioxidants. Excellent for reducing inflammation.",
+        "pros": ["Outstanding lycopene", "Good vitamin C", "Excellent antioxidants", "Anti-inflammatory compounds"],
+        "cons": []
+      }
+    },
+    "bioavailability": {
+      "lycopene": { "absorption": "low-moderate raw", "tip": "Cooking with oil increases lycopene absorption up to 4x—eat tomato sauce, not just raw" }
+    },
+    "pairWith": [
+      { "food": "olive_oil", "reason": "Fat dramatically increases lycopene absorption (cook into sauce)" },
+      { "food": "avocado", "reason": "Healthy fats enhance lycopene uptake" },
+      { "food": "mozzarella", "reason": "Classic pairing—fat helps absorb lycopene" }
+    ],
+    "avoidWith": [],
+    "bestTiming": {
+      "preWorkout": false,
+      "postWorkout": true,
+      "morning": true,
+      "beforeBed": true
+    },
+    "digestionTime": "fast",
+    "portionVisual": "1 medium tomato = about the size of a tennis ball",
+    "tips": {
+      "storage": "Store at room temperature for best flavor; refrigerate only if very ripe",
+      "cooking": "Cook with oil to maximize lycopene absorption (sauce > raw)",
+      "prepTip": "Remove seeds if making sauce to reduce acidity and bitterness"
+    },
+    "commonMistakes": [
+      "Eating raw without fat (limits lycopene absorption)",
+      "Refrigerating unripe tomatoes (ruins flavor and texture)"
+    ],
+    "cautions": {
+      "gerd": "Acidic—may trigger acid reflux or heartburn in sensitive individuals",
+      "kidneyStones": "Contains oxalates—moderate intake if prone to kidney stones",
+      "nightshades": "Some people report sensitivity to nightshade vegetables"
+    },
+    "pregnancySafe": true,
+    "pregnancyNotes": "Excellent choice—vitamin C and lycopene support fetal development. Wash thoroughly.",
+    "drugInteractions": [],
+    "pediatric": {
+      "ageAppropriate": "6+ months (cooked and pureed), 12+ months (raw chopped)",
+      "chokingRisk": "low when chopped",
+      "commonAllergen": false
+    }
+  },
+  "tomatoes": {
+    "name": "Tomatoes, raw",
+    "fdcId": "170457",
+    "quantity": 1,
+    "unit": "cup chopped (180g)",
+    "mealType": "side",
+    "foodGroups": ["vegetable"],
+    "subCategory": "fruit_vegetable",
+    "calories": 32,
+    "protein": 1.6,
+    "carbs": 7,
+    "fat": 0.4,
+    "fiber": 2.2,
+    "sugar": 4.7,
+    "sodium": 9,
+    "saturatedFat": 0.05,
+    "transFat": 0,
+    "cholesterol": 0,
+    "potassium": 427,
+    "calcium": 18,
+    "iron": 0.5,
+    "magnesium": 20,
+    "zinc": 0.3,
+    "vitaminA": 75,
+    "vitaminC": 24.7,
+    "vitaminD": 0,
+    "vitaminE": 1.0,
+    "vitaminK": 14.2,
+    "thiamin": 0.07,
+    "riboflavin": 0.03,
+    "niacin": 1.1,
+    "vitaminB6": 0.14,
+    "folate": 27,
+    "vitaminB12": 0,
+    "choline": 11.9,
+    "phosphorus": 43,
+    "selenium": 0.1,
+    "copper": 0.11,
+    "manganese": 0.21,
+    "caffeine": 0,
+    "water": 170,
+    "monounsaturatedFat": 0.05,
+    "polyunsaturatedFat": 0.13,
+    "omega3": { "ala": 0.004, "epa": 0, "dha": 0 },
+    "omega6": { "linoleicAcid": 0.145 },
+    "omegaRatio": 0.03,
+    "glycemicIndex": 38,
+    "glycemicLoad": 3,
+    "glycemicCategory": "low",
+    "nutrientDensityScore": 38.6,
+    "satietyScore": 72,
+    "inflammatoryIndex": -2.8,
+    "novaClass": 1,
+    "oracScore": 546,
+    "dietaryTags": ["vegan", "gluten_free", "keto", "paleo", "whole30", "raw"],
+    "allergens": [],
+    "insight": "A lycopene powerhouse—powerful antioxidant for heart and prostate health. Cooking actually increases lycopene bioavailability.",
+    "focusGrades": {
+      "balanced": {
+        "grade": "A-",
+        "score": 87,
+        "insight": "Excellent vitamin C (41% DV), good potassium (427mg), and lycopene antioxidants. Very low calorie and naturally flavorful.",
+        "pros": ["Excellent vitamin C", "Good potassium", "Lycopene antioxidant", "Very low calorie"],
+        "cons": ["Low in most other vitamins", "Minimal protein"]
+      },
+      "heart_health": {
+        "grade": "A+",
+        "score": 95,
+        "insight": "Outstanding lycopene reduces LDL oxidation. Good potassium (427mg), virtually no sodium. Excellent for heart health.",
+        "pros": ["Outstanding lycopene", "Good potassium", "Very low sodium", "Supports healthy cholesterol"],
+        "cons": []
+      },
+      "muscle_building": {
+        "grade": "D",
+        "score": 62,
+        "insight": "Only 1.6g protein and 32 calories. Not for muscle building—just a healthy addition to meals.",
+        "pros": ["Lycopene may reduce exercise oxidative stress", "Low calorie for cutting"],
+        "cons": ["Very low protein", "Very low calories", "Not muscle-building food"]
+      },
+      "energy": {
+        "grade": "C+",
+        "score": 75,
+        "insight": "Natural sugars (4.7g) provide quick energy but limited B-vitamins and calories. Better as a side than energy source.",
+        "pros": ["Quick natural energy", "Easy to digest", "Hydrating"],
+        "cons": ["Low in B-vitamins", "Low total calories", "Minimal iron"]
+      },
+      "weight_management": {
+        "grade": "A+",
+        "score": 97,
+        "insight": "Only 32 calories per cup with high water content (94%). Satisfying and flavorful for minimal calories.",
+        "pros": ["Very low calorie", "High water content", "Good fiber", "Naturally flavorful"],
+        "cons": []
+      },
+      "brain_focus": {
+        "grade": "A-",
+        "score": 88,
+        "insight": "Lycopene antioxidants protect brain cells and may reduce cognitive decline. Good vitamin C supports cognition.",
+        "pros": ["Outstanding lycopene", "Good vitamin C", "Neuroprotective antioxidants"],
+        "cons": ["Low in B-vitamins", "No omega-3", "Minimal choline"]
+      },
+      "gut_health": {
+        "grade": "B+",
+        "score": 85,
+        "insight": "2.2g fiber plus high water content (94%) supports digestion. Easy to digest for most people.",
+        "pros": ["Good fiber", "High water content", "Easy to digest", "Supports regularity"],
+        "cons": ["Acidic—may irritate sensitive stomachs or GERD"]
+      },
+      "blood_sugar": {
+        "grade": "A",
+        "score": 92,
+        "insight": "GI of 38 is low. Fiber (2.2g) slows sugar absorption despite natural sweetness (4.7g). Good for diabetics.",
+        "pros": ["Low GI (38)", "Good fiber", "Slow sugar release", "Minimal carbs"],
+        "cons": []
+      },
+      "bone_joint": {
+        "grade": "C",
+        "score": 72,
+        "insight": "Lycopene may benefit bone density but low in calcium, vitamin D, and K. Not a primary bone-health food.",
+        "pros": ["Lycopene may support bone density", "Some vitamin K", "Vitamin C for collagen"],
+        "cons": ["Very low calcium", "Minimal vitamin K", "No vitamin D"]
+      },
+      "anti_inflammatory": {
+        "grade": "A+",
+        "score": 96,
+        "insight": "Exceptional lycopene is one of the most powerful anti-inflammatory antioxidants. Excellent for reducing inflammation.",
+        "pros": ["Outstanding lycopene", "Good vitamin C", "Excellent antioxidants", "Anti-inflammatory compounds"],
+        "cons": []
+      }
+    },
+    "bioavailability": {
+      "lycopene": { "absorption": "low-moderate raw", "tip": "Cooking with oil increases lycopene absorption up to 4x—eat tomato sauce, not just raw" }
+    },
+    "pairWith": [
+      { "food": "olive_oil", "reason": "Fat dramatically increases lycopene absorption (cook into sauce)" },
+      { "food": "avocado", "reason": "Healthy fats enhance lycopene uptake" },
+      { "food": "mozzarella", "reason": "Classic pairing—fat helps absorb lycopene" }
+    ],
+    "avoidWith": [],
+    "bestTiming": {
+      "preWorkout": false,
+      "postWorkout": true,
+      "morning": true,
+      "beforeBed": true
+    },
+    "digestionTime": "fast",
+    "portionVisual": "1 cup chopped = about the size of a baseball",
+    "tips": {
+      "storage": "Store at room temperature for best flavor; refrigerate only if very ripe",
+      "cooking": "Cook with oil to maximize lycopene absorption (sauce > raw)",
+      "prepTip": "Remove seeds if making sauce to reduce acidity and bitterness"
+    },
+    "commonMistakes": [
+      "Eating raw without fat (limits lycopene absorption)",
+      "Refrigerating unripe tomatoes (ruins flavor and texture)"
+    ],
+    "cautions": {
+      "gerd": "Acidic—may trigger acid reflux or heartburn in sensitive individuals",
+      "kidneyStones": "Contains oxalates—moderate intake if prone to kidney stones",
+      "nightshades": "Some people report sensitivity to nightshade vegetables"
+    },
+    "pregnancySafe": true,
+    "pregnancyNotes": "Excellent choice—vitamin C and lycopene support fetal development. Wash thoroughly.",
+    "drugInteractions": [],
+    "pediatric": {
+      "ageAppropriate": "6+ months (cooked and pureed), 12+ months (raw chopped)",
+      "chokingRisk": "low when chopped",
+      "commonAllergen": false
+    }
+  },
+  "potato": {
+    "name": "Potato, flesh and skin, raw",
+    "fdcId": "170032",
+    "quantity": 1,
+    "unit": "medium (213g)",
+    "mealType": "side",
+    "foodGroups": ["vegetable"],
+    "subCategory": "starchy_vegetable",
+    "calories": 164,
+    "protein": 4.3,
+    "carbs": 37.4,
+    "fat": 0.2,
+    "fiber": 4.7,
+    "sugar": 1.7,
+    "sodium": 13,
+    "saturatedFat": 0.05,
+    "transFat": 0,
+    "cholesterol": 0,
+    "potassium": 897,
+    "calcium": 26,
+    "iron": 1.7,
+    "magnesium": 48,
+    "zinc": 0.6,
+    "vitaminA": 2,
+    "vitaminC": 42.0,
+    "vitaminD": 0,
+    "vitaminE": 0.02,
+    "vitaminK": 4.5,
+    "thiamin": 0.17,
+    "riboflavin": 0.07,
+    "niacin": 2.3,
+    "vitaminB6": 0.54,
+    "folate": 38,
+    "vitaminB12": 0,
+    "choline": 27.1,
+    "phosphorus": 121,
+    "selenium": 0.9,
+    "copper": 0.23,
+    "manganese": 0.3,
+    "caffeine": 0,
+    "water": 168,
+    "monounsaturatedFat": 0.004,
+    "polyunsaturatedFat": 0.09,
+    "omega3": { "ala": 0.021, "epa": 0, "dha": 0 },
+    "omega6": { "linoleicAcid": 0.066 },
+    "omegaRatio": 0.32,
+    "glycemicIndex": 85,
+    "glycemicLoad": 32,
+    "glycemicCategory": "high",
+    "nutrientDensityScore": 34.2,
+    "satietyScore": 91,
+    "inflammatoryIndex": 0.5,
+    "novaClass": 1,
+    "oracScore": 1058,
+    "dietaryTags": ["vegan", "gluten_free"],
+    "allergens": [],
+    "insight": "A comfort food staple with excellent potassium (897mg, 26% DV) and vitamin C. High satiety but also high GI—eat skin for fiber.",
+    "focusGrades": {
+      "balanced": {
+        "grade": "B+",
+        "score": 83,
+        "insight": "Good potassium (897mg, 26% DV), vitamin C (70% DV), and B6 (27% DV). High satiety but also high GI and carbs.",
+        "pros": ["Excellent potassium", "Excellent vitamin C", "Good B6", "High satiety"],
+        "cons": ["High GI (85)", "High carbs", "Low in vitamins A, E, K"]
+      },
+      "heart_health": {
+        "grade": "A",
+        "score": 90,
+        "insight": "Outstanding potassium (897mg) supports blood pressure. Virtually no sodium and zero saturated fat. Good for heart.",
+        "pros": ["Outstanding potassium", "Very low sodium", "Zero saturated fat", "Good fiber with skin"],
+        "cons": ["High GI may affect triglycerides if eaten in excess"]
+      },
+      "muscle_building": {
+        "grade": "C+",
+        "score": 76,
+        "insight": "4.3g protein is decent for a vegetable. 164 calories and 37g carbs make it good for refueling but not muscle-building alone.",
+        "pros": ["Good carbs for glycogen replenishment", "Decent protein for vegetable", "Good B6 for protein metabolism"],
+        "cons": ["Insufficient protein alone", "High GI"]
+      },
+      "energy": {
+        "grade": "B+",
+        "score": 85,
+        "insight": "37g carbs provide sustained energy. Good B-vitamins (B6, niacin) support metabolism. High GI means quick energy but potential crash.",
+        "pros": ["Good carbs for energy", "Excellent B6", "Good niacin", "High potassium for muscle function"],
+        "cons": ["High GI can cause energy crash", "Best paired with protein/fat"]
+      },
+      "weight_management": {
+        "grade": "B-",
+        "score": 79,
+        "insight": "Very high satiety (91/100) thanks to resistant starch and fiber. However, 164 calories and high GI can lead to overeating.",
+        "pros": ["Very high satiety", "Good fiber with skin", "Filling and satisfying"],
+        "cons": ["High GI", "Calorie-dense", "Easy to overeat", "Often prepared with added fats"]
+      },
+      "brain_focus": {
+        "grade": "B",
+        "score": 82,
+        "insight": "Excellent B6 (0.54mg, 27% DV) supports neurotransmitter synthesis. Good choline but high GI may cause energy fluctuations.",
+        "pros": ["Excellent B6", "Good choline", "Provides brain fuel (glucose)"],
+        "cons": ["High GI causes blood sugar swings", "No omega-3", "Minimal antioxidants"]
+      },
+      "gut_health": {
+        "grade": "A-",
+        "score": 88,
+        "insight": "4.7g fiber (with skin) plus resistant starch (when cooled) feeds beneficial gut bacteria. Good for microbiome.",
+        "pros": ["Good fiber", "Resistant starch benefits", "Prebiotic effects", "Easy to digest"],
+        "cons": ["Must eat skin for full fiber", "Lectins may irritate sensitive guts"]
+      },
+      "blood_sugar": {
+        "grade": "D+",
+        "score": 67,
+        "insight": "GI of 85 is very high. Spikes blood sugar rapidly. Fiber helps somewhat but not ideal for diabetics unless cooled and eaten with skin.",
+        "pros": ["Fiber (with skin) slows absorption", "Resistant starch when cooled", "Minimal sugar"],
+        "cons": ["Very high GI (85)", "High glycemic load (32)", "Rapid blood sugar spike"]
+      },
+      "bone_joint": {
+        "grade": "C",
+        "score": 72,
+        "insight": "Good magnesium and phosphorus for bone health but very low in calcium, vitamin D, and K. Not a bone-health superstar.",
+        "pros": ["Good magnesium", "Good phosphorus", "Vitamin C for collagen"],
+        "cons": ["Very low calcium", "Minimal vitamin K", "No vitamin D"]
+      },
+      "anti_inflammatory": {
+        "grade": "C+",
+        "score": 76,
+        "insight": "Moderate ORAC score with some antioxidants in skin. However, high GI and nightshade status may promote inflammation in some.",
+        "pros": ["Moderate antioxidants (in skin)", "Vitamin C anti-inflammatory", "Good potassium"],
+        "cons": ["High GI pro-inflammatory", "Nightshade sensitivity for some", "Minimal omega-3"]
+      }
+    },
+    "bioavailability": {
+      "vitaminC": { "absorption": "high", "tip": "Cooking destroys vitamin C—eat baked or steamed to preserve most" },
+      "potassium": { "absorption": "high", "tip": "Very bioavailable—one of the best potassium sources" }
+    },
+    "pairWith": [
+      { "food": "olive_oil", "reason": "Healthy fat slows digestion and lowers GI response" },
+      { "food": "greek_yogurt", "reason": "Protein and fat balance blood sugar and add satiety" },
+      { "food": "broccoli", "reason": "Fiber and nutrients complement starchy potato" }
+    ],
+    "avoidWith": [
+      { "food": "butter", "reason": "Saturated fat adds unnecessary calories and negates heart benefits" }
+    ],
+    "bestTiming": {
+      "preWorkout": false,
+      "postWorkout": true,
+      "morning": false,
+      "beforeBed": false
+    },
+    "digestionTime": "medium",
+    "portionVisual": "1 medium potato = about the size of a computer mouse",
+    "tips": {
+      "storage": "Store in a cool, dark, dry place (not refrigerator); lasts 2-3 weeks",
+      "cooking": "Bake or steam to preserve nutrients; avoid frying. Eat the skin for fiber.",
+      "prepTip": "Cool after cooking to form resistant starch, which lowers GI and feeds gut bacteria"
+    },
+    "commonMistakes": [
+      "Peeling removes most fiber and nutrients",
+      "Frying dramatically increases calories and negates health benefits",
+      "Eating alone without protein/fat causes blood sugar spike"
+    ],
+    "cautions": {
+      "greenPotatoes": "Avoid green potatoes (contain toxic solanine)—discard if green or sprouted",
+      "nightshades": "Some people report inflammation from nightshade vegetables",
+      "diabetes": "High GI—eat in moderation and with skin/protein/fat"
+    },
+    "pregnancySafe": true,
+    "pregnancyNotes": "Good source of potassium and vitamin C. Avoid green potatoes (toxic solanine).",
+    "drugInteractions": [
+      { "drug": "ACE inhibitors", "severity": "low", "reason": "Very high potassium—monitor intake if on potassium-sparing drugs" }
+    ],
+    "pediatric": {
+      "ageAppropriate": "6+ months (cooked and mashed)",
+      "chokingRisk": "low when cooked soft and mashed",
+      "commonAllergen": false
+    }
+  },
+  "baked_potato": {
+    "name": "Potato, baked, flesh and skin",
+    "fdcId": "170440",
+    "quantity": 1,
+    "unit": "medium (173g)",
+    "mealType": "side",
+    "foodGroups": ["vegetable"],
+    "subCategory": "starchy_vegetable",
+    "calories": 161,
+    "protein": 4.3,
+    "carbs": 36.6,
+    "fat": 0.2,
+    "fiber": 3.8,
+    "sugar": 1.9,
+    "sodium": 17,
+    "saturatedFat": 0.05,
+    "transFat": 0,
+    "cholesterol": 0,
+    "potassium": 926,
+    "calcium": 30,
+    "iron": 1.9,
+    "magnesium": 48,
+    "zinc": 0.6,
+    "vitaminA": 2,
+    "vitaminC": 19.7,
+    "vitaminD": 0,
+    "vitaminE": 0.06,
+    "vitaminK": 3.5,
+    "thiamin": 0.11,
+    "riboflavin": 0.05,
+    "niacin": 2.2,
+    "vitaminB6": 0.54,
+    "folate": 48,
+    "vitaminB12": 0,
+    "choline": 22.4,
+    "phosphorus": 121,
+    "selenium": 0.7,
+    "copper": 0.19,
+    "manganese": 0.3,
+    "caffeine": 0,
+    "water": 131,
+    "monounsaturatedFat": 0.003,
+    "polyunsaturatedFat": 0.09,
+    "omega3": { "ala": 0.02, "epa": 0, "dha": 0 },
+    "omega6": { "linoleicAcid": 0.07 },
+    "omegaRatio": 0.29,
+    "glycemicIndex": 111,
+    "glycemicLoad": 41,
+    "glycemicCategory": "high",
+    "nutrientDensityScore": 32.8,
+    "satietyScore": 323,
+    "inflammatoryIndex": 0.8,
+    "novaClass": 1,
+    "oracScore": 1058,
+    "dietaryTags": ["vegan", "gluten_free"],
+    "allergens": [],
+    "insight": "The highest satiety food ever tested (323/100)! Outstanding potassium (926mg) but very high GI (111). Eat with skin and pair with protein.",
+    "focusGrades": {
+      "balanced": {
+        "grade": "B",
+        "score": 82,
+        "insight": "Outstanding potassium (926mg, 27% DV) and exceptional satiety. However, very high GI (111) and moderate nutrient density.",
+        "pros": ["Outstanding potassium", "Exceptional satiety (highest tested)", "Good B6", "Good iron"],
+        "cons": ["Very high GI (111)", "Low vitamin C (cooking loss)", "High carbs"]
+      },
+      "heart_health": {
+        "grade": "A-",
+        "score": 89,
+        "insight": "Exceptional potassium (926mg) supports blood pressure. Virtually no sodium and zero saturated fat. High GI is only concern.",
+        "pros": ["Exceptional potassium", "Very low sodium", "Zero saturated fat", "Good fiber with skin"],
+        "cons": ["Very high GI may affect triglycerides"]
+      },
+      "muscle_building": {
+        "grade": "B-",
+        "score": 78,
+        "insight": "4.3g protein is decent. 161 calories and 37g carbs make it excellent for post-workout glycogen replenishment.",
+        "pros": ["Good carbs for glycogen", "Decent protein for vegetable", "Good B6 for protein metabolism", "High satiety"],
+        "cons": ["Insufficient protein alone", "Very high GI"]
+      },
+      "energy": {
+        "grade": "B",
+        "score": 81,
+        "insight": "37g carbs provide quick energy but very high GI (111) means rapid spike and crash. Good B-vitamins for metabolism.",
+        "pros": ["Quick energy", "Good B6 and niacin", "High potassium for muscle function"],
+        "cons": ["Very high GI causes crash", "Must pair with protein/fat"]
+      },
+      "weight_management": {
+        "grade": "A-",
+        "score": 88,
+        "insight": "Highest satiety index ever tested (323/100)! However, 161 calories and very high GI can trigger overeating if not mindful.",
+        "pros": ["Exceptional satiety", "Very filling", "Good fiber with skin", "Keeps you full for hours"],
+        "cons": ["Very high GI", "Calorie-dense", "Often topped with high-cal additions"]
+      },
+      "brain_focus": {
+        "grade": "B-",
+        "score": 79,
+        "insight": "Excellent B6 (0.54mg, 27% DV) supports neurotransmitter synthesis. Very high GI causes blood sugar swings and brain fog.",
+        "pros": ["Excellent B6", "Good choline", "Provides brain glucose"],
+        "cons": ["Very high GI causes energy crash", "No omega-3", "Minimal antioxidants"]
+      },
+      "gut_health": {
+        "grade": "A-",
+        "score": 87,
+        "insight": "3.8g fiber (with skin) plus resistant starch (if cooled and reheated) feeds gut bacteria. Good for microbiome.",
+        "pros": ["Good fiber", "Resistant starch benefits", "Prebiotic effects", "Easy to digest"],
+        "cons": ["Must eat skin for full fiber", "Lectins may irritate some"]
+      },
+      "blood_sugar": {
+        "grade": "F",
+        "score": 58,
+        "insight": "GI of 111 is extremely high—higher than pure glucose (100)! Spikes blood sugar rapidly. Avoid if diabetic unless with protein/fat.",
+        "pros": ["Fiber (with skin) helps slightly", "Resistant starch when cooled"],
+        "cons": ["Extremely high GI (111)", "Very high glycemic load (41)", "Rapid blood sugar spike"]
+      },
+      "bone_joint": {
+        "grade": "C",
+        "score": 71,
+        "insight": "Good magnesium and phosphorus but very low in calcium, vitamin D, and K. Not a bone-health food.",
+        "pros": ["Good magnesium", "Good phosphorus", "Some vitamin C for collagen"],
+        "cons": ["Very low calcium", "Minimal vitamin K", "No vitamin D"]
+      },
+      "anti_inflammatory": {
+        "grade": "C",
+        "score": 72,
+        "insight": "Moderate antioxidants in skin but very high GI promotes inflammation. Nightshade status may affect sensitive individuals.",
+        "pros": ["Moderate antioxidants in skin", "Some vitamin C", "Good potassium"],
+        "cons": ["Very high GI pro-inflammatory", "Nightshade sensitivity", "Minimal omega-3"]
+      }
+    },
+    "bioavailability": {
+      "potassium": { "absorption": "high", "tip": "Very bioavailable—one of the best potassium sources" },
+      "vitaminC": { "absorption": "moderate", "tip": "Baking destroys ~50% of vitamin C—eat soon after cooking" }
+    },
+    "pairWith": [
+      { "food": "greek_yogurt", "reason": "Protein and fat dramatically lower GI and add satiety" },
+      { "food": "broccoli", "reason": "Fiber and nutrients balance the meal" },
+      { "food": "olive_oil", "reason": "Healthy fat slows digestion and lowers GI" }
+    ],
+    "avoidWith": [
+      { "food": "butter", "reason": "Saturated fat adds unnecessary calories" },
+      { "food": "sour_cream", "reason": "High in saturated fat and calories" }
+    ],
+    "bestTiming": {
+      "preWorkout": false,
+      "postWorkout": true,
+      "morning": false,
+      "beforeBed": false
+    },
+    "digestionTime": "medium",
+    "portionVisual": "1 medium baked potato = about the size of a computer mouse",
+    "tips": {
+      "storage": "Refrigerate cooked potato for up to 5 days; cooling forms resistant starch (lowers GI)",
+      "cooking": "Bake at 425°F for 45-60 min; poke holes to vent steam",
+      "prepTip": "Eat the skin for fiber. Cool and reheat to form resistant starch (lowers GI by ~25%)"
+    },
+    "commonMistakes": [
+      "Peeling removes most fiber and nutrients",
+      "Topping with butter/sour cream negates health benefits",
+      "Eating alone without protein/fat causes massive blood sugar spike"
+    ],
+    "cautions": {
+      "diabetes": "Very high GI (111)—avoid or eat small portions with protein/fat",
+      "nightshades": "Some report inflammation from nightshade vegetables",
+      "weight": "Easy to overeat despite satiety—watch portions and toppings"
+    },
+    "pregnancySafe": true,
+    "pregnancyNotes": "Excellent potassium source but monitor blood sugar. Eat with skin for folate.",
+    "drugInteractions": [
+      { "drug": "ACE inhibitors", "severity": "low", "reason": "Very high potassium—monitor intake if on potassium-sparing drugs" }
+    ],
+    "pediatric": {
+      "ageAppropriate": "6+ months (mashed)",
+      "chokingRisk": "low when cooked soft and mashed",
+      "commonAllergen": false
+    }
+  },
+  "sweet_potato": {
+    "name": "Sweet potato, raw",
+    "fdcId": "170028",
+    "quantity": 1,
+    "unit": "cup cubed (133g)",
+    "mealType": "side",
+    "foodGroups": ["vegetable"],
+    "subCategory": "starchy_vegetable",
+    "calories": 114,
+    "protein": 2.1,
+    "carbs": 26.8,
+    "fat": 0.1,
+    "fiber": 4.0,
+    "sugar": 5.6,
+    "sodium": 73,
+    "saturatedFat": 0.02,
+    "transFat": 0,
+    "cholesterol": 0,
+    "potassium": 448,
+    "calcium": 40,
+    "iron": 0.8,
+    "magnesium": 33,
+    "zinc": 0.4,
+    "vitaminA": 1403,
+    "vitaminC": 3.3,
+    "vitaminD": 0,
+    "vitaminE": 0.4,
+    "vitaminK": 2.4,
+    "thiamin": 0.11,
+    "riboflavin": 0.08,
+    "niacin": 0.7,
+    "vitaminB6": 0.28,
+    "folate": 15,
+    "vitaminB12": 0,
+    "choline": 16.4,
+    "phosphorus": 63,
+    "selenium": 0.8,
+    "copper": 0.2,
+    "manganese": 0.35,
+    "caffeine": 0,
+    "water": 102,
+    "monounsaturatedFat": 0.001,
+    "polyunsaturatedFat": 0.05,
+    "omega3": { "ala": 0.003, "epa": 0, "dha": 0 },
+    "omega6": { "linoleicAcid": 0.046 },
+    "omegaRatio": 0.07,
+    "glycemicIndex": 63,
+    "glycemicLoad": 17,
+    "glycemicCategory": "medium",
+    "nutrientDensityScore": 46.9,
+    "satietyScore": 87,
+    "inflammatoryIndex": -1.8,
+    "novaClass": 1,
+    "oracScore": 902,
+    "dietaryTags": ["vegan", "gluten_free", "paleo", "whole30"],
+    "allergens": [],
+    "insight": "A vitamin A superstar—one cup provides 286% DV from beta-carotene. Lower GI than white potato, naturally sweet, nutrient-dense.",
+    "focusGrades": {
+      "balanced": {
+        "grade": "A",
+        "score": 92,
+        "insight": "Outstanding vitamin A (1403mcg, 286% DV), good fiber (4g), and lower GI than white potato. Excellent nutrient density.",
+        "pros": ["Exceptional vitamin A", "Good fiber", "Good potassium", "Lower GI than white potato"],
+        "cons": ["Higher sugar than white potato", "Moderate calories"]
+      },
+      "heart_health": {
+        "grade": "A",
+        "score": 93,
+        "insight": "Good potassium (448mg), fiber (4g), and beta-carotene antioxidants support cardiovascular health. Very low saturated fat.",
+        "pros": ["Good potassium", "Good fiber", "Antioxidant-rich", "Very low sodium"],
+        "cons": []
+      },
+      "muscle_building": {
+        "grade": "C",
+        "score": 72,
+        "insight": "2.1g protein is low but 27g carbs make it good for post-workout glycogen replenishment. Good B6 for protein metabolism.",
+        "pros": ["Good carbs for glycogen", "Good B6", "Decent fiber"],
+        "cons": ["Insufficient protein alone", "Moderate GI"]
+      },
+      "energy": {
+        "grade": "A-",
+        "score": 87,
+        "insight": "27g carbs provide sustained energy. Good B-vitamins (B6, thiamin) support metabolism. Medium GI (63) = steady energy.",
+        "pros": ["Good carbs for energy", "Good B6 and thiamin", "Medium GI prevents crash", "Natural sweetness"],
+        "cons": ["Moderate calories", "Higher sugar than white potato"]
+      },
+      "weight_management": {
+        "grade": "A-",
+        "score": 87,
+        "insight": "114 calories per cup with high satiety (87/100) thanks to fiber (4g). Natural sweetness satisfies cravings without added sugar.",
+        "pros": ["Good satiety", "Good fiber", "Naturally sweet", "Nutrient-dense"],
+        "cons": ["Moderate calories", "Higher sugar content", "Easy to overeat"]
+      },
+      "brain_focus": {
+        "grade": "A-",
+        "score": 88,
+        "insight": "Excellent B6 (0.28mg) and beta-carotene antioxidants protect brain cells. Medium GI provides steady glucose for cognition.",
+        "pros": ["Excellent B6", "Outstanding antioxidants", "Steady glucose supply", "Good choline"],
+        "cons": ["No omega-3", "No B12"]
+      },
+      "gut_health": {
+        "grade": "A",
+        "score": 91,
+        "insight": "4g fiber plus resistant starch (when cooled) feeds beneficial gut bacteria. Prebiotic benefits for microbiome.",
+        "pros": ["Good fiber", "Resistant starch benefits", "Prebiotic effects", "Easy to digest"],
+        "cons": []
+      },
+      "blood_sugar": {
+        "grade": "B+",
+        "score": 84,
+        "insight": "GI of 63 is medium—much better than white potato (111). Fiber (4g) slows sugar absorption. Good choice for diabetics.",
+        "pros": ["Medium GI (63)", "Good fiber", "Better than white potato", "Steady energy"],
+        "cons": ["Higher sugar (5.6g)", "Moderate glycemic load"]
+      },
+      "bone_joint": {
+        "grade": "C+",
+        "score": 75,
+        "insight": "Good magnesium and calcium but very low in vitamin D and K. Not a primary bone-health food.",
+        "pros": ["Good magnesium", "Some calcium", "Good copper for collagen"],
+        "cons": ["Very low vitamin K", "No vitamin D", "Low calcium"]
+      },
+      "anti_inflammatory": {
+        "grade": "A",
+        "score": 93,
+        "insight": "Exceptional beta-carotene antioxidants fight inflammation. Good ORAC score. Much less inflammatory than white potato.",
+        "pros": ["Outstanding beta-carotene", "Excellent ORAC score", "Anti-inflammatory compounds", "Medium GI"],
+        "cons": ["No omega-3", "Poor omega ratio"]
+      }
+    },
+    "bioavailability": {
+      "vitaminA": { "absorption": "moderate-high", "tip": "Beta-carotene absorbs better with fat—cook with olive oil or eat with nuts" }
+    },
+    "pairWith": [
+      { "food": "olive_oil", "reason": "Fat enhances beta-carotene absorption up to 6x" },
+      { "food": "cinnamon", "reason": "May improve insulin sensitivity and enhance flavor" },
+      { "food": "chicken", "reason": "Complete the meal with lean protein" }
+    ],
+    "avoidWith": [],
+    "bestTiming": {
+      "preWorkout": false,
+      "postWorkout": true,
+      "morning": true,
+      "beforeBed": false
+    },
+    "digestionTime": "medium",
+    "portionVisual": "1 cup cubed = about the size of a baseball",
+    "tips": {
+      "storage": "Store in a cool, dark, dry place (not refrigerator); lasts 2-3 weeks",
+      "cooking": "Bake, roast, or steam to preserve nutrients; skin is edible and nutrient-rich",
+      "prepTip": "Don't peel—most nutrients are near the skin. Cool after cooking to form resistant starch."
+    },
+    "commonMistakes": [
+      "Adding marshmallows or brown sugar (negates health benefits)",
+      "Peeling removes fiber and nutrients",
+      "Eating without fat limits vitamin A absorption"
+    ],
+    "cautions": {
+      "kidneyStones": "Contains oxalates—moderate intake if prone to calcium oxalate stones",
+      "diabetes": "Medium GI—monitor portions and pair with protein/fat"
+    },
+    "pregnancySafe": true,
+    "pregnancyNotes": "Excellent—outstanding vitamin A (but not toxic preformed retinol) supports fetal development.",
+    "drugInteractions": [],
+    "pediatric": {
+      "ageAppropriate": "6+ months (cooked and mashed)",
+      "chokingRisk": "low when cooked soft and mashed",
+      "commonAllergen": false
+    }
+  },
+  "yam": {
+    "name": "Yam, raw",
+    "fdcId": "170487",
+    "quantity": 1,
+    "unit": "cup cubed (136g)",
+    "mealType": "side",
+    "foodGroups": ["vegetable"],
+    "subCategory": "starchy_vegetable",
+    "calories": 158,
+    "protein": 2.0,
+    "carbs": 37.5,
+    "fat": 0.2,
+    "fiber": 5.3,
+    "sugar": 0.8,
+    "sodium": 12,
+    "saturatedFat": 0.04,
+    "transFat": 0,
+    "cholesterol": 0,
+    "potassium": 1224,
+    "calcium": 23,
+    "iron": 0.7,
+    "magnesium": 29,
+    "zinc": 0.3,
+    "vitaminA": 0,
+    "vitaminC": 23.4,
+    "vitaminD": 0,
+    "vitaminE": 0.5,
+    "vitaminK": 3.5,
+    "thiamin": 0.15,
+    "riboflavin": 0.04,
+    "niacin": 0.7,
+    "vitaminB6": 0.4,
+    "folate": 31,
+    "vitaminB12": 0,
+    "choline": 21.5,
+    "phosphorus": 74,
+    "selenium": 1.0,
+    "copper": 0.2,
+    "manganese": 0.5,
+    "caffeine": 0,
+    "water": 95,
+    "monounsaturatedFat": 0.003,
+    "polyunsaturatedFat": 0.09,
+    "omega3": { "ala": 0.001, "epa": 0, "dha": 0 },
+    "omega6": { "linoleicAcid": 0.087 },
+    "omegaRatio": 0.01,
+    "glycemicIndex": 54,
+    "glycemicLoad": 20,
+    "glycemicCategory": "low",
+    "nutrientDensityScore": 38.4,
+    "satietyScore": 89,
+    "inflammatoryIndex": -0.5,
+    "novaClass": 1,
+    "oracScore": 495,
+    "dietaryTags": ["vegan", "gluten_free", "paleo"],
+    "allergens": [],
+    "insight": "A potassium powerhouse (1224mg, 35% DV) with excellent fiber (5.3g). Lower GI than white potato, less sweet than sweet potato.",
+    "focusGrades": {
+      "balanced": {
+        "grade": "A-",
+        "score": 88,
+        "insight": "Outstanding potassium (1224mg, 35% DV), excellent fiber (5.3g), and good vitamin C (39% DV). Well-rounded starchy vegetable.",
+        "pros": ["Outstanding potassium", "Excellent fiber", "Good vitamin C", "Good B6"],
+        "cons": ["No vitamin A", "Moderate calories", "Low in other vitamins"]
+      },
+      "heart_health": {
+        "grade": "A+",
+        "score": 95,
+        "insight": "Exceptional potassium (1224mg) supports blood pressure. Excellent fiber (5.3g), virtually no sodium. Outstanding for heart health.",
+        "pros": ["Exceptional potassium", "Excellent fiber", "Very low sodium", "Zero saturated fat"],
+        "cons": []
+      },
+      "muscle_building": {
+        "grade": "C",
+        "score": 71,
+        "insight": "Only 2g protein but 37g carbs make it good for post-workout glycogen replenishment. Excellent potassium for muscle function.",
+        "pros": ["Good carbs for glycogen", "Outstanding potassium", "Good B6"],
+        "cons": ["Very low protein", "Moderate GI"]
+      },
+      "energy": {
+        "grade": "B+",
+        "score": 86,
+        "insight": "37g carbs provide sustained energy. Good B-vitamins (B6, thiamin) support metabolism. Low GI (54) = steady energy.",
+        "pros": ["Good carbs for energy", "Good B6 and thiamin", "Low GI prevents crash", "Outstanding potassium"],
+        "cons": ["Moderate calories"]
+      },
+      "weight_management": {
+        "grade": "B+",
+        "score": 85,
+        "insight": "158 calories per cup with high satiety (89/100) thanks to excellent fiber (5.3g). Filling and nutrient-dense.",
+        "pros": ["Good satiety", "Excellent fiber", "Nutrient-dense", "Low sugar"],
+        "cons": ["Moderate calories", "Easy to overeat"]
+      },
+      "brain_focus": {
+        "grade": "B+",
+        "score": 84,
+        "insight": "Excellent B6 (0.4mg) and potassium (1224mg) support cognition. Low GI provides steady glucose without crashes.",
+        "pros": ["Excellent B6", "Outstanding potassium", "Steady glucose supply", "Good choline"],
+        "cons": ["No omega-3", "No B12", "Minimal antioxidants"]
+      },
+      "gut_health": {
+        "grade": "A+",
+        "score": 94,
+        "insight": "Excellent fiber (5.3g) plus resistant starch (when cooled) feeds beneficial gut bacteria. Outstanding for microbiome.",
+        "pros": ["Excellent fiber", "Resistant starch benefits", "Prebiotic effects", "Easy to digest"],
+        "cons": []
+      },
+      "blood_sugar": {
+        "grade": "A-",
+        "score": 87,
+        "insight": "GI of 54 is low. Excellent fiber (5.3g) and minimal sugar (0.8g). Much better than white potato for diabetics.",
+        "pros": ["Low GI (54)", "Excellent fiber", "Very low sugar", "Steady energy"],
+        "cons": ["Moderate glycemic load"]
+      },
+      "bone_joint": {
+        "grade": "C",
+        "score": 70,
+        "insight": "Good magnesium and phosphorus but very low in calcium, vitamin D, and K. Not a bone-health food.",
+        "pros": ["Good magnesium", "Good phosphorus", "Good copper"],
+        "cons": ["Very low calcium", "Minimal vitamin K", "No vitamin D"]
+      },
+      "anti_inflammatory": {
+        "grade": "B",
+        "score": 80,
+        "insight": "Good vitamin C and moderate ORAC score. Low GI helps reduce inflammation. Decent anti-inflammatory profile.",
+        "pros": ["Good vitamin C", "Low GI", "Moderate antioxidants"],
+        "cons": ["No omega-3", "Poor omega ratio", "Lower ORAC than sweet potato"]
+      }
+    },
+    "bioavailability": {
+      "potassium": { "absorption": "high", "tip": "Very bioavailable—one of the best potassium sources" },
+      "vitaminC": { "absorption": "high", "tip": "Cook minimally to preserve vitamin C" }
+    },
+    "pairWith": [
+      { "food": "coconut_oil", "reason": "Traditional pairing—fat slows digestion" },
+      { "food": "black_beans", "reason": "Complete the meal with protein and fiber" },
+      { "food": "spinach", "reason": "Add vitamins A and K that yam lacks" }
+    ],
+    "avoidWith": [],
+    "bestTiming": {
+      "preWorkout": false,
+      "postWorkout": true,
+      "morning": true,
+      "beforeBed": false
+    },
+    "digestionTime": "medium",
+    "portionVisual": "1 cup cubed = about the size of a baseball",
+    "tips": {
+      "storage": "Store in a cool, dark, dry place; lasts 2-3 weeks (do not refrigerate)",
+      "cooking": "Boil, bake, or roast until tender; skin is edible but thick",
+      "prepTip": "Cool after cooking to form resistant starch for lower GI and gut benefits"
+    },
+    "commonMistakes": [
+      "Confusing with sweet potato (different species, different nutrients)",
+      "Over-peeling removes fiber",
+      "Eating alone without protein/fat"
+    ],
+    "cautions": {
+      "rawConsumption": "Must be cooked—raw yams contain toxic compounds",
+      "diabetes": "Moderate GI—monitor portions and pair with protein"
+    },
+    "pregnancySafe": true,
+    "pregnancyNotes": "Excellent potassium source. Must be thoroughly cooked (never eat raw).",
+    "drugInteractions": [
+      { "drug": "ACE inhibitors", "severity": "low", "reason": "Very high potassium—monitor intake if on potassium-sparing drugs" }
+    ],
+    "pediatric": {
+      "ageAppropriate": "6+ months (cooked and mashed)",
+      "chokingRisk": "low when cooked soft and mashed",
+      "commonAllergen": false
+    }
+  },
+  "onion": {
+    "name": "Onion, raw",
+    "fdcId": "170000",
+    "quantity": 1,
+    "unit": "medium (110g)",
+    "mealType": "ingredient",
+    "foodGroups": ["vegetable"],
+    "subCategory": "allium",
+    "calories": 44,
+    "protein": 1.2,
+    "carbs": 10.3,
+    "fat": 0.1,
+    "fiber": 1.9,
+    "sugar": 4.7,
+    "sodium": 4,
+    "saturatedFat": 0.04,
+    "transFat": 0,
+    "cholesterol": 0,
+    "potassium": 161,
+    "calcium": 25,
+    "iron": 0.2,
+    "magnesium": 11,
+    "zinc": 0.2,
+    "vitaminA": 0,
+    "vitaminC": 8.1,
+    "vitaminD": 0,
+    "vitaminE": 0.02,
+    "vitaminK": 0.4,
+    "thiamin": 0.05,
+    "riboflavin": 0.03,
+    "niacin": 0.1,
+    "vitaminB6": 0.13,
+    "folate": 21,
+    "vitaminB12": 0,
+    "choline": 6.7,
+    "phosphorus": 32,
+    "selenium": 0.6,
+    "copper": 0.04,
+    "manganese": 0.14,
+    "caffeine": 0,
+    "water": 99,
+    "monounsaturatedFat": 0.01,
+    "polyunsaturatedFat": 0.05,
+    "omega3": { "ala": 0.001, "epa": 0, "dha": 0 },
+    "omega6": { "linoleicAcid": 0.05 },
+    "omegaRatio": 0.02,
+    "glycemicIndex": 10,
+    "glycemicLoad": 1,
+    "glycemicCategory": "low",
+    "nutrientDensityScore": 28.4,
+    "satietyScore": 65,
+    "inflammatoryIndex": -3.1,
+    "novaClass": 1,
+    "oracScore": 1034,
+    "dietaryTags": ["vegan", "gluten_free", "keto", "paleo", "whole30", "raw"],
+    "allergens": [],
+    "insight": "A quercetin powerhouse with potent anti-inflammatory and antimicrobial compounds. Sulfur compounds support detoxification and heart health.",
+    "focusGrades": {
+      "balanced": {
+        "grade": "B+",
+        "score": 83,
+        "insight": "Good fiber (1.9g) and quercetin antioxidants. Very low calorie (44) and virtually no sodium. Modest vitamin content.",
+        "pros": ["Very low calorie", "Good fiber", "Quercetin antioxidant", "Very low sodium"],
+        "cons": ["Low in most vitamins", "Minimal protein"]
+      },
+      "heart_health": {
+        "grade": "A+",
+        "score": 96,
+        "insight": "Outstanding quercetin reduces blood pressure and LDL oxidation. Sulfur compounds support arterial health. Virtually no sodium.",
+        "pros": ["Outstanding quercetin", "Sulfur compounds for heart", "Very low sodium", "Good potassium"],
+        "cons": []
+      },
+      "muscle_building": {
+        "grade": "D",
+        "score": 60,
+        "insight": "Only 1.2g protein and 44 calories. Not for muscle building—just a flavorful ingredient.",
+        "pros": ["Quercetin may reduce inflammation from exercise"],
+        "cons": ["Very low protein", "Very low calories", "Not muscle-building food"]
+      },
+      "energy": {
+        "grade": "C",
+        "score": 70,
+        "insight": "Natural sugars (4.7g) provide minimal energy. Limited B-vitamins and calories. Better for flavor than fuel.",
+        "pros": ["Quick natural sugars", "Easy to digest"],
+        "cons": ["Low in B-vitamins", "Low total calories", "Minimal nutrients for energy"]
+      },
+      "weight_management": {
+        "grade": "A+",
+        "score": 98,
+        "insight": "Only 44 calories per medium onion with good flavor and fiber. Adds taste without adding calories.",
+        "pros": ["Very low calorie", "Good fiber", "High water content", "Adds flavor naturally"],
+        "cons": []
+      },
+      "brain_focus": {
+        "grade": "A-",
+        "score": 88,
+        "insight": "Outstanding quercetin antioxidants protect brain cells and may reduce cognitive decline. Sulfur compounds support detox.",
+        "pros": ["Outstanding quercetin", "Neuroprotective antioxidants", "Sulfur for detox"],
+        "cons": ["Low in B-vitamins", "No omega-3", "Minimal choline"]
+      },
+      "gut_health": {
+        "grade": "A",
+        "score": 90,
+        "insight": "1.9g fiber plus prebiotic fructans feed beneficial gut bacteria. Quercetin supports gut lining health.",
+        "pros": ["Good fiber", "Excellent prebiotic fructans", "Supports microbiome", "Quercetin for gut lining"],
+        "cons": ["FODMAPs may cause gas in sensitive individuals"]
+      },
+      "blood_sugar": {
+        "grade": "A+",
+        "score": 97,
+        "insight": "GI of 10 is extremely low. Quercetin may improve insulin sensitivity. Minimal impact on blood sugar.",
+        "pros": ["Very low GI (10)", "May improve insulin sensitivity", "Good fiber", "Low sugar impact"],
+        "cons": []
+      },
+      "bone_joint": {
+        "grade": "C-",
+        "score": 68,
+        "insight": "Quercetin may reduce inflammation in joints but very low in calcium, vitamin D, and K. Not a bone-health food.",
+        "pros": ["Quercetin for joint inflammation", "Some calcium"],
+        "cons": ["Very low calcium", "Minimal vitamin K", "No vitamin D"]
+      },
+      "anti_inflammatory": {
+        "grade": "A+",
+        "score": 98,
+        "insight": "Exceptional quercetin is one of the most potent anti-inflammatory plant compounds. Excellent ORAC score.",
+        "pros": ["Outstanding quercetin", "Excellent ORAC score", "Sulfur compounds", "Very anti-inflammatory"],
+        "cons": []
+      }
+    },
+    "bioavailability": {
+      "quercetin": { "absorption": "low-moderate", "tip": "Pair with fat or cook briefly to enhance quercetin absorption" }
+    },
+    "pairWith": [
+      { "food": "olive_oil", "reason": "Fat enhances quercetin absorption" },
+      { "food": "garlic", "reason": "Complementary allium compounds amplify health benefits" },
+      { "food": "tomato", "reason": "Classic pairing with complementary antioxidants" }
+    ],
+    "avoidWith": [],
+    "bestTiming": {
+      "preWorkout": false,
+      "postWorkout": false,
+      "morning": true,
+      "beforeBed": true
+    },
+    "digestionTime": "medium",
+    "portionVisual": "1 medium onion = about the size of a tennis ball",
+    "tips": {
+      "storage": "Store in a cool, dry place away from potatoes; lasts 2-3 months",
+      "cooking": "Brief cooking preserves quercetin; long cooking reduces it. Red onions have most quercetin.",
+      "prepTip": "Let chopped onions sit 5-10 min before cooking to maximize allicin formation"
+    },
+    "commonMistakes": [
+      "Overcooking destroys quercetin and sulfur compounds",
+      "Storing near potatoes (they release gases that spoil each other)"
+    ],
+    "cautions": {
+      "fodmap": "High in fructans—avoid if sensitive to FODMAPs or have IBS",
+      "allergies": "Rare but can cause contact dermatitis",
+      "rawConsumption": "Raw onions may irritate sensitive stomachs"
+    },
+    "pregnancySafe": true,
+    "pregnancyNotes": "Safe in food amounts. Quercetin and folate support fetal development.",
+    "drugInteractions": [
+      { "drug": "Blood thinners", "severity": "low", "reason": "May have mild anticoagulant effects—likely safe in food amounts" }
+    ],
+    "pediatric": {
+      "ageAppropriate": "8+ months cooked, 12+ months raw in small amounts",
+      "chokingRisk": "low when cooked soft or minced",
+      "commonAllergen": false
+    }
+  },
+  "onions": {
+    "name": "Onions, raw",
+    "fdcId": "170000",
+    "quantity": 1,
+    "unit": "cup chopped (160g)",
+    "mealType": "ingredient",
+    "foodGroups": ["vegetable"],
+    "subCategory": "allium",
+    "calories": 64,
+    "protein": 1.8,
+    "carbs": 14.9,
+    "fat": 0.2,
+    "fiber": 2.7,
+    "sugar": 6.8,
+    "sodium": 6,
+    "saturatedFat": 0.06,
+    "transFat": 0,
+    "cholesterol": 0,
+    "potassium": 234,
+    "calcium": 37,
+    "iron": 0.3,
+    "magnesium": 16,
+    "zinc": 0.3,
+    "vitaminA": 0,
+    "vitaminC": 11.8,
+    "vitaminD": 0,
+    "vitaminE": 0.03,
+    "vitaminK": 0.6,
+    "thiamin": 0.07,
+    "riboflavin": 0.04,
+    "niacin": 0.2,
+    "vitaminB6": 0.19,
+    "folate": 30,
+    "vitaminB12": 0,
+    "choline": 9.7,
+    "phosphorus": 47,
+    "selenium": 0.8,
+    "copper": 0.06,
+    "manganese": 0.2,
+    "caffeine": 0,
+    "water": 144,
+    "monounsaturatedFat": 0.02,
+    "polyunsaturatedFat": 0.07,
+    "omega3": { "ala": 0.001, "epa": 0, "dha": 0 },
+    "omega6": { "linoleicAcid": 0.073 },
+    "omegaRatio": 0.01,
+    "glycemicIndex": 10,
+    "glycemicLoad": 1,
+    "glycemicCategory": "low",
+    "nutrientDensityScore": 28.4,
+    "satietyScore": 67,
+    "inflammatoryIndex": -3.1,
+    "novaClass": 1,
+    "oracScore": 1034,
+    "dietaryTags": ["vegan", "gluten_free", "keto", "paleo", "whole30", "raw"],
+    "allergens": [],
+    "insight": "A quercetin powerhouse with potent anti-inflammatory and antimicrobial compounds. Sulfur compounds support detoxification and heart health.",
+    "focusGrades": {
+      "balanced": {
+        "grade": "B+",
+        "score": 83,
+        "insight": "Good fiber (2.7g) and quercetin antioxidants. Very low calorie (64) and virtually no sodium. Modest vitamin content.",
+        "pros": ["Very low calorie", "Good fiber", "Quercetin antioxidant", "Very low sodium"],
+        "cons": ["Low in most vitamins", "Minimal protein"]
+      },
+      "heart_health": {
+        "grade": "A+",
+        "score": 96,
+        "insight": "Outstanding quercetin reduces blood pressure and LDL oxidation. Sulfur compounds support arterial health. Virtually no sodium.",
+        "pros": ["Outstanding quercetin", "Sulfur compounds for heart", "Very low sodium", "Good potassium"],
+        "cons": []
+      },
+      "muscle_building": {
+        "grade": "D",
+        "score": 60,
+        "insight": "Only 1.8g protein and 64 calories. Not for muscle building—just a flavorful ingredient.",
+        "pros": ["Quercetin may reduce inflammation from exercise"],
+        "cons": ["Very low protein", "Very low calories", "Not muscle-building food"]
+      },
+      "energy": {
+        "grade": "C",
+        "score": 70,
+        "insight": "Natural sugars (6.8g) provide minimal energy. Limited B-vitamins and calories. Better for flavor than fuel.",
+        "pros": ["Quick natural sugars", "Easy to digest"],
+        "cons": ["Low in B-vitamins", "Low total calories", "Minimal nutrients for energy"]
+      },
+      "weight_management": {
+        "grade": "A+",
+        "score": 98,
+        "insight": "Only 64 calories per cup with good flavor and fiber. Adds taste without adding calories.",
+        "pros": ["Very low calorie", "Good fiber", "High water content", "Adds flavor naturally"],
+        "cons": []
+      },
+      "brain_focus": {
+        "grade": "A-",
+        "score": 88,
+        "insight": "Outstanding quercetin antioxidants protect brain cells and may reduce cognitive decline. Sulfur compounds support detox.",
+        "pros": ["Outstanding quercetin", "Neuroprotective antioxidants", "Sulfur for detox"],
+        "cons": ["Low in B-vitamins", "No omega-3", "Minimal choline"]
+      },
+      "gut_health": {
+        "grade": "A",
+        "score": 90,
+        "insight": "2.7g fiber plus prebiotic fructans feed beneficial gut bacteria. Quercetin supports gut lining health.",
+        "pros": ["Good fiber", "Excellent prebiotic fructans", "Supports microbiome", "Quercetin for gut lining"],
+        "cons": ["FODMAPs may cause gas in sensitive individuals"]
+      },
+      "blood_sugar": {
+        "grade": "A+",
+        "score": 97,
+        "insight": "GI of 10 is extremely low. Quercetin may improve insulin sensitivity. Minimal impact on blood sugar.",
+        "pros": ["Very low GI (10)", "May improve insulin sensitivity", "Good fiber", "Low sugar impact"],
+        "cons": []
+      },
+      "bone_joint": {
+        "grade": "C-",
+        "score": 68,
+        "insight": "Quercetin may reduce inflammation in joints but very low in calcium, vitamin D, and K. Not a bone-health food.",
+        "pros": ["Quercetin for joint inflammation", "Some calcium"],
+        "cons": ["Very low calcium", "Minimal vitamin K", "No vitamin D"]
+      },
+      "anti_inflammatory": {
+        "grade": "A+",
+        "score": 98,
+        "insight": "Exceptional quercetin is one of the most potent anti-inflammatory plant compounds. Excellent ORAC score.",
+        "pros": ["Outstanding quercetin", "Excellent ORAC score", "Sulfur compounds", "Very anti-inflammatory"],
+        "cons": []
+      }
+    },
+    "bioavailability": {
+      "quercetin": { "absorption": "low-moderate", "tip": "Pair with fat or cook briefly to enhance quercetin absorption" }
+    },
+    "pairWith": [
+      { "food": "olive_oil", "reason": "Fat enhances quercetin absorption" },
+      { "food": "garlic", "reason": "Complementary allium compounds amplify health benefits" },
+      { "food": "tomato", "reason": "Classic pairing with complementary antioxidants" }
+    ],
+    "avoidWith": [],
+    "bestTiming": {
+      "preWorkout": false,
+      "postWorkout": false,
+      "morning": true,
+      "beforeBed": true
+    },
+    "digestionTime": "medium",
+    "portionVisual": "1 cup chopped = about the size of a baseball",
+    "tips": {
+      "storage": "Store in a cool, dry place away from potatoes; lasts 2-3 months",
+      "cooking": "Brief cooking preserves quercetin; long cooking reduces it. Red onions have most quercetin.",
+      "prepTip": "Let chopped onions sit 5-10 min before cooking to maximize allicin formation"
+    },
+    "commonMistakes": [
+      "Overcooking destroys quercetin and sulfur compounds",
+      "Storing near potatoes (they release gases that spoil each other)"
+    ],
+    "cautions": {
+      "fodmap": "High in fructans—avoid if sensitive to FODMAPs or have IBS",
+      "allergies": "Rare but can cause contact dermatitis",
+      "rawConsumption": "Raw onions may irritate sensitive stomachs"
+    },
+    "pregnancySafe": true,
+    "pregnancyNotes": "Safe in food amounts. Quercetin and folate support fetal development.",
+    "drugInteractions": [
+      { "drug": "Blood thinners", "severity": "low", "reason": "May have mild anticoagulant effects—likely safe in food amounts" }
+    ],
+    "pediatric": {
+      "ageAppropriate": "8+ months cooked, 12+ months raw in small amounts",
+      "chokingRisk": "low when cooked soft or minced",
+      "commonAllergen": false
+    }
+  }
+}

@@ -11,6 +11,7 @@ exports.scanMenuPhoto = scanMenuPhoto;
 const openai_1 = __importDefault(require("openai"));
 const params_1 = require("firebase-functions/params");
 const openai_2 = require("../../config/openai");
+const foodIntelligenceLookup_1 = require("../nutrition/foodIntelligenceLookup");
 // Define OpenAI API key as a secret (for production)
 const openaiApiKey = (0, params_1.defineSecret)('OPENAI_API_KEY');
 /**
@@ -134,22 +135,28 @@ async function scanMenuPhoto(imageBase64) {
             confidence: Math.min(1, Math.max(0, Number((_e = parsed.restaurant) === null || _e === void 0 ? void 0 : _e.confidence) || 0.5)),
             cuisine: ((_f = parsed.restaurant) === null || _f === void 0 ? void 0 : _f.cuisine) || undefined,
         };
-        // Validate and transform menu items
-        const menuItems = (parsed.menuItems || []).map((item) => ({
-            id: generateId(),
-            name: String(item.name || 'Unknown item'),
-            description: item.description ? String(item.description) : undefined,
-            price: item.price ? String(item.price) : undefined,
-            calories: Math.round(Number(item.calories) || 0),
-            protein: Math.round(Number(item.protein) || 0),
-            carbs: Math.round(Number(item.carbs) || 0),
-            fat: Math.round(Number(item.fat) || 0),
-            fiber: item.fiber ? Math.round(Number(item.fiber)) : undefined,
-            sugar: item.sugar ? Math.round(Number(item.sugar)) : undefined,
-            sodium: item.sodium ? Math.round(Number(item.sodium)) : undefined,
-            isSelected: false,
-            confidence: Math.min(1, Math.max(0, Number(item.confidence) || 0.5)),
-        }));
+        // Validate and transform menu items with intelligence enrichment
+        const menuItems = (parsed.menuItems || []).map((item) => {
+            const name = String(item.name || 'Unknown item');
+            // Enrich with food intelligence data (includes focus grades, GI, satiety, etc.)
+            const intelligence = (0, foodIntelligenceLookup_1.getFoodIntelligence)(name);
+            return {
+                id: generateId(),
+                name,
+                description: item.description ? String(item.description) : undefined,
+                price: item.price ? String(item.price) : undefined,
+                calories: Math.round(Number(item.calories) || 0),
+                protein: Math.round(Number(item.protein) || 0),
+                carbs: Math.round(Number(item.carbs) || 0),
+                fat: Math.round(Number(item.fat) || 0),
+                fiber: item.fiber ? Math.round(Number(item.fiber)) : undefined,
+                sugar: item.sugar ? Math.round(Number(item.sugar)) : undefined,
+                sodium: item.sodium ? Math.round(Number(item.sodium)) : undefined,
+                isSelected: false,
+                confidence: Math.min(1, Math.max(0, Number(item.confidence) || 0.5)),
+                ...(intelligence && { intelligence }),
+            };
+        });
         return {
             restaurant,
             menuItems,

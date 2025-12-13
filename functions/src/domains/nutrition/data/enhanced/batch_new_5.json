@@ -1,0 +1,1142 @@
+{
+  "teriyaki_chicken": {
+    "name": "Teriyaki Chicken",
+    "calories": 154,
+    "protein": 18.5,
+    "carbs": 8.2,
+    "fat": 5.1,
+    "fiber": 0.3,
+    "sugar": 6.8,
+    "sodium": 690,
+    "saturatedFat": 1.3,
+    "cholesterol": 58,
+    "potassium": 285,
+    "calcium": 15,
+    "iron": 0.9,
+    "magnesium": 28,
+    "vitaminA": 12,
+    "vitaminC": 1.2,
+    "vitaminD": 0.1,
+    "vitaminB12": 0.35,
+    "glycemicIndex": 48,
+    "glycemicLoad": 4,
+    "allergens": ["soy", "gluten"],
+    "servingSize": 100,
+    "servingUnit": "g",
+    "focusGrades": {
+      "balanced": {
+        "grade": "B",
+        "score": 82,
+        "insight": "Good protein-to-calorie ratio with moderate carbs, but high sodium from teriyaki sauce impacts overall balance",
+        "pros": [
+          "High-quality lean protein (18.5g per 100g)",
+          "Moderate calorie density",
+          "Low saturated fat content"
+        ],
+        "cons": [
+          "Very high sodium (690mg per 100g)",
+          "Added sugar from teriyaki glaze",
+          "Low fiber content"
+        ]
+      },
+      "heart_health": {
+        "grade": "C+",
+        "score": 72,
+        "insight": "Lean protein is heart-friendly, but excessive sodium from teriyaki sauce is a significant cardiovascular concern",
+        "pros": [
+          "Low saturated fat and cholesterol",
+          "Contains potassium for blood pressure regulation",
+          "Lean poultry protein"
+        ],
+        "cons": [
+          "Extremely high sodium content",
+          "Added sugars may impact triglycerides",
+          "Limited heart-protective omega-3s"
+        ]
+      },
+      "muscle_building": {
+        "grade": "A-",
+        "score": 90,
+        "insight": "Excellent complete protein source with essential amino acids, ideal for muscle synthesis and recovery",
+        "pros": [
+          "High-quality complete protein (18.5g)",
+          "Contains all essential amino acids",
+          "Good leucine content for muscle protein synthesis",
+          "Moderate calories for lean gains"
+        ],
+        "cons": [
+          "High sodium may cause water retention",
+          "Limited branched-chain amino acids compared to beef"
+        ]
+      },
+      "energy": {
+        "grade": "B",
+        "score": 80,
+        "insight": "Provides steady energy from protein and moderate carbs, but sugar content may cause minor energy fluctuations",
+        "pros": [
+          "Balanced macros for sustained energy",
+          "Protein helps stabilize blood sugar",
+          "Quick-digesting carbs for immediate energy"
+        ],
+        "cons": [
+          "Sugar content may cause brief spike",
+          "Limited complex carbohydrates",
+          "Moderate B-vitamin content"
+        ]
+      },
+      "weight_management": {
+        "grade": "B-",
+        "score": 75,
+        "insight": "High protein promotes satiety, but added sugars and sodium can hinder weight loss efforts",
+        "pros": [
+          "High protein increases fullness",
+          "Moderate calorie density",
+          "Low fat content"
+        ],
+        "cons": [
+          "Added sugars increase calorie density",
+          "High sodium causes water retention",
+          "Minimal fiber for satiety"
+        ]
+      },
+      "brain_focus": {
+        "grade": "B",
+        "score": 80,
+        "insight": "Protein provides steady amino acids for neurotransmitter production, supporting cognitive function",
+        "pros": [
+          "Tyrosine and tryptophan for neurotransmitters",
+          "B-vitamins support brain metabolism",
+          "Stable energy prevents brain fog"
+        ],
+        "cons": [
+          "Limited omega-3 fatty acids",
+          "Low choline content",
+          "Minimal antioxidants"
+        ]
+      },
+      "gut_health": {
+        "grade": "C",
+        "score": 68,
+        "insight": "Lacks prebiotic fiber and probiotics; high sodium and sugar may disrupt gut microbiome balance",
+        "pros": [
+          "Easily digestible protein",
+          "Ginger in teriyaki sauce has anti-inflammatory properties"
+        ],
+        "cons": [
+          "Very low fiber content (0.3g)",
+          "High sodium may alter gut bacteria",
+          "Added sugar feeds harmful bacteria",
+          "No fermented ingredients"
+        ]
+      },
+      "blood_sugar": {
+        "grade": "B",
+        "score": 80,
+        "insight": "Protein moderates glycemic response, but added sugars require monitoring for diabetics",
+        "pros": [
+          "Low glycemic load (4)",
+          "High protein slows glucose absorption",
+          "Moderate glycemic index (48)"
+        ],
+        "cons": [
+          "Contains 6.8g added sugars",
+          "Minimal fiber to slow digestion",
+          "Sauce may spike blood sugar quickly"
+        ]
+      },
+      "bone_joint": {
+        "grade": "C+",
+        "score": 70,
+        "insight": "Provides some protein for bone matrix, but lacks calcium and vitamin D; high sodium may increase calcium loss",
+        "pros": [
+          "Protein supports bone matrix formation",
+          "Contains some phosphorus and magnesium",
+          "Moderate potassium content"
+        ],
+        "cons": [
+          "Very low calcium (15mg)",
+          "Minimal vitamin D",
+          "High sodium increases urinary calcium loss",
+          "Low vitamin K"
+        ]
+      },
+      "anti_inflammatory": {
+        "grade": "B-",
+        "score": 76,
+        "insight": "Ginger and garlic in teriyaki sauce provide anti-inflammatory compounds, but high sodium promotes inflammation",
+        "pros": [
+          "Ginger contains gingerols (anti-inflammatory)",
+          "Garlic provides allicin compounds",
+          "Lean protein doesn't promote inflammation"
+        ],
+        "cons": [
+          "High sodium increases inflammation markers",
+          "Added sugar is pro-inflammatory",
+          "Limited omega-3 fatty acids",
+          "Few polyphenols or antioxidants"
+        ]
+      }
+    }
+  },
+  "edamame": {
+    "name": "Edamame",
+    "calories": 121,
+    "protein": 11.9,
+    "carbs": 8.9,
+    "fat": 5.2,
+    "fiber": 5.2,
+    "sugar": 2.2,
+    "sodium": 6,
+    "saturatedFat": 0.6,
+    "cholesterol": 0,
+    "potassium": 436,
+    "calcium": 63,
+    "iron": 2.27,
+    "magnesium": 64,
+    "vitaminA": 15,
+    "vitaminC": 6.1,
+    "vitaminD": 0,
+    "vitaminB12": 0,
+    "glycemicIndex": 15,
+    "glycemicLoad": 1,
+    "allergens": ["soy"],
+    "servingSize": 100,
+    "servingUnit": "g",
+    "focusGrades": {
+      "balanced": {
+        "grade": "A",
+        "score": 94,
+        "insight": "Exceptionally balanced whole food with complete protein, healthy fats, fiber, and minimal sodium - a nutritional powerhouse",
+        "pros": [
+          "Complete plant protein with all amino acids",
+          "High fiber for digestive health (5.2g)",
+          "Excellent micronutrient density",
+          "Very low sodium (6mg)"
+        ],
+        "cons": [
+          "Contains phytoestrogens (generally safe)",
+          "May cause gas in sensitive individuals"
+        ]
+      },
+      "heart_health": {
+        "grade": "A+",
+        "score": 98,
+        "insight": "Outstanding cardiovascular benefits from plant protein, fiber, potassium, and zero cholesterol",
+        "pros": [
+          "Zero cholesterol and very low saturated fat",
+          "High potassium (436mg) regulates blood pressure",
+          "Soluble fiber lowers LDL cholesterol",
+          "Isoflavones improve arterial function",
+          "Minimal sodium"
+        ],
+        "cons": [
+          "None significant for heart health"
+        ]
+      },
+      "muscle_building": {
+        "grade": "A-",
+        "score": 88,
+        "insight": "Excellent plant-based complete protein with all essential amino acids, though slightly lower in leucine than animal sources",
+        "pros": [
+          "Complete protein with all 9 essential amino acids",
+          "High protein density (11.9g per 100g)",
+          "Contains branched-chain amino acids",
+          "Magnesium supports muscle function"
+        ],
+        "cons": [
+          "Lower leucine content than whey/meat",
+          "Phytates may slightly reduce protein absorption"
+        ]
+      },
+      "energy": {
+        "grade": "A-",
+        "score": 88,
+        "insight": "Sustained energy from balanced macros and low glycemic load; fiber and protein prevent energy crashes",
+        "pros": [
+          "Very low glycemic load (1)",
+          "Complex carbs provide steady energy",
+          "B-vitamins support energy metabolism",
+          "Iron helps oxygen transport"
+        ],
+        "cons": [
+          "Moderate calorie density",
+          "No quick-energy simple carbs"
+        ]
+      },
+      "weight_management": {
+        "grade": "A",
+        "score": 92,
+        "insight": "Ideal weight management food with high protein and fiber for satiety, low calories, and minimal processing",
+        "pros": [
+          "High protein increases satiety",
+          "Exceptional fiber content (5.2g)",
+          "Low calorie density (121 cal)",
+          "Very low sugar (2.2g)",
+          "High water content when fresh"
+        ],
+        "cons": [
+          "Moderate fat content (though healthy fats)"
+        ]
+      },
+      "brain_focus": {
+        "grade": "A-",
+        "score": 90,
+        "insight": "Excellent brain support from omega-3s, folate, and isoflavones that protect cognitive function",
+        "pros": [
+          "Contains omega-3 ALA for brain health",
+          "High in folate (B9) for neurotransmitters",
+          "Isoflavones may protect against cognitive decline",
+          "Magnesium supports neural function",
+          "Vitamin K for brain health"
+        ],
+        "cons": [
+          "No vitamin B12 (plant-based)",
+          "Lower DHA/EPA than fish"
+        ]
+      },
+      "gut_health": {
+        "grade": "A",
+        "score": 94,
+        "insight": "Outstanding gut health benefits from high fiber, prebiotics, and natural plant compounds that feed beneficial bacteria",
+        "pros": [
+          "Very high fiber (5.2g) feeds gut bacteria",
+          "Prebiotic oligosaccharides support microbiome",
+          "Easy to digest when cooked properly",
+          "Anti-inflammatory isoflavones"
+        ],
+        "cons": [
+          "Oligosaccharides may cause gas initially",
+          "Phytates present (reduced by cooking)"
+        ]
+      },
+      "blood_sugar": {
+        "grade": "A+",
+        "score": 96,
+        "insight": "Exceptional blood sugar control with very low glycemic index and load; ideal for diabetics",
+        "pros": [
+          "Extremely low glycemic index (15)",
+          "Very low glycemic load (1)",
+          "High fiber slows glucose absorption",
+          "Protein stabilizes blood sugar",
+          "Low sugar content (2.2g)"
+        ],
+        "cons": [
+          "None significant for blood sugar"
+        ]
+      },
+      "bone_joint": {
+        "grade": "A-",
+        "score": 88,
+        "insight": "Excellent bone support from calcium, magnesium, and isoflavones that may reduce bone loss",
+        "pros": [
+          "Good calcium content (63mg)",
+          "High magnesium (64mg) for bone density",
+          "Vitamin K supports bone metabolism",
+          "Isoflavones may reduce osteoporosis risk",
+          "Anti-inflammatory for joints"
+        ],
+        "cons": [
+          "No vitamin D",
+          "Phytates may slightly reduce calcium absorption"
+        ]
+      },
+      "anti_inflammatory": {
+        "grade": "A",
+        "score": 92,
+        "insight": "Powerful anti-inflammatory effects from isoflavones, omega-3s, and antioxidants with minimal pro-inflammatory factors",
+        "pros": [
+          "Isoflavones reduce inflammation markers",
+          "Omega-3 ALA is anti-inflammatory",
+          "Antioxidants combat oxidative stress",
+          "Very low sodium (doesn't promote inflammation)",
+          "Saponins have anti-inflammatory properties"
+        ],
+        "cons": [
+          "Some individuals sensitive to soy compounds"
+        ]
+      }
+    }
+  },
+  "miso_soup": {
+    "name": "Miso Soup",
+    "calories": 40,
+    "protein": 2.2,
+    "carbs": 5.4,
+    "fat": 1.2,
+    "fiber": 0.9,
+    "sugar": 1.8,
+    "sodium": 630,
+    "saturatedFat": 0.2,
+    "cholesterol": 0,
+    "potassium": 102,
+    "calcium": 18,
+    "iron": 0.66,
+    "magnesium": 12,
+    "vitaminA": 36,
+    "vitaminC": 1.1,
+    "vitaminD": 0,
+    "vitaminB12": 0.2,
+    "glycemicIndex": 35,
+    "glycemicLoad": 2,
+    "allergens": ["soy"],
+    "servingSize": 100,
+    "servingUnit": "g",
+    "focusGrades": {
+      "balanced": {
+        "grade": "B-",
+        "score": 76,
+        "insight": "Light, probiotic-rich food with good nutrient density, but very high sodium is a significant concern",
+        "pros": [
+          "Very low calorie density (40 cal)",
+          "Fermented probiotics for gut health",
+          "Good protein-to-calorie ratio",
+          "Rich in bioactive compounds"
+        ],
+        "cons": [
+          "Extremely high sodium (630mg per 100g)",
+          "Low fiber content",
+          "Minimal fat and protein"
+        ]
+      },
+      "heart_health": {
+        "grade": "C",
+        "score": 68,
+        "insight": "Fermented soy provides heart benefits, but excessive sodium significantly increases cardiovascular risk",
+        "pros": [
+          "Zero cholesterol and very low saturated fat",
+          "Isoflavones may improve arterial function",
+          "Probiotics support heart health",
+          "Contains peptides that may lower blood pressure"
+        ],
+        "cons": [
+          "Very high sodium (630mg) raises blood pressure",
+          "Low potassium to balance sodium",
+          "Minimal heart-protective omega-3s"
+        ]
+      },
+      "muscle_building": {
+        "grade": "D+",
+        "score": 62,
+        "insight": "Minimal protein content makes this inadequate for muscle building as a primary protein source",
+        "pros": [
+          "Complete plant protein (though minimal)",
+          "Contains all essential amino acids",
+          "Easy to digest"
+        ],
+        "cons": [
+          "Very low protein content (2.2g)",
+          "Insufficient for muscle synthesis",
+          "Low calorie density",
+          "Minimal branched-chain amino acids"
+        ]
+      },
+      "energy": {
+        "grade": "C+",
+        "score": 72,
+        "insight": "Very low calorie density provides minimal energy, better as a hydrating starter than energy source",
+        "pros": [
+          "Low glycemic load (2)",
+          "Quick hydration",
+          "Some B-vitamins from fermentation",
+          "Electrolytes from sodium"
+        ],
+        "cons": [
+          "Very low calorie content (40 cal)",
+          "Minimal macronutrients for sustained energy",
+          "Low carbohydrate content"
+        ]
+      },
+      "weight_management": {
+        "grade": "A-",
+        "score": 88,
+        "insight": "Excellent for weight management with very low calories, probiotics for metabolism, and hydration",
+        "pros": [
+          "Extremely low calorie density (40 cal)",
+          "High water content increases fullness",
+          "Probiotics may aid metabolism",
+          "Warm liquid promotes satiety",
+          "Low sugar content"
+        ],
+        "cons": [
+          "High sodium causes water retention",
+          "Minimal protein for satiety",
+          "Low fiber"
+        ]
+      },
+      "brain_focus": {
+        "grade": "B",
+        "score": 80,
+        "insight": "Fermented compounds and amino acids support neurotransmitter production and cognitive function",
+        "pros": [
+          "Contains umami compounds (glutamate)",
+          "Fermentation creates bioactive peptides",
+          "Some vitamin B12 from fermentation",
+          "Tyrosine for neurotransmitter production",
+          "Antioxidants protect brain cells"
+        ],
+        "cons": [
+          "Very low overall nutrient density",
+          "Minimal omega-3 fatty acids",
+          "Low in B-vitamins overall"
+        ]
+      },
+      "gut_health": {
+        "grade": "A-",
+        "score": 90,
+        "insight": "Outstanding probiotic benefits from fermented miso paste, supporting digestive health and microbiome diversity",
+        "pros": [
+          "Rich in probiotics (Aspergillus oryzae, lactic acid bacteria)",
+          "Fermentation creates digestive enzymes",
+          "Promotes beneficial gut bacteria",
+          "Easy to digest",
+          "Contains prebiotics from soy"
+        ],
+        "cons": [
+          "Low fiber content (0.9g)",
+          "High sodium may affect gut bacteria balance"
+        ]
+      },
+      "blood_sugar": {
+        "grade": "A-",
+        "score": 88,
+        "insight": "Low glycemic impact with minimal carbs and sugar; protein and fermentation help stabilize blood glucose",
+        "pros": [
+          "Low glycemic index (35)",
+          "Very low glycemic load (2)",
+          "Minimal sugar content (1.8g)",
+          "Protein helps stabilize blood sugar",
+          "Fermented foods may improve insulin sensitivity"
+        ],
+        "cons": [
+          "Minimal fiber to slow absorption",
+          "Low protein content"
+        ]
+      },
+      "bone_joint": {
+        "grade": "C+",
+        "score": 72,
+        "insight": "Provides some isoflavones for bone health, but lacks calcium and vitamin D; high sodium increases calcium loss",
+        "pros": [
+          "Isoflavones may reduce bone loss",
+          "Some calcium (18mg) and magnesium",
+          "Vitamin K2 from fermentation",
+          "Anti-inflammatory for joints"
+        ],
+        "cons": [
+          "Low calcium content",
+          "No vitamin D",
+          "High sodium increases urinary calcium loss",
+          "Minimal protein for bone matrix"
+        ]
+      },
+      "anti_inflammatory": {
+        "grade": "B+",
+        "score": 84,
+        "insight": "Excellent anti-inflammatory properties from fermentation and soy compounds, though sodium is pro-inflammatory",
+        "pros": [
+          "Isoflavones reduce inflammation markers",
+          "Fermentation creates anti-inflammatory peptides",
+          "Antioxidants combat oxidative stress",
+          "Probiotics modulate immune response",
+          "Saponins have anti-inflammatory effects"
+        ],
+        "cons": [
+          "High sodium promotes inflammation",
+          "Minimal omega-3 fatty acids"
+        ]
+      }
+    }
+  },
+  "curry": {
+    "name": "Curry (Indian Style)",
+    "calories": 145,
+    "protein": 7.8,
+    "carbs": 11.2,
+    "fat": 8.5,
+    "fiber": 2.8,
+    "sugar": 4.2,
+    "sodium": 420,
+    "saturatedFat": 4.2,
+    "cholesterol": 28,
+    "potassium": 385,
+    "calcium": 68,
+    "iron": 1.85,
+    "magnesium": 42,
+    "vitaminA": 145,
+    "vitaminC": 12.5,
+    "vitaminD": 0.2,
+    "vitaminB12": 0.25,
+    "glycemicIndex": 42,
+    "glycemicLoad": 5,
+    "allergens": ["dairy"],
+    "servingSize": 100,
+    "servingUnit": "g",
+    "focusGrades": {
+      "balanced": {
+        "grade": "B",
+        "score": 82,
+        "insight": "Well-balanced macros with protein, healthy fats, and spices rich in antioxidants, though sodium and saturated fat warrant moderation",
+        "pros": [
+          "Balanced macronutrient profile",
+          "Rich in antioxidant spices (turmeric, cumin)",
+          "Good fiber content (2.8g)",
+          "Diverse micronutrients"
+        ],
+        "cons": [
+          "High sodium (420mg)",
+          "Moderate saturated fat from coconut/cream",
+          "Added sugars in some preparations"
+        ]
+      },
+      "heart_health": {
+        "grade": "B-",
+        "score": 76,
+        "insight": "Turmeric and spices provide cardiovascular benefits, but saturated fat and sodium require portion control",
+        "pros": [
+          "Turmeric's curcumin improves endothelial function",
+          "High potassium (385mg) helps regulate blood pressure",
+          "Antioxidants reduce oxidative stress",
+          "Fiber helps lower cholesterol"
+        ],
+        "cons": [
+          "Moderate saturated fat (4.2g) from coconut/dairy",
+          "High sodium content",
+          "Cholesterol present (28mg)"
+        ]
+      },
+      "muscle_building": {
+        "grade": "B",
+        "score": 80,
+        "insight": "Moderate protein content with anti-inflammatory spices that may aid recovery, but not a primary protein source",
+        "pros": [
+          "Decent protein content (7.8g)",
+          "Turmeric reduces exercise-induced inflammation",
+          "Contains iron for oxygen transport",
+          "Magnesium supports muscle function"
+        ],
+        "cons": [
+          "Moderate protein density",
+          "Higher fat may slow digestion",
+          "Variable protein quality depending on preparation"
+        ]
+      },
+      "energy": {
+        "grade": "B+",
+        "score": 84,
+        "insight": "Sustained energy from balanced carbs, fats, and spices that enhance metabolism and circulation",
+        "pros": [
+          "Balanced macros prevent energy crashes",
+          "Moderate glycemic load (5)",
+          "Spices enhance circulation and energy",
+          "Iron supports oxygen delivery",
+          "Warming spices boost metabolism"
+        ],
+        "cons": [
+          "Moderate fat may slow initial digestion",
+          "Some sugar content (4.2g)"
+        ]
+      },
+      "weight_management": {
+        "grade": "B-",
+        "score": 75,
+        "insight": "Protein and fiber promote satiety, and spices boost metabolism, but calorie and fat density require portion awareness",
+        "pros": [
+          "Capsaicin in peppers boosts metabolism",
+          "Good fiber for satiety (2.8g)",
+          "Protein helps maintain muscle mass",
+          "Turmeric may aid fat metabolism"
+        ],
+        "cons": [
+          "Moderate calorie density (145 cal)",
+          "High fat content (8.5g)",
+          "Sodium causes water retention",
+          "Creamy preparations very calorie-dense"
+        ]
+      },
+      "brain_focus": {
+        "grade": "A-",
+        "score": 88,
+        "insight": "Exceptional cognitive benefits from curcumin, which crosses blood-brain barrier and protects neurons",
+        "pros": [
+          "Curcumin enhances BDNF (brain growth factor)",
+          "Antioxidants protect against cognitive decline",
+          "Iron and B-vitamins support brain metabolism",
+          "Spices improve cerebral blood flow",
+          "Anti-inflammatory effects protect neurons"
+        ],
+        "cons": [
+          "Limited omega-3 fatty acids",
+          "Low vitamin B12 content"
+        ]
+      },
+      "gut_health": {
+        "grade": "B+",
+        "score": 84,
+        "insight": "Excellent prebiotic spices and fiber support gut microbiome, though high fat may slow digestion for some",
+        "pros": [
+          "Turmeric has anti-inflammatory gut effects",
+          "Fiber feeds beneficial bacteria (2.8g)",
+          "Ginger aids digestion",
+          "Cumin stimulates digestive enzymes",
+          "Probiotics if yogurt-based"
+        ],
+        "cons": [
+          "High fat may cause discomfort in sensitive individuals",
+          "Spicy preparations may irritate some stomachs"
+        ]
+      },
+      "blood_sugar": {
+        "grade": "B+",
+        "score": 84,
+        "insight": "Low-moderate glycemic impact with turmeric and cinnamon that improve insulin sensitivity",
+        "pros": [
+          "Low glycemic load (5)",
+          "Turmeric improves insulin sensitivity",
+          "Cinnamon regulates blood sugar",
+          "Fiber slows glucose absorption",
+          "Protein stabilizes blood sugar"
+        ],
+        "cons": [
+          "Contains some added sugars (4.2g)",
+          "Tomato-based curries higher in natural sugars",
+          "Moderate carb content"
+        ]
+      },
+      "bone_joint": {
+        "grade": "B+",
+        "score": 85,
+        "insight": "Outstanding anti-inflammatory benefits for joints from turmeric; provides calcium and magnesium for bones",
+        "pros": [
+          "Curcumin is highly anti-inflammatory for joints",
+          "Good calcium content (68mg)",
+          "Magnesium supports bone density",
+          "Vitamin K for bone metabolism",
+          "May reduce arthritis symptoms"
+        ],
+        "cons": [
+          "Limited vitamin D",
+          "Moderate protein for bone matrix",
+          "Sodium may increase calcium loss"
+        ]
+      },
+      "anti_inflammatory": {
+        "grade": "A",
+        "score": 92,
+        "insight": "Exceptional anti-inflammatory powerhouse with curcumin, ginger, and multiple antioxidant spices",
+        "pros": [
+          "Curcumin is potent anti-inflammatory (comparable to drugs)",
+          "Ginger reduces inflammation markers",
+          "Multiple antioxidant spices synergize",
+          "Reduces C-reactive protein levels",
+          "May help with chronic inflammatory conditions"
+        ],
+        "cons": [
+          "Saturated fat is mildly pro-inflammatory",
+          "Sodium promotes inflammation"
+        ]
+      }
+    }
+  },
+  "naan_bread": {
+    "name": "Naan Bread",
+    "calories": 262,
+    "protein": 8.7,
+    "carbs": 45.2,
+    "fat": 5.4,
+    "fiber": 2.1,
+    "sugar": 3.8,
+    "sodium": 430,
+    "saturatedFat": 1.4,
+    "cholesterol": 15,
+    "potassium": 135,
+    "calcium": 85,
+    "iron": 2.8,
+    "magnesium": 28,
+    "vitaminA": 18,
+    "vitaminC": 0.2,
+    "vitaminD": 0.1,
+    "vitaminB12": 0.1,
+    "glycemicIndex": 71,
+    "glycemicLoad": 32,
+    "allergens": ["gluten", "dairy"],
+    "servingSize": 100,
+    "servingUnit": "g",
+    "focusGrades": {
+      "balanced": {
+        "grade": "C+",
+        "score": 72,
+        "insight": "Carb-heavy refined grain with moderate protein and micronutrients, but high glycemic load and sodium limit balance",
+        "pros": [
+          "Provides quick energy from carbohydrates",
+          "Moderate protein content (8.7g)",
+          "Contains iron for blood health",
+          "Good calcium content from yogurt"
+        ],
+        "cons": [
+          "Very high carbohydrate density (45.2g)",
+          "High glycemic index (71)",
+          "Refined flour lacks fiber",
+          "High sodium (430mg)"
+        ]
+      },
+      "heart_health": {
+        "grade": "C-",
+        "score": 66,
+        "insight": "Refined carbohydrates and high glycemic load negatively impact cardiovascular health; sodium is concerning",
+        "pros": [
+          "Low saturated fat content (1.4g)",
+          "Minimal cholesterol (15mg)",
+          "Contains some potassium"
+        ],
+        "cons": [
+          "High glycemic index raises triglycerides",
+          "High sodium (430mg) increases blood pressure",
+          "Refined carbs promote inflammation",
+          "Low fiber doesn't help cholesterol",
+          "Limited heart-protective nutrients"
+        ]
+      },
+      "muscle_building": {
+        "grade": "C+",
+        "score": 70,
+        "insight": "Provides moderate protein and quick-digesting carbs for glycogen replenishment post-workout, but incomplete protein",
+        "pros": [
+          "Moderate protein content (8.7g)",
+          "Quick-digesting carbs replenish glycogen",
+          "Iron supports oxygen delivery",
+          "Good calorie density for bulking"
+        ],
+        "cons": [
+          "Incomplete protein (low in lysine)",
+          "High glycemic index may cause insulin spike",
+          "Low in branched-chain amino acids",
+          "Minimal leucine for muscle synthesis"
+        ]
+      },
+      "energy": {
+        "grade": "B",
+        "score": 80,
+        "insight": "Provides rapid energy from high-glycemic carbs, ideal pre-exercise, but leads to energy crashes if eaten alone",
+        "pros": [
+          "High carbohydrate content for quick energy",
+          "Iron supports oxygen transport",
+          "Moderate calorie density (262 cal)",
+          "B-vitamins support energy metabolism"
+        ],
+        "cons": [
+          "High glycemic index causes blood sugar spike",
+          "Energy crash follows initial spike",
+          "Low fiber doesn't sustain energy",
+          "Minimal protein to stabilize blood sugar"
+        ]
+      },
+      "weight_management": {
+        "grade": "D+",
+        "score": 60,
+        "insight": "High calorie and carb density with low fiber makes this challenging for weight loss; spikes hunger hormones",
+        "pros": [
+          "Provides satiety in the short term",
+          "Moderate protein content"
+        ],
+        "cons": [
+          "High calorie density (262 cal)",
+          "Very high glycemic load triggers hunger",
+          "Low fiber (2.1g) doesn't promote fullness",
+          "Refined carbs spike insulin",
+          "High sodium causes water retention",
+          "Easy to overeat"
+        ]
+      },
+      "brain_focus": {
+        "grade": "C",
+        "score": 68,
+        "insight": "Quick glucose boost may help short-term focus, but blood sugar crash impairs cognition shortly after",
+        "pros": [
+          "Quick glucose for immediate brain fuel",
+          "Some B-vitamins for brain metabolism",
+          "Iron supports oxygen delivery to brain"
+        ],
+        "cons": [
+          "Blood sugar spike followed by crash",
+          "Low in omega-3 fatty acids",
+          "Minimal choline or antioxidants",
+          "Refined carbs impair sustained focus",
+          "No vitamin B12"
+        ]
+      },
+      "gut_health": {
+        "grade": "D+",
+        "score": 62,
+        "insight": "Refined flour lacks fiber and prebiotics; may disrupt gut bacteria balance and cause digestive issues",
+        "pros": [
+          "Easy to digest for most people",
+          "Yogurt in dough adds some probiotics",
+          "Fermented dough may aid digestion"
+        ],
+        "cons": [
+          "Very low fiber (2.1g)",
+          "Refined flour lacks prebiotics",
+          "High glycemic carbs feed harmful bacteria",
+          "Gluten may cause issues in sensitive individuals",
+          "Minimal diversity of nutrients for microbiome"
+        ]
+      },
+      "blood_sugar": {
+        "grade": "D",
+        "score": 58,
+        "insight": "Very high glycemic index and load cause rapid blood sugar spikes; problematic for diabetics or insulin resistance",
+        "pros": [
+          "Provides quick energy when needed",
+          "Some protein moderates glycemic response slightly"
+        ],
+        "cons": [
+          "Very high glycemic index (71)",
+          "Extremely high glycemic load (32)",
+          "Refined carbs spike blood sugar rapidly",
+          "Low fiber doesn't slow glucose absorption",
+          "Can worsen insulin resistance over time"
+        ]
+      },
+      "bone_joint": {
+        "grade": "B-",
+        "score": 74,
+        "insight": "Good calcium and iron content support bones, but refined carbs may promote inflammation in joints",
+        "pros": [
+          "Good calcium content (85mg) from yogurt",
+          "Iron supports bone marrow health",
+          "Provides energy for bone remodeling",
+          "Magnesium for bone density"
+        ],
+        "cons": [
+          "Minimal vitamin D",
+          "High glycemic index promotes inflammation",
+          "Refined carbs may worsen arthritis",
+          "High sodium increases calcium loss",
+          "Low vitamin K"
+        ]
+      },
+      "anti_inflammatory": {
+        "grade": "D+",
+        "score": 62,
+        "insight": "Refined carbohydrates and high glycemic load promote inflammation; lacks anti-inflammatory compounds",
+        "pros": [
+          "Low saturated fat content",
+          "Yogurt may provide some probiotics"
+        ],
+        "cons": [
+          "High glycemic index is pro-inflammatory",
+          "Refined carbs increase inflammation markers",
+          "High sodium promotes inflammation",
+          "Gluten may trigger inflammation in sensitive individuals",
+          "Lacks antioxidants and polyphenols",
+          "No omega-3 fatty acids"
+        ]
+      }
+    }
+  },
+  "samosa": {
+    "name": "Samosa",
+    "calories": 262,
+    "protein": 5.8,
+    "carbs": 32.5,
+    "fat": 12.4,
+    "fiber": 3.2,
+    "sugar": 2.1,
+    "sodium": 485,
+    "saturatedFat": 4.8,
+    "cholesterol": 0,
+    "potassium": 285,
+    "calcium": 38,
+    "iron": 1.65,
+    "magnesium": 35,
+    "vitaminA": 42,
+    "vitaminC": 8.5,
+    "vitaminD": 0,
+    "vitaminB12": 0,
+    "glycemicIndex": 68,
+    "glycemicLoad": 22,
+    "allergens": ["gluten"],
+    "servingSize": 100,
+    "servingUnit": "g",
+    "focusGrades": {
+      "balanced": {
+        "grade": "C",
+        "score": 68,
+        "insight": "High in calories, fat, and sodium from deep frying; carb-heavy with moderate fiber from potato and pea filling",
+        "pros": [
+          "Moderate fiber from vegetables (3.2g)",
+          "Contains diverse vegetables (potatoes, peas)",
+          "Some protein from legumes",
+          "Spices provide antioxidants"
+        ],
+        "cons": [
+          "Very high fat from deep frying (12.4g)",
+          "High sodium content (485mg)",
+          "High calorie density (262 cal)",
+          "Refined flour pastry"
+        ]
+      },
+      "heart_health": {
+        "grade": "D+",
+        "score": 60,
+        "insight": "Deep-fried preparation creates trans fats and oxidized oils; high sodium and saturated fat harm cardiovascular health",
+        "pros": [
+          "Zero cholesterol (vegetarian)",
+          "Contains potassium (285mg) from potatoes",
+          "Fiber may help cholesterol",
+          "Spices have cardio-protective properties"
+        ],
+        "cons": [
+          "High saturated fat (4.8g) from frying oil",
+          "Deep frying may create trans fats",
+          "Very high sodium (485mg)",
+          "Oxidized oils from reused frying oil",
+          "High calorie density promotes weight gain"
+        ]
+      },
+      "muscle_building": {
+        "grade": "D",
+        "score": 58,
+        "insight": "Low protein density and poor protein quality make this inadequate for muscle building; high fat slows digestion",
+        "pros": [
+          "Some plant protein from peas (5.8g)",
+          "Provides calories for energy needs",
+          "Potassium supports muscle function"
+        ],
+        "cons": [
+          "Very low protein content (5.8g)",
+          "Incomplete plant protein",
+          "High fat slows protein absorption",
+          "Minimal branched-chain amino acids",
+          "Low in leucine for muscle synthesis"
+        ]
+      },
+      "energy": {
+        "grade": "C+",
+        "score": 72,
+        "insight": "High calorie density provides energy, but deep-fried fat and high glycemic load cause sluggishness",
+        "pros": [
+          "High calorie density for energy (262 cal)",
+          "Carbs provide quick fuel",
+          "Potatoes offer sustained energy",
+          "Iron supports oxygen transport"
+        ],
+        "cons": [
+          "Very high fat slows digestion and causes lethargy",
+          "High glycemic load (22) causes energy crash",
+          "Refined flour lacks sustained energy",
+          "Heavy meal may cause post-meal drowsiness"
+        ]
+      },
+      "weight_management": {
+        "grade": "D",
+        "score": 55,
+        "insight": "Extremely calorie-dense from deep frying; high glycemic load and low protein make this poor for weight loss",
+        "pros": [
+          "Moderate fiber provides some satiety (3.2g)",
+          "Vegetables add bulk"
+        ],
+        "cons": [
+          "Very high calorie density (262 cal)",
+          "Extremely high fat content (12.4g)",
+          "Deep frying adds excessive calories",
+          "High glycemic load triggers hunger",
+          "Low protein doesn't promote fullness",
+          "Very easy to overeat",
+          "Sodium causes water retention"
+        ]
+      },
+      "brain_focus": {
+        "grade": "C-",
+        "score": 65,
+        "insight": "Turmeric and spices offer cognitive benefits, but heavy fat content and blood sugar spike impair focus",
+        "pros": [
+          "Turmeric in filling supports brain health",
+          "Cumin and spices provide antioxidants",
+          "Potatoes offer glucose for brain fuel",
+          "Iron supports oxygen delivery"
+        ],
+        "cons": [
+          "High fat content causes post-meal brain fog",
+          "Blood sugar spike followed by crash",
+          "Minimal omega-3 fatty acids",
+          "Low in B-vitamins",
+          "Heavy meal diverts blood from brain to digestion"
+        ]
+      },
+      "gut_health": {
+        "grade": "C+",
+        "score": 70,
+        "insight": "Moderate fiber from vegetables and spices aid digestion, but deep-fried fat may disrupt gut bacteria",
+        "pros": [
+          "Good fiber content (3.2g) from vegetables",
+          "Peas provide prebiotic fiber",
+          "Spices aid digestion (cumin, coriander)",
+          "Potatoes contain resistant starch when cooled"
+        ],
+        "cons": [
+          "Deep-fried oil may harm gut bacteria",
+          "High fat slows digestion",
+          "Refined flour lacks prebiotics",
+          "May cause bloating in sensitive individuals",
+          "Reused frying oil contains harmful compounds"
+        ]
+      },
+      "blood_sugar": {
+        "grade": "D+",
+        "score": 62,
+        "insight": "High glycemic load from potatoes and refined flour causes blood sugar spikes; fat slows but doesn't prevent spike",
+        "pros": [
+          "Fat content moderates glycemic response slightly",
+          "Fiber helps slow glucose absorption (3.2g)",
+          "Peas have lower glycemic impact"
+        ],
+        "cons": [
+          "High glycemic index (68)",
+          "High glycemic load (22)",
+          "Potatoes spike blood sugar rapidly",
+          "Refined flour is quickly digested",
+          "Low protein doesn't stabilize blood sugar well"
+        ]
+      },
+      "bone_joint": {
+        "grade": "D+",
+        "score": 64,
+        "insight": "Minimal calcium and vitamin D; deep-fried oils and high glycemic carbs promote joint inflammation",
+        "pros": [
+          "Some calcium from vegetables (38mg)",
+          "Magnesium supports bone health",
+          "Vitamin K from peas",
+          "Potassium helps prevent bone loss"
+        ],
+        "cons": [
+          "Very low calcium content",
+          "No vitamin D",
+          "High glycemic index promotes inflammation",
+          "Deep-fried oils are pro-inflammatory for joints",
+          "High sodium increases calcium loss",
+          "Low protein for bone matrix"
+        ]
+      },
+      "anti_inflammatory": {
+        "grade": "D",
+        "score": 58,
+        "insight": "Despite anti-inflammatory spices, deep frying creates oxidized oils and advanced glycation end products that promote inflammation",
+        "pros": [
+          "Turmeric is highly anti-inflammatory",
+          "Cumin and coriander reduce inflammation",
+          "Ginger in some recipes helps",
+          "Vegetables contain antioxidants"
+        ],
+        "cons": [
+          "Deep frying creates pro-inflammatory compounds",
+          "High saturated fat promotes inflammation",
+          "Oxidized oils from reused frying oil",
+          "High glycemic index is inflammatory",
+          "Very high sodium increases inflammation markers",
+          "Trans fats may be present from frying"
+        ]
+      }
+    }
+  }
+}

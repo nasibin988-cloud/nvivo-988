@@ -1,0 +1,325 @@
+{
+  "validationDate": "2025-12-12",
+  "source": "USDA FoodData Central",
+  "note": "All values are per 100g edible portion",
+  "foods": {
+    "apple": {
+      "fdcId": "171688",
+      "name": "Apples, raw, with skin",
+      "category": "fruits",
+      "nutritionPer100g": {
+        "calories": 52,
+        "protein": 0.26,
+        "totalFat": 0.17,
+        "saturatedFat": 0.03,
+        "carbohydrates": 13.8,
+        "fiber": 2.4,
+        "sugars": 10.4,
+        "calcium": 6,
+        "iron": 0.12,
+        "potassium": 107,
+        "sodium": 1,
+        "vitaminC": 4.6,
+        "vitaminA": 54
+      }
+    },
+    "banana": {
+      "fdcId": "173944",
+      "name": "Bananas, raw",
+      "category": "fruits",
+      "nutritionPer100g": {
+        "calories": 89,
+        "protein": 1.09,
+        "totalFat": 0.33,
+        "saturatedFat": 0.11,
+        "carbohydrates": 22.84,
+        "fiber": 2.6,
+        "sugars": 12.23,
+        "calcium": 5,
+        "iron": 0.26,
+        "potassium": 358,
+        "sodium": 1,
+        "vitaminC": 8.7,
+        "vitaminA": 64
+      }
+    },
+    "orange": {
+      "fdcId": "169097",
+      "name": "Oranges, raw, all commercial varieties",
+      "category": "fruits",
+      "nutritionPer100g": {
+        "calories": 47,
+        "protein": 0.94,
+        "totalFat": 0.12,
+        "saturatedFat": 0.015,
+        "carbohydrates": 11.75,
+        "fiber": 2.4,
+        "sugars": 9.35,
+        "calcium": 40,
+        "iron": 0.1,
+        "potassium": 181,
+        "sodium": 0,
+        "vitaminC": 53.2,
+        "vitaminA": 225
+      }
+    },
+    "strawberry": {
+      "fdcId": "167762",
+      "name": "Strawberries, raw",
+      "category": "fruits",
+      "nutritionPer100g": {
+        "calories": 32,
+        "protein": 0.67,
+        "totalFat": 0.3,
+        "saturatedFat": 0.015,
+        "carbohydrates": 7.68,
+        "fiber": 2,
+        "sugars": 4.89,
+        "calcium": 16,
+        "iron": 0.41,
+        "potassium": 153,
+        "sodium": 1,
+        "vitaminC": 58.8,
+        "vitaminA": 12
+      }
+    },
+    "blueberry": {
+      "fdcId": "171711",
+      "name": "Blueberries, raw",
+      "category": "fruits",
+      "nutritionPer100g": {
+        "calories": 57,
+        "protein": 0.74,
+        "totalFat": 0.33,
+        "saturatedFat": 0.028,
+        "carbohydrates": 14.49,
+        "fiber": 2.4,
+        "sugars": 9.96,
+        "calcium": 6,
+        "iron": 0.28,
+        "potassium": 77,
+        "sodium": 1,
+        "vitaminC": 9.7,
+        "vitaminA": 54
+      }
+    },
+    "grapes": {
+      "fdcId": "174682",
+      "name": "Grapes, red or green (European type), raw",
+      "category": "fruits",
+      "nutritionPer100g": {
+        "calories": 69,
+        "protein": 0.72,
+        "totalFat": 0.16,
+        "saturatedFat": 0.054,
+        "carbohydrates": 18.1,
+        "fiber": 0.9,
+        "sugars": 15.48,
+        "calcium": 10,
+        "iron": 0.36,
+        "potassium": 191,
+        "sodium": 2,
+        "vitaminC": 3.2,
+        "vitaminA": 66
+      }
+    },
+    "avocado": {
+      "fdcId": "171705",
+      "name": "Avocados, raw, all commercial varieties",
+      "category": "fruits",
+      "nutritionPer100g": {
+        "calories": 160,
+        "protein": 2.0,
+        "totalFat": 14.66,
+        "saturatedFat": 2.13,
+        "carbohydrates": 8.53,
+        "fiber": 6.7,
+        "sugars": 0.66,
+        "calcium": 12,
+        "iron": 0.55,
+        "potassium": 485,
+        "sodium": 7,
+        "vitaminC": 10,
+        "vitaminA": 146
+      }
+    },
+    "mango": {
+      "fdcId": "169910",
+      "name": "Mangos, raw",
+      "category": "fruits",
+      "nutritionPer100g": {
+        "calories": 60,
+        "protein": 0.82,
+        "totalFat": 0.38,
+        "saturatedFat": 0.092,
+        "carbohydrates": 14.98,
+        "fiber": 1.6,
+        "sugars": 13.66,
+        "calcium": 11,
+        "iron": 0.16,
+        "potassium": 168,
+        "sodium": 1,
+        "vitaminC": 36.4,
+        "vitaminA": 1082
+      }
+    },
+    "watermelon": {
+      "fdcId": "167765",
+      "name": "Watermelon, raw",
+      "category": "fruits",
+      "nutritionPer100g": {
+        "calories": 30,
+        "protein": 0.61,
+        "totalFat": 0.15,
+        "saturatedFat": 0.016,
+        "carbohydrates": 7.55,
+        "fiber": 0.4,
+        "sugars": 6.2,
+        "calcium": 7,
+        "iron": 0.24,
+        "potassium": 112,
+        "sodium": 1,
+        "vitaminC": 8.1,
+        "vitaminA": 569
+      }
+    },
+    "almonds": {
+      "fdcId": "170567",
+      "name": "Nuts, almonds, raw",
+      "category": "nuts_seeds",
+      "nutritionPer100g": {
+        "calories": 579,
+        "protein": 21.15,
+        "totalFat": 49.93,
+        "saturatedFat": 3.802,
+        "carbohydrates": 21.55,
+        "fiber": 12.5,
+        "sugars": 4.35,
+        "calcium": 269,
+        "iron": 3.71,
+        "potassium": 733,
+        "sodium": 1,
+        "vitaminC": 0,
+        "vitaminA": 2,
+        "vitaminE": 25.63,
+        "magnesium": 270,
+        "phosphorus": 481
+      }
+    },
+    "walnuts": {
+      "fdcId": "170187",
+      "name": "Nuts, walnuts, English, raw",
+      "category": "nuts_seeds",
+      "nutritionPer100g": {
+        "calories": 654,
+        "protein": 15.23,
+        "totalFat": 65.21,
+        "saturatedFat": 6.126,
+        "carbohydrates": 13.71,
+        "fiber": 6.7,
+        "sugars": 2.61,
+        "calcium": 98,
+        "iron": 2.91,
+        "potassium": 441,
+        "sodium": 2,
+        "vitaminC": 1.3,
+        "vitaminA": 20,
+        "vitaminE": 0.7,
+        "magnesium": 158,
+        "phosphorus": 346
+      }
+    },
+    "peanuts": {
+      "fdcId": "172430",
+      "name": "Peanuts, all types, raw",
+      "category": "nuts_seeds",
+      "nutritionPer100g": {
+        "calories": 567,
+        "protein": 25.8,
+        "totalFat": 49.24,
+        "saturatedFat": 6.279,
+        "carbohydrates": 16.13,
+        "fiber": 8.5,
+        "sugars": 4.72,
+        "calcium": 92,
+        "iron": 4.58,
+        "potassium": 705,
+        "sodium": 18,
+        "vitaminC": 0,
+        "vitaminA": 0,
+        "vitaminE": 8.33,
+        "magnesium": 168,
+        "phosphorus": 376
+      }
+    },
+    "peanut_butter": {
+      "fdcId": "174294",
+      "name": "Peanut butter, smooth style, without salt",
+      "category": "nuts_seeds",
+      "nutritionPer100g": {
+        "calories": 588,
+        "protein": 25.09,
+        "totalFat": 50.0,
+        "saturatedFat": 10.33,
+        "carbohydrates": 20.0,
+        "fiber": 6.0,
+        "sugars": 9.22,
+        "calcium": 43,
+        "iron": 1.87,
+        "potassium": 649,
+        "sodium": 17,
+        "vitaminC": 0,
+        "vitaminA": 0,
+        "vitaminE": 9.1,
+        "magnesium": 154,
+        "phosphorus": 335
+      }
+    },
+    "cashews": {
+      "fdcId": "170162",
+      "name": "Nuts, cashew nuts, raw",
+      "category": "nuts_seeds",
+      "nutritionPer100g": {
+        "calories": 553,
+        "protein": 18.22,
+        "totalFat": 43.85,
+        "saturatedFat": 7.783,
+        "carbohydrates": 30.19,
+        "fiber": 3.3,
+        "sugars": 5.91,
+        "calcium": 37,
+        "iron": 6.68,
+        "potassium": 660,
+        "sodium": 12,
+        "vitaminC": 0.5,
+        "vitaminA": 0,
+        "vitaminE": 0.9,
+        "magnesium": 292,
+        "phosphorus": 593
+      }
+    },
+    "tempeh": {
+      "fdcId": "174272",
+      "name": "Tempeh",
+      "category": "nuts_seeds",
+      "nutritionPer100g": {
+        "calories": 193,
+        "protein": 20.29,
+        "totalFat": 11.38,
+        "saturatedFat": 2.537,
+        "carbohydrates": 7.64,
+        "fiber": 0,
+        "sugars": 0,
+        "calcium": 111,
+        "iron": 2.13,
+        "potassium": 412,
+        "sodium": 9,
+        "vitaminC": 0,
+        "vitaminA": 0,
+        "vitaminE": 0.01,
+        "magnesium": 81,
+        "phosphorus": 266
+      }
+    }
+  }
+}

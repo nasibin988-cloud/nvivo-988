@@ -11,7 +11,7 @@ import type { WellnessFocus } from '../../food-comparison/types';
 import NutritionSummary from './NutritionSummary';
 import MealTypeSelector from './MealTypeSelector';
 import FoodItemCard from './FoodItemCard';
-import { GradeDisplay } from '../../shared';
+import { MealGradeCard } from '../../shared';
 
 interface ReviewStepProps {
   imageData: string;
@@ -69,26 +69,24 @@ export default function ReviewStep({
         onTimeChange={onTimeChange}
       />
 
-      {/* Health Grade based on focus */}
-      <GradeDisplay
-        nutrition={{
-          calories: result.totalCalories,
-          protein: result.totalProtein,
-          carbs: result.totalCarbs,
-          fat: result.totalFat,
-          fiber: result.totalFiber,
-          sugar: result.totalSugar,
-          sodium: result.totalSodium,
-          saturatedFat: result.totalSaturatedFat,
-          transFat: result.totalTransFat,
-          cholesterol: result.totalCholesterol,
-          potassium: result.totalPotassium,
-          calcium: result.totalCalcium,
-          iron: result.totalIron,
-          magnesium: result.totalMagnesium,
-        }}
-        focus={selectedFocus}
-      />
+      {/* Health Grade based on focus - uses food intelligence data */}
+      {(() => {
+        // Get the primary food item (highest calories) for intelligence data
+        const primaryItem = result.items.reduce<AnalyzedFood | null>(
+          (max, item) => (!max || item.calories > max.calories ? item : max),
+          null
+        );
+        const intelligence = primaryItem?.intelligence ?? null;
+        const foodName = result.items.length === 1 ? primaryItem?.name : undefined;
+
+        return (
+          <MealGradeCard
+            intelligence={intelligence}
+            foodName={foodName}
+            focus={selectedFocus}
+          />
+        );
+      })()}
 
       {/* Total summary - with toggleable detail level (shown AFTER analysis) */}
       <NutritionSummary
@@ -112,6 +110,7 @@ export default function ReviewStep({
             onUpdate={(updates) => onUpdateItem(index, updates)}
             onPortionChange={(qty) => onPortionChange(index, qty)}
             onRemove={() => onRemoveItem(index)}
+            userFocus={selectedFocus}
           />
         ))}
       </div>

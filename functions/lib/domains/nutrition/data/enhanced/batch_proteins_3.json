@@ -1,0 +1,835 @@
+{
+    "pork_sausage": {
+        "foodId": "pork_sausage",
+        "name": "Pork Sausage",
+        "category": "proteins",
+        "servingSize": "2 links",
+        "servingSizeGrams": 56,
+        "servingSizeMetric": "56g",
+        "calories": 180,
+        "macros": {
+            "protein": 7,
+            "carbs": 1,
+            "fat": 16,
+            "fiber": 0,
+            "sugar": 0,
+            "addedSugar": 0,
+            "saturatedFat": 5.5,
+            "transFat": 0,
+            "polyunsaturatedFat": 2.1,
+            "monounsaturatedFat": 7.2,
+            "cholesterol": 40,
+            "sodium": 480
+        },
+        "micronutrients": {
+            "vitaminA": 0,
+            "vitaminC": 0,
+            "vitaminD": 0.4,
+            "vitaminE": 0.2,
+            "vitaminK": 0,
+            "thiamin": 0.3,
+            "riboflavin": 0.1,
+            "niacin": 2.5,
+            "vitaminB6": 0.2,
+            "folate": 2,
+            "vitaminB12": 0.8,
+            "calcium": 15,
+            "iron": 0.7,
+            "magnesium": 12,
+            "phosphorus": 95,
+            "potassium": 150,
+            "zinc": 1.4,
+            "selenium": 18,
+            "copper": 0.05,
+            "manganese": 0.01
+        },
+        "healthScore": 42,
+        "novaGroup": 4,
+        "tags": [
+            "high-protein",
+            "high-fat",
+            "high-sodium",
+            "processed-meat",
+            "breakfast",
+            "pork"
+        ],
+        "allergens": [],
+        "dietaryFlags": {
+            "isVegan": false,
+            "isVegetarian": false,
+            "isGlutenFree": true,
+            "isDairyFree": true,
+            "isLowCarb": true,
+            "isKeto": true,
+            "isPaleo": false,
+            "isLowFODMAP": true
+        },
+        "sustainabilityScore": 45,
+        "pricePerServing": 1.25,
+        "shelfLife": "Refrigerated: 7 days unopened, 3 days cooked",
+        "preparation": "Pan-fry over medium heat 10-12 minutes, turning occasionally until internal temperature reaches 160\u00b0F",
+        "commonBrands": [
+            "Jimmy Dean",
+            "Johnsonville",
+            "Bob Evans"
+        ],
+        "seasonality": "Year-round",
+        "culturalContext": "Common breakfast meat in American cuisine, also used in Italian and British cooking",
+        "focusGrades": {
+            "heart_health": {
+                "grade": "D",
+                "score": 35,
+                "reasoning": "High in saturated fat (5.5g) and sodium (480mg), both major risk factors for cardiovascular disease. Processed meat linked to increased heart disease risk."
+            },
+            "longevity": {
+                "grade": "D",
+                "score": 32,
+                "reasoning": "Processed meat consumption associated with increased mortality risk. High sodium and saturated fat negatively impact longevity markers."
+            },
+            "metabolic_health": {
+                "grade": "C-",
+                "score": 45,
+                "reasoning": "Very low carb (1g) supports stable blood sugar, but high saturated fat and sodium can impair insulin sensitivity and metabolic function."
+            },
+            "immune_support": {
+                "grade": "C",
+                "score": 52,
+                "reasoning": "Provides zinc (1.4mg), selenium (18mcg), and B vitamins that support immune function, but processing reduces nutritional quality."
+            },
+            "gut_health": {
+                "grade": "D",
+                "score": 35,
+                "reasoning": "No fiber, minimal prebiotics. High sodium and nitrates/nitrites from processing may disrupt gut microbiome balance."
+            },
+            "brain_health": {
+                "grade": "C-",
+                "score": 48,
+                "reasoning": "B vitamins support cognitive function, but high saturated fat and sodium linked to cognitive decline. Processed meats show negative brain health associations."
+            },
+            "bone_health": {
+                "grade": "C",
+                "score": 50,
+                "reasoning": "Provides phosphorus (95mg) for bone structure. Protein supports bone density, but high sodium may increase calcium excretion."
+            },
+            "inflammation": {
+                "grade": "D",
+                "score": 30,
+                "reasoning": "Processed meat is highly pro-inflammatory. High saturated fat, sodium, and processing chemicals (nitrates) promote systemic inflammation."
+            },
+            "energy": {
+                "grade": "B-",
+                "score": 68,
+                "reasoning": "Good protein (7g) and fat (16g) provide sustained energy. B vitamins support energy metabolism. No blood sugar spikes."
+            },
+            "athletic_performance": {
+                "grade": "C",
+                "score": 50,
+                "reasoning": "Moderate protein supports muscle, but high sodium and saturated fat not optimal for performance. Better protein sources available for athletes."
+            }
+        },
+        "emoji": "\ud83c\udf2d",
+        "searchTerms": [
+            "sausage",
+            "pork sausage",
+            "breakfast sausage",
+            "sausage links",
+            "processed meat"
+        ]
+    },
+    "ham": {
+        "foodId": "ham",
+        "name": "Ham",
+        "category": "proteins",
+        "servingSize": "3 oz",
+        "servingSizeGrams": 85,
+        "servingSizeMetric": "85g",
+        "calories": 145,
+        "macros": {
+            "protein": 18,
+            "carbs": 1.5,
+            "fat": 7,
+            "fiber": 0,
+            "sugar": 1.5,
+            "addedSugar": 1,
+            "saturatedFat": 2.4,
+            "transFat": 0,
+            "polyunsaturatedFat": 0.9,
+            "monounsaturatedFat": 3.3,
+            "cholesterol": 53,
+            "sodium": 1025
+        },
+        "micronutrients": {
+            "vitaminA": 0,
+            "vitaminC": 0,
+            "vitaminD": 0.6,
+            "vitaminE": 0.2,
+            "vitaminK": 0,
+            "thiamin": 0.6,
+            "riboflavin": 0.2,
+            "niacin": 4.2,
+            "vitaminB6": 0.4,
+            "folate": 3,
+            "vitaminB12": 0.6,
+            "calcium": 8,
+            "iron": 0.8,
+            "magnesium": 18,
+            "phosphorus": 235,
+            "potassium": 285,
+            "zinc": 2.1,
+            "selenium": 28,
+            "copper": 0.08,
+            "manganese": 0.02
+        },
+        "healthScore": 48,
+        "novaGroup": 3,
+        "tags": [
+            "high-protein",
+            "high-sodium",
+            "processed-meat",
+            "deli-meat",
+            "pork"
+        ],
+        "allergens": [],
+        "dietaryFlags": {
+            "isVegan": false,
+            "isVegetarian": false,
+            "isGlutenFree": true,
+            "isDairyFree": true,
+            "isLowCarb": true,
+            "isKeto": true,
+            "isPaleo": false,
+            "isLowFODMAP": true
+        },
+        "sustainabilityScore": 42,
+        "pricePerServing": 2.5,
+        "shelfLife": "Refrigerated: 5-7 days opened, 2 weeks unopened; Frozen: 1-2 months",
+        "preparation": "Pre-cooked, ready to eat. Can be heated in microwave 30-60 seconds or pan-fried for crispy edges",
+        "commonBrands": [
+            "Boar's Head",
+            "Hillshire Farm",
+            "Hormel",
+            "Smithfield"
+        ],
+        "seasonality": "Year-round",
+        "culturalContext": "Popular in American, European, and Asian cuisines. Traditional holiday centerpiece in many Western cultures",
+        "focusGrades": {
+            "heart_health": {
+                "grade": "D",
+                "score": 38,
+                "reasoning": "Very high sodium (1025mg) is a major cardiovascular risk. Moderate saturated fat (2.4g). Processed meat linked to increased heart disease risk."
+            },
+            "longevity": {
+                "grade": "D+",
+                "score": 40,
+                "reasoning": "Processed meat consumption associated with increased mortality. High sodium accelerates aging. Better protein choices for longevity."
+            },
+            "metabolic_health": {
+                "grade": "C",
+                "score": 52,
+                "reasoning": "Low carb (1.5g) supports blood sugar stability. Good protein (18g) aids metabolism, but high sodium and processing reduce metabolic benefits."
+            },
+            "immune_support": {
+                "grade": "C+",
+                "score": 60,
+                "reasoning": "Good zinc (2.1mg), excellent selenium (28mcg), B vitamins support immune function. Protein aids antibody production despite processing."
+            },
+            "gut_health": {
+                "grade": "D+",
+                "score": 40,
+                "reasoning": "No fiber or prebiotics. Very high sodium may disrupt gut microbiome. Nitrates/nitrites from curing affect gut health negatively."
+            },
+            "brain_health": {
+                "grade": "C",
+                "score": 50,
+                "reasoning": "B vitamins (especially B6, niacin) support cognitive function. High sodium linked to cognitive decline. Processed meat shows negative brain associations."
+            },
+            "bone_health": {
+                "grade": "C+",
+                "score": 58,
+                "reasoning": "Good phosphorus (235mg) for bone mineralization. Protein supports bone density. Very high sodium may increase calcium loss through urine."
+            },
+            "inflammation": {
+                "grade": "D",
+                "score": 35,
+                "reasoning": "Processed meat is pro-inflammatory. High sodium and curing chemicals (nitrates/nitrites) promote inflammation. Saturated fat adds to inflammatory load."
+            },
+            "energy": {
+                "grade": "B",
+                "score": 72,
+                "reasoning": "Excellent protein (18g) provides sustained energy. B vitamins support energy metabolism. Minimal carbs prevent blood sugar crashes."
+            },
+            "athletic_performance": {
+                "grade": "C+",
+                "score": 58,
+                "reasoning": "Good protein (18g) supports muscle recovery. Excessive sodium may cause water retention and bloating. Better protein sources for athletes."
+            }
+        },
+        "emoji": "\ud83c\udf56",
+        "searchTerms": [
+            "ham",
+            "baked ham",
+            "spiral ham",
+            "honey ham",
+            "smoked ham",
+            "pork"
+        ]
+    },
+    "deli_ham": {
+        "foodId": "deli_ham",
+        "name": "Deli Ham",
+        "category": "proteins",
+        "servingSize": "2 oz",
+        "servingSizeGrams": 56,
+        "servingSizeMetric": "56g",
+        "calories": 60,
+        "macros": {
+            "protein": 10,
+            "carbs": 2,
+            "fat": 1.5,
+            "fiber": 0,
+            "sugar": 1.5,
+            "addedSugar": 1.5,
+            "saturatedFat": 0.5,
+            "transFat": 0,
+            "polyunsaturatedFat": 0.2,
+            "monounsaturatedFat": 0.6,
+            "cholesterol": 25,
+            "sodium": 620
+        },
+        "micronutrients": {
+            "vitaminA": 0,
+            "vitaminC": 0,
+            "vitaminD": 0.4,
+            "vitaminE": 0.1,
+            "vitaminK": 0,
+            "thiamin": 0.4,
+            "riboflavin": 0.15,
+            "niacin": 2.8,
+            "vitaminB6": 0.25,
+            "folate": 2,
+            "vitaminB12": 0.4,
+            "calcium": 5,
+            "iron": 0.5,
+            "magnesium": 12,
+            "phosphorus": 155,
+            "potassium": 190,
+            "zinc": 1.4,
+            "selenium": 19,
+            "copper": 0.05,
+            "manganese": 0.01
+        },
+        "healthScore": 44,
+        "novaGroup": 4,
+        "tags": [
+            "high-protein",
+            "low-fat",
+            "high-sodium",
+            "processed-meat",
+            "deli-meat",
+            "lunch-meat",
+            "pork"
+        ],
+        "allergens": [],
+        "dietaryFlags": {
+            "isVegan": false,
+            "isVegetarian": false,
+            "isGlutenFree": false,
+            "isDairyFree": true,
+            "isLowCarb": true,
+            "isKeto": true,
+            "isPaleo": false,
+            "isLowFODMAP": false
+        },
+        "sustainabilityScore": 40,
+        "pricePerServing": 1.5,
+        "shelfLife": "Refrigerated: 3-5 days opened, 2 weeks unopened",
+        "preparation": "Pre-cooked, ready to eat. Serve cold in sandwiches or wraps. Can be briefly microwaved if desired",
+        "commonBrands": [
+            "Boar's Head",
+            "Oscar Mayer",
+            "Hillshire Farm",
+            "Hormel Natural Choice"
+        ],
+        "seasonality": "Year-round",
+        "culturalContext": "Staple of American sandwich culture, popular in lunchboxes and delis worldwide",
+        "focusGrades": {
+            "heart_health": {
+                "grade": "D",
+                "score": 35,
+                "reasoning": "Very high sodium (620mg per 2oz serving) is a major cardiovascular risk. Processed meat linked to increased heart disease risk despite lower fat content."
+            },
+            "longevity": {
+                "grade": "D",
+                "score": 33,
+                "reasoning": "Ultra-processed meat (NOVA 4) associated with increased mortality risk. High sodium and nitrates/nitrites accelerate aging and disease risk."
+            },
+            "metabolic_health": {
+                "grade": "C",
+                "score": 50,
+                "reasoning": "Low carb (2g) and good protein (10g) support blood sugar stability. However, high sodium and additives may impair metabolic health."
+            },
+            "immune_support": {
+                "grade": "C",
+                "score": 55,
+                "reasoning": "Provides zinc (1.4mg), selenium (19mcg), B vitamins that support immune function. Processing and additives reduce overall immune benefits."
+            },
+            "gut_health": {
+                "grade": "D",
+                "score": 32,
+                "reasoning": "No fiber. Very high sodium disrupts gut microbiome. Nitrates, nitrites, and other preservatives negatively affect gut bacteria diversity."
+            },
+            "brain_health": {
+                "grade": "C-",
+                "score": 45,
+                "reasoning": "B vitamins support cognitive function. High sodium linked to cognitive decline. Ultra-processed meats show negative brain health associations in studies."
+            },
+            "bone_health": {
+                "grade": "C",
+                "score": 52,
+                "reasoning": "Good phosphorus (155mg) supports bone structure. Protein aids bone density, but very high sodium may increase calcium excretion."
+            },
+            "inflammation": {
+                "grade": "D",
+                "score": 28,
+                "reasoning": "Ultra-processed meat is highly pro-inflammatory. High sodium, nitrates/nitrites, phosphates, and other additives promote systemic inflammation."
+            },
+            "energy": {
+                "grade": "B",
+                "score": 70,
+                "reasoning": "Good protein (10g) provides sustained energy without excess calories. B vitamins support energy metabolism. Low fat keeps it light."
+            },
+            "athletic_performance": {
+                "grade": "C",
+                "score": 52,
+                "reasoning": "Decent protein (10g) for muscle recovery with minimal fat. Excessive sodium may cause bloating. Better protein sources available for athletes."
+            }
+        },
+        "emoji": "\ud83e\udd53",
+        "searchTerms": [
+            "deli ham",
+            "sliced ham",
+            "lunch meat",
+            "deli meat",
+            "sandwich ham",
+            "cold cuts"
+        ]
+    },
+    "steak": {
+        "foodId": "steak",
+        "name": "Steak (Sirloin)",
+        "category": "proteins",
+        "servingSize": "4 oz",
+        "servingSizeGrams": 113,
+        "servingSizeMetric": "113g",
+        "calories": 206,
+        "macros": {
+            "protein": 32,
+            "carbs": 0,
+            "fat": 8,
+            "fiber": 0,
+            "sugar": 0,
+            "addedSugar": 0,
+            "saturatedFat": 3.2,
+            "transFat": 0,
+            "polyunsaturatedFat": 0.4,
+            "monounsaturatedFat": 3.6,
+            "cholesterol": 90,
+            "sodium": 65
+        },
+        "micronutrients": {
+            "vitaminA": 0,
+            "vitaminC": 0,
+            "vitaminD": 0.1,
+            "vitaminE": 0.2,
+            "vitaminK": 1.8,
+            "thiamin": 0.1,
+            "riboflavin": 0.2,
+            "niacin": 7.5,
+            "vitaminB6": 0.6,
+            "folate": 9,
+            "vitaminB12": 2.4,
+            "calcium": 18,
+            "iron": 2.5,
+            "magnesium": 28,
+            "phosphorus": 268,
+            "potassium": 405,
+            "zinc": 5.8,
+            "selenium": 32,
+            "copper": 0.08,
+            "manganese": 0.01
+        },
+        "healthScore": 72,
+        "novaGroup": 1,
+        "tags": [
+            "high-protein",
+            "nutrient-dense",
+            "red-meat",
+            "beef",
+            "unprocessed",
+            "iron-rich"
+        ],
+        "allergens": [],
+        "dietaryFlags": {
+            "isVegan": false,
+            "isVegetarian": false,
+            "isGlutenFree": true,
+            "isDairyFree": true,
+            "isLowCarb": true,
+            "isKeto": true,
+            "isPaleo": true,
+            "isLowFODMAP": true
+        },
+        "sustainabilityScore": 38,
+        "pricePerServing": 5.0,
+        "shelfLife": "Refrigerated: 3-5 days raw; Frozen: 6-12 months",
+        "preparation": "Season with salt and pepper. Pan-sear 4-5 minutes per side for medium-rare (130-135\u00b0F internal temp). Let rest 5 minutes before serving",
+        "commonBrands": [
+            "USDA Choice",
+            "USDA Prime",
+            "Certified Angus Beef",
+            "Grass-fed varieties"
+        ],
+        "seasonality": "Year-round",
+        "culturalContext": "Popular in American, European, and South American cuisines. Often associated with celebratory meals",
+        "focusGrades": {
+            "heart_health": {
+                "grade": "C+",
+                "score": 62,
+                "reasoning": "Moderate saturated fat (3.2g). Good source of heart-healthy nutrients like CoQ10, but red meat consumption should be moderated for cardiovascular health."
+            },
+            "longevity": {
+                "grade": "C+",
+                "score": 60,
+                "reasoning": "High-quality protein and nutrients support longevity, but red meat intake should be limited. Studies suggest 3-4 servings/week max for optimal lifespan."
+            },
+            "metabolic_health": {
+                "grade": "B+",
+                "score": 78,
+                "reasoning": "Zero carbs, excellent protein (32g) supports stable blood sugar and insulin sensitivity. Complete amino acid profile supports metabolic function."
+            },
+            "immune_support": {
+                "grade": "A-",
+                "score": 85,
+                "reasoning": "Exceptional zinc (5.8mg), excellent selenium (32mcg), B vitamins support robust immune function. Protein provides amino acids for antibody production."
+            },
+            "gut_health": {
+                "grade": "C",
+                "score": 55,
+                "reasoning": "No fiber. Red meat may alter gut microbiome composition. However, unprocessed and protein-rich. Better with fiber-rich vegetables."
+            },
+            "brain_health": {
+                "grade": "B+",
+                "score": 78,
+                "reasoning": "Excellent B12 (2.4mcg), iron, and zinc support cognitive function. Contains creatine for brain energy. Choline supports neurotransmitter production."
+            },
+            "bone_health": {
+                "grade": "B+",
+                "score": 80,
+                "reasoning": "Excellent protein (32g) for bone matrix. Great phosphorus (268mg), zinc, and magnesium support bone mineralization and density."
+            },
+            "inflammation": {
+                "grade": "C+",
+                "score": 58,
+                "reasoning": "Unprocessed meat has neutral inflammation profile. Contains some anti-inflammatory nutrients (selenium, zinc), but red meat should be balanced with plants."
+            },
+            "energy": {
+                "grade": "A-",
+                "score": 88,
+                "reasoning": "Excellent protein (32g) provides sustained energy. Rich in B vitamins, iron for oxygen transport. Contains creatine for cellular energy production."
+            },
+            "athletic_performance": {
+                "grade": "A",
+                "score": 90,
+                "reasoning": "Outstanding protein (32g) for muscle building and recovery. High iron, zinc, B vitamins, creatine support athletic performance and endurance."
+            }
+        },
+        "emoji": "\ud83e\udd69",
+        "searchTerms": [
+            "steak",
+            "sirloin",
+            "beef steak",
+            "sirloin steak",
+            "red meat",
+            "beef"
+        ]
+    },
+    "beef_steak": {
+        "foodId": "beef_steak",
+        "name": "Beef Steak (Ribeye)",
+        "category": "proteins",
+        "servingSize": "4 oz",
+        "servingSizeGrams": 113,
+        "servingSizeMetric": "113g",
+        "calories": 280,
+        "macros": {
+            "protein": 29,
+            "carbs": 0,
+            "fat": 18,
+            "fiber": 0,
+            "sugar": 0,
+            "addedSugar": 0,
+            "saturatedFat": 7.5,
+            "transFat": 0,
+            "polyunsaturatedFat": 0.7,
+            "monounsaturatedFat": 8.2,
+            "cholesterol": 95,
+            "sodium": 70
+        },
+        "micronutrients": {
+            "vitaminA": 0,
+            "vitaminC": 0,
+            "vitaminD": 0.1,
+            "vitaminE": 0.3,
+            "vitaminK": 2.0,
+            "thiamin": 0.08,
+            "riboflavin": 0.18,
+            "niacin": 7.8,
+            "vitaminB6": 0.55,
+            "folate": 8,
+            "vitaminB12": 2.6,
+            "calcium": 16,
+            "iron": 2.2,
+            "magnesium": 25,
+            "phosphorus": 245,
+            "potassium": 380,
+            "zinc": 5.5,
+            "selenium": 30,
+            "copper": 0.07,
+            "manganese": 0.01
+        },
+        "healthScore": 65,
+        "novaGroup": 1,
+        "tags": [
+            "high-protein",
+            "high-fat",
+            "nutrient-dense",
+            "red-meat",
+            "beef",
+            "unprocessed"
+        ],
+        "allergens": [],
+        "dietaryFlags": {
+            "isVegan": false,
+            "isVegetarian": false,
+            "isGlutenFree": true,
+            "isDairyFree": true,
+            "isLowCarb": true,
+            "isKeto": true,
+            "isPaleo": true,
+            "isLowFODMAP": true
+        },
+        "sustainabilityScore": 35,
+        "pricePerServing": 7.5,
+        "shelfLife": "Refrigerated: 3-5 days raw; Frozen: 6-12 months",
+        "preparation": "Season generously with salt and pepper. Sear in hot pan 4-6 minutes per side for medium-rare (130-135\u00b0F). Rest 5-10 minutes before slicing",
+        "commonBrands": [
+            "USDA Prime",
+            "USDA Choice",
+            "Certified Angus Beef",
+            "Wagyu",
+            "Grass-fed varieties"
+        ],
+        "seasonality": "Year-round",
+        "culturalContext": "Premium cut in American steakhouse culture. Prized for marbling and flavor, often reserved for special occasions",
+        "focusGrades": {
+            "heart_health": {
+                "grade": "C",
+                "score": 52,
+                "reasoning": "Higher saturated fat (7.5g) raises LDL cholesterol. Should be consumed in moderation. Contains beneficial nutrients but not ideal for heart health."
+            },
+            "longevity": {
+                "grade": "C",
+                "score": 55,
+                "reasoning": "Nutrient-dense but higher fat content. Red meat should be limited for longevity. Occasional consumption acceptable when balanced with plant foods."
+            },
+            "metabolic_health": {
+                "grade": "B",
+                "score": 75,
+                "reasoning": "Zero carbs, excellent protein (29g) supports metabolic health. Higher fat content provides satiety but should be balanced with leaner proteins."
+            },
+            "immune_support": {
+                "grade": "A-",
+                "score": 83,
+                "reasoning": "Excellent zinc (5.5mg), selenium (30mcg), B vitamins support immune function. Complete protein provides amino acids for antibody production."
+            },
+            "gut_health": {
+                "grade": "C",
+                "score": 53,
+                "reasoning": "No fiber. Higher fat may slow digestion. Red meat can alter gut microbiome. Pair with vegetables and fermented foods for balance."
+            },
+            "brain_health": {
+                "grade": "B",
+                "score": 75,
+                "reasoning": "Excellent B12 (2.6mcg), iron support cognitive function. Contains creatine for brain energy. Saturated fat should be balanced for optimal brain health."
+            },
+            "bone_health": {
+                "grade": "B+",
+                "score": 78,
+                "reasoning": "Excellent protein (29g) for bone matrix. Good phosphorus (245mg), zinc support bone strength. Protein intake crucial for bone density."
+            },
+            "inflammation": {
+                "grade": "C",
+                "score": 50,
+                "reasoning": "Higher saturated fat may promote inflammation. Unprocessed meat has neutral profile. Contains anti-inflammatory selenium and zinc. Moderation key."
+            },
+            "energy": {
+                "grade": "A-",
+                "score": 85,
+                "reasoning": "Excellent protein (29g) and fat (18g) provide sustained, long-lasting energy. Rich in B vitamins and iron support energy metabolism."
+            },
+            "athletic_performance": {
+                "grade": "A-",
+                "score": 87,
+                "reasoning": "Outstanding protein (29g) for muscle building. High iron, zinc, B vitamins, creatine support performance. Higher fat provides energy for endurance."
+            }
+        },
+        "emoji": "\ud83e\udd69",
+        "searchTerms": [
+            "ribeye",
+            "rib eye",
+            "beef steak",
+            "ribeye steak",
+            "red meat",
+            "beef",
+            "marbled steak"
+        ]
+    },
+    "lamb": {
+        "foodId": "lamb",
+        "name": "Lamb Chop",
+        "category": "proteins",
+        "servingSize": "3 oz",
+        "servingSizeGrams": 85,
+        "servingSizeMetric": "85g",
+        "calories": 200,
+        "macros": {
+            "protein": 22,
+            "carbs": 0,
+            "fat": 12,
+            "fiber": 0,
+            "sugar": 0,
+            "addedSugar": 0,
+            "saturatedFat": 5.2,
+            "transFat": 0,
+            "polyunsaturatedFat": 0.8,
+            "monounsaturatedFat": 5.0,
+            "cholesterol": 80,
+            "sodium": 70
+        },
+        "micronutrients": {
+            "vitaminA": 0,
+            "vitaminC": 0,
+            "vitaminD": 0.2,
+            "vitaminE": 0.15,
+            "vitaminK": 4.5,
+            "thiamin": 0.12,
+            "riboflavin": 0.24,
+            "niacin": 6.2,
+            "vitaminB6": 0.3,
+            "folate": 18,
+            "vitaminB12": 2.7,
+            "calcium": 14,
+            "iron": 1.8,
+            "magnesium": 22,
+            "phosphorus": 180,
+            "potassium": 310,
+            "zinc": 4.2,
+            "selenium": 26,
+            "copper": 0.11,
+            "manganese": 0.02
+        },
+        "healthScore": 68,
+        "novaGroup": 1,
+        "tags": [
+            "high-protein",
+            "nutrient-dense",
+            "red-meat",
+            "lamb",
+            "unprocessed",
+            "iron-rich"
+        ],
+        "allergens": [],
+        "dietaryFlags": {
+            "isVegan": false,
+            "isVegetarian": false,
+            "isGlutenFree": true,
+            "isDairyFree": true,
+            "isLowCarb": true,
+            "isKeto": true,
+            "isPaleo": true,
+            "isLowFODMAP": true
+        },
+        "sustainabilityScore": 40,
+        "pricePerServing": 6.0,
+        "shelfLife": "Refrigerated: 3-5 days raw; Frozen: 6-9 months",
+        "preparation": "Season with salt, pepper, rosemary, and garlic. Sear 3-4 minutes per side for medium-rare (130-135\u00b0F). Let rest 5 minutes before serving",
+        "commonBrands": [
+            "New Zealand Lamb",
+            "Australian Lamb",
+            "American Lamb",
+            "Grass-fed varieties"
+        ],
+        "seasonality": "Year-round, peak in spring",
+        "culturalContext": "Central to Mediterranean, Middle Eastern, and Indian cuisines. Traditional Easter meal in many Western cultures",
+        "focusGrades": {
+            "heart_health": {
+                "grade": "C+",
+                "score": 60,
+                "reasoning": "Moderate saturated fat (5.2g). Contains beneficial omega-3s (grass-fed lamb). Better fatty acid profile than conventional beef but still moderate intake."
+            },
+            "longevity": {
+                "grade": "B-",
+                "score": 65,
+                "reasoning": "High-quality protein and nutrients support longevity. Red meat should be limited but lamb from grass-fed sources has better nutrient profile than conventional beef."
+            },
+            "metabolic_health": {
+                "grade": "B+",
+                "score": 77,
+                "reasoning": "Zero carbs, excellent protein (22g) supports insulin sensitivity and stable blood sugar. Complete amino acid profile supports metabolic function."
+            },
+            "immune_support": {
+                "grade": "A-",
+                "score": 84,
+                "reasoning": "Excellent zinc (4.2mg), selenium (26mcg), B12 (2.7mcg) support robust immune function. Complete protein aids antibody production."
+            },
+            "gut_health": {
+                "grade": "C+",
+                "score": 57,
+                "reasoning": "No fiber. Red meat can alter gut microbiome composition. Grass-fed lamb contains CLA which may support gut health. Pair with fiber-rich foods."
+            },
+            "brain_health": {
+                "grade": "A-",
+                "score": 80,
+                "reasoning": "Exceptional B12 (2.7mcg), good iron, zinc support cognitive function. Grass-fed lamb contains omega-3s beneficial for brain health. Choline supports memory."
+            },
+            "bone_health": {
+                "grade": "B+",
+                "score": 79,
+                "reasoning": "Excellent protein (22g) for bone matrix. Good phosphorus (180mg), zinc, and copper support bone mineralization and collagen formation."
+            },
+            "inflammation": {
+                "grade": "B-",
+                "score": 68,
+                "reasoning": "Grass-fed lamb contains anti-inflammatory omega-3s and CLA. Selenium and zinc provide antioxidant protection. Better inflammation profile than conventional beef."
+            },
+            "energy": {
+                "grade": "A-",
+                "score": 86,
+                "reasoning": "Excellent protein (22g) and fat (12g) provide sustained energy. Rich in B vitamins, iron for oxygen transport, and L-carnitine for energy metabolism."
+            },
+            "athletic_performance": {
+                "grade": "A-",
+                "score": 88,
+                "reasoning": "Outstanding protein (22g) for muscle building and recovery. High iron, zinc, B vitamins support athletic performance. Contains L-carnitine for fat metabolism."
+            }
+        },
+        "emoji": "\ud83c\udf56",
+        "searchTerms": [
+            "lamb",
+            "lamb chop",
+            "lamb loin",
+            "red meat",
+            "mutton"
+        ]
+    }
+}

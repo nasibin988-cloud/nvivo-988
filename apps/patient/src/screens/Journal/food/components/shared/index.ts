@@ -8,6 +8,7 @@ export { AnalysisModalShell } from './AnalysisModalShell';
 export { CaptureStepBase } from './CaptureStepBase';
 export { AnalyzingAnimation } from './AnalyzingAnimation';
 export { GradeDisplay } from './GradeDisplay';
+export { MealGradeCard } from './MealGradeCard';
 
 // Hooks
 export { useFileUpload } from './useFileUpload';

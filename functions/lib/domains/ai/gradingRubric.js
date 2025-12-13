@@ -2,9 +2,18 @@
 /**
  * Grading Rubric for Food Analysis
  *
- * This file contains the criteria AI should use when grading foods.
- * It's designed to be compact (~300 tokens) to minimize API costs
- * while providing consistent, grounded grading.
+ * This file provides food grading functionality with two modes:
+ * 1. DETERMINISTIC (default): Uses published algorithms (Nutri-Score, DRI thresholds)
+ *    - Consistent, reproducible grades
+ *    - No API costs
+ *    - Based on peer-reviewed research
+ *
+ * 2. AI-ENHANCED (optional): Uses GPT for nuanced analysis
+ *    - Can capture edge cases
+ *    - More expensive
+ *    - Less consistent
+ *
+ * The deterministic approach is now the PRIMARY method.
  */
 var __importDefault = (this && this.__importDefault) || function (mod) {
     return (mod && mod.__esModule) ? mod : { "default": mod };
@@ -14,9 +23,13 @@ exports.NUTRITION_REFERENCE_RANGES = exports.GRADING_RUBRIC = exports.ALL_FOCUSE
 exports.getGradingPromptAddition = getGradingPromptAddition;
 exports.getComparisonPrompt = getComparisonPrompt;
 exports.gradeFoodWithAI = gradeFoodWithAI;
+exports.gradeFood = gradeFood;
+exports.gradeFoodForFocus = gradeFoodForFocus;
+exports.getOverallGrade = getOverallGrade;
 const openai_1 = __importDefault(require("openai"));
 const params_1 = require("firebase-functions/params");
 const openai_2 = require("../../config/openai");
+const deterministicGrading_1 = require("../nutrition/deterministicGrading");
 // Define OpenAI API key as a secret
 exports.openaiApiKeyGrading = (0, params_1.defineSecret)('OPENAI_API_KEY');
 exports.ALL_FOCUSES = [
@@ -291,78 +304,113 @@ Replace X with A/B/C/D/F. Be specific about concerns and strengths based on the 
 }
 /**
  * Fallback grading when AI fails
- * Uses simple heuristics based on key nutrients
+ * Now uses the deterministic grading system instead of simple heuristics
  */
 function getFallbackGrades(nutrition) {
     var _a;
-    const grades = {
-        balanced: 'C',
-        muscle_building: 'C',
-        heart_health: 'C',
-        energy_endurance: 'C',
-        weight_management: 'C',
-        brain_focus: 'C',
-        gut_health: 'C',
-        blood_sugar_balance: 'C',
-        bone_joint_support: 'C',
-        anti_inflammatory: 'C',
+    // Convert to NutritionInput format for deterministic grading
+    const input = {
+        calories: nutrition.calories,
+        protein: nutrition.protein,
+        carbs: nutrition.carbs,
+        fat: nutrition.fat,
+        fiber: nutrition.fiber,
+        sugar: nutrition.sugar,
+        sodium: nutrition.sodium,
+        saturatedFat: (_a = nutrition.saturatedFat) !== null && _a !== void 0 ? _a : 0,
+        transFat: nutrition.transFat,
+        cholesterol: nutrition.cholesterol,
+        potassium: nutrition.potassium,
+        calcium: nutrition.calcium,
+        iron: nutrition.iron,
+        magnesium: nutrition.magnesium,
     };
-    // Simple heuristics
-    const satFat = (_a = nutrition.saturatedFat) !== null && _a !== void 0 ? _a : 0;
-    // Heart health: penalize high sat fat and sodium
-    if (satFat > 10 || nutrition.sodium > 1000)
-        grades.heart_health = 'F';
-    else if (satFat > 6 || nutrition.sodium > 700)
-        grades.heart_health = 'D';
-    else if (satFat < 3 && nutrition.sodium < 400 && nutrition.fiber > 5)
-        grades.heart_health = 'A';
-    // Muscle building: reward protein
-    if (nutrition.protein > 25)
-        grades.muscle_building = 'A';
-    else if (nutrition.protein > 18)
-        grades.muscle_building = 'B';
-    else if (nutrition.protein < 8)
-        grades.muscle_building = 'F';
-    // Weight management: penalize high cal, reward protein/fiber
-    if (nutrition.calories > 500 && nutrition.protein < 15)
-        grades.weight_management = 'D';
-    if (nutrition.calories > 700)
-        grades.weight_management = 'F';
-    if (nutrition.calories < 250 && nutrition.protein > 15 && nutrition.fiber > 5)
-        grades.weight_management = 'A';
-    // Gut health: fiber focused
-    if (nutrition.fiber > 8)
-        grades.gut_health = 'A';
-    else if (nutrition.fiber > 5)
-        grades.gut_health = 'B';
-    else if (nutrition.fiber < 2)
-        grades.gut_health = 'F';
-    // Blood sugar: penalize high sugar
-    if (nutrition.sugar > 20)
-        grades.blood_sugar_balance = 'F';
-    else if (nutrition.sugar > 12)
-        grades.blood_sugar_balance = 'D';
-    else if (nutrition.sugar < 5 && nutrition.fiber > 5)
-        grades.blood_sugar_balance = 'A';
-    // Calculate overall as average
-    const gradeValues = { A: 4, B: 3, C: 2, D: 1, F: 0 };
-    const avgScore = Object.values(grades).reduce((sum, g) => sum + gradeValues[g], 0) / Object.keys(grades).length;
-    let overallGrade = 'C';
-    if (avgScore >= 3.5)
-        overallGrade = 'A';
-    else if (avgScore >= 2.5)
-        overallGrade = 'B';
-    else if (avgScore >= 1.5)
-        overallGrade = 'C';
-    else if (avgScore >= 0.5)
-        overallGrade = 'D';
-    else
-        overallGrade = 'F';
+    const result = (0, deterministicGrading_1.calculateDeterministicGrades)(input);
+    // Convert FocusGradeResult grades to HealthGrade
+    const focusGrades = {};
+    for (const [focus, gradeResult] of Object.entries(result.focusGrades)) {
+        focusGrades[focus] = gradeResult.grade;
+    }
     return {
-        focusGrades: grades,
-        overallGrade,
-        primaryConcerns: ['Unable to generate AI analysis'],
-        strengths: [],
+        focusGrades,
+        overallGrade: result.overallGrade,
+        primaryConcerns: result.primaryConcerns,
+        strengths: result.strengths,
     };
+}
+// ============================================================================
+// DETERMINISTIC GRADING (PRIMARY - No AI calls)
+// ============================================================================
+/**
+ * Grade a food using deterministic algorithms (NO AI CALLS)
+ * This is the RECOMMENDED approach for consistent, reproducible grades.
+ *
+ * Uses:
+ * - Nutri-Score (EU algorithm) for overall grade
+ * - DRI/AHA/WHO thresholds for focus grades
+ * - Published formulas for satiety & inflammatory index
+ *
+ * @param nutrition - Nutrition data for the food
+ * @returns Complete grading result with all focuses
+ */
+function gradeFood(nutrition) {
+    var _a;
+    const input = {
+        calories: nutrition.calories,
+        protein: nutrition.protein,
+        carbs: nutrition.carbs,
+        fat: nutrition.fat,
+        fiber: nutrition.fiber,
+        sugar: nutrition.sugar,
+        sodium: nutrition.sodium,
+        saturatedFat: (_a = nutrition.saturatedFat) !== null && _a !== void 0 ? _a : 0,
+        transFat: nutrition.transFat,
+        cholesterol: nutrition.cholesterol,
+        potassium: nutrition.potassium,
+        calcium: nutrition.calcium,
+        iron: nutrition.iron,
+        magnesium: nutrition.magnesium,
+    };
+    return (0, deterministicGrading_1.calculateDeterministicGrades)(input);
+}
+/**
+ * Get grade for a single focus (more efficient when you only need one)
+ */
+function gradeFoodForFocus(nutrition, focus) {
+    var _a;
+    const input = {
+        calories: nutrition.calories,
+        protein: nutrition.protein,
+        carbs: nutrition.carbs,
+        fat: nutrition.fat,
+        fiber: nutrition.fiber,
+        sugar: nutrition.sugar,
+        sodium: nutrition.sodium,
+        saturatedFat: (_a = nutrition.saturatedFat) !== null && _a !== void 0 ? _a : 0,
+        transFat: nutrition.transFat,
+        cholesterol: nutrition.cholesterol,
+        potassium: nutrition.potassium,
+        calcium: nutrition.calcium,
+        iron: nutrition.iron,
+        magnesium: nutrition.magnesium,
+    };
+    return (0, deterministicGrading_1.gradeSingleFocus)(input, focus);
+}
+/**
+ * Get only the overall Nutri-Score grade
+ */
+function getOverallGrade(nutrition) {
+    var _a;
+    const input = {
+        calories: nutrition.calories,
+        protein: nutrition.protein,
+        carbs: nutrition.carbs,
+        fat: nutrition.fat,
+        fiber: nutrition.fiber,
+        sugar: nutrition.sugar,
+        sodium: nutrition.sodium,
+        saturatedFat: (_a = nutrition.saturatedFat) !== null && _a !== void 0 ? _a : 0,
+    };
+    return (0, deterministicGrading_1.getNutriScore)(input);
 }
 //# sourceMappingURL=gradingRubric.js.map

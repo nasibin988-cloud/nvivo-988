@@ -1,0 +1,394 @@
+{
+  "greek_yogurt": {
+    "foodKey": "greek_yogurt",
+    "displayName": "Greek Yogurt",
+    "category": "dairy",
+    "servingSize": {
+      "amount": 170,
+      "unit": "g",
+      "household": "1 container (6 oz)"
+    },
+    "nutrients": {
+      "calories": 100,
+      "protein": 17.3,
+      "carbs": 3.6,
+      "fiber": 0,
+      "sugar": 3.2,
+      "fat": 1.8,
+      "saturatedFat": 1.0,
+      "transFat": 0,
+      "cholesterol": 10,
+      "sodium": 56,
+      "potassium": 240,
+      "calcium": 187,
+      "iron": 0.1,
+      "vitaminA": 17,
+      "vitaminC": 0,
+      "vitaminD": 0
+    },
+    "tags": [
+      "high-protein",
+      "low-fat",
+      "probiotic",
+      "calcium-rich"
+    ],
+    "allergens": [
+      "dairy",
+      "lactose"
+    ],
+    "healthScore": 85,
+    "focusGrades": {
+      "general": "A",
+      "weight_loss": "A",
+      "diabetes": "A",
+      "heart_health": "A",
+      "kidney_health": "B",
+      "gut_health": "A+",
+      "bone_health": "A",
+      "athletic_performance": "A",
+      "anti_inflammatory": "B",
+      "longevity": "A"
+    },
+    "warnings": [],
+    "benefits": [
+      "Excellent source of high-quality protein for muscle maintenance",
+      "Rich in probiotics that support digestive health",
+      "Good source of calcium for bone health",
+      "Low in carbohydrates, suitable for blood sugar management"
+    ],
+    "metabolicImpact": {
+      "glycemicLoad": "low",
+      "insulinResponse": "low",
+      "satietyScore": 9
+    }
+  },
+  "yogurt": {
+    "foodKey": "yogurt",
+    "displayName": "Yogurt (Regular)",
+    "category": "dairy",
+    "servingSize": {
+      "amount": 170,
+      "unit": "g",
+      "household": "1 container (6 oz)"
+    },
+    "nutrients": {
+      "calories": 100,
+      "protein": 5.7,
+      "carbs": 7.7,
+      "fiber": 0,
+      "sugar": 7.0,
+      "fat": 3.8,
+      "saturatedFat": 2.5,
+      "transFat": 0,
+      "cholesterol": 15,
+      "sodium": 77,
+      "potassium": 255,
+      "calcium": 207,
+      "iron": 0.1,
+      "vitaminA": 51,
+      "vitaminC": 0.9,
+      "vitaminD": 0
+    },
+    "tags": [
+      "probiotic",
+      "calcium-rich",
+      "source-of-protein"
+    ],
+    "allergens": [
+      "dairy",
+      "lactose"
+    ],
+    "healthScore": 75,
+    "focusGrades": {
+      "general": "B+",
+      "weight_loss": "B",
+      "diabetes": "B",
+      "heart_health": "B",
+      "kidney_health": "B",
+      "gut_health": "A",
+      "bone_health": "A",
+      "athletic_performance": "B+",
+      "anti_inflammatory": "B",
+      "longevity": "B+"
+    },
+    "warnings": [
+      "Choose plain yogurt to avoid added sugars"
+    ],
+    "benefits": [
+      "Contains beneficial probiotics for gut health",
+      "Good source of calcium and vitamin D",
+      "Provides complete protein with all essential amino acids",
+      "Supports bone density and strength"
+    ],
+    "metabolicImpact": {
+      "glycemicLoad": "low",
+      "insulinResponse": "moderate",
+      "satietyScore": 7
+    }
+  },
+  "plain_yogurt": {
+    "foodKey": "plain_yogurt",
+    "displayName": "Plain Yogurt",
+    "category": "dairy",
+    "servingSize": {
+      "amount": 245,
+      "unit": "g",
+      "household": "1 cup (8 oz)"
+    },
+    "nutrients": {
+      "calories": 149,
+      "protein": 8.5,
+      "carbs": 11.4,
+      "fiber": 0,
+      "sugar": 11.4,
+      "fat": 8.0,
+      "saturatedFat": 5.1,
+      "transFat": 0,
+      "cholesterol": 32,
+      "sodium": 113,
+      "potassium": 380,
+      "calcium": 296,
+      "iron": 0.1,
+      "vitaminA": 99,
+      "vitaminC": 1.2,
+      "vitaminD": 0
+    },
+    "tags": [
+      "whole-milk",
+      "probiotic",
+      "calcium-rich",
+      "no-added-sugar"
+    ],
+    "allergens": [
+      "dairy",
+      "lactose"
+    ],
+    "healthScore": 78,
+    "focusGrades": {
+      "general": "B+",
+      "weight_loss": "B",
+      "diabetes": "B+",
+      "heart_health": "B",
+      "kidney_health": "B",
+      "gut_health": "A",
+      "bone_health": "A",
+      "athletic_performance": "B+",
+      "anti_inflammatory": "B",
+      "longevity": "B+"
+    },
+    "warnings": [
+      "Contains natural milk sugars (lactose)"
+    ],
+    "benefits": [
+      "No added sugars, only natural lactose",
+      "Rich in probiotics for digestive health",
+      "Excellent calcium source for bone health",
+      "Versatile base for healthy meals and snacks"
+    ],
+    "metabolicImpact": {
+      "glycemicLoad": "low",
+      "insulinResponse": "moderate",
+      "satietyScore": 7
+    }
+  },
+  "cheddar_cheese": {
+    "foodKey": "cheddar_cheese",
+    "displayName": "Cheddar Cheese",
+    "category": "dairy",
+    "servingSize": {
+      "amount": 28,
+      "unit": "g",
+      "household": "1 oz (1 slice)"
+    },
+    "nutrients": {
+      "calories": 114,
+      "protein": 7.1,
+      "carbs": 0.4,
+      "fiber": 0,
+      "sugar": 0.1,
+      "fat": 9.4,
+      "saturatedFat": 5.3,
+      "transFat": 0.3,
+      "cholesterol": 30,
+      "sodium": 176,
+      "potassium": 28,
+      "calcium": 204,
+      "iron": 0.2,
+      "vitaminA": 75,
+      "vitaminC": 0,
+      "vitaminD": 0.2
+    },
+    "tags": [
+      "high-protein",
+      "high-fat",
+      "calcium-rich",
+      "aged-cheese"
+    ],
+    "allergens": [
+      "dairy",
+      "lactose"
+    ],
+    "healthScore": 65,
+    "focusGrades": {
+      "general": "C+",
+      "weight_loss": "C",
+      "diabetes": "B+",
+      "heart_health": "C",
+      "kidney_health": "C",
+      "gut_health": "B",
+      "bone_health": "A",
+      "athletic_performance": "B",
+      "anti_inflammatory": "C",
+      "longevity": "C+"
+    },
+    "warnings": [
+      "High in saturated fat - limit portions for heart health",
+      "High in sodium - may affect blood pressure",
+      "Calorie-dense - watch portion sizes for weight management"
+    ],
+    "benefits": [
+      "Excellent source of calcium for bone health",
+      "Rich in high-quality protein",
+      "Contains vitamin K2 for bone and heart health",
+      "Very low in carbohydrates"
+    ],
+    "metabolicImpact": {
+      "glycemicLoad": "very low",
+      "insulinResponse": "low",
+      "satietyScore": 8
+    }
+  },
+  "cheese": {
+    "foodKey": "cheese",
+    "displayName": "Cheese (Generic)",
+    "category": "dairy",
+    "servingSize": {
+      "amount": 28,
+      "unit": "g",
+      "household": "1 oz (1 slice)"
+    },
+    "nutrients": {
+      "calories": 110,
+      "protein": 6.8,
+      "carbs": 0.5,
+      "fiber": 0,
+      "sugar": 0.2,
+      "fat": 9.0,
+      "saturatedFat": 5.2,
+      "transFat": 0.3,
+      "cholesterol": 28,
+      "sodium": 180,
+      "potassium": 30,
+      "calcium": 200,
+      "iron": 0.2,
+      "vitaminA": 70,
+      "vitaminC": 0,
+      "vitaminD": 0.2
+    },
+    "tags": [
+      "high-protein",
+      "high-fat",
+      "calcium-rich"
+    ],
+    "allergens": [
+      "dairy",
+      "lactose"
+    ],
+    "healthScore": 65,
+    "focusGrades": {
+      "general": "C+",
+      "weight_loss": "C",
+      "diabetes": "B+",
+      "heart_health": "C",
+      "kidney_health": "C",
+      "gut_health": "B",
+      "bone_health": "A",
+      "athletic_performance": "B",
+      "anti_inflammatory": "C",
+      "longevity": "C+"
+    },
+    "warnings": [
+      "High in saturated fat - consume in moderation",
+      "High in sodium - may not be suitable for low-sodium diets",
+      "Calorie-dense - practice portion control"
+    ],
+    "benefits": [
+      "Excellent source of calcium for bone health",
+      "Good source of complete protein",
+      "Contains conjugated linoleic acid (CLA)",
+      "Minimal carbohydrates"
+    ],
+    "metabolicImpact": {
+      "glycemicLoad": "very low",
+      "insulinResponse": "low",
+      "satietyScore": 8
+    }
+  },
+  "mozzarella_cheese": {
+    "foodKey": "mozzarella_cheese",
+    "displayName": "Mozzarella Cheese",
+    "category": "dairy",
+    "servingSize": {
+      "amount": 28,
+      "unit": "g",
+      "household": "1 oz"
+    },
+    "nutrients": {
+      "calories": 85,
+      "protein": 6.3,
+      "carbs": 0.6,
+      "fiber": 0,
+      "sugar": 0.3,
+      "fat": 6.3,
+      "saturatedFat": 3.7,
+      "transFat": 0.2,
+      "cholesterol": 22,
+      "sodium": 138,
+      "potassium": 24,
+      "calcium": 143,
+      "iron": 0.1,
+      "vitaminA": 56,
+      "vitaminC": 0,
+      "vitaminD": 0.1
+    },
+    "tags": [
+      "high-protein",
+      "moderate-fat",
+      "calcium-rich",
+      "fresh-cheese"
+    ],
+    "allergens": [
+      "dairy",
+      "lactose"
+    ],
+    "healthScore": 70,
+    "focusGrades": {
+      "general": "B",
+      "weight_loss": "B-",
+      "diabetes": "A-",
+      "heart_health": "C+",
+      "kidney_health": "C+",
+      "gut_health": "B",
+      "bone_health": "A-",
+      "athletic_performance": "B+",
+      "anti_inflammatory": "C+",
+      "longevity": "B"
+    },
+    "warnings": [
+      "High in saturated fat - limit portions",
+      "Moderate sodium content"
+    ],
+    "benefits": [
+      "Lower in calories and fat than aged cheeses",
+      "Good source of calcium for bone health",
+      "Rich in high-quality protein",
+      "Contains probiotics if made from unpasteurized milk",
+      "Good source of phosphorus"
+    ],
+    "metabolicImpact": {
+      "glycemicLoad": "very low",
+      "insulinResponse": "low",
+      "satietyScore": 7
+    }
+  }
+}

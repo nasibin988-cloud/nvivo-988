@@ -1,0 +1,686 @@
+{
+  "_meta": {
+    "description": "Food name aliases and synonyms for flexible matching",
+    "lastUpdated": "2024-12-12",
+    "usage": "Map user input variations to canonical food IDs in base_foods.json"
+  },
+
+  "chicken_breast": [
+    "chicken breast",
+    "breast of chicken",
+    "chicken",
+    "boneless chicken",
+    "skinless chicken",
+    "boneless skinless chicken breast",
+    "chicken fillet",
+    "chicken cutlet"
+  ],
+  "chicken_thigh": [
+    "chicken thigh",
+    "thigh of chicken",
+    "chicken leg",
+    "dark meat chicken"
+  ],
+  "chicken_wing": [
+    "chicken wing",
+    "wing",
+    "buffalo wing",
+    "hot wing"
+  ],
+  "ground_beef": [
+    "ground beef",
+    "hamburger meat",
+    "beef mince",
+    "minced beef",
+    "burger meat"
+  ],
+  "ribeye": [
+    "ribeye",
+    "rib eye",
+    "ribeye steak",
+    "rib eye steak",
+    "delmonico steak"
+  ],
+  "sirloin": [
+    "sirloin",
+    "sirloin steak",
+    "top sirloin"
+  ],
+  "bacon": [
+    "bacon",
+    "bacon strips",
+    "streaky bacon",
+    "american bacon",
+    "pork bacon"
+  ],
+  "ham": [
+    "ham",
+    "deli ham",
+    "sliced ham",
+    "honey ham",
+    "smoked ham"
+  ],
+  "salmon": [
+    "salmon",
+    "atlantic salmon",
+    "pacific salmon",
+    "salmon fillet",
+    "wild salmon",
+    "farmed salmon"
+  ],
+  "tuna": [
+    "tuna",
+    "tuna fish",
+    "ahi tuna",
+    "yellowfin tuna",
+    "albacore tuna",
+    "skipjack tuna"
+  ],
+  "canned_tuna": [
+    "canned tuna",
+    "tuna in water",
+    "tuna in oil",
+    "chunk light tuna",
+    "solid white tuna"
+  ],
+  "shrimp": [
+    "shrimp",
+    "prawns",
+    "jumbo shrimp",
+    "cocktail shrimp",
+    "tiger prawns",
+    "king prawns"
+  ],
+  "egg": [
+    "egg",
+    "eggs",
+    "chicken egg",
+    "whole egg",
+    "large egg"
+  ],
+  "boiled_egg": [
+    "boiled egg",
+    "hard boiled egg",
+    "hard-boiled egg",
+    "soft boiled egg"
+  ],
+  "fried_egg": [
+    "fried egg",
+    "sunny side up",
+    "over easy",
+    "over medium",
+    "over hard"
+  ],
+  "scrambled_egg": [
+    "scrambled egg",
+    "scrambled eggs"
+  ],
+
+  "apple": [
+    "apple",
+    "apples",
+    "red apple",
+    "green apple",
+    "granny smith",
+    "fuji apple",
+    "gala apple",
+    "honeycrisp"
+  ],
+  "banana": [
+    "banana",
+    "bananas",
+    "ripe banana"
+  ],
+  "orange": [
+    "orange",
+    "oranges",
+    "navel orange",
+    "valencia orange"
+  ],
+  "strawberry": [
+    "strawberry",
+    "strawberries"
+  ],
+  "blueberry": [
+    "blueberry",
+    "blueberries"
+  ],
+  "grapes": [
+    "grapes",
+    "grape",
+    "red grapes",
+    "green grapes",
+    "seedless grapes"
+  ],
+  "watermelon": [
+    "watermelon",
+    "water melon"
+  ],
+  "avocado": [
+    "avocado",
+    "avocados",
+    "hass avocado"
+  ],
+
+  "broccoli": [
+    "broccoli",
+    "broccoli florets"
+  ],
+  "spinach": [
+    "spinach",
+    "baby spinach",
+    "fresh spinach"
+  ],
+  "kale": [
+    "kale",
+    "curly kale",
+    "lacinato kale",
+    "dinosaur kale"
+  ],
+  "carrot": [
+    "carrot",
+    "carrots",
+    "baby carrots"
+  ],
+  "potato": [
+    "potato",
+    "potatoes",
+    "white potato",
+    "russet potato",
+    "baking potato"
+  ],
+  "sweet_potato": [
+    "sweet potato",
+    "sweet potatoes",
+    "yam"
+  ],
+  "tomato": [
+    "tomato",
+    "tomatoes",
+    "roma tomato",
+    "cherry tomato",
+    "grape tomato",
+    "beefsteak tomato"
+  ],
+  "onion": [
+    "onion",
+    "onions",
+    "yellow onion",
+    "white onion",
+    "red onion",
+    "sweet onion"
+  ],
+  "garlic": [
+    "garlic",
+    "garlic clove",
+    "garlic cloves"
+  ],
+  "bell_pepper": [
+    "bell pepper",
+    "pepper",
+    "red pepper",
+    "green pepper",
+    "yellow pepper",
+    "sweet pepper",
+    "capsicum"
+  ],
+  "cucumber": [
+    "cucumber",
+    "cucumbers"
+  ],
+  "lettuce": [
+    "lettuce",
+    "iceberg lettuce",
+    "romaine",
+    "romaine lettuce",
+    "leaf lettuce"
+  ],
+  "mushroom": [
+    "mushroom",
+    "mushrooms",
+    "button mushroom",
+    "cremini",
+    "portobello",
+    "shiitake"
+  ],
+  "corn": [
+    "corn",
+    "sweet corn",
+    "corn on the cob",
+    "kernel corn"
+  ],
+  "green_beans": [
+    "green beans",
+    "string beans",
+    "snap beans",
+    "french beans",
+    "haricots verts"
+  ],
+  "asparagus": [
+    "asparagus",
+    "asparagus spears"
+  ],
+  "zucchini": [
+    "zucchini",
+    "courgette",
+    "summer squash"
+  ],
+  "eggplant": [
+    "eggplant",
+    "aubergine"
+  ],
+  "celery": [
+    "celery",
+    "celery stalk",
+    "celery stalks"
+  ],
+
+  "white_rice": [
+    "white rice",
+    "rice",
+    "steamed rice",
+    "plain rice"
+  ],
+  "brown_rice": [
+    "brown rice",
+    "whole grain rice"
+  ],
+  "pasta": [
+    "pasta",
+    "noodles"
+  ],
+  "spaghetti": [
+    "spaghetti",
+    "spaghetti noodles"
+  ],
+  "bread": [
+    "bread",
+    "white bread",
+    "sliced bread"
+  ],
+  "whole_wheat_bread": [
+    "whole wheat bread",
+    "wheat bread",
+    "whole grain bread",
+    "brown bread"
+  ],
+  "oatmeal": [
+    "oatmeal",
+    "oats",
+    "porridge",
+    "hot cereal"
+  ],
+  "quinoa": [
+    "quinoa",
+    "keen-wah"
+  ],
+  "tortilla": [
+    "tortilla",
+    "flour tortilla"
+  ],
+  "corn_tortilla": [
+    "corn tortilla",
+    "maize tortilla"
+  ],
+
+  "whole_milk": [
+    "whole milk",
+    "full fat milk",
+    "vitamin d milk"
+  ],
+  "two_percent_milk": [
+    "2% milk",
+    "2 percent milk",
+    "reduced fat milk"
+  ],
+  "skim_milk": [
+    "skim milk",
+    "fat free milk",
+    "nonfat milk",
+    "skimmed milk"
+  ],
+  "cheddar": [
+    "cheddar",
+    "cheddar cheese",
+    "sharp cheddar",
+    "mild cheddar"
+  ],
+  "mozzarella": [
+    "mozzarella",
+    "mozzarella cheese",
+    "fresh mozzarella"
+  ],
+  "parmesan": [
+    "parmesan",
+    "parmesan cheese",
+    "parmigiano reggiano",
+    "parm"
+  ],
+  "cream_cheese": [
+    "cream cheese",
+    "philadelphia"
+  ],
+  "greek_yogurt": [
+    "greek yogurt",
+    "greek style yogurt",
+    "strained yogurt"
+  ],
+  "yogurt": [
+    "yogurt",
+    "regular yogurt",
+    "plain yogurt"
+  ],
+  "butter": [
+    "butter",
+    "salted butter",
+    "unsalted butter"
+  ],
+
+  "almonds": [
+    "almonds",
+    "almond",
+    "raw almonds",
+    "roasted almonds"
+  ],
+  "walnuts": [
+    "walnuts",
+    "walnut"
+  ],
+  "peanuts": [
+    "peanuts",
+    "peanut",
+    "roasted peanuts"
+  ],
+  "peanut_butter": [
+    "peanut butter",
+    "pb",
+    "natural peanut butter"
+  ],
+  "almond_butter": [
+    "almond butter"
+  ],
+  "cashews": [
+    "cashews",
+    "cashew",
+    "cashew nuts"
+  ],
+
+  "olive_oil": [
+    "olive oil",
+    "extra virgin olive oil",
+    "evoo"
+  ],
+  "vegetable_oil": [
+    "vegetable oil",
+    "cooking oil",
+    "canola oil"
+  ],
+  "coconut_oil": [
+    "coconut oil"
+  ],
+
+  "coffee": [
+    "coffee",
+    "black coffee",
+    "brewed coffee",
+    "drip coffee"
+  ],
+  "tea": [
+    "tea",
+    "black tea",
+    "hot tea",
+    "brewed tea"
+  ],
+  "green_tea": [
+    "green tea",
+    "matcha"
+  ],
+  "orange_juice": [
+    "orange juice",
+    "oj",
+    "fresh squeezed oj"
+  ],
+  "soda": [
+    "soda",
+    "soft drink",
+    "pop",
+    "cola",
+    "coke",
+    "coca cola",
+    "pepsi",
+    "fizzy drink"
+  ],
+  "water": [
+    "water",
+    "h2o",
+    "drinking water"
+  ],
+
+  "sugar": [
+    "sugar",
+    "white sugar",
+    "granulated sugar",
+    "table sugar"
+  ],
+  "honey": [
+    "honey",
+    "raw honey",
+    "pure honey"
+  ],
+  "maple_syrup": [
+    "maple syrup",
+    "pure maple syrup",
+    "syrup"
+  ],
+
+  "ketchup": [
+    "ketchup",
+    "catsup",
+    "tomato ketchup"
+  ],
+  "mustard": [
+    "mustard",
+    "yellow mustard",
+    "dijon mustard"
+  ],
+  "mayonnaise": [
+    "mayonnaise",
+    "mayo"
+  ],
+  "salsa": [
+    "salsa",
+    "pico de gallo",
+    "red salsa"
+  ],
+  "soy_sauce": [
+    "soy sauce",
+    "shoyu"
+  ],
+  "hot_sauce": [
+    "hot sauce",
+    "tabasco",
+    "sriracha",
+    "chili sauce"
+  ],
+  "bbq_sauce": [
+    "bbq sauce",
+    "barbecue sauce"
+  ],
+
+  "pizza": [
+    "pizza",
+    "pizza slice",
+    "cheese pizza",
+    "pepperoni pizza"
+  ],
+  "hamburger": [
+    "hamburger",
+    "burger",
+    "beef burger",
+    "cheeseburger"
+  ],
+  "hot_dog": [
+    "hot dog",
+    "hotdog",
+    "frankfurter",
+    "frank",
+    "wiener"
+  ],
+  "french_fries": [
+    "french fries",
+    "fries",
+    "chips",
+    "freedom fries",
+    "steak fries",
+    "shoestring fries"
+  ],
+  "chicken_nuggets": [
+    "chicken nuggets",
+    "nuggets",
+    "chicken mcnuggets"
+  ],
+  "fried_chicken": [
+    "fried chicken",
+    "southern fried chicken",
+    "crispy chicken"
+  ],
+  "mac_and_cheese": [
+    "mac and cheese",
+    "macaroni and cheese",
+    "mac n cheese",
+    "mac & cheese"
+  ],
+  "grilled_cheese": [
+    "grilled cheese",
+    "grilled cheese sandwich",
+    "toasted cheese"
+  ],
+
+  "burrito": [
+    "burrito",
+    "breakfast burrito",
+    "bean burrito",
+    "chicken burrito",
+    "beef burrito"
+  ],
+  "taco": [
+    "taco",
+    "tacos",
+    "soft taco",
+    "hard taco",
+    "street taco"
+  ],
+  "quesadilla": [
+    "quesadilla",
+    "cheese quesadilla",
+    "chicken quesadilla"
+  ],
+  "nachos": [
+    "nachos",
+    "loaded nachos"
+  ],
+  "guacamole": [
+    "guacamole",
+    "guac"
+  ],
+
+  "fried_rice": [
+    "fried rice",
+    "chinese fried rice",
+    "yang chow fried rice"
+  ],
+  "lo_mein": [
+    "lo mein",
+    "lomein",
+    "lo-mein"
+  ],
+  "egg_roll": [
+    "egg roll",
+    "eggroll"
+  ],
+  "spring_roll": [
+    "spring roll",
+    "fresh spring roll",
+    "vietnamese spring roll"
+  ],
+
+  "sushi_roll": [
+    "sushi roll",
+    "sushi",
+    "maki",
+    "california roll"
+  ],
+  "ramen": [
+    "ramen",
+    "ramen noodles",
+    "japanese ramen"
+  ],
+  "pad_thai": [
+    "pad thai",
+    "phad thai",
+    "thai noodles"
+  ],
+  "curry": [
+    "curry",
+    "indian curry",
+    "chicken curry"
+  ],
+  "tikka_masala": [
+    "tikka masala",
+    "chicken tikka masala",
+    "tikka"
+  ],
+
+  "hummus": [
+    "hummus",
+    "houmous",
+    "humous",
+    "chickpea dip"
+  ],
+  "falafel": [
+    "falafel",
+    "felafel"
+  ],
+
+  "ice_cream": [
+    "ice cream",
+    "icecream",
+    "vanilla ice cream"
+  ],
+  "chocolate": [
+    "chocolate",
+    "dark chocolate",
+    "milk chocolate"
+  ],
+  "cookie": [
+    "cookie",
+    "cookies",
+    "biscuit"
+  ],
+  "brownie": [
+    "brownie",
+    "chocolate brownie",
+    "fudge brownie"
+  ],
+  "cake": [
+    "cake",
+    "slice of cake",
+    "birthday cake"
+  ],
+  "donut": [
+    "donut",
+    "doughnut",
+    "glazed donut"
+  ],
+  "pancakes": [
+    "pancakes",
+    "pancake",
+    "hotcakes",
+    "flapjacks"
+  ],
+  "waffle": [
+    "waffle",
+    "waffles",
+    "belgian waffle"
+  ]
+}

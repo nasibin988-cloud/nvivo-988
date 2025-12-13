@@ -1,0 +1,1064 @@
+{
+  "vanilla_ice_cream": {
+    "name": "Vanilla Ice Cream",
+    "category": "dairy",
+    "subcategory": "frozen_desserts",
+    "commonNames": ["vanilla ice cream", "ice cream", "vanilla frozen dessert"],
+    "servingSize": {
+      "amount": 66,
+      "unit": "g",
+      "household": "1/2 cup"
+    },
+    "nutrition": {
+      "calories": 137,
+      "protein": 2.3,
+      "carbs": 15.6,
+      "fat": 7.3,
+      "fiber": 0.5,
+      "sugar": 14.0,
+      "addedSugar": 13.5,
+      "saturatedFat": 4.5,
+      "transFat": 0.2,
+      "cholesterol": 29,
+      "sodium": 53,
+      "potassium": 131,
+      "calcium": 84,
+      "iron": 0.06,
+      "magnesium": 9,
+      "phosphorus": 69,
+      "zinc": 0.5,
+      "vitaminA": 78,
+      "vitaminC": 0.3,
+      "vitaminD": 0.2,
+      "vitaminE": 0.3,
+      "vitaminK": 0.3,
+      "vitaminB6": 0.03,
+      "vitaminB12": 0.3,
+      "folate": 3,
+      "niacin": 0.1
+    },
+    "metrics": {
+      "glycemicIndex": 61,
+      "glycemicLoad": 8,
+      "inflammatoryScore": 2,
+      "antioxidantScore": 1,
+      "omega3": 0.02,
+      "omega6": 0.27,
+      "omega3to6Ratio": 0.074,
+      "waterContent": 61.0,
+      "energyDensity": 207,
+      "nutrientDensity": 18,
+      "satietyScore": 35,
+      "proteinQuality": 0.85,
+      "completeProtein": true,
+      "netCarbs": 15.1,
+      "sugarToFiberRatio": 28.0,
+      "pufa": 0.3,
+      "mufa": 2.1,
+      "transFatFree": false,
+      "processedLevel": "highly_processed",
+      "additivesPresent": true
+    },
+    "micronutrients": {
+      "selenium": 1.7,
+      "copper": 0.02,
+      "manganese": 0.01,
+      "chromium": 0.2,
+      "molybdenum": 3.0,
+      "iodine": 18,
+      "choline": 19,
+      "inositol": 5,
+      "betaine": 0.5
+    },
+    "benefits": [
+      "Provides calcium for bone health",
+      "Contains complete protein with all essential amino acids",
+      "Source of vitamin B12 for nerve function",
+      "Provides quick energy from carbohydrates",
+      "Contains vitamin A for vision health"
+    ],
+    "concerns": [
+      "High in added sugars (13.5g per serving)",
+      "High in saturated fat (4.5g per serving)",
+      "Contains trans fats from processing",
+      "Calorie-dense with low nutrient density",
+      "May trigger inflammation due to dairy and sugar content",
+      "Not suitable for lactose intolerance",
+      "High glycemic index may spike blood sugar",
+      "Contains additives and stabilizers"
+    ],
+    "allergens": ["milk"],
+    "dietaryFlags": {
+      "vegan": false,
+      "vegetarian": true,
+      "glutenFree": true,
+      "dairyFree": false,
+      "lowCarb": false,
+      "keto": false,
+      "paleo": false,
+      "whole30": false,
+      "lowFodmap": false,
+      "kosher": true,
+      "halal": true
+    },
+    "focusGrades": {
+      "weight_loss": {
+        "grade": "D",
+        "score": 25,
+        "reasoning": "High calorie density (207 kcal/100g), high added sugars (13.5g), low satiety score (35), and minimal fiber make this poor for weight loss"
+      },
+      "heart_health": {
+        "grade": "D",
+        "score": 28,
+        "reasoning": "Contains 4.5g saturated fat, 0.2g trans fats, 29mg cholesterol, and high added sugars which negatively impact cardiovascular health"
+      },
+      "diabetes": {
+        "grade": "D-",
+        "score": 20,
+        "reasoning": "High glycemic index (61), high added sugars (13.5g), poor sugar-to-fiber ratio (28:1), and 8 glycemic load make this very poor for blood sugar control"
+      },
+      "inflammation": {
+        "grade": "D",
+        "score": 25,
+        "reasoning": "Inflammatory score of 2, contains dairy (casein A1), high added sugars, trans fats, and poor omega-3:6 ratio (0.074) promote inflammation"
+      },
+      "gut_health": {
+        "grade": "D+",
+        "score": 32,
+        "reasoning": "Minimal fiber (0.5g), highly processed with additives, high sugar feeds bad bacteria, though does contain some probiotics from dairy culture"
+      },
+      "energy": {
+        "grade": "C-",
+        "score": 45,
+        "reasoning": "Provides quick energy from sugars but causes blood sugar crash, moderate B vitamins, low protein (2.3g) and fiber limit sustained energy"
+      },
+      "mental_health": {
+        "grade": "C-",
+        "score": 42,
+        "reasoning": "Contains tryptophan and B12 for neurotransmitter production, but high sugar and trans fats negatively impact mood stability and cognitive function"
+      },
+      "athletic_performance": {
+        "grade": "C",
+        "score": 50,
+        "reasoning": "Provides quick carbs (15.6g) and complete protein (2.3g) for recovery, calcium for muscle function, but high fat slows absorption and sugar causes crashes"
+      },
+      "longevity": {
+        "grade": "D",
+        "score": 22,
+        "reasoning": "High added sugars, trans fats, saturated fat, processed ingredients, and inflammatory properties contradict longevity principles; minimal antioxidants (score: 1)"
+      },
+      "immunity": {
+        "grade": "C-",
+        "score": 40,
+        "reasoning": "Contains vitamin A (78 mcg), vitamin B12, zinc, and selenium for immune function, but high sugar (14g) suppresses immunity and processed ingredients reduce benefits"
+      }
+    },
+    "tags": ["dessert", "frozen", "sweet", "dairy", "high_sugar", "processed", "comfort_food"],
+    "shelfLife": "frozen_6_months",
+    "storageInstructions": "Keep frozen at 0°F (-18°C) or below. Once opened, consume within 2-3 weeks for best quality.",
+    "preparationTips": [
+      "Allow to soften at room temperature for 5-10 minutes before scooping",
+      "Use as an occasional treat, not a regular dessert",
+      "Pair with fresh berries to add fiber and antioxidants",
+      "Consider smaller portion sizes (1/4 cup) to reduce sugar and calorie intake"
+    ],
+    "sourceInfo": {
+      "database": "USDA FoodData Central",
+      "fdcId": "173590",
+      "dataType": "SR Legacy",
+      "lastUpdated": "2025-01-15"
+    }
+  },
+  "almond_milk": {
+    "name": "Almond Milk (Unsweetened)",
+    "category": "dairy_alternatives",
+    "subcategory": "plant_milk",
+    "commonNames": ["almond milk", "almond beverage", "unsweetened almond milk"],
+    "servingSize": {
+      "amount": 240,
+      "unit": "ml",
+      "household": "1 cup"
+    },
+    "nutrition": {
+      "calories": 39,
+      "protein": 1.6,
+      "carbs": 1.5,
+      "fat": 3.0,
+      "fiber": 0.5,
+      "sugar": 0.0,
+      "addedSugar": 0.0,
+      "saturatedFat": 0.0,
+      "transFat": 0.0,
+      "cholesterol": 0,
+      "sodium": 189,
+      "potassium": 176,
+      "calcium": 451,
+      "iron": 0.7,
+      "magnesium": 19,
+      "phosphorus": 24,
+      "zinc": 0.2,
+      "vitaminA": 150,
+      "vitaminC": 0.0,
+      "vitaminD": 2.5,
+      "vitaminE": 7.5,
+      "vitaminK": 0.0,
+      "vitaminB6": 0.01,
+      "vitaminB12": 0.9,
+      "folate": 0,
+      "niacin": 0.1
+    },
+    "metrics": {
+      "glycemicIndex": 30,
+      "glycemicLoad": 0,
+      "inflammatoryScore": -2,
+      "antioxidantScore": 6,
+      "omega3": 0.0,
+      "omega6": 0.75,
+      "omega3to6Ratio": 0.0,
+      "waterContent": 95.8,
+      "energyDensity": 16,
+      "nutrientDensity": 72,
+      "satietyScore": 28,
+      "proteinQuality": 0.45,
+      "completeProtein": false,
+      "netCarbs": 1.0,
+      "sugarToFiberRatio": 0.0,
+      "pufa": 0.8,
+      "mufa": 2.1,
+      "transFatFree": true,
+      "processedLevel": "processed",
+      "additivesPresent": true
+    },
+    "micronutrients": {
+      "selenium": 0.2,
+      "copper": 0.02,
+      "manganese": 0.2,
+      "chromium": 0.0,
+      "molybdenum": 0.0,
+      "iodine": 0,
+      "choline": 5,
+      "inositol": 2,
+      "betaine": 0.1
+    },
+    "benefits": [
+      "Low in calories (39 per cup) - excellent for weight management",
+      "Fortified with calcium (451mg) matching dairy milk",
+      "Zero sugar and very low carbs (1.5g) - ideal for diabetes",
+      "Rich in vitamin E (7.5mg) - powerful antioxidant",
+      "Lactose-free and dairy-free - suitable for intolerance",
+      "Fortified with vitamin D (2.5mcg) and B12 (0.9mcg)",
+      "Anti-inflammatory properties from almonds",
+      "Low glycemic index (30) - minimal blood sugar impact",
+      "Heart-healthy fats (mostly monounsaturated)"
+    ],
+    "concerns": [
+      "Low protein (1.6g) compared to dairy milk (8g)",
+      "Not a complete protein - lacks several amino acids",
+      "Contains carrageenan or gums as stabilizers",
+      "Low satiety score (28) - not very filling",
+      "Fortification varies by brand - check labels",
+      "Higher sodium (189mg) than dairy milk",
+      "Not suitable as sole milk source for young children",
+      "Environmental concerns with almond water usage"
+    ],
+    "allergens": ["tree_nuts"],
+    "dietaryFlags": {
+      "vegan": true,
+      "vegetarian": true,
+      "glutenFree": true,
+      "dairyFree": true,
+      "lowCarb": true,
+      "keto": true,
+      "paleo": false,
+      "whole30": false,
+      "lowFodmap": true,
+      "kosher": true,
+      "halal": true
+    },
+    "focusGrades": {
+      "weight_loss": {
+        "grade": "A",
+        "score": 92,
+        "reasoning": "Very low calorie density (16 kcal/100ml), minimal carbs (1.5g), zero sugar, high nutrient density (72), excellent for creating calorie deficit"
+      },
+      "heart_health": {
+        "grade": "A-",
+        "score": 88,
+        "reasoning": "Zero cholesterol and saturated fat, rich in heart-healthy MUFAs (2.1g), vitamin E antioxidant (7.5mg), calcium supports blood pressure, low sodium option available"
+      },
+      "diabetes": {
+        "grade": "A+",
+        "score": 97,
+        "reasoning": "Extremely low glycemic index (30), zero sugar, minimal carbs (1.5g), GL of 0, excellent for blood sugar control, low net carbs (1g)"
+      },
+      "inflammation": {
+        "grade": "A-",
+        "score": 87,
+        "reasoning": "Anti-inflammatory score (-2), vitamin E is powerful anti-inflammatory (7.5mg), dairy-free eliminates casein concerns, almond polyphenols reduce inflammation"
+      },
+      "gut_health": {
+        "grade": "C+",
+        "score": 55,
+        "reasoning": "Low fiber (0.5g), contains stabilizers/gums that may affect gut, but lactose-free benefits those with intolerance, prebiotic potential from almond compounds"
+      },
+      "energy": {
+        "grade": "C",
+        "score": 52,
+        "reasoning": "Low calories (39) and protein (1.6g) provide minimal sustained energy, fortified B12 (0.9mcg) supports energy metabolism, stable blood sugar from low GI"
+      },
+      "mental_health": {
+        "grade": "B",
+        "score": 75,
+        "reasoning": "Vitamin E (7.5mg) protects brain cells, fortified B12 (0.9mcg) supports neurotransmitters, magnesium (19mg) aids mood, low sugar prevents crashes"
+      },
+      "athletic_performance": {
+        "grade": "C-",
+        "score": 45,
+        "reasoning": "Low protein (1.6g) and calories (39) inadequate for muscle recovery, calcium (451mg) supports muscle contraction, but lacks carbs for glycogen replenishment"
+      },
+      "longevity": {
+        "grade": "A-",
+        "score": 86,
+        "reasoning": "High vitamin E antioxidant (7.5mg), anti-inflammatory properties, zero added sugars, heart-healthy fats, aligns with longevity diet principles, antioxidant score of 6"
+      },
+      "immunity": {
+        "grade": "B+",
+        "score": 80,
+        "reasoning": "Excellent vitamin E (7.5mg) - key immune antioxidant, fortified vitamin D (2.5mcg) and B12 (0.9mcg), zinc and selenium present but low, anti-inflammatory benefits"
+      }
+    },
+    "tags": ["dairy_alternative", "plant_based", "vegan", "low_carb", "keto_friendly", "fortified", "lactose_free"],
+    "shelfLife": "refrigerated_7_10_days_opened",
+    "storageInstructions": "Refrigerate at 35-40°F (2-4°C). Shake well before each use. Once opened, consume within 7-10 days. Unopened shelf-stable versions last 1 year.",
+    "preparationTips": [
+      "Shake vigorously before use as almond solids settle",
+      "Use in smoothies, coffee, cereal, or cooking",
+      "Choose unsweetened versions to avoid added sugars",
+      "Look for brands fortified with calcium, vitamin D, and B12",
+      "Avoid brands with carrageenan if digestive sensitive",
+      "Can be used 1:1 as dairy milk replacement in most recipes",
+      "Combine with protein powder to boost protein content"
+    ],
+    "sourceInfo": {
+      "database": "USDA FoodData Central",
+      "fdcId": "1097540",
+      "dataType": "Branded",
+      "lastUpdated": "2025-01-15"
+    }
+  },
+  "oat_milk": {
+    "name": "Oat Milk (Unsweetened)",
+    "category": "dairy_alternatives",
+    "subcategory": "plant_milk",
+    "commonNames": ["oat milk", "oat beverage", "unsweetened oat milk"],
+    "servingSize": {
+      "amount": 240,
+      "unit": "ml",
+      "household": "1 cup"
+    },
+    "nutrition": {
+      "calories": 120,
+      "protein": 3.0,
+      "carbs": 16.0,
+      "fat": 5.0,
+      "fiber": 2.0,
+      "sugar": 7.0,
+      "addedSugar": 0.0,
+      "saturatedFat": 0.5,
+      "transFat": 0.0,
+      "cholesterol": 0,
+      "sodium": 100,
+      "potassium": 389,
+      "calcium": 350,
+      "iron": 0.3,
+      "magnesium": 24,
+      "phosphorus": 78,
+      "zinc": 0.3,
+      "vitaminA": 150,
+      "vitaminC": 0.0,
+      "vitaminD": 2.0,
+      "vitaminE": 0.5,
+      "vitaminK": 0.0,
+      "vitaminB6": 0.02,
+      "vitaminB12": 1.2,
+      "folate": 5,
+      "niacin": 0.4
+    },
+    "metrics": {
+      "glycemicIndex": 69,
+      "glycemicLoad": 11,
+      "inflammatoryScore": -1,
+      "antioxidantScore": 4,
+      "omega3": 0.0,
+      "omega6": 1.2,
+      "omega3to6Ratio": 0.0,
+      "waterContent": 88.0,
+      "energyDensity": 50,
+      "nutrientDensity": 68,
+      "satietyScore": 52,
+      "proteinQuality": 0.55,
+      "completeProtein": false,
+      "netCarbs": 14.0,
+      "sugarToFiberRatio": 3.5,
+      "pufa": 1.3,
+      "mufa": 1.5,
+      "transFatFree": true,
+      "processedLevel": "processed",
+      "additivesPresent": true
+    },
+    "micronutrients": {
+      "selenium": 0.8,
+      "copper": 0.05,
+      "manganese": 0.3,
+      "chromium": 0.5,
+      "molybdenum": 2.0,
+      "iodine": 0,
+      "choline": 8,
+      "inositol": 4,
+      "betaine": 0.3
+    },
+    "benefits": [
+      "Higher fiber (2g) than most plant milks - supports gut health",
+      "Creamy texture from beta-glucans - excellent coffee/cooking",
+      "Fortified with calcium (350mg) and vitamin D (2mcg)",
+      "Contains naturally occurring sugars from oats, not added",
+      "Moderate protein (3g) - higher than almond milk",
+      "Beta-glucans lower LDL cholesterol",
+      "Fortified with B12 (1.2mcg) - supports nerve health",
+      "Lactose-free and dairy-free",
+      "More sustainable than almond milk (less water use)"
+    ],
+    "concerns": [
+      "Higher carbs (16g) and calories (120) than almond milk",
+      "High glycemic index (69) may spike blood sugar",
+      "Natural sugars from oats (7g) - not ideal for low-carb diets",
+      "Not suitable for celiac unless certified gluten-free",
+      "Contains oils (canola/rapeseed) in some brands",
+      "Lower in protein (3g) than dairy milk (8g)",
+      "Not a complete protein source",
+      "Processed with enzymes that break down oat starches",
+      "Higher glycemic load (11) than other plant milks"
+    ],
+    "allergens": ["gluten"],
+    "dietaryFlags": {
+      "vegan": true,
+      "vegetarian": true,
+      "glutenFree": false,
+      "dairyFree": true,
+      "lowCarb": false,
+      "keto": false,
+      "paleo": false,
+      "whole30": false,
+      "lowFodmap": false,
+      "kosher": true,
+      "halal": true
+    },
+    "focusGrades": {
+      "weight_loss": {
+        "grade": "C+",
+        "score": 58,
+        "reasoning": "Moderate calorie density (50 kcal/100ml), higher carbs (16g) and natural sugars (7g), but good fiber (2g) and satiety score (52) help with fullness"
+      },
+      "heart_health": {
+        "grade": "A-",
+        "score": 85,
+        "reasoning": "Beta-glucans clinically proven to lower LDL cholesterol, zero cholesterol, minimal saturated fat (0.5g), fortified calcium and vitamin D support heart health"
+      },
+      "diabetes": {
+        "grade": "C-",
+        "score": 42,
+        "reasoning": "High glycemic index (69) and glycemic load (11), higher carbs (16g) and natural sugars (7g), but fiber (2g) helps moderate blood sugar response"
+      },
+      "inflammation": {
+        "grade": "B+",
+        "score": 78,
+        "reasoning": "Anti-inflammatory score (-1), oat beta-glucans reduce inflammation, dairy-free, antioxidant avenanthramides in oats, but some brands use inflammatory oils"
+      },
+      "gut_health": {
+        "grade": "A-",
+        "score": 85,
+        "reasoning": "Beta-glucan fiber (2g) acts as prebiotic, feeds beneficial gut bacteria, supports bowel regularity, dairy-free benefits lactose intolerance, though contains stabilizers"
+      },
+      "energy": {
+        "grade": "B-",
+        "score": 72,
+        "reasoning": "Moderate calories (120) and carbs (16g) provide sustained energy, fiber (2g) slows digestion, fortified B vitamins support metabolism, but high GI may cause fluctuations"
+      },
+      "mental_health": {
+        "grade": "B",
+        "score": 75,
+        "reasoning": "Beta-glucans improve gut-brain axis, fortified B12 (1.2mcg) supports neurotransmitters, magnesium (24mg) aids mood, but blood sugar spikes from high GI may affect mood"
+      },
+      "athletic_performance": {
+        "grade": "B",
+        "score": 76,
+        "reasoning": "Good carbs (16g) for glycogen replenishment, moderate protein (3g), beta-glucans improve recovery, calcium (350mg) supports muscle function, creamy texture aids hydration"
+      },
+      "longevity": {
+        "grade": "B+",
+        "score": 80,
+        "reasoning": "Beta-glucans linked to longevity, heart health benefits, anti-inflammatory avenanthramides, fortified nutrients, zero cholesterol, but higher GI and processing reduce score"
+      },
+      "immunity": {
+        "grade": "B+",
+        "score": 78,
+        "reasoning": "Beta-glucans enhance immune function, fortified vitamin D (2mcg) and B12 (1.2mcg), zinc and selenium support immunity, oat antioxidants fight oxidative stress"
+      }
+    },
+    "tags": ["dairy_alternative", "plant_based", "vegan", "fiber_rich", "fortified", "lactose_free", "creamy"],
+    "shelfLife": "refrigerated_7_10_days_opened",
+    "storageInstructions": "Refrigerate at 35-40°F (2-4°C). Shake well before each use. Once opened, consume within 7-10 days. Unopened shelf-stable versions last 1 year.",
+    "preparationTips": [
+      "Shake well before use as oat solids settle",
+      "Excellent for coffee, lattes, and cappuccinos - froths well",
+      "Use in baking to add moisture and subtle sweetness",
+      "Choose certified gluten-free versions for celiac disease",
+      "Avoid brands with added oils if seeking cleanest option",
+      "Works well in overnight oats and smoothies",
+      "Can be used 1:1 as dairy milk replacement"
+    ],
+    "sourceInfo": {
+      "database": "USDA FoodData Central",
+      "fdcId": "1999632",
+      "dataType": "Branded",
+      "lastUpdated": "2025-01-15"
+    }
+  },
+  "soy_milk": {
+    "name": "Soy Milk (Unsweetened)",
+    "category": "dairy_alternatives",
+    "subcategory": "plant_milk",
+    "commonNames": ["soy milk", "soy beverage", "soya milk", "unsweetened soy milk"],
+    "servingSize": {
+      "amount": 240,
+      "unit": "ml",
+      "household": "1 cup"
+    },
+    "nutrition": {
+      "calories": 80,
+      "protein": 7.0,
+      "carbs": 4.0,
+      "fat": 4.0,
+      "fiber": 1.0,
+      "sugar": 1.0,
+      "addedSugar": 0.0,
+      "saturatedFat": 0.5,
+      "transFat": 0.0,
+      "cholesterol": 0,
+      "sodium": 90,
+      "potassium": 298,
+      "calcium": 301,
+      "iron": 1.1,
+      "magnesium": 36,
+      "phosphorus": 103,
+      "zinc": 0.5,
+      "vitaminA": 150,
+      "vitaminC": 0.0,
+      "vitaminD": 2.5,
+      "vitaminE": 0.3,
+      "vitaminK": 3.0,
+      "vitaminB6": 0.08,
+      "vitaminB12": 1.2,
+      "folate": 18,
+      "niacin": 0.5
+    },
+    "metrics": {
+      "glycemicIndex": 44,
+      "glycemicLoad": 2,
+      "inflammatoryScore": -1,
+      "antioxidantScore": 7,
+      "omega3": 0.4,
+      "omega6": 2.0,
+      "omega3to6Ratio": 0.2,
+      "waterContent": 89.5,
+      "energyDensity": 33,
+      "nutrientDensity": 82,
+      "satietyScore": 68,
+      "proteinQuality": 0.91,
+      "completeProtein": true,
+      "netCarbs": 3.0,
+      "sugarToFiberRatio": 1.0,
+      "pufa": 2.4,
+      "mufa": 0.8,
+      "transFatFree": true,
+      "processedLevel": "processed",
+      "additivesPresent": true
+    },
+    "micronutrients": {
+      "selenium": 1.8,
+      "copper": 0.12,
+      "manganese": 0.24,
+      "chromium": 0.8,
+      "molybdenum": 4.0,
+      "iodine": 0,
+      "choline": 23,
+      "inositol": 12,
+      "betaine": 0.5
+    },
+    "benefits": [
+      "Complete protein (7g) with all essential amino acids - matches dairy milk",
+      "Highest protein quality (0.91) among plant milks",
+      "Contains isoflavones (phytoestrogens) for hormonal health",
+      "Low glycemic index (44) and glycemic load (2) - excellent for blood sugar",
+      "Fortified with calcium (301mg), vitamin D (2.5mcg), and B12 (1.2mcg)",
+      "Rich in omega-3 ALA (0.4g) - supports heart and brain health",
+      "High antioxidant score (7) from isoflavones",
+      "Lactose-free and cholesterol-free",
+      "High satiety score (68) - most filling plant milk"
+    ],
+    "concerns": [
+      "Contains phytoestrogens - controversial for hormone-sensitive conditions",
+      "May interfere with thyroid function in iodine-deficient individuals",
+      "Potential allergen - soy is one of top 8 allergens",
+      "Most soy is GMO (choose organic if concerned)",
+      "Contains antinutrients (phytates) that reduce mineral absorption",
+      "Poor omega-3:6 ratio (0.2) compared to ideal",
+      "Not suitable for soy allergy",
+      "May affect medication absorption (thyroid, blood thinners)"
+    ],
+    "allergens": ["soy"],
+    "dietaryFlags": {
+      "vegan": true,
+      "vegetarian": true,
+      "glutenFree": true,
+      "dairyFree": true,
+      "lowCarb": true,
+      "keto": false,
+      "paleo": false,
+      "whole30": false,
+      "lowFodmap": false,
+      "kosher": true,
+      "halal": true
+    },
+    "focusGrades": {
+      "weight_loss": {
+        "grade": "A-",
+        "score": 88,
+        "reasoning": "Low calorie density (33 kcal/100ml), high protein (7g) boosts satiety (score: 68), low carbs (4g), minimal sugar (1g), excellent nutrient density (82)"
+      },
+      "heart_health": {
+        "grade": "A",
+        "score": 90,
+        "reasoning": "Isoflavones lower LDL cholesterol, zero cholesterol, minimal saturated fat (0.5g), omega-3 ALA (0.4g) supports cardiovascular health, fortified calcium and vitamin D"
+      },
+      "diabetes": {
+        "grade": "A",
+        "score": 93,
+        "reasoning": "Low glycemic index (44), very low glycemic load (2), minimal carbs (4g) and sugar (1g), high protein (7g) stabilizes blood sugar, excellent for diabetics"
+      },
+      "inflammation": {
+        "grade": "A-",
+        "score": 88,
+        "reasoning": "Anti-inflammatory score (-1), isoflavone antioxidants (score: 7) reduce inflammation, omega-3 ALA (0.4g), dairy-free, but omega-3:6 ratio (0.2) could be better"
+      },
+      "gut_health": {
+        "grade": "B-",
+        "score": 70,
+        "reasoning": "Moderate fiber (1g), contains oligosaccharides that feed probiotics, dairy-free benefits lactose intolerance, but antinutrients and stabilizers may affect gut"
+      },
+      "energy": {
+        "grade": "B+",
+        "score": 82,
+        "reasoning": "High protein (7g) provides sustained energy, moderate calories (80), fortified B vitamins (B12: 1.2mcg) support metabolism, low GI prevents crashes"
+      },
+      "mental_health": {
+        "grade": "A-",
+        "score": 85,
+        "reasoning": "Isoflavones support cognitive function, omega-3 ALA (0.4g) for brain health, high magnesium (36mg) aids mood, B12 (1.2mcg) supports neurotransmitters, choline (23mg) for memory"
+      },
+      "athletic_performance": {
+        "grade": "A-",
+        "score": 87,
+        "reasoning": "Complete protein (7g, quality: 0.91) supports muscle recovery, calcium (301mg) for muscle contraction, magnesium (36mg) prevents cramps, isoflavones reduce exercise oxidative stress"
+      },
+      "longevity": {
+        "grade": "A",
+        "score": 91,
+        "reasoning": "Isoflavones linked to longevity in Asian populations, high antioxidant score (7), heart health benefits, complete protein, anti-inflammatory, aligns with Blue Zone diets"
+      },
+      "immunity": {
+        "grade": "A-",
+        "score": 86,
+        "reasoning": "Isoflavone antioxidants (score: 7) boost immunity, fortified vitamin D (2.5mcg) and B12 (1.2mcg), zinc (0.5mg) and selenium (1.8mcg) support immune function, anti-inflammatory properties"
+      }
+    },
+    "tags": ["dairy_alternative", "plant_based", "vegan", "high_protein", "complete_protein", "fortified", "lactose_free", "isoflavones"],
+    "shelfLife": "refrigerated_7_10_days_opened",
+    "storageInstructions": "Refrigerate at 35-40°F (2-4°C). Shake well before each use. Once opened, consume within 7-10 days. Unopened shelf-stable versions last 1 year.",
+    "preparationTips": [
+      "Shake well before use as soy solids settle",
+      "Choose organic to avoid GMO soybeans",
+      "Excellent protein source for smoothies and protein shakes",
+      "Use in baking as 1:1 dairy milk replacement",
+      "Look for fortified versions with calcium, vitamin D, and B12",
+      "Allow 2-4 hours between soy milk and thyroid medication",
+      "Pair with iodine-rich foods if consuming regularly",
+      "Choose unsweetened to avoid added sugars"
+    ],
+    "sourceInfo": {
+      "database": "USDA FoodData Central",
+      "fdcId": "1097559",
+      "dataType": "Branded",
+      "lastUpdated": "2025-01-15"
+    }
+  },
+  "milk_chocolate": {
+    "name": "Milk Chocolate",
+    "category": "sweets",
+    "subcategory": "chocolate",
+    "commonNames": ["milk chocolate", "chocolate bar", "candy bar"],
+    "servingSize": {
+      "amount": 44,
+      "unit": "g",
+      "household": "1.5 oz bar"
+    },
+    "nutrition": {
+      "calories": 235,
+      "protein": 3.4,
+      "carbs": 26.0,
+      "fat": 13.0,
+      "fiber": 1.5,
+      "sugar": 23.8,
+      "addedSugar": 23.0,
+      "saturatedFat": 8.1,
+      "transFat": 0.1,
+      "cholesterol": 10,
+      "sodium": 35,
+      "potassium": 200,
+      "calcium": 84,
+      "iron": 0.9,
+      "magnesium": 28,
+      "phosphorus": 98,
+      "zinc": 0.7,
+      "vitaminA": 7,
+      "vitaminC": 0.0,
+      "vitaminD": 0.1,
+      "vitaminE": 0.3,
+      "vitaminK": 2.3,
+      "vitaminB6": 0.03,
+      "vitaminB12": 0.3,
+      "folate": 4,
+      "niacin": 0.3
+    },
+    "metrics": {
+      "glycemicIndex": 43,
+      "glycemicLoad": 11,
+      "inflammatoryScore": 3,
+      "antioxidantScore": 3,
+      "omega3": 0.01,
+      "omega6": 0.42,
+      "omega3to6Ratio": 0.024,
+      "waterContent": 1.3,
+      "energyDensity": 534,
+      "nutrientDensity": 22,
+      "satietyScore": 45,
+      "proteinQuality": 0.75,
+      "completeProtein": false,
+      "netCarbs": 24.5,
+      "sugarToFiberRatio": 15.9,
+      "pufa": 0.5,
+      "mufa": 4.2,
+      "transFatFree": false,
+      "processedLevel": "highly_processed",
+      "additivesPresent": true
+    },
+    "micronutrients": {
+      "selenium": 2.4,
+      "copper": 0.23,
+      "manganese": 0.19,
+      "chromium": 1.2,
+      "molybdenum": 5.0,
+      "iodine": 8,
+      "choline": 18,
+      "inositol": 8,
+      "betaine": 0.2
+    },
+    "benefits": [
+      "Contains cocoa flavonoids with antioxidant properties",
+      "Moderate glycemic index (43) compared to other candies",
+      "Provides magnesium (28mg) for muscle and nerve function",
+      "Contains theobromine for mood enhancement",
+      "Calcium (84mg) supports bone health",
+      "Small amounts of iron (0.9mg) and zinc (0.7mg)",
+      "Phenylethylamine may boost mood and focus"
+    ],
+    "concerns": [
+      "Very high in added sugars (23g per serving)",
+      "High saturated fat (8.1g) - over 40% of daily limit",
+      "Extremely calorie-dense (534 kcal/100g) - easy to overconsume",
+      "High sugar-to-fiber ratio (15.9:1) causes blood sugar spikes",
+      "Contains trans fats from processing",
+      "Inflammatory score of 3 - promotes inflammation",
+      "Low in cocoa (10-20%) - minimal health benefits",
+      "May contain soy lecithin (allergen)",
+      "High glycemic load (11) despite moderate GI",
+      "Highly processed with emulsifiers and additives",
+      "Poor omega-3:6 ratio (0.024)",
+      "Not nutrient-dense (score: 22)"
+    ],
+    "allergens": ["milk", "soy"],
+    "dietaryFlags": {
+      "vegan": false,
+      "vegetarian": true,
+      "glutenFree": true,
+      "dairyFree": false,
+      "lowCarb": false,
+      "keto": false,
+      "paleo": false,
+      "whole30": false,
+      "lowFodmap": false,
+      "kosher": true,
+      "halal": true
+    },
+    "focusGrades": {
+      "weight_loss": {
+        "grade": "F",
+        "score": 12,
+        "reasoning": "Extremely high calorie density (534 kcal/100g), high added sugars (23g), low satiety (45), poor nutrient density (22), very easy to overconsume"
+      },
+      "heart_health": {
+        "grade": "D-",
+        "score": 25,
+        "reasoning": "High saturated fat (8.1g = 41% DV), contains trans fats (0.1g), high added sugars (23g), cholesterol (10mg), inflammatory (score: 3), despite cocoa flavonoids"
+      },
+      "diabetes": {
+        "grade": "D",
+        "score": 28,
+        "reasoning": "High added sugars (23g), high glycemic load (11), poor sugar-to-fiber ratio (15.9:1), net carbs (24.5g), though moderate GI (43) prevents complete failure"
+      },
+      "inflammation": {
+        "grade": "D",
+        "score": 30,
+        "reasoning": "Inflammatory score of 3, high added sugars (23g), saturated fat (8.1g), trans fats, poor omega-3:6 ratio (0.024), though cocoa flavonoids provide some anti-inflammatory benefit"
+      },
+      "gut_health": {
+        "grade": "D+",
+        "score": 35,
+        "reasoning": "Minimal fiber (1.5g), high sugar (23.8g) feeds bad bacteria, dairy may cause issues, highly processed with emulsifiers, though cocoa polyphenols may benefit gut microbiome"
+      },
+      "energy": {
+        "grade": "C-",
+        "score": 40,
+        "reasoning": "Provides quick energy from sugars (23.8g) and calories (235), but causes blood sugar crash, minimal sustained energy from low protein (3.4g) and fiber (1.5g)"
+      },
+      "mental_health": {
+        "grade": "C",
+        "score": 52,
+        "reasoning": "Theobromine and phenylethylamine boost mood temporarily, magnesium (28mg) supports brain function, but high sugar causes mood crashes and inflammation affects mental health"
+      },
+      "athletic_performance": {
+        "grade": "C-",
+        "score": 45,
+        "reasoning": "Quick carbs (26g) for energy, minimal protein (3.4g), magnesium (28mg) prevents cramps, flavonoids may improve blood flow, but high fat slows digestion and sugar causes crashes"
+      },
+      "longevity": {
+        "grade": "D-",
+        "score": 18,
+        "reasoning": "High added sugars, saturated fat, trans fats, inflammatory properties contradict longevity principles, minimal cocoa (10-20%) provides insufficient antioxidants (score: 3)"
+      },
+      "immunity": {
+        "grade": "D+",
+        "score": 38,
+        "reasoning": "Cocoa flavonoids and antioxidants (score: 3) provide minimal immune support, zinc (0.7mg) and selenium (2.4mcg) present, but high sugar (23.8g) suppresses immunity"
+      }
+    },
+    "tags": ["dessert", "candy", "sweet", "high_sugar", "processed", "comfort_food", "treat"],
+    "shelfLife": "pantry_12_months",
+    "storageInstructions": "Store in a cool, dry place at 60-70°F (15-21°C). Avoid refrigeration which causes 'bloom' (white coating). Keep away from strong odors. Unopened bars last 12+ months.",
+    "preparationTips": [
+      "Consume as an occasional treat, not daily",
+      "Limit portion to 1-2 squares (10-20g) instead of full bar",
+      "Pair with nuts or fruit to add fiber and slow sugar absorption",
+      "Choose dark chocolate (70%+ cocoa) for more antioxidants and less sugar",
+      "Eat mindfully to reduce overconsumption",
+      "Avoid before bed - caffeine and theobromine may disrupt sleep"
+    ],
+    "sourceInfo": {
+      "database": "USDA FoodData Central",
+      "fdcId": "170272",
+      "dataType": "SR Legacy",
+      "lastUpdated": "2025-01-15"
+    }
+  },
+  "whey_protein": {
+    "name": "Whey Protein Powder (Isolate)",
+    "category": "supplements",
+    "subcategory": "protein_powder",
+    "commonNames": ["whey protein", "whey isolate", "protein powder", "whey supplement"],
+    "servingSize": {
+      "amount": 30,
+      "unit": "g",
+      "household": "1 scoop"
+    },
+    "nutrition": {
+      "calories": 110,
+      "protein": 25.0,
+      "carbs": 1.0,
+      "fat": 0.5,
+      "fiber": 0.0,
+      "sugar": 1.0,
+      "addedSugar": 0.0,
+      "saturatedFat": 0.3,
+      "transFat": 0.0,
+      "cholesterol": 10,
+      "sodium": 160,
+      "potassium": 140,
+      "calcium": 100,
+      "iron": 0.4,
+      "magnesium": 15,
+      "phosphorus": 70,
+      "zinc": 1.2,
+      "vitaminA": 0,
+      "vitaminC": 0.0,
+      "vitaminD": 0.0,
+      "vitaminE": 0.1,
+      "vitaminK": 0.0,
+      "vitaminB6": 0.15,
+      "vitaminB12": 0.6,
+      "folate": 2,
+      "niacin": 0.8
+    },
+    "metrics": {
+      "glycemicIndex": 15,
+      "glycemicLoad": 0,
+      "inflammatoryScore": 1,
+      "antioxidantScore": 2,
+      "omega3": 0.0,
+      "omega6": 0.02,
+      "omega3to6Ratio": 0.0,
+      "waterContent": 4.5,
+      "energyDensity": 367,
+      "nutrientDensity": 88,
+      "satietyScore": 92,
+      "proteinQuality": 1.0,
+      "completeProtein": true,
+      "netCarbs": 1.0,
+      "sugarToFiberRatio": 0.0,
+      "pufa": 0.02,
+      "mufa": 0.15,
+      "transFatFree": true,
+      "processedLevel": "highly_processed",
+      "additivesPresent": true
+    },
+    "micronutrients": {
+      "selenium": 3.5,
+      "copper": 0.03,
+      "manganese": 0.02,
+      "chromium": 2.0,
+      "molybdenum": 4.0,
+      "iodine": 12,
+      "choline": 35,
+      "inositol": 15,
+      "betaine": 1.0
+    },
+    "benefits": [
+      "Highest protein quality (1.0 PDCAAS) - complete with all essential amino acids",
+      "Very high protein (25g) for muscle building and recovery",
+      "Extremely high satiety score (92) - suppresses appetite",
+      "Low carbs (1g) and fat (0.5g) - ideal for lean muscle gain",
+      "Fast-absorbing - ideal post-workout for muscle protein synthesis",
+      "Rich in BCAAs (leucine, isoleucine, valine) for muscle recovery",
+      "Very low glycemic index (15) and glycemic load (0)",
+      "Contains immunoglobulins and lactoferrin for immune support",
+      "High in choline (35mg) for liver and brain health",
+      "Easily digestible - lactose removed in isolate form"
+    ],
+    "concerns": [
+      "Highly processed supplement, not whole food",
+      "May contain artificial sweeteners (sucralose, acesulfame-K)",
+      "Higher sodium (160mg) than whole food proteins",
+      "Not suitable for dairy allergy or strict vegans",
+      "Quality varies widely by brand - may contain heavy metals",
+      "Can cause digestive issues (bloating, gas) in sensitive individuals",
+      "Minimal fiber (0g) - not a complete meal replacement",
+      "May contain soy lecithin (allergen)",
+      "Expensive compared to whole food protein sources",
+      "Not certified organic in most cases"
+    ],
+    "allergens": ["milk"],
+    "dietaryFlags": {
+      "vegan": false,
+      "vegetarian": true,
+      "glutenFree": true,
+      "dairyFree": false,
+      "lowCarb": true,
+      "keto": true,
+      "paleo": false,
+      "whole30": false,
+      "lowFodmap": true,
+      "kosher": true,
+      "halal": true
+    },
+    "focusGrades": {
+      "weight_loss": {
+        "grade": "A+",
+        "score": 96,
+        "reasoning": "Very high satiety (92), high protein (25g) boosts metabolism and preserves lean mass, very low carbs (1g) and fat (0.5g), excellent nutrient density (88), supports calorie deficit"
+      },
+      "heart_health": {
+        "grade": "B+",
+        "score": 82,
+        "reasoning": "Low cholesterol (10mg), minimal saturated fat (0.3g), whey peptides may lower blood pressure, supports healthy weight, but higher sodium (160mg) and processing reduce score"
+      },
+      "diabetes": {
+        "grade": "A+",
+        "score": 95,
+        "reasoning": "Very low glycemic index (15), GL of 0, minimal carbs (1g) and sugar (1g), high protein (25g) stabilizes blood sugar, whey improves insulin sensitivity"
+      },
+      "inflammation": {
+        "grade": "B",
+        "score": 75,
+        "reasoning": "Low inflammatory score (1), whey peptides have anti-inflammatory properties, lactoferrin reduces inflammation, but dairy source and processing prevent higher grade"
+      },
+      "gut_health": {
+        "grade": "C+",
+        "score": 62,
+        "reasoning": "Zero fiber, lactose removed (isolate) reduces digestive issues, contains immunoglobulins that support gut immunity, but artificial sweeteners may affect microbiome negatively"
+      },
+      "energy": {
+        "grade": "A-",
+        "score": 88,
+        "reasoning": "High protein (25g) provides sustained energy, supports muscle recovery reducing fatigue, B vitamins (B6: 0.15mg, B12: 0.6mcg) boost metabolism, low carbs prevent crashes"
+      },
+      "mental_health": {
+        "grade": "B+",
+        "score": 80,
+        "reasoning": "High in tryptophan precursor for serotonin production, choline (35mg) supports brain function, BCAAs reduce mental fatigue, B vitamins support neurotransmitters"
+      },
+      "athletic_performance": {
+        "grade": "A+",
+        "score": 98,
+        "reasoning": "Ideal protein (25g, quality: 1.0) for muscle recovery, high BCAAs for protein synthesis, fast absorption post-workout, supports lean mass gain, reduces muscle soreness"
+      },
+      "longevity": {
+        "grade": "B",
+        "score": 78,
+        "reasoning": "High protein supports healthy aging and muscle preservation, whey peptides linked to longevity, supports metabolic health, but highly processed nature and lack of whole food nutrients reduce score"
+      },
+      "immunity": {
+        "grade": "A-",
+        "score": 87,
+        "reasoning": "Contains immunoglobulins and lactoferrin that boost immunity, glutathione precursors (cysteine) are powerful antioxidants, zinc (1.2mg) and selenium (3.5mcg) support immune function"
+      }
+    },
+    "tags": ["supplement", "protein", "post_workout", "muscle_building", "low_carb", "keto_friendly", "high_protein", "fast_absorbing"],
+    "shelfLife": "pantry_24_months",
+    "storageInstructions": "Store in a cool, dry place away from direct sunlight. Keep container tightly sealed to prevent moisture. Unopened lasts 24 months. Once opened, use within 6-12 months.",
+    "preparationTips": [
+      "Mix 1 scoop (30g) with 6-8 oz water, milk, or plant milk",
+      "Blend with fruit and ice for a protein smoothie",
+      "Consume within 30 minutes post-workout for optimal recovery",
+      "Can be used in baking (protein pancakes, muffins)",
+      "Choose unflavored version to avoid artificial sweeteners",
+      "Look for third-party tested brands (NSF, Informed-Sport)",
+      "Avoid if lactose intolerant - choose isolate over concentrate",
+      "Don't rely on as sole protein source - eat whole foods too"
+    ],
+    "sourceInfo": {
+      "database": "USDA FoodData Central",
+      "fdcId": "1104450",
+      "dataType": "Branded",
+      "lastUpdated": "2025-01-15"
+    }
+  }
+}

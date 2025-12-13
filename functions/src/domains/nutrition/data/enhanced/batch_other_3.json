@@ -1,0 +1,514 @@
+{
+  "nachos": {
+    "foodId": "nachos",
+    "name": "Nachos with Cheese",
+    "category": "snacks",
+    "subcategory": "chips_and_dips",
+    "emoji": "🧀",
+    "servingSize": {
+      "amount": 170,
+      "unit": "g",
+      "household": "1 serving"
+    },
+    "nutrition": {
+      "calories": 368,
+      "protein": 11.2,
+      "carbs": 36.4,
+      "fiber": 3.2,
+      "sugar": 2.1,
+      "fat": 19.6,
+      "saturatedFat": 7.8,
+      "sodium": 816,
+      "potassium": 195,
+      "cholesterol": 30,
+      "vitaminA": 412,
+      "vitaminC": 1.2,
+      "calcium": 272,
+      "iron": 1.4,
+      "magnesium": 45,
+      "zinc": 1.8
+    },
+    "healthScore": 42,
+    "tags": [
+      "high-sodium",
+      "high-fat",
+      "processed",
+      "vegetarian",
+      "comfort-food"
+    ],
+    "allergens": [
+      "dairy",
+      "corn"
+    ],
+    "glycemicIndex": 68,
+    "glycemicLoad": 25,
+    "inflammatoryScore": 6,
+    "focusGrades": {
+      "heart_health": "D",
+      "diabetes": "D",
+      "weight_loss": "D",
+      "gut_health": "C",
+      "energy": "C",
+      "brain_health": "D",
+      "immunity": "C",
+      "longevity": "D",
+      "athletic_performance": "C",
+      "mental_wellness": "C"
+    },
+    "benefits": [
+      "Provides calcium for bone health",
+      "Contains some protein from cheese",
+      "Offers quick energy from carbohydrates"
+    ],
+    "concerns": [
+      "Very high in sodium (35% DV)",
+      "High in saturated fat",
+      "Highly processed ingredients",
+      "Can cause blood sugar spikes",
+      "Low in vegetables and micronutrients"
+    ],
+    "bestTimeToEat": [
+      "occasional-treat",
+      "social-gatherings"
+    ],
+    "pairings": [
+      "salsa",
+      "guacamole",
+      "black_beans",
+      "bell_peppers",
+      "tomatoes"
+    ]
+  },
+  "quesadilla": {
+    "foodId": "quesadilla",
+    "name": "Cheese Quesadilla",
+    "category": "grains",
+    "subcategory": "mexican",
+    "emoji": "🫓",
+    "servingSize": {
+      "amount": 142,
+      "unit": "g",
+      "household": "1 quesadilla"
+    },
+    "nutrition": {
+      "calories": 326,
+      "protein": 14.8,
+      "carbs": 32.1,
+      "fiber": 2.1,
+      "sugar": 1.8,
+      "fat": 14.6,
+      "saturatedFat": 7.2,
+      "sodium": 598,
+      "potassium": 148,
+      "cholesterol": 38,
+      "vitaminA": 385,
+      "vitaminC": 0.3,
+      "calcium": 358,
+      "iron": 2.1,
+      "magnesium": 38,
+      "zinc": 1.9
+    },
+    "healthScore": 48,
+    "tags": [
+      "high-protein",
+      "high-calcium",
+      "vegetarian",
+      "quick-meal",
+      "comfort-food"
+    ],
+    "allergens": [
+      "dairy",
+      "gluten",
+      "wheat"
+    ],
+    "glycemicIndex": 62,
+    "glycemicLoad": 20,
+    "inflammatoryScore": 5,
+    "focusGrades": {
+      "heart_health": "C",
+      "diabetes": "C",
+      "weight_loss": "C",
+      "gut_health": "C",
+      "energy": "B",
+      "brain_health": "C",
+      "immunity": "C",
+      "longevity": "C",
+      "athletic_performance": "B",
+      "mental_wellness": "C"
+    },
+    "benefits": [
+      "Excellent source of calcium (36% DV)",
+      "Good protein content for satiety",
+      "Provides quick energy",
+      "Contains vitamin A for vision"
+    ],
+    "concerns": [
+      "High in saturated fat",
+      "Moderate to high sodium",
+      "Refined flour lacks fiber",
+      "Can be calorie-dense"
+    ],
+    "bestTimeToEat": [
+      "lunch",
+      "dinner",
+      "post-workout"
+    ],
+    "pairings": [
+      "black_beans",
+      "salsa",
+      "guacamole",
+      "bell_peppers",
+      "spinach",
+      "chicken_breast"
+    ]
+  },
+  "ramen": {
+    "foodId": "ramen",
+    "name": "Ramen Noodles (Restaurant Style)",
+    "category": "grains",
+    "subcategory": "noodles",
+    "emoji": "🍜",
+    "servingSize": {
+      "amount": 420,
+      "unit": "g",
+      "household": "1 bowl"
+    },
+    "nutrition": {
+      "calories": 436,
+      "protein": 19.8,
+      "carbs": 55.2,
+      "fiber": 3.6,
+      "sugar": 4.2,
+      "fat": 14.8,
+      "saturatedFat": 5.4,
+      "sodium": 1842,
+      "potassium": 385,
+      "cholesterol": 82,
+      "vitaminA": 285,
+      "vitaminC": 4.2,
+      "calcium": 68,
+      "iron": 3.2,
+      "magnesium": 58,
+      "zinc": 2.4
+    },
+    "healthScore": 52,
+    "tags": [
+      "high-protein",
+      "high-sodium",
+      "asian-cuisine",
+      "comfort-food",
+      "complete-meal"
+    ],
+    "allergens": [
+      "gluten",
+      "wheat",
+      "egg",
+      "soy",
+      "shellfish"
+    ],
+    "glycemicIndex": 58,
+    "glycemicLoad": 32,
+    "inflammatoryScore": 5,
+    "focusGrades": {
+      "heart_health": "D",
+      "diabetes": "C",
+      "weight_loss": "C",
+      "gut_health": "C",
+      "energy": "B",
+      "brain_health": "C",
+      "immunity": "C",
+      "longevity": "D",
+      "athletic_performance": "B",
+      "mental_wellness": "B"
+    },
+    "benefits": [
+      "Good protein content from broth and toppings",
+      "Provides iron for oxygen transport",
+      "Comforting and satisfying",
+      "Can include nutrient-rich vegetables",
+      "Good energy source for active individuals"
+    ],
+    "concerns": [
+      "Extremely high sodium (77% DV)",
+      "Can cause water retention",
+      "Refined wheat noodles",
+      "High in carbohydrates",
+      "Variable quality depending on preparation"
+    ],
+    "bestTimeToEat": [
+      "lunch",
+      "dinner",
+      "post-workout"
+    ],
+    "pairings": [
+      "soft_boiled_egg",
+      "seaweed",
+      "bamboo_shoots",
+      "scallions",
+      "mushrooms",
+      "bean_sprouts"
+    ]
+  },
+  "instant_noodles": {
+    "foodId": "instant_noodles",
+    "name": "Instant Noodles",
+    "category": "grains",
+    "subcategory": "noodles",
+    "emoji": "🍝",
+    "servingSize": {
+      "amount": 85,
+      "unit": "g",
+      "household": "1 package"
+    },
+    "nutrition": {
+      "calories": 371,
+      "protein": 9.6,
+      "carbs": 52.8,
+      "fiber": 2.1,
+      "sugar": 1.8,
+      "fat": 13.8,
+      "saturatedFat": 6.5,
+      "sodium": 1580,
+      "potassium": 85,
+      "cholesterol": 0,
+      "vitaminA": 0,
+      "vitaminC": 0,
+      "calcium": 28,
+      "iron": 3.8,
+      "magnesium": 24,
+      "zinc": 0.8
+    },
+    "healthScore": 28,
+    "tags": [
+      "ultra-processed",
+      "high-sodium",
+      "convenience-food",
+      "low-nutrient",
+      "vegan"
+    ],
+    "allergens": [
+      "gluten",
+      "wheat",
+      "soy"
+    ],
+    "glycemicIndex": 72,
+    "glycemicLoad": 38,
+    "inflammatoryScore": 8,
+    "focusGrades": {
+      "heart_health": "F",
+      "diabetes": "F",
+      "weight_loss": "F",
+      "gut_health": "D",
+      "energy": "D",
+      "brain_health": "F",
+      "immunity": "F",
+      "longevity": "F",
+      "athletic_performance": "D",
+      "mental_wellness": "D"
+    },
+    "benefits": [
+      "Inexpensive and shelf-stable",
+      "Quick to prepare",
+      "Provides immediate energy",
+      "Contains some iron"
+    ],
+    "concerns": [
+      "Extremely high sodium (66% DV)",
+      "Ultra-processed with additives",
+      "High in refined carbohydrates",
+      "Contains unhealthy trans fats",
+      "Very low in micronutrients",
+      "Linked to metabolic syndrome",
+      "Poor satiety leading to overeating",
+      "Contains MSG and preservatives"
+    ],
+    "bestTimeToEat": [
+      "emergency-only",
+      "occasional-treat"
+    ],
+    "pairings": [
+      "eggs",
+      "vegetables",
+      "kimchi",
+      "tofu",
+      "seaweed"
+    ]
+  },
+  "california_roll": {
+    "foodId": "california_roll",
+    "name": "California Roll",
+    "category": "protein",
+    "subcategory": "seafood",
+    "emoji": "🍣",
+    "servingSize": {
+      "amount": 135,
+      "unit": "g",
+      "household": "6 pieces"
+    },
+    "nutrition": {
+      "calories": 176,
+      "protein": 7.2,
+      "carbs": 28.4,
+      "fiber": 2.8,
+      "sugar": 5.1,
+      "fat": 3.8,
+      "saturatedFat": 0.6,
+      "sodium": 428,
+      "potassium": 156,
+      "cholesterol": 18,
+      "vitaminA": 142,
+      "vitaminC": 2.4,
+      "calcium": 42,
+      "iron": 1.2,
+      "magnesium": 28,
+      "zinc": 0.9
+    },
+    "healthScore": 68,
+    "tags": [
+      "low-fat",
+      "pescatarian",
+      "japanese-cuisine",
+      "omega-3",
+      "light-meal"
+    ],
+    "allergens": [
+      "shellfish",
+      "fish",
+      "soy",
+      "sesame"
+    ],
+    "glycemicIndex": 65,
+    "glycemicLoad": 18,
+    "inflammatoryScore": 3,
+    "focusGrades": {
+      "heart_health": "B",
+      "diabetes": "B",
+      "weight_loss": "A",
+      "gut_health": "B",
+      "energy": "B",
+      "brain_health": "B",
+      "immunity": "B",
+      "longevity": "B",
+      "athletic_performance": "B",
+      "mental_wellness": "B"
+    },
+    "benefits": [
+      "Low in calories and fat",
+      "Contains omega-3 fatty acids",
+      "Good source of lean protein",
+      "Includes seaweed with iodine",
+      "Provides vitamin A from imitation crab",
+      "Contains fiber from vegetables"
+    ],
+    "concerns": [
+      "Moderate sodium content",
+      "Made with white rice (refined carbs)",
+      "Imitation crab is processed",
+      "Can contain added sugars in rice",
+      "May include mayonnaise-based sauces"
+    ],
+    "bestTimeToEat": [
+      "lunch",
+      "dinner",
+      "light-dinner"
+    ],
+    "pairings": [
+      "edamame",
+      "miso_soup",
+      "seaweed_salad",
+      "pickled_ginger",
+      "wasabi",
+      "soy_sauce"
+    ]
+  },
+  "sushi": {
+    "foodId": "sushi",
+    "name": "Sushi (Salmon Nigiri)",
+    "category": "protein",
+    "subcategory": "seafood",
+    "emoji": "🍣",
+    "servingSize": {
+      "amount": 85,
+      "unit": "g",
+      "household": "2 pieces"
+    },
+    "nutrition": {
+      "calories": 148,
+      "protein": 10.2,
+      "carbs": 18.6,
+      "fiber": 0.8,
+      "sugar": 2.4,
+      "fat": 3.6,
+      "saturatedFat": 0.8,
+      "sodium": 286,
+      "potassium": 245,
+      "cholesterol": 22,
+      "vitaminA": 85,
+      "vitaminC": 0.2,
+      "calcium": 18,
+      "iron": 0.6,
+      "magnesium": 32,
+      "zinc": 0.7
+    },
+    "healthScore": 78,
+    "tags": [
+      "low-fat",
+      "high-protein",
+      "omega-3",
+      "pescatarian",
+      "japanese-cuisine",
+      "nutrient-dense"
+    ],
+    "allergens": [
+      "fish",
+      "soy",
+      "sesame"
+    ],
+    "glycemicIndex": 64,
+    "glycemicLoad": 12,
+    "inflammatoryScore": 1,
+    "focusGrades": {
+      "heart_health": "A",
+      "diabetes": "B",
+      "weight_loss": "A",
+      "gut_health": "B",
+      "energy": "B",
+      "brain_health": "A",
+      "immunity": "B",
+      "longevity": "A",
+      "athletic_performance": "B",
+      "mental_wellness": "A"
+    },
+    "benefits": [
+      "Excellent source of omega-3 fatty acids",
+      "High-quality lean protein",
+      "Rich in vitamin D and B12",
+      "Contains selenium for thyroid function",
+      "Low in saturated fat",
+      "Supports brain and heart health",
+      "Anti-inflammatory properties",
+      "Good source of potassium"
+    ],
+    "concerns": [
+      "Raw fish carries food safety risks",
+      "May contain mercury (varies by fish)",
+      "Made with white rice (refined carbs)",
+      "Soy sauce adds sodium",
+      "Not suitable for pregnant women (raw fish)"
+    ],
+    "bestTimeToEat": [
+      "lunch",
+      "dinner",
+      "pre-workout",
+      "post-workout"
+    ],
+    "pairings": [
+      "edamame",
+      "miso_soup",
+      "seaweed_salad",
+      "pickled_ginger",
+      "wasabi",
+      "green_tea"
+    ]
+  }
+}

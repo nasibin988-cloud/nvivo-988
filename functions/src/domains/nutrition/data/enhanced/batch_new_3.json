@@ -1,0 +1,584 @@
+{
+  "wonton_soup": {
+    "name": "Wonton Soup",
+    "calories": 71,
+    "protein": 4.2,
+    "carbs": 8.5,
+    "fat": 2.3,
+    "fiber": 0.8,
+    "sugar": 1.2,
+    "sodium": 380,
+    "saturatedFat": 0.6,
+    "cholesterol": 18,
+    "potassium": 145,
+    "calcium": 25,
+    "iron": 0.9,
+    "magnesium": 12,
+    "vitaminA": 85,
+    "vitaminC": 2,
+    "vitaminD": 0.1,
+    "vitaminB12": 0.2,
+    "glycemicIndex": 52,
+    "glycemicLoad": 4,
+    "allergens": ["gluten", "shellfish", "soy"],
+    "servingSize": 240,
+    "servingUnit": "g",
+    "focusGrades": {
+      "balanced": {
+        "grade": "B",
+        "score": 82,
+        "insight": "Light, protein-rich broth with moderate carbs from wonton wrappers. Good balance but watch sodium.",
+        "pros": ["Low calorie density", "Decent protein content", "Hydrating broth base", "Light and satisfying"],
+        "cons": ["High sodium from broth", "Low fiber content", "Minimal micronutrients", "Refined flour wrappers"]
+      },
+      "heart_health": {
+        "grade": "C+",
+        "score": 72,
+        "insight": "Very high sodium content negatively impacts cardiovascular health despite low saturated fat.",
+        "pros": ["Low saturated fat", "Minimal cholesterol", "Low calorie content", "Contains omega-3 if shrimp-based"],
+        "cons": ["Excessive sodium (380mg/100g)", "Limited potassium", "Minimal heart-healthy fats", "Low fiber"]
+      },
+      "muscle_building": {
+        "grade": "C",
+        "score": 68,
+        "insight": "Modest protein content from pork/shrimp filling, but not optimal for muscle synthesis.",
+        "pros": ["Complete protein source", "Low fat supports lean gains", "Easily digestible", "Contains B vitamins"],
+        "cons": ["Low protein density (4.2g)", "Minimal BCAAs", "High sodium affects hydration", "Limited amino acid profile"]
+      },
+      "energy": {
+        "grade": "B-",
+        "score": 76,
+        "insight": "Quick energy from refined carbs in wrappers, but lacks sustained fuel sources.",
+        "pros": ["Easily digestible carbs", "Hydrating broth", "Low glycemic load (4)", "Light pre-workout option"],
+        "cons": ["Low fiber delays satiety", "Minimal complex carbs", "Limited B vitamins", "No sustained energy source"]
+      },
+      "weight_management": {
+        "grade": "B+",
+        "score": 84,
+        "insight": "Very low calorie density makes it excellent for volume eating and satiety.",
+        "pros": ["Only 71 calories per 100g", "High water content", "Protein promotes satiety", "Low fat content"],
+        "cons": ["High sodium causes water retention", "Low fiber (0.8g)", "May not satisfy long-term", "Refined carbs spike hunger"]
+      },
+      "brain_focus": {
+        "grade": "C+",
+        "score": 74,
+        "insight": "Moderate carbs provide glucose for brain, but lacks key cognitive nutrients.",
+        "pros": ["Steady glucose from moderate GI", "Hydrating for cognitive function", "Contains some B vitamins", "Low enough to avoid food coma"],
+        "cons": ["Minimal omega-3 fatty acids", "Low B12 content", "Limited choline", "High sodium affects focus"]
+      },
+      "gut_health": {
+        "grade": "C-",
+        "score": 65,
+        "insight": "Low fiber and minimal probiotic content limits digestive benefits.",
+        "pros": ["Warm broth aids digestion", "Easily digestible", "Ginger in broth helps nausea", "Light on stomach"],
+        "cons": ["Very low fiber (0.8g)", "Refined wheat causes inflammation", "No prebiotic content", "High sodium disrupts microbiome"]
+      },
+      "blood_sugar": {
+        "grade": "B+",
+        "score": 85,
+        "insight": "Low glycemic load and moderate GI make it suitable for blood sugar control.",
+        "pros": ["Low glycemic load (4)", "Protein slows absorption", "Moderate GI (52)", "Low sugar content (1.2g)"],
+        "cons": ["Refined flour wrappers", "Minimal fiber", "No resistant starch", "Limited chromium/magnesium"]
+      },
+      "bone_joint": {
+        "grade": "C",
+        "score": 68,
+        "insight": "Minimal calcium and vitamin D content, but collagen from broth may support joints.",
+        "pros": ["Bone broth contains collagen", "Some calcium (25mg)", "Glucosamine if shellfish-based", "Anti-inflammatory ginger"],
+        "cons": ["Very low calcium", "Minimal vitamin D", "Low magnesium", "High sodium affects bone density"]
+      },
+      "anti_inflammatory": {
+        "grade": "B-",
+        "score": 77,
+        "insight": "Ginger and garlic in broth provide anti-inflammatory compounds, offset by refined carbs.",
+        "pros": ["Ginger reduces inflammation", "Garlic contains allicin", "Low saturated fat", "Omega-3 if shrimp filling"],
+        "cons": ["Refined flour triggers inflammation", "High sodium promotes inflammation", "Limited antioxidants", "Minimal polyphenols"]
+      }
+    }
+  },
+  "dim_sum": {
+    "name": "Dim Sum (Mixed)",
+    "calories": 235,
+    "protein": 9.8,
+    "carbs": 28.4,
+    "fat": 8.6,
+    "fiber": 1.4,
+    "sugar": 3.2,
+    "sodium": 420,
+    "saturatedFat": 2.1,
+    "cholesterol": 35,
+    "potassium": 185,
+    "calcium": 42,
+    "iron": 1.6,
+    "magnesium": 18,
+    "vitaminA": 120,
+    "vitaminC": 5,
+    "vitaminD": 0.3,
+    "vitaminB12": 0.4,
+    "glycemicIndex": 58,
+    "glycemicLoad": 16,
+    "allergens": ["gluten", "shellfish", "soy", "eggs"],
+    "servingSize": 85,
+    "servingUnit": "g",
+    "focusGrades": {
+      "balanced": {
+        "grade": "C+",
+        "score": 73,
+        "insight": "Moderate protein and carbs with significant fat from frying. High sodium impacts overall balance.",
+        "pros": ["Decent protein variety", "Provides energy", "Cultural diversity", "Satisfying texture"],
+        "cons": ["High sodium (420mg)", "Often deep-fried", "Refined flour base", "Limited vegetables"]
+      },
+      "heart_health": {
+        "grade": "D+",
+        "score": 62,
+        "insight": "High sodium and saturated fat from frying methods negatively impact cardiovascular health.",
+        "pros": ["Some varieties steamed", "Contains vegetables", "Seafood provides omega-3", "Moderate cholesterol"],
+        "cons": ["Very high sodium", "Deep-frying adds trans fats", "Saturated fat content", "Limited fiber for cholesterol"]
+      },
+      "muscle_building": {
+        "grade": "C+",
+        "score": 74,
+        "insight": "Moderate protein from pork, shrimp, and chicken, but high fat reduces protein efficiency.",
+        "pros": ["Complete protein sources", "Variety of amino acids", "B vitamins from meat", "Energy for training"],
+        "cons": ["Only 9.8g protein per 100g", "High fat dilutes protein", "Excess sodium affects recovery", "Limited leucine content"]
+      },
+      "energy": {
+        "grade": "B-",
+        "score": 78,
+        "insight": "Balanced macros provide sustained energy, but refined carbs and fat slow digestion.",
+        "pros": ["Good carb-fat balance", "Satisfying and filling", "Moderate glycemic response", "B vitamins support energy"],
+        "cons": ["Heavy feeling post-meal", "High fat slows digestion", "Refined carbs cause crash", "Limited complex carbs"]
+      },
+      "weight_management": {
+        "grade": "D",
+        "score": 58,
+        "insight": "Calorie-dense from frying, easy to overconsume in small portions.",
+        "pros": ["Portion-controlled pieces", "Protein promotes satiety", "Variety satisfies cravings", "Some steamed options"],
+        "cons": ["235 calories per 100g", "High fat content (8.6g)", "Low fiber (1.4g)", "Sodium causes water retention"]
+      },
+      "brain_focus": {
+        "grade": "C",
+        "score": 70,
+        "insight": "Moderate carbs provide glucose, but heavy fat content reduces mental clarity.",
+        "pros": ["Steady glucose release", "B vitamins support cognition", "Protein stabilizes energy", "Variety of nutrients"],
+        "cons": ["High fat causes brain fog", "Limited omega-3", "Low B12 (0.4mcg)", "Heavy digestion diverts energy"]
+      },
+      "gut_health": {
+        "grade": "C-",
+        "score": 66,
+        "insight": "Low fiber and fried preparation methods challenge digestive health.",
+        "pros": ["Some vegetables included", "Fermented soy sauce", "Ginger aids digestion", "Protein variety"],
+        "cons": ["Low fiber (1.4g)", "Fried foods hard to digest", "Refined flour inflammatory", "High sodium disrupts gut"]
+      },
+      "blood_sugar": {
+        "grade": "C+",
+        "score": 72,
+        "insight": "Moderate GI but higher glycemic load from refined flour wrappers.",
+        "pros": ["Protein slows absorption", "Fat reduces GI impact", "Moderate sugar (3.2g)", "Some fiber present"],
+        "cons": ["Glycemic load of 16", "Refined flour spikes insulin", "Limited chromium", "Low magnesium (18mg)"]
+      },
+      "bone_joint": {
+        "grade": "C",
+        "score": 69,
+        "insight": "Limited bone-building nutrients, but some collagen from meat fillings.",
+        "pros": ["Calcium from wrappers (42mg)", "Collagen from meat", "Phosphorus content", "Vitamin D if egg-based"],
+        "cons": ["Low calcium overall", "Minimal vitamin D", "High sodium leaches calcium", "Limited magnesium"]
+      },
+      "anti_inflammatory": {
+        "grade": "D+",
+        "score": 63,
+        "insight": "Fried preparation and refined carbs promote inflammation despite some beneficial ingredients.",
+        "pros": ["Ginger anti-inflammatory", "Garlic compounds", "Omega-3 from seafood", "Green onions"],
+        "cons": ["Deep-fried triggers AGEs", "Refined flour inflammatory", "High sodium", "Limited antioxidants"]
+      }
+    }
+  },
+  "lasagna": {
+    "name": "Lasagna",
+    "calories": 162,
+    "protein": 10.6,
+    "carbs": 15.2,
+    "fat": 6.8,
+    "fiber": 1.8,
+    "sugar": 4.1,
+    "sodium": 364,
+    "saturatedFat": 3.4,
+    "cholesterol": 28,
+    "potassium": 312,
+    "calcium": 168,
+    "iron": 1.3,
+    "magnesium": 24,
+    "vitaminA": 420,
+    "vitaminC": 8,
+    "vitaminD": 0.2,
+    "vitaminB12": 0.6,
+    "glycemicIndex": 60,
+    "glycemicLoad": 9,
+    "allergens": ["gluten", "dairy", "eggs"],
+    "servingSize": 200,
+    "servingUnit": "g",
+    "focusGrades": {
+      "balanced": {
+        "grade": "B",
+        "score": 81,
+        "insight": "Well-balanced macros with good protein from cheese and meat, vegetables add micronutrients.",
+        "pros": ["Complete nutrition profile", "High calcium from cheese", "Vegetables add fiber", "Satisfying comfort food"],
+        "cons": ["High saturated fat", "Moderate sodium (364mg)", "Refined pasta carbs", "Calorie-dense"]
+      },
+      "heart_health": {
+        "grade": "C",
+        "score": 70,
+        "insight": "Saturated fat from cheese and high sodium challenge cardiovascular health.",
+        "pros": ["Lycopene from tomatoes", "Moderate cholesterol", "Some potassium (312mg)", "Antioxidants from herbs"],
+        "cons": ["High saturated fat (3.4g)", "364mg sodium", "Limited fiber for cholesterol", "High cheese content"]
+      },
+      "muscle_building": {
+        "grade": "B",
+        "score": 82,
+        "insight": "Excellent protein from ricotta, mozzarella, and meat sauce supports muscle synthesis.",
+        "pros": ["10.6g complete protein", "High leucine from dairy", "Calcium aids contraction", "Carbs replenish glycogen"],
+        "cons": ["Saturated fat with protein", "Not lean protein source", "Moderate protein density", "Heavy digestion"]
+      },
+      "energy": {
+        "grade": "B",
+        "score": 80,
+        "insight": "Balanced macros provide sustained energy from carbs, protein, and fat combination.",
+        "pros": ["Complex carb-protein blend", "Sustained energy release", "B vitamins from pasta", "Iron supports oxygen"],
+        "cons": ["Heavy meal causes drowsiness", "Refined pasta simple carbs", "High fat slows digestion", "Post-meal energy dip"]
+      },
+      "weight_management": {
+        "grade": "C",
+        "score": 68,
+        "insight": "Calorie and fat dense, but protein and fiber provide some satiety.",
+        "pros": ["Protein promotes fullness", "Portion control possible", "Fiber from vegetables", "Satisfying texture"],
+        "cons": ["162 calories per 100g", "High fat (6.8g)", "Easy to overeat", "Low fiber (1.8g)"]
+      },
+      "brain_focus": {
+        "grade": "B-",
+        "score": 76,
+        "insight": "B vitamins and steady glucose support cognition, but heavy fat content reduces alertness.",
+        "pros": ["B12 from cheese (0.6mcg)", "Steady glucose release", "Choline from eggs", "Iron supports cognition"],
+        "cons": ["Heavy fat causes sluggishness", "Food coma effect", "Limited omega-3", "Refined carbs affect focus"]
+      },
+      "gut_health": {
+        "grade": "C+",
+        "score": 72,
+        "insight": "Moderate fiber from vegetables, but dairy and gluten may challenge sensitive systems.",
+        "pros": ["Tomato fiber", "Fermented cheese probiotics", "Herbs aid digestion", "Vegetables add prebiotics"],
+        "cons": ["Low fiber (1.8g)", "Dairy lactose issues", "Gluten inflammatory", "Heavy on digestion"]
+      },
+      "blood_sugar": {
+        "grade": "B",
+        "score": 81,
+        "insight": "Protein and fat significantly slow carb absorption, keeping glycemic load low.",
+        "pros": ["Low glycemic load (9)", "Protein buffers spikes", "Fat slows absorption", "Moderate sugar (4.1g)"],
+        "cons": ["Refined pasta GI of 60", "Limited fiber", "Simple carbs present", "Low chromium"]
+      },
+      "bone_joint": {
+        "grade": "A-",
+        "score": 88,
+        "insight": "Excellent calcium and vitamin A from cheese support bone health significantly.",
+        "pros": ["High calcium (168mg)", "Vitamin A (420mcg)", "Phosphorus from dairy", "Magnesium present"],
+        "cons": ["High sodium leaches calcium", "Limited vitamin D", "Saturated fat affects absorption", "Minimal vitamin K"]
+      },
+      "anti_inflammatory": {
+        "grade": "B",
+        "score": 80,
+        "insight": "Lycopene from tomatoes and herbs provide antioxidants, offset by saturated fat.",
+        "pros": ["Lycopene from tomato sauce", "Basil anti-inflammatory", "Garlic compounds", "Oregano antioxidants"],
+        "cons": ["Saturated fat promotes inflammation", "Refined pasta triggers response", "Dairy casein inflammatory", "High sodium"]
+      }
+    }
+  },
+  "spaghetti": {
+    "name": "Spaghetti with Tomato Sauce",
+    "calories": 136,
+    "protein": 5.1,
+    "carbs": 25.4,
+    "fat": 1.8,
+    "fiber": 2.3,
+    "sugar": 4.8,
+    "sodium": 298,
+    "saturatedFat": 0.3,
+    "cholesterol": 0,
+    "potassium": 287,
+    "calcium": 28,
+    "iron": 1.5,
+    "magnesium": 22,
+    "vitaminA": 285,
+    "vitaminC": 12,
+    "vitaminD": 0,
+    "vitaminB12": 0,
+    "glycemicIndex": 61,
+    "glycemicLoad": 15,
+    "allergens": ["gluten"],
+    "servingSize": 180,
+    "servingUnit": "g",
+    "focusGrades": {
+      "balanced": {
+        "grade": "B+",
+        "score": 84,
+        "insight": "Carb-focused with low fat, good fiber from tomatoes. Add protein for complete balance.",
+        "pros": ["Low fat content", "Good fiber (2.3g)", "Rich in lycopene", "Complex carbohydrates"],
+        "cons": ["Low protein (5.1g)", "High carb ratio", "Moderate sodium", "Refined pasta base"]
+      },
+      "heart_health": {
+        "grade": "A-",
+        "score": 87,
+        "insight": "Very low saturated fat, zero cholesterol, high lycopene support cardiovascular health.",
+        "pros": ["No cholesterol", "Very low saturated fat (0.3g)", "Lycopene protects arteries", "Good potassium (287mg)"],
+        "cons": ["Moderate sodium (298mg)", "Limited omega-3", "Refined carbs", "Low fiber for cholesterol"]
+      },
+      "muscle_building": {
+        "grade": "D+",
+        "score": 61,
+        "insight": "Insufficient protein for muscle synthesis, needs protein addition like lean meat or beans.",
+        "pros": ["Carbs replenish glycogen", "Easy to digest pre-workout", "B vitamins support metabolism", "Low fat aids absorption"],
+        "cons": ["Very low protein (5.1g)", "Incomplete amino acids", "No leucine", "Not muscle-building alone"]
+      },
+      "energy": {
+        "grade": "A-",
+        "score": 88,
+        "insight": "Excellent carbohydrate source for sustained energy, ideal pre-exercise meal.",
+        "pros": ["25.4g complex carbs", "Sustained energy release", "B vitamins from pasta", "Easily digestible"],
+        "cons": ["Glycemic load of 15", "May cause energy dip", "Refined carbs not optimal", "Needs protein pairing"]
+      },
+      "weight_management": {
+        "grade": "B",
+        "score": 80,
+        "insight": "Moderate calories with good satiety from volume, but easy to overconsume portions.",
+        "pros": ["Only 136 calories per 100g", "Very low fat (1.8g)", "Fiber promotes fullness", "High volume satisfies"],
+        "cons": ["Large portions common", "Low protein limits satiety", "Refined carbs spike hunger", "Easy to overeat"]
+      },
+      "brain_focus": {
+        "grade": "B",
+        "score": 79,
+        "insight": "Carbs provide steady glucose for brain, but lacks omega-3 and B12 for optimal cognition.",
+        "pros": ["Steady glucose supply", "B vitamins from enriched pasta", "Lycopene supports brain", "Moderate GI prevents crash"],
+        "cons": ["No omega-3 fatty acids", "Zero B12", "Refined carbs affect focus", "Low protein for neurotransmitters"]
+      },
+      "gut_health": {
+        "grade": "B-",
+        "score": 77,
+        "insight": "Moderate fiber from tomatoes and pasta supports digestion, but gluten may irritate.",
+        "pros": ["2.3g fiber", "Tomatoes prebiotic", "Easily digestible", "Garlic supports microbiome"],
+        "cons": ["Gluten inflammatory for some", "Refined flour", "Limited resistant starch", "Moderate sodium"]
+      },
+      "blood_sugar": {
+        "grade": "C+",
+        "score": 73,
+        "insight": "Moderate GI and glycemic load require portion control and protein pairing.",
+        "pros": ["Fiber slows absorption", "Tomatoes lower GI", "Moderate sugar (4.8g)", "Al dente reduces GI"],
+        "cons": ["GI of 61", "Glycemic load 15", "Refined pasta spikes insulin", "Low protein doesn't buffer"]
+      },
+      "bone_joint": {
+        "grade": "C-",
+        "score": 65,
+        "insight": "Low calcium and vitamin D content limits bone support benefits.",
+        "pros": ["Some calcium (28mg)", "Vitamin K from tomatoes", "Magnesium present (22mg)", "Low acid load"],
+        "cons": ["Very low calcium", "No vitamin D", "Limited bone minerals", "Moderate sodium"]
+      },
+      "anti_inflammatory": {
+        "grade": "A-",
+        "score": 89,
+        "insight": "Lycopene from cooked tomatoes is powerful anti-inflammatory, minimal pro-inflammatory fats.",
+        "pros": ["High lycopene content", "Garlic anti-inflammatory", "Basil antioxidants", "Very low saturated fat"],
+        "cons": ["Refined pasta mildly inflammatory", "Gluten for sensitive individuals", "Limited omega-3", "Moderate sodium"]
+      }
+    }
+  },
+  "pizza": {
+    "name": "Pizza (Cheese)",
+    "calories": 266,
+    "protein": 11.4,
+    "carbs": 33.0,
+    "fat": 10.1,
+    "fiber": 2.3,
+    "sugar": 3.6,
+    "sodium": 598,
+    "saturatedFat": 4.8,
+    "cholesterol": 18,
+    "potassium": 172,
+    "calcium": 188,
+    "iron": 2.3,
+    "magnesium": 21,
+    "vitaminA": 268,
+    "vitaminC": 2,
+    "vitaminD": 0.2,
+    "vitaminB12": 0.5,
+    "glycemicIndex": 60,
+    "glycemicLoad": 20,
+    "allergens": ["gluten", "dairy"],
+    "servingSize": 107,
+    "servingUnit": "g",
+    "focusGrades": {
+      "balanced": {
+        "grade": "C+",
+        "score": 74,
+        "insight": "Decent protein and calcium from cheese, but high sodium and saturated fat reduce overall balance.",
+        "pros": ["Complete macronutrient profile", "High calcium (188mg)", "Moderate protein", "Satisfying meal"],
+        "cons": ["Very high sodium (598mg)", "High saturated fat (4.8g)", "Calorie-dense", "Refined flour crust"]
+      },
+      "heart_health": {
+        "grade": "D",
+        "score": 56,
+        "insight": "Excessive sodium and saturated fat significantly challenge cardiovascular health.",
+        "pros": ["Lycopene from tomato sauce", "Some potassium", "Moderate cholesterol", "Calcium supports rhythm"],
+        "cons": ["Excessive sodium (598mg)", "High saturated fat (4.8g)", "Low fiber", "Trans fats possible"]
+      },
+      "muscle_building": {
+        "grade": "B-",
+        "score": 77,
+        "insight": "Good protein from mozzarella cheese, but high fat and sodium reduce efficiency.",
+        "pros": ["11.4g complete protein", "High leucine from dairy", "Calcium for contraction", "Carbs for glycogen"],
+        "cons": ["Not lean protein", "High saturated fat", "Excessive sodium affects recovery", "Heavy digestion"]
+      },
+      "energy": {
+        "grade": "B-",
+        "score": 75,
+        "insight": "Carb-heavy for quick energy, but high fat and calories cause post-meal sluggishness.",
+        "pros": ["33g carbs for energy", "B vitamins from fortified flour", "Iron supports oxygen (2.3mg)", "Satisfying"],
+        "cons": ["High glycemic load (20)", "Heavy fat slows digestion", "Refined carbs cause crash", "Food coma effect"]
+      },
+      "weight_management": {
+        "grade": "D+",
+        "score": 60,
+        "insight": "Very calorie-dense, easy to overconsume, high fat and carbs challenge weight goals.",
+        "pros": ["Protein provides satiety", "Portion control possible", "Calcium supports metabolism", "Satisfying"],
+        "cons": ["266 calories per 100g", "High fat (10.1g)", "Very easy to overeat", "Low fiber (2.3g)"]
+      },
+      "brain_focus": {
+        "grade": "C",
+        "score": 68,
+        "insight": "Heavy meal with high fat causes brain fog and drowsiness, despite some B vitamins.",
+        "pros": ["Carbs provide glucose", "B12 from cheese (0.5mcg)", "Iron supports cognition", "Calcium for neurons"],
+        "cons": ["Heavy fat causes sluggishness", "Major food coma", "High sodium affects focus", "Refined carbs crash"]
+      },
+      "gut_health": {
+        "grade": "C-",
+        "score": 67,
+        "insight": "Low fiber, high fat, and dairy may challenge digestion for many people.",
+        "pros": ["Tomato sauce fiber", "Fermented cheese probiotics", "Oregano aids digestion", "Moderate fiber"],
+        "cons": ["Low fiber (2.3g)", "High fat slows transit", "Dairy lactose issues", "Gluten inflammatory"]
+      },
+      "blood_sugar": {
+        "grade": "C",
+        "score": 69,
+        "insight": "High glycemic load and refined crust spike blood sugar despite protein and fat.",
+        "pros": ["Protein slows absorption", "Fat reduces GI impact", "Low sugar (3.6g)", "Cheese buffers spikes"],
+        "cons": ["High glycemic load (20)", "GI of 60", "Refined flour crust", "Low fiber and chromium"]
+      },
+      "bone_joint": {
+        "grade": "A-",
+        "score": 86,
+        "insight": "Excellent calcium from mozzarella cheese strongly supports bone health.",
+        "pros": ["High calcium (188mg)", "Vitamin A (268mcg)", "Phosphorus from cheese", "Vitamin D if fortified"],
+        "cons": ["Excessive sodium leaches calcium", "Limited vitamin D", "High saturated fat", "Low magnesium"]
+      },
+      "anti_inflammatory": {
+        "grade": "C-",
+        "score": 66,
+        "insight": "Lycopene from tomato sauce offset by saturated fat and refined carbs promoting inflammation.",
+        "pros": ["Lycopene from tomatoes", "Oregano anti-inflammatory", "Garlic compounds", "Basil antioxidants"],
+        "cons": ["High saturated fat inflammatory", "Refined flour triggers response", "Dairy casein inflammatory", "Excessive sodium"]
+      }
+    }
+  },
+  "risotto": {
+    "name": "Risotto",
+    "calories": 143,
+    "protein": 3.8,
+    "carbs": 22.6,
+    "fat": 4.2,
+    "fiber": 0.9,
+    "sugar": 1.1,
+    "sodium": 312,
+    "saturatedFat": 2.1,
+    "cholesterol": 12,
+    "potassium": 98,
+    "calcium": 42,
+    "iron": 0.6,
+    "magnesium": 14,
+    "vitaminA": 145,
+    "vitaminC": 2,
+    "vitaminD": 0.1,
+    "vitaminB12": 0.2,
+    "glycemicIndex": 69,
+    "glycemicLoad": 16,
+    "allergens": ["dairy"],
+    "servingSize": 150,
+    "servingUnit": "g",
+    "focusGrades": {
+      "balanced": {
+        "grade": "C+",
+        "score": 72,
+        "insight": "Carb-dominant with moderate fat from butter/cheese, but very low protein and fiber.",
+        "pros": ["Creamy satisfying texture", "Moderate calories", "Easy to digest", "Versatile with additions"],
+        "cons": ["Very low protein (3.8g)", "Minimal fiber (0.9g)", "High sodium (312mg)", "Carb-heavy"]
+      },
+      "heart_health": {
+        "grade": "C",
+        "score": 71,
+        "insight": "Moderate saturated fat from butter/cheese and sodium challenge cardiovascular health.",
+        "pros": ["Low cholesterol (12mg)", "Arborio rice low in fat naturally", "Wine adds antioxidants", "Moderate overall fat"],
+        "cons": ["Saturated fat (2.1g)", "High sodium (312mg)", "Very low fiber", "Limited potassium (98mg)"]
+      },
+      "muscle_building": {
+        "grade": "D",
+        "score": 55,
+        "insight": "Extremely low protein makes it inadequate for muscle synthesis without additions.",
+        "pros": ["Carbs replenish glycogen", "Easy to add protein toppings", "Calcium from parmesan", "Easily digestible"],
+        "cons": ["Only 3.8g protein", "Incomplete amino acids", "No leucine content", "Not a protein source"]
+      },
+      "energy": {
+        "grade": "B",
+        "score": 81,
+        "insight": "High carb content provides good energy, but high GI may cause quick spike and crash.",
+        "pros": ["22.6g carbohydrates", "Quick energy release", "Starchy comfort", "B vitamins from rice"],
+        "cons": ["High GI (69)", "Glycemic load 16", "Minimal fiber for sustained energy", "May cause energy crash"]
+      },
+      "weight_management": {
+        "grade": "C-",
+        "score": 64,
+        "insight": "Moderate calories but very low fiber and protein limit satiety, easy to overeat.",
+        "pros": ["143 calories per 100g", "Moderate fat content", "Can be portion-controlled", "Satisfying initially"],
+        "cons": ["Very low fiber (0.9g)", "Low protein (3.8g)", "High GI triggers hunger", "Creamy texture encourages overeating"]
+      },
+      "brain_focus": {
+        "grade": "C+",
+        "score": 73,
+        "insight": "Carbs provide quick glucose, but high GI and low protein cause focus fluctuations.",
+        "pros": ["Quick glucose to brain", "B vitamins from rice", "Moderate fat for satiety", "Easily digestible"],
+        "cons": ["High GI causes crash", "Very low B12 (0.2mcg)", "No omega-3", "Heavy cream causes drowsiness"]
+      },
+      "gut_health": {
+        "grade": "D+",
+        "score": 62,
+        "insight": "Very low fiber and refined rice limit digestive benefits, dairy may challenge some.",
+        "pros": ["Easily digestible", "Gentle on stomach", "Parmesan has probiotics", "Cooked rice soft texture"],
+        "cons": ["Minimal fiber (0.9g)", "White rice no prebiotics", "Dairy lactose issues", "No resistant starch"]
+      },
+      "blood_sugar": {
+        "grade": "D+",
+        "score": 63,
+        "insight": "High GI and glycemic load cause significant blood sugar spikes.",
+        "pros": ["Fat slows some absorption", "Low sugar content (1.1g)", "Wine may improve insulin", "Protein from cheese"],
+        "cons": ["High GI (69)", "Glycemic load 16", "Refined white rice", "Minimal fiber and chromium"]
+      },
+      "bone_joint": {
+        "grade": "C-",
+        "score": 64,
+        "insight": "Limited calcium from parmesan, but insufficient for significant bone support.",
+        "pros": ["Some calcium (42mg)", "Vitamin A from butter (145mcg)", "Phosphorus from dairy", "Magnesium traces"],
+        "cons": ["Low calcium overall", "Minimal vitamin D", "High sodium leaches calcium", "Very low magnesium (14mg)"]
+      },
+      "anti_inflammatory": {
+        "grade": "C",
+        "score": 70,
+        "insight": "Saturated fat from butter/cheese promotes inflammation, offset slightly by wine antioxidants.",
+        "pros": ["White wine antioxidants", "Garlic if included", "Onion quercetin", "Herbs like saffron"],
+        "cons": ["Saturated fat inflammatory", "Refined rice triggers response", "Dairy casein issues", "High sodium"]
+      }
+    }
+  }
+}

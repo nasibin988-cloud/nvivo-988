@@ -1,0 +1,1182 @@
+{
+  "ketchup": {
+    "name": "Ketchup",
+    "calories": 101,
+    "protein": 1.04,
+    "carbs": 27.4,
+    "fat": 0.1,
+    "fiber": 0.3,
+    "sugar": 22.8,
+    "sodium": 907,
+    "saturatedFat": 0.01,
+    "cholesterol": 0,
+    "potassium": 382,
+    "calcium": 15,
+    "iron": 0.41,
+    "magnesium": 16,
+    "vitaminA": 101,
+    "vitaminC": 4.1,
+    "vitaminD": 0,
+    "vitaminB12": 0,
+    "glycemicIndex": 15,
+    "glycemicLoad": 4,
+    "allergens": [],
+    "servingSize": 17,
+    "servingUnit": "g (1 tbsp)",
+    "focusGrades": {
+      "balanced": {
+        "grade": "D+",
+        "score": 48,
+        "insight": "Very high sodium (907mg/100g) and added sugars (22.8g) make this a condiment to use sparingly despite tomato lycopene benefits",
+        "pros": [
+          "Lycopene from tomatoes supports cellular health",
+          "Minimal fat and zero cholesterol",
+          "Low glycemic index despite sugar content"
+        ],
+        "cons": [
+          "Extremely high sodium undermines health benefits",
+          "Added sugars comprise 83% of carbohydrates",
+          "Negligible fiber, protein, or micronutrients per serving"
+        ]
+      },
+      "heart_health": {
+        "grade": "D",
+        "score": 42,
+        "insight": "Sodium content of 907mg per 100g creates significant cardiovascular risk, overshadowing tomato lycopene's antioxidant benefits",
+        "pros": [
+          "Zero cholesterol and minimal saturated fat",
+          "Lycopene may reduce LDL oxidation",
+          "Potassium (382mg) helps counter some sodium"
+        ],
+        "cons": [
+          "Single tablespoon provides 154mg sodium (10% DV)",
+          "High sodium linked to hypertension and stroke risk",
+          "Added sugars contribute to inflammation"
+        ]
+      },
+      "muscle_building": {
+        "grade": "F",
+        "score": 15,
+        "insight": "With only 1g protein per 100g and negligible amino acids, ketchup offers zero muscle-building value",
+        "pros": [
+          "Provides quick simple carbs for immediate post-workout glycogen if needed"
+        ],
+        "cons": [
+          "Essentially protein-free (1g/100g)",
+          "No branched-chain amino acids for recovery",
+          "High sodium promotes water retention masking muscle definition"
+        ]
+      },
+      "energy": {
+        "grade": "D-",
+        "score": 38,
+        "insight": "Sugar provides quick energy spike but lacks sustained fuel; sodium and additives may actually impair endurance performance",
+        "pros": [
+          "Simple sugars for rapid blood glucose rise",
+          "Low glycemic index prevents extreme crashes",
+          "Minimal fat won't slow digestion"
+        ],
+        "cons": [
+          "No complex carbs for sustained energy release",
+          "High sodium increases fluid needs during activity",
+          "Sugar crash follows initial spike within 30-60 minutes"
+        ]
+      },
+      "weight_management": {
+        "grade": "D",
+        "score": 40,
+        "insight": "While low-calorie per tablespoon, high sugar and sodium content triggers cravings and water retention that sabotage weight goals",
+        "pros": [
+          "Only 17 calories per tablespoon serving",
+          "Virtually fat-free (0.1g/100g)",
+          "Can add flavor to low-calorie foods"
+        ],
+        "cons": [
+          "Added sugars spike insulin promoting fat storage",
+          "High sodium causes bloating and water weight gain",
+          "Sweet taste may increase appetite for more sugary foods"
+        ]
+      },
+      "brain_focus": {
+        "grade": "D",
+        "score": 35,
+        "insight": "Sugar creates brief mental clarity followed by fog and irritability; high sodium may impair cognitive blood flow",
+        "pros": [
+          "Lycopene antioxidants may protect neural tissue",
+          "Quick glucose for immediate brain fuel"
+        ],
+        "cons": [
+          "Sugar crash causes concentration lapses and fatigue",
+          "Excessive sodium linked to reduced cerebral blood flow",
+          "No B-vitamins, omega-3s, or other cognitive nutrients",
+          "Artificial additives in some brands may affect neurotransmitters"
+        ]
+      },
+      "gut_health": {
+        "grade": "D-",
+        "score": 32,
+        "insight": "Nearly zero fiber and probiotic content, while high sugar and sodium disrupt microbiome balance and intestinal function",
+        "pros": [
+          "Tomato compounds may have mild prebiotic effects"
+        ],
+        "cons": [
+          "Negligible fiber (0.3g) provides no digestive support",
+          "Added sugars feed harmful gut bacteria",
+          "High sodium alters intestinal fluid balance",
+          "Vinegar content may irritate sensitive stomachs",
+          "Preservatives can disrupt microbiome diversity"
+        ]
+      },
+      "blood_sugar": {
+        "grade": "C-",
+        "score": 52,
+        "insight": "Despite 22.8g sugar per 100g, viscous texture and acidity keep glycemic index surprisingly low at 15, but insulin response still significant",
+        "pros": [
+          "Low glycemic index (15) prevents rapid spikes",
+          "Vinegar content may improve insulin sensitivity slightly",
+          "Small serving sizes limit total sugar intake"
+        ],
+        "cons": [
+          "High sugar content still triggers insulin release",
+          "Easy to overconsume beyond single tablespoon",
+          "Added sugars contribute to long-term insulin resistance",
+          "No fiber to slow glucose absorption"
+        ]
+      },
+      "bone_joint": {
+        "grade": "D",
+        "score": 38,
+        "insight": "Minimal calcium and vitamin D, while high sodium actually promotes calcium excretion and may weaken bone density over time",
+        "pros": [
+          "Lycopene antioxidants may reduce joint inflammation slightly",
+          "Small amount of calcium (15mg/100g)"
+        ],
+        "cons": [
+          "High sodium increases urinary calcium loss",
+          "Virtually no vitamin D or vitamin K for bone health",
+          "Negligible magnesium (16mg) for calcium absorption",
+          "Sugar promotes inflammation in joints"
+        ]
+      },
+      "anti_inflammatory": {
+        "grade": "C-",
+        "score": 50,
+        "insight": "Tomato lycopene offers legitimate anti-inflammatory benefits, but added sugar and high sodium create pro-inflammatory effects that cancel out advantages",
+        "pros": [
+          "Lycopene is powerful antioxidant reducing oxidative stress",
+          "Tomato compounds may inhibit inflammatory cytokines",
+          "Vinegar has mild anti-inflammatory properties"
+        ],
+        "cons": [
+          "Added sugars trigger inflammatory pathways",
+          "High sodium promotes systemic inflammation",
+          "Processing destroys some natural tomato phytonutrients",
+          "Net inflammatory effect likely neutral or negative"
+        ]
+      }
+    }
+  },
+  "lamb_chop": {
+    "name": "Lamb Chop",
+    "calories": 282,
+    "protein": 24.52,
+    "carbs": 0,
+    "fat": 19.67,
+    "fiber": 0,
+    "sugar": 0,
+    "sodium": 72,
+    "saturatedFat": 8.83,
+    "cholesterol": 97,
+    "potassium": 310,
+    "calcium": 17,
+    "iron": 1.88,
+    "magnesium": 23,
+    "vitaminA": 0,
+    "vitaminC": 0,
+    "vitaminD": 0.1,
+    "vitaminB12": 2.55,
+    "glycemicIndex": 0,
+    "glycemicLoad": 0,
+    "allergens": [],
+    "servingSize": 85,
+    "servingUnit": "g (1 chop, cooked)",
+    "focusGrades": {
+      "balanced": {
+        "grade": "B",
+        "score": 72,
+        "insight": "Excellent protein and B12, but high saturated fat and cholesterol require moderation; grass-fed lamb offers superior omega-3 profile",
+        "pros": [
+          "Complete protein with all essential amino acids",
+          "Rich in vitamin B12 (2.55mcg) and zinc for immune function",
+          "Provides bioavailable heme iron preventing anemia",
+          "Zero carbs supports low-carb and keto diets"
+        ],
+        "cons": [
+          "Saturated fat (8.83g/100g) at upper limit for heart health",
+          "Cholesterol (97mg) significant for those monitoring levels",
+          "No fiber or vitamin C requires vegetable pairing",
+          "Higher in calories than leaner proteins like chicken"
+        ]
+      },
+      "heart_health": {
+        "grade": "C+",
+        "score": 65,
+        "insight": "Saturated fat and cholesterol content create cardiovascular concerns, though grass-fed lamb's CLA and omega-3s offer some protection",
+        "pros": [
+          "Grass-fed lamb contains anti-inflammatory omega-3 fatty acids",
+          "Conjugated linoleic acid (CLA) may improve lipid profiles",
+          "Low sodium (72mg) supports healthy blood pressure",
+          "Potassium (310mg) aids vascular function"
+        ],
+        "cons": [
+          "Saturated fat 8.83g per 100g (44% of DV)",
+          "Cholesterol 97mg contributes to LDL buildup",
+          "Red meat linked to increased CVD risk in large studies",
+          "Cooking method (grilling) can create harmful AGEs"
+        ]
+      },
+      "muscle_building": {
+        "grade": "A",
+        "score": 91,
+        "insight": "Outstanding complete protein (24.5g/100g) with high leucine content triggers muscle protein synthesis; zinc and B12 optimize recovery",
+        "pros": [
+          "High-quality protein with optimal amino acid profile",
+          "Leucine content activates mTOR pathway for growth",
+          "Vitamin B12 essential for red blood cell production",
+          "Zinc supports testosterone production and recovery",
+          "Heme iron improves oxygen delivery to muscles"
+        ],
+        "cons": [
+          "Higher calories may not suit cutting phases",
+          "Saturated fat provides no muscle-building benefit"
+        ]
+      },
+      "energy": {
+        "grade": "B+",
+        "score": 84,
+        "insight": "High in B-vitamins for energy metabolism and sustained fat-burning fuel, though protein digestion is slower than carb-based energy",
+        "pros": [
+          "B12 (2.55mcg) essential for cellular energy production",
+          "Fat provides 9 calories per gram for endurance fuel",
+          "Iron prevents fatigue from anemia in athletes",
+          "Zero-carb supports ketogenic fat adaptation"
+        ],
+        "cons": [
+          "No quick carbohydrates for immediate glycogen",
+          "Protein and fat digest slowly, not ideal pre-workout",
+          "Heavy meal may cause sluggishness during activity"
+        ]
+      },
+      "weight_management": {
+        "grade": "B-",
+        "score": 68,
+        "insight": "High protein promotes satiety and preserves lean mass during weight loss, but calorie density from fat requires portion control",
+        "pros": [
+          "Protein (24.5g) increases satiety and thermogenesis",
+          "Zero carbs keeps insulin low for fat burning",
+          "Preserves muscle mass during caloric deficit",
+          "Rich flavor satisfaction reduces cravings"
+        ],
+        "cons": [
+          "Calorie-dense at 282 kcal per 100g",
+          "Fat content (19.67g) easy to overconsume",
+          "Larger portions can quickly exceed calorie targets",
+          "Less volume per calorie than lean proteins"
+        ]
+      },
+      "brain_focus": {
+        "grade": "B+",
+        "score": 82,
+        "insight": "B12 and iron are critical for cognitive function and neurotransmitter synthesis; fat provides stable energy without glucose crashes",
+        "pros": [
+          "B12 essential for myelin sheath and nerve function",
+          "Iron improves oxygen flow to brain tissue",
+          "Zinc supports memory formation and learning",
+          "Stable fat energy avoids blood sugar fluctuations",
+          "Choline in lamb supports acetylcholine production"
+        ],
+        "cons": [
+          "No omega-3 DHA (unless grass-fed) for optimal brain health",
+          "Heavy protein meals may cause post-meal drowsiness",
+          "Lacks antioxidants for neuroprotection"
+        ]
+      },
+      "gut_health": {
+        "grade": "C",
+        "score": 58,
+        "insight": "Zero fiber and no prebiotics mean lamb must be paired with vegetables for digestive health; high fat can slow transit time",
+        "pros": [
+          "Zinc supports intestinal barrier integrity",
+          "Easily digestible protein for most people",
+          "Grass-fed lamb may contain beneficial CLA"
+        ],
+        "cons": [
+          "Completely devoid of fiber for gut motility",
+          "No prebiotics to feed beneficial bacteria",
+          "High fat slows digestive transit time",
+          "Red meat increases TMAO production by gut bacteria",
+          "Grilled meat compounds may irritate GI lining"
+        ]
+      },
+      "blood_sugar": {
+        "grade": "A",
+        "score": 95,
+        "insight": "Zero carbohydrates mean zero glycemic impact; protein and fat provide sustained energy without insulin spikes",
+        "pros": [
+          "Glycemic index and load both zero",
+          "No impact on blood glucose levels",
+          "Protein stimulates minimal insulin response",
+          "Supports ketogenic and low-carb diabetic diets",
+          "Fat promotes stable blood sugar for hours"
+        ],
+        "cons": [
+          "Excessive protein can convert to glucose via gluconeogenesis",
+          "Must pair with low-GI vegetables for complete meal"
+        ]
+      },
+      "bone_joint": {
+        "grade": "B",
+        "score": 75,
+        "insight": "Protein, zinc, and phosphorus support bone matrix, while grass-fed omega-3s reduce joint inflammation from arthritis",
+        "pros": [
+          "Protein provides building blocks for bone collagen",
+          "Zinc essential for bone mineralization and healing",
+          "Phosphorus works with calcium for bone strength",
+          "Grass-fed omega-3s reduce inflammatory joint pain",
+          "B12 may reduce homocysteine-related bone loss"
+        ],
+        "cons": [
+          "Low calcium content (17mg) requires dairy pairing",
+          "Virtually no vitamin D for calcium absorption",
+          "High protein may increase calcium excretion if intake inadequate",
+          "Lacks vitamin K for bone metabolism"
+        ]
+      },
+      "anti_inflammatory": {
+        "grade": "C+",
+        "score": 64,
+        "insight": "Grass-fed lamb's omega-3s and CLA fight inflammation, but grain-fed versions and cooking methods can create pro-inflammatory compounds",
+        "pros": [
+          "Grass-fed contains anti-inflammatory omega-3 fatty acids",
+          "CLA (conjugated linoleic acid) reduces inflammatory markers",
+          "Zinc supports immune response and reduces oxidative stress",
+          "Selenium in lamb acts as antioxidant"
+        ],
+        "cons": [
+          "Grain-fed lamb has poor omega-6 to omega-3 ratio",
+          "Saturated fat can promote inflammation in excess",
+          "Grilling creates AGEs (advanced glycation end products)",
+          "Red meat consumption linked to C-reactive protein elevation",
+          "Lacks polyphenols and antioxidants from plants"
+        ]
+      }
+    }
+  },
+  "maple_syrup": {
+    "name": "Maple Syrup",
+    "calories": 260,
+    "protein": 0.04,
+    "carbs": 67.04,
+    "fat": 0.06,
+    "fiber": 0,
+    "sugar": 59.5,
+    "sodium": 9,
+    "saturatedFat": 0.01,
+    "cholesterol": 0,
+    "potassium": 204,
+    "calcium": 67,
+    "iron": 0.11,
+    "magnesium": 14,
+    "vitaminA": 0,
+    "vitaminC": 0,
+    "vitaminD": 0,
+    "vitaminB12": 0,
+    "glycemicIndex": 54,
+    "glycemicLoad": 36,
+    "allergens": [],
+    "servingSize": 20,
+    "servingUnit": "g (1 tbsp)",
+    "focusGrades": {
+      "balanced": {
+        "grade": "D",
+        "score": 45,
+        "insight": "Though natural and containing trace minerals, maple syrup is still 89% sugar with minimal nutritional density beyond calories",
+        "pros": [
+          "Natural sweetener without artificial additives",
+          "Contains beneficial polyphenols and antioxidants",
+          "Minerals like manganese (33% DV per tbsp) and zinc",
+          "Lower fructose than honey or agave"
+        ],
+        "cons": [
+          "Extremely high in sugar (59.5g/100g)",
+          "Nearly pure simple carbohydrates with zero protein or fat",
+          "No fiber to slow sugar absorption",
+          "Calorie-dense (260 kcal/100g) with limited nutrients"
+        ]
+      },
+      "heart_health": {
+        "grade": "D+",
+        "score": 47,
+        "insight": "Polyphenols offer cardiovascular benefits, but high sugar content promotes inflammation and triglyceride elevation that harm arteries",
+        "pros": [
+          "Polyphenols reduce oxidative stress in blood vessels",
+          "Zero cholesterol and minimal saturated fat",
+          "Low sodium supports healthy blood pressure",
+          "Manganese supports arterial wall integrity"
+        ],
+        "cons": [
+          "High sugar intake raises triglycerides significantly",
+          "Excess fructose linked to fatty liver and metabolic syndrome",
+          "Glycemic load of 36 per 100g stresses cardiovascular system",
+          "Contributes to inflammation underlying atherosclerosis"
+        ]
+      },
+      "muscle_building": {
+        "grade": "D-",
+        "score": 35,
+        "insight": "Can replenish glycogen post-workout, but virtually zero protein and amino acids make it useless for muscle protein synthesis",
+        "pros": [
+          "Fast-acting carbs restore muscle glycogen after training",
+          "Small amount of zinc supports testosterone production",
+          "Manganese aids in amino acid metabolism"
+        ],
+        "cons": [
+          "Essentially protein-free (0.04g/100g)",
+          "No branched-chain amino acids for recovery",
+          "Sugar without protein impairs muscle building signaling",
+          "Better alternatives exist for post-workout nutrition"
+        ]
+      },
+      "energy": {
+        "grade": "C",
+        "score": 55,
+        "insight": "Provides rapid glucose spike for quick energy, but lack of fiber and protein means crash follows within 1-2 hours",
+        "pros": [
+          "Simple sugars absorbed rapidly into bloodstream",
+          "Useful for immediate pre-workout or during endurance events",
+          "Manganese supports energy metabolism enzymes",
+          "Natural alternative to synthetic sports gels"
+        ],
+        "cons": [
+          "No sustained energy from complex carbs or protein",
+          "Blood sugar crash causes fatigue and hunger rebound",
+          "Glycemic index 54 creates moderate insulin spike",
+          "No B-vitamins for cellular energy production"
+        ]
+      },
+      "weight_management": {
+        "grade": "F",
+        "score": 25,
+        "insight": "Dense in calories (52 per tablespoon) with zero satiety; sugar content promotes insulin resistance and fat storage in abdomen",
+        "pros": [
+          "Can satisfy sweet cravings in very small amounts",
+          "Natural option compared to refined white sugar"
+        ],
+        "cons": [
+          "Extremely calorie-dense with no satiety value",
+          "High sugar spikes insulin promoting fat storage",
+          "Easy to overconsume beyond intended serving size",
+          "No protein or fiber to promote fullness",
+          "Liquid calories don't register satiety like solid foods",
+          "Contributes to insulin resistance over time"
+        ]
+      },
+      "brain_focus": {
+        "grade": "D+",
+        "score": 43,
+        "insight": "Glucose provides quick mental clarity boost, but subsequent crash impairs concentration; manganese supports neurotransmitter production",
+        "pros": [
+          "Rapid glucose delivery for immediate brain fuel",
+          "Manganese required for neurotransmitter synthesis",
+          "Polyphenols may protect against neurodegeneration",
+          "Brief cognitive enhancement within 15-30 minutes"
+        ],
+        "cons": [
+          "Sugar crash causes brain fog and irritability",
+          "No B-vitamins essential for cognitive function",
+          "Insulin spike followed by hypoglycemia impairs focus",
+          "Lacks healthy fats for sustained brain energy",
+          "No choline or omega-3s for memory and learning"
+        ]
+      },
+      "gut_health": {
+        "grade": "D-",
+        "score": 30,
+        "insight": "Zero fiber and prebiotics, while concentrated sugars feed harmful bacteria and yeast overgrowth like Candida",
+        "pros": [
+          "Contains oligosaccharides with potential prebiotic effects",
+          "Polyphenols may support beneficial gut bacteria"
+        ],
+        "cons": [
+          "Completely devoid of dietary fiber",
+          "High sugar feeds pathogenic bacteria and yeast",
+          "Can exacerbate SIBO and Candida overgrowth",
+          "No resistant starch for butyrate production",
+          "May cause diarrhea in large amounts due to osmotic effect",
+          "Displaces fiber-rich foods in the diet"
+        ]
+      },
+      "blood_sugar": {
+        "grade": "F",
+        "score": 20,
+        "insight": "With glycemic index 54 and load 36, maple syrup causes significant glucose and insulin spikes dangerous for diabetics",
+        "pros": [
+          "Lower glycemic index than table sugar (GI 65)",
+          "Contains chromium which may help insulin sensitivity"
+        ],
+        "cons": [
+          "Still causes substantial blood sugar elevation",
+          "Glycemic load 36 per 100g is very high",
+          "89% pure sugar provides no glucose buffering",
+          "Zero fiber to slow carbohydrate absorption",
+          "Repeated use contributes to insulin resistance",
+          "Dangerous for type 2 diabetics and prediabetics"
+        ]
+      },
+      "bone_joint": {
+        "grade": "C-",
+        "score": 52,
+        "insight": "Provides meaningful calcium and manganese for bone health, but high sugar promotes inflammation in joints and may leach minerals",
+        "pros": [
+          "Calcium (67mg/100g) supports bone density",
+          "Manganese essential for cartilage and bone formation",
+          "Zinc aids bone tissue repair and growth",
+          "Magnesium works synergistically with calcium"
+        ],
+        "cons": [
+          "High sugar intake associated with bone mineral loss",
+          "Sugar-induced inflammation worsens arthritis pain",
+          "Acidifying effect may require calcium buffering",
+          "No vitamin D or vitamin K for bone metabolism",
+          "Lacks protein for bone matrix structure"
+        ]
+      },
+      "anti_inflammatory": {
+        "grade": "D+",
+        "score": 46,
+        "insight": "Contains 24+ antioxidant polyphenol compounds that fight inflammation, but high sugar content creates competing pro-inflammatory effects",
+        "pros": [
+          "Rich in polyphenols like quebecol with antioxidant activity",
+          "Contains anti-inflammatory compounds unique to maple",
+          "Phenolic acids reduce oxidative stress markers",
+          "Lower in fructose than agave or high-fructose corn syrup"
+        ],
+        "cons": [
+          "High sugar triggers inflammatory cytokine production",
+          "Fructose component particularly inflammatory to liver",
+          "Insulin spikes activate pro-inflammatory pathways",
+          "Net effect likely pro-inflammatory despite antioxidants",
+          "Sugar feeds inflammatory gut bacteria"
+        ]
+      }
+    }
+  },
+  "mayonnaise": {
+    "name": "Mayonnaise",
+    "calories": 680,
+    "protein": 1.09,
+    "carbs": 0.63,
+    "fat": 75,
+    "fiber": 0,
+    "sugar": 0.55,
+    "sodium": 597,
+    "saturatedFat": 11.22,
+    "cholesterol": 60,
+    "potassium": 20,
+    "calcium": 7,
+    "iron": 0.31,
+    "magnesium": 2,
+    "vitaminA": 50,
+    "vitaminC": 0,
+    "vitaminD": 0,
+    "vitaminB12": 0.07,
+    "glycemicIndex": 0,
+    "glycemicLoad": 0,
+    "allergens": ["eggs"],
+    "servingSize": 13,
+    "servingUnit": "g (1 tbsp)",
+    "focusGrades": {
+      "balanced": {
+        "grade": "D",
+        "score": 40,
+        "insight": "Extremely calorie-dense at 680 kcal/100g with minimal nutritional value; high in omega-6 oils that promote inflammation when used liberally",
+        "pros": [
+          "Provides vitamin E from vegetable oils",
+          "Enhances absorption of fat-soluble vitamins from vegetables",
+          "Zero sugar and minimal carbs",
+          "Can make healthy salads more palatable"
+        ],
+        "cons": [
+          "One of the most calorie-dense foods (680 kcal/100g)",
+          "High in omega-6 fatty acids promoting inflammation",
+          "Elevated sodium (597mg/100g) raises blood pressure",
+          "Minimal protein, fiber, vitamins, or minerals",
+          "Easy to overconsume beyond single tablespoon"
+        ]
+      },
+      "heart_health": {
+        "grade": "D-",
+        "score": 37,
+        "insight": "High in inflammatory omega-6 oils and sodium; saturated fat and cholesterol content harm cardiovascular health despite being low-carb",
+        "pros": [
+          "Contains some monounsaturated fats if made with olive oil",
+          "Minimal trans fats in most modern formulations",
+          "Zero sugar prevents triglyceride spikes"
+        ],
+        "cons": [
+          "Very high omega-6 to omega-3 ratio (typically 20:1 or worse)",
+          "Saturated fat 11.22g per 100g raises LDL cholesterol",
+          "Cholesterol content 60mg per 100g",
+          "Sodium 597mg contributes to hypertension",
+          "Vegetable oils prone to oxidation creating harmful compounds",
+          "Regular consumption linked to increased CVD risk"
+        ]
+      },
+      "muscle_building": {
+        "grade": "F",
+        "score": 18,
+        "insight": "Virtually protein-free with excessive empty calories from fat; provides no muscle-building nutrients or recovery support",
+        "pros": [
+          "Calories can support caloric surplus for bulking phases",
+          "Small amount of choline from egg yolks"
+        ],
+        "cons": [
+          "Only 1g protein per 100g - essentially useless",
+          "No amino acids for muscle protein synthesis",
+          "Excess omega-6 fats promote muscle inflammation",
+          "Calories from fat don't support training performance",
+          "Better calorie sources exist for muscle growth"
+        ]
+      },
+      "energy": {
+        "grade": "C-",
+        "score": 50,
+        "insight": "High calorie density provides concentrated energy, but lack of nutrients means no support for energy metabolism or sustained performance",
+        "pros": [
+          "Very calorie-dense for energy needs (680 kcal/100g)",
+          "Fat provides 9 calories per gram for endurance",
+          "Zero carbs won't cause blood sugar fluctuations",
+          "Useful for high-calorie needs in keto diets"
+        ],
+        "cons": [
+          "No B-vitamins for cellular energy production",
+          "Heavy fat content may cause sluggishness and digestive distress",
+          "Inflammatory oils impair mitochondrial function over time",
+          "Not suitable pre-workout due to slow digestion"
+        ]
+      },
+      "weight_management": {
+        "grade": "F",
+        "score": 15,
+        "insight": "At 94 calories per tablespoon, mayonnaise is a weight loss saboteur; easy to overconsume with zero satiety or nutritional benefit",
+        "pros": [
+          "Small amounts can make low-calorie foods more satisfying",
+          "Fat promotes some satiety if used minimally"
+        ],
+        "cons": [
+          "Extremely calorie-dense (680 kcal/100g)",
+          "Single tablespoon contains 94 calories from pure fat",
+          "Provides zero satiety relative to calorie content",
+          "Easy to use 3-4 tablespoons unknowingly (282-376 calories)",
+          "No protein or fiber to promote fullness",
+          "High omega-6 content may impair fat metabolism"
+        ]
+      },
+      "brain_focus": {
+        "grade": "D",
+        "score": 38,
+        "insight": "Small amount of choline supports brain function, but inflammatory omega-6 oils and lack of omega-3s harm cognitive health long-term",
+        "pros": [
+          "Egg-based mayo provides choline for acetylcholine synthesis",
+          "Fat supports absorption of fat-soluble nutrients",
+          "Stable energy without blood sugar swings"
+        ],
+        "cons": [
+          "Virtually no omega-3 DHA for brain structure and function",
+          "High omega-6 promotes neuroinflammation",
+          "Oxidized vegetable oils create free radicals damaging neurons",
+          "No B-vitamins, antioxidants, or neuroprotective compounds",
+          "Heavy fat may cause post-meal brain fog"
+        ]
+      },
+      "gut_health": {
+        "grade": "D-",
+        "score": 33,
+        "insight": "Zero fiber and prebiotics; high fat slows digestion and inflammatory oils may damage intestinal lining over time",
+        "pros": [
+          "Fat helps absorption of fat-soluble vitamins from vegetables",
+          "Egg lecithin may support gut membrane integrity slightly"
+        ],
+        "cons": [
+          "Completely devoid of dietary fiber",
+          "No prebiotics or probiotics for microbiome",
+          "High fat content slows gastric emptying significantly",
+          "Omega-6 oils promote intestinal inflammation",
+          "May worsen symptoms in IBS and inflammatory bowel disease",
+          "Emulsifiers in commercial mayo may disrupt gut barrier"
+        ]
+      },
+      "blood_sugar": {
+        "grade": "A-",
+        "score": 88,
+        "insight": "Virtually zero carbs mean zero glycemic impact; pure fat source that won't spike insulin or glucose levels",
+        "pros": [
+          "Glycemic index and load both zero",
+          "Only 0.63g carbs per 100g - negligible impact",
+          "No effect on blood glucose levels",
+          "Supports ketogenic and very low-carb diets",
+          "Fat blunts glycemic response when paired with carbs"
+        ],
+        "cons": [
+          "Provides no blood sugar stabilization nutrients",
+          "Inflammatory oils may worsen insulin resistance long-term"
+        ]
+      },
+      "bone_joint": {
+        "grade": "D-",
+        "score": 31,
+        "insight": "Minimal bone-building nutrients while high omega-6 content promotes joint inflammation and may worsen arthritis symptoms",
+        "pros": [
+          "Fat aids absorption of vitamin D and K from other foods",
+          "Small amount of vitamin E has antioxidant properties"
+        ],
+        "cons": [
+          "Virtually no calcium (7mg/100g), vitamin D, or vitamin K",
+          "No protein for bone matrix or collagen synthesis",
+          "High omega-6 oils promote inflammatory arthritis pain",
+          "Lacks magnesium, zinc, or other bone minerals",
+          "Inflammatory profile worsens joint degradation over time"
+        ]
+      },
+      "anti_inflammatory": {
+        "grade": "F",
+        "score": 22,
+        "insight": "Among the most pro-inflammatory foods due to extremely high omega-6 fatty acid content from soybean or canola oil base",
+        "pros": [
+          "Vitamin E from oils has some antioxidant activity",
+          "Olive oil-based mayo contains anti-inflammatory oleic acid"
+        ],
+        "cons": [
+          "Extremely high omega-6 to omega-3 ratio (often >20:1)",
+          "Omega-6 linoleic acid converts to inflammatory arachidonic acid",
+          "Vegetable oils oxidize easily creating inflammatory compounds",
+          "Regular consumption elevates C-reactive protein",
+          "Worsens chronic inflammatory conditions",
+          "Zero polyphenols or anti-inflammatory phytonutrients"
+        ]
+      }
+    }
+  },
+  "milk": {
+    "name": "Milk (2% Reduced Fat)",
+    "calories": 50,
+    "protein": 3.28,
+    "carbs": 4.8,
+    "fat": 1.98,
+    "fiber": 0,
+    "sugar": 5.06,
+    "sodium": 44,
+    "saturatedFat": 1.25,
+    "cholesterol": 8,
+    "potassium": 150,
+    "calcium": 113,
+    "iron": 0.03,
+    "magnesium": 11,
+    "vitaminA": 46,
+    "vitaminC": 0,
+    "vitaminD": 1.3,
+    "vitaminB12": 0.45,
+    "glycemicIndex": 32,
+    "glycemicLoad": 4,
+    "allergens": ["dairy", "lactose"],
+    "servingSize": 244,
+    "servingUnit": "ml (1 cup)",
+    "focusGrades": {
+      "balanced": {
+        "grade": "B+",
+        "score": 83,
+        "insight": "Nearly complete nutrition with protein, calcium, vitamin D, and B12; natural lactose provides energy without added sugars",
+        "pros": [
+          "Complete protein with all essential amino acids",
+          "Excellent calcium (113mg/100ml) for bone health",
+          "Fortified with vitamin D (1.3mcg) for calcium absorption",
+          "B12 (0.45mcg) supports nervous system function",
+          "Balanced macros with moderate fat and natural sugars"
+        ],
+        "cons": [
+          "Lactose intolerance affects 65% of global population",
+          "Contains A1 casein linked to inflammation in some people",
+          "No fiber for digestive health",
+          "Saturated fat content requires moderation"
+        ]
+      },
+      "heart_health": {
+        "grade": "B",
+        "score": 75,
+        "insight": "Calcium, potassium, and vitamin D support cardiovascular function, though saturated fat and cholesterol warrant portion awareness",
+        "pros": [
+          "Potassium (150mg) helps regulate blood pressure",
+          "Calcium supports vascular smooth muscle function",
+          "Low sodium (44mg) compared to many beverages",
+          "Vitamin D reduces cardiovascular inflammation",
+          "Emerging research shows dairy fat may be neutral or protective"
+        ],
+        "cons": [
+          "Saturated fat 1.25g per 100ml raises LDL in some individuals",
+          "Cholesterol 8mg contributes to daily intake",
+          "Full-fat versions have higher saturated fat content",
+          "A1 casein may promote arterial inflammation in sensitive people"
+        ]
+      },
+      "muscle_building": {
+        "grade": "A",
+        "score": 90,
+        "insight": "Gold standard post-workout beverage with fast whey and slow casein proteins; rich in leucine and BCAAs for muscle protein synthesis",
+        "pros": [
+          "Complete protein (3.28g/100ml) with optimal amino acid profile",
+          "Whey protein rapidly absorbed for immediate recovery",
+          "Casein protein provides sustained amino acid release",
+          "High leucine content triggers mTOR muscle growth pathway",
+          "Calcium and vitamin D support muscle contraction",
+          "Natural electrolytes for rehydration"
+        ],
+        "cons": [
+          "Lactose intolerance may cause digestive issues post-workout",
+          "Lower protein density than dedicated protein shakes"
+        ]
+      },
+      "energy": {
+        "grade": "B+",
+        "score": 82,
+        "insight": "Balanced carbs, protein, and fat provide sustained energy; B-vitamins support cellular metabolism without causing blood sugar crashes",
+        "pros": [
+          "Natural lactose provides steady glucose release",
+          "Protein and fat slow digestion for sustained energy",
+          "B12 and riboflavin essential for energy metabolism",
+          "Low glycemic index (32) prevents energy crashes",
+          "Electrolytes support hydration and performance"
+        ],
+        "cons": [
+          "Not ideal for immediate pre-workout due to digestion time",
+          "Lactose may cause GI distress during intense activity",
+          "Lower in quick carbs than dedicated sports drinks"
+        ]
+      },
+      "weight_management": {
+        "grade": "B",
+        "score": 77,
+        "insight": "High satiety from protein and fat helps control appetite; calcium may enhance fat metabolism, though calorie content requires tracking",
+        "pros": [
+          "Protein promotes satiety and thermogenesis",
+          "Calcium linked to improved fat oxidation and weight loss",
+          "Low glycemic index stabilizes hunger hormones",
+          "Nutrient-dense for relatively low calories (50/100ml)",
+          "Satisfying as meal component or snack"
+        ],
+        "cons": [
+          "Easy to overconsume beyond single cup (122 calories)",
+          "Whole milk version has significantly more calories",
+          "Lactose sugar still contributes to daily intake",
+          "Some studies link dairy to increased appetite in certain individuals"
+        ]
+      },
+      "brain_focus": {
+        "grade": "B+",
+        "score": 84,
+        "insight": "B12, choline, and iodine support neurotransmitter production; tryptophan promotes calmness though not ideal for peak alertness",
+        "pros": [
+          "B12 essential for myelin sheath and cognitive function",
+          "Choline supports acetylcholine for memory and learning",
+          "Iodine required for thyroid hormones affecting brain metabolism",
+          "Vitamin D linked to reduced depression and cognitive decline",
+          "Stable blood sugar supports consistent mental energy"
+        ],
+        "cons": [
+          "Tryptophan promotes serotonin and melatonin (relaxation, not focus)",
+          "A1 casein may cause brain fog in sensitive individuals",
+          "Lower in omega-3 DHA than ideal for brain structure",
+          "Lactose intolerance creates inflammatory brain fog"
+        ]
+      },
+      "gut_health": {
+        "grade": "C+",
+        "score": 62,
+        "insight": "While zero fiber, milk provides probiotics if raw/fermented and supports gut lining; lactose intolerance creates major digestive issues",
+        "pros": [
+          "Fat-soluble vitamins support intestinal cell health",
+          "Calcium and vitamin D may protect against colon cancer",
+          "Lactoferrin has antimicrobial properties protecting gut",
+          "Raw or fermented versions contain beneficial bacteria"
+        ],
+        "cons": [
+          "Zero dietary fiber for gut motility",
+          "Lactose intolerance causes bloating, gas, diarrhea in 65% of adults",
+          "A1 casein may trigger inflammation and leaky gut",
+          "Pasteurization destroys natural enzymes aiding digestion",
+          "Can worsen IBS and inflammatory bowel conditions"
+        ]
+      },
+      "blood_sugar": {
+        "grade": "B+",
+        "score": 85,
+        "insight": "Low glycemic index of 32 and protein/fat content create minimal glucose spike; suitable for diabetics in appropriate portions",
+        "pros": [
+          "Low glycemic index (32) and load (4) prevent spikes",
+          "Protein and fat slow lactose absorption significantly",
+          "Natural sugars more stable than added sugars",
+          "Vitamin D may improve insulin sensitivity",
+          "Suitable for most diabetic meal plans in moderation"
+        ],
+        "cons": [
+          "Still contains 5g natural sugar per 100ml (lactose)",
+          "Excessive intake can impact blood glucose",
+          "Individual responses vary based on lactose digestion"
+        ]
+      },
+      "bone_joint": {
+        "grade": "A",
+        "score": 94,
+        "insight": "Optimal bone-building nutrition with calcium, vitamin D, protein, and phosphorus working synergistically for skeletal health",
+        "pros": [
+          "Calcium (113mg/100ml) is primary bone mineral",
+          "Vitamin D (1.3mcg) essential for calcium absorption",
+          "Protein provides collagen matrix for bone structure",
+          "Phosphorus works with calcium for bone mineralization",
+          "Magnesium and potassium support bone density",
+          "Reduces osteoporosis and fracture risk in studies"
+        ],
+        "cons": [
+          "A1 casein may promote joint inflammation in sensitive people",
+          "Excessive protein intake may increase calcium excretion"
+        ]
+      },
+      "anti_inflammatory": {
+        "grade": "C+",
+        "score": 63,
+        "insight": "Vitamin D and omega-3s (if grass-fed) fight inflammation, but A1 casein and saturated fat create pro-inflammatory effects in susceptible individuals",
+        "pros": [
+          "Vitamin D is powerful anti-inflammatory hormone",
+          "Grass-fed milk contains anti-inflammatory omega-3s and CLA",
+          "Lactoferrin reduces inflammatory cytokines",
+          "Bioactive peptides from casein may reduce inflammation"
+        ],
+        "cons": [
+          "A1 beta-casein releases inflammatory BCM-7 peptide during digestion",
+          "Lactose intolerance creates inflammatory gut response",
+          "Saturated fat may promote inflammation in excess",
+          "Conventional milk has poor omega-6 to omega-3 ratio",
+          "Dairy linked to acne and skin inflammation in some people"
+        ]
+      }
+    }
+  },
+  "muffin": {
+    "name": "Blueberry Muffin",
+    "calories": 353,
+    "protein": 5.91,
+    "carbs": 54.39,
+    "fat": 12.77,
+    "fiber": 1.8,
+    "sugar": 27.81,
+    "sodium": 397,
+    "saturatedFat": 2.85,
+    "cholesterol": 39,
+    "potassium": 122,
+    "calcium": 81,
+    "iron": 2.32,
+    "magnesium": 18,
+    "vitaminA": 50,
+    "vitaminC": 1.1,
+    "vitaminD": 0.2,
+    "vitaminB12": 0.12,
+    "glycemicIndex": 59,
+    "glycemicLoad": 32,
+    "allergens": ["gluten", "eggs", "dairy"],
+    "servingSize": 113,
+    "servingUnit": "g (1 large muffin)",
+    "focusGrades": {
+      "balanced": {
+        "grade": "D",
+        "score": 42,
+        "insight": "Refined flour, added sugars, and high sodium dominate nutrition profile; minimal fiber and nutrients make this a treat, not sustenance",
+        "pros": [
+          "Provides quick energy from carbohydrates",
+          "Small amount of protein from eggs and dairy (5.91g)",
+          "Some iron (2.32mg) from fortified flour",
+          "Blueberries add antioxidants if real fruit used"
+        ],
+        "cons": [
+          "Very high in added sugars (27.81g) - nearly 7 teaspoons",
+          "Refined white flour spikes blood sugar rapidly",
+          "High sodium (397mg) from baking powder and salt",
+          "Low fiber (1.8g) despite grain base",
+          "Calorie-dense (353 kcal) with limited nutritional value"
+        ]
+      },
+      "heart_health": {
+        "grade": "D-",
+        "score": 35,
+        "insight": "Added sugars, refined carbs, and high sodium create cardiovascular stress; saturated fat and cholesterol add to heart disease risk",
+        "pros": [
+          "Blueberries (if real) contain heart-protective anthocyanins",
+          "Some potassium (122mg) for blood pressure regulation",
+          "Fortified with iron reducing anemia risk"
+        ],
+        "cons": [
+          "High added sugar (27.8g) raises triglycerides and inflammation",
+          "Sodium 397mg per muffin increases hypertension risk",
+          "Refined carbs promote arterial plaque formation",
+          "Saturated fat 2.85g raises LDL cholesterol",
+          "Cholesterol 39mg contributes to cardiovascular burden",
+          "Regular consumption linked to increased CVD events"
+        ]
+      },
+      "muscle_building": {
+        "grade": "D",
+        "score": 40,
+        "insight": "Some protein from eggs (5.91g) but dominated by refined carbs and sugar; insufficient amino acids and too much fat for effective muscle growth",
+        "pros": [
+          "Provides 5.91g protein for muscle repair",
+          "Complete protein from eggs with all essential amino acids",
+          "High calories support caloric surplus for bulking",
+          "Quick-digesting carbs for post-workout glycogen"
+        ],
+        "cons": [
+          "Protein content too low (only 6.7% of calories)",
+          "High sugar without protein timing impairs muscle synthesis",
+          "Refined flour lacks nutrients for recovery",
+          "Better protein sources exist with fewer empty calories",
+          "Fat content not ideal for post-workout nutrition"
+        ]
+      },
+      "energy": {
+        "grade": "C-",
+        "score": 48,
+        "insight": "Refined carbs and sugar provide rapid energy spike followed by significant crash within 1-2 hours due to blood sugar rollercoaster",
+        "pros": [
+          "Fast-acting simple carbs for immediate energy boost",
+          "High calorie density (353 kcal) for energy needs",
+          "Some B-vitamins from fortified flour for metabolism",
+          "Useful pre-activity fuel if eaten 30-60 minutes prior"
+        ],
+        "cons": [
+          "Refined flour causes rapid glucose spike then crash",
+          "Low fiber (1.8g) fails to sustain energy release",
+          "High glycemic index (59) creates insulin rollercoaster",
+          "Sugar crash leads to fatigue, irritability, cravings",
+          "Not suitable for sustained endurance activities"
+        ]
+      },
+      "weight_management": {
+        "grade": "F",
+        "score": 20,
+        "insight": "At 400 calories per large muffin with minimal satiety, this is a weight-gain food; sugar and refined carbs spike insulin promoting fat storage",
+        "pros": [
+          "Can satisfy sweet cravings if portion-controlled",
+          "Some protein provides minor satiety"
+        ],
+        "cons": [
+          "Very calorie-dense (353 kcal/100g, ~400 per large muffin)",
+          "Minimal satiety despite high calories",
+          "Added sugars spike insulin triggering fat storage",
+          "Low fiber and protein fail to promote fullness",
+          "Easy to consume multiple muffins unknowingly",
+          "Refined carbs increase hunger shortly after eating",
+          "High glycemic load promotes abdominal fat accumulation"
+        ]
+      },
+      "brain_focus": {
+        "grade": "D",
+        "score": 36,
+        "insight": "Initial glucose rush improves alertness briefly, but subsequent crash causes severe brain fog, irritability, and concentration loss",
+        "pros": [
+          "Quick glucose for immediate brain fuel boost",
+          "Some B-vitamins from fortification support neurotransmitters",
+          "Blueberry polyphenols (if real fruit) support memory",
+          "Brief cognitive enhancement within 15-30 minutes"
+        ],
+        "cons": [
+          "Sugar crash causes profound brain fog and mental fatigue",
+          "Refined carbs impair focus and executive function post-crash",
+          "High glycemic load stresses cognitive blood sugar regulation",
+          "Lacks omega-3 DHA for brain structure and function",
+          "No sustained nutrients for cognitive performance",
+          "Inflammatory response may impair neural signaling"
+        ]
+      },
+      "gut_health": {
+        "grade": "D-",
+        "score": 33,
+        "insight": "Very low fiber (1.8g) and high sugar feed harmful gut bacteria; refined flour lacks nutrients supporting healthy microbiome diversity",
+        "pros": [
+          "Small amount of fiber from flour and blueberries",
+          "Real blueberries contain prebiotics for beneficial bacteria",
+          "Eggs provide lecithin for gut membrane health"
+        ],
+        "cons": [
+          "Low fiber (1.8g) provides minimal digestive support",
+          "Added sugars feed pathogenic bacteria and yeast",
+          "Refined white flour depleted of gut-supporting nutrients",
+          "May worsen dysbiosis and Candida overgrowth",
+          "Gluten can trigger inflammation in sensitive individuals",
+          "High glycemic load promotes intestinal inflammation"
+        ]
+      },
+      "blood_sugar": {
+        "grade": "F",
+        "score": 18,
+        "insight": "Glycemic index 59 and load 32 create dangerous glucose spike; refined flour and added sugars catastrophic for diabetics",
+        "pros": [
+          "Slightly lower GI than pure glucose due to fat content",
+          "Protein and fat provide minor glycemic buffering"
+        ],
+        "cons": [
+          "High glycemic index (59) causes rapid blood sugar spike",
+          "Glycemic load 32 per 100g is very high",
+          "54.4g refined carbs with minimal fiber for buffering",
+          "Added sugars (27.8g) compound glucose elevation",
+          "Triggers large insulin response promoting resistance",
+          "Dangerous for diabetics and prediabetics",
+          "Contributes to metabolic syndrome over time"
+        ]
+      },
+      "bone_joint": {
+        "grade": "C-",
+        "score": 51,
+        "insight": "Provides meaningful calcium and iron, but high sugar promotes inflammation worsening arthritis and may leach bone minerals",
+        "pros": [
+          "Calcium (81mg) from milk and eggs supports bone density",
+          "Iron (2.32mg) from fortified flour aids bone marrow",
+          "Phosphorus from eggs and dairy for mineralization",
+          "Small amount of vitamin D (0.2mcg) for calcium absorption"
+        ],
+        "cons": [
+          "High sugar intake linked to accelerated bone loss",
+          "Sugar-induced inflammation worsens joint pain and arthritis",
+          "Refined carbs may increase calcium excretion",
+          "Insufficient protein for bone collagen matrix",
+          "Lacks vitamin K, magnesium, and other bone minerals",
+          "Acidifying effect requires calcium buffering"
+        ]
+      },
+      "anti_inflammatory": {
+        "grade": "D-",
+        "score": 31,
+        "insight": "Real blueberries offer antioxidants, but refined flour, added sugars, and high glycemic load create net pro-inflammatory effect",
+        "pros": [
+          "Blueberries (if real) contain powerful anti-inflammatory anthocyanins",
+          "Polyphenols from berries reduce oxidative stress",
+          "Eggs provide anti-inflammatory omega-3s if pasture-raised"
+        ],
+        "cons": [
+          "Added sugars (27.8g) trigger inflammatory cytokine cascade",
+          "Refined white flour promotes systemic inflammation",
+          "High glycemic load activates inflammatory pathways",
+          "Gluten may cause inflammation in sensitive individuals",
+          "Vegetable oils (if used) high in inflammatory omega-6",
+          "Net effect strongly pro-inflammatory despite berry benefits"
+        ]
+      }
+    }
+  }
+}

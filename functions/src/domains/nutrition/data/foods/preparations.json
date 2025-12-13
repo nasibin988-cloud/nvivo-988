@@ -1,0 +1,285 @@
+{
+  "_meta": {
+    "description": "Cooking preparation modifiers based on USDA research on nutrient retention",
+    "source": "USDA Table of Nutrient Retention Factors Release 6 (2007)",
+    "lastUpdated": "2024-12-12",
+    "notes": "Modifiers are applied to base (raw) nutrition values. Multipliers are percentage retention (0.95 = 95% retained). Additions are absolute values per 100g."
+  },
+
+  "raw": {
+    "id": "raw",
+    "name": "Raw / Fresh",
+    "description": "Uncooked, natural state",
+    "applicableTo": ["proteins", "vegetables", "fruits", "dairy"],
+    "modifiers": {},
+    "notes": "Base values, no modifications"
+  },
+
+  "grilled": {
+    "id": "grilled",
+    "name": "Grilled / Broiled",
+    "description": "Cooked over direct high heat, fat drips away",
+    "applicableTo": ["proteins", "vegetables"],
+    "modifiers": {
+      "fatMultiplier": 0.91,
+      "proteinMultiplier": 0.97,
+      "thiaminMultiplier": 0.70,
+      "riboflavinMultiplier": 0.90,
+      "niacinMultiplier": 0.85,
+      "vitaminB6Multiplier": 0.80,
+      "vitaminB12Multiplier": 0.85,
+      "waterLossPercent": 25
+    },
+    "notes": "USDA retention factors for broiled meat. Fat loss due to dripping."
+  },
+
+  "pan_fried": {
+    "id": "pan_fried",
+    "name": "Pan-Fried / Sauteed",
+    "description": "Cooked in small amount of oil in a pan",
+    "applicableTo": ["proteins", "vegetables", "eggs"],
+    "modifiers": {
+      "fatAdd": 5,
+      "caloriesAdd": 45,
+      "proteinMultiplier": 0.95,
+      "thiaminMultiplier": 0.65,
+      "riboflavinMultiplier": 0.85,
+      "niacinMultiplier": 0.80,
+      "sodiumAdd": 100,
+      "waterLossPercent": 20
+    },
+    "notes": "Absorbs some cooking oil. Values based on 1 tbsp oil per 100g food."
+  },
+
+  "deep_fried": {
+    "id": "deep_fried",
+    "name": "Deep-Fried",
+    "description": "Submerged in hot oil, often with breading",
+    "applicableTo": ["proteins", "vegetables", "starches"],
+    "modifiers": {
+      "fatAdd": 14,
+      "saturatedFatAdd": 2.5,
+      "caloriesAdd": 150,
+      "carbsAdd": 12,
+      "sodiumAdd": 250,
+      "proteinMultiplier": 0.90,
+      "thiaminMultiplier": 0.55,
+      "riboflavinMultiplier": 0.80,
+      "vitaminCMultiplier": 0.50,
+      "waterLossPercent": 15
+    },
+    "notes": "Significant oil absorption. Carb addition from typical breading."
+  },
+
+  "air_fried": {
+    "id": "air_fried",
+    "name": "Air-Fried",
+    "description": "Circulating hot air, minimal oil",
+    "applicableTo": ["proteins", "vegetables", "starches"],
+    "modifiers": {
+      "fatAdd": 2,
+      "caloriesAdd": 20,
+      "carbsAdd": 8,
+      "sodiumAdd": 150,
+      "proteinMultiplier": 0.95,
+      "waterLossPercent": 18
+    },
+    "notes": "Similar to baking with light oil spray. Carbs if breaded."
+  },
+
+  "baked": {
+    "id": "baked",
+    "name": "Baked / Roasted",
+    "description": "Cooked in oven with dry heat",
+    "applicableTo": ["proteins", "vegetables", "grains", "starches"],
+    "modifiers": {
+      "fatMultiplier": 0.95,
+      "proteinMultiplier": 0.97,
+      "thiaminMultiplier": 0.80,
+      "riboflavinMultiplier": 0.90,
+      "niacinMultiplier": 0.90,
+      "vitaminB6Multiplier": 0.85,
+      "vitaminCMultiplier": 0.80,
+      "waterLossPercent": 22
+    },
+    "notes": "USDA retention factors for roasted meats and baked vegetables."
+  },
+
+  "steamed": {
+    "id": "steamed",
+    "name": "Steamed",
+    "description": "Cooked with steam, no added fat",
+    "applicableTo": ["proteins", "vegetables", "grains", "seafood"],
+    "modifiers": {
+      "proteinMultiplier": 0.99,
+      "thiaminMultiplier": 0.85,
+      "riboflavinMultiplier": 0.95,
+      "niacinMultiplier": 0.95,
+      "vitaminB6Multiplier": 0.90,
+      "vitaminCMultiplier": 0.75,
+      "folateMultiplier": 0.85,
+      "waterLossPercent": 8
+    },
+    "notes": "Best vitamin retention method. USDA shows 75-95% nutrient retention."
+  },
+
+  "boiled": {
+    "id": "boiled",
+    "name": "Boiled / Simmered",
+    "description": "Cooked submerged in boiling water",
+    "applicableTo": ["proteins", "vegetables", "grains", "pasta", "eggs"],
+    "modifiers": {
+      "proteinMultiplier": 0.97,
+      "thiaminMultiplier": 0.60,
+      "riboflavinMultiplier": 0.75,
+      "niacinMultiplier": 0.70,
+      "vitaminB6Multiplier": 0.65,
+      "vitaminCMultiplier": 0.45,
+      "folateMultiplier": 0.50,
+      "potassiumMultiplier": 0.70,
+      "calciumMultiplier": 0.90,
+      "ironMultiplier": 0.85,
+      "waterLossPercent": 5
+    },
+    "notes": "Significant nutrient leaching into cooking water. USDA retention factors show 45-75% loss for water-soluble vitamins."
+  },
+
+  "poached": {
+    "id": "poached",
+    "name": "Poached",
+    "description": "Cooked gently in simmering liquid",
+    "applicableTo": ["proteins", "eggs", "seafood"],
+    "modifiers": {
+      "proteinMultiplier": 0.98,
+      "thiaminMultiplier": 0.70,
+      "riboflavinMultiplier": 0.85,
+      "niacinMultiplier": 0.80,
+      "vitaminB6Multiplier": 0.75,
+      "vitaminB12Multiplier": 0.90,
+      "waterLossPercent": 10
+    },
+    "notes": "Gentler than boiling, better nutrient retention."
+  },
+
+  "microwaved": {
+    "id": "microwaved",
+    "name": "Microwaved",
+    "description": "Cooked with microwave radiation",
+    "applicableTo": ["proteins", "vegetables", "grains"],
+    "modifiers": {
+      "proteinMultiplier": 0.98,
+      "thiaminMultiplier": 0.80,
+      "riboflavinMultiplier": 0.95,
+      "niacinMultiplier": 0.90,
+      "vitaminB6Multiplier": 0.85,
+      "vitaminCMultiplier": 0.80,
+      "folateMultiplier": 0.80,
+      "waterLossPercent": 12
+    },
+    "notes": "Quick cooking preserves nutrients well. USDA shows comparable to steaming."
+  },
+
+  "stir_fried": {
+    "id": "stir_fried",
+    "name": "Stir-Fried",
+    "description": "Quick cooking in wok with small amount of oil",
+    "applicableTo": ["proteins", "vegetables"],
+    "modifiers": {
+      "fatAdd": 4,
+      "caloriesAdd": 36,
+      "sodiumAdd": 200,
+      "proteinMultiplier": 0.95,
+      "thiaminMultiplier": 0.75,
+      "riboflavinMultiplier": 0.90,
+      "vitaminCMultiplier": 0.70,
+      "waterLossPercent": 15
+    },
+    "notes": "High heat, short time. Sodium from typical soy sauce addition."
+  },
+
+  "smoked": {
+    "id": "smoked",
+    "name": "Smoked",
+    "description": "Cured and cooked with wood smoke",
+    "applicableTo": ["proteins", "seafood"],
+    "modifiers": {
+      "sodiumAdd": 800,
+      "proteinMultiplier": 1.15,
+      "fatMultiplier": 0.90,
+      "thiaminMultiplier": 0.50,
+      "riboflavinMultiplier": 0.75,
+      "niacinMultiplier": 0.75,
+      "vitaminB12Multiplier": 0.80,
+      "waterLossPercent": 35
+    },
+    "notes": "High sodium from curing. Protein concentrates due to water loss."
+  },
+
+  "braised": {
+    "id": "braised",
+    "name": "Braised / Stewed",
+    "description": "Slow-cooked in liquid",
+    "applicableTo": ["proteins", "vegetables"],
+    "modifiers": {
+      "fatAdd": 3,
+      "caloriesAdd": 27,
+      "sodiumAdd": 150,
+      "proteinMultiplier": 0.95,
+      "thiaminMultiplier": 0.55,
+      "riboflavinMultiplier": 0.70,
+      "niacinMultiplier": 0.65,
+      "vitaminB6Multiplier": 0.60,
+      "collagenToGelatinConversion": true,
+      "waterLossPercent": 20
+    },
+    "notes": "Long cooking breaks down connective tissue. Nutrients retained in liquid."
+  },
+
+  "canned": {
+    "id": "canned",
+    "name": "Canned / Preserved",
+    "description": "Heat-processed in sealed container",
+    "applicableTo": ["proteins", "vegetables", "fruits", "legumes"],
+    "modifiers": {
+      "sodiumAdd": 300,
+      "thiaminMultiplier": 0.50,
+      "riboflavinMultiplier": 0.60,
+      "niacinMultiplier": 0.65,
+      "vitaminCMultiplier": 0.40,
+      "folateMultiplier": 0.45,
+      "vitaminB6Multiplier": 0.55
+    },
+    "notes": "High heat processing reduces vitamins. Sodium from preservation."
+  },
+
+  "dried": {
+    "id": "dried",
+    "name": "Dried / Dehydrated",
+    "description": "Moisture removed for preservation",
+    "applicableTo": ["fruits", "vegetables", "proteins"],
+    "modifiers": {
+      "caloriesMultiplier": 3.5,
+      "proteinMultiplier": 3.5,
+      "carbsMultiplier": 3.5,
+      "fiberMultiplier": 3.5,
+      "sugarMultiplier": 3.5,
+      "vitaminCMultiplier": 0.20,
+      "thiaminMultiplier": 0.60,
+      "waterLossPercent": 80
+    },
+    "notes": "Nutrients concentrate as water removed. ~80% water loss. Heat-sensitive vitamins reduced."
+  },
+
+  "frozen": {
+    "id": "frozen",
+    "name": "Frozen",
+    "description": "Flash-frozen for preservation",
+    "applicableTo": ["proteins", "vegetables", "fruits"],
+    "modifiers": {
+      "vitaminCMultiplier": 0.90,
+      "thiaminMultiplier": 0.95,
+      "riboflavinMultiplier": 0.95
+    },
+    "notes": "Flash-freezing preserves most nutrients. Often frozen at peak ripeness."
+  }
+}

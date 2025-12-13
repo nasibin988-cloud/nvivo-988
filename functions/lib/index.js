@@ -33,7 +33,7 @@ var __importStar = (this && this.__importStar) || (function () {
     };
 })();
 Object.defineProperty(exports, "__esModule", { value: true });
-exports.evaluateNutritionWeek = exports.getNutrientInfo = exports.getNutritionTargets = exports.evaluateNutritionDay = exports.gradeFoodAI = exports.compareFoodsAI = exports.analyzeFoodText = exports.searchFoods = exports.scanMenuPhoto = exports.analyzeFoodPhoto = exports.clearCareDataFn = exports.seedCareDataFn = exports.getAppointmentsFn = exports.getCarePlanGoalsFn = exports.completeTaskFn = exports.getTasksFn = exports.logMedicationDoseFn = exports.getMedicationScheduleFn = exports.getMedicationsFn = exports.getCareTeamFn = exports.getCareDataFn = exports.completeMicroWin = exports.getDailyMicroWins = exports.reseedHealthTrendsFn = exports.reseedMicroWinsFn = exports.seedArticlesFn = exports.deleteTestPatientFn = exports.seedTestPatientFn = void 0;
+exports.nutritionV2Health = exports.getNutritionCacheStatsV2 = exports.cleanupNutritionCacheV2 = exports.compareFoodsFnV2 = exports.scanAndAnalyzeMenuFnV2 = exports.analyzeMenuItemsV2Fn = exports.scanMenuV2 = exports.analyzeSingleFoodFnV2 = exports.analyzeFoodTextV2 = exports.analyzeFoodPhotoUrlV2 = exports.analyzeFoodPhotoV2 = exports.getNutritionFocusOptions = exports.evaluateNutritionWeekV2 = exports.evaluateNutritionDayV2 = exports.evaluateNutritionWeek = exports.getNutrientInfo = exports.getNutritionTargets = exports.evaluateNutritionDay = exports.gradeFoodAI = exports.compareFoodsAI = exports.analyzeFoodText = exports.searchFoods = exports.scanMenuPhoto = exports.analyzeFoodPhoto = exports.clearCareDataFn = exports.seedCareDataFn = exports.getAppointmentsFn = exports.getCarePlanGoalsFn = exports.completeTaskFn = exports.getTasksFn = exports.logMedicationDoseFn = exports.getMedicationScheduleFn = exports.getMedicationsFn = exports.getCareTeamFn = exports.getCareDataFn = exports.completeMicroWin = exports.getDailyMicroWins = exports.reseedHealthTrendsFn = exports.reseedMicroWinsFn = exports.seedArticlesFn = exports.deleteTestPatientFn = exports.seedTestPatientFn = void 0;
 const admin = __importStar(require("firebase-admin"));
 const v2_1 = require("firebase-functions/v2");
 const index_1 = require("./seed/index");
@@ -47,12 +47,30 @@ const menuScanning_1 = require("./domains/ai/menuScanning");
 const foodSearch_1 = require("./domains/ai/foodSearch");
 const foodComparison_1 = require("./domains/ai/foodComparison");
 const gradingRubric_1 = require("./domains/ai/gradingRubric");
-// Nutrition evaluation functions
+// Nutrition evaluation functions (V1 - legacy)
 const nutrition_1 = require("./domains/nutrition");
 Object.defineProperty(exports, "evaluateNutritionDay", { enumerable: true, get: function () { return nutrition_1.evaluateNutritionDay; } });
 Object.defineProperty(exports, "getNutritionTargets", { enumerable: true, get: function () { return nutrition_1.getNutritionTargets; } });
 Object.defineProperty(exports, "getNutrientInfo", { enumerable: true, get: function () { return nutrition_1.getNutrientInfo; } });
 Object.defineProperty(exports, "evaluateNutritionWeek", { enumerable: true, get: function () { return nutrition_1.evaluateNutritionWeek; } });
+// Nutrition evaluation functions (V2 - advanced MAR-based scoring)
+const nutrition_2 = require("./domains/nutrition");
+Object.defineProperty(exports, "evaluateNutritionDayV2", { enumerable: true, get: function () { return nutrition_2.evaluateNutritionDayV2; } });
+Object.defineProperty(exports, "evaluateNutritionWeekV2", { enumerable: true, get: function () { return nutrition_2.evaluateNutritionWeekV2; } });
+Object.defineProperty(exports, "getNutritionFocusOptions", { enumerable: true, get: function () { return nutrition_2.getNutritionFocusOptions; } });
+// Nutrition V2 API functions (database-backed, deterministic grading)
+const v2_2 = require("./domains/nutrition/v2");
+Object.defineProperty(exports, "analyzeFoodPhotoV2", { enumerable: true, get: function () { return v2_2.analyzeFoodPhotoV2; } });
+Object.defineProperty(exports, "analyzeFoodPhotoUrlV2", { enumerable: true, get: function () { return v2_2.analyzeFoodPhotoUrlV2; } });
+Object.defineProperty(exports, "analyzeFoodTextV2", { enumerable: true, get: function () { return v2_2.analyzeFoodTextV2; } });
+Object.defineProperty(exports, "analyzeSingleFoodFnV2", { enumerable: true, get: function () { return v2_2.analyzeSingleFoodFnV2; } });
+Object.defineProperty(exports, "scanMenuV2", { enumerable: true, get: function () { return v2_2.scanMenuV2; } });
+Object.defineProperty(exports, "analyzeMenuItemsV2Fn", { enumerable: true, get: function () { return v2_2.analyzeMenuItemsV2Fn; } });
+Object.defineProperty(exports, "scanAndAnalyzeMenuFnV2", { enumerable: true, get: function () { return v2_2.scanAndAnalyzeMenuFnV2; } });
+Object.defineProperty(exports, "compareFoodsFnV2", { enumerable: true, get: function () { return v2_2.compareFoodsFnV2; } });
+Object.defineProperty(exports, "cleanupNutritionCacheV2", { enumerable: true, get: function () { return v2_2.cleanupNutritionCacheV2; } });
+Object.defineProperty(exports, "getNutritionCacheStatsV2", { enumerable: true, get: function () { return v2_2.getNutritionCacheStatsV2; } });
+Object.defineProperty(exports, "nutritionV2Health", { enumerable: true, get: function () { return v2_2.nutritionV2Health; } });
 // Initialize Firebase Admin
 admin.initializeApp();
 // Export seed functions (only for development)

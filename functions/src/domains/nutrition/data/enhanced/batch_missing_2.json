@@ -1,0 +1,1286 @@
+{
+  "burger": {
+    "name": "Burger",
+    "calories": 295,
+    "protein": 17,
+    "carbs": 24,
+    "fat": 14,
+    "fiber": 1.5,
+    "sugar": 4,
+    "sodium": 497,
+    "saturatedFat": 5.3,
+    "cholesterol": 52,
+    "potassium": 228,
+    "calcium": 80,
+    "iron": 2.8,
+    "magnesium": 25,
+    "vitaminA": 35,
+    "vitaminC": 1,
+    "vitaminD": 0.3,
+    "vitaminB12": 1.8,
+    "glycemicIndex": 66,
+    "glycemicLoad": 16,
+    "allergens": ["wheat", "soy"],
+    "servingSize": 100,
+    "servingUnit": "g",
+    "focusGrades": {
+      "balanced": {
+        "grade": "C+",
+        "score": 68,
+        "insight": "Moderate protein-to-fat ratio with refined carbs from bun; lacks vegetables and fiber for complete nutrition",
+        "pros": [
+          "Provides complete protein with all essential amino acids",
+          "Contains B vitamins from beef and enriched bun",
+          "Moderate calorie density suitable for active individuals"
+        ],
+        "cons": [
+          "High sodium content exceeds 20% daily value per serving",
+          "Saturated fat comprises 38% of total fat",
+          "Low in micronutrients and phytonutrients without toppings"
+        ]
+      },
+      "heart_health": {
+        "grade": "D+",
+        "score": 52,
+        "insight": "Saturated fat and sodium levels pose cardiovascular concerns; minimal omega-3s and heart-protective nutrients",
+        "pros": [
+          "Contains some iron for healthy blood oxygen transport",
+          "Modest potassium content supports blood pressure regulation"
+        ],
+        "cons": [
+          "497mg sodium approaches 25% of recommended daily limit",
+          "5.3g saturated fat raises LDL cholesterol levels",
+          "52mg cholesterol adds to cardiovascular risk factors",
+          "Lacks fiber to help reduce cholesterol absorption"
+        ]
+      },
+      "muscle_building": {
+        "grade": "B",
+        "score": 80,
+        "insight": "Good protein content with complete amino acid profile; refined carbs provide quick glycogen replenishment post-workout",
+        "pros": [
+          "17g protein per 100g supports muscle protein synthesis",
+          "High leucine content triggers mTOR pathway for growth",
+          "Iron and B12 support oxygen delivery to working muscles",
+          "Carbs help replenish glycogen stores after training"
+        ],
+        "cons": [
+          "Fat content may slow protein absorption timing",
+          "Lacks creatine found in plain beef preparations",
+          "High sodium can cause water retention masking definition"
+        ]
+      },
+      "energy": {
+        "grade": "C+",
+        "score": 72,
+        "insight": "Provides quick energy from refined carbs and sustained release from protein and fat, but lacks complex carbs for endurance",
+        "pros": [
+          "Balanced macros provide both immediate and sustained energy",
+          "B vitamins support energy metabolism",
+          "Iron prevents fatigue from anemia"
+        ],
+        "cons": [
+          "GI of 66 causes rapid blood sugar spike then crash",
+          "Low fiber results in quick digestion without lasting satiety",
+          "High fat content may cause sluggishness during activity",
+          "Minimal micronutrients for cellular energy production"
+        ]
+      },
+      "weight_management": {
+        "grade": "D",
+        "score": 55,
+        "insight": "Calorie-dense with low satiety index; high fat and refined carbs promote overconsumption and fat storage",
+        "pros": [
+          "Protein content provides moderate satiety signaling",
+          "Can fit into calorie budget if portion controlled"
+        ],
+        "cons": [
+          "295 calories per 100g is very energy-dense",
+          "Only 1.5g fiber provides minimal fullness",
+          "High glycemic load triggers insulin spike and fat storage",
+          "Palatable combo of fat, salt, carbs overrides satiety cues",
+          "Liquid fat from beef easily absorbed as body fat"
+        ]
+      },
+      "brain_focus": {
+        "grade": "C",
+        "score": 65,
+        "insight": "B12 and iron support cognition, but blood sugar fluctuations and inflammatory fats impair mental clarity",
+        "pros": [
+          "B12 essential for myelin sheath and neurotransmitters",
+          "Iron prevents cognitive impairment from deficiency",
+          "Protein provides amino acids for neurotransmitter synthesis"
+        ],
+        "cons": [
+          "High glycemic index causes blood sugar rollercoaster affecting focus",
+          "Saturated fat may increase brain inflammation",
+          "Lacks omega-3 DHA critical for brain cell membranes",
+          "Post-meal blood shunting to gut reduces mental sharpness"
+        ]
+      },
+      "gut_health": {
+        "grade": "D+",
+        "score": 58,
+        "insight": "Severely lacking in fiber and prebiotics; high fat and sodium may disrupt gut microbiome diversity",
+        "pros": [
+          "Protein supports gut lining repair and immune function",
+          "Some B vitamins can be produced by healthy gut bacteria"
+        ],
+        "cons": [
+          "Only 1.5g fiber versus 25-30g daily recommendation",
+          "No prebiotics to feed beneficial bacteria",
+          "High fat may increase inflammatory bacteria species",
+          "Sodium can alter gut barrier permeability",
+          "Processed meat linked to negative microbiome changes",
+          "Lacks polyphenols that promote gut health"
+        ]
+      },
+      "blood_sugar": {
+        "grade": "D",
+        "score": 56,
+        "insight": "Glycemic index of 66 and low fiber cause rapid glucose spike; refined bun dominates glycemic response",
+        "pros": [
+          "Protein and fat slow carb absorption compared to bun alone",
+          "Can be improved by adding vegetables for fiber"
+        ],
+        "cons": [
+          "GL of 16 per 100g is moderately high",
+          "Refined white flour converts quickly to glucose",
+          "Minimal fiber cannot blunt glucose absorption",
+          "May trigger reactive hypoglycemia 2-3 hours later",
+          "High saturated fat increases insulin resistance over time"
+        ]
+      },
+      "bone_joint": {
+        "grade": "C-",
+        "score": 62,
+        "insight": "Provides calcium and protein for bone structure but lacks vitamin D, K, and magnesium; inflammatory profile concerning",
+        "pros": [
+          "80mg calcium supports bone mineral density",
+          "Protein essential for collagen matrix in bones",
+          "Iron needed for bone marrow health",
+          "Phosphorus from meat aids bone formation"
+        ],
+        "cons": [
+          "Only 0.3mcg vitamin D versus 15-20mcg needed daily",
+          "High sodium increases calcium excretion in urine",
+          "Saturated fat may promote joint inflammation",
+          "Lacks vitamin K for calcium regulation",
+          "No collagen-building vitamin C present"
+        ]
+      },
+      "anti_inflammatory": {
+        "grade": "D",
+        "score": 50,
+        "insight": "Multiple inflammatory factors including saturated fat, refined carbs, and advanced glycation end-products from cooking",
+        "pros": [
+          "Some B vitamins have modest anti-inflammatory effects",
+          "Iron supports immune cell function when balanced"
+        ],
+        "cons": [
+          "Saturated fat activates pro-inflammatory NF-kB pathway",
+          "High glycemic index promotes inflammatory cytokines",
+          "Grilled meat contains inflammatory AGEs and HCAs",
+          "Omega-6 to omega-3 ratio highly imbalanced",
+          "Lacks anti-inflammatory polyphenols and antioxidants",
+          "High sodium linked to inflammatory markers",
+          "No curcumin, resveratrol, or other anti-inflammatory compounds"
+        ]
+      }
+    }
+  },
+  "cake": {
+    "name": "Cake",
+    "calories": 371,
+    "protein": 4.7,
+    "carbs": 51,
+    "fat": 16,
+    "fiber": 0.8,
+    "sugar": 32,
+    "sodium": 331,
+    "saturatedFat": 8.5,
+    "cholesterol": 76,
+    "potassium": 84,
+    "calcium": 58,
+    "iron": 1.2,
+    "magnesium": 12,
+    "vitaminA": 142,
+    "vitaminC": 0.2,
+    "vitaminD": 0.4,
+    "vitaminB12": 0.2,
+    "glycemicIndex": 76,
+    "glycemicLoad": 39,
+    "allergens": ["wheat", "eggs", "milk"],
+    "servingSize": 100,
+    "servingUnit": "g",
+    "focusGrades": {
+      "balanced": {
+        "grade": "F",
+        "score": 28,
+        "insight": "Nutritionally void with extreme sugar and refined flour content; designed for pleasure not nourishment",
+        "pros": [
+          "Provides quick energy for immediate needs",
+          "Contains some calcium from dairy ingredients"
+        ],
+        "cons": [
+          "32g sugar is 64% of daily limit in just 100g",
+          "Minimal protein at only 4.7g",
+          "Nearly absent fiber at 0.8g",
+          "High calorie density with low nutrient return",
+          "Saturated fat from butter exceeds heart-healthy limits",
+          "Lacks vitamins, minerals, and phytonutrients"
+        ]
+      },
+      "heart_health": {
+        "grade": "F",
+        "score": 18,
+        "insight": "Catastrophic for cardiovascular health with trifecta of added sugar, saturated fat, and refined carbs",
+        "pros": [
+          "No trans fats if made with real butter"
+        ],
+        "cons": [
+          "8.5g saturated fat raises LDL and total cholesterol",
+          "32g sugar drives triglyceride synthesis",
+          "High glycemic load promotes atherosclerotic plaque",
+          "76mg cholesterol adds to dietary intake",
+          "Excess sugar causes endothelial dysfunction",
+          "Inflammatory ingredients increase C-reactive protein",
+          "331mg sodium stresses blood pressure regulation",
+          "No heart-protective omega-3s, fiber, or antioxidants"
+        ]
+      },
+      "muscle_building": {
+        "grade": "D-",
+        "score": 48,
+        "insight": "Protein content far too low for muscle synthesis; excess sugar may support glycogen but promotes fat gain",
+        "pros": [
+          "Simple carbs rapidly restore muscle glycogen post-workout",
+          "Eggs provide some leucine for muscle protein synthesis",
+          "Calories support caloric surplus needed for growth"
+        ],
+        "cons": [
+          "4.7g protein inadequate for muscle repair",
+          "High sugar-to-protein ratio favors fat storage over muscle",
+          "Lacks branched-chain amino acids in meaningful amounts",
+          "Insulin spike without protein drives nutrients to fat cells",
+          "No creatine, beta-alanine, or ergogenic nutrients",
+          "Promotes inflammation that impairs recovery"
+        ]
+      },
+      "energy": {
+        "grade": "D-",
+        "score": 45,
+        "insight": "Massive blood sugar spike provides fleeting energy burst followed by severe crash and fatigue",
+        "pros": [
+          "Extremely rapid glucose availability for immediate energy",
+          "High calorie density provides energy reserves"
+        ],
+        "cons": [
+          "GI of 76 causes blood sugar to spike within 15-30 minutes",
+          "GL of 39 is extremely high, triggering insulin surge",
+          "Sugar crash occurs 1-2 hours later causing fatigue",
+          "No complex carbs for sustained energy release",
+          "Minimal B vitamins for cellular energy production",
+          "High fat content causes sluggish digestion",
+          "Reactive hypoglycemia impairs physical and mental performance"
+        ]
+      },
+      "weight_management": {
+        "grade": "F",
+        "score": 15,
+        "insight": "Quintessential weight-gain food combining hyperpalatable sugar and fat with zero satiety; metabolically disastrous",
+        "pros": [
+          "None for weight management - designed to be overconsumed"
+        ],
+        "cons": [
+          "371 calories per 100g is extremely energy-dense",
+          "0.8g fiber provides no fullness or appetite control",
+          "Sugar-fat combination hijacks dopamine reward system",
+          "High insulin response promotes fat storage in adipose tissue",
+          "Liquid fats easily deposited as body fat",
+          "No protein to trigger satiety hormones",
+          "Triggers cravings for more sugar within hours",
+          "Displaces nutrient-dense foods from diet"
+        ]
+      },
+      "brain_focus": {
+        "grade": "F",
+        "score": 22,
+        "insight": "Sugar rush creates brief euphoria followed by brain fog, concentration loss, and mood instability",
+        "pros": [
+          "Glucose provides immediate brain fuel",
+          "Eggs contain small amount of choline for acetylcholine"
+        ],
+        "cons": [
+          "Blood sugar spike impairs prefrontal cortex function",
+          "Reactive hypoglycemia causes brain fog and confusion",
+          "Sugar crash depletes neurotransmitters causing mood drop",
+          "Inflammation from sugar crosses blood-brain barrier",
+          "No omega-3 DHA for neuronal membranes",
+          "Lacks B vitamins for neurotransmitter synthesis",
+          "AGEs from baking damage brain proteins",
+          "Promotes oxidative stress in brain tissue"
+        ]
+      },
+      "gut_health": {
+        "grade": "F",
+        "score": 12,
+        "insight": "Actively damages gut microbiome; sugar feeds pathogenic bacteria while starving beneficial species",
+        "pros": [
+          "None - detrimental to all aspects of gut health"
+        ],
+        "cons": [
+          "0.8g fiber versus 25-30g daily need",
+          "Sugar feeds candida and pathogenic bacteria",
+          "Refined flour depleted of gut-healthy bran and germ",
+          "No prebiotics to nourish beneficial bacteria",
+          "High sugar reduces microbiome diversity",
+          "Promotes leaky gut and endotoxemia",
+          "Dysbiosis increases inflammation throughout body",
+          "No polyphenols, resistant starch, or fermented components"
+        ]
+      },
+      "blood_sugar": {
+        "grade": "F",
+        "score": 8,
+        "insight": "Worst possible food for blood sugar with GI of 76 and GL of 39; pure refined carbs and sugar",
+        "pros": [
+          "Can reverse severe hypoglycemia in emergency"
+        ],
+        "cons": [
+          "GL of 39 is off-the-charts high (>20 is high)",
+          "32g sugar causes immediate glucose spike to 180+ mg/dL",
+          "Refined flour lacks fiber to slow glucose absorption",
+          "Triggers massive insulin release from pancreas",
+          "Promotes insulin resistance with regular consumption",
+          "Causes reactive hypoglycemia rebound",
+          "AGEs from baking impair glucose metabolism",
+          "May precipitate diabetic emergency in Type 1 diabetes"
+        ]
+      },
+      "bone_joint": {
+        "grade": "D-",
+        "score": 42,
+        "insight": "Sugar actually leaches calcium from bones; inflammatory profile accelerates joint degradation",
+        "pros": [
+          "58mg calcium from dairy ingredients",
+          "Vitamin D from eggs supports calcium absorption",
+          "Phosphorus from eggs aids bone mineralization"
+        ],
+        "cons": [
+          "High sugar increases urinary calcium excretion",
+          "Refined carbs create acidic environment depleting bone",
+          "Saturated fat promotes joint inflammation",
+          "Lacks magnesium for bone matrix formation",
+          "No vitamin K to direct calcium to bones",
+          "AGEs accumulate in cartilage causing stiffness",
+          "Inflammation accelerates osteoarthritis progression",
+          "No collagen-building vitamin C or amino acids"
+        ]
+      },
+      "anti_inflammatory": {
+        "grade": "F",
+        "score": 10,
+        "insight": "Profoundly pro-inflammatory food driving systemic inflammation through multiple mechanisms",
+        "pros": [
+          "None - uniformly inflammatory across all pathways"
+        ],
+        "cons": [
+          "Sugar activates NF-kB inflammatory signaling",
+          "High glycemic load spikes inflammatory cytokines",
+          "AGEs from baking promote inflammation and aging",
+          "Saturated fat triggers TLR4 inflammatory pathway",
+          "Omega-6 fats metabolize to pro-inflammatory compounds",
+          "Depletes anti-inflammatory antioxidants fighting oxidative stress",
+          "Promotes visceral fat that secretes inflammatory markers",
+          "No anti-inflammatory omega-3s, polyphenols, or antioxidants",
+          "Feeds inflammatory gut bacteria species"
+        ]
+      }
+    }
+  },
+  "chicken_nuggets": {
+    "name": "Chicken Nuggets",
+    "calories": 296,
+    "protein": 15.5,
+    "carbs": 18.1,
+    "fat": 18.5,
+    "fiber": 1.2,
+    "sugar": 0.9,
+    "sodium": 598,
+    "saturatedFat": 3.8,
+    "cholesterol": 36,
+    "potassium": 222,
+    "calcium": 16,
+    "iron": 0.9,
+    "magnesium": 21,
+    "vitaminA": 18,
+    "vitaminC": 0.8,
+    "vitaminD": 0.2,
+    "vitaminB12": 0.3,
+    "glycemicIndex": 46,
+    "glycemicLoad": 8,
+    "allergens": ["wheat", "soy"],
+    "servingSize": 100,
+    "servingUnit": "g",
+    "focusGrades": {
+      "balanced": {
+        "grade": "D+",
+        "score": 58,
+        "insight": "Heavily processed with concerning sodium levels; breading and frying method diminish chicken's nutritional value",
+        "pros": [
+          "Moderate protein content from chicken meat",
+          "Lower sugar than many processed foods",
+          "Provides some B vitamins from chicken"
+        ],
+        "cons": [
+          "598mg sodium is 26% of daily limit per 100g",
+          "Deep-frying adds inflammatory oxidized oils",
+          "Breading adds refined carbs with minimal nutrients",
+          "Processing destroys heat-sensitive vitamins",
+          "Contains additives, preservatives, and flavor enhancers",
+          "Low micronutrient density despite chicken base"
+        ]
+      },
+      "heart_health": {
+        "grade": "D",
+        "score": 48,
+        "insight": "Excessive sodium and fried oil oxidation create cardiovascular risk despite lower saturated fat than beef",
+        "pros": [
+          "Lower saturated fat at 3.8g versus red meat",
+          "Lower cholesterol than many fried foods",
+          "Some potassium supports blood pressure"
+        ],
+        "cons": [
+          "598mg sodium significantly raises blood pressure",
+          "Frying creates harmful trans fats and lipid peroxides",
+          "Omega-6 oils promote inflammation when heated",
+          "Lacks omega-3s for heart protection",
+          "High sodium-to-potassium ratio stresses cardiovascular system",
+          "Breading adds refined carbs linked to heart disease",
+          "Processing removes heart-healthy taurine from chicken"
+        ]
+      },
+      "muscle_building": {
+        "grade": "C+",
+        "score": 72,
+        "insight": "Decent protein from chicken but frying process denatures some amino acids; sodium supports hydration for pumps",
+        "pros": [
+          "15.5g protein supports muscle protein synthesis",
+          "Complete amino acid profile from animal protein",
+          "Convenient pre-workout quick protein source",
+          "Sodium helps maintain muscle cell hydration and pumps"
+        ],
+        "cons": [
+          "Frying heat damages some protein structure",
+          "Breading dilutes protein density",
+          "Lower protein than plain chicken breast (31g per 100g)",
+          "High fat content slows protein absorption",
+          "Lacks creatine found in unprocessed chicken",
+          "Processing removes some leucine content"
+        ]
+      },
+      "energy": {
+        "grade": "C",
+        "score": 68,
+        "insight": "Provides sustained energy from fat and protein with moderate carbs; lower glycemic response than expected",
+        "pros": [
+          "Balanced macros prevent blood sugar spike",
+          "Fat provides long-lasting energy release",
+          "Protein stabilizes blood sugar",
+          "GI of 46 is moderate, avoiding sharp insulin response"
+        ],
+        "cons": [
+          "High fat content may cause digestive sluggishness",
+          "Fried oils can impair cellular energy production",
+          "Minimal B vitamins for energy metabolism",
+          "Low iron content versus fresh chicken",
+          "Sodium can cause bloating and reduced performance",
+          "Lacks complex carbs for endurance activities"
+        ]
+      },
+      "weight_management": {
+        "grade": "D",
+        "score": 52,
+        "insight": "Calorie-dense from frying oil; hyperpalatable coating promotes overconsumption despite moderate protein",
+        "pros": [
+          "Protein provides some satiety signaling",
+          "Lower glycemic load reduces insulin-driven fat storage",
+          "Can fit into flexible dieting if portion controlled"
+        ],
+        "cons": [
+          "296 calories per 100g is high energy density",
+          "Oil absorbed during frying adds empty calories",
+          "Palatable salt-fat-carb combo overrides fullness cues",
+          "Minimal fiber at 1.2g provides no satiety",
+          "Often eaten with sugary dipping sauces adding calories",
+          "Sodium causes water retention masking fat loss",
+          "Processed texture encourages fast eating and overeating"
+        ]
+      },
+      "brain_focus": {
+        "grade": "D+",
+        "score": 58,
+        "insight": "Protein stabilizes blood sugar for focus, but oxidized frying oils and sodium impair cognitive performance",
+        "pros": [
+          "Protein prevents glucose crashes that impair focus",
+          "Moderate GI avoids blood sugar fluctuations",
+          "Some B vitamins support neurotransmitter production"
+        ],
+        "cons": [
+          "Oxidized oils from frying promote brain inflammation",
+          "No omega-3 DHA for neuronal function",
+          "High sodium linked to cognitive decline",
+          "Fried food consumption associated with depression",
+          "Lacks choline for acetylcholine synthesis",
+          "Processing destroys vitamins B6 and folate",
+          "Post-meal sluggishness from high fat content"
+        ]
+      },
+      "gut_health": {
+        "grade": "D",
+        "score": 50,
+        "insight": "Severely deficient in fiber; fried oils and additives disrupt gut microbiome and intestinal barrier",
+        "pros": [
+          "Protein supports gut lining repair",
+          "Lower sugar won't feed pathogenic bacteria"
+        ],
+        "cons": [
+          "Only 1.2g fiber versus 25-30g daily need",
+          "No prebiotics to nourish beneficial bacteria",
+          "Fried oils increase inflammatory gut bacteria",
+          "Emulsifiers in breading may damage gut lining",
+          "High sodium alters gut barrier permeability",
+          "Lacks polyphenols that feed good bacteria",
+          "Processing removes natural enzymes",
+          "May contain phosphate additives disrupting microbiome"
+        ]
+      },
+      "blood_sugar": {
+        "grade": "C+",
+        "score": 71,
+        "insight": "Surprisingly moderate glycemic response due to fat and protein buffering refined carbs in breading",
+        "pros": [
+          "GI of 46 is low-medium, avoiding sharp spikes",
+          "GL of 8 is low (<10 threshold)",
+          "Fat and protein slow carb digestion significantly",
+          "Won't trigger reactive hypoglycemia like pure carbs"
+        ],
+        "cons": [
+          "Refined flour in breading still raises blood sugar",
+          "Minimal fiber cannot blunt glucose absorption",
+          "Fried oils may impair insulin sensitivity over time",
+          "Not suitable for tight diabetic control",
+          "Sodium can affect glucose metabolism"
+        ]
+      },
+      "bone_joint": {
+        "grade": "D",
+        "score": 53,
+        "insight": "Minimal bone-building nutrients; inflammatory fried oils and high sodium accelerate joint degradation",
+        "pros": [
+          "Protein provides amino acids for collagen synthesis",
+          "Chicken naturally contains some collagen",
+          "Phosphorus supports bone mineralization"
+        ],
+        "cons": [
+          "Only 16mg calcium is extremely low",
+          "Virtually no vitamin D at 0.2mcg",
+          "High sodium increases calcium loss in urine",
+          "Fried oils promote joint inflammation",
+          "Lacks vitamin K for bone metabolism",
+          "No vitamin C for collagen formation",
+          "Processing destroys gelatin and collagen",
+          "Omega-6 oils metabolize to inflammatory prostaglandins"
+        ]
+      },
+      "anti_inflammatory": {
+        "grade": "D-",
+        "score": 45,
+        "insight": "Frying process creates inflammatory compounds; heavily processed with pro-inflammatory oil oxidation",
+        "pros": [
+          "Lower saturated fat than red meat reduces one inflammatory pathway"
+        ],
+        "cons": [
+          "Frying creates inflammatory AGEs and acrylamide",
+          "Oxidized omega-6 oils activate inflammatory pathways",
+          "High heat produces harmful aldehydes",
+          "598mg sodium linked to systemic inflammation",
+          "Lacks anti-inflammatory omega-3s completely",
+          "No antioxidants to combat oxidative stress",
+          "Emulsifiers may trigger inflammatory bowel changes",
+          "Processing removes anti-inflammatory taurine",
+          "Breading adds inflammatory refined grains"
+        ]
+      }
+    }
+  },
+  "chicken_soup": {
+    "name": "Chicken Soup",
+    "calories": 34,
+    "protein": 2.8,
+    "carbs": 3.2,
+    "fat": 1.4,
+    "fiber": 0.5,
+    "sugar": 0.9,
+    "sodium": 343,
+    "saturatedFat": 0.4,
+    "cholesterol": 7,
+    "potassium": 88,
+    "calcium": 12,
+    "iron": 0.3,
+    "magnesium": 5,
+    "vitaminA": 175,
+    "vitaminC": 0.5,
+    "vitaminD": 0.1,
+    "vitaminB12": 0.1,
+    "glycemicIndex": 38,
+    "glycemicLoad": 1,
+    "allergens": [],
+    "servingSize": 100,
+    "servingUnit": "g",
+    "focusGrades": {
+      "balanced": {
+        "grade": "B-",
+        "score": 73,
+        "insight": "Low-calorie, hydrating comfort food with modest nutrients; sodium is main concern but serves medicinal purpose",
+        "pros": [
+          "Very low calorie density promotes healthy eating patterns",
+          "Hydrating broth supports fluid balance",
+          "Contains vegetables providing diverse micronutrients",
+          "Vitamin A from carrots supports immune function",
+          "Warming and easy to digest when ill"
+        ],
+        "cons": [
+          "343mg sodium is high for volume consumed",
+          "Low protein content limits nutritional impact",
+          "Minimal fiber at 0.5g",
+          "Dilute nutrient concentration due to water content"
+        ]
+      },
+      "heart_health": {
+        "grade": "B",
+        "score": 78,
+        "insight": "Very low saturated fat and cholesterol; sodium is moderate concern but potassium from vegetables helps balance",
+        "pros": [
+          "Only 0.4g saturated fat is heart-friendly",
+          "7mg cholesterol is negligible",
+          "Low calorie density aids weight management for heart health",
+          "Vitamin A supports vascular health",
+          "Vegetables provide antioxidants protecting arteries",
+          "Hydration supports healthy blood viscosity"
+        ],
+        "cons": [
+          "343mg sodium can elevate blood pressure if consumed in large volumes",
+          "Lacks omega-3s from fish versions",
+          "Minimal fiber to reduce cholesterol",
+          "Low potassium-to-sodium ratio in canned versions"
+        ]
+      },
+      "muscle_building": {
+        "grade": "D",
+        "score": 48,
+        "insight": "Insufficient protein for muscle synthesis; better as recovery hydration than anabolic nutrition",
+        "pros": [
+          "Provides complete amino acids from chicken",
+          "Collagen from bones supports connective tissue",
+          "Easy to digest during recovery periods",
+          "Sodium replenishes electrolytes lost in sweat"
+        ],
+        "cons": [
+          "2.8g protein far below needs for muscle building",
+          "Extremely low calorie content inadequate for growth",
+          "Minimal leucine to trigger mTOR pathway",
+          "Lacks BCAAs in meaningful concentrations",
+          "No creatine or performance-enhancing nutrients",
+          "Would require massive volumes for protein needs"
+        ]
+      },
+      "energy": {
+        "grade": "C-",
+        "score": 62,
+        "insight": "Provides gentle, steady energy without spikes; better for recovery than performance fuel",
+        "pros": [
+          "Very low GI of 38 prevents blood sugar spikes",
+          "GL of 1 is extremely low and stable",
+          "Hydration supports cellular energy production",
+          "Sodium maintains electrolyte balance for nerve function",
+          "Easy to digest, minimal energy diverted to gut"
+        ],
+        "cons": [
+          "34 calories per 100g provides minimal energy density",
+          "Low carbs insufficient for athletic performance",
+          "Minimal B vitamins for energy metabolism",
+          "Not suitable as pre-workout fuel",
+          "Lacks complex carbs for sustained release"
+        ]
+      },
+      "weight_management": {
+        "grade": "A",
+        "score": 92,
+        "insight": "Outstanding for weight loss with extremely low calorie density, high water content promoting fullness on minimal calories",
+        "pros": [
+          "34 calories per 100g allows large portions without calorie surplus",
+          "High water content creates physical stomach fullness",
+          "Warm liquid slows eating pace increasing satiety signals",
+          "Protein content provides some appetite suppression",
+          "Low glycemic load prevents insulin-driven hunger",
+          "Can replace higher-calorie meals effectively",
+          "Hydration reduces false hunger from thirst"
+        ],
+        "cons": [
+          "Sodium may cause temporary water retention",
+          "Low nutrient density requires balanced diet elsewhere",
+          "Minimal fiber for sustained fullness"
+        ]
+      },
+      "brain_focus": {
+        "grade": "B-",
+        "score": 74,
+        "insight": "Stable blood sugar and hydration support cognition; traditional remedy for mental clarity during illness",
+        "pros": [
+          "Ultra-low glycemic response maintains steady brain glucose",
+          "Hydration critical for cognitive performance",
+          "Sodium supports neurotransmission",
+          "Vitamin A supports neuronal health",
+          "Warm temperature has calming effect reducing stress"
+        ],
+        "cons": [
+          "Lacks omega-3 DHA for brain cell membranes",
+          "Minimal B vitamins for neurotransmitter synthesis",
+          "Low protein limits amino acid availability",
+          "No choline for acetylcholine production",
+          "Insufficient calories for sustained mental work"
+        ]
+      },
+      "gut_health": {
+        "grade": "B+",
+        "score": 83,
+        "insight": "Gentle on digestive system with bone broth collagen supporting gut lining; traditional healing food for GI distress",
+        "pros": [
+          "Collagen from chicken bones heals intestinal lining",
+          "Gelatin soothes inflamed gut tissue",
+          "Easily digestible, minimal gut stress",
+          "Warm liquid stimulates healthy digestion",
+          "Glutamine from chicken supports enterocyte health",
+          "Hydration maintains healthy mucosal layer",
+          "Anti-inflammatory properties reduce gut inflammation"
+        ],
+        "cons": [
+          "Only 0.5g fiber insufficient for microbiome",
+          "Lacks prebiotics to feed beneficial bacteria",
+          "Low polyphenol content",
+          "Canned versions may have BPA affecting gut"
+        ]
+      },
+      "blood_sugar": {
+        "grade": "A",
+        "score": 94,
+        "insight": "Exceptional blood sugar stability with GI of 38 and GL of 1; ideal for diabetics and glucose control",
+        "pros": [
+          "GL of 1 is negligible impact on blood sugar",
+          "GI of 38 is low, causing minimal glucose rise",
+          "Protein and fat buffer any carb absorption",
+          "High water content dilutes glucose impact",
+          "No refined carbs or added sugars",
+          "Won't trigger insulin spike or resistance"
+        ],
+        "cons": [
+          "Sodium may affect glucose metabolism in sensitive individuals",
+          "Noodle versions have higher glycemic impact"
+        ]
+      },
+      "bone_joint": {
+        "grade": "A-",
+        "score": 87,
+        "insight": "Bone broth is exceptional for joint health with collagen, gelatin, and minerals extracted from chicken bones",
+        "pros": [
+          "Collagen peptides support cartilage repair",
+          "Gelatin reduces joint inflammation and pain",
+          "Glucosamine and chondroitin from bones support joints",
+          "Glycine and proline amino acids build connective tissue",
+          "Anti-inflammatory properties reduce arthritis pain",
+          "Minerals from bones support bone density",
+          "Traditional remedy for joint pain validated by research"
+        ],
+        "cons": [
+          "Only 12mg calcium is low",
+          "Minimal vitamin D for calcium absorption",
+          "Low vitamin K for bone metabolism",
+          "Minimal magnesium content"
+        ]
+      },
+      "anti_inflammatory": {
+        "grade": "A-",
+        "score": 88,
+        "insight": "Powerful anti-inflammatory effects from collagen, glycine, and low omega-6 content; proven remedy for inflammation",
+        "pros": [
+          "Glycine reduces inflammatory cytokines",
+          "Collagen reduces systemic inflammation markers",
+          "Vitamin A supports immune regulation",
+          "Very low saturated fat minimizes inflammation",
+          "Vegetables provide anti-inflammatory antioxidants",
+          "Warm liquid reduces stress-induced inflammation",
+          "Traditional medicine use for inflammatory conditions validated"
+        ],
+        "cons": [
+          "High sodium may promote inflammation in sensitive individuals",
+          "Lacks concentrated anti-inflammatory compounds like curcumin",
+          "No omega-3s unless fish-based version"
+        ]
+      }
+    }
+  },
+  "chicken_thigh": {
+    "name": "Chicken Thigh",
+    "calories": 209,
+    "protein": 26,
+    "carbs": 0,
+    "fat": 10.9,
+    "fiber": 0,
+    "sugar": 0,
+    "sodium": 95,
+    "saturatedFat": 3,
+    "cholesterol": 94,
+    "potassium": 238,
+    "calcium": 11,
+    "iron": 1.3,
+    "magnesium": 24,
+    "vitaminA": 22,
+    "vitaminC": 0,
+    "vitaminD": 0.2,
+    "vitaminB12": 0.6,
+    "glycemicIndex": 0,
+    "glycemicLoad": 0,
+    "allergens": [],
+    "servingSize": 100,
+    "servingUnit": "g",
+    "focusGrades": {
+      "balanced": {
+        "grade": "B+",
+        "score": 85,
+        "insight": "Excellent protein source with healthy fat profile; higher in nutrients than chicken breast due to dark meat richness",
+        "pros": [
+          "26g protein is exceptionally high quality",
+          "Zero carbs ideal for low-carb and keto diets",
+          "Rich in B vitamins including B6, niacin, and B12",
+          "Higher iron and zinc than white meat chicken",
+          "Selenium supports thyroid and immune function",
+          "More flavorful encouraging adherence to healthy eating"
+        ],
+        "cons": [
+          "10.9g fat higher than chicken breast",
+          "94mg cholesterol is moderate",
+          "No fiber or carbs for balanced macros",
+          "Minimal calcium and vitamin D"
+        ]
+      },
+      "heart_health": {
+        "grade": "B",
+        "score": 80,
+        "insight": "Moderate saturated fat but rich in heart-healthy monounsaturated fats and protective nutrients",
+        "pros": [
+          "Lower saturated fat than red meat at 3g",
+          "High in oleic acid, same heart-healthy fat as olive oil",
+          "Niacin (B3) improves cholesterol profile",
+          "Potassium supports healthy blood pressure",
+          "Selenium reduces oxidative stress on arteries",
+          "Naturally low sodium at 95mg",
+          "Taurine supports cardiovascular function"
+        ],
+        "cons": [
+          "94mg cholesterol contributes to dietary intake",
+          "Higher saturated fat than chicken breast",
+          "Lacks omega-3 EPA/DHA unless pastured",
+          "No fiber to reduce cholesterol absorption"
+        ]
+      },
+      "muscle_building": {
+        "grade": "A",
+        "score": 93,
+        "insight": "Outstanding muscle-building food with high-quality protein, leucine, and calories to support growth",
+        "pros": [
+          "26g protein per 100g rivals any meat source",
+          "Complete amino acid profile with high leucine content",
+          "Calories support anabolic surplus for growth",
+          "Rich in creatine for strength and power",
+          "Iron supports oxygen delivery to working muscles",
+          "Zinc critical for testosterone production",
+          "B vitamins support protein metabolism",
+          "Easy to meal prep in large quantities"
+        ],
+        "cons": [
+          "Skin-on versions add extra fat diluting protein ratio",
+          "Requires cooking preparation time"
+        ]
+      },
+      "energy": {
+        "grade": "B+",
+        "score": 86,
+        "insight": "Provides sustained energy from protein and fat without blood sugar fluctuations; ideal for steady performance",
+        "pros": [
+          "Zero glycemic impact maintains stable blood sugar",
+          "Fat provides long-lasting energy release",
+          "Protein prevents energy crashes",
+          "Rich in B vitamins for cellular energy production",
+          "Iron prevents fatigue from anemia",
+          "CoQ10 supports mitochondrial energy production",
+          "Carnitine helps burn fat for fuel"
+        ],
+        "cons": [
+          "No carbs for immediate glycogen-dependent activities",
+          "Higher fat may slow digestion before intense exercise",
+          "Requires pairing with carbs for endurance sports"
+        ]
+      },
+      "weight_management": {
+        "grade": "B",
+        "score": 81,
+        "insight": "High protein promotes satiety and preserves muscle during fat loss; moderate calories allow flexible portioning",
+        "pros": [
+          "26g protein triggers satiety hormones powerfully",
+          "Protein has high thermic effect burning 30% of calories",
+          "Preserves lean muscle mass during caloric deficit",
+          "Zero carbs prevent insulin-driven fat storage",
+          "Fat content provides satisfaction and fullness",
+          "Versatile preparation methods prevent diet boredom"
+        ],
+        "cons": [
+          "209 calories per 100g requires portion awareness",
+          "Higher fat than chicken breast adds calories",
+          "Skin adds significant calories if not removed",
+          "No fiber to enhance fullness"
+        ]
+      },
+      "brain_focus": {
+        "grade": "B+",
+        "score": 84,
+        "insight": "Stable energy without glucose fluctuations; rich in nutrients critical for neurotransmitter production",
+        "pros": [
+          "Zero glycemic impact prevents blood sugar-related brain fog",
+          "Vitamin B6 essential for dopamine and serotonin synthesis",
+          "B12 supports myelin sheath and cognitive function",
+          "Iron prevents cognitive impairment from deficiency",
+          "Choline supports acetylcholine for memory",
+          "Tyrosine amino acid precursor to dopamine",
+          "Selenium protects brain from oxidative damage"
+        ],
+        "cons": [
+          "Lacks omega-3 DHA unless pastured chicken",
+          "No carbs for glucose-dependent brain function",
+          "Minimal vitamin E for neuroprotection"
+        ]
+      },
+      "gut_health": {
+        "grade": "C+",
+        "score": 70,
+        "insight": "Easily digestible protein supports gut lining, but lacks fiber and prebiotics for microbiome health",
+        "pros": [
+          "Protein provides amino acids for gut lining repair",
+          "Glutamine in chicken supports enterocyte health",
+          "Easily digestible without gut stress",
+          "Zinc supports intestinal barrier integrity",
+          "Glycine supports gut mucosal health",
+          "Low FODMAP for sensitive digestive systems"
+        ],
+        "cons": [
+          "Zero fiber provides no food for gut bacteria",
+          "No prebiotics to nourish microbiome",
+          "Lacks polyphenols that benefit gut health",
+          "Must be paired with vegetables for complete gut nutrition",
+          "No fermented or probiotic components"
+        ]
+      },
+      "blood_sugar": {
+        "grade": "A+",
+        "score": 98,
+        "insight": "Perfect for blood sugar control with zero carbs and zero glycemic impact; ideal for diabetics and insulin sensitivity",
+        "pros": [
+          "Zero glycemic index - no blood sugar impact whatsoever",
+          "Zero glycemic load - perfect for diabetics",
+          "Protein prevents reactive hypoglycemia",
+          "Fat slows gastric emptying stabilizing glucose",
+          "No insulin spike or pancreatic stress",
+          "Improves insulin sensitivity when replacing carbs",
+          "B vitamins support healthy glucose metabolism"
+        ],
+        "cons": [
+          "No carbs to treat hypoglycemia if it occurs"
+        ]
+      },
+      "bone_joint": {
+        "grade": "B-",
+        "score": 76,
+        "insight": "Protein and minerals support bone structure; skin and cartilage provide collagen for joints",
+        "pros": [
+          "Protein essential for bone collagen matrix",
+          "Phosphorus works with calcium for bone mineralization",
+          "Collagen in skin and connective tissue supports joints",
+          "Vitamin B6 reduces homocysteine that weakens bones",
+          "Selenium supports cartilage health",
+          "Glucosamine in cartilage supports joint function",
+          "Easy to consume with bones for added calcium"
+        ],
+        "cons": [
+          "Only 11mg calcium is extremely low",
+          "Minimal vitamin D at 0.2mcg",
+          "Low vitamin K for bone metabolism",
+          "Lacks vitamin C for collagen synthesis",
+          "Must be paired with dairy or leafy greens for calcium"
+        ]
+      },
+      "anti_inflammatory": {
+        "grade": "B",
+        "score": 79,
+        "insight": "Balanced fat profile and antioxidant nutrients provide anti-inflammatory benefits; superior to processed meats",
+        "pros": [
+          "Selenium reduces inflammatory cytokines",
+          "Zinc modulates immune response reducing inflammation",
+          "Niacin has anti-inflammatory properties",
+          "Lower omega-6 than grain-fed chicken if pastured",
+          "Taurine reduces oxidative stress",
+          "No added preservatives or nitrates",
+          "Glycine in collagen has anti-inflammatory effects"
+        ],
+        "cons": [
+          "Lacks omega-3s unless pastured",
+          "Arachidonic acid can be pro-inflammatory in excess",
+          "High-heat cooking creates inflammatory AGEs",
+          "No anti-inflammatory polyphenols or antioxidants",
+          "Must be paired with vegetables for optimal effect"
+        ]
+      }
+    }
+  },
+  "chicken_wing": {
+    "name": "Chicken Wing",
+    "calories": 203,
+    "protein": 30.5,
+    "carbs": 0,
+    "fat": 8.1,
+    "fiber": 0,
+    "sugar": 0,
+    "sodium": 82,
+    "saturatedFat": 2.3,
+    "cholesterol": 84,
+    "potassium": 223,
+    "calcium": 17,
+    "iron": 1.2,
+    "magnesium": 22,
+    "vitaminA": 21,
+    "vitaminC": 0,
+    "vitaminD": 0.2,
+    "vitaminB12": 0.5,
+    "glycemicIndex": 0,
+    "glycemicLoad": 0,
+    "allergens": [],
+    "servingSize": 100,
+    "servingUnit": "g",
+    "focusGrades": {
+      "balanced": {
+        "grade": "A-",
+        "score": 88,
+        "insight": "Exceptional protein-to-fat ratio with skin removed; nutrient-dense dark meat with complete amino acid profile",
+        "pros": [
+          "30.5g protein is outstanding for any food source",
+          "Zero carbs perfect for low-carb diets",
+          "Higher micronutrient density than white meat",
+          "Rich in B vitamins, selenium, and phosphorus",
+          "Very low sodium naturally at 82mg",
+          "Skin and cartilage provide collagen benefits"
+        ],
+        "cons": [
+          "8.1g fat higher with skin-on preparation",
+          "84mg cholesterol is moderate",
+          "No fiber or plant nutrients",
+          "Minimal calcium and vitamin D"
+        ]
+      },
+      "heart_health": {
+        "grade": "B+",
+        "score": 83,
+        "insight": "Low saturated fat and sodium with heart-protective nutrients; skinless preparation optimizes cardiovascular benefits",
+        "pros": [
+          "Only 2.3g saturated fat is heart-friendly",
+          "82mg sodium is very low for meat",
+          "Niacin improves HDL and reduces triglycerides",
+          "Potassium supports healthy blood pressure",
+          "Selenium protects against arterial oxidation",
+          "Taurine supports cardiac muscle function",
+          "Monounsaturated fats benefit lipid profile"
+        ],
+        "cons": [
+          "84mg cholesterol contributes to daily intake",
+          "Skin significantly increases saturated fat if kept",
+          "Lacks omega-3 EPA/DHA",
+          "Fried wing preparations add inflammatory oils",
+          "Buffalo sauce versions spike sodium dangerously"
+        ]
+      },
+      "muscle_building": {
+        "grade": "A+",
+        "score": 96,
+        "insight": "Elite muscle-building food with 30.5g protein per 100g; exceptional leucine content triggers maximum anabolic response",
+        "pros": [
+          "30.5g protein rivals protein powder for density",
+          "Highest leucine content of any chicken cut",
+          "Complete amino acid profile with ideal ratios",
+          "Collagen supports connective tissue strength",
+          "Creatine enhances strength and power output",
+          "Iron supports oxygen delivery to muscles",
+          "Zinc optimizes testosterone production",
+          "B vitamins maximize protein synthesis",
+          "Easy to batch cook for meal prep"
+        ],
+        "cons": [
+          "Skin adds fat that dilutes protein percentage",
+          "Bone-in makes portioning less precise"
+        ]
+      },
+      "energy": {
+        "grade": "A-",
+        "score": 87,
+        "insight": "Sustained energy from protein and healthy fats without glycemic fluctuations; ideal for steady performance",
+        "pros": [
+          "Zero glycemic impact eliminates blood sugar crashes",
+          "Protein provides steady amino acid energy release",
+          "Fat offers long-lasting fuel for endurance",
+          "B vitamins optimize cellular energy production",
+          "Iron prevents energy-sapping anemia",
+          "CoQ10 supports mitochondrial ATP generation",
+          "Phosphorus critical for ATP formation"
+        ],
+        "cons": [
+          "No carbs for glycogen-dependent activities",
+          "May need carb pairing for high-intensity exercise",
+          "Bone-in requires eating effort reducing convenience"
+        ]
+      },
+      "weight_management": {
+        "grade": "B+",
+        "score": 84,
+        "insight": "High protein maximizes satiety and metabolic rate; moderate calories allow generous portions during fat loss",
+        "pros": [
+          "30.5g protein powerfully suppresses appetite",
+          "Thermic effect of protein burns 30% as heat",
+          "Preserves muscle mass during caloric restriction",
+          "Zero carbs eliminate insulin-driven fat storage",
+          "Satisfying fat content prevents diet deprivation",
+          "Bone-in slows eating promoting fullness signals",
+          "Versatile recipes prevent meal monotony"
+        ],
+        "cons": [
+          "203 calories requires portion tracking",
+          "Skin dramatically increases calories if kept",
+          "Restaurant preparations often fried and sauced",
+          "No fiber to enhance satiety",
+          "Bone-in makes exact portioning challenging"
+        ]
+      },
+      "brain_focus": {
+        "grade": "A-",
+        "score": 86,
+        "insight": "Zero glycemic impact maintains cognitive stability; rich in nutrients essential for neurotransmitter synthesis",
+        "pros": [
+          "Stable energy prevents glucose-induced brain fog",
+          "Vitamin B6 essential for dopamine and serotonin",
+          "B12 supports myelin sheath integrity",
+          "Iron prevents cognitive deficits from deficiency",
+          "Tyrosine precursor for focus-enhancing dopamine",
+          "Selenium protects neurons from oxidative damage",
+          "Phosphorus component of phospholipid brain membranes"
+        ],
+        "cons": [
+          "Lacks omega-3 DHA for optimal brain function",
+          "No glucose for immediate brain fuel needs",
+          "Minimal choline compared to eggs",
+          "Requires vegetable pairing for complete brain nutrition"
+        ]
+      },
+      "gut_health": {
+        "grade": "B-",
+        "score": 72,
+        "insight": "Easy-to-digest protein supports gut lining; collagen from skin benefits intestinal barrier, but lacks microbiome fuel",
+        "pros": [
+          "Protein provides building blocks for gut lining",
+          "Glutamine supports intestinal enterocyte health",
+          "Collagen heals leaky gut and strengthens barrier",
+          "Glycine reduces gut inflammation",
+          "Zinc maintains tight junction integrity",
+          "Easily digestible without fermentation",
+          "Low FODMAP for IBS sufferers"
+        ],
+        "cons": [
+          "Zero fiber starves beneficial gut bacteria",
+          "No prebiotics to nourish microbiome",
+          "Lacks polyphenols that promote gut health",
+          "No resistant starch for butyrate production",
+          "Must pair with vegetables for complete gut support",
+          "Fried preparations harm gut bacteria diversity"
+        ]
+      },
+      "blood_sugar": {
+        "grade": "A+",
+        "score": 99,
+        "insight": "Absolute zero glycemic impact; perfect for diabetics, prediabetics, and anyone optimizing insulin sensitivity",
+        "pros": [
+          "Zero glycemic index - no blood sugar rise",
+          "Zero glycemic load - perfect glucose control",
+          "No insulin response or pancreatic stress",
+          "Protein prevents hypoglycemia between meals",
+          "Fat further stabilizes blood glucose levels",
+          "B vitamins support healthy glucose metabolism",
+          "Improves insulin sensitivity replacing carbs",
+          "Ideal for ketogenic and very low-carb diets"
+        ],
+        "cons": [
+          "Cannot treat acute hypoglycemia without carbs"
+        ]
+      },
+      "bone_joint": {
+        "grade": "B+",
+        "score": 82,
+        "insight": "Excellent collagen source from skin and cartilage; protein and minerals support bone structure and joint health",
+        "pros": [
+          "Collagen peptides from skin reduce joint pain",
+          "Glucosamine and chondroitin in cartilage support joints",
+          "Protein essential for bone collagen matrix",
+          "Phosphorus critical for bone mineralization",
+          "Glycine and proline build connective tissue",
+          "Can be eaten with bones for extra calcium",
+          "Traditional bone-in preparation provides minerals",
+          "Selenium supports cartilage health"
+        ],
+        "cons": [
+          "Only 17mg calcium is very low",
+          "Minimal vitamin D at 0.2mcg",
+          "Lacks vitamin K for bone metabolism",
+          "No vitamin C for collagen synthesis",
+          "Must pair with calcium-rich foods"
+        ]
+      },
+      "anti_inflammatory": {
+        "grade": "B+",
+        "score": 82,
+        "insight": "Collagen and selenium provide anti-inflammatory benefits; preparation method critically affects inflammatory profile",
+        "pros": [
+          "Collagen reduces systemic inflammatory markers",
+          "Glycine has potent anti-inflammatory properties",
+          "Selenium reduces inflammatory cytokines",
+          "Zinc modulates immune inflammatory response",
+          "Lower saturated fat than red meat",
+          "Niacin reduces inflammation",
+          "Taurine combats oxidative inflammatory stress"
+        ],
+        "cons": [
+          "Lacks omega-3s for anti-inflammatory effects",
+          "Arachidonic acid can promote inflammation",
+          "Fried preparations create inflammatory AGEs",
+          "Buffalo sauce contains pro-inflammatory omega-6 oils",
+          "High-heat cooking produces inflammatory compounds",
+          "No polyphenols or antioxidants without vegetables"
+        ]
+      }
+    }
+  }
+}

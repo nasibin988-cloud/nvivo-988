@@ -75,6 +75,11 @@ function generateLDLTrend(): Array<{ date: string; value: number }> {
     });
   }
 
+  // Ensure the latest LDL is exactly 74
+  if (trend.length > 0) {
+    trend[trend.length - 1].value = 74;
+  }
+
   return trend;
 }
 

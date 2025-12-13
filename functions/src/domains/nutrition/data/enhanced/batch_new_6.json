@@ -1,0 +1,584 @@
+{
+  "tikka_masala": {
+    "name": "Chicken Tikka Masala",
+    "calories": 148,
+    "protein": 12.5,
+    "carbs": 8.2,
+    "fat": 8.5,
+    "fiber": 1.8,
+    "sugar": 3.5,
+    "sodium": 385,
+    "saturatedFat": 3.2,
+    "cholesterol": 42,
+    "potassium": 285,
+    "calcium": 55,
+    "iron": 1.4,
+    "magnesium": 28,
+    "vitaminA": 125,
+    "vitaminC": 8.5,
+    "vitaminD": 0.2,
+    "vitaminB12": 0.4,
+    "glycemicIndex": 48,
+    "glycemicLoad": 4,
+    "allergens": ["dairy", "tree nuts (possible)"],
+    "servingSize": 100,
+    "servingUnit": "g",
+    "focusGrades": {
+      "balanced": {
+        "grade": "B",
+        "score": 82,
+        "insight": "Well-balanced macros with quality protein from chicken and moderate healthy fats from cream and spices",
+        "pros": ["High-quality complete protein (12.5g)", "Rich in aromatic anti-inflammatory spices", "Moderate calorie density"],
+        "cons": ["High sodium content (385mg)", "Saturated fat from cream", "Limited fiber content"]
+      },
+      "heart_health": {
+        "grade": "C+",
+        "score": 72,
+        "insight": "Moderate heart health profile; cream adds saturated fat but spices provide cardiovascular benefits",
+        "pros": ["Turmeric and garam masala support cardiovascular function", "Good potassium levels (285mg)", "Tomato-based sauce provides lycopene"],
+        "cons": ["High sodium (385mg per 100g)", "Saturated fat from cream (3.2g)", "Cholesterol content from chicken and dairy"]
+      },
+      "muscle_building": {
+        "grade": "B+",
+        "score": 86,
+        "insight": "Excellent protein source with complete amino acid profile from chicken, ideal for muscle repair and growth",
+        "pros": ["High-quality complete protein (12.5g)", "Good leucine content for muscle synthesis", "Provides essential minerals (iron, magnesium)"],
+        "cons": ["Moderate fat may slow protein absorption slightly", "Higher sodium may cause water retention", "Lower protein density than plain chicken"]
+      },
+      "energy": {
+        "grade": "B",
+        "score": 80,
+        "insight": "Provides sustained energy from balanced macros with protein and healthy fats slowing carb absorption",
+        "pros": ["Balanced macros prevent energy crashes", "B-vitamins from chicken support energy metabolism", "Moderate calorie density (148 cal)"],
+        "cons": ["Lower carb content may not fuel high-intensity exercise", "Cream-based sauce is calorie-dense", "Digestion may be slower due to fat content"]
+      },
+      "weight_management": {
+        "grade": "C+",
+        "score": 73,
+        "insight": "Moderate calorie density with good protein for satiety, but cream and oil add hidden calories",
+        "pros": ["High protein promotes fullness (12.5g)", "Low glycemic load prevents insulin spikes", "Rich flavors satisfy cravings"],
+        "cons": ["Calorie-dense from cream and oil", "High sodium may mask true weight", "Limited fiber for satiety (1.8g)"]
+      },
+      "brain_focus": {
+        "grade": "B",
+        "score": 81,
+        "insight": "Excellent brain food with protein for neurotransmitters and turmeric's curcumin for cognitive function",
+        "pros": ["Curcumin in turmeric crosses blood-brain barrier", "Protein provides amino acids for neurotransmitters", "B12 supports nerve function (0.4µg)"],
+        "cons": ["Heavy cream may cause post-meal sluggishness", "High sodium can affect mental clarity", "Lacks omega-3 fatty acids"]
+      },
+      "gut_health": {
+        "grade": "B-",
+        "score": 76,
+        "insight": "Spices like ginger and turmeric aid digestion, but dairy and low fiber may challenge some digestive systems",
+        "pros": ["Ginger soothes digestive tract", "Turmeric has anti-inflammatory gut benefits", "Fermented yogurt in marinade adds probiotics"],
+        "cons": ["Low fiber content (1.8g)", "Dairy may cause issues for lactose-sensitive individuals", "High fat slows gastric emptying"]
+      },
+      "blood_sugar": {
+        "grade": "A-",
+        "score": 88,
+        "insight": "Excellent blood sugar control with low glycemic load and protein/fat slowing glucose absorption",
+        "pros": ["Very low glycemic load (4)", "Protein and fat stabilize blood sugar", "Spices may improve insulin sensitivity"],
+        "cons": ["Onions and tomatoes add natural sugars (3.5g total)", "Portion control important due to calorie density", "Minimal fiber to slow sugar absorption"]
+      },
+      "bone_joint": {
+        "grade": "B",
+        "score": 79,
+        "insight": "Moderate bone support from dairy calcium and anti-inflammatory spices for joint health",
+        "pros": ["Calcium from cream and yogurt (55mg)", "Turmeric reduces joint inflammation", "Vitamin D from dairy (0.2µg)"],
+        "cons": ["Calcium content lower than dairy-focused foods", "High sodium may increase calcium excretion", "Limited vitamin K for bone formation"]
+      },
+      "anti_inflammatory": {
+        "grade": "A-",
+        "score": 88,
+        "insight": "Powerhouse anti-inflammatory dish with turmeric, ginger, garlic, and other healing spices",
+        "pros": ["Curcumin in turmeric is potent anti-inflammatory", "Ginger and garlic reduce inflammatory markers", "Tomatoes provide lycopene antioxidants"],
+        "cons": ["Dairy may be inflammatory for some individuals", "High sodium can promote inflammation", "Saturated fat may trigger inflammatory pathways"]
+      }
+    }
+  },
+  "biryani": {
+    "name": "Chicken Biryani",
+    "calories": 165,
+    "protein": 10.2,
+    "carbs": 22.5,
+    "fat": 4.8,
+    "fiber": 1.5,
+    "sugar": 2.1,
+    "sodium": 425,
+    "saturatedFat": 1.4,
+    "cholesterol": 32,
+    "potassium": 215,
+    "calcium": 35,
+    "iron": 1.8,
+    "magnesium": 32,
+    "vitaminA": 85,
+    "vitaminC": 6.5,
+    "vitaminD": 0.1,
+    "vitaminB12": 0.3,
+    "glycemicIndex": 58,
+    "glycemicLoad": 13,
+    "allergens": ["dairy (yogurt)", "tree nuts (optional garnish)"],
+    "servingSize": 100,
+    "servingUnit": "g",
+    "focusGrades": {
+      "balanced": {
+        "grade": "B-",
+        "score": 78,
+        "insight": "Carb-forward dish with moderate protein from chicken and basmati rice providing complex carbohydrates",
+        "pros": ["Good macronutrient variety", "Basmati rice has lower GI than regular rice", "Aromatic spices add micronutrients without calories"],
+        "cons": ["High sodium content (425mg)", "Carb-heavy for balanced eating", "Relatively low fiber (1.5g)"]
+      },
+      "heart_health": {
+        "grade": "C",
+        "score": 68,
+        "insight": "Moderate heart health concerns due to high sodium, though spices and lean protein provide some benefits",
+        "pros": ["Saffron may support cardiovascular health", "Lean protein from chicken breast", "Cardamom and cloves have antioxidant properties"],
+        "cons": ["Very high sodium (425mg per 100g)", "White rice lacks heart-protective fiber", "Low potassium relative to sodium"]
+      },
+      "muscle_building": {
+        "grade": "B",
+        "score": 80,
+        "insight": "Decent protein source with carbs for glycogen replenishment, ideal post-workout meal",
+        "pros": ["Complete protein from chicken (10.2g)", "Carbs replenish muscle glycogen (22.5g)", "Iron supports oxygen delivery to muscles (1.8mg)"],
+        "cons": ["Lower protein density than pure protein sources", "High sodium may cause bloating", "Limited amino acid density compared to protein-focused meals"]
+      },
+      "energy": {
+        "grade": "B+",
+        "score": 84,
+        "insight": "Excellent energy source with complex carbs from basmati rice providing sustained fuel",
+        "pros": ["Good carb content for energy (22.5g)", "Basmati rice has medium GI (58)", "B-vitamins from chicken and rice support energy metabolism"],
+        "cons": ["May cause energy dip in sensitive individuals (GL 13)", "Low fiber doesn't slow glucose release", "High sodium may affect energy levels"]
+      },
+      "weight_management": {
+        "grade": "C",
+        "score": 70,
+        "insight": "Calorie-dense carb dish that requires portion control for weight management goals",
+        "pros": ["Moderate calorie density (165 cal)", "Protein provides some satiety", "Flavorful spices reduce need for extra fats"],
+        "cons": ["High carb content (22.5g)", "Low fiber limits fullness (1.5g)", "Very high sodium may mask weight loss progress"]
+      },
+      "brain_focus": {
+        "grade": "B-",
+        "score": 76,
+        "insight": "Provides glucose for brain function, though refined rice may cause blood sugar fluctuations",
+        "pros": ["Glucose from rice fuels brain (preferred energy source)", "Saffron may enhance mood and cognition", "B12 supports nerve function (0.3µg)"],
+        "cons": ["Medium-high GI may cause focus dips", "Low fiber allows rapid glucose absorption", "High sodium can impair concentration"]
+      },
+      "gut_health": {
+        "grade": "C+",
+        "score": 72,
+        "insight": "Digestive spices provide benefits, but white rice and low fiber limit gut health potential",
+        "pros": ["Cardamom, fennel, and mint aid digestion", "Yogurt marinade adds probiotics", "Ginger reduces nausea and bloating"],
+        "cons": ["Very low fiber (1.5g)", "White rice lacks prebiotic resistant starch", "High sodium may disrupt gut microbiome balance"]
+      },
+      "blood_sugar": {
+        "grade": "C+",
+        "score": 74,
+        "insight": "Moderate glycemic impact; basmati is better than white rice but still raises blood sugar moderately",
+        "pros": ["Basmati rice has lower GI than regular rice (58 vs 70+)", "Protein and fat slow glucose absorption", "Spices like cinnamon may improve insulin sensitivity"],
+        "cons": ["Moderate glycemic load (13)", "Low fiber allows faster glucose spikes", "White rice causes higher insulin response"]
+      },
+      "bone_joint": {
+        "grade": "C+",
+        "score": 73,
+        "insight": "Limited bone-building nutrients, though anti-inflammatory spices support joint health",
+        "pros": ["Turmeric and ginger reduce joint inflammation", "Some calcium from yogurt marinade (35mg)", "Magnesium supports bone density (32mg)"],
+        "cons": ["Low calcium content", "High sodium increases calcium loss through urine", "Minimal vitamin D (0.1µg)"]
+      },
+      "anti_inflammatory": {
+        "grade": "B+",
+        "score": 84,
+        "insight": "Rich in anti-inflammatory spices including turmeric, saffron, cardamom, and cloves",
+        "pros": ["Turmeric provides curcumin", "Saffron has crocin (anti-inflammatory compound)", "Cloves and cardamom are antioxidant-rich"],
+        "cons": ["High sodium promotes inflammation", "Refined rice may trigger inflammatory response", "Low omega-3 fatty acids"]
+      }
+    }
+  },
+  "dal": {
+    "name": "Dal (Lentil Curry)",
+    "calories": 115,
+    "protein": 8.5,
+    "carbs": 18.2,
+    "fat": 1.8,
+    "fiber": 7.2,
+    "sugar": 1.5,
+    "sodium": 285,
+    "saturatedFat": 0.3,
+    "cholesterol": 0,
+    "potassium": 385,
+    "calcium": 48,
+    "iron": 3.2,
+    "magnesium": 52,
+    "vitaminA": 65,
+    "vitaminC": 12.5,
+    "vitaminD": 0,
+    "vitaminB12": 0,
+    "glycemicIndex": 38,
+    "glycemicLoad": 7,
+    "allergens": [],
+    "servingSize": 100,
+    "servingUnit": "g",
+    "focusGrades": {
+      "balanced": {
+        "grade": "A",
+        "score": 92,
+        "insight": "Nearly perfect balanced meal with plant protein, complex carbs, minimal fat, and high fiber",
+        "pros": ["Excellent protein-to-calorie ratio", "Very high fiber (7.2g)", "Low in saturated fat (0.3g)"],
+        "cons": ["Lacks vitamin B12 (plant-based)", "Moderate sodium (285mg)", "Incomplete protein profile without grains"]
+      },
+      "heart_health": {
+        "grade": "A",
+        "score": 94,
+        "insight": "Outstanding heart health food with fiber, low saturated fat, zero cholesterol, and high potassium",
+        "pros": ["Zero cholesterol (plant-based)", "Very high fiber reduces LDL cholesterol (7.2g)", "Excellent potassium (385mg) for blood pressure"],
+        "cons": ["Moderate sodium content", "May need rice pairing (adds GI)", "Iron absorption lower than heme sources"]
+      },
+      "muscle_building": {
+        "grade": "B",
+        "score": 81,
+        "insight": "Good plant protein source, though lacks some essential amino acids found in complete proteins",
+        "pros": ["Solid protein content (8.5g)", "Very low fat maximizes protein density", "Iron supports oxygen transport (3.2mg)"],
+        "cons": ["Incomplete protein (low in methionine)", "Requires grain pairing for complete amino acids", "Lower leucine content than animal proteins"]
+      },
+      "energy": {
+        "grade": "A-",
+        "score": 88,
+        "insight": "Exceptional sustained energy from low-GI complex carbs and protein without crashes",
+        "pros": ["Low glycemic index (38) prevents crashes", "High fiber provides steady energy release", "Complex carbs fuel endurance (18.2g)"],
+        "cons": ["Lower calorie density for high-energy needs", "May not provide quick energy pre-workout", "Digestion time may be slower due to fiber"]
+      },
+      "weight_management": {
+        "grade": "A",
+        "score": 95,
+        "insight": "Ideal weight management food with high fiber, low calories, and protein for satiety",
+        "pros": ["Very low calorie density (115 cal)", "Extremely high fiber promotes fullness (7.2g)", "Protein prevents muscle loss during deficit"],
+        "cons": ["May need more protein for very active individuals", "Requires volume eating due to low calorie density", "Sodium may cause temporary water retention"]
+      },
+      "brain_focus": {
+        "grade": "B+",
+        "score": 85,
+        "insight": "Excellent brain fuel with stable glucose, B-vitamins, and minerals supporting cognitive function",
+        "pros": ["Low GI prevents blood sugar spikes/crashes", "Magnesium supports neurotransmitter function (52mg)", "Iron crucial for oxygen delivery to brain (3.2mg)"],
+        "cons": ["Lacks B12 (critical for brain health)", "No omega-3 fatty acids", "Lower in choline compared to animal proteins"]
+      },
+      "gut_health": {
+        "grade": "A",
+        "score": 93,
+        "insight": "Outstanding gut health food with prebiotic fiber, digestive spices, and fermented legumes",
+        "pros": ["Very high prebiotic fiber feeds good bacteria (7.2g)", "Cumin and coriander aid digestion", "Lentils provide resistant starch"],
+        "cons": ["May cause gas in some individuals (FODMAPs)", "Phytic acid can reduce mineral absorption", "Requires adequate water intake"]
+      },
+      "blood_sugar": {
+        "grade": "A",
+        "score": 96,
+        "insight": "Exceptional blood sugar control with low GI, high fiber, and protein stabilizing glucose response",
+        "pros": ["Very low glycemic index (38)", "Low glycemic load (7)", "Fiber and protein prevent glucose spikes"],
+        "cons": ["Pairing with white rice increases overall GI", "Natural sugars from onions/tomatoes (minimal)", "May need smaller portions for diabetics initially"]
+      },
+      "bone_joint": {
+        "grade": "B+",
+        "score": 84,
+        "insight": "Good bone support from minerals and anti-inflammatory spices for joint health",
+        "pros": ["High magnesium supports bone density (52mg)", "Turmeric reduces joint inflammation", "Calcium from lentils (48mg)"],
+        "cons": ["Lower calcium than dairy sources", "Lacks vitamin D", "Phytic acid may reduce calcium absorption"]
+      },
+      "anti_inflammatory": {
+        "grade": "A",
+        "score": 91,
+        "insight": "Powerful anti-inflammatory dish with turmeric, cumin, garlic, and antioxidant-rich lentils",
+        "pros": ["Turmeric's curcumin is potent anti-inflammatory", "Lentils high in polyphenols and antioxidants", "Garlic and onions reduce inflammatory markers"],
+        "cons": ["Moderate sodium may promote inflammation", "Lacks omega-3 fatty acids", "Cooking may reduce some antioxidant content"]
+      }
+    }
+  },
+  "pad_thai": {
+    "name": "Pad Thai",
+    "calories": 178,
+    "protein": 8.8,
+    "carbs": 25.5,
+    "fat": 5.2,
+    "fiber": 2.1,
+    "sugar": 6.8,
+    "sodium": 485,
+    "saturatedFat": 0.8,
+    "cholesterol": 68,
+    "potassium": 195,
+    "calcium": 62,
+    "iron": 1.5,
+    "magnesium": 28,
+    "vitaminA": 145,
+    "vitaminC": 18.5,
+    "vitaminD": 0.6,
+    "vitaminB12": 0.3,
+    "glycemicIndex": 62,
+    "glycemicLoad": 16,
+    "allergens": ["shellfish (shrimp)", "peanuts", "eggs", "fish sauce", "soy (possible)"],
+    "servingSize": 100,
+    "servingUnit": "g",
+    "focusGrades": {
+      "balanced": {
+        "grade": "B-",
+        "score": 77,
+        "insight": "Moderately balanced with decent protein from shrimp and eggs, though high in sodium and sugar",
+        "pros": ["Complete protein from shrimp and eggs", "Good variety of vegetables (bean sprouts, scallions)", "Peanuts add healthy fats and nutrients"],
+        "cons": ["Very high sodium (485mg)", "Added sugar from tamarind and palm sugar (6.8g)", "High glycemic load (16)"]
+      },
+      "heart_health": {
+        "grade": "C",
+        "score": 65,
+        "insight": "Mixed heart health profile with lean shrimp protein offset by high sodium and cholesterol",
+        "pros": ["Low saturated fat (0.8g)", "Shrimp provides omega-3 fatty acids", "Peanuts contain heart-healthy monounsaturated fats"],
+        "cons": ["Very high sodium (485mg per 100g)", "High cholesterol from shrimp and eggs (68mg)", "Added sugars contribute to triglycerides"]
+      },
+      "muscle_building": {
+        "grade": "B",
+        "score": 79,
+        "insight": "Good protein source with complete amino acids from shrimp and eggs, plus carbs for recovery",
+        "pros": ["Complete protein from animal sources (8.8g)", "Shrimp is very lean and protein-dense", "Eggs provide leucine for muscle synthesis"],
+        "cons": ["Moderate protein density due to noodles", "High sodium may cause bloating", "Lower protein than pure protein sources"]
+      },
+      "energy": {
+        "grade": "B",
+        "score": 78,
+        "insight": "Provides quick energy from rice noodles, though may cause blood sugar fluctuations",
+        "pros": ["Good carb content for energy (25.5g)", "Quick-digesting carbs fuel activity", "Moderate calorie density (178 cal)"],
+        "cons": ["High glycemic load may cause crashes (16)", "Low fiber doesn't slow glucose release (2.1g)", "Added sugars provide empty calories"]
+      },
+      "weight_management": {
+        "grade": "C-",
+        "score": 65,
+        "insight": "Challenging for weight management due to calorie density, sodium, and added sugars",
+        "pros": ["Moderate protein aids satiety", "Vegetables add volume without many calories", "Flavor satisfaction reduces overeating risk"],
+        "cons": ["Calorie-dense from oil and noodles", "Very high sodium masks true weight (485mg)", "High sugar content (6.8g)"]
+      },
+      "brain_focus": {
+        "grade": "C+",
+        "score": 71,
+        "insight": "Mixed brain benefits from protein and B-vitamins, but high sugar and sodium may impair focus",
+        "pros": ["Eggs provide choline for neurotransmitters", "B12 from shrimp supports nerve function (0.3µg)", "Vitamin A supports brain cell communication (145µg)"],
+        "cons": ["High GI load causes blood sugar fluctuations (16)", "Excessive sodium impairs cognitive function", "Added sugars cause focus crashes"]
+      },
+      "gut_health": {
+        "grade": "C+",
+        "score": 72,
+        "insight": "Limited gut health benefits with low fiber and fermented fish sauce providing minimal probiotics",
+        "pros": ["Bean sprouts add some fiber and enzymes", "Fish sauce is fermented (minimal probiotic benefit)", "Lime juice aids digestion"],
+        "cons": ["Low fiber content (2.1g)", "Rice noodles lack prebiotic fiber", "High sodium may disrupt gut bacteria balance"]
+      },
+      "blood_sugar": {
+        "grade": "D+",
+        "score": 62,
+        "insight": "Poor blood sugar control with refined rice noodles, added sugars, and high glycemic load",
+        "pros": ["Protein and fat slow glucose absorption slightly", "Lime juice may lower glycemic response", "Peanuts provide some fiber"],
+        "cons": ["High glycemic load (16)", "Refined rice noodles spike blood sugar (GI 62)", "Added sugars worsen glycemic response (6.8g)"]
+      },
+      "bone_joint": {
+        "grade": "C+",
+        "score": 74,
+        "insight": "Moderate bone support from calcium in tofu and eggs, but high sodium increases calcium loss",
+        "pros": ["Calcium from eggs and tofu (62mg)", "Vitamin D from eggs (0.6µg)", "Shrimp shells (if eaten) provide calcium"],
+        "cons": ["Very high sodium increases calcium excretion", "Low magnesium content (28mg)", "Minimal vitamin K for bone formation"]
+      },
+      "anti_inflammatory": {
+        "grade": "C",
+        "score": 68,
+        "insight": "Limited anti-inflammatory benefits; high sodium and sugar may promote inflammation",
+        "pros": ["Peanuts contain resveratrol (anti-inflammatory)", "Lime juice provides vitamin C antioxidants (18.5mg)", "Garlic and shallots reduce inflammation"],
+        "cons": ["Very high sodium promotes inflammation (485mg)", "Added sugars trigger inflammatory pathways", "Refined noodles cause inflammatory insulin spikes"]
+      }
+    }
+  },
+  "green_curry": {
+    "name": "Thai Green Curry",
+    "calories": 142,
+    "protein": 9.5,
+    "carbs": 7.8,
+    "fat": 9.2,
+    "fiber": 2.5,
+    "sugar": 3.2,
+    "sodium": 425,
+    "saturatedFat": 6.8,
+    "cholesterol": 28,
+    "potassium": 315,
+    "calcium": 42,
+    "iron": 2.1,
+    "magnesium": 38,
+    "vitaminA": 185,
+    "vitaminC": 22.5,
+    "vitaminD": 0.1,
+    "vitaminB12": 0.2,
+    "glycemicIndex": 42,
+    "glycemicLoad": 3,
+    "allergens": ["shellfish (shrimp paste)", "fish sauce"],
+    "servingSize": 100,
+    "servingUnit": "g",
+    "focusGrades": {
+      "balanced": {
+        "grade": "B",
+        "score": 80,
+        "insight": "Well-balanced with quality protein, healthy fats from coconut milk, and low-carb vegetables",
+        "pros": ["Good protein from chicken/tofu (9.5g)", "Healthy fats from coconut milk (MCTs)", "Low carb content (7.8g)"],
+        "cons": ["High saturated fat from coconut milk (6.8g)", "Very high sodium (425mg)", "Calorie-dense from coconut cream"]
+      },
+      "heart_health": {
+        "grade": "C+",
+        "score": 71,
+        "insight": "Complex heart health profile; coconut milk's saturated fat is controversial but contains beneficial MCTs",
+        "pros": ["Coconut MCTs may increase HDL cholesterol", "High potassium (315mg) regulates blood pressure", "Thai basil and green chilies have cardiovascular benefits"],
+        "cons": ["Very high saturated fat (6.8g)", "High sodium (425mg)", "Saturated fat from coconut may raise LDL in some people"]
+      },
+      "muscle_building": {
+        "grade": "B+",
+        "score": 83,
+        "insight": "Excellent protein source with healthy fats that don't interfere with muscle synthesis",
+        "pros": ["Quality complete protein (9.5g)", "Coconut MCTs provide quick energy for workouts", "Good iron for oxygen transport (2.1mg)"],
+        "cons": ["High fat may slow protein digestion", "Sodium may cause water retention obscuring gains", "Lower protein density than lean meats alone"]
+      },
+      "energy": {
+        "grade": "B+",
+        "score": 85,
+        "insight": "Excellent sustained energy from MCTs in coconut milk and low glycemic load preventing crashes",
+        "pros": ["MCTs convert to quick energy (ketones)", "Very low glycemic load (3)", "Balanced macros prevent energy dips"],
+        "cons": ["Lower carb content for high-intensity exercise", "High fat may feel heavy for some", "Calorie-dense requires portion awareness"]
+      },
+      "weight_management": {
+        "grade": "C",
+        "score": 69,
+        "insight": "Calorie-dense from coconut milk, though MCTs may support metabolism and satiety",
+        "pros": ["MCTs may increase metabolic rate", "High protein promotes fullness (9.5g)", "Low glycemic load prevents insulin spikes"],
+        "cons": ["Very calorie-dense (142 cal from fat)", "High saturated fat (6.8g)", "Easy to overconsume due to creamy texture"]
+      },
+      "brain_focus": {
+        "grade": "A-",
+        "score": 87,
+        "insight": "Outstanding brain food with MCTs converting to ketones (brain fuel) and low blood sugar impact",
+        "pros": ["MCTs produce ketones (preferred brain fuel)", "Very low glycemic load maintains stable focus", "Green chilies improve circulation to brain"],
+        "cons": ["Lacks B12 if vegetarian version (0.2µg)", "High sodium may affect concentration", "No omega-3 fatty acids"]
+      },
+      "gut_health": {
+        "grade": "B-",
+        "score": 77,
+        "insight": "Moderate gut benefits from vegetables and herbs, though coconut milk may be hard to digest for some",
+        "pros": ["Thai basil and lemongrass aid digestion", "Coconut has antimicrobial properties (lauric acid)", "Green chilies stimulate digestive enzymes"],
+        "cons": ["Moderate fiber only (2.5g)", "High fat may slow digestion", "Coconut milk can cause digestive issues in sensitive individuals"]
+      },
+      "blood_sugar": {
+        "grade": "A",
+        "score": 92,
+        "insight": "Excellent blood sugar control with very low glycemic load and fat/protein slowing any glucose response",
+        "pros": ["Very low glycemic load (3)", "High fat slows glucose absorption completely", "Protein stabilizes blood sugar (9.5g)"],
+        "cons": ["Minimal carbs may not suit high-carb dieters", "Added sugars in some recipes (3.2g total)", "Palm sugar if used adds glycemic load"]
+      },
+      "bone_joint": {
+        "grade": "B",
+        "score": 78,
+        "insight": "Moderate bone support with anti-inflammatory compounds for joint health from green chilies and turmeric",
+        "pros": ["Green chilies reduce joint pain (capsaicin)", "Turmeric (if added) is anti-inflammatory", "Some calcium from coconut milk (42mg)"],
+        "cons": ["Lower calcium than dairy-based curries", "High sodium increases calcium loss", "Minimal vitamin D (0.1µg)"]
+      },
+      "anti_inflammatory": {
+        "grade": "A-",
+        "score": 89,
+        "insight": "Powerful anti-inflammatory dish with green chilies, lemongrass, galangal, and Thai basil",
+        "pros": ["Green chilies contain capsaicin (potent anti-inflammatory)", "Lemongrass and galangal reduce inflammatory cytokines", "Thai basil rich in eugenol (anti-inflammatory)"],
+        "cons": ["High sodium may promote inflammation (425mg)", "Saturated fat may trigger inflammation in some", "Shrimp paste allergies can cause inflammatory response"]
+      }
+    }
+  },
+  "spring_roll": {
+    "name": "Fresh Spring Roll",
+    "calories": 85,
+    "protein": 4.2,
+    "carbs": 14.5,
+    "fat": 1.8,
+    "fiber": 2.8,
+    "sugar": 2.5,
+    "sodium": 185,
+    "saturatedFat": 0.3,
+    "cholesterol": 35,
+    "potassium": 165,
+    "calcium": 28,
+    "iron": 1.1,
+    "magnesium": 18,
+    "vitaminA": 215,
+    "vitaminC": 14.5,
+    "vitaminD": 0,
+    "vitaminB12": 0.2,
+    "glycemicIndex": 52,
+    "glycemicLoad": 8,
+    "allergens": ["shellfish (shrimp)", "peanuts (dipping sauce)", "fish sauce"],
+    "servingSize": 100,
+    "servingUnit": "g",
+    "focusGrades": {
+      "balanced": {
+        "grade": "B+",
+        "score": 86,
+        "insight": "Well-balanced light meal with fresh vegetables, lean protein, and minimal fat",
+        "pros": ["Very low calorie density (85 cal)", "Fresh vegetables provide vitamins and minerals", "Lean protein from shrimp (4.2g)"],
+        "cons": ["Lower protein content than other mains", "Dipping sauce adds significant sodium", "Moderate carbs from rice paper (14.5g)"]
+      },
+      "heart_health": {
+        "grade": "B+",
+        "score": 86,
+        "insight": "Heart-healthy option with minimal saturated fat, fresh vegetables, and lean shrimp protein",
+        "pros": ["Very low saturated fat (0.3g)", "Fresh herbs (mint, cilantro) support cardiovascular health", "Lower sodium than other Vietnamese dishes (185mg)"],
+        "cons": ["Cholesterol from shrimp (35mg)", "Dipping sauce significantly increases sodium", "Lower potassium than desired (165mg)"]
+      },
+      "muscle_building": {
+        "grade": "C+",
+        "score": 72,
+        "insight": "Limited muscle-building potential due to low protein, though shrimp provides quality amino acids",
+        "pros": ["Complete protein from shrimp (4.2g)", "Very low fat maximizes protein ratio", "Easy to digest pre/post workout"],
+        "cons": ["Low total protein content (4.2g)", "Insufficient amino acids for muscle synthesis alone", "Would need 3-4 servings for adequate protein"]
+      },
+      "energy": {
+        "grade": "B-",
+        "score": 76,
+        "insight": "Light energy source from rice paper carbs, better suited for snacking than sustained energy needs",
+        "pros": ["Moderate glycemic load (8)", "Fresh vegetables provide steady energy", "Low calorie makes it easy to portion for needs"],
+        "cons": ["Low calorie density (85 cal)", "Insufficient carbs for high-energy activities", "May need multiple servings for satiety"]
+      },
+      "weight_management": {
+        "grade": "A",
+        "score": 94,
+        "insight": "Ideal weight management food with very low calories, high vegetable volume, and minimal fat",
+        "pros": ["Extremely low calorie density (85 cal)", "High water content from fresh vegetables", "Good fiber for satiety (2.8g)"],
+        "cons": ["Low protein may not satisfy hunger long-term", "Peanut dipping sauce adds hidden calories/fat", "May need to eat large quantities for fullness"]
+      },
+      "brain_focus": {
+        "grade": "B",
+        "score": 79,
+        "insight": "Light brain fuel with fresh herbs supporting cognition and stable blood sugar preventing crashes",
+        "pros": ["Fresh mint improves alertness and focus", "Low glycemic load prevents blood sugar crashes", "Vitamin A supports brain cell communication (215µg)"],
+        "cons": ["Low calorie may not fuel intensive mental work", "Minimal B12 from shrimp (0.2µg)", "Lacks omega-3 fatty acids for brain health"]
+      },
+      "gut_health": {
+        "grade": "B+",
+        "score": 84,
+        "insight": "Excellent gut health food with raw vegetables, fresh herbs, and minimal processing",
+        "pros": ["Fresh vegetables high in digestive enzymes", "Mint and cilantro soothe digestive tract", "Good fiber from vegetables (2.8g)"],
+        "cons": ["Rice paper lacks prebiotic fiber", "Raw vegetables may be hard to digest for some", "Fish sauce may irritate sensitive stomachs"]
+      },
+      "blood_sugar": {
+        "grade": "B+",
+        "score": 83,
+        "insight": "Good blood sugar control with moderate GI, though rice paper can raise glucose moderately",
+        "pros": ["Moderate glycemic load (8)", "Fresh vegetables slow glucose absorption", "Low sugar content (2.5g)"],
+        "cons": ["Rice paper is refined carbohydrate (GI 52)", "Low protein doesn't stabilize blood sugar optimally", "Dipping sauce may contain added sugars"]
+      },
+      "bone_joint": {
+        "grade": "C+",
+        "score": 73,
+        "insight": "Limited bone support but anti-inflammatory fresh herbs benefit joint health",
+        "pros": ["Fresh herbs reduce inflammation in joints", "Vitamin A supports bone remodeling (215µg)", "Low sodium doesn't increase calcium loss"],
+        "cons": ["Very low calcium content (28mg)", "No vitamin D", "Minimal magnesium (18mg)"]
+      },
+      "anti_inflammatory": {
+        "grade": "B+",
+        "score": 85,
+        "insight": "Strong anti-inflammatory benefits from fresh herbs like mint, cilantro, and Thai basil",
+        "pros": ["Fresh herbs rich in anti-inflammatory compounds", "Raw vegetables preserve antioxidants", "Vitamin C from vegetables reduces inflammation (14.5mg)"],
+        "cons": ["Lower antioxidant content than cooked herb dishes", "Fish sauce sodium may promote mild inflammation", "Shrimp allergies can trigger inflammatory response"]
+      }
+    }
+  }
+}

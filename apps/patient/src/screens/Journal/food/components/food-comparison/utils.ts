@@ -13,6 +13,28 @@ import type {
   WellnessFocus,
   ExtendedNutritionData,
 } from './types';
+import type { FoodIntelligence, FoodFocusGrades } from '../photo-analysis/types';
+
+// ============================================
+// Focus ID Mapping (WellnessFocus ↔ FoodFocusGrades key)
+// ============================================
+
+/**
+ * Map WellnessFocus IDs to FoodFocusGrades keys
+ * WellnessFocus uses longer names, FoodFocusGrades uses shorter keys
+ */
+const WELLNESS_TO_GRADE_KEY: Record<WellnessFocus, keyof FoodFocusGrades> = {
+  balanced: 'balanced',
+  muscle_building: 'muscle_building',
+  heart_health: 'heart_health',
+  energy_endurance: 'energy',
+  weight_management: 'weight_management',
+  brain_focus: 'brain_focus',
+  gut_health: 'gut_health',
+  blood_sugar_balance: 'blood_sugar',
+  bone_joint_support: 'bone_joint',
+  anti_inflammatory: 'anti_inflammatory',
+};
 
 // ============================================
 // Color Mappings
@@ -691,20 +713,160 @@ export function generateAlternatives(food: {
 }
 
 // ============================================
+// Database Grade Extraction
+// ============================================
+
+/**
+ * Convert a letter grade string (A+, B-, etc.) to a HealthGrade
+ */
+function letterToHealthGrade(letter: string): HealthGrade {
+  const base = letter.charAt(0).toUpperCase();
+  if (['A', 'B', 'C', 'D', 'F'].includes(base)) {
+    return base as HealthGrade;
+  }
+  return 'C'; // Default
+}
+
+/**
+ * Convert a letter grade to a numeric score (0-100)
+ */
+function letterGradeToScore(grade: string): number {
+  const base = grade.charAt(0).toUpperCase();
+  const modifier = grade.charAt(1);
+
+  let baseScore: number;
+  switch (base) {
+    case 'A': baseScore = 90; break;
+    case 'B': baseScore = 75; break;
+    case 'C': baseScore = 57; break;
+    case 'D': baseScore = 42; break;
+    case 'F': baseScore = 25; break;
+    default: baseScore = 50;
+  }
+
+  // Handle +/- modifiers
+  if (modifier === '+') baseScore += 5;
+  else if (modifier === '-') baseScore -= 5;
+
+  return Math.max(0, Math.min(100, baseScore));
+}
+
+/**
+ * Extract health grade from database intelligence for a specific focus
+ * Returns null if no database grade is available
+ */
+function getDatabaseGrade(
+  intelligence: FoodIntelligence | undefined,
+  focus: WellnessFocus
+): { grade: HealthGrade; score: number; reason: string; pros: string[]; cons: string[] } | null {
+  if (!intelligence?.focusGrades) return null;
+
+  const gradeKey = WELLNESS_TO_GRADE_KEY[focus];
+  const focusGrade = intelligence.focusGrades[gradeKey];
+
+  if (!focusGrade) return null;
+
+  return {
+    grade: letterToHealthGrade(focusGrade.grade),
+    score: focusGrade.score ?? letterGradeToScore(focusGrade.grade),
+    reason: focusGrade.insight || '',
+    pros: focusGrade.pros || [],
+    cons: focusGrade.cons || [],
+  };
+}
+
+/**
+ * Check if database has grades for any of the selected focuses
+ */
+function hasDatabaseGrades(
+  intelligence: FoodIntelligence | undefined,
+  focuses: WellnessFocus[]
+): boolean {
+  if (!intelligence?.focusGrades) return false;
+  return focuses.some(focus => {
+    const gradeKey = WELLNESS_TO_GRADE_KEY[focus];
+    return intelligence.focusGrades?.[gradeKey] !== undefined;
+  });
+}
+
+// ============================================
 // AI Recommendation Generation
 // ============================================
 
 /**
  * Build a complete FoodHealthProfile from basic nutrition data
- * This is the main entry point for creating profiles from menu items or other sources
+ *
+ * PRIORITY ORDER FOR GRADING:
+ * 1. Database grades (from food intelligence) - most accurate, pre-computed by AI
+ * 2. Algorithmic calculation - fallback when no database grades available
+ *
+ * @param food - Nutrition data for the food
+ * @param focuses - Wellness focuses to grade against
+ * @param intelligence - Optional food intelligence with pre-computed database grades
  */
 export function buildFoodHealthProfile(
   food: ExtendedNutritionData,
-  focuses: WellnessFocus[] = ['balanced']
+  focuses: WellnessFocus[] = ['balanced'],
+  intelligence?: FoodIntelligence
 ): FoodHealthProfile {
-  const { grade, reason, overallScore, focusScores } = calculateHealthGrade(food, focuses);
+  const selectedFocuses = focuses.length === 0 ? ['balanced'] as WellnessFocus[] : focuses;
+  const useDatabaseGrades = hasDatabaseGrades(intelligence, selectedFocuses);
+
+  let grade: HealthGrade;
+  let reason: string;
+  let overallScore: number;
+  let focusScores: Record<WellnessFocus, number>;
+
+  if (useDatabaseGrades && intelligence) {
+    // USE DATABASE GRADES (preferred - more accurate)
+    focusScores = {} as Record<WellnessFocus, number>;
+    let totalScore = 0;
+    let gradeCount = 0;
+    const reasons: string[] = [];
+
+    // Calculate scores for ALL focuses using database grades where available
+    for (const focus of Object.keys(WELLNESS_TO_GRADE_KEY) as WellnessFocus[]) {
+      const dbGrade = getDatabaseGrade(intelligence, focus);
+      if (dbGrade) {
+        focusScores[focus] = dbGrade.score;
+        if (selectedFocuses.includes(focus)) {
+          totalScore += dbGrade.score;
+          gradeCount++;
+          if (dbGrade.reason) reasons.push(dbGrade.reason);
+        }
+      } else {
+        // Fall back to algorithmic for focuses without database grades
+        focusScores[focus] = calculateFocusScore(food, focus);
+        if (selectedFocuses.includes(focus)) {
+          totalScore += focusScores[focus];
+          gradeCount++;
+        }
+      }
+    }
+
+    overallScore = gradeCount > 0 ? Math.round(totalScore / gradeCount) : 50;
+    grade = scoreToGrade(overallScore);
+
+    // Use database insight as reason, or generate one
+    const primaryDbGrade = getDatabaseGrade(intelligence, selectedFocuses[0]);
+    reason = primaryDbGrade?.reason ||
+             (intelligence.insight ? intelligence.insight : generateGradeReason(food, grade, selectedFocuses, focusScores));
+  } else {
+    // USE ALGORITHMIC GRADES (fallback)
+    const calculated = calculateHealthGrade(food, selectedFocuses);
+    grade = calculated.grade;
+    reason = calculated.reason;
+    overallScore = calculated.overallScore;
+    focusScores = calculated.focusScores;
+  }
+
   const nutrientScores = calculateNutrientScores(food);
-  const focusImpacts = calculateFocusImpacts(food, focuses);
+
+  // For focus impacts, prefer database pros/cons when available
+  const focusImpacts = useDatabaseGrades && intelligence
+    ? buildFocusImpactsFromDatabase(food, selectedFocuses, intelligence, focusScores)
+    : calculateFocusImpacts(food, selectedFocuses);
+
   const conditionImpacts = calculateConditionImpacts(food, []); // No legacy conditions
   const alternatives = generateAlternatives({ ...food, healthGrade: grade });
 
@@ -718,11 +880,52 @@ export function buildFoodHealthProfile(
     focusImpacts,
     conditionImpacts,
     alternatives,
+    ...(intelligence && { intelligence }),
   };
 
   profile.aiRecommendation = generateAiRecommendation(profile);
 
   return profile;
+}
+
+/**
+ * Build focus impacts using database pros/cons when available
+ */
+function buildFocusImpactsFromDatabase(
+  food: ExtendedNutritionData,
+  focuses: WellnessFocus[],
+  intelligence: FoodIntelligence,
+  focusScores: Record<WellnessFocus, number>
+): FocusImpact[] {
+  const impacts: FocusImpact[] = [];
+
+  for (const focus of focuses) {
+    if (focus === 'balanced') continue;
+
+    const dbGrade = getDatabaseGrade(intelligence, focus);
+    const score = focusScores[focus] ?? calculateFocusScore(food, focus);
+    const rating = scoreToRating(score);
+
+    if (dbGrade) {
+      // Use database pros/cons
+      impacts.push({
+        focus,
+        focusLabel: FOCUS_LABELS[focus],
+        score,
+        rating,
+        highlights: dbGrade.pros.slice(0, 2),
+        concerns: dbGrade.cons.slice(0, 2),
+      });
+    } else {
+      // Fall back to algorithmic calculation
+      const algorithmic = calculateFocusImpacts(food, [focus]);
+      if (algorithmic.length > 0) {
+        impacts.push(algorithmic[0]);
+      }
+    }
+  }
+
+  return impacts;
 }
 
 /**

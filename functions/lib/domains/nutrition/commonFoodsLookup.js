@@ -18,6 +18,7 @@ exports.normalizeForLookup = normalizeForLookup;
 exports.getCommonFood = getCommonFood;
 exports.hasCommonFood = hasCommonFood;
 exports.getCommonFoodKeys = getCommonFoodKeys;
+const foodIntelligenceLookup_1 = require("./foodIntelligenceLookup");
 // Import common foods data
 const common_foods_json_1 = __importDefault(require("./data/common_foods.json"));
 // Type the imported data
@@ -107,6 +108,8 @@ function generateVariations(name) {
  * Convert a common food entry to FoodAnalysisResult
  */
 function convertToFoodAnalysisResult(entry) {
+    // Try to enrich with intelligence data
+    const intelligence = (0, foodIntelligenceLookup_1.getFoodIntelligence)(entry.name);
     const item = {
         name: entry.name,
         quantity: entry.quantity,
@@ -146,6 +149,7 @@ function convertToFoodAnalysisResult(entry) {
         water: entry.water,
         confidence: 1.0, // USDA data is highly accurate
         servingMultiplier: 1,
+        ...(intelligence && { intelligence }),
     };
     return {
         items: [item],

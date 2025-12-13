@@ -10,22 +10,24 @@
  * Cloud Functions API for DRI-based evaluation.
  */
 
-import { useNutritionDayEvaluation } from '../../../../hooks/nutrition';
+import { useNutritionDayEvaluation, type NutritionFocusId } from '../../../../hooks/nutrition';
 import { Info, Sparkles, Shield, Scale } from 'lucide-react';
 import type { LucideIcon } from 'lucide-react';
 
 interface DailyScoreCardProps {
   date: string;
   totals: Record<string, number> | null;
+  focusId?: NutritionFocusId;
   onViewDetails?: () => void;
 }
 
 export function DailyScoreCard({
   date,
   totals,
+  focusId = 'balanced',
   onViewDetails,
 }: DailyScoreCardProps): React.ReactElement | null {
-  const { data: evaluation, isLoading, error } = useNutritionDayEvaluation(date, totals);
+  const { data: evaluation, isLoading, error } = useNutritionDayEvaluation(date, totals, focusId);
 
   // Don't render if no data logged
   if (!totals || Object.keys(totals).length === 0) {
@@ -52,7 +54,7 @@ export function DailyScoreCard({
     return null;
   }
 
-  const { score, scoreLabel, breakdown, summary } = evaluation;
+  const { score, label: scoreLabel, breakdown, summary, mar } = evaluation;
 
   // Determine score color
   const scoreColor = getScoreColor(score);
@@ -136,31 +138,31 @@ export function DailyScoreCard({
           </div>
         </div>
 
-        {/* Score Breakdown */}
+        {/* Score Breakdown - V2 MAR-based scoring */}
         <div className="grid grid-cols-3 gap-2">
           <BreakdownItem
             icon={Sparkles}
-            label="Beneficial"
-            value={breakdown.beneficial}
-            maxValue={40}
+            label="Adequacy"
+            value={breakdown.adequacy.points}
+            maxValue={breakdown.adequacy.maxPoints}
             color="#10b981"
-            description="Vitamins, minerals, fiber"
+            description={`MAR: ${Math.round(mar * 100)}%`}
           />
           <BreakdownItem
             icon={Shield}
-            label="Limits"
-            value={breakdown.limit}
-            maxValue={40}
+            label="Moderation"
+            value={breakdown.moderation.points}
+            maxValue={breakdown.moderation.maxPoints}
             color="#f59e0b"
             description="Sodium, sugar, sat fat"
           />
           <BreakdownItem
             icon={Scale}
             label="Balance"
-            value={breakdown.balance}
-            maxValue={20}
+            value={breakdown.balance.points}
+            maxValue={breakdown.balance.maxPoints}
             color="#8b5cf6"
-            description="Macro distribution"
+            description="Macros & fat quality"
           />
         </div>
 

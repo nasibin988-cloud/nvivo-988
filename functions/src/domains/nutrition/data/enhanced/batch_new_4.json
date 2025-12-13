@@ -1,0 +1,584 @@
+{
+  "gnocchi": {
+    "name": "Gnocchi",
+    "calories": 130,
+    "protein": 3.5,
+    "carbs": 26,
+    "fat": 1.2,
+    "fiber": 1.8,
+    "sugar": 0.8,
+    "sodium": 380,
+    "saturatedFat": 0.3,
+    "cholesterol": 15,
+    "potassium": 85,
+    "calcium": 18,
+    "iron": 0.9,
+    "magnesium": 12,
+    "vitaminA": 8,
+    "vitaminC": 0.5,
+    "vitaminD": 0,
+    "vitaminB12": 0.1,
+    "glycemicIndex": 68,
+    "glycemicLoad": 18,
+    "allergens": ["wheat", "eggs"],
+    "servingSize": 100,
+    "servingUnit": "g",
+    "focusGrades": {
+      "balanced": {
+        "grade": "C+",
+        "score": 72,
+        "insight": "Carb-heavy with moderate sodium; best paired with protein and vegetables",
+        "pros": ["Low in fat", "Provides quick energy", "Comfort food satisfaction"],
+        "cons": ["High glycemic index", "Low protein content", "High sodium", "Minimal fiber"]
+      },
+      "heart_health": {
+        "grade": "C",
+        "score": 68,
+        "insight": "High sodium content is concerning for cardiovascular health",
+        "pros": ["Very low saturated fat", "Low cholesterol", "Minimal trans fats"],
+        "cons": ["High sodium (380mg per 100g)", "Low potassium", "Lacks heart-protective nutrients"]
+      },
+      "muscle_building": {
+        "grade": "D+",
+        "score": 55,
+        "insight": "Insufficient protein for muscle synthesis; primarily a carbohydrate source",
+        "pros": ["Provides energy for workouts", "Easy to digest", "Can replenish glycogen"],
+        "cons": ["Very low protein (3.5g)", "Poor amino acid profile", "Lacks BCAAs"]
+      },
+      "energy": {
+        "grade": "B",
+        "score": 80,
+        "insight": "Quick-digesting carbs provide rapid energy but may cause crashes",
+        "pros": ["Fast-acting carbohydrates", "Moderate calorie density", "Pre-workout fuel option"],
+        "cons": ["High GI causes energy spikes", "Low sustained energy", "Minimal B-vitamins"]
+      },
+      "weight_management": {
+        "grade": "D+",
+        "score": 58,
+        "insight": "High glycemic load and low satiety make portion control challenging",
+        "pros": ["Relatively low fat", "Moderate calories", "Filling in the moment"],
+        "cons": ["High GI triggers hunger", "Low protein/fiber satiety", "Easy to overeat"]
+      },
+      "brain_focus": {
+        "grade": "C",
+        "score": 70,
+        "insight": "Provides glucose for brain function but lacks cognitive-supporting nutrients",
+        "pros": ["Brain's preferred fuel (glucose)", "Quick mental energy boost"],
+        "cons": ["Blood sugar spikes affect focus", "No omega-3s or choline", "Minimal B-vitamins"]
+      },
+      "gut_health": {
+        "grade": "D+",
+        "score": 60,
+        "insight": "Low fiber content offers minimal support for digestive health",
+        "pros": ["Easy to digest", "Unlikely to cause bloating", "Cooked and soft texture"],
+        "cons": ["Very low fiber (1.8g)", "No prebiotics", "Lacks fermented elements", "High sodium affects gut microbiome"]
+      },
+      "blood_sugar": {
+        "grade": "D",
+        "score": 50,
+        "insight": "High glycemic index causes rapid blood sugar spikes",
+        "pros": ["Useful for treating hypoglycemia", "Predictable glucose response"],
+        "cons": ["GI of 68 is high", "GL of 18 is significant", "Minimal fiber to slow absorption", "Can worsen insulin resistance"]
+      },
+      "bone_joint": {
+        "grade": "D",
+        "score": 52,
+        "insight": "Lacks essential nutrients for bone and joint health",
+        "pros": ["Small amount of calcium", "Easy on joints (soft food)"],
+        "cons": ["Very low calcium (18mg)", "No vitamin D", "Minimal magnesium", "High sodium may increase calcium loss"]
+      },
+      "anti_inflammatory": {
+        "grade": "C-",
+        "score": 65,
+        "insight": "Neutral inflammatory profile but lacks anti-inflammatory compounds",
+        "pros": ["Low in inflammatory fats", "No processed additives in traditional recipes"],
+        "cons": ["High GI promotes inflammation", "No omega-3s", "Lacks antioxidants", "Refined carbohydrates"]
+      }
+    }
+  },
+  "tiramisu": {
+    "name": "Tiramisu",
+    "calories": 270,
+    "protein": 5.2,
+    "carbs": 28,
+    "fat": 14,
+    "fiber": 0.8,
+    "sugar": 18,
+    "sodium": 95,
+    "saturatedFat": 8.5,
+    "cholesterol": 120,
+    "potassium": 140,
+    "calcium": 85,
+    "iron": 0.7,
+    "magnesium": 18,
+    "vitaminA": 380,
+    "vitaminC": 0.3,
+    "vitaminD": 0.5,
+    "vitaminB12": 0.3,
+    "glycemicIndex": 65,
+    "glycemicLoad": 18,
+    "allergens": ["eggs", "dairy", "wheat"],
+    "servingSize": 100,
+    "servingUnit": "g",
+    "focusGrades": {
+      "balanced": {
+        "grade": "D+",
+        "score": 58,
+        "insight": "Indulgent dessert high in sugar and saturated fat; enjoy occasionally in small portions",
+        "pros": ["Rich in flavor satisfaction", "Contains some protein from eggs", "Provides calcium"],
+        "cons": ["Very high sugar (18g)", "High saturated fat", "High cholesterol", "Calorie-dense"]
+      },
+      "heart_health": {
+        "grade": "D-",
+        "score": 45,
+        "insight": "High saturated fat and cholesterol pose cardiovascular risks",
+        "pros": ["Low sodium compared to other desserts", "Contains some heart-healthy coffee polyphenols"],
+        "cons": ["Very high saturated fat (8.5g)", "High cholesterol (120mg)", "Sugar promotes inflammation", "Contributes to LDL cholesterol"]
+      },
+      "muscle_building": {
+        "grade": "D",
+        "score": 48,
+        "insight": "Some protein from eggs and mascarpone but overwhelmed by sugar and fat",
+        "pros": ["Contains complete protein", "Amino acids from dairy and eggs", "Calorie-dense for bulking"],
+        "cons": ["Low protein ratio", "High sugar interferes with recovery", "Excess saturated fat"]
+      },
+      "energy": {
+        "grade": "C-",
+        "score": 62,
+        "insight": "Sugar and caffeine provide quick energy followed by inevitable crash",
+        "pros": ["Rapid energy from sugar", "Caffeine from coffee and cocoa", "High calorie density"],
+        "cons": ["Blood sugar spike and crash", "Not sustained energy", "May cause jitters", "Energy comes from simple sugars"]
+      },
+      "weight_management": {
+        "grade": "F",
+        "score": 25,
+        "insight": "Very high in calories, sugar, and fat; difficult to fit into weight loss plans",
+        "pros": ["Can satisfy sweet cravings", "Small portions may prevent binging"],
+        "cons": ["270 calories per 100g", "High sugar triggers more cravings", "Low satiety per calorie", "Easy to overconsume"]
+      },
+      "brain_focus": {
+        "grade": "C",
+        "score": 68,
+        "insight": "Caffeine boosts alertness but sugar crash impairs sustained focus",
+        "pros": ["Caffeine improves concentration", "Glucose for immediate brain fuel", "Polyphenols from coffee"],
+        "cons": ["Sugar crash reduces focus", "No sustained cognitive nutrients", "Minimal B-vitamins"]
+      },
+      "gut_health": {
+        "grade": "D",
+        "score": 50,
+        "insight": "Very low fiber and high sugar can disrupt gut microbiome balance",
+        "pros": ["Probiotics in mascarpone cheese", "Easy to digest"],
+        "cons": ["Almost no fiber", "High sugar feeds harmful bacteria", "No prebiotics", "May cause bloating in lactose-sensitive individuals"]
+      },
+      "blood_sugar": {
+        "grade": "F",
+        "score": 30,
+        "insight": "High sugar content causes significant blood glucose spikes",
+        "pros": ["Fat content slows sugar absorption slightly", "Useful for hypoglycemia treatment"],
+        "cons": ["18g sugar per 100g", "High glycemic load", "Minimal fiber", "Can worsen insulin resistance", "Triggers reactive hypoglycemia"]
+      },
+      "bone_joint": {
+        "grade": "C",
+        "score": 70,
+        "insight": "Provides calcium from dairy but high sugar may increase inflammation",
+        "pros": ["Good calcium content (85mg)", "Vitamin A for bone health", "Protein supports bone matrix"],
+        "cons": ["Sugar promotes inflammation", "High saturated fat", "No vitamin K"]
+      },
+      "anti_inflammatory": {
+        "grade": "D",
+        "score": 48,
+        "insight": "High sugar and saturated fat promote inflammatory pathways",
+        "pros": ["Coffee polyphenols are anti-inflammatory", "Cocoa contains flavonoids"],
+        "cons": ["High sugar is pro-inflammatory", "Saturated fat triggers inflammation", "Minimal antioxidants overall", "No omega-3s"]
+      }
+    }
+  },
+  "bruschetta": {
+    "name": "Bruschetta",
+    "calories": 115,
+    "protein": 3.2,
+    "carbs": 16,
+    "fat": 4.5,
+    "fiber": 2.1,
+    "sugar": 2.8,
+    "sodium": 240,
+    "saturatedFat": 0.7,
+    "cholesterol": 0,
+    "potassium": 180,
+    "calcium": 28,
+    "iron": 1.2,
+    "magnesium": 22,
+    "vitaminA": 420,
+    "vitaminC": 8,
+    "vitaminD": 0,
+    "vitaminB12": 0,
+    "glycemicIndex": 58,
+    "glycemicLoad": 9,
+    "allergens": ["wheat"],
+    "servingSize": 100,
+    "servingUnit": "g",
+    "focusGrades": {
+      "balanced": {
+        "grade": "B",
+        "score": 82,
+        "insight": "Mediterranean-style appetizer with heart-healthy fats and fresh vegetables",
+        "pros": ["Balanced macronutrients", "Heart-healthy olive oil", "Fresh tomatoes provide nutrients", "Moderate calories"],
+        "cons": ["Moderate sodium", "Low protein", "Bread base increases GI"]
+      },
+      "heart_health": {
+        "grade": "A-",
+        "score": 88,
+        "insight": "Excellent cardiovascular profile with olive oil, lycopene, and low saturated fat",
+        "pros": ["Olive oil monounsaturated fats", "Lycopene from tomatoes", "Very low saturated fat", "Zero cholesterol", "Garlic benefits circulation"],
+        "cons": ["Moderate sodium content", "Some refined carbs from bread"]
+      },
+      "muscle_building": {
+        "grade": "D+",
+        "score": 56,
+        "insight": "Insufficient protein for muscle synthesis but provides energy for training",
+        "pros": ["Carbs for glycogen", "Some amino acids from wheat", "Easy pre-workout snack"],
+        "cons": ["Very low protein (3.2g)", "Incomplete amino acid profile", "Better as appetizer than protein source"]
+      },
+      "energy": {
+        "grade": "B+",
+        "score": 83,
+        "insight": "Moderate glycemic index provides sustained energy without major crashes",
+        "pros": ["Balanced carbs and fats", "Fiber slows digestion", "Sustainable energy release", "Moderate GL of 9"],
+        "cons": ["Not ideal for immediate pre-workout", "Lower calorie density"]
+      },
+      "weight_management": {
+        "grade": "B+",
+        "score": 84,
+        "insight": "Relatively low calorie with good satiety from fiber and healthy fats",
+        "pros": ["Only 115 calories per 100g", "Fiber promotes fullness", "High water content from tomatoes", "Healthy fats increase satiety"],
+        "cons": ["Bread can trigger cravings", "Easy to eat multiple pieces", "Moderate sodium"]
+      },
+      "brain_focus": {
+        "grade": "B",
+        "score": 80,
+        "insight": "Olive oil and garlic support cognitive function with steady energy",
+        "pros": ["Olive oil polyphenols protect neurons", "Garlic improves blood flow to brain", "Moderate GI prevents crashes", "Antioxidants from tomatoes"],
+        "cons": ["Low in omega-3s", "Minimal B-vitamins", "Low protein"]
+      },
+      "gut_health": {
+        "grade": "B",
+        "score": 78,
+        "insight": "Decent fiber content and prebiotic garlic support digestive health",
+        "pros": ["Good fiber content (2.1g)", "Garlic is prebiotic", "Olive oil aids digestion", "Fresh vegetables"],
+        "cons": ["Refined bread may lack whole grain benefits", "Moderate sodium", "No fermented elements"]
+      },
+      "blood_sugar": {
+        "grade": "B+",
+        "score": 85,
+        "insight": "Moderate glycemic impact with fiber and fat slowing glucose absorption",
+        "pros": ["GI of 58 is moderate", "Low glycemic load (9)", "Fiber slows sugar absorption", "Healthy fats stabilize blood sugar"],
+        "cons": ["Bread base raises GI", "Some may be sensitive to refined carbs"]
+      },
+      "bone_joint": {
+        "grade": "C+",
+        "score": 72,
+        "insight": "Provides some bone-supporting nutrients but lacks calcium and vitamin D",
+        "pros": ["Vitamin K from basil", "Magnesium content", "Anti-inflammatory olive oil"],
+        "cons": ["Low calcium (28mg)", "No vitamin D", "Limited bone-building nutrients"]
+      },
+      "anti_inflammatory": {
+        "grade": "A-",
+        "score": 87,
+        "insight": "Mediterranean ingredients provide strong anti-inflammatory benefits",
+        "pros": ["Extra virgin olive oil oleocanthal", "Lycopene is powerful antioxidant", "Garlic reduces inflammation", "Basil contains antioxidants", "Low saturated fat"],
+        "cons": ["Refined bread may cause mild inflammation", "No omega-3s"]
+      }
+    }
+  },
+  "sushi_roll": {
+    "name": "Sushi Roll",
+    "calories": 145,
+    "protein": 7.5,
+    "carbs": 23,
+    "fat": 2.8,
+    "fiber": 1.5,
+    "sugar": 3.2,
+    "sodium": 420,
+    "saturatedFat": 0.5,
+    "cholesterol": 15,
+    "potassium": 160,
+    "calcium": 22,
+    "iron": 0.8,
+    "magnesium": 28,
+    "vitaminA": 180,
+    "vitaminC": 3,
+    "vitaminD": 2,
+    "vitaminB12": 1.2,
+    "glycemicIndex": 72,
+    "glycemicLoad": 17,
+    "allergens": ["fish", "soy", "sesame"],
+    "servingSize": 100,
+    "servingUnit": "g",
+    "focusGrades": {
+      "balanced": {
+        "grade": "B",
+        "score": 80,
+        "insight": "Well-balanced Japanese cuisine with lean protein and vegetables, but watch the sodium",
+        "pros": ["Good protein-to-calorie ratio", "Low in fat", "Contains omega-3s from fish", "Nutrient-dense"],
+        "cons": ["High sodium from soy sauce", "High glycemic index", "Low fiber", "Added sugars in rice"]
+      },
+      "heart_health": {
+        "grade": "B+",
+        "score": 84,
+        "insight": "Omega-3 fatty acids from fish support cardiovascular health despite sodium concerns",
+        "pros": ["EPA/DHA from fish", "Very low saturated fat", "Low cholesterol", "Nori provides minerals"],
+        "cons": ["High sodium (420mg)", "White rice lacks whole grain benefits", "May contain mercury depending on fish type"]
+      },
+      "muscle_building": {
+        "grade": "B-",
+        "score": 75,
+        "insight": "Decent complete protein from fish but carb-heavy ratio",
+        "pros": ["Complete protein with all essential amino acids", "Easy to digest protein", "Good post-workout option", "B12 for protein metabolism"],
+        "cons": ["Only 7.5g protein per 100g", "Carb-heavy for muscle building", "Low leucine compared to other proteins"]
+      },
+      "energy": {
+        "grade": "B",
+        "score": 78,
+        "insight": "White rice provides quick energy but may cause blood sugar fluctuations",
+        "pros": ["Fast-acting carbohydrates", "Protein stabilizes energy somewhat", "Moderate calorie density", "Easy to digest before activity"],
+        "cons": ["High GI (72) causes energy spikes", "May lead to energy crashes", "Low fiber for sustained release"]
+      },
+      "weight_management": {
+        "grade": "B",
+        "score": 79,
+        "insight": "Moderate calories with good protein satiety, but portion control is essential",
+        "pros": ["Moderate calorie density", "Protein promotes fullness", "Omega-3s may aid fat metabolism", "Lower fat than many meals"],
+        "cons": ["High GI triggers hunger", "Low fiber reduces satiety", "Easy to overeat multiple rolls", "Hidden calories in sauces"]
+      },
+      "brain_focus": {
+        "grade": "A-",
+        "score": 88,
+        "insight": "Omega-3 DHA from fish is exceptional for cognitive function and mental clarity",
+        "pros": ["DHA supports brain structure", "B12 for neurological function", "Iodine from nori for thyroid", "Omega-3s improve focus"],
+        "cons": ["High GI may cause focus dips", "Minimal B-vitamin complex", "Low in choline"]
+      },
+      "gut_health": {
+        "grade": "C+",
+        "score": 73,
+        "insight": "Seaweed provides some prebiotic benefits but overall fiber content is low",
+        "pros": ["Nori contains prebiotics", "Easy to digest", "Ginger aids digestion", "Wasabi has antimicrobial properties"],
+        "cons": ["Low fiber (1.5g)", "White rice lacks gut-friendly resistant starch", "High sodium affects microbiome", "No fermented elements except small amount of rice vinegar"]
+      },
+      "blood_sugar": {
+        "grade": "C",
+        "score": 68,
+        "insight": "White rice causes significant blood sugar spikes despite protein content",
+        "pros": ["Protein and fat slow absorption", "Vinegar in rice may help slightly", "Predictable glucose response"],
+        "cons": ["GI of 72 is high", "GL of 17 is significant", "White rice digest quickly", "Low fiber", "Added sugar in sushi rice"]
+      },
+      "bone_joint": {
+        "grade": "B-",
+        "score": 76,
+        "insight": "Fish provides vitamin D and omega-3s for joint health but lacks calcium",
+        "pros": ["Vitamin D from fish", "Omega-3s reduce joint inflammation", "Magnesium for bone density", "B12 supports bone metabolism"],
+        "cons": ["Low calcium content", "High sodium may increase calcium excretion", "No vitamin K"]
+      },
+      "anti_inflammatory": {
+        "grade": "A-",
+        "score": 86,
+        "insight": "Omega-3 fatty acids and ginger provide powerful anti-inflammatory effects",
+        "pros": ["EPA/DHA are potent anti-inflammatories", "Ginger reduces inflammation", "Wasabi contains antioxidants", "Very low saturated fat", "Seaweed polyphenols"],
+        "cons": ["White rice has mild inflammatory effect", "High sodium can promote inflammation", "Some added sugars"]
+      }
+    }
+  },
+  "ramen": {
+    "name": "Ramen",
+    "calories": 85,
+    "protein": 3.8,
+    "carbs": 14,
+    "fat": 1.8,
+    "fiber": 1.2,
+    "sugar": 0.8,
+    "sodium": 850,
+    "saturatedFat": 0.4,
+    "cholesterol": 8,
+    "potassium": 95,
+    "calcium": 15,
+    "iron": 0.9,
+    "magnesium": 18,
+    "vitaminA": 120,
+    "vitaminC": 2,
+    "vitaminD": 0.3,
+    "vitaminB12": 0.2,
+    "glycemicIndex": 55,
+    "glycemicLoad": 8,
+    "allergens": ["wheat", "eggs", "soy"],
+    "servingSize": 100,
+    "servingUnit": "g",
+    "focusGrades": {
+      "balanced": {
+        "grade": "D",
+        "score": 52,
+        "insight": "Extremely high sodium content overshadows otherwise balanced macronutrients",
+        "pros": ["Low in calories", "Moderate carbohydrates", "Low fat", "Comforting and satisfying"],
+        "cons": ["Dangerously high sodium (850mg per 100g)", "Low protein", "Minimal vitamins", "Often made with refined flour"]
+      },
+      "heart_health": {
+        "grade": "F",
+        "score": 20,
+        "insight": "Excessive sodium poses serious cardiovascular risks and can raise blood pressure",
+        "pros": ["Very low saturated fat", "Low cholesterol", "Some potassium from broth"],
+        "cons": ["850mg sodium per 100g is extreme", "Can cause acute blood pressure spike", "Increases heart disease risk", "Low in heart-protective nutrients"]
+      },
+      "muscle_building": {
+        "grade": "D",
+        "score": 50,
+        "insight": "Insufficient protein for muscle synthesis; primarily a carbohydrate vehicle",
+        "pros": ["Some protein from wheat and eggs", "Carbs for energy", "Easy to add protein toppings"],
+        "cons": ["Only 3.8g protein per 100g", "Incomplete amino acid profile", "High sodium interferes with hydration"]
+      },
+      "energy": {
+        "grade": "B-",
+        "score": 76,
+        "insight": "Moderate glycemic index provides steady energy but sodium can cause water retention fatigue",
+        "pros": ["Moderate GI of 55", "Low glycemic load", "Sustained energy release", "Warm broth is comforting"],
+        "cons": ["Low calories may not sustain energy", "Sodium causes bloating", "Minimal B-vitamins for energy metabolism"]
+      },
+      "weight_management": {
+        "grade": "C",
+        "score": 70,
+        "insight": "Very low calories but high sodium causes water retention and bloating",
+        "pros": ["Only 85 calories per 100g", "Large volume for few calories", "Warm liquid increases fullness"],
+        "cons": ["Sodium causes water weight gain", "Low protein/fiber satiety", "May trigger overeating", "Bloating from salt"]
+      },
+      "brain_focus": {
+        "grade": "C-",
+        "score": 64,
+        "insight": "Provides glucose for brain function but excess sodium can impair cognitive performance",
+        "pros": ["Carbs for brain glucose", "Warm food improves mood", "Moderate GI prevents crashes"],
+        "cons": ["High sodium affects mental clarity", "No omega-3s", "Minimal B-vitamins", "Low choline and tyrosine"]
+      },
+      "gut_health": {
+        "grade": "D+",
+        "score": 58,
+        "insight": "Low fiber and excessive sodium disrupt healthy gut microbiome balance",
+        "pros": ["Warm broth is soothing", "Easy to digest", "Can add vegetables for fiber"],
+        "cons": ["Very low fiber (1.2g)", "High sodium damages gut lining", "Disrupts microbiome balance", "Refined wheat noodles", "No prebiotics or probiotics"]
+      },
+      "blood_sugar": {
+        "grade": "B",
+        "score": 80,
+        "insight": "Moderate glycemic impact with protein and fat slowing glucose absorption",
+        "pros": ["GI of 55 is moderate", "Very low glycemic load (8)", "Protein slows digestion", "Fat from broth stabilizes blood sugar"],
+        "cons": ["Refined flour in noodles", "Low fiber", "May vary with broth type"]
+      },
+      "bone_joint": {
+        "grade": "D",
+        "score": 48,
+        "insight": "Lacks bone-building nutrients and high sodium increases calcium loss",
+        "pros": ["Collagen from bone broth (if traditional)", "Warm soup soothes joints"],
+        "cons": ["Very low calcium (15mg)", "No vitamin D", "High sodium causes calcium excretion", "Minimal magnesium", "No vitamin K"]
+      },
+      "anti_inflammatory": {
+        "grade": "C-",
+        "score": 62,
+        "insight": "Some anti-inflammatory elements from broth but sodium promotes inflammation",
+        "pros": ["Bone broth has anti-inflammatory compounds", "Low saturated fat", "Ginger/garlic in broth help"],
+        "cons": ["High sodium is pro-inflammatory", "Refined carbs cause inflammation", "Lacks omega-3s", "Minimal antioxidants"]
+      }
+    }
+  },
+  "tempura": {
+    "name": "Tempura",
+    "calories": 240,
+    "protein": 8.5,
+    "carbs": 22,
+    "fat": 13,
+    "fiber": 1.5,
+    "sugar": 0.5,
+    "sodium": 320,
+    "saturatedFat": 1.8,
+    "cholesterol": 45,
+    "potassium": 185,
+    "calcium": 38,
+    "iron": 1.2,
+    "magnesium": 24,
+    "vitaminA": 220,
+    "vitaminC": 12,
+    "vitaminD": 1.5,
+    "vitaminB12": 0.8,
+    "glycemicIndex": 60,
+    "glycemicLoad": 13,
+    "allergens": ["wheat", "eggs", "shellfish"],
+    "servingSize": 100,
+    "servingUnit": "g",
+    "focusGrades": {
+      "balanced": {
+        "grade": "C+",
+        "score": 72,
+        "insight": "Deep-fried coating increases calories and fat but provides protein from seafood/vegetables",
+        "pros": ["Good protein from seafood", "Contains vegetables", "Moderate sodium compared to other fried foods", "Provides variety of nutrients"],
+        "cons": ["High in fat from frying", "Calorie-dense", "Refined flour coating", "Lower nutrient density than unfried alternatives"]
+      },
+      "heart_health": {
+        "grade": "C",
+        "score": 68,
+        "insight": "While using healthier oils, deep-frying still adds significant fat and calories",
+        "pros": ["Lower saturated fat than many fried foods", "Omega-3s from seafood", "Moderate cholesterol", "Uses lighter batter than other fried foods"],
+        "cons": ["High total fat (13g)", "Frying creates oxidized lipids", "Moderate sodium", "Refined carbs in batter"]
+      },
+      "muscle_building": {
+        "grade": "B-",
+        "score": 74,
+        "insight": "Good complete protein from seafood but excess fat reduces protein efficiency",
+        "pros": ["Complete protein with all amino acids", "Easy to digest protein", "Contains B12 for protein metabolism", "Calorie-dense for bulking"],
+        "cons": ["Only 8.5g protein per 100g", "High fat-to-protein ratio", "Batter adds empty calories", "Not optimal post-workout food"]
+      },
+      "energy": {
+        "grade": "B-",
+        "score": 74,
+        "insight": "Fat and carbs provide sustained energy but may feel heavy during physical activity",
+        "pros": ["High calorie density", "Fat provides long-lasting energy", "Moderate GI prevents crashes", "Good pre-endurance fuel"],
+        "cons": ["Heavy feeling can reduce performance", "High fat slows digestion", "Not ideal pre-workout", "May cause digestive discomfort"]
+      },
+      "weight_management": {
+        "grade": "D",
+        "score": 52,
+        "insight": "High calorie density and palatable coating make portion control very difficult",
+        "pros": ["Protein promotes some satiety", "Fat increases fullness", "Can satisfy cravings in moderation"],
+        "cons": ["240 calories per 100g is high", "Easy to overconsume", "Low satiety per calorie", "Triggers reward centers making it addictive"]
+      },
+      "brain_focus": {
+        "grade": "B",
+        "score": 78,
+        "insight": "Omega-3s from seafood support cognitive function but heavy meal may reduce alertness",
+        "pros": ["DHA from seafood for brain health", "B12 for neurological function", "Iodine for thyroid function", "Sustained energy from fats"],
+        "cons": ["Heavy meal causes post-meal drowsiness", "High fat slows mental processing", "Refined carbs in batter"]
+      },
+      "gut_health": {
+        "grade": "C",
+        "score": 68,
+        "insight": "Low fiber and fried coating can be hard on digestive system",
+        "pros": ["Seafood is easy to digest", "Vegetables provide some fiber", "Light batter compared to heavy breading"],
+        "cons": ["Low fiber overall (1.5g)", "Fried foods slow digestion", "Can cause bloating", "No prebiotics or probiotics", "High fat may upset sensitive stomachs"]
+      },
+      "blood_sugar": {
+        "grade": "B-",
+        "score": 75,
+        "insight": "Fat and protein moderate glycemic response but refined flour in batter raises blood sugar",
+        "pros": ["GI of 60 is moderate", "Fat slows glucose absorption", "Protein stabilizes blood sugar", "Moderate glycemic load"],
+        "cons": ["Refined flour in batter", "Some recipes add sugar", "Low fiber"]
+      },
+      "bone_joint": {
+        "grade": "C+",
+        "score": 74,
+        "insight": "Seafood provides vitamin D and calcium but frying may reduce nutrient bioavailability",
+        "pros": ["Vitamin D from seafood", "Calcium from shrimp/fish bones", "Omega-3s reduce joint inflammation", "Magnesium content"],
+        "cons": ["Frying reduces nutrient absorption", "Moderate sodium", "Not high enough in calcium", "Lacks vitamin K"]
+      },
+      "anti_inflammatory": {
+        "grade": "C",
+        "score": 70,
+        "insight": "Omega-3s from seafood fight inflammation but deep-frying creates inflammatory compounds",
+        "pros": ["EPA/DHA are anti-inflammatory", "Vegetables contain antioxidants", "Ginger in dipping sauce helps", "Moderate saturated fat"],
+        "cons": ["Deep-frying creates AGEs (inflammatory)", "Oxidized oils from frying", "Refined carbs promote inflammation", "High-heat cooking reduces nutrients"]
+      }
+    }
+  }
+}

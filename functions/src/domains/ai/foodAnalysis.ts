@@ -30,6 +30,7 @@ import { defineSecret } from 'firebase-functions/params';
 import { OPENAI_CONFIG } from '../../config/openai';
 import { getCommonFood, normalizeForLookup } from '../nutrition/commonFoodsLookup';
 import { getCachedFoodAnalysis, setCachedFoodAnalysis } from '../nutrition/foodAnalysisCache';
+import { getFoodIntelligence } from '../nutrition/foodIntelligenceLookup';
 
 // Define OpenAI API key as a secret (for production)
 const openaiApiKey = defineSecret('OPENAI_API_KEY');
@@ -128,6 +129,71 @@ export interface FoodIngredient {
   percentOfDish?: number;
 }
 
+// ============================================================================
+// FOOD INTELLIGENCE TYPES
+// ============================================================================
+
+/**
+ * Focus-specific grade for a food
+ */
+export interface FocusGrade {
+  grade: string; // A+, A, A-, B+, B, B-, C+, C, C-, D+, D, D-, F
+  score: number; // 0-100
+  insight: string; // Brief explanation
+  pros: string[]; // Benefits for this focus
+  cons: string[]; // Drawbacks for this focus
+}
+
+/**
+ * All 10 nutrition focus grades for a food
+ */
+export interface FoodFocusGrades {
+  balanced?: FocusGrade;
+  muscle_building?: FocusGrade;
+  heart_health?: FocusGrade;
+  energy?: FocusGrade;
+  weight_management?: FocusGrade;
+  brain_focus?: FocusGrade;
+  gut_health?: FocusGrade;
+  blood_sugar?: FocusGrade;
+  bone_joint?: FocusGrade;
+  anti_inflammatory?: FocusGrade;
+}
+
+/**
+ * Food intelligence data - contextual info beyond raw nutrition
+ */
+export interface FoodIntelligence {
+  /** One-liner contextual insight about this food */
+  insight?: string;
+  /** Focus-specific grades (A-F with insights) */
+  focusGrades?: FoodFocusGrades;
+  /** Glycemic index (0-100) */
+  glycemicIndex?: number;
+  /** Glycemic load */
+  glycemicLoad?: number;
+  /** Glycemic category */
+  glycemicCategory?: 'low' | 'medium' | 'high';
+  /** Satiety score (0-100) - how filling */
+  satietyScore?: number;
+  /** Inflammatory index (negative = anti-inflammatory) */
+  inflammatoryIndex?: number;
+  /** NOVA food processing classification (1-4) */
+  novaClass?: 1 | 2 | 3 | 4;
+  /** Dietary tags */
+  dietaryTags?: string[];
+  /** Allergens present */
+  allergens?: string[];
+  /** Nutrient density score */
+  nutrientDensityScore?: number;
+  /** ORAC antioxidant score */
+  oracScore?: number;
+  /** Food category */
+  foodGroup?: string;
+  /** Omega 6:3 ratio */
+  omegaRatio?: number;
+}
+
 export interface AnalyzedFood extends Partial<CompleteNutritionFields> {
   name: string;
   quantity: number;
@@ -141,6 +207,8 @@ export interface AnalyzedFood extends Partial<CompleteNutritionFields> {
   servingMultiplier?: number;
   /** Ingredient breakdown (only present when ENABLE_INGREDIENT_BREAKDOWN is true) */
   ingredients?: FoodIngredient[];
+  /** Food intelligence data (when matched from database) */
+  intelligence?: FoodIntelligence;
 }
 
 export interface FoodAnalysisResult {
@@ -929,15 +997,20 @@ function parseAnalysisResponse(content: string): FoodAnalysisResult {
   const items: AnalyzedFood[] = (parsed.items || []).map((item: Record<string, unknown>) => {
     const nutritionFields = parseNutritionFields(item);
     const ingredients = parseIngredients(item.ingredients);
+    const foodName = String(item.name || 'Unknown food');
+
+    // Try to enrich with intelligence data from our database
+    const intelligence = getFoodIntelligence(foodName);
 
     return {
-      name: String(item.name || 'Unknown food'),
+      name: foodName,
       quantity: Number(item.quantity) || 1,
       unit: String(item.unit || 'serving'),
       ...nutritionFields,
       servingMultiplier: Number(item.servingMultiplier) || 1,
       confidence: Math.min(1, Math.max(0, Number(item.confidence) || 0.7)),
       ...(ingredients && { ingredients }),
+      ...(intelligence && { intelligence }),
     };
   });
 

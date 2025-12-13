@@ -1,0 +1,681 @@
+{
+    "foods": [
+        {
+            "foodId": "lamb_chop",
+            "name": "Lamb Chop",
+            "category": "protein",
+            "subcategory": "red_meat",
+            "servingSize": {
+                "amount": 85,
+                "unit": "g",
+                "householdServing": "1 chop (3 oz cooked)"
+            },
+            "nutrition": {
+                "calories": 200,
+                "protein": 25.5,
+                "carbs": 0,
+                "fiber": 0,
+                "totalSugar": 0,
+                "addedSugar": 0,
+                "fat": 11,
+                "saturatedFat": 4.5,
+                "transFat": 0,
+                "cholesterol": 82,
+                "sodium": 71,
+                "potassium": 310,
+                "vitaminA": 0,
+                "vitaminC": 0,
+                "calcium": 17,
+                "iron": 1.9,
+                "vitaminD": 0,
+                "vitaminB12": 2.5,
+                "magnesium": 23,
+                "zinc": 4.2,
+                "omega3": 0.15,
+                "folate": 18
+            },
+            "glycemicIndex": 0,
+            "glycemicLoad": 0,
+            "insulinIndex": 51,
+            "novaGroup": 1,
+            "inflammationScore": 6,
+            "healthScore": 72,
+            "focusGrades": {
+                "weight_loss": "B",
+                "heart_health": "C",
+                "diabetes": "B+",
+                "inflammation": "C",
+                "energy": "A-",
+                "gut_health": "C",
+                "mental_clarity": "B+",
+                "longevity": "C+",
+                "athletic_performance": "A-",
+                "immune_support": "B"
+            },
+            "tags": [
+                "high-protein",
+                "zero-carb",
+                "keto-friendly",
+                "paleo",
+                "gluten-free",
+                "grain-free",
+                "high-iron",
+                "high-zinc",
+                "vitamin-b12",
+                "red-meat"
+            ],
+            "allergens": [],
+            "dietaryRestrictions": {
+                "vegetarian": false,
+                "vegan": false,
+                "glutenFree": true,
+                "dairyFree": true,
+                "kosher": true,
+                "halal": true
+            },
+            "benefits": [
+                "Excellent source of high-quality complete protein",
+                "Rich in iron and zinc for immune function",
+                "High in vitamin B12 for nerve health",
+                "Contains conjugated linoleic acid (CLA)",
+                "Zero carbs - ideal for low-carb diets"
+            ],
+            "concerns": [
+                "High in saturated fat",
+                "Moderate cholesterol content",
+                "Red meat linked to inflammation when consumed in excess",
+                "Environmental impact of lamb production",
+                "Higher calorie density"
+            ],
+            "preparationTips": [
+                "Trim visible fat before cooking to reduce saturated fat",
+                "Grill, broil, or pan-sear for best flavor",
+                "Cook to internal temp of 145°F for medium-rare",
+                "Let rest 3 minutes before serving",
+                "Pair with vegetables and herbs (rosemary, garlic)"
+            ],
+            "substitutes": [
+                "Beef sirloin steak",
+                "Pork tenderloin",
+                "Chicken thigh",
+                "Venison",
+                "Bison steak"
+            ],
+            "shelfLife": "3-5 days refrigerated, 6-9 months frozen",
+            "seasonality": "Year-round, peak spring",
+            "sustainability": {
+                "rating": "low",
+                "notes": "Lamb has higher environmental impact due to methane emissions and land use"
+            },
+            "source": "USDA",
+            "lastUpdated": "2025-12-12"
+        },
+        {
+            "foodId": "hot_dog",
+            "name": "Hot Dog",
+            "category": "protein",
+            "subcategory": "processed_meat",
+            "servingSize": {
+                "amount": 45,
+                "unit": "g",
+                "householdServing": "1 hot dog"
+            },
+            "nutrition": {
+                "calories": 150,
+                "protein": 5.1,
+                "carbs": 2,
+                "fiber": 0,
+                "totalSugar": 1.2,
+                "addedSugar": 1,
+                "fat": 13,
+                "saturatedFat": 5,
+                "transFat": 0.5,
+                "cholesterol": 24,
+                "sodium": 513,
+                "potassium": 75,
+                "vitaminA": 0,
+                "vitaminC": 0,
+                "calcium": 6,
+                "iron": 0.5,
+                "vitaminD": 0,
+                "vitaminB12": 0.3,
+                "magnesium": 6,
+                "zinc": 0.8,
+                "omega3": 0.05,
+                "folate": 2
+            },
+            "glycemicIndex": 10,
+            "glycemicLoad": 1,
+            "insulinIndex": 45,
+            "novaGroup": 4,
+            "inflammationScore": 8,
+            "healthScore": 28,
+            "focusGrades": {
+                "weight_loss": "D",
+                "heart_health": "F",
+                "diabetes": "D+",
+                "inflammation": "F",
+                "energy": "D",
+                "gut_health": "D-",
+                "mental_clarity": "D",
+                "longevity": "F",
+                "athletic_performance": "D+",
+                "immune_support": "D-"
+            },
+            "tags": [
+                "ultra-processed",
+                "high-sodium",
+                "processed-meat",
+                "quick-meal",
+                "high-fat",
+                "nitrates",
+                "preservatives",
+                "not-recommended"
+            ],
+            "allergens": [],
+            "dietaryRestrictions": {
+                "vegetarian": false,
+                "vegan": false,
+                "glutenFree": false,
+                "dairyFree": true,
+                "kosher": false,
+                "halal": false
+            },
+            "benefits": [
+                "Quick and convenient protein source",
+                "Shelf-stable and easy to prepare",
+                "Affordable protein option"
+            ],
+            "concerns": [
+                "NOVA Group 4 ultra-processed food",
+                "Very high in sodium (513mg per serving)",
+                "Contains nitrites and nitrates (preservatives)",
+                "High in saturated fat and trans fats",
+                "WHO classified processed meat as Group 1 carcinogen",
+                "Associated with increased risk of colorectal cancer",
+                "Contains additives and fillers",
+                "Pro-inflammatory ingredients",
+                "Low nutritional value relative to calories",
+                "May contain mechanically separated meat"
+            ],
+            "preparationTips": [
+                "Look for nitrate-free or uncured varieties",
+                "Choose all-beef or turkey hot dogs over mixed meat",
+                "Boil or grill rather than frying",
+                "Use whole-grain buns for added fiber",
+                "Load with vegetables (sauerkraut, onions, peppers)",
+                "Limit consumption to occasional treat"
+            ],
+            "substitutes": [
+                "Grilled chicken sausage (uncured)",
+                "Turkey sausage (minimally processed)",
+                "Plant-based hot dogs",
+                "Grilled chicken breast strips",
+                "Bratwurst (less processed varieties)"
+            ],
+            "shelfLife": "2 weeks refrigerated unopened, 1 week opened, 1-2 months frozen",
+            "seasonality": "Year-round",
+            "sustainability": {
+                "rating": "low",
+                "notes": "Processed meat production has environmental impact; packaging waste"
+            },
+            "source": "USDA",
+            "lastUpdated": "2025-12-12"
+        },
+        {
+            "foodId": "hotdog",
+            "name": "Hot Dog",
+            "category": "protein",
+            "subcategory": "processed_meat",
+            "servingSize": {
+                "amount": 45,
+                "unit": "g",
+                "householdServing": "1 hot dog"
+            },
+            "nutrition": {
+                "calories": 150,
+                "protein": 5.1,
+                "carbs": 2,
+                "fiber": 0,
+                "totalSugar": 1.2,
+                "addedSugar": 1,
+                "fat": 13,
+                "saturatedFat": 5,
+                "transFat": 0.5,
+                "cholesterol": 24,
+                "sodium": 513,
+                "potassium": 75,
+                "vitaminA": 0,
+                "vitaminC": 0,
+                "calcium": 6,
+                "iron": 0.5,
+                "vitaminD": 0,
+                "vitaminB12": 0.3,
+                "magnesium": 6,
+                "zinc": 0.8,
+                "omega3": 0.05,
+                "folate": 2
+            },
+            "glycemicIndex": 10,
+            "glycemicLoad": 1,
+            "insulinIndex": 45,
+            "novaGroup": 4,
+            "inflammationScore": 8,
+            "healthScore": 28,
+            "focusGrades": {
+                "weight_loss": "D",
+                "heart_health": "F",
+                "diabetes": "D+",
+                "inflammation": "F",
+                "energy": "D",
+                "gut_health": "D-",
+                "mental_clarity": "D",
+                "longevity": "F",
+                "athletic_performance": "D+",
+                "immune_support": "D-"
+            },
+            "tags": [
+                "ultra-processed",
+                "high-sodium",
+                "processed-meat",
+                "quick-meal",
+                "high-fat",
+                "nitrates",
+                "preservatives",
+                "not-recommended"
+            ],
+            "allergens": [],
+            "dietaryRestrictions": {
+                "vegetarian": false,
+                "vegan": false,
+                "glutenFree": false,
+                "dairyFree": true,
+                "kosher": false,
+                "halal": false
+            },
+            "benefits": [
+                "Quick and convenient protein source",
+                "Shelf-stable and easy to prepare",
+                "Affordable protein option"
+            ],
+            "concerns": [
+                "NOVA Group 4 ultra-processed food",
+                "Very high in sodium (513mg per serving)",
+                "Contains nitrites and nitrates (preservatives)",
+                "High in saturated fat and trans fats",
+                "WHO classified processed meat as Group 1 carcinogen",
+                "Associated with increased risk of colorectal cancer",
+                "Contains additives and fillers",
+                "Pro-inflammatory ingredients",
+                "Low nutritional value relative to calories",
+                "May contain mechanically separated meat"
+            ],
+            "preparationTips": [
+                "Look for nitrate-free or uncured varieties",
+                "Choose all-beef or turkey hot dogs over mixed meat",
+                "Boil or grill rather than frying",
+                "Use whole-grain buns for added fiber",
+                "Load with vegetables (sauerkraut, onions, peppers)",
+                "Limit consumption to occasional treat"
+            ],
+            "substitutes": [
+                "Grilled chicken sausage (uncured)",
+                "Turkey sausage (minimally processed)",
+                "Plant-based hot dogs",
+                "Grilled chicken breast strips",
+                "Bratwurst (less processed varieties)"
+            ],
+            "shelfLife": "2 weeks refrigerated unopened, 1 week opened, 1-2 months frozen",
+            "seasonality": "Year-round",
+            "sustainability": {
+                "rating": "low",
+                "notes": "Processed meat production has environmental impact; packaging waste"
+            },
+            "source": "USDA",
+            "lastUpdated": "2025-12-12"
+        },
+        {
+            "foodId": "frankfurter",
+            "name": "Frankfurter",
+            "category": "protein",
+            "subcategory": "processed_meat",
+            "servingSize": {
+                "amount": 45,
+                "unit": "g",
+                "householdServing": "1 frankfurter"
+            },
+            "nutrition": {
+                "calories": 150,
+                "protein": 5.1,
+                "carbs": 2,
+                "fiber": 0,
+                "totalSugar": 1.2,
+                "addedSugar": 1,
+                "fat": 13,
+                "saturatedFat": 5,
+                "transFat": 0.5,
+                "cholesterol": 24,
+                "sodium": 513,
+                "potassium": 75,
+                "vitaminA": 0,
+                "vitaminC": 0,
+                "calcium": 6,
+                "iron": 0.5,
+                "vitaminD": 0,
+                "vitaminB12": 0.3,
+                "magnesium": 6,
+                "zinc": 0.8,
+                "omega3": 0.05,
+                "folate": 2
+            },
+            "glycemicIndex": 10,
+            "glycemicLoad": 1,
+            "insulinIndex": 45,
+            "novaGroup": 4,
+            "inflammationScore": 8,
+            "healthScore": 28,
+            "focusGrades": {
+                "weight_loss": "D",
+                "heart_health": "F",
+                "diabetes": "D+",
+                "inflammation": "F",
+                "energy": "D",
+                "gut_health": "D-",
+                "mental_clarity": "D",
+                "longevity": "F",
+                "athletic_performance": "D+",
+                "immune_support": "D-"
+            },
+            "tags": [
+                "ultra-processed",
+                "high-sodium",
+                "processed-meat",
+                "quick-meal",
+                "high-fat",
+                "nitrates",
+                "preservatives",
+                "not-recommended"
+            ],
+            "allergens": [],
+            "dietaryRestrictions": {
+                "vegetarian": false,
+                "vegan": false,
+                "glutenFree": false,
+                "dairyFree": true,
+                "kosher": false,
+                "halal": false
+            },
+            "benefits": [
+                "Quick and convenient protein source",
+                "Shelf-stable and easy to prepare",
+                "Affordable protein option"
+            ],
+            "concerns": [
+                "NOVA Group 4 ultra-processed food",
+                "Very high in sodium (513mg per serving)",
+                "Contains nitrites and nitrates (preservatives)",
+                "High in saturated fat and trans fats",
+                "WHO classified processed meat as Group 1 carcinogen",
+                "Associated with increased risk of colorectal cancer",
+                "Contains additives and fillers",
+                "Pro-inflammatory ingredients",
+                "Low nutritional value relative to calories",
+                "May contain mechanically separated meat"
+            ],
+            "preparationTips": [
+                "Look for nitrate-free or uncured varieties",
+                "Choose all-beef frankfurters over mixed meat",
+                "Boil or grill rather than frying",
+                "Use whole-grain buns for added fiber",
+                "Load with vegetables (sauerkraut, onions, peppers)",
+                "Limit consumption to occasional treat"
+            ],
+            "substitutes": [
+                "Grilled chicken sausage (uncured)",
+                "Turkey sausage (minimally processed)",
+                "Plant-based frankfurters",
+                "Grilled chicken breast strips",
+                "Bratwurst (less processed varieties)"
+            ],
+            "shelfLife": "2 weeks refrigerated unopened, 1 week opened, 1-2 months frozen",
+            "seasonality": "Year-round",
+            "sustainability": {
+                "rating": "low",
+                "notes": "Processed meat production has environmental impact; packaging waste"
+            },
+            "source": "USDA",
+            "lastUpdated": "2025-12-12"
+        },
+        {
+            "foodId": "hamburger",
+            "name": "Hamburger",
+            "category": "protein",
+            "subcategory": "ground_meat",
+            "servingSize": {
+                "amount": 85,
+                "unit": "g",
+                "householdServing": "1 patty (3 oz cooked)"
+            },
+            "nutrition": {
+                "calories": 230,
+                "protein": 22,
+                "carbs": 0,
+                "fiber": 0,
+                "totalSugar": 0,
+                "addedSugar": 0,
+                "fat": 15,
+                "saturatedFat": 6,
+                "transFat": 0.6,
+                "cholesterol": 77,
+                "sodium": 75,
+                "potassium": 270,
+                "vitaminA": 0,
+                "vitaminC": 0,
+                "calcium": 18,
+                "iron": 2.1,
+                "vitaminD": 0,
+                "vitaminB12": 2.4,
+                "magnesium": 18,
+                "zinc": 5.3,
+                "omega3": 0.08,
+                "folate": 7
+            },
+            "glycemicIndex": 0,
+            "glycemicLoad": 0,
+            "insulinIndex": 51,
+            "novaGroup": 1,
+            "inflammationScore": 6,
+            "healthScore": 65,
+            "focusGrades": {
+                "weight_loss": "C+",
+                "heart_health": "C-",
+                "diabetes": "B",
+                "inflammation": "C",
+                "energy": "B+",
+                "gut_health": "C",
+                "mental_clarity": "B",
+                "longevity": "C",
+                "athletic_performance": "A-",
+                "immune_support": "B+"
+            },
+            "tags": [
+                "high-protein",
+                "zero-carb",
+                "keto-friendly",
+                "paleo",
+                "gluten-free",
+                "grain-free",
+                "high-iron",
+                "high-zinc",
+                "vitamin-b12",
+                "ground-beef"
+            ],
+            "allergens": [],
+            "dietaryRestrictions": {
+                "vegetarian": false,
+                "vegan": false,
+                "glutenFree": true,
+                "dairyFree": true,
+                "kosher": true,
+                "halal": true
+            },
+            "benefits": [
+                "Excellent source of high-quality complete protein",
+                "Very high in iron and zinc for immune function",
+                "Rich in vitamin B12 for energy and nerve health",
+                "Zero carbs - ideal for ketogenic diets",
+                "Contains creatine for muscle function",
+                "High in bioavailable nutrients"
+            ],
+            "concerns": [
+                "High in saturated fat (80/20 ground beef)",
+                "Contains naturally occurring trans fats",
+                "Moderate cholesterol content",
+                "Red meat linked to inflammation when overconsumed",
+                "Environmental impact of beef production",
+                "Cook to 160°F to prevent foodborne illness"
+            ],
+            "preparationTips": [
+                "Choose 90/10 or 93/7 lean ground beef to reduce fat",
+                "Form patties gently - don't overwork the meat",
+                "Make a small indent in center to prevent puffing",
+                "Cook to internal temp of 160°F for food safety",
+                "Let rest 2-3 minutes before serving",
+                "Grill, broil, or pan-sear for best flavor",
+                "Season simply with salt and pepper"
+            ],
+            "substitutes": [
+                "Ground turkey (93/7 lean)",
+                "Ground chicken",
+                "Bison burger",
+                "Elk burger",
+                "Plant-based burger (Beyond, Impossible)"
+            ],
+            "shelfLife": "1-2 days refrigerated, 3-4 months frozen",
+            "seasonality": "Year-round",
+            "sustainability": {
+                "rating": "low",
+                "notes": "Beef production has high environmental impact due to greenhouse gas emissions and land use; choose grass-fed when possible"
+            },
+            "source": "USDA",
+            "lastUpdated": "2025-12-12"
+        },
+        {
+            "foodId": "fried_chicken",
+            "name": "Fried Chicken",
+            "category": "protein",
+            "subcategory": "poultry",
+            "servingSize": {
+                "amount": 100,
+                "unit": "g",
+                "householdServing": "1 piece (breast or thigh)"
+            },
+            "nutrition": {
+                "calories": 260,
+                "protein": 19,
+                "carbs": 10,
+                "fiber": 0.5,
+                "totalSugar": 0,
+                "addedSugar": 0,
+                "fat": 16,
+                "saturatedFat": 4,
+                "transFat": 0.3,
+                "cholesterol": 84,
+                "sodium": 540,
+                "potassium": 220,
+                "vitaminA": 45,
+                "vitaminC": 0,
+                "calcium": 20,
+                "iron": 1.2,
+                "vitaminD": 0,
+                "vitaminB12": 0.4,
+                "magnesium": 22,
+                "zinc": 1.4,
+                "omega3": 0.1,
+                "folate": 8
+            },
+            "glycemicIndex": 25,
+            "glycemicLoad": 3,
+            "insulinIndex": 55,
+            "novaGroup": 3,
+            "inflammationScore": 7,
+            "healthScore": 42,
+            "focusGrades": {
+                "weight_loss": "D+",
+                "heart_health": "D",
+                "diabetes": "C-",
+                "inflammation": "D",
+                "energy": "C+",
+                "gut_health": "D+",
+                "mental_clarity": "C",
+                "longevity": "D+",
+                "athletic_performance": "C",
+                "immune_support": "C+"
+            },
+            "tags": [
+                "high-protein",
+                "fried-food",
+                "high-sodium",
+                "processed",
+                "breaded",
+                "comfort-food",
+                "omega-6-rich"
+            ],
+            "allergens": [
+                "wheat",
+                "gluten",
+                "eggs"
+            ],
+            "dietaryRestrictions": {
+                "vegetarian": false,
+                "vegan": false,
+                "glutenFree": false,
+                "dairyFree": true,
+                "kosher": false,
+                "halal": false
+            },
+            "benefits": [
+                "Good source of protein",
+                "Contains B vitamins for energy metabolism",
+                "Provides zinc for immune function",
+                "Convenient and widely available"
+            ],
+            "concerns": [
+                "NOVA Group 3 processed food (breading, deep frying)",
+                "Very high in sodium (540mg per serving)",
+                "High in total fat and saturated fat from frying oil",
+                "Contains trans fats from frying process",
+                "High omega-6 fatty acids promote inflammation",
+                "Breading adds refined carbs and calories",
+                "AGEs (advanced glycation end products) from high-heat cooking",
+                "Often fried in inflammatory seed oils",
+                "High calorie density",
+                "Pro-inflammatory preparation method"
+            ],
+            "preparationTips": [
+                "Bake or air-fry instead of deep frying to reduce fat",
+                "Use whole wheat or almond flour for breading",
+                "Remove skin before eating to reduce fat intake",
+                "Use avocado oil or olive oil if frying (higher smoke point)",
+                "Marinate in buttermilk for tenderness",
+                "Season with herbs instead of relying on salt",
+                "Pair with vegetables to balance the meal"
+            ],
+            "substitutes": [
+                "Oven-baked chicken (breaded or plain)",
+                "Air-fried chicken",
+                "Grilled chicken breast",
+                "Rotisserie chicken (skin removed)",
+                "Baked chicken tenders"
+            ],
+            "shelfLife": "3-4 days refrigerated, 4 months frozen",
+            "seasonality": "Year-round",
+            "sustainability": {
+                "rating": "medium",
+                "notes": "Chicken has lower environmental impact than red meat; deep frying uses significant oil"
+            },
+            "source": "USDA",
+            "lastUpdated": "2025-12-12"
+        }
+    ]
+}

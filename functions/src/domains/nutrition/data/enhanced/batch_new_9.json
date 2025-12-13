@@ -1,0 +1,1292 @@
+{
+  "french_toast": {
+    "name": "French Toast",
+    "calories": 216,
+    "protein": 7.3,
+    "carbs": 28.2,
+    "fat": 8.4,
+    "fiber": 1.2,
+    "sugar": 7.8,
+    "sodium": 345,
+    "saturatedFat": 2.8,
+    "cholesterol": 89,
+    "potassium": 125,
+    "calcium": 78,
+    "iron": 1.8,
+    "magnesium": 18,
+    "vitaminA": 95,
+    "vitaminC": 0.3,
+    "vitaminD": 0.8,
+    "vitaminB12": 0.4,
+    "glycemicIndex": 69,
+    "glycemicLoad": 19,
+    "allergens": ["eggs", "milk", "wheat", "gluten"],
+    "servingSize": 100,
+    "servingUnit": "g",
+    "focusGrades": {
+      "balanced": {
+        "grade": "C+",
+        "score": 72,
+        "insight": "Moderate protein and carbs but high in refined flour and sugar, with moderate sodium content",
+        "pros": [
+          "Good protein from eggs (7.3g)",
+          "Provides quick energy from carbohydrates",
+          "Contains B vitamins from enriched bread"
+        ],
+        "cons": [
+          "High in refined carbohydrates",
+          "Elevated sodium (345mg)",
+          "Low fiber content (1.2g)",
+          "Significant added sugar"
+        ]
+      },
+      "heart_health": {
+        "grade": "C",
+        "score": 68,
+        "insight": "High cholesterol and sodium with moderate saturated fat make this less optimal for cardiovascular health",
+        "pros": [
+          "Moderate saturated fat (2.8g)",
+          "Contains some potassium (125mg)",
+          "Low in trans fats when homemade"
+        ],
+        "cons": [
+          "High cholesterol (89mg)",
+          "Elevated sodium (345mg)",
+          "Refined carbohydrates spike blood sugar",
+          "Limited heart-protective nutrients"
+        ]
+      },
+      "muscle_building": {
+        "grade": "C+",
+        "score": 73,
+        "insight": "Moderate protein content with good amino acid profile from eggs, but lacks the density for optimal muscle building",
+        "pros": [
+          "Complete protein from eggs (7.3g)",
+          "Good amino acid profile",
+          "Quick carbs for energy",
+          "Contains vitamin B12 for muscle function"
+        ],
+        "cons": [
+          "Protein content lower than optimal",
+          "High carb-to-protein ratio",
+          "Limited muscle-building minerals",
+          "Low magnesium content"
+        ]
+      },
+      "energy": {
+        "grade": "B-",
+        "score": 77,
+        "insight": "Provides rapid energy from refined carbs and sugar, but lacks sustained energy from fiber and complex carbs",
+        "pros": [
+          "Quick energy from carbohydrates (28.2g)",
+          "Moderate calories (216)",
+          "B vitamins support energy metabolism",
+          "Sugar provides immediate boost"
+        ],
+        "cons": [
+          "Energy crash likely after spike",
+          "Low fiber for sustained release",
+          "High glycemic index (69)",
+          "Limited complex carbohydrates"
+        ]
+      },
+      "weight_management": {
+        "grade": "D+",
+        "score": 62,
+        "insight": "Calorie-dense with high refined carbs and sugar, poor satiety due to low fiber and protein",
+        "pros": [
+          "Portion control is straightforward",
+          "Moderate protein aids some satiety",
+          "Can fit into calorie budget if measured"
+        ],
+        "cons": [
+          "High calorie density (216/100g)",
+          "Very low fiber (1.2g)",
+          "High glycemic load causes hunger",
+          "Added sugar increases cravings",
+          "Poor satiety-to-calorie ratio"
+        ]
+      },
+      "brain_focus": {
+        "grade": "C",
+        "score": 70,
+        "insight": "Provides quick glucose for brain function but high glycemic index causes energy crashes and focus lapses",
+        "pros": [
+          "Quick glucose for immediate focus",
+          "Vitamin B12 supports cognitive function",
+          "Cholesterol needed for brain health",
+          "Eggs provide choline precursors"
+        ],
+        "cons": [
+          "Blood sugar crash impairs focus",
+          "High glycemic index (69)",
+          "Low omega-3 fatty acids",
+          "Limited brain-protective antioxidants"
+        ]
+      },
+      "gut_health": {
+        "grade": "D+",
+        "score": 63,
+        "insight": "Very low fiber and minimal prebiotic content, refined flour can disrupt gut microbiome balance",
+        "pros": [
+          "Easy to digest for most people",
+          "Eggs contain beneficial fats",
+          "Can be made with whole grain bread"
+        ],
+        "cons": [
+          "Very low fiber (1.2g)",
+          "Refined flour lacks prebiotics",
+          "No fermented ingredients",
+          "High sugar feeds harmful bacteria",
+          "Limited gut-supporting nutrients"
+        ]
+      },
+      "blood_sugar": {
+        "grade": "D",
+        "score": 58,
+        "insight": "High glycemic index and load cause rapid blood sugar spikes, with low fiber unable to moderate response",
+        "pros": [
+          "Protein helps moderate some response",
+          "Fat slows digestion slightly",
+          "Can be improved with whole grain bread"
+        ],
+        "cons": [
+          "High glycemic index (69)",
+          "High glycemic load (19)",
+          "Low fiber (1.2g)",
+          "Added sugar worsens response",
+          "Refined carbohydrates dominate",
+          "Risk of reactive hypoglycemia"
+        ]
+      },
+      "bone_joint": {
+        "grade": "C",
+        "score": 68,
+        "insight": "Moderate calcium and vitamin D, but lacks key bone-building minerals and anti-inflammatory compounds",
+        "pros": [
+          "Provides calcium (78mg)",
+          "Contains vitamin D (0.8mcg)",
+          "Eggs provide vitamin K2",
+          "Moderate phosphorus content"
+        ],
+        "cons": [
+          "Low magnesium (18mg)",
+          "Limited vitamin K",
+          "Low bone-building minerals",
+          "High sodium may increase calcium loss",
+          "Lacks anti-inflammatory omega-3s"
+        ]
+      },
+      "anti_inflammatory": {
+        "grade": "D+",
+        "score": 64,
+        "insight": "Refined carbs and sugar promote inflammation, with minimal anti-inflammatory nutrients to offset",
+        "pros": [
+          "Eggs contain anti-inflammatory choline",
+          "Low in omega-6 fatty acids",
+          "Vitamin A supports immune function"
+        ],
+        "cons": [
+          "High refined carbohydrates",
+          "Added sugar triggers inflammation",
+          "High glycemic index promotes AGEs",
+          "Very low omega-3 fatty acids",
+          "Minimal antioxidants",
+          "Lacks anti-inflammatory polyphenols"
+        ]
+      }
+    }
+  },
+  "eggs_benedict": {
+    "name": "Eggs Benedict",
+    "calories": 262,
+    "protein": 10.8,
+    "carbs": 14.5,
+    "fat": 17.6,
+    "fiber": 0.9,
+    "sugar": 1.8,
+    "sodium": 582,
+    "saturatedFat": 8.2,
+    "cholesterol": 312,
+    "potassium": 158,
+    "calcium": 52,
+    "iron": 1.9,
+    "magnesium": 14,
+    "vitaminA": 178,
+    "vitaminC": 0.6,
+    "vitaminD": 1.2,
+    "vitaminB12": 0.8,
+    "glycemicIndex": 52,
+    "glycemicLoad": 8,
+    "allergens": ["eggs", "milk", "wheat", "gluten"],
+    "servingSize": 100,
+    "servingUnit": "g",
+    "focusGrades": {
+      "balanced": {
+        "grade": "C-",
+        "score": 65,
+        "insight": "High in protein and fats with moderate carbs, but excessive sodium, saturated fat, and cholesterol create imbalance",
+        "pros": [
+          "Good protein content (10.8g)",
+          "Rich in vitamin A and D",
+          "Complete amino acid profile",
+          "Moderate glycemic load"
+        ],
+        "cons": [
+          "Very high sodium (582mg)",
+          "High saturated fat (8.2g)",
+          "Extremely high cholesterol (312mg)",
+          "Very low fiber (0.9g)",
+          "Calorie-dense (262)"
+        ]
+      },
+      "heart_health": {
+        "grade": "D-",
+        "score": 52,
+        "insight": "Extremely high cholesterol and saturated fat, combined with excessive sodium, pose significant cardiovascular risks",
+        "pros": [
+          "Contains omega-3s from eggs",
+          "Moderate glycemic index (52)",
+          "Vitamin D supports heart health"
+        ],
+        "cons": [
+          "Extremely high cholesterol (312mg)",
+          "High saturated fat (8.2g)",
+          "Very high sodium (582mg)",
+          "Butter in hollandaise adds trans fats",
+          "Low potassium-to-sodium ratio",
+          "Minimal heart-protective fiber"
+        ]
+      },
+      "muscle_building": {
+        "grade": "B",
+        "score": 82,
+        "insight": "Excellent protein quality from eggs with complete amino acids, though fat content is higher than optimal",
+        "pros": [
+          "High-quality complete protein (10.8g)",
+          "Excellent amino acid profile",
+          "Vitamin B12 for muscle function",
+          "Good leucine content from eggs",
+          "Vitamin D supports muscle strength"
+        ],
+        "cons": [
+          "High fat reduces protein efficiency",
+          "Saturated fat may affect recovery",
+          "Low magnesium for muscle function",
+          "Very high sodium"
+        ]
+      },
+      "energy": {
+        "grade": "B-",
+        "score": 76,
+        "insight": "High calorie density with balanced macros provides sustained energy, but very high fat slows digestion",
+        "pros": [
+          "High calorie density (262)",
+          "Balanced protein and fat",
+          "Low glycemic load (8)",
+          "B vitamins support energy metabolism",
+          "Fat provides sustained release"
+        ],
+        "cons": [
+          "Very high fat slows digestion",
+          "May cause energy sluggishness",
+          "Low fiber limits steady release",
+          "Heavy meal may reduce alertness"
+        ]
+      },
+      "weight_management": {
+        "grade": "D",
+        "score": 60,
+        "insight": "Very calorie-dense with high fat content, but protein provides moderate satiety despite low fiber",
+        "pros": [
+          "High protein aids satiety (10.8g)",
+          "Low glycemic load reduces cravings",
+          "Fat delays hunger signals",
+          "Moderate carbohydrates"
+        ],
+        "cons": [
+          "Very high calorie density (262)",
+          "High fat content (17.6g)",
+          "Very low fiber (0.9g)",
+          "Easy to overconsume calories",
+          "Saturated fat promotes fat storage",
+          "Large portion sizes typical"
+        ]
+      },
+      "brain_focus": {
+        "grade": "B-",
+        "score": 77,
+        "insight": "Excellent choline and B12 for cognitive function, but heavy fat content may cause post-meal sluggishness",
+        "pros": [
+          "High choline from eggs for memory",
+          "Vitamin B12 supports cognition",
+          "Stable blood sugar from low GI",
+          "Cholesterol needed for brain function",
+          "Vitamin D supports mood"
+        ],
+        "cons": [
+          "Heavy fat may reduce alertness",
+          "Post-meal energy dip likely",
+          "Low omega-3 to omega-6 ratio",
+          "Limited antioxidants"
+        ]
+      },
+      "gut_health": {
+        "grade": "D",
+        "score": 58,
+        "insight": "Extremely low fiber with high fat content that may slow digestion and disrupt gut microbiome balance",
+        "pros": [
+          "Eggs contain beneficial fats",
+          "Easy to digest protein",
+          "Vitamin A supports gut lining"
+        ],
+        "cons": [
+          "Very low fiber (0.9g)",
+          "High fat slows gut motility",
+          "No prebiotic ingredients",
+          "Very high sodium disrupts microbiome",
+          "Refined flour lacks gut benefits",
+          "No fermented components"
+        ]
+      },
+      "blood_sugar": {
+        "grade": "B",
+        "score": 80,
+        "insight": "Low glycemic load and high protein/fat content provide excellent blood sugar stability",
+        "pros": [
+          "Low glycemic index (52)",
+          "Low glycemic load (8)",
+          "High protein moderates response",
+          "Fat slows carb absorption",
+          "Minimal added sugar (1.8g)",
+          "Stable energy release"
+        ],
+        "cons": [
+          "Very low fiber (0.9g)",
+          "Refined carbohydrates present",
+          "Lacks blood sugar-regulating minerals"
+        ]
+      },
+      "bone_joint": {
+        "grade": "C-",
+        "score": 66,
+        "insight": "Good vitamin D and calcium, but very high sodium and saturated fat may impair bone health and increase inflammation",
+        "pros": [
+          "Excellent vitamin D (1.2mcg)",
+          "Provides calcium (52mg)",
+          "Eggs contain vitamin K2",
+          "Good phosphorus content",
+          "Protein supports bone matrix"
+        ],
+        "cons": [
+          "Very high sodium increases calcium loss",
+          "Low magnesium (14mg)",
+          "High saturated fat promotes inflammation",
+          "Lacks vitamin K1",
+          "No anti-inflammatory omega-3s"
+        ]
+      },
+      "anti_inflammatory": {
+        "grade": "D",
+        "score": 61,
+        "insight": "High saturated fat and sodium promote inflammation, with minimal anti-inflammatory compounds to counteract",
+        "pros": [
+          "Eggs contain anti-inflammatory choline",
+          "Vitamin D has anti-inflammatory effects",
+          "Low in omega-6 fatty acids",
+          "Minimal added sugar"
+        ],
+        "cons": [
+          "High saturated fat (8.2g)",
+          "Very high sodium (582mg)",
+          "Butter promotes inflammation",
+          "Very low omega-3 fatty acids",
+          "Minimal antioxidants",
+          "No anti-inflammatory polyphenols"
+        ]
+      }
+    }
+  },
+  "breakfast_burrito": {
+    "name": "Breakfast Burrito",
+    "calories": 198,
+    "protein": 9.2,
+    "carbs": 20.5,
+    "fat": 8.6,
+    "fiber": 2.1,
+    "sugar": 1.4,
+    "sodium": 445,
+    "saturatedFat": 3.4,
+    "cholesterol": 124,
+    "potassium": 185,
+    "calcium": 95,
+    "iron": 1.6,
+    "magnesium": 24,
+    "vitaminA": 112,
+    "vitaminC": 4.2,
+    "vitaminD": 0.6,
+    "vitaminB12": 0.5,
+    "glycemicIndex": 58,
+    "glycemicLoad": 12,
+    "allergens": ["eggs", "milk", "wheat", "gluten"],
+    "servingSize": 100,
+    "servingUnit": "g",
+    "focusGrades": {
+      "balanced": {
+        "grade": "C+",
+        "score": 74,
+        "insight": "Well-balanced macros with moderate protein, carbs, and fat, but high sodium and moderate cholesterol detract",
+        "pros": [
+          "Balanced macronutrient profile",
+          "Good protein content (9.2g)",
+          "Moderate fiber (2.1g)",
+          "Contains vegetables for micronutrients",
+          "Low added sugar"
+        ],
+        "cons": [
+          "High sodium (445mg)",
+          "High cholesterol (124mg)",
+          "Refined flour tortilla",
+          "Moderate calorie density"
+        ]
+      },
+      "heart_health": {
+        "grade": "C-",
+        "score": 67,
+        "insight": "High sodium and cholesterol are concerning, though moderate saturated fat and some fiber provide minor benefits",
+        "pros": [
+          "Moderate saturated fat (3.4g)",
+          "Contains fiber (2.1g)",
+          "Potassium from vegetables (185mg)",
+          "Vitamin C supports vascular health"
+        ],
+        "cons": [
+          "Very high sodium (445mg)",
+          "High cholesterol (124mg)",
+          "Refined carbohydrates",
+          "Low omega-3 fatty acids",
+          "Limited heart-protective nutrients"
+        ]
+      },
+      "muscle_building": {
+        "grade": "B-",
+        "score": 78,
+        "insight": "Good protein quality from eggs with complete amino acids, moderate carbs for glycogen, but could use more protein density",
+        "pros": [
+          "Complete protein from eggs (9.2g)",
+          "Good amino acid profile",
+          "Carbs replenish glycogen (20.5g)",
+          "Vitamin B12 for muscle function",
+          "Calcium supports muscle contraction"
+        ],
+        "cons": [
+          "Protein content could be higher",
+          "High sodium affects hydration",
+          "Low magnesium (24mg)",
+          "Moderate fat dilutes protein efficiency"
+        ]
+      },
+      "energy": {
+        "grade": "B",
+        "score": 81,
+        "insight": "Balanced macros provide sustained energy with moderate glycemic load, fiber helps steady release",
+        "pros": [
+          "Balanced carbs and protein",
+          "Moderate glycemic load (12)",
+          "Fiber provides sustained release",
+          "B vitamins support energy metabolism",
+          "Good calorie-to-nutrient ratio",
+          "Vegetables provide additional nutrients"
+        ],
+        "cons": [
+          "Some refined carbohydrates",
+          "Fiber could be higher",
+          "Moderate glycemic index (58)"
+        ]
+      },
+      "weight_management": {
+        "grade": "C+",
+        "score": 73,
+        "insight": "Moderate calorie density with good protein and fiber for satiety, but portion control important due to tortilla size",
+        "pros": [
+          "Good protein aids satiety (9.2g)",
+          "Moderate fiber (2.1g)",
+          "Reasonable calorie density (198)",
+          "Low sugar content (1.4g)",
+          "Vegetables add volume"
+        ],
+        "cons": [
+          "Easy to overconsume (large portions)",
+          "Refined tortilla lacks satiety",
+          "High sodium increases water retention",
+          "Cheese adds hidden calories"
+        ]
+      },
+      "brain_focus": {
+        "grade": "B-",
+        "score": 78,
+        "insight": "Good choline and B12 from eggs support cognition, moderate glycemic response prevents crashes",
+        "pros": [
+          "Choline from eggs for memory",
+          "Vitamin B12 supports cognition",
+          "Moderate glycemic load (12)",
+          "Protein stabilizes focus",
+          "Vitamin C supports neurotransmitters",
+          "Balanced energy release"
+        ],
+        "cons": [
+          "Some refined carbohydrates",
+          "Low omega-3 fatty acids",
+          "Limited brain-protective antioxidants",
+          "High sodium may affect cognition"
+        ]
+      },
+      "gut_health": {
+        "grade": "C+",
+        "score": 72,
+        "insight": "Moderate fiber from beans and vegetables, but refined tortilla and high sodium detract from gut benefits",
+        "pros": [
+          "Moderate fiber (2.1g)",
+          "Beans provide prebiotics",
+          "Vegetables add beneficial compounds",
+          "Easy to digest protein"
+        ],
+        "cons": [
+          "Refined flour lacks gut benefits",
+          "High sodium disrupts microbiome",
+          "No fermented ingredients",
+          "Fiber could be much higher",
+          "Limited prebiotic diversity"
+        ]
+      },
+      "blood_sugar": {
+        "grade": "B-",
+        "score": 76,
+        "insight": "Moderate glycemic response helped by protein and fiber, though refined tortilla causes some elevation",
+        "pros": [
+          "Moderate glycemic index (58)",
+          "Protein moderates blood sugar",
+          "Fiber slows absorption (2.1g)",
+          "Low added sugar (1.4g)",
+          "Fat delays digestion",
+          "Beans provide resistant starch"
+        ],
+        "cons": [
+          "Refined flour causes spikes",
+          "Moderate glycemic load (12)",
+          "Fiber could be higher for better control"
+        ]
+      },
+      "bone_joint": {
+        "grade": "C+",
+        "score": 74,
+        "insight": "Good calcium and moderate minerals, but high sodium and low vitamin D limit bone-building potential",
+        "pros": [
+          "Good calcium content (95mg)",
+          "Moderate magnesium (24mg)",
+          "Vitamin A supports bone health",
+          "Protein supports bone matrix",
+          "Phosphorus from eggs and cheese"
+        ],
+        "cons": [
+          "Very high sodium increases calcium loss",
+          "Low vitamin D (0.6mcg)",
+          "Limited vitamin K",
+          "Low anti-inflammatory compounds"
+        ]
+      },
+      "anti_inflammatory": {
+        "grade": "C",
+        "score": 70,
+        "insight": "Vegetables provide some anti-inflammatory compounds, but high sodium and refined carbs promote inflammation",
+        "pros": [
+          "Vitamin C has anti-inflammatory effects",
+          "Vegetables contain antioxidants",
+          "Eggs provide anti-inflammatory choline",
+          "Low added sugar",
+          "Moderate saturated fat"
+        ],
+        "cons": [
+          "Very high sodium (445mg)",
+          "Refined carbohydrates",
+          "Low omega-3 fatty acids",
+          "Limited polyphenols",
+          "Processed cheese may promote inflammation"
+        ]
+      }
+    }
+  },
+  "hash_browns": {
+    "name": "Hash Browns",
+    "calories": 265,
+    "protein": 2.8,
+    "carbs": 35.1,
+    "fat": 12.6,
+    "fiber": 3.2,
+    "sugar": 0.8,
+    "sodium": 342,
+    "saturatedFat": 1.8,
+    "cholesterol": 0,
+    "potassium": 486,
+    "calcium": 18,
+    "iron": 0.9,
+    "magnesium": 28,
+    "vitaminA": 2,
+    "vitaminC": 8.4,
+    "vitaminD": 0,
+    "vitaminB12": 0,
+    "glycemicIndex": 72,
+    "glycemicLoad": 25,
+    "allergens": [],
+    "servingSize": 100,
+    "servingUnit": "g",
+    "focusGrades": {
+      "balanced": {
+        "grade": "D+",
+        "score": 64,
+        "insight": "High in carbs and fat with very low protein, calorie-dense from frying, high glycemic load causes blood sugar issues",
+        "pros": [
+          "Good potassium content (486mg)",
+          "Moderate fiber from potatoes (3.2g)",
+          "No cholesterol",
+          "Contains vitamin C"
+        ],
+        "cons": [
+          "Very low protein (2.8g)",
+          "High calorie density (265)",
+          "High in fried fats (12.6g)",
+          "High sodium (342mg)",
+          "Very high glycemic index (72)",
+          "Poor macronutrient balance"
+        ]
+      },
+      "heart_health": {
+        "grade": "D",
+        "score": 62,
+        "insight": "High in fried fats and sodium with minimal heart-protective nutrients, though low saturated fat and no cholesterol help slightly",
+        "pros": [
+          "No cholesterol",
+          "Low saturated fat (1.8g)",
+          "High potassium (486mg)",
+          "Contains vitamin C for vascular health"
+        ],
+        "cons": [
+          "High in fried fats (12.6g)",
+          "High sodium (342mg)",
+          "High glycemic index damages vessels",
+          "Trans fats from frying oils",
+          "Oxidized fats from high heat",
+          "Low omega-3 fatty acids"
+        ]
+      },
+      "muscle_building": {
+        "grade": "D-",
+        "score": 55,
+        "insight": "Extremely low protein content makes this unsuitable for muscle building despite moderate calories",
+        "pros": [
+          "High potassium for muscle function",
+          "Provides quick energy from carbs",
+          "Moderate magnesium (28mg)"
+        ],
+        "cons": [
+          "Very low protein (2.8g)",
+          "Incomplete amino acid profile",
+          "High fat reduces protein efficiency",
+          "Very high glycemic response",
+          "Limited muscle-building nutrients",
+          "No vitamin B12",
+          "Poor carb-to-protein ratio"
+        ]
+      },
+      "energy": {
+        "grade": "C-",
+        "score": 67,
+        "insight": "Provides rapid energy spike from high glycemic carbs and fats, but crash follows with poor sustained energy",
+        "pros": [
+          "High calorie density (265)",
+          "Quick energy from carbs (35.1g)",
+          "Fat provides some sustained release",
+          "Potassium supports energy metabolism"
+        ],
+        "cons": [
+          "Very high glycemic index (72)",
+          "Energy crash after spike",
+          "Fried fats cause sluggishness",
+          "Low protein limits steady energy",
+          "Very high glycemic load (25)"
+        ]
+      },
+      "weight_management": {
+        "grade": "D-",
+        "score": 54,
+        "insight": "Very high calorie density from frying with poor satiety, high glycemic load promotes hunger and cravings",
+        "pros": [
+          "Moderate fiber (3.2g)",
+          "High volume from potatoes",
+          "Low sugar content (0.8g)"
+        ],
+        "cons": [
+          "Very high calorie density (265)",
+          "High in fried fats (12.6g)",
+          "Very low protein (2.8g)",
+          "Poor satiety-to-calorie ratio",
+          "High glycemic load increases hunger",
+          "Easy to overconsume",
+          "Fat absorption from frying"
+        ]
+      },
+      "brain_focus": {
+        "grade": "D",
+        "score": 61,
+        "insight": "High glycemic index causes blood sugar crash leading to focus lapses, fried fats may impair cognitive function",
+        "pros": [
+          "Quick glucose for immediate energy",
+          "Potassium supports neural function",
+          "Vitamin C supports neurotransmitters"
+        ],
+        "cons": [
+          "Severe blood sugar crash",
+          "Very high glycemic index (72)",
+          "Fried fats impair cognition",
+          "No omega-3 fatty acids",
+          "No B vitamins",
+          "Post-meal energy dip",
+          "Limited brain-protective nutrients"
+        ]
+      },
+      "gut_health": {
+        "grade": "D+",
+        "score": 63,
+        "insight": "Moderate fiber from potatoes, but fried fats and high sodium negatively impact gut microbiome balance",
+        "pros": [
+          "Moderate fiber (3.2g)",
+          "Potatoes contain resistant starch",
+          "No allergens"
+        ],
+        "cons": [
+          "Fried fats disrupt microbiome",
+          "High sodium (342mg)",
+          "Oxidized fats from frying",
+          "No prebiotic diversity",
+          "No fermented ingredients",
+          "Limited gut-supporting nutrients"
+        ]
+      },
+      "blood_sugar": {
+        "grade": "F",
+        "score": 48,
+        "insight": "Extremely high glycemic index and load cause severe blood sugar spikes with minimal fiber to moderate response",
+        "pros": [
+          "Moderate fiber helps slightly (3.2g)",
+          "Fat slows digestion somewhat",
+          "Resistant starch when cooled"
+        ],
+        "cons": [
+          "Very high glycemic index (72)",
+          "Extremely high glycemic load (25)",
+          "Very low protein (2.8g)",
+          "Fried fats worsen insulin response",
+          "High sodium affects blood sugar",
+          "Risk of severe reactive hypoglycemia",
+          "Potatoes rapidly convert to glucose"
+        ]
+      },
+      "bone_joint": {
+        "grade": "D+",
+        "score": 63,
+        "insight": "High potassium and moderate magnesium support bones, but very low calcium and high sodium limit benefits",
+        "pros": [
+          "High potassium (486mg)",
+          "Moderate magnesium (28mg)",
+          "Vitamin C supports collagen",
+          "No cholesterol"
+        ],
+        "cons": [
+          "Very low calcium (18mg)",
+          "High sodium increases calcium loss",
+          "No vitamin D",
+          "No vitamin K",
+          "Fried fats promote inflammation",
+          "Limited bone-building minerals"
+        ]
+      },
+      "anti_inflammatory": {
+        "grade": "D-",
+        "score": 56,
+        "insight": "Fried oils and high glycemic response strongly promote inflammation with minimal anti-inflammatory compounds",
+        "pros": [
+          "Vitamin C has anti-inflammatory effects",
+          "Potatoes contain some antioxidants",
+          "No added sugar"
+        ],
+        "cons": [
+          "Fried fats highly inflammatory",
+          "Oxidized oils from high heat",
+          "Very high glycemic index",
+          "High sodium (342mg)",
+          "Trans fats from frying",
+          "No omega-3 fatty acids",
+          "Limited antioxidants",
+          "No polyphenols"
+        ]
+      }
+    }
+  },
+  "granola_bar": {
+    "name": "Granola Bar",
+    "calories": 412,
+    "protein": 8.4,
+    "carbs": 64.5,
+    "fat": 13.2,
+    "fiber": 5.8,
+    "sugar": 24.3,
+    "sodium": 268,
+    "saturatedFat": 2.1,
+    "cholesterol": 0,
+    "potassium": 285,
+    "calcium": 48,
+    "iron": 2.4,
+    "magnesium": 82,
+    "vitaminA": 8,
+    "vitaminC": 1.2,
+    "vitaminD": 0,
+    "vitaminB12": 0,
+    "glycemicIndex": 61,
+    "glycemicLoad": 39,
+    "allergens": ["nuts", "wheat", "gluten"],
+    "servingSize": 100,
+    "servingUnit": "g",
+    "focusGrades": {
+      "balanced": {
+        "grade": "C",
+        "score": 68,
+        "insight": "High in fiber and magnesium with moderate protein, but excessive sugar and calorie density create major imbalances",
+        "pros": [
+          "Good fiber content (5.8g)",
+          "Moderate protein (8.4g)",
+          "High in magnesium (82mg)",
+          "Contains iron (2.4mg)",
+          "No cholesterol"
+        ],
+        "cons": [
+          "Very high sugar (24.3g)",
+          "Extremely high calorie density (412)",
+          "High glycemic load (39)",
+          "Moderate sodium (268mg)",
+          "Often contains added sugars"
+        ]
+      },
+      "heart_health": {
+        "grade": "C-",
+        "score": 66,
+        "insight": "Low saturated fat and good fiber, but very high sugar content negatively impacts cardiovascular health",
+        "pros": [
+          "Low saturated fat (2.1g)",
+          "No cholesterol",
+          "Good fiber (5.8g)",
+          "Contains heart-healthy nuts",
+          "High magnesium (82mg)",
+          "Potassium supports heart (285mg)"
+        ],
+        "cons": [
+          "Very high sugar (24.3g)",
+          "High glycemic load (39)",
+          "Moderate sodium (268mg)",
+          "Sugar promotes inflammation",
+          "Limited omega-3 fatty acids"
+        ]
+      },
+      "muscle_building": {
+        "grade": "C",
+        "score": 69,
+        "insight": "Moderate protein with incomplete amino acids, high carbs provide energy but excessive sugar reduces effectiveness",
+        "pros": [
+          "Moderate protein (8.4g)",
+          "High carbs for glycogen (64.5g)",
+          "Good magnesium for muscle function",
+          "Iron supports oxygen delivery",
+          "Nuts provide beneficial fats"
+        ],
+        "cons": [
+          "Incomplete protein profile",
+          "Very high sugar (24.3g)",
+          "Protein quality lower than animal sources",
+          "High glycemic load affects recovery",
+          "No vitamin B12",
+          "Calorie-dense but not protein-dense"
+        ]
+      },
+      "energy": {
+        "grade": "C+",
+        "score": 71,
+        "insight": "Very high calorie and carb density provides quick energy, but excessive sugar causes rapid spike and crash",
+        "pros": [
+          "Very high calorie density (412)",
+          "High carbohydrates (64.5g)",
+          "Fiber provides some sustained release",
+          "Good for pre-workout fuel",
+          "Magnesium supports energy metabolism",
+          "Portable and convenient"
+        ],
+        "cons": [
+          "Very high sugar causes crash (24.3g)",
+          "High glycemic load (39)",
+          "Energy spike followed by fatigue",
+          "Sugar addiction potential"
+        ]
+      },
+      "weight_management": {
+        "grade": "D-",
+        "score": 53,
+        "insight": "Extremely calorie-dense with very high sugar content, poor satiety-to-calorie ratio despite moderate fiber",
+        "pros": [
+          "Good fiber aids satiety (5.8g)",
+          "Moderate protein helps (8.4g)",
+          "Portable portion control",
+          "Nuts provide healthy fats"
+        ],
+        "cons": [
+          "Extremely high calorie density (412)",
+          "Very high sugar (24.3g)",
+          "Easy to overconsume",
+          "High glycemic load increases hunger",
+          "Marketing as 'healthy' misleading",
+          "Poor satiety-to-calorie ratio",
+          "Sugar promotes fat storage",
+          "Often eaten as snack, not meal replacement"
+        ]
+      },
+      "brain_focus": {
+        "grade": "D+",
+        "score": 64,
+        "insight": "Quick glucose boost for immediate focus, but high sugar content causes severe energy crash and cognitive impairment",
+        "pros": [
+          "Quick glucose for brain (64.5g carbs)",
+          "Magnesium supports cognitive function",
+          "Fiber moderates some absorption",
+          "Nuts provide brain-healthy fats"
+        ],
+        "cons": [
+          "Very high sugar causes crash (24.3g)",
+          "High glycemic load (39)",
+          "Focus lapses after spike",
+          "Low omega-3 fatty acids",
+          "No B vitamins",
+          "Limited brain-protective antioxidants"
+        ]
+      },
+      "gut_health": {
+        "grade": "C",
+        "score": 70,
+        "insight": "Good fiber from oats and nuts supports gut health, but high sugar feeds harmful bacteria and disrupts microbiome",
+        "pros": [
+          "Good fiber content (5.8g)",
+          "Oats provide beta-glucan",
+          "Nuts contain prebiotics",
+          "Whole grains support microbiome",
+          "Diverse plant ingredients"
+        ],
+        "cons": [
+          "Very high sugar feeds bad bacteria (24.3g)",
+          "Moderate sodium (268mg)",
+          "Added sugars disrupt balance",
+          "No fermented ingredients",
+          "Limited prebiotic diversity"
+        ]
+      },
+      "blood_sugar": {
+        "grade": "D-",
+        "score": 55,
+        "insight": "Extremely high glycemic load from sugar and carbs causes severe blood sugar spikes despite moderate fiber",
+        "pros": [
+          "Fiber helps moderate response (5.8g)",
+          "Protein slows absorption (8.4g)",
+          "Fat delays digestion",
+          "Nuts lower glycemic impact"
+        ],
+        "cons": [
+          "Very high sugar (24.3g)",
+          "Extremely high glycemic load (39)",
+          "High glycemic index (61)",
+          "Added sugars worsen response",
+          "Risk of reactive hypoglycemia",
+          "Insulin spike likely",
+          "Poor for diabetics"
+        ]
+      },
+      "bone_joint": {
+        "grade": "C+",
+        "score": 72,
+        "insight": "Excellent magnesium and moderate calcium with iron, though high sugar may promote inflammation and calcium loss",
+        "pros": [
+          "Excellent magnesium (82mg)",
+          "Moderate calcium (48mg)",
+          "Good iron content (2.4mg)",
+          "Potassium supports bone health",
+          "Nuts provide beneficial minerals",
+          "No cholesterol"
+        ],
+        "cons": [
+          "Very high sugar (24.3g)",
+          "No vitamin D",
+          "Limited vitamin K",
+          "Sugar promotes inflammation",
+          "Moderate sodium"
+        ]
+      },
+      "anti_inflammatory": {
+        "grade": "D+",
+        "score": 62,
+        "insight": "Nuts and whole grains provide some anti-inflammatory compounds, but very high sugar strongly promotes inflammation",
+        "pros": [
+          "Nuts contain anti-inflammatory fats",
+          "Magnesium has anti-inflammatory effects",
+          "Whole grains provide antioxidants",
+          "Low saturated fat (2.1g)",
+          "No cholesterol"
+        ],
+        "cons": [
+          "Very high sugar (24.3g)",
+          "Sugar triggers inflammation cascade",
+          "High glycemic load promotes AGEs",
+          "Limited omega-3 fatty acids",
+          "Moderate sodium (268mg)",
+          "Processed ingredients"
+        ]
+      }
+    }
+  },
+  "french_fries": {
+    "name": "French Fries",
+    "calories": 312,
+    "protein": 3.4,
+    "carbs": 41.4,
+    "fat": 14.7,
+    "fiber": 3.8,
+    "sugar": 0.3,
+    "sodium": 246,
+    "saturatedFat": 2.3,
+    "cholesterol": 0,
+    "potassium": 579,
+    "calcium": 15,
+    "iron": 0.7,
+    "magnesium": 32,
+    "vitaminA": 1,
+    "vitaminC": 9.7,
+    "vitaminD": 0,
+    "vitaminB12": 0,
+    "glycemicIndex": 75,
+    "glycemicLoad": 31,
+    "allergens": [],
+    "servingSize": 100,
+    "servingUnit": "g",
+    "focusGrades": {
+      "balanced": {
+        "grade": "D",
+        "score": 60,
+        "insight": "High in calories from fried fats and refined carbs with very low protein, poor nutrient density despite some potassium",
+        "pros": [
+          "Very high potassium (579mg)",
+          "Moderate fiber (3.8g)",
+          "Contains vitamin C (9.7mg)",
+          "No cholesterol",
+          "Low sugar content"
+        ],
+        "cons": [
+          "Very low protein (3.4g)",
+          "Very high calorie density (312)",
+          "High in fried fats (14.7g)",
+          "Very high glycemic index (75)",
+          "High sodium (246mg)",
+          "Poor macronutrient balance"
+        ]
+      },
+      "heart_health": {
+        "grade": "D-",
+        "score": 54,
+        "insight": "Deep frying creates harmful oxidized and trans fats, high glycemic load damages vessels despite low saturated fat",
+        "pros": [
+          "Low saturated fat (2.3g)",
+          "No cholesterol",
+          "Very high potassium (579mg)",
+          "Vitamin C supports vascular health"
+        ],
+        "cons": [
+          "High in fried fats (14.7g)",
+          "Trans fats from deep frying",
+          "Oxidized fats from high heat",
+          "Very high glycemic index (75)",
+          "High sodium (246mg)",
+          "Advanced glycation end products (AGEs)",
+          "Low omega-3 fatty acids"
+        ]
+      },
+      "muscle_building": {
+        "grade": "D-",
+        "score": 52,
+        "insight": "Extremely low protein with incomplete amino acids, unsuitable for muscle building despite high calories",
+        "pros": [
+          "Very high potassium (579mg)",
+          "Quick carbs for energy",
+          "Moderate magnesium (32mg)",
+          "High calorie density"
+        ],
+        "cons": [
+          "Very low protein (3.4g)",
+          "Incomplete amino acid profile",
+          "High fried fats reduce efficiency",
+          "Very high glycemic response",
+          "No vitamin B12",
+          "No essential amino acids",
+          "Poor nutrient quality",
+          "Limited muscle-building minerals"
+        ]
+      },
+      "energy": {
+        "grade": "D+",
+        "score": 63,
+        "insight": "High calorie density provides rapid energy spike from carbs and fats, but severe crash follows with post-meal sluggishness",
+        "pros": [
+          "Very high calorie density (312)",
+          "Quick energy from carbs (41.4g)",
+          "Fat provides sustained calories",
+          "Potassium supports energy metabolism",
+          "Vitamin C supports metabolism"
+        ],
+        "cons": [
+          "Very high glycemic index (75)",
+          "Severe energy crash after spike",
+          "Fried fats cause sluggishness",
+          "Very low protein (3.4g)",
+          "Extremely high glycemic load (31)",
+          "Post-meal fatigue likely"
+        ]
+      },
+      "weight_management": {
+        "grade": "F",
+        "score": 45,
+        "insight": "Extremely calorie-dense from deep frying, very poor satiety-to-calorie ratio, high glycemic load promotes fat storage",
+        "pros": [
+          "Moderate fiber (3.8g)",
+          "High volume from potatoes",
+          "Very low sugar (0.3g)"
+        ],
+        "cons": [
+          "Extremely high calorie density (312)",
+          "Very high in fried fats (14.7g)",
+          "Very low protein (3.4g)",
+          "Poor satiety-to-calorie ratio",
+          "Extremely high glycemic load (31)",
+          "Easy to overconsume large portions",
+          "Fat absorption from deep frying",
+          "Promotes fat storage",
+          "Highly palatable triggers overeating"
+        ]
+      },
+      "brain_focus": {
+        "grade": "D-",
+        "score": 57,
+        "insight": "Extremely high glycemic index causes severe blood sugar crash and cognitive impairment, fried fats reduce mental clarity",
+        "pros": [
+          "Quick glucose for immediate energy",
+          "Potassium supports neural function",
+          "Vitamin C supports neurotransmitters",
+          "High calories for brain fuel"
+        ],
+        "cons": [
+          "Severe blood sugar crash",
+          "Very high glycemic index (75)",
+          "Fried fats impair cognition",
+          "Post-meal mental fog",
+          "No omega-3 fatty acids",
+          "No B vitamins",
+          "Limited brain-protective nutrients",
+          "Focus lapses after spike"
+        ]
+      },
+      "gut_health": {
+        "grade": "D",
+        "score": 59,
+        "insight": "Moderate fiber from potatoes, but fried oils and acrylamide from high-heat cooking damage gut lining",
+        "pros": [
+          "Moderate fiber (3.8g)",
+          "Potatoes contain resistant starch",
+          "No allergens",
+          "Potassium supports gut function"
+        ],
+        "cons": [
+          "Fried fats disrupt microbiome",
+          "Oxidized oils damage gut lining",
+          "Acrylamide from frying",
+          "High sodium (246mg)",
+          "No prebiotic diversity",
+          "No fermented ingredients",
+          "Limited gut-supporting nutrients"
+        ]
+      },
+      "blood_sugar": {
+        "grade": "F",
+        "score": 42,
+        "insight": "Extremely high glycemic index and load cause severe insulin spikes, minimal protein and fiber cannot moderate response",
+        "pros": [
+          "Moderate fiber helps slightly (3.8g)",
+          "Fat slows digestion somewhat",
+          "Resistant starch when cooled",
+          "Very low sugar (0.3g)"
+        ],
+        "cons": [
+          "Extremely high glycemic index (75)",
+          "Very high glycemic load (31)",
+          "Very low protein (3.4g)",
+          "Fried fats worsen insulin response",
+          "Rapid conversion to glucose",
+          "Risk of severe reactive hypoglycemia",
+          "Insulin resistance with frequent consumption",
+          "Poor for diabetics"
+        ]
+      },
+      "bone_joint": {
+        "grade": "D+",
+        "score": 64,
+        "insight": "Very high potassium and moderate magnesium support bones, but very low calcium and inflammatory frying oils detract",
+        "pros": [
+          "Very high potassium (579mg)",
+          "Moderate magnesium (32mg)",
+          "Vitamin C supports collagen (9.7mg)",
+          "No cholesterol"
+        ],
+        "cons": [
+          "Very low calcium (15mg)",
+          "Fried fats promote inflammation",
+          "High sodium increases calcium loss",
+          "No vitamin D",
+          "No vitamin K",
+          "Oxidized fats damage joints",
+          "Limited bone-building minerals"
+        ]
+      },
+      "anti_inflammatory": {
+        "grade": "F",
+        "score": 48,
+        "insight": "Deep frying creates highly inflammatory oxidized fats and AGEs, extremely high glycemic index promotes inflammation cascade",
+        "pros": [
+          "Vitamin C has anti-inflammatory effects",
+          "Potatoes contain some antioxidants",
+          "Very low sugar (0.3g)",
+          "Low saturated fat (2.3g)"
+        ],
+        "cons": [
+          "Fried fats extremely inflammatory",
+          "Oxidized oils from deep frying",
+          "Trans fats from high heat",
+          "Very high glycemic index (75)",
+          "Acrylamide formation",
+          "Advanced glycation end products (AGEs)",
+          "No omega-3 fatty acids",
+          "High sodium (246mg)",
+          "No anti-inflammatory polyphenols"
+        ]
+      }
+    }
+  }
+}

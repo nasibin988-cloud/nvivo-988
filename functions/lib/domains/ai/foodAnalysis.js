@@ -35,6 +35,7 @@ const params_1 = require("firebase-functions/params");
 const openai_2 = require("../../config/openai");
 const commonFoodsLookup_1 = require("../nutrition/commonFoodsLookup");
 const foodAnalysisCache_1 = require("../nutrition/foodAnalysisCache");
+const foodIntelligenceLookup_1 = require("../nutrition/foodIntelligenceLookup");
 // Define OpenAI API key as a secret (for production)
 const openaiApiKey = (0, params_1.defineSecret)('OPENAI_API_KEY');
 exports.openaiApiKey = openaiApiKey;
@@ -682,14 +683,18 @@ function parseAnalysisResponse(content) {
     const items = (parsed.items || []).map((item) => {
         const nutritionFields = parseNutritionFields(item);
         const ingredients = parseIngredients(item.ingredients);
+        const foodName = String(item.name || 'Unknown food');
+        // Try to enrich with intelligence data from our database
+        const intelligence = (0, foodIntelligenceLookup_1.getFoodIntelligence)(foodName);
         return {
-            name: String(item.name || 'Unknown food'),
+            name: foodName,
             quantity: Number(item.quantity) || 1,
             unit: String(item.unit || 'serving'),
             ...nutritionFields,
             servingMultiplier: Number(item.servingMultiplier) || 1,
             confidence: Math.min(1, Math.max(0, Number(item.confidence) || 0.7)),
             ...(ingredients && { ingredients }),
+            ...(intelligence && { intelligence }),
         };
     });
     // Handle case where no food was detected in the image

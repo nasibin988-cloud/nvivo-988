@@ -1,0 +1,502 @@
+{
+  "ribeye_steak": {
+    "foodId": "ribeye_steak",
+    "name": "Ribeye Steak",
+    "category": "protein",
+    "servingSize": "3 oz (85g)",
+    "calories": 291,
+    "macros": {
+      "protein": 23.8,
+      "carbs": 0,
+      "fat": 21.6,
+      "fiber": 0,
+      "sugar": 0
+    },
+    "vitamins": {
+      "A": 0,
+      "C": 0,
+      "D": 0.1,
+      "E": 0.2,
+      "K": 1.3,
+      "B1": 0.06,
+      "B2": 0.14,
+      "B3": 5.8,
+      "B5": 0.6,
+      "B6": 0.5,
+      "B7": 3.2,
+      "B9": 6,
+      "B12": 1.9
+    },
+    "minerals": {
+      "calcium": 16,
+      "iron": 1.9,
+      "magnesium": 21,
+      "phosphorus": 177,
+      "potassium": 302,
+      "sodium": 54,
+      "zinc": 5.2,
+      "copper": 0.07,
+      "manganese": 0.01,
+      "selenium": 26.1,
+      "iodine": 0
+    },
+    "omega3": 84,
+    "omega6": 459,
+    "cholesterol": 78,
+    "glycemicIndex": 0,
+    "allergens": [],
+    "tags": [
+      "high-protein",
+      "keto-friendly",
+      "zero-carb",
+      "iron-rich",
+      "zinc-rich",
+      "vitamin-b12"
+    ],
+    "healthScore": 78,
+    "focusGrades": {
+      "heart": "B",
+      "brain": "B+",
+      "energy": "A-",
+      "immunity": "A-",
+      "gut": "C",
+      "inflammation": "B",
+      "metabolic": "A",
+      "bone": "B",
+      "skin": "B+",
+      "longevity": "B+"
+    },
+    "keyNutrients": [
+      "High-quality complete protein",
+      "Excellent source of vitamin B12",
+      "Rich in zinc and selenium",
+      "Contains iron and phosphorus",
+      "Conjugated linoleic acid (CLA)"
+    ],
+    "warnings": [
+      "High in saturated fat",
+      "Moderate cholesterol content",
+      "Choose grass-fed when possible"
+    ]
+  },
+  "prawns_shrimp": {
+    "foodId": "prawns_shrimp",
+    "name": "Prawns (Shrimp)",
+    "category": "protein",
+    "servingSize": "3 oz (85g)",
+    "calories": 84,
+    "macros": {
+      "protein": 17.8,
+      "carbs": 0.2,
+      "fat": 0.9,
+      "fiber": 0,
+      "sugar": 0
+    },
+    "vitamins": {
+      "A": 54,
+      "C": 1.9,
+      "D": 0,
+      "E": 1.1,
+      "K": 0.3,
+      "B1": 0.03,
+      "B2": 0.03,
+      "B3": 2.6,
+      "B5": 0.3,
+      "B6": 0.1,
+      "B7": 1.2,
+      "B9": 3,
+      "B12": 1.1
+    },
+    "minerals": {
+      "calcium": 52,
+      "iron": 2.4,
+      "magnesium": 29,
+      "phosphorus": 201,
+      "potassium": 185,
+      "sodium": 566,
+      "zinc": 1.3,
+      "copper": 0.19,
+      "manganese": 0.04,
+      "selenium": 38.2,
+      "iodine": 35
+    },
+    "omega3": 315,
+    "omega6": 28,
+    "cholesterol": 161,
+    "glycemicIndex": 0,
+    "allergens": [
+      "shellfish"
+    ],
+    "tags": [
+      "high-protein",
+      "low-fat",
+      "low-calorie",
+      "omega-3",
+      "selenium-rich",
+      "iodine-rich",
+      "keto-friendly"
+    ],
+    "healthScore": 88,
+    "focusGrades": {
+      "heart": "A-",
+      "brain": "A",
+      "energy": "A-",
+      "immunity": "A",
+      "gut": "B",
+      "inflammation": "A",
+      "metabolic": "A+",
+      "bone": "B+",
+      "skin": "A-",
+      "longevity": "A"
+    },
+    "keyNutrients": [
+      "Extremely high in protein, very low in calories",
+      "Excellent source of selenium and iodine",
+      "Rich in omega-3 fatty acids (EPA and DHA)",
+      "Good source of vitamin B12 and iron",
+      "Contains astaxanthin antioxidant"
+    ],
+    "warnings": [
+      "Common shellfish allergen",
+      "High in cholesterol (though dietary cholesterol has minimal impact for most people)",
+      "Can be high in sodium if processed or seasoned",
+      "Choose wild-caught over farmed when possible"
+    ]
+  },
+  "lobster": {
+    "foodId": "lobster",
+    "name": "Lobster",
+    "category": "protein",
+    "servingSize": "3 oz (85g)",
+    "calories": 76,
+    "macros": {
+      "protein": 16.4,
+      "carbs": 0,
+      "fat": 0.9,
+      "fiber": 0,
+      "sugar": 0
+    },
+    "vitamins": {
+      "A": 23,
+      "C": 0,
+      "D": 0,
+      "E": 0.9,
+      "K": 0.1,
+      "B1": 0.01,
+      "B2": 0.06,
+      "B3": 1.5,
+      "B5": 1.7,
+      "B6": 0.1,
+      "B7": 2.8,
+      "B9": 9,
+      "B12": 1.7
+    },
+    "minerals": {
+      "calcium": 61,
+      "iron": 0.3,
+      "magnesium": 30,
+      "phosphorus": 157,
+      "potassium": 230,
+      "sodium": 423,
+      "zinc": 3.4,
+      "copper": 1.94,
+      "manganese": 0.05,
+      "selenium": 41.4,
+      "iodine": 100
+    },
+    "omega3": 72,
+    "omega6": 11,
+    "cholesterol": 72,
+    "glycemicIndex": 0,
+    "allergens": [
+      "shellfish"
+    ],
+    "tags": [
+      "high-protein",
+      "low-fat",
+      "low-calorie",
+      "copper-rich",
+      "selenium-rich",
+      "zinc-rich",
+      "iodine-rich",
+      "keto-friendly"
+    ],
+    "healthScore": 90,
+    "focusGrades": {
+      "heart": "A-",
+      "brain": "A",
+      "energy": "A",
+      "immunity": "A",
+      "gut": "B",
+      "inflammation": "A-",
+      "metabolic": "A+",
+      "bone": "B+",
+      "skin": "A",
+      "longevity": "A"
+    },
+    "keyNutrients": [
+      "Very high protein, extremely low fat and calories",
+      "Exceptional source of copper (215% DV)",
+      "Excellent source of selenium, zinc, and iodine",
+      "Rich in vitamin B12 and B5",
+      "Contains omega-3 fatty acids"
+    ],
+    "warnings": [
+      "Common shellfish allergen",
+      "High in sodium (choose fresh over processed)",
+      "Moderate cholesterol content",
+      "Often prepared with butter (adds significant calories/fat)"
+    ]
+  },
+  "sardines_canned": {
+    "foodId": "sardines_canned",
+    "name": "Sardines (Canned in Oil)",
+    "category": "protein",
+    "servingSize": "3 oz (85g)",
+    "calories": 191,
+    "macros": {
+      "protein": 22.7,
+      "carbs": 0,
+      "fat": 10.5,
+      "fiber": 0,
+      "sugar": 0
+    },
+    "vitamins": {
+      "A": 32,
+      "C": 0,
+      "D": 4.8,
+      "E": 1.5,
+      "K": 2.6,
+      "B1": 0.08,
+      "B2": 0.23,
+      "B3": 5.2,
+      "B5": 0.6,
+      "B6": 0.2,
+      "B7": 6.8,
+      "B9": 10,
+      "B12": 8.9
+    },
+    "minerals": {
+      "calcium": 351,
+      "iron": 2.9,
+      "magnesium": 39,
+      "phosphorus": 490,
+      "potassium": 397,
+      "sodium": 465,
+      "zinc": 1.3,
+      "copper": 0.19,
+      "manganese": 0.14,
+      "selenium": 52.7,
+      "iodine": 27
+    },
+    "omega3": 1480,
+    "omega6": 1320,
+    "cholesterol": 131,
+    "glycemicIndex": 0,
+    "allergens": [
+      "fish"
+    ],
+    "tags": [
+      "high-protein",
+      "omega-3-rich",
+      "calcium-rich",
+      "vitamin-d",
+      "vitamin-b12",
+      "bone-health",
+      "keto-friendly"
+    ],
+    "healthScore": 95,
+    "focusGrades": {
+      "heart": "A+",
+      "brain": "A+",
+      "energy": "A",
+      "immunity": "A",
+      "gut": "A-",
+      "inflammation": "A+",
+      "metabolic": "A",
+      "bone": "A+",
+      "skin": "A",
+      "longevity": "A+"
+    },
+    "keyNutrients": [
+      "Exceptional omega-3 fatty acids (EPA and DHA)",
+      "Extremely high in calcium (35% DV) from edible bones",
+      "One of the best sources of vitamin D (120% DV)",
+      "Outstanding vitamin B12 (371% DV)",
+      "Rich in selenium, phosphorus, and protein"
+    ],
+    "warnings": [
+      "Fish allergen",
+      "Can be high in sodium (choose low-sodium versions)",
+      "Contains purines (may affect gout sufferers)",
+      "Strong flavor may not appeal to everyone"
+    ]
+  },
+  "scallops": {
+    "foodId": "scallops",
+    "name": "Scallops",
+    "category": "protein",
+    "servingSize": "3 oz (85g)",
+    "calories": 94,
+    "macros": {
+      "protein": 17.5,
+      "carbs": 2.6,
+      "fat": 1.2,
+      "fiber": 0,
+      "sugar": 0
+    },
+    "vitamins": {
+      "A": 1,
+      "C": 3.1,
+      "D": 0,
+      "E": 0,
+      "K": 0,
+      "B1": 0.01,
+      "B2": 0.03,
+      "B3": 1.2,
+      "B5": 0.2,
+      "B6": 0.1,
+      "B7": 1.5,
+      "B9": 16,
+      "B12": 1.8
+    },
+    "minerals": {
+      "calcium": 20,
+      "iron": 0.5,
+      "magnesium": 37,
+      "phosphorus": 334,
+      "potassium": 314,
+      "sodium": 667,
+      "zinc": 1.5,
+      "copper": 0.04,
+      "manganese": 0.02,
+      "selenium": 21.7,
+      "iodine": 90
+    },
+    "omega3": 235,
+    "omega6": 11,
+    "cholesterol": 41,
+    "glycemicIndex": 0,
+    "allergens": [
+      "shellfish"
+    ],
+    "tags": [
+      "high-protein",
+      "low-fat",
+      "low-calorie",
+      "omega-3",
+      "phosphorus-rich",
+      "vitamin-b12",
+      "keto-friendly"
+    ],
+    "healthScore": 87,
+    "focusGrades": {
+      "heart": "A",
+      "brain": "A",
+      "energy": "A-",
+      "immunity": "A-",
+      "gut": "B",
+      "inflammation": "A",
+      "metabolic": "A+",
+      "bone": "A-",
+      "skin": "A-",
+      "longevity": "A"
+    },
+    "keyNutrients": [
+      "Very high protein with minimal fat and calories",
+      "Excellent source of phosphorus (33% DV)",
+      "Rich in omega-3 fatty acids",
+      "Good source of vitamin B12, magnesium, and potassium",
+      "High in iodine and selenium"
+    ],
+    "warnings": [
+      "Common shellfish allergen",
+      "High in sodium (choose fresh or dry-packed)",
+      "Often treated with sodium tripolyphosphate (STPP) to retain moisture",
+      "Can be expensive; avoid imitation scallop products"
+    ]
+  },
+  "rainbow_trout": {
+    "foodId": "rainbow_trout",
+    "name": "Rainbow Trout",
+    "category": "protein",
+    "servingSize": "3 oz (85g)",
+    "calories": 143,
+    "macros": {
+      "protein": 20.5,
+      "carbs": 0,
+      "fat": 6.6,
+      "fiber": 0,
+      "sugar": 0
+    },
+    "vitamins": {
+      "A": 62,
+      "C": 0,
+      "D": 16.2,
+      "E": 2.8,
+      "K": 0.2,
+      "B1": 0.14,
+      "B2": 0.11,
+      "B3": 7.5,
+      "B5": 1.9,
+      "B6": 0.4,
+      "B7": 5.2,
+      "B9": 12,
+      "B12": 5.4
+    },
+    "minerals": {
+      "calcium": 67,
+      "iron": 0.7,
+      "magnesium": 26,
+      "phosphorus": 245,
+      "potassium": 481,
+      "sodium": 29,
+      "zinc": 0.6,
+      "copper": 0.06,
+      "manganese": 0.93,
+      "selenium": 12.6,
+      "iodine": 0
+    },
+    "omega3": 981,
+    "omega6": 229,
+    "cholesterol": 63,
+    "glycemicIndex": 0,
+    "allergens": [
+      "fish"
+    ],
+    "tags": [
+      "high-protein",
+      "omega-3-rich",
+      "vitamin-d",
+      "vitamin-b12",
+      "low-sodium",
+      "keto-friendly"
+    ],
+    "healthScore": 92,
+    "focusGrades": {
+      "heart": "A+",
+      "brain": "A+",
+      "energy": "A",
+      "immunity": "A",
+      "gut": "A-",
+      "inflammation": "A+",
+      "metabolic": "A",
+      "bone": "A",
+      "skin": "A",
+      "longevity": "A+"
+    },
+    "keyNutrients": [
+      "Exceptional omega-3 fatty acids (EPA and DHA)",
+      "One of the best sources of vitamin D (405% DV)",
+      "Very high in vitamin B12 (225% DV)",
+      "Excellent source of niacin (B3) and pantothenic acid (B5)",
+      "High-quality complete protein with good fat ratio"
+    ],
+    "warnings": [
+      "Fish allergen",
+      "Farmed trout may have different omega-3 profiles than wild",
+      "Very low in sodium (which is actually a benefit)",
+      "Choose sustainably farmed or wild-caught sources"
+    ]
+  }
+}

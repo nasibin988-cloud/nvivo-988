@@ -1,0 +1,1058 @@
+{
+  "vinegar": {
+    "name": "Vinegar",
+    "calories": 18,
+    "protein": 0,
+    "carbs": 0.04,
+    "fat": 0,
+    "fiber": 0,
+    "sugar": 0.04,
+    "sodium": 5,
+    "saturatedFat": 0,
+    "cholesterol": 0,
+    "potassium": 2,
+    "calcium": 6,
+    "iron": 0.2,
+    "magnesium": 1,
+    "vitaminA": 0,
+    "vitaminC": 0,
+    "vitaminD": 0,
+    "vitaminB12": 0,
+    "glycemicIndex": 0,
+    "glycemicLoad": 0,
+    "allergens": [],
+    "servingSize": 15,
+    "servingUnit": "ml",
+    "focusGrades": {
+      "balanced": {
+        "grade": "C",
+        "score": 65,
+        "insight": "Vinegar provides negligible macronutrients and micronutrients, serving primarily as a flavor enhancer and potential digestive aid rather than a nutritional contributor.",
+        "pros": [
+          "Zero fat and virtually no calories",
+          "May help moderate post-meal blood sugar spikes",
+          "Contains beneficial acetic acid"
+        ],
+        "cons": [
+          "No meaningful protein, fiber, or micronutrients",
+          "Not a substantial food source",
+          "High acidity can irritate sensitive stomachs"
+        ]
+      },
+      "heart_health": {
+        "grade": "B-",
+        "score": 72,
+        "insight": "Acetic acid in vinegar may support cardiovascular health by helping to lower blood pressure and improve lipid profiles, though it provides no heart-healthy fats or fiber.",
+        "pros": [
+          "Zero cholesterol and saturated fat",
+          "May help reduce triglycerides",
+          "Minimal sodium content"
+        ],
+        "cons": [
+          "No omega-3 fatty acids",
+          "Lacks fiber for cholesterol management",
+          "No potassium for blood pressure regulation"
+        ]
+      },
+      "muscle_building": {
+        "grade": "D",
+        "score": 45,
+        "insight": "Vinegar is nutritionally irrelevant for muscle building, containing zero protein and no amino acids to support muscle protein synthesis or recovery.",
+        "pros": [
+          "May improve calcium absorption when used in cooking",
+          "Zero calories won't interfere with calorie targets"
+        ],
+        "cons": [
+          "Absolutely no protein content",
+          "No BCAAs or essential amino acids",
+          "Lacks minerals needed for muscle contraction"
+        ]
+      },
+      "energy": {
+        "grade": "D+",
+        "score": 50,
+        "insight": "Vinegar provides virtually no calories or macronutrients for energy production, though acetic acid may modestly improve glucose metabolism and reduce fatigue after carb-heavy meals.",
+        "pros": [
+          "May improve insulin sensitivity after meals",
+          "Can help stabilize blood sugar fluctuations",
+          "Won't cause energy crashes"
+        ],
+        "cons": [
+          "No carbohydrates for quick energy",
+          "Zero protein for sustained energy",
+          "Lacks B vitamins for metabolism"
+        ]
+      },
+      "weight_management": {
+        "grade": "A-",
+        "score": 88,
+        "insight": "Vinegar is exceptional for weight management with near-zero calories, potential appetite suppression effects, and research suggesting it may reduce fat storage and improve satiety.",
+        "pros": [
+          "Only 3 calories per tablespoon",
+          "May increase feelings of fullness",
+          "Acetic acid linked to reduced belly fat accumulation"
+        ],
+        "cons": [
+          "Effects are modest and require consistent use",
+          "High acidity can cause digestive discomfort",
+          "Not a magic solution without diet changes"
+        ]
+      },
+      "brain_focus": {
+        "grade": "C-",
+        "score": 62,
+        "insight": "Vinegar offers minimal direct cognitive benefits but may support brain function indirectly by stabilizing blood sugar levels, preventing the mental fog associated with glucose fluctuations.",
+        "pros": [
+          "Helps prevent blood sugar crashes that impair focus",
+          "May improve insulin sensitivity in the brain",
+          "Low calorie option for salad dressings"
+        ],
+        "cons": [
+          "No omega-3s for brain structure",
+          "Lacks B vitamins for neurotransmitter production",
+          "No antioxidants for neuroprotection"
+        ]
+      },
+      "gut_health": {
+        "grade": "B",
+        "score": 78,
+        "insight": "Apple cider vinegar particularly may support gut health through probiotic content (if raw/unfiltered) and by promoting stomach acid production, though it lacks prebiotic fiber.",
+        "pros": [
+          "Raw vinegar contains beneficial bacteria",
+          "May improve digestive enzyme function",
+          "Acetic acid supports healthy gut pH"
+        ],
+        "cons": [
+          "No prebiotic fiber to feed gut bacteria",
+          "Can irritate sensitive digestive systems",
+          "Excessive use may damage tooth enamel and esophagus"
+        ]
+      },
+      "blood_sugar": {
+        "grade": "A",
+        "score": 92,
+        "insight": "Vinegar is outstanding for blood sugar control, with strong evidence that acetic acid slows carbohydrate digestion and improves insulin sensitivity, particularly effective when consumed before meals.",
+        "pros": [
+          "Reduces post-meal glucose spikes by 20-30%",
+          "Improves insulin sensitivity in type 2 diabetes",
+          "Zero glycemic index and glycemic load"
+        ],
+        "cons": [
+          "Requires timing before meals for maximum effect",
+          "Effects are dose-dependent (1-2 tablespoons needed)",
+          "Not a replacement for medication in diabetics"
+        ]
+      },
+      "bone_joint": {
+        "grade": "C",
+        "score": 65,
+        "insight": "Vinegar provides negligible calcium and may actually reduce bone density if consumed excessively, though moderate use may enhance calcium absorption from other foods during cooking.",
+        "pros": [
+          "Acetic acid can extract calcium from bones in cooking",
+          "May improve mineral absorption in general",
+          "Contains trace amounts of calcium"
+        ],
+        "cons": [
+          "Only 6mg calcium per 100ml (minimal)",
+          "No vitamin D for calcium absorption",
+          "Excessive intake may leach calcium from bones"
+        ]
+      },
+      "anti_inflammatory": {
+        "grade": "B",
+        "score": 80,
+        "insight": "Vinegar shows moderate anti-inflammatory potential through acetic acid's ability to suppress inflammatory cytokines and oxidative stress, particularly beneficial for metabolic inflammation.",
+        "pros": [
+          "Acetic acid reduces pro-inflammatory markers",
+          "May lower CRP levels in metabolic syndrome",
+          "Polyphenols in some vinegars (balsamic, red wine) add antioxidants"
+        ],
+        "cons": [
+          "No omega-3 fatty acids for inflammation resolution",
+          "Limited polyphenol content in most types",
+          "Research is still emerging on inflammation"
+        ]
+      }
+    }
+  },
+  "waffle": {
+    "name": "Waffle",
+    "calories": 291,
+    "protein": 7.9,
+    "carbs": 48.7,
+    "fat": 8.6,
+    "fiber": 1.7,
+    "sugar": 6.4,
+    "sodium": 511,
+    "saturatedFat": 2.1,
+    "cholesterol": 52,
+    "potassium": 134,
+    "calcium": 85,
+    "iron": 2.8,
+    "magnesium": 17,
+    "vitaminA": 84,
+    "vitaminC": 0.2,
+    "vitaminD": 0.5,
+    "vitaminB12": 0.3,
+    "glycemicIndex": 76,
+    "glycemicLoad": 37,
+    "allergens": ["wheat", "eggs", "milk"],
+    "servingSize": 75,
+    "servingUnit": "g",
+    "focusGrades": {
+      "balanced": {
+        "grade": "C-",
+        "score": 58,
+        "insight": "Waffles are carb-dominant with moderate protein and fat, but lack fiber and micronutrients while being high in refined flour, sodium, and having a high glycemic impact.",
+        "pros": [
+          "Provides quick energy from carbohydrates",
+          "Contains eggs for some protein quality",
+          "Fortified varieties offer iron and B vitamins"
+        ],
+        "cons": [
+          "High glycemic index causes blood sugar spikes",
+          "Very high sodium (511mg per 100g)",
+          "Low fiber and minimal micronutrients"
+        ]
+      },
+      "heart_health": {
+        "grade": "D+",
+        "score": 52,
+        "insight": "Waffles are problematic for heart health due to high sodium, refined carbohydrates, and moderate saturated fat, with minimal fiber or heart-protective nutrients.",
+        "pros": [
+          "Moderate fat content (8.6g per 100g)",
+          "Contains some calcium for blood pressure",
+          "Lower in saturated fat than many breakfast options"
+        ],
+        "cons": [
+          "511mg sodium per 100g (22% daily value)",
+          "52mg cholesterol per serving",
+          "High glycemic load stresses cardiovascular system"
+        ]
+      },
+      "muscle_building": {
+        "grade": "C",
+        "score": 68,
+        "insight": "Waffles provide moderate protein (7.9g per 100g) and carbs for glycogen replenishment, making them a mediocre post-workout option, but they lack leucine density and complete amino acids.",
+        "pros": [
+          "Nearly 8g protein per 100g from eggs and milk",
+          "High carbs support glycogen replenishment",
+          "Contains iron for oxygen transport to muscles"
+        ],
+        "cons": [
+          "Incomplete protein profile compared to meat/whey",
+          "High glycemic index less ideal than complex carbs",
+          "Sodium may cause water retention"
+        ]
+      },
+      "energy": {
+        "grade": "C+",
+        "score": 70,
+        "insight": "Waffles deliver rapid energy from simple carbohydrates but the high glycemic index causes quick spikes and crashes, making them better for immediate energy than sustained performance.",
+        "pros": [
+          "291 calories for quick energy boost",
+          "48.7g carbs for immediate glucose availability",
+          "Iron content supports oxygen delivery"
+        ],
+        "cons": [
+          "GI of 76 causes energy crashes within 2 hours",
+          "Low fiber means rapid digestion",
+          "Minimal B vitamins for energy metabolism"
+        ]
+      },
+      "weight_management": {
+        "grade": "D",
+        "score": 48,
+        "insight": "Waffles are calorie-dense, low in satiety-promoting fiber and protein, with a high glycemic index that triggers hunger shortly after eating, making them poor for weight control.",
+        "pros": [
+          "Can fit into calorie budgets if portion-controlled",
+          "Some protein provides modest satiety",
+          "Easy to track and measure"
+        ],
+        "cons": [
+          "291 calories per 100g is very dense",
+          "Only 1.7g fiber provides minimal fullness",
+          "High GI triggers insulin and hunger cycles"
+        ]
+      },
+      "brain_focus": {
+        "grade": "C-",
+        "score": 60,
+        "insight": "Waffles provide quick glucose for brain fuel but the resulting blood sugar rollercoaster impairs sustained cognitive function, causing focus crashes and mental fatigue.",
+        "pros": [
+          "Immediate glucose delivery to the brain",
+          "Iron supports cognitive oxygen supply",
+          "B vitamins in fortified versions aid neurotransmitters"
+        ],
+        "cons": [
+          "Glycemic spike followed by crash impairs focus",
+          "Low omega-3s for brain structure",
+          "High sodium may affect hydration and cognition"
+        ]
+      },
+      "gut_health": {
+        "grade": "D+",
+        "score": 53,
+        "insight": "Waffles are low in prebiotic fiber and made from refined flour that offers minimal gut microbiome support, while high sodium and simple carbs may promote inflammatory gut bacteria.",
+        "pros": [
+          "Contains some eggs which provide choline",
+          "Calcium may support gut barrier function",
+          "Easy to digest for sensitive stomachs"
+        ],
+        "cons": [
+          "Only 1.7g fiber (7% of daily needs)",
+          "Refined flour lacks whole grain prebiotics",
+          "High sodium disrupts gut microbiome balance"
+        ]
+      },
+      "blood_sugar": {
+        "grade": "D-",
+        "score": 42,
+        "insight": "Waffles are highly problematic for blood sugar control with a GI of 76 and GL of 37, causing rapid glucose spikes and insulin surges that stress metabolic health.",
+        "pros": [
+          "Protein and fat slightly blunt pure carb impact",
+          "Can be paired with protein to lower glycemic response",
+          "Portion control can minimize damage"
+        ],
+        "cons": [
+          "Very high glycemic index (76)",
+          "Glycemic load of 37 is extremely high",
+          "Refined flour rapidly converts to glucose"
+        ]
+      },
+      "bone_joint": {
+        "grade": "C+",
+        "score": 72,
+        "insight": "Waffles provide moderate calcium (85mg per 100g) and vitamin D from milk and eggs, offering some bone support, but lack vitamin K and magnesium for optimal bone health.",
+        "pros": [
+          "85mg calcium per 100g (8% DV)",
+          "Contains vitamin D for calcium absorption",
+          "Phosphorus from eggs supports bone mineralization"
+        ],
+        "cons": [
+          "High sodium may increase calcium excretion",
+          "Only 17mg magnesium (low for bone health)",
+          "No vitamin K for bone protein synthesis"
+        ]
+      },
+      "anti_inflammatory": {
+        "grade": "D",
+        "score": 47,
+        "insight": "Waffles are pro-inflammatory due to refined carbohydrates that spike blood sugar and insulin, high sodium, and omega-6 vegetable oils often used in preparation.",
+        "pros": [
+          "Eggs provide some anti-inflammatory choline",
+          "Lower in saturated fat than many baked goods",
+          "Can be made with anti-inflammatory toppings"
+        ],
+        "cons": [
+          "High glycemic load triggers inflammatory response",
+          "Refined flour linked to systemic inflammation",
+          "Typically cooked with omega-6 rich oils"
+        ]
+      }
+    }
+  },
+  "walnuts": {
+    "name": "Walnuts",
+    "calories": 654,
+    "protein": 15.2,
+    "carbs": 13.7,
+    "fat": 65.2,
+    "fiber": 6.7,
+    "sugar": 2.6,
+    "sodium": 2,
+    "saturatedFat": 6.1,
+    "cholesterol": 0,
+    "potassium": 441,
+    "calcium": 98,
+    "iron": 2.9,
+    "magnesium": 158,
+    "vitaminA": 1,
+    "vitaminC": 1.3,
+    "vitaminD": 0,
+    "vitaminB12": 0,
+    "glycemicIndex": 15,
+    "glycemicLoad": 1,
+    "allergens": ["tree_nuts"],
+    "servingSize": 28,
+    "servingUnit": "g",
+    "focusGrades": {
+      "balanced": {
+        "grade": "A-",
+        "score": 88,
+        "insight": "Walnuts are nutritionally exceptional with high-quality fats (especially omega-3 ALA), plant protein, fiber, and rich minerals, though calorie-dense requiring portion awareness.",
+        "pros": [
+          "Outstanding omega-3 content (2.5g ALA per ounce)",
+          "Complete micronutrient profile with magnesium, copper, manganese",
+          "High fiber (6.7g) and plant protein (15.2g)"
+        ],
+        "cons": [
+          "Very calorie-dense at 654 calories per 100g",
+          "High omega-6:3 ratio requires balance in diet",
+          "Common allergen (tree nuts)"
+        ]
+      },
+      "heart_health": {
+        "grade": "A+",
+        "score": 97,
+        "insight": "Walnuts are among the best foods for cardiovascular health, with extensive research showing they reduce LDL cholesterol, improve arterial function, and lower heart disease risk through omega-3s and polyphenols.",
+        "pros": [
+          "Highest omega-3 ALA of any nut (supports HDL and lowers LDL)",
+          "441mg potassium helps regulate blood pressure",
+          "Zero cholesterol and only 6.1g saturated fat"
+        ],
+        "cons": [
+          "Calorie density requires portion control for weight management",
+          "Roasted/salted versions add unhealthy sodium",
+          "Benefits require consistent daily intake (1-2 oz)"
+        ]
+      },
+      "muscle_building": {
+        "grade": "B+",
+        "score": 84,
+        "insight": "Walnuts provide quality plant protein (15.2g per 100g) and arginine for nitric oxide production, supporting muscle recovery and blood flow, though they lack the leucine density of animal proteins.",
+        "pros": [
+          "15.2g protein with all essential amino acids",
+          "Arginine boosts nitric oxide for muscle pumps",
+          "Magnesium (158mg) prevents muscle cramps and supports ATP"
+        ],
+        "cons": [
+          "Lower leucine content than whey or meat",
+          "High fat means less protein per calorie",
+          "Plant protein has slightly lower bioavailability"
+        ]
+      },
+      "energy": {
+        "grade": "A-",
+        "score": 87,
+        "insight": "Walnuts deliver exceptional sustained energy through healthy fats and low glycemic impact, providing long-lasting fuel without blood sugar spikes, ideal for endurance and mental energy.",
+        "pros": [
+          "654 calories from primarily healthy fats for slow-burn energy",
+          "Glycemic index of only 15 prevents crashes",
+          "Magnesium and B vitamins support cellular energy production"
+        ],
+        "cons": [
+          "Not ideal for rapid pre-workout energy (slow digesting)",
+          "High calorie density can lead to overconsumption",
+          "No vitamin B12 for energy metabolism"
+        ]
+      },
+      "weight_management": {
+        "grade": "B",
+        "score": 78,
+        "insight": "Despite being extremely calorie-dense (654 cal/100g), walnuts support weight management through satiety from protein, fiber, and healthy fats, but require strict portion control to avoid excess calories.",
+        "pros": [
+          "6.7g fiber and 15g protein increase fullness",
+          "Low glycemic load prevents hunger spikes",
+          "Studies show nut eaters have lower BMI despite calories"
+        ],
+        "cons": [
+          "654 calories per 100g is extremely dense",
+          "Easy to overeat due to palatability",
+          "1/4 cup = 200 calories (must measure portions)"
+        ]
+      },
+      "brain_focus": {
+        "grade": "A",
+        "score": 94,
+        "insight": "Walnuts are extraordinary for cognitive function, shaped like a brain for good reason—packed with omega-3 ALA, polyphenols, and vitamin E that protect neurons and enhance memory and focus.",
+        "pros": [
+          "Omega-3 ALA supports brain structure and neurotransmission",
+          "Polyphenols and vitamin E protect against cognitive decline",
+          "Linked to improved memory, learning, and reduced Alzheimer's risk"
+        ],
+        "cons": [
+          "Benefits require long-term consistent intake",
+          "No DHA/EPA (must convert ALA, which is inefficient)",
+          "Oxidation of fats can reduce benefits (store properly)"
+        ]
+      },
+      "gut_health": {
+        "grade": "A-",
+        "score": 88,
+        "insight": "Walnuts are prebiotic superstars, feeding beneficial gut bacteria (especially Bifidobacteria), increasing microbial diversity, and producing anti-inflammatory short-chain fatty acids.",
+        "pros": [
+          "6.7g fiber acts as prebiotic for gut bacteria",
+          "Increases beneficial bacteria and microbial diversity",
+          "Polyphenols have antimicrobial effects on harmful bacteria"
+        ],
+        "cons": [
+          "High fat content may be hard to digest for some",
+          "Phytic acid can reduce mineral absorption if not soaked",
+          "Mold risk if stored improperly (aflatoxins)"
+        ]
+      },
+      "blood_sugar": {
+        "grade": "A",
+        "score": 93,
+        "insight": "Walnuts are exceptional for glycemic control with a GI of 15 and GL of 1, improving insulin sensitivity and reducing diabetes risk through healthy fats, fiber, and magnesium.",
+        "pros": [
+          "Extremely low glycemic index (15) and load (1)",
+          "158mg magnesium improves insulin sensitivity",
+          "Adding to meals reduces overall glycemic impact"
+        ],
+        "cons": [
+          "Benefits require regular consumption (daily)",
+          "High calories may lead to weight gain if not portioned",
+          "Not a quick glucose source for hypoglycemia"
+        ]
+      },
+      "bone_joint": {
+        "grade": "B+",
+        "score": 83,
+        "insight": "Walnuts support bone health through magnesium (158mg), calcium (98mg), and copper for collagen synthesis, plus omega-3s reduce inflammatory bone loss, though they lack vitamin D.",
+        "pros": [
+          "158mg magnesium (40% DV) for bone mineralization",
+          "Copper supports collagen and bone matrix formation",
+          "Omega-3s reduce inflammatory bone degradation"
+        ],
+        "cons": [
+          "No vitamin D for calcium absorption",
+          "Phytic acid can bind minerals and reduce absorption",
+          "Omega-6 content may promote inflammation if unbalanced"
+        ]
+      },
+      "anti_inflammatory": {
+        "grade": "A",
+        "score": 91,
+        "insight": "Walnuts are powerfully anti-inflammatory through omega-3 ALA, ellagitannins, and polyphenols that reduce inflammatory markers like CRP and IL-6, combating chronic disease.",
+        "pros": [
+          "Highest plant-based omega-3 content of any nut",
+          "Ellagitannins converted to urolithins with anti-inflammatory effects",
+          "Reduces inflammatory markers (CRP, IL-6, TNF-alpha)"
+        ],
+        "cons": [
+          "Also contain omega-6 which can be inflammatory if excessive",
+          "Benefits diminish if stored improperly (oxidized fats)",
+          "Roasting reduces polyphenol content"
+        ]
+      }
+    }
+  },
+  "white_wine": {
+    "name": "White Wine",
+    "calories": 82,
+    "protein": 0.1,
+    "carbs": 2.6,
+    "fat": 0,
+    "fiber": 0,
+    "sugar": 1.4,
+    "sodium": 5,
+    "saturatedFat": 0,
+    "cholesterol": 0,
+    "potassium": 71,
+    "calcium": 9,
+    "iron": 0.3,
+    "magnesium": 10,
+    "vitaminA": 0,
+    "vitaminC": 0,
+    "vitaminD": 0,
+    "vitaminB12": 0,
+    "glycemicIndex": 0,
+    "glycemicLoad": 0,
+    "allergens": ["sulfites"],
+    "servingSize": 148,
+    "servingUnit": "ml",
+    "focusGrades": {
+      "balanced": {
+        "grade": "D",
+        "score": 50,
+        "insight": "White wine provides empty calories from alcohol with minimal nutritional value, lacking protein, fiber, and meaningful micronutrients, though moderate consumption may fit into a balanced lifestyle.",
+        "pros": [
+          "Low in calories compared to many alcoholic beverages",
+          "Contains small amounts of antioxidants from grapes",
+          "Minimal sugar content (dry varieties)"
+        ],
+        "cons": [
+          "Alcohol provides 7 calories per gram with no nutrition",
+          "Zero protein, fiber, or significant vitamins",
+          "Can disrupt sleep, hydration, and nutrient absorption"
+        ]
+      },
+      "heart_health": {
+        "grade": "C+",
+        "score": 70,
+        "insight": "White wine shows modest cardiovascular benefits through polyphenols and potential HDL improvement, but only with light-to-moderate intake (1 glass for women, 2 for men daily)—excess negates benefits.",
+        "pros": [
+          "Moderate intake may raise HDL cholesterol",
+          "Polyphenols provide antioxidant protection",
+          "May reduce blood clot formation"
+        ],
+        "cons": [
+          "Heavy drinking increases blood pressure and triglycerides",
+          "Alcohol metabolism stresses the cardiovascular system",
+          "Less resveratrol than red wine"
+        ]
+      },
+      "muscle_building": {
+        "grade": "D-",
+        "score": 40,
+        "insight": "White wine is detrimental to muscle building, as alcohol impairs protein synthesis, reduces testosterone, disrupts sleep quality, and provides zero protein or amino acids for recovery.",
+        "pros": [
+          "Minimal calories if consumed in moderation",
+          "Won't add significant fat if portioned"
+        ],
+        "cons": [
+          "Alcohol reduces muscle protein synthesis by 30-40%",
+          "Lowers testosterone and growth hormone",
+          "Disrupts sleep, critical for muscle recovery"
+        ]
+      },
+      "energy": {
+        "grade": "D",
+        "score": 45,
+        "insight": "While alcohol provides 7 calories per gram, white wine is a poor energy source that impairs mitochondrial function, disrupts sleep, causes dehydration, and leads to energy crashes.",
+        "pros": [
+          "82 calories per glass provides some energy",
+          "May provide temporary relaxation reducing stress"
+        ],
+        "cons": [
+          "Alcohol depletes glycogen stores",
+          "Impairs mitochondrial energy production",
+          "Causes dehydration and fatigue the next day"
+        ]
+      },
+      "weight_management": {
+        "grade": "C-",
+        "score": 62,
+        "insight": "White wine is moderately problematic for weight management with 82 calories per glass of non-satiating liquid, plus alcohol metabolism prioritizes burning alcohol over fat, stalling fat loss.",
+        "pros": [
+          "Lower calorie than many cocktails or beer",
+          "Dry varieties have minimal sugar (1.4g)",
+          "May fit into calorie budget if tracked"
+        ],
+        "cons": [
+          "Alcohol halts fat burning until metabolized",
+          "Lowers inhibitions leading to overeating",
+          "Liquid calories don't trigger satiety"
+        ]
+      },
+      "brain_focus": {
+        "grade": "D-",
+        "score": 38,
+        "insight": "White wine impairs cognitive function, reaction time, and decision-making even at low doses, while disrupting sleep architecture that's critical for memory consolidation and mental clarity.",
+        "pros": [
+          "May reduce stress and anxiety temporarily",
+          "Small amounts of polyphenols support brain health"
+        ],
+        "cons": [
+          "Alcohol impairs prefrontal cortex function",
+          "Disrupts REM sleep needed for memory",
+          "Even moderate intake reduces cognitive performance next day"
+        ]
+      },
+      "gut_health": {
+        "grade": "D+",
+        "score": 52,
+        "insight": "White wine has mixed effects on gut health—polyphenols may support beneficial bacteria, but alcohol disrupts the gut barrier, promotes dysbiosis, and can trigger inflammation in the intestinal lining.",
+        "pros": [
+          "Polyphenols act as prebiotics for some bacteria",
+          "May increase microbial diversity in moderation",
+          "Organic acids support gut pH"
+        ],
+        "cons": [
+          "Alcohol damages intestinal barrier (leaky gut)",
+          "Disrupts gut microbiome balance",
+          "Can trigger IBS and inflammatory bowel symptoms"
+        ]
+      },
+      "blood_sugar": {
+        "grade": "C",
+        "score": 68,
+        "insight": "White wine has complex effects on blood sugar—initially it may lower glucose by impairing liver glucose production, but this can cause hypoglycemia, especially dangerous for diabetics on medication.",
+        "pros": [
+          "Very low glycemic index (0) and minimal carbs",
+          "Dry wines have only 1.4g sugar per glass",
+          "May improve insulin sensitivity in moderation"
+        ],
+        "cons": [
+          "Can cause dangerous hypoglycemia in diabetics",
+          "Impairs liver's ability to regulate blood glucose",
+          "Sweet wines have much higher sugar content"
+        ]
+      },
+      "bone_joint": {
+        "grade": "C-",
+        "score": 63,
+        "insight": "Moderate white wine intake may support bone density through silicon and polyphenols, but excessive alcohol consumption increases fracture risk by interfering with calcium absorption and bone remodeling.",
+        "pros": [
+          "Contains silicon which supports bone formation",
+          "Moderate intake linked to higher bone density in some studies",
+          "Small amounts of calcium (9mg per glass)"
+        ],
+        "cons": [
+          "Heavy drinking increases osteoporosis risk",
+          "Alcohol interferes with vitamin D metabolism",
+          "Increases urinary calcium excretion"
+        ]
+      },
+      "anti_inflammatory": {
+        "grade": "C",
+        "score": 65,
+        "insight": "White wine contains anti-inflammatory polyphenols like tyrosol and hydroxytyrosol, but only light-to-moderate intake shows benefits—heavy drinking promotes systemic inflammation and oxidative stress.",
+        "pros": [
+          "Polyphenols reduce inflammatory markers in moderation",
+          "Tyrosol and hydroxytyrosol have antioxidant effects",
+          "May reduce CRP levels with light consumption"
+        ],
+        "cons": [
+          "Far fewer polyphenols than red wine",
+          "Heavy drinking increases inflammatory cytokines",
+          "Alcohol metabolism produces pro-inflammatory acetaldehyde"
+        ]
+      }
+    }
+  },
+  "whole_milk": {
+    "name": "Whole Milk",
+    "calories": 61,
+    "protein": 3.2,
+    "carbs": 4.8,
+    "fat": 3.3,
+    "fiber": 0,
+    "sugar": 5.1,
+    "sodium": 44,
+    "saturatedFat": 1.9,
+    "cholesterol": 10,
+    "potassium": 143,
+    "calcium": 113,
+    "iron": 0.03,
+    "magnesium": 11,
+    "vitaminA": 46,
+    "vitaminC": 0,
+    "vitaminD": 1.3,
+    "vitaminB12": 0.45,
+    "glycemicIndex": 39,
+    "glycemicLoad": 5,
+    "allergens": ["milk"],
+    "servingSize": 244,
+    "servingUnit": "ml",
+    "focusGrades": {
+      "balanced": {
+        "grade": "B+",
+        "score": 85,
+        "insight": "Whole milk is nutritionally well-rounded with high-quality protein, essential fats, calcium, vitamin D, and B12, providing excellent macronutrient balance for growth and maintenance in those who tolerate dairy.",
+        "pros": [
+          "Complete protein with all essential amino acids (3.2g per 100ml)",
+          "Outstanding calcium (113mg) and vitamin D (1.3mcg) pairing",
+          "Balanced macros: 3.3g fat, 4.8g carbs, 3.2g protein"
+        ],
+        "cons": [
+          "Common allergen (lactose intolerance affects 65% globally)",
+          "Saturated fat content concerns some health organizations",
+          "No fiber content"
+        ]
+      },
+      "heart_health": {
+        "grade": "B-",
+        "score": 73,
+        "insight": "Whole milk's cardiovascular impact is debated—while it contains saturated fat (1.9g), emerging research suggests full-fat dairy may be neutral or even protective through beneficial fatty acids and minerals.",
+        "pros": [
+          "143mg potassium supports blood pressure regulation",
+          "Vitamin D and calcium reduce hypertension risk",
+          "Contains conjugated linoleic acid (CLA) with heart benefits"
+        ],
+        "cons": [
+          "1.9g saturated fat per 100ml may raise LDL in some",
+          "10mg cholesterol per 100ml",
+          "Higher calorie than skim milk if weight is a concern"
+        ]
+      },
+      "muscle_building": {
+        "grade": "A-",
+        "score": 90,
+        "insight": "Whole milk is exceptional for muscle building with high-quality whey and casein proteins providing all essential amino acids, plus leucine for protein synthesis, making it a classic bodybuilding staple.",
+        "pros": [
+          "Complete protein with optimal leucine content",
+          "Combination of fast (whey) and slow (casein) digesting proteins",
+          "Vitamin D and calcium support muscle contraction"
+        ],
+        "cons": [
+          "Lactose intolerance can cause digestive issues mid-workout",
+          "Higher calorie if cutting weight",
+          "Some prefer isolated protein for faster absorption"
+        ]
+      },
+      "energy": {
+        "grade": "B+",
+        "score": 82,
+        "insight": "Whole milk provides balanced, sustained energy through a mix of fast carbs (lactose), slow protein, and moderate fats, plus B12 for metabolic energy production, ideal for recovery and daily energy.",
+        "pros": [
+          "Carbs provide quick energy, fats sustain it",
+          "0.45mcg vitamin B12 supports cellular energy metabolism",
+          "Moderate glycemic index (39) prevents crashes"
+        ],
+        "cons": [
+          "Not ideal for immediate pre-workout (slower digesting)",
+          "Lactose may cause bloating in intolerant individuals",
+          "Lower calorie density than many energy sources"
+        ]
+      },
+      "weight_management": {
+        "grade": "B",
+        "score": 79,
+        "insight": "Whole milk supports weight management better than expected—despite higher calories than skim, the protein and fat increase satiety, and studies show full-fat dairy correlates with lower obesity rates.",
+        "pros": [
+          "Protein and fat combination increases fullness",
+          "May reduce cravings and snacking between meals",
+          "Studies link full-fat dairy to lower BMI vs. low-fat"
+        ],
+        "cons": [
+          "61 calories per 100ml adds up quickly (244ml = 149 cal)",
+          "Easy to overconsume in lattes, smoothies, cereal",
+          "Skim milk has 40% fewer calories if tracking strictly"
+        ]
+      },
+      "brain_focus": {
+        "grade": "B+",
+        "score": 84,
+        "insight": "Whole milk supports cognitive function through vitamin B12 for neurotransmitter synthesis, vitamin D for neuroplasticity, and saturated fats that provide cholesterol for brain cell membranes.",
+        "pros": [
+          "0.45mcg B12 supports myelin sheath and neurotransmitters",
+          "Vitamin D linked to reduced cognitive decline",
+          "Saturated fats provide cholesterol for brain cell structure"
+        ],
+        "cons": [
+          "No omega-3 DHA for optimal brain function",
+          "Lactose can cause brain fog in intolerant individuals",
+          "Not as cognitively potent as fatty fish"
+        ]
+      },
+      "gut_health": {
+        "grade": "C+",
+        "score": 68,
+        "insight": "Whole milk's gut health impact varies dramatically by individual—fermented dairy supports microbiome diversity, but lactose intolerance causes inflammation and dysbiosis in the majority of global adults.",
+        "pros": [
+          "Full-fat dairy may support beneficial gut bacteria",
+          "Vitamin D supports intestinal barrier function",
+          "Bioactive peptides from casein have prebiotic effects"
+        ],
+        "cons": [
+          "65% of adults are lactose intolerant (causes gut distress)",
+          "No fiber for microbiome feeding",
+          "A1 beta-casein may trigger inflammation in sensitive individuals"
+        ]
+      },
+      "blood_sugar": {
+        "grade": "B+",
+        "score": 82,
+        "insight": "Whole milk has a low-moderate glycemic index (39) and the protein-fat combination blunts glucose spikes, making it a good choice for blood sugar management despite the natural lactose sugar content.",
+        "pros": [
+          "Moderate GI of 39 and low GL of 5",
+          "Protein and fat slow carbohydrate absorption",
+          "Doesn't cause significant insulin spikes"
+        ],
+        "cons": [
+          "Still contains 5.1g natural sugars (lactose)",
+          "Chocolate or flavored milk has much higher sugar",
+          "Not suitable for severe insulin resistance without monitoring"
+        ]
+      },
+      "bone_joint": {
+        "grade": "A",
+        "score": 93,
+        "insight": "Whole milk is outstanding for bone and joint health, offering the gold standard calcium-vitamin D-protein combination for bone density, plus vitamin K2 (in grass-fed) directing calcium to bones.",
+        "pros": [
+          "113mg calcium per 100ml with vitamin D for absorption",
+          "Protein provides amino acids for bone matrix",
+          "Phosphorus and magnesium support bone mineralization"
+        ],
+        "cons": [
+          "Conventional milk lacks vitamin K2 (grass-fed is better)",
+          "Some studies suggest excess dairy may not prevent fractures",
+          "Not suitable for dairy-allergic or vegan populations"
+        ]
+      },
+      "anti_inflammatory": {
+        "grade": "C+",
+        "score": 67,
+        "insight": "Whole milk's inflammatory effects are individual-dependent—full-fat dairy contains anti-inflammatory CLA and omega-3 (in grass-fed), but A1 casein and lactose can trigger inflammation in sensitive individuals.",
+        "pros": [
+          "Conjugated linoleic acid (CLA) has anti-inflammatory properties",
+          "Grass-fed milk contains omega-3 fatty acids",
+          "Vitamin D reduces inflammatory cytokines"
+        ],
+        "cons": [
+          "A1 beta-casein may trigger inflammation in some people",
+          "Lactose intolerance causes gut inflammation",
+          "Conventional milk has inflammatory omega-6 fatty acids"
+        ]
+      }
+    }
+  },
+  "wine": {
+    "name": "Wine (Red)",
+    "calories": 85,
+    "protein": 0.1,
+    "carbs": 2.6,
+    "fat": 0,
+    "fiber": 0,
+    "sugar": 0.6,
+    "sodium": 4,
+    "saturatedFat": 0,
+    "cholesterol": 0,
+    "potassium": 127,
+    "calcium": 8,
+    "iron": 0.5,
+    "magnesium": 12,
+    "vitaminA": 0,
+    "vitaminC": 0,
+    "vitaminD": 0,
+    "vitaminB12": 0,
+    "glycemicIndex": 0,
+    "glycemicLoad": 0,
+    "allergens": ["sulfites"],
+    "servingSize": 148,
+    "servingUnit": "ml",
+    "focusGrades": {
+      "balanced": {
+        "grade": "D+",
+        "score": 53,
+        "insight": "Red wine provides minimal nutritional value beyond polyphenols and resveratrol, with empty alcohol calories and no protein, fiber, or essential nutrients, though moderate intake may fit into a balanced lifestyle.",
+        "pros": [
+          "Rich in polyphenols and resveratrol from grape skins",
+          "Low in sugar (0.6g per glass for dry red)",
+          "Contains trace minerals like iron and potassium"
+        ],
+        "cons": [
+          "Alcohol provides 7 cal/g with zero nutritional value",
+          "No protein, fiber, or meaningful vitamins",
+          "Disrupts nutrient absorption and sleep quality"
+        ]
+      },
+      "heart_health": {
+        "grade": "B",
+        "score": 78,
+        "insight": "Red wine shows the strongest cardiovascular evidence of any alcohol through resveratrol and polyphenols that improve HDL, reduce inflammation, and prevent LDL oxidation—but only with strict moderation (1 glass/day).",
+        "pros": [
+          "Resveratrol protects against LDL oxidation and plaque formation",
+          "Polyphenols improve endothelial function and blood flow",
+          "127mg potassium supports blood pressure regulation"
+        ],
+        "cons": [
+          "Benefits disappear with >2 drinks/day for men, >1 for women",
+          "Heavy drinking raises blood pressure and triglycerides",
+          "Alcohol metabolism stresses the cardiovascular system"
+        ]
+      },
+      "muscle_building": {
+        "grade": "D-",
+        "score": 38,
+        "insight": "Red wine is highly detrimental to muscle building, as alcohol severely impairs muscle protein synthesis (by up to 37%), reduces testosterone, disrupts sleep, and provides zero protein or nutrients for recovery.",
+        "pros": [
+          "Resveratrol may have modest anti-catabolic effects",
+          "Low calories won't derail calorie targets if limited"
+        ],
+        "cons": [
+          "Alcohol inhibits mTOR pathway for protein synthesis",
+          "Reduces testosterone and growth hormone secretion",
+          "Impairs sleep quality critical for muscle recovery"
+        ]
+      },
+      "energy": {
+        "grade": "D",
+        "score": 47,
+        "insight": "Red wine is a poor energy source that impairs mitochondrial function, depletes glycogen, causes dehydration, and disrupts sleep, leading to next-day fatigue despite providing 85 calories per glass.",
+        "pros": [
+          "85 calories from alcohol provide some energy",
+          "May reduce stress and promote temporary relaxation"
+        ],
+        "cons": [
+          "Alcohol depletes liver glycogen stores",
+          "Impairs mitochondrial ATP production",
+          "Causes dehydration and next-day energy crashes"
+        ]
+      },
+      "weight_management": {
+        "grade": "C-",
+        "score": 60,
+        "insight": "Red wine is moderately problematic for weight management with 85 non-satiating liquid calories per glass, plus alcohol halts fat oxidation and lowers inhibitions leading to overeating.",
+        "pros": [
+          "Lower sugar than white wine (0.6g vs 1.4g)",
+          "Resveratrol may modestly support fat metabolism",
+          "Can fit into calorie budget if tracked carefully"
+        ],
+        "cons": [
+          "Alcohol stops fat burning until metabolized",
+          "Lowers willpower leading to poor food choices",
+          "Liquid calories don't trigger satiety hormones"
+        ]
+      },
+      "brain_focus": {
+        "grade": "D",
+        "score": 48,
+        "insight": "Red wine impairs immediate cognitive function and reaction time, though resveratrol shows promise for long-term neuroprotection against dementia—benefits require moderation and don't justify starting drinking.",
+        "pros": [
+          "Resveratrol linked to reduced Alzheimer's risk in studies",
+          "Polyphenols cross blood-brain barrier and protect neurons",
+          "May improve cerebral blood flow"
+        ],
+        "cons": [
+          "Alcohol impairs prefrontal cortex and decision-making",
+          "Disrupts REM sleep critical for memory consolidation",
+          "Heavy drinking accelerates brain aging and shrinkage"
+        ]
+      },
+      "gut_health": {
+        "grade": "C",
+        "score": 65,
+        "insight": "Red wine has complex gut effects—polyphenols act as prebiotics increasing beneficial bacteria and diversity, but alcohol damages intestinal barrier integrity and can promote dysbiosis and inflammation.",
+        "pros": [
+          "Polyphenols increase Bifidobacteria and gut diversity",
+          "Resveratrol has prebiotic effects",
+          "Moderate intake (1 glass) may support microbiome health"
+        ],
+        "cons": [
+          "Alcohol damages gut barrier causing leaky gut",
+          "Excess intake promotes pathogenic bacteria overgrowth",
+          "Sulfites can trigger digestive issues in sensitive individuals"
+        ]
+      },
+      "blood_sugar": {
+        "grade": "C+",
+        "score": 70,
+        "insight": "Red wine has minimal direct glycemic impact (GI of 0) and resveratrol may improve insulin sensitivity, but alcohol impairs liver glucose regulation, risking dangerous hypoglycemia in diabetics.",
+        "pros": [
+          "Zero glycemic index and very low sugar (0.6g)",
+          "Resveratrol improves insulin sensitivity in studies",
+          "Dry red wines have minimal carbohydrate impact"
+        ],
+        "cons": [
+          "Alcohol blocks liver glucose production causing hypoglycemia",
+          "Dangerous for diabetics on insulin or sulfonylureas",
+          "Effects on blood sugar are unpredictable"
+        ]
+      },
+      "bone_joint": {
+        "grade": "C",
+        "score": 66,
+        "insight": "Red wine shows mixed bone health effects—resveratrol and silicon may support bone density in moderation, but excessive alcohol increases fracture risk by disrupting calcium metabolism and bone remodeling.",
+        "pros": [
+          "Resveratrol stimulates osteoblast activity",
+          "Silicon content supports bone formation",
+          "Moderate intake linked to higher bone density in some studies"
+        ],
+        "cons": [
+          "Heavy drinking significantly increases osteoporosis risk",
+          "Alcohol interferes with vitamin D and calcium absorption",
+          "Increases urinary calcium excretion"
+        ]
+      },
+      "anti_inflammatory": {
+        "grade": "B-",
+        "score": 74,
+        "insight": "Red wine is the most anti-inflammatory alcohol through resveratrol, quercetin, and anthocyanins that reduce inflammatory markers like CRP and IL-6—but only with light-to-moderate intake, excess reverses benefits.",
+        "pros": [
+          "Resveratrol activates anti-inflammatory pathways (SIRT1)",
+          "Polyphenols reduce CRP, IL-6, and TNF-alpha",
+          "Higher polyphenol content than white wine or beer"
+        ],
+        "cons": [
+          "Heavy drinking increases systemic inflammation",
+          "Alcohol metabolism produces inflammatory acetaldehyde",
+          "Benefits limited to 1 glass/day for women, 2 for men"
+        ]
+      }
+    }
+  }
+}

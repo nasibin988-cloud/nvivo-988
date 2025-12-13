@@ -120,6 +120,135 @@ export interface AnalyzedFood {
 
   // Ingredient breakdown (only populated when INGREDIENT_BREAKDOWN feature is enabled)
   ingredients?: FoodIngredient[];
+
+  // Food Intelligence (populated from our database when matched)
+  intelligence?: FoodIntelligence;
+
+  // === V2 FIELDS ===
+  /** Complete grading result (overall + focus-specific) */
+  grading?: GradingResult;
+  /** AI-generated personalized insight */
+  insight?: FoodInsight;
+  /** Estimated weight in grams */
+  estimatedGrams?: number;
+  /** Food type classification */
+  foodType?: 'whole_food' | 'branded' | 'restaurant' | 'homemade';
+  /** Nutrition data source */
+  nutritionSource?: 'usda' | 'branded' | 'recipe' | 'ai_estimated';
+  /** Confidence in nutrition data (0-1) */
+  nutritionConfidence?: number;
+}
+
+/**
+ * Focus-specific grade for a food
+ */
+export interface FocusGrade {
+  grade: string; // A, B, C, D, F
+  score: number; // 0-100
+  insight: string; // Brief explanation
+  pros: string[]; // Benefits for this focus
+  cons: string[]; // Drawbacks for this focus
+}
+
+/**
+ * AI-generated personalized insight for a food (V2)
+ */
+export interface FoodInsight {
+  /** 1-2 sentence contextual summary */
+  summary: string;
+  /** Why this food works (or doesn't) for user's focus */
+  focusExplanation: string;
+  /** Practical tips (timing, pairing, portion) - 1-3 items */
+  tips: string[];
+  /** Things to be mindful of - 0-2 items */
+  considerations: string[];
+}
+
+/**
+ * Overall health grade (Nutri-Score style)
+ */
+export interface OverallGrade {
+  grade: 'A' | 'B' | 'C' | 'D' | 'F';
+  score: number; // 0-100
+  nutriScorePoints: number;
+}
+
+/**
+ * Satiety result
+ */
+export interface SatietyResult {
+  score: number;
+  category: 'very_low' | 'low' | 'moderate' | 'high' | 'very_high';
+}
+
+/**
+ * Inflammatory result
+ */
+export interface InflammatoryResult {
+  index: number;
+  category: 'anti_inflammatory' | 'neutral' | 'mildly_inflammatory' | 'inflammatory';
+}
+
+/**
+ * Complete grading result (V2)
+ */
+export interface GradingResult {
+  overall: OverallGrade;
+  focusGrades: FoodFocusGrades;
+  satiety: SatietyResult;
+  inflammatory: InflammatoryResult;
+  strengths: string[];
+  concerns: string[];
+}
+
+/**
+ * All 10 nutrition focus grades for a food
+ */
+export interface FoodFocusGrades {
+  balanced?: FocusGrade;
+  muscle_building?: FocusGrade;
+  heart_health?: FocusGrade;
+  energy?: FocusGrade;
+  weight_management?: FocusGrade;
+  brain_focus?: FocusGrade;
+  gut_health?: FocusGrade;
+  blood_sugar?: FocusGrade;
+  bone_joint?: FocusGrade;
+  anti_inflammatory?: FocusGrade;
+}
+
+/**
+ * Food intelligence data - contextual info beyond raw nutrition
+ */
+export interface FoodIntelligence {
+  /** One-liner contextual insight about this food */
+  insight?: string;
+  /** Focus-specific grades (A-F with insights) */
+  focusGrades?: FoodFocusGrades;
+  /** Glycemic index (0-100) */
+  glycemicIndex?: number;
+  /** Glycemic load */
+  glycemicLoad?: number;
+  /** Glycemic category */
+  glycemicCategory?: 'low' | 'medium' | 'high';
+  /** Satiety score (0-100) - how filling */
+  satietyScore?: number;
+  /** Inflammatory index (negative = anti-inflammatory) */
+  inflammatoryIndex?: number;
+  /** NOVA food processing classification (1-4) */
+  novaClass?: 1 | 2 | 3 | 4;
+  /** Dietary tags */
+  dietaryTags?: string[];
+  /** Allergens present */
+  allergens?: string[];
+  /** Nutrient density score */
+  nutrientDensityScore?: number;
+  /** ORAC antioxidant score */
+  oracScore?: number;
+  /** Food category */
+  foodGroup?: string;
+  /** Omega 6:3 ratio */
+  omegaRatio?: number;
 }
 
 /**
@@ -186,7 +315,44 @@ export interface AnalysisResult {
   // Overall meal metadata
   allergens?: string[];
   dietaryFlags?: string[];
+
+  // === V2 FIELDS ===
+  /** User's wellness focus for personalized grades */
+  userFocus?: WellnessFocus;
+  /** Total glycemic index for the meal */
+  totalGI?: GIResult;
+  /** Analysis version */
+  version?: string;
+  /** When analysis was performed */
+  analyzedAt?: Date | string;
 }
+
+/**
+ * Glycemic index result
+ */
+export interface GIResult {
+  gi: number;
+  gl: number;
+  giBand: 'low' | 'medium' | 'high';
+  glBand: 'low' | 'medium' | 'high';
+  source: 'exact' | 'similar' | 'category' | 'estimated';
+  confidence: number;
+}
+
+/**
+ * Wellness focus options
+ */
+export type WellnessFocus =
+  | 'balanced'
+  | 'muscle_building'
+  | 'heart_health'
+  | 'energy_endurance'
+  | 'weight_management'
+  | 'brain_focus'
+  | 'gut_health'
+  | 'blood_sugar_balance'
+  | 'bone_joint_support'
+  | 'anti_inflammatory';
 
 export type MealType = 'breakfast' | 'lunch' | 'dinner' | 'snack';
 export type AnalysisStep = 'capture' | 'analyzing' | 'review';

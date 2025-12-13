@@ -1,0 +1,584 @@
+{
+  "two_percent_milk": {
+    "name": "2% Milk",
+    "calories": 50,
+    "protein": 3.3,
+    "carbs": 4.8,
+    "fat": 2,
+    "fiber": 0,
+    "sugar": 5.1,
+    "sodium": 44,
+    "saturatedFat": 1.3,
+    "cholesterol": 8,
+    "potassium": 150,
+    "calcium": 120,
+    "iron": 0.03,
+    "magnesium": 11,
+    "vitaminA": 46,
+    "vitaminC": 0,
+    "vitaminD": 1.3,
+    "vitaminB12": 0.45,
+    "glycemicIndex": 27,
+    "glycemicLoad": 1,
+    "allergens": ["dairy"],
+    "servingSize": 244,
+    "servingUnit": "ml",
+    "focusGrades": {
+      "balanced": {
+        "grade": "B+",
+        "score": 84,
+        "insight": "2% milk offers a balanced macronutrient profile with high-quality protein, moderate carbs from lactose, and reduced fat compared to whole milk, making it versatile for daily nutrition",
+        "pros": ["Complete protein with all essential amino acids", "Rich in calcium and vitamin D for bone health", "Moderate calorie density"],
+        "cons": ["Contains lactose which some people cannot digest", "Lower in healthy fats than whole milk"]
+      },
+      "heart_health": {
+        "grade": "B",
+        "score": 81,
+        "insight": "Lower saturated fat than whole milk reduces cardiovascular risk, though dairy fat's impact on heart health remains debated in current research",
+        "pros": ["Reduced saturated fat (1.3g per 100ml)", "Contains potassium which supports healthy blood pressure"],
+        "cons": ["Still contains some saturated fat and cholesterol", "Lacks heart-protective omega-3 fatty acids"]
+      },
+      "muscle_building": {
+        "grade": "A-",
+        "score": 88,
+        "insight": "Excellent source of complete protein with optimal leucine content for muscle protein synthesis, plus bioavailable calcium for muscle contraction",
+        "pros": ["High-quality whey and casein protein", "Leucine-rich for muscle recovery", "Natural electrolytes support muscle function"],
+        "cons": ["Protein density lower than Greek yogurt or cottage cheese"]
+      },
+      "energy": {
+        "grade": "B",
+        "score": 80,
+        "insight": "Provides steady energy from lactose and protein, with B12 supporting energy metabolism, though not as energy-dense as whole milk",
+        "pros": ["Carbs provide quick energy", "Protein sustains energy levels", "B vitamins support energy production"],
+        "cons": ["Lower calorie density may not fuel intense activity", "Lactose can cause digestive discomfort in sensitive individuals"]
+      },
+      "weight_management": {
+        "grade": "B+",
+        "score": 85,
+        "insight": "2% milk strikes a balance between satiety and calorie control—protein promotes fullness while reduced fat lowers calories compared to whole milk",
+        "pros": ["Protein increases satiety and thermic effect", "Lower calories than whole milk (50 vs 61 per 100ml)", "Calcium may support fat metabolism"],
+        "cons": ["Sugar content from lactose can add up", "Liquid calories less satiating than solid foods"]
+      },
+      "brain_focus": {
+        "grade": "B",
+        "score": 82,
+        "insight": "Vitamin B12 and iodine support cognitive function and neurotransmitter synthesis, while lactose provides glucose for brain energy",
+        "pros": ["B12 essential for myelin production and cognition", "Lactose breaks down to glucose for brain fuel", "Tryptophan precursor to serotonin"],
+        "cons": ["Lower in omega-3 DHA critical for brain structure", "Lacks choline found in eggs and liver"]
+      },
+      "gut_health": {
+        "grade": "C",
+        "score": 72,
+        "insight": "While some people tolerate it well, 2% milk lacks fiber and can trigger digestive issues in the 65% of adults with lactose intolerance",
+        "pros": ["Some proteins may have prebiotic effects", "Calcium supports colon health"],
+        "cons": ["Zero fiber content", "Lactose causes bloating and discomfort in intolerant individuals", "Can trigger inflammation in sensitive individuals"]
+      },
+      "blood_sugar": {
+        "grade": "A-",
+        "score": 88,
+        "insight": "Very low glycemic index (27) and glycemic load (1) mean minimal blood sugar impact, with protein and fat further blunting glucose response",
+        "pros": ["Low GI prevents blood sugar spikes", "Protein slows carbohydrate absorption", "Can be paired with high-GI foods to lower overall meal response"],
+        "cons": ["Lactose still raises blood sugar slightly", "Liquid form absorbed faster than solid dairy"]
+      },
+      "bone_joint": {
+        "grade": "A",
+        "score": 91,
+        "insight": "Gold standard for bone health with bioavailable calcium, vitamin D, phosphorus, and protein—all critical for bone density and joint cartilage",
+        "pros": ["120mg calcium per 100ml in highly absorbable form", "Fortified with vitamin D for calcium absorption", "Protein supports collagen and cartilage", "Phosphorus works with calcium for bone mineralization"],
+        "cons": ["Some research suggests excessive dairy may not prevent fractures"]
+      },
+      "anti_inflammatory": {
+        "grade": "C+",
+        "score": 74,
+        "insight": "Mixed anti-inflammatory profile—while some dairy proteins have anti-inflammatory properties, saturated fat and A1 beta-casein may promote inflammation in sensitive individuals",
+        "pros": ["Contains anti-inflammatory peptides from whey", "Calcium may reduce inflammatory markers"],
+        "cons": ["Saturated fat can trigger inflammatory pathways", "A1 beta-casein linked to inflammation in some studies", "Common allergen that triggers immune responses"]
+      }
+    }
+  },
+  "almond_butter": {
+    "name": "Almond Butter",
+    "calories": 614,
+    "protein": 21,
+    "carbs": 19,
+    "fat": 55,
+    "fiber": 10,
+    "sugar": 4.4,
+    "sodium": 7,
+    "saturatedFat": 4.2,
+    "cholesterol": 0,
+    "potassium": 748,
+    "calcium": 347,
+    "iron": 3.5,
+    "magnesium": 279,
+    "vitaminA": 1,
+    "vitaminC": 0,
+    "vitaminD": 0,
+    "vitaminB12": 0,
+    "glycemicIndex": 0,
+    "glycemicLoad": 0,
+    "allergens": ["nuts"],
+    "servingSize": 16,
+    "servingUnit": "g",
+    "focusGrades": {
+      "balanced": {
+        "grade": "B+",
+        "score": 86,
+        "insight": "Almond butter delivers nutrient-dense calories with heart-healthy fats, plant protein, fiber, and minerals, though high calorie density requires portion control",
+        "pros": ["Rich in monounsaturated fats and vitamin E", "Good plant protein source with fiber", "Packed with minerals: magnesium, calcium, iron, potassium"],
+        "cons": ["Very high calorie density (614 kcal per 100g)", "Low in vitamin B12 and complete amino acids"]
+      },
+      "heart_health": {
+        "grade": "A",
+        "score": 92,
+        "insight": "Outstanding heart-protective profile with 70% monounsaturated fats, zero cholesterol, high magnesium and potassium—shown to lower LDL and reduce cardiovascular disease risk",
+        "pros": ["Monounsaturated fats lower LDL cholesterol", "Magnesium (279mg) supports healthy blood pressure", "Vitamin E protects against oxidative damage", "Potassium (748mg) regulates heart rhythm"],
+        "cons": ["High calorie density can lead to overconsumption", "Omega-6 to omega-3 ratio not ideal"]
+      },
+      "muscle_building": {
+        "grade": "B",
+        "score": 82,
+        "insight": "Solid plant protein (21g per 100g) with healthy fats for hormone production and calories for muscle growth, though not a complete protein source",
+        "pros": ["21g protein supports muscle repair", "Healthy fats aid testosterone production", "Magnesium crucial for muscle contraction and recovery", "Calorie-dense for bulking"],
+        "cons": ["Incomplete protein lacking some essential amino acids", "Lower leucine than animal proteins", "No creatine or carnitine"]
+      },
+      "energy": {
+        "grade": "A-",
+        "score": 89,
+        "insight": "Exceptional sustained energy from healthy fats, fiber, and protein that stabilize blood sugar, plus magnesium and iron for cellular energy production",
+        "pros": ["High-calorie density fuels prolonged activity", "Healthy fats provide 9 calories per gram", "Magnesium cofactor in ATP production", "Iron supports oxygen transport", "Low sugar prevents energy crashes"],
+        "cons": ["Not ideal for quick pre-workout energy", "High fat slows digestion"]
+      },
+      "weight_management": {
+        "grade": "B-",
+        "score": 77,
+        "insight": "A double-edged sword—fiber and protein promote satiety and reduce cravings, but extreme calorie density makes portion control critical for weight loss",
+        "pros": ["Fiber and protein increase satiety", "Healthy fats keep you full longer", "Low glycemic impact prevents hunger spikes"],
+        "cons": ["614 calories per 100g makes overeating easy", "2 tablespoons (32g) = 200 calories", "Easy to consume large portions from jar"]
+      },
+      "brain_focus": {
+        "grade": "A-",
+        "score": 88,
+        "insight": "Brain-boosting powerhouse with vitamin E protecting neurons from oxidative stress, magnesium supporting neurotransmitters, and healthy fats fueling cognitive function",
+        "pros": ["Vitamin E (26mg) protects brain cells from oxidation", "Magnesium supports memory and learning", "Monounsaturated fats improve brain cell membrane function", "L-carnitine enhances mental clarity"],
+        "cons": ["Lacks omega-3 DHA critical for brain structure", "No vitamin B12 for myelin production"]
+      },
+      "gut_health": {
+        "grade": "A-",
+        "score": 87,
+        "insight": "Excellent fiber content (10g per 100g) feeds beneficial gut bacteria and promotes regularity, with prebiotic properties supporting microbiome diversity",
+        "pros": ["10g fiber per 100g supports healthy bowel movements", "Prebiotic fiber feeds beneficial bacteria", "Magnesium aids digestive muscle contractions", "No added sugars that harm gut flora"],
+        "cons": ["High fat may slow digestion", "Common allergen for some individuals", "Phytic acid may reduce mineral absorption"]
+      },
+      "blood_sugar": {
+        "grade": "A",
+        "score": 93,
+        "insight": "Near-zero glycemic impact with negligible sugar, abundant fiber and fat that blunt glucose response—ideal for diabetics and blood sugar stability",
+        "pros": ["Glycemic index of 0—no blood sugar spike", "High fiber (10g) slows glucose absorption", "Healthy fats stabilize insulin response", "Only 4.4g sugar per 100g"],
+        "cons": ["Portion control needed as calories add up", "Some commercial brands add sugar or honey"]
+      },
+      "bone_joint": {
+        "grade": "B+",
+        "score": 85,
+        "insight": "Rich in bone-building nutrients with 347mg calcium, 279mg magnesium, and anti-inflammatory fats that reduce joint pain and support cartilage health",
+        "pros": ["347mg calcium supports bone density", "Magnesium (279mg) aids calcium absorption and bone formation", "Vitamin E reduces oxidative stress in joints", "Anti-inflammatory fats may ease arthritis"],
+        "cons": ["Plant calcium less bioavailable than dairy", "No vitamin D for calcium absorption", "Phytic acid binds minerals"]
+      },
+      "anti_inflammatory": {
+        "grade": "A",
+        "score": 90,
+        "insight": "Powerful anti-inflammatory food with monounsaturated fats, vitamin E, and magnesium that reduce inflammatory markers and oxidative stress throughout the body",
+        "pros": ["Monounsaturated fats reduce inflammation", "Vitamin E (26mg) is potent antioxidant", "Magnesium lowers C-reactive protein", "Polyphenols have anti-inflammatory effects"],
+        "cons": ["High omega-6 content may promote inflammation if diet lacks omega-3s", "Tree nut allergen triggers immune response in sensitive individuals"]
+      }
+    }
+  },
+  "bacon_and_eggs": {
+    "name": "Bacon and Eggs",
+    "calories": 245,
+    "protein": 18,
+    "carbs": 1.2,
+    "fat": 19,
+    "fiber": 0,
+    "sugar": 0.8,
+    "sodium": 680,
+    "saturatedFat": 6.5,
+    "cholesterol": 320,
+    "potassium": 220,
+    "calcium": 45,
+    "iron": 2.1,
+    "magnesium": 15,
+    "vitaminA": 180,
+    "vitaminC": 0,
+    "vitaminD": 2.8,
+    "vitaminB12": 1.4,
+    "glycemicIndex": 0,
+    "glycemicLoad": 0,
+    "allergens": ["eggs"],
+    "servingSize": 120,
+    "servingUnit": "g",
+    "focusGrades": {
+      "balanced": {
+        "grade": "C+",
+        "score": 76,
+        "insight": "High protein and fat with virtually zero carbs make this a satiating meal, but excessive sodium, saturated fat, and lack of fiber limit overall nutritional balance",
+        "pros": ["Complete protein with all essential amino acids", "Rich in B vitamins and choline", "Very low carb for ketogenic diets"],
+        "cons": ["680mg sodium per 100g (30% daily limit)", "Zero fiber", "High saturated fat and cholesterol", "No vitamin C or significant plant nutrients"]
+      },
+      "heart_health": {
+        "grade": "D+",
+        "score": 65,
+        "insight": "Concerning for cardiovascular health due to high saturated fat (6.5g), cholesterol (320mg), and sodium (680mg)—all risk factors for heart disease when consumed regularly",
+        "pros": ["Contains some omega-3 from eggs", "B vitamins support homocysteine metabolism"],
+        "cons": ["High saturated fat raises LDL cholesterol", "320mg cholesterol per 100g", "Excessive sodium (680mg) increases blood pressure", "Processed bacon contains nitrites linked to heart disease", "Low potassium relative to sodium"]
+      },
+      "muscle_building": {
+        "grade": "A",
+        "score": 91,
+        "insight": "Exceptional for muscle growth with 18g complete protein per 100g, high leucine from eggs, healthy fats for testosterone, and zero carbs won't interfere with protein synthesis",
+        "pros": ["18g complete protein with optimal amino acid profile", "Eggs provide leucine critical for muscle protein synthesis", "Fats support hormone production", "B12 and iron support oxygen delivery to muscles", "Calorie-dense for bulking"],
+        "cons": ["High sodium may cause water retention", "No carbs for glycogen replenishment after workouts"]
+      },
+      "energy": {
+        "grade": "B",
+        "score": 81,
+        "insight": "Provides sustained energy from fat and protein without blood sugar fluctuations, ideal for low-carb diets, though lacks quick-burning carbs for high-intensity activity",
+        "pros": ["High fat provides long-lasting fuel", "Protein stabilizes energy levels", "B vitamins (especially B12) support energy metabolism", "Zero sugar prevents crashes"],
+        "cons": ["No carbs for quick energy or glycogen storage", "High fat delays digestion", "Not ideal pre-workout for intense exercise"]
+      },
+      "weight_management": {
+        "grade": "B",
+        "score": 80,
+        "insight": "Highly satiating due to protein and fat, with zero carbs supporting ketosis and fat burning, though calorie density and sodium require moderation for weight loss",
+        "pros": ["Protein increases satiety and thermic effect", "Fat keeps you full for hours", "Zero carbs support ketogenic fat burning", "Low glycemic impact"],
+        "cons": ["Calorie-dense (245 kcal per 100g)", "High sodium causes water retention", "Easy to overeat bacon", "Processed meat linked to weight gain in studies"]
+      },
+      "brain_focus": {
+        "grade": "A-",
+        "score": 87,
+        "insight": "Brain-boosting combo with choline from eggs (critical for memory), B12 for myelin, and healthy fats for neurotransmitter production and cognitive function",
+        "pros": ["Choline (from eggs) essential for acetylcholine and memory", "B12 (1.4mcg) supports myelin and nerve function", "Fats fuel brain and support neurotransmitters", "Vitamin A supports vision and cognition"],
+        "cons": ["Lacks omega-3 DHA unless eggs are omega-3 enriched", "High sodium may impair cognitive function", "No flavonoids or polyphenols"]
+      },
+      "gut_health": {
+        "grade": "D",
+        "score": 62,
+        "insight": "Poor for gut health with zero fiber to feed beneficial bacteria, while processed bacon contains nitrites and additives that may harm the microbiome",
+        "pros": ["Protein supports gut lining repair", "Vitamin A supports intestinal immunity"],
+        "cons": ["Zero fiber starves beneficial gut bacteria", "Processed bacon contains nitrites that disrupt microbiome", "High fat may slow digestion", "Sodium can alter gut flora composition", "Lacks prebiotics and probiotics"]
+      },
+      "blood_sugar": {
+        "grade": "A",
+        "score": 94,
+        "insight": "Excellent for blood sugar control with virtually zero carbs and a glycemic index of 0—protein and fat prevent any glucose spike, ideal for diabetics",
+        "pros": ["Glycemic index of 0—no blood sugar impact", "Only 1.2g carbs per 100g", "Protein and fat stabilize insulin response", "Won't trigger reactive hypoglycemia"],
+        "cons": ["High saturated fat may worsen insulin resistance over time", "Processed meat linked to type 2 diabetes risk"]
+      },
+      "bone_joint": {
+        "grade": "C+",
+        "score": 74,
+        "insight": "Mixed impact—vitamin D and protein support bone health, but high sodium leaches calcium from bones and processed meat may increase inflammation in joints",
+        "pros": ["Vitamin D (2.8mcg) aids calcium absorption", "Protein essential for bone matrix", "Phosphorus supports bone mineralization"],
+        "cons": ["Only 45mg calcium per 100g", "High sodium (680mg) increases calcium excretion in urine", "Processed meat linked to increased fracture risk", "Saturated fat may promote inflammation in joints"]
+      },
+      "anti_inflammatory": {
+        "grade": "D",
+        "score": 63,
+        "insight": "Pro-inflammatory food due to saturated fat, nitrites in bacon, and advanced glycation end products (AGEs) from cooking—regular consumption may increase systemic inflammation",
+        "pros": ["Omega-3s in eggs (if omega-3 enriched) have anti-inflammatory effects", "Vitamin A supports immune regulation"],
+        "cons": ["Saturated fat triggers inflammatory pathways", "Processed bacon contains nitrites and nitrates", "High-heat cooking creates AGEs that promote inflammation", "Arachidonic acid in eggs may increase inflammatory markers", "Lacks anti-inflammatory antioxidants"]
+      }
+    }
+  },
+  "black_coffee": {
+    "name": "Black Coffee",
+    "calories": 2,
+    "protein": 0.3,
+    "carbs": 0,
+    "fat": 0,
+    "fiber": 0,
+    "sugar": 0,
+    "sodium": 2,
+    "saturatedFat": 0,
+    "cholesterol": 0,
+    "potassium": 92,
+    "calcium": 2,
+    "iron": 0.01,
+    "magnesium": 8,
+    "vitaminA": 0,
+    "vitaminC": 0,
+    "vitaminD": 0,
+    "vitaminB12": 0,
+    "glycemicIndex": 0,
+    "glycemicLoad": 0,
+    "allergens": [],
+    "servingSize": 240,
+    "servingUnit": "ml",
+    "focusGrades": {
+      "balanced": {
+        "grade": "B",
+        "score": 80,
+        "insight": "Black coffee is essentially calorie-free hydration rich in antioxidants and beneficial plant compounds, though it provides negligible macronutrients or vitamins",
+        "pros": ["Virtually zero calories (2 per 100ml)", "Rich in polyphenols and chlorogenic acid", "Provides hydration", "No sugar or fat"],
+        "cons": ["No protein, carbs, or significant vitamins/minerals", "Caffeine can cause dependency", "May cause jitters or anxiety in sensitive individuals"]
+      },
+      "heart_health": {
+        "grade": "A-",
+        "score": 87,
+        "insight": "Moderate coffee consumption (3-5 cups daily) is associated with reduced cardiovascular disease risk due to antioxidants, though excessive intake may raise blood pressure temporarily",
+        "pros": ["Chlorogenic acid and polyphenols protect blood vessels", "Linked to 15% lower CVD risk in studies", "Potassium (92mg) supports blood pressure", "May improve endothelial function"],
+        "cons": ["Caffeine can temporarily raise blood pressure", "Unfiltered coffee raises LDL cholesterol (cafestol)", "Excessive intake (>6 cups) may increase heart disease risk"]
+      },
+      "muscle_building": {
+        "grade": "C",
+        "score": 70,
+        "insight": "Limited direct muscle-building benefits, though caffeine can enhance workout performance, reduce perceived exertion, and improve endurance when consumed pre-exercise",
+        "pros": ["Caffeine enhances strength and power output", "Reduces perceived exertion during workouts", "May spare glycogen by increasing fat oxidation", "Improves muscle contraction"],
+        "cons": ["Zero protein or amino acids for muscle synthesis", "No calories to support muscle growth", "Diuretic effect may cause dehydration", "No minerals for muscle function"]
+      },
+      "energy": {
+        "grade": "A",
+        "score": 90,
+        "insight": "Caffeine blocks adenosine receptors to boost alertness, energy, and mental performance within 15-45 minutes, with effects lasting 3-5 hours—ideal for combating fatigue",
+        "pros": ["Caffeine increases alertness and reduces fatigue", "Enhances focus and reaction time", "Improves physical performance by 11-12%", "Stimulates adrenaline release for energy"],
+        "cons": ["Can cause jitters, anxiety, or crashes", "Tolerance develops with regular use", "Disrupts sleep if consumed late in day", "Dependency leads to withdrawal fatigue"]
+      },
+      "weight_management": {
+        "grade": "A",
+        "score": 92,
+        "insight": "Exceptional for weight loss with zero calories, appetite suppression, increased metabolism (3-11% boost), and enhanced fat oxidation during exercise",
+        "pros": ["Only 2 calories per 100ml", "Caffeine increases metabolic rate", "Suppresses appetite temporarily", "Enhances fat burning during exercise", "No sugar or additives"],
+        "cons": ["Effects diminish with tolerance", "Adding cream/sugar negates benefits", "May increase cortisol and stress eating", "Can disrupt sleep affecting weight regulation"]
+      },
+      "brain_focus": {
+        "grade": "A",
+        "score": 93,
+        "insight": "Outstanding cognitive enhancer—caffeine improves attention, memory, reaction time, and executive function, while antioxidants may protect against neurodegenerative diseases",
+        "pros": ["Caffeine blocks adenosine to increase alertness", "Improves concentration and reaction time", "Enhances short-term memory and learning", "Polyphenols may reduce Alzheimer's and Parkinson's risk"],
+        "cons": ["Tolerance reduces cognitive benefits", "Anxiety and jitters impair focus in sensitive individuals", "Withdrawal causes brain fog and headaches", "Disrupted sleep harms long-term cognition"]
+      },
+      "gut_health": {
+        "grade": "C+",
+        "score": 75,
+        "insight": "Mixed gut effects—coffee stimulates bowel movements and contains prebiotics that feed beneficial bacteria, but can irritate the stomach lining and worsen acid reflux",
+        "pros": ["Stimulates colonic motility and bowel movements", "Contains prebiotics that feed gut bacteria", "Polyphenols may increase Bifidobacteria", "Chlorogenic acid has prebiotic effects"],
+        "cons": ["Increases stomach acid causing heartburn", "Can irritate gut lining in sensitive individuals", "May worsen IBS symptoms", "Laxative effect can cause loose stools"]
+      },
+      "blood_sugar": {
+        "grade": "A",
+        "score": 91,
+        "insight": "Excellent for blood sugar with zero carbs and a glycemic index of 0, plus chlorogenic acid that slows glucose absorption—linked to reduced type 2 diabetes risk",
+        "pros": ["Glycemic index of 0—no blood sugar impact", "Zero sugar or carbs", "Chlorogenic acid slows glucose absorption", "Linked to 25% lower type 2 diabetes risk"],
+        "cons": ["Caffeine may acutely reduce insulin sensitivity", "Can cause hypoglycemia if consumed without food", "Adding sugar negates benefits"]
+      },
+      "bone_joint": {
+        "grade": "C",
+        "score": 72,
+        "insight": "Neutral to slightly negative for bone health—while antioxidants reduce inflammation, caffeine increases calcium excretion in urine, potentially weakening bones over time",
+        "pros": ["Antioxidants reduce oxidative stress in joints", "May lower gout risk by reducing uric acid", "Polyphenols have anti-inflammatory effects"],
+        "cons": ["Caffeine increases calcium loss in urine", "Excessive intake (>4 cups) linked to lower bone density", "Only 2mg calcium per 100ml", "May interfere with calcium absorption"]
+      },
+      "anti_inflammatory": {
+        "grade": "A-",
+        "score": 88,
+        "insight": "Powerful anti-inflammatory beverage packed with polyphenols, chlorogenic acid, and antioxidants that reduce inflammatory markers and oxidative stress throughout the body",
+        "pros": ["Rich in polyphenols and chlorogenic acid", "Reduces inflammatory markers (CRP, IL-6)", "Antioxidants combat oxidative stress", "Linked to lower inflammation in multiple studies"],
+        "cons": ["Excessive intake may increase cortisol (stress hormone)", "Can trigger inflammation in sensitive individuals", "Unfiltered coffee contains diterpenes that may promote inflammation"]
+      }
+    }
+  },
+  "black_tea": {
+    "name": "Black Tea",
+    "calories": 1,
+    "protein": 0,
+    "carbs": 0.3,
+    "fat": 0,
+    "fiber": 0,
+    "sugar": 0,
+    "sodium": 3,
+    "saturatedFat": 0,
+    "cholesterol": 0,
+    "potassium": 37,
+    "calcium": 0,
+    "iron": 0.02,
+    "magnesium": 3,
+    "vitaminA": 0,
+    "vitaminC": 0,
+    "vitaminD": 0,
+    "vitaminB12": 0,
+    "glycemicIndex": 0,
+    "glycemicLoad": 0,
+    "allergens": [],
+    "servingSize": 240,
+    "servingUnit": "ml",
+    "focusGrades": {
+      "balanced": {
+        "grade": "B",
+        "score": 81,
+        "insight": "Black tea offers near-zero calories with abundant antioxidants (theaflavins, catechins) and moderate caffeine, though it lacks significant macronutrients or vitamins",
+        "pros": ["Only 1 calorie per 100ml", "Rich in polyphenols and theaflavins", "Moderate caffeine (20-40mg per cup)", "Fluoride supports dental health"],
+        "cons": ["No protein, fat, or fiber", "Minimal vitamins and minerals", "Tannins can reduce iron absorption", "Caffeine causes dependency"]
+      },
+      "heart_health": {
+        "grade": "A",
+        "score": 90,
+        "insight": "Excellent cardiovascular support—theaflavins and catechins improve cholesterol, reduce blood pressure, and lower heart disease risk by up to 11% with regular consumption",
+        "pros": ["Theaflavins lower LDL cholesterol", "Flavonoids improve blood vessel function", "Reduces blood pressure in hypertensive individuals", "Linked to 11% lower heart attack risk"],
+        "cons": ["Excessive intake may interfere with iron absorption", "Adding sugar negates benefits", "Caffeine can temporarily raise heart rate"]
+      },
+      "muscle_building": {
+        "grade": "D+",
+        "score": 64,
+        "insight": "Minimal muscle-building value with zero protein or calories, though moderate caffeine may modestly improve exercise performance and reduce muscle soreness",
+        "pros": ["Caffeine enhances endurance and reduces perceived exertion", "Polyphenols may reduce post-exercise inflammation", "Hydration supports muscle function"],
+        "cons": ["Zero protein or amino acids", "No calories to fuel muscle growth", "Tannins reduce iron absorption affecting oxygen transport", "No minerals for muscle contraction"]
+      },
+      "energy": {
+        "grade": "B+",
+        "score": 84,
+        "insight": "Moderate, sustained energy boost from caffeine (20-40mg per cup) combined with L-theanine for calm alertness without jitters or crashes—gentler than coffee",
+        "pros": ["Caffeine increases alertness and reduces fatigue", "L-theanine promotes calm focus without jitters", "Smoother energy release than coffee", "Antioxidants support cellular energy production"],
+        "cons": ["Lower caffeine than coffee (40mg vs 95mg)", "Effects vary based on steeping time", "Tolerance develops with regular use", "May disrupt sleep if consumed late"]
+      },
+      "weight_management": {
+        "grade": "A",
+        "score": 91,
+        "insight": "Outstanding for weight loss with only 1 calorie per 100ml, plus catechins and caffeine that boost metabolism by 4-5% and enhance fat oxidation during exercise",
+        "pros": ["Only 1 calorie per 100ml", "Catechins increase fat burning by 4-5%", "Caffeine boosts metabolic rate", "Appetite suppression effect", "Zero sugar"],
+        "cons": ["Effects diminish with tolerance", "Adding milk/sugar negates benefits", "May increase cortisol promoting belly fat", "Tannins can cause nausea on empty stomach"]
+      },
+      "brain_focus": {
+        "grade": "A-",
+        "score": 89,
+        "insight": "Exceptional cognitive enhancer with caffeine for alertness plus L-theanine for relaxed focus—this unique combo improves attention, memory, and mental clarity without anxiety",
+        "pros": ["Caffeine improves attention and reaction time", "L-theanine promotes alpha brain waves for calm focus", "Synergistic effect enhances cognition without jitters", "Polyphenols may protect against cognitive decline"],
+        "cons": ["Lower caffeine than coffee limits acute effects", "Tolerance reduces benefits", "Withdrawal causes headaches and brain fog", "May impair sleep affecting memory consolidation"]
+      },
+      "gut_health": {
+        "grade": "B-",
+        "score": 78,
+        "insight": "Moderate gut benefits—polyphenols act as prebiotics feeding beneficial bacteria and reduce inflammation, but tannins can irritate the stomach and worsen constipation",
+        "pros": ["Polyphenols feed beneficial gut bacteria", "Antimicrobial properties balance microbiome", "May reduce gut inflammation", "Theaflavins have prebiotic effects"],
+        "cons": ["Tannins can irritate stomach lining", "May worsen constipation in sensitive individuals", "Caffeine stimulates bowels causing diarrhea", "Can reduce nutrient absorption"]
+      },
+      "blood_sugar": {
+        "grade": "A",
+        "score": 92,
+        "insight": "Excellent for blood sugar control with zero glycemic impact and polyphenols that improve insulin sensitivity—linked to 18% lower type 2 diabetes risk with daily consumption",
+        "pros": ["Glycemic index of 0—no blood sugar spike", "Only 0.3g carbs per 100ml", "Polyphenols improve insulin sensitivity", "Linked to reduced diabetes risk"],
+        "cons": ["Adding sugar or honey negates benefits", "Caffeine may acutely impair insulin function", "Can cause hypoglycemia if consumed without food"]
+      },
+      "bone_joint": {
+        "grade": "C+",
+        "score": 76,
+        "insight": "Mixed bone effects—fluoride strengthens teeth and bones while polyphenols reduce inflammation, but tannins impair calcium absorption and caffeine increases calcium loss",
+        "pros": ["Fluoride strengthens bone mineral density", "Polyphenols reduce joint inflammation and arthritis risk", "Antioxidants protect cartilage from oxidative damage"],
+        "cons": ["Tannins reduce calcium and iron absorption", "Caffeine increases calcium excretion in urine", "Zero calcium content", "Excessive intake may weaken bones over time"]
+      },
+      "anti_inflammatory": {
+        "grade": "A-",
+        "score": 89,
+        "insight": "Powerful anti-inflammatory beverage rich in theaflavins, catechins, and polyphenols that reduce inflammatory markers (CRP, IL-6) and combat oxidative stress",
+        "pros": ["Theaflavins have potent anti-inflammatory effects", "Polyphenols reduce oxidative stress and inflammation", "Lowers inflammatory markers (CRP, TNF-alpha)", "May reduce arthritis and inflammatory disease risk"],
+        "cons": ["Excessive intake may increase cortisol", "Tannins can trigger inflammation in sensitive stomachs", "Adding milk may reduce polyphenol bioavailability"]
+      }
+    }
+  },
+  "brownie": {
+    "name": "Brownie",
+    "calories": 466,
+    "protein": 5.9,
+    "carbs": 63,
+    "fat": 23,
+    "fiber": 3.5,
+    "sugar": 41,
+    "sodium": 250,
+    "saturatedFat": 9,
+    "cholesterol": 52,
+    "potassium": 155,
+    "calcium": 45,
+    "iron": 2.8,
+    "magnesium": 65,
+    "vitaminA": 75,
+    "vitaminC": 0,
+    "vitaminD": 0.2,
+    "vitaminB12": 0.1,
+    "glycemicIndex": 70,
+    "glycemicLoad": 44,
+    "allergens": ["gluten", "dairy", "eggs"],
+    "servingSize": 60,
+    "servingUnit": "g",
+    "focusGrades": {
+      "balanced": {
+        "grade": "D",
+        "score": 60,
+        "insight": "Brownies are calorie-dense treats dominated by refined sugar and saturated fat with minimal protein or micronutrients—fine occasionally but poor for daily nutrition",
+        "pros": ["Chocolate provides iron and magnesium", "Some fiber from cocoa (3.5g per 100g)", "Satisfies sweet cravings"],
+        "cons": ["Very high in sugar (41g per 100g)", "High saturated fat (9g)", "Refined carbs cause blood sugar spikes", "Low protein (5.9g)", "Minimal vitamins"]
+      },
+      "heart_health": {
+        "grade": "D-",
+        "score": 58,
+        "insight": "Poor cardiovascular profile with high saturated fat (9g), refined sugar (41g), and sodium (250mg)—regular consumption increases heart disease and stroke risk",
+        "pros": ["Dark chocolate flavonoids may improve blood flow", "Magnesium (65mg) supports heart rhythm"],
+        "cons": ["High saturated fat raises LDL cholesterol", "41g sugar per 100g promotes inflammation", "Sodium (250mg) elevates blood pressure", "Trans fats in some recipes harm arteries", "High glycemic load stresses cardiovascular system"]
+      },
+      "muscle_building": {
+        "grade": "D+",
+        "score": 63,
+        "insight": "Minimal muscle-building value with only 5.9g protein and poor amino acid profile, though high calories and carbs can support bulking if timed post-workout",
+        "pros": ["Calorie-dense for bulking (466 kcal per 100g)", "Carbs replenish glycogen post-workout", "Iron (2.8mg) supports oxygen transport"],
+        "cons": ["Only 5.9g protein per 100g", "Incomplete protein from eggs/flour", "High sugar promotes fat gain over muscle", "Saturated fat may impair recovery", "No leucine or BCAAs"]
+      },
+      "energy": {
+        "grade": "C-",
+        "score": 68,
+        "insight": "Provides rapid energy spike from 63g carbs and 41g sugar, followed by inevitable crash—not ideal for sustained energy despite high calorie content",
+        "pros": ["High carbs (63g) provide quick energy", "Calorie-dense (466 kcal) fuels activity", "Chocolate contains caffeine for alertness", "Sugar delivers immediate glucose"],
+        "cons": ["41g sugar causes rapid spike then crash", "High glycemic load (44) destabilizes blood sugar", "Crash leads to fatigue and cravings", "Refined carbs lack sustained energy"]
+      },
+      "weight_management": {
+        "grade": "F",
+        "score": 42,
+        "insight": "Disastrous for weight loss with extreme calorie density (466 kcal per 100g), 41g sugar that triggers cravings, and minimal satiety—easy to overconsume",
+        "pros": ["Can satisfy cravings preventing binges if portioned", "Some fiber (3.5g) provides minimal satiety"],
+        "cons": ["Very high calorie density (466 kcal per 100g)", "41g sugar triggers insulin spikes and fat storage", "Low protein and fiber provide minimal satiety", "Hyperpalatable foods drive overconsumption", "1 small brownie (60g) = 280 calories"]
+      },
+      "brain_focus": {
+        "grade": "C",
+        "score": 71,
+        "insight": "Mixed cognitive effects—chocolate flavonoids and caffeine boost short-term focus, but high sugar causes brain fog, mood swings, and impaired concentration after crash",
+        "pros": ["Cocoa flavonoids improve blood flow to brain", "Sugar provides immediate glucose for brain energy", "Chocolate contains theobromine for alertness", "Magnesium supports neurotransmitters"],
+        "cons": ["Sugar crash impairs focus and memory", "High glycemic load linked to cognitive decline", "Blood sugar swings cause mood instability", "Lacks omega-3s, B12, choline"]
+      },
+      "gut_health": {
+        "grade": "D",
+        "score": 61,
+        "insight": "Poor gut health profile—while cocoa fiber feeds some bacteria, high sugar disrupts microbiome, promotes harmful bacteria, and can cause bloating and inflammation",
+        "pros": ["Cocoa fiber (3.5g) has some prebiotic effects", "Dark chocolate polyphenols may benefit gut bacteria"],
+        "cons": ["41g sugar feeds harmful bacteria and yeast", "Disrupts gut microbiome balance", "Gluten can trigger inflammation in sensitive individuals", "Refined flour lacks prebiotics", "High fat slows digestion"]
+      },
+      "blood_sugar": {
+        "grade": "F",
+        "score": 35,
+        "insight": "Catastrophic for blood sugar with GI of 70, glycemic load of 44, and 41g sugar per 100g—causes severe glucose spike followed by crash, worsening insulin resistance",
+        "pros": ["Some fiber (3.5g) slightly blunts glucose spike", "Fat slows sugar absorption marginally"],
+        "cons": ["Glycemic index of 70 (high)", "Glycemic load of 44 (very high)", "41g sugar per 100g causes severe blood sugar spike", "Refined carbs worsen insulin resistance", "Repeated spikes increase diabetes risk"]
+      },
+      "bone_joint": {
+        "grade": "D+",
+        "score": 64,
+        "insight": "Minimal bone support with only 45mg calcium and concerning sugar content (41g) that promotes calcium loss and inflammation—cocoa magnesium provides only benefit",
+        "pros": ["Magnesium (65mg) supports bone formation", "Iron (2.8mg) aids red blood cell production", "Calcium (45mg) contributes to bone density"],
+        "cons": ["High sugar increases calcium excretion", "Only 45mg calcium per 100g", "Sugar promotes inflammation in joints", "Refined carbs linked to lower bone density", "No vitamin D for calcium absorption"]
+      },
+      "anti_inflammatory": {
+        "grade": "D",
+        "score": 62,
+        "insight": "Predominantly pro-inflammatory food—while dark chocolate has anti-inflammatory flavonoids, the high sugar (41g) and saturated fat (9g) trigger widespread inflammation",
+        "pros": ["Cocoa flavonoids have anti-inflammatory properties", "Magnesium reduces inflammatory markers", "Dark chocolate polyphenols combat oxidative stress"],
+        "cons": ["41g sugar triggers inflammatory pathways", "Saturated fat (9g) promotes inflammation", "High glycemic load increases inflammatory markers (CRP, IL-6)", "Refined flour lacks anti-inflammatory compounds", "Advanced glycation end products from baking"]
+      }
+    }
+  }
+}

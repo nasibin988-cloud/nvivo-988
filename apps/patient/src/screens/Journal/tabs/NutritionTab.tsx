@@ -29,6 +29,7 @@ import {
 import { ViewToggle } from '@nvivo/ui';
 import { useFoodLogs, useWaterIntake, useFoodLogsHistory, useWaterStreak, type FoodLog, type MealType } from '../../../hooks/nutrition';
 import { useNutritionTargets, type NutritionTargets } from '../../../hooks/nutrition';
+import { useNutritionFocus, usePersonalizedDV } from '../../../hooks/nutrition';
 import { PhotoAnalysisModal, MenuScannerModal, FoodComparisonModal, SmartFeaturesModal, TextAnalysisModal } from '../../Journal/food/components';
 import type { MenuItem } from '../../Journal/food/components/menu-scanner';
 import { Confetti } from '../../../components/animations';
@@ -55,6 +56,7 @@ import {
   EditMealModal,
   MacroGoalsModal,
   DVCalculatorModal,
+  FocusSelectorModal,
 } from '../nutrition/modals';
 
 import {
@@ -77,17 +79,22 @@ export default function NutritionTab(): React.ReactElement {
   const [showSmartFeatures, setShowSmartFeatures] = useState(false);
   const [showDVCalculator, setShowDVCalculator] = useState(false);
   const [showGoalsModal, setShowGoalsModal] = useState(false);
+  const [showFocusModal, setShowFocusModal] = useState(false);
   const [customTargets, setCustomTargets] = useState<Partial<NutritionTargets> | null>(null);
   const [editingMeal, setEditingMeal] = useState<FoodLog | null>(null);
   const [showConfetti, setShowConfetti] = useState(false);
   const [selectedNutrient, setSelectedNutrient] = useState<string | null>(null);
   const hasTriggeredConfetti = useRef(false);
 
+  // Nutrition focus preference
+  const { focus, focusInfo, setFocus, isSaving: isSavingFocus } = useNutritionFocus();
+
   const today = new Date().toISOString().split('T')[0];
 
   // Data hooks
   const { logs, isLoading, dailyTotals, addLog, updateLog, deleteLog, isUpdating } = useFoodLogs(today);
   const { data: targets, isLoading: targetsLoading } = useNutritionTargets();
+  const { dvs: personalizedDVs, isLoading: dvsLoading, isPersonalized } = usePersonalizedDV();
   const { glasses: waterGlasses, updateWater, isUpdating: isUpdatingWater } = useWaterIntake(today);
   // Fetch 180 days of history for trends (NutritionTrends handles time range selection)
   const { data: historyData } = useFoodLogsHistory(180);
@@ -104,8 +111,24 @@ export default function NutritionTab(): React.ReactElement {
     water: 8,
   };
 
+  // Round to nearest increment for cleaner display
+  const roundTo = (value: number, increment: number) => Math.round(value / increment) * increment;
+
+  // Compute personalized targets from DVs (rounded for cleaner display)
+  const personalizedTargets: NutritionTargets = {
+    calories: roundTo(personalizedDVs.calories?.dv || defaultTargets.calories, 50),
+    protein: roundTo(personalizedDVs.protein?.dv || defaultTargets.protein, 5),
+    carbs: roundTo(personalizedDVs.carbs?.dv || defaultTargets.carbs, 5),
+    fat: roundTo(personalizedDVs.fat?.dv || defaultTargets.fat, 5),
+    fiber: roundTo(personalizedDVs.fiber?.dv || defaultTargets.fiber, 5),
+    sodium: roundTo(personalizedDVs.sodium?.dv || defaultTargets.sodium, 100),
+    sugar: roundTo(personalizedDVs.sugar?.dv || 50, 5),
+    water: targets?.water || defaultTargets.water,
+  };
+
   const nutritionTargets: NutritionTargets = {
-    ...(targets || defaultTargets),
+    ...personalizedTargets,
+    // Allow custom overrides to take precedence
     ...customTargets,
   };
 
@@ -244,7 +267,7 @@ export default function NutritionTab(): React.ReactElement {
   };
 
   // Loading state
-  if (isLoading || targetsLoading) {
+  if (isLoading || targetsLoading || dvsLoading) {
     return <NutritionSkeleton />;
   }
 
@@ -279,14 +302,27 @@ export default function NutritionTab(): React.ReactElement {
 
             <div className="relative">
               <div className="flex items-center justify-between mb-4">
-                <div>
-                  <h3 className="text-lg font-bold text-text-primary">Today's Nutrition</h3>
+                <div className="flex items-center gap-2">
+                  <h3 className="text-base font-bold text-text-primary">Today's Nutrition</h3>
+                  {isPersonalized && (
+                    <span className="text-[8px] font-bold px-1.5 py-0.5 rounded-full bg-cyan-500/20 text-cyan-400 border border-cyan-500/20">
+                      Personalized
+                    </span>
+                  )}
                 </div>
-                <div className="flex items-center gap-3">
-                  <div className="text-right">
+                <div className="flex items-center gap-2">
+                  <div className="text-right mr-1">
                     <span className="text-3xl font-bold text-emerald-400">{dailyTotals.calories}</span>
                     <span className="text-sm text-text-muted"> / {nutritionTargets.calories} cal</span>
                   </div>
+                  <button
+                    onClick={() => setShowFocusModal(true)}
+                    className="p-2 rounded-xl bg-white/[0.03] border border-white/[0.06] hover:bg-white/[0.06] hover:border-emerald-500/30 transition-all flex items-center gap-1.5"
+                    title={`Focus: ${focusInfo.name}`}
+                    style={{ borderColor: `${focusInfo.color}30` }}
+                  >
+                    <focusInfo.icon size={16} style={{ color: focusInfo.color }} />
+                  </button>
                   <button
                     onClick={() => setShowGoalsModal(true)}
                     className="p-2 rounded-xl bg-white/[0.03] border border-white/[0.06] text-text-muted hover:text-emerald-400 hover:bg-white/[0.06] hover:border-emerald-500/30 transition-all"
@@ -358,7 +394,7 @@ export default function NutritionTab(): React.ReactElement {
                 <MacroOrb
                   label="Sugar"
                   current={dailyTotals.sugar}
-                  target={nutritionTargets.sugar || 50}
+                  target={nutritionTargets.sugar ?? 50}
                   unit="g"
                   color={MACRO_COLORS.sugar}
                   icon={Candy}
@@ -392,12 +428,14 @@ export default function NutritionTab(): React.ReactElement {
           <DailyScoreCard
             date={today}
             totals={dailyTotals}
+            focusId={focus}
           />
 
           {/* Highlights & Gaps - What you did well and areas to improve */}
           <HighlightsGapsPanel
             date={today}
             totals={dailyTotals}
+            focusId={focus}
             onNutrientTap={(nutrientId) => setSelectedNutrient(nutrientId)}
           />
 
@@ -640,6 +678,16 @@ export default function NutritionTab(): React.ReactElement {
             // Could trigger a refetch of nutrition targets here
             console.log('Personalized DVs saved');
           }}
+        />
+      )}
+
+      {/* Focus Selector Modal */}
+      {showFocusModal && (
+        <FocusSelectorModal
+          currentFocus={focus}
+          onSelect={setFocus}
+          onClose={() => setShowFocusModal(false)}
+          isSaving={isSavingFocus}
         />
       )}
     </div>

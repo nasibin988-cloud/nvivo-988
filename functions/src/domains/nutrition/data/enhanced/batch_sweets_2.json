@@ -1,0 +1,1103 @@
+{
+  "doughnut": {
+    "name": "Doughnut, glazed, yeast-raised",
+    "fdcId": "173717",
+    "quantity": 1,
+    "unit": "medium doughnut (60g)",
+    "mealType": "snack",
+    "foodGroups": ["grain", "sweets"],
+    "subCategory": "pastry",
+
+    "calories": 269,
+    "protein": 3.8,
+    "carbs": 30.7,
+    "fat": 14.5,
+    "fiber": 0.9,
+    "sugar": 12.6,
+    "sodium": 257,
+    "saturatedFat": 3.8,
+    "transFat": 0.2,
+    "cholesterol": 26,
+    "potassium": 65,
+    "calcium": 26,
+    "iron": 1.5,
+    "magnesium": 13,
+    "zinc": 0.4,
+    "vitaminA": 8,
+    "vitaminC": 0.1,
+    "vitaminD": 0.2,
+    "vitaminE": 0.9,
+    "vitaminK": 9.6,
+    "thiamin": 0.2,
+    "riboflavin": 0.1,
+    "niacin": 1.8,
+    "vitaminB6": 0.04,
+    "folate": 51,
+    "vitaminB12": 0.04,
+    "choline": 30,
+    "phosphorus": 78,
+    "selenium": 10,
+    "copper": 0.05,
+    "manganese": 0.2,
+    "caffeine": 0,
+    "water": 10,
+    "monounsaturatedFat": 7.7,
+    "polyunsaturatedFat": 2.1,
+
+    "omega3": { "ala": 0.3, "epa": 0, "dha": 0 },
+    "omega6": { "linoleicAcid": 1.8 },
+    "omegaRatio": 6,
+
+    "glycemicIndex": 76,
+    "glycemicLoad": 23,
+    "glycemicCategory": "high",
+    "nutrientDensityScore": 2.1,
+    "satietyScore": 28,
+    "inflammatoryIndex": 3.2,
+    "novaClass": 4,
+    "oracScore": 95,
+
+    "dietaryTags": ["vegetarian"],
+    "allergens": ["gluten", "dairy", "eggs"],
+
+    "insight": "Breakfast trap—269 calories with 13g sugar and trans fats. Spikes blood sugar then crashes. Pure empty calories.",
+
+    "focusGrades": {
+      "balanced": {
+        "grade": "F",
+        "score": 22,
+        "insight": "Refined flour, sugar, and fried oil create nutritional disaster. Minimal vitamins/minerals with 269 empty calories.",
+        "pros": ["Some enriched B vitamins from flour"],
+        "cons": ["12.6g added sugar", "Refined white flour", "Trans fats (0.2g)", "257mg sodium", "Ultra-processed (NOVA 4)", "Minimal nutrients"]
+      },
+      "heart_health": {
+        "grade": "F",
+        "score": 15,
+        "insight": "Trans fats damage arteries, saturated fat raises LDL, high sugar increases triglycerides. Terrible for cardiovascular health.",
+        "pros": [],
+        "cons": ["Trans fats (0.2g)", "Saturated fat (3.8g)", "Spikes triglycerides", "Inflammatory oils", "Oxidized fats from frying", "257mg sodium"]
+      },
+      "muscle_building": {
+        "grade": "F",
+        "score": 30,
+        "insight": "Minimal protein (3.8g) with excess sugar and inflammatory fats. Won't build muscle—just add fat.",
+        "pros": ["Minimal protein (3.8g)"],
+        "cons": ["Sugar causes insulin spike without muscle benefit", "Inflammatory fats impair recovery", "Empty calories", "No amino acid balance"]
+      },
+      "energy": {
+        "grade": "D-",
+        "score": 35,
+        "insight": "Sugar rush for 20 minutes, then severe crash. GI=76, GL=23 causes blood sugar rollercoaster and fatigue.",
+        "pros": ["Brief sugar spike gives temporary energy"],
+        "cons": ["Severe crash within 60 minutes", "No sustained energy", "Sugar-induced fatigue", "Heavy digestion drains energy"]
+      },
+      "weight_management": {
+        "grade": "F",
+        "score": 10,
+        "insight": "269 calories that don't satiate—just trigger more cravings. One daily doughnut = 28 lbs/year weight gain.",
+        "pros": [],
+        "cons": ["Very low satiety", "269 empty calories", "Sugar triggers cravings", "High calorie density", "Easy to eat multiple", "Promotes belly fat"]
+      },
+      "brain_focus": {
+        "grade": "F",
+        "score": 25,
+        "insight": "Sugar spike impairs focus after initial 15-minute boost. Trans fats linked to cognitive decline and dementia.",
+        "pros": ["Very brief mental boost from sugar"],
+        "cons": ["Sugar crash causes brain fog", "Trans fats harm brain cells", "Impairs concentration", "Blood sugar swing affects mood"]
+      },
+      "gut_health": {
+        "grade": "F",
+        "score": 20,
+        "insight": "Almost no fiber (0.9g), high sugar feeds harmful bacteria, refined flour disrupts microbiome. Gut disaster.",
+        "pros": [],
+        "cons": ["Minimal fiber (0.9g)", "High sugar feeds bad bacteria", "Refined flour has no prebiotics", "Inflammatory oils", "Ultra-processed"]
+      },
+      "blood_sugar": {
+        "grade": "F",
+        "score": 8,
+        "insight": "One of worst foods for blood sugar—GI=76, GL=23. Causes massive spike then crash. Promotes insulin resistance.",
+        "pros": [],
+        "cons": ["Very high glycemic load (23)", "Refined carbs + sugar combination", "Minimal fiber (0.9g)", "Causes insulin spike", "Promotes diabetes with regular intake"]
+      },
+      "bone_joint": {
+        "grade": "D-",
+        "score": 40,
+        "insight": "Minimal calcium (26mg). Inflammatory oils and AGEs from frying worsen joint pain. Sugar promotes inflammation.",
+        "pros": ["Some vitamin K (9.6mcg)"],
+        "cons": ["Very low calcium", "Inflammatory oils", "Sugar promotes inflammation", "AGEs from frying damage collagen", "Trans fats worsen arthritis"]
+      },
+      "anti_inflammatory": {
+        "grade": "F",
+        "score": 12,
+        "insight": "Highly inflammatory—trans fats, oxidized oils, sugar, and AGEs from frying. One of worst foods for inflammation.",
+        "pros": [],
+        "cons": ["Trans fats highly inflammatory", "Oxidized fats from frying", "High sugar", "AGEs formation", "Omega-6 oils", "Promotes chronic inflammation"]
+      }
+    },
+
+    "bioavailability": {
+      "sugar": { "absorption": "instant", "tip": "Absorbed immediately—causes rapid blood sugar spike" }
+    },
+
+    "pairWith": [],
+    "avoidWith": [
+      { "food": "all occasions", "reason": "No nutritional value—skip entirely or save for rare indulgence" }
+    ],
+
+    "bestTiming": {
+      "preWorkout": false,
+      "postWorkout": false,
+      "morning": false,
+      "beforeBed": false
+    },
+    "digestionTime": "moderate",
+
+    "portionVisual": "1 medium doughnut = palm-sized ring",
+    "tips": {
+      "storage": "Best fresh—loses quality within hours",
+      "cooking": "N/A (typically purchased)",
+      "prepTip": "Better option: whole grain toast with nut butter and banana"
+    },
+    "commonMistakes": [
+      "Thinking 'just one won't hurt' (sets up sugar cravings all day)",
+      "Eating on empty stomach (massive blood sugar swing)",
+      "Pairing with coffee (creates insulin spike + cortisol surge)"
+    ],
+
+    "cautions": {
+      "diabetes": "Absolutely avoid—massive blood sugar spike",
+      "heart_disease": "Avoid—trans fats and inflammatory oils",
+      "weight_loss": "Avoid entirely",
+      "gluten_sensitivity": "Contains wheat"
+    },
+    "pregnancySafe": true,
+    "pregnancyNotes": "Safe occasionally but offers no nutritional value. Choose nutrient-dense foods for fetal development.",
+    "drugInteractions": [],
+    "pediatric": {
+      "ageAppropriate": "Avoid for young children; rare treat only for older kids",
+      "chokingRisk": "low",
+      "commonAllergen": "gluten, dairy, eggs"
+    }
+  },
+
+  "pie": {
+    "name": "Pie, fruit, two crust",
+    "fdcId": "173732",
+    "quantity": 1,
+    "unit": "slice (1/8 of 9-inch pie, 125g)",
+    "mealType": "dessert",
+    "foodGroups": ["grain", "fruit", "sweets"],
+    "subCategory": "baked_dessert",
+
+    "calories": 290,
+    "protein": 2.4,
+    "carbs": 43.6,
+    "fat": 13,
+    "fiber": 1.6,
+    "sugar": 17.8,
+    "sodium": 266,
+    "saturatedFat": 3.2,
+    "transFat": 0,
+    "cholesterol": 0,
+    "potassium": 71,
+    "calcium": 11,
+    "iron": 0.8,
+    "magnesium": 8,
+    "zinc": 0.2,
+    "vitaminA": 11,
+    "vitaminC": 1.5,
+    "vitaminD": 0,
+    "vitaminE": 1.3,
+    "vitaminK": 3.5,
+    "thiamin": 0.1,
+    "riboflavin": 0.07,
+    "niacin": 1.2,
+    "vitaminB6": 0.03,
+    "folate": 30,
+    "vitaminB12": 0,
+    "choline": 6,
+    "phosphorus": 37,
+    "selenium": 7,
+    "copper": 0.05,
+    "manganese": 0.2,
+    "caffeine": 0,
+    "water": 64,
+    "monounsaturatedFat": 5.5,
+    "polyunsaturatedFat": 3.3,
+
+    "omega3": { "ala": 0.4, "epa": 0, "dha": 0 },
+    "omega6": { "linoleicAcid": 2.9 },
+    "omegaRatio": 7.3,
+
+    "glycemicIndex": 69,
+    "glycemicLoad": 30,
+    "glycemicCategory": "high",
+    "nutrientDensityScore": 2.5,
+    "satietyScore": 35,
+    "inflammatoryIndex": 2.8,
+    "novaClass": 4,
+    "oracScore": 220,
+
+    "dietaryTags": ["vegetarian", "vegan"],
+    "allergens": ["gluten"],
+
+    "insight": "290 calories per slice with 18g sugar. Refined crust and excess sugar outweigh minimal fruit benefits. Occasional dessert only.",
+
+    "focusGrades": {
+      "balanced": {
+        "grade": "F",
+        "score": 28,
+        "insight": "Refined flour crust and sugar dominate any fruit benefits. 290 calories with minimal nutrients except simple carbs and fat.",
+        "pros": ["Some fruit provides vitamins", "Small amount of fiber (1.6g)"],
+        "cons": ["17.8g added sugar", "Refined flour crust", "266mg sodium", "Ultra-processed", "Minimal nutrients", "High calorie density"]
+      },
+      "heart_health": {
+        "grade": "F",
+        "score": 25,
+        "insight": "High sugar increases triglycerides, saturated fat raises LDL, high sodium raises blood pressure. Bad for heart.",
+        "pros": ["Some fruit antioxidants"],
+        "cons": ["High sugar (17.8g)", "Saturated fat (3.2g)", "266mg sodium", "Raises triglycerides", "Inflammatory oils in crust"]
+      },
+      "muscle_building": {
+        "grade": "F",
+        "score": 35,
+        "insight": "Minimal protein (2.4g) with excess sugar and fat. Won't support muscle growth—just stores as fat.",
+        "pros": ["Minimal protein"],
+        "cons": ["Only 2.4g protein", "High sugar without amino acids", "Empty calories", "Inflammatory fats"]
+      },
+      "energy": {
+        "grade": "D",
+        "score": 40,
+        "insight": "High GI (69) and GL (30) cause rapid blood sugar spike then crash. Brief energy followed by fatigue.",
+        "pros": ["Quick energy from sugar and carbs"],
+        "cons": ["Severe crash after 60-90 minutes", "No sustained energy", "Heavy fat content slows digestion", "Post-dessert fatigue"]
+      },
+      "weight_management": {
+        "grade": "F",
+        "score": 15,
+        "insight": "290 calories with low satiety—easy to eat multiple slices. Sugar and fat combination promotes weight gain.",
+        "pros": [],
+        "cons": ["290 calories per slice", "Low satiety", "Sugar triggers cravings", "Easy to overeat", "Promotes belly fat", "Doesn't satisfy"]
+      },
+      "brain_focus": {
+        "grade": "F",
+        "score": 30,
+        "insight": "Sugar spike impairs focus after initial boost. High glycemic load causes brain fog and mood swings.",
+        "pros": ["Brief glucose boost to brain"],
+        "cons": ["Sugar crash causes brain fog", "Impairs concentration", "Blood sugar swing affects mood", "Heavy digestion drains mental energy"]
+      },
+      "gut_health": {
+        "grade": "F",
+        "score": 32,
+        "insight": "Low fiber (1.6g), high sugar feeds harmful bacteria, refined flour has no prebiotics. Disrupts gut microbiome.",
+        "pros": ["Some fruit fiber (minimal)"],
+        "cons": ["Low fiber (1.6g)", "High sugar disrupts microbiome", "Refined flour", "Ultra-processed ingredients", "No prebiotic benefit"]
+      },
+      "blood_sugar": {
+        "grade": "F",
+        "score": 12,
+        "insight": "Massive glycemic load (30)—one of worst desserts for blood sugar. Refined crust + sugar creates severe spike.",
+        "pros": [],
+        "cons": ["Very high GL (30)", "GI=69 (high)", "Refined carbs + added sugar", "Minimal fiber", "Promotes insulin resistance"]
+      },
+      "bone_joint": {
+        "grade": "D-",
+        "score": 45,
+        "insight": "Minimal calcium (11mg). Sugar promotes inflammation, worsening joint pain. No bone-building nutrients.",
+        "pros": ["Minimal vitamin K (3.5mcg)"],
+        "cons": ["Very low calcium", "Sugar promotes inflammation", "No vitamin D", "No magnesium", "Inflammatory oils"]
+      },
+      "anti_inflammatory": {
+        "grade": "F",
+        "score": 18,
+        "insight": "High sugar is powerfully inflammatory. Refined flour and omega-6 oils worsen inflammation. Avoid if joint/autoimmune issues.",
+        "pros": ["Some fruit antioxidants (minimal)"],
+        "cons": ["High sugar inflammatory", "Refined flour", "Omega-6 oils", "AGEs from baking", "Promotes chronic inflammation"]
+      }
+    },
+
+    "bioavailability": {
+      "sugar": { "absorption": "high", "tip": "Absorbed rapidly despite fat content—still spikes blood sugar" }
+    },
+
+    "pairWith": [
+      { "food": "special occasions only", "reason": "Save for holidays/celebrations—not regular dessert" }
+    ],
+    "avoidWith": [
+      { "food": "regular meals", "reason": "Dessert only, not a food group" }
+    ],
+
+    "bestTiming": {
+      "preWorkout": false,
+      "postWorkout": false,
+      "morning": false,
+      "beforeBed": false
+    },
+    "digestionTime": "slow",
+
+    "portionVisual": "1 slice = 1/8 of 9-inch pie (small wedge)",
+    "tips": {
+      "storage": "Refrigerate within 2 hours; consume within 3-4 days",
+      "cooking": "If making at home: use whole wheat crust and reduce sugar by 1/3",
+      "prepTip": "Better option: baked apple with cinnamon and Greek yogurt"
+    },
+    "commonMistakes": [
+      "Eating large slice (doubles calories to 580)",
+      "Adding ice cream (adds 200+ more calories)",
+      "Thinking fruit filling makes it healthy (sugar cancels benefits)"
+    ],
+
+    "cautions": {
+      "diabetes": "Avoid—massive blood sugar spike",
+      "weight_loss": "Avoid—very calorie-dense with low satiety",
+      "gluten_sensitivity": "Contains wheat flour",
+      "dental": "High sugar promotes cavities"
+    },
+    "pregnancySafe": true,
+    "pregnancyNotes": "Safe occasionally if fully baked. Offers minimal nutrition—choose nutrient-dense desserts instead.",
+    "drugInteractions": [],
+    "pediatric": {
+      "ageAppropriate": "Rare treat for children 2+ years",
+      "chokingRisk": "low",
+      "commonAllergen": "gluten"
+    }
+  },
+
+  "apple_pie": {
+    "name": "Pie, apple, two crust",
+    "fdcId": "173730",
+    "quantity": 1,
+    "unit": "slice (1/8 of 9-inch pie, 125g)",
+    "mealType": "dessert",
+    "foodGroups": ["grain", "fruit", "sweets"],
+    "subCategory": "baked_dessert",
+
+    "calories": 296,
+    "protein": 2.4,
+    "carbs": 43.4,
+    "fat": 13.6,
+    "fiber": 1.6,
+    "sugar": 19.5,
+    "sodium": 266,
+    "saturatedFat": 4.7,
+    "transFat": 0,
+    "cholesterol": 0,
+    "potassium": 81,
+    "calcium": 11,
+    "iron": 0.9,
+    "magnesium": 7,
+    "zinc": 0.2,
+    "vitaminA": 8,
+    "vitaminC": 2.1,
+    "vitaminD": 0,
+    "vitaminE": 1.1,
+    "vitaminK": 2.5,
+    "thiamin": 0.1,
+    "riboflavin": 0.07,
+    "niacin": 1.1,
+    "vitaminB6": 0.03,
+    "folate": 28,
+    "vitaminB12": 0,
+    "choline": 5,
+    "phosphorus": 34,
+    "selenium": 6,
+    "copper": 0.04,
+    "manganese": 0.2,
+    "caffeine": 0,
+    "water": 63,
+    "monounsaturatedFat": 5.8,
+    "polyunsaturatedFat": 2.2,
+
+    "omega3": { "ala": 0.3, "epa": 0, "dha": 0 },
+    "omega6": { "linoleicAcid": 1.9 },
+    "omegaRatio": 6.3,
+
+    "glycemicIndex": 69,
+    "glycemicLoad": 30,
+    "glycemicCategory": "high",
+    "nutrientDensityScore": 2.4,
+    "satietyScore": 34,
+    "inflammatoryIndex": 2.9,
+    "novaClass": 4,
+    "oracScore": 285,
+
+    "dietaryTags": ["vegetarian", "vegan"],
+    "allergens": ["gluten"],
+
+    "insight": "Classic American dessert—296 calories with 19.5g sugar per slice. Refined crust negates apple benefits. Occasional treat only.",
+
+    "focusGrades": {
+      "balanced": {
+        "grade": "F",
+        "score": 27,
+        "insight": "Refined flour, butter/shortening, and 19.5g sugar overwhelm any apple nutrition. 296 empty calories.",
+        "pros": ["Apples provide some fiber and vitamin C", "Some quercetin from apples"],
+        "cons": ["19.5g added sugar", "Refined white flour crust", "266mg sodium", "4.7g saturated fat", "Ultra-processed", "Minimal nutrients"]
+      },
+      "heart_health": {
+        "grade": "F",
+        "score": 22,
+        "insight": "High sugar raises triglycerides, saturated fat raises LDL, sodium increases blood pressure. Terrible for heart health.",
+        "pros": ["Apples have some quercetin (anti-inflammatory)"],
+        "cons": ["19.5g sugar", "4.7g saturated fat", "266mg sodium", "Raises triglycerides significantly", "Inflammatory crust oils"]
+      },
+      "muscle_building": {
+        "grade": "F",
+        "score": 33,
+        "insight": "Minimal protein (2.4g) with excess sugar and saturated fat. Zero muscle-building benefit—just stores as body fat.",
+        "pros": [],
+        "cons": ["Only 2.4g protein", "High sugar without amino acids", "296 empty calories", "Saturated fat", "No muscle support"]
+      },
+      "energy": {
+        "grade": "D",
+        "score": 38,
+        "insight": "High glycemic load (30) causes rapid spike then severe crash. Brief energy followed by fatigue and hunger.",
+        "pros": ["Quick energy from sugar/carbs"],
+        "cons": ["Severe crash within 60-90 minutes", "No sustained energy", "Heavy fat slows digestion", "Post-sugar fatigue"]
+      },
+      "weight_management": {
+        "grade": "F",
+        "score": 12,
+        "insight": "296 calories with minimal satiety. Sugar-fat combination maximally promotes fat storage. Eat = gain weight.",
+        "pros": [],
+        "cons": ["296 calories per small slice", "Very low satiety", "Sugar triggers more cravings", "Easy to eat 2 slices (592 cal)", "Promotes visceral fat"]
+      },
+      "brain_focus": {
+        "grade": "F",
+        "score": 28,
+        "insight": "Sugar spike impairs focus after 20-minute boost. Blood sugar crash causes brain fog, irritability, poor concentration.",
+        "pros": ["Very brief glucose boost"],
+        "cons": ["Sugar crash causes severe brain fog", "Impairs concentration", "Mood swings", "Heavy digestion drains mental energy"]
+      },
+      "gut_health": {
+        "grade": "F",
+        "score": 30,
+        "insight": "Low fiber (1.6g), high sugar feeds harmful bacteria, refined flour has zero prebiotics. Disrupts microbiome balance.",
+        "pros": ["Apples provide minimal fiber (cooked breaks down)"],
+        "cons": ["Low fiber (1.6g)", "High sugar disrupts microbiome", "Refined flour", "No prebiotics", "Ultra-processed"]
+      },
+      "blood_sugar": {
+        "grade": "F",
+        "score": 10,
+        "insight": "One of worst desserts for blood sugar—GL=30, GI=69. Refined crust + 19.5g sugar creates massive spike and crash.",
+        "pros": [],
+        "cons": ["Very high GL (30)", "GI=69 (high)", "Refined carbs + sugar combo", "Minimal fiber won't slow absorption", "Promotes diabetes"]
+      },
+      "bone_joint": {
+        "grade": "D-",
+        "score": 42,
+        "insight": "Minimal calcium (11mg), no vitamin D. Sugar promotes inflammation, worsening arthritis and joint pain.",
+        "pros": ["Trace vitamin K (2.5mcg)"],
+        "cons": ["Very low calcium", "No vitamin D", "Sugar highly inflammatory", "No magnesium", "Saturated fat worsens inflammation"]
+      },
+      "anti_inflammatory": {
+        "grade": "F",
+        "score": 16,
+        "insight": "Despite quercetin in apples, high sugar, refined flour, and saturated fat create net inflammatory effect. Avoid if inflammation issues.",
+        "pros": ["Apples have quercetin (mostly destroyed in processing)"],
+        "cons": ["High sugar powerfully inflammatory", "Refined flour", "Saturated fat", "AGEs from baking", "Omega-6 oils"]
+      }
+    },
+
+    "bioavailability": {
+      "quercetin": { "absorption": "low", "tip": "Most quercetin destroyed during baking—fresh apples far better" }
+    },
+
+    "pairWith": [
+      { "food": "holidays only", "reason": "Traditional dessert—save for Thanksgiving, special occasions" }
+    ],
+    "avoidWith": [
+      { "food": "ice cream", "reason": "Adding ice cream doubles calories and sugar" }
+    ],
+
+    "bestTiming": {
+      "preWorkout": false,
+      "postWorkout": false,
+      "morning": false,
+      "beforeBed": false
+    },
+    "digestionTime": "slow",
+
+    "portionVisual": "1 slice = 1/8 of 9-inch pie (narrow wedge)",
+    "tips": {
+      "storage": "Refrigerate within 2 hours; consume within 3-4 days or freeze up to 4 months",
+      "cooking": "If making at home: use whole wheat crust, reduce sugar by half, add oats to filling",
+      "prepTip": "Better option: baked apple with cinnamon, no crust, topped with Greek yogurt"
+    },
+    "commonMistakes": [
+      "Thinking apples make it healthy (sugar and crust cancel benefits)",
+      "Eating à la mode (adds 200+ calories from ice cream)",
+      "Cutting large slices (300+ calories becomes 500+)"
+    ],
+
+    "cautions": {
+      "diabetes": "Absolutely avoid—massive blood sugar spike",
+      "weight_loss": "Avoid entirely—very calorie-dense",
+      "heart_disease": "Avoid—high sugar and saturated fat",
+      "gluten_sensitivity": "Contains wheat"
+    },
+    "pregnancySafe": true,
+    "pregnancyNotes": "Safe occasionally if fully baked. Offers minimal nutrition for fetal development—choose nutrient-dense foods.",
+    "drugInteractions": [],
+    "pediatric": {
+      "ageAppropriate": "Rare treat for children 2+ years",
+      "chokingRisk": "low",
+      "commonAllergen": "gluten"
+    }
+  },
+
+  "sugar": {
+    "name": "Sugar, granulated white",
+    "fdcId": "169655",
+    "quantity": 1,
+    "unit": "teaspoon (4g)",
+    "mealType": "condiment",
+    "foodGroups": ["sweets"],
+    "subCategory": "sweetener",
+
+    "calories": 16,
+    "protein": 0,
+    "carbs": 4,
+    "fat": 0,
+    "fiber": 0,
+    "sugar": 4,
+    "sodium": 0,
+    "saturatedFat": 0,
+    "transFat": 0,
+    "cholesterol": 0,
+    "potassium": 0,
+    "calcium": 0,
+    "iron": 0,
+    "magnesium": 0,
+    "zinc": 0,
+    "vitaminA": 0,
+    "vitaminC": 0,
+    "vitaminD": 0,
+    "vitaminE": 0,
+    "vitaminK": 0,
+    "thiamin": 0,
+    "riboflavin": 0,
+    "niacin": 0,
+    "vitaminB6": 0,
+    "folate": 0,
+    "vitaminB12": 0,
+    "choline": 0,
+    "phosphorus": 0,
+    "selenium": 0,
+    "copper": 0,
+    "manganese": 0,
+    "caffeine": 0,
+    "water": 0,
+    "monounsaturatedFat": 0,
+    "polyunsaturatedFat": 0,
+
+    "omega3": { "ala": 0, "epa": 0, "dha": 0 },
+    "omega6": { "linoleicAcid": 0 },
+    "omegaRatio": 0,
+
+    "glycemicIndex": 65,
+    "glycemicLoad": 3,
+    "glycemicCategory": "medium",
+    "nutrientDensityScore": 0,
+    "satietyScore": 0,
+    "inflammatoryIndex": 4.5,
+    "novaClass": 2,
+    "oracScore": 0,
+
+    "dietaryTags": ["vegan", "gluten_free"],
+    "allergens": [],
+
+    "insight": "Pure empty calories—100% sucrose with zero nutrients. Highly addictive, inflammatory, and linked to every chronic disease. Minimize ruthlessly.",
+
+    "focusGrades": {
+      "balanced": {
+        "grade": "F",
+        "score": 0,
+        "insight": "Absolute zero nutritional value—pure refined sucrose. No vitamins, minerals, protein, fat, or fiber. Literal empty calories.",
+        "pros": [],
+        "cons": ["Zero nutrients", "100% refined carbohydrate", "No vitamins or minerals", "No fiber", "No protein", "Pure empty calories"]
+      },
+      "heart_health": {
+        "grade": "F",
+        "score": 5,
+        "insight": "Raises triglycerides, promotes LDL oxidation, increases blood pressure, causes insulin resistance. Directly damages cardiovascular system.",
+        "pros": [],
+        "cons": ["Raises triglycerides dramatically", "Oxidizes LDL cholesterol", "Increases blood pressure", "Promotes atherosclerosis", "Causes insulin resistance", "Linked to heart disease"]
+      },
+      "muscle_building": {
+        "grade": "F",
+        "score": 15,
+        "insight": "Zero protein, zero nutrients. Insulin spike without muscle-building support. Only use: post-workout with protein (but better options exist).",
+        "pros": ["Insulin spike post-workout can help nutrient delivery IF paired with protein"],
+        "cons": ["Zero protein", "Zero amino acids", "No muscle-building nutrients", "Promotes fat storage", "Better options exist"]
+      },
+      "energy": {
+        "grade": "D-",
+        "score": 20,
+        "insight": "Immediate 15-20 minute energy spike followed by crash. Creates blood sugar rollercoaster and fatigue. Not sustainable energy.",
+        "pros": ["Instant blood sugar spike gives brief energy"],
+        "cons": ["Severe crash within 30-60 minutes", "No sustained energy", "Causes fatigue", "Creates cravings", "Energy rollercoaster"]
+      },
+      "weight_management": {
+        "grade": "F",
+        "score": 2,
+        "insight": "Empty calories that trigger cravings and don't satisfy. Directly promotes fat storage and obesity. Primary driver of weight gain.",
+        "pros": [],
+        "cons": ["Zero satiety", "Triggers intense cravings", "Promotes fat storage", "Disrupts hunger hormones", "Linked to obesity", "Easy to overconsume"]
+      },
+      "brain_focus": {
+        "grade": "F",
+        "score": 10,
+        "insight": "Blood sugar spike impairs focus, causes brain fog, mood swings, anxiety. Highly addictive—hijacks dopamine pathways like drugs.",
+        "pros": ["Very brief mental boost (15 min)"],
+        "cons": ["Impairs focus after crash", "Brain fog", "Mood swings", "Anxiety", "Highly addictive", "Shrinks hippocampus with chronic use"]
+      },
+      "gut_health": {
+        "grade": "F",
+        "score": 8,
+        "insight": "Feeds harmful bacteria, disrupts microbiome balance, increases intestinal permeability. Destroys gut health systematically.",
+        "pros": [],
+        "cons": ["Feeds Candida and harmful bacteria", "Disrupts microbiome balance", "Increases gut permeability", "Zero fiber", "Promotes SIBO", "Damages gut lining"]
+      },
+      "blood_sugar": {
+        "grade": "F",
+        "score": 3,
+        "insight": "Pure glucose spike—among worst substances for blood sugar control. Causes insulin resistance and diabetes with regular intake.",
+        "pros": [],
+        "cons": ["Immediate blood sugar spike", "Causes insulin resistance", "Promotes type 2 diabetes", "Disrupts glucose metabolism", "Creates blood sugar dependency"]
+      },
+      "bone_joint": {
+        "grade": "F",
+        "score": 12,
+        "insight": "Leeches calcium from bones to buffer acidity. Promotes inflammation worsening arthritis. Zero bone-building nutrients.",
+        "pros": [],
+        "cons": ["Leeches calcium from bones", "Zero calcium or vitamin D", "Highly inflammatory", "Worsens arthritis", "AGEs damage collagen"]
+      },
+      "anti_inflammatory": {
+        "grade": "F",
+        "score": 0,
+        "insight": "One of most inflammatory substances you can consume. Raises all inflammatory markers, forms AGEs, promotes chronic disease.",
+        "pros": [],
+        "cons": ["Extremely inflammatory", "Raises C-reactive protein", "Forms AGEs (advanced glycation end products)", "Promotes chronic inflammation", "Linked to all inflammatory diseases"]
+      }
+    },
+
+    "bioavailability": {
+      "sucrose": { "absorption": "instant", "tip": "Absorbed within minutes—immediate blood sugar spike" }
+    },
+
+    "pairWith": [],
+    "avoidWith": [
+      { "food": "everything", "reason": "Add zero nutritional value—minimize or eliminate entirely" }
+    ],
+
+    "bestTiming": {
+      "preWorkout": false,
+      "postWorkout": false,
+      "morning": false,
+      "beforeBed": false
+    },
+    "digestionTime": "instant",
+
+    "portionVisual": "1 teaspoon = size of thumbnail",
+    "tips": {
+      "storage": "Airtight container in cool, dry place",
+      "cooking": "Reduce by 1/3 in most recipes without noticing",
+      "prepTip": "Better options: stevia, monk fruit, or just reduce sweetness tolerance"
+    },
+    "commonMistakes": [
+      "Adding to coffee/tea (multiple times daily adds up to 200+ calories)",
+      "Thinking 'natural sugar' is different (table sugar IS from sugarcane/beets)",
+      "Not reading labels (hidden in 74% of packaged foods)"
+    ],
+
+    "cautions": {
+      "diabetes": "Avoid entirely—spikes blood sugar dramatically",
+      "obesity": "Major contributor to weight gain—minimize",
+      "heart_disease": "Limit to <25g/day for women, <36g/day for men (AHA)",
+      "dental": "Primary cause of cavities",
+      "addiction": "Highly addictive—creates dependency"
+    },
+    "pregnancySafe": true,
+    "pregnancyNotes": "Safe in very small amounts but offers zero nutrition. Choose nutrient-dense foods for fetal development.",
+    "drugInteractions": [
+      "May interfere with diabetes medications (causes blood sugar spikes)"
+    ],
+    "pediatric": {
+      "ageAppropriate": "<2 years: ZERO added sugar (AAP); 2+ years: <25g/day total",
+      "chokingRisk": "none",
+      "commonAllergen": false
+    }
+  },
+
+  "white_sugar": {
+    "name": "Sugar, granulated white",
+    "fdcId": "169655",
+    "quantity": 1,
+    "unit": "tablespoon (12g)",
+    "mealType": "condiment",
+    "foodGroups": ["sweets"],
+    "subCategory": "sweetener",
+
+    "calories": 49,
+    "protein": 0,
+    "carbs": 12.6,
+    "fat": 0,
+    "fiber": 0,
+    "sugar": 12.6,
+    "sodium": 0,
+    "saturatedFat": 0,
+    "transFat": 0,
+    "cholesterol": 0,
+    "potassium": 0,
+    "calcium": 0,
+    "iron": 0,
+    "magnesium": 0,
+    "zinc": 0,
+    "vitaminA": 0,
+    "vitaminC": 0,
+    "vitaminD": 0,
+    "vitaminE": 0,
+    "vitaminK": 0,
+    "thiamin": 0,
+    "riboflavin": 0,
+    "niacin": 0,
+    "vitaminB6": 0,
+    "folate": 0,
+    "vitaminB12": 0,
+    "choline": 0,
+    "phosphorus": 0,
+    "selenium": 0,
+    "copper": 0,
+    "manganese": 0,
+    "caffeine": 0,
+    "water": 0,
+    "monounsaturatedFat": 0,
+    "polyunsaturatedFat": 0,
+
+    "omega3": { "ala": 0, "epa": 0, "dha": 0 },
+    "omega6": { "linoleicAcid": 0 },
+    "omegaRatio": 0,
+
+    "glycemicIndex": 65,
+    "glycemicLoad": 8,
+    "glycemicCategory": "medium",
+    "nutrientDensityScore": 0,
+    "satietyScore": 0,
+    "inflammatoryIndex": 4.5,
+    "novaClass": 2,
+    "oracScore": 0,
+
+    "dietaryTags": ["vegan", "gluten_free"],
+    "allergens": [],
+
+    "insight": "1 tablespoon = 49 empty calories and 13g sugar (half your daily limit). Addictive, inflammatory, disease-promoting. Avoid.",
+
+    "focusGrades": {
+      "balanced": {
+        "grade": "F",
+        "score": 0,
+        "insight": "Absolute nutritional void—pure refined sucrose with zero vitamins, minerals, fiber, or protein. Literal definition of empty calories.",
+        "pros": [],
+        "cons": ["Zero nutrients whatsoever", "100% refined sugar", "No fiber", "No protein", "No vitamins or minerals", "49 pure empty calories"]
+      },
+      "heart_health": {
+        "grade": "F",
+        "score": 5,
+        "insight": "Dramatically raises triglycerides, oxidizes LDL, increases blood pressure. 1 tbsp daily increases heart disease risk significantly.",
+        "pros": [],
+        "cons": ["Spikes triglycerides", "Oxidizes LDL cholesterol", "Raises blood pressure", "Promotes atherosclerosis", "Causes insulin resistance", "Increases heart attack risk"]
+      },
+      "muscle_building": {
+        "grade": "F",
+        "score": 15,
+        "insight": "Zero protein, zero building blocks. Insulin spike without muscle support. Only debatable use: post-workout with protein shake (better options exist).",
+        "pros": ["Post-workout insulin spike MAY help if paired with protein (not recommended)"],
+        "cons": ["Zero protein", "No amino acids", "No nutrients", "Promotes fat storage not muscle", "Better alternatives exist"]
+      },
+      "energy": {
+        "grade": "D-",
+        "score": 20,
+        "insight": "Massive blood sugar spike for 15-20 minutes, then severe crash and fatigue. Creates energy rollercoaster and dependency.",
+        "pros": ["Instant blood sugar spike = brief energy"],
+        "cons": ["Severe crash within 30-60 min", "Causes fatigue", "No sustained energy", "Creates cravings", "Energy dependency cycle"]
+      },
+      "weight_management": {
+        "grade": "F",
+        "score": 2,
+        "insight": "49 calories that provide zero satiety and trigger intense cravings. Directly promotes fat storage, especially visceral belly fat.",
+        "pros": [],
+        "cons": ["Zero satiety", "Triggers cravings", "Promotes fat storage", "Disrupts leptin/ghrelin", "Primary obesity driver", "13g = half daily sugar limit"]
+      },
+      "brain_focus": {
+        "grade": "F",
+        "score": 10,
+        "insight": "Brief mental boost followed by brain fog, poor focus, mood swings. Highly addictive—activates same brain regions as cocaine.",
+        "pros": ["Very brief mental boost (15 min)"],
+        "cons": ["Brain fog after crash", "Impairs focus", "Mood swings and irritability", "Highly addictive", "Anxiety", "Cognitive decline with chronic use"]
+      },
+      "gut_health": {
+        "grade": "F",
+        "score": 8,
+        "insight": "Feeds Candida and pathogenic bacteria, starves beneficial bacteria, increases gut permeability. Systematically destroys microbiome.",
+        "pros": [],
+        "cons": ["Feeds harmful bacteria", "Disrupts microbiome balance", "Increases intestinal permeability (leaky gut)", "Zero fiber", "Promotes dysbiosis", "Candida overgrowth"]
+      },
+      "blood_sugar": {
+        "grade": "F",
+        "score": 3,
+        "insight": "Pure glucose bomb. 1 tablespoon causes significant blood sugar spike. Regular intake leads directly to insulin resistance and diabetes.",
+        "pros": [],
+        "cons": ["Immediate massive blood sugar spike", "Causes insulin resistance", "Promotes type 2 diabetes", "Disrupts glucose metabolism", "Pancreas stress"]
+      },
+      "bone_joint": {
+        "grade": "F",
+        "score": 12,
+        "insight": "Leeches calcium from bones to neutralize acidity. Highly inflammatory for joints. Zero bone-supporting nutrients.",
+        "pros": [],
+        "cons": ["Leeches calcium from bones", "Zero bone nutrients", "Highly inflammatory", "Worsens arthritis pain", "Damages collagen via AGEs"]
+      },
+      "anti_inflammatory": {
+        "grade": "F",
+        "score": 0,
+        "insight": "Extremely pro-inflammatory. Raises all inflammatory markers, forms AGEs, promotes oxidative stress. Linked to all chronic diseases.",
+        "pros": [],
+        "cons": ["Extremely inflammatory", "Raises C-reactive protein", "Forms AGEs", "Oxidative stress", "Promotes chronic inflammation", "Disease accelerator"]
+      }
+    },
+
+    "bioavailability": {
+      "sucrose": { "absorption": "instant", "tip": "Absorbed within minutes—immediate blood sugar spike" }
+    },
+
+    "pairWith": [],
+    "avoidWith": [
+      { "food": "everything", "reason": "Provides zero nutrition—eliminate or minimize drastically" }
+    ],
+
+    "bestTiming": {
+      "preWorkout": false,
+      "postWorkout": false,
+      "morning": false,
+      "beforeBed": false
+    },
+    "digestionTime": "instant",
+
+    "portionVisual": "1 tablespoon = 3 teaspoons (size of large grape)",
+    "tips": {
+      "storage": "Airtight container in cool, dry place",
+      "cooking": "Cut sugar by 1/3 to 1/2 in recipes—you won't miss it",
+      "prepTip": "Retrain taste buds by eliminating gradually—takes 2-3 weeks"
+    },
+    "commonMistakes": [
+      "Adding to coffee/beverages multiple times daily (adds 200+ calories)",
+      "Thinking 'organic sugar' is healthier (chemically identical)",
+      "Not tracking—1 can soda = 3 tablespoons (39g)",
+      "Ignoring hidden sugar in packaged foods"
+    ],
+
+    "cautions": {
+      "diabetes": "Absolutely avoid—causes severe blood sugar spikes",
+      "obesity": "Primary contributor—American Heart Association recommends <25g/day women, <36g/day men",
+      "heart_disease": "Limit severely—linked to cardiovascular disease",
+      "dental": "Primary cause of tooth decay",
+      "addiction": "Highly addictive—creates physiological dependency",
+      "fatty_liver": "Excess sugar converted to liver fat"
+    },
+    "pregnancySafe": true,
+    "pregnancyNotes": "Safe in minimal amounts but zero nutrition. Excess linked to gestational diabetes. Choose nutrient-dense foods.",
+    "drugInteractions": [
+      "Diabetes medications (causes blood sugar spikes)"
+    ],
+    "pediatric": {
+      "ageAppropriate": "<2 years: ZERO added sugar (AAP recommendation); 2-18 years: <25g/day maximum",
+      "chokingRisk": "none",
+      "commonAllergen": false
+    }
+  },
+
+  "candy_bar": {
+    "name": "Candy bar, milk chocolate with almonds",
+    "fdcId": "173738",
+    "quantity": 1,
+    "unit": "bar (41g, 1.45oz)",
+    "mealType": "snack",
+    "foodGroups": ["sweets"],
+    "subCategory": "candy",
+
+    "calories": 216,
+    "protein": 3.7,
+    "carbs": 22.4,
+    "fat": 13.6,
+    "fiber": 2.1,
+    "sugar": 19.3,
+    "sodium": 31,
+    "saturatedFat": 5.7,
+    "transFat": 0,
+    "cholesterol": 6,
+    "potassium": 178,
+    "calcium": 75,
+    "iron": 0.9,
+    "magnesium": 46,
+    "zinc": 0.7,
+    "vitaminA": 10,
+    "vitaminC": 0.4,
+    "vitaminD": 0.3,
+    "vitaminE": 2.3,
+    "vitaminK": 1.6,
+    "thiamin": 0.04,
+    "riboflavin": 0.1,
+    "niacin": 0.6,
+    "vitaminB6": 0.04,
+    "folate": 12,
+    "vitaminB12": 0.2,
+    "choline": 15,
+    "phosphorus": 108,
+    "selenium": 3,
+    "copper": 0.2,
+    "manganese": 0.4,
+    "caffeine": 8,
+    "water": 1,
+    "monounsaturatedFat": 5.8,
+    "polyunsaturatedFat": 1.4,
+
+    "omega3": { "ala": 0.05, "epa": 0, "dha": 0 },
+    "omega6": { "linoleicAcid": 1.3 },
+    "omegaRatio": 26,
+
+    "glycemicIndex": 55,
+    "glycemicLoad": 12,
+    "glycemicCategory": "medium",
+    "nutrientDensityScore": 3.2,
+    "satietyScore": 42,
+    "inflammatoryIndex": 2.1,
+    "novaClass": 4,
+    "oracScore": 2840,
+
+    "dietaryTags": ["vegetarian"],
+    "allergens": ["milk", "tree_nuts", "soy"],
+
+    "insight": "216 calories with 19g sugar. Almonds and magnesium (46mg) provide minor benefits—massively outweighed by sugar and saturated fat. Rare treat only.",
+
+    "focusGrades": {
+      "balanced": {
+        "grade": "D",
+        "score": 55,
+        "insight": "Almonds provide magnesium (46mg), calcium, and fiber, but 19g sugar and ultra-processed ingredients dominate. Net negative.",
+        "pros": ["46mg magnesium (11% DV)", "75mg calcium (8% DV)", "Some protein (3.7g)", "2.1g fiber from almonds"],
+        "cons": ["19.3g sugar", "5.7g saturated fat", "Ultra-processed (NOVA 4)", "High calorie density", "Mostly empty calories"]
+      },
+      "heart_health": {
+        "grade": "D",
+        "score": 58,
+        "insight": "Almonds provide healthy fats and magnesium, but high sugar raises triglycerides and saturated fat raises LDL. Net negative for heart.",
+        "pros": ["Almonds have monounsaturated fats", "Magnesium supports heart rhythm", "Some vitamin E"],
+        "cons": ["19g sugar raises triglycerides", "5.7g saturated fat raises LDL", "Processed cocoa loses benefits", "High calories"]
+      },
+      "muscle_building": {
+        "grade": "D+",
+        "score": 62,
+        "insight": "Minimal protein (3.7g) with excess sugar. Magnesium supports muscle function but not a muscle-building food.",
+        "pros": ["Magnesium for muscle contraction", "Small amount of protein (3.7g)"],
+        "cons": ["Only 3.7g protein", "High sugar", "Saturated fat", "Not a muscle food"]
+      },
+      "energy": {
+        "grade": "C-",
+        "score": 68,
+        "insight": "Sugar provides quick energy spike but crash follows. Fat and fiber from almonds provide some sustained energy. Medium GI=55.",
+        "pros": ["Quick energy from sugar", "Fat provides some sustained fuel", "Small caffeine boost (8mg)"],
+        "cons": ["Sugar crash after 60-90 min", "Not sustained energy", "Energy rollercoaster"]
+      },
+      "weight_management": {
+        "grade": "D-",
+        "score": 45,
+        "insight": "216 calories in tiny bar with moderate satiety. Sugar-fat combination promotes fat storage. Easy to eat multiple bars.",
+        "pros": ["Some satiety from almonds and fiber"],
+        "cons": ["216 calories in small bar", "High sugar triggers cravings", "Easy to overeat", "Calorie-dense", "Sugar-fat combo promotes fat gain"]
+      },
+      "brain_focus": {
+        "grade": "C",
+        "score": 70,
+        "insight": "Magnesium and minimal caffeine (8mg) support brain function, but sugar spike then crash impairs focus overall.",
+        "pros": ["Magnesium supports neurotransmitters", "Small caffeine boost", "Some antioxidants from cocoa"],
+        "cons": ["Sugar crash impairs focus", "Blood sugar swing affects mood", "Not sustained mental energy"]
+      },
+      "gut_health": {
+        "grade": "D+",
+        "score": 63,
+        "insight": "2g fiber from almonds helps slightly, but high sugar feeds harmful bacteria. Ultra-processed ingredients disrupt microbiome.",
+        "pros": ["2.1g fiber from almonds", "Some cocoa polyphenols (minimal in milk chocolate)"],
+        "cons": ["High sugar disrupts microbiome", "Feeds harmful bacteria", "Ultra-processed", "Low fiber relative to sugar"]
+      },
+      "blood_sugar": {
+        "grade": "D+",
+        "score": 64,
+        "insight": "Medium GI (55), medium GL (12). Fat and fiber slow absorption slightly, but 19g sugar still spikes blood sugar significantly.",
+        "pros": ["Fat and fiber slow sugar absorption", "Lower GI than pure sugar"],
+        "cons": ["19g sugar", "Medium GL (12)", "Still causes blood sugar spike", "Can worsen insulin resistance"]
+      },
+      "bone_joint": {
+        "grade": "C",
+        "score": 72,
+        "insight": "Good calcium (75mg, 8% DV) and magnesium (46mg) from almonds and milk. But sugar is inflammatory for joints.",
+        "pros": ["75mg calcium (8% DV)", "46mg magnesium", "Some vitamin D (0.3mcg)"],
+        "cons": ["Sugar promotes inflammation", "Saturated fat can worsen inflammation", "Not a bone food"]
+      },
+      "anti_inflammatory": {
+        "grade": "D+",
+        "score": 66,
+        "insight": "Almonds and cocoa have antioxidants (ORAC 2840), but high sugar is pro-inflammatory. Net effect slightly inflammatory.",
+        "pros": ["Some cocoa flavanols (low in milk chocolate)", "Almond vitamin E", "Moderate ORAC score"],
+        "cons": ["High sugar inflammatory", "Saturated fat", "Ultra-processed", "Sugar negates antioxidant benefits"]
+      }
+    },
+
+    "bioavailability": {
+      "magnesium": { "absorption": "moderate", "tip": "Well absorbed from almonds" },
+      "calcium": { "absorption": "moderate", "tip": "Dairy calcium is bioavailable" },
+      "flavanols": { "absorption": "low", "tip": "Milk chocolate has minimal flavanols—dark chocolate far better" }
+    },
+
+    "pairWith": [],
+    "avoidWith": [
+      { "food": "regularly", "reason": "Occasional treat only—not a snack food" }
+    ],
+
+    "bestTiming": {
+      "preWorkout": false,
+      "postWorkout": false,
+      "morning": false,
+      "beforeBed": false
+    },
+    "digestionTime": "moderate",
+
+    "portionVisual": "1 bar = size of index finger (1.45oz)",
+    "tips": {
+      "storage": "Cool, dry place (NOT fridge—causes bloom); 60-70°F ideal",
+      "cooking": "N/A (typically purchased)",
+      "prepTip": "Better option: 1oz dark chocolate (70%+) with handful of raw almonds separately"
+    },
+    "commonMistakes": [
+      "Eating king-size bar (doubles calories to 432)",
+      "Thinking almonds make it healthy (sugar cancels benefits)",
+      "Using as meal replacement (no complete nutrition)",
+      "Eating when stressed (sugar worsens mood swings)"
+    ],
+
+    "cautions": {
+      "diabetes": "Monitor portions—19g sugar per bar",
+      "weight_loss": "Avoid—calorie-dense with low satiety",
+      "tree_nut_allergy": "Contains almonds—avoid entirely",
+      "milk_allergy": "Contains dairy",
+      "dental": "High sugar promotes cavities"
+    },
+    "pregnancySafe": true,
+    "pregnancyNotes": "Safe occasionally but choose nutrient-dense snacks for fetal development. High sugar not ideal during pregnancy.",
+    "drugInteractions": [],
+    "pediatric": {
+      "ageAppropriate": "2+ years as rare treat; avoid regular consumption",
+      "chokingRisk": "moderate (whole almonds can be choking hazard <4 years)",
+      "commonAllergen": "milk, tree nuts, soy"
+    }
+  }
+}

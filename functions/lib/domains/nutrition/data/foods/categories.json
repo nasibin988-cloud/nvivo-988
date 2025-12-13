@@ -1,0 +1,748 @@
+{
+    "_meta": {
+        "description": "Food category hierarchy for smart fallbacks and classification",
+        "lastUpdated": "2024-12-12",
+        "usage": "When exact food not found, traverse up hierarchy for reasonable fallback"
+    },
+    "proteins": {
+        "poultry": {
+            "chicken": [
+                "chicken_breast",
+                "chicken_thigh",
+                "chicken_wing",
+                "chicken_drumstick",
+                "chicken_tender",
+                "ground_chicken",
+                "rotisserie_chicken",
+                "fried_chicken",
+                "grilled_chicken",
+                "chicken_nuggets"
+            ],
+            "turkey": [
+                "turkey_breast",
+                "ground_turkey",
+                "turkey_leg",
+                "turkey_deli"
+            ],
+            "duck": [
+                "duck_breast",
+                "duck_leg"
+            ]
+        },
+        "beef": {
+            "steaks": [
+                "ribeye",
+                "sirloin",
+                "filet_mignon",
+                "flank_steak",
+                "ny_strip",
+                "t_bone"
+            ],
+            "ground": [
+                "ground_beef",
+                "ground_beef_lean",
+                "ground_beef_extra_lean"
+            ],
+            "roasts": [
+                "beef_roast",
+                "brisket",
+                "prime_rib"
+            ],
+            "other": [
+                "beef_stew_meat",
+                "beef_liver"
+            ]
+        },
+        "pork": {
+            "cuts": [
+                "pork_chop",
+                "pork_tenderloin",
+                "pork_loin",
+                "pork_shoulder"
+            ],
+            "processed": [
+                "bacon",
+                "ham",
+                "sausage",
+                "pork_sausage",
+                "hot_dog",
+                "frankfurter"
+            ]
+        },
+        "lamb": {
+            "cuts": [
+                "lamb_chop",
+                "lamb_leg",
+                "ground_lamb"
+            ]
+        },
+        "seafood": {
+            "fish": {
+                "fatty": [
+                    "salmon",
+                    "mackerel",
+                    "sardines",
+                    "herring",
+                    "trout",
+                    "tuna"
+                ],
+                "lean": [
+                    "cod",
+                    "tilapia",
+                    "halibut",
+                    "flounder",
+                    "sole",
+                    "bass",
+                    "snapper",
+                    "mahi_mahi"
+                ]
+            },
+            "shellfish": {
+                "crustaceans": [
+                    "shrimp",
+                    "prawns",
+                    "crab",
+                    "lobster",
+                    "crawfish"
+                ],
+                "mollusks": [
+                    "scallops",
+                    "clams",
+                    "mussels",
+                    "oysters",
+                    "squid",
+                    "octopus"
+                ]
+            }
+        },
+        "eggs": [
+            "egg",
+            "egg_white",
+            "egg_yolk",
+            "boiled_egg",
+            "fried_egg",
+            "scrambled_egg",
+            "poached_egg",
+            "omelette"
+        ],
+        "plant_based": [
+            "tofu",
+            "tempeh",
+            "seitan",
+            "beyond_meat",
+            "impossible_burger"
+        ]
+    },
+    "vegetables": {
+        "leafy_greens": [
+            "spinach",
+            "kale",
+            "lettuce",
+            "romaine",
+            "arugula",
+            "swiss_chard",
+            "collard_greens",
+            "mustard_greens",
+            "bok_choy",
+            "cabbage"
+        ],
+        "cruciferous": [
+            "broccoli",
+            "cauliflower",
+            "brussels_sprouts",
+            "cabbage",
+            "kohlrabi"
+        ],
+        "root": [
+            "carrot",
+            "potato",
+            "sweet_potato",
+            "beet",
+            "turnip",
+            "parsnip",
+            "radish",
+            "rutabaga",
+            "yam"
+        ],
+        "alliums": [
+            "onion",
+            "garlic",
+            "leek",
+            "shallot",
+            "scallion",
+            "chives"
+        ],
+        "nightshades": [
+            "tomato",
+            "bell_pepper",
+            "eggplant",
+            "potato"
+        ],
+        "squash": [
+            "zucchini",
+            "yellow_squash",
+            "butternut_squash",
+            "acorn_squash",
+            "spaghetti_squash",
+            "pumpkin"
+        ],
+        "legumes": {
+            "beans": [
+                "black_beans",
+                "kidney_beans",
+                "pinto_beans",
+                "navy_beans",
+                "cannellini_beans",
+                "lima_beans",
+                "green_beans"
+            ],
+            "lentils": [
+                "lentils",
+                "red_lentils",
+                "green_lentils",
+                "brown_lentils"
+            ],
+            "peas": [
+                "green_peas",
+                "split_peas",
+                "chickpeas",
+                "black_eyed_peas",
+                "snow_peas",
+                "snap_peas"
+            ],
+            "soy": [
+                "edamame",
+                "soybeans"
+            ]
+        },
+        "other": [
+            "celery",
+            "cucumber",
+            "asparagus",
+            "artichoke",
+            "corn",
+            "mushroom",
+            "okra",
+            "avocado"
+        ]
+    },
+    "fruits": {
+        "berries": [
+            "strawberry",
+            "blueberry",
+            "raspberry",
+            "blackberry",
+            "cranberry",
+            "acai"
+        ],
+        "citrus": [
+            "orange",
+            "lemon",
+            "lime",
+            "grapefruit",
+            "tangerine",
+            "clementine"
+        ],
+        "tropical": [
+            "banana",
+            "mango",
+            "pineapple",
+            "papaya",
+            "coconut",
+            "kiwi",
+            "passion_fruit",
+            "guava",
+            "dragon_fruit"
+        ],
+        "stone_fruits": [
+            "peach",
+            "nectarine",
+            "plum",
+            "apricot",
+            "cherry",
+            "mango"
+        ],
+        "pome_fruits": [
+            "apple",
+            "pear"
+        ],
+        "melons": [
+            "watermelon",
+            "cantaloupe",
+            "honeydew"
+        ],
+        "grapes": [
+            "grapes",
+            "raisins"
+        ],
+        "dried": [
+            "raisins",
+            "dates",
+            "prunes",
+            "dried_apricots",
+            "dried_cranberries",
+            "dried_mango"
+        ]
+    },
+    "grains": {
+        "rice": [
+            "white_rice",
+            "brown_rice",
+            "basmati_rice",
+            "jasmine_rice",
+            "wild_rice",
+            "arborio_rice"
+        ],
+        "wheat": [
+            "bread",
+            "white_bread",
+            "whole_wheat_bread",
+            "pasta",
+            "spaghetti",
+            "penne",
+            "fettuccine",
+            "couscous",
+            "bulgur",
+            "farro"
+        ],
+        "corn": [
+            "corn",
+            "cornmeal",
+            "polenta",
+            "corn_tortilla",
+            "popcorn",
+            "grits"
+        ],
+        "oats": [
+            "oatmeal",
+            "rolled_oats",
+            "steel_cut_oats",
+            "instant_oats",
+            "granola"
+        ],
+        "other_grains": [
+            "quinoa",
+            "barley",
+            "buckwheat",
+            "millet",
+            "amaranth",
+            "teff"
+        ],
+        "bread": [
+            "white_bread",
+            "whole_wheat_bread",
+            "sourdough",
+            "rye_bread",
+            "pita_bread",
+            "naan",
+            "bagel",
+            "croissant",
+            "baguette",
+            "ciabatta"
+        ],
+        "breakfast_cereals": [
+            "cereal",
+            "corn_flakes",
+            "cheerios",
+            "granola",
+            "muesli",
+            "bran_flakes"
+        ]
+    },
+    "dairy": {
+        "milk": [
+            "whole_milk",
+            "two_percent_milk",
+            "one_percent_milk",
+            "skim_milk",
+            "nonfat_milk",
+            "chocolate_milk",
+            "buttermilk"
+        ],
+        "cheese": {
+            "hard": [
+                "cheddar",
+                "parmesan",
+                "swiss",
+                "gouda",
+                "gruyere",
+                "manchego"
+            ],
+            "soft": [
+                "mozzarella",
+                "brie",
+                "camembert",
+                "feta",
+                "goat_cheese",
+                "ricotta",
+                "cottage_cheese",
+                "cream_cheese"
+            ],
+            "processed": [
+                "american_cheese",
+                "velveeta",
+                "cheese_spread"
+            ]
+        },
+        "yogurt": [
+            "yogurt",
+            "greek_yogurt",
+            "plain_yogurt",
+            "flavored_yogurt",
+            "skyr"
+        ],
+        "cream": [
+            "heavy_cream",
+            "half_and_half",
+            "sour_cream",
+            "whipped_cream"
+        ],
+        "butter": [
+            "butter",
+            "salted_butter",
+            "unsalted_butter",
+            "ghee"
+        ],
+        "alternatives": [
+            "almond_milk",
+            "oat_milk",
+            "soy_milk",
+            "coconut_milk"
+        ]
+    },
+    "nuts_seeds": {
+        "tree_nuts": [
+            "almonds",
+            "walnuts",
+            "cashews",
+            "pecans",
+            "pistachios",
+            "macadamia",
+            "hazelnuts",
+            "brazil_nuts"
+        ],
+        "peanuts": [
+            "peanuts",
+            "peanut_butter"
+        ],
+        "seeds": [
+            "chia_seeds",
+            "flax_seeds",
+            "sunflower_seeds",
+            "pumpkin_seeds",
+            "sesame_seeds",
+            "hemp_seeds"
+        ],
+        "nut_butters": [
+            "peanut_butter",
+            "almond_butter",
+            "cashew_butter",
+            "tahini"
+        ]
+    },
+    "fats_oils": {
+        "plant_oils": [
+            "olive_oil",
+            "coconut_oil",
+            "avocado_oil",
+            "vegetable_oil",
+            "canola_oil",
+            "sunflower_oil",
+            "sesame_oil"
+        ],
+        "animal_fats": [
+            "butter",
+            "lard",
+            "tallow",
+            "bacon_fat"
+        ]
+    },
+    "beverages": {
+        "water": [
+            "water",
+            "sparkling_water",
+            "mineral_water"
+        ],
+        "coffee_tea": [
+            "coffee",
+            "black_coffee",
+            "espresso",
+            "latte",
+            "cappuccino",
+            "tea",
+            "black_tea",
+            "green_tea",
+            "herbal_tea"
+        ],
+        "juice": [
+            "orange_juice",
+            "apple_juice",
+            "grape_juice",
+            "cranberry_juice",
+            "tomato_juice"
+        ],
+        "soft_drinks": [
+            "soda",
+            "coke",
+            "pepsi",
+            "sprite",
+            "ginger_ale",
+            "lemonade"
+        ],
+        "alcohol": [
+            "beer",
+            "wine",
+            "red_wine",
+            "white_wine",
+            "vodka",
+            "whiskey",
+            "rum",
+            "gin"
+        ],
+        "other": [
+            "smoothie",
+            "milkshake",
+            "hot_chocolate",
+            "energy_drink",
+            "sports_drink"
+        ]
+    },
+    "condiments_sauces": {
+        "sauces": [
+            "ketchup",
+            "mustard",
+            "mayonnaise",
+            "bbq_sauce",
+            "hot_sauce",
+            "soy_sauce",
+            "teriyaki_sauce",
+            "pasta_sauce",
+            "marinara",
+            "alfredo_sauce",
+            "salsa",
+            "guacamole",
+            "hummus",
+            "tzatziki"
+        ],
+        "dressings": [
+            "ranch_dressing",
+            "italian_dressing",
+            "caesar_dressing",
+            "vinaigrette",
+            "blue_cheese_dressing"
+        ],
+        "vinegars": [
+            "vinegar",
+            "balsamic_vinegar",
+            "apple_cider_vinegar",
+            "red_wine_vinegar",
+            "rice_vinegar"
+        ],
+        "sweeteners": [
+            "sugar",
+            "honey",
+            "maple_syrup",
+            "agave",
+            "stevia",
+            "molasses"
+        ]
+    },
+    "sweets_desserts": {
+        "baked": [
+            "cake",
+            "chocolate_cake",
+            "cheesecake",
+            "pie",
+            "apple_pie",
+            "brownie",
+            "cookie",
+            "chocolate_chip_cookie",
+            "muffin",
+            "donut",
+            "croissant",
+            "danish"
+        ],
+        "frozen": [
+            "ice_cream",
+            "frozen_yogurt",
+            "sorbet",
+            "gelato",
+            "popsicle"
+        ],
+        "candy": [
+            "chocolate",
+            "dark_chocolate",
+            "milk_chocolate",
+            "candy_bar",
+            "gummy_bears"
+        ],
+        "other": [
+            "pudding",
+            "custard",
+            "tiramisu",
+            "baklava",
+            "churro"
+        ]
+    },
+    "prepared_meals": {
+        "mexican": [
+            "burrito",
+            "taco",
+            "enchilada",
+            "quesadilla",
+            "nachos",
+            "tamale",
+            "fajitas",
+            "tostada",
+            "chimichanga",
+            "carnitas"
+        ],
+        "italian": [
+            "pizza",
+            "lasagna",
+            "spaghetti",
+            "fettuccine_alfredo",
+            "ravioli",
+            "risotto",
+            "gnocchi",
+            "bruschetta",
+            "caprese_salad"
+        ],
+        "chinese": [
+            "fried_rice",
+            "lo_mein",
+            "chow_mein",
+            "kung_pao_chicken",
+            "orange_chicken",
+            "general_tso",
+            "sweet_and_sour",
+            "egg_roll",
+            "spring_roll",
+            "wonton_soup",
+            "dim_sum",
+            "dumplings"
+        ],
+        "japanese": [
+            "sushi",
+            "sushi_roll",
+            "sashimi",
+            "ramen",
+            "udon",
+            "teriyaki_chicken",
+            "tempura",
+            "miso_soup",
+            "edamame"
+        ],
+        "indian": [
+            "curry",
+            "tikka_masala",
+            "butter_chicken",
+            "biryani",
+            "dal",
+            "samosa",
+            "naan",
+            "tandoori_chicken",
+            "palak_paneer"
+        ],
+        "thai": [
+            "pad_thai",
+            "green_curry",
+            "red_curry",
+            "tom_yum_soup",
+            "spring_roll",
+            "satay"
+        ],
+        "mediterranean": [
+            "hummus",
+            "falafel",
+            "shawarma",
+            "gyro",
+            "kebab",
+            "tabbouleh",
+            "baklava"
+        ],
+        "american": [
+            "hamburger",
+            "cheeseburger",
+            "hot_dog",
+            "mac_and_cheese",
+            "grilled_cheese",
+            "blt_sandwich",
+            "club_sandwich",
+            "fried_chicken",
+            "chicken_nuggets",
+            "chicken_pot_pie",
+            "meatloaf",
+            "beef_stew",
+            "pulled_pork",
+            "bbq_ribs",
+            "coleslaw",
+            "potato_salad"
+        ],
+        "breakfast": [
+            "pancakes",
+            "waffles",
+            "french_toast",
+            "eggs_benedict",
+            "breakfast_burrito",
+            "omelette",
+            "hash_browns",
+            "bacon_and_eggs"
+        ],
+        "sandwiches": [
+            "sandwich",
+            "sub_sandwich",
+            "wrap",
+            "panini",
+            "grilled_cheese",
+            "blt_sandwich",
+            "club_sandwich",
+            "pbj_sandwich",
+            "reuben"
+        ],
+        "salads": [
+            "caesar_salad",
+            "cobb_salad",
+            "greek_salad",
+            "garden_salad",
+            "chicken_salad",
+            "tuna_salad"
+        ],
+        "soups": [
+            "chicken_soup",
+            "tomato_soup",
+            "minestrone_soup",
+            "clam_chowder",
+            "beef_stew",
+            "chili",
+            "french_onion_soup"
+        ]
+    },
+    "snacks": {
+        "chips": [
+            "potato_chips",
+            "tortilla_chips",
+            "corn_chips",
+            "pretzels",
+            "popcorn"
+        ],
+        "crackers": [
+            "crackers",
+            "saltines",
+            "graham_crackers",
+            "rice_cakes"
+        ],
+        "bars": [
+            "granola_bar",
+            "protein_bar",
+            "energy_bar"
+        ],
+        "dips": [
+            "hummus",
+            "guacamole",
+            "salsa",
+            "spinach_dip",
+            "bean_dip"
+        ]
+    }
+}

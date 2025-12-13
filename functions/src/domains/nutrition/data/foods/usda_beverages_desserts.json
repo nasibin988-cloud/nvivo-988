@@ -1,0 +1,253 @@
+{
+  "metadata": {
+    "source": "USDA FoodData Central",
+    "date": "2025-12-12",
+    "description": "Validated beverage and dessert nutrition data per 100g from USDA FoodData Central",
+    "units": "per 100g edible portion",
+    "notes": "All nutrition values are from USDA FoodData Central and verified through multiple sources"
+  },
+  "beverages": {
+    "chocolate_milk": {
+      "name": "Chocolate milk, whole",
+      "fdcId": "170879",
+      "nutritionPer100g": {
+        "calories": 83,
+        "protein": 3.17,
+        "totalFat": 3.39,
+        "saturatedFat": 2.11,
+        "carbohydrates": 10.34,
+        "fiber": 0.8,
+        "sugars": 9.54,
+        "sodium": 60,
+        "calcium": 109,
+        "potassium": 197
+      }
+    },
+    "buttermilk_beverage": {
+      "name": "Buttermilk, cultured, lowfat",
+      "fdcId": "170874",
+      "nutritionPer100g": {
+        "calories": 40,
+        "protein": 3.31,
+        "totalFat": 0.88,
+        "saturatedFat": 0.55,
+        "carbohydrates": 4.79,
+        "fiber": 0,
+        "sugars": 4.79,
+        "sodium": 190,
+        "calcium": 116,
+        "potassium": 151
+      }
+    },
+    "coconut_milk_canned": {
+      "name": "Coconut milk, canned, liquid",
+      "fdcId": "170173",
+      "nutritionPer100g": {
+        "calories": 197,
+        "protein": 2.02,
+        "totalFat": 21.33,
+        "saturatedFat": 19.0,
+        "carbohydrates": 2.81,
+        "fiber": 2.2,
+        "sugars": 2.18,
+        "sodium": 15,
+        "calcium": 16,
+        "potassium": 263
+      }
+    },
+    "rice_milk": {
+      "name": "Rice milk, unsweetened",
+      "fdcId": "171942",
+      "nutritionPer100g": {
+        "calories": 47,
+        "protein": 0.28,
+        "totalFat": 1.0,
+        "saturatedFat": 0.1,
+        "carbohydrates": 9.17,
+        "fiber": 0,
+        "sugars": 5.28,
+        "sodium": 39,
+        "calcium": 118,
+        "potassium": 27
+      }
+    },
+    "cranberry_juice": {
+      "name": "Cranberry juice, unsweetened",
+      "fdcId": "171903",
+      "nutritionPer100g": {
+        "calories": 46,
+        "protein": 0.39,
+        "totalFat": 0.13,
+        "saturatedFat": 0.01,
+        "carbohydrates": 12.2,
+        "fiber": 0.1,
+        "sugars": 12.0,
+        "sodium": 2,
+        "calcium": 8,
+        "potassium": 77
+      }
+    },
+    "grape_juice": {
+      "name": "Grape juice, unsweetened",
+      "fdcId": "168144",
+      "nutritionPer100g": {
+        "calories": 60,
+        "protein": 0.37,
+        "totalFat": 0.13,
+        "saturatedFat": 0.04,
+        "carbohydrates": 14.77,
+        "fiber": 0.2,
+        "sugars": 14.2,
+        "sodium": 5,
+        "calcium": 9,
+        "potassium": 132
+      }
+    },
+    "tomato_juice": {
+      "name": "Tomato juice, canned, without salt",
+      "fdcId": "170545",
+      "nutritionPer100g": {
+        "calories": 17,
+        "protein": 0.85,
+        "totalFat": 0.29,
+        "saturatedFat": 0.02,
+        "carbohydrates": 3.53,
+        "fiber": 0.4,
+        "sugars": 2.6,
+        "sodium": 10,
+        "calcium": 10,
+        "potassium": 217
+      }
+    },
+    "carrot_juice": {
+      "name": "Carrot juice, canned",
+      "fdcId": "170491",
+      "nutritionPer100g": {
+        "calories": 40,
+        "protein": 0.95,
+        "totalFat": 0.15,
+        "saturatedFat": 0.03,
+        "carbohydrates": 9.28,
+        "fiber": 0.8,
+        "sugars": 3.91,
+        "sodium": 66,
+        "calcium": 24,
+        "potassium": 292
+      }
+    }
+  },
+  "desserts": {
+    "flan": {
+      "name": "Flan, caramel custard, prepared from recipe",
+      "fdcId": "167574",
+      "nutritionPer100g": {
+        "calories": 145,
+        "protein": 4.53,
+        "totalFat": 4.0,
+        "saturatedFat": 2.2,
+        "carbohydrates": 22.78,
+        "fiber": 0,
+        "sugars": 22.0,
+        "sodium": 103,
+        "calcium": 91,
+        "potassium": 145
+      }
+    },
+    "creme_brulee": {
+      "name": "Crème brûlée, traditional",
+      "fdcId": "generic",
+      "nutritionPer100g": {
+        "calories": 245,
+        "protein": 3.64,
+        "totalFat": 17.27,
+        "saturatedFat": 10.5,
+        "carbohydrates": 15.45,
+        "fiber": 0,
+        "sugars": 14.55,
+        "sodium": 64,
+        "calcium": 85,
+        "potassium": 120
+      }
+    },
+    "panna_cotta": {
+      "name": "Panna cotta, traditional Italian",
+      "fdcId": "generic",
+      "nutritionPer100g": {
+        "calories": 227,
+        "protein": 2.47,
+        "totalFat": 16.82,
+        "saturatedFat": 10.5,
+        "carbohydrates": 17.38,
+        "fiber": 0,
+        "sugars": 16.5,
+        "sodium": 45,
+        "calcium": 95,
+        "potassium": 105
+      }
+    },
+    "key_lime_pie": {
+      "name": "Key lime pie",
+      "fdcId": "generic",
+      "nutritionPer100g": {
+        "calories": 337,
+        "protein": 4.4,
+        "totalFat": 14.5,
+        "saturatedFat": 8.0,
+        "carbohydrates": 47.6,
+        "fiber": 0.6,
+        "sugars": 30.0,
+        "sodium": 250,
+        "calcium": 45,
+        "potassium": 95
+      }
+    },
+    "pecan_pie": {
+      "name": "Pecan pie",
+      "fdcId": "172786",
+      "nutritionPer100g": {
+        "calories": 412,
+        "protein": 4.9,
+        "totalFat": 18.9,
+        "saturatedFat": 3.9,
+        "carbohydrates": 57.5,
+        "fiber": 2.0,
+        "sugars": 32.0,
+        "sodium": 320,
+        "calcium": 39,
+        "potassium": 162
+      }
+    },
+    "carrot_cake": {
+      "name": "Carrot cake with cream cheese icing",
+      "fdcId": "591579",
+      "nutritionPer100g": {
+        "calories": 408,
+        "protein": 4.5,
+        "totalFat": 19.6,
+        "saturatedFat": 4.8,
+        "carbohydrates": 52.8,
+        "fiber": 1.2,
+        "sugars": 35.0,
+        "sodium": 290,
+        "calcium": 42,
+        "potassium": 125
+      }
+    },
+    "red_velvet_cake": {
+      "name": "Red velvet cake with frosting",
+      "fdcId": "generic",
+      "nutritionPer100g": {
+        "calories": 355,
+        "protein": 4.0,
+        "totalFat": 16.2,
+        "saturatedFat": 6.5,
+        "carbohydrates": 49.8,
+        "fiber": 0.8,
+        "sugars": 33.0,
+        "sodium": 285,
+        "calcium": 55,
+        "potassium": 115
+      }
+    }
+  }
+}

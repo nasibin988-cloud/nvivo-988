@@ -10,21 +10,23 @@
 
 import { useState } from 'react';
 import { CheckCircle2, AlertCircle, ChevronDown, ChevronUp, Sparkles, Target } from 'lucide-react';
-import { useNutritionDayEvaluation } from '../../../../hooks/nutrition';
+import { useNutritionDayEvaluation, type NutritionFocusId } from '../../../../hooks/nutrition';
 
 interface HighlightsGapsPanelProps {
   date: string;
   totals: Record<string, number> | null;
+  focusId?: NutritionFocusId;
   onNutrientTap?: (nutrientId: string) => void;
 }
 
 export function HighlightsGapsPanel({
   date,
   totals,
+  focusId = 'balanced',
   onNutrientTap,
 }: HighlightsGapsPanelProps): React.ReactElement | null {
   const [isExpanded, setIsExpanded] = useState(false);
-  const { data: evaluation, isLoading } = useNutritionDayEvaluation(date, totals);
+  const { data: evaluation, isLoading } = useNutritionDayEvaluation(date, totals, focusId);
 
   // Don't render if no data
   if (!totals || Object.keys(totals).length === 0) {
@@ -98,14 +100,10 @@ export function HighlightsGapsPanel({
               {visibleHighlights.map((highlight, index) => (
                 <InsightItem
                   key={`highlight-${index}`}
-                  text={highlight}
+                  text={highlight.message}
                   type="highlight"
                   onTap={onNutrientTap ? () => {
-                    // Extract nutrient from highlight text (first word usually)
-                    const nutrientMatch = highlight.match(/^(\w+)/);
-                    if (nutrientMatch) {
-                      onNutrientTap(nutrientMatch[1].toLowerCase());
-                    }
+                    onNutrientTap(highlight.nutrientId);
                   } : undefined}
                 />
               ))}
@@ -126,13 +124,10 @@ export function HighlightsGapsPanel({
               {visibleGaps.map((gap, index) => (
                 <InsightItem
                   key={`gap-${index}`}
-                  text={gap}
+                  text={gap.suggestion}
                   type="gap"
                   onTap={onNutrientTap ? () => {
-                    const nutrientMatch = gap.match(/^(\w+)/);
-                    if (nutrientMatch) {
-                      onNutrientTap(nutrientMatch[1].toLowerCase());
-                    }
+                    onNutrientTap(gap.nutrientId);
                   } : undefined}
                 />
               ))}

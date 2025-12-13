@@ -15,16 +15,12 @@ import type {
   WellnessFocus,
   HealthGrade,
   AIComparisonInsight,
-  AIGradingResult,
 } from '../types';
 import {
-  calculateHealthGrade,
-  calculateNutrientScores,
-  calculateFocusImpacts,
-  calculateConditionImpacts,
-  generateAlternatives,
+  buildFoodHealthProfile,
   generateAiRecommendation,
 } from '../utils';
+import type { FoodIntelligence } from '../../photo-analysis/types';
 
 const MAX_ITEMS = 4;
 const MIN_ITEMS_FOR_COMPARE = 2;
@@ -87,9 +83,10 @@ function createEmptyItem(): FoodInputItem {
  * Helper to extract all extended nutrition data from a food item
  * Handles undefined values gracefully
  * Uses short food names for cleaner display
+ * Returns both nutrition data and intelligence (if available)
  */
-function extractAllNutrients(food: ExtendedFoodItem): ExtendedNutritionData {
-  return {
+function extractAllNutrients(food: ExtendedFoodItem): { nutrition: ExtendedNutritionData; intelligence?: FoodIntelligence } {
+  const nutrition: ExtendedNutritionData = {
     name: getShortFoodName(food.name),
     calories: food.calories,
     protein: food.protein,
@@ -152,6 +149,11 @@ function extractAllNutrients(food: ExtendedFoodItem): ExtendedNutritionData {
     glycemicIndex: food.glycemicIndex,
     glycemicLoad: food.glycemicLoad,
     novaClass: food.novaClass,
+  };
+
+  return {
+    nutrition,
+    intelligence: food.intelligence,
   };
 }
 
@@ -307,6 +309,9 @@ interface ExtendedFoodItem {
   glycemicIndex?: number;
   glycemicLoad?: number;
   novaClass?: 1 | 2 | 3 | 4;
+
+  // Food intelligence data from database
+  intelligence?: FoodIntelligence;
 }
 
 interface UseMultiFoodComparisonReturn {
@@ -413,77 +418,20 @@ export function useMultiFoodComparison(): UseMultiFoodComparisonReturn {
   }, []);
 
   // Build health profile from nutrition data
-  // Uses AI grading when available, falls back to algorithmic grading
-  const buildHealthProfile = useCallback((
+  // Priority: Database grades > AI grading > Algorithmic fallback
+  const createHealthProfile = useCallback((
     data: ExtendedNutritionData,
-    aiGrading?: AIGradingResult
+    intelligence?: FoodIntelligence
   ): FoodHealthProfile => {
-    // Get the currently selected focus (single selection)
-    const selectedFocus = userFocuses[0] || 'balanced';
-
-    // Use AI grades when available, otherwise fall back to algorithmic
-    let grade: HealthGrade;
-    let reason: string;
-    let overallScore: number;
-    let focusScores: Record<WellnessFocus, number>;
-
-    if (aiGrading) {
-      // Use AI-provided grades
-      grade = aiGrading.focusGrades[selectedFocus] || aiGrading.overallGrade;
-      reason = aiGrading.primaryConcerns.length > 0
-        ? `${aiGrading.primaryConcerns[0]}`
-        : aiGrading.strengths.length > 0
-          ? `${aiGrading.strengths[0]}`
-          : 'AI-graded for your wellness focus';
-
-      // Convert letter grades to scores for display
-      const gradeToScore: Record<HealthGrade, number> = { A: 90, B: 75, C: 60, D: 40, F: 20 };
-      overallScore = gradeToScore[grade];
-
-      // Build focus scores from AI grades
-      focusScores = {} as Record<WellnessFocus, number>;
-      const allFocuses: WellnessFocus[] = [
-        'balanced', 'muscle_building', 'heart_health', 'energy_endurance',
-        'weight_management', 'brain_focus', 'gut_health', 'blood_sugar_balance',
-        'bone_joint_support', 'anti_inflammatory'
-      ];
-      for (const focus of allFocuses) {
-        const focusGrade = aiGrading.focusGrades[focus] || 'C';
-        focusScores[focus] = gradeToScore[focusGrade];
-      }
-    } else {
-      // Fall back to algorithmic grading
-      const algorithmicResult = calculateHealthGrade(data, userFocuses);
-      grade = algorithmicResult.grade;
-      reason = algorithmicResult.reason;
-      overallScore = algorithmicResult.overallScore;
-      focusScores = algorithmicResult.focusScores;
-    }
-
-    const nutrientScores = calculateNutrientScores(data);
-    const focusImpacts = calculateFocusImpacts(data, userFocuses);
-    const conditionImpacts = calculateConditionImpacts(data, []);
-
-    const profile: FoodHealthProfile = {
-      ...data,
-      aiGrading,
-      healthGrade: grade,
-      gradeReason: reason,
-      overallScore,
-      focusScores,
-      nutrientScores,
-      focusImpacts,
-      conditionImpacts,
-      alternatives: generateAlternatives({ ...data, healthGrade: grade }),
-    };
+    // Use shared buildFoodHealthProfile which prefers database grades
+    const profile = buildFoodHealthProfile(data, userFocuses, intelligence);
     profile.aiRecommendation = generateAiRecommendation(profile);
-
     return profile;
   }, [userFocuses]);
 
   // Set manual nutrition data for an item
   const setManualData = useCallback((id: string, data: ExtendedNutritionData) => {
-    const profile = buildHealthProfile(data);
+    const profile = createHealthProfile(data);
 
     setItems((prev) =>
       prev.map((item) =>
@@ -500,7 +448,7 @@ export function useMultiFoodComparison(): UseMultiFoodComparisonReturn {
       )
     );
     setAiInsight(null);
-  }, [buildHealthProfile]);
+  }, [createHealthProfile]);
 
   // Fetch AI insight for comparison
   const fetchAIInsight = useCallback(async (profiles: FoodHealthProfile[]) => {
@@ -573,15 +521,12 @@ export function useMultiFoodComparison(): UseMultiFoodComparisonReturn {
       { items: ExtendedFoodItem[]; totalCalories: number; totalProtein: number; totalCarbs: number; totalFat: number }
     >(functions, 'analyzeFoodText');
 
-    const gradeFoodAI = httpsCallable<
-      { nutrition: ExtendedNutritionData },
-      AIGradingResult
-    >(functions, 'gradeFoodAI');
-
     // Analyze all items in parallel
     const analysisPromises = pendingItems.map(async (item) => {
       try {
         let nutritionData: ExtendedNutritionData;
+
+        let intelligence: FoodIntelligence | undefined;
 
         if (item.inputMethod === 'photo' && item.imageData) {
           const imageContent = item.imageData.split(',')[1];
@@ -589,40 +534,40 @@ export function useMultiFoodComparison(): UseMultiFoodComparisonReturn {
           const result = response.data;
 
           if (result.items.length === 1) {
-            // Single item - extract all nutrients
-            nutritionData = extractAllNutrients(result.items[0]);
+            // Single item - extract all nutrients and intelligence
+            const extracted = extractAllNutrients(result.items[0]);
+            nutritionData = extracted.nutrition;
+            intelligence = extracted.intelligence;
           } else {
             // Multiple items - combine all nutrients
             const combinedName = result.items.map((i) => i.name).join(' + ');
             nutritionData = combineNutrients(result.items, combinedName);
+            // Use first item's intelligence for combined meals
+            intelligence = result.items[0]?.intelligence;
           }
         } else if (item.inputMethod === 'text' && item.textDescription) {
           const response = await analyzeFoodText({ foodDescription: item.textDescription });
           const result = response.data;
 
           if (result.items.length === 1) {
-            // Single item - extract all nutrients
-            nutritionData = extractAllNutrients(result.items[0]);
+            // Single item - extract all nutrients and intelligence
+            const extracted = extractAllNutrients(result.items[0]);
+            nutritionData = extracted.nutrition;
+            intelligence = extracted.intelligence;
           } else {
             // Multiple items - combine all nutrients
             const combinedName = result.items.map((i) => i.name).join(' + ');
             nutritionData = combineNutrients(result.items, combinedName);
+            // Use first item's intelligence for combined meals
+            intelligence = result.items[0]?.intelligence;
           }
         } else {
           throw new Error('Invalid input method');
         }
 
-        // Get AI grading for this food (parallel with nutrition analysis is done above)
-        let aiGrading: AIGradingResult | undefined;
-        try {
-          const gradingResponse = await gradeFoodAI({ nutrition: nutritionData });
-          aiGrading = gradingResponse.data;
-        } catch (gradingError) {
-          console.warn('AI grading failed, using fallback:', gradingError);
-          // Continue without AI grading - buildHealthProfile will use algorithmic fallback
-        }
-
-        const profile = buildHealthProfile(nutritionData, aiGrading);
+        // Build profile using database grades (preferred) with algorithmic fallback
+        // No need for separate gradeFoodAI call - database grades are more reliable
+        const profile = createHealthProfile(nutritionData, intelligence);
         return { id: item.id, success: true, nutritionData, healthProfile: profile };
       } catch (error) {
         const errorMessage = error instanceof Error ? error.message : 'Analysis failed';
@@ -673,7 +618,7 @@ export function useMultiFoodComparison(): UseMultiFoodComparisonReturn {
     if (allProfiles.length >= 2) {
       fetchAIInsight(allProfiles);
     }
-  }, [items, buildHealthProfile, fetchAIInsight]);
+  }, [items, createHealthProfile, fetchAIInsight]);
 
   // Calculate comparison result
   const comparisonResult = useMemo((): MultiComparisonResult | null => {

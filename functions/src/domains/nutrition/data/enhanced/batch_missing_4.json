@@ -1,0 +1,584 @@
+{
+  "cookie": {
+    "name": "Cookie",
+    "calories": 502,
+    "protein": 5.6,
+    "carbs": 64.5,
+    "fat": 24.4,
+    "fiber": 2.1,
+    "sugar": 36.2,
+    "sodium": 385,
+    "saturatedFat": 7.8,
+    "cholesterol": 41,
+    "potassium": 125,
+    "calcium": 28,
+    "iron": 2.8,
+    "magnesium": 24,
+    "vitaminA": 98,
+    "vitaminC": 0.2,
+    "vitaminD": 0.3,
+    "vitaminB12": 0.1,
+    "glycemicIndex": 70,
+    "glycemicLoad": 45,
+    "allergens": ["wheat", "eggs", "milk"],
+    "servingSize": 30,
+    "servingUnit": "g",
+    "focusGrades": {
+      "balanced": {
+        "grade": "D",
+        "score": 35,
+        "insight": "Highly refined with excessive sugar and saturated fat, minimal micronutrients, and poor macronutrient balance",
+        "pros": ["Quick energy source", "Small serving provides some iron"],
+        "cons": ["Very high in added sugars (36g per 100g)", "High saturated fat content", "Low in essential vitamins and minerals", "Minimal fiber and protein"]
+      },
+      "heart_health": {
+        "grade": "F",
+        "score": 20,
+        "insight": "Contains high levels of saturated fat, refined carbs, and sodium that directly increase cardiovascular disease risk",
+        "pros": ["Contains some potassium"],
+        "cons": ["High saturated fat (7.8g) raises LDL cholesterol", "Excessive sodium (385mg)", "Refined sugars promote inflammation", "Trans fats may be present in commercial varieties"]
+      },
+      "muscle_building": {
+        "grade": "F",
+        "score": 25,
+        "insight": "Severely lacking in protein with poor amino acid profile, excess empty calories hinder lean mass development",
+        "pros": ["Provides quick carbohydrate energy"],
+        "cons": ["Very low protein content (5.6g)", "Poor quality protein from wheat", "High sugar causes insulin spikes without muscle benefit", "Low in BCAAs and essential amino acids"]
+      },
+      "energy": {
+        "grade": "D-",
+        "score": 40,
+        "insight": "Delivers rapid sugar spike followed by energy crash, lacks sustained fuel from complex carbs or healthy fats",
+        "pros": ["Immediate glucose availability", "High calorie density for quick fuel"],
+        "cons": ["Blood sugar roller coaster effect", "No complex carbs for sustained release", "Low B-vitamins for energy metabolism", "Sugar crash within 1-2 hours"]
+      },
+      "weight_management": {
+        "grade": "F",
+        "score": 15,
+        "insight": "Calorie-dense with minimal satiety, high glycemic load promotes fat storage and triggers hunger hormones",
+        "pros": ["Small portion sizes possible"],
+        "cons": ["Extremely calorie-dense (502 cal/100g)", "Very low fiber (2.1g) provides no fullness", "High GI (70) and GL (45) spike insulin", "Triggers dopamine response leading to overconsumption"]
+      },
+      "brain_focus": {
+        "grade": "F",
+        "score": 28,
+        "insight": "Sugar spike impairs cognitive function, lacks omega-3s and B-vitamins essential for neurotransmitter synthesis",
+        "pros": ["Brief glucose boost to brain"],
+        "cons": ["Blood sugar fluctuations impair concentration", "No omega-3 fatty acids", "Minimal B-vitamins for neurotransmitter production", "Sugar crash causes brain fog"]
+      },
+      "gut_health": {
+        "grade": "D-",
+        "score": 32,
+        "insight": "Refined flour and high sugar feed harmful gut bacteria, minimal fiber starves beneficial microbiome",
+        "pros": ["Some wheat fiber present"],
+        "cons": ["Very low fiber (2.1g) for prebiotic effect", "High sugar promotes dysbiosis", "Refined carbs lack resistant starch", "May contain additives disrupting microbiome"]
+      },
+      "blood_sugar": {
+        "grade": "F",
+        "score": 18,
+        "insight": "Extremely high glycemic impact causes severe blood glucose spikes and insulin resistance over time",
+        "pros": ["Can reverse acute hypoglycemia"],
+        "cons": ["Very high GI (70) and GL (45)", "36g added sugar per 100g", "Minimal fiber to slow absorption", "Promotes insulin resistance with regular consumption"]
+      },
+      "bone_joint": {
+        "grade": "D",
+        "score": 38,
+        "insight": "Low calcium and vitamin D, high sugar promotes inflammatory processes affecting joint health",
+        "pros": ["Contains some calcium (28mg)", "Small amount of magnesium"],
+        "cons": ["Very low calcium relative to needs", "Minimal vitamin D (0.3mcg)", "Sugar promotes systemic inflammation", "Low in vitamin K for bone metabolism"]
+      },
+      "anti_inflammatory": {
+        "grade": "F",
+        "score": 22,
+        "insight": "High refined sugar and saturated fat are pro-inflammatory, lacks antioxidants and omega-3s",
+        "pros": ["No significant anti-inflammatory properties"],
+        "cons": ["High sugar triggers inflammatory pathways", "Saturated fat promotes inflammation", "Refined flour spikes blood sugar (inflammatory)", "Zero omega-3 fatty acids", "No polyphenols or antioxidants"]
+      }
+    }
+  },
+  "corn_tortilla": {
+    "name": "Corn Tortilla",
+    "calories": 218,
+    "protein": 5.7,
+    "carbs": 44.6,
+    "fat": 2.8,
+    "fiber": 6.3,
+    "sugar": 1.2,
+    "sodium": 223,
+    "saturatedFat": 0.4,
+    "cholesterol": 0,
+    "potassium": 165,
+    "calcium": 181,
+    "iron": 2.4,
+    "magnesium": 84,
+    "vitaminA": 10,
+    "vitaminC": 0,
+    "vitaminD": 0,
+    "vitaminB12": 0,
+    "glycemicIndex": 52,
+    "glycemicLoad": 23,
+    "allergens": [],
+    "servingSize": 49,
+    "servingUnit": "g",
+    "focusGrades": {
+      "balanced": {
+        "grade": "B",
+        "score": 78,
+        "insight": "Whole grain option with good fiber, decent minerals, low fat, but limited protein diversity and some sodium",
+        "pros": ["Good fiber content (6.3g)", "Low in fat and cholesterol-free", "Naturally gluten-free", "Rich in magnesium and calcium"],
+        "cons": ["Moderate sodium content", "Incomplete protein profile", "Low in vitamins A, C, and B12"]
+      },
+      "heart_health": {
+        "grade": "B+",
+        "score": 85,
+        "insight": "Cholesterol-free with minimal saturated fat, magnesium supports cardiovascular function, fiber aids cholesterol management",
+        "pros": ["Zero cholesterol", "Very low saturated fat (0.4g)", "High magnesium (84mg) for heart rhythm", "Fiber helps lower LDL cholesterol"],
+        "cons": ["Moderate sodium (223mg) in some brands", "Limited omega-3 content"]
+      },
+      "muscle_building": {
+        "grade": "C+",
+        "score": 65,
+        "insight": "Provides plant-based protein and carbs for glycogen replenishment, but lacks complete amino acids and high leucine content",
+        "pros": ["Moderate protein (5.7g)", "Good carbs (44.6g) for post-workout glycogen", "Magnesium aids muscle contraction"],
+        "cons": ["Incomplete amino acid profile", "Low in leucine and BCAAs", "Would need pairing with beans for complete protein"]
+      },
+      "energy": {
+        "grade": "B+",
+        "score": 84,
+        "insight": "Complex carbs provide steady energy release, moderate GI prevents crashes, fiber sustains blood glucose levels",
+        "pros": ["Complex carbohydrates for sustained fuel", "Moderate GI (52) prevents sugar spikes", "Fiber slows digestion for steady energy", "Magnesium supports ATP production"],
+        "cons": ["Limited B-vitamins compared to enriched wheat", "No vitamin B12 for energy metabolism"]
+      },
+      "weight_management": {
+        "grade": "B",
+        "score": 80,
+        "insight": "High fiber promotes satiety at moderate calorie density, low fat content supports calorie control with controlled portions",
+        "pros": ["High fiber (6.3g) increases fullness", "Moderate calories (218 per 100g)", "Low fat (2.8g)", "Moderate GL (23) controls hunger"],
+        "cons": ["Easy to overeat multiple tortillas", "Portion control essential", "Lower protein may not satisfy as well"]
+      },
+      "brain_focus": {
+        "grade": "C+",
+        "score": 68,
+        "insight": "Steady glucose from complex carbs fuels brain, magnesium supports cognition, but lacks B-vitamins and omega-3s",
+        "pros": ["Stable blood sugar supports concentration", "Magnesium (84mg) aids neurotransmitter function", "Complex carbs provide glucose without crash"],
+        "cons": ["No vitamin B12 for neurological health", "Lacks omega-3 fatty acids", "Limited in B-vitamins for brain metabolism"]
+      },
+      "gut_health": {
+        "grade": "B+",
+        "score": 86,
+        "insight": "Excellent fiber content feeds beneficial bacteria, resistant starch acts as prebiotic, naturally gluten-free reduces inflammation",
+        "pros": ["High fiber (6.3g) feeds microbiome", "Resistant starch from corn acts as prebiotic", "Naturally gluten-free (less gut irritation)", "Whole grain supports diversity"],
+        "cons": ["Lacks fermented qualities", "Lower prebiotic diversity than some grains"]
+      },
+      "blood_sugar": {
+        "grade": "B+",
+        "score": 83,
+        "insight": "Moderate glycemic index and high fiber content slow glucose absorption, steady insulin response without dramatic spikes",
+        "pros": ["Moderate GI (52) and GL (23)", "High fiber slows carb absorption", "Low sugar content (1.2g)", "Magnesium improves insulin sensitivity"],
+        "cons": ["Still carb-dense for strict low-carb diets", "Needs protein/fat pairing for optimal control"]
+      },
+      "bone_joint": {
+        "grade": "A-",
+        "score": 88,
+        "insight": "Outstanding calcium content from nixtamalization process, magnesium supports bone density, anti-inflammatory properties benefit joints",
+        "pros": ["Very high calcium (181mg) from lime treatment", "Excellent magnesium (84mg) for bone matrix", "Low inflammatory profile", "Traditional preparation enhances mineral bioavailability"],
+        "cons": ["No vitamin D for calcium absorption", "Low vitamin K content"]
+      },
+      "anti_inflammatory": {
+        "grade": "B",
+        "score": 79,
+        "insight": "Whole grain corn provides antioxidants, naturally gluten-free reduces inflammatory triggers, low saturated fat profile",
+        "pros": ["Gluten-free (less gut inflammation)", "Whole grain antioxidants present", "Very low saturated fat", "Magnesium reduces inflammatory markers"],
+        "cons": ["Limited omega-3 content", "Lower polyphenol diversity than some grains", "Some commercial versions use inflammatory oils"]
+      }
+    }
+  },
+  "cornbread": {
+    "name": "Cornbread",
+    "calories": 266,
+    "protein": 5.3,
+    "carbs": 42.8,
+    "fat": 8.4,
+    "fiber": 2.6,
+    "sugar": 11.5,
+    "sodium": 467,
+    "saturatedFat": 2.2,
+    "cholesterol": 35,
+    "potassium": 137,
+    "calcium": 114,
+    "iron": 1.9,
+    "magnesium": 28,
+    "vitaminA": 125,
+    "vitaminC": 0.1,
+    "vitaminD": 0.2,
+    "vitaminB12": 0.2,
+    "glycemicIndex": 65,
+    "glycemicLoad": 28,
+    "allergens": ["wheat", "eggs", "milk"],
+    "servingSize": 60,
+    "servingUnit": "g",
+    "focusGrades": {
+      "balanced": {
+        "grade": "C",
+        "score": 58,
+        "insight": "Moderate calorie density with added sugar and fat from butter/oil, better than white bread but still refined",
+        "pros": ["Contains calcium from milk", "Moderate protein content", "Some vitamin A from eggs/butter"],
+        "cons": ["High sodium (467mg)", "Added sugars (11.5g)", "Low fiber for grain product", "High saturated fat from butter"]
+      },
+      "heart_health": {
+        "grade": "D+",
+        "score": 45,
+        "insight": "Excessive sodium significantly raises blood pressure, saturated fat and cholesterol impact cardiovascular health negatively",
+        "pros": ["Contains some potassium", "Moderate calcium content"],
+        "cons": ["Very high sodium (467mg - 20% DV)", "Saturated fat (2.2g) from butter", "Contains cholesterol (35mg)", "Refined grains increase CVD risk"]
+      },
+      "muscle_building": {
+        "grade": "D+",
+        "score": 48,
+        "insight": "Low protein density with incomplete amino acids, high carbs suitable for glycogen but poor protein quality",
+        "pros": ["Moderate carbs (42.8g) for energy", "Contains eggs providing some quality protein", "Provides some B-vitamins"],
+        "cons": ["Low protein (5.3g)", "Incomplete amino acid profile from corn/wheat mix", "High sodium may increase water retention", "Sugar provides empty calories"]
+      },
+      "energy": {
+        "grade": "C",
+        "score": 62,
+        "insight": "Moderate glycemic load provides quicker energy than whole grains, but added sugar causes mild blood glucose fluctuations",
+        "pros": ["Carb-rich for immediate fuel", "Fat content slows digestion slightly", "Some B-vitamins for metabolism"],
+        "cons": ["High GI (65) causes faster glucose spike", "Added sugar (11.5g) affects stability", "Low fiber reduces sustained release", "Refined flour lacks nutrient density"]
+      },
+      "weight_management": {
+        "grade": "D",
+        "score": 42,
+        "insight": "Calorie-dense with added fats and sugars, low fiber provides poor satiety, high sodium increases water retention",
+        "pros": ["Moderate portion control possible", "Some protein for slight satiety"],
+        "cons": ["Low fiber (2.6g) - minimal fullness", "Added sugars increase calorie density", "High GI (65) and GL (28) spike insulin", "Sodium causes water retention masking fat loss"]
+      },
+      "brain_focus": {
+        "grade": "C-",
+        "score": 55,
+        "insight": "Carbs provide brain glucose but refined nature and sugar cause concentration dips, lacks omega-3s and key B-vitamins",
+        "pros": ["Carbohydrates fuel brain glucose needs", "Contains some B-vitamins from fortification", "Eggs provide choline for memory"],
+        "cons": ["Blood sugar fluctuations impair focus", "Low in vitamin B12 (0.2mcg)", "No omega-3 fatty acids", "Refined grains lack sustained mental energy"]
+      },
+      "gut_health": {
+        "grade": "C-",
+        "score": 52,
+        "insight": "Low fiber content fails to support microbiome diversity, added sugar may feed harmful bacteria, some gluten present",
+        "pros": ["Cornmeal provides some resistant starch", "Eggs contain beneficial choline"],
+        "cons": ["Low fiber (2.6g) - poor prebiotic effect", "Added sugar (11.5g) promotes dysbiosis", "Wheat gluten may irritate sensitive individuals", "Refined grains lack whole grain benefits"]
+      },
+      "blood_sugar": {
+        "grade": "D+",
+        "score": 47,
+        "insight": "High glycemic index and added sugars create moderate glucose spike, low fiber fails to buffer absorption",
+        "pros": ["Fat content slightly slows carb absorption", "Lower GL than pure sugar foods"],
+        "cons": ["High GI (65) causes quick glucose rise", "Added sugar (11.5g) worsens glycemic impact", "Low fiber (2.6g) allows rapid absorption", "Refined flour affects insulin sensitivity"]
+      },
+      "bone_joint": {
+        "grade": "C+",
+        "score": 68,
+        "insight": "Good calcium from milk and fortification supports bone health, but high sodium may increase calcium excretion",
+        "pros": ["High calcium (114mg) from milk", "Contains vitamin A for bone cell function", "Magnesium supports bone matrix"],
+        "cons": ["Very high sodium increases calcium loss in urine", "Low vitamin D (0.2mcg)", "Minimal vitamin K", "Added sugar may promote inflammation"]
+      },
+      "anti_inflammatory": {
+        "grade": "D+",
+        "score": 44,
+        "insight": "Added sugar and refined flour are pro-inflammatory, saturated fat from butter increases inflammatory markers",
+        "pros": ["Whole corn provides some antioxidants", "Contains vitamin A (anti-inflammatory)"],
+        "cons": ["Added sugar (11.5g) triggers inflammation", "Saturated fat promotes inflammatory pathways", "Refined wheat may cause gut inflammation", "High sodium increases inflammatory markers", "Lacks omega-3s"]
+      }
+    }
+  },
+  "couscous": {
+    "name": "Couscous",
+    "calories": 112,
+    "protein": 3.8,
+    "carbs": 23.2,
+    "fat": 0.2,
+    "fiber": 1.4,
+    "sugar": 0.1,
+    "sodium": 5,
+    "saturatedFat": 0,
+    "cholesterol": 0,
+    "potassium": 58,
+    "calcium": 8,
+    "iron": 0.4,
+    "magnesium": 8,
+    "vitaminA": 0,
+    "vitaminC": 0,
+    "vitaminD": 0,
+    "vitaminB12": 0,
+    "glycemicIndex": 65,
+    "glycemicLoad": 15,
+    "allergens": ["wheat"],
+    "servingSize": 157,
+    "servingUnit": "g",
+    "focusGrades": {
+      "balanced": {
+        "grade": "C+",
+        "score": 66,
+        "insight": "Low-fat, low-sodium base with moderate carbs, but refined grain lacks fiber, protein, and essential micronutrients",
+        "pros": ["Very low fat (0.2g)", "Very low sodium (5mg)", "Cholesterol-free", "Low calorie density"],
+        "cons": ["Low protein (3.8g)", "Minimal fiber (1.4g)", "Poor micronutrient profile", "Refined grain lacks B-vitamins"]
+      },
+      "heart_health": {
+        "grade": "B-",
+        "score": 72,
+        "insight": "Zero saturated fat and cholesterol with minimal sodium supports cardiovascular health, but lacks heart-protective nutrients",
+        "pros": ["Zero saturated fat and cholesterol", "Very low sodium (5mg)", "No trans fats", "Low calorie density"],
+        "cons": ["Minimal potassium (58mg)", "No omega-3 fatty acids", "Low fiber for cholesterol management", "Lacks magnesium for heart rhythm"]
+      },
+      "muscle_building": {
+        "grade": "D",
+        "score": 38,
+        "insight": "Very low protein content with incomplete amino acid profile, suitable only as carb source for glycogen replenishment",
+        "pros": ["Provides carbs for glycogen storage", "Low fat allows protein to be prioritized", "Easy to digest post-workout"],
+        "cons": ["Very low protein (3.8g)", "Incomplete amino acids from wheat", "Minimal BCAAs", "Would need substantial protein pairing"]
+      },
+      "energy": {
+        "grade": "B-",
+        "score": 73,
+        "insight": "Moderate glycemic load provides steady carb energy without extreme spikes, but refined nature limits sustained release",
+        "pros": ["Moderate GL (15) for stable energy", "Quick-digesting carbs for immediate fuel", "Low fat for efficient carb metabolism", "Light on stomach before activity"],
+        "cons": ["Refined grain lacks sustained release", "Minimal B-vitamins for energy metabolism", "Low fiber reduces endurance fuel", "No complex carbs from whole grain"]
+      },
+      "weight_management": {
+        "grade": "B-",
+        "score": 75,
+        "insight": "Low calorie and fat content support calorie control, but minimal fiber and protein provide poor satiety signaling",
+        "pros": ["Low calories (112 per 100g)", "Very low fat (0.2g)", "Low energy density", "Moderate GL (15)"],
+        "cons": ["Very low fiber (1.4g) - minimal fullness", "Low protein (3.8g) fails to satisfy", "Refined carbs digest quickly", "Easy to overconsume without satiety"]
+      },
+      "brain_focus": {
+        "grade": "C",
+        "score": 60,
+        "insight": "Provides brain glucose from carbs but refined nature causes mild fluctuations, critically lacks B-vitamins and omega-3s",
+        "pros": ["Carbs provide glucose for brain function", "Moderate GI prevents severe crashes", "Low fat allows glucose prioritization"],
+        "cons": ["No B-vitamins for neurotransmitter synthesis", "Zero omega-3 fatty acids", "Refined grain lacks sustained mental fuel", "Minimal magnesium for cognitive function"]
+      },
+      "gut_health": {
+        "grade": "D+",
+        "score": 46,
+        "insight": "Very low fiber fails to nourish beneficial bacteria, refined grain lacks prebiotics and resistant starch",
+        "pros": ["Easy to digest for sensitive stomachs", "Gluten content lower than bread", "Minimal additives in plain couscous"],
+        "cons": ["Very low fiber (1.4g)", "Refined grain lacks prebiotics", "No resistant starch", "Doesn't support microbiome diversity"]
+      },
+      "blood_sugar": {
+        "grade": "C+",
+        "score": 67,
+        "insight": "Moderate glycemic response when paired correctly, but refined grain and low fiber allow faster glucose absorption",
+        "pros": ["Moderate GL (15)", "Very low sugar (0.1g)", "Can be paired with protein/fat for better control", "Lower GI than white bread"],
+        "cons": ["High GI (65) from refined grain", "Low fiber (1.4g) allows rapid absorption", "Lacks magnesium for insulin function", "Refined carbs affect long-term insulin sensitivity"]
+      },
+      "bone_joint": {
+        "grade": "D",
+        "score": 35,
+        "insight": "Severely lacking in calcium, magnesium, vitamin D, and K essential for bone health and joint function",
+        "pros": ["Very low sodium won't increase calcium loss", "Easy to pair with calcium-rich foods"],
+        "cons": ["Minimal calcium (8mg)", "Very low magnesium (8mg)", "No vitamin D or K", "Refined grain lacks bone-supporting nutrients"]
+      },
+      "anti_inflammatory": {
+        "grade": "C-",
+        "score": 54,
+        "insight": "Neutral inflammatory profile with no saturated fat, but refined wheat may trigger mild inflammation in sensitive individuals",
+        "pros": ["Zero saturated fat", "No added sugars (0.1g)", "Low sodium prevents inflammation", "No trans fats"],
+        "cons": ["Refined wheat may cause gut inflammation", "Gluten sensitive individuals affected", "Lacks omega-3s", "No antioxidants or polyphenols", "High GI may increase inflammatory markers"]
+      }
+    }
+  },
+  "cream_cheese": {
+    "name": "Cream Cheese",
+    "calories": 342,
+    "protein": 5.9,
+    "carbs": 5.5,
+    "fat": 34.2,
+    "fiber": 0,
+    "sugar": 4.2,
+    "sodium": 321,
+    "saturatedFat": 19.3,
+    "cholesterol": 110,
+    "potassium": 138,
+    "calcium": 98,
+    "iron": 0.4,
+    "magnesium": 8,
+    "vitaminA": 381,
+    "vitaminC": 0,
+    "vitaminD": 0.2,
+    "vitaminB12": 0.3,
+    "glycemicIndex": 25,
+    "glycemicLoad": 1,
+    "allergens": ["milk"],
+    "servingSize": 28,
+    "servingUnit": "g",
+    "focusGrades": {
+      "balanced": {
+        "grade": "D",
+        "score": 40,
+        "insight": "Extremely high in saturated fat and calories with minimal protein, lacks fiber and most essential micronutrients",
+        "pros": ["Rich in vitamin A", "Very low glycemic impact", "Good calcium content"],
+        "cons": ["Very high saturated fat (19.3g)", "Calorie-dense (342 per 100g)", "High sodium (321mg)", "No fiber", "Low protein relative to fat"]
+      },
+      "heart_health": {
+        "grade": "F",
+        "score": 18,
+        "insight": "Extremely high saturated fat and cholesterol directly increase LDL and cardiovascular disease risk",
+        "pros": ["Contains some vitamin A for arterial health", "Low glycemic impact"],
+        "cons": ["Very high saturated fat (19.3g - 96% DV)", "High cholesterol (110mg)", "Sodium (321mg) raises blood pressure", "No omega-3 fatty acids", "Increases LDL cholesterol significantly"]
+      },
+      "muscle_building": {
+        "grade": "D-",
+        "score": 33,
+        "insight": "Minimal protein content overwhelmed by excessive saturated fat, poor amino acid density, not suitable for lean mass",
+        "pros": ["Complete protein from dairy", "Provides some calcium for muscle contraction"],
+        "cons": ["Very low protein (5.9g)", "Extremely high fat-to-protein ratio (6:1)", "Excessive calories hinder lean gains", "Low in BCAAs relative to other dairy"]
+      },
+      "energy": {
+        "grade": "C-",
+        "score": 56,
+        "insight": "High calorie density provides concentrated energy, but saturated fat slows digestion and lacks nutrients for efficient metabolism",
+        "pros": ["Very high calorie density for endurance needs", "Low glycemic impact prevents crashes", "Fat provides slow-burning fuel"],
+        "cons": ["High saturated fat slows digestion and energy release", "Minimal B-vitamins for energy metabolism", "Heavy feeling affects performance", "Not optimal for pre-workout fuel"]
+      },
+      "weight_management": {
+        "grade": "F",
+        "score": 12,
+        "insight": "Extremely calorie-dense with poor satiety-to-calorie ratio, easy to overconsume due to spreadable nature",
+        "pros": ["Low glycemic load (1)", "Some protein for mild satiety"],
+        "cons": ["Extremely calorie-dense (342 cal/100g)", "No fiber for fullness", "High fat content (34.2g)", "Easy to overeat when spreading", "Poor satiety relative to calories"]
+      },
+      "brain_focus": {
+        "grade": "D+",
+        "score": 50,
+        "insight": "Provides vitamin A for cognitive function and stable blood sugar, but lacks omega-3s and B-vitamins for neurotransmitters",
+        "pros": ["Very low GI (25) prevents blood sugar crashes", "Vitamin A supports neurological health", "Fat provides slow brain fuel", "Contains some B12"],
+        "cons": ["No omega-3 fatty acids for brain structure", "Low in B-vitamins needed for neurotransmitters", "Saturated fat may impair cognitive function long-term", "Heavy digestion diverts blood from brain"]
+      },
+      "gut_health": {
+        "grade": "D",
+        "score": 36,
+        "insight": "Zero fiber fails to support microbiome, high saturated fat may promote inflammation, but contains some beneficial dairy compounds",
+        "pros": ["Probiotic potential if cultured varieties", "Easy to digest for most people"],
+        "cons": ["Zero fiber", "No prebiotics", "High saturated fat may alter microbiome negatively", "Lactose may cause issues in intolerant individuals", "Doesn't support microbial diversity"]
+      },
+      "blood_sugar": {
+        "grade": "A-",
+        "score": 89,
+        "insight": "Excellent glycemic control with very low GI and GL, minimal carbs prevent glucose spikes, fat slows any absorption",
+        "pros": ["Very low GI (25) and GL (1)", "Minimal carbs (5.5g)", "Low sugar (4.2g)", "Fat content slows digestion further"],
+        "cons": ["High saturated fat may worsen insulin resistance long-term", "Needs pairing with fiber for balanced meals"]
+      },
+      "bone_joint": {
+        "grade": "C",
+        "score": 62,
+        "insight": "Provides calcium and vitamin D from dairy, but high saturated fat may promote inflammation affecting joints",
+        "pros": ["Good calcium (98mg)", "Contains vitamin A for bone cells", "Vitamin D present (0.2mcg)", "Dairy protein supports bone matrix"],
+        "cons": ["High saturated fat may increase joint inflammation", "Low magnesium (8mg)", "Minimal vitamin K", "Sodium may increase calcium excretion"]
+      },
+      "anti_inflammatory": {
+        "grade": "F",
+        "score": 24,
+        "insight": "Very high saturated fat is strongly pro-inflammatory, lacks omega-3s and antioxidants to counteract inflammation",
+        "pros": ["Vitamin A has some anti-inflammatory properties", "Low glycemic impact"],
+        "cons": ["Very high saturated fat (19.3g) strongly pro-inflammatory", "No omega-3 fatty acids", "Dairy may trigger inflammation in sensitive individuals", "No antioxidants or polyphenols", "High sodium increases inflammatory markers"]
+      }
+    }
+  },
+  "donut": {
+    "name": "Donut",
+    "calories": 452,
+    "protein": 4.9,
+    "carbs": 51.3,
+    "fat": 25.5,
+    "fiber": 1.6,
+    "sugar": 26.6,
+    "sodium": 373,
+    "saturatedFat": 11.3,
+    "cholesterol": 26,
+    "potassium": 88,
+    "calcium": 61,
+    "iron": 1.9,
+    "magnesium": 16,
+    "vitaminA": 35,
+    "vitaminC": 0.1,
+    "vitaminD": 0.1,
+    "vitaminB12": 0.1,
+    "glycemicIndex": 76,
+    "glycemicLoad": 39,
+    "allergens": ["wheat", "eggs", "milk"],
+    "servingSize": 52,
+    "servingUnit": "g",
+    "focusGrades": {
+      "balanced": {
+        "grade": "F",
+        "score": 22,
+        "insight": "Heavily refined with extreme sugar and saturated fat content, minimal micronutrients, represents empty calories",
+        "pros": ["Provides quick energy", "Contains some iron"],
+        "cons": ["Extremely high in added sugars (26.6g)", "Very high saturated fat (11.3g)", "Low protein (4.9g)", "Minimal fiber (1.6g)", "Poor vitamin and mineral profile"]
+      },
+      "heart_health": {
+        "grade": "F",
+        "score": 10,
+        "insight": "Contains trans fats from frying, excessive saturated fat and sugar dramatically increase cardiovascular disease risk",
+        "pros": ["Contains minimal potassium"],
+        "cons": ["Very high saturated fat (11.3g)", "Often contains trans fats from partial hydrogenation", "High cholesterol (26mg)", "Excessive sodium (373mg)", "Refined sugars promote atherosclerosis", "Deep-fried oils oxidized and inflammatory"]
+      },
+      "muscle_building": {
+        "grade": "F",
+        "score": 20,
+        "insight": "Critically low protein with poor quality, excessive empty calories from sugar/fat impair body composition goals",
+        "pros": ["Provides carbs for glycogen"],
+        "cons": ["Very low protein (4.9g)", "Poor amino acid profile", "Sugar (26.6g) without muscle benefit", "High calories from fat hinder lean mass", "Low in BCAAs"]
+      },
+      "energy": {
+        "grade": "F",
+        "score": 25,
+        "insight": "Creates severe blood sugar roller coaster with rapid spike then crash, high fat content causes sluggishness",
+        "pros": ["Immediate glucose availability", "High calorie density"],
+        "cons": ["Very high GI (76) causes severe spike", "Sugar crash within 1-2 hours", "Heavy fat (25.5g) slows digestion causing lethargy", "No complex carbs for sustained energy", "Minimal B-vitamins"]
+      },
+      "weight_management": {
+        "grade": "F",
+        "score": 8,
+        "insight": "Extremely calorie-dense with zero satiety, very high glycemic load promotes fat storage and triggers addictive response",
+        "pros": ["Can be portion-controlled to single unit"],
+        "cons": ["Extremely calorie-dense (452 cal/100g)", "Zero fiber (1.6g) provides no fullness", "Very high GI (76) and GL (39)", "Sugar and fat combination hyper-palatable", "Triggers dopamine-driven overconsumption", "High sodium causes water retention"]
+      },
+      "brain_focus": {
+        "grade": "F",
+        "score": 18,
+        "insight": "Severe glucose fluctuations impair cognition, trans fats damage brain cell membranes, lacks all cognitive nutrients",
+        "pros": ["Brief glucose spike to brain"],
+        "cons": ["Blood sugar crash causes severe brain fog", "Trans fats damage neurological function", "No omega-3 fatty acids", "Minimal B-vitamins", "Sugar addiction affects decision-making", "Heavy digestion reduces mental clarity"]
+      },
+      "gut_health": {
+        "grade": "F",
+        "score": 26,
+        "insight": "Minimal fiber with excessive sugar feeds pathogenic bacteria, refined flour and oxidized oils damage gut lining",
+        "pros": ["Some wheat provides minimal fiber"],
+        "cons": ["Very low fiber (1.6g)", "High sugar (26.6g) promotes dysbiosis", "Deep-frying creates oxidized fats damaging gut lining", "Refined flour lacks prebiotics", "May contain additives disrupting microbiome", "Gluten may irritate sensitive individuals"]
+      },
+      "blood_sugar": {
+        "grade": "F",
+        "score": 12,
+        "insight": "Extremely high glycemic impact with massive sugar content creates severe insulin spike and promotes diabetes risk",
+        "pros": ["Can reverse severe hypoglycemia"],
+        "cons": ["Very high GI (76) and GL (39)", "Massive added sugar (26.6g)", "Minimal fiber (1.6g)", "Refined flour worsens glycemic response", "Promotes insulin resistance with regular intake", "Fat delays but prolongs glucose elevation"]
+      },
+      "bone_joint": {
+        "grade": "D-",
+        "score": 30,
+        "insight": "Minimal calcium and vitamin D, high sugar and saturated fat strongly promote joint inflammation and bone loss",
+        "pros": ["Contains some calcium (61mg)", "Small amount of vitamin A"],
+        "cons": ["Very low calcium relative to needs", "Minimal vitamin D (0.1mcg)", "High sugar promotes inflammatory cytokines", "Saturated fat increases joint inflammation", "Trans fats worsen bone density", "High sodium increases calcium excretion"]
+      },
+      "anti_inflammatory": {
+        "grade": "F",
+        "score": 15,
+        "insight": "Extremely pro-inflammatory from trans fats, oxidized oils, refined sugar, and saturated fat, no redeeming anti-inflammatory properties",
+        "pros": ["No meaningful anti-inflammatory benefits"],
+        "cons": ["Trans fats from frying highly inflammatory", "Very high sugar (26.6g) triggers inflammation", "Saturated fat (11.3g) increases inflammatory markers", "Deep-fried oils oxidized and toxic", "Refined flour spikes blood sugar (inflammatory)", "Zero omega-3s or antioxidants", "High sodium promotes inflammation"]
+      }
+    }
+  }
+}

@@ -1,0 +1,683 @@
+{
+  "sweet_corn": {
+    "foodId": "sweet_corn",
+    "name": "Sweet Corn",
+    "category": "vegetables",
+    "subcategory": "starchy_vegetables",
+    "servingSizes": [
+      {
+        "amount": 1,
+        "unit": "cup",
+        "grams": 154,
+        "label": "1 cup kernels",
+        "isDefault": true
+      },
+      {
+        "amount": 1,
+        "unit": "ear",
+        "grams": 90,
+        "label": "1 medium ear"
+      },
+      {
+        "amount": 100,
+        "unit": "g",
+        "grams": 100,
+        "label": "100g"
+      }
+    ],
+    "nutritionPer100g": {
+      "calories": 86,
+      "protein": 3.27,
+      "carbohydrates": 18.7,
+      "fiber": 2.0,
+      "sugar": 6.26,
+      "totalFat": 1.35,
+      "saturatedFat": 0.202,
+      "monounsaturatedFat": 0.373,
+      "polyunsaturatedFat": 0.597,
+      "omega3": 0.021,
+      "omega6": 0.576,
+      "transFat": 0,
+      "cholesterol": 0,
+      "sodium": 15,
+      "potassium": 270,
+      "calcium": 2,
+      "iron": 0.52,
+      "magnesium": 37,
+      "phosphorus": 89,
+      "zinc": 0.46,
+      "selenium": 0.6,
+      "vitaminA": 187,
+      "vitaminC": 6.8,
+      "vitaminD": 0,
+      "vitaminE": 0.07,
+      "vitaminK": 0.3,
+      "vitaminB6": 0.093,
+      "vitaminB12": 0,
+      "folate": 42,
+      "choline": 23.0,
+      "thiamin": 0.155,
+      "riboflavin": 0.055,
+      "niacin": 1.77
+    },
+    "healthMetrics": {
+      "glycemicIndex": 52,
+      "glycemicLoad": 9.7,
+      "inflammatoryScore": -1,
+      "antioxidantScore": 5,
+      "nutrientDensity": 6
+    },
+    "tags": [
+      "whole_food",
+      "high_fiber",
+      "antioxidant_rich",
+      "starchy",
+      "moderate_gi"
+    ],
+    "allergens": [],
+    "focusGrades": {
+      "diabetes": "B",
+      "heart": "B+",
+      "gut": "A-",
+      "immunity": "B+",
+      "energy": "B",
+      "mental": "B",
+      "longevity": "B+",
+      "weight": "B",
+      "inflammation": "B+",
+      "nutrition": "B+"
+    },
+    "healthBenefits": [
+      "Rich in lutein and zeaxanthin for eye health",
+      "Good source of fiber for digestive health",
+      "Contains resistant starch when cooled",
+      "Provides antioxidants like ferulic acid",
+      "Good source of B vitamins for energy metabolism"
+    ],
+    "concerns": [
+      "Higher in carbohydrates and calories than non-starchy vegetables",
+      "Moderate glycemic index may affect blood sugar"
+    ],
+    "preparation": [
+      "Boil, steam, or grill fresh corn on the cob",
+      "Add kernels to salads, soups, or grain bowls",
+      "Roast for enhanced sweetness",
+      "Use frozen corn as convenient alternative"
+    ]
+  },
+  "peas": {
+    "foodId": "peas",
+    "name": "Green Peas",
+    "category": "vegetables",
+    "subcategory": "legumes",
+    "servingSizes": [
+      {
+        "amount": 1,
+        "unit": "cup",
+        "grams": 145,
+        "label": "1 cup cooked",
+        "isDefault": true
+      },
+      {
+        "amount": 0.5,
+        "unit": "cup",
+        "grams": 72.5,
+        "label": "1/2 cup"
+      },
+      {
+        "amount": 100,
+        "unit": "g",
+        "grams": 100,
+        "label": "100g"
+      }
+    ],
+    "nutritionPer100g": {
+      "calories": 84,
+      "protein": 5.42,
+      "carbohydrates": 15.63,
+      "fiber": 5.7,
+      "sugar": 5.93,
+      "totalFat": 0.22,
+      "saturatedFat": 0.039,
+      "monounsaturatedFat": 0.019,
+      "polyunsaturatedFat": 0.104,
+      "omega3": 0.035,
+      "omega6": 0.069,
+      "transFat": 0,
+      "cholesterol": 0,
+      "sodium": 3,
+      "potassium": 271,
+      "calcium": 25,
+      "iron": 1.47,
+      "magnesium": 33,
+      "phosphorus": 108,
+      "zinc": 1.19,
+      "selenium": 1.8,
+      "vitaminA": 765,
+      "vitaminC": 14.2,
+      "vitaminD": 0,
+      "vitaminE": 0.13,
+      "vitaminK": 24.8,
+      "vitaminB6": 0.169,
+      "vitaminB12": 0,
+      "folate": 65,
+      "choline": 28.4,
+      "thiamin": 0.266,
+      "riboflavin": 0.132,
+      "niacin": 2.09
+    },
+    "healthMetrics": {
+      "glycemicIndex": 48,
+      "glycemicLoad": 7.5,
+      "inflammatoryScore": -2,
+      "antioxidantScore": 7,
+      "nutrientDensity": 9
+    },
+    "tags": [
+      "whole_food",
+      "high_fiber",
+      "high_protein",
+      "antioxidant_rich",
+      "low_fat",
+      "low_gi"
+    ],
+    "allergens": [],
+    "focusGrades": {
+      "diabetes": "A",
+      "heart": "A",
+      "gut": "A",
+      "immunity": "A-",
+      "energy": "B+",
+      "mental": "B+",
+      "longevity": "A",
+      "weight": "A",
+      "inflammation": "A-",
+      "nutrition": "A"
+    },
+    "healthBenefits": [
+      "Excellent source of plant-based protein",
+      "Very high in fiber for digestive health and satiety",
+      "Rich in vitamin K for bone health and blood clotting",
+      "Contains lutein and zeaxanthin for eye health",
+      "Good source of folate for cell division",
+      "Low glycemic index helps regulate blood sugar",
+      "Rich in antioxidants including flavonoids"
+    ],
+    "concerns": [
+      "May cause gas or bloating in some individuals",
+      "Contains purines (moderate concern for gout sufferers)"
+    ],
+    "preparation": [
+      "Steam or boil until tender (3-5 minutes)",
+      "Add to soups, stews, and curries",
+      "Mash for a side dish or dip",
+      "Use in salads or grain bowls",
+      "Frozen peas retain most nutrients"
+    ]
+  },
+  "green_peas": {
+    "foodId": "green_peas",
+    "name": "Green Peas",
+    "category": "vegetables",
+    "subcategory": "legumes",
+    "servingSizes": [
+      {
+        "amount": 1,
+        "unit": "cup",
+        "grams": 145,
+        "label": "1 cup cooked",
+        "isDefault": true
+      },
+      {
+        "amount": 0.5,
+        "unit": "cup",
+        "grams": 72.5,
+        "label": "1/2 cup"
+      },
+      {
+        "amount": 100,
+        "unit": "g",
+        "grams": 100,
+        "label": "100g"
+      }
+    ],
+    "nutritionPer100g": {
+      "calories": 84,
+      "protein": 5.42,
+      "carbohydrates": 15.63,
+      "fiber": 5.7,
+      "sugar": 5.93,
+      "totalFat": 0.22,
+      "saturatedFat": 0.039,
+      "monounsaturatedFat": 0.019,
+      "polyunsaturatedFat": 0.104,
+      "omega3": 0.035,
+      "omega6": 0.069,
+      "transFat": 0,
+      "cholesterol": 0,
+      "sodium": 3,
+      "potassium": 271,
+      "calcium": 25,
+      "iron": 1.47,
+      "magnesium": 33,
+      "phosphorus": 108,
+      "zinc": 1.19,
+      "selenium": 1.8,
+      "vitaminA": 765,
+      "vitaminC": 14.2,
+      "vitaminD": 0,
+      "vitaminE": 0.13,
+      "vitaminK": 24.8,
+      "vitaminB6": 0.169,
+      "vitaminB12": 0,
+      "folate": 65,
+      "choline": 28.4,
+      "thiamin": 0.266,
+      "riboflavin": 0.132,
+      "niacin": 2.09
+    },
+    "healthMetrics": {
+      "glycemicIndex": 48,
+      "glycemicLoad": 7.5,
+      "inflammatoryScore": -2,
+      "antioxidantScore": 7,
+      "nutrientDensity": 9
+    },
+    "tags": [
+      "whole_food",
+      "high_fiber",
+      "high_protein",
+      "antioxidant_rich",
+      "low_fat",
+      "low_gi"
+    ],
+    "allergens": [],
+    "focusGrades": {
+      "diabetes": "A",
+      "heart": "A",
+      "gut": "A",
+      "immunity": "A-",
+      "energy": "B+",
+      "mental": "B+",
+      "longevity": "A",
+      "weight": "A",
+      "inflammation": "A-",
+      "nutrition": "A"
+    },
+    "healthBenefits": [
+      "Excellent source of plant-based protein",
+      "Very high in fiber for digestive health and satiety",
+      "Rich in vitamin K for bone health and blood clotting",
+      "Contains lutein and zeaxanthin for eye health",
+      "Good source of folate for cell division",
+      "Low glycemic index helps regulate blood sugar",
+      "Rich in antioxidants including flavonoids"
+    ],
+    "concerns": [
+      "May cause gas or bloating in some individuals",
+      "Contains purines (moderate concern for gout sufferers)"
+    ],
+    "preparation": [
+      "Steam or boil until tender (3-5 minutes)",
+      "Add to soups, stews, and curries",
+      "Mash for a side dish or dip",
+      "Use in salads or grain bowls",
+      "Frozen peas retain most nutrients"
+    ]
+  },
+  "cabbage": {
+    "foodId": "cabbage",
+    "name": "Cabbage",
+    "category": "vegetables",
+    "subcategory": "cruciferous",
+    "servingSizes": [
+      {
+        "amount": 1,
+        "unit": "cup",
+        "grams": 89,
+        "label": "1 cup shredded, raw",
+        "isDefault": true
+      },
+      {
+        "amount": 1,
+        "unit": "cup",
+        "grams": 150,
+        "label": "1 cup cooked"
+      },
+      {
+        "amount": 100,
+        "unit": "g",
+        "grams": 100,
+        "label": "100g"
+      }
+    ],
+    "nutritionPer100g": {
+      "calories": 25,
+      "protein": 1.28,
+      "carbohydrates": 5.8,
+      "fiber": 2.5,
+      "sugar": 3.2,
+      "totalFat": 0.1,
+      "saturatedFat": 0.034,
+      "monounsaturatedFat": 0.017,
+      "polyunsaturatedFat": 0.017,
+      "omega3": 0.024,
+      "omega6": 0.017,
+      "transFat": 0,
+      "cholesterol": 0,
+      "sodium": 18,
+      "potassium": 170,
+      "calcium": 40,
+      "iron": 0.47,
+      "magnesium": 12,
+      "phosphorus": 26,
+      "zinc": 0.18,
+      "selenium": 0.3,
+      "vitaminA": 98,
+      "vitaminC": 36.6,
+      "vitaminD": 0,
+      "vitaminE": 0.15,
+      "vitaminK": 76.0,
+      "vitaminB6": 0.124,
+      "vitaminB12": 0,
+      "folate": 43,
+      "choline": 10.7,
+      "thiamin": 0.061,
+      "riboflavin": 0.04,
+      "niacin": 0.234
+    },
+    "healthMetrics": {
+      "glycemicIndex": 10,
+      "glycemicLoad": 0.6,
+      "inflammatoryScore": -3,
+      "antioxidantScore": 8,
+      "nutrientDensity": 9
+    },
+    "tags": [
+      "whole_food",
+      "low_calorie",
+      "high_fiber",
+      "antioxidant_rich",
+      "cruciferous",
+      "anti_inflammatory",
+      "very_low_gi"
+    ],
+    "allergens": [],
+    "focusGrades": {
+      "diabetes": "A+",
+      "heart": "A",
+      "gut": "A",
+      "immunity": "A",
+      "energy": "B",
+      "mental": "B+",
+      "longevity": "A+",
+      "weight": "A+",
+      "inflammation": "A+",
+      "nutrition": "A"
+    },
+    "healthBenefits": [
+      "Rich in sulforaphane and glucosinolates with anti-cancer properties",
+      "Very high in vitamin C for immune support",
+      "Excellent source of vitamin K for bone health",
+      "Low in calories, ideal for weight management",
+      "Contains anthocyanins in red varieties (powerful antioxidants)",
+      "Supports gut health with fiber and prebiotics",
+      "May reduce inflammation and oxidative stress"
+    ],
+    "concerns": [
+      "May cause gas or bloating, especially when eaten raw",
+      "Can interfere with thyroid function in large amounts (goitrogens)",
+      "High vitamin K may interact with blood thinners"
+    ],
+    "preparation": [
+      "Shred for coleslaw or salads",
+      "Ferment for sauerkraut (enhances probiotics)",
+      "Stir-fry or saut\u00e9 lightly",
+      "Add to soups and stews",
+      "Roast wedges with olive oil",
+      "Steam or boil briefly to reduce goitrogens"
+    ]
+  },
+  "brussels_sprouts": {
+    "foodId": "brussels_sprouts",
+    "name": "Brussels Sprouts",
+    "category": "vegetables",
+    "subcategory": "cruciferous",
+    "servingSizes": [
+      {
+        "amount": 1,
+        "unit": "cup",
+        "grams": 88,
+        "label": "1 cup raw",
+        "isDefault": true
+      },
+      {
+        "amount": 1,
+        "unit": "cup",
+        "grams": 156,
+        "label": "1 cup cooked"
+      },
+      {
+        "amount": 5,
+        "unit": "sprouts",
+        "grams": 50,
+        "label": "5 sprouts"
+      },
+      {
+        "amount": 100,
+        "unit": "g",
+        "grams": 100,
+        "label": "100g"
+      }
+    ],
+    "nutritionPer100g": {
+      "calories": 43,
+      "protein": 3.38,
+      "carbohydrates": 8.95,
+      "fiber": 3.8,
+      "sugar": 2.2,
+      "totalFat": 0.3,
+      "saturatedFat": 0.062,
+      "monounsaturatedFat": 0.023,
+      "polyunsaturatedFat": 0.154,
+      "omega3": 0.088,
+      "omega6": 0.066,
+      "transFat": 0,
+      "cholesterol": 0,
+      "sodium": 25,
+      "potassium": 389,
+      "calcium": 42,
+      "iron": 1.4,
+      "magnesium": 23,
+      "phosphorus": 69,
+      "zinc": 0.42,
+      "selenium": 1.6,
+      "vitaminA": 754,
+      "vitaminC": 85.0,
+      "vitaminD": 0,
+      "vitaminE": 0.88,
+      "vitaminK": 177.0,
+      "vitaminB6": 0.219,
+      "vitaminB12": 0,
+      "folate": 61,
+      "choline": 19.1,
+      "thiamin": 0.139,
+      "riboflavin": 0.09,
+      "niacin": 0.745
+    },
+    "healthMetrics": {
+      "glycemicIndex": 15,
+      "glycemicLoad": 1.3,
+      "inflammatoryScore": -3,
+      "antioxidantScore": 9,
+      "nutrientDensity": 10
+    },
+    "tags": [
+      "whole_food",
+      "low_calorie",
+      "high_fiber",
+      "high_protein",
+      "antioxidant_rich",
+      "cruciferous",
+      "anti_inflammatory",
+      "very_low_gi"
+    ],
+    "allergens": [],
+    "focusGrades": {
+      "diabetes": "A+",
+      "heart": "A+",
+      "gut": "A",
+      "immunity": "A+",
+      "energy": "B+",
+      "mental": "A-",
+      "longevity": "A+",
+      "weight": "A+",
+      "inflammation": "A+",
+      "nutrition": "A+"
+    },
+    "healthBenefits": [
+      "Exceptionally high in vitamin C (nearly 100% DV per cup)",
+      "Rich in vitamin K for bone health and blood clotting",
+      "Contains sulforaphane and other glucosinolates with anti-cancer properties",
+      "High in antioxidants including kaempferol",
+      "Excellent source of fiber for digestive health",
+      "Good plant-based protein content",
+      "Supports detoxification enzymes in the liver",
+      "May improve blood sugar control"
+    ],
+    "concerns": [
+      "Can cause gas and bloating",
+      "Contains goitrogens that may affect thyroid in large amounts",
+      "High vitamin K may interact with blood thinners"
+    ],
+    "preparation": [
+      "Roast at high heat (400\u00b0F) for caramelization",
+      "Halve and saut\u00e9 with garlic and olive oil",
+      "Shred raw for salads",
+      "Steam lightly to preserve nutrients",
+      "Avoid overcooking to reduce bitterness",
+      "Toss with balsamic vinegar after roasting"
+    ]
+  },
+  "brussel_sprouts": {
+    "foodId": "brussel_sprouts",
+    "name": "Brussels Sprouts",
+    "category": "vegetables",
+    "subcategory": "cruciferous",
+    "servingSizes": [
+      {
+        "amount": 1,
+        "unit": "cup",
+        "grams": 88,
+        "label": "1 cup raw",
+        "isDefault": true
+      },
+      {
+        "amount": 1,
+        "unit": "cup",
+        "grams": 156,
+        "label": "1 cup cooked"
+      },
+      {
+        "amount": 5,
+        "unit": "sprouts",
+        "grams": 50,
+        "label": "5 sprouts"
+      },
+      {
+        "amount": 100,
+        "unit": "g",
+        "grams": 100,
+        "label": "100g"
+      }
+    ],
+    "nutritionPer100g": {
+      "calories": 43,
+      "protein": 3.38,
+      "carbohydrates": 8.95,
+      "fiber": 3.8,
+      "sugar": 2.2,
+      "totalFat": 0.3,
+      "saturatedFat": 0.062,
+      "monounsaturatedFat": 0.023,
+      "polyunsaturatedFat": 0.154,
+      "omega3": 0.088,
+      "omega6": 0.066,
+      "transFat": 0,
+      "cholesterol": 0,
+      "sodium": 25,
+      "potassium": 389,
+      "calcium": 42,
+      "iron": 1.4,
+      "magnesium": 23,
+      "phosphorus": 69,
+      "zinc": 0.42,
+      "selenium": 1.6,
+      "vitaminA": 754,
+      "vitaminC": 85.0,
+      "vitaminD": 0,
+      "vitaminE": 0.88,
+      "vitaminK": 177.0,
+      "vitaminB6": 0.219,
+      "vitaminB12": 0,
+      "folate": 61,
+      "choline": 19.1,
+      "thiamin": 0.139,
+      "riboflavin": 0.09,
+      "niacin": 0.745
+    },
+    "healthMetrics": {
+      "glycemicIndex": 15,
+      "glycemicLoad": 1.3,
+      "inflammatoryScore": -3,
+      "antioxidantScore": 9,
+      "nutrientDensity": 10
+    },
+    "tags": [
+      "whole_food",
+      "low_calorie",
+      "high_fiber",
+      "high_protein",
+      "antioxidant_rich",
+      "cruciferous",
+      "anti_inflammatory",
+      "very_low_gi"
+    ],
+    "allergens": [],
+    "focusGrades": {
+      "diabetes": "A+",
+      "heart": "A+",
+      "gut": "A",
+      "immunity": "A+",
+      "energy": "B+",
+      "mental": "A-",
+      "longevity": "A+",
+      "weight": "A+",
+      "inflammation": "A+",
+      "nutrition": "A+"
+    },
+    "healthBenefits": [
+      "Exceptionally high in vitamin C (nearly 100% DV per cup)",
+      "Rich in vitamin K for bone health and blood clotting",
+      "Contains sulforaphane and other glucosinolates with anti-cancer properties",
+      "High in antioxidants including kaempferol",
+      "Excellent source of fiber for digestive health",
+      "Good plant-based protein content",
+      "Supports detoxification enzymes in the liver",
+      "May improve blood sugar control"
+    ],
+    "concerns": [
+      "Can cause gas and bloating",
+      "Contains goitrogens that may affect thyroid in large amounts",
+      "High vitamin K may interact with blood thinners"
+    ],
+    "preparation": [
+      "Roast at high heat (400\u00b0F) for caramelization",
+      "Halve and saut\u00e9 with garlic and olive oil",
+      "Shred raw for salads",
+      "Steam lightly to preserve nutrients",
+      "Avoid overcooking to reduce bitterness",
+      "Toss with balsamic vinegar after roasting"
+    ]
+  }
+}

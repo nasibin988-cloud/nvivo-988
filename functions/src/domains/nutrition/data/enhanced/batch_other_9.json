@@ -1,0 +1,757 @@
+{
+  "oj": {
+    "canonicalName": "orange juice",
+    "searchTerms": ["oj", "orange juice", "oj fresh squeezed", "fresh squeezed orange juice", "100% orange juice"],
+    "category": "beverages",
+    "macros": {
+      "calories": 112,
+      "protein": 1.7,
+      "carbs": 25.8,
+      "fat": 0.5,
+      "fiber": 0.5,
+      "sugar": 20.8,
+      "addedSugar": 0
+    },
+    "micros": {
+      "vitaminA_mcg": 20,
+      "vitaminC_mg": 124,
+      "vitaminD_mcg": 0,
+      "vitaminE_mg": 0.1,
+      "vitaminK_mcg": 0.2,
+      "thiamin_mg": 0.2,
+      "riboflavin_mg": 0.1,
+      "niacin_mg": 0.7,
+      "vitaminB6_mg": 0.1,
+      "folate_mcg": 74,
+      "vitaminB12_mcg": 0,
+      "calcium_mg": 27,
+      "iron_mg": 0.5,
+      "magnesium_mg": 27,
+      "phosphorus_mg": 42,
+      "potassium_mg": 496,
+      "sodium_mg": 2,
+      "zinc_mg": 0.1,
+      "copper_mg": 0.1,
+      "manganese_mg": 0.1,
+      "selenium_mcg": 0.1
+    },
+    "servingSize": {
+      "amount": 248,
+      "unit": "g",
+      "householdServing": "1 cup"
+    },
+    "glycemicIndex": 50,
+    "glycemicLoad": 13,
+    "inflammatoryScore": 0,
+    "healthScore": 72,
+    "tags": ["beverage", "fruit_juice", "vitamin_c_rich", "high_sugar", "quick_energy"],
+    "allergens": [],
+    "dietaryFlags": ["vegan", "vegetarian", "gluten_free", "dairy_free", "paleo"],
+    "processingLevel": "minimally_processed",
+    "shelfLife": "7-10 days refrigerated",
+    "sustainabilityScore": 65,
+    "costPerServing": 0.75,
+    "usdaFdcId": "171890",
+    "focusGrades": {
+      "heart_health": {
+        "grade": "B",
+        "score": 78,
+        "factors": {
+          "positive": ["High vitamin C", "Good potassium content", "Zero cholesterol", "Low sodium", "Contains folate"],
+          "negative": ["High natural sugar content", "Low fiber", "Minimal protein"],
+          "impact": "Excellent source of vitamin C and potassium supports cardiovascular function, but high sugar content (even natural) should be consumed in moderation. Folate supports healthy homocysteine levels."
+        }
+      },
+      "metabolic_health": {
+        "grade": "C",
+        "score": 65,
+        "factors": {
+          "positive": ["Natural sugars from fruit", "Good vitamin C for metabolism", "Contains thiamin"],
+          "negative": ["High glycemic load (13)", "Minimal fiber", "Can cause blood sugar spikes", "Low protein"],
+          "impact": "Moderate glycemic load and lack of fiber can cause rapid blood sugar increases. Best consumed with protein or fat to slow absorption. Not ideal for blood sugar management."
+        }
+      },
+      "gut_health": {
+        "grade": "C",
+        "score": 60,
+        "factors": {
+          "positive": ["Natural fruit sugars", "Vitamin C supports gut lining", "Easy to digest"],
+          "negative": ["Very low fiber (0.5g)", "No prebiotic content", "High sugar may feed harmful bacteria"],
+          "impact": "Minimal fiber content limits gut health benefits. Juicing removes most beneficial fiber found in whole oranges. High sugar without fiber may disrupt gut microbiome balance."
+        }
+      },
+      "brain_health": {
+        "grade": "B-",
+        "score": 73,
+        "factors": {
+          "positive": ["High vitamin C (antioxidant)", "Good folate content", "Thiamin for cognitive function", "Natural fruit compounds"],
+          "negative": ["Sugar spikes can affect cognition", "Minimal healthy fats", "Low in B12"],
+          "impact": "Excellent vitamin C and folate support brain health and neurotransmitter production. However, rapid sugar absorption can cause energy crashes affecting focus and mood."
+        }
+      },
+      "immune_health": {
+        "grade": "A-",
+        "score": 88,
+        "factors": {
+          "positive": ["Exceptional vitamin C (124mg)", "Good folate", "Contains flavonoids", "Vitamin A present", "Zinc trace amounts"],
+          "negative": ["High sugar may temporarily suppress immunity", "Minimal zinc content"],
+          "impact": "Outstanding vitamin C content (138% DV) strongly supports immune function. Flavonoids provide additional immune benefits. One of the best beverage sources of immune-supporting nutrients."
+        }
+      },
+      "inflammation": {
+        "grade": "B",
+        "score": 75,
+        "factors": {
+          "positive": ["High antioxidant vitamin C", "Contains hesperidin (anti-inflammatory)", "Natural flavonoids", "Low sodium"],
+          "negative": ["High sugar can be pro-inflammatory", "Lacks omega-3 fatty acids", "Juicing removes anti-inflammatory fiber"],
+          "impact": "Strong antioxidant content from vitamin C and citrus flavonoids helps combat inflammation. However, high sugar content and lack of fiber may promote inflammation if consumed in excess."
+        }
+      },
+      "bone_health": {
+        "grade": "C+",
+        "score": 68,
+        "factors": {
+          "positive": ["Vitamin C aids collagen formation", "Good potassium content", "Contains magnesium", "Has phosphorus"],
+          "negative": ["Low calcium (27mg)", "No vitamin D", "Minimal vitamin K", "Acidic nature"],
+          "impact": "While vitamin C supports collagen and bone matrix formation, low calcium and vitamin D content limits direct bone benefits. Potassium may help reduce calcium loss. Consider fortified versions for bone health."
+        }
+      },
+      "muscle_health": {
+        "grade": "D+",
+        "score": 58,
+        "factors": {
+          "positive": ["Quick carbohydrate energy", "Vitamin C for recovery", "Potassium for muscle function", "Good hydration"],
+          "negative": ["Very low protein (1.7g)", "Minimal amino acids", "No creatine", "Low magnesium"],
+          "impact": "Provides quick energy and hydration beneficial post-workout, but lacks protein needed for muscle building and repair. Best used as part of recovery nutrition alongside protein sources."
+        }
+      },
+      "longevity": {
+        "grade": "B-",
+        "score": 72,
+        "factors": {
+          "positive": ["High antioxidant content", "Excellent vitamin C", "Contains flavonoids", "Natural phytonutrients", "Folate for DNA health"],
+          "negative": ["High sugar accelerates aging", "Missing whole fruit benefits", "Lacks fiber for longevity"],
+          "impact": "Rich in antioxidants that combat oxidative stress and cellular aging. However, whole oranges provide superior longevity benefits due to fiber content. Moderate consumption recommended."
+        }
+      },
+      "mental_wellbeing": {
+        "grade": "B",
+        "score": 74,
+        "factors": {
+          "positive": ["Folate supports mood regulation", "Vitamin C reduces stress hormones", "Refreshing taste improves mood", "Quick energy boost"],
+          "negative": ["Sugar crashes can worsen mood", "Lacks tryptophan for serotonin", "No omega-3s"],
+          "impact": "Folate and vitamin C support neurotransmitter production and stress response. Provides quick mood lift, but potential blood sugar swings may negatively impact emotional stability later."
+        }
+      }
+    },
+    "knowledgeGraphTags": ["citrus_fruit", "vitamin_c_source", "breakfast_beverage", "antioxidant_rich", "natural_juice"],
+    "seasonality": ["winter", "spring"],
+    "storageInstructions": "Refrigerate after opening, consume within 7-10 days. Best served chilled.",
+    "preparationTips": "Shake well before serving. Pair with protein or healthy fats to moderate blood sugar response. Consider adding pulp back for fiber.",
+    "culturalSignificance": "Classic American breakfast beverage, associated with morning routines and vitamin C for cold prevention."
+  },
+  "ranch": {
+    "canonicalName": "ranch dressing",
+    "searchTerms": ["ranch", "ranch dressing", "ranch dip", "buttermilk ranch", "creamy ranch"],
+    "category": "condiments",
+    "macros": {
+      "calories": 129,
+      "protein": 0.4,
+      "carbs": 2.1,
+      "fat": 13.5,
+      "fiber": 0,
+      "sugar": 1.9,
+      "addedSugar": 1.5
+    },
+    "micros": {
+      "vitaminA_mcg": 5,
+      "vitaminC_mg": 0.2,
+      "vitaminD_mcg": 0.1,
+      "vitaminE_mg": 2.1,
+      "vitaminK_mcg": 16.8,
+      "thiamin_mg": 0.01,
+      "riboflavin_mg": 0.02,
+      "niacin_mg": 0.02,
+      "vitaminB6_mg": 0.01,
+      "folate_mcg": 1,
+      "vitaminB12_mcg": 0.05,
+      "calcium_mg": 11,
+      "iron_mg": 0.1,
+      "magnesium_mg": 1,
+      "phosphorus_mg": 13,
+      "potassium_mg": 24,
+      "sodium_mg": 257,
+      "zinc_mg": 0.1,
+      "copper_mg": 0.01,
+      "manganese_mg": 0.01,
+      "selenium_mcg": 0.5
+    },
+    "servingSize": {
+      "amount": 30,
+      "unit": "g",
+      "householdServing": "2 tablespoons"
+    },
+    "glycemicIndex": 15,
+    "glycemicLoad": 0,
+    "inflammatoryScore": 3,
+    "healthScore": 28,
+    "tags": ["condiment", "high_fat", "high_sodium", "salad_dressing", "dip", "ultra_processed"],
+    "allergens": ["dairy", "eggs"],
+    "dietaryFlags": ["vegetarian", "gluten_free"],
+    "processingLevel": "ultra_processed",
+    "shelfLife": "3-4 months unopened, 1 month refrigerated after opening",
+    "sustainabilityScore": 45,
+    "costPerServing": 0.25,
+    "usdaFdcId": "173429",
+    "focusGrades": {
+      "heart_health": {
+        "grade": "D",
+        "score": 42,
+        "factors": {
+          "positive": ["Contains vitamin E", "Low carbohydrate", "Some vitamin K"],
+          "negative": ["High saturated fat", "Very high sodium (257mg per serving)", "Contains cholesterol", "Soybean oil (omega-6 heavy)", "Trans fats in some varieties"],
+          "impact": "High sodium and saturated fat content pose cardiovascular risks. Excessive sodium increases blood pressure. Inflammatory omega-6 fatty acids from soybean oil may harm heart health. Use sparingly."
+        }
+      },
+      "metabolic_health": {
+        "grade": "C-",
+        "score": 62,
+        "factors": {
+          "positive": ["Very low glycemic load", "Minimal carbohydrates", "Won't spike blood sugar"],
+          "negative": ["High calorie density", "Promotes overconsumption", "Contains added sugars", "Easy to overeat"],
+          "impact": "Won't directly spike blood sugar, but high calorie density and palatability encourage overeating, indirectly affecting metabolic health. Added sugars and poor quality fats may contribute to insulin resistance over time."
+        }
+      },
+      "gut_health": {
+        "grade": "D+",
+        "score": 55,
+        "factors": {
+          "positive": ["Buttermilk contains some probiotics", "Herbs may have mild benefits"],
+          "negative": ["Zero fiber", "Emulsifiers disrupt gut lining", "Inflammatory oils", "Preservatives harm microbiome", "High sodium affects gut bacteria"],
+          "impact": "Ultra-processed ingredients including emulsifiers, preservatives, and inflammatory oils can negatively impact gut microbiome diversity. No prebiotic or probiotic benefits. May contribute to gut inflammation."
+        }
+      },
+      "brain_health": {
+        "grade": "D",
+        "score": 48,
+        "factors": {
+          "positive": ["Contains some vitamin E", "Low sugar impact", "Provides energy"],
+          "negative": ["High omega-6 to omega-3 ratio", "Inflammatory oils", "Additives may affect cognition", "High sodium"],
+          "impact": "Poor fatty acid profile with excessive omega-6 from soybean oil promotes neuroinflammation. Lack of omega-3s and presence of inflammatory additives may negatively impact cognitive function long-term."
+        }
+      },
+      "immune_health": {
+        "grade": "D+",
+        "score": 52,
+        "factors": {
+          "positive": ["Vitamin E has antioxidant properties", "Some herbs have antimicrobial effects", "Garlic powder benefits"],
+          "negative": ["High sodium suppresses immune function", "Inflammatory oils", "Additives burden immune system", "Minimal vitamins and minerals"],
+          "impact": "Excessive sodium and inflammatory ingredients may suppress immune function. Lacks immune-supporting nutrients like vitamin C, zinc, and selenium. Additives and preservatives create additional immune burden."
+        }
+      },
+      "inflammation": {
+        "grade": "D-",
+        "score": 45,
+        "factors": {
+          "positive": ["Herbs have anti-inflammatory compounds", "Vitamin E is antioxidant"],
+          "negative": ["High omega-6 fatty acids", "Soybean oil is pro-inflammatory", "High sodium promotes inflammation", "Emulsifiers cause gut inflammation", "Preservatives are inflammatory"],
+          "impact": "One of the more inflammatory common condiments. High omega-6 content, inflammatory oils, sodium, and additives create a pro-inflammatory profile. Regular consumption may contribute to chronic inflammation."
+        }
+      },
+      "bone_health": {
+        "grade": "D+",
+        "score": 54,
+        "factors": {
+          "positive": ["Contains vitamin K", "Some calcium from dairy", "Vitamin D traces"],
+          "negative": ["Very high sodium leaches calcium", "Low calcium content (11mg)", "High phosphorus to calcium ratio", "Acidic nature"],
+          "impact": "Excessive sodium promotes calcium excretion through urine, potentially weakening bones over time. Minimal calcium content doesn't offset sodium's negative effects. Not a bone-healthy condiment choice."
+        }
+      },
+      "muscle_health": {
+        "grade": "D",
+        "score": 50,
+        "factors": {
+          "positive": ["Provides calorie-dense energy", "Contains some fat for hormone production"],
+          "negative": ["Almost no protein (0.4g)", "No amino acids for muscle building", "Inflammatory fats hinder recovery", "High sodium may cause water retention"],
+          "impact": "Provides no meaningful muscle-building nutrients. High sodium may cause temporary water retention masking muscle definition. Inflammatory oils may impair recovery. Not beneficial for muscle health goals."
+        }
+      },
+      "longevity": {
+        "grade": "D-",
+        "score": 44,
+        "factors": {
+          "positive": ["Vitamin E provides antioxidants", "Herbs contain polyphenols"],
+          "negative": ["Ultra-processed ingredients", "High sodium linked to shorter lifespan", "Inflammatory oils accelerate aging", "Additives and preservatives", "No phytonutrients"],
+          "impact": "Ultra-processed nature and high sodium content are associated with reduced longevity. Inflammatory ingredients promote cellular aging. Lacks the phytonutrients and antioxidants found in whole foods. Best minimized."
+        }
+      },
+      "mental_wellbeing": {
+        "grade": "C-",
+        "score": 61,
+        "factors": {
+          "positive": ["Highly palatable improves eating satisfaction", "Fats support hormone production", "May increase vegetable consumption"],
+          "negative": ["Inflammatory oils affect mood", "High sodium linked to depression", "Additives may impact neurotransmitters", "Creates dependency on hyper-palatable foods"],
+          "impact": "While palatable and may encourage vegetable intake, inflammatory ingredients and additives may negatively affect mood and mental health long-term. Can create preference for ultra-processed foods over whole foods."
+        }
+      }
+    },
+    "knowledgeGraphTags": ["salad_dressing", "dip", "condiment", "ultra_processed", "high_sodium", "buttermilk_based"],
+    "seasonality": ["year_round"],
+    "storageInstructions": "Refrigerate after opening. Use within 30 days for best quality. Shake well before use.",
+    "preparationTips": "Use as a dip for vegetables to increase veggie intake. Consider making homemade version with Greek yogurt for better nutrition. Measure portions to control calories and sodium.",
+    "culturalSignificance": "Iconic American condiment invented in the 1950s, ubiquitous in American cuisine as salad dressing and dip."
+  },
+  "pb": {
+    "canonicalName": "peanut butter",
+    "searchTerms": ["pb", "peanut butter", "creamy peanut butter", "smooth peanut butter", "natural peanut butter"],
+    "category": "protein_sources",
+    "macros": {
+      "calories": 188,
+      "protein": 7.7,
+      "carbs": 7.7,
+      "fat": 16.1,
+      "fiber": 2.7,
+      "sugar": 3.4,
+      "addedSugar": 1.0
+    },
+    "micros": {
+      "vitaminA_mcg": 0,
+      "vitaminC_mg": 0,
+      "vitaminD_mcg": 0,
+      "vitaminE_mg": 2.9,
+      "vitaminK_mcg": 0.2,
+      "thiamin_mg": 0.1,
+      "riboflavin_mg": 0.1,
+      "niacin_mg": 4.4,
+      "vitaminB6_mg": 0.2,
+      "folate_mcg": 32,
+      "vitaminB12_mcg": 0,
+      "calcium_mg": 17,
+      "iron_mg": 0.7,
+      "magnesium_mg": 57,
+      "phosphorus_mg": 119,
+      "potassium_mg": 214,
+      "sodium_mg": 152,
+      "zinc_mg": 0.9,
+      "copper_mg": 0.2,
+      "manganese_mg": 0.6,
+      "selenium_mcg": 2.2
+    },
+    "servingSize": {
+      "amount": 32,
+      "unit": "g",
+      "householdServing": "2 tablespoons"
+    },
+    "glycemicIndex": 14,
+    "glycemicLoad": 1,
+    "inflammatoryScore": 1,
+    "healthScore": 68,
+    "tags": ["protein_source", "nut_butter", "spreads", "high_protein", "high_fat", "nutrient_dense"],
+    "allergens": ["peanuts"],
+    "dietaryFlags": ["vegan", "vegetarian", "gluten_free", "dairy_free"],
+    "processingLevel": "processed",
+    "shelfLife": "6-9 months unopened, 2-3 months refrigerated after opening",
+    "sustainabilityScore": 72,
+    "costPerServing": 0.35,
+    "usdaFdcId": "172470",
+    "focusGrades": {
+      "heart_health": {
+        "grade": "B+",
+        "score": 82,
+        "factors": {
+          "positive": ["Monounsaturated fats support heart health", "Magnesium for heart rhythm", "Potassium supports blood pressure", "Niacin improves cholesterol", "Plant-based protein"],
+          "negative": ["Moderate sodium (152mg)", "Some saturated fat", "Omega-6 dominant", "Added salt in most varieties"],
+          "impact": "Rich in heart-healthy monounsaturated fats and magnesium. Niacin helps improve HDL cholesterol. Regular consumption associated with reduced cardiovascular disease risk. Choose unsalted varieties for maximum benefit."
+        }
+      },
+      "metabolic_health": {
+        "grade": "B+",
+        "score": 81,
+        "factors": {
+          "positive": ["Very low glycemic load (1)", "High protein stabilizes blood sugar", "Good fiber content", "Healthy fats slow digestion", "Magnesium improves insulin sensitivity"],
+          "negative": ["Calorie-dense (188 per serving)", "Easy to overconsume", "Some varieties have added sugar"],
+          "impact": "Excellent for blood sugar control due to low glycemic load, protein, and healthy fats. Supports insulin sensitivity through magnesium. However, portion control crucial due to high calorie density."
+        }
+      },
+      "gut_health": {
+        "grade": "B-",
+        "score": 73,
+        "factors": {
+          "positive": ["Good fiber content (2.7g)", "Prebiotic fiber feeds beneficial bacteria", "Supports gut motility", "Contains polyphenols"],
+          "negative": ["Can be hard to digest for some", "Lectins may irritate gut", "High omega-6 ratio", "Aflatoxin concerns in poor quality"],
+          "impact": "Decent fiber content supports digestive health and microbiome. However, some individuals experience digestive issues. Peanuts are legumes, not true nuts, and contain lectins that may irritate sensitive guts."
+        }
+      },
+      "brain_health": {
+        "grade": "B+",
+        "score": 83,
+        "factors": {
+          "positive": ["Excellent niacin for brain function", "Vitamin E protects neurons", "Healthy fats support brain structure", "Magnesium for neurotransmitters", "Resveratrol (antioxidant)"],
+          "negative": ["High omega-6 to omega-3 ratio", "Lacks omega-3 DHA", "Potential aflatoxin exposure"],
+          "impact": "Rich in nutrients crucial for cognitive function including niacin, vitamin E, and magnesium. Healthy fats support brain cell membranes. However, omega-6 dominance and lack of omega-3s is a limitation."
+        }
+      },
+      "immune_health": {
+        "grade": "B",
+        "score": 76,
+        "factors": {
+          "positive": ["Good zinc content", "Vitamin E supports immune cells", "Selenium for antioxidant defense", "Magnesium regulates immune response", "Antioxidant resveratrol"],
+          "negative": ["Omega-6 can be pro-inflammatory", "Potential allergen for many", "Aflatoxin exposure risk", "No vitamin C"],
+          "impact": "Provides several immune-supporting minerals including zinc and selenium. Vitamin E and antioxidants protect immune cells. However, one of the most common food allergens, and omega-6 content may promote inflammation."
+        }
+      },
+      "inflammation": {
+        "grade": "B-",
+        "score": 72,
+        "factors": {
+          "positive": ["Resveratrol has anti-inflammatory properties", "Vitamin E is antioxidant", "Magnesium reduces inflammation", "Polyphenols combat oxidative stress"],
+          "negative": ["High omega-6 to omega-3 ratio (pro-inflammatory)", "Lectins may trigger inflammation", "Potential aflatoxin contamination", "Common allergen"],
+          "impact": "Contains beneficial anti-inflammatory compounds, but high omega-6 content (inflammatory) is a concern. Balance by consuming omega-3 sources. Natural varieties without additives are best for inflammation control."
+        }
+      },
+      "bone_health": {
+        "grade": "B",
+        "score": 75,
+        "factors": {
+          "positive": ["Excellent magnesium (57mg)", "Good phosphorus content", "Manganese for bone formation", "Protein supports bone matrix"],
+          "negative": ["Low calcium (17mg)", "No vitamin D", "Minimal vitamin K", "Phytic acid may reduce mineral absorption"],
+          "impact": "Strong magnesium and phosphorus content supports bone mineralization. Protein helps maintain bone density. However, low calcium and presence of phytic acid (antinutrient) limits overall bone benefits."
+        }
+      },
+      "muscle_health": {
+        "grade": "B+",
+        "score": 84,
+        "factors": {
+          "positive": ["Good protein content (7.7g)", "Magnesium for muscle function", "Potassium prevents cramping", "Healthy fats for recovery", "Calorie-dense for muscle building"],
+          "negative": ["Incomplete protein source", "Lower protein than other nut butters", "Not optimal post-workout alone"],
+          "impact": "Excellent protein-to-calorie ratio makes it ideal for muscle building. Magnesium and potassium support muscle contraction and recovery. Popular with athletes for calorie-dense nutrition. Pair with complete protein for optimal results."
+        }
+      },
+      "longevity": {
+        "grade": "B+",
+        "score": 81,
+        "factors": {
+          "positive": ["Resveratrol linked to longevity", "Antioxidants combat aging", "Niacin supports cellular repair", "Anti-inflammatory compounds", "Associated with reduced mortality risk"],
+          "negative": ["Omega-6 excess accelerates aging", "Potential aflatoxin exposure", "Calorie-dense may promote weight gain"],
+          "impact": "Regular peanut butter consumption associated with reduced all-cause mortality in studies. Rich in resveratrol and antioxidants that combat cellular aging. Choose natural varieties and consume in moderation for longevity benefits."
+        }
+      },
+      "mental_wellbeing": {
+        "grade": "B+",
+        "score": 82,
+        "factors": {
+          "positive": ["Niacin supports mood regulation", "Magnesium reduces anxiety", "Healthy fats for brain health", "Protein stabilizes mood", "Comfort food satisfaction"],
+          "negative": ["Can trigger allergic anxiety", "High calorie may cause guilt", "Addictive palatability"],
+          "impact": "Excellent source of mood-supporting nutrients including niacin and magnesium. Protein and healthy fats stabilize blood sugar, preventing mood swings. Comforting and satisfying, but portion control important to avoid overconsumption guilt."
+        }
+      }
+    },
+    "knowledgeGraphTags": ["nut_butter", "protein_source", "spread", "pantry_staple", "plant_protein", "allergen"],
+    "seasonality": ["year_round"],
+    "storageInstructions": "Store in cool, dry place. Natural varieties should be refrigerated after opening to prevent oil separation and rancidity. Stir well before use.",
+    "preparationTips": "Choose natural varieties with just peanuts and salt. Pair with fruits, whole grain bread, or use in smoothies. Measure portions (2 tbsp) to control calories. Mix with Greek yogurt for extra protein.",
+    "culturalSignificance": "American pantry staple since early 1900s, associated with childhood (PB&J), protein source for athletes, and budget-friendly nutrition."
+  },
+  "broccoli_cooked": {
+    "canonicalName": "broccoli, cooked",
+    "searchTerms": ["broccoli cooked", "steamed broccoli", "boiled broccoli", "cooked broccoli", "broccoli steamed"],
+    "category": "vegetables",
+    "macros": {
+      "calories": 35,
+      "protein": 2.4,
+      "carbs": 7.2,
+      "fat": 0.4,
+      "fiber": 3.3,
+      "sugar": 1.4,
+      "addedSugar": 0
+    },
+    "micros": {
+      "vitaminA_mcg": 77,
+      "vitaminC_mg": 64.9,
+      "vitaminD_mcg": 0,
+      "vitaminE_mg": 1.5,
+      "vitaminK_mcg": 141.1,
+      "thiamin_mg": 0.1,
+      "riboflavin_mg": 0.1,
+      "niacin_mg": 0.5,
+      "vitaminB6_mg": 0.2,
+      "folate_mcg": 108,
+      "vitaminB12_mcg": 0,
+      "calcium_mg": 40,
+      "iron_mg": 0.7,
+      "magnesium_mg": 21,
+      "phosphorus_mg": 67,
+      "potassium_mg": 293,
+      "sodium_mg": 32,
+      "zinc_mg": 0.4,
+      "copper_mg": 0.1,
+      "manganese_mg": 0.2,
+      "selenium_mcg": 2.3
+    },
+    "servingSize": {
+      "amount": 156,
+      "unit": "g",
+      "householdServing": "1 cup chopped"
+    },
+    "glycemicIndex": 15,
+    "glycemicLoad": 1,
+    "inflammatoryScore": -4,
+    "healthScore": 94,
+    "tags": ["vegetable", "cruciferous", "high_fiber", "low_calorie", "vitamin_k_rich", "anti_inflammatory", "superfood"],
+    "allergens": [],
+    "dietaryFlags": ["vegan", "vegetarian", "gluten_free", "dairy_free", "paleo", "keto", "whole30"],
+    "processingLevel": "minimally_processed",
+    "shelfLife": "3-5 days refrigerated after cooking",
+    "sustainabilityScore": 88,
+    "costPerServing": 0.50,
+    "usdaFdcId": "168411",
+    "focusGrades": {
+      "heart_health": {
+        "grade": "A",
+        "score": 95,
+        "factors": {
+          "positive": ["Exceptional vitamin K for arterial health", "High potassium reduces blood pressure", "Folate lowers homocysteine", "Fiber supports cholesterol reduction", "Sulforaphane protects heart", "Very low sodium"],
+          "negative": ["Minimal omega-3 content"],
+          "impact": "Outstanding cardiovascular support through multiple mechanisms. Vitamin K prevents arterial calcification, potassium regulates blood pressure, and fiber reduces cholesterol. Sulforaphane and antioxidants protect against cardiovascular disease."
+        }
+      },
+      "metabolic_health": {
+        "grade": "A",
+        "score": 96,
+        "factors": {
+          "positive": ["Extremely low glycemic load (1)", "High fiber slows glucose absorption", "Chromium improves insulin sensitivity", "Low calorie density", "Supports healthy weight", "Anti-diabetic compounds"],
+          "negative": ["None significant"],
+          "impact": "Ideal food for metabolic health. Virtually no blood sugar impact, high fiber, and bioactive compounds improve insulin sensitivity. Regular consumption associated with reduced type 2 diabetes risk. Perfect for weight management."
+        }
+      },
+      "gut_health": {
+        "grade": "A",
+        "score": 93,
+        "factors": {
+          "positive": ["Excellent fiber (3.3g)", "Prebiotic fibers feed good bacteria", "Sulforaphane supports gut barrier", "Anti-inflammatory compounds", "Supports microbiome diversity"],
+          "negative": ["Can cause gas in sensitive individuals", "Goitrogens may affect thyroid"],
+          "impact": "Exceptional for gut health with prebiotic fiber supporting beneficial bacteria. Sulforaphane strengthens gut lining and reduces inflammation. May cause temporary gas as bacteria ferment fiber, indicating healthy fermentation."
+        }
+      },
+      "brain_health": {
+        "grade": "A",
+        "score": 92,
+        "factors": {
+          "positive": ["Excellent vitamin K for cognitive function", "High folate prevents cognitive decline", "Sulforaphane is neuroprotective", "Antioxidants protect brain cells", "Choline supports memory"],
+          "negative": ["No omega-3 DHA", "Relatively low vitamin E"],
+          "impact": "Powerful brain-protective food. Vitamin K and folate support cognitive function and reduce dementia risk. Sulforaphane activates antioxidant pathways protecting neurons. Regular cruciferous vegetable intake linked to slower cognitive decline."
+        }
+      },
+      "immune_health": {
+        "grade": "A",
+        "score": 94,
+        "factors": {
+          "positive": ["Exceptional vitamin C (72% DV)", "Vitamin A supports immune cells", "Selenium for immune function", "Sulforaphane boosts immune response", "Anti-viral compounds", "Zinc present"],
+          "negative": ["Cooking reduces some vitamin C"],
+          "impact": "Outstanding immune support through vitamin C, selenium, and bioactive compounds. Sulforaphane enhances immune cell function. Contains compounds with anti-viral and anti-bacterial properties. One of the best immune-supporting vegetables."
+        }
+      },
+      "inflammation": {
+        "grade": "A+",
+        "score": 98,
+        "factors": {
+          "positive": ["Sulforaphane is powerfully anti-inflammatory", "Kaempferol reduces inflammation", "Vitamin C combats oxidative stress", "Omega-3 ALA present", "Quercetin anti-inflammatory", "Low in inflammatory compounds"],
+          "negative": ["None"],
+          "impact": "One of the most anti-inflammatory foods available. Sulforaphane and other glucosinolates have potent anti-inflammatory effects. Regular consumption reduces inflammatory markers and oxidative stress. Strongly recommended for inflammatory conditions."
+        }
+      },
+      "bone_health": {
+        "grade": "A",
+        "score": 91,
+        "factors": {
+          "positive": ["Exceptional vitamin K (157% DV)", "Good calcium content", "Vitamin C for collagen", "Phosphorus supports bone matrix", "Magnesium for bone density"],
+          "negative": ["No vitamin D", "Oxalates may reduce calcium absorption slightly"],
+          "impact": "Excellent for bone health, primarily through exceptional vitamin K content which activates proteins essential for bone mineralization. Provides calcium, phosphorus, and vitamin C for bone matrix formation. Regular consumption supports bone density."
+        }
+      },
+      "muscle_health": {
+        "grade": "B+",
+        "score": 84,
+        "factors": {
+          "positive": ["Good plant protein (2.4g)", "Potassium prevents cramping", "Vitamin C for recovery", "Low calorie supports lean muscle", "Anti-inflammatory aids recovery"],
+          "negative": ["Lower protein than animal sources", "Incomplete amino acid profile"],
+          "impact": "Supports muscle health through plant protein, potassium, and anti-inflammatory compounds that aid recovery. Low calorie density helps maintain lean muscle mass. Not a primary protein source but excellent complementary vegetable for athletes."
+        }
+      },
+      "longevity": {
+        "grade": "A+",
+        "score": 97,
+        "factors": {
+          "positive": ["Sulforaphane activates longevity pathways", "Exceptional antioxidants", "Anti-cancer compounds", "Telomere protection", "Reduces all-cause mortality", "Supports cellular repair"],
+          "negative": ["None"],
+          "impact": "One of the most powerful longevity foods. Sulforaphane activates Nrf2 pathway, enhancing cellular defense and repair. Regular cruciferous vegetable consumption strongly associated with reduced mortality and cancer risk. Anti-aging superfood."
+        }
+      },
+      "mental_wellbeing": {
+        "grade": "A-",
+        "score": 88,
+        "factors": {
+          "positive": ["Folate supports mood regulation", "Vitamin C reduces stress hormones", "Sulforaphane may reduce depression", "Supports neurotransmitter production", "Anti-inflammatory benefits mood"],
+          "negative": ["No tryptophan for serotonin", "Lacks omega-3 for mood"],
+          "impact": "Supports mental wellbeing through folate, vitamin C, and anti-inflammatory compounds. Emerging research suggests sulforaphane may have antidepressant effects. Regular vegetable consumption associated with better mental health outcomes."
+        }
+      }
+    },
+    "knowledgeGraphTags": ["cruciferous_vegetable", "superfood", "cancer_preventive", "sulforaphane_source", "vitamin_k_rich", "low_calorie"],
+    "seasonality": ["fall", "winter", "spring"],
+    "storageInstructions": "Store cooked broccoli in airtight container in refrigerator for 3-5 days. Do not leave at room temperature for more than 2 hours.",
+    "preparationTips": "Steam for 3-5 minutes to preserve nutrients. Avoid overcooking which destroys vitamin C and sulforaphane. Add lemon juice or pair with vitamin C source to enhance iron absorption. Roasting caramelizes for better flavor.",
+    "culturalSignificance": "Modern superfood popularized in 1980s-90s health movement. Originally cultivated by Romans. Now recognized as one of the most nutrient-dense vegetables for disease prevention."
+  },
+  "sweet_potato": {
+    "canonicalName": "sweet potato, baked",
+    "searchTerms": ["sweet potato", "sweet potato baked", "yam", "baked sweet potato", "roasted sweet potato"],
+    "category": "vegetables",
+    "macros": {
+      "calories": 90,
+      "protein": 2.0,
+      "carbs": 20.7,
+      "fat": 0.2,
+      "fiber": 3.3,
+      "sugar": 6.5,
+      "addedSugar": 0
+    },
+    "micros": {
+      "vitaminA_mcg": 961,
+      "vitaminC_mg": 19.6,
+      "vitaminD_mcg": 0,
+      "vitaminE_mg": 0.9,
+      "vitaminK_mcg": 2.3,
+      "thiamin_mg": 0.1,
+      "riboflavin_mg": 0.1,
+      "niacin_mg": 1.5,
+      "vitaminB6_mg": 0.3,
+      "folate_mcg": 6,
+      "vitaminB12_mcg": 0,
+      "calcium_mg": 38,
+      "iron_mg": 0.7,
+      "magnesium_mg": 27,
+      "phosphorus_mg": 54,
+      "potassium_mg": 475,
+      "sodium_mg": 36,
+      "zinc_mg": 0.3,
+      "copper_mg": 0.2,
+      "manganese_mg": 0.5,
+      "selenium_mcg": 0.2
+    },
+    "servingSize": {
+      "amount": 130,
+      "unit": "g",
+      "householdServing": "1 medium (5 inch long)"
+    },
+    "glycemicIndex": 63,
+    "glycemicLoad": 13,
+    "inflammatoryScore": -3,
+    "healthScore": 89,
+    "tags": ["vegetable", "root_vegetable", "complex_carb", "vitamin_a_rich", "high_fiber", "whole_food", "nutrient_dense"],
+    "allergens": [],
+    "dietaryFlags": ["vegan", "vegetarian", "gluten_free", "dairy_free", "paleo", "whole30"],
+    "processingLevel": "minimally_processed",
+    "shelfLife": "2-3 weeks uncooked in cool dry place, 3-5 days cooked refrigerated",
+    "sustainabilityScore": 85,
+    "costPerServing": 0.60,
+    "usdaFdcId": "168482",
+    "focusGrades": {
+      "heart_health": {
+        "grade": "A",
+        "score": 91,
+        "factors": {
+          "positive": ["Exceptional potassium (475mg)", "High fiber lowers cholesterol", "Beta-carotene protects arteries", "Anthocyanins support heart health", "Magnesium regulates blood pressure", "Very low sodium"],
+          "negative": ["Moderate glycemic index"],
+          "impact": "Outstanding cardiovascular support through exceptional potassium content that regulates blood pressure. Fiber reduces cholesterol, and antioxidants including beta-carotene and anthocyanins protect against cardiovascular disease. Purple varieties offer additional benefits."
+        }
+      },
+      "metabolic_health": {
+        "grade": "B+",
+        "score": 83,
+        "factors": {
+          "positive": ["Good fiber slows glucose absorption", "Caiapo improves insulin sensitivity", "Adiponectin increases glucose uptake", "Supports healthy weight", "Low fat content"],
+          "negative": ["Moderate glycemic index (63)", "Higher glycemic load (13)", "Natural sugars present"],
+          "impact": "Excellent complex carbohydrate source with blood sugar regulating properties. Contains unique compound caiapo that improves insulin sensitivity. Fiber helps moderate blood sugar response. Better glycemic control than white potatoes."
+        }
+      },
+      "gut_health": {
+        "grade": "A",
+        "score": 90,
+        "factors": {
+          "positive": ["Excellent fiber (3.3g)", "Resistant starch feeds good bacteria", "Prebiotic properties", "Supports microbiome diversity", "Anti-inflammatory for gut lining"],
+          "negative": ["Can cause gas during adjustment period"],
+          "impact": "Exceptional for gut health with both soluble and insoluble fiber. When cooled, develops resistant starch that acts as powerful prebiotic. Supports beneficial bacteria growth and diversity. Purple varieties contain additional gut-protective anthocyanins."
+        }
+      },
+      "brain_health": {
+        "grade": "A-",
+        "score": 87,
+        "factors": {
+          "positive": ["Anthocyanins are neuroprotective", "Vitamin B6 supports neurotransmitters", "Beta-carotene protects brain cells", "Antioxidants combat cognitive decline", "Stable energy for brain function"],
+          "negative": ["Low vitamin E", "No omega-3s", "Moderate sugar impact"],
+          "impact": "Strong brain-protective properties from anthocyanins and beta-carotene. Vitamin B6 supports neurotransmitter synthesis. Purple sweet potatoes show particular promise for cognitive protection. Provides steady glucose for optimal brain function."
+        }
+      },
+      "immune_health": {
+        "grade": "A",
+        "score": 93,
+        "factors": {
+          "positive": ["Exceptional vitamin A (107% DV)", "Good vitamin C content", "Beta-carotene boosts immune cells", "Anthocyanins have antimicrobial properties", "Supports gut immunity"],
+          "negative": ["Lower vitamin C than some vegetables"],
+          "impact": "Outstanding immune support through exceptional vitamin A content crucial for immune cell function. Beta-carotene enhances immune response, and vitamin C supports immune cell production. Fiber supports gut immunity which houses 70% of immune system."
+        }
+      },
+      "inflammation": {
+        "grade": "A",
+        "score": 92,
+        "factors": {
+          "positive": ["Anthocyanins powerfully anti-inflammatory", "Beta-carotene reduces oxidative stress", "Choline reduces inflammation", "Vitamin C combats free radicals", "Purple varieties especially potent"],
+          "negative": ["Nightshade may trigger some individuals"],
+          "impact": "Powerful anti-inflammatory food, especially purple varieties rich in anthocyanins. Beta-carotene and vitamin C provide antioxidant protection. Studies show sweet potato consumption reduces inflammatory markers. Excellent for chronic inflammation."
+        }
+      },
+      "bone_health": {
+        "grade": "B+",
+        "score": 80,
+        "factors": {
+          "positive": ["Good potassium preserves bone calcium", "Manganese for bone formation", "Vitamin C supports collagen", "Magnesium for bone density", "Calcium present"],
+          "negative": ["No vitamin D", "Low vitamin K", "Minimal calcium (38mg)"],
+          "impact": "Supports bone health through potassium which prevents calcium loss, and manganese which aids bone formation. Vitamin C essential for collagen matrix. While not a primary calcium source, overall nutrient profile supports bone health."
+        }
+      },
+      "muscle_health": {
+        "grade": "B+",
+        "score": 82,
+        "factors": {
+          "positive": ["Excellent potassium prevents cramping", "Good carbohydrates for muscle fuel", "Vitamin B6 for protein metabolism", "Magnesium supports muscle function", "Anti-inflammatory aids recovery"],
+          "negative": ["Low protein (2g)", "Not a complete protein source"],
+          "impact": "Excellent carbohydrate source for muscle fuel and glycogen replenishment. Outstanding potassium content (475mg) prevents cramping and supports muscle contraction. Popular with athletes for pre/post-workout nutrition. Pair with protein for muscle building."
+        }
+      },
+      "longevity": {
+        "grade": "A",
+        "score": 94,
+        "factors": {
+          "positive": ["Exceptional antioxidants", "Anthocyanins linked to longevity", "Beta-carotene protects cells", "Reduces oxidative damage", "Associated with reduced mortality", "Staple in Blue Zones"],
+          "negative": ["None significant"],
+          "impact": "One of the most powerful longevity foods. Staple in Okinawa (Blue Zone) with world's longest-living people. Exceptional antioxidant content combats cellular aging. Regular consumption associated with reduced all-cause mortality and chronic disease."
+        }
+      },
+      "mental_wellbeing": {
+        "grade": "A-",
+        "score": 86,
+        "factors": {
+          "positive": ["Vitamin B6 supports serotonin production", "Complex carbs stabilize mood", "Anthocyanins may reduce depression", "Steady energy prevents mood swings", "Comforting satisfying food"],
+          "negative": ["No omega-3s", "Lower tryptophan", "Sugar content in some"],
+          "impact": "Supports mental wellbeing through vitamin B6 for neurotransmitter production and complex carbohydrates for stable mood. Anthocyanins show promise for depression reduction. Naturally sweet and satisfying, providing emotional comfort without processed sugars."
+        }
+      }
+    },
+    "knowledgeGraphTags": ["root_vegetable", "complex_carbohydrate", "vitamin_a_rich", "antioxidant_rich", "blue_zone_food", "whole_food"],
+    "seasonality": ["fall", "winter"],
+    "storageInstructions": "Store uncooked in cool, dark, well-ventilated place (not refrigerator). Do not wash until ready to use. Cooked sweet potatoes keep 3-5 days refrigerated in airtight container.",
+    "preparationTips": "Bake at 400°F for 45-60 minutes for maximum sweetness. Keep skin on for extra fiber and nutrients. Let cool and reheat for resistant starch benefits. Pair with healthy fat to enhance vitamin A absorption. Purple varieties offer additional antioxidants.",
+    "culturalSignificance": "Staple food in Okinawa Blue Zone. Native to Central/South America, now grown worldwide. Associated with Thanksgiving in US. Nutritional powerhouse replacing white potatoes in health-conscious diets."
+  }
+}

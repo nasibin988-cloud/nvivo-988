@@ -1,0 +1,1584 @@
+{
+    "chicken_breast": {
+        "id": "chicken_breast",
+        "name": "Chicken Breast",
+        "category": "protein",
+        "servingSize": 100,
+        "servingUnit": "g",
+        "calories": 165,
+        "macros": {
+            "protein": 31,
+            "carbs": 0,
+            "fat": 3.6,
+            "fiber": 0
+        },
+        "nutrients": {
+            "saturatedFat": 1.0,
+            "monounsaturatedFat": 1.2,
+            "polyunsaturatedFat": 0.8,
+            "transFat": 0,
+            "omega3": 0.05,
+            "omega6": 0.7,
+            "cholesterol": 85,
+            "sodium": 74,
+            "potassium": 256,
+            "calcium": 15,
+            "iron": 1.0,
+            "magnesium": 29,
+            "phosphorus": 228,
+            "zinc": 1.0,
+            "selenium": 27.6,
+            "vitaminA": 21,
+            "vitaminC": 0,
+            "vitaminD": 0.1,
+            "vitaminE": 0.3,
+            "vitaminK": 0.3,
+            "thiamin": 0.07,
+            "riboflavin": 0.12,
+            "niacin": 13.7,
+            "vitaminB6": 0.6,
+            "folate": 4,
+            "vitaminB12": 0.34,
+            "pantothenicAcid": 1.0,
+            "choline": 85,
+            "betaine": 11.4
+        },
+        "glycemicIndex": 0,
+        "glycemicLoad": 0,
+        "nutrientDensityScore": 88,
+        "satietyScore": 92,
+        "inflammatoryIndex": -0.8,
+        "novaClass": 1,
+        "focusGrades": {
+            "balanced": {
+                "grade": "A",
+                "score": 90,
+                "insight": "Complete protein with minimal fat - ideal foundation for balanced nutrition",
+                "pros": [
+                    "Complete amino acid profile for muscle maintenance",
+                    "Very low saturated fat (1g per 100g)",
+                    "High in selenium and B vitamins for metabolism",
+                    "Versatile and easy to digest"
+                ],
+                "cons": [
+                    "No fiber or carbohydrates",
+                    "Minimal omega-3 fatty acids",
+                    "Low in iron compared to red meat"
+                ]
+            },
+            "heart_health": {
+                "grade": "A",
+                "score": 92,
+                "insight": "Lean protein choice with heart-protective nutrients and minimal saturated fat",
+                "pros": [
+                    "Very low saturated fat (1g) supports healthy cholesterol",
+                    "High in niacin (13.7mg) for cardiovascular function",
+                    "Good potassium (256mg) to sodium ratio",
+                    "Selenium (27.6mcg) protects against oxidative stress"
+                ],
+                "cons": [
+                    "Contains 85mg cholesterol per serving",
+                    "Low in omega-3 fatty acids for inflammation",
+                    "Minimal fiber to support heart health"
+                ]
+            },
+            "muscle_building": {
+                "grade": "A+",
+                "score": 98,
+                "insight": "Gold standard lean protein for muscle growth and recovery",
+                "pros": [
+                    "Exceptional protein density (31g per 100g)",
+                    "Complete amino acid profile with high leucine",
+                    "Very low fat allows flexible macro planning",
+                    "High bioavailability for muscle protein synthesis",
+                    "Rich in B vitamins for energy metabolism"
+                ],
+                "cons": [
+                    "No carbohydrates for glycogen replenishment",
+                    "Lower in creatine compared to red meat"
+                ]
+            },
+            "energy": {
+                "grade": "B+",
+                "score": 82,
+                "insight": "Excellent for sustained energy through protein metabolism, though lacks quick fuel",
+                "pros": [
+                    "High niacin (13.7mg) supports energy production",
+                    "B6 (0.6mg) aids protein and glycogen metabolism",
+                    "Phosphorus (228mg) critical for ATP production",
+                    "Stable energy without blood sugar spikes"
+                ],
+                "cons": [
+                    "No carbohydrates for immediate energy",
+                    "Requires longer digestion than quick energy sources",
+                    "Low iron (1mg) compared to red meat"
+                ]
+            },
+            "weight_management": {
+                "grade": "A+",
+                "score": 96,
+                "insight": "Premium choice for weight loss with high protein and minimal calories",
+                "pros": [
+                    "Extremely high satiety score (92/100)",
+                    "Only 165 calories with 31g protein",
+                    "Minimal fat (3.6g) maximizes protein per calorie",
+                    "High thermic effect of protein boosts metabolism",
+                    "Supports lean mass preservation during deficit"
+                ],
+                "cons": [
+                    "Can be dry if overcooked, reducing palatability",
+                    "Requires seasoning for sustained meal adherence"
+                ]
+            },
+            "brain_focus": {
+                "grade": "B+",
+                "score": 84,
+                "insight": "Supports cognitive function through B vitamins and amino acids",
+                "pros": [
+                    "High choline (85mg) for neurotransmitter synthesis",
+                    "B6 (0.6mg) supports dopamine and serotonin production",
+                    "Niacin (13.7mg) improves cerebral blood flow",
+                    "Complete amino acids including tryptophan"
+                ],
+                "cons": [
+                    "Very low omega-3s for brain structure",
+                    "No DHA or EPA for cognitive enhancement",
+                    "Minimal antioxidants for neuroprotection"
+                ]
+            },
+            "gut_health": {
+                "grade": "B",
+                "score": 75,
+                "insight": "Easily digestible protein but lacks gut-supporting fiber and probiotics",
+                "pros": [
+                    "Highly digestible and gentle on the gut",
+                    "Low FODMAP friendly for sensitive digestion",
+                    "Zinc (1mg) supports intestinal barrier integrity",
+                    "Glutamine-rich for gut lining repair"
+                ],
+                "cons": [
+                    "Zero fiber for microbiome diversity",
+                    "No prebiotics or probiotics",
+                    "Lacks polyphenols that feed beneficial bacteria",
+                    "High protein requires adequate hydration"
+                ]
+            },
+            "blood_sugar": {
+                "grade": "A",
+                "score": 94,
+                "insight": "Perfect for blood sugar stability with zero carbohydrates and high protein",
+                "pros": [
+                    "Zero glycemic index - no blood sugar impact",
+                    "High protein slows digestion when paired with carbs",
+                    "Niacin supports insulin sensitivity",
+                    "Prevents blood sugar spikes in mixed meals"
+                ],
+                "cons": [
+                    "No fiber to slow glucose absorption",
+                    "Requires pairing with vegetables for balanced meal",
+                    "Excessive protein may convert to glucose via gluconeogenesis"
+                ]
+            },
+            "bone_joint": {
+                "grade": "B+",
+                "score": 83,
+                "insight": "High protein supports bone matrix, though lower in minerals than dairy",
+                "pros": [
+                    "Protein (31g) essential for bone matrix formation",
+                    "Phosphorus (228mg) critical for bone mineralization",
+                    "Selenium (27.6mcg) reduces inflammatory joint damage",
+                    "Collagen precursor amino acids present"
+                ],
+                "cons": [
+                    "Low calcium (15mg) - only 1.5% daily needs",
+                    "Minimal vitamin D for calcium absorption",
+                    "Lower in joint-supporting omega-3s",
+                    "Very low vitamin K for bone metabolism"
+                ]
+            },
+            "anti_inflammatory": {
+                "grade": "B+",
+                "score": 82,
+                "insight": "Lean protein with anti-inflammatory nutrients, though not fatty fish level",
+                "pros": [
+                    "Negative inflammatory index (-0.8)",
+                    "High selenium (27.6mcg) fights oxidative stress",
+                    "Very low saturated fat reduces inflammation triggers",
+                    "Minimal omega-6 to omega-3 imbalance"
+                ],
+                "cons": [
+                    "Very low omega-3s (0.05g) for inflammation resolution",
+                    "Lacks polyphenols and antioxidants",
+                    "No curcumin, quercetin, or other anti-inflammatory compounds"
+                ]
+            }
+        },
+        "bioavailability": {
+            "protein": "high",
+            "iron": "moderate",
+            "notes": "Complete protein with excellent digestibility (PDCAAS ~0.92). Non-heme iron absorption enhanced by vitamin C pairing."
+        },
+        "pairWith": [
+            "Vitamin C-rich vegetables for iron absorption",
+            "Whole grains for complete meal balance",
+            "Healthy fats (olive oil, avocado) for satiety",
+            "Cruciferous vegetables for detox support"
+        ],
+        "bestTiming": [
+            "Post-workout for muscle recovery (within 2 hours)",
+            "Lunch or dinner for sustained satiety",
+            "Evening meal supports overnight muscle repair"
+        ],
+        "tags": [
+            "high-protein",
+            "low-fat",
+            "lean-meat",
+            "complete-protein",
+            "muscle-building",
+            "weight-loss-friendly"
+        ]
+    },
+    "chicken": {
+        "id": "chicken",
+        "name": "Chicken (Mixed Parts)",
+        "category": "protein",
+        "servingSize": 100,
+        "servingUnit": "g",
+        "calories": 215,
+        "macros": {
+            "protein": 27,
+            "carbs": 0,
+            "fat": 11.2,
+            "fiber": 0
+        },
+        "nutrients": {
+            "saturatedFat": 3.1,
+            "monounsaturatedFat": 4.5,
+            "polyunsaturatedFat": 2.4,
+            "transFat": 0,
+            "omega3": 0.12,
+            "omega6": 2.2,
+            "cholesterol": 88,
+            "sodium": 82,
+            "potassium": 229,
+            "calcium": 15,
+            "iron": 1.3,
+            "magnesium": 25,
+            "phosphorus": 195,
+            "zinc": 2.1,
+            "selenium": 22.3,
+            "vitaminA": 49,
+            "vitaminC": 0,
+            "vitaminD": 0.2,
+            "vitaminE": 0.4,
+            "vitaminK": 2.1,
+            "thiamin": 0.09,
+            "riboflavin": 0.18,
+            "niacin": 9.9,
+            "vitaminB6": 0.5,
+            "folate": 6,
+            "vitaminB12": 0.39,
+            "pantothenicAcid": 1.2,
+            "choline": 75,
+            "betaine": 9.2
+        },
+        "glycemicIndex": 0,
+        "glycemicLoad": 0,
+        "nutrientDensityScore": 82,
+        "satietyScore": 87,
+        "inflammatoryIndex": -0.3,
+        "novaClass": 1,
+        "focusGrades": {
+            "balanced": {
+                "grade": "A-",
+                "score": 85,
+                "insight": "Well-rounded protein with moderate fat - good all-purpose choice",
+                "pros": [
+                    "Complete protein (27g) supports multiple body functions",
+                    "Moderate fat (11.2g) provides satiety and flavor",
+                    "Rich in B vitamins for energy metabolism",
+                    "Higher in iron and zinc than breast meat alone"
+                ],
+                "cons": [
+                    "Higher saturated fat (3.1g) than breast meat",
+                    "No carbohydrates or fiber",
+                    "Calorie density varies with skin inclusion"
+                ]
+            },
+            "heart_health": {
+                "grade": "B+",
+                "score": 80,
+                "insight": "Moderate fat content - remove skin for optimal heart health benefits",
+                "pros": [
+                    "Majority of fat is heart-healthy mono/polyunsaturated",
+                    "Niacin (9.9mg) supports cholesterol metabolism",
+                    "Selenium (22.3mcg) protects cardiovascular system",
+                    "Potassium (229mg) aids blood pressure regulation"
+                ],
+                "cons": [
+                    "Saturated fat (3.1g) 3x higher than breast meat",
+                    "Cholesterol content (88mg)",
+                    "Low omega-3 to omega-6 ratio (1:18)",
+                    "Skin significantly increases saturated fat"
+                ]
+            },
+            "muscle_building": {
+                "grade": "A",
+                "score": 93,
+                "insight": "Excellent protein source with added calories for muscle gain",
+                "pros": [
+                    "High-quality complete protein (27g)",
+                    "Extra calories (215) support bulking phases",
+                    "Higher zinc (2.1mg) for testosterone production",
+                    "Increased iron (1.3mg) for oxygen delivery",
+                    "Fat content aids hormone production"
+                ],
+                "cons": [
+                    "Less protein-dense than breast meat",
+                    "Higher fat may not fit cutting macros",
+                    "Calorie variability with skin on/off"
+                ]
+            },
+            "energy": {
+                "grade": "B+",
+                "score": 81,
+                "insight": "Provides sustained energy from protein and fat metabolism",
+                "pros": [
+                    "Niacin (9.9mg) critical for ATP production",
+                    "B vitamins support cellular energy generation",
+                    "Iron (1.3mg) improves oxygen transport",
+                    "Fat provides long-lasting fuel",
+                    "Phosphorus (195mg) for energy storage"
+                ],
+                "cons": [
+                    "No carbohydrates for quick energy",
+                    "Higher fat content slows digestion",
+                    "Iron levels lower than red meat"
+                ]
+            },
+            "weight_management": {
+                "grade": "B+",
+                "score": 82,
+                "insight": "Good protein source, but remove skin to optimize calorie-to-protein ratio",
+                "pros": [
+                    "High satiety score (87/100) keeps hunger at bay",
+                    "Protein (27g) preserves muscle during weight loss",
+                    "Thermic effect of protein boosts metabolism",
+                    "Versatile preparation methods"
+                ],
+                "cons": [
+                    "Higher calories (215) than lean breast",
+                    "Fat content (11.2g) reduces protein percentage",
+                    "Skin adds significant calories without nutrients",
+                    "Easy to overconsume with rich preparations"
+                ]
+            },
+            "brain_focus": {
+                "grade": "B+",
+                "score": 83,
+                "insight": "Supports cognitive function through B vitamins and choline",
+                "pros": [
+                    "Choline (75mg) for acetylcholine synthesis",
+                    "B6 (0.5mg) supports neurotransmitter production",
+                    "B12 (0.39mcg) essential for nerve health",
+                    "Selenium protects brain from oxidative damage",
+                    "Complete amino acids for neurotransmitters"
+                ],
+                "cons": [
+                    "Low omega-3 content for brain structure",
+                    "No DHA/EPA for cognitive enhancement",
+                    "Higher omega-6 may promote inflammation",
+                    "Minimal antioxidants for neuroprotection"
+                ]
+            },
+            "gut_health": {
+                "grade": "B",
+                "score": 74,
+                "insight": "Digestible protein but higher fat content may slow transit",
+                "pros": [
+                    "Easily digestible for most people",
+                    "Zinc (2.1mg) supports intestinal barrier",
+                    "Glutamine-rich for gut lining repair",
+                    "Low FODMAP for sensitive digestion"
+                ],
+                "cons": [
+                    "Zero fiber for microbiome",
+                    "No prebiotics or probiotics",
+                    "Higher fat may slow gastric emptying",
+                    "Lacks gut-supporting polyphenols",
+                    "Skin can be harder to digest"
+                ]
+            },
+            "blood_sugar": {
+                "grade": "A",
+                "score": 92,
+                "insight": "Excellent for blood sugar control with zero carbs and stabilizing protein",
+                "pros": [
+                    "Zero glycemic impact - no blood sugar spike",
+                    "Protein slows digestion of paired carbohydrates",
+                    "Fat content further stabilizes glucose response",
+                    "Niacin supports insulin sensitivity"
+                ],
+                "cons": [
+                    "No fiber to modulate glucose absorption",
+                    "Requires vegetable pairing for complete meal",
+                    "High protein intake may trigger gluconeogenesis"
+                ]
+            },
+            "bone_joint": {
+                "grade": "B+",
+                "score": 81,
+                "insight": "Protein supports bone matrix, dark meat provides more minerals",
+                "pros": [
+                    "Protein (27g) essential for bone structure",
+                    "Phosphorus (195mg) for bone mineralization",
+                    "Higher zinc (2.1mg) aids bone formation",
+                    "Vitamin K (2.1mcg) supports bone metabolism",
+                    "Collagen-building amino acids"
+                ],
+                "cons": [
+                    "Very low calcium (15mg)",
+                    "Minimal vitamin D (0.2mcg)",
+                    "Low omega-3s for joint inflammation",
+                    "Lacks bone-building magnesium"
+                ]
+            },
+            "anti_inflammatory": {
+                "grade": "B",
+                "score": 76,
+                "insight": "Mild anti-inflammatory effects, but omega-6 content requires balance",
+                "pros": [
+                    "Selenium (22.3mcg) fights oxidative stress",
+                    "Negative inflammatory index (-0.3)",
+                    "B vitamins reduce homocysteine inflammation",
+                    "Zinc supports immune regulation"
+                ],
+                "cons": [
+                    "High omega-6 (2.2g) to omega-3 (0.12g) ratio",
+                    "Minimal omega-3s for inflammation resolution",
+                    "No polyphenols or antioxidants",
+                    "Saturated fat may trigger inflammation in excess"
+                ]
+            }
+        },
+        "bioavailability": {
+            "protein": "high",
+            "iron": "moderate",
+            "notes": "Complete protein with excellent digestibility. Dark meat contains more bioavailable iron and zinc than white meat."
+        },
+        "pairWith": [
+            "Leafy greens for mineral balance",
+            "Omega-3 rich sides to balance omega-6",
+            "Colorful vegetables for antioxidants",
+            "Whole grains for complete nutrition"
+        ],
+        "bestTiming": [
+            "Lunch or dinner for sustained fullness",
+            "Post-workout with skin off for lean recovery",
+            "Evening meals for overnight muscle repair"
+        ],
+        "tags": [
+            "high-protein",
+            "complete-protein",
+            "moderate-fat",
+            "versatile",
+            "muscle-building"
+        ]
+    },
+    "grilled_chicken": {
+        "id": "grilled_chicken",
+        "name": "Grilled Chicken Breast",
+        "category": "protein",
+        "servingSize": 100,
+        "servingUnit": "g",
+        "calories": 172,
+        "macros": {
+            "protein": 32,
+            "carbs": 0,
+            "fat": 4.1,
+            "fiber": 0
+        },
+        "nutrients": {
+            "saturatedFat": 1.1,
+            "monounsaturatedFat": 1.4,
+            "polyunsaturatedFat": 0.9,
+            "transFat": 0,
+            "omega3": 0.06,
+            "omega6": 0.8,
+            "cholesterol": 89,
+            "sodium": 78,
+            "potassium": 263,
+            "calcium": 16,
+            "iron": 1.1,
+            "magnesium": 31,
+            "phosphorus": 235,
+            "zinc": 1.1,
+            "selenium": 29.2,
+            "vitaminA": 23,
+            "vitaminC": 0,
+            "vitaminD": 0.1,
+            "vitaminE": 0.3,
+            "vitaminK": 0.4,
+            "thiamin": 0.08,
+            "riboflavin": 0.13,
+            "niacin": 14.2,
+            "vitaminB6": 0.65,
+            "folate": 5,
+            "vitaminB12": 0.36,
+            "pantothenicAcid": 1.1,
+            "choline": 88,
+            "betaine": 12.1
+        },
+        "glycemicIndex": 0,
+        "glycemicLoad": 0,
+        "nutrientDensityScore": 90,
+        "satietyScore": 94,
+        "inflammatoryIndex": -1.0,
+        "novaClass": 1,
+        "focusGrades": {
+            "balanced": {
+                "grade": "A",
+                "score": 92,
+                "insight": "Premium lean protein with enhanced flavor from grilling - excellent nutrition foundation",
+                "pros": [
+                    "Exceptional protein density (32g per 100g)",
+                    "Minimal fat (4.1g) while maintaining moisture",
+                    "Grilling concentrates nutrients and flavor",
+                    "High in selenium and B vitamins for metabolism",
+                    "Very low calorie density for volume"
+                ],
+                "cons": [
+                    "No fiber or carbohydrates",
+                    "Minimal omega-3 fatty acids",
+                    "Grilling may form small amounts of AGEs"
+                ]
+            },
+            "heart_health": {
+                "grade": "A",
+                "score": 93,
+                "insight": "Heart-healthy cooking method with minimal saturated fat",
+                "pros": [
+                    "Very low saturated fat (1.1g)",
+                    "Grilling avoids added oils and fats",
+                    "High niacin (14.2mg) supports cardiovascular function",
+                    "Excellent potassium (263mg) for blood pressure",
+                    "Selenium (29.2mcg) protects against oxidative stress"
+                ],
+                "cons": [
+                    "Cholesterol (89mg) present but moderate",
+                    "Low omega-3 for inflammation",
+                    "High-heat grilling may create minor AGEs",
+                    "No fiber to support cholesterol excretion"
+                ]
+            },
+            "muscle_building": {
+                "grade": "A+",
+                "score": 99,
+                "insight": "Perfect muscle-building protein with concentrated amino acids from grilling",
+                "pros": [
+                    "Peak protein density (32g per 100g)",
+                    "Complete amino acid profile with high leucine",
+                    "Grilling preserves protein while reducing fat",
+                    "Enhanced B6 (0.65mg) for protein metabolism",
+                    "Minimal fat allows precise macro control",
+                    "High bioavailability for muscle protein synthesis"
+                ],
+                "cons": [
+                    "No carbohydrates for glycogen replenishment",
+                    "May be dry if overgrilled, reducing palatability"
+                ]
+            },
+            "energy": {
+                "grade": "A-",
+                "score": 84,
+                "insight": "Excellent sustained energy with enhanced B vitamin profile",
+                "pros": [
+                    "Very high niacin (14.2mg) for energy production",
+                    "Enhanced B6 (0.65mg) for metabolism",
+                    "Phosphorus (235mg) critical for ATP",
+                    "Grilling concentrates energy-supporting nutrients",
+                    "Stable energy without blood sugar fluctuations"
+                ],
+                "cons": [
+                    "No carbohydrates for immediate energy",
+                    "Requires longer digestion than quick fuel",
+                    "Iron content (1.1mg) lower than red meat"
+                ]
+            },
+            "weight_management": {
+                "grade": "A+",
+                "score": 98,
+                "insight": "Gold standard for weight loss - maximum protein with minimal calories",
+                "pros": [
+                    "Highest satiety score (94/100)",
+                    "Only 172 calories with 32g protein",
+                    "Grilling eliminates excess fat without added oil",
+                    "Exceptional protein-to-calorie ratio",
+                    "High thermic effect boosts metabolism",
+                    "Preserves lean mass during calorie deficit"
+                ],
+                "cons": [
+                    "Can be dry if overcooked, reducing meal adherence",
+                    "May need marinades for flavor variety"
+                ]
+            },
+            "brain_focus": {
+                "grade": "A-",
+                "score": 86,
+                "insight": "Enhanced cognitive support through concentrated B vitamins and choline",
+                "pros": [
+                    "High choline (88mg) for acetylcholine synthesis",
+                    "Enhanced B6 (0.65mg) for neurotransmitter production",
+                    "Niacin (14.2mg) improves cerebral circulation",
+                    "Complete amino acids including tryptophan",
+                    "Selenium protects neurons from oxidative damage"
+                ],
+                "cons": [
+                    "Very low omega-3s for brain structure",
+                    "No DHA or EPA for cognitive enhancement",
+                    "Minimal antioxidants for neuroprotection"
+                ]
+            },
+            "gut_health": {
+                "grade": "B+",
+                "score": 78,
+                "insight": "Highly digestible lean protein, though grilling may reduce some benefits",
+                "pros": [
+                    "Very easy to digest with minimal fat",
+                    "Low FODMAP friendly for sensitive guts",
+                    "Zinc (1.1mg) supports intestinal barrier",
+                    "Glutamine-rich for gut lining repair",
+                    "Grilling removes excess fat that can slow digestion"
+                ],
+                "cons": [
+                    "Zero fiber for microbiome diversity",
+                    "No prebiotics or probiotics",
+                    "Grilling may create minor digestive irritants",
+                    "Lacks gut-supporting polyphenols",
+                    "Very high protein requires adequate hydration"
+                ]
+            },
+            "blood_sugar": {
+                "grade": "A+",
+                "score": 96,
+                "insight": "Perfect for blood sugar stability - pure protein with zero glycemic impact",
+                "pros": [
+                    "Zero glycemic index - no blood sugar spike",
+                    "High protein dramatically slows carb digestion",
+                    "Niacin (14.2mg) enhances insulin sensitivity",
+                    "Prevents glucose spikes when paired with carbs",
+                    "Ideal for diabetes management"
+                ],
+                "cons": [
+                    "No fiber to modulate glucose absorption",
+                    "Requires vegetable pairing for balanced meal",
+                    "Excessive protein may trigger minor gluconeogenesis"
+                ]
+            },
+            "bone_joint": {
+                "grade": "A-",
+                "score": 85,
+                "insight": "High protein supports bone matrix with concentrated mineral content",
+                "pros": [
+                    "Excellent protein (32g) for bone matrix formation",
+                    "High phosphorus (235mg) for bone mineralization",
+                    "Enhanced selenium (29.2mcg) reduces joint inflammation",
+                    "Magnesium (31mg) supports bone density",
+                    "Collagen precursor amino acids abundant"
+                ],
+                "cons": [
+                    "Very low calcium (16mg) - only 1.6% DV",
+                    "Minimal vitamin D for calcium absorption",
+                    "Low omega-3s for joint lubrication",
+                    "Vitamin K (0.4mcg) content limited"
+                ]
+            },
+            "anti_inflammatory": {
+                "grade": "A-",
+                "score": 85,
+                "insight": "Strong anti-inflammatory profile with ultra-lean composition",
+                "pros": [
+                    "Strong negative inflammatory index (-1.0)",
+                    "Very high selenium (29.2mcg) fights oxidative stress",
+                    "Minimal saturated fat reduces inflammation triggers",
+                    "Low omega-6 content",
+                    "Grilling without oil reduces inflammatory fats"
+                ],
+                "cons": [
+                    "Very low omega-3s (0.06g) for inflammation resolution",
+                    "No polyphenols or plant antioxidants",
+                    "Grilling may create minor pro-inflammatory compounds",
+                    "Lacks anti-inflammatory spices unless marinated"
+                ]
+            }
+        },
+        "bioavailability": {
+            "protein": "high",
+            "iron": "moderate",
+            "notes": "Grilling concentrates protein and enhances flavor compounds. Complete protein with PDCAAS ~0.92. Non-heme iron absorption improved with vitamin C."
+        },
+        "pairWith": [
+            "Grilled vegetables for charred flavor synergy",
+            "Lemon or citrus for iron absorption and flavor",
+            "Quinoa or brown rice for complete meal",
+            "Leafy greens for mineral and antioxidant balance"
+        ],
+        "bestTiming": [
+            "Post-workout for optimal muscle recovery",
+            "Lunch for sustained afternoon satiety",
+            "Dinner paired with vegetables for balanced nutrition"
+        ],
+        "tags": [
+            "high-protein",
+            "ultra-lean",
+            "grilled",
+            "complete-protein",
+            "muscle-building",
+            "weight-loss-optimal"
+        ]
+    },
+    "ground_beef": {
+        "id": "ground_beef",
+        "name": "Ground Beef (80/20)",
+        "category": "protein",
+        "servingSize": 100,
+        "servingUnit": "g",
+        "calories": 254,
+        "macros": {
+            "protein": 25.4,
+            "carbs": 0,
+            "fat": 17.2,
+            "fiber": 0
+        },
+        "nutrients": {
+            "saturatedFat": 6.8,
+            "monounsaturatedFat": 7.4,
+            "polyunsaturatedFat": 0.6,
+            "transFat": 0.7,
+            "omega3": 0.09,
+            "omega6": 0.45,
+            "cholesterol": 78,
+            "sodium": 72,
+            "potassium": 302,
+            "calcium": 18,
+            "iron": 2.4,
+            "magnesium": 20,
+            "phosphorus": 188,
+            "zinc": 5.3,
+            "selenium": 18.7,
+            "vitaminA": 0,
+            "vitaminC": 0,
+            "vitaminD": 0.1,
+            "vitaminE": 0.2,
+            "vitaminK": 1.6,
+            "thiamin": 0.04,
+            "riboflavin": 0.17,
+            "niacin": 5.4,
+            "vitaminB6": 0.36,
+            "folate": 8,
+            "vitaminB12": 2.64,
+            "pantothenicAcid": 0.59,
+            "choline": 82,
+            "betaine": 12.8,
+            "creatine": 350
+        },
+        "glycemicIndex": 0,
+        "glycemicLoad": 0,
+        "nutrientDensityScore": 78,
+        "satietyScore": 85,
+        "inflammatoryIndex": 0.4,
+        "novaClass": 1,
+        "focusGrades": {
+            "balanced": {
+                "grade": "B",
+                "score": 78,
+                "insight": "Nutrient-dense but high in saturated fat - choose leaner versions for better balance",
+                "pros": [
+                    "Complete protein (25.4g) with all essential amino acids",
+                    "Exceptional iron (2.4mg) and zinc (5.3mg)",
+                    "Very high B12 (2.64mcg) - 110% DV",
+                    "Contains creatine (350mg) rare in most foods",
+                    "Rich in bioavailable nutrients"
+                ],
+                "cons": [
+                    "High saturated fat (6.8g) - 34% of DV",
+                    "High calorie density (254 cal per 100g)",
+                    "Contains trans fat (0.7g) from ruminant source",
+                    "No fiber or carbohydrates",
+                    "Inflammatory index slightly positive (0.4)"
+                ]
+            },
+            "heart_health": {
+                "grade": "C",
+                "score": 62,
+                "insight": "High saturated fat content poses heart health concerns - choose 90/10 instead",
+                "pros": [
+                    "Rich in monounsaturated fat (7.4g)",
+                    "Provides conjugated linoleic acid (CLA)",
+                    "Potassium (302mg) supports blood pressure",
+                    "B vitamins support homocysteine metabolism"
+                ],
+                "cons": [
+                    "Very high saturated fat (6.8g) - 34% DV",
+                    "Contains naturally occurring trans fat (0.7g)",
+                    "Cholesterol (78mg) present",
+                    "Poor omega-3 to omega-6 ratio",
+                    "Positive inflammatory index (0.4)",
+                    "High calorie density promotes weight gain"
+                ]
+            },
+            "muscle_building": {
+                "grade": "A+",
+                "score": 96,
+                "insight": "Elite muscle-building food with complete protein, creatine, and minerals",
+                "pros": [
+                    "Complete high-quality protein (25.4g)",
+                    "Contains creatine (350mg) for strength and power",
+                    "Exceptional zinc (5.3mg) for testosterone production",
+                    "Very high B12 (2.64mcg) for red blood cell formation",
+                    "High iron (2.4mg) for oxygen delivery to muscles",
+                    "Extra calories support muscle gain",
+                    "Heme iron highly bioavailable"
+                ],
+                "cons": [
+                    "High fat may exceed cutting phase macros",
+                    "Saturated fat content if consuming large amounts"
+                ]
+            },
+            "energy": {
+                "grade": "A-",
+                "score": 87,
+                "insight": "Excellent energy from iron, B12, and dense calories",
+                "pros": [
+                    "Very high iron (2.4mg) improves oxygen transport",
+                    "Exceptional B12 (2.64mcg) critical for energy metabolism",
+                    "Niacin (5.4mg) for ATP production",
+                    "Creatine (350mg) supports cellular energy",
+                    "Dense calories provide lasting fuel",
+                    "Heme iron prevents fatigue"
+                ],
+                "cons": [
+                    "No carbohydrates for quick energy",
+                    "High fat content slows digestion",
+                    "Lower B vitamin profile than poultry"
+                ]
+            },
+            "weight_management": {
+                "grade": "C+",
+                "score": 68,
+                "insight": "High calories and fat make portion control critical - choose 93/7 for weight loss",
+                "pros": [
+                    "High satiety score (85/100) from protein and fat",
+                    "Protein (25.4g) preserves lean mass",
+                    "Iron and B12 prevent fatigue during deficit",
+                    "Thermic effect of protein boosts metabolism"
+                ],
+                "cons": [
+                    "High calorie density (254 cal per 100g)",
+                    "Significant fat content (17.2g)",
+                    "Easy to overconsume due to palatability",
+                    "Saturated fat may promote fat storage",
+                    "Less protein per calorie than lean options"
+                ]
+            },
+            "brain_focus": {
+                "grade": "A",
+                "score": 90,
+                "insight": "Exceptional for cognitive function through B12, iron, and creatine",
+                "pros": [
+                    "Very high B12 (2.64mcg) essential for nerve function",
+                    "Creatine (350mg) shown to enhance cognitive performance",
+                    "High iron (2.4mg) prevents brain fog and fatigue",
+                    "Choline (82mg) for neurotransmitter synthesis",
+                    "Zinc (5.3mg) supports memory and learning",
+                    "Complete amino acids for neurotransmitter production"
+                ],
+                "cons": [
+                    "Low omega-3s for brain structure",
+                    "No DHA or EPA",
+                    "Saturated fat may impair cognitive function long-term",
+                    "Minimal antioxidants for neuroprotection"
+                ]
+            },
+            "gut_health": {
+                "grade": "B-",
+                "score": 72,
+                "insight": "Nutrient-dense but high fat content may challenge digestion",
+                "pros": [
+                    "Very high zinc (5.3mg) supports intestinal barrier",
+                    "Glutamine-rich for gut lining repair",
+                    "B12 supports gut microbiome health",
+                    "Easily digestible protein for most people"
+                ],
+                "cons": [
+                    "Zero fiber for microbiome diversity",
+                    "High fat content (17.2g) slows gastric emptying",
+                    "Saturated fat may alter gut bacteria composition",
+                    "No prebiotics or probiotics",
+                    "Red meat may increase inflammatory gut bacteria",
+                    "Lacks polyphenols"
+                ]
+            },
+            "blood_sugar": {
+                "grade": "A-",
+                "score": 88,
+                "insight": "Zero glycemic impact with excellent blood sugar stabilizing nutrients",
+                "pros": [
+                    "Zero glycemic index - no blood sugar spike",
+                    "High protein slows digestion of paired carbs",
+                    "Chromium content supports insulin sensitivity",
+                    "Fat content further stabilizes glucose response",
+                    "Prevents postprandial glucose spikes"
+                ],
+                "cons": [
+                    "No fiber to modulate glucose absorption",
+                    "Saturated fat may impair insulin sensitivity over time",
+                    "High protein may trigger gluconeogenesis",
+                    "Requires vegetable pairing for complete meal"
+                ]
+            },
+            "bone_joint": {
+                "grade": "A-",
+                "score": 86,
+                "insight": "Excellent for bone and joint health through protein, minerals, and collagen",
+                "pros": [
+                    "High protein (25.4g) for bone matrix formation",
+                    "Exceptional zinc (5.3mg) for bone formation",
+                    "Phosphorus (188mg) for bone mineralization",
+                    "Contains collagen and collagen precursors",
+                    "Very high B12 supports bone density",
+                    "Iron supports bone marrow function"
+                ],
+                "cons": [
+                    "Low calcium (18mg) - only 1.8% DV",
+                    "Minimal vitamin D (0.1mcg)",
+                    "Low omega-3s for joint inflammation",
+                    "Limited vitamin K (1.6mcg)",
+                    "Saturated fat may promote inflammation"
+                ]
+            },
+            "anti_inflammatory": {
+                "grade": "C+",
+                "score": 65,
+                "insight": "Mixed inflammatory profile - high saturated fat offsets anti-inflammatory nutrients",
+                "pros": [
+                    "High zinc (5.3mg) supports immune regulation",
+                    "Contains conjugated linoleic acid (CLA)",
+                    "Selenium (18.7mcg) fights oxidative stress",
+                    "B vitamins reduce homocysteine inflammation"
+                ],
+                "cons": [
+                    "Positive inflammatory index (0.4)",
+                    "High saturated fat (6.8g) triggers inflammation",
+                    "Contains trans fat (0.7g) though naturally occurring",
+                    "Poor omega-3 to omega-6 ratio",
+                    "Red meat associated with inflammatory markers",
+                    "No polyphenols or antioxidants",
+                    "Arachidonic acid content may promote inflammation"
+                ]
+            }
+        },
+        "bioavailability": {
+            "protein": "high",
+            "iron": "very high",
+            "notes": "Complete protein with excellent digestibility. Heme iron from red meat has 15-35% absorption rate vs 2-20% for non-heme iron. Zinc highly bioavailable. Creatine is pre-formed and ready to use."
+        },
+        "pairWith": [
+            "Cruciferous vegetables to balance saturated fat",
+            "Leafy greens for antioxidants and fiber",
+            "Tomatoes (lycopene reduces red meat oxidation)",
+            "Herbs and spices for anti-inflammatory compounds",
+            "Whole grains for complete nutrition"
+        ],
+        "bestTiming": [
+            "Post-workout for muscle recovery and creatine",
+            "Lunch or dinner for sustained satiety",
+            "Pre-workout (2-3 hours) for energy and creatine",
+            "Limit to 2-3 times per week for heart health"
+        ],
+        "tags": [
+            "high-protein",
+            "high-fat",
+            "red-meat",
+            "complete-protein",
+            "high-iron",
+            "high-zinc",
+            "contains-creatine",
+            "muscle-building"
+        ]
+    },
+    "beef": {
+        "id": "beef",
+        "name": "Beef (General)",
+        "category": "protein",
+        "servingSize": 100,
+        "servingUnit": "g",
+        "calories": 250,
+        "macros": {
+            "protein": 26,
+            "carbs": 0,
+            "fat": 16.5,
+            "fiber": 0
+        },
+        "nutrients": {
+            "saturatedFat": 6.5,
+            "monounsaturatedFat": 7.1,
+            "polyunsaturatedFat": 0.6,
+            "transFat": 0.7,
+            "omega3": 0.08,
+            "omega6": 0.42,
+            "cholesterol": 80,
+            "sodium": 68,
+            "potassium": 318,
+            "calcium": 18,
+            "iron": 2.6,
+            "magnesium": 21,
+            "phosphorus": 201,
+            "zinc": 5.7,
+            "selenium": 20.4,
+            "vitaminA": 0,
+            "vitaminC": 0,
+            "vitaminD": 0.1,
+            "vitaminE": 0.3,
+            "vitaminK": 1.5,
+            "thiamin": 0.05,
+            "riboflavin": 0.19,
+            "niacin": 5.8,
+            "vitaminB6": 0.4,
+            "folate": 9,
+            "vitaminB12": 2.85,
+            "pantothenicAcid": 0.63,
+            "choline": 85,
+            "betaine": 13.5,
+            "creatine": 380
+        },
+        "glycemicIndex": 0,
+        "glycemicLoad": 0,
+        "nutrientDensityScore": 80,
+        "satietyScore": 86,
+        "inflammatoryIndex": 0.5,
+        "novaClass": 1,
+        "focusGrades": {
+            "balanced": {
+                "grade": "B",
+                "score": 79,
+                "insight": "Nutrient powerhouse with exceptional minerals, but high saturated fat requires moderation",
+                "pros": [
+                    "Complete protein (26g) with all essential amino acids",
+                    "Outstanding iron (2.6mg) and zinc (5.7mg)",
+                    "Exceptional B12 (2.85mcg) - 119% DV",
+                    "Contains creatine (380mg) for cellular energy",
+                    "Very high potassium (318mg)",
+                    "Rich in bioavailable nutrients"
+                ],
+                "cons": [
+                    "High saturated fat (6.5g) - 33% DV",
+                    "High calorie density (250 cal per 100g)",
+                    "Contains naturally occurring trans fat (0.7g)",
+                    "No fiber or carbohydrates",
+                    "Positive inflammatory index (0.5)"
+                ]
+            },
+            "heart_health": {
+                "grade": "C",
+                "score": 63,
+                "insight": "Saturated fat content raises cardiovascular concerns - choose lean cuts",
+                "pros": [
+                    "Rich in monounsaturated fat (7.1g) like oleic acid",
+                    "High potassium (318mg) supports blood pressure",
+                    "Contains conjugated linoleic acid (CLA)",
+                    "B vitamins reduce homocysteine levels",
+                    "Niacin (5.8mg) supports cholesterol metabolism"
+                ],
+                "cons": [
+                    "High saturated fat (6.5g) raises LDL cholesterol",
+                    "Contains trans fat (0.7g) from ruminant source",
+                    "Moderate cholesterol (80mg)",
+                    "Poor omega-3 to omega-6 ratio (1:5)",
+                    "Positive inflammatory index (0.5)",
+                    "Red meat linked to cardiovascular disease in studies"
+                ]
+            },
+            "muscle_building": {
+                "grade": "A+",
+                "score": 97,
+                "insight": "Elite muscle-building food with complete protein, creatine, and anabolic minerals",
+                "pros": [
+                    "High-quality complete protein (26g)",
+                    "Contains creatine (380mg) for strength gains",
+                    "Exceptional zinc (5.7mg) boosts testosterone",
+                    "Very high B12 (2.85mcg) for red blood cell formation",
+                    "Outstanding iron (2.6mg) for oxygen delivery",
+                    "Extra calories support muscle mass gain",
+                    "Leucine-rich for muscle protein synthesis",
+                    "Heme iron highly bioavailable"
+                ],
+                "cons": [
+                    "High fat may not fit cutting phase macros",
+                    "Requires balance with other protein sources"
+                ]
+            },
+            "energy": {
+                "grade": "A",
+                "score": 89,
+                "insight": "Exceptional energy support through iron, B12, creatine, and dense calories",
+                "pros": [
+                    "Outstanding iron (2.6mg) prevents fatigue",
+                    "Very high B12 (2.85mcg) critical for energy metabolism",
+                    "Creatine (380mg) supports cellular ATP production",
+                    "Niacin (5.8mg) for energy pathways",
+                    "Dense calories provide sustained fuel",
+                    "Heme iron absorption prevents anemia",
+                    "Phosphorus (201mg) for energy storage"
+                ],
+                "cons": [
+                    "No carbohydrates for quick energy",
+                    "High fat slows digestion",
+                    "Lower B vitamin diversity than poultry"
+                ]
+            },
+            "weight_management": {
+                "grade": "C+",
+                "score": 69,
+                "insight": "High satiety but calorie-dense - portion control essential for weight loss",
+                "pros": [
+                    "High satiety score (86/100) from protein and fat",
+                    "Protein (26g) preserves muscle during weight loss",
+                    "Iron and B12 prevent diet-related fatigue",
+                    "Thermic effect of protein increases metabolism",
+                    "Creatine supports workout performance"
+                ],
+                "cons": [
+                    "High calorie density (250 cal per 100g)",
+                    "Significant fat content (16.5g)",
+                    "Palatability leads to overconsumption",
+                    "Saturated fat may impair fat oxidation",
+                    "Less protein per calorie than lean cuts"
+                ]
+            },
+            "brain_focus": {
+                "grade": "A",
+                "score": 91,
+                "insight": "Outstanding cognitive support from B12, iron, creatine, and choline",
+                "pros": [
+                    "Exceptional B12 (2.85mcg) for nerve myelination",
+                    "Creatine (380mg) enhances cognitive performance",
+                    "Very high iron (2.6mg) prevents brain fog",
+                    "Choline (85mg) for acetylcholine synthesis",
+                    "Zinc (5.7mg) critical for memory formation",
+                    "Complete amino acids for neurotransmitters",
+                    "Prevents cognitive decline from B12 deficiency"
+                ],
+                "cons": [
+                    "Very low omega-3s for brain structure",
+                    "No DHA or EPA",
+                    "High saturated fat may impair cognitive function",
+                    "Minimal antioxidants for neuroprotection"
+                ]
+            },
+            "gut_health": {
+                "grade": "B-",
+                "score": 71,
+                "insight": "Rich in gut-supporting nutrients but high fat and red meat may challenge microbiome",
+                "pros": [
+                    "Exceptional zinc (5.7mg) for intestinal barrier integrity",
+                    "Glutamine-rich for gut lining repair",
+                    "B12 (2.85mcg) supports healthy gut bacteria",
+                    "Easily digestible protein",
+                    "Collagen supports gut wall structure"
+                ],
+                "cons": [
+                    "Zero fiber for microbiome diversity",
+                    "High fat (16.5g) slows gastric emptying",
+                    "Saturated fat may alter gut bacteria negatively",
+                    "Red meat increases inflammatory bacteria",
+                    "No prebiotics or probiotics",
+                    "Lacks gut-supporting polyphenols",
+                    "May increase TMAO production"
+                ]
+            },
+            "blood_sugar": {
+                "grade": "A-",
+                "score": 87,
+                "insight": "Zero glycemic impact with blood sugar stabilizing protein and minerals",
+                "pros": [
+                    "Zero glycemic index - no blood sugar spike",
+                    "High protein dramatically slows carb digestion",
+                    "Chromium supports insulin sensitivity",
+                    "Fat content stabilizes glucose response",
+                    "Zinc improves insulin function",
+                    "Ideal for diabetes management"
+                ],
+                "cons": [
+                    "No fiber to modulate glucose absorption",
+                    "Saturated fat may reduce insulin sensitivity long-term",
+                    "High protein intake may trigger gluconeogenesis",
+                    "Requires vegetable pairing for balance"
+                ]
+            },
+            "bone_joint": {
+                "grade": "A",
+                "score": 88,
+                "insight": "Outstanding for bone and joint health through protein, minerals, and collagen",
+                "pros": [
+                    "High protein (26g) for bone matrix formation",
+                    "Exceptional zinc (5.7mg) for bone tissue formation",
+                    "Phosphorus (201mg) critical for bone mineralization",
+                    "Contains natural collagen and precursors",
+                    "Very high B12 (2.85mcg) supports bone density",
+                    "Outstanding iron (2.6mg) for bone marrow",
+                    "Potassium (318mg) reduces calcium excretion"
+                ],
+                "cons": [
+                    "Low calcium (18mg) - only 1.8% DV",
+                    "Minimal vitamin D (0.1mcg)",
+                    "Low omega-3s for joint inflammation",
+                    "Limited vitamin K (1.5mcg)",
+                    "Excess protein may increase calcium excretion"
+                ]
+            },
+            "anti_inflammatory": {
+                "grade": "C",
+                "score": 64,
+                "insight": "Pro-inflammatory profile from saturated fat outweighs anti-inflammatory nutrients",
+                "pros": [
+                    "Exceptional zinc (5.7mg) for immune regulation",
+                    "Contains anti-inflammatory CLA",
+                    "Selenium (20.4mcg) combats oxidative stress",
+                    "B vitamins reduce inflammatory homocysteine",
+                    "Creatine has anti-inflammatory properties"
+                ],
+                "cons": [
+                    "Positive inflammatory index (0.5)",
+                    "High saturated fat (6.5g) triggers inflammation",
+                    "Contains pro-inflammatory trans fat (0.7g)",
+                    "Poor omega-3 to omega-6 ratio (1:5)",
+                    "Red meat increases inflammatory markers (CRP, IL-6)",
+                    "No polyphenols or plant antioxidants",
+                    "Arachidonic acid promotes inflammation",
+                    "May increase gut-derived TMAO"
+                ]
+            }
+        },
+        "bioavailability": {
+            "protein": "high",
+            "iron": "very high",
+            "notes": "Complete protein with excellent digestibility (PDCAAS ~0.92). Heme iron has 15-35% absorption vs 2-20% for plant iron. Zinc, B12, and creatine are highly bioavailable and pre-formed."
+        },
+        "pairWith": [
+            "Cruciferous vegetables (sulforaphane counteracts red meat compounds)",
+            "Tomatoes (lycopene reduces oxidation)",
+            "Leafy greens for fiber and antioxidants",
+            "Garlic and onions (allicin reduces harmful compounds)",
+            "Red wine or green tea (polyphenols reduce AGEs)",
+            "Whole grains for complete nutrition"
+        ],
+        "bestTiming": [
+            "Post-workout for muscle recovery and creatine loading",
+            "Lunch or dinner for sustained satiety",
+            "Pre-workout (2-3 hours) for creatine and energy",
+            "Limit to 2-3 servings per week for optimal health",
+            "Avoid before bed if prone to acid reflux"
+        ],
+        "tags": [
+            "high-protein",
+            "high-fat",
+            "red-meat",
+            "complete-protein",
+            "high-iron",
+            "high-zinc",
+            "high-b12",
+            "contains-creatine",
+            "muscle-building",
+            "nutrient-dense"
+        ]
+    },
+    "hamburger_meat": {
+        "id": "hamburger_meat",
+        "name": "Hamburger Meat (85/15)",
+        "category": "protein",
+        "servingSize": 100,
+        "servingUnit": "g",
+        "calories": 215,
+        "macros": {
+            "protein": 26.6,
+            "carbs": 0,
+            "fat": 12,
+            "fiber": 0
+        },
+        "nutrients": {
+            "saturatedFat": 4.7,
+            "monounsaturatedFat": 5.2,
+            "polyunsaturatedFat": 0.4,
+            "transFat": 0.5,
+            "omega3": 0.07,
+            "omega6": 0.32,
+            "cholesterol": 75,
+            "sodium": 70,
+            "potassium": 310,
+            "calcium": 19,
+            "iron": 2.5,
+            "magnesium": 21,
+            "phosphorus": 196,
+            "zinc": 5.5,
+            "selenium": 19.5,
+            "vitaminA": 0,
+            "vitaminC": 0,
+            "vitaminD": 0.1,
+            "vitaminE": 0.2,
+            "vitaminK": 1.7,
+            "thiamin": 0.04,
+            "riboflavin": 0.18,
+            "niacin": 5.6,
+            "vitaminB6": 0.38,
+            "folate": 8,
+            "vitaminB12": 2.7,
+            "pantothenicAcid": 0.61,
+            "choline": 83,
+            "betaine": 13.2,
+            "creatine": 370
+        },
+        "glycemicIndex": 0,
+        "glycemicLoad": 0,
+        "nutrientDensityScore": 82,
+        "satietyScore": 87,
+        "inflammatoryIndex": 0.2,
+        "novaClass": 1,
+        "focusGrades": {
+            "balanced": {
+                "grade": "B+",
+                "score": 81,
+                "insight": "Better balance than 80/20 - leaner with retained nutrient density",
+                "pros": [
+                    "High-quality complete protein (26.6g)",
+                    "Outstanding iron (2.5mg) and zinc (5.5mg)",
+                    "Exceptional B12 (2.7mcg) - 113% DV",
+                    "Contains creatine (370mg)",
+                    "Lower saturated fat than 80/20 blend",
+                    "Very high potassium (310mg)"
+                ],
+                "cons": [
+                    "Still significant saturated fat (4.7g) - 24% DV",
+                    "Moderate calorie density (215 cal per 100g)",
+                    "Contains naturally occurring trans fat (0.5g)",
+                    "No fiber or carbohydrates",
+                    "Mild positive inflammatory index (0.2)"
+                ]
+            },
+            "heart_health": {
+                "grade": "C+",
+                "score": 70,
+                "insight": "Improved heart health profile vs 80/20, but still requires moderation",
+                "pros": [
+                    "Lower saturated fat (4.7g) than fattier blends",
+                    "Majority fat is heart-healthy monounsaturated (5.2g)",
+                    "High potassium (310mg) for blood pressure regulation",
+                    "Contains beneficial CLA",
+                    "Niacin (5.6mg) supports cholesterol metabolism",
+                    "Lower cholesterol (75mg) than many red meats"
+                ],
+                "cons": [
+                    "Saturated fat still 24% of daily value",
+                    "Contains trans fat (0.5g) from ruminant source",
+                    "Poor omega-3 to omega-6 ratio",
+                    "Mild inflammatory index (0.2)",
+                    "Red meat consumption linked to CVD risk"
+                ]
+            },
+            "muscle_building": {
+                "grade": "A+",
+                "score": 97,
+                "insight": "Optimal lean-to-fat ratio for muscle building with complete nutrients",
+                "pros": [
+                    "Excellent protein density (26.6g per 100g)",
+                    "Contains creatine (370mg) for strength and power",
+                    "Outstanding zinc (5.5mg) for testosterone synthesis",
+                    "Very high B12 (2.7mcg) for red blood cell production",
+                    "Excellent iron (2.5mg) for oxygen transport",
+                    "Balanced calories support muscle gain without excess fat",
+                    "Complete amino acid profile with high leucine",
+                    "Lower fat allows flexible macro planning"
+                ],
+                "cons": [
+                    "Slightly less energy-dense than 80/20 for hard gainers",
+                    "May need additional fats for very high calorie needs"
+                ]
+            },
+            "energy": {
+                "grade": "A",
+                "score": 88,
+                "insight": "Excellent energy from iron, B12, and creatine with moderate calories",
+                "pros": [
+                    "Outstanding iron (2.5mg) prevents fatigue and anemia",
+                    "Exceptional B12 (2.7mcg) for energy metabolism",
+                    "Creatine (370mg) supports ATP production",
+                    "Niacin (5.6mg) for energy pathways",
+                    "Moderate calories provide sustained fuel",
+                    "Heme iron highly bioavailable",
+                    "Phosphorus (196mg) for energy storage"
+                ],
+                "cons": [
+                    "No carbohydrates for immediate energy",
+                    "Moderate fat slows digestion vs leaner options",
+                    "Lower overall calories than 80/20 blend"
+                ]
+            },
+            "weight_management": {
+                "grade": "B",
+                "score": 78,
+                "insight": "Good choice for weight management - better protein-to-fat ratio than 80/20",
+                "pros": [
+                    "High satiety score (87/100)",
+                    "Excellent protein (26.6g) preserves lean mass",
+                    "Lower calories (215) than fattier blends",
+                    "Better protein-to-fat ratio (2.2:1)",
+                    "Iron and B12 prevent diet fatigue",
+                    "Thermic effect of protein boosts metabolism"
+                ],
+                "cons": [
+                    "Still moderate calorie density",
+                    "Fat content (12g) requires portion awareness",
+                    "Palatability can lead to overconsumption",
+                    "Saturated fat may hinder fat loss",
+                    "Less protein-dense than chicken breast"
+                ]
+            },
+            "brain_focus": {
+                "grade": "A",
+                "score": 90,
+                "insight": "Exceptional cognitive support from B12, iron, creatine, and lower inflammation",
+                "pros": [
+                    "Very high B12 (2.7mcg) for nerve function and myelin",
+                    "Creatine (370mg) improves cognitive performance",
+                    "Excellent iron (2.5mg) prevents brain fog",
+                    "Choline (83mg) for acetylcholine production",
+                    "Zinc (5.5mg) supports memory and learning",
+                    "Lower inflammatory index vs 80/20",
+                    "Complete amino acids for neurotransmitters"
+                ],
+                "cons": [
+                    "Low omega-3s for brain structure",
+                    "No DHA or EPA",
+                    "Saturated fat may affect cognition long-term",
+                    "Minimal antioxidants for neuroprotection"
+                ]
+            },
+            "gut_health": {
+                "grade": "B",
+                "score": 74,
+                "insight": "Easier to digest than fattier beef but still lacks fiber and probiotics",
+                "pros": [
+                    "Outstanding zinc (5.5mg) for gut barrier integrity",
+                    "Glutamine-rich for intestinal lining repair",
+                    "B12 (2.7mcg) supports healthy microbiome",
+                    "Moderate fat easier to digest than 80/20",
+                    "Easily digestible protein"
+                ],
+                "cons": [
+                    "Zero fiber for microbiome diversity",
+                    "Moderate fat (12g) still slows digestion",
+                    "Red meat may promote inflammatory bacteria",
+                    "No prebiotics or probiotics",
+                    "Saturated fat affects gut bacteria composition",
+                    "May increase TMAO production",
+                    "Lacks polyphenols"
+                ]
+            },
+            "blood_sugar": {
+                "grade": "A-",
+                "score": 89,
+                "insight": "Excellent for blood sugar control with zero carbs and stabilizing protein",
+                "pros": [
+                    "Zero glycemic index - no blood sugar impact",
+                    "High protein (26.6g) slows carb digestion when paired",
+                    "Chromium supports insulin sensitivity",
+                    "Moderate fat stabilizes glucose response",
+                    "Zinc (5.5mg) improves insulin function",
+                    "Lower inflammatory index vs fattier options"
+                ],
+                "cons": [
+                    "No fiber to modulate glucose absorption",
+                    "Saturated fat may reduce insulin sensitivity over time",
+                    "High protein may trigger minor gluconeogenesis",
+                    "Requires vegetable pairing for complete meal"
+                ]
+            },
+            "bone_joint": {
+                "grade": "A-",
+                "score": 87,
+                "insight": "Excellent for bones and joints with protein, minerals, and collagen",
+                "pros": [
+                    "High protein (26.6g) for bone matrix formation",
+                    "Outstanding zinc (5.5mg) for bone tissue synthesis",
+                    "Phosphorus (196mg) for bone mineralization",
+                    "Natural collagen and amino acid precursors",
+                    "Very high B12 (2.7mcg) supports bone density",
+                    "Excellent iron (2.5mg) for bone marrow function",
+                    "High potassium (310mg) reduces calcium loss"
+                ],
+                "cons": [
+                    "Low calcium (19mg) - less than 2% DV",
+                    "Minimal vitamin D (0.1mcg)",
+                    "Low omega-3s for joint inflammation",
+                    "Limited vitamin K (1.7mcg)",
+                    "High protein may increase calcium excretion"
+                ]
+            },
+            "anti_inflammatory": {
+                "grade": "C+",
+                "score": 67,
+                "insight": "Lower inflammatory profile than 80/20 but still mildly pro-inflammatory",
+                "pros": [
+                    "Outstanding zinc (5.5mg) regulates immune response",
+                    "Contains anti-inflammatory CLA",
+                    "Selenium (19.5mcg) fights oxidative stress",
+                    "B vitamins reduce inflammatory homocysteine",
+                    "Lower inflammatory index (0.2) vs fattier beef",
+                    "Creatine has anti-inflammatory properties"
+                ],
+                "cons": [
+                    "Positive inflammatory index (0.2)",
+                    "Saturated fat (4.7g) triggers inflammatory pathways",
+                    "Contains trans fat (0.5g)",
+                    "Poor omega-3 to omega-6 ratio (1:4.5)",
+                    "Red meat increases inflammatory markers",
+                    "No polyphenols or plant antioxidants",
+                    "Arachidonic acid content",
+                    "May elevate TMAO levels"
+                ]
+            }
+        },
+        "bioavailability": {
+            "protein": "high",
+            "iron": "very high",
+            "notes": "Complete protein with excellent digestibility. Heme iron absorption rate 15-35% vs 2-20% for non-heme. Zinc, B12, and creatine are pre-formed and highly bioavailable. Leaner blend may have slightly better protein absorption."
+        },
+        "pairWith": [
+            "Cruciferous vegetables (broccoli, Brussels sprouts) to mitigate red meat compounds",
+            "Tomatoes for lycopene to reduce oxidation",
+            "Leafy greens for fiber and antioxidant balance",
+            "Garlic and onions (allicin reduces harmful compounds)",
+            "Whole grain buns for fiber and B vitamins",
+            "Mushrooms for umami and immune support"
+        ],
+        "bestTiming": [
+            "Post-workout for muscle recovery within 2 hours",
+            "Lunch or dinner for sustained satiety",
+            "Pre-workout (2-3 hours before) for creatine loading",
+            "Limit to 2-3 times per week for optimal health",
+            "Pair with vegetables for balanced nutrition"
+        ],
+        "tags": [
+            "high-protein",
+            "moderate-fat",
+            "red-meat",
+            "complete-protein",
+            "high-iron",
+            "high-zinc",
+            "high-b12",
+            "contains-creatine",
+            "muscle-building",
+            "leaner-option"
+        ]
+    }
+}

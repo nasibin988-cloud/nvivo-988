@@ -162,12 +162,20 @@ function buildProfile(uid: string, profileData: PatientProfileData | null): Nutr
   };
 }
 
-function findConsistentPatterns(messages: string[]): string[] {
+/**
+ * Find consistent patterns across V2 highlights/gaps
+ * Works with either string arrays (V1) or object arrays with displayName (V2)
+ */
+function findConsistentPatterns(
+  items: Array<string | { displayName: string }>
+): string[] {
   const counts = new Map<string, number>();
 
-  for (const msg of messages) {
-    // Extract the nutrient name (first word or two)
-    const nutrient = msg.split(' ').slice(0, 2).join(' ');
+  for (const item of items) {
+    // Handle both V1 strings and V2 objects
+    const nutrient = typeof item === 'string'
+      ? item.split(' ').slice(0, 2).join(' ')
+      : item.displayName;
     counts.set(nutrient, (counts.get(nutrient) ?? 0) + 1);
   }
 

@@ -3,6 +3,8 @@
  * Type definitions for restaurant menu OCR scanning
  */
 
+import type { FoodIntelligence } from '../photo-analysis/types';
+
 export type ScanStep = 'capture' | 'scanning' | 'review' | 'analyze';
 
 export interface MenuItem {
@@ -19,6 +21,8 @@ export interface MenuItem {
   sodium?: number;
   isSelected: boolean;
   confidence: number;
+  /** Food intelligence data for contextual insights */
+  intelligence?: FoodIntelligence;
 }
 
 export interface DetectedRestaurant {

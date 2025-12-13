@@ -1,0 +1,584 @@
+{
+  "onion_rings": {
+    "name": "Onion Rings",
+    "calories": 407,
+    "protein": 5.3,
+    "carbs": 38.2,
+    "fat": 24.8,
+    "fiber": 2.4,
+    "sugar": 3.8,
+    "sodium": 430,
+    "saturatedFat": 3.8,
+    "cholesterol": 14,
+    "potassium": 168,
+    "calcium": 73,
+    "iron": 1.2,
+    "magnesium": 22,
+    "vitaminA": 8,
+    "vitaminC": 2.1,
+    "vitaminD": 0.1,
+    "vitaminB12": 0.08,
+    "glycemicIndex": 72,
+    "glycemicLoad": 27,
+    "allergens": ["wheat", "eggs"],
+    "servingSize": 100,
+    "servingUnit": "g",
+    "focusGrades": {
+      "balanced": {
+        "grade": "D+",
+        "score": 38,
+        "insight": "Deep-fried with high calories and sodium, lacks substantial protein and micronutrients for a balanced meal component",
+        "pros": ["Provides quick energy from carbs", "Contains some fiber from onions"],
+        "cons": ["Very high in calories and fat", "High sodium content", "Low protein", "Deep-fried cooking method"]
+      },
+      "heart_health": {
+        "grade": "D",
+        "score": 32,
+        "insight": "High in saturated fat and sodium, deep-fried preparation increases cardiovascular risk factors",
+        "pros": ["Contains some potassium from onions"],
+        "cons": ["High saturated fat content", "Excessive sodium (430mg per 100g)", "Trans fats from frying", "Low in heart-healthy omega-3s"]
+      },
+      "muscle_building": {
+        "grade": "D",
+        "score": 35,
+        "insight": "Very low protein content (5.3g) makes this ineffective for muscle building despite high calories",
+        "pros": ["Provides energy for workouts", "Some B vitamins for protein metabolism"],
+        "cons": ["Very low protein content", "Poor protein-to-calorie ratio", "Lacks essential amino acids", "High fat may slow digestion"]
+      },
+      "energy": {
+        "grade": "C",
+        "score": 52,
+        "insight": "High glycemic index provides rapid but short-lived energy spike, followed by crash from refined carbs",
+        "pros": ["Quick energy from simple carbs", "High calorie density", "Some B vitamins for energy metabolism"],
+        "cons": ["High glycemic index causes energy crash", "Refined flour lacks sustained energy", "Heavy fat content slows digestion"]
+      },
+      "weight_management": {
+        "grade": "F",
+        "score": 18,
+        "insight": "Extremely calorie-dense (407 kcal/100g) with minimal satiety, makes portion control very difficult",
+        "pros": ["Small amount of fiber provides minor satiety"],
+        "cons": ["Very high calorie density", "Low protein for satiety", "High fat content", "Easy to overconsume", "Minimal nutritional value per calorie"]
+      },
+      "brain_focus": {
+        "grade": "D+",
+        "score": 40,
+        "insight": "High glycemic load causes blood sugar spike and crash, negatively impacting sustained concentration",
+        "pros": ["Quick glucose for immediate brain energy", "Some B vitamins for neurotransmitter function"],
+        "cons": ["Causes blood sugar spike and crash", "High glycemic index impairs focus", "Heavy fat content causes sluggish feeling", "Lacks brain-supporting nutrients"]
+      },
+      "gut_health": {
+        "grade": "D+",
+        "score": 42,
+        "insight": "Low fiber content and fried preparation method offer minimal gut health benefits",
+        "pros": ["Contains some fiber from onions (2.4g)", "Onions provide prebiotic compounds"],
+        "cons": ["Fried foods may irritate gut lining", "Low overall fiber content", "High fat may slow digestion", "Lacks diverse plant nutrients"]
+      },
+      "blood_sugar": {
+        "grade": "D-",
+        "score": 28,
+        "insight": "Very high glycemic index (72) and load (27) cause rapid blood sugar spikes and insulin response",
+        "pros": ["Contains minimal fiber to slow absorption slightly"],
+        "cons": ["Very high glycemic index", "High glycemic load", "Refined flour causes rapid glucose spike", "Low protein and fiber for blood sugar stability"]
+      },
+      "bone_joint": {
+        "grade": "C-",
+        "score": 48,
+        "insight": "Moderate calcium content but high sodium and inflammatory fats may negatively impact bone and joint health",
+        "pros": ["Provides calcium (73mg)", "Contains some magnesium", "Has vitamin D for calcium absorption"],
+        "cons": ["High sodium increases calcium excretion", "Inflammatory fats from deep frying", "Low vitamin K for bone health", "Lacks bone-building minerals"]
+      },
+      "anti_inflammatory": {
+        "grade": "D",
+        "score": 30,
+        "insight": "Deep-fried preparation and high omega-6 oils promote inflammation despite onions' natural anti-inflammatory compounds",
+        "pros": ["Onions contain quercetin (anti-inflammatory)", "Some antioxidants from onions"],
+        "cons": ["Deep-fried oils are highly inflammatory", "High in pro-inflammatory omega-6 fats", "Refined carbs promote inflammation", "Cooking destroys many beneficial compounds"]
+      }
+    }
+  },
+  "corn_dog": {
+    "name": "Corn Dog",
+    "calories": 263,
+    "protein": 10.2,
+    "carbs": 26.4,
+    "fat": 12.4,
+    "fiber": 1.2,
+    "sugar": 5.8,
+    "sodium": 672,
+    "saturatedFat": 4.2,
+    "cholesterol": 32,
+    "potassium": 138,
+    "calcium": 48,
+    "iron": 1.8,
+    "magnesium": 18,
+    "vitaminA": 12,
+    "vitaminC": 0.5,
+    "vitaminD": 0.3,
+    "vitaminB12": 0.42,
+    "glycemicIndex": 68,
+    "glycemicLoad": 18,
+    "allergens": ["wheat", "eggs", "soy"],
+    "servingSize": 100,
+    "servingUnit": "g",
+    "focusGrades": {
+      "balanced": {
+        "grade": "D+",
+        "score": 42,
+        "insight": "Processed meat with refined breading provides moderate protein but excessive sodium and saturated fat",
+        "pros": ["Decent protein content (10.2g)", "Provides iron and B vitamins", "Convenient complete meal option"],
+        "cons": ["Very high sodium (672mg)", "Processed meat concerns", "Deep-fried preparation", "Low in vegetables and fiber"]
+      },
+      "heart_health": {
+        "grade": "F",
+        "score": 22,
+        "insight": "Extremely high sodium combined with saturated fat and processed meat significantly increases cardiovascular risk",
+        "pros": ["Contains some B12 for heart health", "Moderate iron content"],
+        "cons": ["Extremely high sodium (672mg)", "High saturated fat", "Processed meat linked to heart disease", "Trans fats from frying", "Low in heart-protective nutrients"]
+      },
+      "muscle_building": {
+        "grade": "C",
+        "score": 58,
+        "insight": "Moderate protein content (10.2g) from processed meat provides amino acids but with significant drawbacks",
+        "pros": ["Decent protein content for muscle synthesis", "Complete amino acid profile from meat", "B12 supports protein metabolism", "Iron for oxygen transport to muscles"],
+        "cons": ["High sodium may cause water retention", "Processed meat quality concerns", "High fat reduces protein efficiency", "Better protein sources available"]
+      },
+      "energy": {
+        "grade": "C",
+        "score": 54,
+        "insight": "Moderate glycemic index with balanced macros provides steady energy but heavy feeling from fried coating",
+        "pros": ["Balanced protein-carb-fat ratio", "Moderate calorie density", "B vitamins for energy metabolism", "Iron supports oxygen transport"],
+        "cons": ["High glycemic index from refined breading", "Heavy fat content causes sluggishness", "Sodium may cause energy dips", "Processed ingredients"]
+      },
+      "weight_management": {
+        "grade": "D",
+        "score": 35,
+        "insight": "Calorie-dense with poor satiety-to-calorie ratio, high sodium causes water retention and bloating",
+        "pros": ["Protein provides some satiety", "Convenient portion-controlled option"],
+        "cons": ["High calorie density (263 kcal/100g)", "Very low fiber for satiety", "High sodium causes water weight gain", "Easy to overconsume", "Processed ingredients"]
+      },
+      "brain_focus": {
+        "grade": "C-",
+        "score": 48,
+        "insight": "Moderate glycemic load with protein helps stabilize blood sugar, but high sodium and fat impair mental clarity",
+        "pros": ["Protein stabilizes blood sugar", "B12 supports cognitive function", "Iron for oxygen to brain", "Moderate sustained energy"],
+        "cons": ["High sodium impairs mental clarity", "Heavy fat content causes brain fog", "Moderate glycemic index causes some fluctuation", "Lacks brain-supporting omega-3s"]
+      },
+      "gut_health": {
+        "grade": "D",
+        "score": 38,
+        "insight": "Very low fiber and processed ingredients with fried preparation negatively impact digestive health",
+        "pros": ["Protein supports gut lining repair", "Contains some B vitamins for gut metabolism"],
+        "cons": ["Very low fiber (1.2g)", "Processed meat disrupts gut microbiome", "Fried coating irritates gut lining", "High sodium alters gut bacteria", "Lacks prebiotic foods"]
+      },
+      "blood_sugar": {
+        "grade": "C-",
+        "score": 46,
+        "insight": "Moderate glycemic index with protein and fat helps slow glucose absorption but refined carbs still problematic",
+        "pros": ["Protein slows carb absorption", "Fat reduces glycemic response", "Moderate glycemic load", "B vitamins for glucose metabolism"],
+        "cons": ["High glycemic index from refined breading", "Added sugars in coating", "Low fiber doesn't blunt glucose spike", "Processed carbs cause instability"]
+      },
+      "bone_joint": {
+        "grade": "D+",
+        "score": 44,
+        "insight": "Low calcium and very high sodium promote calcium loss, while inflammatory fats may worsen joint health",
+        "pros": ["Provides some calcium (48mg)", "Contains vitamin D for calcium absorption", "Magnesium supports bone density"],
+        "cons": ["Very high sodium increases calcium excretion", "Low overall calcium content", "Inflammatory fats from frying", "Processed meat may increase inflammation"]
+      },
+      "anti_inflammatory": {
+        "grade": "D-",
+        "score": 32,
+        "insight": "Processed meat, deep-fried coating, and high sodium all promote systemic inflammation",
+        "pros": ["Contains some B vitamins with anti-inflammatory roles", "Iron supports immune function"],
+        "cons": ["Processed meat is highly inflammatory", "Deep-fried oils promote inflammation", "Very high sodium increases inflammation", "Refined carbs trigger inflammatory response", "Lacks anti-inflammatory nutrients"]
+      }
+    }
+  },
+  "pretzel": {
+    "name": "Pretzel",
+    "calories": 380,
+    "protein": 9.1,
+    "carbs": 79.2,
+    "fat": 3.5,
+    "fiber": 2.8,
+    "sugar": 4.2,
+    "sodium": 1266,
+    "saturatedFat": 0.7,
+    "cholesterol": 0,
+    "potassium": 122,
+    "calcium": 26,
+    "iron": 4.2,
+    "magnesium": 28,
+    "vitaminA": 0,
+    "vitaminC": 0,
+    "vitaminD": 0,
+    "vitaminB12": 0,
+    "glycemicIndex": 83,
+    "glycemicLoad": 66,
+    "allergens": ["wheat"],
+    "servingSize": 100,
+    "servingUnit": "g",
+    "focusGrades": {
+      "balanced": {
+        "grade": "D",
+        "score": 35,
+        "insight": "Extremely high sodium and refined carbs with minimal protein, fat, or micronutrients make this nutritionally imbalanced",
+        "pros": ["Low fat content (3.5g)", "Provides iron (4.2mg)", "Cholesterol-free"],
+        "cons": ["Extremely high sodium (1266mg - 55% daily value)", "Very high glycemic index", "Low protein", "Minimal vitamins and minerals", "Refined white flour"]
+      },
+      "heart_health": {
+        "grade": "F",
+        "score": 15,
+        "insight": "Dangerously high sodium content (1266mg) poses severe cardiovascular risk despite low fat and cholesterol",
+        "pros": ["Very low saturated fat (0.7g)", "Zero cholesterol", "Low total fat"],
+        "cons": ["Extremely high sodium (over 50% daily value)", "Refined carbs raise triglycerides", "Minimal potassium to balance sodium", "Lacks heart-protective nutrients", "High glycemic index stresses cardiovascular system"]
+      },
+      "muscle_building": {
+        "grade": "D",
+        "score": 38,
+        "insight": "Low protein content (9.1g) with incomplete amino acid profile makes this ineffective for muscle building",
+        "pros": ["Provides quick carbs for glycogen replenishment", "Iron supports oxygen transport", "Low fat for quick digestion"],
+        "cons": ["Low protein content", "Incomplete amino acid profile", "Very high sodium causes water retention", "Lacks muscle-building micronutrients", "Refined carbs don't support muscle recovery"]
+      },
+      "energy": {
+        "grade": "D+",
+        "score": 40,
+        "insight": "Very high glycemic index (83) causes rapid energy spike followed by dramatic crash",
+        "pros": ["High carb content for quick energy", "Low fat allows rapid digestion", "Iron for oxygen transport", "Provides immediate glucose"],
+        "cons": ["Extremely high glycemic index causes energy crash", "Massive glycemic load (66)", "Refined flour provides no sustained energy", "Lacks B vitamins for energy metabolism", "Sodium causes dehydration"]
+      },
+      "weight_management": {
+        "grade": "D-",
+        "score": 33,
+        "insight": "High calorie density with very low satiety, refined carbs trigger hunger and cravings shortly after eating",
+        "pros": ["Low fat content", "Relatively low sugar", "Cholesterol-free"],
+        "cons": ["High calorie density (380 kcal/100g)", "Very low protein for satiety", "Low fiber (2.8g)", "High glycemic index triggers hunger", "Easy to overconsume", "Sodium causes water retention"]
+      },
+      "brain_focus": {
+        "grade": "D",
+        "score": 36,
+        "insight": "Extremely high glycemic load causes severe blood sugar rollercoaster, impairing concentration and mental clarity",
+        "pros": ["Quick glucose for immediate brain energy", "Iron supports oxygen delivery to brain"],
+        "cons": ["Massive glycemic load causes focus crash", "High sodium impairs cognitive function", "Refined carbs cause brain fog", "Lacks B vitamins for neurotransmitters", "No healthy fats for brain health"]
+      },
+      "gut_health": {
+        "grade": "D+",
+        "score": 41,
+        "insight": "Low fiber with refined flour provides minimal gut health benefits, high sodium disrupts microbiome balance",
+        "pros": ["Cholesterol-free", "Low fat reduces digestive burden", "Contains some fiber (2.8g)"],
+        "cons": ["Low fiber content", "Refined white flour lacks prebiotics", "Very high sodium alters gut bacteria", "Lacks diverse plant nutrients", "No fermented ingredients"]
+      },
+      "blood_sugar": {
+        "grade": "F",
+        "score": 12,
+        "insight": "Extremely high glycemic index (83) and massive glycemic load (66) cause severe blood sugar spikes",
+        "pros": ["Low fat doesn't impair insulin sensitivity", "Contains some fiber to slow absorption slightly"],
+        "cons": ["Extremely high glycemic index (83)", "Massive glycemic load (66)", "Refined flour causes rapid glucose spike", "Very low protein and fat for stability", "Triggers strong insulin response"]
+      },
+      "bone_joint": {
+        "grade": "D",
+        "score": 34,
+        "insight": "Very low calcium with excessive sodium promotes calcium loss from bones, minimal bone-supporting nutrients",
+        "pros": ["Provides iron for bone health", "Contains some magnesium (28mg)", "Low fat allows nutrient absorption"],
+        "cons": ["Extremely high sodium increases calcium excretion", "Very low calcium content (26mg)", "Lacks vitamin D for calcium absorption", "No vitamin K for bone health", "Minimal bone-building minerals"]
+      },
+      "anti_inflammatory": {
+        "grade": "D+",
+        "score": 43,
+        "insight": "Refined wheat and very high sodium promote inflammation, though low fat content prevents some inflammatory pathways",
+        "pros": ["Very low saturated fat", "Zero cholesterol", "Contains some iron for immune function"],
+        "cons": ["Extremely high sodium is inflammatory", "Refined wheat triggers inflammatory response", "High glycemic index promotes inflammation", "Lacks anti-inflammatory nutrients", "No omega-3 fatty acids"]
+      }
+    }
+  },
+  "popcorn": {
+    "name": "Popcorn (Air-Popped)",
+    "calories": 387,
+    "protein": 12.9,
+    "carbs": 77.8,
+    "fat": 4.5,
+    "fiber": 14.5,
+    "sugar": 0.9,
+    "sodium": 8,
+    "saturatedFat": 0.6,
+    "cholesterol": 0,
+    "potassium": 329,
+    "calcium": 7,
+    "iron": 3.2,
+    "magnesium": 144,
+    "vitaminA": 10,
+    "vitaminC": 0,
+    "vitaminD": 0,
+    "vitaminB12": 0,
+    "glycemicIndex": 55,
+    "glycemicLoad": 43,
+    "allergens": [],
+    "servingSize": 100,
+    "servingUnit": "g",
+    "focusGrades": {
+      "balanced": {
+        "grade": "B",
+        "score": 78,
+        "insight": "Whole grain with excellent fiber, decent protein, and minimal sodium makes this a well-balanced snack option",
+        "pros": ["High fiber (14.5g - 58% daily value)", "Good protein content (12.9g)", "Very low sodium (8mg)", "Whole grain benefits", "Rich in minerals"],
+        "cons": ["High glycemic load from carbs", "Low in vitamins", "Minimal calcium"]
+      },
+      "heart_health": {
+        "grade": "A-",
+        "score": 88,
+        "insight": "Extremely low sodium, no cholesterol, high fiber, and whole grain benefits support cardiovascular health",
+        "pros": ["Extremely low sodium (8mg)", "Zero cholesterol", "Very low saturated fat", "High fiber lowers cholesterol", "Good potassium content (329mg)", "Whole grain reduces heart disease risk"],
+        "cons": ["Low in omega-3 fatty acids", "Minimal vitamin content", "High glycemic load may affect triglycerides"]
+      },
+      "muscle_building": {
+        "grade": "C+",
+        "score": 62,
+        "insight": "Decent protein content (12.9g) from plant source but incomplete amino acid profile limits muscle building potential",
+        "pros": ["Good protein content for a snack", "High magnesium for muscle function", "Iron supports oxygen transport", "Low fat for lean gains", "Provides carbs for glycogen"],
+        "cons": ["Incomplete amino acid profile", "Plant protein less bioavailable", "Low in leucine for muscle synthesis", "Minimal B12 for protein metabolism"]
+      },
+      "energy": {
+        "grade": "B",
+        "score": 80,
+        "insight": "Moderate glycemic index with high fiber provides sustained energy without dramatic spikes",
+        "pros": ["Moderate glycemic index (55)", "High fiber slows energy release", "Complex carbs for sustained energy", "Magnesium for energy metabolism", "Low fat prevents sluggishness"],
+        "cons": ["High glycemic load from carb content", "Lacks B vitamins for energy", "No vitamin C for iron absorption"]
+      },
+      "weight_management": {
+        "grade": "A-",
+        "score": 86,
+        "insight": "Extremely high fiber and low calorie density (when air-popped) create excellent satiety for weight management",
+        "pros": ["Very high fiber for satiety (14.5g)", "Very low sodium prevents water retention", "High volume-to-calorie ratio", "Whole grain promotes fullness", "Low fat content", "Good protein for appetite control"],
+        "cons": ["Easy to overconsume due to small piece size", "High glycemic load if eaten in large quantity", "Calorie-dense if oil-popped or buttered"]
+      },
+      "brain_focus": {
+        "grade": "B",
+        "score": 78,
+        "insight": "Moderate glycemic index with high fiber stabilizes blood sugar for sustained mental focus",
+        "pros": ["Moderate glycemic index prevents crashes", "High fiber stabilizes blood sugar", "Magnesium supports cognitive function", "Iron for oxygen to brain", "Whole grain benefits brain health"],
+        "cons": ["High glycemic load if overeaten", "Lacks B vitamins for neurotransmitters", "No omega-3s for brain health", "Low in brain-supporting vitamins"]
+      },
+      "gut_health": {
+        "grade": "A",
+        "score": 92,
+        "insight": "Exceptionally high fiber content (14.5g) from whole grain promotes healthy gut microbiome and digestive function",
+        "pros": ["Exceptionally high fiber (14.5g)", "Whole grain feeds beneficial bacteria", "Contains resistant starch", "Promotes regular bowel movements", "Polyphenols support gut health", "Very low sodium"],
+        "cons": ["May cause gas in sensitive individuals", "Lacks probiotic bacteria", "Minimal vitamin content for gut lining"]
+      },
+      "blood_sugar": {
+        "grade": "B",
+        "score": 78,
+        "insight": "Moderate glycemic index combined with exceptional fiber helps regulate blood sugar response",
+        "pros": ["Moderate glycemic index (55)", "Very high fiber blunts glucose spike", "Whole grain improves insulin sensitivity", "Magnesium for glucose metabolism", "Low sugar content"],
+        "cons": ["High glycemic load (43) if large serving", "Lacks protein to further stabilize blood sugar", "Low in chromium for insulin function"]
+      },
+      "bone_joint": {
+        "grade": "B-",
+        "score": 72,
+        "insight": "High magnesium and very low sodium support bone health, but minimal calcium and vitamin D are drawbacks",
+        "pros": ["Excellent magnesium content (144mg)", "Very low sodium preserves calcium", "Iron for bone health", "Polyphenols reduce joint inflammation", "Whole grain benefits bone density"],
+        "cons": ["Very low calcium content (7mg)", "No vitamin D for calcium absorption", "No vitamin K for bone health", "Lacks phosphorus"]
+      },
+      "anti_inflammatory": {
+        "grade": "A-",
+        "score": 87,
+        "insight": "Whole grain with polyphenols and antioxidants provides strong anti-inflammatory benefits",
+        "pros": ["High in polyphenol antioxidants", "Whole grain reduces inflammation", "Very low saturated fat", "Magnesium has anti-inflammatory effects", "High fiber reduces systemic inflammation", "Zero cholesterol"],
+        "cons": ["Lacks omega-3 fatty acids", "Minimal vitamin A and C", "No anti-inflammatory spices"]
+      }
+    }
+  },
+  "chips": {
+    "name": "Potato Chips",
+    "calories": 536,
+    "protein": 6.6,
+    "carbs": 52.9,
+    "fat": 34.6,
+    "fiber": 4.8,
+    "sugar": 1.4,
+    "sodium": 527,
+    "saturatedFat": 10.3,
+    "cholesterol": 0,
+    "potassium": 1196,
+    "calcium": 29,
+    "iron": 1.6,
+    "magnesium": 67,
+    "vitaminA": 0,
+    "vitaminC": 24.8,
+    "vitaminD": 0,
+    "vitaminB12": 0,
+    "glycemicIndex": 56,
+    "glycemicLoad": 30,
+    "allergens": [],
+    "servingSize": 100,
+    "servingUnit": "g",
+    "focusGrades": {
+      "balanced": {
+        "grade": "D",
+        "score": 33,
+        "insight": "Extremely high in calories, fat, and sodium with minimal protein and micronutrients creates nutritional imbalance",
+        "pros": ["High potassium content (1196mg)", "Provides vitamin C (24.8mg)", "Contains some fiber (4.8g)", "Good magnesium"],
+        "cons": ["Very high calorie density (536 kcal/100g)", "Excessive fat content (34.6g)", "High saturated fat (10.3g)", "High sodium (527mg)", "Very low protein"]
+      },
+      "heart_health": {
+        "grade": "D-",
+        "score": 28,
+        "insight": "High saturated fat and sodium combined with inflammatory oils significantly increase cardiovascular disease risk",
+        "pros": ["Zero cholesterol", "Very high potassium (1196mg) helps balance sodium", "Contains some vitamin C"],
+        "cons": ["High saturated fat (10.3g)", "High sodium (527mg)", "Trans fats from processing", "Inflammatory omega-6 oils", "Acrylamide from high-heat frying", "Low in heart-protective nutrients"]
+      },
+      "muscle_building": {
+        "grade": "D",
+        "score": 36,
+        "insight": "Very low protein content (6.6g) with poor amino acid profile makes this ineffective for muscle building",
+        "pros": ["Provides quick carbs for energy", "Potassium for muscle function", "Magnesium for muscle contraction"],
+        "cons": ["Very low protein content", "Incomplete amino acid profile", "Excessive fat reduces protein efficiency", "High sodium causes water retention", "Empty calories"]
+      },
+      "energy": {
+        "grade": "C-",
+        "score": 48,
+        "insight": "Moderate glycemic index provides some sustained energy, but excessive fat causes sluggishness and digestive burden",
+        "pros": ["Moderate glycemic index (56)", "High calorie density for quick energy", "Potassium for energy metabolism", "Vitamin C for iron absorption"],
+        "cons": ["Very high fat causes sluggish feeling", "High sodium may cause energy dips", "Lacks B vitamins for energy metabolism", "Heavy on digestive system"]
+      },
+      "weight_management": {
+        "grade": "F",
+        "score": 15,
+        "insight": "Extremely calorie-dense (536 kcal/100g) with minimal satiety and high addictiveness makes weight control very difficult",
+        "pros": ["Contains some fiber for satiety", "Potassium helps reduce water retention"],
+        "cons": ["Extremely high calorie density", "Very low protein for satiety", "High fat and salt combination is addictive", "Easy to overconsume", "Minimal nutritional value per calorie", "Triggers overeating"]
+      },
+      "brain_focus": {
+        "grade": "D+",
+        "score": 42,
+        "insight": "Moderate glycemic load with some stability, but high sodium and fat impair mental clarity and focus",
+        "pros": ["Moderate glycemic index prevents crashes", "Potassium supports nerve function", "Vitamin C for neurotransmitter synthesis", "Some sustained energy from fat"],
+        "cons": ["High sodium impairs cognitive function", "Excessive fat causes brain fog", "Lacks B vitamins for brain health", "No omega-3s for neural function", "Acrylamide may harm cognition"]
+      },
+      "gut_health": {
+        "grade": "D+",
+        "score": 44,
+        "insight": "Moderate fiber from potato skin, but inflammatory oils and high sodium negatively impact gut microbiome",
+        "pros": ["Contains resistant starch from potatoes", "Fiber from potato skin (4.8g)", "Potassium for gut motility"],
+        "cons": ["High fat slows digestion", "Inflammatory oils damage gut lining", "High sodium disrupts microbiome", "Acrylamide is gut irritant", "Lacks prebiotic diversity"]
+      },
+      "blood_sugar": {
+        "grade": "C",
+        "score": 52,
+        "insight": "Moderate glycemic index with fat slowing absorption, but high glycemic load and refined carbs still problematic",
+        "pros": ["Moderate glycemic index (56)", "Fat slows glucose absorption", "Some fiber blunts spike", "Resistant starch improves insulin sensitivity"],
+        "cons": ["High glycemic load (30)", "Low protein doesn't stabilize blood sugar", "Refined potato lacks nutrients for glucose control", "Easy to overconsume carbs"]
+      },
+      "bone_joint": {
+        "grade": "C-",
+        "score": 46,
+        "insight": "High potassium and magnesium support bone health, but inflammatory oils and acrylamide may harm joints",
+        "pros": ["Very high potassium (1196mg)", "Good magnesium content (67mg)", "Vitamin C for collagen synthesis", "Low sodium relative to potassium ratio"],
+        "cons": ["Very low calcium (29mg)", "Inflammatory oils worsen joint pain", "Acrylamide linked to inflammation", "High saturated fat", "No vitamin D or K"]
+      },
+      "anti_inflammatory": {
+        "grade": "D",
+        "score": 34,
+        "insight": "High omega-6 oils, acrylamide from frying, and saturated fat create strong pro-inflammatory response",
+        "pros": ["Vitamin C has antioxidant properties", "Potassium reduces inflammation", "Some polyphenols from potato skin"],
+        "cons": ["High in pro-inflammatory omega-6 oils", "Acrylamide from high-heat cooking", "High saturated fat promotes inflammation", "Trans fats from processing", "Refined carbs trigger inflammatory response"]
+      }
+    }
+  },
+  "caesar_salad": {
+    "name": "Caesar Salad",
+    "calories": 184,
+    "protein": 5.2,
+    "carbs": 6.8,
+    "fat": 15.8,
+    "fiber": 2.1,
+    "sugar": 2.4,
+    "sodium": 485,
+    "saturatedFat": 3.8,
+    "cholesterol": 24,
+    "potassium": 238,
+    "calcium": 120,
+    "iron": 1.2,
+    "magnesium": 18,
+    "vitaminA": 3468,
+    "vitaminC": 8.2,
+    "vitaminD": 0.2,
+    "vitaminB12": 0.12,
+    "glycemicIndex": 42,
+    "glycemicLoad": 3,
+    "allergens": ["eggs", "fish", "wheat"],
+    "servingSize": 100,
+    "servingUnit": "g",
+    "focusGrades": {
+      "balanced": {
+        "grade": "C+",
+        "score": 65,
+        "insight": "Provides vegetables and some micronutrients but high sodium and fat from dressing reduce nutritional balance",
+        "pros": ["Excellent vitamin A content (3468 IU)", "Good calcium (120mg)", "Low glycemic load (3)", "Contains vegetables", "Moderate protein"],
+        "cons": ["High sodium (485mg)", "High fat from dressing (15.8g)", "Low fiber for a salad (2.1g)", "High saturated fat (3.8g)", "Moderate cholesterol"]
+      },
+      "heart_health": {
+        "grade": "C",
+        "score": 55,
+        "insight": "High sodium and saturated fat from dressing offset the cardiovascular benefits from vegetables",
+        "pros": ["Low glycemic load protects heart", "Vitamin A supports vascular health", "Contains some potassium (238mg)", "Romaine provides folate"],
+        "cons": ["High sodium (485mg - 21% daily value)", "High saturated fat (3.8g)", "Cholesterol from egg and cheese", "Heavy dressing is calorie-dense", "Low in omega-3s despite anchovies"]
+      },
+      "muscle_building": {
+        "grade": "D+",
+        "score": 44,
+        "insight": "Low protein content (5.2g) makes this insufficient as a post-workout meal without added protein",
+        "pros": ["Provides complete protein from egg and cheese", "Calcium for muscle contraction", "Vitamin D aids protein synthesis", "B12 supports protein metabolism"],
+        "cons": ["Very low protein content (5.2g)", "High fat may slow protein absorption", "Lacks leucine for muscle synthesis", "Insufficient calories for muscle building"]
+      },
+      "energy": {
+        "grade": "B",
+        "score": 76,
+        "insight": "Low glycemic index and balanced fat content provide sustained energy without blood sugar spikes",
+        "pros": ["Very low glycemic index (42)", "Minimal glycemic load (3)", "Healthy fats provide sustained energy", "Vitamin A for energy metabolism", "Doesn't cause energy crash"],
+        "cons": ["Low carb content may not fuel intense activity", "Heavy dressing may cause sluggishness", "Lacks B vitamins for energy", "Low iron for oxygen transport"]
+      },
+      "weight_management": {
+        "grade": "C",
+        "score": 56,
+        "insight": "High-calorie dressing increases calorie density, but low glycemic load and vegetables provide some satiety",
+        "pros": ["Low glycemic load prevents cravings", "Vegetables add volume", "Fiber provides satiety", "Protein helps control appetite"],
+        "cons": ["Calorie-dense dressing (15.8g fat)", "Easy to add excessive dressing", "Low fiber for a salad (2.1g)", "High sodium causes water retention", "Moderate calorie density (184 kcal/100g)"]
+      },
+      "brain_focus": {
+        "grade": "B+",
+        "score": 82,
+        "insight": "Very low glycemic load with healthy fats and vitamin A support stable mental focus and cognitive function",
+        "pros": ["Very low glycemic load (3) stabilizes blood sugar", "Healthy fats support brain function", "Vitamin A for cognitive health", "Anchovies provide omega-3s", "B12 for neurotransmitter synthesis"],
+        "cons": ["High sodium may impair clarity in sensitive individuals", "Low in brain-boosting B vitamins", "Could benefit from more omega-3s"]
+      },
+      "gut_health": {
+        "grade": "C+",
+        "score": 64,
+        "insight": "Romaine lettuce provides fiber and water, but low overall fiber and high fat dressing reduce gut health benefits",
+        "pros": ["Romaine provides prebiotic fiber", "Vitamin A supports gut lining", "Fermented anchovy paste has probiotics", "Raw vegetables aid digestion"],
+        "cons": ["Low fiber content for a salad (2.1g)", "High fat slows digestion", "High sodium disrupts microbiome", "Lacks diverse plant foods", "Pasteurized dressing kills beneficial bacteria"]
+      },
+      "blood_sugar": {
+        "grade": "A",
+        "score": 91,
+        "insight": "Extremely low glycemic index and load with high fat and fiber create excellent blood sugar stability",
+        "pros": ["Very low glycemic index (42)", "Minimal glycemic load (3)", "High fat slows glucose absorption", "Fiber blunts blood sugar spike", "Protein stabilizes blood sugar", "Very low sugar content"],
+        "cons": ["Adding croutons significantly increases glycemic load", "Could benefit from more fiber"]
+      },
+      "bone_joint": {
+        "grade": "B",
+        "score": 78,
+        "insight": "Good calcium and vitamin A content support bone health, though high sodium increases calcium excretion",
+        "pros": ["Good calcium content (120mg)", "Excellent vitamin A for bone remodeling", "Vitamin D aids calcium absorption", "Vitamin K from romaine for bone health", "Magnesium supports bone density"],
+        "cons": ["High sodium increases calcium loss", "Could benefit from more calcium", "Low vitamin D content", "Moderate magnesium"]
+      },
+      "anti_inflammatory": {
+        "grade": "B-",
+        "score": 73,
+        "insight": "Romaine lettuce and omega-3s from anchovies provide anti-inflammatory benefits, offset by saturated fat and sodium",
+        "pros": ["Vitamin A has antioxidant properties", "Anchovies provide omega-3s", "Romaine contains anti-inflammatory compounds", "Garlic in dressing reduces inflammation", "Low glycemic load"],
+        "cons": ["High saturated fat promotes inflammation", "High sodium is inflammatory", "Processed cheese may trigger inflammation", "Heavy on omega-6 oils in dressing"]
+      }
+    }
+  }
+}

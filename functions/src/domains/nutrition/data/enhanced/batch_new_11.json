@@ -1,0 +1,584 @@
+{
+  "cobb_salad": {
+    "name": "Cobb Salad",
+    "calories": 140,
+    "protein": 11,
+    "carbs": 6,
+    "fat": 9,
+    "fiber": 2,
+    "sugar": 3,
+    "sodium": 320,
+    "saturatedFat": 3.5,
+    "cholesterol": 95,
+    "potassium": 280,
+    "calcium": 65,
+    "iron": 1.2,
+    "magnesium": 22,
+    "vitaminA": 85,
+    "vitaminC": 8,
+    "vitaminD": 0.5,
+    "vitaminB12": 0.4,
+    "glycemicIndex": 35,
+    "glycemicLoad": 2,
+    "allergens": ["eggs", "dairy"],
+    "servingSize": 100,
+    "servingUnit": "g",
+    "focusGrades": {
+      "balanced": {
+        "grade": "B+",
+        "score": 85,
+        "insight": "Excellent protein-to-carb ratio with nutrient-dense vegetables, eggs, and cheese. Moderate sodium from bacon and dressing.",
+        "pros": ["High protein (11g)", "Low carbs (6g)", "Rich in vitamins A and B12", "Good fiber content"],
+        "cons": ["Higher sodium (320mg)", "Moderate saturated fat from cheese and bacon", "Cholesterol content from eggs"]
+      },
+      "heart_health": {
+        "grade": "B-",
+        "score": 75,
+        "insight": "Contains heart-healthy vegetables and moderate unsaturated fats, but sodium and saturated fat from bacon and cheese require moderation.",
+        "pros": ["Nutrient-dense vegetables", "Moderate total fat", "Good potassium content", "Low glycemic impact"],
+        "cons": ["Elevated sodium (320mg)", "Saturated fat from cheese and bacon", "Cholesterol from eggs and meat"]
+      },
+      "muscle_building": {
+        "grade": "A-",
+        "score": 88,
+        "insight": "Outstanding protein density (11g per 100g) from eggs, chicken, and cheese. Complete amino acid profile supports muscle synthesis.",
+        "pros": ["High-quality complete protein", "Rich in B vitamins", "Good mineral content", "Low carb supports lean gains"],
+        "cons": ["Could benefit from more protein", "Limited complex carbs for energy", "Moderate calorie density"]
+      },
+      "energy": {
+        "grade": "B",
+        "score": 80,
+        "insight": "Provides steady energy from protein and healthy fats without blood sugar spikes. Low carb content means less quick energy.",
+        "pros": ["Stable energy from protein and fats", "Very low glycemic load (2)", "B vitamins support metabolism", "No energy crashes"],
+        "cons": ["Low carbohydrate content for immediate energy", "May not sustain high-intensity workouts", "Limited quick fuel"]
+      },
+      "weight_management": {
+        "grade": "A",
+        "score": 90,
+        "insight": "Ideal for weight management with high satiety from protein, low carbs, and nutrient density. Keeps you full with moderate calories.",
+        "pros": ["High protein promotes satiety", "Very low glycemic load", "Nutrient-dense per calorie", "Good fiber content"],
+        "cons": ["Calorie density from fats", "Sodium may cause water retention", "Portion control needed with dressing"]
+      },
+      "brain_focus": {
+        "grade": "B+",
+        "score": 85,
+        "insight": "Eggs provide choline for brain health, B vitamins support cognitive function, and stable blood sugar prevents mental fog.",
+        "pros": ["Choline from eggs supports memory", "B12 aids cognitive function", "Stable blood sugar prevents crashes", "Vitamin A for neural health"],
+        "cons": ["Could use more omega-3s", "Limited brain-boosting antioxidants", "Lower vitamin E content"]
+      },
+      "gut_health": {
+        "grade": "B",
+        "score": 80,
+        "insight": "Provides fiber from vegetables and nutrients that support gut function, though fiber content could be higher.",
+        "pros": ["Fiber from lettuce and vegetables", "Diverse nutrient profile", "Low sugar won't feed bad bacteria", "Prebiotic vegetables"],
+        "cons": ["Moderate fiber (2g)", "No fermented ingredients", "Could use more diverse plant foods", "High sodium may affect gut flora"]
+      },
+      "blood_sugar": {
+        "grade": "A+",
+        "score": 95,
+        "insight": "Outstanding blood sugar control with very low glycemic load (2) and minimal carbs. Protein and fat slow any glucose absorption.",
+        "pros": ["Extremely low glycemic load (2)", "Low total carbs (6g)", "Protein stabilizes blood sugar", "Healthy fats slow digestion"],
+        "cons": ["None significant", "Minimal impact on blood sugar", "Excellent for diabetics"]
+      },
+      "bone_joint": {
+        "grade": "B",
+        "score": 80,
+        "insight": "Provides calcium from cheese, vitamin A for bone health, and anti-inflammatory components, though could use more vitamin D.",
+        "pros": ["Calcium from cheese and eggs", "Vitamin A supports bone remodeling", "Protein supports bone density", "Magnesium for bone structure"],
+        "cons": ["Lower vitamin D (0.5mcg)", "Could use more calcium", "Limited vitamin K from greens", "Moderate inflammatory fats"]
+      },
+      "anti_inflammatory": {
+        "grade": "B",
+        "score": 80,
+        "insight": "Contains anti-inflammatory vegetables and vitamin A, but bacon and cheese contain some pro-inflammatory saturated fats.",
+        "pros": ["Vitamin A reduces inflammation", "Fresh vegetables provide antioxidants", "Omega-3s from eggs", "Low sugar prevents inflammation"],
+        "cons": ["Saturated fat from bacon and cheese", "Processed meats may be inflammatory", "Limited polyphenols", "Sodium may increase inflammation"]
+      }
+    }
+  },
+  "minestrone_soup": {
+    "name": "Minestrone Soup",
+    "calories": 70,
+    "protein": 3,
+    "carbs": 11,
+    "fat": 2,
+    "fiber": 3,
+    "sugar": 3,
+    "sodium": 380,
+    "saturatedFat": 0.5,
+    "cholesterol": 2,
+    "potassium": 280,
+    "calcium": 35,
+    "iron": 1.1,
+    "magnesium": 25,
+    "vitaminA": 45,
+    "vitaminC": 12,
+    "vitaminD": 0,
+    "vitaminB12": 0,
+    "glycemicIndex": 45,
+    "glycemicLoad": 5,
+    "allergens": ["gluten"],
+    "servingSize": 100,
+    "servingUnit": "g",
+    "focusGrades": {
+      "balanced": {
+        "grade": "A-",
+        "score": 88,
+        "insight": "Well-balanced vegetable soup with fiber, complex carbs, and diverse nutrients. Very low in fat and calories while nutrient-dense.",
+        "pros": ["Low calorie density (70 cal)", "Good fiber (3g)", "Diverse vegetables", "Balanced macros"],
+        "cons": ["High sodium (380mg)", "Lower protein content", "Minimal healthy fats"]
+      },
+      "heart_health": {
+        "grade": "B+",
+        "score": 85,
+        "insight": "Heart-friendly with vegetables, fiber, and very low saturated fat. Sodium content is the main concern for cardiovascular health.",
+        "pros": ["Very low saturated fat (0.5g)", "Good fiber for cholesterol", "Rich in potassium", "Antioxidants from vegetables"],
+        "cons": ["High sodium (380mg)", "Could affect blood pressure", "Limited omega-3 fatty acids"]
+      },
+      "muscle_building": {
+        "grade": "C+",
+        "score": 68,
+        "insight": "Low protein content (3g) makes this less ideal for muscle building, though beans provide some plant-based protein.",
+        "pros": ["Complete carbs for energy", "Beans provide plant protein", "Low fat supports lean gains", "B vitamins present"],
+        "cons": ["Very low protein (3g)", "Incomplete amino acid profile", "Limited calories for muscle growth", "May need protein supplementation"]
+      },
+      "energy": {
+        "grade": "B+",
+        "score": 85,
+        "insight": "Provides steady energy from complex carbs and fiber. Low glycemic load prevents energy crashes while sustaining moderate activity.",
+        "pros": ["Complex carbs from vegetables and pasta", "Moderate glycemic load (5)", "Fiber slows digestion", "B vitamins support energy metabolism"],
+        "cons": ["Low calorie density may not sustain intense activity", "Limited quick energy", "Lower protein for sustained energy"]
+      },
+      "weight_management": {
+        "grade": "A+",
+        "score": 95,
+        "insight": "Exceptional for weight management with very low calories (70), high water content, good fiber, and filling vegetables.",
+        "pros": ["Very low calorie density", "High water content increases satiety", "Good fiber (3g)", "Nutrient-dense per calorie"],
+        "cons": ["Sodium may cause water retention", "Low protein may not satisfy long-term", "Easy to overeat with bread"]
+      },
+      "brain_focus": {
+        "grade": "B-",
+        "score": 75,
+        "insight": "Provides steady glucose for brain function and antioxidants from vegetables, but lacks key brain nutrients like omega-3s and choline.",
+        "pros": ["Steady carbs for brain glucose", "Vitamin C supports cognition", "Antioxidants from tomatoes", "Low glycemic prevents crashes"],
+        "cons": ["No omega-3 fatty acids", "No vitamin B12", "Limited choline", "Low in brain-specific nutrients"]
+      },
+      "gut_health": {
+        "grade": "A-",
+        "score": 88,
+        "insight": "Excellent for gut health with fiber from vegetables and beans, plus diverse plant compounds that support microbiome diversity.",
+        "pros": ["Good fiber (3g)", "Prebiotic vegetables", "Diverse plant compounds", "Beans support beneficial bacteria"],
+        "cons": ["Sodium may affect gut flora", "Pasta may cause bloating in sensitive individuals", "No fermented ingredients"]
+      },
+      "blood_sugar": {
+        "grade": "A-",
+        "score": 88,
+        "insight": "Very good blood sugar control with low glycemic load (5) and fiber that slows carb absorption. Ideal for diabetics.",
+        "pros": ["Low glycemic load (5)", "Fiber slows glucose absorption", "Complex carbs prevent spikes", "Low sugar content (3g)"],
+        "cons": ["Pasta can raise blood sugar in large portions", "Individual sensitivity to grains", "Could use more protein to stabilize"]
+      },
+      "bone_joint": {
+        "grade": "B-",
+        "score": 75,
+        "insight": "Provides some calcium and minerals from vegetables, plus anti-inflammatory compounds. Limited in key bone-building nutrients.",
+        "pros": ["Calcium from vegetables", "Vitamin C supports collagen", "Anti-inflammatory vegetables", "Magnesium for bone health"],
+        "cons": ["Lower calcium (35mg)", "No vitamin D", "Limited protein for bone density", "Could use more vitamin K"]
+      },
+      "anti_inflammatory": {
+        "grade": "A-",
+        "score": 88,
+        "insight": "Rich in anti-inflammatory vegetables like tomatoes, garlic, and herbs. Very low in inflammatory fats and processed ingredients.",
+        "pros": ["Tomatoes contain lycopene", "Garlic has anti-inflammatory properties", "Very low saturated fat", "Diverse phytonutrients"],
+        "cons": ["Sodium may increase inflammation", "Gluten may be inflammatory for some", "Limited omega-3 fatty acids"]
+      }
+    }
+  },
+  "clam_chowder": {
+    "name": "Clam Chowder",
+    "calories": 80,
+    "protein": 4,
+    "carbs": 9,
+    "fat": 3,
+    "fiber": 1,
+    "sugar": 2,
+    "sodium": 420,
+    "saturatedFat": 1.5,
+    "cholesterol": 15,
+    "potassium": 220,
+    "calcium": 60,
+    "iron": 3.5,
+    "magnesium": 18,
+    "vitaminA": 25,
+    "vitaminC": 8,
+    "vitaminD": 0.3,
+    "vitaminB12": 4.5,
+    "glycemicIndex": 55,
+    "glycemicLoad": 5,
+    "allergens": ["shellfish", "dairy", "gluten"],
+    "servingSize": 100,
+    "servingUnit": "g",
+    "focusGrades": {
+      "balanced": {
+        "grade": "B",
+        "score": 80,
+        "insight": "Balanced soup with protein from clams and moderate carbs from potatoes. Very high sodium is the primary concern.",
+        "pros": ["Good protein (4g)", "Excellent B12 (4.5mcg)", "Moderate calories", "High iron content"],
+        "cons": ["Very high sodium (420mg)", "Lower fiber (1g)", "Moderate saturated fat", "Cholesterol from cream"]
+      },
+      "heart_health": {
+        "grade": "C+",
+        "score": 68,
+        "insight": "Clams provide heart-healthy nutrients like iron and B12, but high sodium and cream-based recipe raise cardiovascular concerns.",
+        "pros": ["Clams contain omega-3s", "Good potassium", "B vitamins support heart function", "Moderate total fat"],
+        "cons": ["Very high sodium (420mg)", "Saturated fat from cream", "Cholesterol content", "May elevate blood pressure"]
+      },
+      "muscle_building": {
+        "grade": "B-",
+        "score": 75,
+        "insight": "Moderate protein from clams with complete amino acids. Iron supports oxygen delivery to muscles, but protein density could be higher.",
+        "pros": ["Complete protein from seafood", "Exceptional B12 for energy", "High iron (3.5mg)", "Good mineral profile"],
+        "cons": ["Moderate protein (4g)", "Limited calories for muscle growth", "Could use more protein density", "Lower leucine content"]
+      },
+      "energy": {
+        "grade": "B",
+        "score": 80,
+        "insight": "Provides steady energy from carbs and protein. Outstanding B12 content supports energy metabolism and red blood cell production.",
+        "pros": ["B12 combats fatigue (4.5mcg)", "Iron prevents anemia", "Balanced carbs and protein", "Moderate glycemic load"],
+        "cons": ["Low calorie density", "Limited for high-intensity activity", "May not sustain long workouts", "Lower fiber affects energy release"]
+      },
+      "weight_management": {
+        "grade": "B+",
+        "score": 85,
+        "insight": "Low calorie density (80 cal) with filling protein and high water content. Sodium may cause temporary water retention.",
+        "pros": ["Low calories (80)", "Protein provides satiety", "High water content", "Moderate carbs"],
+        "cons": ["Sodium causes water retention", "Lower fiber (1g)", "Cream adds calories", "Easy to overeat with crackers"]
+      },
+      "brain_focus": {
+        "grade": "A-",
+        "score": 88,
+        "insight": "Outstanding for brain health with exceptional B12 (4.5mcg) critical for cognitive function and seafood-based omega-3s.",
+        "pros": ["Exceptional B12 (4.5mcg)", "Omega-3s from clams", "Iron supports oxygen to brain", "Iodine for thyroid function"],
+        "cons": ["Could use more omega-3s", "Lower in antioxidants", "Sodium may affect cognition", "Limited vitamin E"]
+      },
+      "gut_health": {
+        "grade": "C+",
+        "score": 68,
+        "insight": "Provides some nutrients for gut health but low fiber and high sodium are drawbacks. Dairy may cause issues for sensitive individuals.",
+        "pros": ["Minerals support gut function", "Protein for gut lining repair", "B vitamins aid digestion", "Potatoes provide resistant starch"],
+        "cons": ["Very low fiber (1g)", "High sodium affects gut flora", "Dairy may cause issues", "Limited prebiotic content"]
+      },
+      "blood_sugar": {
+        "grade": "B+",
+        "score": 85,
+        "insight": "Good blood sugar control with low glycemic load (5) and protein that stabilizes glucose. Potatoes are balanced by cream and protein.",
+        "pros": ["Low glycemic load (5)", "Protein stabilizes blood sugar", "Moderate carbs (9g)", "Fat slows digestion"],
+        "cons": ["Potatoes can spike blood sugar", "Lower fiber doesn't slow absorption", "Individual sensitivity to starch"]
+      },
+      "bone_joint": {
+        "grade": "B",
+        "score": 80,
+        "insight": "Provides calcium from dairy, vitamin D, and minerals from clams. Good protein supports bone density and joint health.",
+        "pros": ["Calcium from cream and milk", "Vitamin D present", "Protein supports bone density", "Magnesium for bone structure"],
+        "cons": ["Lower calcium (60mg)", "Could use more vitamin D", "Limited vitamin K", "Sodium may increase calcium loss"]
+      },
+      "anti_inflammatory": {
+        "grade": "B-",
+        "score": 75,
+        "insight": "Omega-3s from clams provide anti-inflammatory benefits, but saturated fat from cream and high sodium may promote inflammation.",
+        "pros": ["Omega-3s from seafood", "B vitamins reduce inflammation", "Selenium from clams", "Low sugar"],
+        "cons": ["High sodium increases inflammation", "Saturated fat from dairy", "Limited antioxidants", "Processed ingredients"]
+      }
+    }
+  },
+  "tomato_soup": {
+    "name": "Tomato Soup",
+    "calories": 55,
+    "protein": 2,
+    "carbs": 10,
+    "fat": 1,
+    "fiber": 2,
+    "sugar": 6,
+    "sodium": 360,
+    "saturatedFat": 0.3,
+    "cholesterol": 0,
+    "potassium": 260,
+    "calcium": 25,
+    "iron": 0.8,
+    "magnesium": 18,
+    "vitaminA": 35,
+    "vitaminC": 15,
+    "vitaminD": 0,
+    "vitaminB12": 0,
+    "glycemicIndex": 52,
+    "glycemicLoad": 5,
+    "allergens": [],
+    "servingSize": 100,
+    "servingUnit": "g",
+    "focusGrades": {
+      "balanced": {
+        "grade": "B+",
+        "score": 85,
+        "insight": "Low-calorie, nutrient-rich soup with good fiber and antioxidants from tomatoes. Very low fat and no cholesterol. Sodium is elevated.",
+        "pros": ["Very low calories (55)", "No cholesterol", "Good fiber (2g)", "Rich in lycopene"],
+        "cons": ["High sodium (360mg)", "Low protein (2g)", "Higher sugar content", "Minimal fat"]
+      },
+      "heart_health": {
+        "grade": "A-",
+        "score": 88,
+        "insight": "Excellent for heart health with lycopene from tomatoes, very low saturated fat, and no cholesterol. Sodium is the only concern.",
+        "pros": ["Lycopene supports cardiovascular health", "No cholesterol", "Very low saturated fat (0.3g)", "Good potassium (260mg)"],
+        "cons": ["High sodium (360mg)", "May affect blood pressure", "Limited omega-3s", "Could use more potassium"]
+      },
+      "muscle_building": {
+        "grade": "D+",
+        "score": 62,
+        "insight": "Very low protein (2g) makes this unsuitable for muscle building. Can serve as a low-calorie side but not a protein source.",
+        "pros": ["Low calorie supports lean mass", "Vitamin C aids collagen synthesis", "Antioxidants reduce exercise inflammation", "Carbs for energy"],
+        "cons": ["Very low protein (2g)", "No complete amino acids", "Minimal calories for growth", "Requires protein supplementation"]
+      },
+      "energy": {
+        "grade": "B-",
+        "score": 75,
+        "insight": "Provides moderate energy from simple carbs with vitamin C supporting energy metabolism. Low calories limit sustained energy.",
+        "pros": ["Carbs for quick energy", "Vitamin C supports energy metabolism", "Low glycemic load (5)", "Potassium for muscle function"],
+        "cons": ["Very low calories (55)", "Limited sustained energy", "Low protein and fat", "May not satisfy hunger long"]
+      },
+      "weight_management": {
+        "grade": "A+",
+        "score": 95,
+        "insight": "Outstanding for weight loss with very low calories (55), high water content, and filling fiber. Extremely nutrient-dense per calorie.",
+        "pros": ["Extremely low calories (55)", "High water content", "Good fiber (2g)", "Very filling per calorie"],
+        "cons": ["Sodium causes water retention", "Low protein may not satisfy", "Sugar content from tomatoes", "May need protein pairing"]
+      },
+      "brain_focus": {
+        "grade": "B",
+        "score": 80,
+        "insight": "Lycopene and vitamin C provide antioxidant protection for brain cells. Steady carbs support brain glucose needs.",
+        "pros": ["Lycopene protects neurons", "Vitamin C is neuroprotective", "Steady glucose for brain", "Potassium for nerve function"],
+        "cons": ["No omega-3s", "No B12", "Limited brain-specific nutrients", "Low in choline and vitamin E"]
+      },
+      "gut_health": {
+        "grade": "B+",
+        "score": 85,
+        "insight": "Good fiber content and tomato compounds support gut health. Simple ingredients are easy to digest for most people.",
+        "pros": ["Good fiber (2g)", "Tomatoes contain prebiotics", "Easy to digest", "No common irritants"],
+        "cons": ["Sodium affects gut flora", "Acidity may irritate sensitive stomachs", "Lower fiber than ideal", "No fermented ingredients"]
+      },
+      "blood_sugar": {
+        "grade": "B+",
+        "score": 85,
+        "insight": "Good blood sugar control with low glycemic load (5) and fiber. Sugar comes naturally from tomatoes, not added sugars.",
+        "pros": ["Low glycemic load (5)", "Fiber slows absorption", "Natural sugars from tomatoes", "No added sugars"],
+        "cons": ["Moderate sugar content (6g)", "Low protein doesn't stabilize", "May cause mild spike", "Individual responses vary"]
+      },
+      "bone_joint": {
+        "grade": "C+",
+        "score": 68,
+        "insight": "Provides vitamin C for collagen synthesis and some minerals, but very low in calcium, vitamin D, and protein for bone health.",
+        "pros": ["Vitamin C supports collagen", "Lycopene reduces bone loss", "Potassium preserves calcium", "Anti-inflammatory antioxidants"],
+        "cons": ["Very low calcium (25mg)", "No vitamin D", "Low protein for bone density", "Limited magnesium"]
+      },
+      "anti_inflammatory": {
+        "grade": "A",
+        "score": 90,
+        "insight": "Excellent anti-inflammatory properties from lycopene in tomatoes. Very low saturated fat and rich in antioxidants.",
+        "pros": ["High lycopene content", "Vitamin C reduces inflammation", "Very low saturated fat", "No cholesterol"],
+        "cons": ["Sodium may increase inflammation", "Acidity may irritate some", "Limited omega-3s", "Could use more diverse antioxidants"]
+      }
+    }
+  },
+  "cheesecake": {
+    "name": "Cheesecake",
+    "calories": 320,
+    "protein": 6,
+    "carbs": 28,
+    "fat": 21,
+    "fiber": 0.5,
+    "sugar": 22,
+    "sodium": 240,
+    "saturatedFat": 12,
+    "cholesterol": 75,
+    "potassium": 110,
+    "calcium": 80,
+    "iron": 0.6,
+    "magnesium": 12,
+    "vitaminA": 18,
+    "vitaminC": 1,
+    "vitaminD": 0.4,
+    "vitaminB12": 0.3,
+    "glycemicIndex": 65,
+    "glycemicLoad": 18,
+    "allergens": ["dairy", "eggs", "gluten"],
+    "servingSize": 100,
+    "servingUnit": "g",
+    "focusGrades": {
+      "balanced": {
+        "grade": "D+",
+        "score": 62,
+        "insight": "High in calories, sugar, and saturated fat. While provides calcium from cheese, the nutritional drawbacks outweigh benefits as a regular food.",
+        "pros": ["Provides calcium (80mg)", "Moderate protein (6g)", "Contains B vitamins", "Rich and satisfying"],
+        "cons": ["Very high calories (320)", "Excessive sugar (22g)", "Very high saturated fat (12g)", "High cholesterol (75mg)"]
+      },
+      "heart_health": {
+        "grade": "D-",
+        "score": 58,
+        "insight": "Poor for heart health with very high saturated fat, cholesterol, and sugar. All three are cardiovascular risk factors.",
+        "pros": ["Calcium supports heart rhythm", "Some protein present", "Vitamin A in small amounts", "Moderate sodium compared to savory foods"],
+        "cons": ["Excessive saturated fat (12g)", "High cholesterol (75mg)", "High sugar damages vessels", "Promotes inflammation"]
+      },
+      "muscle_building": {
+        "grade": "D",
+        "score": 60,
+        "insight": "Very inefficient for muscle building with low protein-to-calorie ratio. Excess sugar and fat provide empty calories.",
+        "pros": ["Protein from cheese and eggs", "Calories for bulking", "Calcium for muscle contraction", "Some B vitamins"],
+        "cons": ["Low protein per calorie", "Excessive sugar interferes with gains", "High saturated fat", "Poor macro ratio"]
+      },
+      "energy": {
+        "grade": "C-",
+        "score": 65,
+        "insight": "Provides quick energy from sugar but causes rapid crashes. High fat slows digestion and may cause sluggishness.",
+        "pros": ["High calories for energy", "Quick sugar provides immediate fuel", "Fat provides sustained calories", "Dense energy source"],
+        "cons": ["High glycemic load (18) causes crashes", "Sugar spike followed by fatigue", "Heavy fat causes sluggishness", "No sustained energy"]
+      },
+      "weight_management": {
+        "grade": "F",
+        "score": 45,
+        "insight": "Terrible for weight management with very high calorie density (320 per 100g), excessive sugar, and poor satiety per calorie.",
+        "pros": ["High calorie density if trying to gain", "Satisfies sweet cravings temporarily", "Calcium present", "None for weight loss"],
+        "cons": ["Extremely high calories (320)", "Very low satiety per calorie", "High sugar (22g) drives cravings", "Easy to overeat"]
+      },
+      "brain_focus": {
+        "grade": "D+",
+        "score": 62,
+        "insight": "Sugar provides temporary mental boost followed by crash and brain fog. High saturated fat impairs cognitive function.",
+        "pros": ["Quick glucose for brain", "Some B vitamins", "Calcium for neurotransmitters", "Temporary pleasure response"],
+        "cons": ["Sugar crash causes brain fog", "High glycemic load impairs focus", "Saturated fat reduces cognition", "No omega-3s"]
+      },
+      "gut_health": {
+        "grade": "D",
+        "score": 60,
+        "insight": "Poor for gut health with minimal fiber, high sugar feeds bad bacteria, and dairy may cause issues. Disrupts microbiome balance.",
+        "pros": ["Calcium for gut function", "Dairy provides some probiotics if fresh", "Protein supports gut lining", "None significant"],
+        "cons": ["Extremely low fiber (0.5g)", "High sugar feeds harmful bacteria", "Dairy causes issues for many", "Disrupts gut flora"]
+      },
+      "blood_sugar": {
+        "grade": "F",
+        "score": 40,
+        "insight": "Terrible for blood sugar with high glycemic load (18) and excessive sugar (22g). Causes major spikes and crashes.",
+        "pros": ["Fat slightly slows absorption", "None significant", "Protein helps minimally", "Not recommended for diabetics"],
+        "cons": ["Very high glycemic load (18)", "Excessive sugar (22g)", "Causes major blood sugar spike", "Insulin resistance risk"]
+      },
+      "bone_joint": {
+        "grade": "C",
+        "score": 70,
+        "insight": "Provides calcium from cheese and some vitamin D, but sugar and inflammation from saturated fat may harm bone and joint health.",
+        "pros": ["Good calcium (80mg)", "Vitamin D present", "Protein supports bone density", "Phosphorus from dairy"],
+        "cons": ["Sugar causes calcium loss", "Saturated fat is inflammatory", "High acidity affects bones", "May promote joint inflammation"]
+      },
+      "anti_inflammatory": {
+        "grade": "F",
+        "score": 48,
+        "insight": "Highly inflammatory with excessive saturated fat and sugar. Both promote systemic inflammation and oxidative stress.",
+        "pros": ["None significant", "Minimal antioxidants", "Not recommended", "Avoid for inflammation"],
+        "cons": ["Very high saturated fat (12g)", "Excessive sugar (22g)", "Promotes inflammation", "No anti-inflammatory compounds"]
+      }
+    }
+  },
+  "apple_pie": {
+    "name": "Apple Pie",
+    "calories": 240,
+    "protein": 2,
+    "carbs": 34,
+    "fat": 11,
+    "fiber": 2,
+    "sugar": 16,
+    "sodium": 200,
+    "saturatedFat": 4,
+    "cholesterol": 8,
+    "potassium": 70,
+    "calcium": 15,
+    "iron": 0.8,
+    "magnesium": 8,
+    "vitaminA": 8,
+    "vitaminC": 3,
+    "vitaminD": 0,
+    "vitaminB12": 0,
+    "glycemicIndex": 60,
+    "glycemicLoad": 20,
+    "allergens": ["gluten", "dairy"],
+    "servingSize": 100,
+    "servingUnit": "g",
+    "focusGrades": {
+      "balanced": {
+        "grade": "D+",
+        "score": 62,
+        "insight": "High in calories, sugar, and refined carbs with minimal protein. Apples provide some fiber but nutritional value is low for calories.",
+        "pros": ["Fiber from apples (2g)", "Some vitamin C", "Apples provide antioxidants", "Lower calories than cheesecake"],
+        "cons": ["High calories (240)", "Excessive sugar (16g)", "High saturated fat (4g)", "Very low protein (2g)"]
+      },
+      "heart_health": {
+        "grade": "D",
+        "score": 60,
+        "insight": "Poor for heart health with saturated fat from butter, refined carbs, and sugar. Limited heart-protective nutrients.",
+        "pros": ["Apples contain soluble fiber", "Some potassium", "Vitamin C present", "Lower cholesterol than cheesecake"],
+        "cons": ["Saturated fat from crust (4g)", "High sugar damages vessels", "Refined flour raises triglycerides", "Trans fats if made with shortening"]
+      },
+      "muscle_building": {
+        "grade": "D-",
+        "score": 58,
+        "insight": "Very poor for muscle building with minimal protein (2g) and excess empty calories from sugar and refined flour.",
+        "pros": ["High calories for bulking", "Carbs provide energy", "Some minerals present", "None significant"],
+        "cons": ["Extremely low protein (2g)", "Sugar interferes with muscle synthesis", "Poor macro ratio", "Empty calories from refined flour"]
+      },
+      "energy": {
+        "grade": "C",
+        "score": 70,
+        "insight": "Provides quick energy from sugar and carbs but causes crashes. Fiber from apples provides minimal sustained energy.",
+        "pros": ["High carbs for immediate energy", "Quick glucose availability", "Some fiber slows absorption (2g)", "Dense calorie source"],
+        "cons": ["Very high glycemic load (20)", "Sugar causes energy crashes", "Refined carbs burn quickly", "Heavy fat causes sluggishness"]
+      },
+      "weight_management": {
+        "grade": "F",
+        "score": 50,
+        "insight": "Poor for weight management with high calorie density (240), excessive sugar, and minimal satiety. Easy to overconsume.",
+        "pros": ["Fiber provides some fullness", "Apples contain pectin", "Lower calories than pure sugar", "None for weight loss"],
+        "cons": ["High calories (240)", "Excessive sugar (16g)", "Low satiety per calorie", "Triggers cravings"]
+      },
+      "brain_focus": {
+        "grade": "D",
+        "score": 60,
+        "insight": "Sugar causes temporary mental boost followed by severe crash and brain fog. Lacks nutrients critical for cognitive function.",
+        "pros": ["Quick glucose for brain", "Apples contain antioxidants", "Vitamin C protects neurons", "Temporary energy"],
+        "cons": ["High glycemic load causes crashes", "Sugar impairs focus", "No omega-3s or B12", "Brain fog after consumption"]
+      },
+      "gut_health": {
+        "grade": "C-",
+        "score": 65,
+        "insight": "Moderate fiber from apples supports gut health, but high sugar feeds harmful bacteria and refined flour may cause issues.",
+        "pros": ["Fiber from apples (2g)", "Pectin is prebiotic", "Apples support beneficial bacteria", "Some polyphenols"],
+        "cons": ["High sugar feeds bad bacteria", "Refined flour irritates gut", "Butter may cause issues", "Disrupts microbiome balance"]
+      },
+      "blood_sugar": {
+        "grade": "D-",
+        "score": 55,
+        "insight": "Very poor blood sugar control with very high glycemic load (20) and excessive sugar. Causes major glucose spikes.",
+        "pros": ["Fiber slightly slows absorption", "Apples have some benefit", "Fat slows digestion minimally", "Not recommended for diabetics"],
+        "cons": ["Very high glycemic load (20)", "Excessive sugar (16g)", "Refined carbs spike glucose", "Insulin resistance risk"]
+      },
+      "bone_joint": {
+        "grade": "D+",
+        "score": 62,
+        "insight": "Very low in bone-building nutrients. Sugar and refined carbs may actually leach calcium and promote inflammation.",
+        "pros": ["Minimal calcium (15mg)", "Some vitamin C for collagen", "Apples contain boron", "None significant"],
+        "cons": ["Very low calcium (15mg)", "No vitamin D", "Sugar causes calcium loss", "Saturated fat is inflammatory"]
+      },
+      "anti_inflammatory": {
+        "grade": "D",
+        "score": 60,
+        "insight": "Apples provide some anti-inflammatory antioxidants, but high sugar and saturated fat are highly inflammatory overall.",
+        "pros": ["Apples contain quercetin", "Some vitamin C", "Polyphenols in apple skin", "Antioxidants present"],
+        "cons": ["High sugar promotes inflammation", "Saturated fat from butter", "Refined flour is inflammatory", "AGEs from baking"]
+      }
+    }
+  }
+}

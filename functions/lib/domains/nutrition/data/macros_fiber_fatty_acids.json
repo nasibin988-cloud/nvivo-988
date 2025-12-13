@@ -781,6 +781,80 @@
       "source": "IOM DRI Macronutrients 2005"
     }
   ],
+  "epaDhaRecommendations": [
+    {
+      "nutrientId": "epa_dha",
+      "ageMinYears": 0,
+      "ageMaxYears": 1,
+      "sex": "both",
+      "lifeStage": "infant",
+      "recommendationType": "expert",
+      "recommendationValue": null,
+      "unit": "mg",
+      "source": "No specific recommendation for infants",
+      "notes": ["Breastfed infants receive DHA from breast milk; formula is often DHA-fortified"]
+    },
+    {
+      "nutrientId": "epa_dha",
+      "ageMinYears": 1,
+      "ageMaxYears": 18,
+      "sex": "both",
+      "lifeStage": "child",
+      "recommendationType": "expert",
+      "recommendationValue": 250,
+      "unit": "mg",
+      "source": "AHA/ISSFAL",
+      "notes": ["Minimum recommended for children; encourage fatty fish 1-2x/week"]
+    },
+    {
+      "nutrientId": "epa_dha",
+      "ageMinYears": 19,
+      "ageMaxYears": 150,
+      "sex": "both",
+      "lifeStage": "standard",
+      "recommendationType": "expert",
+      "recommendationValue": 500,
+      "unit": "mg",
+      "source": "AHA 2021",
+      "notes": ["AHA recommends 2 servings fatty fish per week (~500mg EPA+DHA/day) for cardiovascular health"]
+    },
+    {
+      "nutrientId": "epa_dha",
+      "ageMinYears": 14,
+      "ageMaxYears": 50,
+      "sex": "female",
+      "lifeStage": "pregnancy",
+      "recommendationType": "expert",
+      "recommendationValue": 300,
+      "unit": "mg",
+      "source": "ISSFAL/WHO",
+      "notes": ["At least 200-300mg DHA specifically for fetal brain and eye development"]
+    },
+    {
+      "nutrientId": "epa_dha",
+      "ageMinYears": 14,
+      "ageMaxYears": 50,
+      "sex": "female",
+      "lifeStage": "lactation",
+      "recommendationType": "expert",
+      "recommendationValue": 300,
+      "unit": "mg",
+      "source": "ISSFAL/WHO",
+      "notes": ["At least 200-300mg DHA to support infant brain development via breast milk"]
+    },
+    {
+      "nutrientId": "epa_dha",
+      "ageMinYears": 19,
+      "ageMaxYears": 150,
+      "sex": "both",
+      "lifeStage": "heart_disease_risk",
+      "recommendationType": "expert",
+      "recommendationValue": 1000,
+      "unit": "mg",
+      "source": "AHA 2021",
+      "notes": ["For those with documented coronary heart disease or heart failure with reduced ejection fraction"]
+    }
+  ],
   "waterDri": [
     {
       "nutrientId": "total_water",

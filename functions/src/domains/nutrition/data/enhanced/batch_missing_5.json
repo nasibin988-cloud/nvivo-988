@@ -1,0 +1,584 @@
+{
+  "fat_free_milk": {
+    "name": "Fat Free Milk",
+    "calories": 34,
+    "protein": 3.4,
+    "carbs": 5.0,
+    "fat": 0.2,
+    "fiber": 0,
+    "sugar": 5.0,
+    "sodium": 42,
+    "saturatedFat": 0.1,
+    "cholesterol": 2,
+    "potassium": 150,
+    "calcium": 125,
+    "iron": 0.03,
+    "magnesium": 11,
+    "vitaminA": 38,
+    "vitaminC": 0,
+    "vitaminD": 1.3,
+    "vitaminB12": 0.45,
+    "glycemicIndex": 32,
+    "glycemicLoad": 4,
+    "allergens": ["dairy"],
+    "servingSize": 100,
+    "servingUnit": "ml",
+    "focusGrades": {
+      "balanced": {
+        "grade": "A",
+        "score": 92,
+        "insight": "Excellent macro balance with complete protein, minimal fat, and natural carbs from lactose",
+        "pros": ["Complete protein with all essential amino acids", "Rich in calcium and vitamin D", "Low calorie density"],
+        "cons": ["Contains lactose (milk sugar)", "No fiber", "Requires refrigeration"]
+      },
+      "heart_health": {
+        "grade": "A",
+        "score": 94,
+        "insight": "Virtually no saturated fat, cholesterol-free equivalent, excellent potassium for blood pressure",
+        "pros": ["Almost zero saturated fat", "Negligible cholesterol", "Potassium supports healthy blood pressure"],
+        "cons": ["Some sodium content", "Lacks heart-protective omega-3s"]
+      },
+      "muscle_building": {
+        "grade": "A-",
+        "score": 88,
+        "insight": "High-quality casein and whey protein with excellent leucine content for muscle protein synthesis",
+        "pros": ["Complete protein with optimal amino acid profile", "Fast and slow-digesting proteins", "Rich in BCAAs"],
+        "cons": ["Lower total protein than Greek yogurt", "May need pairing with carbs post-workout"]
+      },
+      "energy": {
+        "grade": "B+",
+        "score": 85,
+        "insight": "Natural lactose provides steady energy; B12 supports cellular energy production",
+        "pros": ["Natural sugars for quick energy", "B vitamins aid energy metabolism", "Hydrating"],
+        "cons": ["Low calorie content may not sustain long activities", "Lacks complex carbohydrates"]
+      },
+      "weight_management": {
+        "grade": "A",
+        "score": 93,
+        "insight": "Extremely low calorie density with high satiety from protein and volume",
+        "pros": ["Only 34 calories per 100ml", "Protein increases satiety", "High water content"],
+        "cons": ["No fiber to aid fullness", "May trigger cravings if lactose intolerant"]
+      },
+      "brain_focus": {
+        "grade": "B+",
+        "score": 86,
+        "insight": "Vitamin B12 essential for cognitive function; natural sugars fuel brain activity",
+        "pros": ["B12 supports neurotransmitter synthesis", "Lactose provides glucose for brain", "Tryptophan aids serotonin production"],
+        "cons": ["No omega-3 DHA for brain structure", "Limited cognitive-enhancing compounds"]
+      },
+      "gut_health": {
+        "grade": "B-",
+        "score": 73,
+        "insight": "No fiber or probiotics; lactose may cause issues for 65% of adults with lactase deficiency",
+        "pros": ["Easily digestible for those with lactase", "Supports beneficial bacteria if tolerated"],
+        "cons": ["Zero dietary fiber", "Lactose intolerance affects most adults", "No prebiotics or probiotics"]
+      },
+      "blood_sugar": {
+        "grade": "A-",
+        "score": 88,
+        "insight": "Low glycemic index despite natural sugars; protein slows glucose absorption significantly",
+        "pros": ["GI of 32 is very low", "Protein blunts blood sugar spike", "No added sugars"],
+        "cons": ["Contains natural lactose sugars", "May spike glucose if consumed in large amounts"]
+      },
+      "bone_joint": {
+        "grade": "A+",
+        "score": 96,
+        "insight": "Gold standard for bone health with optimal calcium-to-phosphorus ratio and vitamin D fortification",
+        "pros": ["125mg calcium per 100ml", "Vitamin D enhances calcium absorption", "Protein supports bone matrix"],
+        "cons": ["Needs adequate vitamin K2 for calcium utilization", "Phosphorus ratio requires balance"]
+      },
+      "anti_inflammatory": {
+        "grade": "B",
+        "score": 80,
+        "insight": "Neutral inflammatory profile; dairy proteins may reduce inflammation but lactose sensitivity varies",
+        "pros": ["Whey protein has anti-inflammatory peptides", "Low saturated fat reduces inflammation risk"],
+        "cons": ["Dairy can trigger inflammation in sensitive individuals", "No omega-3 fatty acids", "Lacks polyphenols"]
+      }
+    }
+  },
+  "frankfurter": {
+    "name": "Frankfurter",
+    "calories": 290,
+    "protein": 10.4,
+    "carbs": 4.0,
+    "fat": 26.3,
+    "fiber": 0,
+    "sugar": 1.2,
+    "sodium": 1090,
+    "saturatedFat": 10.5,
+    "cholesterol": 61,
+    "potassium": 180,
+    "calcium": 11,
+    "iron": 1.5,
+    "magnesium": 13,
+    "vitaminA": 0,
+    "vitaminC": 0,
+    "vitaminD": 0.2,
+    "vitaminB12": 1.5,
+    "glycemicIndex": 28,
+    "glycemicLoad": 1,
+    "allergens": [],
+    "servingSize": 100,
+    "servingUnit": "g",
+    "focusGrades": {
+      "balanced": {
+        "grade": "D",
+        "score": 35,
+        "insight": "Severely imbalanced with 82% calories from fat, excessive sodium, and minimal nutrients",
+        "pros": ["High protein content", "Very low glycemic impact", "B12 from meat"],
+        "cons": ["82% calories from saturated/trans fats", "1090mg sodium (47% daily limit)", "Almost no vitamins or minerals"]
+      },
+      "heart_health": {
+        "grade": "F",
+        "score": 15,
+        "insight": "One of worst foods for cardiovascular health: high saturated fat, cholesterol, and extreme sodium",
+        "pros": ["Low carbohydrate content"],
+        "cons": ["10.5g saturated fat (52% daily limit)", "1090mg sodium raises blood pressure", "61mg cholesterol", "Nitrites linked to CVD risk"]
+      },
+      "muscle_building": {
+        "grade": "C-",
+        "score": 68,
+        "insight": "Moderate protein but poor quality ratio; excessive fat interferes with lean muscle goals",
+        "pros": ["10.4g protein per 100g", "Complete amino acid profile", "High B12 for red blood cell production"],
+        "cons": ["2.5:1 fat-to-protein ratio is very poor", "High sodium causes water retention", "Processed meat may impair recovery"]
+      },
+      "energy": {
+        "grade": "C",
+        "score": 70,
+        "insight": "High calorie density provides energy but from unhealthy fats; causes energy crashes from sodium",
+        "pros": ["Calorie-dense for quick energy", "B vitamins support metabolism", "Low carb won't spike blood sugar"],
+        "cons": ["Energy from saturated fat, not sustained fuel", "Sodium causes dehydration and fatigue", "No complex carbs for endurance"]
+      },
+      "weight_management": {
+        "grade": "F",
+        "score": 25,
+        "insight": "290 calories in tiny portion; ultra-processed with low satiety and high calorie density",
+        "pros": ["Protein provides some satiety"],
+        "cons": ["290 calories per 100g (one hot dog)", "High fat, low volume = poor satiety", "Processed meats linked to weight gain", "Zero fiber"]
+      },
+      "brain_focus": {
+        "grade": "D+",
+        "score": 62,
+        "insight": "B12 supports cognition but excessive sodium and nitrites impair mental clarity",
+        "pros": ["Vitamin B12 for neurotransmitter function", "Protein stabilizes blood sugar for focus"],
+        "cons": ["High sodium causes brain fog and headaches", "Nitrites may impair cognitive function", "No omega-3 DHA", "Saturated fat linked to cognitive decline"]
+      },
+      "gut_health": {
+        "grade": "D-",
+        "score": 55,
+        "insight": "Zero fiber, high sodium disrupts gut microbiome; nitrites and preservatives harm beneficial bacteria",
+        "pros": ["Low FODMAP for sensitive stomachs"],
+        "cons": ["Zero dietary fiber", "Preservatives (nitrites) kill good bacteria", "High sodium alters microbiome", "No prebiotics or probiotics"]
+      },
+      "blood_sugar": {
+        "grade": "B+",
+        "score": 85,
+        "insight": "Minimal carbs and very low glycemic impact; won't spike blood sugar directly",
+        "pros": ["Only 4g carbs per 100g", "GI of 28 is low", "High protein and fat slow digestion"],
+        "cons": ["Saturated fat causes insulin resistance over time", "Processed meat linked to diabetes risk"]
+      },
+      "bone_joint": {
+        "grade": "D",
+        "score": 58,
+        "insight": "Minimal calcium, excessive sodium leaches calcium from bones; phosphorus imbalance",
+        "pros": ["Some protein for bone matrix"],
+        "cons": ["Only 11mg calcium (1% daily value)", "High sodium increases calcium excretion", "Phosphorus-to-calcium ratio poor", "No vitamin D or K2"]
+      },
+      "anti_inflammatory": {
+        "grade": "F",
+        "score": 20,
+        "insight": "Highly pro-inflammatory: processed meat with nitrites, high saturated fat, and omega-6 fatty acids",
+        "pros": ["None identified"],
+        "cons": ["Processed meat causes systemic inflammation", "10.5g saturated fat triggers inflammatory pathways", "Nitrites form inflammatory compounds", "High sodium promotes inflammation"]
+      }
+    }
+  },
+  "fried_chicken": {
+    "name": "Fried Chicken",
+    "calories": 246,
+    "protein": 18.6,
+    "carbs": 12.2,
+    "fat": 14.7,
+    "fiber": 0.8,
+    "sugar": 0.3,
+    "sodium": 470,
+    "saturatedFat": 3.8,
+    "cholesterol": 84,
+    "potassium": 230,
+    "calcium": 23,
+    "iron": 1.2,
+    "magnesium": 25,
+    "vitaminA": 18,
+    "vitaminC": 0,
+    "vitaminD": 0.3,
+    "vitaminB12": 0.4,
+    "glycemicIndex": 45,
+    "glycemicLoad": 5,
+    "allergens": ["gluten", "eggs"],
+    "servingSize": 100,
+    "servingUnit": "g",
+    "focusGrades": {
+      "balanced": {
+        "grade": "C",
+        "score": 70,
+        "insight": "Moderate balance but breading adds refined carbs; high sodium and saturated fat from frying",
+        "pros": ["Good protein content (18.6g)", "Balanced macros for muscle and energy", "Moderate calorie density"],
+        "cons": ["High sodium (470mg)", "Fried in inflammatory oils", "Refined flour breading spikes blood sugar"]
+      },
+      "heart_health": {
+        "grade": "D+",
+        "score": 60,
+        "insight": "Frying oxidizes fats creating harmful compounds; high cholesterol and moderate saturated fat",
+        "pros": ["Lower saturated fat than beef", "Potassium supports heart rhythm"],
+        "cons": ["84mg cholesterol (28% daily limit)", "Trans fats from frying oil", "470mg sodium elevates blood pressure", "Oxidized fats damage arteries"]
+      },
+      "muscle_building": {
+        "grade": "B+",
+        "score": 85,
+        "insight": "Excellent protein-to-calorie ratio with complete amino acids; fats aid hormone production",
+        "pros": ["18.6g high-quality protein", "Complete essential amino acids", "Leucine-rich for muscle synthesis", "Fats support testosterone"],
+        "cons": ["Breading adds empty calories", "Lower protein than grilled chicken", "High sodium causes bloating"]
+      },
+      "energy": {
+        "grade": "B",
+        "score": 80,
+        "insight": "Balanced macros provide sustained energy; carbs from breading give quick fuel, protein sustains",
+        "pros": ["Carbs for immediate energy", "Protein prevents crashes", "Calorie-dense for endurance", "B vitamins aid metabolism"],
+        "cons": ["Refined carbs cause energy spike then crash", "Heavy meal may cause sluggishness", "High fat slows digestion"]
+      },
+      "weight_management": {
+        "grade": "D",
+        "score": 58,
+        "insight": "246 calories in small portion; high fat and breading increase calorie density with low satiety",
+        "pros": ["Protein increases fullness", "Moderate satiety from fats"],
+        "cons": ["Calorie-dense (246 per 100g)", "Breading adds empty calories", "Minimal fiber (0.8g)", "Easy to overeat due to palatability"]
+      },
+      "brain_focus": {
+        "grade": "C+",
+        "score": 72,
+        "insight": "Protein stabilizes focus but refined carbs cause mental fog; B vitamins support cognition",
+        "pros": ["Protein prevents blood sugar crashes", "B vitamins for neurotransmitter production", "Fats provide dense energy for brain"],
+        "cons": ["Refined breading causes brain fog", "No omega-3 DHA", "High sodium impairs concentration", "Trans fats from frying harm neurons"]
+      },
+      "gut_health": {
+        "grade": "D+",
+        "score": 62,
+        "insight": "Minimal fiber, fried oils irritate gut lining; breading may contain gut-disrupting additives",
+        "pros": ["Protein feeds beneficial bacteria"],
+        "cons": ["Only 0.8g fiber", "Fried oils damage intestinal barrier", "High sodium alters microbiome", "Gluten may trigger sensitivity", "No prebiotics"]
+      },
+      "blood_sugar": {
+        "grade": "C+",
+        "score": 75,
+        "insight": "Moderate GI (45) but protein and fat slow glucose absorption; breading still spikes blood sugar",
+        "pros": ["Protein and fat blunt glucose spike", "Moderate glycemic load (5)", "Low sugar content (0.3g)"],
+        "cons": ["Refined breading raises blood sugar", "Carbs absorbed quickly without fiber", "May cause insulin spike"]
+      },
+      "bone_joint": {
+        "grade": "C-",
+        "score": 68,
+        "insight": "Protein supports bone matrix but minimal calcium; high sodium leaches calcium from bones",
+        "pros": ["Protein essential for bone structure", "Some phosphorus for bone density"],
+        "cons": ["Only 23mg calcium (2% DV)", "470mg sodium increases calcium loss", "Advanced glycation end-products (AGEs) from frying harm joints", "No vitamin K2"]
+      },
+      "anti_inflammatory": {
+        "grade": "D-",
+        "score": 55,
+        "insight": "Highly pro-inflammatory from frying in vegetable oils; AGEs and oxidized fats trigger inflammation",
+        "pros": ["Chicken less inflammatory than red meat"],
+        "cons": ["Frying creates inflammatory AGEs", "Vegetable oils high in omega-6", "Trans fats from reused oil", "Breading spikes inflammatory markers", "No anti-inflammatory compounds"]
+      }
+    }
+  },
+  "hamburger": {
+    "name": "Hamburger",
+    "calories": 250,
+    "protein": 17.2,
+    "carbs": 0,
+    "fat": 20.0,
+    "fiber": 0,
+    "sugar": 0,
+    "sodium": 75,
+    "saturatedFat": 7.7,
+    "cholesterol": 78,
+    "potassium": 270,
+    "calcium": 18,
+    "iron": 2.1,
+    "magnesium": 18,
+    "vitaminA": 0,
+    "vitaminC": 0,
+    "vitaminD": 0.1,
+    "vitaminB12": 2.15,
+    "glycemicIndex": 0,
+    "glycemicLoad": 0,
+    "allergens": [],
+    "servingSize": 100,
+    "servingUnit": "g",
+    "focusGrades": {
+      "balanced": {
+        "grade": "C+",
+        "score": 72,
+        "insight": "Zero-carb high-protein option but excessive saturated fat; missing micronutrients and fiber",
+        "pros": ["High protein (17.2g)", "Rich in iron and B12", "Zero carbs for keto diets"],
+        "cons": ["7.7g saturated fat (39% daily limit)", "No fiber or carbohydrates", "Minimal vitamins A, C, D"]
+      },
+      "heart_health": {
+        "grade": "D+",
+        "score": 62,
+        "insight": "High saturated fat and cholesterol increase CVD risk; red meat linked to heart disease",
+        "pros": ["Low sodium (75mg)", "Potassium supports blood pressure", "Iron for healthy blood"],
+        "cons": ["7.7g saturated fat raises LDL cholesterol", "78mg cholesterol (26% daily limit)", "Red meat increases TMAO (cardiovascular toxin)", "No heart-protective omega-3s"]
+      },
+      "muscle_building": {
+        "grade": "A-",
+        "score": 88,
+        "insight": "Excellent complete protein with high bioavailability; rich in creatine and iron for performance",
+        "pros": ["17.2g high-quality protein", "Complete amino acid profile", "Natural creatine for strength", "Iron prevents anemia", "B12 for red blood cells"],
+        "cons": ["High saturated fat may impair insulin sensitivity", "Lower protein density than chicken breast"]
+      },
+      "energy": {
+        "grade": "B",
+        "score": 80,
+        "insight": "Calorie-dense from fats; zero carbs means no quick energy but sustained fuel from fat oxidation",
+        "pros": ["250 calories for endurance", "Fat provides long-lasting energy", "B vitamins aid energy metabolism", "Iron carries oxygen to muscles"],
+        "cons": ["No carbohydrates for quick energy", "High fat slows digestion", "May cause sluggishness during activity"]
+      },
+      "weight_management": {
+        "grade": "C",
+        "score": 70,
+        "insight": "High satiety from protein and fat but calorie-dense; portion control critical",
+        "pros": ["Protein increases satiety hormones", "Fat keeps you full longer", "Zero carbs prevent insulin spikes"],
+        "cons": ["250 calories per 100g is high", "Easy to overconsume", "No fiber to aid fullness", "Saturated fat may slow metabolism"]
+      },
+      "brain_focus": {
+        "grade": "B",
+        "score": 80,
+        "insight": "Excellent B12 for cognitive function; fat fuels brain but saturated fat may impair clarity",
+        "pros": ["2.15μg B12 (90% daily value) for memory", "Iron prevents brain fog from anemia", "Choline for neurotransmitters", "Zero-carb prevents glucose crashes"],
+        "cons": ["No omega-3 DHA for brain structure", "Saturated fat linked to cognitive decline", "Heavy meal causes post-meal drowsiness"]
+      },
+      "gut_health": {
+        "grade": "D",
+        "score": 58,
+        "insight": "Zero fiber starves beneficial bacteria; red meat increases harmful gut bacteria and TMAO",
+        "pros": ["Protein feeds some beneficial bacteria"],
+        "cons": ["Zero dietary fiber", "Red meat promotes harmful bacteria (Bilophila)", "Increases TMAO production (gut toxin)", "No prebiotics or probiotics", "May cause constipation"]
+      },
+      "blood_sugar": {
+        "grade": "A+",
+        "score": 98,
+        "insight": "Zero carbohydrates means no impact on blood glucose; ideal for diabetes management",
+        "pros": ["Zero glycemic index and load", "No sugar or carbs", "Protein stabilizes blood sugar", "Won't spike insulin"],
+        "cons": ["Saturated fat causes insulin resistance long-term", "Lacks fiber to slow glucose absorption from other foods"]
+      },
+      "bone_joint": {
+        "grade": "C+",
+        "score": 73,
+        "insight": "Protein supports bone matrix but minimal calcium; red meat acidity may leach calcium",
+        "pros": ["Protein essential for bone structure", "Phosphorus for bone density"],
+        "cons": ["Only 18mg calcium (1.8% DV)", "Acidic PRAL may leach calcium", "No vitamin D or K2", "Saturated fat may increase fracture risk"]
+      },
+      "anti_inflammatory": {
+        "grade": "D",
+        "score": 58,
+        "insight": "Red meat moderately pro-inflammatory; saturated fat and heme iron trigger inflammatory pathways",
+        "pros": ["Less inflammatory than processed meats", "Omega-3 from grass-fed beef"],
+        "cons": ["Saturated fat activates inflammatory NF-kB pathway", "Heme iron generates free radicals", "Red meat increases CRP (inflammation marker)", "Neu5Gc in beef triggers immune response", "No anti-inflammatory compounds"]
+      }
+    }
+  },
+  "honey": {
+    "name": "Honey",
+    "calories": 304,
+    "protein": 0.3,
+    "carbs": 82.4,
+    "fat": 0,
+    "fiber": 0.2,
+    "sugar": 82.1,
+    "sodium": 4,
+    "saturatedFat": 0,
+    "cholesterol": 0,
+    "potassium": 52,
+    "calcium": 6,
+    "iron": 0.42,
+    "magnesium": 2,
+    "vitaminA": 0,
+    "vitaminC": 0.5,
+    "vitaminD": 0,
+    "vitaminB12": 0,
+    "glycemicIndex": 58,
+    "glycemicLoad": 48,
+    "allergens": [],
+    "servingSize": 100,
+    "servingUnit": "g",
+    "focusGrades": {
+      "balanced": {
+        "grade": "D-",
+        "score": 55,
+        "insight": "Extremely imbalanced: 99.5% calories from sugar, virtually no protein, fat, fiber, or nutrients",
+        "pros": ["Natural unprocessed sweetener", "Contains trace antioxidants", "Zero fat"],
+        "cons": ["82g sugar per 100g", "Almost no protein (0.3g)", "Zero fiber", "Minimal vitamins and minerals"]
+      },
+      "heart_health": {
+        "grade": "C-",
+        "score": 68,
+        "insight": "Zero cholesterol and saturated fat but high sugar drives triglycerides; antioxidants offer minor benefit",
+        "pros": ["Zero cholesterol and saturated fat", "Polyphenols may reduce oxidative stress", "Low sodium (4mg)", "Potassium supports blood pressure"],
+        "cons": ["High sugar raises triglycerides", "82g sugar increases CVD risk", "May promote arterial inflammation", "Drives insulin resistance"]
+      },
+      "muscle_building": {
+        "grade": "D",
+        "score": 58,
+        "insight": "Virtually no protein; only useful as quick post-workout carb to replenish glycogen",
+        "pros": ["Fast-absorbing carbs for glycogen replenishment", "May enhance protein absorption post-workout"],
+        "cons": ["Only 0.3g protein", "No amino acids for muscle repair", "Sugar without protein causes muscle loss", "Better alternatives exist (maltodextrin)"]
+      },
+      "energy": {
+        "grade": "B-",
+        "score": 75,
+        "insight": "Rapid energy from simple sugars but causes crash 30-60 minutes later; no sustained fuel",
+        "pros": ["Instant energy from glucose and fructose", "Easily digestible", "Dense calories (304 per 100g)"],
+        "cons": ["Causes energy crash after spike", "No complex carbs for sustained energy", "Fructose bypasses cellular energy pathways", "No B vitamins for metabolism"]
+      },
+      "weight_management": {
+        "grade": "F",
+        "score": 30,
+        "insight": "Extremely calorie-dense with zero satiety; pure sugar promotes fat storage and insulin resistance",
+        "pros": ["Small amounts satisfy sweet cravings"],
+        "cons": ["304 calories in just 100g (5 tablespoons)", "Zero protein or fiber for satiety", "Pure sugar triggers insulin spikes and fat storage", "Easy to overconsume", "Fructose promotes visceral fat"]
+      },
+      "brain_focus": {
+        "grade": "C",
+        "score": 70,
+        "insight": "Quick glucose fuels brain briefly but crash impairs cognition; fructose doesn't cross blood-brain barrier efficiently",
+        "pros": ["Glucose provides immediate brain fuel", "May boost alertness short-term", "Antioxidants protect neurons"],
+        "cons": ["Blood sugar crash causes brain fog", "Fructose poorly utilized by brain", "No B vitamins for neurotransmitters", "Sugar addiction impairs executive function"]
+      },
+      "gut_health": {
+        "grade": "C+",
+        "score": 72,
+        "insight": "Prebiotics feed good bacteria but high sugar feeds harmful bacteria; antimicrobial properties are minimal",
+        "pros": ["Oligosaccharides act as prebiotics", "Antimicrobial compounds (in raw honey)", "May soothe digestive tract"],
+        "cons": ["High sugar feeds pathogenic bacteria (Candida)", "Minimal fiber (0.2g)", "Fructose malabsorption causes bloating", "May worsen SIBO"]
+      },
+      "blood_sugar": {
+        "grade": "F",
+        "score": 25,
+        "insight": "82g sugar with GI of 58 causes significant blood glucose spike; worse than table sugar for diabetics",
+        "pros": ["Lower GI (58) than table sugar (65)", "Fructose component doesn't spike glucose as much"],
+        "cons": ["Glycemic load of 48 is extremely high", "82g sugar per 100g", "Fructose bypasses insulin but harms liver", "No fiber to slow absorption", "Direct path to diabetes"]
+      },
+      "bone_joint": {
+        "grade": "D-",
+        "score": 55,
+        "insight": "Minimal calcium; high sugar increases calcium excretion and promotes inflammation in joints",
+        "pros": ["Antioxidants may reduce joint inflammation", "Trace minerals present"],
+        "cons": ["Only 6mg calcium (0.6% DV)", "Sugar increases urinary calcium loss", "Promotes AGE formation (damages cartilage)", "No vitamin D or K2", "May worsen arthritis"]
+      },
+      "anti_inflammatory": {
+        "grade": "C-",
+        "score": 68,
+        "insight": "Polyphenols and antioxidants fight inflammation but high sugar content is highly pro-inflammatory",
+        "pros": ["Polyphenols (quercetin, kaempferol) reduce inflammation", "Antioxidants neutralize free radicals", "Raw honey has antimicrobial properties"],
+        "cons": ["82g sugar is highly inflammatory", "Sugar activates inflammatory NF-kB pathway", "Fructose promotes uric acid (inflammation)", "Processed honey loses antioxidants"]
+      }
+    }
+  },
+  "hot_dog": {
+    "name": "Hot Dog",
+    "calories": 290,
+    "protein": 10.4,
+    "carbs": 3.8,
+    "fat": 26.3,
+    "fiber": 0,
+    "sugar": 1.1,
+    "sodium": 1090,
+    "saturatedFat": 10.5,
+    "cholesterol": 61,
+    "potassium": 180,
+    "calcium": 11,
+    "iron": 1.5,
+    "magnesium": 13,
+    "vitaminA": 0,
+    "vitaminC": 0,
+    "vitaminD": 0.2,
+    "vitaminB12": 1.5,
+    "glycemicIndex": 28,
+    "glycemicLoad": 1,
+    "allergens": [],
+    "servingSize": 100,
+    "servingUnit": "g",
+    "focusGrades": {
+      "balanced": {
+        "grade": "D",
+        "score": 35,
+        "insight": "Severely imbalanced: 82% calories from fat, extreme sodium (47% daily limit), minimal nutrients",
+        "pros": ["High protein content", "Very low glycemic impact", "B12 from meat"],
+        "cons": ["82% calories from saturated/trans fats", "1090mg sodium is dangerously high", "Almost no vitamins or minerals", "Ultra-processed"]
+      },
+      "heart_health": {
+        "grade": "F",
+        "score": 15,
+        "insight": "Among worst foods for heart: high saturated fat, extreme sodium, cholesterol, and nitrites damage cardiovascular system",
+        "pros": ["Low carbohydrate content"],
+        "cons": ["10.5g saturated fat (52% daily limit)", "1090mg sodium (47% daily limit) raises blood pressure", "61mg cholesterol", "Nitrites damage arterial lining", "WHO classifies as Group 1 carcinogen"]
+      },
+      "muscle_building": {
+        "grade": "C-",
+        "score": 68,
+        "insight": "Moderate protein but terrible quality ratio; excessive fat and sodium interfere with lean muscle goals",
+        "pros": ["10.4g protein per 100g", "Complete amino acid profile", "High B12 for red blood cell production"],
+        "cons": ["2.5:1 fat-to-protein ratio is poor", "High sodium causes water retention and bloating", "Processed meat may impair recovery", "Better protein sources available"]
+      },
+      "energy": {
+        "grade": "C",
+        "score": 70,
+        "insight": "High calorie density from unhealthy fats; extreme sodium causes dehydration and energy crashes",
+        "pros": ["Calorie-dense for quick energy (290 per 100g)", "B vitamins support metabolism", "Low carb won't spike blood sugar"],
+        "cons": ["Energy from saturated fat, not quality fuel", "Sodium causes dehydration and fatigue", "No complex carbs for sustained energy", "Heavy meal causes sluggishness"]
+      },
+      "weight_management": {
+        "grade": "F",
+        "score": 25,
+        "insight": "290 calories in one hot dog; ultra-processed with low satiety, high calorie density, zero fiber",
+        "pros": ["Protein provides some satiety"],
+        "cons": ["290 calories in tiny portion (one hot dog)", "High fat, low volume = poor satiety", "Ultra-processed foods linked to overeating", "Zero fiber", "Easy to eat multiple servings"]
+      },
+      "brain_focus": {
+        "grade": "D+",
+        "score": 62,
+        "insight": "B12 supports cognition but extreme sodium and nitrites severely impair mental clarity and focus",
+        "pros": ["Vitamin B12 for neurotransmitter function", "Protein stabilizes blood sugar"],
+        "cons": ["1090mg sodium causes brain fog and headaches", "Nitrites may impair cognitive function", "No omega-3 DHA", "Saturated fat linked to dementia", "Post-meal crash common"]
+      },
+      "gut_health": {
+        "grade": "D-",
+        "score": 55,
+        "insight": "Zero fiber, extreme sodium disrupts microbiome; nitrites and preservatives kill beneficial bacteria",
+        "pros": ["Low FODMAP for sensitive stomachs"],
+        "cons": ["Zero dietary fiber", "Preservatives (nitrites, nitrates) kill good bacteria", "1090mg sodium alters microbiome composition", "No prebiotics or probiotics", "May cause constipation"]
+      },
+      "blood_sugar": {
+        "grade": "B+",
+        "score": 85,
+        "insight": "Minimal carbs and very low glycemic impact; won't spike blood sugar acutely",
+        "pros": ["Only 3.8g carbs per 100g", "GI of 28 is low", "High protein and fat slow digestion", "Glycemic load of 1 is negligible"],
+        "cons": ["Saturated fat causes insulin resistance chronically", "Processed meat increases type 2 diabetes risk by 51%"]
+      },
+      "bone_joint": {
+        "grade": "D",
+        "score": 58,
+        "insight": "Minimal calcium, extreme sodium leaches calcium from bones; phosphorus imbalance harms bone density",
+        "pros": ["Some protein for bone matrix"],
+        "cons": ["Only 11mg calcium (1.1% DV)", "1090mg sodium increases calcium excretion in urine", "Phosphorus-to-calcium ratio poor", "No vitamin D or K2", "AGEs from processing damage joints"]
+      },
+      "anti_inflammatory": {
+        "grade": "F",
+        "score": 20,
+        "insight": "Highly pro-inflammatory: ultra-processed meat with nitrites, high saturated fat, extreme sodium, omega-6 oils",
+        "pros": ["None identified"],
+        "cons": ["Processed meat causes systemic inflammation", "10.5g saturated fat triggers inflammatory cytokines", "Nitrites form carcinogenic N-nitroso compounds", "1090mg sodium promotes vascular inflammation", "No anti-inflammatory compounds"]
+      }
+    }
+  }
+}

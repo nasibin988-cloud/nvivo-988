@@ -1,0 +1,1721 @@
+{
+    "egg": {
+        "id": "egg",
+        "name": "Egg (Whole, Raw)",
+        "category": "protein",
+        "servingSize": 50,
+        "servingUnit": "g",
+        "calories": 72,
+        "macros": {
+            "protein": 6.3,
+            "carbs": 0.4,
+            "fat": 4.8,
+            "fiber": 0
+        },
+        "nutrients": {
+            "saturatedFat": 1.6,
+            "monounsaturatedFat": 1.8,
+            "polyunsaturatedFat": 1.0,
+            "transFat": 0,
+            "omega3": 0.04,
+            "omega6": 0.9,
+            "cholesterol": 186,
+            "sodium": 71,
+            "potassium": 69,
+            "calcium": 28,
+            "iron": 0.9,
+            "magnesium": 6,
+            "phosphorus": 99,
+            "zinc": 0.6,
+            "selenium": 15.4,
+            "vitaminA": 270,
+            "vitaminC": 0,
+            "vitaminD": 1.1,
+            "vitaminE": 0.5,
+            "vitaminK": 0.2,
+            "thiamin": 0.04,
+            "riboflavin": 0.23,
+            "niacin": 0.04,
+            "vitaminB6": 0.09,
+            "folate": 24,
+            "vitaminB12": 0.45,
+            "pantothenicAcid": 0.7,
+            "choline": 147,
+            "betaine": 0.3
+        },
+        "glycemicIndex": 0,
+        "glycemicLoad": 0,
+        "nutrientDensityScore": 91,
+        "satietyScore": 88,
+        "inflammatoryIndex": -0.4,
+        "novaClass": 1,
+        "focusGrades": {
+            "balanced": {
+                "grade": "A",
+                "score": 92,
+                "insight": "Nature's perfect protein package with complete amino acids and essential nutrients",
+                "pros": [
+                    "Complete protein with all 9 essential amino acids",
+                    "Rich in choline (147mg) for cell membrane health",
+                    "High vitamin A (270 IU) for vision and immunity",
+                    "Excellent bioavailability of nutrients",
+                    "Contains all B vitamins for metabolism"
+                ],
+                "cons": [
+                    "High cholesterol (186mg) - 62% of daily limit",
+                    "No fiber or carbohydrates",
+                    "Minimal vitamin C"
+                ]
+            },
+            "heart_health": {
+                "grade": "B",
+                "score": 78,
+                "insight": "Nutrient-dense but high in dietary cholesterol - monitor intake if at risk",
+                "pros": [
+                    "Good unsaturated to saturated fat ratio (2.8:1)",
+                    "Rich in choline (147mg) reduces homocysteine",
+                    "Selenium (15.4mcg) protects against oxidative stress",
+                    "Vitamin D (1.1mcg) supports cardiovascular health"
+                ],
+                "cons": [
+                    "High cholesterol (186mg) may impact some individuals",
+                    "Moderate omega-6 to omega-3 ratio (22:1)",
+                    "Contains 71mg sodium per egg"
+                ]
+            },
+            "muscle_building": {
+                "grade": "A",
+                "score": 93,
+                "insight": "Complete protein with high leucine content for muscle protein synthesis",
+                "pros": [
+                    "High-quality protein (6.3g) with perfect amino acid score",
+                    "Rich in leucine to trigger muscle growth",
+                    "Contains vitamin D for muscle function",
+                    "Phosphorus (99mg) supports ATP production",
+                    "Easily digestible protein for recovery"
+                ],
+                "cons": [
+                    "Lower total protein than egg whites alone",
+                    "Fat content may limit protein density in strict cuts"
+                ]
+            },
+            "energy": {
+                "grade": "B+",
+                "score": 84,
+                "insight": "Sustained energy from healthy fats and complete protein",
+                "pros": [
+                    "Balanced macros prevent energy crashes",
+                    "B vitamins (especially B12 and riboflavin) support energy metabolism",
+                    "Choline (147mg) supports mitochondrial function",
+                    "Phosphorus critical for ATP synthesis"
+                ],
+                "cons": [
+                    "Very low in carbohydrates for immediate energy",
+                    "Minimal iron (0.9mg) compared to red meat",
+                    "No quick-release glucose"
+                ]
+            },
+            "weight_management": {
+                "grade": "A",
+                "score": 91,
+                "insight": "High satiety with complete nutrition in minimal calories",
+                "pros": [
+                    "Excellent satiety score (88/100) keeps you full",
+                    "Only 72 calories with complete protein",
+                    "Protein and fat slow gastric emptying",
+                    "Rich in nutrients to prevent deficiency cravings",
+                    "Low calorie density allows flexible portions"
+                ],
+                "cons": [
+                    "Fat content adds calories vs. egg whites",
+                    "No fiber for additional satiety"
+                ]
+            },
+            "brain_focus": {
+                "grade": "A+",
+                "score": 97,
+                "insight": "Brain superfood with choline for neurotransmitter production",
+                "pros": [
+                    "Exceptional choline (147mg) - 27% of daily needs",
+                    "Choline converts to acetylcholine for memory and focus",
+                    "Vitamin B12 (0.45mcg) protects myelin sheaths",
+                    "Omega-3 DHA precursors support brain structure",
+                    "Lutein and zeaxanthin protect cognitive function"
+                ],
+                "cons": [
+                    "Lower in DHA than fatty fish",
+                    "Minimal antioxidants like flavonoids"
+                ]
+            },
+            "gut_health": {
+                "grade": "B",
+                "score": 76,
+                "insight": "Easily digestible protein but lacks prebiotic fiber",
+                "pros": [
+                    "Highly bioavailable and easy to digest",
+                    "Choline supports intestinal barrier integrity",
+                    "Zinc (0.6mg) aids gut lining repair",
+                    "Low FODMAP friendly for sensitive digestion"
+                ],
+                "cons": [
+                    "Zero fiber for microbiome diversity",
+                    "No prebiotics or probiotics",
+                    "High fat may trigger symptoms in some individuals",
+                    "Lacks polyphenols for gut bacteria"
+                ]
+            },
+            "blood_sugar": {
+                "grade": "A",
+                "score": 95,
+                "insight": "Perfect for blood sugar control with minimal carbs and high protein",
+                "pros": [
+                    "Nearly zero glycemic index - no blood sugar spike",
+                    "Protein (6.3g) slows carb digestion in meals",
+                    "Fat content further stabilizes glucose response",
+                    "Choline improves insulin sensitivity"
+                ],
+                "cons": [
+                    "No fiber to slow glucose absorption",
+                    "Must pair with vegetables for complete meal",
+                    "Excess protein may undergo gluconeogenesis"
+                ]
+            },
+            "bone_joint": {
+                "grade": "B+",
+                "score": 85,
+                "insight": "Rich in bone-building vitamin D and phosphorus",
+                "pros": [
+                    "Vitamin D (1.1mcg) enhances calcium absorption",
+                    "Phosphorus (99mg) critical for bone mineralization",
+                    "Complete protein supports bone matrix",
+                    "Selenium reduces inflammatory joint damage"
+                ],
+                "cons": [
+                    "Moderate calcium (28mg) - only 2.8% daily needs",
+                    "Low vitamin K (0.2mcg) for bone metabolism",
+                    "Minimal omega-3s for joint inflammation"
+                ]
+            },
+            "anti_inflammatory": {
+                "grade": "B+",
+                "score": 81,
+                "insight": "Anti-inflammatory nutrients offset by omega-6 content",
+                "pros": [
+                    "Negative inflammatory index (-0.4)",
+                    "Selenium (15.4mcg) fights oxidative stress",
+                    "Vitamin A (270 IU) modulates immune response",
+                    "Choline reduces inflammatory markers"
+                ],
+                "cons": [
+                    "High omega-6 to omega-3 ratio (22:1)",
+                    "No EPA/DHA for inflammation resolution",
+                    "Lacks polyphenols and antioxidants",
+                    "Cholesterol may promote inflammation in some"
+                ]
+            }
+        },
+        "bioavailability": {
+            "protein": "high",
+            "iron": "moderate",
+            "notes": "One of the most bioavailable protein sources (PDCAAS 1.0). Choline and lutein highly absorbable. Cook to improve protein digestibility and eliminate salmonella risk."
+        },
+        "pairWith": [
+            "Whole grain toast for complete breakfast",
+            "Leafy greens for iron absorption enhancement",
+            "Tomatoes for lycopene and vitamin C",
+            "Avocado for additional healthy fats"
+        ],
+        "bestTiming": [
+            "Breakfast for sustained morning energy",
+            "Post-workout for muscle recovery",
+            "Evening meal for overnight protein synthesis"
+        ],
+        "tags": [
+            "complete-protein",
+            "high-choline",
+            "brain-food",
+            "vitamin-D",
+            "nutrient-dense",
+            "breakfast-staple"
+        ]
+    },
+    "eggs": {
+        "id": "eggs",
+        "name": "Eggs (2 Large, Raw)",
+        "category": "protein",
+        "servingSize": 100,
+        "servingUnit": "g",
+        "calories": 143,
+        "macros": {
+            "protein": 12.6,
+            "carbs": 0.7,
+            "fat": 9.5,
+            "fiber": 0
+        },
+        "nutrients": {
+            "saturatedFat": 3.1,
+            "monounsaturatedFat": 3.7,
+            "polyunsaturatedFat": 2.0,
+            "transFat": 0,
+            "omega3": 0.08,
+            "omega6": 1.8,
+            "cholesterol": 373,
+            "sodium": 142,
+            "potassium": 138,
+            "calcium": 56,
+            "iron": 1.8,
+            "magnesium": 12,
+            "phosphorus": 198,
+            "zinc": 1.3,
+            "selenium": 30.8,
+            "vitaminA": 540,
+            "vitaminC": 0,
+            "vitaminD": 2.2,
+            "vitaminE": 1.1,
+            "vitaminK": 0.3,
+            "thiamin": 0.08,
+            "riboflavin": 0.46,
+            "niacin": 0.08,
+            "vitaminB6": 0.17,
+            "folate": 47,
+            "vitaminB12": 0.89,
+            "pantothenicAcid": 1.4,
+            "choline": 294,
+            "betaine": 0.6
+        },
+        "glycemicIndex": 0,
+        "glycemicLoad": 0,
+        "nutrientDensityScore": 91,
+        "satietyScore": 88,
+        "inflammatoryIndex": -0.4,
+        "novaClass": 1,
+        "focusGrades": {
+            "balanced": {
+                "grade": "A",
+                "score": 92,
+                "insight": "Complete nutrition from two eggs - protein, healthy fats, and essential micronutrients",
+                "pros": [
+                    "Complete protein (12.6g) with all essential amino acids",
+                    "Exceptional choline (294mg) - 53% of daily needs",
+                    "High vitamin A (540 IU) for immune function",
+                    "Excellent vitamin B12 (0.89mcg) for nerve health",
+                    "Rich in selenium and phosphorus"
+                ],
+                "cons": [
+                    "Very high cholesterol (373mg) - 124% of daily limit",
+                    "No fiber or significant carbohydrates",
+                    "Zero vitamin C"
+                ]
+            },
+            "heart_health": {
+                "grade": "B",
+                "score": 76,
+                "insight": "Nutrient-rich but high cholesterol requires moderation for at-risk individuals",
+                "pros": [
+                    "Favorable unsaturated to saturated fat ratio (2.9:1)",
+                    "Exceptional choline (294mg) lowers homocysteine",
+                    "Selenium (30.8mcg) protects heart tissue",
+                    "Vitamin D (2.2mcg) supports cardiovascular function"
+                ],
+                "cons": [
+                    "Very high cholesterol (373mg) exceeds daily recommendations",
+                    "Omega-6 to omega-3 ratio of 22:1",
+                    "Contains 142mg sodium",
+                    "May raise LDL in hyper-responders"
+                ]
+            },
+            "muscle_building": {
+                "grade": "A",
+                "score": 94,
+                "insight": "Optimal protein source with complete amino acids for muscle growth",
+                "pros": [
+                    "High-quality protein (12.6g) with perfect amino acid profile",
+                    "Rich in leucine to maximize muscle protein synthesis",
+                    "Vitamin D (2.2mcg) improves muscle function",
+                    "Phosphorus (198mg) fuels ATP production",
+                    "Bioavailable protein for rapid absorption"
+                ],
+                "cons": [
+                    "Fat content reduces protein-to-calorie ratio vs. egg whites",
+                    "No carbohydrates for glycogen replenishment"
+                ]
+            },
+            "energy": {
+                "grade": "B+",
+                "score": 85,
+                "insight": "Sustained energy from balanced fats and protein, though low in carbs",
+                "pros": [
+                    "Complete B vitamin complex supports energy metabolism",
+                    "Riboflavin (0.46mg) critical for ATP production",
+                    "Choline (294mg) enhances mitochondrial function",
+                    "Healthy fats provide long-lasting fuel",
+                    "Phosphorus enables cellular energy transfer"
+                ],
+                "cons": [
+                    "Minimal carbohydrates for immediate energy",
+                    "Low iron (1.8mg) compared to red meat",
+                    "No vitamin C to enhance iron absorption"
+                ]
+            },
+            "weight_management": {
+                "grade": "A",
+                "score": 90,
+                "insight": "High satiety with complete nutrition in only 143 calories per serving",
+                "pros": [
+                    "Excellent satiety score (88/100) reduces hunger",
+                    "Complete protein (12.6g) preserves lean mass",
+                    "Healthy fats slow digestion and extend fullness",
+                    "Nutrient density prevents deficiency-driven cravings",
+                    "Versatile for low-calorie meal prep"
+                ],
+                "cons": [
+                    "Higher calories than egg whites alone",
+                    "No fiber for additional satiety benefits",
+                    "Fat content may not suit very low-fat diets"
+                ]
+            },
+            "brain_focus": {
+                "grade": "A+",
+                "score": 98,
+                "insight": "Brain superfood with exceptional choline for memory and cognition",
+                "pros": [
+                    "Outstanding choline (294mg) - over half daily needs",
+                    "Choline converts to acetylcholine for neurotransmission",
+                    "Vitamin B12 (0.89mcg) protects brain neurons",
+                    "Lutein and zeaxanthin cross blood-brain barrier",
+                    "Riboflavin supports neurotransmitter synthesis"
+                ],
+                "cons": [
+                    "Lower in DHA/EPA than fatty fish",
+                    "Minimal polyphenol antioxidants for neuroprotection"
+                ]
+            },
+            "gut_health": {
+                "grade": "B",
+                "score": 77,
+                "insight": "Highly digestible protein but lacks gut-supporting fiber and probiotics",
+                "pros": [
+                    "Easily digested with high bioavailability",
+                    "Choline supports intestinal barrier function",
+                    "Zinc (1.3mg) aids gut lining repair",
+                    "Low FODMAP and gentle on sensitive stomachs"
+                ],
+                "cons": [
+                    "Zero dietary fiber for microbiome health",
+                    "No prebiotics or probiotics",
+                    "High fat may cause discomfort in some",
+                    "Lacks polyphenols to feed beneficial bacteria"
+                ]
+            },
+            "blood_sugar": {
+                "grade": "A",
+                "score": 95,
+                "insight": "Excellent for glucose control with minimal carbs and balanced protein",
+                "pros": [
+                    "Zero glycemic index prevents blood sugar spikes",
+                    "Protein (12.6g) stabilizes glucose when paired with carbs",
+                    "Healthy fats further slow glucose absorption",
+                    "Choline improves insulin sensitivity"
+                ],
+                "cons": [
+                    "No fiber to moderate glucose response",
+                    "Requires pairing with vegetables for balanced nutrition",
+                    "Very high protein may trigger gluconeogenesis"
+                ]
+            },
+            "bone_joint": {
+                "grade": "B+",
+                "score": 86,
+                "insight": "Rich in vitamin D and phosphorus for bone health",
+                "pros": [
+                    "Vitamin D (2.2mcg) - 11% of daily needs for calcium absorption",
+                    "High phosphorus (198mg) for bone mineralization",
+                    "Complete protein (12.6g) builds bone matrix",
+                    "Selenium (30.8mcg) reduces joint inflammation"
+                ],
+                "cons": [
+                    "Low calcium (56mg) - only 5.6% of daily needs",
+                    "Minimal vitamin K (0.3mcg) for bone metabolism",
+                    "Limited omega-3s for joint health"
+                ]
+            },
+            "anti_inflammatory": {
+                "grade": "B+",
+                "score": 82,
+                "insight": "Contains anti-inflammatory nutrients but high omega-6 content",
+                "pros": [
+                    "Negative inflammatory index (-0.4)",
+                    "Selenium (30.8mcg) combats oxidative stress",
+                    "Vitamin A (540 IU) modulates immune inflammation",
+                    "Choline reduces inflammatory cytokines"
+                ],
+                "cons": [
+                    "High omega-6 to omega-3 ratio (22:1) is pro-inflammatory",
+                    "No EPA/DHA for inflammation resolution",
+                    "Lacks plant polyphenols and antioxidants",
+                    "High cholesterol may increase inflammation in some"
+                ]
+            }
+        },
+        "bioavailability": {
+            "protein": "high",
+            "iron": "moderate",
+            "notes": "Highest biological value protein source (PDCAAS 1.0). Choline, lutein, and zeaxanthin exceptionally bioavailable. Cooking improves protein digestibility and eliminates foodborne pathogens."
+        },
+        "pairWith": [
+            "Whole grain toast for balanced macros",
+            "Spinach or kale for iron and antioxidants",
+            "Bell peppers for vitamin C",
+            "Sweet potato for complex carbs"
+        ],
+        "bestTiming": [
+            "Breakfast for sustained morning energy and focus",
+            "Post-workout within 2 hours for muscle recovery",
+            "Evening meal for overnight protein synthesis"
+        ],
+        "tags": [
+            "complete-protein",
+            "high-choline",
+            "brain-food",
+            "vitamin-D",
+            "nutrient-dense",
+            "breakfast-staple",
+            "muscle-building"
+        ]
+    },
+    "scrambled_egg": {
+        "id": "scrambled_egg",
+        "name": "Scrambled Egg (1 Large, Cooked)",
+        "category": "protein",
+        "servingSize": 61,
+        "servingUnit": "g",
+        "calories": 91,
+        "macros": {
+            "protein": 6.1,
+            "carbs": 1.2,
+            "fat": 6.7,
+            "fiber": 0
+        },
+        "nutrients": {
+            "saturatedFat": 2.0,
+            "monounsaturatedFat": 2.6,
+            "polyunsaturatedFat": 1.3,
+            "transFat": 0,
+            "omega3": 0.06,
+            "omega6": 1.2,
+            "cholesterol": 169,
+            "sodium": 171,
+            "potassium": 84,
+            "calcium": 43,
+            "iron": 0.7,
+            "magnesium": 7,
+            "phosphorus": 104,
+            "zinc": 0.6,
+            "selenium": 15.8,
+            "vitaminA": 343,
+            "vitaminC": 0,
+            "vitaminD": 1.2,
+            "vitaminE": 0.7,
+            "vitaminK": 0.3,
+            "thiamin": 0.03,
+            "riboflavin": 0.21,
+            "niacin": 0.05,
+            "vitaminB6": 0.08,
+            "folate": 22,
+            "vitaminB12": 0.47,
+            "pantothenicAcid": 0.8,
+            "choline": 169,
+            "betaine": 0.4
+        },
+        "glycemicIndex": 0,
+        "glycemicLoad": 0,
+        "nutrientDensityScore": 88,
+        "satietyScore": 85,
+        "inflammatoryIndex": -0.3,
+        "novaClass": 1,
+        "focusGrades": {
+            "balanced": {
+                "grade": "A-",
+                "score": 88,
+                "insight": "Quick, nutritious breakfast with complete protein and healthy fats",
+                "pros": [
+                    "Complete protein (6.1g) with all essential amino acids",
+                    "Rich in choline (169mg) for cellular health",
+                    "High vitamin A (343 IU) for immune function",
+                    "Quick to prepare and highly versatile",
+                    "Good vitamin B12 (0.47mcg) for energy"
+                ],
+                "cons": [
+                    "High cholesterol (169mg) - 56% of daily limit",
+                    "Added sodium (171mg) from cooking",
+                    "No fiber or vitamin C",
+                    "Slightly higher calories than raw due to added fat"
+                ]
+            },
+            "heart_health": {
+                "grade": "B",
+                "score": 75,
+                "insight": "Nutrient-rich but higher in sodium and cholesterol than raw eggs",
+                "pros": [
+                    "Good unsaturated to saturated fat ratio (2.8:1)",
+                    "Choline (169mg) reduces cardiovascular disease risk",
+                    "Selenium (15.8mcg) protects heart tissue",
+                    "Vitamin D (1.2mcg) supports heart health"
+                ],
+                "cons": [
+                    "High cholesterol (169mg) - monitor if at risk",
+                    "Higher sodium (171mg) from cooking with salt/butter",
+                    "Omega-6 to omega-3 ratio of 20:1",
+                    "May contain trans fats if cooked in margarine"
+                ]
+            },
+            "muscle_building": {
+                "grade": "A-",
+                "score": 89,
+                "insight": "Complete protein that's easy to digest for muscle recovery",
+                "pros": [
+                    "High-quality protein (6.1g) with complete amino acids",
+                    "Cooking improves protein digestibility",
+                    "Leucine-rich for muscle protein synthesis",
+                    "Vitamin D (1.2mcg) enhances muscle function",
+                    "Phosphorus (104mg) supports ATP production"
+                ],
+                "cons": [
+                    "Lower protein density than egg whites",
+                    "Fat content from cooking reduces protein-to-calorie ratio",
+                    "No carbohydrates for post-workout glycogen"
+                ]
+            },
+            "energy": {
+                "grade": "B+",
+                "score": 83,
+                "insight": "Steady energy from protein and fats without blood sugar crashes",
+                "pros": [
+                    "B vitamins support energy metabolism",
+                    "Riboflavin (0.21mg) critical for ATP production",
+                    "Choline (169mg) supports mitochondrial function",
+                    "Balanced macros prevent energy spikes and crashes"
+                ],
+                "cons": [
+                    "Very low carbohydrates for immediate energy",
+                    "Lower iron (0.7mg) than meat sources",
+                    "No vitamin C for iron absorption"
+                ]
+            },
+            "weight_management": {
+                "grade": "A-",
+                "score": 87,
+                "insight": "Satisfying breakfast option with good protein-to-calorie ratio",
+                "pros": [
+                    "Good satiety score (85/100) keeps hunger at bay",
+                    "Complete protein (6.1g) preserves lean mass",
+                    "Only 91 calories per serving",
+                    "Protein and fat slow gastric emptying",
+                    "Nutrient-dense to prevent cravings"
+                ],
+                "cons": [
+                    "Higher calories than plain boiled eggs",
+                    "Added fats from cooking increase calorie density",
+                    "No fiber for additional satiety"
+                ]
+            },
+            "brain_focus": {
+                "grade": "A+",
+                "score": 96,
+                "insight": "Excellent choline source for neurotransmitter synthesis and memory",
+                "pros": [
+                    "High choline (169mg) - 31% of daily needs",
+                    "Choline converts to acetylcholine for focus",
+                    "Vitamin B12 (0.47mcg) protects nerve function",
+                    "Lutein supports cognitive performance",
+                    "Riboflavin aids neurotransmitter production"
+                ],
+                "cons": [
+                    "Lower in DHA than fatty fish",
+                    "Minimal antioxidants for brain protection"
+                ]
+            },
+            "gut_health": {
+                "grade": "B",
+                "score": 74,
+                "insight": "Easily digestible but lacks fiber and may contain added fats",
+                "pros": [
+                    "Cooking improves digestibility",
+                    "Choline supports gut barrier integrity",
+                    "Zinc (0.6mg) aids intestinal repair",
+                    "Low FODMAP and gentle on digestion"
+                ],
+                "cons": [
+                    "Zero dietary fiber",
+                    "No prebiotics or probiotics",
+                    "Added fats may irritate sensitive stomachs",
+                    "Lacks gut-healthy polyphenols"
+                ]
+            },
+            "blood_sugar": {
+                "grade": "A-",
+                "score": 91,
+                "insight": "Minimal impact on blood sugar with balanced protein and fats",
+                "pros": [
+                    "Very low glycemic index",
+                    "Protein (6.1g) stabilizes blood sugar",
+                    "Fats slow glucose absorption",
+                    "Choline improves insulin sensitivity"
+                ],
+                "cons": [
+                    "Minimal carbs (1.2g) - pair with vegetables",
+                    "No fiber to moderate glucose response",
+                    "Added butter may affect metabolic response"
+                ]
+            },
+            "bone_joint": {
+                "grade": "B+",
+                "score": 84,
+                "insight": "Good source of vitamin D and phosphorus for bone health",
+                "pros": [
+                    "Vitamin D (1.2mcg) enhances calcium absorption",
+                    "Phosphorus (104mg) for bone mineralization",
+                    "Complete protein (6.1g) builds bone matrix",
+                    "Selenium (15.8mcg) reduces joint inflammation"
+                ],
+                "cons": [
+                    "Low calcium (43mg) - only 4.3% of daily needs",
+                    "Minimal vitamin K (0.3mcg)",
+                    "Limited omega-3s for joint health"
+                ]
+            },
+            "anti_inflammatory": {
+                "grade": "B",
+                "score": 79,
+                "insight": "Some anti-inflammatory nutrients but cooking may reduce benefits",
+                "pros": [
+                    "Negative inflammatory index (-0.3)",
+                    "Selenium (15.8mcg) fights oxidative stress",
+                    "Vitamin A (343 IU) modulates immune response",
+                    "Choline reduces inflammatory markers"
+                ],
+                "cons": [
+                    "High omega-6 to omega-3 ratio (20:1)",
+                    "No EPA/DHA for inflammation resolution",
+                    "Cooking at high heat may create inflammatory compounds",
+                    "Lacks polyphenols and antioxidants"
+                ]
+            }
+        },
+        "bioavailability": {
+            "protein": "high",
+            "iron": "moderate",
+            "notes": "Cooking improves protein digestibility to ~91%. Heat-stable nutrients like protein and choline remain highly bioavailable. Gentle scrambling preserves nutrients better than high-heat frying."
+        },
+        "pairWith": [
+            "Whole wheat toast for fiber and complex carbs",
+            "Spinach for iron and antioxidants",
+            "Tomatoes for vitamin C and lycopene",
+            "Mushrooms for additional vitamin D"
+        ],
+        "bestTiming": [
+            "Breakfast for sustained morning energy",
+            "Post-workout for muscle recovery",
+            "Brunch for weekend indulgence"
+        ],
+        "tags": [
+            "complete-protein",
+            "high-choline",
+            "brain-food",
+            "quick-breakfast",
+            "nutrient-dense",
+            "cooked-protein"
+        ]
+    },
+    "scrambled_eggs": {
+        "id": "scrambled_eggs",
+        "name": "Scrambled Eggs (2 Large, Cooked)",
+        "category": "protein",
+        "servingSize": 122,
+        "servingUnit": "g",
+        "calories": 182,
+        "macros": {
+            "protein": 12.2,
+            "carbs": 2.4,
+            "fat": 13.4,
+            "fiber": 0
+        },
+        "nutrients": {
+            "saturatedFat": 4.0,
+            "monounsaturatedFat": 5.2,
+            "polyunsaturatedFat": 2.6,
+            "transFat": 0,
+            "omega3": 0.12,
+            "omega6": 2.4,
+            "cholesterol": 338,
+            "sodium": 342,
+            "potassium": 168,
+            "calcium": 86,
+            "iron": 1.4,
+            "magnesium": 14,
+            "phosphorus": 208,
+            "zinc": 1.2,
+            "selenium": 31.6,
+            "vitaminA": 686,
+            "vitaminC": 0,
+            "vitaminD": 2.4,
+            "vitaminE": 1.4,
+            "vitaminK": 0.6,
+            "thiamin": 0.06,
+            "riboflavin": 0.42,
+            "niacin": 0.1,
+            "vitaminB6": 0.16,
+            "folate": 44,
+            "vitaminB12": 0.94,
+            "pantothenicAcid": 1.6,
+            "choline": 338,
+            "betaine": 0.8
+        },
+        "glycemicIndex": 0,
+        "glycemicLoad": 0,
+        "nutrientDensityScore": 88,
+        "satietyScore": 86,
+        "inflammatoryIndex": -0.3,
+        "novaClass": 1,
+        "focusGrades": {
+            "balanced": {
+                "grade": "A-",
+                "score": 87,
+                "insight": "Hearty breakfast with complete protein and essential nutrients",
+                "pros": [
+                    "Complete protein (12.2g) with all essential amino acids",
+                    "Exceptional choline (338mg) - 61% of daily needs",
+                    "High vitamin A (686 IU) for immunity",
+                    "Excellent vitamin B12 (0.94mcg) for energy",
+                    "Selenium (31.6mcg) for antioxidant protection"
+                ],
+                "cons": [
+                    "Very high cholesterol (338mg) - 113% of daily limit",
+                    "High sodium (342mg) from cooking",
+                    "No fiber or vitamin C",
+                    "Higher calories from added cooking fats"
+                ]
+            },
+            "heart_health": {
+                "grade": "C+",
+                "score": 72,
+                "insight": "Nutrient-rich but high cholesterol and sodium require moderation",
+                "pros": [
+                    "Good unsaturated to saturated fat ratio (2.9:1)",
+                    "Exceptional choline (338mg) lowers homocysteine",
+                    "Selenium (31.6mcg) protects cardiovascular tissue",
+                    "Vitamin D (2.4mcg) supports heart function"
+                ],
+                "cons": [
+                    "Very high cholesterol (338mg) exceeds daily recommendations",
+                    "High sodium (342mg) may raise blood pressure",
+                    "Omega-6 to omega-3 ratio of 20:1",
+                    "May worsen lipid profile in hyper-responders"
+                ]
+            },
+            "muscle_building": {
+                "grade": "A-",
+                "score": 90,
+                "insight": "Complete protein with excellent amino acid profile for recovery",
+                "pros": [
+                    "High-quality protein (12.2g) with complete amino acids",
+                    "Cooking improves protein digestibility to 91%",
+                    "Leucine-rich for muscle protein synthesis",
+                    "Vitamin D (2.4mcg) enhances muscle function",
+                    "Phosphorus (208mg) fuels ATP production"
+                ],
+                "cons": [
+                    "Fat content reduces protein density vs. egg whites",
+                    "No carbohydrates for glycogen replenishment",
+                    "Added fats increase calories without protein benefit"
+                ]
+            },
+            "energy": {
+                "grade": "B+",
+                "score": 84,
+                "insight": "Sustained energy from balanced protein and fats",
+                "pros": [
+                    "Complete B vitamin complex for energy metabolism",
+                    "Riboflavin (0.42mg) critical for ATP synthesis",
+                    "Choline (338mg) supports mitochondrial function",
+                    "Healthy fats provide long-lasting fuel"
+                ],
+                "cons": [
+                    "Very low carbohydrates (2.4g) for immediate energy",
+                    "Low iron (1.4mg) compared to meat",
+                    "No vitamin C for iron absorption"
+                ]
+            },
+            "weight_management": {
+                "grade": "B+",
+                "score": 85,
+                "insight": "High satiety but higher calories from cooking fats",
+                "pros": [
+                    "Good satiety score (86/100) reduces hunger",
+                    "Complete protein (12.2g) preserves lean mass",
+                    "Protein and fat slow digestion",
+                    "Nutrient-dense to prevent deficiency cravings"
+                ],
+                "cons": [
+                    "Higher calories (182) than boiled eggs",
+                    "Added fats from butter/oil increase calorie density",
+                    "No fiber for additional satiety",
+                    "Easy to overconsume with toast and sides"
+                ]
+            },
+            "brain_focus": {
+                "grade": "A+",
+                "score": 97,
+                "insight": "Outstanding choline content for memory, focus, and cognitive health",
+                "pros": [
+                    "Exceptional choline (338mg) - over 60% of daily needs",
+                    "Choline converts to acetylcholine for neurotransmission",
+                    "Vitamin B12 (0.94mcg) protects brain neurons",
+                    "Lutein and zeaxanthin support cognitive function",
+                    "Riboflavin aids neurotransmitter synthesis"
+                ],
+                "cons": [
+                    "Lower in DHA/EPA than fatty fish",
+                    "Minimal polyphenol antioxidants for neuroprotection"
+                ]
+            },
+            "gut_health": {
+                "grade": "B-",
+                "score": 73,
+                "insight": "Easily digestible but lacks fiber and may contain irritating fats",
+                "pros": [
+                    "Cooking improves protein digestibility",
+                    "Choline supports intestinal barrier integrity",
+                    "Zinc (1.2mg) aids gut lining repair",
+                    "Low FODMAP for sensitive digestion"
+                ],
+                "cons": [
+                    "Zero dietary fiber for microbiome",
+                    "No prebiotics or probiotics",
+                    "Added fats may trigger symptoms in some",
+                    "Lacks polyphenols to feed beneficial bacteria",
+                    "High sodium may affect gut flora"
+                ]
+            },
+            "blood_sugar": {
+                "grade": "A-",
+                "score": 90,
+                "insight": "Minimal blood sugar impact but pair with vegetables for balance",
+                "pros": [
+                    "Very low glycemic index",
+                    "Protein (12.2g) stabilizes glucose response",
+                    "Fats further slow carbohydrate absorption",
+                    "Choline improves insulin sensitivity"
+                ],
+                "cons": [
+                    "Minimal carbs (2.4g) - needs vegetable pairing",
+                    "No fiber to moderate glucose",
+                    "Added butter may affect metabolic response"
+                ]
+            },
+            "bone_joint": {
+                "grade": "B+",
+                "score": 85,
+                "insight": "Good vitamin D and phosphorus for bone mineralization",
+                "pros": [
+                    "Vitamin D (2.4mcg) - 12% of daily needs",
+                    "High phosphorus (208mg) for bone structure",
+                    "Complete protein (12.2g) builds bone matrix",
+                    "Selenium (31.6mcg) reduces joint inflammation"
+                ],
+                "cons": [
+                    "Low calcium (86mg) - only 8.6% of daily needs",
+                    "Minimal vitamin K (0.6mcg) for bone metabolism",
+                    "Limited omega-3s for joint health"
+                ]
+            },
+            "anti_inflammatory": {
+                "grade": "B",
+                "score": 78,
+                "insight": "Contains anti-inflammatory nutrients but high omega-6 and cooking may reduce benefits",
+                "pros": [
+                    "Negative inflammatory index (-0.3)",
+                    "Selenium (31.6mcg) combats oxidative stress",
+                    "Vitamin A (686 IU) modulates immune inflammation",
+                    "Choline reduces inflammatory cytokines"
+                ],
+                "cons": [
+                    "High omega-6 to omega-3 ratio (20:1)",
+                    "No EPA/DHA for inflammation resolution",
+                    "High-heat cooking may create inflammatory AGEs",
+                    "Lacks plant polyphenols and antioxidants"
+                ]
+            }
+        },
+        "bioavailability": {
+            "protein": "high",
+            "iron": "moderate",
+            "notes": "Scrambling improves protein digestibility to ~91% compared to raw. Choline and B vitamins remain highly bioavailable. Avoid high heat to prevent oxidation of cholesterol and fats."
+        },
+        "pairWith": [
+            "Whole grain toast for complete breakfast",
+            "Spinach or arugula for iron and antioxidants",
+            "Bell peppers for vitamin C",
+            "Avocado for additional healthy fats and fiber"
+        ],
+        "bestTiming": [
+            "Breakfast for sustained morning energy and focus",
+            "Post-workout for muscle recovery (within 2 hours)",
+            "Brunch for weekend meals"
+        ],
+        "tags": [
+            "complete-protein",
+            "high-choline",
+            "brain-food",
+            "quick-breakfast",
+            "nutrient-dense",
+            "cooked-protein",
+            "high-sodium"
+        ]
+    },
+    "boiled_egg": {
+        "id": "boiled_egg",
+        "name": "Boiled Egg (1 Large, Hard or Soft)",
+        "category": "protein",
+        "servingSize": 50,
+        "servingUnit": "g",
+        "calories": 78,
+        "macros": {
+            "protein": 6.3,
+            "carbs": 0.6,
+            "fat": 5.3,
+            "fiber": 0
+        },
+        "nutrients": {
+            "saturatedFat": 1.6,
+            "monounsaturatedFat": 2.0,
+            "polyunsaturatedFat": 0.7,
+            "transFat": 0,
+            "omega3": 0.04,
+            "omega6": 0.6,
+            "cholesterol": 186,
+            "sodium": 62,
+            "potassium": 63,
+            "calcium": 25,
+            "iron": 0.6,
+            "magnesium": 5,
+            "phosphorus": 86,
+            "zinc": 0.5,
+            "selenium": 15.4,
+            "vitaminA": 260,
+            "vitaminC": 0,
+            "vitaminD": 0.9,
+            "vitaminE": 0.5,
+            "vitaminK": 0.1,
+            "thiamin": 0.03,
+            "riboflavin": 0.26,
+            "niacin": 0.03,
+            "vitaminB6": 0.06,
+            "folate": 22,
+            "vitaminB12": 0.56,
+            "pantothenicAcid": 0.7,
+            "choline": 147,
+            "betaine": 0.3
+        },
+        "glycemicIndex": 0,
+        "glycemicLoad": 0,
+        "nutrientDensityScore": 90,
+        "satietyScore": 89,
+        "inflammatoryIndex": -0.5,
+        "novaClass": 1,
+        "focusGrades": {
+            "balanced": {
+                "grade": "A",
+                "score": 93,
+                "insight": "Clean, simple protein source with maximum nutrient retention from gentle cooking",
+                "pros": [
+                    "Complete protein (6.3g) with all essential amino acids",
+                    "Rich in choline (147mg) for cell membrane health",
+                    "High vitamin A (260 IU) for immune function",
+                    "Minimal processing preserves nutrients",
+                    "Low sodium (62mg) vs. scrambled eggs"
+                ],
+                "cons": [
+                    "High cholesterol (186mg) - 62% of daily limit",
+                    "No fiber or significant carbohydrates",
+                    "Zero vitamin C"
+                ]
+            },
+            "heart_health": {
+                "grade": "B+",
+                "score": 80,
+                "insight": "Gentle cooking preserves heart-healthy nutrients without added fats",
+                "pros": [
+                    "Good unsaturated to saturated fat ratio (2.5:1)",
+                    "Choline (147mg) reduces homocysteine levels",
+                    "Selenium (15.4mcg) protects cardiovascular tissue",
+                    "Low sodium (62mg) supports blood pressure control",
+                    "No added fats from cooking"
+                ],
+                "cons": [
+                    "High cholesterol (186mg) may impact some individuals",
+                    "Omega-6 to omega-3 ratio of 15:1",
+                    "No EPA/DHA for heart inflammation"
+                ]
+            },
+            "muscle_building": {
+                "grade": "A",
+                "score": 94,
+                "insight": "Optimal protein source with complete amino acids and excellent digestibility",
+                "pros": [
+                    "High-quality protein (6.3g) with perfect amino acid score",
+                    "Boiling preserves leucine for muscle protein synthesis",
+                    "Excellent protein digestibility (91-95%)",
+                    "Vitamin D (0.9mcg) improves muscle function",
+                    "Phosphorus (86mg) supports ATP production"
+                ],
+                "cons": [
+                    "Fat content reduces protein-to-calorie ratio vs. egg whites",
+                    "No carbohydrates for glycogen replenishment"
+                ]
+            },
+            "energy": {
+                "grade": "B+",
+                "score": 85,
+                "insight": "Sustained energy from balanced protein and healthy fats",
+                "pros": [
+                    "B vitamins support energy metabolism",
+                    "Riboflavin (0.26mg) critical for ATP production",
+                    "Choline (147mg) enhances mitochondrial function",
+                    "Stable energy without blood sugar crashes"
+                ],
+                "cons": [
+                    "Very low carbohydrates (0.6g) for immediate energy",
+                    "Low iron (0.6mg) compared to red meat",
+                    "No vitamin C for iron absorption"
+                ]
+            },
+            "weight_management": {
+                "grade": "A+",
+                "score": 95,
+                "insight": "Perfect weight loss food with high satiety and minimal calories",
+                "pros": [
+                    "Excellent satiety score (89/100) keeps you full",
+                    "Only 78 calories with complete protein",
+                    "No added fats or oils from cooking",
+                    "Portable and convenient for meal prep",
+                    "Nutrient-dense to prevent cravings",
+                    "Easy portion control"
+                ],
+                "cons": [
+                    "No fiber for additional satiety benefits",
+                    "May become boring without variety"
+                ]
+            },
+            "brain_focus": {
+                "grade": "A+",
+                "score": 98,
+                "insight": "Brain superfood with choline for memory and cognitive performance",
+                "pros": [
+                    "Exceptional choline (147mg) - 27% of daily needs",
+                    "Choline converts to acetylcholine for focus and memory",
+                    "Vitamin B12 (0.56mcg) protects nerve function",
+                    "Lutein and zeaxanthin cross blood-brain barrier",
+                    "Gentle cooking preserves heat-sensitive nutrients"
+                ],
+                "cons": [
+                    "Lower in DHA/EPA than fatty fish",
+                    "Minimal polyphenol antioxidants"
+                ]
+            },
+            "gut_health": {
+                "grade": "B+",
+                "score": 78,
+                "insight": "Highly digestible with gentle cooking, though lacks fiber",
+                "pros": [
+                    "Boiling is gentlest cooking method for digestion",
+                    "Choline supports intestinal barrier integrity",
+                    "Zinc (0.5mg) aids gut lining repair",
+                    "Low FODMAP and easy on sensitive stomachs",
+                    "No added fats to irritate digestion"
+                ],
+                "cons": [
+                    "Zero dietary fiber for microbiome",
+                    "No prebiotics or probiotics",
+                    "Lacks polyphenols to feed beneficial bacteria"
+                ]
+            },
+            "blood_sugar": {
+                "grade": "A+",
+                "score": 97,
+                "insight": "Perfect for blood sugar control with minimal carbs and no added fats",
+                "pros": [
+                    "Zero glycemic index - no blood sugar spike",
+                    "Protein (6.3g) stabilizes glucose when paired with carbs",
+                    "Healthy fats slow glucose absorption",
+                    "Choline improves insulin sensitivity",
+                    "No added sugars or starches from cooking"
+                ],
+                "cons": [
+                    "Minimal carbs (0.6g) - pair with vegetables",
+                    "No fiber to moderate glucose response"
+                ]
+            },
+            "bone_joint": {
+                "grade": "B+",
+                "score": 86,
+                "insight": "Good vitamin D and phosphorus for bone health",
+                "pros": [
+                    "Vitamin D (0.9mcg) enhances calcium absorption",
+                    "Phosphorus (86mg) critical for bone mineralization",
+                    "Complete protein (6.3g) builds bone matrix",
+                    "Selenium (15.4mcg) reduces joint inflammation"
+                ],
+                "cons": [
+                    "Low calcium (25mg) - only 2.5% of daily needs",
+                    "Minimal vitamin K (0.1mcg) for bone metabolism",
+                    "Limited omega-3s for joint health"
+                ]
+            },
+            "anti_inflammatory": {
+                "grade": "B+",
+                "score": 83,
+                "insight": "Better anti-inflammatory profile than fried eggs due to gentle cooking",
+                "pros": [
+                    "Negative inflammatory index (-0.5)",
+                    "Selenium (15.4mcg) fights oxidative stress",
+                    "Vitamin A (260 IU) modulates immune response",
+                    "Choline reduces inflammatory cytokines",
+                    "Gentle cooking prevents inflammatory AGEs"
+                ],
+                "cons": [
+                    "Omega-6 to omega-3 ratio of 15:1",
+                    "No EPA/DHA for inflammation resolution",
+                    "Lacks polyphenols and antioxidants"
+                ]
+            }
+        },
+        "bioavailability": {
+            "protein": "high",
+            "iron": "moderate",
+            "notes": "Boiling improves protein digestibility to 91-95% while preserving heat-sensitive nutrients. Choline, lutein, and B vitamins remain highly bioavailable. Gentle cooking method prevents oxidation of cholesterol."
+        },
+        "pairWith": [
+            "Whole grain toast for balanced breakfast",
+            "Leafy greens for iron and antioxidants",
+            "Tomatoes for vitamin C and lycopene",
+            "Hummus for fiber and healthy fats"
+        ],
+        "bestTiming": [
+            "Breakfast for sustained morning energy",
+            "Snack for portable protein between meals",
+            "Post-workout for muscle recovery",
+            "Meal prep for the week"
+        ],
+        "tags": [
+            "complete-protein",
+            "high-choline",
+            "brain-food",
+            "low-sodium",
+            "nutrient-dense",
+            "meal-prep-friendly",
+            "portable-protein"
+        ]
+    },
+    "hard_boiled_egg": {
+        "id": "hard_boiled_egg",
+        "name": "Hard Boiled Egg (1 Large)",
+        "category": "protein",
+        "servingSize": 50,
+        "servingUnit": "g",
+        "calories": 78,
+        "macros": {
+            "protein": 6.3,
+            "carbs": 0.6,
+            "fat": 5.3,
+            "fiber": 0
+        },
+        "nutrients": {
+            "saturatedFat": 1.6,
+            "monounsaturatedFat": 2.0,
+            "polyunsaturatedFat": 0.7,
+            "transFat": 0,
+            "omega3": 0.04,
+            "omega6": 0.6,
+            "cholesterol": 186,
+            "sodium": 62,
+            "potassium": 63,
+            "calcium": 25,
+            "iron": 0.6,
+            "magnesium": 5,
+            "phosphorus": 86,
+            "zinc": 0.5,
+            "selenium": 15.4,
+            "vitaminA": 260,
+            "vitaminC": 0,
+            "vitaminD": 0.9,
+            "vitaminE": 0.5,
+            "vitaminK": 0.1,
+            "thiamin": 0.03,
+            "riboflavin": 0.26,
+            "niacin": 0.03,
+            "vitaminB6": 0.06,
+            "folate": 22,
+            "vitaminB12": 0.56,
+            "pantothenicAcid": 0.7,
+            "choline": 147,
+            "betaine": 0.3
+        },
+        "glycemicIndex": 0,
+        "glycemicLoad": 0,
+        "nutrientDensityScore": 90,
+        "satietyScore": 89,
+        "inflammatoryIndex": -0.5,
+        "novaClass": 1,
+        "focusGrades": {
+            "balanced": {
+                "grade": "A",
+                "score": 93,
+                "insight": "Ultimate convenience food with complete nutrition and maximum portability",
+                "pros": [
+                    "Complete protein (6.3g) with all essential amino acids",
+                    "Rich in choline (147mg) for cellular health",
+                    "High vitamin A (260 IU) for immunity",
+                    "Perfectly portable for on-the-go nutrition",
+                    "Low sodium (62mg) vs. scrambled eggs",
+                    "Long shelf life when refrigerated"
+                ],
+                "cons": [
+                    "High cholesterol (186mg) - 62% of daily limit",
+                    "No fiber or significant carbohydrates",
+                    "Zero vitamin C"
+                ]
+            },
+            "heart_health": {
+                "grade": "B+",
+                "score": 80,
+                "insight": "Clean protein source without added fats or high-heat oxidation",
+                "pros": [
+                    "Good unsaturated to saturated fat ratio (2.5:1)",
+                    "Choline (147mg) reduces cardiovascular disease risk",
+                    "Selenium (15.4mcg) protects heart tissue",
+                    "Low sodium (62mg) supports healthy blood pressure",
+                    "No added fats or oils from cooking"
+                ],
+                "cons": [
+                    "High cholesterol (186mg) - monitor if at risk",
+                    "Omega-6 to omega-3 ratio of 15:1",
+                    "No EPA/DHA for heart inflammation"
+                ]
+            },
+            "muscle_building": {
+                "grade": "A",
+                "score": 94,
+                "insight": "Complete protein with excellent digestibility for muscle recovery",
+                "pros": [
+                    "High-quality protein (6.3g) with perfect amino acid profile",
+                    "Hard boiling preserves leucine content",
+                    "Excellent protein digestibility (91-95%)",
+                    "Vitamin D (0.9mcg) enhances muscle function",
+                    "Phosphorus (86mg) fuels ATP production",
+                    "Convenient for post-workout snacks"
+                ],
+                "cons": [
+                    "Fat content reduces protein-to-calorie ratio vs. egg whites",
+                    "No carbohydrates for glycogen replenishment"
+                ]
+            },
+            "energy": {
+                "grade": "B+",
+                "score": 85,
+                "insight": "Sustained energy from balanced macros without crashes",
+                "pros": [
+                    "Complete B vitamin complex for energy metabolism",
+                    "Riboflavin (0.26mg) critical for ATP synthesis",
+                    "Choline (147mg) supports mitochondrial function",
+                    "Portable energy source for busy lifestyles"
+                ],
+                "cons": [
+                    "Very low carbohydrates (0.6g) for immediate energy",
+                    "Low iron (0.6mg) compared to red meat",
+                    "No vitamin C for iron absorption"
+                ]
+            },
+            "weight_management": {
+                "grade": "A+",
+                "score": 96,
+                "insight": "Gold standard weight loss food - portable, satiating, and perfectly portioned",
+                "pros": [
+                    "Excellent satiety score (89/100) controls hunger",
+                    "Only 78 calories with complete protein",
+                    "No added fats or cooking oils",
+                    "Perfect for meal prep and portion control",
+                    "Nutrient-dense prevents deficiency cravings",
+                    "Convenient for on-the-go snacks",
+                    "Natural portion control (one egg)"
+                ],
+                "cons": [
+                    "No fiber for additional satiety",
+                    "May lack variety if eaten daily"
+                ]
+            },
+            "brain_focus": {
+                "grade": "A+",
+                "score": 98,
+                "insight": "Brain superfood with exceptional choline for memory and cognition",
+                "pros": [
+                    "Exceptional choline (147mg) - 27% of daily needs",
+                    "Choline converts to acetylcholine for neurotransmission",
+                    "Vitamin B12 (0.56mcg) protects nerve function",
+                    "Lutein and zeaxanthin support cognitive performance",
+                    "Gentle cooking preserves brain-healthy nutrients"
+                ],
+                "cons": [
+                    "Lower in DHA/EPA than fatty fish",
+                    "Minimal polyphenol antioxidants for neuroprotection"
+                ]
+            },
+            "gut_health": {
+                "grade": "B+",
+                "score": 78,
+                "insight": "Highly digestible with no irritating added fats",
+                "pros": [
+                    "Gentle boiling method easy on digestion",
+                    "Choline supports intestinal barrier integrity",
+                    "Zinc (0.5mg) aids gut lining repair",
+                    "Low FODMAP and gentle on sensitive stomachs",
+                    "No added fats to trigger symptoms"
+                ],
+                "cons": [
+                    "Zero dietary fiber for microbiome health",
+                    "No prebiotics or probiotics",
+                    "Lacks polyphenols to feed beneficial bacteria"
+                ]
+            },
+            "blood_sugar": {
+                "grade": "A+",
+                "score": 97,
+                "insight": "Perfect for diabetes management with zero glycemic impact",
+                "pros": [
+                    "Zero glycemic index - no blood sugar spike",
+                    "Protein (6.3g) stabilizes glucose in mixed meals",
+                    "Healthy fats slow glucose absorption",
+                    "Choline improves insulin sensitivity",
+                    "No added sugars or starches"
+                ],
+                "cons": [
+                    "Minimal carbs (0.6g) - pair with vegetables",
+                    "No fiber to moderate glucose response"
+                ]
+            },
+            "bone_joint": {
+                "grade": "B+",
+                "score": 86,
+                "insight": "Good source of vitamin D and phosphorus for bone health",
+                "pros": [
+                    "Vitamin D (0.9mcg) enhances calcium absorption",
+                    "Phosphorus (86mg) critical for bone mineralization",
+                    "Complete protein (6.3g) builds bone matrix",
+                    "Selenium (15.4mcg) reduces joint inflammation"
+                ],
+                "cons": [
+                    "Low calcium (25mg) - only 2.5% of daily needs",
+                    "Minimal vitamin K (0.1mcg) for bone metabolism",
+                    "Limited omega-3s for joint health"
+                ]
+            },
+            "anti_inflammatory": {
+                "grade": "B+",
+                "score": 83,
+                "insight": "Gentle cooking preserves anti-inflammatory nutrients without creating AGEs",
+                "pros": [
+                    "Negative inflammatory index (-0.5)",
+                    "Selenium (15.4mcg) fights oxidative stress",
+                    "Vitamin A (260 IU) modulates immune inflammation",
+                    "Choline reduces inflammatory cytokines",
+                    "Boiling prevents inflammatory compounds from high heat"
+                ],
+                "cons": [
+                    "Omega-6 to omega-3 ratio of 15:1",
+                    "No EPA/DHA for inflammation resolution",
+                    "Lacks plant polyphenols and antioxidants"
+                ]
+            }
+        },
+        "bioavailability": {
+            "protein": "high",
+            "iron": "moderate",
+            "notes": "Hard boiling achieves 91-95% protein digestibility while preserving nutrients. Choline, lutein, and B vitamins remain highly bioavailable. Gentle cooking prevents cholesterol oxidation better than frying."
+        },
+        "pairWith": [
+            "Whole grain crackers for balanced snack",
+            "Cherry tomatoes for vitamin C and lycopene",
+            "Cucumber slices for hydration and fiber",
+            "Hummus for fiber and healthy fats"
+        ],
+        "bestTiming": [
+            "Breakfast for sustained morning energy",
+            "Mid-morning or afternoon snack for portable protein",
+            "Post-workout for muscle recovery",
+            "Meal prep for the entire week"
+        ],
+        "tags": [
+            "complete-protein",
+            "high-choline",
+            "brain-food",
+            "low-sodium",
+            "nutrient-dense",
+            "meal-prep-friendly",
+            "portable-protein",
+            "convenience-food"
+        ]
+    },
+    "fried_egg": {
+        "id": "fried_egg",
+        "name": "Fried Egg (1 Large)",
+        "category": "protein",
+        "servingSize": 46,
+        "servingUnit": "g",
+        "calories": 90,
+        "macros": {
+            "protein": 6.3,
+            "carbs": 0.4,
+            "fat": 7.0,
+            "fiber": 0
+        },
+        "nutrients": {
+            "saturatedFat": 2.0,
+            "monounsaturatedFat": 2.7,
+            "polyunsaturatedFat": 1.2,
+            "transFat": 0.02,
+            "omega3": 0.04,
+            "omega6": 1.1,
+            "cholesterol": 184,
+            "sodium": 94,
+            "potassium": 67,
+            "calcium": 27,
+            "iron": 0.9,
+            "magnesium": 6,
+            "phosphorus": 99,
+            "zinc": 0.6,
+            "selenium": 15.8,
+            "vitaminA": 335,
+            "vitaminC": 0,
+            "vitaminD": 1.0,
+            "vitaminE": 0.9,
+            "vitaminK": 0.2,
+            "thiamin": 0.03,
+            "riboflavin": 0.24,
+            "niacin": 0.04,
+            "vitaminB6": 0.09,
+            "folate": 24,
+            "vitaminB12": 0.52,
+            "pantothenicAcid": 0.7,
+            "choline": 147,
+            "betaine": 0.3
+        },
+        "glycemicIndex": 0,
+        "glycemicLoad": 0,
+        "nutrientDensityScore": 86,
+        "satietyScore": 85,
+        "inflammatoryIndex": 0.1,
+        "novaClass": 1,
+        "focusGrades": {
+            "balanced": {
+                "grade": "B+",
+                "score": 84,
+                "insight": "Classic preparation with good protein but added fats increase calories",
+                "pros": [
+                    "Complete protein (6.3g) with all essential amino acids",
+                    "Rich in choline (147mg) for cellular health",
+                    "High vitamin A (335 IU) for vision and immunity",
+                    "Good vitamin B12 (0.52mcg) for energy",
+                    "Quick and easy preparation"
+                ],
+                "cons": [
+                    "High cholesterol (184mg) - 61% of daily limit",
+                    "Added fats from cooking oil increase calories",
+                    "May contain trace trans fats (0.02g) depending on oil",
+                    "Higher sodium (94mg) than boiled eggs",
+                    "No fiber or vitamin C"
+                ]
+            },
+            "heart_health": {
+                "grade": "C+",
+                "score": 70,
+                "insight": "Cooking method and added fats may reduce heart health benefits",
+                "pros": [
+                    "Good unsaturated to saturated fat ratio (2.9:1)",
+                    "Choline (147mg) reduces cardiovascular disease risk",
+                    "Selenium (15.8mcg) protects cardiovascular tissue",
+                    "Vitamin D (1.0mcg) supports heart health"
+                ],
+                "cons": [
+                    "High cholesterol (184mg) may impact lipid profile",
+                    "High-heat frying may oxidize cholesterol",
+                    "Possible trace trans fats (0.02g) from frying",
+                    "Higher sodium (94mg) than boiled eggs",
+                    "Omega-6 to omega-3 ratio of 27:1"
+                ]
+            },
+            "muscle_building": {
+                "grade": "A-",
+                "score": 88,
+                "insight": "Complete protein but added fats reduce protein density",
+                "pros": [
+                    "High-quality protein (6.3g) with complete amino acids",
+                    "Leucine-rich for muscle protein synthesis",
+                    "Vitamin D (1.0mcg) enhances muscle function",
+                    "Phosphorus (99mg) supports ATP production",
+                    "Quick preparation for busy schedules"
+                ],
+                "cons": [
+                    "Added fats increase calories without protein benefit",
+                    "Lower protein-to-calorie ratio than boiled eggs",
+                    "No carbohydrates for glycogen replenishment"
+                ]
+            },
+            "energy": {
+                "grade": "B+",
+                "score": 82,
+                "insight": "Sustained energy from protein and fats but watch cooking oil quality",
+                "pros": [
+                    "B vitamins support energy metabolism",
+                    "Riboflavin (0.24mg) critical for ATP synthesis",
+                    "Choline (147mg) supports mitochondrial function",
+                    "Added fats provide calorie-dense energy"
+                ],
+                "cons": [
+                    "Very low carbohydrates (0.4g) for immediate energy",
+                    "High-heat cooking may reduce B vitamin content",
+                    "Low iron (0.9mg) compared to red meat",
+                    "Depends on cooking oil quality"
+                ]
+            },
+            "weight_management": {
+                "grade": "B",
+                "score": 80,
+                "insight": "Good satiety but higher calories from cooking fats",
+                "pros": [
+                    "Good satiety score (85/100) reduces hunger",
+                    "Complete protein (6.3g) preserves lean mass",
+                    "Protein and fat slow gastric emptying",
+                    "Nutrient-dense to prevent cravings"
+                ],
+                "cons": [
+                    "Higher calories (90) than boiled eggs",
+                    "Added fats increase calorie density by 15%",
+                    "No fiber for additional satiety",
+                    "Easy to add extra calories with cooking oil",
+                    "Less ideal for strict calorie deficits"
+                ]
+            },
+            "brain_focus": {
+                "grade": "A",
+                "score": 94,
+                "insight": "Excellent choline content but high heat may reduce some nutrients",
+                "pros": [
+                    "Exceptional choline (147mg) - 27% of daily needs",
+                    "Choline converts to acetylcholine for focus",
+                    "Vitamin B12 (0.52mcg) protects nerve function",
+                    "Lutein supports cognitive performance",
+                    "Higher vitamin E (0.9mcg) from cooking oil"
+                ],
+                "cons": [
+                    "High heat may degrade heat-sensitive B vitamins",
+                    "Lower in DHA/EPA than fatty fish",
+                    "Minimal polyphenol antioxidants"
+                ]
+            },
+            "gut_health": {
+                "grade": "B-",
+                "score": 72,
+                "insight": "Digestible but added fats may irritate sensitive stomachs",
+                "pros": [
+                    "Choline supports intestinal barrier integrity",
+                    "Zinc (0.6mg) aids gut lining repair",
+                    "Low FODMAP for some individuals",
+                    "Easily digestible protein"
+                ],
+                "cons": [
+                    "Zero dietary fiber for microbiome",
+                    "No prebiotics or probiotics",
+                    "Added fats may trigger digestive discomfort",
+                    "High-heat cooking may create irritating compounds",
+                    "Lacks polyphenols to feed beneficial bacteria"
+                ]
+            },
+            "blood_sugar": {
+                "grade": "A-",
+                "score": 89,
+                "insight": "Minimal blood sugar impact but quality depends on cooking oil",
+                "pros": [
+                    "Zero glycemic index - no blood sugar spike",
+                    "Protein (6.3g) stabilizes glucose response",
+                    "Fats slow carbohydrate absorption",
+                    "Choline improves insulin sensitivity"
+                ],
+                "cons": [
+                    "Type of cooking oil affects metabolic response",
+                    "Minimal carbs (0.4g) - pair with vegetables",
+                    "No fiber to moderate glucose",
+                    "Trans fats (trace) may impair insulin sensitivity"
+                ]
+            },
+            "bone_joint": {
+                "grade": "B+",
+                "score": 84,
+                "insight": "Good vitamin D and phosphorus for bone health",
+                "pros": [
+                    "Vitamin D (1.0mcg) enhances calcium absorption",
+                    "Phosphorus (99mg) critical for bone mineralization",
+                    "Complete protein (6.3g) builds bone matrix",
+                    "Selenium (15.8mcg) reduces joint inflammation"
+                ],
+                "cons": [
+                    "Low calcium (27mg) - only 2.7% of daily needs",
+                    "Minimal vitamin K (0.2mcg) for bone metabolism",
+                    "Limited omega-3s for joint health"
+                ]
+            },
+            "anti_inflammatory": {
+                "grade": "C+",
+                "score": 68,
+                "insight": "High-heat cooking may create inflammatory compounds",
+                "pros": [
+                    "Selenium (15.8mcg) fights oxidative stress",
+                    "Vitamin A (335 IU) modulates immune inflammation",
+                    "Choline reduces inflammatory cytokines",
+                    "Higher vitamin E (0.9mcg) from cooking oil"
+                ],
+                "cons": [
+                    "Slightly positive inflammatory index (0.1)",
+                    "High omega-6 to omega-3 ratio (27:1)",
+                    "High-heat frying creates inflammatory AGEs",
+                    "Possible oxidized cholesterol from frying",
+                    "Trace trans fats (0.02g) are pro-inflammatory",
+                    "No EPA/DHA or polyphenols"
+                ]
+            }
+        },
+        "bioavailability": {
+            "protein": "high",
+            "iron": "moderate",
+            "notes": "Frying improves protein digestibility to ~90%. However, high heat may oxidize cholesterol and reduce heat-sensitive vitamins like folate. Use gentle heat and quality oils (olive, avocado) to minimize nutrient loss."
+        },
+        "pairWith": [
+            "Whole grain toast for balanced breakfast",
+            "Sautéed spinach for iron and antioxidants",
+            "Avocado slices for healthy fats and fiber",
+            "Cherry tomatoes for vitamin C and lycopene"
+        ],
+        "bestTiming": [
+            "Breakfast for classic morning meal",
+            "Brunch for weekend indulgence",
+            "Post-workout if using healthy cooking oil"
+        ],
+        "tags": [
+            "complete-protein",
+            "high-choline",
+            "brain-food",
+            "quick-breakfast",
+            "classic-preparation",
+            "added-fats"
+        ]
+    }
+}

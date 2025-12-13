@@ -1,0 +1,776 @@
+{
+    "lettuce": {
+        "id": "lettuce",
+        "name": "Lettuce",
+        "category": "vegetables",
+        "subcategory": "leafy_greens",
+        "portion": {
+            "amount": 100,
+            "unit": "g",
+            "householdServing": "1 cup shredded (47g)"
+        },
+        "nutrients": {
+            "calories": 15,
+            "protein": 1.4,
+            "carbs": 2.9,
+            "fiber": 1.3,
+            "sugars": 0.8,
+            "addedSugars": 0,
+            "fat": 0.2,
+            "saturatedFat": 0.03,
+            "transFat": 0,
+            "polyunsaturatedFat": 0.1,
+            "monounsaturatedFat": 0.01,
+            "cholesterol": 0,
+            "sodium": 28,
+            "potassium": 194,
+            "calcium": 36,
+            "iron": 0.9,
+            "vitaminA": 7405,
+            "vitaminC": 9.2,
+            "vitaminD": 0,
+            "vitaminE": 0.22,
+            "vitaminK": 126.3,
+            "vitaminB6": 0.09,
+            "vitaminB12": 0,
+            "folate": 38,
+            "magnesium": 13,
+            "zinc": 0.18,
+            "omega3": 0.06,
+            "omega6": 0.03
+        },
+        "glycemicIndex": 15,
+        "glycemicLoad": 0.4,
+        "inflammatoryScore": -8,
+        "tags": [
+            "low-calorie",
+            "low-carb",
+            "high-fiber",
+            "vegan",
+            "gluten-free",
+            "hydrating",
+            "vitamin-k-rich",
+            "vitamin-a-rich"
+        ],
+        "allergies": [],
+        "focusGrades": {
+            "heart": {
+                "grade": "A",
+                "score": 92,
+                "reasoning": "Very low in calories and sodium, zero cholesterol, provides potassium and folate for cardiovascular health. High water content supports hydration."
+            },
+            "metabolic": {
+                "grade": "A",
+                "score": 95,
+                "reasoning": "Extremely low glycemic load (0.4), minimal calories, high water content. Excellent for blood sugar management and weight control."
+            },
+            "gut": {
+                "grade": "B+",
+                "score": 87,
+                "reasoning": "Provides dietary fiber (1.3g per 100g) and water for digestive health. Prebiotic properties support beneficial gut bacteria."
+            },
+            "brain": {
+                "grade": "B",
+                "score": 83,
+                "reasoning": "Contains folate (38mcg) and vitamin K for cognitive function. Hydration supports mental clarity. Low in brain-boosting omega-3s."
+            },
+            "immunity": {
+                "grade": "A-",
+                "score": 89,
+                "reasoning": "Rich in vitamin A (7405 IU) and vitamin C (9.2mg) for immune function. Antioxidants combat oxidative stress."
+            },
+            "energy": {
+                "grade": "B",
+                "score": 81,
+                "reasoning": "Low calorie density provides light, sustained energy. B vitamins and iron support energy metabolism, though amounts are modest."
+            },
+            "inflammation": {
+                "grade": "A",
+                "score": 93,
+                "reasoning": "Strong anti-inflammatory score (-8). Rich in antioxidants including vitamin A, vitamin C, and polyphenols."
+            },
+            "longevity": {
+                "grade": "A-",
+                "score": 88,
+                "reasoning": "Nutrient-dense with antioxidants, vitamin K, and folate. Associated with reduced chronic disease risk in epidemiological studies."
+            },
+            "athletic": {
+                "grade": "B",
+                "score": 82,
+                "reasoning": "High water content (95%) supports hydration. Provides some potassium for electrolyte balance. Low in protein and calories for recovery."
+            },
+            "weight": {
+                "grade": "A+",
+                "score": 98,
+                "reasoning": "Extremely low calorie density (15 kcal/100g), high water and fiber content promote satiety. Perfect for volume eating and weight management."
+            }
+        },
+        "healthScore": 88,
+        "environmentalImpact": {
+            "carbonFootprint": 0.3,
+            "waterUsage": "low",
+            "sustainability": "high"
+        },
+        "shelfLife": "3-7 days refrigerated",
+        "preparation": [
+            "Rinse thoroughly under cold water",
+            "Spin or pat dry to remove excess moisture",
+            "Use immediately or store in sealed container with paper towel"
+        ],
+        "pairings": [
+            "tomatoes",
+            "cucumbers",
+            "olive_oil",
+            "lemon_juice",
+            "vinegar"
+        ]
+    },
+    "iceberg_lettuce": {
+        "id": "iceberg_lettuce",
+        "name": "Iceberg Lettuce",
+        "category": "vegetables",
+        "subcategory": "leafy_greens",
+        "portion": {
+            "amount": 100,
+            "unit": "g",
+            "householdServing": "1 cup shredded (72g)"
+        },
+        "nutrients": {
+            "calories": 14,
+            "protein": 0.9,
+            "carbs": 3.0,
+            "fiber": 1.2,
+            "sugars": 1.97,
+            "addedSugars": 0,
+            "fat": 0.14,
+            "saturatedFat": 0.02,
+            "transFat": 0,
+            "polyunsaturatedFat": 0.08,
+            "monounsaturatedFat": 0.01,
+            "cholesterol": 0,
+            "sodium": 10,
+            "potassium": 141,
+            "calcium": 18,
+            "iron": 0.41,
+            "vitaminA": 502,
+            "vitaminC": 2.8,
+            "vitaminD": 0,
+            "vitaminE": 0.18,
+            "vitaminK": 24.1,
+            "vitaminB6": 0.04,
+            "vitaminB12": 0,
+            "folate": 29,
+            "magnesium": 7,
+            "zinc": 0.15,
+            "omega3": 0.04,
+            "omega6": 0.03
+        },
+        "glycemicIndex": 15,
+        "glycemicLoad": 0.5,
+        "inflammatoryScore": -6,
+        "tags": [
+            "low-calorie",
+            "low-carb",
+            "vegan",
+            "gluten-free",
+            "hydrating",
+            "crunchy"
+        ],
+        "allergies": [],
+        "focusGrades": {
+            "heart": {
+                "grade": "A-",
+                "score": 88,
+                "reasoning": "Very low in calories and sodium (10mg), zero cholesterol. Provides potassium for blood pressure regulation. Lower in nutrients compared to other lettuces."
+            },
+            "metabolic": {
+                "grade": "A",
+                "score": 94,
+                "reasoning": "Extremely low glycemic load (0.5), minimal calories (14 kcal/100g). Excellent for blood sugar control and weight management."
+            },
+            "gut": {
+                "grade": "B",
+                "score": 82,
+                "reasoning": "Provides fiber (1.2g) and high water content (96%) for digestive health. Lower in prebiotic compounds than darker leafy greens."
+            },
+            "brain": {
+                "grade": "C+",
+                "score": 76,
+                "reasoning": "Contains some folate (29mcg) and vitamin K. Very high water content supports hydration. Limited brain-specific nutrients."
+            },
+            "immunity": {
+                "grade": "B-",
+                "score": 80,
+                "reasoning": "Provides vitamin A (502 IU) and vitamin C (2.8mg) but in lower amounts than other lettuces. Some antioxidant activity."
+            },
+            "energy": {
+                "grade": "C+",
+                "score": 75,
+                "reasoning": "Minimal calorie content provides light energy. Limited B vitamins and minerals for energy metabolism. High water content supports hydration."
+            },
+            "inflammation": {
+                "grade": "A-",
+                "score": 89,
+                "reasoning": "Anti-inflammatory score (-6). Contains antioxidants and phytonutrients, though less concentrated than darker greens."
+            },
+            "longevity": {
+                "grade": "B+",
+                "score": 84,
+                "reasoning": "Low calorie density supports healthy weight. Contains some antioxidants and vitamin K. Less nutrient-dense than darker leafy vegetables."
+            },
+            "athletic": {
+                "grade": "B",
+                "score": 81,
+                "reasoning": "Very high water content (96%) excellent for hydration. Provides some potassium. Low in protein and energy for athletic performance."
+            },
+            "weight": {
+                "grade": "A+",
+                "score": 97,
+                "reasoning": "Extremely low calorie density (14 kcal/100g), very high water content (96%), crunchy texture promotes satiety. Ideal for volume eating."
+            }
+        },
+        "healthScore": 85,
+        "environmentalImpact": {
+            "carbonFootprint": 0.3,
+            "waterUsage": "low",
+            "sustainability": "high"
+        },
+        "shelfLife": "7-10 days refrigerated",
+        "preparation": [
+            "Remove outer leaves if wilted",
+            "Cut out core",
+            "Rinse leaves under cold water",
+            "Spin or pat dry before serving"
+        ],
+        "pairings": [
+            "ranch_dressing",
+            "blue_cheese",
+            "bacon",
+            "tomatoes",
+            "ground_beef"
+        ]
+    },
+    "kale": {
+        "id": "kale",
+        "name": "Kale",
+        "category": "vegetables",
+        "subcategory": "leafy_greens",
+        "portion": {
+            "amount": 100,
+            "unit": "g",
+            "householdServing": "1 cup chopped (67g)"
+        },
+        "nutrients": {
+            "calories": 49,
+            "protein": 4.3,
+            "carbs": 8.8,
+            "fiber": 3.6,
+            "sugars": 2.3,
+            "addedSugars": 0,
+            "fat": 0.9,
+            "saturatedFat": 0.09,
+            "transFat": 0,
+            "polyunsaturatedFat": 0.34,
+            "monounsaturatedFat": 0.05,
+            "cholesterol": 0,
+            "sodium": 38,
+            "potassium": 491,
+            "calcium": 150,
+            "iron": 1.47,
+            "vitaminA": 9990,
+            "vitaminC": 120,
+            "vitaminD": 0,
+            "vitaminE": 1.54,
+            "vitaminK": 704.8,
+            "vitaminB6": 0.27,
+            "vitaminB12": 0,
+            "folate": 141,
+            "magnesium": 47,
+            "zinc": 0.56,
+            "omega3": 0.18,
+            "omega6": 0.14
+        },
+        "glycemicIndex": 15,
+        "glycemicLoad": 1.3,
+        "inflammatoryScore": -10,
+        "tags": [
+            "superfood",
+            "nutrient-dense",
+            "high-protein",
+            "high-fiber",
+            "vegan",
+            "gluten-free",
+            "vitamin-k-rich",
+            "vitamin-a-rich",
+            "vitamin-c-rich",
+            "calcium-rich",
+            "iron-rich",
+            "antioxidant-rich"
+        ],
+        "allergies": [],
+        "focusGrades": {
+            "heart": {
+                "grade": "A+",
+                "score": 97,
+                "reasoning": "Outstanding cardiovascular benefits: high potassium (491mg), calcium, omega-3 ALA, zero cholesterol. Rich in antioxidants including quercetin and kaempferol. Low sodium."
+            },
+            "metabolic": {
+                "grade": "A+",
+                "score": 96,
+                "reasoning": "Very low glycemic load (1.3), high fiber (3.6g), excellent for blood sugar control. Rich in alpha-lipoic acid. Supports insulin sensitivity."
+            },
+            "gut": {
+                "grade": "A",
+                "score": 93,
+                "reasoning": "High fiber content (3.6g) supports digestive health. Contains prebiotics and sulfur compounds. Promotes beneficial gut bacteria and digestive enzymes."
+            },
+            "brain": {
+                "grade": "A",
+                "score": 91,
+                "reasoning": "Exceptional folate (141mcg), vitamin K (704.8mcg), omega-3 ALA, and antioxidants. Supports cognitive function, neuroprotection, and mental clarity."
+            },
+            "immunity": {
+                "grade": "A+",
+                "score": 98,
+                "reasoning": "Extraordinarily high in vitamin C (120mg), vitamin A (9990 IU), and vitamin E. Rich in flavonoids, carotenoids, and glucosinolates for immune defense."
+            },
+            "energy": {
+                "grade": "A-",
+                "score": 89,
+                "reasoning": "Good protein content (4.3g), iron (1.47mg), B vitamins, and magnesium support energy production. Complex carbs provide sustained energy."
+            },
+            "inflammation": {
+                "grade": "A+",
+                "score": 99,
+                "reasoning": "Exceptional anti-inflammatory score (-10). Rich in omega-3 ALA, vitamin K, sulforaphane, quercetin, and over 45 flavonoids with anti-inflammatory properties."
+            },
+            "longevity": {
+                "grade": "A+",
+                "score": 97,
+                "reasoning": "One of the most nutrient-dense foods. Rich in sulforaphane, indole-3-carbinol, antioxidants. Associated with reduced cancer and chronic disease risk."
+            },
+            "athletic": {
+                "grade": "A-",
+                "score": 88,
+                "reasoning": "High potassium for muscle function, iron for oxygen transport, protein for recovery. Nitrates support blood flow and exercise performance."
+            },
+            "weight": {
+                "grade": "A+",
+                "score": 96,
+                "reasoning": "Low calorie density (49 kcal/100g), very high nutrient density, high fiber and water content. Excellent satiety and thermogenic properties."
+            }
+        },
+        "healthScore": 94,
+        "environmentalImpact": {
+            "carbonFootprint": 0.4,
+            "waterUsage": "low",
+            "sustainability": "high"
+        },
+        "shelfLife": "5-7 days refrigerated",
+        "preparation": [
+            "Remove tough stems from leaves",
+            "Rinse thoroughly under cold water",
+            "Can be eaten raw, sautéed, or baked into chips",
+            "Massage raw kale with oil to reduce bitterness and improve texture"
+        ],
+        "pairings": [
+            "olive_oil",
+            "garlic",
+            "lemon_juice",
+            "parmesan_cheese",
+            "cranberries",
+            "nuts",
+            "sweet_potato"
+        ]
+    },
+    "cauliflower": {
+        "id": "cauliflower",
+        "name": "Cauliflower",
+        "category": "vegetables",
+        "subcategory": "cruciferous",
+        "portion": {
+            "amount": 100,
+            "unit": "g",
+            "householdServing": "1 cup chopped (107g)"
+        },
+        "nutrients": {
+            "calories": 25,
+            "protein": 1.9,
+            "carbs": 5.0,
+            "fiber": 2.0,
+            "sugars": 1.9,
+            "addedSugars": 0,
+            "fat": 0.3,
+            "saturatedFat": 0.05,
+            "transFat": 0,
+            "polyunsaturatedFat": 0.13,
+            "monounsaturatedFat": 0.03,
+            "cholesterol": 0,
+            "sodium": 30,
+            "potassium": 303,
+            "calcium": 22,
+            "iron": 0.42,
+            "vitaminA": 0,
+            "vitaminC": 48.2,
+            "vitaminD": 0,
+            "vitaminE": 0.08,
+            "vitaminK": 15.5,
+            "vitaminB6": 0.18,
+            "vitaminB12": 0,
+            "folate": 57,
+            "magnesium": 15,
+            "zinc": 0.27,
+            "omega3": 0.04,
+            "omega6": 0.08
+        },
+        "glycemicIndex": 15,
+        "glycemicLoad": 0.8,
+        "inflammatoryScore": -9,
+        "tags": [
+            "low-calorie",
+            "low-carb",
+            "high-fiber",
+            "vegan",
+            "gluten-free",
+            "cruciferous",
+            "vitamin-c-rich",
+            "keto-friendly",
+            "versatile"
+        ],
+        "allergies": [],
+        "focusGrades": {
+            "heart": {
+                "grade": "A",
+                "score": 92,
+                "reasoning": "Low in calories and sodium, zero cholesterol. High potassium (303mg) supports blood pressure. Sulforaphane and fiber benefit cardiovascular health."
+            },
+            "metabolic": {
+                "grade": "A+",
+                "score": 95,
+                "reasoning": "Very low glycemic load (0.8), low carb (5g), high fiber (2g). Excellent for blood sugar control. Popular low-carb rice and pizza crust alternative."
+            },
+            "gut": {
+                "grade": "A-",
+                "score": 90,
+                "reasoning": "Good fiber content (2g), contains glucosinolates that support gut health. Provides sulforaphane which protects gut lining. May cause gas in some individuals."
+            },
+            "brain": {
+                "grade": "A-",
+                "score": 88,
+                "reasoning": "Rich in choline (needed for acetylcholine synthesis), vitamin B6, and folate (57mcg). Sulforaphane has neuroprotective properties."
+            },
+            "immunity": {
+                "grade": "A",
+                "score": 93,
+                "reasoning": "Very high in vitamin C (48.2mg - 64% DV). Rich in antioxidants including glucosinolates, beta-carotene, and quercetin. Supports immune cell function."
+            },
+            "energy": {
+                "grade": "B+",
+                "score": 84,
+                "reasoning": "Provides B vitamins (B6, folate) for energy metabolism. Low calorie content provides light, sustained energy. Versatile for meal preparation."
+            },
+            "inflammation": {
+                "grade": "A+",
+                "score": 95,
+                "reasoning": "Strong anti-inflammatory score (-9). Rich in sulforaphane, indoles, and other glucosinolates with potent anti-inflammatory effects."
+            },
+            "longevity": {
+                "grade": "A+",
+                "score": 94,
+                "reasoning": "Cruciferous vegetable rich in sulforaphane and indole-3-carbinol. Associated with reduced cancer risk, particularly colorectal, breast, and prostate cancers."
+            },
+            "athletic": {
+                "grade": "B+",
+                "score": 85,
+                "reasoning": "Good potassium for muscle function and electrolyte balance. Vitamin C supports collagen and recovery. Choline supports muscle function."
+            },
+            "weight": {
+                "grade": "A+",
+                "score": 97,
+                "reasoning": "Very low calorie density (25 kcal/100g), high fiber and water content (92%). Extremely versatile as low-carb substitute. Excellent satiety."
+            }
+        },
+        "healthScore": 91,
+        "environmentalImpact": {
+            "carbonFootprint": 0.4,
+            "waterUsage": "moderate",
+            "sustainability": "high"
+        },
+        "shelfLife": "7-10 days refrigerated",
+        "preparation": [
+            "Remove leaves and cut into florets",
+            "Can be roasted, steamed, riced, or mashed",
+            "Rinse before cooking",
+            "Avoid overcooking to preserve nutrients and prevent mushiness"
+        ],
+        "pairings": [
+            "cheese",
+            "garlic",
+            "turmeric",
+            "olive_oil",
+            "lemon",
+            "tahini",
+            "curry_spices"
+        ]
+    },
+    "zucchini": {
+        "id": "zucchini",
+        "name": "Zucchini",
+        "category": "vegetables",
+        "subcategory": "squash",
+        "portion": {
+            "amount": 100,
+            "unit": "g",
+            "householdServing": "1 medium (196g)"
+        },
+        "nutrients": {
+            "calories": 17,
+            "protein": 1.2,
+            "carbs": 3.1,
+            "fiber": 1.0,
+            "sugars": 2.5,
+            "addedSugars": 0,
+            "fat": 0.3,
+            "saturatedFat": 0.08,
+            "transFat": 0,
+            "polyunsaturatedFat": 0.09,
+            "monounsaturatedFat": 0.01,
+            "cholesterol": 0,
+            "sodium": 8,
+            "potassium": 261,
+            "calcium": 16,
+            "iron": 0.37,
+            "vitaminA": 200,
+            "vitaminC": 17.9,
+            "vitaminD": 0,
+            "vitaminE": 0.12,
+            "vitaminK": 4.3,
+            "vitaminB6": 0.16,
+            "vitaminB12": 0,
+            "folate": 24,
+            "magnesium": 18,
+            "zinc": 0.32,
+            "omega3": 0.04,
+            "omega6": 0.04
+        },
+        "glycemicIndex": 15,
+        "glycemicLoad": 0.5,
+        "inflammatoryScore": -7,
+        "tags": [
+            "low-calorie",
+            "low-carb",
+            "vegan",
+            "gluten-free",
+            "hydrating",
+            "keto-friendly",
+            "versatile",
+            "vitamin-c-rich"
+        ],
+        "allergies": [],
+        "focusGrades": {
+            "heart": {
+                "grade": "A",
+                "score": 91,
+                "reasoning": "Very low in calories and sodium (8mg), zero cholesterol. Good potassium (261mg) for blood pressure. Pectin fiber supports cholesterol reduction."
+            },
+            "metabolic": {
+                "grade": "A+",
+                "score": 96,
+                "reasoning": "Extremely low glycemic load (0.5), very low carb (3.1g), minimal calories (17). Excellent for blood sugar control and diabetes management."
+            },
+            "gut": {
+                "grade": "B+",
+                "score": 86,
+                "reasoning": "Provides fiber (1g) and very high water content (95%). Contains pectin and cellulose for digestive health. Gentle on the digestive system."
+            },
+            "brain": {
+                "grade": "B+",
+                "score": 84,
+                "reasoning": "Contains vitamin B6 (0.16mg), folate (24mcg), and antioxidants including lutein and zeaxanthin. Supports cognitive function and neuroprotection."
+            },
+            "immunity": {
+                "grade": "A-",
+                "score": 88,
+                "reasoning": "Good source of vitamin C (17.9mg), vitamin A (200 IU), and antioxidants. Supports immune cell function and antioxidant defense."
+            },
+            "energy": {
+                "grade": "B",
+                "score": 82,
+                "reasoning": "Provides B vitamins (B6, folate) and magnesium for energy metabolism. Low calorie content provides light energy. High water content supports hydration."
+            },
+            "inflammation": {
+                "grade": "A",
+                "score": 92,
+                "reasoning": "Anti-inflammatory score (-7). Contains carotenoids (lutein, zeaxanthin), vitamin C, and polyphenols with anti-inflammatory properties."
+            },
+            "longevity": {
+                "grade": "A-",
+                "score": 89,
+                "reasoning": "Nutrient-dense with antioxidants including carotenoids and vitamin C. Low calorie density supports healthy weight. Associated with reduced chronic disease risk."
+            },
+            "athletic": {
+                "grade": "B+",
+                "score": 85,
+                "reasoning": "Very high water content (95%) excellent for hydration. Good potassium for muscle function. Low in protein but versatile for athlete meal prep."
+            },
+            "weight": {
+                "grade": "A+",
+                "score": 98,
+                "reasoning": "Extremely low calorie density (17 kcal/100g), very high water content (95%), versatile as pasta alternative (zoodles). Outstanding for volume eating."
+            }
+        },
+        "healthScore": 89,
+        "environmentalImpact": {
+            "carbonFootprint": 0.4,
+            "waterUsage": "moderate",
+            "sustainability": "high"
+        },
+        "shelfLife": "5-7 days refrigerated",
+        "preparation": [
+            "Rinse under cold water",
+            "Can be spiralized into noodles, sliced, diced, or grated",
+            "Can be eaten raw or cooked (sautéed, grilled, roasted, baked)",
+            "No need to peel unless skin is tough"
+        ],
+        "pairings": [
+            "tomatoes",
+            "garlic",
+            "olive_oil",
+            "parmesan_cheese",
+            "basil",
+            "lemon",
+            "ground_turkey"
+        ]
+    },
+    "courgette": {
+        "id": "courgette",
+        "name": "Courgette",
+        "alternativeNames": ["Zucchini"],
+        "category": "vegetables",
+        "subcategory": "squash",
+        "portion": {
+            "amount": 100,
+            "unit": "g",
+            "householdServing": "1 medium (196g)"
+        },
+        "nutrients": {
+            "calories": 17,
+            "protein": 1.2,
+            "carbs": 3.1,
+            "fiber": 1.0,
+            "sugars": 2.5,
+            "addedSugars": 0,
+            "fat": 0.3,
+            "saturatedFat": 0.08,
+            "transFat": 0,
+            "polyunsaturatedFat": 0.09,
+            "monounsaturatedFat": 0.01,
+            "cholesterol": 0,
+            "sodium": 8,
+            "potassium": 261,
+            "calcium": 16,
+            "iron": 0.37,
+            "vitaminA": 200,
+            "vitaminC": 17.9,
+            "vitaminD": 0,
+            "vitaminE": 0.12,
+            "vitaminK": 4.3,
+            "vitaminB6": 0.16,
+            "vitaminB12": 0,
+            "folate": 24,
+            "magnesium": 18,
+            "zinc": 0.32,
+            "omega3": 0.04,
+            "omega6": 0.04
+        },
+        "glycemicIndex": 15,
+        "glycemicLoad": 0.5,
+        "inflammatoryScore": -7,
+        "tags": [
+            "low-calorie",
+            "low-carb",
+            "vegan",
+            "gluten-free",
+            "hydrating",
+            "keto-friendly",
+            "versatile",
+            "vitamin-c-rich",
+            "british-english"
+        ],
+        "allergies": [],
+        "focusGrades": {
+            "heart": {
+                "grade": "A",
+                "score": 91,
+                "reasoning": "Very low in calories and sodium (8mg), zero cholesterol. Good potassium (261mg) for blood pressure. Pectin fiber supports cholesterol reduction."
+            },
+            "metabolic": {
+                "grade": "A+",
+                "score": 96,
+                "reasoning": "Extremely low glycemic load (0.5), very low carb (3.1g), minimal calories (17). Excellent for blood sugar control and diabetes management."
+            },
+            "gut": {
+                "grade": "B+",
+                "score": 86,
+                "reasoning": "Provides fiber (1g) and very high water content (95%). Contains pectin and cellulose for digestive health. Gentle on the digestive system."
+            },
+            "brain": {
+                "grade": "B+",
+                "score": 84,
+                "reasoning": "Contains vitamin B6 (0.16mg), folate (24mcg), and antioxidants including lutein and zeaxanthin. Supports cognitive function and neuroprotection."
+            },
+            "immunity": {
+                "grade": "A-",
+                "score": 88,
+                "reasoning": "Good source of vitamin C (17.9mg), vitamin A (200 IU), and antioxidants. Supports immune cell function and antioxidant defense."
+            },
+            "energy": {
+                "grade": "B",
+                "score": 82,
+                "reasoning": "Provides B vitamins (B6, folate) and magnesium for energy metabolism. Low calorie content provides light energy. High water content supports hydration."
+            },
+            "inflammation": {
+                "grade": "A",
+                "score": 92,
+                "reasoning": "Anti-inflammatory score (-7). Contains carotenoids (lutein, zeaxanthin), vitamin C, and polyphenols with anti-inflammatory properties."
+            },
+            "longevity": {
+                "grade": "A-",
+                "score": 89,
+                "reasoning": "Nutrient-dense with antioxidants including carotenoids and vitamin C. Low calorie density supports healthy weight. Associated with reduced chronic disease risk."
+            },
+            "athletic": {
+                "grade": "B+",
+                "score": 85,
+                "reasoning": "Very high water content (95%) excellent for hydration. Good potassium for muscle function. Low in protein but versatile for athlete meal prep."
+            },
+            "weight": {
+                "grade": "A+",
+                "score": 98,
+                "reasoning": "Extremely low calorie density (17 kcal/100g), very high water content (95%), versatile as pasta alternative (courgetti). Outstanding for volume eating."
+            }
+        },
+        "healthScore": 89,
+        "environmentalImpact": {
+            "carbonFootprint": 0.4,
+            "waterUsage": "moderate",
+            "sustainability": "high"
+        },
+        "shelfLife": "5-7 days refrigerated",
+        "preparation": [
+            "Rinse under cold water",
+            "Can be spiralized into noodles (courgetti), sliced, diced, or grated",
+            "Can be eaten raw or cooked (sautéed, grilled, roasted, baked)",
+            "No need to peel unless skin is tough"
+        ],
+        "pairings": [
+            "tomatoes",
+            "garlic",
+            "olive_oil",
+            "parmesan_cheese",
+            "basil",
+            "lemon",
+            "ground_turkey"
+        ]
+    }
+}

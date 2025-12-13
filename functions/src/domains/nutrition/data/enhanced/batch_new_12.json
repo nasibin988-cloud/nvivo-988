@@ -1,0 +1,584 @@
+{
+  "ice_cream": {
+    "name": "Ice Cream",
+    "calories": 207,
+    "protein": 3.5,
+    "carbs": 23.6,
+    "fat": 11,
+    "fiber": 0.7,
+    "sugar": 21.2,
+    "sodium": 80,
+    "saturatedFat": 6.8,
+    "cholesterol": 44,
+    "potassium": 199,
+    "calcium": 128,
+    "iron": 0.09,
+    "magnesium": 14,
+    "vitaminA": 111,
+    "vitaminC": 0.6,
+    "vitaminD": 0.2,
+    "vitaminB12": 0.3,
+    "glycemicIndex": 57,
+    "glycemicLoad": 13,
+    "allergens": ["milk"],
+    "servingSize": 100,
+    "servingUnit": "g",
+    "focusGrades": {
+      "balanced": {
+        "grade": "D+",
+        "score": 45,
+        "insight": "High in saturated fat and sugar with minimal nutritional benefits beyond calcium",
+        "pros": ["Good calcium source", "Provides energy"],
+        "cons": ["Very high sugar content", "High saturated fat", "Low protein", "Minimal fiber"]
+      },
+      "heart_health": {
+        "grade": "D",
+        "score": 35,
+        "insight": "Saturated fat and cholesterol content negatively impact cardiovascular health",
+        "pros": ["Contains some potassium"],
+        "cons": ["High saturated fat (6.8g)", "Contains cholesterol (44mg)", "High in sugar", "Low in heart-healthy fats"]
+      },
+      "muscle_building": {
+        "grade": "D",
+        "score": 40,
+        "insight": "Low protein content makes this ineffective for muscle development",
+        "pros": ["Provides quick energy", "Contains some protein"],
+        "cons": ["Very low protein (3.5g)", "High in simple sugars", "Lacks amino acid density"]
+      },
+      "energy": {
+        "grade": "C",
+        "score": 60,
+        "insight": "Provides quick energy from sugar but lacks sustained energy sources",
+        "pros": ["High calorie density", "Fast-acting simple sugars", "Contains fat for energy"],
+        "cons": ["Energy crash likely due to high sugar", "No complex carbs", "Minimal B vitamins"]
+      },
+      "weight_management": {
+        "grade": "F",
+        "score": 20,
+        "insight": "High calorie, sugar, and fat content make this poor for weight management",
+        "pros": ["Calcium content"],
+        "cons": ["Very high calorie density (207 kcal/100g)", "High sugar (21.2g)", "High saturated fat", "No fiber for satiety"]
+      },
+      "brain_focus": {
+        "grade": "D+",
+        "score": 42,
+        "insight": "Quick sugar rush followed by crash impairs sustained cognitive function",
+        "pros": ["Some B12 for nerve function", "Quick glucose for brain"],
+        "cons": ["Blood sugar spike and crash", "Low in brain-healthy fats", "Minimal B vitamins", "No omega-3s"]
+      },
+      "gut_health": {
+        "grade": "D",
+        "score": 38,
+        "insight": "Minimal fiber and potential for digestive issues from high fat and sugar",
+        "pros": ["Some calcium", "Dairy probiotics if cultured"],
+        "cons": ["Almost no fiber (0.7g)", "High sugar feeds harmful bacteria", "Lactose intolerance concerns", "No prebiotics"]
+      },
+      "blood_sugar": {
+        "grade": "F",
+        "score": 25,
+        "insight": "Very high sugar and glycemic load cause significant blood sugar spikes",
+        "pros": ["Moderate glycemic index (57)"],
+        "cons": ["Very high sugar (21.2g)", "High glycemic load (13)", "No fiber to slow absorption", "Can cause insulin spikes"]
+      },
+      "bone_joint": {
+        "grade": "C+",
+        "score": 65,
+        "insight": "Good calcium content supports bones, but inflammation from sugar is concerning",
+        "pros": ["Excellent calcium (128mg)", "Contains vitamin D", "Provides phosphorus"],
+        "cons": ["Sugar may promote inflammation", "High saturated fat", "Low magnesium"]
+      },
+      "anti_inflammatory": {
+        "grade": "F",
+        "score": 22,
+        "insight": "High sugar and saturated fat content promote systemic inflammation",
+        "pros": ["None significant"],
+        "cons": ["Very high sugar promotes inflammation", "High saturated fat", "No anti-inflammatory compounds", "Lacks omega-3s and antioxidants"]
+      }
+    }
+  },
+  "pudding": {
+    "name": "Pudding",
+    "calories": 113,
+    "protein": 2.9,
+    "carbs": 19.8,
+    "fat": 2.8,
+    "fiber": 0.2,
+    "sugar": 15.7,
+    "sodium": 138,
+    "saturatedFat": 1.6,
+    "cholesterol": 10,
+    "potassium": 147,
+    "calcium": 95,
+    "iron": 0.1,
+    "magnesium": 11,
+    "vitaminA": 37,
+    "vitaminC": 0.4,
+    "vitaminD": 0.3,
+    "vitaminB12": 0.2,
+    "glycemicIndex": 44,
+    "glycemicLoad": 9,
+    "allergens": ["milk"],
+    "servingSize": 100,
+    "servingUnit": "g",
+    "focusGrades": {
+      "balanced": {
+        "grade": "D",
+        "score": 42,
+        "insight": "High sugar content with minimal nutritional value beyond basic calcium",
+        "pros": ["Lower calorie than ice cream", "Calcium source", "Lower fat"],
+        "cons": ["High sugar content", "Very low fiber", "Low protein", "High sodium"]
+      },
+      "heart_health": {
+        "grade": "D+",
+        "score": 48,
+        "insight": "Moderate sodium and sugar content pose cardiovascular concerns",
+        "pros": ["Lower saturated fat than ice cream", "Low cholesterol", "Some potassium"],
+        "cons": ["High sodium (138mg)", "High sugar", "Low in heart-healthy nutrients", "Lacks omega-3s"]
+      },
+      "muscle_building": {
+        "grade": "D",
+        "score": 38,
+        "insight": "Insufficient protein content for effective muscle development",
+        "pros": ["Contains some protein", "Easily digestible"],
+        "cons": ["Very low protein (2.9g)", "High sugar ratio", "Lacks essential amino acids", "No leucine content"]
+      },
+      "energy": {
+        "grade": "C-",
+        "score": 55,
+        "insight": "Provides quick energy but lacks nutrients for sustained performance",
+        "pros": ["Moderate calorie content", "Quick-digesting carbs", "Lower fat for faster digestion"],
+        "cons": ["Energy from simple sugars", "No complex carbs", "Minimal B vitamins", "Crash potential"]
+      },
+      "weight_management": {
+        "grade": "D-",
+        "score": 32,
+        "insight": "High sugar and low satiety make this poor for weight control",
+        "pros": ["Lower calorie than many desserts", "Lower fat"],
+        "cons": ["High sugar (15.7g)", "Almost no fiber", "Low protein for satiety", "Easy to overconsume"]
+      },
+      "brain_focus": {
+        "grade": "D",
+        "score": 40,
+        "insight": "Sugar provides temporary mental boost but leads to focus decline",
+        "pros": ["Quick glucose to brain", "Some B12"],
+        "cons": ["Blood sugar instability", "No complex carbs", "Minimal B vitamins", "No brain-healthy fats"]
+      },
+      "gut_health": {
+        "grade": "D-",
+        "score": 35,
+        "insight": "Virtually no fiber and high sugar negatively impact gut microbiome",
+        "pros": ["Soft texture is gentle", "Some calcium"],
+        "cons": ["Almost no fiber (0.2g)", "Sugar feeds harmful bacteria", "No prebiotics", "High sodium", "Lactose concerns"]
+      },
+      "blood_sugar": {
+        "grade": "D",
+        "score": 38,
+        "insight": "High sugar content causes blood glucose spikes despite moderate GI",
+        "pros": ["Moderate glycemic index (44)", "Lower GL than ice cream"],
+        "cons": ["High sugar (15.7g)", "No fiber to slow absorption", "Refined carbohydrates", "Can trigger insulin response"]
+      },
+      "bone_joint": {
+        "grade": "C",
+        "score": 58,
+        "insight": "Decent calcium content supports bones, but sugar may increase inflammation",
+        "pros": ["Good calcium (95mg)", "Contains vitamin D", "Low fat reduces calorie load"],
+        "cons": ["Sugar promotes inflammation", "Low magnesium", "High sodium"]
+      },
+      "anti_inflammatory": {
+        "grade": "D-",
+        "score": 30,
+        "insight": "High sugar content promotes inflammation with no offsetting anti-inflammatory compounds",
+        "pros": ["Lower fat than ice cream"],
+        "cons": ["High sugar promotes inflammation", "No antioxidants", "No omega-3s", "Lacks anti-inflammatory nutrients"]
+      }
+    }
+  },
+  "brownie_sundae": {
+    "name": "Brownie Sundae",
+    "calories": 285,
+    "protein": 4.2,
+    "carbs": 38.5,
+    "fat": 13.5,
+    "fiber": 1.8,
+    "sugar": 28.3,
+    "sodium": 165,
+    "saturatedFat": 7.2,
+    "cholesterol": 52,
+    "potassium": 215,
+    "calcium": 110,
+    "iron": 1.4,
+    "magnesium": 28,
+    "vitaminA": 95,
+    "vitaminC": 0.5,
+    "vitaminD": 0.2,
+    "vitaminB12": 0.25,
+    "glycemicIndex": 62,
+    "glycemicLoad": 24,
+    "allergens": ["milk", "eggs", "wheat", "soy"],
+    "servingSize": 100,
+    "servingUnit": "g",
+    "focusGrades": {
+      "balanced": {
+        "grade": "F",
+        "score": 28,
+        "insight": "Extremely high in calories, sugar, and saturated fat with minimal nutritional benefits",
+        "pros": ["Contains some calcium and iron", "Provides energy"],
+        "cons": ["Excessive sugar (28.3g)", "Very high saturated fat", "High calorie density", "Low protein"]
+      },
+      "heart_health": {
+        "grade": "F",
+        "score": 18,
+        "insight": "High saturated fat, cholesterol, and sodium pose significant cardiovascular risks",
+        "pros": ["Contains some potassium"],
+        "cons": ["Very high saturated fat (7.2g)", "High cholesterol (52mg)", "High sodium (165mg)", "Excessive sugar", "No heart-healthy fats"]
+      },
+      "muscle_building": {
+        "grade": "D-",
+        "score": 35,
+        "insight": "Very low protein relative to calories makes this inefficient for muscle growth",
+        "pros": ["Some protein from dairy and eggs", "Provides calories for energy"],
+        "cons": ["Low protein (4.2g)", "Protein-to-calorie ratio poor", "Excess sugar interferes with recovery"]
+      },
+      "energy": {
+        "grade": "C-",
+        "score": 52,
+        "insight": "High calorie and sugar content provides quick energy but causes rapid crash",
+        "pros": ["Very high calorie density", "Fast-acting sugars", "Contains caffeine from chocolate"],
+        "cons": ["Massive sugar spike and crash", "No sustained energy sources", "Minimal B vitamins"]
+      },
+      "weight_management": {
+        "grade": "F",
+        "score": 12,
+        "insight": "Extremely calorie-dense with high sugar and fat makes this terrible for weight control",
+        "pros": ["None for weight management"],
+        "cons": ["Extremely high calories (285 kcal/100g)", "Very high sugar (28.3g)", "High fat", "Minimal fiber", "Easy to overconsume"]
+      },
+      "brain_focus": {
+        "grade": "D",
+        "score": 38,
+        "insight": "Extreme sugar content impairs sustained cognitive function despite quick boost",
+        "pros": ["Caffeine from chocolate", "Quick glucose", "Some magnesium"],
+        "cons": ["Severe blood sugar crash", "Sugar fog after spike", "No brain-healthy fats", "Minimal B vitamins"]
+      },
+      "gut_health": {
+        "grade": "D-",
+        "score": 32,
+        "insight": "Low fiber and excessive sugar negatively impact gut microbiome health",
+        "pros": ["Some fiber from chocolate", "Contains calcium"],
+        "cons": ["Very low fiber (1.8g)", "Excessive sugar feeds harmful bacteria", "No prebiotics", "High fat slows digestion"]
+      },
+      "blood_sugar": {
+        "grade": "F",
+        "score": 15,
+        "insight": "Extremely high sugar and glycemic load cause severe blood sugar spikes",
+        "pros": ["None significant"],
+        "cons": ["Extremely high sugar (28.3g)", "Very high glycemic load (24)", "High GI (62)", "Minimal fiber", "Major insulin spike risk"]
+      },
+      "bone_joint": {
+        "grade": "C-",
+        "score": 55,
+        "insight": "Calcium and iron present but high sugar promotes inflammation in joints",
+        "pros": ["Good calcium (110mg)", "Contains iron (1.4mg)", "Some magnesium"],
+        "cons": ["Excessive sugar promotes inflammation", "High saturated fat", "Sodium content"]
+      },
+      "anti_inflammatory": {
+        "grade": "F",
+        "score": 15,
+        "insight": "Extreme sugar and saturated fat content strongly promote systemic inflammation",
+        "pros": ["Dark chocolate has some flavonoids"],
+        "cons": ["Extremely high sugar", "Very high saturated fat", "No significant anti-inflammatory compounds", "Promotes inflammatory pathways"]
+      }
+    }
+  },
+  "lemonade": {
+    "name": "Lemonade",
+    "calories": 40,
+    "protein": 0.1,
+    "carbs": 10.3,
+    "fat": 0.1,
+    "fiber": 0.1,
+    "sugar": 9.8,
+    "sodium": 5,
+    "saturatedFat": 0,
+    "cholesterol": 0,
+    "potassium": 15,
+    "calcium": 3,
+    "iron": 0.04,
+    "magnesium": 2,
+    "vitaminA": 0,
+    "vitaminC": 9.5,
+    "vitaminD": 0,
+    "vitaminB12": 0,
+    "glycemicIndex": 54,
+    "glycemicLoad": 6,
+    "allergens": [],
+    "servingSize": 100,
+    "servingUnit": "ml",
+    "focusGrades": {
+      "balanced": {
+        "grade": "D+",
+        "score": 45,
+        "insight": "Low calorie but high sugar content with minimal nutritional value beyond vitamin C",
+        "pros": ["Very low calorie", "Good vitamin C source", "Fat-free", "Hydrating"],
+        "cons": ["Almost pure sugar water", "No protein", "No fiber", "Minimal minerals"]
+      },
+      "heart_health": {
+        "grade": "C",
+        "score": 62,
+        "insight": "Low calorie and sodium-free, but sugar content is concerning",
+        "pros": ["No saturated fat", "Very low sodium", "No cholesterol", "Vitamin C benefits vessels"],
+        "cons": ["High sugar content", "No heart-healthy nutrients", "Lacks potassium", "No fiber"]
+      },
+      "muscle_building": {
+        "grade": "F",
+        "score": 15,
+        "insight": "Virtually no protein or nutrients that support muscle development",
+        "pros": ["Hydration during workouts"],
+        "cons": ["No protein", "No amino acids", "No minerals for muscle function", "Just sugar water"]
+      },
+      "energy": {
+        "grade": "C",
+        "score": 58,
+        "insight": "Provides quick energy from sugar but lacks sustained fuel sources",
+        "pros": ["Fast-acting simple sugars", "Hydration", "Low calorie", "Vitamin C"],
+        "cons": ["Energy crash after sugar spike", "No complex carbs", "No B vitamins", "No electrolytes"]
+      },
+      "weight_management": {
+        "grade": "C-",
+        "score": 50,
+        "insight": "Low calorie but liquid calories and sugar don't promote satiety",
+        "pros": ["Low calorie (40 kcal/100ml)", "Fat-free", "Can replace higher-calorie drinks"],
+        "cons": ["High sugar (9.8g)", "Liquid calories don't satisfy", "No fiber", "No protein for satiety"]
+      },
+      "brain_focus": {
+        "grade": "D+",
+        "score": 44,
+        "insight": "Quick glucose boost followed by crash impairs sustained concentration",
+        "pros": ["Quick glucose to brain", "Hydration", "Vitamin C for brain health"],
+        "cons": ["Blood sugar spike and crash", "No B vitamins", "No healthy fats", "Sugar crash affects focus"]
+      },
+      "gut_health": {
+        "grade": "D",
+        "score": 40,
+        "insight": "No fiber and high sugar content negatively impact gut microbiome",
+        "pros": ["Hydrating", "Vitamin C"],
+        "cons": ["No fiber", "Sugar feeds harmful bacteria", "No prebiotics or probiotics", "Acidic pH may irritate"]
+      },
+      "blood_sugar": {
+        "grade": "D",
+        "score": 42,
+        "insight": "High sugar content in liquid form causes rapid blood glucose elevation",
+        "pros": ["Moderate glycemic index (54)", "Low glycemic load (6)"],
+        "cons": ["High sugar (9.8g)", "Liquid form = rapid absorption", "No fiber to slow uptake", "Can spike insulin"]
+      },
+      "bone_joint": {
+        "grade": "D",
+        "score": 38,
+        "insight": "Minimal calcium and high sugar may increase inflammation in joints",
+        "pros": ["Vitamin C for collagen synthesis", "Hydration"],
+        "cons": ["Almost no calcium (3mg)", "Sugar promotes inflammation", "No vitamin D", "No magnesium"]
+      },
+      "anti_inflammatory": {
+        "grade": "D+",
+        "score": 46,
+        "insight": "Vitamin C provides some antioxidant benefits but sugar promotes inflammation",
+        "pros": ["Vitamin C antioxidant (9.5mg)", "Hydration reduces inflammation", "No saturated fat"],
+        "cons": ["Sugar promotes inflammation", "No polyphenols", "No omega-3s", "Minimal overall antioxidants"]
+      }
+    }
+  },
+  "iced_tea": {
+    "name": "Iced Tea",
+    "calories": 28,
+    "protein": 0.1,
+    "carbs": 7.0,
+    "fat": 0,
+    "fiber": 0,
+    "sugar": 6.8,
+    "sodium": 7,
+    "saturatedFat": 0,
+    "cholesterol": 0,
+    "potassium": 18,
+    "calcium": 2,
+    "iron": 0.02,
+    "magnesium": 1,
+    "vitaminA": 0,
+    "vitaminC": 0.2,
+    "vitaminD": 0,
+    "vitaminB12": 0,
+    "glycemicIndex": 48,
+    "glycemicLoad": 3,
+    "allergens": [],
+    "servingSize": 100,
+    "servingUnit": "ml",
+    "focusGrades": {
+      "balanced": {
+        "grade": "D+",
+        "score": 48,
+        "insight": "Low calorie with antioxidants from tea, but sweetened versions have added sugar",
+        "pros": ["Very low calorie", "Contains catechins", "Hydrating", "Zero fat"],
+        "cons": ["Added sugar (6.8g)", "No protein", "No fiber", "Minimal vitamins/minerals"]
+      },
+      "heart_health": {
+        "grade": "C+",
+        "score": 68,
+        "insight": "Tea polyphenols benefit cardiovascular health, but added sugar is concerning",
+        "pros": ["Catechins support heart health", "No saturated fat", "Low sodium", "Antioxidants improve vessels"],
+        "cons": ["Added sugar content", "Low potassium", "No omega-3s", "No fiber"]
+      },
+      "muscle_building": {
+        "grade": "F",
+        "score": 18,
+        "insight": "No protein or nutrients that support muscle development",
+        "pros": ["Hydration", "Caffeine may enhance workout performance"],
+        "cons": ["No protein", "No amino acids", "No minerals for muscle", "Just flavored water"]
+      },
+      "energy": {
+        "grade": "C+",
+        "score": 65,
+        "insight": "Caffeine and sugar provide energy boost, but sugar crash is likely",
+        "pros": ["Caffeine for alertness", "Quick sugar energy", "Hydration", "L-theanine in tea"],
+        "cons": ["Sugar crash after initial boost", "No complex carbs", "No B vitamins", "Low calorie"]
+      },
+      "weight_management": {
+        "grade": "C",
+        "score": 58,
+        "insight": "Low calorie but added sugar and liquid calories don't promote satiety",
+        "pros": ["Very low calorie (28 kcal/100ml)", "Catechins may boost metabolism", "Zero fat", "Caffeine may suppress appetite"],
+        "cons": ["Added sugar (6.8g)", "Liquid calories", "No fiber", "No protein"]
+      },
+      "brain_focus": {
+        "grade": "B-",
+        "score": 72,
+        "insight": "Caffeine and L-theanine in tea support focus, but sugar can impair it",
+        "pros": ["Caffeine enhances alertness", "L-theanine promotes calm focus", "Antioxidants protect brain", "Hydration"],
+        "cons": ["Sugar spike and crash", "No B vitamins", "No healthy fats", "Minimal nutrients"]
+      },
+      "gut_health": {
+        "grade": "D+",
+        "score": 46,
+        "insight": "Tea polyphenols benefit gut bacteria, but sugar and lack of fiber are concerns",
+        "pros": ["Polyphenols support microbiome", "Hydration", "Some prebiotic effects"],
+        "cons": ["No fiber", "Sugar feeds harmful bacteria", "Acidic", "No probiotics"]
+      },
+      "blood_sugar": {
+        "grade": "C-",
+        "score": 52,
+        "insight": "Lower sugar than other sweetened drinks, but still causes glucose elevation",
+        "pros": ["Moderate GI (48)", "Very low GL (3)", "Catechins may improve insulin sensitivity"],
+        "cons": ["Added sugar (6.8g)", "Liquid = rapid absorption", "No fiber", "Can spike blood sugar"]
+      },
+      "bone_joint": {
+        "grade": "C-",
+        "score": 54,
+        "insight": "Antioxidants reduce inflammation, but minimal bone-building nutrients present",
+        "pros": ["Polyphenols reduce inflammation", "Antioxidants protect joints", "Hydration"],
+        "cons": ["Almost no calcium (2mg)", "No vitamin D", "Sugar may promote inflammation", "No magnesium"]
+      },
+      "anti_inflammatory": {
+        "grade": "B-",
+        "score": 72,
+        "insight": "Tea catechins and polyphenols provide anti-inflammatory benefits despite added sugar",
+        "pros": ["EGCG and catechins fight inflammation", "Polyphenol antioxidants", "Flavonoids", "No saturated fat"],
+        "cons": ["Added sugar promotes inflammation", "Lower antioxidants than unsweetened", "No omega-3s"]
+      }
+    }
+  },
+  "smoothie": {
+    "name": "Smoothie",
+    "calories": 65,
+    "protein": 1.8,
+    "carbs": 14.2,
+    "fat": 0.5,
+    "fiber": 1.6,
+    "sugar": 11.5,
+    "sodium": 25,
+    "saturatedFat": 0.1,
+    "cholesterol": 0,
+    "potassium": 185,
+    "calcium": 45,
+    "iron": 0.3,
+    "magnesium": 15,
+    "vitaminA": 85,
+    "vitaminC": 28,
+    "vitaminD": 0,
+    "vitaminB12": 0,
+    "glycemicIndex": 42,
+    "glycemicLoad": 6,
+    "allergens": [],
+    "servingSize": 100,
+    "servingUnit": "ml",
+    "focusGrades": {
+      "balanced": {
+        "grade": "C+",
+        "score": 68,
+        "insight": "Nutrient-dense from fruits with fiber, vitamins, but high natural sugar content",
+        "pros": ["Rich in vitamins A and C", "Good fiber content", "Contains potassium", "Low fat"],
+        "cons": ["High sugar (11.5g)", "Low protein", "Liquid calories", "Nutrient loss from blending"]
+      },
+      "heart_health": {
+        "grade": "B-",
+        "score": 75,
+        "insight": "Potassium, fiber, and antioxidants support cardiovascular health despite sugar",
+        "pros": ["Good potassium (185mg)", "Fiber benefits", "Antioxidants from fruits", "No saturated fat", "Low sodium"],
+        "cons": ["High sugar content", "Lacks omega-3s", "Low in heart-healthy fats"]
+      },
+      "muscle_building": {
+        "grade": "D",
+        "score": 42,
+        "insight": "Low protein content makes this ineffective for muscle building without additions",
+        "pros": ["Quick post-workout carbs", "Some potassium for recovery", "Easily digestible"],
+        "cons": ["Very low protein (1.8g)", "Needs protein powder addition", "Insufficient amino acids"]
+      },
+      "energy": {
+        "grade": "B-",
+        "score": 74,
+        "insight": "Natural fruit sugars with fiber provide steady energy better than refined sugars",
+        "pros": ["Natural fruit sugars", "Fiber slows absorption", "Vitamins support energy metabolism", "Potassium for cells"],
+        "cons": ["Still causes some sugar spike", "Low calorie for sustained energy", "Minimal B vitamins"]
+      },
+      "weight_management": {
+        "grade": "C",
+        "score": 60,
+        "insight": "Low calorie and fiber help satiety, but liquid calories and sugar are concerns",
+        "pros": ["Moderate calorie (65 kcal/100ml)", "Good fiber (1.6g)", "Nutrient-dense", "Low fat"],
+        "cons": ["High sugar (11.5g)", "Liquid calories less satisfying", "Low protein", "Easy to overconsume"]
+      },
+      "brain_focus": {
+        "grade": "B",
+        "score": 78,
+        "insight": "Vitamins, antioxidants, and natural sugars support cognitive function effectively",
+        "pros": ["Vitamin C for brain health", "Antioxidants protect neurons", "Natural glucose steady release", "Potassium for nerve function"],
+        "cons": ["Low in omega-3s", "Minimal B vitamins", "Sugar can affect focus", "Low protein"]
+      },
+      "gut_health": {
+        "grade": "B",
+        "score": 76,
+        "insight": "Good fiber content and fruit polyphenols support healthy gut microbiome",
+        "pros": ["Good fiber (1.6g)", "Polyphenols feed good bacteria", "Hydrating", "Natural prebiotics from fruit"],
+        "cons": ["Blending reduces fiber effectiveness", "Sugar feeds harmful bacteria", "No probiotics", "Lower fiber than whole fruit"]
+      },
+      "blood_sugar": {
+        "grade": "C+",
+        "score": 66,
+        "insight": "Fiber helps moderate sugar absorption, but total sugar content is still high",
+        "pros": ["Good fiber slows absorption", "Low GI (42)", "Low GL (6)", "Natural sugars with nutrients"],
+        "cons": ["High total sugar (11.5g)", "Liquid form faster absorption", "Natural fructose still impacts glucose"]
+      },
+      "bone_joint": {
+        "grade": "B-",
+        "score": 73,
+        "insight": "Vitamin C supports collagen and antioxidants reduce inflammation in joints",
+        "pros": ["Excellent vitamin C (28mg)", "Calcium present (45mg)", "Antioxidants reduce inflammation", "Potassium for bones"],
+        "cons": ["No vitamin D", "Low calcium compared to dairy", "Sugar may promote inflammation", "Low magnesium"]
+      },
+      "anti_inflammatory": {
+        "grade": "B+",
+        "score": 82,
+        "insight": "Rich in antioxidants, vitamins, and polyphenols that combat inflammation",
+        "pros": ["High vitamin C antioxidant (28mg)", "Fruit polyphenols", "Vitamin A benefits", "Phytonutrients", "No saturated fat"],
+        "cons": ["Sugar can promote inflammation", "No omega-3s", "Depends on fruit selection"]
+      }
+    }
+  }
+}

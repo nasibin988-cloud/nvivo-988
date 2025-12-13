@@ -1,0 +1,636 @@
+{
+    "parmesan_cheese": {
+        "foodId": "parmesan_cheese",
+        "name": "Parmesan Cheese",
+        "category": "dairy",
+        "subcategory": "cheese",
+        "servingSize": 28,
+        "servingSizeUnit": "g",
+        "servingSizeDescription": "1 oz (about 1/4 cup grated)",
+        "caloriesPerServing": 122,
+        "macros": {
+            "protein": 10.9,
+            "carbs": 0.9,
+            "fat": 8.1,
+            "fiber": 0,
+            "sugar": 0.2
+        },
+        "micros": {
+            "sodium": 454,
+            "potassium": 30,
+            "calcium": 336,
+            "iron": 0.2,
+            "vitaminA": 207,
+            "vitaminC": 0,
+            "vitaminD": 0.2,
+            "vitaminE": 0.1,
+            "vitaminK": 0.6,
+            "thiamin": 0.01,
+            "riboflavin": 0.1,
+            "niacin": 0.1,
+            "vitaminB6": 0.03,
+            "folate": 2,
+            "vitaminB12": 0.4,
+            "magnesium": 13,
+            "phosphorus": 197,
+            "zinc": 1.0,
+            "selenium": 6.3,
+            "choline": 4.5
+        },
+        "fatProfile": {
+            "saturated": 5.2,
+            "monounsaturated": 2.3,
+            "polyunsaturated": 0.2,
+            "trans": 0,
+            "omega3": 0.06,
+            "omega6": 0.14
+        },
+        "glycemicIndex": 0,
+        "glycemicLoad": 0,
+        "allergens": [
+            "dairy",
+            "lactose"
+        ],
+        "tags": [
+            "high-protein",
+            "high-calcium",
+            "high-sodium",
+            "aged-cheese",
+            "hard-cheese"
+        ],
+        "healthScore": 72,
+        "confidenceScore": 95,
+        "focusGrades": {
+            "heart_health": "C",
+            "diabetes": "A",
+            "weight_loss": "B",
+            "gut_health": "C",
+            "inflammation": "C",
+            "energy": "B",
+            "mental_clarity": "B",
+            "longevity": "B",
+            "athletic_performance": "B",
+            "immune_support": "B"
+        },
+        "nutritionDensity": {
+            "overall": 78,
+            "protein": 95,
+            "micronutrients": 82,
+            "fiber": 0
+        },
+        "healthImpact": {
+            "antiInflammatory": 3,
+            "antioxidant": 2,
+            "metabolicBoost": 4,
+            "gutHealth": 3,
+            "immuneSupport": 5,
+            "cognitiveFunction": 5,
+            "cardiovascularRisk": -4
+        },
+        "insights": [
+            "Excellent source of calcium (34% DV) for bone health",
+            "High protein content supports muscle maintenance",
+            "Very high in sodium (454mg per oz) - use sparingly",
+            "Rich in vitamin B12 for nerve health",
+            "Contains beneficial probiotics from aging process",
+            "High in phosphorus for bone and teeth health"
+        ],
+        "warnings": [
+            "High sodium content may raise blood pressure",
+            "Saturated fat may affect cholesterol levels",
+            "Contains lactose - may cause issues for sensitive individuals",
+            "High in tyramine - avoid with MAO inhibitors"
+        ],
+        "dataSource": "USDA FoodData Central",
+        "lastUpdated": "2025-01-15"
+    },
+    "swiss_cheese": {
+        "foodId": "swiss_cheese",
+        "name": "Swiss Cheese",
+        "category": "dairy",
+        "subcategory": "cheese",
+        "servingSize": 28,
+        "servingSizeUnit": "g",
+        "servingSizeDescription": "1 oz (1 slice)",
+        "caloriesPerServing": 106,
+        "macros": {
+            "protein": 7.6,
+            "carbs": 1.5,
+            "fat": 7.9,
+            "fiber": 0,
+            "sugar": 0.4
+        },
+        "micros": {
+            "sodium": 54,
+            "potassium": 22,
+            "calcium": 224,
+            "iron": 0.1,
+            "vitaminA": 171,
+            "vitaminC": 0,
+            "vitaminD": 0.2,
+            "vitaminE": 0.1,
+            "vitaminK": 0.7,
+            "thiamin": 0.01,
+            "riboflavin": 0.08,
+            "niacin": 0.03,
+            "vitaminB6": 0.02,
+            "folate": 2,
+            "vitaminB12": 1.7,
+            "magnesium": 11,
+            "phosphorus": 171,
+            "zinc": 1.2,
+            "selenium": 4.5,
+            "choline": 4.2
+        },
+        "fatProfile": {
+            "saturated": 5.0,
+            "monounsaturated": 2.1,
+            "polyunsaturated": 0.3,
+            "trans": 0,
+            "omega3": 0.08,
+            "omega6": 0.19
+        },
+        "glycemicIndex": 0,
+        "glycemicLoad": 0,
+        "allergens": [
+            "dairy",
+            "lactose"
+        ],
+        "tags": [
+            "high-protein",
+            "high-calcium",
+            "low-sodium",
+            "probiotic",
+            "hard-cheese"
+        ],
+        "healthScore": 76,
+        "confidenceScore": 95,
+        "focusGrades": {
+            "heart_health": "B",
+            "diabetes": "A",
+            "weight_loss": "B",
+            "gut_health": "B",
+            "inflammation": "C",
+            "energy": "B",
+            "mental_clarity": "A",
+            "longevity": "B",
+            "athletic_performance": "B",
+            "immune_support": "B"
+        },
+        "nutritionDensity": {
+            "overall": 74,
+            "protein": 88,
+            "micronutrients": 76,
+            "fiber": 0
+        },
+        "healthImpact": {
+            "antiInflammatory": 3,
+            "antioxidant": 2,
+            "metabolicBoost": 5,
+            "gutHealth": 6,
+            "immuneSupport": 6,
+            "cognitiveFunction": 7,
+            "cardiovascularRisk": -3
+        },
+        "insights": [
+            "Excellent source of calcium (22% DV) for bone health",
+            "Very high in vitamin B12 (71% DV) - crucial for nerve function",
+            "Low sodium compared to other cheeses (54mg vs 200+ average)",
+            "Contains beneficial probiotics from fermentation",
+            "Rich in zinc for immune function",
+            "Good source of phosphorus for bone health"
+        ],
+        "warnings": [
+            "Contains saturated fat - moderate portions recommended",
+            "Lactose content may cause digestive issues for sensitive individuals",
+            "High in tyramine - avoid with certain medications"
+        ],
+        "dataSource": "USDA FoodData Central",
+        "lastUpdated": "2025-01-15"
+    },
+    "cottage_cheese": {
+        "foodId": "cottage_cheese",
+        "name": "Cottage Cheese (Low-fat 2%)",
+        "category": "dairy",
+        "subcategory": "cheese",
+        "servingSize": 113,
+        "servingSizeUnit": "g",
+        "servingSizeDescription": "1/2 cup",
+        "caloriesPerServing": 92,
+        "macros": {
+            "protein": 12.4,
+            "carbs": 4.7,
+            "fat": 2.5,
+            "fiber": 0,
+            "sugar": 4.1
+        },
+        "micros": {
+            "sodium": 373,
+            "potassium": 108,
+            "calcium": 88,
+            "iron": 0.1,
+            "vitaminA": 85,
+            "vitaminC": 0,
+            "vitaminD": 0,
+            "vitaminE": 0.02,
+            "vitaminK": 0,
+            "thiamin": 0.02,
+            "riboflavin": 0.17,
+            "niacin": 0.1,
+            "vitaminB6": 0.06,
+            "folate": 14,
+            "vitaminB12": 0.5,
+            "magnesium": 6,
+            "phosphorus": 159,
+            "zinc": 0.5,
+            "selenium": 10.8,
+            "choline": 16.8
+        },
+        "fatProfile": {
+            "saturated": 1.4,
+            "monounsaturated": 0.7,
+            "polyunsaturated": 0.1,
+            "trans": 0,
+            "omega3": 0.03,
+            "omega6": 0.05
+        },
+        "glycemicIndex": 10,
+        "glycemicLoad": 1,
+        "allergens": [
+            "dairy",
+            "lactose"
+        ],
+        "tags": [
+            "high-protein",
+            "low-fat",
+            "low-carb",
+            "probiotic",
+            "soft-cheese"
+        ],
+        "healthScore": 84,
+        "confidenceScore": 95,
+        "focusGrades": {
+            "heart_health": "B",
+            "diabetes": "A",
+            "weight_loss": "A",
+            "gut_health": "B",
+            "inflammation": "B",
+            "energy": "B",
+            "mental_clarity": "B",
+            "longevity": "B",
+            "athletic_performance": "A",
+            "immune_support": "B"
+        },
+        "nutritionDensity": {
+            "overall": 82,
+            "protein": 98,
+            "micronutrients": 68,
+            "fiber": 0
+        },
+        "healthImpact": {
+            "antiInflammatory": 4,
+            "antioxidant": 3,
+            "metabolicBoost": 7,
+            "gutHealth": 6,
+            "immuneSupport": 6,
+            "cognitiveFunction": 6,
+            "cardiovascularRisk": -2
+        },
+        "insights": [
+            "Excellent protein source (12.4g per serving) - ideal for muscle recovery",
+            "Low in fat and calories - great for weight management",
+            "Contains casein protein - slow-digesting for sustained energy",
+            "Good source of selenium (15% DV) for antioxidant protection",
+            "Rich in riboflavin for energy metabolism",
+            "Contains beneficial probiotics in cultured varieties"
+        ],
+        "warnings": [
+            "High in sodium (373mg per serving) - choose low-sodium varieties",
+            "Contains lactose - may cause digestive issues",
+            "Some brands add stabilizers and gums - check labels"
+        ],
+        "dataSource": "USDA FoodData Central",
+        "lastUpdated": "2025-01-15"
+    },
+    "sour_cream": {
+        "foodId": "sour_cream",
+        "name": "Sour Cream",
+        "category": "dairy",
+        "subcategory": "cream",
+        "servingSize": 30,
+        "servingSizeUnit": "g",
+        "servingSizeDescription": "2 tablespoons",
+        "caloriesPerServing": 60,
+        "macros": {
+            "protein": 0.7,
+            "carbs": 1.2,
+            "fat": 5.8,
+            "fiber": 0,
+            "sugar": 0.4
+        },
+        "micros": {
+            "sodium": 15,
+            "potassium": 35,
+            "calcium": 35,
+            "iron": 0.01,
+            "vitaminA": 169,
+            "vitaminC": 0.2,
+            "vitaminD": 0.2,
+            "vitaminE": 0.1,
+            "vitaminK": 0.4,
+            "thiamin": 0.01,
+            "riboflavin": 0.04,
+            "niacin": 0.02,
+            "vitaminB6": 0.01,
+            "folate": 3,
+            "vitaminB12": 0.1,
+            "magnesium": 3,
+            "phosphorus": 24,
+            "zinc": 0.1,
+            "selenium": 0.6,
+            "choline": 9.3
+        },
+        "fatProfile": {
+            "saturated": 3.6,
+            "monounsaturated": 1.7,
+            "polyunsaturated": 0.2,
+            "trans": 0,
+            "omega3": 0.05,
+            "omega6": 0.12
+        },
+        "glycemicIndex": 5,
+        "glycemicLoad": 0,
+        "allergens": [
+            "dairy",
+            "lactose"
+        ],
+        "tags": [
+            "high-fat",
+            "low-carb",
+            "fermented",
+            "probiotic",
+            "condiment"
+        ],
+        "healthScore": 48,
+        "confidenceScore": 95,
+        "focusGrades": {
+            "heart_health": "D",
+            "diabetes": "B",
+            "weight_loss": "D",
+            "gut_health": "B",
+            "inflammation": "D",
+            "energy": "C",
+            "mental_clarity": "C",
+            "longevity": "C",
+            "athletic_performance": "C",
+            "immune_support": "C"
+        },
+        "nutritionDensity": {
+            "overall": 42,
+            "protein": 12,
+            "micronutrients": 38,
+            "fiber": 0
+        },
+        "healthImpact": {
+            "antiInflammatory": 2,
+            "antioxidant": 2,
+            "metabolicBoost": 2,
+            "gutHealth": 5,
+            "immuneSupport": 3,
+            "cognitiveFunction": 2,
+            "cardiovascularRisk": -5
+        },
+        "insights": [
+            "Contains beneficial probiotics from fermentation",
+            "Provides vitamin A for eye health and immune function",
+            "Low in sodium compared to many condiments",
+            "Fermentation may improve digestibility for some",
+            "Fat content helps absorb fat-soluble vitamins"
+        ],
+        "warnings": [
+            "High in saturated fat (3.6g per 2 tbsp) - use sparingly",
+            "Calorie-dense - easy to overconsume",
+            "Contains lactose - may cause digestive issues",
+            "Low in protein and other nutrients - primarily a fat source",
+            "Choose full-fat varieties over low-fat for better nutrient profile"
+        ],
+        "dataSource": "USDA FoodData Central",
+        "lastUpdated": "2025-01-15"
+    },
+    "butter": {
+        "foodId": "butter",
+        "name": "Butter (Salted)",
+        "category": "dairy",
+        "subcategory": "butter",
+        "servingSize": 14,
+        "servingSizeUnit": "g",
+        "servingSizeDescription": "1 tablespoon",
+        "caloriesPerServing": 102,
+        "macros": {
+            "protein": 0.1,
+            "carbs": 0.01,
+            "fat": 11.5,
+            "fiber": 0,
+            "sugar": 0.01
+        },
+        "micros": {
+            "sodium": 91,
+            "potassium": 3,
+            "calcium": 3,
+            "iron": 0,
+            "vitaminA": 355,
+            "vitaminC": 0,
+            "vitaminD": 0.2,
+            "vitaminE": 0.3,
+            "vitaminK": 1.0,
+            "thiamin": 0,
+            "riboflavin": 0.01,
+            "niacin": 0.01,
+            "vitaminB6": 0,
+            "folate": 0,
+            "vitaminB12": 0.02,
+            "magnesium": 0,
+            "phosphorus": 3,
+            "zinc": 0.01,
+            "selenium": 0.1,
+            "choline": 2.7
+        },
+        "fatProfile": {
+            "saturated": 7.3,
+            "monounsaturated": 3.0,
+            "polyunsaturated": 0.4,
+            "trans": 0.5,
+            "omega3": 0.04,
+            "omega6": 0.27
+        },
+        "glycemicIndex": 0,
+        "glycemicLoad": 0,
+        "allergens": [
+            "dairy",
+            "lactose"
+        ],
+        "tags": [
+            "high-fat",
+            "zero-carb",
+            "saturated-fat",
+            "cooking-fat",
+            "spread"
+        ],
+        "healthScore": 35,
+        "confidenceScore": 95,
+        "focusGrades": {
+            "heart_health": "D",
+            "diabetes": "B",
+            "weight_loss": "F",
+            "gut_health": "C",
+            "inflammation": "D",
+            "energy": "C",
+            "mental_clarity": "C",
+            "longevity": "D",
+            "athletic_performance": "C",
+            "immune_support": "C"
+        },
+        "nutritionDensity": {
+            "overall": 28,
+            "protein": 2,
+            "micronutrients": 35,
+            "fiber": 0
+        },
+        "healthImpact": {
+            "antiInflammatory": 1,
+            "antioxidant": 2,
+            "metabolicBoost": 2,
+            "gutHealth": 2,
+            "immuneSupport": 3,
+            "cognitiveFunction": 3,
+            "cardiovascularRisk": -7
+        },
+        "insights": [
+            "Excellent source of vitamin A (10% DV) for vision and immune health",
+            "Contains butyrate - a short-chain fatty acid that may benefit gut health",
+            "Grass-fed butter provides more omega-3s and vitamin K2",
+            "Zero carbs - compatible with ketogenic diets",
+            "High in fat-soluble vitamins (A, D, E, K)",
+            "Contains conjugated linoleic acid (CLA) with potential metabolic benefits"
+        ],
+        "warnings": [
+            "Very high in saturated fat (7.3g per tbsp) - limit intake",
+            "Calorie-dense (102 cal per tbsp) - easy to overconsume",
+            "Contains trans fats naturally occurring in dairy (0.5g)",
+            "High in sodium in salted varieties (91mg per tbsp)",
+            "May raise LDL cholesterol in sensitive individuals",
+            "Contains lactose - though minimal amount"
+        ],
+        "dataSource": "USDA FoodData Central",
+        "lastUpdated": "2025-01-15"
+    },
+    "ice_cream": {
+        "foodId": "ice_cream",
+        "name": "Ice Cream (Vanilla, Regular)",
+        "category": "dairy",
+        "subcategory": "frozen_dessert",
+        "servingSize": 132,
+        "servingSizeUnit": "g",
+        "servingSizeDescription": "1/2 cup",
+        "caloriesPerServing": 273,
+        "macros": {
+            "protein": 4.6,
+            "carbs": 31.4,
+            "fat": 14.5,
+            "fiber": 0.5,
+            "sugar": 27.8
+        },
+        "micros": {
+            "sodium": 106,
+            "potassium": 263,
+            "calcium": 169,
+            "iron": 0.1,
+            "vitaminA": 436,
+            "vitaminC": 0.8,
+            "vitaminD": 0.3,
+            "vitaminE": 0.5,
+            "vitaminK": 0.4,
+            "thiamin": 0.05,
+            "riboflavin": 0.28,
+            "niacin": 0.1,
+            "vitaminB6": 0.06,
+            "folate": 7,
+            "vitaminB12": 0.6,
+            "magnesium": 18,
+            "phosphorus": 139,
+            "zinc": 0.9,
+            "selenium": 2.9,
+            "choline": 38.3
+        },
+        "fatProfile": {
+            "saturated": 9.0,
+            "monounsaturated": 4.2,
+            "polyunsaturated": 0.5,
+            "trans": 0,
+            "omega3": 0.09,
+            "omega6": 0.35
+        },
+        "glycemicIndex": 57,
+        "glycemicLoad": 18,
+        "allergens": [
+            "dairy",
+            "lactose"
+        ],
+        "tags": [
+            "dessert",
+            "high-sugar",
+            "high-fat",
+            "processed",
+            "frozen",
+            "treat"
+        ],
+        "healthScore": 28,
+        "confidenceScore": 95,
+        "focusGrades": {
+            "heart_health": "F",
+            "diabetes": "F",
+            "weight_loss": "F",
+            "gut_health": "D",
+            "inflammation": "F",
+            "energy": "D",
+            "mental_clarity": "D",
+            "longevity": "F",
+            "athletic_performance": "D",
+            "immune_support": "C"
+        },
+        "nutritionDensity": {
+            "overall": 35,
+            "protein": 48,
+            "micronutrients": 52,
+            "fiber": 8
+        },
+        "healthImpact": {
+            "antiInflammatory": -3,
+            "antioxidant": 1,
+            "metabolicBoost": -2,
+            "gutHealth": 2,
+            "immuneSupport": 3,
+            "cognitiveFunction": -1,
+            "cardiovascularRisk": -8
+        },
+        "insights": [
+            "Good source of calcium (13% DV) for bone health",
+            "Provides vitamin B12 for nerve function",
+            "Contains riboflavin for energy metabolism",
+            "Decent protein content (4.6g per serving)",
+            "Source of vitamin A for immune health"
+        ],
+        "warnings": [
+            "Very high in added sugar (27.8g per serving) - exceeds daily limit",
+            "High in saturated fat (9g) - nearly half the daily limit",
+            "Calorie-dense (273 cal per 1/2 cup) - easy to overconsume",
+            "High glycemic load may spike blood sugar",
+            "May promote inflammation due to sugar and saturated fat",
+            "Contains lactose - may cause digestive issues",
+            "Should be considered an occasional treat, not a regular food",
+            "Many commercial varieties contain additives and artificial ingredients"
+        ],
+        "dataSource": "USDA FoodData Central",
+        "lastUpdated": "2025-01-15"
+    }
+}

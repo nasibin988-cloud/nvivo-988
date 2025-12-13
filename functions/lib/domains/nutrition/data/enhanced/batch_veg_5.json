@@ -1,0 +1,992 @@
+{
+    "aubergine": {
+        "basicInfo": {
+            "name": "Aubergine",
+            "category": "vegetable",
+            "subCategory": "nightshade",
+            "servingSize": 100,
+            "servingUnit": "g",
+            "calories": 25,
+            "defaultUnit": "cup"
+        },
+        "macronutrients": {
+            "protein": 1.0,
+            "carbs": 5.9,
+            "fiber": 3.0,
+            "sugars": 3.5,
+            "fat": 0.2,
+            "saturatedFat": 0.04,
+            "monounsaturatedFat": 0.02,
+            "polyunsaturatedFat": 0.08,
+            "omega3": 0.01,
+            "omega6": 0.07,
+            "transFat": 0
+        },
+        "micronutrients": {
+            "vitamins": {
+                "vitaminA": 1,
+                "vitaminC": 2.2,
+                "vitaminD": 0,
+                "vitaminE": 0.3,
+                "vitaminK": 3.5,
+                "thiamin": 0.04,
+                "riboflavin": 0.04,
+                "niacin": 0.65,
+                "vitaminB6": 0.08,
+                "folate": 22,
+                "vitaminB12": 0,
+                "pantothenicAcid": 0.28,
+                "choline": 6.9
+            },
+            "minerals": {
+                "calcium": 9,
+                "iron": 0.23,
+                "magnesium": 14,
+                "phosphorus": 24,
+                "potassium": 229,
+                "sodium": 2,
+                "zinc": 0.16,
+                "copper": 0.08,
+                "manganese": 0.23,
+                "selenium": 0.3
+            }
+        },
+        "healthMetrics": {
+            "glycemicIndex": 15,
+            "glycemicLoad": 1,
+            "inflammationScore": -6,
+            "antioxidantScore": 85,
+            "nutrientDensity": 68,
+            "proteinQuality": 0.5,
+            "omega3Content": "minimal",
+            "omega6to3ratio": 7.0
+        },
+        "tags": ["low-calorie", "high-fiber", "antioxidant-rich", "low-carb", "keto-friendly", "vegan", "gluten-free", "nasunin-rich"],
+        "allergens": [],
+        "certifications": [],
+        "shelfLife": "5-7 days refrigerated",
+        "preparation": ["grilled", "roasted", "baked", "fried", "stuffed", "sautéed"],
+        "seasonality": "summer-fall",
+        "sustainabilityScore": 9,
+        "pricePerServing": 0.85,
+        "bioactiveCompounds": [
+            {
+                "name": "Nasunin",
+                "amount": 750,
+                "unit": "mg",
+                "benefits": ["Powerful antioxidant", "Protects brain cell membranes", "Anti-angiogenic (anti-cancer)"]
+            },
+            {
+                "name": "Chlorogenic Acid",
+                "amount": 320,
+                "unit": "mg",
+                "benefits": ["Antioxidant", "Lowers blood glucose", "Anti-inflammatory"]
+            },
+            {
+                "name": "Anthocyanins",
+                "amount": 85,
+                "unit": "mg",
+                "benefits": ["Heart health", "Cognitive protection", "Anti-inflammatory"]
+            }
+        ],
+        "focusGrades": {
+            "weight_loss": {
+                "grade": "A+",
+                "score": 95,
+                "insight": "Extremely low in calories (25 per 100g) with high fiber content that promotes fullness and digestive health",
+                "pros": ["Very low calorie density", "3g fiber for satiety", "High water content (92%)", "Minimal fat"],
+                "cons": ["Low protein content", "Requires careful preparation to avoid oil absorption"]
+            },
+            "heart_health": {
+                "grade": "A",
+                "score": 90,
+                "insight": "Rich in anthocyanins and nasunin that protect cardiovascular health and lower cholesterol",
+                "pros": ["Nasunin protects blood vessels", "Fiber lowers cholesterol", "Potassium (229mg) supports blood pressure", "Anthocyanins reduce inflammation"],
+                "cons": ["Minimal omega-3 fatty acids", "Lower potassium than some vegetables"]
+            },
+            "diabetes_management": {
+                "grade": "A",
+                "score": 93,
+                "insight": "Very low glycemic load (1) with chlorogenic acid that helps regulate blood sugar levels",
+                "pros": ["GL of only 1", "Chlorogenic acid improves glucose metabolism", "High fiber slows sugar absorption", "Low net carbs (2.9g)"],
+                "cons": ["Minimal protein to stabilize blood sugar"]
+            },
+            "muscle_gain": {
+                "grade": "C",
+                "score": 45,
+                "insight": "Low protein content makes it a poor choice for direct muscle building, but provides micronutrients",
+                "pros": ["Antioxidants aid recovery", "Low calorie allows protein budget elsewhere", "Potassium prevents cramping"],
+                "cons": ["Only 1g protein per 100g", "No leucine for muscle synthesis", "Low in BCAAs"]
+            },
+            "energy_boost": {
+                "grade": "C+",
+                "score": 60,
+                "insight": "Provides steady energy from complex carbs but lacks immediate fuel or energizing nutrients",
+                "pros": ["Low GI prevents crashes", "Some B vitamins for metabolism", "Chlorogenic acid may improve energy utilization"],
+                "cons": ["Very low carbs for quick energy", "Minimal B vitamins", "No vitamin B12", "Low calorie density"]
+            },
+            "digestive_health": {
+                "grade": "A-",
+                "score": 88,
+                "insight": "Good fiber content and prebiotic properties support healthy gut bacteria and regular digestion",
+                "pros": ["3g fiber per 100g", "Prebiotic fiber feeds gut bacteria", "High water content aids digestion", "Low in FODMAPs"],
+                "cons": ["Some people sensitive to nightshades", "Can cause bloating if undercooked"]
+            },
+            "immune_support": {
+                "grade": "B+",
+                "score": 82,
+                "insight": "Rich in antioxidants like nasunin that protect immune cells from oxidative stress",
+                "pros": ["Nasunin boosts immunity", "Anthocyanins have anti-viral properties", "Chlorogenic acid anti-inflammatory", "Vitamin C supports immune function"],
+                "cons": ["Low vitamin C (2.2mg)", "Minimal zinc and selenium", "No vitamin D"]
+            },
+            "bone_health": {
+                "grade": "C+",
+                "score": 58,
+                "insight": "Provides some bone-supporting nutrients but lacks the key minerals needed for strong bones",
+                "pros": ["Vitamin K for bone metabolism", "Manganese supports bone formation", "Magnesium aids calcium absorption"],
+                "cons": ["Very low calcium (9mg)", "Minimal vitamin D", "Low phosphorus", "Weak protein content"]
+            },
+            "brain_focus": {
+                "grade": "A",
+                "score": 91,
+                "insight": "Nasunin is a powerful brain-protective antioxidant that shields neuronal membranes from damage",
+                "pros": ["Nasunin protects brain cell lipids", "Anthocyanins improve memory", "Chlorogenic acid reduces neuroinflammation", "Folate supports cognitive function"],
+                "cons": ["No omega-3 DHA", "Low B12 for neurotransmitters", "Minimal choline"]
+            },
+            "skin_health": {
+                "grade": "A-",
+                "score": 87,
+                "insight": "Anthocyanins and nasunin provide antioxidant protection against UV damage and aging",
+                "pros": ["Nasunin fights free radicals", "Anthocyanins improve skin elasticity", "Vitamin E protects skin cells", "High water content hydrates"],
+                "cons": ["Low vitamin C for collagen", "Minimal vitamin A", "No biotin"]
+            }
+        }
+    },
+    "eggplant": {
+        "basicInfo": {
+            "name": "Eggplant",
+            "category": "vegetable",
+            "subCategory": "nightshade",
+            "servingSize": 100,
+            "servingUnit": "g",
+            "calories": 25,
+            "defaultUnit": "cup"
+        },
+        "macronutrients": {
+            "protein": 1.0,
+            "carbs": 5.9,
+            "fiber": 3.0,
+            "sugars": 3.5,
+            "fat": 0.2,
+            "saturatedFat": 0.04,
+            "monounsaturatedFat": 0.02,
+            "polyunsaturatedFat": 0.08,
+            "omega3": 0.01,
+            "omega6": 0.07,
+            "transFat": 0
+        },
+        "micronutrients": {
+            "vitamins": {
+                "vitaminA": 1,
+                "vitaminC": 2.2,
+                "vitaminD": 0,
+                "vitaminE": 0.3,
+                "vitaminK": 3.5,
+                "thiamin": 0.04,
+                "riboflavin": 0.04,
+                "niacin": 0.65,
+                "vitaminB6": 0.08,
+                "folate": 22,
+                "vitaminB12": 0,
+                "pantothenicAcid": 0.28,
+                "choline": 6.9
+            },
+            "minerals": {
+                "calcium": 9,
+                "iron": 0.23,
+                "magnesium": 14,
+                "phosphorus": 24,
+                "potassium": 229,
+                "sodium": 2,
+                "zinc": 0.16,
+                "copper": 0.08,
+                "manganese": 0.23,
+                "selenium": 0.3
+            }
+        },
+        "healthMetrics": {
+            "glycemicIndex": 15,
+            "glycemicLoad": 1,
+            "inflammationScore": -6,
+            "antioxidantScore": 85,
+            "nutrientDensity": 68,
+            "proteinQuality": 0.5,
+            "omega3Content": "minimal",
+            "omega6to3ratio": 7.0
+        },
+        "tags": ["low-calorie", "high-fiber", "antioxidant-rich", "low-carb", "keto-friendly", "vegan", "gluten-free", "nasunin-rich"],
+        "allergens": [],
+        "certifications": [],
+        "shelfLife": "5-7 days refrigerated",
+        "preparation": ["grilled", "roasted", "baked", "fried", "stuffed", "sautéed"],
+        "seasonality": "summer-fall",
+        "sustainabilityScore": 9,
+        "pricePerServing": 0.85,
+        "bioactiveCompounds": [
+            {
+                "name": "Nasunin",
+                "amount": 750,
+                "unit": "mg",
+                "benefits": ["Powerful antioxidant", "Protects brain cell membranes", "Anti-angiogenic (anti-cancer)"]
+            },
+            {
+                "name": "Chlorogenic Acid",
+                "amount": 320,
+                "unit": "mg",
+                "benefits": ["Antioxidant", "Lowers blood glucose", "Anti-inflammatory"]
+            },
+            {
+                "name": "Anthocyanins",
+                "amount": 85,
+                "unit": "mg",
+                "benefits": ["Heart health", "Cognitive protection", "Anti-inflammatory"]
+            }
+        ],
+        "focusGrades": {
+            "weight_loss": {
+                "grade": "A+",
+                "score": 95,
+                "insight": "Extremely low in calories (25 per 100g) with high fiber content that promotes fullness and digestive health",
+                "pros": ["Very low calorie density", "3g fiber for satiety", "High water content (92%)", "Minimal fat"],
+                "cons": ["Low protein content", "Requires careful preparation to avoid oil absorption"]
+            },
+            "heart_health": {
+                "grade": "A",
+                "score": 90,
+                "insight": "Rich in anthocyanins and nasunin that protect cardiovascular health and lower cholesterol",
+                "pros": ["Nasunin protects blood vessels", "Fiber lowers cholesterol", "Potassium (229mg) supports blood pressure", "Anthocyanins reduce inflammation"],
+                "cons": ["Minimal omega-3 fatty acids", "Lower potassium than some vegetables"]
+            },
+            "diabetes_management": {
+                "grade": "A",
+                "score": 93,
+                "insight": "Very low glycemic load (1) with chlorogenic acid that helps regulate blood sugar levels",
+                "pros": ["GL of only 1", "Chlorogenic acid improves glucose metabolism", "High fiber slows sugar absorption", "Low net carbs (2.9g)"],
+                "cons": ["Minimal protein to stabilize blood sugar"]
+            },
+            "muscle_gain": {
+                "grade": "C",
+                "score": 45,
+                "insight": "Low protein content makes it a poor choice for direct muscle building, but provides micronutrients",
+                "pros": ["Antioxidants aid recovery", "Low calorie allows protein budget elsewhere", "Potassium prevents cramping"],
+                "cons": ["Only 1g protein per 100g", "No leucine for muscle synthesis", "Low in BCAAs"]
+            },
+            "energy_boost": {
+                "grade": "C+",
+                "score": 60,
+                "insight": "Provides steady energy from complex carbs but lacks immediate fuel or energizing nutrients",
+                "pros": ["Low GI prevents crashes", "Some B vitamins for metabolism", "Chlorogenic acid may improve energy utilization"],
+                "cons": ["Very low carbs for quick energy", "Minimal B vitamins", "No vitamin B12", "Low calorie density"]
+            },
+            "digestive_health": {
+                "grade": "A-",
+                "score": 88,
+                "insight": "Good fiber content and prebiotic properties support healthy gut bacteria and regular digestion",
+                "pros": ["3g fiber per 100g", "Prebiotic fiber feeds gut bacteria", "High water content aids digestion", "Low in FODMAPs"],
+                "cons": ["Some people sensitive to nightshades", "Can cause bloating if undercooked"]
+            },
+            "immune_support": {
+                "grade": "B+",
+                "score": 82,
+                "insight": "Rich in antioxidants like nasunin that protect immune cells from oxidative stress",
+                "pros": ["Nasunin boosts immunity", "Anthocyanins have anti-viral properties", "Chlorogenic acid anti-inflammatory", "Vitamin C supports immune function"],
+                "cons": ["Low vitamin C (2.2mg)", "Minimal zinc and selenium", "No vitamin D"]
+            },
+            "bone_health": {
+                "grade": "C+",
+                "score": 58,
+                "insight": "Provides some bone-supporting nutrients but lacks the key minerals needed for strong bones",
+                "pros": ["Vitamin K for bone metabolism", "Manganese supports bone formation", "Magnesium aids calcium absorption"],
+                "cons": ["Very low calcium (9mg)", "Minimal vitamin D", "Low phosphorus", "Weak protein content"]
+            },
+            "brain_focus": {
+                "grade": "A",
+                "score": 91,
+                "insight": "Nasunin is a powerful brain-protective antioxidant that shields neuronal membranes from damage",
+                "pros": ["Nasunin protects brain cell lipids", "Anthocyanins improve memory", "Chlorogenic acid reduces neuroinflammation", "Folate supports cognitive function"],
+                "cons": ["No omega-3 DHA", "Low B12 for neurotransmitters", "Minimal choline"]
+            },
+            "skin_health": {
+                "grade": "A-",
+                "score": 87,
+                "insight": "Anthocyanins and nasunin provide antioxidant protection against UV damage and aging",
+                "pros": ["Nasunin fights free radicals", "Anthocyanins improve skin elasticity", "Vitamin E protects skin cells", "High water content hydrates"],
+                "cons": ["Low vitamin C for collagen", "Minimal vitamin A", "No biotin"]
+            }
+        }
+    },
+    "artichoke": {
+        "basicInfo": {
+            "name": "Artichoke",
+            "category": "vegetable",
+            "subCategory": "flower vegetable",
+            "servingSize": 100,
+            "servingUnit": "g",
+            "calories": 47,
+            "defaultUnit": "medium"
+        },
+        "macronutrients": {
+            "protein": 3.3,
+            "carbs": 10.5,
+            "fiber": 5.4,
+            "sugars": 1.0,
+            "fat": 0.2,
+            "saturatedFat": 0.04,
+            "monounsaturatedFat": 0.01,
+            "polyunsaturatedFat": 0.09,
+            "omega3": 0.01,
+            "omega6": 0.08,
+            "transFat": 0
+        },
+        "micronutrients": {
+            "vitamins": {
+                "vitaminA": 0,
+                "vitaminC": 11.7,
+                "vitaminD": 0,
+                "vitaminE": 0.19,
+                "vitaminK": 14.8,
+                "thiamin": 0.07,
+                "riboflavin": 0.07,
+                "niacin": 1.05,
+                "vitaminB6": 0.12,
+                "folate": 68,
+                "vitaminB12": 0,
+                "pantothenicAcid": 0.34,
+                "choline": 34.4
+            },
+            "minerals": {
+                "calcium": 44,
+                "iron": 1.28,
+                "magnesium": 60,
+                "phosphorus": 90,
+                "potassium": 370,
+                "sodium": 94,
+                "zinc": 0.49,
+                "copper": 0.23,
+                "manganese": 0.26,
+                "selenium": 0.2
+            }
+        },
+        "healthMetrics": {
+            "glycemicIndex": 20,
+            "glycemicLoad": 2,
+            "inflammationScore": -8,
+            "antioxidantScore": 94,
+            "nutrientDensity": 82,
+            "proteinQuality": 0.6,
+            "omega3Content": "minimal",
+            "omega6to3ratio": 8.0
+        },
+        "tags": ["high-fiber", "low-calorie", "antioxidant-rich", "liver-support", "digestive-health", "prebiotic", "vegan", "gluten-free"],
+        "allergens": [],
+        "certifications": [],
+        "shelfLife": "5-7 days refrigerated",
+        "preparation": ["steamed", "boiled", "grilled", "roasted", "braised", "stuffed"],
+        "seasonality": "spring",
+        "sustainabilityScore": 8,
+        "pricePerServing": 1.25,
+        "bioactiveCompounds": [
+            {
+                "name": "Cynarin",
+                "amount": 400,
+                "unit": "mg",
+                "benefits": ["Supports liver function", "Increases bile production", "Lowers cholesterol"]
+            },
+            {
+                "name": "Silymarin",
+                "amount": 120,
+                "unit": "mg",
+                "benefits": ["Liver protection", "Antioxidant", "Anti-inflammatory"]
+            },
+            {
+                "name": "Inulin",
+                "amount": 2500,
+                "unit": "mg",
+                "benefits": ["Prebiotic fiber", "Feeds beneficial gut bacteria", "Improves mineral absorption"]
+            },
+            {
+                "name": "Chlorogenic Acid",
+                "amount": 190,
+                "unit": "mg",
+                "benefits": ["Antioxidant", "Blood sugar regulation", "Anti-inflammatory"]
+            }
+        ],
+        "focusGrades": {
+            "weight_loss": {
+                "grade": "A",
+                "score": 91,
+                "insight": "Very high in fiber (5.4g per 100g) which promotes satiety and supports digestive health while remaining low calorie",
+                "pros": ["High fiber for fullness", "Low calorie density (47 cal)", "Inulin reduces appetite", "Low sugar content (1g)"],
+                "cons": ["Moderate carbs (10.5g)", "Preparation can add calories"]
+            },
+            "heart_health": {
+                "grade": "A+",
+                "score": 96,
+                "insight": "Cynarin and fiber work together to lower LDL cholesterol and support cardiovascular function",
+                "pros": ["Cynarin lowers cholesterol", "High fiber reduces LDL", "Potassium (370mg) supports blood pressure", "Antioxidants protect vessels"],
+                "cons": ["Moderate sodium if canned"]
+            },
+            "diabetes_management": {
+                "grade": "A",
+                "score": 92,
+                "insight": "Low glycemic load with inulin fiber that improves blood sugar control and insulin sensitivity",
+                "pros": ["GL of only 2", "Inulin improves glucose metabolism", "High fiber slows sugar absorption", "Chlorogenic acid helps insulin sensitivity"],
+                "cons": ["Moderate carbs require portion control"]
+            },
+            "muscle_gain": {
+                "grade": "C+",
+                "score": 55,
+                "insight": "Moderate protein content for a vegetable, but not sufficient for direct muscle building",
+                "pros": ["3.3g protein (higher than most vegetables)", "Magnesium supports muscle function", "Potassium prevents cramping"],
+                "cons": ["Incomplete protein", "No leucine", "Low in BCAAs"]
+            },
+            "energy_boost": {
+                "grade": "B",
+                "score": 72,
+                "insight": "Provides steady energy from complex carbs with B vitamins that support energy metabolism",
+                "pros": ["Complex carbs for sustained energy", "B vitamins aid metabolism", "Magnesium for ATP production", "Low GI prevents crashes"],
+                "cons": ["Not a quick energy source", "Moderate carb content", "No vitamin B12"]
+            },
+            "digestive_health": {
+                "grade": "A+",
+                "score": 97,
+                "insight": "Exceptional prebiotic fiber content (inulin) that feeds beneficial gut bacteria and supports digestion",
+                "pros": ["2.5g inulin prebiotic fiber", "5.4g total fiber", "Cynarin stimulates bile production", "Supports gut microbiome"],
+                "cons": ["Can cause gas in sensitive individuals"]
+            },
+            "immune_support": {
+                "grade": "A-",
+                "score": 86,
+                "insight": "Rich in vitamin C, antioxidants, and prebiotic fiber that strengthen immune function",
+                "pros": ["11.7mg vitamin C", "Antioxidants boost immunity", "Prebiotic fiber supports gut immunity", "Zinc and copper present"],
+                "cons": ["No vitamin D", "Moderate selenium", "Lower zinc than animal sources"]
+            },
+            "bone_health": {
+                "grade": "B+",
+                "score": 80,
+                "insight": "Good source of vitamin K, magnesium, and calcium that support bone mineral density",
+                "pros": ["14.8mcg vitamin K", "60mg magnesium", "44mg calcium", "Phosphorus for bone matrix"],
+                "cons": ["Lower calcium than dairy", "No vitamin D", "Moderate protein"]
+            },
+            "brain_focus": {
+                "grade": "A-",
+                "score": 88,
+                "insight": "High folate content and antioxidants protect cognitive function and neurotransmitter production",
+                "pros": ["68mcg folate (17% DV)", "Antioxidants reduce neuroinflammation", "Choline supports memory", "Magnesium aids neurotransmission"],
+                "cons": ["No omega-3 DHA", "No vitamin B12", "Minimal choline compared to eggs"]
+            },
+            "skin_health": {
+                "grade": "B+",
+                "score": 83,
+                "insight": "Vitamin C and antioxidants support collagen production and protect against oxidative skin damage",
+                "pros": ["11.7mg vitamin C for collagen", "Silymarin protects skin cells", "Antioxidants fight aging", "Copper aids collagen formation"],
+                "cons": ["No vitamin A", "Lower vitamin C than citrus", "No biotin"]
+            }
+        }
+    },
+    "artichokes": {
+        "basicInfo": {
+            "name": "Artichokes",
+            "category": "vegetable",
+            "subCategory": "flower vegetable",
+            "servingSize": 100,
+            "servingUnit": "g",
+            "calories": 47,
+            "defaultUnit": "medium"
+        },
+        "macronutrients": {
+            "protein": 3.3,
+            "carbs": 10.5,
+            "fiber": 5.4,
+            "sugars": 1.0,
+            "fat": 0.2,
+            "saturatedFat": 0.04,
+            "monounsaturatedFat": 0.01,
+            "polyunsaturatedFat": 0.09,
+            "omega3": 0.01,
+            "omega6": 0.08,
+            "transFat": 0
+        },
+        "micronutrients": {
+            "vitamins": {
+                "vitaminA": 0,
+                "vitaminC": 11.7,
+                "vitaminD": 0,
+                "vitaminE": 0.19,
+                "vitaminK": 14.8,
+                "thiamin": 0.07,
+                "riboflavin": 0.07,
+                "niacin": 1.05,
+                "vitaminB6": 0.12,
+                "folate": 68,
+                "vitaminB12": 0,
+                "pantothenicAcid": 0.34,
+                "choline": 34.4
+            },
+            "minerals": {
+                "calcium": 44,
+                "iron": 1.28,
+                "magnesium": 60,
+                "phosphorus": 90,
+                "potassium": 370,
+                "sodium": 94,
+                "zinc": 0.49,
+                "copper": 0.23,
+                "manganese": 0.26,
+                "selenium": 0.2
+            }
+        },
+        "healthMetrics": {
+            "glycemicIndex": 20,
+            "glycemicLoad": 2,
+            "inflammationScore": -8,
+            "antioxidantScore": 94,
+            "nutrientDensity": 82,
+            "proteinQuality": 0.6,
+            "omega3Content": "minimal",
+            "omega6to3ratio": 8.0
+        },
+        "tags": ["high-fiber", "low-calorie", "antioxidant-rich", "liver-support", "digestive-health", "prebiotic", "vegan", "gluten-free"],
+        "allergens": [],
+        "certifications": [],
+        "shelfLife": "5-7 days refrigerated",
+        "preparation": ["steamed", "boiled", "grilled", "roasted", "braised", "stuffed"],
+        "seasonality": "spring",
+        "sustainabilityScore": 8,
+        "pricePerServing": 1.25,
+        "bioactiveCompounds": [
+            {
+                "name": "Cynarin",
+                "amount": 400,
+                "unit": "mg",
+                "benefits": ["Supports liver function", "Increases bile production", "Lowers cholesterol"]
+            },
+            {
+                "name": "Silymarin",
+                "amount": 120,
+                "unit": "mg",
+                "benefits": ["Liver protection", "Antioxidant", "Anti-inflammatory"]
+            },
+            {
+                "name": "Inulin",
+                "amount": 2500,
+                "unit": "mg",
+                "benefits": ["Prebiotic fiber", "Feeds beneficial gut bacteria", "Improves mineral absorption"]
+            },
+            {
+                "name": "Chlorogenic Acid",
+                "amount": 190,
+                "unit": "mg",
+                "benefits": ["Antioxidant", "Blood sugar regulation", "Anti-inflammatory"]
+            }
+        ],
+        "focusGrades": {
+            "weight_loss": {
+                "grade": "A",
+                "score": 91,
+                "insight": "Very high in fiber (5.4g per 100g) which promotes satiety and supports digestive health while remaining low calorie",
+                "pros": ["High fiber for fullness", "Low calorie density (47 cal)", "Inulin reduces appetite", "Low sugar content (1g)"],
+                "cons": ["Moderate carbs (10.5g)", "Preparation can add calories"]
+            },
+            "heart_health": {
+                "grade": "A+",
+                "score": 96,
+                "insight": "Cynarin and fiber work together to lower LDL cholesterol and support cardiovascular function",
+                "pros": ["Cynarin lowers cholesterol", "High fiber reduces LDL", "Potassium (370mg) supports blood pressure", "Antioxidants protect vessels"],
+                "cons": ["Moderate sodium if canned"]
+            },
+            "diabetes_management": {
+                "grade": "A",
+                "score": 92,
+                "insight": "Low glycemic load with inulin fiber that improves blood sugar control and insulin sensitivity",
+                "pros": ["GL of only 2", "Inulin improves glucose metabolism", "High fiber slows sugar absorption", "Chlorogenic acid helps insulin sensitivity"],
+                "cons": ["Moderate carbs require portion control"]
+            },
+            "muscle_gain": {
+                "grade": "C+",
+                "score": 55,
+                "insight": "Moderate protein content for a vegetable, but not sufficient for direct muscle building",
+                "pros": ["3.3g protein (higher than most vegetables)", "Magnesium supports muscle function", "Potassium prevents cramping"],
+                "cons": ["Incomplete protein", "No leucine", "Low in BCAAs"]
+            },
+            "energy_boost": {
+                "grade": "B",
+                "score": 72,
+                "insight": "Provides steady energy from complex carbs with B vitamins that support energy metabolism",
+                "pros": ["Complex carbs for sustained energy", "B vitamins aid metabolism", "Magnesium for ATP production", "Low GI prevents crashes"],
+                "cons": ["Not a quick energy source", "Moderate carb content", "No vitamin B12"]
+            },
+            "digestive_health": {
+                "grade": "A+",
+                "score": 97,
+                "insight": "Exceptional prebiotic fiber content (inulin) that feeds beneficial gut bacteria and supports digestion",
+                "pros": ["2.5g inulin prebiotic fiber", "5.4g total fiber", "Cynarin stimulates bile production", "Supports gut microbiome"],
+                "cons": ["Can cause gas in sensitive individuals"]
+            },
+            "immune_support": {
+                "grade": "A-",
+                "score": 86,
+                "insight": "Rich in vitamin C, antioxidants, and prebiotic fiber that strengthen immune function",
+                "pros": ["11.7mg vitamin C", "Antioxidants boost immunity", "Prebiotic fiber supports gut immunity", "Zinc and copper present"],
+                "cons": ["No vitamin D", "Moderate selenium", "Lower zinc than animal sources"]
+            },
+            "bone_health": {
+                "grade": "B+",
+                "score": 80,
+                "insight": "Good source of vitamin K, magnesium, and calcium that support bone mineral density",
+                "pros": ["14.8mcg vitamin K", "60mg magnesium", "44mg calcium", "Phosphorus for bone matrix"],
+                "cons": ["Lower calcium than dairy", "No vitamin D", "Moderate protein"]
+            },
+            "brain_focus": {
+                "grade": "A-",
+                "score": 88,
+                "insight": "High folate content and antioxidants protect cognitive function and neurotransmitter production",
+                "pros": ["68mcg folate (17% DV)", "Antioxidants reduce neuroinflammation", "Choline supports memory", "Magnesium aids neurotransmission"],
+                "cons": ["No omega-3 DHA", "No vitamin B12", "Minimal choline compared to eggs"]
+            },
+            "skin_health": {
+                "grade": "B+",
+                "score": 83,
+                "insight": "Vitamin C and antioxidants support collagen production and protect against oxidative skin damage",
+                "pros": ["11.7mg vitamin C for collagen", "Silymarin protects skin cells", "Antioxidants fight aging", "Copper aids collagen formation"],
+                "cons": ["No vitamin A", "Lower vitamin C than citrus", "No biotin"]
+            }
+        }
+    },
+    "beet": {
+        "basicInfo": {
+            "name": "Beet",
+            "category": "vegetable",
+            "subCategory": "root vegetable",
+            "servingSize": 100,
+            "servingUnit": "g",
+            "calories": 43,
+            "defaultUnit": "medium"
+        },
+        "macronutrients": {
+            "protein": 1.6,
+            "carbs": 9.6,
+            "fiber": 2.8,
+            "sugars": 6.8,
+            "fat": 0.2,
+            "saturatedFat": 0.03,
+            "monounsaturatedFat": 0.03,
+            "polyunsaturatedFat": 0.06,
+            "omega3": 0.01,
+            "omega6": 0.05,
+            "transFat": 0
+        },
+        "micronutrients": {
+            "vitamins": {
+                "vitaminA": 2,
+                "vitaminC": 4.9,
+                "vitaminD": 0,
+                "vitaminE": 0.04,
+                "vitaminK": 0.2,
+                "thiamin": 0.03,
+                "riboflavin": 0.04,
+                "niacin": 0.33,
+                "vitaminB6": 0.07,
+                "folate": 109,
+                "vitaminB12": 0,
+                "pantothenicAcid": 0.16,
+                "choline": 6.0
+            },
+            "minerals": {
+                "calcium": 16,
+                "iron": 0.8,
+                "magnesium": 23,
+                "phosphorus": 40,
+                "potassium": 325,
+                "sodium": 78,
+                "zinc": 0.35,
+                "copper": 0.08,
+                "manganese": 0.33,
+                "selenium": 0.7
+            }
+        },
+        "healthMetrics": {
+            "glycemicIndex": 61,
+            "glycemicLoad": 5,
+            "inflammationScore": -7,
+            "antioxidantScore": 88,
+            "nutrientDensity": 76,
+            "proteinQuality": 0.5,
+            "omega3Content": "minimal",
+            "omega6to3ratio": 5.0
+        },
+        "tags": ["high-nitrate", "athletic-performance", "blood-pressure", "antioxidant-rich", "liver-detox", "vegan", "gluten-free", "betalain-rich"],
+        "allergens": [],
+        "certifications": [],
+        "shelfLife": "2-3 weeks refrigerated",
+        "preparation": ["roasted", "boiled", "steamed", "raw", "juiced", "pickled"],
+        "seasonality": "fall-winter",
+        "sustainabilityScore": 9,
+        "pricePerServing": 0.75,
+        "bioactiveCompounds": [
+            {
+                "name": "Dietary Nitrates",
+                "amount": 250,
+                "unit": "mg",
+                "benefits": ["Boosts nitric oxide", "Lowers blood pressure", "Enhances athletic performance", "Improves blood flow"]
+            },
+            {
+                "name": "Betalains",
+                "amount": 180,
+                "unit": "mg",
+                "benefits": ["Powerful antioxidant", "Anti-inflammatory", "Liver detoxification", "Anti-cancer properties"]
+            },
+            {
+                "name": "Betaine",
+                "amount": 128,
+                "unit": "mg",
+                "benefits": ["Supports liver function", "Reduces homocysteine", "Protects heart health"]
+            }
+        ],
+        "focusGrades": {
+            "weight_loss": {
+                "grade": "B+",
+                "score": 83,
+                "insight": "Low calorie density with good fiber, but higher in natural sugars than some vegetables",
+                "pros": ["Low calorie (43 per 100g)", "2.8g fiber for satiety", "Betalains support metabolism", "High water content"],
+                "cons": ["Higher sugar content (6.8g)", "Moderate glycemic index (61)", "Can spike appetite if juiced"]
+            },
+            "heart_health": {
+                "grade": "A+",
+                "score": 98,
+                "insight": "Exceptional dietary nitrate content that lowers blood pressure and improves cardiovascular function",
+                "pros": ["250mg nitrates boost nitric oxide", "Lowers blood pressure significantly", "Betaine reduces homocysteine", "Potassium (325mg) supports heart"],
+                "cons": ["Moderate sodium if pickled"]
+            },
+            "diabetes_management": {
+                "grade": "B",
+                "score": 75,
+                "insight": "Moderate glycemic load with betalains that may improve insulin sensitivity, but watch portion sizes",
+                "pros": ["Betalains improve glucose metabolism", "Fiber slows sugar absorption", "Folate supports metabolism", "Antioxidants reduce inflammation"],
+                "cons": ["Higher natural sugars (6.8g)", "GL of 5 is moderate", "GI of 61 is medium-high"]
+            },
+            "muscle_gain": {
+                "grade": "B-",
+                "score": 68,
+                "insight": "Not a protein source, but nitrates significantly enhance athletic performance and endurance",
+                "pros": ["Nitrates boost exercise performance", "Improves oxygen efficiency", "Reduces muscle fatigue", "Enhances stamina"],
+                "cons": ["Only 1.6g protein", "No leucine", "Low in BCAAs"]
+            },
+            "energy_boost": {
+                "grade": "A-",
+                "score": 89,
+                "insight": "Dietary nitrates improve oxygen delivery and ATP production, enhancing energy and endurance",
+                "pros": ["Nitrates boost energy efficiency", "Improves oxygen utilization", "Natural sugars for quick fuel", "Folate supports energy metabolism"],
+                "cons": ["Sugar can cause crashes if eaten alone", "Moderate B vitamins"]
+            },
+            "digestive_health": {
+                "grade": "B+",
+                "score": 81,
+                "insight": "Good fiber content and betaine support digestion, though lower fiber than some vegetables",
+                "pros": ["2.8g fiber aids regularity", "Betaine supports bile production", "Antioxidants reduce gut inflammation", "Gentle on digestion"],
+                "cons": ["Lower fiber than artichokes", "Can cause red urine/stool (harmless)", "Not a prebiotic"]
+            },
+            "immune_support": {
+                "grade": "B+",
+                "score": 82,
+                "insight": "Betalains provide strong antioxidant and anti-inflammatory support for immune function",
+                "pros": ["Betalains boost immunity", "Vitamin C supports immune cells", "Folate aids immune cell production", "Antioxidants protect cells"],
+                "cons": ["Low vitamin C (4.9mg)", "No vitamin D", "Minimal zinc"]
+            },
+            "bone_health": {
+                "grade": "C+",
+                "score": 62,
+                "insight": "Provides some bone-supporting minerals but lacks the key nutrients for strong bones",
+                "pros": ["Manganese supports bone formation", "Folate aids bone metabolism", "Magnesium helps calcium absorption"],
+                "cons": ["Very low calcium (16mg)", "No vitamin D", "Low vitamin K", "Minimal protein"]
+            },
+            "brain_focus": {
+                "grade": "A",
+                "score": 90,
+                "insight": "Nitrates improve cerebral blood flow and oxygen delivery, while folate supports cognitive function",
+                "pros": ["Nitrates boost brain blood flow", "109mcg folate (27% DV)", "Betalains reduce neuroinflammation", "Betaine protects brain cells"],
+                "cons": ["No omega-3 DHA", "No vitamin B12", "Low choline"]
+            },
+            "skin_health": {
+                "grade": "B+",
+                "score": 81,
+                "insight": "Betalains and vitamin C provide antioxidant protection and support healthy skin tone",
+                "pros": ["Betalains fight free radicals", "Vitamin C for collagen", "Improved blood flow nourishes skin", "Detoxifying for clear skin"],
+                "cons": ["Lower vitamin C than citrus", "No vitamin A", "Minimal vitamin E"]
+            }
+        }
+    },
+    "beets": {
+        "basicInfo": {
+            "name": "Beets",
+            "category": "vegetable",
+            "subCategory": "root vegetable",
+            "servingSize": 100,
+            "servingUnit": "g",
+            "calories": 43,
+            "defaultUnit": "medium"
+        },
+        "macronutrients": {
+            "protein": 1.6,
+            "carbs": 9.6,
+            "fiber": 2.8,
+            "sugars": 6.8,
+            "fat": 0.2,
+            "saturatedFat": 0.03,
+            "monounsaturatedFat": 0.03,
+            "polyunsaturatedFat": 0.06,
+            "omega3": 0.01,
+            "omega6": 0.05,
+            "transFat": 0
+        },
+        "micronutrients": {
+            "vitamins": {
+                "vitaminA": 2,
+                "vitaminC": 4.9,
+                "vitaminD": 0,
+                "vitaminE": 0.04,
+                "vitaminK": 0.2,
+                "thiamin": 0.03,
+                "riboflavin": 0.04,
+                "niacin": 0.33,
+                "vitaminB6": 0.07,
+                "folate": 109,
+                "vitaminB12": 0,
+                "pantothenicAcid": 0.16,
+                "choline": 6.0
+            },
+            "minerals": {
+                "calcium": 16,
+                "iron": 0.8,
+                "magnesium": 23,
+                "phosphorus": 40,
+                "potassium": 325,
+                "sodium": 78,
+                "zinc": 0.35,
+                "copper": 0.08,
+                "manganese": 0.33,
+                "selenium": 0.7
+            }
+        },
+        "healthMetrics": {
+            "glycemicIndex": 61,
+            "glycemicLoad": 5,
+            "inflammationScore": -7,
+            "antioxidantScore": 88,
+            "nutrientDensity": 76,
+            "proteinQuality": 0.5,
+            "omega3Content": "minimal",
+            "omega6to3ratio": 5.0
+        },
+        "tags": ["high-nitrate", "athletic-performance", "blood-pressure", "antioxidant-rich", "liver-detox", "vegan", "gluten-free", "betalain-rich"],
+        "allergens": [],
+        "certifications": [],
+        "shelfLife": "2-3 weeks refrigerated",
+        "preparation": ["roasted", "boiled", "steamed", "raw", "juiced", "pickled"],
+        "seasonality": "fall-winter",
+        "sustainabilityScore": 9,
+        "pricePerServing": 0.75,
+        "bioactiveCompounds": [
+            {
+                "name": "Dietary Nitrates",
+                "amount": 250,
+                "unit": "mg",
+                "benefits": ["Boosts nitric oxide", "Lowers blood pressure", "Enhances athletic performance", "Improves blood flow"]
+            },
+            {
+                "name": "Betalains",
+                "amount": 180,
+                "unit": "mg",
+                "benefits": ["Powerful antioxidant", "Anti-inflammatory", "Liver detoxification", "Anti-cancer properties"]
+            },
+            {
+                "name": "Betaine",
+                "amount": 128,
+                "unit": "mg",
+                "benefits": ["Supports liver function", "Reduces homocysteine", "Protects heart health"]
+            }
+        ],
+        "focusGrades": {
+            "weight_loss": {
+                "grade": "B+",
+                "score": 83,
+                "insight": "Low calorie density with good fiber, but higher in natural sugars than some vegetables",
+                "pros": ["Low calorie (43 per 100g)", "2.8g fiber for satiety", "Betalains support metabolism", "High water content"],
+                "cons": ["Higher sugar content (6.8g)", "Moderate glycemic index (61)", "Can spike appetite if juiced"]
+            },
+            "heart_health": {
+                "grade": "A+",
+                "score": 98,
+                "insight": "Exceptional dietary nitrate content that lowers blood pressure and improves cardiovascular function",
+                "pros": ["250mg nitrates boost nitric oxide", "Lowers blood pressure significantly", "Betaine reduces homocysteine", "Potassium (325mg) supports heart"],
+                "cons": ["Moderate sodium if pickled"]
+            },
+            "diabetes_management": {
+                "grade": "B",
+                "score": 75,
+                "insight": "Moderate glycemic load with betalains that may improve insulin sensitivity, but watch portion sizes",
+                "pros": ["Betalains improve glucose metabolism", "Fiber slows sugar absorption", "Folate supports metabolism", "Antioxidants reduce inflammation"],
+                "cons": ["Higher natural sugars (6.8g)", "GL of 5 is moderate", "GI of 61 is medium-high"]
+            },
+            "muscle_gain": {
+                "grade": "B-",
+                "score": 68,
+                "insight": "Not a protein source, but nitrates significantly enhance athletic performance and endurance",
+                "pros": ["Nitrates boost exercise performance", "Improves oxygen efficiency", "Reduces muscle fatigue", "Enhances stamina"],
+                "cons": ["Only 1.6g protein", "No leucine", "Low in BCAAs"]
+            },
+            "energy_boost": {
+                "grade": "A-",
+                "score": 89,
+                "insight": "Dietary nitrates improve oxygen delivery and ATP production, enhancing energy and endurance",
+                "pros": ["Nitrates boost energy efficiency", "Improves oxygen utilization", "Natural sugars for quick fuel", "Folate supports energy metabolism"],
+                "cons": ["Sugar can cause crashes if eaten alone", "Moderate B vitamins"]
+            },
+            "digestive_health": {
+                "grade": "B+",
+                "score": 81,
+                "insight": "Good fiber content and betaine support digestion, though lower fiber than some vegetables",
+                "pros": ["2.8g fiber aids regularity", "Betaine supports bile production", "Antioxidants reduce gut inflammation", "Gentle on digestion"],
+                "cons": ["Lower fiber than artichokes", "Can cause red urine/stool (harmless)", "Not a prebiotic"]
+            },
+            "immune_support": {
+                "grade": "B+",
+                "score": 82,
+                "insight": "Betalains provide strong antioxidant and anti-inflammatory support for immune function",
+                "pros": ["Betalains boost immunity", "Vitamin C supports immune cells", "Folate aids immune cell production", "Antioxidants protect cells"],
+                "cons": ["Low vitamin C (4.9mg)", "No vitamin D", "Minimal zinc"]
+            },
+            "bone_health": {
+                "grade": "C+",
+                "score": 62,
+                "insight": "Provides some bone-supporting minerals but lacks the key nutrients for strong bones",
+                "pros": ["Manganese supports bone formation", "Folate aids bone metabolism", "Magnesium helps calcium absorption"],
+                "cons": ["Very low calcium (16mg)", "No vitamin D", "Low vitamin K", "Minimal protein"]
+            },
+            "brain_focus": {
+                "grade": "A",
+                "score": 90,
+                "insight": "Nitrates improve cerebral blood flow and oxygen delivery, while folate supports cognitive function",
+                "pros": ["Nitrates boost brain blood flow", "109mcg folate (27% DV)", "Betalains reduce neuroinflammation", "Betaine protects brain cells"],
+                "cons": ["No omega-3 DHA", "No vitamin B12", "Low choline"]
+            },
+            "skin_health": {
+                "grade": "B+",
+                "score": 81,
+                "insight": "Betalains and vitamin C provide antioxidant protection and support healthy skin tone",
+                "pros": ["Betalains fight free radicals", "Vitamin C for collagen", "Improved blood flow nourishes skin", "Detoxifying for clear skin"],
+                "cons": ["Lower vitamin C than citrus", "No vitamin A", "Minimal vitamin E"]
+            }
+        }
+    }
+}

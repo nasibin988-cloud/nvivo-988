@@ -3,6 +3,9 @@
  *
  * Cloud Functions for nutrition evaluation and insights.
  * These functions are exposed as Firebase Callable Functions.
+ *
+ * V1 endpoints: Legacy scoring system
+ * V2 endpoints: Advanced MAR-based scoring with focus modes
  */
 
 import { https } from 'firebase-functions/v2';
@@ -15,6 +18,14 @@ import type {
 import { preloadAllData } from './data';
 import { computeUserTargets } from './targets';
 import { evaluateDay, evaluateDayWithTargets } from './evaluation';
+import {
+  evaluateDayV2,
+  evaluateDayWithTargetsV2,
+  evaluateWeekV2,
+  type DayEvaluationV2,
+  type WeekEvaluationV2,
+} from './evaluation';
+import { type NutritionFocusId, getAllFocusIds, getFocusDisplayInfo } from './focus';
 import {
   getNutrientEducation,
   getWhyItMatters,
@@ -74,6 +85,38 @@ export interface EvaluateWeekResponse {
 }
 
 // =============================================================================
+// V2 INPUT/OUTPUT TYPES (Advanced MAR-based scoring with focus modes)
+// =============================================================================
+
+export interface EvaluateDayV2Request {
+  profile: NutritionUserProfile;
+  intake: DailyIntake;
+  focusId?: NutritionFocusId;
+}
+
+export interface EvaluateDayV2Response {
+  success: true;
+  evaluation: DayEvaluationV2;
+}
+
+export interface EvaluateWeekV2Request {
+  profile: NutritionUserProfile;
+  intakes: DailyIntake[];
+  focusId?: NutritionFocusId;
+}
+
+export interface EvaluateWeekV2Response {
+  success: true;
+  weekEvaluation: WeekEvaluationV2;
+  dailyEvaluations: DayEvaluationV2[];
+}
+
+export interface GetFocusOptionsResponse {
+  success: true;
+  focuses: Array<{ id: NutritionFocusId; name: string; description: string }>;
+}
+
+// =============================================================================
 // VALIDATION HELPERS
 // =============================================================================
 
@@ -128,6 +171,20 @@ function validateIntake(intake: unknown): DailyIntake {
   }
 
   return intake as DailyIntake;
+}
+
+function validateFocusId(focusId: unknown): NutritionFocusId {
+  const validFocuses = getAllFocusIds();
+  if (focusId === undefined || focusId === null) {
+    return 'balanced'; // Default
+  }
+  if (typeof focusId !== 'string' || !validFocuses.includes(focusId as NutritionFocusId)) {
+    throw new https.HttpsError(
+      'invalid-argument',
+      `Invalid focusId. Must be one of: ${validFocuses.join(', ')}`
+    );
+  }
+  return focusId as NutritionFocusId;
 }
 
 // =============================================================================
@@ -269,6 +326,80 @@ export async function handleEvaluateWeek(
 }
 
 // =============================================================================
+// V2 HANDLERS (Advanced MAR-based scoring)
+// =============================================================================
+
+/**
+ * Handler for evaluateNutritionDayV2 callable function
+ */
+export async function handleEvaluateDayV2(
+  data: EvaluateDayV2Request
+): Promise<EvaluateDayV2Response> {
+  const profile = validateProfile(data.profile);
+  const intake = validateIntake(data.intake);
+  const focusId = validateFocusId(data.focusId);
+
+  const evaluation = evaluateDayV2(profile, intake, focusId);
+
+  return {
+    success: true,
+    evaluation,
+  };
+}
+
+/**
+ * Handler for evaluateNutritionWeekV2 callable function
+ */
+export async function handleEvaluateWeekV2(
+  data: EvaluateWeekV2Request
+): Promise<EvaluateWeekV2Response> {
+  const profile = validateProfile(data.profile);
+  const focusId = validateFocusId(data.focusId);
+
+  if (!data.intakes || !Array.isArray(data.intakes)) {
+    throw new https.HttpsError('invalid-argument', 'Intakes array is required');
+  }
+
+  if (data.intakes.length === 0) {
+    throw new https.HttpsError('invalid-argument', 'At least one day of intake is required');
+  }
+
+  if (data.intakes.length > 14) {
+    throw new https.HttpsError('invalid-argument', 'Maximum 14 days of intake data allowed');
+  }
+
+  // Validate all intakes
+  const validatedIntakes = data.intakes.map(validateIntake);
+
+  // Compute targets once for efficiency
+  const targets = computeUserTargets(profile);
+
+  // Evaluate each day
+  const dailyEvaluations: DayEvaluationV2[] = validatedIntakes.map((intake) =>
+    evaluateDayWithTargetsV2(intake, targets, focusId)
+  );
+
+  // Evaluate the week
+  const weekEvaluation = evaluateWeekV2(profile, validatedIntakes, focusId);
+
+  return {
+    success: true,
+    weekEvaluation,
+    dailyEvaluations,
+  };
+}
+
+/**
+ * Handler for getFocusOptions callable function
+ */
+export async function handleGetFocusOptions(): Promise<GetFocusOptionsResponse> {
+  return {
+    success: true,
+    focuses: getFocusDisplayInfo(),
+  };
+}
+
+// =============================================================================
 // FIREBASE CALLABLE FUNCTIONS
 // =============================================================================
 
@@ -327,5 +458,53 @@ export const evaluateNutritionWeek = https.onCall(
   async (request) => {
     const data = request.data as EvaluateWeekRequest;
     return handleEvaluateWeek(data);
+  }
+);
+
+// =============================================================================
+// V2 FIREBASE CALLABLE FUNCTIONS (Advanced MAR-based scoring)
+// =============================================================================
+
+/**
+ * Evaluate a single day's nutrition intake with advanced MAR-based scoring
+ *
+ * @param profile - User's nutrition profile (age, sex, activity, goal)
+ * @param intake - Day's food intake with nutrient totals
+ * @param focusId - Optional nutrition focus (e.g., 'heart_health', 'muscle_building')
+ * @returns Full evaluation with MAR, breakdown, fat quality, glycemic impact, highlights, gaps
+ */
+export const evaluateNutritionDayV2 = https.onCall(
+  { cors: true },
+  async (request) => {
+    const data = request.data as EvaluateDayV2Request;
+    return handleEvaluateDayV2(data);
+  }
+);
+
+/**
+ * Evaluate multiple days with advanced MAR-based scoring
+ *
+ * @param profile - User's nutrition profile
+ * @param intakes - Array of daily intake data (max 14 days)
+ * @param focusId - Optional nutrition focus
+ * @returns Week evaluation with cumulative MAR, trend, consistency, and daily breakdowns
+ */
+export const evaluateNutritionWeekV2 = https.onCall(
+  { cors: true },
+  async (request) => {
+    const data = request.data as EvaluateWeekV2Request;
+    return handleEvaluateWeekV2(data);
+  }
+);
+
+/**
+ * Get available nutrition focus options
+ *
+ * @returns List of all 10 nutrition focuses with names and descriptions
+ */
+export const getNutritionFocusOptions = https.onCall(
+  { cors: true },
+  async () => {
+    return handleGetFocusOptions();
   }
 );

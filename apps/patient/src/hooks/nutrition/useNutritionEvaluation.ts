@@ -65,32 +65,80 @@ export interface NutrientEvaluation {
 }
 
 export interface ScoreBreakdown {
-  beneficial: number;
-  limit: number;
-  balance: number;
+  adequacy: {
+    points: number;
+    maxPoints: number;
+    mar: number;
+  };
+  moderation: {
+    points: number;
+    maxPoints: number;
+  };
+  balance: {
+    points: number;
+    maxPoints: number;
+  };
 }
 
 export interface DayEvaluation {
   date: string;
   score: number;
-  scoreLabel: string;
-  scoreColor: 'green' | 'yellow' | 'orange' | 'red';
+  label: string;
+  color: 'green' | 'yellow' | 'orange' | 'red';
+  mar: number;
   breakdown: ScoreBreakdown;
   nutrients: NutrientEvaluation[];
-  highlights: string[];
-  gaps: string[];
+  highlights: Array<{
+    nutrientId: string;
+    displayName: string;
+    percentOfTarget: number;
+    message: string;
+  }>;
+  gaps: Array<{
+    nutrientId: string;
+    displayName: string;
+    intake: number;
+    target: number;
+    percentOfTarget: number;
+    unit: string;
+    severity: 'low' | 'moderate' | 'severe';
+    suggestion: string;
+  }>;
   summary: string;
+  focus: {
+    id: string;
+    name: string;
+  };
+  calories: {
+    consumed: number;
+    target: number;
+    percentOfTarget: number;
+  };
 }
 
 interface EvaluateDayRequest {
   profile: NutritionUserProfile;
   intake: DailyIntake;
+  focusId?: string;
 }
 
 interface EvaluateDayResponse {
   success: boolean;
   evaluation: DayEvaluation;
 }
+
+// Nutrition focus type
+export type NutritionFocusId =
+  | 'balanced'
+  | 'muscle_building'
+  | 'heart_health'
+  | 'energy'
+  | 'weight_management'
+  | 'brain_focus'
+  | 'gut_health'
+  | 'blood_sugar'
+  | 'bone_joint'
+  | 'anti_inflammatory';
 
 // Extended patient profile from Firestore (includes health data)
 interface PatientProfileData {
@@ -189,21 +237,23 @@ function buildProfile(uid: string, profileData: PatientProfileData | null): Nutr
 // ============================================================================
 
 /**
- * Hook to evaluate a single day's nutrition
+ * Hook to evaluate a single day's nutrition using V2 MAR-based scoring
  *
  * @param date - The date to evaluate (YYYY-MM-DD format)
  * @param totals - Nutrient totals for the day (e.g., { protein: 80, vitamin_c: 90, ... })
+ * @param focusId - Optional nutrition focus (default: 'balanced')
  * @param enabled - Whether to run the query
  */
 export function useNutritionDayEvaluation(
   date: string,
   totals: Record<string, number> | null,
+  focusId: NutritionFocusId = 'balanced',
   enabled: boolean = true
 ) {
   const { user } = useAuth();
 
   return useQuery({
-    queryKey: nutritionEvaluationKeys.day(user?.uid ?? '', date),
+    queryKey: [...nutritionEvaluationKeys.day(user?.uid ?? '', date), focusId],
     queryFn: async (): Promise<DayEvaluation | null> => {
       if (!user?.uid || !totals) return null;
 
@@ -218,12 +268,13 @@ export function useNutritionDayEvaluation(
       };
 
       const functions = getFunctions();
+      // Use V2 API for comprehensive MAR-based scoring
       const evaluateFn = httpsCallable<EvaluateDayRequest, EvaluateDayResponse>(
         functions,
-        'evaluateNutritionDay'
+        'evaluateNutritionDayV2'
       );
 
-      const response = await evaluateFn({ profile, intake });
+      const response = await evaluateFn({ profile, intake, focusId });
       return response.data.evaluation;
     },
     enabled: enabled && !!user?.uid && !!totals && Object.keys(totals).length > 0,
@@ -233,7 +284,7 @@ export function useNutritionDayEvaluation(
 }
 
 /**
- * Mutation hook for evaluating nutrition on-demand
+ * Mutation hook for evaluating nutrition on-demand using V2 scoring
  * Use this when you need to evaluate without caching (e.g., preview before saving)
  */
 export function useEvaluateNutrition() {
@@ -244,9 +295,11 @@ export function useEvaluateNutrition() {
     mutationFn: async ({
       date,
       totals,
+      focusId = 'balanced',
     }: {
       date: string;
       totals: Record<string, number>;
+      focusId?: NutritionFocusId;
     }): Promise<DayEvaluation> => {
       if (!user?.uid) {
         throw new Error('User not authenticated');
@@ -263,18 +316,19 @@ export function useEvaluateNutrition() {
       };
 
       const functions = getFunctions();
+      // Use V2 API for comprehensive MAR-based scoring
       const evaluateFn = httpsCallable<EvaluateDayRequest, EvaluateDayResponse>(
         functions,
-        'evaluateNutritionDay'
+        'evaluateNutritionDayV2'
       );
 
-      const response = await evaluateFn({ profile, intake });
+      const response = await evaluateFn({ profile, intake, focusId });
       return response.data.evaluation;
     },
     onSuccess: (data, variables) => {
       // Update the cache with the new evaluation
       queryClient.setQueryData(
-        nutritionEvaluationKeys.day(user?.uid ?? '', variables.date),
+        [...nutritionEvaluationKeys.day(user?.uid ?? '', variables.date), variables.focusId ?? 'balanced'],
         data
       );
     },

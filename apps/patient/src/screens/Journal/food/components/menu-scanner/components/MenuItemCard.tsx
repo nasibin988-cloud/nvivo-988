@@ -6,16 +6,20 @@ import { Check, ChevronDown, ChevronUp } from 'lucide-react';
 import { useState } from 'react';
 import type { MenuItem } from '../types';
 import { formatPrice, getConfidenceColor, getConfidenceBg, formatConfidence } from '../utils';
+import FoodIntelligencePanel from '../../shared/FoodIntelligencePanel';
 
 interface MenuItemCardProps {
   item: MenuItem;
   onToggle: () => void;
   onUpdateNutrition?: (updates: Partial<MenuItem>) => void;
+  /** User's nutrition focus for intelligence display */
+  userFocus?: string;
 }
 
 export function MenuItemCard({
   item,
   onToggle,
+  userFocus = 'balanced',
 }: MenuItemCardProps): React.ReactElement {
   const [isExpanded, setIsExpanded] = useState(false);
 
@@ -95,14 +99,14 @@ export function MenuItemCard({
         <div className="px-3 pb-3 border-t border-white/[0.04]">
           <div className="pt-3 grid grid-cols-4 gap-2">
             {[
-              { key: 'protein', label: 'Protein', color: 'text-rose-400', unit: 'g' },
-              { key: 'carbs', label: 'Carbs', color: 'text-amber-400', unit: 'g' },
-              { key: 'fat', label: 'Fat', color: 'text-blue-400', unit: 'g' },
-              { key: 'fiber', label: 'Fiber', color: 'text-emerald-400', unit: 'g' },
+              { key: 'protein' as const, label: 'Protein', color: 'text-rose-400', unit: 'g' },
+              { key: 'carbs' as const, label: 'Carbs', color: 'text-amber-400', unit: 'g' },
+              { key: 'fat' as const, label: 'Fat', color: 'text-blue-400', unit: 'g' },
+              { key: 'fiber' as const, label: 'Fiber', color: 'text-emerald-400', unit: 'g' },
             ].map(({ key, label, color, unit }) => (
               <div key={key} className="text-center">
                 <span className={`text-sm font-bold ${color}`}>
-                  {item[key as keyof MenuItem] || 0}{unit}
+                  {item[key] || 0}{unit}
                 </span>
                 <span className="text-[9px] text-text-muted block">{label}</span>
               </div>
@@ -129,6 +133,14 @@ export function MenuItemCard({
           <p className="mt-3 text-[10px] text-text-muted/70 text-center italic">
             Nutrition values are AI estimates. Tap values to edit.
           </p>
+
+          {/* Food Intelligence Panel */}
+          {item.intelligence && (
+            <FoodIntelligencePanel
+              intelligence={item.intelligence}
+              userFocus={userFocus}
+            />
+          )}
         </div>
       )}
     </div>

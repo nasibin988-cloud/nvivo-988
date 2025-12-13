@@ -12,13 +12,35 @@ import { searchFoods as searchFoodsFn, usdaApiKey } from './domains/ai/foodSearc
 import { compareFoodsWithAI, openaiApiKeyComparison, type WellnessFocus, type ComparisonFoodData } from './domains/ai/foodComparison';
 import { gradeFoodWithAI, openaiApiKeyGrading, type GradingNutritionData } from './domains/ai/gradingRubric';
 
-// Nutrition evaluation functions
+// Nutrition evaluation functions (V1 - legacy)
 import {
   evaluateNutritionDay,
   getNutritionTargets,
   getNutrientInfo,
   evaluateNutritionWeek,
 } from './domains/nutrition';
+
+// Nutrition evaluation functions (V2 - advanced MAR-based scoring)
+import {
+  evaluateNutritionDayV2,
+  evaluateNutritionWeekV2,
+  getNutritionFocusOptions,
+} from './domains/nutrition';
+
+// Nutrition V2 API functions (database-backed, deterministic grading)
+import {
+  analyzeFoodPhotoV2,
+  analyzeFoodPhotoUrlV2,
+  analyzeFoodTextV2,
+  analyzeSingleFoodFnV2,
+  scanMenuV2,
+  analyzeMenuItemsV2Fn,
+  scanAndAnalyzeMenuFnV2,
+  compareFoodsFnV2,
+  cleanupNutritionCacheV2,
+  getNutritionCacheStatsV2,
+  nutritionV2Health,
+} from './domains/nutrition/v2';
 
 // Initialize Firebase Admin
 admin.initializeApp();
@@ -699,3 +721,85 @@ export { getNutrientInfo };
  * Returns daily evaluations, average score, best day, and trend
  */
 export { evaluateNutritionWeek };
+
+// ============================================================================
+// NUTRITION EVALUATION V2 FUNCTIONS (Advanced MAR-based scoring)
+// ============================================================================
+
+/**
+ * Evaluate a single day's nutrition with advanced MAR-based scoring
+ * Supports 10 nutrition focuses (heart_health, muscle_building, etc.)
+ * Returns MAR, detailed breakdown, fat quality, glycemic impact
+ */
+export { evaluateNutritionDayV2 };
+
+/**
+ * Evaluate multiple days with advanced scoring
+ * Returns weekly evaluation with cumulative MAR, consistency, and trend
+ */
+export { evaluateNutritionWeekV2 };
+
+/**
+ * Get available nutrition focus options
+ * Returns all 10 focuses with names and descriptions
+ */
+export { getNutritionFocusOptions };
+
+// ============================================================================
+// NUTRITION V2 FUNCTIONS (Database-backed, deterministic grading)
+// ============================================================================
+
+/**
+ * V2 Photo analysis - uses USDA/Edamam databases + deterministic grading
+ */
+export { analyzeFoodPhotoV2 };
+
+/**
+ * V2 Photo URL analysis
+ */
+export { analyzeFoodPhotoUrlV2 };
+
+/**
+ * V2 Text analysis
+ */
+export { analyzeFoodTextV2 };
+
+/**
+ * V2 Single food analysis by name
+ */
+export { analyzeSingleFoodFnV2 };
+
+/**
+ * V2 Menu scanning
+ */
+export { scanMenuV2 };
+
+/**
+ * V2 Analyze selected menu items
+ */
+export { analyzeMenuItemsV2Fn };
+
+/**
+ * V2 Scan and analyze menu in one call
+ */
+export { scanAndAnalyzeMenuFnV2 };
+
+/**
+ * V2 Food comparison
+ */
+export { compareFoodsFnV2 };
+
+/**
+ * V2 Cache cleanup (scheduled)
+ */
+export { cleanupNutritionCacheV2 };
+
+/**
+ * V2 Cache statistics
+ */
+export { getNutritionCacheStatsV2 };
+
+/**
+ * V2 Health check
+ */
+export { nutritionV2Health };

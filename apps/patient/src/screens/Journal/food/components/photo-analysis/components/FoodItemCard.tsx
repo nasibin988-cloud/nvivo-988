@@ -5,8 +5,9 @@
 
 import { useState, useEffect } from 'react';
 import { ChevronDown, ChevronRight, Plus, Minus } from 'lucide-react';
-import type { AnalyzedFood, FoodIngredient } from '../types';
+import type { AnalyzedFood, FoodIngredient, WellnessFocus } from '../types';
 import { MACRO_CONFIGS, PHOTO_ANALYSIS_FEATURES } from '../data';
+import FoodIntelligencePanel from '../../shared/FoodIntelligencePanel';
 
 interface NumberInputProps {
   value: number;
@@ -98,6 +99,8 @@ interface FoodItemCardProps {
   onUpdate: (updates: Partial<AnalyzedFood>) => void;
   onPortionChange: (newQuantity: number) => void;
   onRemove: () => void;
+  /** User's nutrition focus for intelligence grade display */
+  userFocus?: WellnessFocus;
 }
 
 export default function FoodItemCard({
@@ -108,6 +111,7 @@ export default function FoodItemCard({
   onUpdate,
   onPortionChange,
   onRemove,
+  userFocus = 'balanced',
 }: FoodItemCardProps): React.ReactElement {
   return (
     <div className="p-3 rounded-xl bg-white/[0.02] border border-white/[0.06] hover:border-white/[0.1] transition-colors">
@@ -146,6 +150,17 @@ export default function FoodItemCard({
           </button>
         </div>
       </div>
+
+      {/* Food Intelligence Panel - shown when v2 grading/insight or legacy intelligence data is available */}
+      {(item.grading || item.insight || item.intelligence) && (
+        <FoodIntelligencePanel
+          intelligence={item.intelligence}
+          grading={item.grading}
+          insight={item.insight}
+          userFocus={userFocus}
+          compact={!isEditing}
+        />
+      )}
 
       {/* Expanded edit view */}
       {isEditing && (

@@ -208,7 +208,7 @@ function findConsistentPatterns(messages) {
     }
     // Return patterns that appear multiple times
     return Array.from(counts.entries())
-        .filter(([_, count]) => count >= 2)
+        .filter(([, count]) => count >= 2)
         .sort((a, b) => b[1] - a[1])
         .slice(0, 3)
         .map(([nutrient]) => nutrient);

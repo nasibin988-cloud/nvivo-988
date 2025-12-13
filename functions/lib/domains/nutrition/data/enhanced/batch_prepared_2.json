@@ -1,0 +1,864 @@
+{
+    "sandwich": {
+        "foodId": "sandwich",
+        "name": "Sandwich (Ham & Cheese)",
+        "category": "prepared",
+        "servingSize": "1 sandwich",
+        "servingSizeGrams": 146,
+        "servingSizeMetric": "146g",
+        "calories": 352,
+        "macros": {
+            "protein": 21,
+            "carbs": 33,
+            "fat": 15,
+            "fiber": 2,
+            "sugar": 5,
+            "addedSugar": 2,
+            "saturatedFat": 6.4,
+            "transFat": 0,
+            "polyunsaturatedFat": 2.1,
+            "monounsaturatedFat": 5.2,
+            "cholesterol": 58,
+            "sodium": 1050
+        },
+        "micronutrients": {
+            "vitaminA": 162,
+            "vitaminC": 0.5,
+            "vitaminD": 0.4,
+            "vitaminE": 0.5,
+            "vitaminK": 3.2,
+            "thiamin": 0.45,
+            "riboflavin": 0.35,
+            "niacin": 5.8,
+            "vitaminB6": 0.22,
+            "folate": 68,
+            "vitaminB12": 0.8,
+            "calcium": 218,
+            "iron": 2.4,
+            "magnesium": 32,
+            "phosphorus": 312,
+            "potassium": 186,
+            "zinc": 2.5,
+            "selenium": 28,
+            "copper": 0.12,
+            "manganese": 0.38
+        },
+        "healthScore": 52,
+        "novaGroup": 3,
+        "tags": [
+            "high-protein",
+            "high-sodium",
+            "processed",
+            "lunch",
+            "sandwich",
+            "deli-meat"
+        ],
+        "allergens": [
+            "wheat",
+            "gluten",
+            "dairy",
+            "soy"
+        ],
+        "dietaryFlags": {
+            "isVegan": false,
+            "isVegetarian": false,
+            "isGlutenFree": false,
+            "isDairyFree": false,
+            "isLowCarb": false,
+            "isKeto": false,
+            "isPaleo": false,
+            "isLowFODMAP": false
+        },
+        "sustainabilityScore": 48,
+        "pricePerServing": 3.5,
+        "shelfLife": "Refrigerated: 1-2 days assembled, 5-7 days ingredients",
+        "preparation": "Assemble with 2 slices bread, 2oz sliced ham, 1oz cheese, lettuce, tomato, mustard or mayo. Serve immediately or wrap for later",
+        "commonBrands": [
+            "Subway",
+            "Jimmy John's",
+            "Homemade"
+        ],
+        "seasonality": "Year-round",
+        "culturalContext": "Classic American lunch staple, portable and convenient. Popular in lunchboxes, delis, and cafes worldwide",
+        "focusGrades": {
+            "heart_health": {
+                "grade": "D+",
+                "score": 42,
+                "reasoning": "Very high sodium (1050mg) is major cardiovascular risk. Saturated fat (6.4g) and processed meat raise LDL cholesterol. Moderate improvement from calcium and some fiber."
+            },
+            "longevity": {
+                "grade": "D+",
+                "score": 40,
+                "reasoning": "Processed meat and high sodium linked to increased mortality risk. Refined grains and low vegetable content reduce longevity benefits. Better with whole grain bread."
+            },
+            "metabolic_health": {
+                "grade": "C",
+                "score": 55,
+                "reasoning": "Moderate carbs (33g) with some fiber (2g). Good protein (21g) helps stabilize blood sugar, but refined bread causes glucose spikes. High sodium affects insulin sensitivity."
+            },
+            "immune_support": {
+                "grade": "C+",
+                "score": 62,
+                "reasoning": "Good zinc (2.5mg), selenium (28mcg), B vitamins support immune function. Protein aids antibody production. Processing and additives reduce overall benefits."
+            },
+            "gut_health": {
+                "grade": "D+",
+                "score": 45,
+                "reasoning": "Low fiber (2g) from refined bread. Very high sodium disrupts gut microbiome. Processed meat contains nitrates harmful to gut bacteria. Needs more vegetables."
+            },
+            "brain_health": {
+                "grade": "C",
+                "score": 52,
+                "reasoning": "B vitamins, selenium support cognition. Good protein for neurotransmitters. High sodium linked to cognitive decline. Refined carbs cause blood sugar fluctuations."
+            },
+            "bone_health": {
+                "grade": "B-",
+                "score": 68,
+                "reasoning": "Good calcium (218mg) from cheese. Protein (21g) and phosphorus (312mg) support bone density. Very high sodium may increase calcium excretion."
+            },
+            "inflammation": {
+                "grade": "D+",
+                "score": 38,
+                "reasoning": "Processed meat is pro-inflammatory. High sodium, saturated fat, refined grains promote inflammation. Low antioxidants from minimal vegetables."
+            },
+            "energy": {
+                "grade": "B-",
+                "score": 70,
+                "reasoning": "Good protein (21g) and moderate fat provide sustained energy. Carbs from refined bread cause initial spike then crash. B vitamins support energy metabolism."
+            },
+            "athletic_performance": {
+                "grade": "C+",
+                "score": 58,
+                "reasoning": "Good protein (21g) for muscle recovery. Carbs provide energy but refined sources not optimal. Excessive sodium may cause water retention and bloating."
+            }
+        },
+        "emoji": "\ud83e\udd6a",
+        "searchTerms": [
+            "sandwich",
+            "ham sandwich",
+            "cheese sandwich",
+            "ham and cheese",
+            "deli sandwich",
+            "lunch sandwich"
+        ]
+    },
+    "turkey_sandwich": {
+        "foodId": "turkey_sandwich",
+        "name": "Turkey Sandwich",
+        "category": "prepared",
+        "servingSize": "1 sandwich",
+        "servingSizeGrams": 156,
+        "servingSizeMetric": "156g",
+        "calories": 320,
+        "macros": {
+            "protein": 24,
+            "carbs": 36,
+            "fat": 9,
+            "fiber": 3,
+            "sugar": 6,
+            "addedSugar": 3,
+            "saturatedFat": 2.8,
+            "transFat": 0,
+            "polyunsaturatedFat": 2.4,
+            "monounsaturatedFat": 2.8,
+            "cholesterol": 42,
+            "sodium": 920
+        },
+        "micronutrients": {
+            "vitaminA": 85,
+            "vitaminC": 2.5,
+            "vitaminD": 0.2,
+            "vitaminE": 0.6,
+            "vitaminK": 12,
+            "thiamin": 0.38,
+            "riboflavin": 0.28,
+            "niacin": 8.5,
+            "vitaminB6": 0.42,
+            "folate": 72,
+            "vitaminB12": 0.4,
+            "calcium": 95,
+            "iron": 2.6,
+            "magnesium": 38,
+            "phosphorus": 285,
+            "potassium": 265,
+            "zinc": 2.2,
+            "selenium": 32,
+            "copper": 0.14,
+            "manganese": 0.42
+        },
+        "healthScore": 58,
+        "novaGroup": 3,
+        "tags": [
+            "high-protein",
+            "high-sodium",
+            "processed",
+            "lunch",
+            "sandwich",
+            "lean-protein"
+        ],
+        "allergens": [
+            "wheat",
+            "gluten",
+            "soy"
+        ],
+        "dietaryFlags": {
+            "isVegan": false,
+            "isVegetarian": false,
+            "isGlutenFree": false,
+            "isDairyFree": true,
+            "isLowCarb": false,
+            "isKeto": false,
+            "isPaleo": false,
+            "isLowFODMAP": false
+        },
+        "sustainabilityScore": 52,
+        "pricePerServing": 3.0,
+        "shelfLife": "Refrigerated: 1-2 days assembled, 5-7 days ingredients",
+        "preparation": "Assemble with 2 slices whole wheat bread, 3oz sliced turkey breast, lettuce, tomato, onion, mustard. Add avocado or vegetables for extra nutrition",
+        "commonBrands": [
+            "Subway",
+            "Jersey Mike's",
+            "Homemade"
+        ],
+        "seasonality": "Year-round",
+        "culturalContext": "Popular healthy lunch option in American cuisine. Common in meal prep and packed lunches. Often chosen as lighter alternative to other deli sandwiches",
+        "focusGrades": {
+            "heart_health": {
+                "grade": "C",
+                "score": 52,
+                "reasoning": "High sodium (920mg) is cardiovascular risk factor. Lower saturated fat (2.8g) better than ham sandwich. Lean turkey protein and some fiber provide benefits."
+            },
+            "longevity": {
+                "grade": "C+",
+                "score": 58,
+                "reasoning": "Processed deli meat linked to mortality risk but turkey is leaner choice. Whole wheat provides more nutrients than white bread. Still high in sodium."
+            },
+            "metabolic_health": {
+                "grade": "C+",
+                "score": 62,
+                "reasoning": "Good protein (24g) helps regulate blood sugar. More fiber (3g) slows glucose absorption. Refined carbs still present. Lower fat supports insulin sensitivity."
+            },
+            "immune_support": {
+                "grade": "B-",
+                "score": 68,
+                "reasoning": "Excellent selenium (32mcg), good zinc (2.2mg), B vitamins support immune function. High protein aids antibody production. Vegetables add antioxidants."
+            },
+            "gut_health": {
+                "grade": "C",
+                "score": 50,
+                "reasoning": "Moderate fiber (3g) supports gut health. High sodium disrupts microbiome. Processed meat contains preservatives harmful to gut bacteria. Vegetables help."
+            },
+            "brain_health": {
+                "grade": "C+",
+                "score": 60,
+                "reasoning": "Excellent niacin (8.5mg), B6 (0.42mg) support cognitive function. Good selenium protects brain. High sodium linked to cognitive decline over time."
+            },
+            "bone_health": {
+                "grade": "C+",
+                "score": 62,
+                "reasoning": "Moderate calcium (95mg), good phosphorus (285mg) support bones. Excellent protein (24g) for bone matrix. High sodium may increase calcium loss."
+            },
+            "inflammation": {
+                "grade": "C",
+                "score": 48,
+                "reasoning": "Processed meat is pro-inflammatory. High sodium promotes inflammation. Lower saturated fat and vegetables provide some anti-inflammatory benefits."
+            },
+            "energy": {
+                "grade": "B",
+                "score": 75,
+                "reasoning": "Excellent protein (24g) provides sustained energy. Good B vitamins support energy metabolism. Moderate carbs with fiber prevent crashes. Lean fat profile."
+            },
+            "athletic_performance": {
+                "grade": "B-",
+                "score": 70,
+                "reasoning": "Excellent protein (24g) for muscle recovery. Good carbs for energy replenishment. Lower fat digests easier. High sodium may cause bloating during activity."
+            }
+        },
+        "emoji": "\ud83e\udd6a",
+        "searchTerms": [
+            "turkey sandwich",
+            "turkey breast sandwich",
+            "deli turkey",
+            "turkey sub",
+            "lunch sandwich",
+            "turkey"
+        ]
+    },
+    "grilled_cheese": {
+        "foodId": "grilled_cheese",
+        "name": "Grilled Cheese Sandwich",
+        "category": "prepared",
+        "servingSize": "1 sandwich",
+        "servingSizeGrams": 116,
+        "servingSizeMetric": "116g",
+        "calories": 400,
+        "macros": {
+            "protein": 16,
+            "carbs": 32,
+            "fat": 23,
+            "fiber": 1.5,
+            "sugar": 4,
+            "addedSugar": 2,
+            "saturatedFat": 12.5,
+            "transFat": 0,
+            "polyunsaturatedFat": 2.2,
+            "monounsaturatedFat": 6.8,
+            "cholesterol": 58,
+            "sodium": 850
+        },
+        "micronutrients": {
+            "vitaminA": 325,
+            "vitaminC": 0,
+            "vitaminD": 0.5,
+            "vitaminE": 0.4,
+            "vitaminK": 2.5,
+            "thiamin": 0.32,
+            "riboflavin": 0.38,
+            "niacin": 2.8,
+            "vitaminB6": 0.08,
+            "folate": 58,
+            "vitaminB12": 0.7,
+            "calcium": 380,
+            "iron": 1.8,
+            "magnesium": 28,
+            "phosphorus": 345,
+            "potassium": 142,
+            "zinc": 2.1,
+            "selenium": 22,
+            "copper": 0.08,
+            "manganese": 0.28
+        },
+        "healthScore": 44,
+        "novaGroup": 3,
+        "tags": [
+            "high-fat",
+            "high-saturated-fat",
+            "high-sodium",
+            "comfort-food",
+            "vegetarian",
+            "lunch",
+            "dinner"
+        ],
+        "allergens": [
+            "wheat",
+            "gluten",
+            "dairy"
+        ],
+        "dietaryFlags": {
+            "isVegan": false,
+            "isVegetarian": true,
+            "isGlutenFree": false,
+            "isDairyFree": false,
+            "isLowCarb": false,
+            "isKeto": false,
+            "isPaleo": false,
+            "isLowFODMAP": false
+        },
+        "sustainabilityScore": 55,
+        "pricePerServing": 2.0,
+        "shelfLife": "Best consumed immediately; ingredients: bread 5-7 days, cheese 2-4 weeks refrigerated",
+        "preparation": "Butter outside of 2 bread slices, place 2oz sliced cheese between. Cook in pan over medium heat 3-4 minutes per side until golden brown and cheese melts",
+        "commonBrands": [
+            "Homemade",
+            "Diner classic",
+            "Tom+Chee"
+        ],
+        "seasonality": "Year-round",
+        "culturalContext": "Classic American comfort food. Popular with children and adults. Often paired with tomato soup. Simple, nostalgic meal",
+        "focusGrades": {
+            "heart_health": {
+                "grade": "D",
+                "score": 32,
+                "reasoning": "Very high saturated fat (12.5g) raises LDL cholesterol significantly. High sodium (850mg). Low fiber and nutrients. Not heart-healthy despite calcium."
+            },
+            "longevity": {
+                "grade": "D+",
+                "score": 38,
+                "reasoning": "High saturated fat and sodium linked to reduced lifespan. Refined grains and minimal vegetables. Comfort food best consumed occasionally, not regularly."
+            },
+            "metabolic_health": {
+                "grade": "D+",
+                "score": 42,
+                "reasoning": "High saturated fat impairs insulin sensitivity. Refined carbs (32g) spike blood sugar. Low fiber (1.5g). High calorie density promotes weight gain."
+            },
+            "immune_support": {
+                "grade": "C",
+                "score": 55,
+                "reasoning": "Good zinc (2.1mg), selenium (22mcg), vitamin A (325mcg) support immune function. Protein and calcium beneficial. Processing reduces overall benefits."
+            },
+            "gut_health": {
+                "grade": "D",
+                "score": 35,
+                "reasoning": "Very low fiber (1.5g). High saturated fat slows digestion. High sodium disrupts gut microbiome. Lacks prebiotics and diversity. Needs vegetables."
+            },
+            "brain_health": {
+                "grade": "C-",
+                "score": 48,
+                "reasoning": "Calcium (380mg) and B vitamins support brain function. High saturated fat and sodium linked to cognitive decline. Refined carbs cause blood sugar fluctuations."
+            },
+            "bone_health": {
+                "grade": "B+",
+                "score": 78,
+                "reasoning": "Excellent calcium (380mg) from cheese supports bone density. Good phosphorus (345mg) and protein (16g). High sodium may increase calcium excretion."
+            },
+            "inflammation": {
+                "grade": "D",
+                "score": 30,
+                "reasoning": "Very high saturated fat is pro-inflammatory. High sodium promotes inflammation. Refined grains add to inflammatory load. Lacks anti-inflammatory nutrients."
+            },
+            "energy": {
+                "grade": "C+",
+                "score": 60,
+                "reasoning": "High calorie density (400 cal) provides quick energy. Refined carbs cause initial spike then crash. Fat and protein provide some sustained energy. B vitamins help."
+            },
+            "athletic_performance": {
+                "grade": "D+",
+                "score": 42,
+                "reasoning": "Moderate protein (16g) for muscle recovery. Very high saturated fat slows digestion and performance. High sodium and refined carbs not optimal for athletes."
+            }
+        },
+        "emoji": "\ud83e\uddc0",
+        "searchTerms": [
+            "grilled cheese",
+            "grilled cheese sandwich",
+            "cheese sandwich",
+            "melted cheese",
+            "comfort food"
+        ]
+    },
+    "mac_and_cheese": {
+        "foodId": "mac_and_cheese",
+        "name": "Mac and Cheese",
+        "category": "prepared",
+        "servingSize": "1 cup",
+        "servingSizeGrams": 200,
+        "servingSizeMetric": "200g",
+        "calories": 350,
+        "macros": {
+            "protein": 14,
+            "carbs": 40,
+            "fat": 14,
+            "fiber": 2,
+            "sugar": 5,
+            "addedSugar": 1,
+            "saturatedFat": 8.5,
+            "transFat": 0,
+            "polyunsaturatedFat": 1.2,
+            "monounsaturatedFat": 3.8,
+            "cholesterol": 42,
+            "sodium": 730
+        },
+        "micronutrients": {
+            "vitaminA": 285,
+            "vitaminC": 0,
+            "vitaminD": 0.4,
+            "vitaminE": 0.3,
+            "vitaminK": 2.0,
+            "thiamin": 0.28,
+            "riboflavin": 0.32,
+            "niacin": 2.4,
+            "vitaminB6": 0.06,
+            "folate": 52,
+            "vitaminB12": 0.5,
+            "calcium": 310,
+            "iron": 1.6,
+            "magnesium": 32,
+            "phosphorus": 298,
+            "potassium": 165,
+            "zinc": 1.8,
+            "selenium": 18,
+            "copper": 0.06,
+            "manganese": 0.32
+        },
+        "healthScore": 46,
+        "novaGroup": 3,
+        "tags": [
+            "high-carb",
+            "high-fat",
+            "high-saturated-fat",
+            "high-sodium",
+            "comfort-food",
+            "vegetarian",
+            "pasta",
+            "kid-friendly"
+        ],
+        "allergens": [
+            "wheat",
+            "gluten",
+            "dairy"
+        ],
+        "dietaryFlags": {
+            "isVegan": false,
+            "isVegetarian": true,
+            "isGlutenFree": false,
+            "isDairyFree": false,
+            "isLowCarb": false,
+            "isKeto": false,
+            "isPaleo": false,
+            "isLowFODMAP": false
+        },
+        "sustainabilityScore": 58,
+        "pricePerServing": 1.75,
+        "shelfLife": "Refrigerated: 3-5 days cooked; Dry mix: 1-2 years",
+        "preparation": "Boil pasta 7-8 minutes until tender. Drain, add butter, milk, cheese sauce. Stir until creamy. For baked version, top with breadcrumbs and bake 20 minutes at 350\u00b0F",
+        "commonBrands": [
+            "Kraft",
+            "Velveeta",
+            "Annie's Homegrown",
+            "Homemade"
+        ],
+        "seasonality": "Year-round",
+        "culturalContext": "Classic American comfort food, especially popular with children. Traditional side dish at family gatherings and holidays. Soul food staple in African American cuisine",
+        "focusGrades": {
+            "heart_health": {
+                "grade": "D+",
+                "score": 40,
+                "reasoning": "High saturated fat (8.5g) raises LDL cholesterol. High sodium (730mg) increases blood pressure. Low fiber. Calcium provides minor cardiovascular benefits."
+            },
+            "longevity": {
+                "grade": "D+",
+                "score": 42,
+                "reasoning": "High saturated fat and sodium linked to chronic diseases. Refined pasta lacks longevity-promoting nutrients. Comfort food best consumed occasionally."
+            },
+            "metabolic_health": {
+                "grade": "D+",
+                "score": 45,
+                "reasoning": "High refined carbs (40g) spike blood sugar. Saturated fat impairs insulin sensitivity. Low fiber (2g). High calorie density promotes weight gain."
+            },
+            "immune_support": {
+                "grade": "C",
+                "score": 58,
+                "reasoning": "Good vitamin A (285mcg), zinc (1.8mg), selenium (18mcg) support immune function. Protein and calcium beneficial. Processing reduces overall quality."
+            },
+            "gut_health": {
+                "grade": "D+",
+                "score": 40,
+                "reasoning": "Low fiber (2g) from refined pasta. High saturated fat slows digestion. High sodium disrupts gut microbiome. Lacks prebiotics and fermented ingredients."
+            },
+            "brain_health": {
+                "grade": "C",
+                "score": 50,
+                "reasoning": "Calcium (310mg) and B vitamins support brain function. High saturated fat and refined carbs linked to cognitive decline. Blood sugar spikes affect focus."
+            },
+            "bone_health": {
+                "grade": "B",
+                "score": 75,
+                "reasoning": "Excellent calcium (310mg) from cheese supports bone density. Good phosphorus (298mg) for bone mineralization. Protein (14g) aids bone matrix formation."
+            },
+            "inflammation": {
+                "grade": "D+",
+                "score": 38,
+                "reasoning": "High saturated fat is pro-inflammatory. Refined pasta and sodium promote inflammation. Lacks anti-inflammatory nutrients from vegetables or whole grains."
+            },
+            "energy": {
+                "grade": "C+",
+                "score": 62,
+                "reasoning": "High carbs (40g) provide quick energy but refined sources cause crash. Moderate protein and fat provide some sustained energy. B vitamins support metabolism."
+            },
+            "athletic_performance": {
+                "grade": "C",
+                "score": 50,
+                "reasoning": "Moderate protein (14g) for recovery. Carbs provide energy but refined pasta not optimal. High saturated fat and sodium hinder performance and recovery."
+            }
+        },
+        "emoji": "\ud83e\uddc0",
+        "searchTerms": [
+            "mac and cheese",
+            "macaroni and cheese",
+            "mac n cheese",
+            "pasta",
+            "cheese pasta",
+            "kraft dinner"
+        ]
+    },
+    "macaroni_and_cheese": {
+        "foodId": "macaroni_and_cheese",
+        "name": "Baked Macaroni and Cheese",
+        "category": "prepared",
+        "servingSize": "1 cup",
+        "servingSizeGrams": 215,
+        "servingSizeMetric": "215g",
+        "calories": 390,
+        "macros": {
+            "protein": 16,
+            "carbs": 42,
+            "fat": 17,
+            "fiber": 2.5,
+            "sugar": 6,
+            "addedSugar": 1,
+            "saturatedFat": 9.8,
+            "transFat": 0,
+            "polyunsaturatedFat": 1.5,
+            "monounsaturatedFat": 4.5,
+            "cholesterol": 48,
+            "sodium": 820
+        },
+        "micronutrients": {
+            "vitaminA": 342,
+            "vitaminC": 0,
+            "vitaminD": 0.6,
+            "vitaminE": 0.4,
+            "vitaminK": 2.5,
+            "thiamin": 0.32,
+            "riboflavin": 0.38,
+            "niacin": 2.8,
+            "vitaminB6": 0.08,
+            "folate": 58,
+            "vitaminB12": 0.6,
+            "calcium": 365,
+            "iron": 1.8,
+            "magnesium": 36,
+            "phosphorus": 335,
+            "potassium": 185,
+            "zinc": 2.0,
+            "selenium": 22,
+            "copper": 0.08,
+            "manganese": 0.38
+        },
+        "healthScore": 48,
+        "novaGroup": 3,
+        "tags": [
+            "high-carb",
+            "high-fat",
+            "high-saturated-fat",
+            "high-sodium",
+            "comfort-food",
+            "vegetarian",
+            "pasta",
+            "baked",
+            "casserole"
+        ],
+        "allergens": [
+            "wheat",
+            "gluten",
+            "dairy",
+            "eggs"
+        ],
+        "dietaryFlags": {
+            "isVegan": false,
+            "isVegetarian": true,
+            "isGlutenFree": false,
+            "isDairyFree": false,
+            "isLowCarb": false,
+            "isKeto": false,
+            "isPaleo": false,
+            "isLowFODMAP": false
+        },
+        "sustainabilityScore": 56,
+        "pricePerServing": 2.25,
+        "shelfLife": "Refrigerated: 3-5 days cooked; Frozen: 2-3 months",
+        "preparation": "Boil pasta, make cheese sauce with butter, flour, milk, shredded cheese. Combine, transfer to baking dish, top with breadcrumbs and extra cheese. Bake 25-30 minutes at 375\u00b0F until golden and bubbly",
+        "commonBrands": [
+            "Stouffer's",
+            "Boston Market",
+            "Homemade"
+        ],
+        "seasonality": "Year-round",
+        "culturalContext": "Premium version of classic mac and cheese. Popular at holidays, potlucks, and family gatherings. Southern US specialty, particularly in soul food tradition",
+        "focusGrades": {
+            "heart_health": {
+                "grade": "D+",
+                "score": 42,
+                "reasoning": "High saturated fat (9.8g) raises LDL cholesterol. High sodium (820mg) increases blood pressure risk. More cheese and butter than stovetop version worsen cardiovascular impact."
+            },
+            "longevity": {
+                "grade": "D+",
+                "score": 43,
+                "reasoning": "High saturated fat and sodium linked to chronic disease and reduced lifespan. Refined grains lack protective nutrients. Occasional indulgence only."
+            },
+            "metabolic_health": {
+                "grade": "D+",
+                "score": 46,
+                "reasoning": "High refined carbs (42g) spike blood sugar. High saturated fat impairs insulin sensitivity. Low fiber (2.5g). Calorie-dense promotes weight gain."
+            },
+            "immune_support": {
+                "grade": "C+",
+                "score": 60,
+                "reasoning": "Good vitamin A (342mcg), zinc (2.0mg), selenium (22mcg) support immune function. Higher protein (16g) and calcium beneficial. Eggs add nutrients."
+            },
+            "gut_health": {
+                "grade": "D+",
+                "score": 42,
+                "reasoning": "Low fiber (2.5g) from refined pasta. High saturated fat slows digestion and may alter gut microbiome. High sodium disrupts bacterial balance."
+            },
+            "brain_health": {
+                "grade": "C",
+                "score": 52,
+                "reasoning": "Good calcium (365mg), B vitamins support brain function. High saturated fat linked to cognitive decline. Refined carbs cause blood sugar fluctuations affecting focus."
+            },
+            "bone_health": {
+                "grade": "B+",
+                "score": 78,
+                "reasoning": "Excellent calcium (365mg) from cheese supports bone density. Good phosphorus (335mg), protein (16g) for bone health. High sodium may increase calcium loss."
+            },
+            "inflammation": {
+                "grade": "D+",
+                "score": 40,
+                "reasoning": "High saturated fat is pro-inflammatory. Refined pasta and high sodium promote inflammation. Baking adds oxidized fats. Lacks anti-inflammatory ingredients."
+            },
+            "energy": {
+                "grade": "C+",
+                "score": 64,
+                "reasoning": "High carbs (42g) provide quick energy. Refined pasta causes blood sugar crash. Fat and protein provide moderate sustained energy. B vitamins support metabolism."
+            },
+            "athletic_performance": {
+                "grade": "C",
+                "score": 52,
+                "reasoning": "Good protein (16g) for muscle recovery. Carbs replenish glycogen but refined pasta suboptimal. High saturated fat and sodium hinder athletic performance."
+            }
+        },
+        "emoji": "\ud83e\uddc0",
+        "searchTerms": [
+            "baked mac and cheese",
+            "macaroni and cheese",
+            "baked macaroni",
+            "mac n cheese casserole",
+            "pasta bake",
+            "cheese casserole"
+        ]
+    },
+    "chili_con_carne": {
+        "foodId": "chili_con_carne",
+        "name": "Chili Con Carne",
+        "category": "prepared",
+        "servingSize": "1 cup",
+        "servingSizeGrams": 253,
+        "servingSizeMetric": "253g",
+        "calories": 285,
+        "macros": {
+            "protein": 22,
+            "carbs": 24,
+            "fat": 11,
+            "fiber": 7,
+            "sugar": 6,
+            "addedSugar": 0,
+            "saturatedFat": 4.2,
+            "transFat": 0,
+            "polyunsaturatedFat": 1.2,
+            "monounsaturatedFat": 4.8,
+            "cholesterol": 55,
+            "sodium": 875
+        },
+        "micronutrients": {
+            "vitaminA": 152,
+            "vitaminC": 8.5,
+            "vitaminD": 0.1,
+            "vitaminE": 1.8,
+            "vitaminK": 8.2,
+            "thiamin": 0.22,
+            "riboflavin": 0.24,
+            "niacin": 4.8,
+            "vitaminB6": 0.35,
+            "folate": 88,
+            "vitaminB12": 1.5,
+            "calcium": 82,
+            "iron": 4.2,
+            "magnesium": 68,
+            "phosphorus": 265,
+            "potassium": 685,
+            "zinc": 4.5,
+            "selenium": 22,
+            "copper": 0.28,
+            "manganese": 0.52
+        },
+        "healthScore": 68,
+        "novaGroup": 2,
+        "tags": [
+            "high-protein",
+            "high-fiber",
+            "high-sodium",
+            "iron-rich",
+            "nutrient-dense",
+            "beans",
+            "beef",
+            "spicy",
+            "comfort-food",
+            "one-pot-meal"
+        ],
+        "allergens": [],
+        "dietaryFlags": {
+            "isVegan": false,
+            "isVegetarian": false,
+            "isGlutenFree": true,
+            "isDairyFree": true,
+            "isLowCarb": false,
+            "isKeto": false,
+            "isPaleo": false,
+            "isLowFODMAP": false
+        },
+        "sustainabilityScore": 52,
+        "pricePerServing": 3.5,
+        "shelfLife": "Refrigerated: 3-4 days; Frozen: 4-6 months",
+        "preparation": "Brown ground beef, saut\u00e9 onions and peppers. Add tomatoes, beans, chili powder, cumin, garlic. Simmer 45-60 minutes until thick and flavors meld. Serve with cornbread or rice",
+        "commonBrands": [
+            "Hormel",
+            "Campbell's Chunky",
+            "Wolf Brand",
+            "Homemade"
+        ],
+        "seasonality": "Year-round, popular in fall and winter",
+        "culturalContext": "Tex-Mex comfort food with origins in Texas and Northern Mexico. Popular at sporting events, cookouts, and cold weather gatherings. State dish of Texas",
+        "focusGrades": {
+            "heart_health": {
+                "grade": "C+",
+                "score": 62,
+                "reasoning": "High fiber (7g) and potassium (685mg) support heart health. Moderate saturated fat (4.2g). High sodium (875mg) is concern. Beans provide heart-healthy nutrients."
+            },
+            "longevity": {
+                "grade": "B-",
+                "score": 70,
+                "reasoning": "High fiber, antioxidants from tomatoes, beans linked to longevity. Moderate red meat. High sodium reduces benefits. Better than many comfort foods for lifespan."
+            },
+            "metabolic_health": {
+                "grade": "B",
+                "score": 72,
+                "reasoning": "High fiber (7g) slows glucose absorption. Good protein (22g) supports insulin sensitivity. Beans provide resistant starch. Moderate carbs with low glycemic impact."
+            },
+            "immune_support": {
+                "grade": "A-",
+                "score": 82,
+                "reasoning": "Excellent zinc (4.5mg), iron (4.2mg) support immune function. Good vitamin C (8.5mg), selenium. Protein and folate aid immune response. Spices add antimicrobial benefits."
+            },
+            "gut_health": {
+                "grade": "B+",
+                "score": 80,
+                "reasoning": "Excellent fiber (7g) from beans supports gut microbiome. Resistant starch feeds beneficial bacteria. High sodium is only downside. Onions and garlic add prebiotics."
+            },
+            "brain_health": {
+                "grade": "B-",
+                "score": 68,
+                "reasoning": "Good B vitamins, iron, zinc support cognitive function. Folate (88mcg) protects brain health. Antioxidants from tomatoes. High sodium linked to cognitive decline."
+            },
+            "bone_health": {
+                "grade": "B-",
+                "score": 70,
+                "reasoning": "Good protein (22g), phosphorus (265mg), magnesium (68mg) support bones. Calcium (82mg) from beans. High sodium may increase calcium excretion."
+            },
+            "inflammation": {
+                "grade": "B-",
+                "score": 68,
+                "reasoning": "Beans, tomatoes provide anti-inflammatory antioxidants. Spices (chili, cumin) reduce inflammation. Moderate saturated fat and high sodium are drawbacks."
+            },
+            "energy": {
+                "grade": "B+",
+                "score": 78,
+                "reasoning": "Excellent protein (22g) and fiber (7g) provide sustained energy. Complex carbs from beans prevent crashes. Iron supports oxygen transport. B vitamins aid metabolism."
+            },
+            "athletic_performance": {
+                "grade": "B",
+                "score": 75,
+                "reasoning": "Excellent protein (22g) for muscle recovery. Good iron (4.2mg), zinc, B vitamins support performance. High potassium aids hydration. Sodium may help replace electrolytes."
+            }
+        },
+        "emoji": "\ud83c\udf36\ufe0f",
+        "searchTerms": [
+            "chili",
+            "chili con carne",
+            "beef chili",
+            "texas chili",
+            "chilli",
+            "spicy chili",
+            "bean chili"
+        ]
+    }
+}

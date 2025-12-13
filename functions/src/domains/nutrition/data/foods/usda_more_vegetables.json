@@ -1,0 +1,302 @@
+{
+  "bok_choy": {
+    "fdcId": 323505,
+    "nutritionPer100g": {
+      "calories": 13,
+      "protein": 1.5,
+      "carbs": 2.18,
+      "fat": 0.2,
+      "fiber": 1.0,
+      "sugar": 1.18,
+      "sodium": 65,
+      "saturatedFat": 0.03,
+      "potassium": 252,
+      "calcium": 105,
+      "iron": 0.8,
+      "vitaminA": 4468,
+      "vitaminC": 45,
+      "vitaminK": 45.5,
+      "folate": 66
+    }
+  },
+  "arugula": {
+    "fdcId": 169387,
+    "nutritionPer100g": {
+      "calories": 25,
+      "protein": 2.58,
+      "carbs": 3.65,
+      "fat": 0.66,
+      "fiber": 1.6,
+      "sugar": 2.05,
+      "sodium": 27,
+      "saturatedFat": 0.086,
+      "potassium": 369,
+      "calcium": 160,
+      "iron": 1.46,
+      "vitaminA": 2373,
+      "vitaminC": 15,
+      "vitaminK": 108.6,
+      "folate": 97
+    }
+  },
+  "collard_greens": {
+    "fdcId": 169975,
+    "nutritionPer100g": {
+      "calories": 32,
+      "protein": 3.02,
+      "carbs": 5.42,
+      "fat": 0.61,
+      "fiber": 3.6,
+      "sugar": 0.45,
+      "sodium": 28,
+      "saturatedFat": 0.073,
+      "potassium": 213,
+      "calcium": 232,
+      "iron": 0.47,
+      "vitaminA": 5019,
+      "vitaminC": 35.3,
+      "vitaminK": 437.1,
+      "folate": 129
+    }
+  },
+  "swiss_chard": {
+    "fdcId": 169991,
+    "nutritionPer100g": {
+      "calories": 19,
+      "protein": 1.8,
+      "carbs": 3.74,
+      "fat": 0.2,
+      "fiber": 1.6,
+      "sugar": 1.1,
+      "sodium": 213,
+      "saturatedFat": 0.03,
+      "potassium": 379,
+      "calcium": 51,
+      "iron": 1.8,
+      "vitaminA": 6116,
+      "vitaminC": 30,
+      "vitaminK": 830,
+      "folate": 14
+    }
+  },
+  "turnip": {
+    "fdcId": 170465,
+    "nutritionPer100g": {
+      "calories": 28,
+      "protein": 0.9,
+      "carbs": 6.43,
+      "fat": 0.1,
+      "fiber": 1.8,
+      "sugar": 3.8,
+      "sodium": 67,
+      "saturatedFat": 0.011,
+      "potassium": 191,
+      "calcium": 30,
+      "iron": 0.3,
+      "vitaminA": 0,
+      "vitaminC": 21,
+      "vitaminK": 0.1,
+      "folate": 15
+    }
+  },
+  "parsnip": {
+    "fdcId": 170417,
+    "nutritionPer100g": {
+      "calories": 75,
+      "protein": 1.2,
+      "carbs": 17.99,
+      "fat": 0.3,
+      "fiber": 4.9,
+      "sugar": 4.8,
+      "sodium": 10,
+      "saturatedFat": 0.05,
+      "potassium": 375,
+      "calcium": 36,
+      "iron": 0.59,
+      "vitaminA": 0,
+      "vitaminC": 17,
+      "vitaminK": 22.5,
+      "folate": 67
+    }
+  },
+  "radish": {
+    "fdcId": 169276,
+    "nutritionPer100g": {
+      "calories": 16,
+      "protein": 0.68,
+      "carbs": 3.4,
+      "fat": 0.1,
+      "fiber": 1.6,
+      "sugar": 1.86,
+      "sodium": 39,
+      "saturatedFat": 0.032,
+      "potassium": 233,
+      "calcium": 25,
+      "iron": 0.34,
+      "vitaminA": 7,
+      "vitaminC": 14.8,
+      "vitaminK": 1.3,
+      "folate": 25
+    }
+  },
+  "leek": {
+    "fdcId": 169246,
+    "nutritionPer100g": {
+      "calories": 61,
+      "protein": 1.5,
+      "carbs": 14.15,
+      "fat": 0.3,
+      "fiber": 1.8,
+      "sugar": 3.9,
+      "sodium": 20,
+      "saturatedFat": 0.04,
+      "potassium": 180,
+      "calcium": 59,
+      "iron": 2.1,
+      "vitaminA": 1667,
+      "vitaminC": 12,
+      "vitaminK": 47,
+      "folate": 64
+    }
+  },
+  "fennel": {
+    "fdcId": 169385,
+    "nutritionPer100g": {
+      "calories": 31,
+      "protein": 1.24,
+      "carbs": 7.3,
+      "fat": 0.2,
+      "fiber": 3.1,
+      "sugar": 3.93,
+      "sodium": 52,
+      "saturatedFat": 0.039,
+      "potassium": 414,
+      "calcium": 49,
+      "iron": 0.73,
+      "vitaminA": 134,
+      "vitaminC": 12,
+      "vitaminK": 62.8,
+      "folate": 27
+    }
+  },
+  "okra": {
+    "fdcId": 169260,
+    "nutritionPer100g": {
+      "calories": 33,
+      "protein": 1.93,
+      "carbs": 7.45,
+      "fat": 0.19,
+      "fiber": 3.2,
+      "sugar": 1.48,
+      "sodium": 7,
+      "saturatedFat": 0.026,
+      "potassium": 299,
+      "calcium": 82,
+      "iron": 0.62,
+      "vitaminA": 716,
+      "vitaminC": 23,
+      "vitaminK": 31.3,
+      "folate": 60
+    }
+  },
+  "jicama": {
+    "fdcId": 170073,
+    "nutritionPer100g": {
+      "calories": 38,
+      "protein": 0.72,
+      "carbs": 8.82,
+      "fat": 0.09,
+      "fiber": 4.9,
+      "sugar": 1.8,
+      "sodium": 4,
+      "saturatedFat": 0.021,
+      "potassium": 150,
+      "calcium": 12,
+      "iron": 0.6,
+      "vitaminA": 21,
+      "vitaminC": 20.2,
+      "vitaminK": 0.3,
+      "folate": 12
+    }
+  },
+  "rutabaga": {
+    "fdcId": 168454,
+    "nutritionPer100g": {
+      "calories": 37,
+      "protein": 1.08,
+      "carbs": 8.62,
+      "fat": 0.16,
+      "fiber": 2.3,
+      "sugar": 4.46,
+      "sodium": 12,
+      "saturatedFat": 0.02,
+      "potassium": 305,
+      "calcium": 43,
+      "iron": 0.44,
+      "vitaminA": 0,
+      "vitaminC": 25,
+      "vitaminK": 0.3,
+      "folate": 21
+    }
+  },
+  "endive": {
+    "fdcId": 168412,
+    "nutritionPer100g": {
+      "calories": 17,
+      "protein": 1.25,
+      "carbs": 3.35,
+      "fat": 0.2,
+      "fiber": 3.1,
+      "sugar": 0.25,
+      "sodium": 22,
+      "saturatedFat": 0.049,
+      "potassium": 314,
+      "calcium": 52,
+      "iron": 0.83,
+      "vitaminA": 2167,
+      "vitaminC": 6.5,
+      "vitaminK": 231,
+      "folate": 142
+    }
+  },
+  "watercress": {
+    "fdcId": 170068,
+    "nutritionPer100g": {
+      "calories": 11,
+      "protein": 2.3,
+      "carbs": 1.29,
+      "fat": 0.1,
+      "fiber": 0.5,
+      "sugar": 0.2,
+      "sodium": 41,
+      "saturatedFat": 0.027,
+      "potassium": 330,
+      "calcium": 120,
+      "iron": 0.2,
+      "vitaminA": 3191,
+      "vitaminC": 43,
+      "vitaminK": 250,
+      "folate": 9
+    }
+  },
+  "kohlrabi": {
+    "fdcId": 168424,
+    "nutritionPer100g": {
+      "calories": 27,
+      "protein": 1.7,
+      "carbs": 6.2,
+      "fat": 0.1,
+      "fiber": 3.6,
+      "sugar": 2.6,
+      "sodium": 20,
+      "saturatedFat": 0.014,
+      "potassium": 350,
+      "calcium": 24,
+      "iron": 0.4,
+      "vitaminA": 2,
+      "vitaminC": 62,
+      "vitaminK": 0.1,
+      "folate": 16
+    }
+  }
+}

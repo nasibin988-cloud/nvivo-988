@@ -1,0 +1,1849 @@
+{
+  "macadamia": {
+    "id": "macadamia",
+    "name": "Macadamia Nuts",
+    "category": "nuts_seeds",
+    "servingSize": 100,
+    "servingUnit": "g",
+    "calories": 718,
+    "macros": {
+      "protein": 7.9,
+      "carbs": 13.8,
+      "fat": 75.8,
+      "fiber": 8.6
+    },
+    "nutrients": {
+      "saturatedFat": 12.1,
+      "monounsaturatedFat": 58.9,
+      "polyunsaturatedFat": 1.5,
+      "transFat": 0,
+      "omega3": 0.21,
+      "omega6": 1.3,
+      "cholesterol": 0,
+      "sodium": 5,
+      "potassium": 368,
+      "calcium": 85,
+      "iron": 3.7,
+      "magnesium": 130,
+      "phosphorus": 188,
+      "zinc": 1.3,
+      "selenium": 3.6,
+      "vitaminA": 0,
+      "vitaminC": 1.2,
+      "vitaminD": 0,
+      "vitaminE": 0.54,
+      "vitaminK": 0,
+      "thiamin": 1.2,
+      "riboflavin": 0.16,
+      "niacin": 2.5,
+      "vitaminB6": 0.28,
+      "folate": 11,
+      "vitaminB12": 0,
+      "pantothenicAcid": 0.76,
+      "choline": 44.6,
+      "betaine": 0
+    },
+    "glycemicIndex": 10,
+    "glycemicLoad": 1,
+    "nutrientDensityScore": 72,
+    "satietyScore": 88,
+    "inflammatoryIndex": -1.2,
+    "novaClass": 1,
+    "focusGrades": {
+      "balanced": {
+        "grade": "B+",
+        "score": 85,
+        "insight": "Nutrient-dense nut with exceptional monounsaturated fats, though very calorie-dense",
+        "pros": [
+          "Highest monounsaturated fat content of all nuts (58.9g)",
+          "Rich in thiamin (1.2mg) - 100% daily value",
+          "Good fiber (8.6g) for digestive health",
+          "Excellent magnesium (130mg) for 300+ biochemical reactions"
+        ],
+        "cons": [
+          "Very high in calories (718 per 100g) - requires portion control",
+          "Lower in protein (7.9g) compared to almonds or pistachios",
+          "Higher saturated fat (12.1g) than most nuts"
+        ]
+      },
+      "heart_health": {
+        "grade": "A",
+        "score": 92,
+        "insight": "Outstanding for cardiovascular health with record-high monounsaturated fats",
+        "pros": [
+          "Exceptional 58.9g monounsaturated fat - lowers LDL cholesterol",
+          "Zero cholesterol and very low sodium (5mg)",
+          "Magnesium (130mg) supports healthy blood pressure",
+          "Potassium (368mg) balances electrolytes",
+          "Fiber (8.6g) helps reduce cholesterol absorption"
+        ],
+        "cons": [
+          "Higher saturated fat (12.1g) than walnuts or almonds",
+          "Lower omega-3s (0.21g) compared to walnuts",
+          "Very calorie-dense requires mindful portions"
+        ]
+      },
+      "muscle_building": {
+        "grade": "C+",
+        "score": 68,
+        "insight": "Provides healthy calories and minerals but limited protein for muscle synthesis",
+        "pros": [
+          "Dense calories (718) support caloric surplus for growth",
+          "Magnesium (130mg) supports muscle contraction",
+          "Thiamin (1.2mg) aids energy metabolism",
+          "Healthy fats support hormone production"
+        ],
+        "cons": [
+          "Low protein content (7.9g) for muscle building",
+          "Incomplete amino acid profile",
+          "Very high calorie-to-protein ratio (91 calories per gram protein)",
+          "Better as energy source than protein source"
+        ]
+      },
+      "energy": {
+        "grade": "A-",
+        "score": 88,
+        "insight": "Exceptional sustained energy from healthy fats and B vitamins",
+        "pros": [
+          "Very high calorie density (718) for endurance activities",
+          "Thiamin (1.2mg) - critical for energy metabolism",
+          "Monounsaturated fats provide long-lasting fuel",
+          "Magnesium (130mg) supports ATP production",
+          "Low glycemic load (1) prevents energy crashes"
+        ],
+        "cons": [
+          "Slow to digest - not ideal for immediate pre-workout",
+          "Lower protein than energy-focused nuts like almonds",
+          "Requires moderation due to high calorie content"
+        ]
+      },
+      "weight_management": {
+        "grade": "B",
+        "score": 76,
+        "insight": "Highly satiating but extremely calorie-dense - strict portions essential",
+        "pros": [
+          "High satiety score (88/100) from fat and fiber",
+          "Fiber (8.6g) promotes fullness and digestive health",
+          "Monounsaturated fats support metabolism",
+          "Low glycemic load prevents hunger spikes",
+          "Thiamin supports metabolic efficiency"
+        ],
+        "cons": [
+          "Extremely calorie-dense (718 per 100g)",
+          "Easy to overconsume - 10 nuts = 200 calories",
+          "Lower protein (7.9g) than other satiating nuts",
+          "High fat content can derail calorie deficit if not measured"
+        ]
+      },
+      "brain_focus": {
+        "grade": "A",
+        "score": 90,
+        "insight": "Excellent brain fuel with monounsaturated fats and B vitamins for cognition",
+        "pros": [
+          "Monounsaturated fats (58.9g) support myelin sheath health",
+          "Thiamin (1.2mg) critical for neurotransmitter synthesis",
+          "Magnesium (130mg) reduces brain inflammation",
+          "Choline (44.6mg) supports acetylcholine production",
+          "Stable energy prevents mental fatigue"
+        ],
+        "cons": [
+          "Lower omega-3s (0.21g) than walnuts for brain structure",
+          "No DHA or EPA for cognitive enhancement",
+          "Minimal antioxidants compared to berries or dark chocolate"
+        ]
+      },
+      "gut_health": {
+        "grade": "B+",
+        "score": 82,
+        "insight": "Good fiber content and prebiotic effects support microbiome diversity",
+        "pros": [
+          "Fiber (8.6g) feeds beneficial gut bacteria",
+          "Prebiotic properties support microbiome diversity",
+          "Magnesium (130mg) supports gut motility",
+          "Low FODMAP for sensitive digestion",
+          "Healthy fats aid nutrient absorption"
+        ],
+        "cons": [
+          "High fat may be difficult for some to digest",
+          "No probiotics or fermented components",
+          "Lacks polyphenols that strongly feed gut bacteria",
+          "Phytic acid may reduce mineral absorption if not soaked"
+        ]
+      },
+      "blood_sugar": {
+        "grade": "A",
+        "score": 93,
+        "insight": "Excellent for blood sugar control with minimal carbs and high healthy fats",
+        "pros": [
+          "Very low glycemic index (10) and glycemic load (1)",
+          "High monounsaturated fats slow glucose absorption",
+          "Fiber (8.6g) stabilizes blood sugar response",
+          "Magnesium (130mg) improves insulin sensitivity",
+          "Minimal impact on blood glucose or insulin"
+        ],
+        "cons": [
+          "Lower protein than ideal for glucose regulation",
+          "Very calorie-dense may contribute to weight gain if overconsumed",
+          "Best paired with protein for balanced glycemic response"
+        ]
+      },
+      "bone_joint": {
+        "grade": "B+",
+        "score": 84,
+        "insight": "Rich in magnesium and phosphorus for bone density, moderate calcium",
+        "pros": [
+          "Excellent magnesium (130mg) - 31% daily value for bone matrix",
+          "Phosphorus (188mg) supports bone mineralization",
+          "Calcium (85mg) contributes to bone density",
+          "Manganese supports cartilage formation",
+          "Anti-inflammatory fats reduce joint inflammation"
+        ],
+        "cons": [
+          "Calcium content lower than dairy or fortified foods",
+          "No vitamin D for calcium absorption",
+          "Minimal vitamin K for bone metabolism",
+          "Phytic acid may reduce mineral bioavailability"
+        ]
+      },
+      "anti_inflammatory": {
+        "grade": "A",
+        "score": 91,
+        "insight": "Powerful anti-inflammatory from monounsaturated fats and low omega-6 ratio",
+        "pros": [
+          "Strong negative inflammatory index (-1.2)",
+          "Monounsaturated fats (58.9g) reduce inflammatory markers",
+          "Favorable omega-6 to omega-3 ratio (6:1)",
+          "Magnesium (130mg) reduces inflammatory cytokines",
+          "Antioxidants from vitamin E and polyphenols"
+        ],
+        "cons": [
+          "Lower omega-3s (0.21g) than walnuts for inflammation resolution",
+          "Some saturated fat (12.1g) may promote inflammation if excessive",
+          "Lacks potent anti-inflammatory compounds like curcumin"
+        ]
+      }
+    },
+    "bioavailability": {
+      "protein": "moderate",
+      "iron": "low",
+      "notes": "Monounsaturated fats highly bioavailable. Phytic acid content may reduce mineral absorption - soaking or roasting can help. Pair with vitamin C for enhanced iron uptake."
+    },
+    "pairWith": [
+      "Fresh fruit for antioxidant boost",
+      "Greek yogurt for protein balance",
+      "Dark leafy greens for complementary minerals",
+      "Berries for polyphenol synergy"
+    ],
+    "bestTiming": [
+      "Morning snack for sustained energy",
+      "Pre-workout (1-2 hours before) for endurance fuel",
+      "Between meals to prevent blood sugar crashes",
+      "Evening snack for satiety without blood sugar spike"
+    ],
+    "tags": [
+      "high-fat",
+      "low-carb",
+      "heart-healthy",
+      "brain-food",
+      "keto-friendly",
+      "monounsaturated-rich",
+      "gluten-free",
+      "vegan"
+    ]
+  },
+  "macadamia_nuts": {
+    "id": "macadamia_nuts",
+    "name": "Macadamia Nuts",
+    "category": "nuts_seeds",
+    "servingSize": 100,
+    "servingUnit": "g",
+    "calories": 718,
+    "macros": {
+      "protein": 7.9,
+      "carbs": 13.8,
+      "fat": 75.8,
+      "fiber": 8.6
+    },
+    "nutrients": {
+      "saturatedFat": 12.1,
+      "monounsaturatedFat": 58.9,
+      "polyunsaturatedFat": 1.5,
+      "transFat": 0,
+      "omega3": 0.21,
+      "omega6": 1.3,
+      "cholesterol": 0,
+      "sodium": 5,
+      "potassium": 368,
+      "calcium": 85,
+      "iron": 3.7,
+      "magnesium": 130,
+      "phosphorus": 188,
+      "zinc": 1.3,
+      "selenium": 3.6,
+      "vitaminA": 0,
+      "vitaminC": 1.2,
+      "vitaminD": 0,
+      "vitaminE": 0.54,
+      "vitaminK": 0,
+      "thiamin": 1.2,
+      "riboflavin": 0.16,
+      "niacin": 2.5,
+      "vitaminB6": 0.28,
+      "folate": 11,
+      "vitaminB12": 0,
+      "pantothenicAcid": 0.76,
+      "choline": 44.6,
+      "betaine": 0
+    },
+    "glycemicIndex": 10,
+    "glycemicLoad": 1,
+    "nutrientDensityScore": 72,
+    "satietyScore": 88,
+    "inflammatoryIndex": -1.2,
+    "novaClass": 1,
+    "focusGrades": {
+      "balanced": {
+        "grade": "B+",
+        "score": 85,
+        "insight": "Nutrient-dense nut with exceptional monounsaturated fats, though very calorie-dense",
+        "pros": [
+          "Highest monounsaturated fat content of all nuts (58.9g)",
+          "Rich in thiamin (1.2mg) - 100% daily value",
+          "Good fiber (8.6g) for digestive health",
+          "Excellent magnesium (130mg) for 300+ biochemical reactions"
+        ],
+        "cons": [
+          "Very high in calories (718 per 100g) - requires portion control",
+          "Lower in protein (7.9g) compared to almonds or pistachios",
+          "Higher saturated fat (12.1g) than most nuts"
+        ]
+      },
+      "heart_health": {
+        "grade": "A",
+        "score": 92,
+        "insight": "Outstanding for cardiovascular health with record-high monounsaturated fats",
+        "pros": [
+          "Exceptional 58.9g monounsaturated fat - lowers LDL cholesterol",
+          "Zero cholesterol and very low sodium (5mg)",
+          "Magnesium (130mg) supports healthy blood pressure",
+          "Potassium (368mg) balances electrolytes",
+          "Fiber (8.6g) helps reduce cholesterol absorption"
+        ],
+        "cons": [
+          "Higher saturated fat (12.1g) than walnuts or almonds",
+          "Lower omega-3s (0.21g) compared to walnuts",
+          "Very calorie-dense requires mindful portions"
+        ]
+      },
+      "muscle_building": {
+        "grade": "C+",
+        "score": 68,
+        "insight": "Provides healthy calories and minerals but limited protein for muscle synthesis",
+        "pros": [
+          "Dense calories (718) support caloric surplus for growth",
+          "Magnesium (130mg) supports muscle contraction",
+          "Thiamin (1.2mg) aids energy metabolism",
+          "Healthy fats support hormone production"
+        ],
+        "cons": [
+          "Low protein content (7.9g) for muscle building",
+          "Incomplete amino acid profile",
+          "Very high calorie-to-protein ratio (91 calories per gram protein)",
+          "Better as energy source than protein source"
+        ]
+      },
+      "energy": {
+        "grade": "A-",
+        "score": 88,
+        "insight": "Exceptional sustained energy from healthy fats and B vitamins",
+        "pros": [
+          "Very high calorie density (718) for endurance activities",
+          "Thiamin (1.2mg) - critical for energy metabolism",
+          "Monounsaturated fats provide long-lasting fuel",
+          "Magnesium (130mg) supports ATP production",
+          "Low glycemic load (1) prevents energy crashes"
+        ],
+        "cons": [
+          "Slow to digest - not ideal for immediate pre-workout",
+          "Lower protein than energy-focused nuts like almonds",
+          "Requires moderation due to high calorie content"
+        ]
+      },
+      "weight_management": {
+        "grade": "B",
+        "score": 76,
+        "insight": "Highly satiating but extremely calorie-dense - strict portions essential",
+        "pros": [
+          "High satiety score (88/100) from fat and fiber",
+          "Fiber (8.6g) promotes fullness and digestive health",
+          "Monounsaturated fats support metabolism",
+          "Low glycemic load prevents hunger spikes",
+          "Thiamin supports metabolic efficiency"
+        ],
+        "cons": [
+          "Extremely calorie-dense (718 per 100g)",
+          "Easy to overconsume - 10 nuts = 200 calories",
+          "Lower protein (7.9g) than other satiating nuts",
+          "High fat content can derail calorie deficit if not measured"
+        ]
+      },
+      "brain_focus": {
+        "grade": "A",
+        "score": 90,
+        "insight": "Excellent brain fuel with monounsaturated fats and B vitamins for cognition",
+        "pros": [
+          "Monounsaturated fats (58.9g) support myelin sheath health",
+          "Thiamin (1.2mg) critical for neurotransmitter synthesis",
+          "Magnesium (130mg) reduces brain inflammation",
+          "Choline (44.6mg) supports acetylcholine production",
+          "Stable energy prevents mental fatigue"
+        ],
+        "cons": [
+          "Lower omega-3s (0.21g) than walnuts for brain structure",
+          "No DHA or EPA for cognitive enhancement",
+          "Minimal antioxidants compared to berries or dark chocolate"
+        ]
+      },
+      "gut_health": {
+        "grade": "B+",
+        "score": 82,
+        "insight": "Good fiber content and prebiotic effects support microbiome diversity",
+        "pros": [
+          "Fiber (8.6g) feeds beneficial gut bacteria",
+          "Prebiotic properties support microbiome diversity",
+          "Magnesium (130mg) supports gut motility",
+          "Low FODMAP for sensitive digestion",
+          "Healthy fats aid nutrient absorption"
+        ],
+        "cons": [
+          "High fat may be difficult for some to digest",
+          "No probiotics or fermented components",
+          "Lacks polyphenols that strongly feed gut bacteria",
+          "Phytic acid may reduce mineral absorption if not soaked"
+        ]
+      },
+      "blood_sugar": {
+        "grade": "A",
+        "score": 93,
+        "insight": "Excellent for blood sugar control with minimal carbs and high healthy fats",
+        "pros": [
+          "Very low glycemic index (10) and glycemic load (1)",
+          "High monounsaturated fats slow glucose absorption",
+          "Fiber (8.6g) stabilizes blood sugar response",
+          "Magnesium (130mg) improves insulin sensitivity",
+          "Minimal impact on blood glucose or insulin"
+        ],
+        "cons": [
+          "Lower protein than ideal for glucose regulation",
+          "Very calorie-dense may contribute to weight gain if overconsumed",
+          "Best paired with protein for balanced glycemic response"
+        ]
+      },
+      "bone_joint": {
+        "grade": "B+",
+        "score": 84,
+        "insight": "Rich in magnesium and phosphorus for bone density, moderate calcium",
+        "pros": [
+          "Excellent magnesium (130mg) - 31% daily value for bone matrix",
+          "Phosphorus (188mg) supports bone mineralization",
+          "Calcium (85mg) contributes to bone density",
+          "Manganese supports cartilage formation",
+          "Anti-inflammatory fats reduce joint inflammation"
+        ],
+        "cons": [
+          "Calcium content lower than dairy or fortified foods",
+          "No vitamin D for calcium absorption",
+          "Minimal vitamin K for bone metabolism",
+          "Phytic acid may reduce mineral bioavailability"
+        ]
+      },
+      "anti_inflammatory": {
+        "grade": "A",
+        "score": 91,
+        "insight": "Powerful anti-inflammatory from monounsaturated fats and low omega-6 ratio",
+        "pros": [
+          "Strong negative inflammatory index (-1.2)",
+          "Monounsaturated fats (58.9g) reduce inflammatory markers",
+          "Favorable omega-6 to omega-3 ratio (6:1)",
+          "Magnesium (130mg) reduces inflammatory cytokines",
+          "Antioxidants from vitamin E and polyphenols"
+        ],
+        "cons": [
+          "Lower omega-3s (0.21g) than walnuts for inflammation resolution",
+          "Some saturated fat (12.1g) may promote inflammation if excessive",
+          "Lacks potent anti-inflammatory compounds like curcumin"
+        ]
+      }
+    },
+    "bioavailability": {
+      "protein": "moderate",
+      "iron": "low",
+      "notes": "Monounsaturated fats highly bioavailable. Phytic acid content may reduce mineral absorption - soaking or roasting can help. Pair with vitamin C for enhanced iron uptake."
+    },
+    "pairWith": [
+      "Fresh fruit for antioxidant boost",
+      "Greek yogurt for protein balance",
+      "Dark leafy greens for complementary minerals",
+      "Berries for polyphenol synergy"
+    ],
+    "bestTiming": [
+      "Morning snack for sustained energy",
+      "Pre-workout (1-2 hours before) for endurance fuel",
+      "Between meals to prevent blood sugar crashes",
+      "Evening snack for satiety without blood sugar spike"
+    ],
+    "tags": [
+      "high-fat",
+      "low-carb",
+      "heart-healthy",
+      "brain-food",
+      "keto-friendly",
+      "monounsaturated-rich",
+      "gluten-free",
+      "vegan"
+    ]
+  },
+  "sunflower_seeds": {
+    "id": "sunflower_seeds",
+    "name": "Sunflower Seeds",
+    "category": "nuts_seeds",
+    "servingSize": 100,
+    "servingUnit": "g",
+    "calories": 584,
+    "macros": {
+      "protein": 20.8,
+      "carbs": 20,
+      "fat": 51.5,
+      "fiber": 8.6
+    },
+    "nutrients": {
+      "saturatedFat": 4.5,
+      "monounsaturatedFat": 18.5,
+      "polyunsaturatedFat": 23.1,
+      "transFat": 0,
+      "omega3": 0.07,
+      "omega6": 23,
+      "cholesterol": 0,
+      "sodium": 9,
+      "potassium": 645,
+      "calcium": 78,
+      "iron": 5.2,
+      "magnesium": 325,
+      "phosphorus": 660,
+      "zinc": 5.0,
+      "selenium": 53,
+      "vitaminA": 5,
+      "vitaminC": 1.4,
+      "vitaminD": 0,
+      "vitaminE": 35.17,
+      "vitaminK": 0,
+      "thiamin": 1.48,
+      "riboflavin": 0.36,
+      "niacin": 8.3,
+      "vitaminB6": 1.35,
+      "folate": 227,
+      "vitaminB12": 0,
+      "pantothenicAcid": 1.13,
+      "choline": 55.1,
+      "betaine": 35.4
+    },
+    "glycemicIndex": 20,
+    "glycemicLoad": 4,
+    "nutrientDensityScore": 89,
+    "satietyScore": 87,
+    "inflammatoryIndex": 0.8,
+    "novaClass": 1,
+    "focusGrades": {
+      "balanced": {
+        "grade": "A-",
+        "score": 88,
+        "insight": "Exceptionally nutrient-dense with outstanding vitamin E, minerals, and protein",
+        "pros": [
+          "Complete nutritional powerhouse - protein, healthy fats, and micronutrients",
+          "Exceptional vitamin E (35.17mg) - 234% daily value for antioxidant protection",
+          "Outstanding magnesium (325mg) - 77% DV for 300+ enzymatic reactions",
+          "High protein (20.8g) for a plant seed",
+          "Incredible folate (227mcg) - 57% DV for cellular health"
+        ],
+        "cons": [
+          "Very high omega-6 (23g) requires omega-3 balance",
+          "Calorie-dense (584 per 100g) needs portion awareness",
+          "Phytic acid may reduce mineral absorption if not soaked"
+        ]
+      },
+      "heart_health": {
+        "grade": "B+",
+        "score": 83,
+        "insight": "Rich in vitamin E and magnesium for cardiovascular protection, monitor omega-6",
+        "pros": [
+          "Exceptional vitamin E (35.17mg) protects against oxidative damage",
+          "Outstanding magnesium (325mg) supports healthy blood pressure",
+          "High potassium (645mg) balances sodium for heart function",
+          "Phytosterols help block cholesterol absorption",
+          "Zero cholesterol and very low sodium (9mg)"
+        ],
+        "cons": [
+          "Very high omega-6 (23g) may promote inflammation if omega-3 intake is low",
+          "Moderate omega-6 to omega-3 ratio (329:1) - needs balance",
+          "Saturated fat (4.5g) present though relatively low",
+          "Requires pairing with omega-3 sources like walnuts or fish"
+        ]
+      },
+      "muscle_building": {
+        "grade": "A-",
+        "score": 87,
+        "insight": "Excellent plant-based protein with minerals that support muscle function",
+        "pros": [
+          "High protein content (20.8g) for a seed",
+          "Magnesium (325mg) critical for muscle contraction and recovery",
+          "Zinc (5mg) supports testosterone production and protein synthesis",
+          "B vitamins (B6: 1.35mg) aid protein metabolism",
+          "Dense calories (584) support caloric surplus for growth"
+        ],
+        "cons": [
+          "Incomplete amino acid profile - lower in lysine",
+          "Requires pairing with legumes for complete protein",
+          "High omega-6 content may increase inflammation during intense training",
+          "Calorie-to-protein ratio less optimal than lean meats"
+        ]
+      },
+      "energy": {
+        "grade": "A",
+        "score": 91,
+        "insight": "Outstanding sustained energy from healthy fats, protein, and B vitamin complex",
+        "pros": [
+          "Exceptional thiamin (1.48mg) - 123% DV for energy metabolism",
+          "Outstanding B6 (1.35mg) - 79% DV for glycogen utilization",
+          "Magnesium (325mg) critical for ATP production",
+          "Niacin (8.3mg) supports cellular energy pathways",
+          "Balanced macros provide sustained fuel without crashes"
+        ],
+        "cons": [
+          "Moderate glycemic load (4) - slightly higher than pure nuts",
+          "High omega-6 content may require anti-inflammatory pairing",
+          "Digestion requires energy - best consumed 2+ hours before intense activity"
+        ]
+      },
+      "weight_management": {
+        "grade": "B+",
+        "score": 81,
+        "insight": "Highly satiating with excellent nutrients but very calorie-dense",
+        "pros": [
+          "High protein (20.8g) and fiber (8.6g) promote satiety",
+          "Magnesium (325mg) supports metabolic efficiency",
+          "B vitamins enhance fat and carb metabolism",
+          "Low glycemic load (4) prevents hunger spikes",
+          "Nutrient density supports overall health during deficit"
+        ],
+        "cons": [
+          "Very calorie-dense (584 per 100g) - easy to overconsume",
+          "1/4 cup = ~200 calories requires careful measuring",
+          "High fat content (51.5g) can quickly exceed calorie goals",
+          "Shell-on version better for mindful eating and portion control"
+        ]
+      },
+      "brain_focus": {
+        "grade": "A",
+        "score": 92,
+        "insight": "Brain superstar with vitamin E, B vitamins, and minerals for cognitive function",
+        "pros": [
+          "Exceptional vitamin E (35.17mg) protects brain cells from oxidative damage",
+          "Outstanding B6 (1.35mg) supports neurotransmitter synthesis",
+          "Thiamin (1.48mg) critical for cognitive function and memory",
+          "Choline (55.1mg) supports acetylcholine for learning and memory",
+          "Magnesium (325mg) reduces brain inflammation and supports neural health"
+        ],
+        "cons": [
+          "Very low omega-3s (0.07g) - needs pairing with DHA/EPA sources",
+          "High omega-6 may promote neuroinflammation without balance",
+          "No specific nootropic compounds like L-theanine"
+        ]
+      },
+      "gut_health": {
+        "grade": "B+",
+        "score": 84,
+        "insight": "Good fiber and prebiotic effects, though omega-6 may affect gut inflammation",
+        "pros": [
+          "Fiber (8.6g) feeds beneficial gut bacteria",
+          "Magnesium (325mg) supports smooth gut motility",
+          "Zinc (5mg) strengthens intestinal barrier integrity",
+          "Vitamin E protects gut lining from oxidative damage",
+          "Prebiotic fiber supports microbiome diversity"
+        ],
+        "cons": [
+          "High omega-6 (23g) may promote gut inflammation in sensitive individuals",
+          "Phytic acid can irritate gut lining if not properly prepared",
+          "No probiotics or fermented components",
+          "High fat may be difficult to digest for some"
+        ]
+      },
+      "blood_sugar": {
+        "grade": "A-",
+        "score": 86,
+        "insight": "Good for blood sugar control with protein, fiber, and magnesium",
+        "pros": [
+          "Low glycemic index (20) and moderate glycemic load (4)",
+          "High protein (20.8g) and fiber (8.6g) slow glucose absorption",
+          "Magnesium (325mg) significantly improves insulin sensitivity",
+          "Vitamin E reduces oxidative stress associated with diabetes",
+          "Balanced macros prevent blood sugar spikes"
+        ],
+        "cons": [
+          "Contains 20g carbs - higher than pure nuts like macadamias",
+          "Moderate glycemic load requires portion control for diabetics",
+          "Best paired with low-carb foods for optimal glycemic response"
+        ]
+      },
+      "bone_joint": {
+        "grade": "A-",
+        "score": 88,
+        "insight": "Outstanding magnesium and phosphorus content supports bone density",
+        "pros": [
+          "Exceptional magnesium (325mg) - 77% DV for bone matrix formation",
+          "Outstanding phosphorus (660mg) - 66% DV for bone mineralization",
+          "Zinc (5mg) supports bone tissue regeneration",
+          "Calcium (78mg) contributes to bone density",
+          "Vitamin E reduces inflammatory joint damage"
+        ],
+        "cons": [
+          "Calcium lower than dairy (only 8% DV)",
+          "No vitamin D for calcium absorption",
+          "No vitamin K for bone metabolism",
+          "Phytic acid may reduce mineral bioavailability"
+        ]
+      },
+      "anti_inflammatory": {
+        "grade": "B-",
+        "score": 72,
+        "insight": "Mixed inflammatory profile - excellent vitamin E but very high omega-6 content",
+        "pros": [
+          "Exceptional vitamin E (35.17mg) - powerful antioxidant and anti-inflammatory",
+          "Selenium (53mcg) - 96% DV fights oxidative stress",
+          "Magnesium (325mg) reduces inflammatory cytokines",
+          "Phytosterols have anti-inflammatory properties"
+        ],
+        "cons": [
+          "Very high omega-6 fatty acids (23g) can promote inflammation",
+          "Poor omega-6 to omega-3 ratio (329:1) - highly pro-inflammatory",
+          "Inflammatory index (0.8) is slightly positive",
+          "Must be balanced with high omega-3 foods like salmon or walnuts",
+          "Excessive consumption without omega-3 balance may worsen chronic inflammation"
+        ]
+      }
+    },
+    "bioavailability": {
+      "protein": "moderate",
+      "iron": "low",
+      "notes": "Vitamin E and selenium highly bioavailable. Phytic acid reduces mineral absorption by 20-40% - soaking overnight or light roasting improves bioavailability. Pair with vitamin C for iron absorption."
+    },
+    "pairWith": [
+      "Omega-3 rich foods (walnuts, salmon, flaxseeds) to balance omega-6",
+      "Citrus fruits for iron absorption",
+      "Leafy greens for complementary minerals",
+      "Greek yogurt for complete amino acid profile"
+    ],
+    "bestTiming": [
+      "Morning for sustained energy and mental clarity",
+      "Mid-afternoon snack to prevent energy crashes",
+      "Post-workout for protein and mineral replenishment",
+      "Avoid late evening due to high energy content"
+    ],
+    "tags": [
+      "high-protein",
+      "vitamin-e-rich",
+      "magnesium-powerhouse",
+      "plant-based-protein",
+      "antioxidant-rich",
+      "folate-rich",
+      "gluten-free",
+      "vegan",
+      "high-omega-6"
+    ]
+  },
+  "chia_seeds": {
+    "id": "chia_seeds",
+    "name": "Chia Seeds",
+    "category": "nuts_seeds",
+    "servingSize": 100,
+    "servingUnit": "g",
+    "calories": 486,
+    "macros": {
+      "protein": 16.5,
+      "carbs": 42.1,
+      "fat": 30.7,
+      "fiber": 34.4
+    },
+    "nutrients": {
+      "saturatedFat": 3.3,
+      "monounsaturatedFat": 2.3,
+      "polyunsaturatedFat": 23.7,
+      "transFat": 0,
+      "omega3": 17.8,
+      "omega6": 5.8,
+      "cholesterol": 0,
+      "sodium": 16,
+      "potassium": 407,
+      "calcium": 631,
+      "iron": 7.7,
+      "magnesium": 335,
+      "phosphorus": 860,
+      "zinc": 4.6,
+      "selenium": 55.2,
+      "vitaminA": 54,
+      "vitaminC": 1.6,
+      "vitaminD": 0,
+      "vitaminE": 0.5,
+      "vitaminK": 0,
+      "thiamin": 0.62,
+      "riboflavin": 0.17,
+      "niacin": 8.8,
+      "vitaminB6": 0,
+      "folate": 49,
+      "vitaminB12": 0,
+      "pantothenicAcid": 0,
+      "choline": 0,
+      "betaine": 0
+    },
+    "glycemicIndex": 1,
+    "glycemicLoad": 1,
+    "nutrientDensityScore": 95,
+    "satietyScore": 94,
+    "inflammatoryIndex": -2.8,
+    "novaClass": 1,
+    "focusGrades": {
+      "balanced": {
+        "grade": "A+",
+        "score": 97,
+        "insight": "One of nature's most complete superfoods with exceptional omega-3s, fiber, and minerals",
+        "pros": [
+          "Extraordinary fiber content (34.4g) - 137% daily value",
+          "Outstanding omega-3s (17.8g) - highest plant source available",
+          "Exceptional calcium (631mg) - 63% DV, more than milk",
+          "Outstanding magnesium (335mg) - 80% DV",
+          "Favorable omega-6 to omega-3 ratio (1:3) - anti-inflammatory",
+          "Complete nutritional profile in tiny seeds"
+        ],
+        "cons": [
+          "Must be consumed with liquid to avoid digestive discomfort",
+          "High carbs (42.1g) though mostly fiber",
+          "May interfere with medication absorption due to gel formation"
+        ]
+      },
+      "heart_health": {
+        "grade": "A+",
+        "score": 98,
+        "insight": "Outstanding cardiovascular protector with omega-3s, fiber, and minerals",
+        "pros": [
+          "Exceptional omega-3 ALA (17.8g) reduces inflammation and triglycerides",
+          "Outstanding fiber (34.4g) lowers LDL cholesterol significantly",
+          "Excellent omega-6 to omega-3 ratio (1:3) - cardioprotective",
+          "Magnesium (335mg) supports healthy blood pressure",
+          "Potassium (407mg) regulates heart rhythm",
+          "Zero cholesterol and minimal sodium (16mg)",
+          "Antioxidants protect arterial health"
+        ],
+        "cons": [
+          "ALA omega-3 converts to EPA/DHA at only 5-10% efficiency",
+          "Should still include fish for direct EPA/DHA",
+          "Very high fiber may affect nutrient absorption if excessive"
+        ]
+      },
+      "muscle_building": {
+        "grade": "B+",
+        "score": 82,
+        "insight": "Good plant protein with minerals for recovery, though incomplete amino acids",
+        "pros": [
+          "Solid protein content (16.5g) for a seed",
+          "Magnesium (335mg) reduces muscle soreness and supports contraction",
+          "Omega-3s (17.8g) reduce exercise-induced inflammation",
+          "Calcium (631mg) supports muscle contraction",
+          "Zinc (4.6mg) aids protein synthesis and recovery"
+        ],
+        "cons": [
+          "Incomplete amino acid profile - low in methionine and cysteine",
+          "Must pair with other proteins for complete amino acids",
+          "High fiber may reduce protein absorption efficiency",
+          "Lower protein density than animal sources or protein powder"
+        ]
+      },
+      "energy": {
+        "grade": "A-",
+        "score": 87,
+        "insight": "Excellent sustained energy from balanced macros and slow-release carbohydrates",
+        "pros": [
+          "Exceptional fiber (34.4g) provides slow-release energy",
+          "Omega-3s (17.8g) reduce inflammation-related fatigue",
+          "Magnesium (335mg) critical for ATP production",
+          "B vitamins support energy metabolism",
+          "Very low glycemic load (1) prevents energy crashes",
+          "Gel-forming property slows digestion for sustained fuel"
+        ],
+        "cons": [
+          "Not ideal for immediate pre-workout - digests slowly",
+          "High fiber may cause GI discomfort during activity",
+          "Requires significant hydration (absorbs 10-12x weight in water)"
+        ]
+      },
+      "weight_management": {
+        "grade": "A+",
+        "score": 95,
+        "insight": "Exceptional satiety from fiber expansion, protein, and slow digestion",
+        "pros": [
+          "Extraordinary fiber (34.4g) expands in stomach for fullness",
+          "Extremely high satiety score (94/100)",
+          "Absorbs 10-12x weight in water - creates gel that fills stomach",
+          "Protein (16.5g) and omega-3s (17.8g) promote satiety",
+          "Very low glycemic load (1) prevents hunger spikes",
+          "Slows gastric emptying for prolonged fullness"
+        ],
+        "cons": [
+          "Calorie-dense (486 per 100g) - use 1-2 tablespoons per serving",
+          "Must measure carefully - easy to overconsume when dry",
+          "Requires adequate water intake to activate satiety mechanism"
+        ]
+      },
+      "brain_focus": {
+        "grade": "A+",
+        "score": 96,
+        "insight": "Brain superfood with exceptional omega-3s for cognitive function and neuroprotection",
+        "pros": [
+          "Exceptional omega-3 ALA (17.8g) supports brain structure and function",
+          "Anti-inflammatory omega-3s protect against neurodegeneration",
+          "Magnesium (335mg) reduces brain inflammation and supports neural signaling",
+          "Antioxidants protect brain cells from oxidative damage",
+          "Stable blood sugar supports consistent mental performance",
+          "Phosphorus (860mg) critical for neurotransmitter synthesis"
+        ],
+        "cons": [
+          "ALA converts to brain-critical DHA at only 0.5-5% efficiency",
+          "Should pair with direct DHA sources (fish, algae oil)",
+          "No choline content for acetylcholine production"
+        ]
+      },
+      "gut_health": {
+        "grade": "A+",
+        "score": 97,
+        "insight": "Gut health champion with exceptional fiber, gel formation, and prebiotic effects",
+        "pros": [
+          "Extraordinary fiber (34.4g) - powerful prebiotic for microbiome",
+          "Soluble fiber forms protective mucilage coating for gut lining",
+          "Omega-3s (17.8g) reduce gut inflammation significantly",
+          "Feeds beneficial bacteria like Lactobacillus and Bifidobacteria",
+          "Magnesium (335mg) supports healthy gut motility",
+          "May help with IBS, constipation, and leaky gut"
+        ],
+        "cons": [
+          "Very high fiber may cause bloating if introduced too quickly",
+          "Must increase gradually (start with 1 tablespoon daily)",
+          "Requires significant water intake to prevent constipation",
+          "May interfere with medication absorption due to gel formation"
+        ]
+      },
+      "blood_sugar": {
+        "grade": "A+",
+        "score": 98,
+        "insight": "Exceptional blood sugar control from fiber, omega-3s, and minimal glycemic impact",
+        "pros": [
+          "Virtually zero glycemic index (1) and glycemic load (1)",
+          "Extraordinary fiber (34.4g) dramatically slows glucose absorption",
+          "Gel formation coats carbs and slows their breakdown",
+          "Omega-3s (17.8g) improve insulin sensitivity",
+          "Magnesium (335mg) enhances glucose metabolism",
+          "Clinical studies show 39% reduction in post-meal blood sugar spikes"
+        ],
+        "cons": [
+          "High total carbs (42.1g) though mostly fiber - may confuse carb counting",
+          "Net carbs are only 7.7g but total carbs appear high",
+          "Should be counted as net carbs (total minus fiber)"
+        ]
+      },
+      "bone_joint": {
+        "grade": "A+",
+        "score": 96,
+        "insight": "Outstanding bone builder with exceptional calcium, magnesium, and phosphorus",
+        "pros": [
+          "Exceptional calcium (631mg) - 63% DV, higher than milk per weight",
+          "Outstanding magnesium (335mg) - 80% DV for bone matrix",
+          "Outstanding phosphorus (860mg) - 86% DV for bone mineralization",
+          "Omega-3s (17.8g) reduce inflammatory joint damage",
+          "Boron content supports calcium metabolism",
+          "5:2 calcium to magnesium ratio - optimal for bone health"
+        ],
+        "cons": [
+          "No vitamin D for calcium absorption - must pair with D source",
+          "No vitamin K for bone metabolism",
+          "Phytic acid may reduce mineral absorption by 10-20%",
+          "Soaking can improve bioavailability"
+        ]
+      },
+      "anti_inflammatory": {
+        "grade": "A+",
+        "score": 98,
+        "insight": "Powerful anti-inflammatory from exceptional omega-3s and favorable fatty acid ratio",
+        "pros": [
+          "Exceptional omega-3 ALA (17.8g) - most potent anti-inflammatory fatty acid",
+          "Outstanding omega-6 to omega-3 ratio (1:3) - highly anti-inflammatory",
+          "Very strong negative inflammatory index (-2.8)",
+          "Antioxidants (quercetin, kaempferol) combat oxidative stress",
+          "Magnesium (335mg) reduces inflammatory cytokines",
+          "Clinical studies show reduced C-reactive protein (CRP) levels"
+        ],
+        "cons": [
+          "ALA omega-3 less potent than EPA/DHA from fish",
+          "Some conversion needed to active anti-inflammatory EPA/DHA",
+          "Best combined with direct EPA/DHA sources for maximum benefit"
+        ]
+      }
+    },
+    "bioavailability": {
+      "protein": "moderate",
+      "iron": "low",
+      "notes": "Omega-3 ALA highly bioavailable but converts to EPA/DHA at 5-10% efficiency. Calcium and minerals well-absorbed. Grinding or soaking overnight improves nutrient bioavailability. Gel formation may reduce medication absorption - take meds 1 hour before or 4 hours after."
+    },
+    "pairWith": [
+      "Greek yogurt or kefir for complete protein and probiotics",
+      "Berries for antioxidant synergy",
+      "Citrus fruits for iron absorption",
+      "Vitamin D fortified foods for calcium absorption",
+      "Fatty fish for direct EPA/DHA omega-3s"
+    ],
+    "bestTiming": [
+      "Morning in smoothies or oatmeal for sustained energy",
+      "30-60 minutes before meals to enhance satiety",
+      "Post-workout mixed with protein for recovery",
+      "Evening in chia pudding for overnight satiation",
+      "Avoid immediately before intense exercise due to high fiber"
+    ],
+    "tags": [
+      "superfood",
+      "omega-3-rich",
+      "high-fiber",
+      "high-calcium",
+      "plant-based",
+      "anti-inflammatory",
+      "gut-health",
+      "blood-sugar-friendly",
+      "keto-friendly",
+      "gluten-free",
+      "vegan"
+    ]
+  },
+  "chia": {
+    "id": "chia",
+    "name": "Chia Seeds",
+    "category": "nuts_seeds",
+    "servingSize": 100,
+    "servingUnit": "g",
+    "calories": 486,
+    "macros": {
+      "protein": 16.5,
+      "carbs": 42.1,
+      "fat": 30.7,
+      "fiber": 34.4
+    },
+    "nutrients": {
+      "saturatedFat": 3.3,
+      "monounsaturatedFat": 2.3,
+      "polyunsaturatedFat": 23.7,
+      "transFat": 0,
+      "omega3": 17.8,
+      "omega6": 5.8,
+      "cholesterol": 0,
+      "sodium": 16,
+      "potassium": 407,
+      "calcium": 631,
+      "iron": 7.7,
+      "magnesium": 335,
+      "phosphorus": 860,
+      "zinc": 4.6,
+      "selenium": 55.2,
+      "vitaminA": 54,
+      "vitaminC": 1.6,
+      "vitaminD": 0,
+      "vitaminE": 0.5,
+      "vitaminK": 0,
+      "thiamin": 0.62,
+      "riboflavin": 0.17,
+      "niacin": 8.8,
+      "vitaminB6": 0,
+      "folate": 49,
+      "vitaminB12": 0,
+      "pantothenicAcid": 0,
+      "choline": 0,
+      "betaine": 0
+    },
+    "glycemicIndex": 1,
+    "glycemicLoad": 1,
+    "nutrientDensityScore": 95,
+    "satietyScore": 94,
+    "inflammatoryIndex": -2.8,
+    "novaClass": 1,
+    "focusGrades": {
+      "balanced": {
+        "grade": "A+",
+        "score": 97,
+        "insight": "One of nature's most complete superfoods with exceptional omega-3s, fiber, and minerals",
+        "pros": [
+          "Extraordinary fiber content (34.4g) - 137% daily value",
+          "Outstanding omega-3s (17.8g) - highest plant source available",
+          "Exceptional calcium (631mg) - 63% DV, more than milk",
+          "Outstanding magnesium (335mg) - 80% DV",
+          "Favorable omega-6 to omega-3 ratio (1:3) - anti-inflammatory",
+          "Complete nutritional profile in tiny seeds"
+        ],
+        "cons": [
+          "Must be consumed with liquid to avoid digestive discomfort",
+          "High carbs (42.1g) though mostly fiber",
+          "May interfere with medication absorption due to gel formation"
+        ]
+      },
+      "heart_health": {
+        "grade": "A+",
+        "score": 98,
+        "insight": "Outstanding cardiovascular protector with omega-3s, fiber, and minerals",
+        "pros": [
+          "Exceptional omega-3 ALA (17.8g) reduces inflammation and triglycerides",
+          "Outstanding fiber (34.4g) lowers LDL cholesterol significantly",
+          "Excellent omega-6 to omega-3 ratio (1:3) - cardioprotective",
+          "Magnesium (335mg) supports healthy blood pressure",
+          "Potassium (407mg) regulates heart rhythm",
+          "Zero cholesterol and minimal sodium (16mg)",
+          "Antioxidants protect arterial health"
+        ],
+        "cons": [
+          "ALA omega-3 converts to EPA/DHA at only 5-10% efficiency",
+          "Should still include fish for direct EPA/DHA",
+          "Very high fiber may affect nutrient absorption if excessive"
+        ]
+      },
+      "muscle_building": {
+        "grade": "B+",
+        "score": 82,
+        "insight": "Good plant protein with minerals for recovery, though incomplete amino acids",
+        "pros": [
+          "Solid protein content (16.5g) for a seed",
+          "Magnesium (335mg) reduces muscle soreness and supports contraction",
+          "Omega-3s (17.8g) reduce exercise-induced inflammation",
+          "Calcium (631mg) supports muscle contraction",
+          "Zinc (4.6mg) aids protein synthesis and recovery"
+        ],
+        "cons": [
+          "Incomplete amino acid profile - low in methionine and cysteine",
+          "Must pair with other proteins for complete amino acids",
+          "High fiber may reduce protein absorption efficiency",
+          "Lower protein density than animal sources or protein powder"
+        ]
+      },
+      "energy": {
+        "grade": "A-",
+        "score": 87,
+        "insight": "Excellent sustained energy from balanced macros and slow-release carbohydrates",
+        "pros": [
+          "Exceptional fiber (34.4g) provides slow-release energy",
+          "Omega-3s (17.8g) reduce inflammation-related fatigue",
+          "Magnesium (335mg) critical for ATP production",
+          "B vitamins support energy metabolism",
+          "Very low glycemic load (1) prevents energy crashes",
+          "Gel-forming property slows digestion for sustained fuel"
+        ],
+        "cons": [
+          "Not ideal for immediate pre-workout - digests slowly",
+          "High fiber may cause GI discomfort during activity",
+          "Requires significant hydration (absorbs 10-12x weight in water)"
+        ]
+      },
+      "weight_management": {
+        "grade": "A+",
+        "score": 95,
+        "insight": "Exceptional satiety from fiber expansion, protein, and slow digestion",
+        "pros": [
+          "Extraordinary fiber (34.4g) expands in stomach for fullness",
+          "Extremely high satiety score (94/100)",
+          "Absorbs 10-12x weight in water - creates gel that fills stomach",
+          "Protein (16.5g) and omega-3s (17.8g) promote satiety",
+          "Very low glycemic load (1) prevents hunger spikes",
+          "Slows gastric emptying for prolonged fullness"
+        ],
+        "cons": [
+          "Calorie-dense (486 per 100g) - use 1-2 tablespoons per serving",
+          "Must measure carefully - easy to overconsume when dry",
+          "Requires adequate water intake to activate satiety mechanism"
+        ]
+      },
+      "brain_focus": {
+        "grade": "A+",
+        "score": 96,
+        "insight": "Brain superfood with exceptional omega-3s for cognitive function and neuroprotection",
+        "pros": [
+          "Exceptional omega-3 ALA (17.8g) supports brain structure and function",
+          "Anti-inflammatory omega-3s protect against neurodegeneration",
+          "Magnesium (335mg) reduces brain inflammation and supports neural signaling",
+          "Antioxidants protect brain cells from oxidative damage",
+          "Stable blood sugar supports consistent mental performance",
+          "Phosphorus (860mg) critical for neurotransmitter synthesis"
+        ],
+        "cons": [
+          "ALA converts to brain-critical DHA at only 0.5-5% efficiency",
+          "Should pair with direct DHA sources (fish, algae oil)",
+          "No choline content for acetylcholine production"
+        ]
+      },
+      "gut_health": {
+        "grade": "A+",
+        "score": 97,
+        "insight": "Gut health champion with exceptional fiber, gel formation, and prebiotic effects",
+        "pros": [
+          "Extraordinary fiber (34.4g) - powerful prebiotic for microbiome",
+          "Soluble fiber forms protective mucilage coating for gut lining",
+          "Omega-3s (17.8g) reduce gut inflammation significantly",
+          "Feeds beneficial bacteria like Lactobacillus and Bifidobacteria",
+          "Magnesium (335mg) supports healthy gut motility",
+          "May help with IBS, constipation, and leaky gut"
+        ],
+        "cons": [
+          "Very high fiber may cause bloating if introduced too quickly",
+          "Must increase gradually (start with 1 tablespoon daily)",
+          "Requires significant water intake to prevent constipation",
+          "May interfere with medication absorption due to gel formation"
+        ]
+      },
+      "blood_sugar": {
+        "grade": "A+",
+        "score": 98,
+        "insight": "Exceptional blood sugar control from fiber, omega-3s, and minimal glycemic impact",
+        "pros": [
+          "Virtually zero glycemic index (1) and glycemic load (1)",
+          "Extraordinary fiber (34.4g) dramatically slows glucose absorption",
+          "Gel formation coats carbs and slows their breakdown",
+          "Omega-3s (17.8g) improve insulin sensitivity",
+          "Magnesium (335mg) enhances glucose metabolism",
+          "Clinical studies show 39% reduction in post-meal blood sugar spikes"
+        ],
+        "cons": [
+          "High total carbs (42.1g) though mostly fiber - may confuse carb counting",
+          "Net carbs are only 7.7g but total carbs appear high",
+          "Should be counted as net carbs (total minus fiber)"
+        ]
+      },
+      "bone_joint": {
+        "grade": "A+",
+        "score": 96,
+        "insight": "Outstanding bone builder with exceptional calcium, magnesium, and phosphorus",
+        "pros": [
+          "Exceptional calcium (631mg) - 63% DV, higher than milk per weight",
+          "Outstanding magnesium (335mg) - 80% DV for bone matrix",
+          "Outstanding phosphorus (860mg) - 86% DV for bone mineralization",
+          "Omega-3s (17.8g) reduce inflammatory joint damage",
+          "Boron content supports calcium metabolism",
+          "5:2 calcium to magnesium ratio - optimal for bone health"
+        ],
+        "cons": [
+          "No vitamin D for calcium absorption - must pair with D source",
+          "No vitamin K for bone metabolism",
+          "Phytic acid may reduce mineral absorption by 10-20%",
+          "Soaking can improve bioavailability"
+        ]
+      },
+      "anti_inflammatory": {
+        "grade": "A+",
+        "score": 98,
+        "insight": "Powerful anti-inflammatory from exceptional omega-3s and favorable fatty acid ratio",
+        "pros": [
+          "Exceptional omega-3 ALA (17.8g) - most potent anti-inflammatory fatty acid",
+          "Outstanding omega-6 to omega-3 ratio (1:3) - highly anti-inflammatory",
+          "Very strong negative inflammatory index (-2.8)",
+          "Antioxidants (quercetin, kaempferol) combat oxidative stress",
+          "Magnesium (335mg) reduces inflammatory cytokines",
+          "Clinical studies show reduced C-reactive protein (CRP) levels"
+        ],
+        "cons": [
+          "ALA omega-3 less potent than EPA/DHA from fish",
+          "Some conversion needed to active anti-inflammatory EPA/DHA",
+          "Best combined with direct EPA/DHA sources for maximum benefit"
+        ]
+      }
+    },
+    "bioavailability": {
+      "protein": "moderate",
+      "iron": "low",
+      "notes": "Omega-3 ALA highly bioavailable but converts to EPA/DHA at 5-10% efficiency. Calcium and minerals well-absorbed. Grinding or soaking overnight improves nutrient bioavailability. Gel formation may reduce medication absorption - take meds 1 hour before or 4 hours after."
+    },
+    "pairWith": [
+      "Greek yogurt or kefir for complete protein and probiotics",
+      "Berries for antioxidant synergy",
+      "Citrus fruits for iron absorption",
+      "Vitamin D fortified foods for calcium absorption",
+      "Fatty fish for direct EPA/DHA omega-3s"
+    ],
+    "bestTiming": [
+      "Morning in smoothies or oatmeal for sustained energy",
+      "30-60 minutes before meals to enhance satiety",
+      "Post-workout mixed with protein for recovery",
+      "Evening in chia pudding for overnight satiation",
+      "Avoid immediately before intense exercise due to high fiber"
+    ],
+    "tags": [
+      "superfood",
+      "omega-3-rich",
+      "high-fiber",
+      "high-calcium",
+      "plant-based",
+      "anti-inflammatory",
+      "gut-health",
+      "blood-sugar-friendly",
+      "keto-friendly",
+      "gluten-free",
+      "vegan"
+    ]
+  },
+  "flaxseed": {
+    "id": "flaxseed",
+    "name": "Flaxseeds (Ground)",
+    "category": "nuts_seeds",
+    "servingSize": 100,
+    "servingUnit": "g",
+    "calories": 534,
+    "macros": {
+      "protein": 18.3,
+      "carbs": 28.9,
+      "fat": 42.2,
+      "fiber": 27.3
+    },
+    "nutrients": {
+      "saturatedFat": 3.7,
+      "monounsaturatedFat": 7.5,
+      "polyunsaturatedFat": 28.7,
+      "transFat": 0,
+      "omega3": 22.8,
+      "omega6": 5.9,
+      "cholesterol": 0,
+      "sodium": 30,
+      "potassium": 813,
+      "calcium": 255,
+      "iron": 5.7,
+      "magnesium": 392,
+      "phosphorus": 642,
+      "zinc": 4.3,
+      "selenium": 25.4,
+      "vitaminA": 0,
+      "vitaminC": 0.6,
+      "vitaminD": 0,
+      "vitaminE": 0.31,
+      "vitaminK": 4.3,
+      "thiamin": 1.64,
+      "riboflavin": 0.16,
+      "niacin": 3.1,
+      "vitaminB6": 0.47,
+      "folate": 87,
+      "vitaminB12": 0,
+      "pantothenicAcid": 0.99,
+      "choline": 78.7,
+      "betaine": 0
+    },
+    "glycemicIndex": 35,
+    "glycemicLoad": 1,
+    "nutrientDensityScore": 93,
+    "satietyScore": 92,
+    "inflammatoryIndex": -2.5,
+    "novaClass": 1,
+    "focusGrades": {
+      "balanced": {
+        "grade": "A+",
+        "score": 96,
+        "insight": "Nutritional powerhouse with record omega-3s, exceptional fiber, and mineral density",
+        "pros": [
+          "Highest plant-based omega-3 content (22.8g ALA) of any food",
+          "Extraordinary fiber (27.3g) - 109% daily value",
+          "Outstanding magnesium (392mg) - 93% DV, highest among seeds",
+          "Excellent protein (18.3g) for a plant seed",
+          "Exceptional lignans - 800x more than other foods for hormone balance",
+          "Favorable omega-6 to omega-3 ratio (1:4) - highly anti-inflammatory"
+        ],
+        "cons": [
+          "Must be ground for nutrient absorption - whole seeds pass through undigested",
+          "Ground flax oxidizes quickly - store in freezer, use within weeks",
+          "Contains phytoestrogens that may affect hormone-sensitive conditions"
+        ]
+      },
+      "heart_health": {
+        "grade": "A+",
+        "score": 98,
+        "insight": "One of the most heart-protective foods with omega-3s, fiber, and lignans",
+        "pros": [
+          "Record omega-3 ALA (22.8g) - lowers triglycerides and blood pressure",
+          "Outstanding fiber (27.3g) reduces LDL cholesterol by 10-15%",
+          "Exceptional omega-6 to omega-3 ratio (1:4) - cardioprotective",
+          "Lignans reduce atherosclerosis and arterial plaque",
+          "Magnesium (392mg) and potassium (813mg) support blood pressure",
+          "Clinical studies show 10-15 mmHg blood pressure reduction",
+          "Zero cholesterol and low sodium (30mg)"
+        ],
+        "cons": [
+          "ALA converts to EPA/DHA at only 5-10% efficiency",
+          "Should combine with fatty fish for direct EPA/DHA",
+          "Must be ground to access heart-healthy nutrients"
+        ]
+      },
+      "muscle_building": {
+        "grade": "B+",
+        "score": 83,
+        "insight": "Good plant protein with anti-inflammatory omega-3s for recovery",
+        "pros": [
+          "Solid protein content (18.3g) for a seed",
+          "Omega-3s (22.8g) significantly reduce exercise-induced inflammation",
+          "Magnesium (392mg) supports muscle contraction and prevents cramps",
+          "Zinc (4.3mg) aids protein synthesis",
+          "Lignans may support testosterone balance in men"
+        ],
+        "cons": [
+          "Incomplete amino acid profile - low in lysine",
+          "Must pair with legumes or animal protein for complete amino acids",
+          "High fiber may reduce protein absorption efficiency",
+          "Phytoestrogens may affect testosterone in very high doses"
+        ]
+      },
+      "energy": {
+        "grade": "A-",
+        "score": 88,
+        "insight": "Sustained energy from omega-3s, fiber, and exceptional B vitamin content",
+        "pros": [
+          "Outstanding thiamin (1.64mg) - 137% DV for energy metabolism",
+          "Magnesium (392mg) critical for ATP production and mitochondrial function",
+          "Omega-3s (22.8g) reduce inflammation-related fatigue",
+          "Fiber (27.3g) provides slow-release energy",
+          "Very low glycemic load (1) prevents energy crashes",
+          "B6 (0.47mg) supports glycogen utilization"
+        ],
+        "cons": [
+          "High fiber (27.3g) may cause GI discomfort if consumed pre-workout",
+          "Slow to digest - best consumed 2+ hours before intense activity",
+          "Requires adequate hydration due to high fiber content"
+        ]
+      },
+      "weight_management": {
+        "grade": "A+",
+        "score": 94,
+        "insight": "Exceptional for weight loss with high fiber, protein, and satiety-promoting omega-3s",
+        "pros": [
+          "Extraordinary fiber (27.3g) expands in stomach for prolonged fullness",
+          "Very high satiety score (92/100)",
+          "Omega-3s (22.8g) reduce inflammation that impairs fat loss",
+          "Protein (18.3g) supports lean mass during calorie deficit",
+          "Lignans may improve insulin sensitivity and fat metabolism",
+          "Very low glycemic load (1) prevents hunger spikes",
+          "Mucilage fiber slows gastric emptying"
+        ],
+        "cons": [
+          "Calorie-dense (534 per 100g) - use 1-2 tablespoons per serving",
+          "Easy to overconsume if not measured (1 tbsp = ~55 calories)",
+          "High fat content (42.2g) can exceed calorie goals if excessive"
+        ]
+      },
+      "brain_focus": {
+        "grade": "A+",
+        "score": 97,
+        "insight": "Brain superfood with record omega-3s, choline, and magnesium for cognition",
+        "pros": [
+          "Record omega-3 ALA (22.8g) - critical for brain cell membrane structure",
+          "Outstanding choline (78.7mg) supports acetylcholine for memory",
+          "Exceptional magnesium (392mg) reduces brain fog and supports neural signaling",
+          "Lignans cross blood-brain barrier with neuroprotective effects",
+          "Thiamin (1.64mg) critical for cognitive function",
+          "Anti-inflammatory omega-3s protect against neurodegeneration",
+          "May reduce Alzheimer's and dementia risk"
+        ],
+        "cons": [
+          "ALA converts to brain-critical DHA at only 0.5-5% efficiency",
+          "Should pair with DHA sources (fatty fish, algae oil) for optimal brain health",
+          "Nutrient absorption requires grinding - whole seeds ineffective"
+        ]
+      },
+      "gut_health": {
+        "grade": "A+",
+        "score": 96,
+        "insight": "Outstanding gut health support with exceptional fiber, omega-3s, and mucilage",
+        "pros": [
+          "Extraordinary fiber (27.3g) - powerful prebiotic feeding beneficial bacteria",
+          "Mucilage fiber forms protective coating on gut lining",
+          "Omega-3s (22.8g) reduce gut inflammation and improve barrier function",
+          "Lignans have prebiotic effects - increase Lactobacillus",
+          "Magnesium (392mg) supports healthy bowel motility",
+          "May alleviate IBS, constipation, and inflammatory bowel disease",
+          "Supports production of short-chain fatty acids (SCFAs)"
+        ],
+        "cons": [
+          "Very high fiber (27.3g) may cause bloating if introduced too quickly",
+          "Must increase gradually - start with 1 teaspoon daily",
+          "Requires significant water intake (8-10 oz per tablespoon)",
+          "Excessive intake without water may worsen constipation"
+        ]
+      },
+      "blood_sugar": {
+        "grade": "A+",
+        "score": 96,
+        "insight": "Exceptional blood sugar control from fiber, omega-3s, and lignans",
+        "pros": [
+          "Very low glycemic load (1) despite moderate GI",
+          "Extraordinary fiber (27.3g) dramatically slows glucose absorption",
+          "Mucilage fiber coats digestive tract and slows carb breakdown",
+          "Omega-3s (22.8g) improve insulin sensitivity significantly",
+          "Magnesium (392mg) enhances glucose metabolism and insulin function",
+          "Lignans may reduce diabetes risk by 25-30%",
+          "Clinical studies show reduced HbA1c in diabetics"
+        ],
+        "cons": [
+          "Contains 28.9g carbs - higher than nuts (though mostly fiber)",
+          "Net carbs only 1.6g but total carbs may concern some diabetics",
+          "Must be counted as net carbs (total minus fiber)"
+        ]
+      },
+      "bone_joint": {
+        "grade": "A",
+        "score": 93,
+        "insight": "Outstanding bone support with exceptional magnesium, calcium, and omega-3s",
+        "pros": [
+          "Exceptional magnesium (392mg) - 93% DV, critical for bone matrix",
+          "Outstanding phosphorus (642mg) - 64% DV for bone mineralization",
+          "Good calcium (255mg) - 26% DV",
+          "Omega-3s (22.8g) reduce inflammatory bone loss",
+          "Lignans may improve bone density in postmenopausal women",
+          "Vitamin K (4.3mcg) supports bone metabolism"
+        ],
+        "cons": [
+          "Calcium lower than dairy or chia seeds",
+          "No vitamin D for calcium absorption",
+          "Phytic acid may reduce mineral absorption by 15-25%",
+          "Soaking or sprouting improves bioavailability"
+        ]
+      },
+      "anti_inflammatory": {
+        "grade": "A+",
+        "score": 99,
+        "insight": "One of the most anti-inflammatory foods with record omega-3s and lignans",
+        "pros": [
+          "Record omega-3 ALA (22.8g) - most potent anti-inflammatory macronutrient",
+          "Outstanding omega-6 to omega-3 ratio (1:4) - powerfully anti-inflammatory",
+          "Very strong negative inflammatory index (-2.5)",
+          "Exceptional lignan content reduces inflammatory markers (CRP, IL-6)",
+          "Magnesium (392mg) suppresses inflammatory cytokines",
+          "Antioxidants combat oxidative stress",
+          "Clinical studies show reduced arthritis pain and morning stiffness"
+        ],
+        "cons": [
+          "ALA omega-3 less potent than EPA/DHA from fish",
+          "Conversion to anti-inflammatory EPA/DHA only 5-10%",
+          "Best combined with fatty fish for maximum anti-inflammatory benefit"
+        ]
+      }
+    },
+    "bioavailability": {
+      "protein": "moderate",
+      "iron": "low",
+      "notes": "CRITICAL: Flaxseeds MUST be ground for nutrient absorption - whole seeds pass through undigested. Omega-3 ALA converts to EPA/DHA at 5-10% efficiency. Store ground flax in freezer to prevent oxidation. Phytic acid reduces mineral absorption - soaking improves bioavailability. Pair with vitamin C for iron absorption."
+    },
+    "pairWith": [
+      "Greek yogurt or kefir for complete protein and gut health",
+      "Berries for antioxidant synergy",
+      "Fatty fish for direct EPA/DHA omega-3s",
+      "Vitamin D fortified foods for calcium absorption",
+      "Oatmeal or smoothies for easy incorporation"
+    ],
+    "bestTiming": [
+      "Morning in oatmeal, yogurt, or smoothies for sustained energy",
+      "30-60 minutes before meals to enhance satiety",
+      "Post-workout for anti-inflammatory recovery",
+      "Evening to support overnight gut health and regularity",
+      "Avoid immediately before exercise due to high fiber"
+    ],
+    "tags": [
+      "superfood",
+      "omega-3-champion",
+      "high-fiber",
+      "lignan-rich",
+      "plant-based",
+      "anti-inflammatory",
+      "gut-health",
+      "blood-sugar-friendly",
+      "heart-healthy",
+      "hormone-balancing",
+      "gluten-free",
+      "vegan",
+      "must-grind"
+    ]
+  },
+  "flax": {
+    "id": "flax",
+    "name": "Flaxseeds (Ground)",
+    "category": "nuts_seeds",
+    "servingSize": 100,
+    "servingUnit": "g",
+    "calories": 534,
+    "macros": {
+      "protein": 18.3,
+      "carbs": 28.9,
+      "fat": 42.2,
+      "fiber": 27.3
+    },
+    "nutrients": {
+      "saturatedFat": 3.7,
+      "monounsaturatedFat": 7.5,
+      "polyunsaturatedFat": 28.7,
+      "transFat": 0,
+      "omega3": 22.8,
+      "omega6": 5.9,
+      "cholesterol": 0,
+      "sodium": 30,
+      "potassium": 813,
+      "calcium": 255,
+      "iron": 5.7,
+      "magnesium": 392,
+      "phosphorus": 642,
+      "zinc": 4.3,
+      "selenium": 25.4,
+      "vitaminA": 0,
+      "vitaminC": 0.6,
+      "vitaminD": 0,
+      "vitaminE": 0.31,
+      "vitaminK": 4.3,
+      "thiamin": 1.64,
+      "riboflavin": 0.16,
+      "niacin": 3.1,
+      "vitaminB6": 0.47,
+      "folate": 87,
+      "vitaminB12": 0,
+      "pantothenicAcid": 0.99,
+      "choline": 78.7,
+      "betaine": 0
+    },
+    "glycemicIndex": 35,
+    "glycemicLoad": 1,
+    "nutrientDensityScore": 93,
+    "satietyScore": 92,
+    "inflammatoryIndex": -2.5,
+    "novaClass": 1,
+    "focusGrades": {
+      "balanced": {
+        "grade": "A+",
+        "score": 96,
+        "insight": "Nutritional powerhouse with record omega-3s, exceptional fiber, and mineral density",
+        "pros": [
+          "Highest plant-based omega-3 content (22.8g ALA) of any food",
+          "Extraordinary fiber (27.3g) - 109% daily value",
+          "Outstanding magnesium (392mg) - 93% DV, highest among seeds",
+          "Excellent protein (18.3g) for a plant seed",
+          "Exceptional lignans - 800x more than other foods for hormone balance",
+          "Favorable omega-6 to omega-3 ratio (1:4) - highly anti-inflammatory"
+        ],
+        "cons": [
+          "Must be ground for nutrient absorption - whole seeds pass through undigested",
+          "Ground flax oxidizes quickly - store in freezer, use within weeks",
+          "Contains phytoestrogens that may affect hormone-sensitive conditions"
+        ]
+      },
+      "heart_health": {
+        "grade": "A+",
+        "score": 98,
+        "insight": "One of the most heart-protective foods with omega-3s, fiber, and lignans",
+        "pros": [
+          "Record omega-3 ALA (22.8g) - lowers triglycerides and blood pressure",
+          "Outstanding fiber (27.3g) reduces LDL cholesterol by 10-15%",
+          "Exceptional omega-6 to omega-3 ratio (1:4) - cardioprotective",
+          "Lignans reduce atherosclerosis and arterial plaque",
+          "Magnesium (392mg) and potassium (813mg) support blood pressure",
+          "Clinical studies show 10-15 mmHg blood pressure reduction",
+          "Zero cholesterol and low sodium (30mg)"
+        ],
+        "cons": [
+          "ALA converts to EPA/DHA at only 5-10% efficiency",
+          "Should combine with fatty fish for direct EPA/DHA",
+          "Must be ground to access heart-healthy nutrients"
+        ]
+      },
+      "muscle_building": {
+        "grade": "B+",
+        "score": 83,
+        "insight": "Good plant protein with anti-inflammatory omega-3s for recovery",
+        "pros": [
+          "Solid protein content (18.3g) for a seed",
+          "Omega-3s (22.8g) significantly reduce exercise-induced inflammation",
+          "Magnesium (392mg) supports muscle contraction and prevents cramps",
+          "Zinc (4.3mg) aids protein synthesis",
+          "Lignans may support testosterone balance in men"
+        ],
+        "cons": [
+          "Incomplete amino acid profile - low in lysine",
+          "Must pair with legumes or animal protein for complete amino acids",
+          "High fiber may reduce protein absorption efficiency",
+          "Phytoestrogens may affect testosterone in very high doses"
+        ]
+      },
+      "energy": {
+        "grade": "A-",
+        "score": 88,
+        "insight": "Sustained energy from omega-3s, fiber, and exceptional B vitamin content",
+        "pros": [
+          "Outstanding thiamin (1.64mg) - 137% DV for energy metabolism",
+          "Magnesium (392mg) critical for ATP production and mitochondrial function",
+          "Omega-3s (22.8g) reduce inflammation-related fatigue",
+          "Fiber (27.3g) provides slow-release energy",
+          "Very low glycemic load (1) prevents energy crashes",
+          "B6 (0.47mg) supports glycogen utilization"
+        ],
+        "cons": [
+          "High fiber (27.3g) may cause GI discomfort if consumed pre-workout",
+          "Slow to digest - best consumed 2+ hours before intense activity",
+          "Requires adequate hydration due to high fiber content"
+        ]
+      },
+      "weight_management": {
+        "grade": "A+",
+        "score": 94,
+        "insight": "Exceptional for weight loss with high fiber, protein, and satiety-promoting omega-3s",
+        "pros": [
+          "Extraordinary fiber (27.3g) expands in stomach for prolonged fullness",
+          "Very high satiety score (92/100)",
+          "Omega-3s (22.8g) reduce inflammation that impairs fat loss",
+          "Protein (18.3g) supports lean mass during calorie deficit",
+          "Lignans may improve insulin sensitivity and fat metabolism",
+          "Very low glycemic load (1) prevents hunger spikes",
+          "Mucilage fiber slows gastric emptying"
+        ],
+        "cons": [
+          "Calorie-dense (534 per 100g) - use 1-2 tablespoons per serving",
+          "Easy to overconsume if not measured (1 tbsp = ~55 calories)",
+          "High fat content (42.2g) can exceed calorie goals if excessive"
+        ]
+      },
+      "brain_focus": {
+        "grade": "A+",
+        "score": 97,
+        "insight": "Brain superfood with record omega-3s, choline, and magnesium for cognition",
+        "pros": [
+          "Record omega-3 ALA (22.8g) - critical for brain cell membrane structure",
+          "Outstanding choline (78.7mg) supports acetylcholine for memory",
+          "Exceptional magnesium (392mg) reduces brain fog and supports neural signaling",
+          "Lignans cross blood-brain barrier with neuroprotective effects",
+          "Thiamin (1.64mg) critical for cognitive function",
+          "Anti-inflammatory omega-3s protect against neurodegeneration",
+          "May reduce Alzheimer's and dementia risk"
+        ],
+        "cons": [
+          "ALA converts to brain-critical DHA at only 0.5-5% efficiency",
+          "Should pair with DHA sources (fatty fish, algae oil) for optimal brain health",
+          "Nutrient absorption requires grinding - whole seeds ineffective"
+        ]
+      },
+      "gut_health": {
+        "grade": "A+",
+        "score": 96,
+        "insight": "Outstanding gut health support with exceptional fiber, omega-3s, and mucilage",
+        "pros": [
+          "Extraordinary fiber (27.3g) - powerful prebiotic feeding beneficial bacteria",
+          "Mucilage fiber forms protective coating on gut lining",
+          "Omega-3s (22.8g) reduce gut inflammation and improve barrier function",
+          "Lignans have prebiotic effects - increase Lactobacillus",
+          "Magnesium (392mg) supports healthy bowel motility",
+          "May alleviate IBS, constipation, and inflammatory bowel disease",
+          "Supports production of short-chain fatty acids (SCFAs)"
+        ],
+        "cons": [
+          "Very high fiber (27.3g) may cause bloating if introduced too quickly",
+          "Must increase gradually - start with 1 teaspoon daily",
+          "Requires significant water intake (8-10 oz per tablespoon)",
+          "Excessive intake without water may worsen constipation"
+        ]
+      },
+      "blood_sugar": {
+        "grade": "A+",
+        "score": 96,
+        "insight": "Exceptional blood sugar control from fiber, omega-3s, and lignans",
+        "pros": [
+          "Very low glycemic load (1) despite moderate GI",
+          "Extraordinary fiber (27.3g) dramatically slows glucose absorption",
+          "Mucilage fiber coats digestive tract and slows carb breakdown",
+          "Omega-3s (22.8g) improve insulin sensitivity significantly",
+          "Magnesium (392mg) enhances glucose metabolism and insulin function",
+          "Lignans may reduce diabetes risk by 25-30%",
+          "Clinical studies show reduced HbA1c in diabetics"
+        ],
+        "cons": [
+          "Contains 28.9g carbs - higher than nuts (though mostly fiber)",
+          "Net carbs only 1.6g but total carbs may concern some diabetics",
+          "Must be counted as net carbs (total minus fiber)"
+        ]
+      },
+      "bone_joint": {
+        "grade": "A",
+        "score": 93,
+        "insight": "Outstanding bone support with exceptional magnesium, calcium, and omega-3s",
+        "pros": [
+          "Exceptional magnesium (392mg) - 93% DV, critical for bone matrix",
+          "Outstanding phosphorus (642mg) - 64% DV for bone mineralization",
+          "Good calcium (255mg) - 26% DV",
+          "Omega-3s (22.8g) reduce inflammatory bone loss",
+          "Lignans may improve bone density in postmenopausal women",
+          "Vitamin K (4.3mcg) supports bone metabolism"
+        ],
+        "cons": [
+          "Calcium lower than dairy or chia seeds",
+          "No vitamin D for calcium absorption",
+          "Phytic acid may reduce mineral absorption by 15-25%",
+          "Soaking or sprouting improves bioavailability"
+        ]
+      },
+      "anti_inflammatory": {
+        "grade": "A+",
+        "score": 99,
+        "insight": "One of the most anti-inflammatory foods with record omega-3s and lignans",
+        "pros": [
+          "Record omega-3 ALA (22.8g) - most potent anti-inflammatory macronutrient",
+          "Outstanding omega-6 to omega-3 ratio (1:4) - powerfully anti-inflammatory",
+          "Very strong negative inflammatory index (-2.5)",
+          "Exceptional lignan content reduces inflammatory markers (CRP, IL-6)",
+          "Magnesium (392mg) suppresses inflammatory cytokines",
+          "Antioxidants combat oxidative stress",
+          "Clinical studies show reduced arthritis pain and morning stiffness"
+        ],
+        "cons": [
+          "ALA omega-3 less potent than EPA/DHA from fish",
+          "Conversion to anti-inflammatory EPA/DHA only 5-10%",
+          "Best combined with fatty fish for maximum anti-inflammatory benefit"
+        ]
+      }
+    },
+    "bioavailability": {
+      "protein": "moderate",
+      "iron": "low",
+      "notes": "CRITICAL: Flaxseeds MUST be ground for nutrient absorption - whole seeds pass through undigested. Omega-3 ALA converts to EPA/DHA at 5-10% efficiency. Store ground flax in freezer to prevent oxidation. Phytic acid reduces mineral absorption - soaking improves bioavailability. Pair with vitamin C for iron absorption."
+    },
+    "pairWith": [
+      "Greek yogurt or kefir for complete protein and gut health",
+      "Berries for antioxidant synergy",
+      "Fatty fish for direct EPA/DHA omega-3s",
+      "Vitamin D fortified foods for calcium absorption",
+      "Oatmeal or smoothies for easy incorporation"
+    ],
+    "bestTiming": [
+      "Morning in oatmeal, yogurt, or smoothies for sustained energy",
+      "30-60 minutes before meals to enhance satiety",
+      "Post-workout for anti-inflammatory recovery",
+      "Evening to support overnight gut health and regularity",
+      "Avoid immediately before exercise due to high fiber"
+    ],
+    "tags": [
+      "superfood",
+      "omega-3-champion",
+      "high-fiber",
+      "lignan-rich",
+      "plant-based",
+      "anti-inflammatory",
+      "gut-health",
+      "blood-sugar-friendly",
+      "heart-healthy",
+      "hormone-balancing",
+      "gluten-free",
+      "vegan",
+      "must-grind"
+    ]
+  }
+}

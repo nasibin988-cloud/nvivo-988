@@ -1,0 +1,1124 @@
+{
+  "lasagna": {
+    "name": "Lasagna with meat sauce",
+    "calories": 135,
+    "protein": 8.2,
+    "carbs": 13.8,
+    "fat": 4.9,
+    "fiber": 1.2,
+    "sugar": 2.8,
+    "sodium": 395,
+    "cholesterol": 22,
+    "saturatedFat": 2.1,
+    "transFat": 0.1,
+    "polyunsaturatedFat": 0.6,
+    "monounsaturatedFat": 1.8,
+    "potassium": 245,
+    "calcium": 78,
+    "iron": 1.1,
+    "vitaminA": 285,
+    "vitaminC": 3.2,
+    "vitaminD": 0.2,
+    "vitaminE": 0.8,
+    "vitaminK": 4.5,
+    "thiamin": 0.12,
+    "riboflavin": 0.14,
+    "niacin": 2.1,
+    "vitaminB6": 0.15,
+    "folate": 18,
+    "vitaminB12": 0.6,
+    "magnesium": 22,
+    "phosphorus": 125,
+    "zinc": 1.4,
+    "selenium": 14.2,
+    "copper": 0.08,
+    "manganese": 0.2,
+    "focusGrades": {
+      "balanced": {
+        "grade": "B-",
+        "score": 72,
+        "insight": "Classic comfort food with balanced macros but watch sodium",
+        "pros": [
+          "Good protein from meat and cheese (8.2g per serving)",
+          "Balanced mix of carbs, protein, and moderate fat",
+          "Provides calcium from cheese and B vitamins"
+        ],
+        "cons": [
+          "High sodium content (395mg per serving)",
+          "Moderate calorie density",
+          "Contains some saturated fat from cheese and meat"
+        ]
+      },
+      "low_carb": {
+        "grade": "C+",
+        "score": 68,
+        "insight": "Moderate carbs from pasta layers",
+        "pros": [
+          "Good protein content helps balance carbs",
+          "Fiber from tomato sauce aids digestion",
+          "Not as carb-heavy as pure pasta dishes"
+        ],
+        "cons": [
+          "13.8g net carbs per serving from pasta",
+          "Limited by traditional pasta noodles",
+          "Sugar from tomato sauce adds carbs"
+        ]
+      },
+      "high_protein": {
+        "grade": "B",
+        "score": 78,
+        "insight": "Good protein from meat and cheese combination",
+        "pros": [
+          "8.2g complete protein per serving",
+          "Contains all essential amino acids from meat and dairy",
+          "Protein helps with satiety"
+        ],
+        "cons": [
+          "Could have more protein with extra meat layer",
+          "Some protein comes with saturated fat",
+          "Not as protein-dense as pure meat dishes"
+        ]
+      },
+      "low_fat": {
+        "grade": "C",
+        "score": 62,
+        "insight": "Moderate fat from cheese and meat sauce",
+        "pros": [
+          "Reasonable total fat at 4.9g per serving",
+          "Contains some healthy monounsaturated fats",
+          "Not deep-fried or overly greasy"
+        ],
+        "cons": [
+          "2.1g saturated fat from cheese and meat",
+          "Fat content varies by cheese amount",
+          "Could be higher in lean versions"
+        ]
+      },
+      "heart_healthy": {
+        "grade": "C-",
+        "score": 58,
+        "insight": "Sodium and saturated fat are concerns for heart health",
+        "pros": [
+          "Tomatoes provide lycopene (heart-protective)",
+          "Contains some potassium (245mg)",
+          "Has vegetables in the sauce"
+        ],
+        "cons": [
+          "High sodium (395mg - 17% DV)",
+          "Saturated fat from cheese and meat",
+          "Cholesterol content from animal products"
+        ]
+      },
+      "diabetic_friendly": {
+        "grade": "C+",
+        "score": 67,
+        "insight": "Moderate glycemic impact with protein buffering",
+        "pros": [
+          "Protein and fat slow carb absorption",
+          "Fiber from tomatoes helps control blood sugar",
+          "Not extremely high in total carbs"
+        ],
+        "cons": [
+          "13.8g carbs can affect blood glucose",
+          "Contains added sugars in tomato sauce",
+          "Pasta has moderate glycemic index"
+        ]
+      },
+      "anti_inflammatory": {
+        "grade": "C+",
+        "score": 69,
+        "insight": "Some anti-inflammatory ingredients offset processed components",
+        "pros": [
+          "Tomatoes rich in lycopene (anti-inflammatory)",
+          "Garlic and herbs have anti-inflammatory properties",
+          "Provides omega-3s if made with grass-fed beef"
+        ],
+        "cons": [
+          "Refined pasta can promote inflammation",
+          "High sodium may trigger inflammation",
+          "Saturated fat from dairy and meat"
+        ]
+      },
+      "gut_health": {
+        "grade": "C+",
+        "score": 68,
+        "insight": "Some fiber and fermented cheese support digestion",
+        "pros": [
+          "1.2g fiber from vegetables and tomatoes",
+          "Cheese provides probiotics if aged",
+          "Tomatoes contain prebiotics"
+        ],
+        "cons": [
+          "Refined pasta lacks fiber",
+          "High fat can slow digestion",
+          "Dairy may be problematic for some"
+        ]
+      },
+      "athletic_performance": {
+        "grade": "B-",
+        "score": 73,
+        "insight": "Good recovery meal with carbs and protein",
+        "pros": [
+          "Carbs for glycogen replenishment",
+          "8.2g protein supports muscle recovery",
+          "Provides sodium for electrolyte replacement"
+        ],
+        "cons": [
+          "High sodium may cause water retention",
+          "Fat content slows digestion before exercise",
+          "Not ideal pre-workout due to heaviness"
+        ]
+      },
+      "longevity": {
+        "grade": "C+",
+        "score": 66,
+        "insight": "Mediterranean elements but processed components detract",
+        "pros": [
+          "Tomatoes provide lycopene and antioxidants",
+          "Moderate portions align with longevity diets",
+          "Contains some Mediterranean ingredients"
+        ],
+        "cons": [
+          "High sodium linked to reduced longevity",
+          "Processed pasta and cheese",
+          "Red meat in moderation per longevity research"
+        ]
+      }
+    }
+  },
+  "cheesecake": {
+    "name": "Cheesecake",
+    "calories": 321,
+    "protein": 5.5,
+    "carbs": 25.5,
+    "fat": 22.5,
+    "fiber": 0.2,
+    "sugar": 19.8,
+    "sodium": 251,
+    "cholesterol": 63,
+    "saturatedFat": 12.5,
+    "transFat": 0.3,
+    "polyunsaturatedFat": 1.2,
+    "monounsaturatedFat": 6.8,
+    "potassium": 98,
+    "calcium": 62,
+    "iron": 0.8,
+    "vitaminA": 243,
+    "vitaminC": 0.4,
+    "vitaminD": 0.3,
+    "vitaminE": 0.7,
+    "vitaminK": 1.8,
+    "thiamin": 0.03,
+    "riboflavin": 0.16,
+    "niacin": 0.4,
+    "vitaminB6": 0.03,
+    "folate": 12,
+    "vitaminB12": 0.3,
+    "magnesium": 10,
+    "phosphorus": 89,
+    "zinc": 0.6,
+    "selenium": 4.2,
+    "copper": 0.02,
+    "manganese": 0.05,
+    "focusGrades": {
+      "balanced": {
+        "grade": "D",
+        "score": 38,
+        "insight": "Indulgent dessert high in sugar and saturated fat",
+        "pros": [
+          "Provides some calcium from cream cheese (62mg)",
+          "Contains small amount of protein (5.5g)",
+          "Rich, satisfying taste in small portions"
+        ],
+        "cons": [
+          "Very high in added sugar (19.8g per slice)",
+          "High saturated fat content (12.5g)",
+          "Calorie-dense at 321 calories per slice"
+        ]
+      },
+      "low_carb": {
+        "grade": "D+",
+        "score": 42,
+        "insight": "High sugar content makes this carb-heavy",
+        "pros": [
+          "Fat content helps slow sugar absorption slightly",
+          "Some low-carb versions available with almond flour",
+          "Protein provides minimal carb offset"
+        ],
+        "cons": [
+          "25.5g carbs per slice (mostly sugar)",
+          "19.8g added sugars spike blood glucose",
+          "Graham cracker crust adds refined carbs"
+        ]
+      },
+      "high_protein": {
+        "grade": "D",
+        "score": 35,
+        "insight": "Not a significant protein source despite dairy base",
+        "pros": [
+          "5.5g protein from cream cheese and eggs",
+          "Complete protein with all amino acids",
+          "Greek yogurt versions can boost protein"
+        ],
+        "cons": [
+          "Low protein relative to calories and fat",
+          "Protein comes with high saturated fat",
+          "Not suitable as primary protein source"
+        ]
+      },
+      "low_fat": {
+        "grade": "F",
+        "score": 18,
+        "insight": "Extremely high in total and saturated fat",
+        "pros": [
+          "Fat provides satiety and richness",
+          "Contains some monounsaturated fats",
+          "Light versions available with reduced fat"
+        ],
+        "cons": [
+          "22.5g total fat (70% of calories from fat)",
+          "12.5g saturated fat (62% of daily limit)",
+          "Butter and cream cheese are primary ingredients"
+        ]
+      },
+      "heart_healthy": {
+        "grade": "F",
+        "score": 12,
+        "insight": "High saturated fat and cholesterol major heart concerns",
+        "pros": [
+          "Small portions can fit into balanced diet",
+          "Contains some calcium for bone health",
+          "Can be made with heart-healthier ingredients"
+        ],
+        "cons": [
+          "12.5g saturated fat (bad for cholesterol)",
+          "63mg cholesterol per slice",
+          "High sodium (251mg) and sugar burden heart"
+        ]
+      },
+      "diabetic_friendly": {
+        "grade": "F",
+        "score": 15,
+        "insight": "Very high sugar content causes blood glucose spikes",
+        "pros": [
+          "Fat content slows sugar absorption somewhat",
+          "Sugar-free versions available with sweeteners",
+          "Small portion control possible"
+        ],
+        "cons": [
+          "19.8g sugar rapidly raises blood glucose",
+          "25.5g total carbs with minimal fiber",
+          "Can lead to insulin resistance with regular intake"
+        ]
+      },
+      "anti_inflammatory": {
+        "grade": "D-",
+        "score": 32,
+        "insight": "High sugar and saturated fat promote inflammation",
+        "pros": [
+          "Eggs provide choline with anti-inflammatory effects",
+          "Vanilla extract contains antioxidants",
+          "Calcium supports immune function"
+        ],
+        "cons": [
+          "Sugar triggers inflammatory pathways",
+          "Saturated fat increases inflammation markers",
+          "Omega-6 fatty acids may promote inflammation"
+        ]
+      },
+      "gut_health": {
+        "grade": "D",
+        "score": 35,
+        "insight": "Minimal fiber and high sugar disrupt gut microbiome",
+        "pros": [
+          "Cream cheese contains some probiotics if cultured",
+          "Eggs provide nutrients for gut lining",
+          "Small amounts of calcium support gut function"
+        ],
+        "cons": [
+          "Only 0.2g fiber (essentially none)",
+          "High sugar feeds harmful gut bacteria",
+          "High fat can slow digestion and cause discomfort"
+        ]
+      },
+      "athletic_performance": {
+        "grade": "D",
+        "score": 38,
+        "insight": "Not suitable for athletic performance or recovery",
+        "pros": [
+          "High calories provide quick energy",
+          "Some protein for muscle support",
+          "Carbs can replenish glycogen in small amounts"
+        ],
+        "cons": [
+          "High fat slows digestion before activity",
+          "Sugar causes energy crash after initial spike",
+          "Heavy, rich texture can cause GI distress"
+        ]
+      },
+      "longevity": {
+        "grade": "D-",
+        "score": 30,
+        "insight": "Regular consumption conflicts with longevity principles",
+        "pros": [
+          "Occasional indulgence supports mental well-being",
+          "Provides some calcium and vitamin A",
+          "Social enjoyment has longevity benefits"
+        ],
+        "cons": [
+          "High sugar linked to accelerated aging",
+          "Saturated fat increases disease risk",
+          "Calorie-dense foods linked to shorter lifespan"
+        ]
+      }
+    }
+  },
+  "blueberry_muffin": {
+    "name": "Blueberry muffin",
+    "calories": 313,
+    "protein": 5.4,
+    "carbs": 54.6,
+    "fat": 8.4,
+    "fiber": 1.9,
+    "sugar": 28.2,
+    "sodium": 397,
+    "cholesterol": 35,
+    "saturatedFat": 1.7,
+    "transFat": 0.1,
+    "polyunsaturatedFat": 2.2,
+    "monounsaturatedFat": 3.8,
+    "potassium": 115,
+    "calcium": 86,
+    "iron": 2.1,
+    "vitaminA": 58,
+    "vitaminC": 1.8,
+    "vitaminD": 0.4,
+    "vitaminE": 1.2,
+    "vitaminK": 3.2,
+    "thiamin": 0.28,
+    "riboflavin": 0.24,
+    "niacin": 2.4,
+    "vitaminB6": 0.06,
+    "folate": 62,
+    "vitaminB12": 0.2,
+    "magnesium": 18,
+    "phosphorus": 134,
+    "zinc": 0.6,
+    "selenium": 12.8,
+    "copper": 0.08,
+    "manganese": 0.4,
+    "focusGrades": {
+      "balanced": {
+        "grade": "D+",
+        "score": 42,
+        "insight": "High in refined carbs and sugar with minimal nutrition",
+        "pros": [
+          "Contains some B vitamins from fortified flour",
+          "Blueberries provide antioxidants (though minimal)",
+          "Provides quick energy for morning"
+        ],
+        "cons": [
+          "Very high sugar content (28.2g per muffin)",
+          "54.6g refined carbs cause blood sugar spike",
+          "High sodium (397mg) for a breakfast item"
+        ]
+      },
+      "low_carb": {
+        "grade": "F",
+        "score": 8,
+        "insight": "Extremely high in refined carbohydrates",
+        "pros": [
+          "Small amount of fiber from blueberries (1.9g)",
+          "Can be made with almond flour for lower carbs",
+          "Provides sustained energy for non-low-carb diets"
+        ],
+        "cons": [
+          "54.6g carbs (one of highest carb foods)",
+          "28.2g sugar causes glucose spike",
+          "Refined flour has high glycemic index"
+        ]
+      },
+      "high_protein": {
+        "grade": "D-",
+        "score": 33,
+        "insight": "Very low protein for the calorie count",
+        "pros": [
+          "5.4g protein from eggs and milk",
+          "Complete protein with all amino acids",
+          "Can add protein powder to batter"
+        ],
+        "cons": [
+          "Only 7% of calories from protein",
+          "Not suitable as protein source",
+          "Better breakfast options for protein needs"
+        ]
+      },
+      "low_fat": {
+        "grade": "C",
+        "score": 62,
+        "insight": "Moderate fat content, mostly from vegetable oil",
+        "pros": [
+          "Only 8.4g total fat (reasonable)",
+          "Low saturated fat (1.7g)",
+          "Contains healthy polyunsaturated fats"
+        ],
+        "cons": [
+          "Fat content varies widely by recipe",
+          "Some versions use butter (higher saturated fat)",
+          "Oil adds calories without much nutrition"
+        ]
+      },
+      "heart_healthy": {
+        "grade": "D",
+        "score": 35,
+        "insight": "High sodium and sugar outweigh antioxidant benefits",
+        "pros": [
+          "Blueberries contain heart-healthy anthocyanins",
+          "Low saturated fat content",
+          "Some B vitamins support cardiovascular health"
+        ],
+        "cons": [
+          "Very high sodium (397mg - 17% DV)",
+          "28.2g sugar burdens cardiovascular system",
+          "Refined carbs linked to heart disease risk"
+        ]
+      },
+      "diabetic_friendly": {
+        "grade": "F",
+        "score": 10,
+        "insight": "Terrible choice for blood sugar management",
+        "pros": [
+          "Small fiber content helps slightly (1.9g)",
+          "Blueberries have some blood sugar benefits",
+          "Can be made with whole wheat flour"
+        ],
+        "cons": [
+          "54.6g carbs cause major glucose spike",
+          "28.2g sugar (7 teaspoons per muffin)",
+          "High glycemic index from refined flour"
+        ]
+      },
+      "anti_inflammatory": {
+        "grade": "D+",
+        "score": 44,
+        "insight": "Blueberry antioxidants offset by inflammatory ingredients",
+        "pros": [
+          "Blueberries rich in anti-inflammatory anthocyanins",
+          "Contains vitamin E (antioxidant)",
+          "Berries provide polyphenols"
+        ],
+        "cons": [
+          "High sugar promotes systemic inflammation",
+          "Refined flour triggers inflammatory response",
+          "Omega-6 oils may increase inflammation"
+        ]
+      },
+      "gut_health": {
+        "grade": "D+",
+        "score": 41,
+        "insight": "Minimal fiber and high sugar disrupt gut balance",
+        "pros": [
+          "1.9g fiber from blueberries supports digestion",
+          "Blueberries contain prebiotics",
+          "Berries support beneficial gut bacteria"
+        ],
+        "cons": [
+          "Refined flour lacks fiber (should be 5-7g)",
+          "High sugar feeds harmful bacteria",
+          "Lacks diversity of gut-supporting nutrients"
+        ]
+      },
+      "athletic_performance": {
+        "grade": "C-",
+        "score": 55,
+        "insight": "Quick carbs for energy but sugar crash follows",
+        "pros": [
+          "54.6g carbs provide rapid energy",
+          "B vitamins support energy metabolism",
+          "Easy to digest before light activity"
+        ],
+        "cons": [
+          "Sugar spike followed by energy crash",
+          "Low protein inadequate for recovery",
+          "High sodium may cause water retention"
+        ]
+      },
+      "longevity": {
+        "grade": "D",
+        "score": 36,
+        "insight": "Blueberries excellent but offset by unhealthy base",
+        "pros": [
+          "Blueberries linked to longevity (brain health)",
+          "Antioxidants combat cellular aging",
+          "Folate supports DNA repair"
+        ],
+        "cons": [
+          "High sugar accelerates cellular aging",
+          "Refined carbs linked to chronic disease",
+          "High sodium increases mortality risk"
+        ]
+      }
+    }
+  },
+  "soft_drink": {
+    "name": "Cola soft drink",
+    "calories": 41,
+    "protein": 0.0,
+    "carbs": 10.6,
+    "fat": 0.0,
+    "fiber": 0.0,
+    "sugar": 10.6,
+    "sodium": 4,
+    "cholesterol": 0,
+    "saturatedFat": 0.0,
+    "transFat": 0.0,
+    "polyunsaturatedFat": 0.0,
+    "monounsaturatedFat": 0.0,
+    "potassium": 2,
+    "calcium": 2,
+    "iron": 0.1,
+    "vitaminA": 0,
+    "vitaminC": 0.0,
+    "vitaminD": 0.0,
+    "vitaminE": 0.0,
+    "vitaminK": 0.0,
+    "thiamin": 0.0,
+    "riboflavin": 0.0,
+    "niacin": 0.0,
+    "vitaminB6": 0.0,
+    "folate": 0,
+    "vitaminB12": 0.0,
+    "magnesium": 1,
+    "phosphorus": 12,
+    "zinc": 0.0,
+    "selenium": 0.1,
+    "copper": 0.01,
+    "manganese": 0.0,
+    "focusGrades": {
+      "balanced": {
+        "grade": "F",
+        "score": 5,
+        "insight": "Provides zero nutrition, only empty calories from sugar",
+        "pros": [
+          "Zero fat and cholesterol",
+          "Very low sodium content",
+          "Caffeine can provide temporary alertness"
+        ],
+        "cons": [
+          "10.6g pure sugar with no nutritional value",
+          "No protein, fiber, vitamins, or minerals",
+          "Liquid calories don't provide satiety"
+        ]
+      },
+      "low_carb": {
+        "grade": "F",
+        "score": 2,
+        "insight": "Pure liquid sugar in concentrated form",
+        "pros": [
+          "Diet versions available with zero carbs",
+          "Small serving size limits total carbs",
+          "Zero fat content"
+        ],
+        "cons": [
+          "10.6g carbs per 100ml (all from sugar)",
+          "No fiber to slow absorption",
+          "Spikes blood glucose rapidly"
+        ]
+      },
+      "high_protein": {
+        "grade": "F",
+        "score": 0,
+        "insight": "Contains absolutely no protein",
+        "pros": [
+          "Can be consumed with protein-rich foods",
+          "Doesn't interfere with protein absorption",
+          "Zero fat allows focus on protein elsewhere"
+        ],
+        "cons": [
+          "0g protein - completely absent",
+          "Provides no amino acids",
+          "Wasted calorie opportunity for protein"
+        ]
+      },
+      "low_fat": {
+        "grade": "A+",
+        "score": 100,
+        "insight": "Completely fat-free beverage",
+        "pros": [
+          "0g total fat",
+          "0g saturated fat",
+          "0g trans fat"
+        ],
+        "cons": [
+          "Being fat-free doesn't make it healthy",
+          "Sugar content is the primary concern",
+          "No beneficial fats provided"
+        ]
+      },
+      "heart_healthy": {
+        "grade": "F",
+        "score": 8,
+        "insight": "Sugar content damages cardiovascular health",
+        "pros": [
+          "Very low sodium (4mg)",
+          "Zero cholesterol and fat",
+          "No trans fats"
+        ],
+        "cons": [
+          "High sugar linked to heart disease",
+          "Increases triglycerides and inflammation",
+          "Associated with increased cardiovascular risk"
+        ]
+      },
+      "diabetic_friendly": {
+        "grade": "F",
+        "score": 0,
+        "insight": "Worst possible choice for blood sugar control",
+        "pros": [
+          "Diet/zero sugar versions available",
+          "Small portions can be measured precisely",
+          "Caffeine may slightly improve insulin sensitivity"
+        ],
+        "cons": [
+          "Pure liquid sugar causes rapid glucose spike",
+          "No fiber or protein to buffer absorption",
+          "Regular consumption linked to type 2 diabetes"
+        ]
+      },
+      "anti_inflammatory": {
+        "grade": "F",
+        "score": 5,
+        "insight": "Sugar promotes widespread inflammation",
+        "pros": [
+          "No inflammatory fats or oils",
+          "Some antioxidants in cola nut extract (minimal)",
+          "Carbonation doesn't affect inflammation"
+        ],
+        "cons": [
+          "Sugar triggers inflammatory pathways",
+          "Increases C-reactive protein levels",
+          "Phosphoric acid may affect bone health"
+        ]
+      },
+      "gut_health": {
+        "grade": "F",
+        "score": 3,
+        "insight": "Damages gut microbiome and provides no fiber",
+        "pros": [
+          "Carbonation may aid digestion temporarily",
+          "Contains water for hydration",
+          "No artificial sweeteners (in regular version)"
+        ],
+        "cons": [
+          "0g fiber - provides nothing for gut bacteria",
+          "High sugar feeds harmful bacteria",
+          "Phosphoric acid may disrupt gut pH"
+        ]
+      },
+      "athletic_performance": {
+        "grade": "D",
+        "score": 38,
+        "insight": "Quick sugar energy offset by dehydration and crash",
+        "pros": [
+          "Rapid carbs for quick energy boost",
+          "Caffeine enhances performance and focus",
+          "Sugar replaces glycogen during endurance"
+        ],
+        "cons": [
+          "Carbonation causes bloating during activity",
+          "Sugar crash follows initial energy spike",
+          "Not hydrating (caffeine is diuretic)"
+        ]
+      },
+      "longevity": {
+        "grade": "F",
+        "score": 2,
+        "insight": "Strong evidence linking regular consumption to shorter lifespan",
+        "pros": [
+          "Occasional consumption unlikely to harm longevity",
+          "Zero calories in diet versions",
+          "Social enjoyment has mental health benefits"
+        ],
+        "cons": [
+          "Daily consumption linked to increased mortality",
+          "Sugar accelerates cellular aging",
+          "Associated with obesity, diabetes, and heart disease"
+        ]
+      }
+    }
+  },
+  "energy_drink": {
+    "name": "Energy drink",
+    "calories": 45,
+    "protein": 0.0,
+    "carbs": 11.3,
+    "fat": 0.0,
+    "fiber": 0.0,
+    "sugar": 10.9,
+    "sodium": 85,
+    "cholesterol": 0,
+    "saturatedFat": 0.0,
+    "transFat": 0.0,
+    "polyunsaturatedFat": 0.0,
+    "monounsaturatedFat": 0.0,
+    "potassium": 8,
+    "calcium": 3,
+    "iron": 0.0,
+    "vitaminA": 0,
+    "vitaminC": 0.0,
+    "vitaminD": 0.0,
+    "vitaminE": 0.0,
+    "vitaminK": 0.0,
+    "thiamin": 0.0,
+    "riboflavin": 0.58,
+    "niacin": 6.8,
+    "vitaminB6": 0.68,
+    "folate": 0,
+    "vitaminB12": 1.7,
+    "magnesium": 3,
+    "phosphorus": 7,
+    "zinc": 0.0,
+    "selenium": 0.0,
+    "copper": 0.0,
+    "manganese": 0.0,
+    "focusGrades": {
+      "balanced": {
+        "grade": "F",
+        "score": 12,
+        "insight": "High caffeine and sugar with minimal nutritional value",
+        "pros": [
+          "Contains B vitamins (B6, B12, niacin)",
+          "Zero fat and cholesterol",
+          "Provides quick energy boost"
+        ],
+        "cons": [
+          "10.9g sugar provides empty calories",
+          "High caffeine (80-150mg) can cause jitters",
+          "Artificial additives and stimulants"
+        ]
+      },
+      "low_carb": {
+        "grade": "F",
+        "score": 5,
+        "insight": "High sugar content makes this carb-heavy",
+        "pros": [
+          "Sugar-free versions widely available",
+          "Some carbs beneficial before intense exercise",
+          "Zero fat content"
+        ],
+        "cons": [
+          "11.3g carbs (all from sugar)",
+          "No fiber to slow absorption",
+          "Rapid blood glucose spike"
+        ]
+      },
+      "high_protein": {
+        "grade": "F",
+        "score": 0,
+        "insight": "Contains zero protein",
+        "pros": [
+          "Can be paired with protein shake",
+          "Doesn't interfere with protein digestion",
+          "B vitamins support protein metabolism"
+        ],
+        "cons": [
+          "0g protein - completely absent",
+          "Wasted calorie opportunity",
+          "No amino acids for muscle support"
+        ]
+      },
+      "low_fat": {
+        "grade": "A+",
+        "score": 100,
+        "insight": "Completely fat-free beverage",
+        "pros": [
+          "0g total fat",
+          "0g saturated fat",
+          "0g trans fat"
+        ],
+        "cons": [
+          "Fat-free doesn't equal healthy",
+          "Sugar and caffeine are real concerns",
+          "No beneficial omega-3s"
+        ]
+      },
+      "heart_healthy": {
+        "grade": "F",
+        "score": 10,
+        "insight": "Caffeine and sugar stress cardiovascular system",
+        "pros": [
+          "B vitamins support heart health",
+          "Zero cholesterol and saturated fat",
+          "Some antioxidants from herbal extracts"
+        ],
+        "cons": [
+          "High caffeine increases heart rate and blood pressure",
+          "Sugar damages blood vessels over time",
+          "Linked to arrhythmias in some cases"
+        ]
+      },
+      "diabetic_friendly": {
+        "grade": "F",
+        "score": 3,
+        "insight": "Sugar causes rapid blood glucose spike",
+        "pros": [
+          "Sugar-free versions available",
+          "B vitamins support glucose metabolism",
+          "Can treat hypoglycemia quickly"
+        ],
+        "cons": [
+          "10.9g sugar spikes blood glucose",
+          "No fiber or protein to buffer absorption",
+          "Caffeine can affect insulin sensitivity"
+        ]
+      },
+      "anti_inflammatory": {
+        "grade": "D-",
+        "score": 28,
+        "insight": "Sugar promotes inflammation despite some beneficial additives",
+        "pros": [
+          "Some contain green tea extract (anti-inflammatory)",
+          "B vitamins reduce homocysteine (inflammatory marker)",
+          "Taurine has anti-inflammatory properties"
+        ],
+        "cons": [
+          "High sugar triggers inflammation",
+          "Artificial additives may promote inflammation",
+          "Caffeine excess can increase cortisol"
+        ]
+      },
+      "gut_health": {
+        "grade": "D-",
+        "score": 25,
+        "insight": "Artificial ingredients and sugar disrupt gut microbiome",
+        "pros": [
+          "Some versions contain probiotics",
+          "Carbonation may aid digestion",
+          "B vitamins support gut lining health"
+        ],
+        "cons": [
+          "0g fiber - nothing for gut bacteria",
+          "Artificial sweeteners (in sugar-free) harm microbiome",
+          "High sugar feeds pathogenic bacteria"
+        ]
+      },
+      "athletic_performance": {
+        "grade": "C+",
+        "score": 68,
+        "insight": "Effective pre-workout boost but risks outweigh benefits",
+        "pros": [
+          "Caffeine improves endurance and power output",
+          "B vitamins support energy production",
+          "Quick carbs for immediate energy"
+        ],
+        "cons": [
+          "Excessive caffeine can impair performance via jitters",
+          "Sugar crash during prolonged activity",
+          "Dehydrating effect from caffeine"
+        ]
+      },
+      "longevity": {
+        "grade": "F",
+        "score": 8,
+        "insight": "Regular consumption linked to health risks",
+        "pros": [
+          "B vitamins support cellular health",
+          "Occasional use unlikely to harm longevity",
+          "Some antioxidants from herbal extracts"
+        ],
+        "cons": [
+          "Chronic high caffeine intake stresses organs",
+          "Sugar accelerates aging processes",
+          "Linked to cardiovascular events in some studies"
+        ]
+      }
+    }
+  },
+  "smoothie": {
+    "name": "Fruit smoothie",
+    "calories": 68,
+    "protein": 2.3,
+    "carbs": 14.8,
+    "fat": 0.5,
+    "fiber": 1.2,
+    "sugar": 12.9,
+    "sodium": 35,
+    "cholesterol": 2,
+    "saturatedFat": 0.2,
+    "transFat": 0.0,
+    "polyunsaturatedFat": 0.1,
+    "monounsaturatedFat": 0.1,
+    "potassium": 189,
+    "calcium": 88,
+    "iron": 0.3,
+    "vitaminA": 32,
+    "vitaminC": 17.8,
+    "vitaminD": 0.5,
+    "vitaminE": 0.2,
+    "vitaminK": 0.8,
+    "thiamin": 0.05,
+    "riboflavin": 0.15,
+    "niacin": 0.4,
+    "vitaminB6": 0.12,
+    "folate": 12,
+    "vitaminB12": 0.3,
+    "magnesium": 15,
+    "phosphorus": 78,
+    "zinc": 0.4,
+    "selenium": 2.1,
+    "copper": 0.04,
+    "manganese": 0.08,
+    "focusGrades": {
+      "balanced": {
+        "grade": "B",
+        "score": 76,
+        "insight": "Nutrient-dense beverage with whole fruit benefits",
+        "pros": [
+          "Contains whole fruits with vitamins (17.8mg vitamin C)",
+          "Good potassium content (189mg)",
+          "Calcium from yogurt or milk (88mg)"
+        ],
+        "cons": [
+          "12.9g sugar (though from whole fruit)",
+          "Low in protein unless boosted (2.3g)",
+          "Liquid form reduces satiety vs. whole fruit"
+        ]
+      },
+      "low_carb": {
+        "grade": "C-",
+        "score": 56,
+        "insight": "Moderate carbs from natural fruit sugars",
+        "pros": [
+          "Natural fruit sugars with fiber (1.2g)",
+          "Can be made low-carb with berries and greens",
+          "Protein helps balance carb impact"
+        ],
+        "cons": [
+          "14.8g carbs from fruit",
+          "Blending breaks down fiber structure",
+          "Easy to over-consume fruit sugars"
+        ]
+      },
+      "high_protein": {
+        "grade": "C-",
+        "score": 58,
+        "insight": "Low protein unless specifically fortified",
+        "pros": [
+          "2.3g protein from yogurt or milk base",
+          "Easy to boost with protein powder",
+          "Complete protein if dairy-based"
+        ],
+        "cons": [
+          "Only 14% of calories from protein",
+          "Needs protein powder to be significant source",
+          "Fruit-only smoothies have almost no protein"
+        ]
+      },
+      "low_fat": {
+        "grade": "A",
+        "score": 92,
+        "insight": "Very low fat content from whole ingredients",
+        "pros": [
+          "Only 0.5g total fat",
+          "0.2g saturated fat (minimal)",
+          "Naturally low-fat from fruit and low-fat dairy"
+        ],
+        "cons": [
+          "May lack satiety without some fat",
+          "Adding nuts/seeds increases fat (but healthy)",
+          "Very low fat can reduce vitamin absorption"
+        ]
+      },
+      "heart_healthy": {
+        "grade": "A-",
+        "score": 85,
+        "insight": "Excellent for cardiovascular health with whole fruits",
+        "pros": [
+          "High potassium (189mg) supports blood pressure",
+          "Vitamin C (17.8mg) protects blood vessels",
+          "Antioxidants from berries reduce inflammation"
+        ],
+        "cons": [
+          "Fruit sugars can raise triglycerides if excessive",
+          "Lacks omega-3s unless seeds added",
+          "Some commercial versions high in added sugar"
+        ]
+      },
+      "diabetic_friendly": {
+        "grade": "C+",
+        "score": 65,
+        "insight": "Fiber helps but liquid form raises glycemic index",
+        "pros": [
+          "1.2g fiber slows sugar absorption",
+          "Protein and fat buffer glucose response",
+          "Can control portions and ingredients"
+        ],
+        "cons": [
+          "12.9g natural sugars still affect blood glucose",
+          "Blending increases glycemic index vs. whole fruit",
+          "Easy to over-consume fruit in liquid form"
+        ]
+      },
+      "anti_inflammatory": {
+        "grade": "A-",
+        "score": 87,
+        "insight": "Rich in anti-inflammatory antioxidants from fruit",
+        "pros": [
+          "Berries contain powerful anti-inflammatory compounds",
+          "Vitamin C reduces oxidative stress",
+          "Polyphenols from fruits fight inflammation"
+        ],
+        "cons": [
+          "High fruit sugar may promote inflammation if excessive",
+          "Benefits maximized with berries vs. tropical fruits",
+          "Commercial versions may have pro-inflammatory additives"
+        ]
+      },
+      "gut_health": {
+        "grade": "B+",
+        "score": 82,
+        "insight": "Good fiber and probiotics support digestive health",
+        "pros": [
+          "1.2g fiber feeds beneficial gut bacteria",
+          "Yogurt provides probiotics (if included)",
+          "Fruit prebiotics nourish microbiome"
+        ],
+        "cons": [
+          "Blending reduces fiber effectiveness vs. whole fruit",
+          "High sugar can feed harmful bacteria",
+          "Should have 3-5g fiber for optimal gut health"
+        ]
+      },
+      "athletic_performance": {
+        "grade": "B+",
+        "score": 83,
+        "insight": "Excellent pre or post-workout nutrition",
+        "pros": [
+          "Quick-digesting carbs for energy (14.8g)",
+          "Potassium prevents muscle cramps (189mg)",
+          "Easy to digest before exercise"
+        ],
+        "cons": [
+          "Low protein needs boost for recovery",
+          "May need more calories for intense training",
+          "Liquid form digests faster than ideal for long events"
+        ]
+      },
+      "longevity": {
+        "grade": "A",
+        "score": 88,
+        "insight": "Aligns perfectly with longevity diet principles",
+        "pros": [
+          "High in antioxidants that combat aging",
+          "Vitamin C supports collagen and immune function",
+          "Whole fruits linked to increased lifespan"
+        ],
+        "cons": [
+          "Excess fruit sugar may accelerate aging",
+          "Whole fruits slightly better than blended",
+          "Commercial versions often have added sugars"
+        ]
+      }
+    }
+  }
+}

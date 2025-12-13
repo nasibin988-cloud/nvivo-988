@@ -368,6 +368,22 @@
       "pregnancy_lactation": null,
       "source": "FDA Guidance",
       "notes": ["DV for voluntary labeling only; not mandated on Nutrition Facts label"]
+    },
+    {
+      "nutrientId": "epa_dha",
+      "unit": "mg",
+      "adults_and_children_4plus": null,
+      "children_1_3": null,
+      "infants": null,
+      "pregnancy_lactation": null,
+      "source": "No FDA DV established",
+      "expertRecommendation": {
+        "adults": 500,
+        "pregnancy": 300,
+        "heartDisease": 1000,
+        "source": "AHA 2021"
+      },
+      "notes": ["No FDA DV; AHA recommends 500mg/day (2 servings fatty fish/week) for healthy adults", "Show expert recommendation instead of %DV"]
     }
   ],
   "percentDvClassification": {

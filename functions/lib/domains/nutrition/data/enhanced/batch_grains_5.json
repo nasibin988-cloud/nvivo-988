@@ -1,0 +1,958 @@
+{
+    "foods": [
+        {
+            "id": "pancakes",
+            "name": "Pancakes",
+            "category": "grains",
+            "commonNames": ["pancake", "hotcakes", "flapjacks", "griddle cakes"],
+            "isGlutenFree": false,
+            "nutritionPer100g": {
+                "calories": 227,
+                "protein": 6.4,
+                "carbs": 28.3,
+                "fat": 9.7,
+                "fiber": 1.4,
+                "sugar": 6.2,
+                "sodium": 439,
+                "cholesterol": 42,
+                "saturatedFat": 2.1,
+                "transFat": 0.1,
+                "polyunsaturatedFat": 2.8,
+                "monounsaturatedFat": 4.2,
+                "potassium": 154,
+                "calcium": 121,
+                "iron": 1.8,
+                "vitaminA": 98,
+                "vitaminC": 0.2,
+                "vitaminD": 0.3,
+                "vitaminE": 1.1,
+                "vitaminK": 3.2,
+                "thiamin": 0.22,
+                "riboflavin": 0.24,
+                "niacin": 1.9,
+                "vitaminB6": 0.06,
+                "folate": 43,
+                "vitaminB12": 0.26,
+                "magnesium": 17,
+                "phosphorus": 152,
+                "zinc": 0.5,
+                "selenium": 12.8,
+                "copper": 0.06,
+                "manganese": 0.24
+            },
+            "servingSizes": [
+                {
+                    "name": "1 pancake (4 inch diameter)",
+                    "grams": 38,
+                    "isDefault": true
+                },
+                {
+                    "name": "1 large pancake (6 inch diameter)",
+                    "grams": 77,
+                    "isDefault": false
+                },
+                {
+                    "name": "3 pancakes (4 inch)",
+                    "grams": 114,
+                    "isDefault": false
+                }
+            ],
+            "glycemicIndex": 67,
+            "glycemicLoad": 19,
+            "insulinIndex": 82,
+            "allergens": ["gluten", "wheat", "eggs", "milk"],
+            "tags": ["breakfast", "refined-grains", "high-sodium"],
+            "sustainabilityScore": 6.5,
+            "inflammationScore": -1.2,
+            "focusGrades": {
+                "heart": {
+                    "grade": "D",
+                    "score": 42,
+                    "reasoning": "High in sodium (439mg/100g) and refined carbohydrates with moderate saturated fat. Contains cholesterol (42mg/100g). Low fiber content and high glycemic index contribute to poor cardiovascular profile.",
+                    "keyNutrients": {
+                        "positive": ["calcium", "phosphorus"],
+                        "negative": ["sodium", "saturatedFat", "cholesterol", "refinedCarbs"]
+                    }
+                },
+                "metabolic": {
+                    "grade": "D",
+                    "score": 38,
+                    "reasoning": "High glycemic index (67) and glycemic load (19) cause rapid blood sugar spikes. Very high insulin index (82) stresses pancreatic function. Low fiber (1.4g) and high refined carbs worsen metabolic impact.",
+                    "keyNutrients": {
+                        "positive": ["protein", "B-vitamins"],
+                        "negative": ["glycemicIndex", "refinedCarbs", "sugar", "lowFiber"]
+                    }
+                },
+                "gut": {
+                    "grade": "D",
+                    "score": 35,
+                    "reasoning": "Very low fiber content (1.4g/100g) provides minimal prebiotic benefit. Made from refined flour lacking beneficial compounds for gut microbiome. High sodium may disrupt gut bacterial balance.",
+                    "keyNutrients": {
+                        "positive": ["calcium"],
+                        "negative": ["lowFiber", "refinedGrains", "sodium"]
+                    }
+                },
+                "inflammation": {
+                    "grade": "C",
+                    "score": 48,
+                    "reasoning": "Negative inflammation score (-1.2) due to refined grains and high glycemic response. Contains some anti-inflammatory B-vitamins and selenium but overall pro-inflammatory due to refined carbohydrate content.",
+                    "keyNutrients": {
+                        "positive": ["selenium", "B-vitamins"],
+                        "negative": ["refinedGrains", "highGI", "omega6"]
+                    }
+                },
+                "brain": {
+                    "grade": "C",
+                    "score": 52,
+                    "reasoning": "Provides B-vitamins (thiamin, riboflavin, niacin, B12) supporting cognitive function. However, high glycemic response causes blood sugar fluctuations affecting mental clarity and focus.",
+                    "keyNutrients": {
+                        "positive": ["B-vitamins", "phosphorus", "selenium"],
+                        "negative": ["highGI", "refinedCarbs", "bloodSugarSpikes"]
+                    }
+                },
+                "energy": {
+                    "grade": "C",
+                    "score": 55,
+                    "reasoning": "Quick energy from refined carbohydrates but leads to energy crashes. High insulin response followed by hypoglycemia. B-vitamins support energy metabolism but lack of fiber causes unstable energy levels.",
+                    "keyNutrients": {
+                        "positive": ["carbs", "B-vitamins", "iron"],
+                        "negative": ["highGI", "lowFiber", "energyCrash"]
+                    }
+                },
+                "immune": {
+                    "grade": "C",
+                    "score": 51,
+                    "reasoning": "Contains selenium (12.8mcg), zinc (0.5mg), and B-vitamins supporting immune function. However, refined grains and high glycemic load may temporarily suppress immune response. Moderate vitamin A content.",
+                    "keyNutrients": {
+                        "positive": ["selenium", "zinc", "vitaminA", "B-vitamins"],
+                        "negative": ["refinedGrains", "lowAntioxidants"]
+                    }
+                },
+                "bone": {
+                    "grade": "B",
+                    "score": 68,
+                    "reasoning": "Good source of calcium (121mg/100g) and phosphorus (152mg/100g) for bone health. Contains vitamin D (0.3mcg) though fortification varies. Provides magnesium and manganese for bone matrix.",
+                    "keyNutrients": {
+                        "positive": ["calcium", "phosphorus", "vitaminD", "magnesium", "manganese"],
+                        "negative": ["highSodium"]
+                    }
+                },
+                "longevity": {
+                    "grade": "D",
+                    "score": 40,
+                    "reasoning": "Refined grain-based food with high glycemic impact associated with accelerated aging. High sodium and low antioxidant content. Lack of fiber and phytonutrients limits longevity benefits.",
+                    "keyNutrients": {
+                        "positive": ["selenium", "B-vitamins"],
+                        "negative": ["refinedGrains", "highGI", "lowFiber", "highSodium"]
+                    }
+                },
+                "athletic": {
+                    "grade": "C",
+                    "score": 58,
+                    "reasoning": "Provides quick-digesting carbohydrates for immediate energy. Good pre-workout option for rapid fuel but poor post-workout due to lack of protein and nutrients for recovery. B-vitamins support energy metabolism.",
+                    "keyNutrients": {
+                        "positive": ["carbs", "B-vitamins", "phosphorus", "iron"],
+                        "negative": ["lowProtein", "lowFiber", "highSodium"]
+                    }
+                }
+            },
+            "healthScore": 48,
+            "notes": "Traditional pancakes made with refined white flour, eggs, milk, and leavening agents. Often served with butter and syrup adding additional calories and sugar. Whole grain versions provide better nutritional profile."
+        },
+        {
+            "id": "waffle",
+            "name": "Waffle",
+            "category": "grains",
+            "commonNames": ["waffles", "belgian waffle", "wafel"],
+            "isGlutenFree": false,
+            "nutritionPer100g": {
+                "calories": 291,
+                "protein": 7.0,
+                "carbs": 33.8,
+                "fat": 13.6,
+                "fiber": 1.5,
+                "sugar": 8.1,
+                "sodium": 511,
+                "cholesterol": 52,
+                "saturatedFat": 2.8,
+                "transFat": 0.2,
+                "polyunsaturatedFat": 3.5,
+                "monounsaturatedFat": 5.8,
+                "potassium": 134,
+                "calcium": 119,
+                "iron": 2.3,
+                "vitaminA": 115,
+                "vitaminC": 0.1,
+                "vitaminD": 0.4,
+                "vitaminE": 1.4,
+                "vitaminK": 4.1,
+                "thiamin": 0.25,
+                "riboflavin": 0.26,
+                "niacin": 2.1,
+                "vitaminB6": 0.05,
+                "folate": 52,
+                "vitaminB12": 0.31,
+                "magnesium": 16,
+                "phosphorus": 155,
+                "zinc": 0.6,
+                "selenium": 14.2,
+                "copper": 0.07,
+                "manganese": 0.28
+            },
+            "servingSizes": [
+                {
+                    "name": "1 waffle (7 inch diameter)",
+                    "grams": 75,
+                    "isDefault": true
+                },
+                {
+                    "name": "1 small waffle (4 inch square)",
+                    "grams": 33,
+                    "isDefault": false
+                },
+                {
+                    "name": "2 waffles (7 inch)",
+                    "grams": 150,
+                    "isDefault": false
+                }
+            ],
+            "glycemicIndex": 76,
+            "glycemicLoad": 26,
+            "insulinIndex": 85,
+            "allergens": ["gluten", "wheat", "eggs", "milk"],
+            "tags": ["breakfast", "refined-grains", "high-sodium", "high-fat"],
+            "sustainabilityScore": 6.2,
+            "inflammationScore": -1.5,
+            "focusGrades": {
+                "heart": {
+                    "grade": "D",
+                    "score": 35,
+                    "reasoning": "Very high in sodium (511mg/100g) and saturated fat (2.8g). High cholesterol content (52mg/100g). Higher fat content than pancakes with concerning trans fat presence. Refined carbohydrates and high glycemic impact.",
+                    "keyNutrients": {
+                        "positive": ["calcium", "phosphorus"],
+                        "negative": ["sodium", "saturatedFat", "cholesterol", "transFat", "refinedCarbs"]
+                    }
+                },
+                "metabolic": {
+                    "grade": "D",
+                    "score": 32,
+                    "reasoning": "Very high glycemic index (76) and glycemic load (26) causing severe blood sugar spikes. Extremely high insulin index (85). Higher calorie density (291 kcal/100g) and fat content increase metabolic burden.",
+                    "keyNutrients": {
+                        "positive": ["protein", "B-vitamins"],
+                        "negative": ["glycemicIndex", "glycemicLoad", "refinedCarbs", "highCalories", "lowFiber"]
+                    }
+                },
+                "gut": {
+                    "grade": "D",
+                    "score": 33,
+                    "reasoning": "Minimal fiber (1.5g/100g) provides negligible prebiotic support. Refined flour depletes beneficial gut bacteria. Very high sodium (511mg) disrupts intestinal microbiome balance and increases inflammation.",
+                    "keyNutrients": {
+                        "positive": ["calcium"],
+                        "negative": ["lowFiber", "refinedGrains", "highSodium"]
+                    }
+                },
+                "inflammation": {
+                    "grade": "D",
+                    "score": 42,
+                    "reasoning": "Negative inflammation score (-1.5) from refined grains, high glycemic load, and omega-6 fatty acids. Contains trans fat (0.2g) which is highly pro-inflammatory. High sodium exacerbates inflammatory response.",
+                    "keyNutrients": {
+                        "positive": ["selenium", "B-vitamins"],
+                        "negative": ["refinedGrains", "transFat", "highGI", "omega6", "sodium"]
+                    }
+                },
+                "brain": {
+                    "grade": "C",
+                    "score": 49,
+                    "reasoning": "Provides B-vitamins for cognitive support but very high glycemic response causes severe blood sugar fluctuations. Trans fats negatively impact cognitive function and brain health. Energy crashes affect focus.",
+                    "keyNutrients": {
+                        "positive": ["B-vitamins", "phosphorus", "selenium", "iron"],
+                        "negative": ["highGI", "transFat", "bloodSugarSpikes", "refinedCarbs"]
+                    }
+                },
+                "energy": {
+                    "grade": "C",
+                    "score": 51,
+                    "reasoning": "High calorie density provides energy but refined carbs and very high GI lead to rapid energy crash. Fat content slows digestion slightly but overall poor for sustained energy. B-vitamins support metabolism.",
+                    "keyNutrients": {
+                        "positive": ["calories", "carbs", "B-vitamins", "iron"],
+                        "negative": ["highGI", "glycemicLoad", "lowFiber", "energyCrash"]
+                    }
+                },
+                "immune": {
+                    "grade": "C",
+                    "score": 48,
+                    "reasoning": "Contains selenium (14.2mcg) and zinc (0.6mg) for immune support. B-vitamins and iron contribute to immune function. However, trans fats and high glycemic load may temporarily impair immune response.",
+                    "keyNutrients": {
+                        "positive": ["selenium", "zinc", "vitaminA", "B-vitamins", "iron"],
+                        "negative": ["transFat", "refinedGrains", "highGI"]
+                    }
+                },
+                "bone": {
+                    "grade": "B",
+                    "score": 66,
+                    "reasoning": "Good calcium (119mg/100g) and phosphorus (155mg/100g) content. Contains vitamin D (0.4mcg) and vitamin K (4.1mcg) for bone metabolism. Provides magnesium and manganese but high sodium may increase calcium loss.",
+                    "keyNutrients": {
+                        "positive": ["calcium", "phosphorus", "vitaminD", "vitaminK", "magnesium", "manganese"],
+                        "negative": ["highSodium"]
+                    }
+                },
+                "longevity": {
+                    "grade": "D",
+                    "score": 36,
+                    "reasoning": "Refined grain food with very high glycemic impact linked to accelerated aging and chronic disease. Trans fats and high sodium negatively impact longevity. Low antioxidant and fiber content.",
+                    "keyNutrients": {
+                        "positive": ["selenium", "B-vitamins"],
+                        "negative": ["refinedGrains", "transFat", "highGI", "highSodium", "lowFiber"]
+                    }
+                },
+                "athletic": {
+                    "grade": "C",
+                    "score": 55,
+                    "reasoning": "High calorie and carbohydrate content for energy but very high GI causes blood sugar instability. Higher fat content may cause digestive discomfort during exercise. Better as pre-workout than recovery food.",
+                    "keyNutrients": {
+                        "positive": ["calories", "carbs", "B-vitamins", "iron", "phosphorus"],
+                        "negative": ["highGI", "highFat", "lowProtein", "lowFiber"]
+                    }
+                }
+            },
+            "healthScore": 44,
+            "notes": "Traditional waffles made with refined flour, eggs, milk, butter/oil, and leavening. Higher in fat and calories than pancakes due to butter/oil content. Often served with syrup and whipped cream adding significant calories."
+        },
+        {
+            "id": "waffles",
+            "name": "Waffles",
+            "category": "grains",
+            "commonNames": ["waffle", "belgian waffles", "wafel"],
+            "isGlutenFree": false,
+            "nutritionPer100g": {
+                "calories": 291,
+                "protein": 7.0,
+                "carbs": 33.8,
+                "fat": 13.6,
+                "fiber": 1.5,
+                "sugar": 8.1,
+                "sodium": 511,
+                "cholesterol": 52,
+                "saturatedFat": 2.8,
+                "transFat": 0.2,
+                "polyunsaturatedFat": 3.5,
+                "monounsaturatedFat": 5.8,
+                "potassium": 134,
+                "calcium": 119,
+                "iron": 2.3,
+                "vitaminA": 115,
+                "vitaminC": 0.1,
+                "vitaminD": 0.4,
+                "vitaminE": 1.4,
+                "vitaminK": 4.1,
+                "thiamin": 0.25,
+                "riboflavin": 0.26,
+                "niacin": 2.1,
+                "vitaminB6": 0.05,
+                "folate": 52,
+                "vitaminB12": 0.31,
+                "magnesium": 16,
+                "phosphorus": 155,
+                "zinc": 0.6,
+                "selenium": 14.2,
+                "copper": 0.07,
+                "manganese": 0.28
+            },
+            "servingSizes": [
+                {
+                    "name": "1 waffle (7 inch diameter)",
+                    "grams": 75,
+                    "isDefault": true
+                },
+                {
+                    "name": "1 small waffle (4 inch square)",
+                    "grams": 33,
+                    "isDefault": false
+                },
+                {
+                    "name": "2 waffles (7 inch)",
+                    "grams": 150,
+                    "isDefault": false
+                }
+            ],
+            "glycemicIndex": 76,
+            "glycemicLoad": 26,
+            "insulinIndex": 85,
+            "allergens": ["gluten", "wheat", "eggs", "milk"],
+            "tags": ["breakfast", "refined-grains", "high-sodium", "high-fat"],
+            "sustainabilityScore": 6.2,
+            "inflammationScore": -1.5,
+            "focusGrades": {
+                "heart": {
+                    "grade": "D",
+                    "score": 35,
+                    "reasoning": "Very high in sodium (511mg/100g) and saturated fat (2.8g). High cholesterol content (52mg/100g). Higher fat content than pancakes with concerning trans fat presence. Refined carbohydrates and high glycemic impact.",
+                    "keyNutrients": {
+                        "positive": ["calcium", "phosphorus"],
+                        "negative": ["sodium", "saturatedFat", "cholesterol", "transFat", "refinedCarbs"]
+                    }
+                },
+                "metabolic": {
+                    "grade": "D",
+                    "score": 32,
+                    "reasoning": "Very high glycemic index (76) and glycemic load (26) causing severe blood sugar spikes. Extremely high insulin index (85). Higher calorie density (291 kcal/100g) and fat content increase metabolic burden.",
+                    "keyNutrients": {
+                        "positive": ["protein", "B-vitamins"],
+                        "negative": ["glycemicIndex", "glycemicLoad", "refinedCarbs", "highCalories", "lowFiber"]
+                    }
+                },
+                "gut": {
+                    "grade": "D",
+                    "score": 33,
+                    "reasoning": "Minimal fiber (1.5g/100g) provides negligible prebiotic support. Refined flour depletes beneficial gut bacteria. Very high sodium (511mg) disrupts intestinal microbiome balance and increases inflammation.",
+                    "keyNutrients": {
+                        "positive": ["calcium"],
+                        "negative": ["lowFiber", "refinedGrains", "highSodium"]
+                    }
+                },
+                "inflammation": {
+                    "grade": "D",
+                    "score": 42,
+                    "reasoning": "Negative inflammation score (-1.5) from refined grains, high glycemic load, and omega-6 fatty acids. Contains trans fat (0.2g) which is highly pro-inflammatory. High sodium exacerbates inflammatory response.",
+                    "keyNutrients": {
+                        "positive": ["selenium", "B-vitamins"],
+                        "negative": ["refinedGrains", "transFat", "highGI", "omega6", "sodium"]
+                    }
+                },
+                "brain": {
+                    "grade": "C",
+                    "score": 49,
+                    "reasoning": "Provides B-vitamins for cognitive support but very high glycemic response causes severe blood sugar fluctuations. Trans fats negatively impact cognitive function and brain health. Energy crashes affect focus.",
+                    "keyNutrients": {
+                        "positive": ["B-vitamins", "phosphorus", "selenium", "iron"],
+                        "negative": ["highGI", "transFat", "bloodSugarSpikes", "refinedCarbs"]
+                    }
+                },
+                "energy": {
+                    "grade": "C",
+                    "score": 51,
+                    "reasoning": "High calorie density provides energy but refined carbs and very high GI lead to rapid energy crash. Fat content slows digestion slightly but overall poor for sustained energy. B-vitamins support metabolism.",
+                    "keyNutrients": {
+                        "positive": ["calories", "carbs", "B-vitamins", "iron"],
+                        "negative": ["highGI", "glycemicLoad", "lowFiber", "energyCrash"]
+                    }
+                },
+                "immune": {
+                    "grade": "C",
+                    "score": 48,
+                    "reasoning": "Contains selenium (14.2mcg) and zinc (0.6mg) for immune support. B-vitamins and iron contribute to immune function. However, trans fats and high glycemic load may temporarily impair immune response.",
+                    "keyNutrients": {
+                        "positive": ["selenium", "zinc", "vitaminA", "B-vitamins", "iron"],
+                        "negative": ["transFat", "refinedGrains", "highGI"]
+                    }
+                },
+                "bone": {
+                    "grade": "B",
+                    "score": 66,
+                    "reasoning": "Good calcium (119mg/100g) and phosphorus (155mg/100g) content. Contains vitamin D (0.4mcg) and vitamin K (4.1mcg) for bone metabolism. Provides magnesium and manganese but high sodium may increase calcium loss.",
+                    "keyNutrients": {
+                        "positive": ["calcium", "phosphorus", "vitaminD", "vitaminK", "magnesium", "manganese"],
+                        "negative": ["highSodium"]
+                    }
+                },
+                "longevity": {
+                    "grade": "D",
+                    "score": 36,
+                    "reasoning": "Refined grain food with very high glycemic impact linked to accelerated aging and chronic disease. Trans fats and high sodium negatively impact longevity. Low antioxidant and fiber content.",
+                    "keyNutrients": {
+                        "positive": ["selenium", "B-vitamins"],
+                        "negative": ["refinedGrains", "transFat", "highGI", "highSodium", "lowFiber"]
+                    }
+                },
+                "athletic": {
+                    "grade": "C",
+                    "score": 55,
+                    "reasoning": "High calorie and carbohydrate content for energy but very high GI causes blood sugar instability. Higher fat content may cause digestive discomfort during exercise. Better as pre-workout than recovery food.",
+                    "keyNutrients": {
+                        "positive": ["calories", "carbs", "B-vitamins", "iron", "phosphorus"],
+                        "negative": ["highGI", "highFat", "lowProtein", "lowFiber"]
+                    }
+                }
+            },
+            "healthScore": 44,
+            "notes": "Plural form entry for waffles. Traditional waffles made with refined flour, eggs, milk, butter/oil, and leavening. Higher in fat and calories than pancakes due to butter/oil content. Often served with syrup and whipped cream."
+        },
+        {
+            "id": "muffin",
+            "name": "Muffin",
+            "category": "grains",
+            "commonNames": ["blueberry muffin", "bran muffin", "corn muffin", "english muffin"],
+            "isGlutenFree": false,
+            "nutritionPer100g": {
+                "calories": 305,
+                "protein": 5.3,
+                "carbs": 48.4,
+                "fat": 10.2,
+                "fiber": 2.6,
+                "sugar": 22.8,
+                "sodium": 397,
+                "cholesterol": 28,
+                "saturatedFat": 1.8,
+                "transFat": 0.1,
+                "polyunsaturatedFat": 2.9,
+                "monounsaturatedFat": 4.8,
+                "potassium": 142,
+                "calcium": 76,
+                "iron": 1.9,
+                "vitaminA": 72,
+                "vitaminC": 0.8,
+                "vitaminD": 0.2,
+                "vitaminE": 1.8,
+                "vitaminK": 2.1,
+                "thiamin": 0.21,
+                "riboflavin": 0.19,
+                "niacin": 1.7,
+                "vitaminB6": 0.04,
+                "folate": 38,
+                "vitaminB12": 0.15,
+                "magnesium": 22,
+                "phosphorus": 118,
+                "zinc": 0.6,
+                "selenium": 11.5,
+                "copper": 0.09,
+                "manganese": 0.31
+            },
+            "servingSizes": [
+                {
+                    "name": "1 medium muffin",
+                    "grams": 57,
+                    "isDefault": true
+                },
+                {
+                    "name": "1 large muffin",
+                    "grams": 113,
+                    "isDefault": false
+                },
+                {
+                    "name": "1 mini muffin",
+                    "grams": 11,
+                    "isDefault": false
+                }
+            ],
+            "glycemicIndex": 59,
+            "glycemicLoad": 29,
+            "insulinIndex": 78,
+            "allergens": ["gluten", "wheat", "eggs", "milk"],
+            "tags": ["breakfast", "snack", "high-sugar", "refined-grains", "baked-goods"],
+            "sustainabilityScore": 6.8,
+            "inflammationScore": -1.8,
+            "focusGrades": {
+                "heart": {
+                    "grade": "D",
+                    "score": 38,
+                    "reasoning": "Very high in added sugar (22.8g/100g) and sodium (397mg). Contains saturated fat and cholesterol. High calorie density (305 kcal) and refined carbohydrates increase cardiovascular risk. Minimal heart-healthy nutrients.",
+                    "keyNutrients": {
+                        "positive": ["magnesium", "potassium"],
+                        "negative": ["sugar", "sodium", "saturatedFat", "cholesterol", "refinedCarbs"]
+                    }
+                },
+                "metabolic": {
+                    "grade": "D",
+                    "score": 28,
+                    "reasoning": "Extremely high sugar content (22.8g) and very high glycemic load (29) despite moderate GI. High insulin index (78) stresses pancreatic function. High calorie density and low protein promote weight gain and insulin resistance.",
+                    "keyNutrients": {
+                        "positive": ["fiber", "magnesium"],
+                        "negative": ["sugar", "glycemicLoad", "refinedCarbs", "highCalories", "lowProtein"]
+                    }
+                },
+                "gut": {
+                    "grade": "D",
+                    "score": 40,
+                    "reasoning": "Low fiber (2.6g/100g) provides minimal prebiotic benefit. Very high sugar content feeds pathogenic bacteria and disrupts microbiome balance. Refined grains lack beneficial compounds for gut health.",
+                    "keyNutrients": {
+                        "positive": ["fiber"],
+                        "negative": ["highSugar", "refinedGrains", "lowPrebiotic"]
+                    }
+                },
+                "inflammation": {
+                    "grade": "D",
+                    "score": 36,
+                    "reasoning": "Very negative inflammation score (-1.8) from high sugar, refined grains, and omega-6 fatty acids. High glycemic load triggers inflammatory response. Trans fats present. Minimal anti-inflammatory compounds.",
+                    "keyNutrients": {
+                        "positive": ["selenium", "vitaminE"],
+                        "negative": ["sugar", "refinedGrains", "transFat", "omega6", "highGI"]
+                    }
+                },
+                "brain": {
+                    "grade": "D",
+                    "score": 43,
+                    "reasoning": "Very high sugar content causes severe blood sugar fluctuations affecting cognitive function. Moderate GI but very high glycemic load. Some B-vitamins support brain function but negated by sugar's negative effects on focus and memory.",
+                    "keyNutrients": {
+                        "positive": ["B-vitamins", "selenium", "iron"],
+                        "negative": ["highSugar", "glycemicLoad", "bloodSugarSpikes", "refinedCarbs"]
+                    }
+                },
+                "energy": {
+                    "grade": "D",
+                    "score": 45,
+                    "reasoning": "High calorie and sugar content provides quick energy spike followed by severe crash. Very high glycemic load causes blood sugar rollercoaster. Fat content slows digestion slightly but overall poor for sustained energy.",
+                    "keyNutrients": {
+                        "positive": ["calories", "carbs", "B-vitamins"],
+                        "negative": ["highSugar", "glycemicLoad", "energyCrash", "lowProtein"]
+                    }
+                },
+                "immune": {
+                    "grade": "D",
+                    "score": 44,
+                    "reasoning": "Contains selenium (11.5mcg) and zinc (0.6mg) but very high sugar content (22.8g) temporarily suppresses immune function. Refined grains and lack of antioxidants provide minimal immune support.",
+                    "keyNutrients": {
+                        "positive": ["selenium", "zinc", "iron", "B-vitamins"],
+                        "negative": ["highSugar", "refinedGrains", "lowAntioxidants"]
+                    }
+                },
+                "bone": {
+                    "grade": "C",
+                    "score": 54,
+                    "reasoning": "Moderate calcium (76mg) and phosphorus (118mg) content. Provides magnesium and manganese for bone health. However, high sugar and sodium may increase calcium excretion. Lower bone nutrients than pancakes or waffles.",
+                    "keyNutrients": {
+                        "positive": ["calcium", "phosphorus", "magnesium", "manganese", "vitaminK"],
+                        "negative": ["highSugar", "highSodium"]
+                    }
+                },
+                "longevity": {
+                    "grade": "D",
+                    "score": 32,
+                    "reasoning": "Very high sugar content linked to accelerated aging, inflammation, and chronic disease. Refined grains and high glycemic load promote cellular damage. Low antioxidant content. Trans fats present.",
+                    "keyNutrients": {
+                        "positive": ["selenium", "vitaminE"],
+                        "negative": ["highSugar", "refinedGrains", "transFat", "glycemicLoad", "lowAntioxidants"]
+                    }
+                },
+                "athletic": {
+                    "grade": "C",
+                    "score": 52,
+                    "reasoning": "High calorie and carbohydrate content for energy but very high sugar and glycemic load cause blood sugar instability. Poor protein content for recovery. May work as quick pre-workout fuel but causes crashes during endurance.",
+                    "keyNutrients": {
+                        "positive": ["calories", "carbs", "B-vitamins"],
+                        "negative": ["highSugar", "glycemicLoad", "lowProtein", "highFat"]
+                    }
+                }
+            },
+            "healthScore": 40,
+            "notes": "Commercial muffins (blueberry average) typically high in sugar and calories. Bran muffins have higher fiber; corn muffins have different nutritional profile. English muffins are significantly healthier (lower sugar, higher fiber)."
+        },
+        {
+            "id": "corn_tortilla",
+            "name": "Corn Tortilla",
+            "category": "grains",
+            "commonNames": ["tortilla de maiz", "corn tortillas", "maize tortilla"],
+            "isGlutenFree": true,
+            "nutritionPer100g": {
+                "calories": 218,
+                "protein": 5.7,
+                "carbs": 44.6,
+                "fat": 2.8,
+                "fiber": 6.3,
+                "sugar": 1.2,
+                "sodium": 42,
+                "cholesterol": 0,
+                "saturatedFat": 0.4,
+                "transFat": 0.0,
+                "polyunsaturatedFat": 1.3,
+                "monounsaturatedFat": 0.7,
+                "potassium": 186,
+                "calcium": 159,
+                "iron": 2.3,
+                "vitaminA": 11,
+                "vitaminC": 0.0,
+                "vitaminD": 0.0,
+                "vitaminE": 0.4,
+                "vitaminK": 0.3,
+                "thiamin": 0.26,
+                "riboflavin": 0.14,
+                "niacin": 2.3,
+                "vitaminB6": 0.15,
+                "folate": 43,
+                "vitaminB12": 0.0,
+                "magnesium": 84,
+                "phosphorus": 201,
+                "zinc": 1.3,
+                "selenium": 11.8,
+                "copper": 0.16,
+                "manganese": 0.38
+            },
+            "servingSizes": [
+                {
+                    "name": "1 tortilla (6 inch diameter)",
+                    "grams": 26,
+                    "isDefault": true
+                },
+                {
+                    "name": "2 tortillas (6 inch)",
+                    "grams": 52,
+                    "isDefault": false
+                },
+                {
+                    "name": "1 small tortilla (4.5 inch)",
+                    "grams": 11,
+                    "isDefault": false
+                }
+            ],
+            "glycemicIndex": 52,
+            "glycemicLoad": 23,
+            "insulinIndex": 58,
+            "allergens": [],
+            "tags": ["gluten-free", "whole-grain", "traditional", "low-fat", "high-fiber"],
+            "sustainabilityScore": 8.2,
+            "inflammationScore": 0.8,
+            "focusGrades": {
+                "heart": {
+                    "grade": "B",
+                    "score": 72,
+                    "reasoning": "Naturally low in sodium (42mg) and saturated fat (0.4g). Zero cholesterol. Good source of magnesium (84mg) and potassium (186mg) supporting heart health. High fiber (6.3g) helps reduce cholesterol.",
+                    "keyNutrients": {
+                        "positive": ["fiber", "magnesium", "potassium", "lowSodium", "lowSaturatedFat", "zeroCholesterol"],
+                        "negative": ["moderateGI"]
+                    }
+                },
+                "metabolic": {
+                    "grade": "B",
+                    "score": 68,
+                    "reasoning": "Moderate glycemic index (52) and lower insulin index (58) than refined grain products. High fiber (6.3g) slows glucose absorption. Very low sugar (1.2g). Whole grain corn provides better blood sugar control than refined grains.",
+                    "keyNutrients": {
+                        "positive": ["fiber", "magnesium", "lowSugar", "moderateGI", "wholeGrain"],
+                        "negative": ["glycemicLoad"]
+                    }
+                },
+                "gut": {
+                    "grade": "B",
+                    "score": 74,
+                    "reasoning": "Excellent fiber content (6.3g/100g) supports gut microbiome and digestive health. Whole grain corn provides resistant starch and prebiotic compounds. Very low sodium preserves gut bacterial balance. Naturally gluten-free.",
+                    "keyNutrients": {
+                        "positive": ["fiber", "resistantStarch", "wholeGrain", "lowSodium"],
+                        "negative": []
+                    }
+                },
+                "inflammation": {
+                    "grade": "B",
+                    "score": 70,
+                    "reasoning": "Positive inflammation score (0.8) from whole grain corn, fiber, and antioxidants. Contains carotenoids and polyphenols with anti-inflammatory properties. Low in pro-inflammatory fats. Zero trans fat.",
+                    "keyNutrients": {
+                        "positive": ["fiber", "magnesium", "wholeGrain", "antioxidants", "zeroTransFat"],
+                        "negative": []
+                    }
+                },
+                "brain": {
+                    "grade": "B",
+                    "score": 66,
+                    "reasoning": "Good source of B-vitamins (thiamin, niacin, B6, folate) supporting cognitive function. Magnesium (84mg) supports neurotransmitter function. Moderate GI provides stable blood sugar for mental clarity. Low sugar prevents crashes.",
+                    "keyNutrients": {
+                        "positive": ["B-vitamins", "magnesium", "iron", "zinc", "moderateGI"],
+                        "negative": []
+                    }
+                },
+                "energy": {
+                    "grade": "B",
+                    "score": 70,
+                    "reasoning": "Complex carbohydrates with high fiber provide sustained energy without crashes. B-vitamins support energy metabolism. Moderate GI and low sugar maintain stable blood glucose. Iron (2.3mg) supports oxygen transport.",
+                    "keyNutrients": {
+                        "positive": ["complexCarbs", "fiber", "B-vitamins", "iron", "magnesium", "moderateGI"],
+                        "negative": []
+                    }
+                },
+                "immune": {
+                    "grade": "B",
+                    "score": 68,
+                    "reasoning": "Good source of zinc (1.3mg), iron (2.3mg), and selenium (11.8mcg) supporting immune function. B-vitamins and magnesium contribute to immune response. Whole grain provides beta-glucans and antioxidants.",
+                    "keyNutrients": {
+                        "positive": ["zinc", "iron", "selenium", "B-vitamins", "magnesium", "antioxidants"],
+                        "negative": ["lowVitaminC", "noVitaminD"]
+                    }
+                },
+                "bone": {
+                    "grade": "A",
+                    "score": 80,
+                    "reasoning": "Excellent source of calcium (159mg/100g) from lime-treatment (nixtamalization). Very good phosphorus (201mg) and magnesium (84mg) content. Provides manganese and copper for bone matrix. Low sodium preserves calcium.",
+                    "keyNutrients": {
+                        "positive": ["calcium", "phosphorus", "magnesium", "manganese", "copper", "lowSodium"],
+                        "negative": ["noVitaminD"]
+                    }
+                },
+                "longevity": {
+                    "grade": "B",
+                    "score": 72,
+                    "reasoning": "Whole grain corn associated with longevity in traditional diets. High fiber and antioxidants protect against chronic disease. Low sodium and zero cholesterol support cardiovascular health. Anti-inflammatory properties.",
+                    "keyNutrients": {
+                        "positive": ["fiber", "wholeGrain", "antioxidants", "magnesium", "lowSodium", "zeroTransFat"],
+                        "negative": []
+                    }
+                },
+                "athletic": {
+                    "grade": "B",
+                    "score": 71,
+                    "reasoning": "Good source of complex carbohydrates for sustained energy. High fiber provides gradual fuel release. Magnesium (84mg) supports muscle function and recovery. Iron supports oxygen delivery. Low fat for easy digestion.",
+                    "keyNutrients": {
+                        "positive": ["carbs", "fiber", "magnesium", "iron", "B-vitamins", "lowFat"],
+                        "negative": ["lowProtein"]
+                    }
+                }
+            },
+            "healthScore": 71,
+            "notes": "Traditional corn tortillas made from nixtamalized corn (treated with lime/calcium hydroxide), which significantly increases calcium bioavailability. Whole grain, gluten-free, and staple of traditional Mexican cuisine. Much healthier than flour tortillas."
+        },
+        {
+            "id": "cornbread",
+            "name": "Cornbread",
+            "category": "grains",
+            "commonNames": ["corn bread", "southern cornbread", "johnny cake"],
+            "isGlutenFree": false,
+            "nutritionPer100g": {
+                "calories": 266,
+                "protein": 5.8,
+                "carbs": 36.8,
+                "fat": 10.4,
+                "fiber": 2.4,
+                "sugar": 11.3,
+                "sodium": 521,
+                "cholesterol": 37,
+                "saturatedFat": 2.2,
+                "transFat": 0.1,
+                "polyunsaturatedFat": 3.1,
+                "monounsaturatedFat": 4.3,
+                "potassium": 157,
+                "calcium": 98,
+                "iron": 2.0,
+                "vitaminA": 124,
+                "vitaminC": 0.3,
+                "vitaminD": 0.3,
+                "vitaminE": 1.2,
+                "vitaminK": 2.8,
+                "thiamin": 0.23,
+                "riboflavin": 0.21,
+                "niacin": 1.8,
+                "vitaminB6": 0.07,
+                "folate": 48,
+                "vitaminB12": 0.22,
+                "magnesium": 28,
+                "phosphorus": 134,
+                "zinc": 0.7,
+                "selenium": 13.1,
+                "copper": 0.08,
+                "manganese": 0.26
+            },
+            "servingSizes": [
+                {
+                    "name": "1 piece (2.5 inch square)",
+                    "grams": 60,
+                    "isDefault": true
+                },
+                {
+                    "name": "1 muffin",
+                    "grams": 55,
+                    "isDefault": false
+                },
+                {
+                    "name": "1 large piece (3 inch square)",
+                    "grams": 90,
+                    "isDefault": false
+                }
+            ],
+            "glycemicIndex": 65,
+            "glycemicLoad": 24,
+            "insulinIndex": 75,
+            "allergens": ["gluten", "wheat", "eggs", "milk"],
+            "tags": ["baked-goods", "southern-cuisine", "high-sodium", "refined-grains"],
+            "sustainabilityScore": 6.9,
+            "inflammationScore": -1.1,
+            "focusGrades": {
+                "heart": {
+                    "grade": "D",
+                    "score": 40,
+                    "reasoning": "Very high in sodium (521mg/100g) and saturated fat (2.2g). Contains cholesterol (37mg). High sugar content (11.3g) and refined grains increase cardiovascular risk. Some magnesium and potassium benefits offset by negatives.",
+                    "keyNutrients": {
+                        "positive": ["magnesium", "potassium", "fiber"],
+                        "negative": ["sodium", "saturatedFat", "cholesterol", "sugar", "refinedCarbs"]
+                    }
+                },
+                "metabolic": {
+                    "grade": "D",
+                    "score": 44,
+                    "reasoning": "High glycemic index (65) and glycemic load (24) cause blood sugar spikes. High sugar content (11.3g) and insulin index (75) stress pancreatic function. Moderate fiber (2.4g) provides some benefit but insufficient to offset glycemic impact.",
+                    "keyNutrients": {
+                        "positive": ["fiber", "magnesium", "B-vitamins"],
+                        "negative": ["glycemicIndex", "sugar", "refinedCarbs", "glycemicLoad"]
+                    }
+                },
+                "gut": {
+                    "grade": "D",
+                    "score": 42,
+                    "reasoning": "Low fiber (2.4g/100g) provides minimal prebiotic support. Very high sodium (521mg) disrupts gut microbiome balance. High sugar feeds pathogenic bacteria. Mix of cornmeal and wheat flour reduces whole grain benefits.",
+                    "keyNutrients": {
+                        "positive": ["fiber"],
+                        "negative": ["highSodium", "sugar", "refinedGrains", "lowPrebiotic"]
+                    }
+                },
+                "inflammation": {
+                    "grade": "C",
+                    "score": 46,
+                    "reasoning": "Negative inflammation score (-1.1) from refined grains, sugar, and high sodium. Contains some anti-inflammatory magnesium and selenium but pro-inflammatory factors dominate. Trans fat present though minimal.",
+                    "keyNutrients": {
+                        "positive": ["magnesium", "selenium", "fiber"],
+                        "negative": ["refinedGrains", "sugar", "sodium", "transFat", "omega6"]
+                    }
+                },
+                "brain": {
+                    "grade": "C",
+                    "score": 50,
+                    "reasoning": "Good B-vitamin content (thiamin, riboflavin, niacin, folate) supports cognitive function. However, high glycemic response and sugar content cause blood sugar fluctuations affecting mental clarity and focus.",
+                    "keyNutrients": {
+                        "positive": ["B-vitamins", "magnesium", "iron", "selenium"],
+                        "negative": ["highGI", "sugar", "bloodSugarSpikes"]
+                    }
+                },
+                "energy": {
+                    "grade": "C",
+                    "score": 54,
+                    "reasoning": "Moderate calorie density (266 kcal) and carbohydrates for energy. B-vitamins support metabolism. However, high GI and sugar cause energy spikes followed by crashes. Fat content provides some sustained energy.",
+                    "keyNutrients": {
+                        "positive": ["carbs", "B-vitamins", "iron", "magnesium"],
+                        "negative": ["highGI", "sugar", "energyCrash", "glycemicLoad"]
+                    }
+                },
+                "immune": {
+                    "grade": "C",
+                    "score": 52,
+                    "reasoning": "Contains selenium (13.1mcg), zinc (0.7mg), iron (2.0mg), and B-vitamins supporting immune function. Vitamin A (124 IU) contributes. However, high sugar and sodium may impair immune response.",
+                    "keyNutrients": {
+                        "positive": ["selenium", "zinc", "iron", "vitaminA", "B-vitamins"],
+                        "negative": ["sugar", "sodium", "refinedGrains"]
+                    }
+                },
+                "bone": {
+                    "grade": "C",
+                    "score": 60,
+                    "reasoning": "Good calcium (98mg) and phosphorus (134mg) content from cornmeal and dairy. Provides magnesium (28mg) and manganese for bone health. However, very high sodium increases calcium excretion reducing net benefit.",
+                    "keyNutrients": {
+                        "positive": ["calcium", "phosphorus", "magnesium", "manganese", "vitaminK"],
+                        "negative": ["highSodium"]
+                    }
+                },
+                "longevity": {
+                    "grade": "D",
+                    "score": 43,
+                    "reasoning": "High sodium (521mg) linked to hypertension and reduced longevity. Sugar and refined grains promote inflammation and accelerated aging. Trans fats present. Some benefits from selenium and B-vitamins insufficient to offset.",
+                    "keyNutrients": {
+                        "positive": ["selenium", "magnesium", "B-vitamins"],
+                        "negative": ["highSodium", "sugar", "refinedGrains", "transFat", "highGI"]
+                    }
+                },
+                "athletic": {
+                    "grade": "C",
+                    "score": 56,
+                    "reasoning": "Provides carbohydrates and calories for energy. B-vitamins and iron support athletic performance and oxygen delivery. However, high GI causes blood sugar instability. High sodium beneficial for electrolyte replacement post-exercise.",
+                    "keyNutrients": {
+                        "positive": ["carbs", "calories", "B-vitamins", "iron", "sodium"],
+                        "negative": ["highGI", "sugar", "lowProtein", "highFat"]
+                    }
+                }
+            },
+            "healthScore": 48,
+            "notes": "Traditional Southern cornbread made with cornmeal, wheat flour, eggs, milk/buttermilk, and oil/butter. Recipe variations affect nutrition significantly - some use more sugar and fat (cake-like), while others are less sweet and more savory. Self-rising cornmeal adds significant sodium."
+        }
+    ]
+}

@@ -1,0 +1,584 @@
+{
+  "burrito": {
+    "name": "Burrito",
+    "calories": 206,
+    "protein": 8.5,
+    "carbs": 28.4,
+    "fat": 6.8,
+    "fiber": 3.2,
+    "sugar": 1.8,
+    "sodium": 458,
+    "saturatedFat": 2.4,
+    "cholesterol": 18,
+    "potassium": 245,
+    "calcium": 85,
+    "iron": 2.1,
+    "magnesium": 32,
+    "vitaminA": 145,
+    "vitaminC": 3.2,
+    "vitaminD": 0.2,
+    "vitaminB12": 0.4,
+    "glycemicIndex": 58,
+    "glycemicLoad": 16,
+    "allergens": ["gluten", "dairy"],
+    "servingSize": 180,
+    "servingUnit": "g",
+    "focusGrades": {
+      "balanced": {
+        "grade": "B",
+        "score": 78,
+        "insight": "Burritos offer a complete meal with protein, carbs, and vegetables, though portion control is key due to calorie density from the flour tortilla and fillings.",
+        "pros": ["Complete macronutrient profile", "Good protein from beans and meat", "Fiber from beans and vegetables", "Customizable ingredients"],
+        "cons": ["High sodium from seasoning and cheese", "Calorie-dense from large tortilla", "Variable nutrition depending on fillings", "Can be heavy in saturated fat"]
+      },
+      "heart_health": {
+        "grade": "C+",
+        "score": 68,
+        "insight": "The combination of beans provides soluble fiber that helps lower cholesterol, but high sodium and saturated fat from cheese and sour cream offset cardiovascular benefits.",
+        "pros": ["Soluble fiber from beans lowers LDL", "Potassium helps regulate blood pressure", "Tomatoes provide lycopene", "Beans contain folate for heart health"],
+        "cons": ["High sodium increases blood pressure risk", "Saturated fat from cheese and sour cream", "Refined flour tortilla lacks whole grains", "Processed meats add sodium and nitrates"]
+      },
+      "muscle_building": {
+        "grade": "B-",
+        "score": 75,
+        "insight": "Burritos provide decent protein from beans, meat, and cheese, with complex carbs for glycogen replenishment, though protein density could be higher for optimal muscle synthesis.",
+        "pros": ["Complete protein from meat and beans", "Complex carbs for glycogen storage", "Iron supports oxygen delivery", "Magnesium aids muscle function"],
+        "cons": ["Moderate protein density per calorie", "High calorie load may exceed needs", "Excess sodium causes water retention", "Limited leucine compared to pure protein sources"]
+      },
+      "energy": {
+        "grade": "B",
+        "score": 80,
+        "insight": "The combination of complex carbs from beans and tortilla provides sustained energy, while protein and fat slow digestion for steady blood sugar levels throughout the day.",
+        "pros": ["Complex carbs for sustained energy", "Protein slows carb absorption", "B vitamins from beans aid metabolism", "Iron supports oxygen transport"],
+        "cons": ["Large portions can cause energy crashes", "Refined flour digests faster than whole grain", "High fat content slows initial energy release", "May feel heavy and sluggish post-meal"]
+      },
+      "weight_management": {
+        "grade": "C",
+        "score": 65,
+        "insight": "While burritos are satiating due to fiber and protein, they're calorie-dense and portions are often oversized, making it easy to overconsume calories without realizing it.",
+        "pros": ["High satiety from protein and fiber", "Beans provide resistant starch", "Can be filling with vegetables", "Customizable to reduce calories"],
+        "cons": ["Very calorie-dense per serving", "Large portions typical in restaurants", "Hidden calories in cheese and sour cream", "Refined carbs increase hunger later"]
+      },
+      "brain_focus": {
+        "grade": "B-",
+        "score": 73,
+        "insight": "Beans provide steady glucose for brain function and B vitamins for neurotransmitter synthesis, though the heavy, calorie-dense meal may reduce alertness due to digestive demands.",
+        "pros": ["Complex carbs provide steady brain glucose", "B vitamins support neurotransmitter production", "Iron improves cognitive function", "Folate from beans supports mental clarity"],
+        "cons": ["Large portions divert blood to digestion", "High glycemic load may cause afternoon crash", "Lack of omega-3 fatty acids", "Heavy meal reduces alertness"]
+      },
+      "gut_health": {
+        "grade": "B",
+        "score": 78,
+        "insight": "Black or pinto beans are excellent sources of prebiotic fiber that feeds beneficial gut bacteria, and fermented salsas add probiotics, supporting a healthy microbiome.",
+        "pros": ["High fiber feeds beneficial bacteria", "Resistant starch in beans acts as prebiotic", "Fermented salsa provides probiotics", "Diverse plant foods support microbiome diversity"],
+        "cons": ["Beans may cause gas and bloating", "High fat slows gut motility", "Cheese is low in fiber", "Processed ingredients may irritate gut"]
+      },
+      "blood_sugar": {
+        "grade": "C+",
+        "score": 70,
+        "insight": "While beans have a low glycemic index and high fiber content that moderates blood sugar, the refined flour tortilla causes faster glucose spikes, especially in large portions.",
+        "pros": ["Bean fiber slows glucose absorption", "Protein and fat lower overall glycemic response", "Resistant starch improves insulin sensitivity", "Moderate glycemic load when portioned correctly"],
+        "cons": ["Refined flour tortilla spikes blood sugar", "Large portions increase glycemic load", "Limited fiber in white tortilla", "Added sugars in some restaurant preparations"]
+      },
+      "bone_joint": {
+        "grade": "B-",
+        "score": 74,
+        "insight": "Cheese and beans provide calcium for bone density, and beans offer magnesium for bone mineralization, though high sodium may increase calcium excretion through urine.",
+        "pros": ["Calcium from cheese and beans", "Magnesium supports bone formation", "Vitamin K from vegetables aids calcium absorption", "Phosphorus from beans builds bone matrix"],
+        "cons": ["High sodium increases calcium loss", "Limited vitamin D for calcium absorption", "Phosphoric acid in processed ingredients", "Inflammatory fats may worsen joint pain"]
+      },
+      "anti_inflammatory": {
+        "grade": "B-",
+        "score": 72,
+        "insight": "Fresh vegetables, tomatoes, and beans contain anti-inflammatory compounds like lycopene and polyphenols, but saturated fats and processed ingredients can promote inflammation.",
+        "pros": ["Lycopene from tomatoes reduces inflammation", "Bean polyphenols have anti-inflammatory effects", "Vegetables provide antioxidants", "Spices like cumin have anti-inflammatory properties"],
+        "cons": ["Saturated fat from cheese promotes inflammation", "High sodium triggers inflammatory pathways", "Refined carbs increase inflammatory markers", "Processed meats contain pro-inflammatory compounds"]
+      }
+    }
+  },
+  "taco": {
+    "name": "Taco",
+    "calories": 226,
+    "protein": 9.8,
+    "carbs": 20.5,
+    "fat": 11.6,
+    "fiber": 3.1,
+    "sugar": 1.5,
+    "sodium": 387,
+    "saturatedFat": 4.2,
+    "cholesterol": 28,
+    "potassium": 215,
+    "calcium": 78,
+    "iron": 1.8,
+    "magnesium": 28,
+    "vitaminA": 125,
+    "vitaminC": 4.5,
+    "vitaminD": 0.1,
+    "vitaminB12": 0.6,
+    "glycemicIndex": 52,
+    "glycemicLoad": 11,
+    "allergens": ["gluten", "dairy"],
+    "servingSize": 100,
+    "servingUnit": "g",
+    "focusGrades": {
+      "balanced": {
+        "grade": "B",
+        "score": 80,
+        "insight": "Tacos provide a balanced mix of protein, carbs, and fats in a controlled portion size, making them easier to manage nutritionally compared to larger Mexican dishes.",
+        "pros": ["Good protein-to-calorie ratio", "Portion control easier than burritos", "Complete meal in small package", "Fresh vegetables add micronutrients"],
+        "cons": ["Can be high in saturated fat", "Sodium from seasoning and toppings", "Fried shells add unnecessary calories", "Limited fiber in corn tortillas"]
+      },
+      "heart_health": {
+        "grade": "C+",
+        "score": 70,
+        "insight": "Corn tortillas have less saturated fat than flour, and lean protein options support heart health, but cheese, sour cream, and fried shells increase cardiovascular risk.",
+        "pros": ["Corn tortillas have no cholesterol", "Lean protein options like fish or chicken", "Tomatoes provide heart-healthy lycopene", "Cilantro contains antioxidants"],
+        "cons": ["High saturated fat from cheese and sour cream", "Sodium from seasoning increases blood pressure", "Fried shells contain trans fats", "Processed meats add nitrates"]
+      },
+      "muscle_building": {
+        "grade": "B",
+        "score": 78,
+        "insight": "Tacos offer quality protein from meat or fish with a favorable protein-to-calorie ratio, and the smaller portion allows for easy customization to increase protein density.",
+        "pros": ["High-quality protein from meat or fish", "Good leucine content for muscle synthesis", "Easy to add extra protein toppings", "Moderate calories allow multiple servings"],
+        "cons": ["Protein content varies by filling choice", "Carb-heavy if using flour tortillas", "Cheese adds calories without much protein", "Toppings dilute protein density"]
+      },
+      "energy": {
+        "grade": "B+",
+        "score": 82,
+        "insight": "The moderate carb content from corn tortillas provides quick energy while protein from meat ensures sustained release, making tacos ideal for active individuals.",
+        "pros": ["Quick energy from corn tortillas", "Protein provides sustained energy", "Moderate glycemic load prevents crashes", "Easy to digest compared to heavier meals"],
+        "cons": ["Fried shells can cause energy dips", "High fat slows initial energy release", "Lack of complex carbs for endurance", "Small portion may not sustain long activities"]
+      },
+      "weight_management": {
+        "grade": "B-",
+        "score": 75,
+        "insight": "Tacos offer excellent portion control with each unit being trackable, and choosing soft corn tortillas with lean proteins and vegetables maximizes satiety per calorie.",
+        "pros": ["Built-in portion control", "High protein increases satiety", "Fiber from vegetables fills you up", "Easy to customize for lower calories"],
+        "cons": ["Easy to overconsume multiple tacos", "Fried shells double the calories", "Cheese and sour cream add hidden calories", "Restaurant portions often include 3-4 tacos"]
+      },
+      "brain_focus": {
+        "grade": "B",
+        "score": 78,
+        "insight": "Protein from meat provides amino acids for neurotransmitters, and the moderate carb content fuels brain function without causing the sluggishness of heavier meals.",
+        "pros": ["Protein provides neurotransmitter precursors", "Moderate carbs fuel brain glucose needs", "B vitamins from meat support cognition", "Light meal maintains alertness"],
+        "cons": ["Limited omega-3 unless using fish", "Refined carbs cause blood sugar fluctuations", "Lack of nuts/seeds for brain fats", "High sodium may impair focus"]
+      },
+      "gut_health": {
+        "grade": "B-",
+        "score": 74,
+        "insight": "Corn tortillas provide some resistant starch, and fresh salsa adds probiotics from fermentation, but overall fiber content is moderate compared to bean-heavy dishes.",
+        "pros": ["Fermented salsa provides probiotics", "Corn has some resistant starch", "Fresh vegetables add prebiotic fiber", "Cilantro supports digestive health"],
+        "cons": ["Lower fiber than bean-based dishes", "Cheese is low in fiber", "Fried shells harder to digest", "May lack diversity of plant foods"]
+      },
+      "blood_sugar": {
+        "grade": "B-",
+        "score": 75,
+        "insight": "Corn tortillas have a lower glycemic index than flour, and protein from meat slows glucose absorption, resulting in a moderate blood sugar response when portions are controlled.",
+        "pros": ["Corn tortillas lower GI than flour", "Protein slows carb digestion", "Fiber from vegetables moderates glucose", "Smaller portion reduces glycemic load"],
+        "cons": ["Fried shells increase glycemic response", "Limited fiber in corn tortillas", "Added sugars in some seasoning mixes", "Multiple tacos increase total carb load"]
+      },
+      "bone_joint": {
+        "grade": "B-",
+        "score": 73,
+        "insight": "Cheese provides calcium and protein supports bone matrix, while corn tortillas are often fortified with calcium, though high sodium may impair calcium retention.",
+        "pros": ["Calcium from cheese and fortified tortillas", "Protein supports bone matrix formation", "Magnesium from corn aids bone health", "Vitamin K from cilantro helps calcium absorption"],
+        "cons": ["High sodium increases calcium excretion", "Limited vitamin D for absorption", "Inflammatory fats from frying", "Processed meats may worsen joint pain"]
+      },
+      "anti_inflammatory": {
+        "grade": "B",
+        "score": 77,
+        "insight": "Fresh cilantro, tomatoes, and lime provide antioxidants and anti-inflammatory compounds, and choosing grilled over fried reduces inflammatory fat content.",
+        "pros": ["Cilantro has anti-inflammatory properties", "Tomato lycopene reduces inflammation", "Lime vitamin C acts as antioxidant", "Spices like cumin reduce inflammatory markers"],
+        "cons": ["Saturated fat from cheese promotes inflammation", "Fried shells contain inflammatory trans fats", "High sodium triggers inflammatory pathways", "Processed meats contain nitrates"]
+      }
+    }
+  },
+  "enchilada": {
+    "name": "Enchilada",
+    "calories": 188,
+    "protein": 8.2,
+    "carbs": 20.8,
+    "fat": 7.9,
+    "fiber": 2.8,
+    "sugar": 3.2,
+    "sodium": 512,
+    "saturatedFat": 3.6,
+    "cholesterol": 24,
+    "potassium": 268,
+    "calcium": 142,
+    "iron": 1.9,
+    "magnesium": 35,
+    "vitaminA": 285,
+    "vitaminC": 8.5,
+    "vitaminD": 0.3,
+    "vitaminB12": 0.5,
+    "glycemicIndex": 48,
+    "glycemicLoad": 10,
+    "allergens": ["gluten", "dairy"],
+    "servingSize": 150,
+    "servingUnit": "g",
+    "focusGrades": {
+      "balanced": {
+        "grade": "B",
+        "score": 79,
+        "insight": "Enchiladas balance protein from cheese and filling with carbs from tortillas and sauce, creating a complete meal, though the cheese-heavy preparation increases calorie density.",
+        "pros": ["Complete macronutrient balance", "High calcium from cheese topping", "Vegetables in sauce add micronutrients", "Satisfying and filling"],
+        "cons": ["Very high sodium from sauce and cheese", "Calorie-dense from cheese layer", "Sugar in tomato-based sauces", "Can be heavy and rich"]
+      },
+      "heart_health": {
+        "grade": "C",
+        "score": 67,
+        "insight": "While enchilada sauce provides lycopene from tomatoes, the high sodium content and saturated fat from melted cheese create cardiovascular concerns that outweigh the benefits.",
+        "pros": ["Lycopene from tomato sauce protects heart", "Potassium helps counter sodium effects", "Chili peppers may improve circulation", "Beans add cholesterol-lowering fiber"],
+        "cons": ["Very high sodium raises blood pressure", "Saturated fat from cheese increases LDL", "Cream-based sauces add cholesterol", "Baked cheese creates oxidized fats"]
+      },
+      "muscle_building": {
+        "grade": "B-",
+        "score": 76,
+        "insight": "Enchiladas provide quality protein from cheese and filling with good calcium for muscle contraction, though the sauce and tortilla add calories without much protein benefit.",
+        "pros": ["Protein from cheese and meat filling", "Calcium supports muscle contraction", "Complete amino acid profile", "Carbs aid post-workout recovery"],
+        "cons": ["Lower protein density than pure meat", "High calorie-to-protein ratio", "Sauce adds calories without protein", "Cheese protein less bioavailable than meat"]
+      },
+      "energy": {
+        "grade": "B",
+        "score": 79,
+        "insight": "The combination of corn tortillas and enchilada sauce provides steady carbohydrates, while protein and fat from cheese ensure sustained energy without rapid crashes.",
+        "pros": ["Steady carbs from corn tortillas", "Protein provides sustained release", "Low glycemic index prevents crashes", "B vitamins from enriched flour"],
+        "cons": ["High fat content slows digestion", "May feel heavy and reduce activity", "Sauce sugars cause minor spikes", "Large portions overwhelm energy systems"]
+      },
+      "weight_management": {
+        "grade": "C+",
+        "score": 68,
+        "insight": "Enchiladas are moderately calorie-dense, and while they're filling due to cheese and sauce, portion sizes are often generous, making calorie control challenging.",
+        "pros": ["High satiety from protein and fat", "Filling sauce creates fullness", "Can portion control by counting pieces", "Vegetables add volume without calories"],
+        "cons": ["Calorie-dense from cheese topping", "Easy to overconsume sauce calories", "Restaurant portions often include 2-3 enchiladas", "Hidden calories in cream sauces"]
+      },
+      "brain_focus": {
+        "grade": "B-",
+        "score": 74,
+        "insight": "Protein from cheese provides amino acids for neurotransmitter production, and the moderate carbs fuel brain function, though high sodium may impair cognitive performance.",
+        "pros": ["Protein supports neurotransmitter synthesis", "Steady glucose from corn tortillas", "B vitamins aid cognitive function", "Chili peppers may enhance alertness"],
+        "cons": ["High sodium impairs focus and cognition", "Heavy meal diverts blood to digestion", "Lack of omega-3 fatty acids", "May cause post-meal drowsiness"]
+      },
+      "gut_health": {
+        "grade": "B-",
+        "score": 72,
+        "insight": "Enchilada sauce often contains fiber-rich tomatoes and peppers, and fermented components add probiotics, though the cheese-heavy preparation can slow gut motility.",
+        "pros": ["Fiber from tomato-based sauce", "Chili peppers support gut motility", "Fermented sauce components add probiotics", "Vegetables provide prebiotic fiber"],
+        "cons": ["Cheese is low in fiber", "High fat slows digestion", "Dairy may cause issues for lactose intolerant", "Processed sauce lacks live cultures"]
+      },
+      "blood_sugar": {
+        "grade": "B",
+        "score": 78,
+        "insight": "Corn tortillas have a low glycemic index, and the protein and fat from cheese significantly slow glucose absorption, creating a favorable blood sugar response despite the carbs.",
+        "pros": ["Low GI from corn tortillas", "Protein and fat slow carb absorption", "Fiber from sauce moderates glucose", "Lower glycemic load than expected"],
+        "cons": ["Sauce sugars add to glucose load", "Flour tortillas increase GI if used", "Large portions increase glycemic impact", "Refined corn lacks resistant starch"]
+      },
+      "bone_joint": {
+        "grade": "B+",
+        "score": 83,
+        "insight": "Enchiladas are exceptionally high in calcium from the generous cheese topping, and protein from cheese and filling supports bone matrix, making them beneficial for bone health.",
+        "pros": ["Very high calcium from cheese", "Protein supports bone formation", "Magnesium from corn aids mineralization", "Vitamin K from vegetables helps calcium use"],
+        "cons": ["High sodium increases calcium loss through urine", "Limited vitamin D for calcium absorption", "Inflammatory fats may worsen joint pain", "Phosphoric acid in processed ingredients"]
+      },
+      "anti_inflammatory": {
+        "grade": "B-",
+        "score": 73,
+        "insight": "Enchilada sauce contains anti-inflammatory compounds from tomatoes, peppers, and spices, but saturated fat from cheese and high sodium can promote inflammatory responses.",
+        "pros": ["Lycopene from tomatoes reduces inflammation", "Capsaicin in peppers has anti-inflammatory effects", "Cumin and other spices reduce inflammatory markers", "Garlic supports immune function"],
+        "cons": ["Saturated fat from cheese promotes inflammation", "High sodium triggers inflammatory pathways", "Baked cheese creates advanced glycation end products", "Cream sauces add inflammatory fats"]
+      }
+    }
+  },
+  "quesadilla": {
+    "name": "Quesadilla",
+    "calories": 234,
+    "protein": 10.2,
+    "carbs": 24.6,
+    "fat": 10.8,
+    "fiber": 1.8,
+    "sugar": 1.2,
+    "sodium": 468,
+    "saturatedFat": 5.4,
+    "cholesterol": 32,
+    "potassium": 142,
+    "calcium": 185,
+    "iron": 1.6,
+    "magnesium": 24,
+    "vitaminA": 195,
+    "vitaminC": 1.8,
+    "vitaminD": 0.4,
+    "vitaminB12": 0.7,
+    "glycemicIndex": 55,
+    "glycemicLoad": 14,
+    "allergens": ["gluten", "dairy"],
+    "servingSize": 120,
+    "servingUnit": "g",
+    "focusGrades": {
+      "balanced": {
+        "grade": "C+",
+        "score": 69,
+        "insight": "Quesadillas are heavily cheese-focused with less vegetable variety than other Mexican dishes, creating an imbalanced nutritional profile skewed toward fat and lacking micronutrients.",
+        "pros": ["Good protein from abundant cheese", "Simple ingredients easy to track", "High calcium content", "Quick and satisfying"],
+        "cons": ["Very high in saturated fat", "Limited vegetables and fiber", "High sodium from cheese", "Lacks micronutrient diversity"]
+      },
+      "heart_health": {
+        "grade": "D+",
+        "score": 58,
+        "insight": "The high saturated fat and sodium from melted cheese make quesadillas problematic for cardiovascular health, with few redeeming heart-healthy ingredients to offset these concerns.",
+        "pros": ["Calcium from cheese supports heart rhythm", "Protein provides amino acids", "Can add vegetables like peppers", "Grilling is healthier than frying"],
+        "cons": ["Very high saturated fat increases LDL cholesterol", "Excessive sodium raises blood pressure", "Lack of fiber to lower cholesterol", "Minimal omega-3 or heart-protective nutrients"]
+      },
+      "muscle_building": {
+        "grade": "B",
+        "score": 80,
+        "insight": "Quesadillas excel at protein delivery from cheese with excellent leucine content for muscle synthesis, and the high calcium supports muscle contraction during workouts.",
+        "pros": ["High-quality protein from cheese", "Excellent leucine for muscle protein synthesis", "Very high calcium for muscle function", "Easy to add chicken or beans for more protein"],
+        "cons": ["High calorie-to-protein ratio from fat", "Saturated fat may impair recovery", "Limited micronutrients for muscle repair", "Carbs are refined without complex options"]
+      },
+      "energy": {
+        "grade": "B-",
+        "score": 74,
+        "insight": "The carbs from tortillas provide quick energy, but the very high fat content from cheese slows digestion significantly, potentially causing sluggishness rather than sustained energy.",
+        "pros": ["Quick energy from tortilla carbs", "Fat provides long-lasting fuel", "Protein prevents blood sugar crashes", "Moderate glycemic load"],
+        "cons": ["Very high fat slows digestion and energy release", "May cause post-meal sluggishness", "Refined carbs lack sustained energy", "Heavy feeling reduces physical performance"]
+      },
+      "weight_management": {
+        "grade": "D+",
+        "score": 60,
+        "insight": "Quesadillas are calorie-dense primarily from cheese and often fried preparation, making them challenging for weight management despite being relatively filling from protein and fat.",
+        "pros": ["High satiety from protein and fat", "Filling despite small portions", "Calcium may support fat metabolism", "Can control portion by cutting slices"],
+        "cons": ["Very calorie-dense per serving", "Easy to overconsume multiple slices", "Hidden calories from cooking oil", "Low fiber reduces satiety per calorie"]
+      },
+      "brain_focus": {
+        "grade": "C+",
+        "score": 68,
+        "insight": "Protein from cheese provides amino acids for neurotransmitters, but the heavy, high-fat meal diverts blood to digestion and lacks brain-specific nutrients like omega-3s.",
+        "pros": ["Protein provides neurotransmitter precursors", "Calcium supports neural signaling", "Carbs fuel immediate brain glucose needs", "B vitamins from cheese aid cognition"],
+        "cons": ["High fat content impairs focus and alertness", "Heavy meal causes post-lunch drowsiness", "Lack of omega-3 fatty acids for brain health", "High sodium may impair cognitive function"]
+      },
+      "gut_health": {
+        "grade": "C-",
+        "score": 62,
+        "insight": "Quesadillas are very low in fiber with minimal vegetables, and the high cheese content can slow gut motility, making them poor for digestive health compared to fiber-rich options.",
+        "pros": ["Cheese provides some probiotics if aged", "Can add vegetables for fiber", "Calcium supports gut muscle function", "Simple ingredients easy to digest"],
+        "cons": ["Very low fiber content", "Cheese slows gut motility", "Dairy may cause issues for lactose intolerant", "Lacks prebiotic foods for gut bacteria"]
+      },
+      "blood_sugar": {
+        "grade": "B-",
+        "score": 73,
+        "insight": "The abundant fat and protein from cheese significantly slow glucose absorption from the tortilla, resulting in a moderate glycemic response despite the refined carbohydrates.",
+        "pros": ["Fat and protein dramatically slow carb absorption", "Moderate glycemic load when portioned", "Protein prevents glucose spikes", "Lower GI than plain tortillas"],
+        "cons": ["Refined flour tortilla increases baseline GI", "Low fiber doesn't help glucose control", "Easy to overconsume increasing total glycemic load", "Lack of complex carbs for stability"]
+      },
+      "bone_joint": {
+        "grade": "A-",
+        "score": 87,
+        "insight": "Quesadillas are exceptionally high in calcium from cheese, providing over 18% of daily needs per serving, making them excellent for bone density despite some drawbacks from sodium.",
+        "pros": ["Exceptionally high calcium for bone density", "Protein supports bone matrix formation", "Vitamin D in cheese aids calcium absorption", "Phosphorus from cheese builds bones"],
+        "cons": ["High sodium increases calcium excretion", "Saturated fat may promote inflammation in joints", "Limited magnesium compared to calcium", "Lacks vitamin K for calcium regulation"]
+      },
+      "anti_inflammatory": {
+        "grade": "D+",
+        "score": 59,
+        "insight": "Quesadillas contain minimal anti-inflammatory ingredients, and the high saturated fat and sodium actively promote inflammatory pathways, making them problematic for inflammation control.",
+        "pros": ["Can add anti-inflammatory vegetables", "Some spices may have benefits", "Calcium supports immune function", "Grilling reduces inflammatory compounds vs. frying"],
+        "cons": ["Very high saturated fat promotes inflammation", "High sodium triggers inflammatory responses", "Lack of antioxidants and polyphenols", "Refined carbs increase inflammatory markers"]
+      }
+    }
+  },
+  "guacamole": {
+    "name": "Guacamole",
+    "calories": 160,
+    "protein": 2.0,
+    "carbs": 8.5,
+    "fat": 14.7,
+    "fiber": 6.7,
+    "sugar": 0.7,
+    "sodium": 187,
+    "saturatedFat": 2.1,
+    "cholesterol": 0,
+    "potassium": 485,
+    "calcium": 12,
+    "iron": 0.6,
+    "magnesium": 29,
+    "vitaminA": 146,
+    "vitaminC": 10.0,
+    "vitaminD": 0,
+    "vitaminB12": 0,
+    "glycemicIndex": 15,
+    "glycemicLoad": 1,
+    "allergens": [],
+    "servingSize": 100,
+    "servingUnit": "g",
+    "focusGrades": {
+      "balanced": {
+        "grade": "B+",
+        "score": 85,
+        "insight": "Guacamole provides heart-healthy monounsaturated fats from avocados with excellent fiber and potassium, though it's low in protein and should be paired with protein sources for balance.",
+        "pros": ["Rich in healthy monounsaturated fats", "Very high fiber content", "Excellent potassium levels", "Loaded with vitamins and minerals"],
+        "cons": ["Very low protein content", "Calorie-dense from healthy fats", "Requires pairing for complete nutrition", "Easy to overconsume"]
+      },
+      "heart_health": {
+        "grade": "A",
+        "score": 92,
+        "insight": "Guacamole is exceptional for cardiovascular health with monounsaturated fats that lower LDL cholesterol, potassium that regulates blood pressure, and zero cholesterol.",
+        "pros": ["Monounsaturated fats lower LDL cholesterol", "Very high potassium regulates blood pressure", "Zero cholesterol and low saturated fat", "Fiber helps remove cholesterol from body"],
+        "cons": ["High in calories requires portion control", "Added salt increases sodium", "Lacks omega-3 fatty acids", "Restaurant versions often high in sodium"]
+      },
+      "muscle_building": {
+        "grade": "C",
+        "score": 64,
+        "insight": "While guacamole provides healthy fats for hormone production and calories for muscle gain, the very low protein content makes it a poor standalone choice for muscle building.",
+        "pros": ["Healthy fats support testosterone production", "Calories aid muscle gain in bulking", "Potassium prevents muscle cramping", "Vitamin E supports muscle recovery"],
+        "cons": ["Very low protein for muscle synthesis", "No complete amino acids", "Lacks leucine for muscle building", "Should be paired with protein sources"]
+      },
+      "energy": {
+        "grade": "B+",
+        "score": 84,
+        "insight": "The healthy fats in guacamole provide sustained, long-lasting energy without blood sugar spikes, and the high potassium prevents fatigue, making it ideal for endurance activities.",
+        "pros": ["Healthy fats provide sustained energy", "Very low glycemic load prevents crashes", "Potassium prevents fatigue and cramping", "B vitamins aid energy metabolism"],
+        "cons": ["Low carbs may not fuel high-intensity exercise", "Calorie-dense requires portion awareness", "No quick energy for immediate needs", "High fat may slow initial digestion"]
+      },
+      "weight_management": {
+        "grade": "B",
+        "score": 78,
+        "insight": "Guacamole is highly satiating from fiber and healthy fats, making it excellent for appetite control, but it's calorie-dense and portion control is critical to avoid excess calories.",
+        "pros": ["Very high satiety from fiber and fat", "Low glycemic index prevents hunger spikes", "Healthy fats increase fullness hormones", "Nutrient-dense per serving"],
+        "cons": ["Very calorie-dense from fat content", "Easy to overconsume with chips", "Portion sizes often exceed 100g", "Restaurant servings can be 300+ calories"]
+      },
+      "brain_focus": {
+        "grade": "A-",
+        "score": 88,
+        "insight": "Guacamole provides monounsaturated fats that support brain cell membranes and cognitive function, plus folate and vitamin E that protect against cognitive decline and enhance focus.",
+        "pros": ["Healthy fats support brain cell structure", "Folate protects against cognitive decline", "Vitamin E enhances memory and focus", "Potassium improves neural signaling"],
+        "cons": ["Low in protein for neurotransmitters", "Lacks omega-3 DHA for brain health", "No vitamin B12 for nerve function", "Heavy fats may cause sluggishness in large amounts"]
+      },
+      "gut_health": {
+        "grade": "A-",
+        "score": 90,
+        "insight": "Guacamole is exceptional for gut health with very high fiber that feeds beneficial bacteria, and healthy fats that reduce gut inflammation and support nutrient absorption.",
+        "pros": ["Very high fiber feeds beneficial gut bacteria", "Healthy fats reduce intestinal inflammation", "Prebiotic fiber supports microbiome diversity", "Easy to digest and gentle on stomach"],
+        "cons": ["May cause gas from high fiber", "Lacks probiotics from fermentation", "Onions may irritate sensitive stomachs", "Should be fresh to avoid spoilage"]
+      },
+      "blood_sugar": {
+        "grade": "A",
+        "score": 94,
+        "insight": "Guacamole has an exceptionally low glycemic index and load, with healthy fats and fiber that prevent blood sugar spikes, making it ideal for diabetes management and glucose control.",
+        "pros": ["Extremely low glycemic index and load", "Healthy fats slow glucose absorption", "High fiber moderates blood sugar", "No added sugars or refined carbs"],
+        "cons": ["Low carbs won't raise blood sugar when needed", "Typically eaten with high-GI chips", "Added ingredients like corn increase GI", "Portion control still needed for calories"]
+      },
+      "bone_joint": {
+        "grade": "B+",
+        "score": 83,
+        "insight": "Guacamole provides vitamin K for calcium regulation and healthy fats that reduce joint inflammation, plus magnesium for bone mineralization, supporting skeletal health.",
+        "pros": ["Vitamin K aids calcium absorption and bone formation", "Anti-inflammatory fats reduce joint pain", "Magnesium supports bone mineralization", "Vitamin E protects joint cartilage"],
+        "cons": ["Low calcium content", "No vitamin D for bone health", "Lacks protein for bone matrix", "Should be paired with calcium sources"]
+      },
+      "anti_inflammatory": {
+        "grade": "A",
+        "score": 91,
+        "insight": "Guacamole is powerfully anti-inflammatory with monounsaturated fats, carotenoids, and vitamin E that reduce inflammatory markers and protect against chronic inflammation.",
+        "pros": ["Monounsaturated fats reduce inflammatory markers", "Carotenoids act as powerful antioxidants", "Vitamin E protects cells from inflammation", "Phytosterols reduce systemic inflammation"],
+        "cons": ["Added salt may increase inflammation", "Lacks omega-3 EPA and DHA", "Onions may irritate some people", "Should avoid oxidized/brown avocado"]
+      }
+    }
+  },
+  "nachos": {
+    "name": "Nachos",
+    "calories": 298,
+    "protein": 7.8,
+    "carbs": 36.2,
+    "fat": 13.6,
+    "fiber": 4.2,
+    "sugar": 2.8,
+    "sodium": 548,
+    "saturatedFat": 5.8,
+    "cholesterol": 22,
+    "potassium": 312,
+    "calcium": 128,
+    "iron": 1.4,
+    "magnesium": 42,
+    "vitaminA": 165,
+    "vitaminC": 6.2,
+    "vitaminD": 0.2,
+    "vitaminB12": 0.3,
+    "glycemicIndex": 62,
+    "glycemicLoad": 22,
+    "allergens": ["dairy"],
+    "servingSize": 150,
+    "servingUnit": "g",
+    "focusGrades": {
+      "balanced": {
+        "grade": "D+",
+        "score": 58,
+        "insight": "Nachos are nutritionally unbalanced with excessive calories from fried chips and cheese, minimal protein, and few vegetables unless specifically added, making them more of an indulgence.",
+        "pros": ["Can include vegetables like tomatoes and peppers", "Beans add protein and fiber when included", "Customizable toppings", "Provides quick energy from carbs"],
+        "cons": ["Very high in calories and fat", "Excessive sodium from chips and cheese", "Low protein unless meat/beans added", "Minimal micronutrients in base chips"]
+      },
+      "heart_health": {
+        "grade": "D",
+        "score": 52,
+        "insight": "The combination of fried chips, saturated fat from cheese, and very high sodium makes nachos problematic for cardiovascular health with few redeeming heart-protective qualities.",
+        "pros": ["Beans add cholesterol-lowering fiber", "Tomatoes provide heart-healthy lycopene", "Can use baked chips to reduce fat", "Jalapeños may improve circulation"],
+        "cons": ["Very high sodium raises blood pressure significantly", "Saturated fat from cheese increases LDL", "Fried chips contain trans fats and oxidized oils", "Excessive calories strain cardiovascular system"]
+      },
+      "muscle_building": {
+        "grade": "C-",
+        "score": 63,
+        "insight": "Nachos provide minimal protein unless topped with substantial meat or beans, and the calorie-to-protein ratio is poor due to chips and cheese, making them inefficient for muscle building.",
+        "pros": ["Can add significant protein with meat/beans", "Calcium from cheese supports muscle function", "High calories aid muscle gain in bulking", "Carbs help glycogen replenishment"],
+        "cons": ["Very low protein in base nachos", "Poor protein-to-calorie ratio", "Excess junk calories without muscle-building nutrients", "Inflammatory fats may impair recovery"]
+      },
+      "energy": {
+        "grade": "C",
+        "score": 66,
+        "insight": "Nachos provide quick energy from refined corn chips, but the high glycemic load causes blood sugar spikes followed by crashes, and the heavy fat content causes digestive sluggishness.",
+        "pros": ["Quick energy from corn chips", "High calories provide immediate fuel", "Carbs rapidly available for activity", "Can be energizing in small portions"],
+        "cons": ["High glycemic load causes energy crashes", "Very heavy and causes post-meal fatigue", "Fried chips slow digestion significantly", "Poor sustained energy compared to complex carbs"]
+      },
+      "weight_management": {
+        "grade": "D-",
+        "score": 48,
+        "insight": "Nachos are extremely calorie-dense with minimal satiety per calorie, and the combination of salt, fat, and crunch makes them highly addictive and easy to overconsume.",
+        "pros": ["Can be filling from cheese and toppings", "Fiber from beans adds satiety when included", "Visible portions on plate", "Can control by limiting chip count"],
+        "cons": ["Extremely calorie-dense from chips and cheese", "Very easy to overconsume mindlessly", "Low satiety per calorie", "Addictive salt-fat-crunch combination"]
+      },
+      "brain_focus": {
+        "grade": "D+",
+        "score": 57,
+        "insight": "The refined carbs cause blood sugar fluctuations that impair focus, and the very heavy, high-fat meal diverts blood to digestion, causing significant post-meal cognitive decline.",
+        "pros": ["Quick glucose for immediate brain fuel", "Can provide energy boost initially", "Toppings like jalapeños may enhance alertness", "Cheese provides some B vitamins"],
+        "cons": ["High glycemic load causes focus crashes", "Very heavy meal impairs alertness significantly", "Lack of brain-healthy omega-3s", "High sodium impairs cognitive function"]
+      },
+      "gut_health": {
+        "grade": "C-",
+        "score": 61,
+        "insight": "While beans and vegetables can add fiber, the base nachos are low in fiber, and the fried chips and high fat content slow gut motility and can cause digestive discomfort.",
+        "pros": ["Beans add significant prebiotic fiber", "Jalapeños support gut motility", "Tomatoes provide some fiber", "Fermented salsa adds probiotics"],
+        "cons": ["Fried chips are low in fiber", "Very high fat slows digestion", "Cheese is low in fiber and may cause constipation", "Processed chips lack beneficial nutrients"]
+      },
+      "blood_sugar": {
+        "grade": "D+",
+        "score": 56,
+        "insight": "Nachos have a high glycemic index from fried corn chips and a high glycemic load from large portions, causing significant blood sugar spikes despite some fat moderating the response.",
+        "pros": ["Fat and protein slow glucose absorption somewhat", "Beans lower overall glycemic response", "Fiber from toppings helps moderate sugar", "Cheese protein reduces GI slightly"],
+        "cons": ["Very high glycemic load from large portions", "Fried chips spike blood sugar rapidly", "Refined corn lacks fiber for glucose control", "Easy to overconsume increasing glycemic impact"]
+      },
+      "bone_joint": {
+        "grade": "C+",
+        "score": 69,
+        "insight": "Nachos provide calcium from cheese and magnesium from corn, supporting bone health, but the very high sodium increases calcium excretion and inflammatory fats may worsen joint pain.",
+        "pros": ["Good calcium from cheese topping", "Magnesium from corn supports bones", "Phosphorus aids bone mineralization", "Protein from toppings builds bone matrix"],
+        "cons": ["Very high sodium increases calcium loss dramatically", "Inflammatory fats from frying worsen joint pain", "Limited vitamin D for calcium absorption", "Processed ingredients contain phosphoric acid"]
+      },
+      "anti_inflammatory": {
+        "grade": "D",
+        "score": 54,
+        "insight": "Nachos actively promote inflammation through fried chips containing oxidized oils and trans fats, saturated fat from cheese, and high sodium, with minimal anti-inflammatory ingredients.",
+        "pros": ["Jalapeños have anti-inflammatory capsaicin", "Tomatoes provide anti-inflammatory lycopene", "Beans contain anti-inflammatory polyphenols", "Cilantro reduces inflammatory markers"],
+        "cons": ["Fried chips contain highly inflammatory trans fats", "Saturated fat from cheese promotes inflammation", "Very high sodium triggers inflammatory pathways", "Refined carbs increase inflammatory markers significantly"]
+      }
+    }
+  }
+}

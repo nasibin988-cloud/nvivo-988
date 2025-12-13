@@ -1,0 +1,584 @@
+{
+  "milkshake": {
+    "name": "Milkshake (Vanilla)",
+    "calories": 112,
+    "protein": 3.8,
+    "carbs": 18.5,
+    "fat": 2.9,
+    "fiber": 0,
+    "sugar": 18.2,
+    "sodium": 95,
+    "saturatedFat": 1.8,
+    "cholesterol": 11,
+    "potassium": 165,
+    "calcium": 135,
+    "iron": 0.1,
+    "magnesium": 13,
+    "vitaminA": 28,
+    "vitaminC": 0.6,
+    "vitaminD": 0.5,
+    "vitaminB12": 0.4,
+    "glycemicIndex": 60,
+    "glycemicLoad": 11,
+    "allergens": ["milk"],
+    "servingSize": 100,
+    "servingUnit": "g",
+    "focusGrades": {
+      "balanced": {
+        "grade": "C",
+        "score": 65,
+        "insight": "High sugar content outweighs calcium benefits; lacks fiber and essential nutrients for a balanced profile",
+        "pros": ["Good calcium source for bones", "Provides some protein"],
+        "cons": ["Very high in added sugars", "Low in fiber", "Minimal vitamins and minerals"]
+      },
+      "heart_health": {
+        "grade": "C-",
+        "score": 62,
+        "insight": "Moderate saturated fat and high sugar content can negatively impact cardiovascular health",
+        "pros": ["Relatively low in total fat", "Contains some potassium"],
+        "cons": ["High sugar increases triglycerides", "Contains saturated fat and cholesterol", "Low in heart-healthy nutrients"]
+      },
+      "muscle_building": {
+        "grade": "C+",
+        "score": 72,
+        "insight": "Provides some protein and calcium but lacks the protein density needed for optimal muscle growth",
+        "pros": ["Contains complete protein from milk", "Good calcium for muscle contraction", "Quick-digesting carbs post-workout"],
+        "cons": ["Low protein content (only 3.8g)", "High sugar-to-protein ratio", "Lacks key amino acids in meaningful amounts"]
+      },
+      "energy": {
+        "grade": "C",
+        "score": 68,
+        "insight": "Quick sugar rush followed by energy crash due to high simple carbs and lack of complex nutrients",
+        "pros": ["Rapid glucose availability", "Easy to digest"],
+        "cons": ["Energy crash after sugar spike", "No sustained energy from complex carbs", "Lacks B vitamins for energy metabolism"]
+      },
+      "weight_management": {
+        "grade": "D+",
+        "score": 55,
+        "insight": "High calorie density and sugar content make this a poor choice for weight management",
+        "pros": ["Can satisfy sweet cravings in small portions", "Contains some protein for satiety"],
+        "cons": ["Very high in sugar (18g per 100g)", "Lacks fiber for fullness", "Easy to overconsume liquid calories"]
+      },
+      "brain_focus": {
+        "grade": "C-",
+        "score": 63,
+        "insight": "Brief cognitive boost from sugar, but lack of sustained nutrients limits long-term brain function",
+        "pros": ["Quick glucose for brain energy", "Contains some B12 for neurotransmitters"],
+        "cons": ["Sugar crash impairs focus", "Low in omega-3s and antioxidants", "Minimal vitamins for cognitive health"]
+      },
+      "gut_health": {
+        "grade": "D+",
+        "score": 58,
+        "insight": "Zero fiber and high sugar content can disrupt gut microbiome balance",
+        "pros": ["Contains some probiotics if made with live-culture milk", "Easy to digest for most people"],
+        "cons": ["No fiber to feed beneficial bacteria", "High sugar feeds harmful bacteria", "May cause issues for lactose-intolerant individuals"]
+      },
+      "blood_sugar": {
+        "grade": "D",
+        "score": 50,
+        "insight": "High glycemic load causes rapid blood sugar spikes, problematic for diabetes management",
+        "pros": ["Can quickly raise low blood sugar in emergencies"],
+        "cons": ["Very high in fast-absorbing sugars", "No fiber to slow glucose absorption", "High glycemic index of 60"]
+      },
+      "bone_joint": {
+        "grade": "B",
+        "score": 80,
+        "insight": "Excellent calcium and vitamin D content support bone density, though sugar may have inflammatory effects",
+        "pros": ["High calcium (135mg per 100g)", "Contains vitamin D for calcium absorption", "Provides protein for bone matrix"],
+        "cons": ["High sugar may promote inflammation", "Low magnesium relative to calcium", "Lacks vitamin K for bone health"]
+      },
+      "anti_inflammatory": {
+        "grade": "D+",
+        "score": 56,
+        "insight": "High sugar content promotes inflammation, outweighing any anti-inflammatory benefits",
+        "pros": ["Dairy may provide some anti-inflammatory peptides"],
+        "cons": ["High sugar is pro-inflammatory", "Saturated fat can trigger inflammation", "Lacks omega-3s and antioxidants"]
+      }
+    }
+  },
+  "hot_chocolate": {
+    "name": "Hot Chocolate",
+    "calories": 77,
+    "protein": 3.4,
+    "carbs": 10.7,
+    "fat": 2.3,
+    "fiber": 1.0,
+    "sugar": 9.5,
+    "sodium": 91,
+    "saturatedFat": 1.4,
+    "cholesterol": 8,
+    "potassium": 197,
+    "calcium": 105,
+    "iron": 0.3,
+    "magnesium": 23,
+    "vitaminA": 25,
+    "vitaminC": 0.2,
+    "vitaminD": 0.4,
+    "vitaminB12": 0.3,
+    "glycemicIndex": 51,
+    "glycemicLoad": 5,
+    "allergens": ["milk"],
+    "servingSize": 100,
+    "servingUnit": "g",
+    "focusGrades": {
+      "balanced": {
+        "grade": "C+",
+        "score": 71,
+        "insight": "Moderate calories and some beneficial cocoa flavonoids, but still high in added sugars",
+        "pros": ["Contains antioxidants from cocoa", "Good calcium source", "Provides some magnesium"],
+        "cons": ["High in added sugars", "Low in fiber", "Limited micronutrient diversity"]
+      },
+      "heart_health": {
+        "grade": "B-",
+        "score": 75,
+        "insight": "Cocoa flavonoids support cardiovascular health, but sugar content presents concerns",
+        "pros": ["Cocoa flavonoids improve blood flow", "Contains heart-healthy magnesium", "Moderate potassium content"],
+        "cons": ["Added sugars can raise triglycerides", "Contains some saturated fat", "Sodium content moderately high"]
+      },
+      "muscle_building": {
+        "grade": "C",
+        "score": 68,
+        "insight": "Provides some protein and minerals but insufficient for serious muscle-building goals",
+        "pros": ["Contains complete milk protein", "Magnesium supports muscle function", "Calcium aids muscle contraction"],
+        "cons": ["Low protein density (3.4g)", "High sugar-to-protein ratio", "Insufficient amino acids for growth"]
+      },
+      "energy": {
+        "grade": "B-",
+        "score": 76,
+        "insight": "Moderate caffeine from cocoa plus natural sugars provide gentle, sustained energy boost",
+        "pros": ["Theobromine provides mild stimulation", "Moderate glycemic index prevents crashes", "Magnesium supports energy production"],
+        "cons": ["Lower caffeine than coffee", "Still relies on simple sugars", "May cause jitters in sensitive individuals"]
+      },
+      "weight_management": {
+        "grade": "C",
+        "score": 67,
+        "insight": "Lower calories than milkshake but high sugar content still limits weight management benefits",
+        "pros": ["Moderate calorie density", "Can satisfy chocolate cravings", "Some fiber from cocoa"],
+        "cons": ["High in simple sugars", "Easy to overconsume", "Low satiety from liquid form"]
+      },
+      "brain_focus": {
+        "grade": "B",
+        "score": 80,
+        "insight": "Cocoa flavonoids and theobromine enhance cognitive function and mood better than plain sugar",
+        "pros": ["Theobromine improves alertness", "Flavonoids increase cerebral blood flow", "Magnesium supports neurotransmitters"],
+        "cons": ["Sugar can cause focus crashes", "Caffeine content is low", "Lacks omega-3s for brain structure"]
+      },
+      "gut_health": {
+        "grade": "C+",
+        "score": 70,
+        "insight": "Cocoa polyphenols feed beneficial bacteria, but low fiber and high sugar limit benefits",
+        "pros": ["Cocoa prebiotics support microbiome", "Contains some fiber from cocoa", "Polyphenols have antimicrobial effects"],
+        "cons": ["Low total fiber content", "High sugar disrupts gut balance", "Dairy may cause issues for some"]
+      },
+      "blood_sugar": {
+        "grade": "C+",
+        "score": 71,
+        "insight": "Moderate glycemic index better than milkshake, but still causes blood sugar elevation",
+        "pros": ["Lower glycemic load (5)", "Cocoa flavonoids improve insulin sensitivity", "Some fiber slows absorption"],
+        "cons": ["Still high in simple sugars", "Liquid form absorbs quickly", "Minimal protein to stabilize glucose"]
+      },
+      "bone_joint": {
+        "grade": "B",
+        "score": 81,
+        "insight": "Good calcium and magnesium content support bone health, with cocoa adding anti-inflammatory benefits",
+        "pros": ["High calcium (105mg)", "Magnesium aids calcium utilization", "Anti-inflammatory cocoa polyphenols"],
+        "cons": ["Sugar may promote inflammation", "Low vitamin D", "Lacks vitamin K2"]
+      },
+      "anti_inflammatory": {
+        "grade": "B",
+        "score": 79,
+        "insight": "Cocoa's powerful antioxidants provide anti-inflammatory benefits despite sugar content",
+        "pros": ["Rich in anti-inflammatory flavonoids", "Cocoa polyphenols reduce oxidative stress", "Magnesium combats inflammation"],
+        "cons": ["Sugar content is pro-inflammatory", "Saturated fat triggers inflammation", "Processing reduces polyphenol content"]
+      }
+    }
+  },
+  "hummus": {
+    "name": "Hummus",
+    "calories": 166,
+    "protein": 7.9,
+    "carbs": 14.3,
+    "fat": 9.6,
+    "fiber": 6.0,
+    "sugar": 0.3,
+    "sodium": 379,
+    "saturatedFat": 1.4,
+    "cholesterol": 0,
+    "potassium": 228,
+    "calcium": 38,
+    "iron": 2.4,
+    "magnesium": 71,
+    "vitaminA": 3,
+    "vitaminC": 4.0,
+    "vitaminD": 0,
+    "vitaminB12": 0,
+    "glycemicIndex": 6,
+    "glycemicLoad": 0,
+    "allergens": ["sesame"],
+    "servingSize": 100,
+    "servingUnit": "g",
+    "focusGrades": {
+      "balanced": {
+        "grade": "A-",
+        "score": 88,
+        "insight": "Exceptional nutrient density with balanced macros, high fiber, and diverse micronutrients from chickpeas and tahini",
+        "pros": ["High plant protein (7.9g)", "Excellent fiber (6g)", "Healthy unsaturated fats from tahini and olive oil"],
+        "cons": ["High sodium content", "Calorie-dense", "No B12 (plant-based)"]
+      },
+      "heart_health": {
+        "grade": "A",
+        "score": 92,
+        "insight": "Outstanding for cardiovascular health with heart-healthy fats, fiber, and zero cholesterol",
+        "pros": ["Zero cholesterol", "High fiber lowers LDL", "Monounsaturated fats from olive oil and tahini"],
+        "cons": ["High sodium (379mg)", "Calorie-dense requires portion control", "Low omega-3 content"]
+      },
+      "muscle_building": {
+        "grade": "B+",
+        "score": 84,
+        "insight": "Solid plant protein with complete amino acids from chickpea-tahini combination, plus key minerals",
+        "pros": ["Good protein content (7.9g)", "Complete amino acid profile when combined", "Iron and magnesium support muscle function"],
+        "cons": ["Lower protein than animal sources", "Lacks leucine density", "No B12 for muscle recovery"]
+      },
+      "energy": {
+        "grade": "A-",
+        "score": 87,
+        "insight": "Excellent sustained energy from complex carbs, healthy fats, and low glycemic impact",
+        "pros": ["Ultra-low glycemic index (6)", "Healthy fats provide lasting energy", "B vitamins from chickpeas aid metabolism"],
+        "cons": ["No vitamin D for energy", "Lacks B12", "May feel heavy if overeaten"]
+      },
+      "weight_management": {
+        "grade": "B+",
+        "score": 85,
+        "insight": "High satiety from protein and fiber offsets calorie density; portion control essential",
+        "pros": ["Very high fiber (6g) promotes fullness", "Protein increases satiety", "Ultra-low sugar (0.3g)"],
+        "cons": ["Calorie-dense (166 cal/100g)", "Easy to overeat with chips/bread", "High fat content"]
+      },
+      "brain_focus": {
+        "grade": "B+",
+        "score": 86,
+        "insight": "Excellent for sustained cognitive function with stable blood sugar and brain-healthy nutrients",
+        "pros": ["Ultra-low GI prevents crashes", "Magnesium supports neurotransmitters", "Iron prevents cognitive fatigue"],
+        "cons": ["No omega-3 DHA/EPA", "Lacks B12 for nerve function", "No choline"]
+      },
+      "gut_health": {
+        "grade": "A",
+        "score": 93,
+        "insight": "Exceptional prebiotic fiber feeds beneficial bacteria, with fermented chickpeas adding digestive enzymes",
+        "pros": ["Very high fiber (6g)", "Chickpeas are prebiotic-rich", "Olive oil supports gut lining"],
+        "cons": ["May cause gas in sensitive individuals", "High FODMAP for some", "Sodium may affect gut microbiome"]
+      },
+      "blood_sugar": {
+        "grade": "A+",
+        "score": 98,
+        "insight": "Nearly perfect for blood sugar control with ultra-low GI, high fiber, and minimal sugar",
+        "pros": ["Ultra-low glycemic index (6)", "High fiber slows glucose absorption", "Almost no sugar (0.3g)"],
+        "cons": ["High sodium may affect insulin sensitivity slightly", "Portion size matters for carb content", "None significant"]
+      },
+      "bone_joint": {
+        "grade": "B",
+        "score": 81,
+        "insight": "Good magnesium and iron content, but moderate calcium; tahini's sesame seeds provide some benefit",
+        "pros": ["High magnesium (71mg)", "Iron supports collagen synthesis", "Sesame provides some calcium"],
+        "cons": ["Moderate calcium (38mg)", "No vitamin D", "Lacks vitamin K2"]
+      },
+      "anti_inflammatory": {
+        "grade": "A-",
+        "score": 90,
+        "insight": "Powerful anti-inflammatory profile from olive oil, tahini, and chickpea polyphenols",
+        "pros": ["Olive oil rich in oleic acid", "Sesame lignans reduce inflammation", "Chickpea polyphenols are antioxidant-rich"],
+        "cons": ["High sodium may promote inflammation", "Omega-6 from tahini (balance needed)", "No omega-3s"]
+      }
+    }
+  },
+  "falafel": {
+    "name": "Falafel",
+    "calories": 333,
+    "protein": 13.3,
+    "carbs": 31.8,
+    "fat": 17.8,
+    "fiber": 4.9,
+    "sugar": 1.5,
+    "sodium": 294,
+    "saturatedFat": 2.1,
+    "cholesterol": 0,
+    "potassium": 585,
+    "calcium": 54,
+    "iron": 3.4,
+    "magnesium": 82,
+    "vitaminA": 7,
+    "vitaminC": 1.2,
+    "vitaminD": 0,
+    "vitaminB12": 0,
+    "glycemicIndex": 35,
+    "glycemicLoad": 11,
+    "allergens": [],
+    "servingSize": 100,
+    "servingUnit": "g",
+    "focusGrades": {
+      "balanced": {
+        "grade": "B+",
+        "score": 84,
+        "insight": "Well-balanced plant protein with good fiber and minerals, though calorie-dense from frying",
+        "pros": ["High plant protein (13.3g)", "Good fiber content (4.9g)", "Rich in iron and magnesium"],
+        "cons": ["Very high in calories from frying", "High fat content (17.8g)", "Calorie-dense limits portions"]
+      },
+      "heart_health": {
+        "grade": "B",
+        "score": 78,
+        "insight": "Fiber and plant protein benefit heart health, but frying adds concerning fats",
+        "pros": ["Zero cholesterol", "High fiber lowers LDL", "Excellent potassium (585mg)"],
+        "cons": ["High total fat from deep frying", "Frying may create trans fats", "Sodium moderately high (294mg)"]
+      },
+      "muscle_building": {
+        "grade": "A-",
+        "score": 88,
+        "insight": "Excellent plant protein with complete amino acids and key muscle-building minerals",
+        "pros": ["High protein content (13.3g)", "Rich in iron for oxygen transport", "Magnesium supports muscle function"],
+        "cons": ["Lower protein bioavailability than animal sources", "No B12 for recovery", "Lacks leucine density"]
+      },
+      "energy": {
+        "grade": "B+",
+        "score": 83,
+        "insight": "Sustained energy from complex carbs and protein, though high calories may cause sluggishness",
+        "pros": ["Low-medium glycemic index (35)", "Protein and fat slow digestion", "High iron prevents fatigue"],
+        "cons": ["Very calorie-dense may cause heaviness", "High fat slows digestion", "No B12 for energy metabolism"]
+      },
+      "weight_management": {
+        "grade": "C+",
+        "score": 72,
+        "insight": "High satiety from protein and fiber, but excessive calories from frying limit weight loss potential",
+        "pros": ["High protein increases satiety", "Fiber promotes fullness", "Low sugar content"],
+        "cons": ["Extremely calorie-dense (333 cal/100g)", "High fat content from frying", "Easy to overconsume"]
+      },
+      "brain_focus": {
+        "grade": "B",
+        "score": 81,
+        "insight": "Good sustained focus from stable blood sugar, iron, and magnesium, but lacks B vitamins",
+        "pros": ["Low GI prevents crashes", "Iron prevents cognitive fatigue", "Magnesium supports neurotransmitters"],
+        "cons": ["No omega-3s for brain structure", "Lacks B12 for nerve function", "High calories may cause food coma"]
+      },
+      "gut_health": {
+        "grade": "B+",
+        "score": 85,
+        "insight": "High fiber and prebiotic chickpeas support microbiome, with herbs adding antimicrobial benefits",
+        "pros": ["High fiber (4.9g)", "Chickpeas are prebiotic-rich", "Fresh herbs have antimicrobial properties"],
+        "cons": ["May cause gas in sensitive individuals", "High FODMAP content", "Fried foods may disrupt gut lining"]
+      },
+      "blood_sugar": {
+        "grade": "A-",
+        "score": 87,
+        "insight": "Low-medium GI with high protein and fiber provide excellent blood sugar control",
+        "pros": ["Low glycemic index (35)", "High fiber slows glucose absorption", "Protein stabilizes blood sugar"],
+        "cons": ["Moderate glycemic load (11)", "Portion size matters for carb content", "Fried preparation may affect insulin"]
+      },
+      "bone_joint": {
+        "grade": "B+",
+        "score": 84,
+        "insight": "Excellent magnesium and iron, with moderate calcium; chickpeas provide bone-building nutrients",
+        "pros": ["Very high magnesium (82mg)", "Good iron for collagen synthesis", "Calcium from chickpeas"],
+        "cons": ["Moderate calcium (54mg)", "No vitamin D", "Lacks vitamin K2"]
+      },
+      "anti_inflammatory": {
+        "grade": "B-",
+        "score": 76,
+        "insight": "Chickpeas and herbs provide antioxidants, but frying creates pro-inflammatory compounds",
+        "pros": ["Fresh herbs are anti-inflammatory", "Chickpea polyphenols reduce oxidative stress", "Garlic has anti-inflammatory properties"],
+        "cons": ["Frying creates inflammatory compounds", "High omega-6 from frying oil", "No omega-3s to balance"]
+      }
+    }
+  },
+  "pita_bread": {
+    "name": "Pita Bread (White)",
+    "calories": 275,
+    "protein": 9.1,
+    "carbs": 55.7,
+    "fat": 1.2,
+    "fiber": 2.2,
+    "sugar": 1.9,
+    "sodium": 536,
+    "saturatedFat": 0.2,
+    "cholesterol": 0,
+    "potassium": 120,
+    "calcium": 86,
+    "iron": 3.0,
+    "magnesium": 26,
+    "vitaminA": 0,
+    "vitaminC": 0,
+    "vitaminD": 0,
+    "vitaminB12": 0,
+    "glycemicIndex": 68,
+    "glycemicLoad": 38,
+    "allergens": ["wheat", "gluten"],
+    "servingSize": 100,
+    "servingUnit": "g",
+    "focusGrades": {
+      "balanced": {
+        "grade": "C",
+        "score": 65,
+        "insight": "Refined grain with moderate protein but lacks fiber, vitamins, and essential nutrients",
+        "pros": ["Fortified with iron (3mg)", "Moderate protein content", "Low in fat"],
+        "cons": ["Very low fiber (2.2g)", "High in refined carbs", "Minimal vitamins and minerals"]
+      },
+      "heart_health": {
+        "grade": "C-",
+        "score": 63,
+        "insight": "Low fat is positive, but high sodium and refined carbs increase cardiovascular risk",
+        "pros": ["Very low fat content", "Zero cholesterol", "Fortified with some B vitamins"],
+        "cons": ["Very high sodium (536mg)", "Low fiber doesn't lower cholesterol", "High glycemic load increases heart disease risk"]
+      },
+      "muscle_building": {
+        "grade": "C+",
+        "score": 73,
+        "insight": "Provides some protein and iron, but lacks complete amino acids and is primarily a carb source",
+        "pros": ["Moderate protein (9.1g)", "High iron for oxygen transport", "Good for carb-loading pre-workout"],
+        "cons": ["Incomplete protein (low lysine)", "No B12", "Lacks leucine for muscle synthesis"]
+      },
+      "energy": {
+        "grade": "B-",
+        "score": 74,
+        "insight": "Quick energy from refined carbs, but high GI causes energy crashes without sustained fuel",
+        "pros": ["High carb content for quick energy", "Easily digestible", "Fortified with B vitamins"],
+        "cons": ["High glycemic index (68) causes crashes", "Low fiber doesn't sustain energy", "Minimal micronutrients"]
+      },
+      "weight_management": {
+        "grade": "D+",
+        "score": 57,
+        "insight": "High calorie density and low fiber make this a poor choice for weight management",
+        "pros": ["Low fat content", "Can be filling when paired with protein", "Versatile for healthy toppings"],
+        "cons": ["Very low fiber (2.2g)", "High calorie density (275 cal/100g)", "High GI increases hunger quickly"]
+      },
+      "brain_focus": {
+        "grade": "C",
+        "score": 67,
+        "insight": "Quick glucose for brain, but high GI causes focus crashes; lacks brain-healthy nutrients",
+        "pros": ["Rapid glucose for brain energy", "Fortified with some B vitamins", "Easy to digest"],
+        "cons": ["High GI causes focus crashes", "No omega-3s", "Lacks choline and other brain nutrients"]
+      },
+      "gut_health": {
+        "grade": "D+",
+        "score": 58,
+        "insight": "Very low fiber and refined grains provide minimal gut microbiome support",
+        "pros": ["Easy to digest for sensitive stomachs", "Low FODMAP option for some"],
+        "cons": ["Very low fiber (2.2g)", "Refined grains don't feed beneficial bacteria", "High sodium may disrupt microbiome"]
+      },
+      "blood_sugar": {
+        "grade": "D",
+        "score": 52,
+        "insight": "High glycemic index and load cause rapid blood sugar spikes, problematic for diabetes",
+        "pros": ["Can quickly raise low blood sugar", "Predictable glucose response"],
+        "cons": ["High glycemic index (68)", "Very high glycemic load (38)", "Low fiber doesn't slow absorption"]
+      },
+      "bone_joint": {
+        "grade": "C+",
+        "score": 71,
+        "insight": "Fortified with some calcium and iron, but lacks vitamin D and magnesium for optimal bone health",
+        "pros": ["Moderate calcium (86mg)", "High iron for collagen synthesis", "Fortified products may have added nutrients"],
+        "cons": ["No vitamin D", "Low magnesium (26mg)", "Lacks vitamin K"]
+      },
+      "anti_inflammatory": {
+        "grade": "D+",
+        "score": 59,
+        "insight": "Refined grains and high sodium promote inflammation; lacks antioxidants and anti-inflammatory nutrients",
+        "pros": ["Low fat means fewer inflammatory fats", "Zero cholesterol"],
+        "cons": ["Refined grains are pro-inflammatory", "Very high sodium promotes inflammation", "No omega-3s or antioxidants"]
+      }
+    }
+  },
+  "tzatziki": {
+    "name": "Tzatziki Sauce",
+    "calories": 59,
+    "protein": 3.5,
+    "carbs": 4.5,
+    "fat": 3.2,
+    "fiber": 0.5,
+    "sugar": 3.8,
+    "sodium": 220,
+    "saturatedFat": 2.0,
+    "cholesterol": 10,
+    "potassium": 155,
+    "calcium": 110,
+    "iron": 0.2,
+    "magnesium": 11,
+    "vitaminA": 32,
+    "vitaminC": 1.5,
+    "vitaminD": 0.1,
+    "vitaminB12": 0.3,
+    "glycemicIndex": 35,
+    "glycemicLoad": 2,
+    "allergens": ["milk"],
+    "servingSize": 100,
+    "servingUnit": "g",
+    "focusGrades": {
+      "balanced": {
+        "grade": "B",
+        "score": 80,
+        "insight": "Well-balanced low-calorie condiment with probiotics, moderate protein, and beneficial nutrients from yogurt and cucumber",
+        "pros": ["Low calorie density (59 cal/100g)", "Probiotics from Greek yogurt", "Cucumber adds hydration and nutrients"],
+        "cons": ["Low fiber content", "Moderate sodium", "High sugar relative to serving size"]
+      },
+      "heart_health": {
+        "grade": "B+",
+        "score": 82,
+        "insight": "Low saturated fat, probiotics support cardiovascular health, with garlic providing additional benefits",
+        "pros": ["Probiotics reduce inflammation", "Garlic lowers blood pressure", "Low cholesterol content"],
+        "cons": ["Moderate sodium (220mg)", "Contains some saturated fat", "Limited potassium"]
+      },
+      "muscle_building": {
+        "grade": "C+",
+        "score": 70,
+        "insight": "Provides some protein from Greek yogurt but insufficient as primary protein source",
+        "pros": ["Complete protein from dairy", "Calcium supports muscle contraction", "Probiotics aid protein digestion"],
+        "cons": ["Low protein content (3.5g)", "Low calorie density for muscle gain", "Lacks leucine density"]
+      },
+      "energy": {
+        "grade": "B",
+        "score": 78,
+        "insight": "Low glycemic impact with sustained energy from protein and healthy fats; probiotics aid nutrient absorption",
+        "pros": ["Low glycemic index (35)", "Protein and fat provide sustained energy", "Probiotics improve nutrient absorption"],
+        "cons": ["Low calorie content limits energy density", "Minimal B vitamins", "Not a significant energy source"]
+      },
+      "weight_management": {
+        "grade": "A-",
+        "score": 88,
+        "insight": "Excellent low-calorie condiment alternative with protein for satiety and probiotics for metabolism",
+        "pros": ["Very low calorie (59 cal/100g)", "Protein increases satiety", "Probiotics may aid weight loss"],
+        "cons": ["Low fiber content", "Easy to overconsume with chips", "Sugar content from yogurt"]
+      },
+      "brain_focus": {
+        "grade": "B",
+        "score": 79,
+        "insight": "Probiotics support gut-brain axis and garlic enhances cognition, but lacks key brain nutrients",
+        "pros": ["Probiotics support gut-brain connection", "Garlic improves blood flow to brain", "Low GI prevents crashes"],
+        "cons": ["No omega-3s", "Low in B vitamins", "Minimal choline"]
+      },
+      "gut_health": {
+        "grade": "A-",
+        "score": 89,
+        "insight": "Excellent probiotic content from Greek yogurt supports microbiome, with cucumber and garlic adding prebiotic benefits",
+        "pros": ["Rich in live probiotics", "Cucumber provides prebiotics", "Garlic has antimicrobial properties"],
+        "cons": ["Low fiber content (0.5g)", "Dairy may cause issues for some", "Moderate sodium"]
+      },
+      "blood_sugar": {
+        "grade": "A-",
+        "score": 87,
+        "insight": "Low glycemic index and load with protein and fat stabilizing blood sugar effectively",
+        "pros": ["Low glycemic index (35)", "Very low glycemic load (2)", "Protein slows glucose absorption"],
+        "cons": ["Contains some natural sugars", "Serving size matters for carb content", "Limited fiber"]
+      },
+      "bone_joint": {
+        "grade": "B+",
+        "score": 83,
+        "insight": "Good calcium from Greek yogurt supports bone density, with probiotics enhancing mineral absorption",
+        "pros": ["High calcium (110mg)", "Probiotics improve calcium absorption", "Contains vitamin D"],
+        "cons": ["Low magnesium (11mg)", "Limited vitamin K", "Moderate vitamin D content"]
+      },
+      "anti_inflammatory": {
+        "grade": "A-",
+        "score": 88,
+        "insight": "Powerful anti-inflammatory profile from probiotics, garlic, and cucumber's antioxidants",
+        "pros": ["Probiotics reduce systemic inflammation", "Garlic contains allicin (anti-inflammatory)", "Cucumber antioxidants combat oxidative stress"],
+        "cons": ["Saturated fat may trigger some inflammation", "Moderate sodium", "Lacks omega-3s"]
+      }
+    }
+  }
+}

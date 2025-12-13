@@ -5,6 +5,7 @@
  * - Reference data loading (DRI, FDA Daily Values, etc.)
  * - Personalized target calculation
  * - Intake evaluation and scoring
+ * - Focus-specific scoring (10 nutrition focuses)
  * - Educational insights generation
  * - Cloud Functions API
  */
@@ -23,7 +24,18 @@ export {
   computeUserTargets,
 } from './targets';
 
-// Evaluation engine
+// Focus configuration (10 nutrition focuses)
+export {
+  type NutritionFocusId,
+  type FocusWeights,
+  type NutritionFocusConfig,
+  FOCUS_CONFIGS,
+  getFocusConfig,
+  getAllFocusIds,
+  getFocusDisplayInfo,
+} from './focus';
+
+// Evaluation engine (V1 - legacy)
 export {
   evaluateNutrient,
   evaluateNutrients,
@@ -31,6 +43,29 @@ export {
   evaluateDayWithTargets,
   calculateScore,
   quickScore,
+} from './evaluation';
+
+// Evaluation engine (V2 - advanced with MAR, focus modes)
+export {
+  // Score calculator V2
+  calculateScoreV2,
+  getScoreLabelV2,
+  getScoreColorV2,
+  calculateWeeklyScoreV2,
+  calculateCumulativeWeeklyMAR,
+  // Day evaluator V2
+  evaluateDayV2,
+  evaluateDayWithTargetsV2,
+  evaluateWeekV2,
+  quickScoreV2,
+  // Types
+  type ScoreBreakdownV2,
+  type ScoreResultV2,
+  type IntakeData,
+  type DayEvaluationV2,
+  type WeekEvaluationV2,
+  type Highlight,
+  type NutrientGap as NutrientGapV2,
 } from './evaluation';
 
 // Insights
@@ -46,10 +81,15 @@ export {
 
 // API (Cloud Functions)
 export {
+  // V1 endpoints
   evaluateNutritionDay,
   getNutritionTargets,
   getNutrientInfo,
   evaluateNutritionWeek,
+  // V2 endpoints (advanced scoring)
+  evaluateNutritionDayV2,
+  evaluateNutritionWeekV2,
+  getNutritionFocusOptions,
 } from './api';
 
 // Types re-exported for convenience

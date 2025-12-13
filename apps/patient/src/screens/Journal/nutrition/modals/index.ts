@@ -6,3 +6,4 @@ export { LogMealModal } from './LogMealModal';
 export { EditMealModal } from './EditMealModal';
 export { MacroGoalsModal } from './MacroGoalsModal';
 export { DVCalculatorModal } from './DVCalculatorModal';
+export { FocusSelectorModal } from './FocusSelectorModal';

@@ -1,0 +1,944 @@
+{
+  "mushroom": {
+    "name": "Mushrooms, white, raw",
+    "fdcId": "169251",
+    "quantity": 1,
+    "unit": "cup (70g)",
+    "mealType": "any",
+    "foodGroups": ["vegetable"],
+    "subCategory": "fungus",
+    "calories": 15,
+    "protein": 2.2,
+    "carbs": 2.3,
+    "fat": 0.2,
+    "fiber": 0.7,
+    "sugar": 1.4,
+    "sodium": 4,
+    "saturatedFat": 0,
+    "transFat": 0,
+    "cholesterol": 0,
+    "potassium": 223,
+    "calcium": 2,
+    "iron": 0.4,
+    "magnesium": 6,
+    "zinc": 0.4,
+    "vitaminA": 0,
+    "vitaminC": 1.5,
+    "vitaminD": 7,
+    "vitaminE": 0.01,
+    "vitaminK": 0,
+    "thiamin": 0.06,
+    "riboflavin": 0.3,
+    "niacin": 2.5,
+    "vitaminB6": 0.07,
+    "folate": 12,
+    "vitaminB12": 0,
+    "choline": 12,
+    "phosphorus": 60,
+    "selenium": 6.4,
+    "copper": 0.2,
+    "manganese": 0.03,
+    "caffeine": 0,
+    "water": 64,
+    "monounsaturatedFat": 0,
+    "polyunsaturatedFat": 0.1,
+    "omega3": { "ala": 0, "epa": 0, "dha": 0 },
+    "omega6": { "linoleicAcid": 0.08 },
+    "omegaRatio": 0,
+    "glycemicIndex": 15,
+    "glycemicLoad": 1,
+    "glycemicCategory": "low",
+    "nutrientDensityScore": 45,
+    "satietyScore": 78,
+    "inflammatoryIndex": -2.1,
+    "novaClass": 1,
+    "oracScore": 1150,
+    "dietaryTags": ["vegan", "gluten_free", "keto", "paleo", "whole30", "low_carb"],
+    "allergens": [],
+    "insight": "Nature's vitamin D source with exceptional selenium, B vitamins, and beta-glucans that support immunity—all for just 15 calories per cup.",
+    "focusGrades": {
+      "balanced": {
+        "grade": "A-",
+        "score": 89,
+        "insight": "Outstanding nutrient density (45) with rare food-based vitamin D (7mcg), excellent selenium (6.4mcg), and B vitamins for metabolism—all with minimal calories (15).",
+        "pros": ["Exceptional nutrient-to-calorie ratio", "Rare vitamin D source (28% DV)", "High selenium (12% DV)", "Rich in B vitamins"],
+        "cons": ["Very low calories may not satisfy alone", "Minimal fiber (0.7g)", "Low vitamin C"]
+      },
+      "heart_health": {
+        "grade": "A",
+        "score": 92,
+        "insight": "Beta-glucans lower cholesterol, exceptional potassium (223mg) supports blood pressure, selenium protects heart tissue, and virtually zero sodium/saturated fat.",
+        "pros": ["Beta-glucans reduce LDL cholesterol", "Excellent potassium-to-sodium ratio (56:1)", "Zero saturated fat and cholesterol", "Selenium protects cardiovascular tissue"],
+        "cons": ["Low omega-3 fatty acids"]
+      },
+      "muscle_building": {
+        "grade": "C+",
+        "score": 73,
+        "insight": "Decent protein (2.2g) for such low calories (15), plus B vitamins support energy metabolism. Not a primary protein source but excellent low-calorie addition.",
+        "pros": ["High protein-to-calorie ratio", "B vitamins aid muscle metabolism", "Selenium for muscle recovery"],
+        "cons": ["Total protein still low", "Minimal BCAAs", "Won't build muscle alone"]
+      },
+      "energy": {
+        "grade": "B",
+        "score": 82,
+        "insight": "Exceptional B vitamin profile (niacin 2.5mg, riboflavin 0.3mg) converts food to energy efficiently. Low calories mean sustained energy without crashes.",
+        "pros": ["Rich B vitamins for energy metabolism", "Zero blood sugar spike (GI 15)", "Hydrating (91% water)"],
+        "cons": ["Very low calorie density", "Won't provide quick energy", "Minimal carbohydrates"]
+      },
+      "weight_management": {
+        "grade": "A+",
+        "score": 96,
+        "insight": "Only 15 calories per cup with high satiety (78) from umami flavor and volume. Excellent for creating filling, low-calorie meals.",
+        "pros": ["Extremely low calorie density", "High satiety from umami compounds", "91% water creates volume", "Near-zero fat"],
+        "cons": ["May need pairing for complete meal"]
+      },
+      "brain_focus": {
+        "grade": "B+",
+        "score": 86,
+        "insight": "Selenium (6.4mcg) protects brain from oxidative stress, B vitamins support neurotransmitter production, and ergothioneine acts as neuroprotectant.",
+        "pros": ["Ergothioneine unique antioxidant for brain", "Selenium protects cognitive function", "Niacin supports neurotransmitters", "Choline for acetylcholine"],
+        "cons": ["No omega-3 DHA", "Low vitamin E"]
+      },
+      "gut_health": {
+        "grade": "A-",
+        "score": 88,
+        "insight": "Beta-glucans act as powerful prebiotics feeding beneficial bacteria, polysaccharides support gut lining, though fiber content (0.7g) is modest.",
+        "pros": ["Beta-glucans are exceptional prebiotics", "Polysaccharides feed good bacteria", "Anti-inflammatory compounds", "Easy to digest"],
+        "cons": ["Lower total fiber than other vegetables", "May cause bloating in sensitive individuals"]
+      },
+      "blood_sugar": {
+        "grade": "A+",
+        "score": 98,
+        "insight": "Exceptional GI of 15 with minimal carbs (2.3g) and beta-glucans that slow glucose absorption. Perfect for diabetes management.",
+        "pros": ["Very low GI (15) and GL (1)", "Beta-glucans improve insulin sensitivity", "Minimal impact on blood sugar", "High chromium content"],
+        "cons": ["None significant"]
+      },
+      "bone_joint": {
+        "grade": "B-",
+        "score": 77,
+        "insight": "Rare vitamin D source (7mcg, 28% DV) essential for calcium absorption, copper supports collagen, selenium reduces joint inflammation.",
+        "pros": ["Excellent vitamin D for bone health", "Copper aids collagen formation", "Anti-inflammatory for joints", "Selenium protects cartilage"],
+        "cons": ["Very low calcium (2mg)", "Minimal magnesium and vitamin K"]
+      },
+      "anti_inflammatory": {
+        "grade": "A",
+        "score": 91,
+        "insight": "Exceptional anti-inflammatory index (-2.1) from ergothioneine, selenium (6.4mcg), beta-glucans, and polyphenols that combat oxidative stress.",
+        "pros": ["Ergothioneine unique anti-inflammatory", "High selenium fights inflammation", "Beta-glucans modulate immune response", "Strong ORAC score (1150)"],
+        "cons": ["Lower than some colorful vegetables in antioxidants"]
+      }
+    },
+    "bioavailability": {
+      "vitaminD": "Enhanced when sautéed briefly with fat",
+      "selenium": "Highly bioavailable from mushrooms",
+      "betaglucans": "Released better when cooked"
+    },
+    "pairWith": [
+      { "food": "garlic", "reason": "Enhances selenium absorption and adds allicin for immunity" },
+      { "food": "olive_oil", "reason": "Fat improves vitamin D absorption" },
+      { "food": "spinach", "reason": "Combines vitamin D with calcium for bone health" }
+    ],
+    "avoidWith": [
+      { "food": "raw_in_large_amounts", "reason": "Contains trace agaritine, cooking reduces it" }
+    ],
+    "bestTiming": {
+      "preWorkout": false,
+      "postWorkout": false,
+      "morning": true,
+      "beforeBed": true
+    },
+    "digestionTime": "fast",
+    "portionVisual": "5-6 medium mushrooms or 1 cup sliced",
+    "cookingTips": "Sauté to concentrate flavor and reduce water content; roasting intensifies umami; avoid overcooking to preserve nutrients",
+    "storageHints": "Store in paper bag in fridge, use within 5-7 days; don't wash until ready to use",
+    "sustainabilityScore": 95,
+    "seasonality": ["year_round"],
+    "commonPrep": ["sautéed", "roasted", "grilled", "raw"],
+    "culturalSignificance": "Revered in Asian medicine for immune support; umami discovery traced to mushrooms"
+  },
+  "mushrooms": {
+    "name": "Mushrooms, white, raw",
+    "fdcId": "169251",
+    "quantity": 1,
+    "unit": "cup (70g)",
+    "mealType": "any",
+    "foodGroups": ["vegetable"],
+    "subCategory": "fungus",
+    "calories": 15,
+    "protein": 2.2,
+    "carbs": 2.3,
+    "fat": 0.2,
+    "fiber": 0.7,
+    "sugar": 1.4,
+    "sodium": 4,
+    "saturatedFat": 0,
+    "transFat": 0,
+    "cholesterol": 0,
+    "potassium": 223,
+    "calcium": 2,
+    "iron": 0.4,
+    "magnesium": 6,
+    "zinc": 0.4,
+    "vitaminA": 0,
+    "vitaminC": 1.5,
+    "vitaminD": 7,
+    "vitaminE": 0.01,
+    "vitaminK": 0,
+    "thiamin": 0.06,
+    "riboflavin": 0.3,
+    "niacin": 2.5,
+    "vitaminB6": 0.07,
+    "folate": 12,
+    "vitaminB12": 0,
+    "choline": 12,
+    "phosphorus": 60,
+    "selenium": 6.4,
+    "copper": 0.2,
+    "manganese": 0.03,
+    "caffeine": 0,
+    "water": 64,
+    "monounsaturatedFat": 0,
+    "polyunsaturatedFat": 0.1,
+    "omega3": { "ala": 0, "epa": 0, "dha": 0 },
+    "omega6": { "linoleicAcid": 0.08 },
+    "omegaRatio": 0,
+    "glycemicIndex": 15,
+    "glycemicLoad": 1,
+    "glycemicCategory": "low",
+    "nutrientDensityScore": 45,
+    "satietyScore": 78,
+    "inflammatoryIndex": -2.1,
+    "novaClass": 1,
+    "oracScore": 1150,
+    "dietaryTags": ["vegan", "gluten_free", "keto", "paleo", "whole30", "low_carb"],
+    "allergens": [],
+    "insight": "Nature's vitamin D source with exceptional selenium, B vitamins, and beta-glucans that support immunity—all for just 15 calories per cup.",
+    "focusGrades": {
+      "balanced": {
+        "grade": "A-",
+        "score": 89,
+        "insight": "Outstanding nutrient density (45) with rare food-based vitamin D (7mcg), excellent selenium (6.4mcg), and B vitamins for metabolism—all with minimal calories (15).",
+        "pros": ["Exceptional nutrient-to-calorie ratio", "Rare vitamin D source (28% DV)", "High selenium (12% DV)", "Rich in B vitamins"],
+        "cons": ["Very low calories may not satisfy alone", "Minimal fiber (0.7g)", "Low vitamin C"]
+      },
+      "heart_health": {
+        "grade": "A",
+        "score": 92,
+        "insight": "Beta-glucans lower cholesterol, exceptional potassium (223mg) supports blood pressure, selenium protects heart tissue, and virtually zero sodium/saturated fat.",
+        "pros": ["Beta-glucans reduce LDL cholesterol", "Excellent potassium-to-sodium ratio (56:1)", "Zero saturated fat and cholesterol", "Selenium protects cardiovascular tissue"],
+        "cons": ["Low omega-3 fatty acids"]
+      },
+      "muscle_building": {
+        "grade": "C+",
+        "score": 73,
+        "insight": "Decent protein (2.2g) for such low calories (15), plus B vitamins support energy metabolism. Not a primary protein source but excellent low-calorie addition.",
+        "pros": ["High protein-to-calorie ratio", "B vitamins aid muscle metabolism", "Selenium for muscle recovery"],
+        "cons": ["Total protein still low", "Minimal BCAAs", "Won't build muscle alone"]
+      },
+      "energy": {
+        "grade": "B",
+        "score": 82,
+        "insight": "Exceptional B vitamin profile (niacin 2.5mg, riboflavin 0.3mg) converts food to energy efficiently. Low calories mean sustained energy without crashes.",
+        "pros": ["Rich B vitamins for energy metabolism", "Zero blood sugar spike (GI 15)", "Hydrating (91% water)"],
+        "cons": ["Very low calorie density", "Won't provide quick energy", "Minimal carbohydrates"]
+      },
+      "weight_management": {
+        "grade": "A+",
+        "score": 96,
+        "insight": "Only 15 calories per cup with high satiety (78) from umami flavor and volume. Excellent for creating filling, low-calorie meals.",
+        "pros": ["Extremely low calorie density", "High satiety from umami compounds", "91% water creates volume", "Near-zero fat"],
+        "cons": ["May need pairing for complete meal"]
+      },
+      "brain_focus": {
+        "grade": "B+",
+        "score": 86,
+        "insight": "Selenium (6.4mcg) protects brain from oxidative stress, B vitamins support neurotransmitter production, and ergothioneine acts as neuroprotectant.",
+        "pros": ["Ergothioneine unique antioxidant for brain", "Selenium protects cognitive function", "Niacin supports neurotransmitters", "Choline for acetylcholine"],
+        "cons": ["No omega-3 DHA", "Low vitamin E"]
+      },
+      "gut_health": {
+        "grade": "A-",
+        "score": 88,
+        "insight": "Beta-glucans act as powerful prebiotics feeding beneficial bacteria, polysaccharides support gut lining, though fiber content (0.7g) is modest.",
+        "pros": ["Beta-glucans are exceptional prebiotics", "Polysaccharides feed good bacteria", "Anti-inflammatory compounds", "Easy to digest"],
+        "cons": ["Lower total fiber than other vegetables", "May cause bloating in sensitive individuals"]
+      },
+      "blood_sugar": {
+        "grade": "A+",
+        "score": 98,
+        "insight": "Exceptional GI of 15 with minimal carbs (2.3g) and beta-glucans that slow glucose absorption. Perfect for diabetes management.",
+        "pros": ["Very low GI (15) and GL (1)", "Beta-glucans improve insulin sensitivity", "Minimal impact on blood sugar", "High chromium content"],
+        "cons": ["None significant"]
+      },
+      "bone_joint": {
+        "grade": "B-",
+        "score": 77,
+        "insight": "Rare vitamin D source (7mcg, 28% DV) essential for calcium absorption, copper supports collagen, selenium reduces joint inflammation.",
+        "pros": ["Excellent vitamin D for bone health", "Copper aids collagen formation", "Anti-inflammatory for joints", "Selenium protects cartilage"],
+        "cons": ["Very low calcium (2mg)", "Minimal magnesium and vitamin K"]
+      },
+      "anti_inflammatory": {
+        "grade": "A",
+        "score": 91,
+        "insight": "Exceptional anti-inflammatory index (-2.1) from ergothioneine, selenium (6.4mcg), beta-glucans, and polyphenols that combat oxidative stress.",
+        "pros": ["Ergothioneine unique anti-inflammatory", "High selenium fights inflammation", "Beta-glucans modulate immune response", "Strong ORAC score (1150)"],
+        "cons": ["Lower than some colorful vegetables in antioxidants"]
+      }
+    },
+    "bioavailability": {
+      "vitaminD": "Enhanced when sautéed briefly with fat",
+      "selenium": "Highly bioavailable from mushrooms",
+      "betaglucans": "Released better when cooked"
+    },
+    "pairWith": [
+      { "food": "garlic", "reason": "Enhances selenium absorption and adds allicin for immunity" },
+      { "food": "olive_oil", "reason": "Fat improves vitamin D absorption" },
+      { "food": "spinach", "reason": "Combines vitamin D with calcium for bone health" }
+    ],
+    "avoidWith": [
+      { "food": "raw_in_large_amounts", "reason": "Contains trace agaritine, cooking reduces it" }
+    ],
+    "bestTiming": {
+      "preWorkout": false,
+      "postWorkout": false,
+      "morning": true,
+      "beforeBed": true
+    },
+    "digestionTime": "fast",
+    "portionVisual": "5-6 medium mushrooms or 1 cup sliced",
+    "cookingTips": "Sauté to concentrate flavor and reduce water content; roasting intensifies umami; avoid overcooking to preserve nutrients",
+    "storageHints": "Store in paper bag in fridge, use within 5-7 days; don't wash until ready to use",
+    "sustainabilityScore": 95,
+    "seasonality": ["year_round"],
+    "commonPrep": ["sautéed", "roasted", "grilled", "raw"],
+    "culturalSignificance": "Revered in Asian medicine for immune support; umami discovery traced to mushrooms"
+  },
+  "asparagus": {
+    "name": "Asparagus, raw",
+    "fdcId": "168390",
+    "quantity": 1,
+    "unit": "cup (134g)",
+    "mealType": "any",
+    "foodGroups": ["vegetable"],
+    "subCategory": "stem",
+    "calories": 27,
+    "protein": 3,
+    "carbs": 5.2,
+    "fat": 0.2,
+    "fiber": 2.8,
+    "sugar": 2.5,
+    "sodium": 3,
+    "saturatedFat": 0,
+    "transFat": 0,
+    "cholesterol": 0,
+    "potassium": 271,
+    "calcium": 32,
+    "iron": 2.9,
+    "magnesium": 19,
+    "zinc": 0.7,
+    "vitaminA": 1006,
+    "vitaminC": 7.5,
+    "vitaminD": 0,
+    "vitaminE": 1.5,
+    "vitaminK": 55.7,
+    "thiamin": 0.19,
+    "riboflavin": 0.19,
+    "niacin": 1.3,
+    "vitaminB6": 0.12,
+    "folate": 70,
+    "vitaminB12": 0,
+    "choline": 21,
+    "phosphorus": 70,
+    "selenium": 2.7,
+    "copper": 0.2,
+    "manganese": 0.2,
+    "caffeine": 0,
+    "water": 123,
+    "monounsaturatedFat": 0,
+    "polyunsaturatedFat": 0.1,
+    "omega3": { "ala": 0.01, "epa": 0, "dha": 0 },
+    "omega6": { "linoleicAcid": 0.05 },
+    "omegaRatio": 5,
+    "glycemicIndex": 15,
+    "glycemicLoad": 1,
+    "glycemicCategory": "low",
+    "nutrientDensityScore": 62,
+    "satietyScore": 82,
+    "inflammatoryIndex": -2.4,
+    "novaClass": 1,
+    "oracScore": 2150,
+    "dietaryTags": ["vegan", "gluten_free", "keto", "paleo", "whole30", "low_carb"],
+    "allergens": [],
+    "insight": "Spring's detox champion loaded with folate (70mcg), vitamin K (56mcg), and unique asparagusic acid that supports kidney function—all for just 27 calories.",
+    "focusGrades": {
+      "balanced": {
+        "grade": "A",
+        "score": 93,
+        "insight": "Exceptional nutrient density (62) with standout folate (70mcg, 18% DV), vitamin K (56mcg, 70% DV), vitamin A (1006IU), and iron (2.9mg)—all for minimal calories (27).",
+        "pros": ["Outstanding folate for cell health", "Exceptional vitamin K (70% DV)", "High vitamin A (20% DV)", "Good iron (16% DV)", "Low calorie density"],
+        "cons": ["Moderate fiber (2.8g)", "Low vitamin C compared to other vegetables"]
+      },
+      "heart_health": {
+        "grade": "A",
+        "score": 94,
+        "insight": "Exceptional folate (70mcg) lowers homocysteine, vitamin K (56mcg) prevents arterial calcification, potassium (271mg) regulates blood pressure, and zero sodium/saturated fat.",
+        "pros": ["Folate reduces heart disease risk", "Vitamin K protects arteries", "Excellent potassium-to-sodium ratio (90:1)", "Anti-inflammatory compounds", "Zero cholesterol"],
+        "cons": ["Low omega-3 content"]
+      },
+      "muscle_building": {
+        "grade": "C+",
+        "score": 74,
+        "insight": "Decent protein (3g) for a vegetable with good iron (2.9mg) for oxygen transport. Folate supports cell growth but won't build muscle as primary protein.",
+        "pros": ["High protein for a vegetable", "Excellent iron for oxygen delivery", "Folate aids muscle cell growth", "Low-calorie protein source"],
+        "cons": ["Total protein still modest", "Lacks complete amino acids", "Minimal BCAAs"]
+      },
+      "energy": {
+        "grade": "B+",
+        "score": 85,
+        "insight": "Exceptional iron (2.9mg, 16% DV) combats fatigue, B vitamins support energy metabolism, and low GI (15) provides steady energy without crashes.",
+        "pros": ["Excellent iron fights fatigue", "B vitamins convert food to energy", "Folate supports red blood cell production", "Sustained energy from low GI"],
+        "cons": ["Low calorie density", "Won't provide quick energy boost"]
+      },
+      "weight_management": {
+        "grade": "A+",
+        "score": 97,
+        "insight": "Only 27 calories per cup with high satiety (82) from fiber (2.8g) and volume. Asparagusic acid acts as natural diuretic reducing water retention.",
+        "pros": ["Very low calorie density", "High satiety from fiber and water (92%)", "Natural diuretic reduces bloating", "Near-zero fat"],
+        "cons": ["May need pairing for complete meal"]
+      },
+      "brain_focus": {
+        "grade": "A-",
+        "score": 89,
+        "insight": "Exceptional folate (70mcg, 18% DV) critical for neurotransmitter synthesis and cognitive function. Vitamin E and antioxidants protect brain cells from oxidative stress.",
+        "pros": ["Folate essential for brain health", "Vitamin E protects neurons", "Anti-inflammatory for cognitive health", "Choline supports memory"],
+        "cons": ["No omega-3 DHA", "Lower B12 (plant source)"]
+      },
+      "gut_health": {
+        "grade": "A",
+        "score": 91,
+        "insight": "Excellent prebiotic inulin feeds beneficial gut bacteria, good fiber (2.8g) supports regularity, and anti-inflammatory compounds heal gut lining.",
+        "pros": ["Inulin is powerful prebiotic", "Good fiber supports microbiome", "Anti-inflammatory for gut health", "Easy to digest when cooked"],
+        "cons": ["May cause gas in sensitive individuals", "Inulin can be hard to digest raw"]
+      },
+      "blood_sugar": {
+        "grade": "A+",
+        "score": 97,
+        "insight": "Exceptional GI of 15 with minimal carbs (5.2g) and high fiber (2.8g). Asparagusic acid may improve insulin sensitivity and glucose metabolism.",
+        "pros": ["Very low GI (15) and GL (1)", "Fiber slows glucose absorption", "May improve insulin sensitivity", "Minimal sugar (2.5g)"],
+        "cons": ["None significant"]
+      },
+      "bone_joint": {
+        "grade": "A-",
+        "score": 88,
+        "insight": "Exceptional vitamin K (56mcg, 70% DV) essential for bone mineralization, good calcium (32mg) and vitamin A support bone health, anti-inflammatory for joints.",
+        "pros": ["Outstanding vitamin K for bone density", "Anti-inflammatory for joint health", "Vitamin A supports bone remodeling", "Calcium and magnesium present"],
+        "cons": ["Moderate calcium compared to dairy", "Lower magnesium than leafy greens"]
+      },
+      "anti_inflammatory": {
+        "grade": "A",
+        "score": 93,
+        "insight": "Exceptional anti-inflammatory index (-2.4) from saponins, glutathione, and flavonoids. High ORAC score (2150) with powerful antioxidant capacity.",
+        "pros": ["Saponins reduce inflammation", "Glutathione master antioxidant", "High ORAC score (2150)", "Vitamin E and K fight oxidative stress"],
+        "cons": ["Lower than some berries in polyphenols"]
+      }
+    },
+    "bioavailability": {
+      "vitaminK": "Fat-soluble, cook with olive oil for absorption",
+      "folate": "Heat-sensitive, light steaming preserves more",
+      "iron": "Non-heme iron, pair with vitamin C for absorption"
+    },
+    "pairWith": [
+      { "food": "lemon", "reason": "Vitamin C enhances iron absorption" },
+      { "food": "olive_oil", "reason": "Fat improves vitamin K and A absorption" },
+      { "food": "eggs", "reason": "Complete protein pairing with complementary nutrients" }
+    ],
+    "avoidWith": [
+      { "food": "blood_thinners", "reason": "High vitamin K may interfere with warfarin" }
+    ],
+    "bestTiming": {
+      "preWorkout": false,
+      "postWorkout": false,
+      "morning": true,
+      "beforeBed": false
+    },
+    "digestionTime": "medium",
+    "portionVisual": "5-7 medium spears or 1 cup chopped",
+    "cookingTips": "Snap off woody ends; steam 3-5 minutes to preserve folate; roast at 425°F for caramelization; avoid overcooking which destroys nutrients",
+    "storageHints": "Store upright in water like flowers, cover with bag; use within 3-4 days for peak freshness",
+    "sustainabilityScore": 88,
+    "seasonality": ["spring"],
+    "commonPrep": ["steamed", "roasted", "grilled", "sautéed"],
+    "culturalSignificance": "Ancient aphrodisiac in Greek and Roman cultures; prized as spring delicacy signaling renewal"
+  },
+  "green_beans": {
+    "name": "Green beans, raw",
+    "fdcId": "169961",
+    "quantity": 1,
+    "unit": "cup (100g)",
+    "mealType": "any",
+    "foodGroups": ["vegetable"],
+    "subCategory": "legume",
+    "calories": 31,
+    "protein": 1.8,
+    "carbs": 7,
+    "fat": 0.2,
+    "fiber": 2.7,
+    "sugar": 3.3,
+    "sodium": 6,
+    "saturatedFat": 0,
+    "transFat": 0,
+    "cholesterol": 0,
+    "potassium": 211,
+    "calcium": 37,
+    "iron": 1,
+    "magnesium": 25,
+    "zinc": 0.2,
+    "vitaminA": 690,
+    "vitaminC": 12.2,
+    "vitaminD": 0,
+    "vitaminE": 0.4,
+    "vitaminK": 43,
+    "thiamin": 0.08,
+    "riboflavin": 0.1,
+    "niacin": 0.7,
+    "vitaminB6": 0.14,
+    "folate": 33,
+    "vitaminB12": 0,
+    "choline": 15,
+    "phosphorus": 38,
+    "selenium": 0.6,
+    "copper": 0.1,
+    "manganese": 0.2,
+    "caffeine": 0,
+    "water": 90,
+    "monounsaturatedFat": 0,
+    "polyunsaturatedFat": 0.1,
+    "omega3": { "ala": 0.05, "epa": 0, "dha": 0 },
+    "omega6": { "linoleicAcid": 0.06 },
+    "omegaRatio": 1.2,
+    "glycemicIndex": 15,
+    "glycemicLoad": 1,
+    "glycemicCategory": "low",
+    "nutrientDensityScore": 52,
+    "satietyScore": 79,
+    "inflammatoryIndex": -1.8,
+    "novaClass": 1,
+    "oracScore": 1380,
+    "dietaryTags": ["vegan", "gluten_free", "paleo", "whole30", "low_carb"],
+    "allergens": [],
+    "insight": "Crisp, versatile pods delivering excellent vitamin K (43mcg), vitamin C (12mg), and fiber (2.7g) with satisfying crunch for just 31 calories.",
+    "focusGrades": {
+      "balanced": {
+        "grade": "A-",
+        "score": 87,
+        "insight": "Strong nutrient density (52) with excellent vitamin K (43mcg, 54% DV), good vitamin C (12mg, 14% DV), vitamin A (690IU), and balanced fiber (2.7g) for minimal calories (31).",
+        "pros": ["Excellent vitamin K (54% DV)", "Good vitamin C and A", "Balanced fiber (2.7g)", "Low calorie density"],
+        "cons": ["Moderate protein (1.8g)", "Lower iron than other legumes"]
+      },
+      "heart_health": {
+        "grade": "A-",
+        "score": 88,
+        "insight": "Excellent vitamin K (43mcg) prevents arterial calcification, good potassium (211mg) regulates blood pressure, fiber lowers cholesterol, and zero sodium/saturated fat.",
+        "pros": ["Vitamin K protects arteries", "Good potassium-to-sodium ratio (35:1)", "Fiber reduces LDL cholesterol", "Anti-inflammatory flavonoids", "Zero cholesterol"],
+        "cons": ["Lower potassium than some vegetables", "Minimal omega-3"]
+      },
+      "muscle_building": {
+        "grade": "C",
+        "score": 68,
+        "insight": "Modest protein (1.8g) for a legume, though good iron (1mg) supports oxygen delivery. Better as vegetable side than primary protein source.",
+        "pros": ["Decent protein for a vegetable", "Iron supports muscle oxygen", "Low-calorie protein option"],
+        "cons": ["Total protein modest", "Incomplete amino acid profile", "Lower protein than dried legumes"]
+      },
+      "energy": {
+        "grade": "B",
+        "score": 81,
+        "insight": "Good vitamin C (12mg) and iron (1mg) combat fatigue, complex carbs (7g) provide steady energy, and low GI (15) prevents crashes.",
+        "pros": ["Vitamin C enhances iron absorption", "Complex carbs for sustained energy", "Low GI prevents blood sugar spikes", "Hydrating (90% water)"],
+        "cons": ["Low calorie density", "Won't provide quick energy", "Minimal B vitamins"]
+      },
+      "weight_management": {
+        "grade": "A",
+        "score": 93,
+        "insight": "Only 31 calories per cup with high satiety (79) from fiber (2.7g) and satisfying crunch. Volume and water content (90%) create fullness.",
+        "pros": ["Very low calorie density", "High satiety from fiber and crunch", "90% water creates volume", "Near-zero fat"],
+        "cons": ["May need pairing for complete meal"]
+      },
+      "brain_focus": {
+        "grade": "B",
+        "score": 80,
+        "insight": "Good folate (33mcg) supports neurotransmitter synthesis, vitamin K protects brain from oxidative stress, and flavonoids may enhance cognitive function.",
+        "pros": ["Folate supports brain health", "Vitamin K protects neurons", "Flavonoids enhance cognition", "Vitamin C fights oxidative stress"],
+        "cons": ["No omega-3 DHA", "Lower B vitamins than some vegetables"]
+      },
+      "gut_health": {
+        "grade": "A-",
+        "score": 87,
+        "insight": "Good fiber (2.7g) supports regularity and feeds beneficial bacteria, anti-inflammatory compounds heal gut lining, and easy to digest when cooked.",
+        "pros": ["Good fiber supports microbiome", "Anti-inflammatory for gut health", "Easy to digest", "Prebiotic properties"],
+        "cons": ["Lower fiber than some vegetables", "May cause gas in sensitive individuals"]
+      },
+      "blood_sugar": {
+        "grade": "A",
+        "score": 92,
+        "insight": "Excellent GI of 15 with balanced carbs (7g) and good fiber (2.7g). Chlorogenic acid may improve insulin sensitivity and glucose metabolism.",
+        "pros": ["Very low GI (15) and GL (1)", "Fiber slows glucose absorption", "Chlorogenic acid aids insulin sensitivity", "Moderate sugar (3.3g)"],
+        "cons": ["Slightly higher carbs than some vegetables"]
+      },
+      "bone_joint": {
+        "grade": "B+",
+        "score": 84,
+        "insight": "Excellent vitamin K (43mcg, 54% DV) essential for bone mineralization, good calcium (37mg) and magnesium (25mg), anti-inflammatory for joints.",
+        "pros": ["Outstanding vitamin K for bone density", "Good calcium and magnesium balance", "Anti-inflammatory for joint health", "Silicon content supports collagen"],
+        "cons": ["Lower calcium than dairy", "Moderate vitamin K compared to leafy greens"]
+      },
+      "anti_inflammatory": {
+        "grade": "A-",
+        "score": 86,
+        "insight": "Strong anti-inflammatory index (-1.8) from quercetin, kaempferol, and catechins. Good ORAC score (1380) with solid antioxidant capacity.",
+        "pros": ["Quercetin reduces inflammation", "Kaempferol fights oxidative stress", "Good ORAC score (1380)", "Vitamin C and K anti-inflammatory"],
+        "cons": ["Lower than some colorful vegetables in polyphenols"]
+      }
+    },
+    "bioavailability": {
+      "vitaminK": "Fat-soluble, sauté with oil for absorption",
+      "iron": "Non-heme iron, pair with vitamin C foods",
+      "carotenoids": "Light cooking enhances vitamin A absorption"
+    },
+    "pairWith": [
+      { "food": "almonds", "reason": "Healthy fats enhance vitamin K absorption and add protein" },
+      { "food": "lemon", "reason": "Vitamin C boosts iron absorption" },
+      { "food": "garlic", "reason": "Enhances flavor and adds anti-inflammatory compounds" }
+    ],
+    "avoidWith": [
+      { "food": "blood_thinners", "reason": "Vitamin K may interfere with warfarin" }
+    ],
+    "bestTiming": {
+      "preWorkout": false,
+      "postWorkout": false,
+      "morning": true,
+      "beforeBed": true
+    },
+    "digestionTime": "medium",
+    "portionVisual": "1 cup raw or handful of beans",
+    "cookingTips": "Steam 5-7 minutes for crisp-tender; blanch then shock in ice water to preserve color; sauté with garlic for flavor; avoid overcooking to maintain nutrients and crunch",
+    "storageHints": "Store unwashed in perforated bag in crisper; use within 5-7 days; trim ends just before cooking",
+    "sustainabilityScore": 85,
+    "seasonality": ["summer", "fall"],
+    "commonPrep": ["steamed", "sautéed", "blanched", "roasted"],
+    "culturalSignificance": "Thanksgiving casserole staple in America; enjoyed fresh in Mediterranean and Asian cuisines"
+  },
+  "string_beans": {
+    "name": "Green beans, raw",
+    "fdcId": "169961",
+    "quantity": 1,
+    "unit": "cup (100g)",
+    "mealType": "any",
+    "foodGroups": ["vegetable"],
+    "subCategory": "legume",
+    "calories": 31,
+    "protein": 1.8,
+    "carbs": 7,
+    "fat": 0.2,
+    "fiber": 2.7,
+    "sugar": 3.3,
+    "sodium": 6,
+    "saturatedFat": 0,
+    "transFat": 0,
+    "cholesterol": 0,
+    "potassium": 211,
+    "calcium": 37,
+    "iron": 1,
+    "magnesium": 25,
+    "zinc": 0.2,
+    "vitaminA": 690,
+    "vitaminC": 12.2,
+    "vitaminD": 0,
+    "vitaminE": 0.4,
+    "vitaminK": 43,
+    "thiamin": 0.08,
+    "riboflavin": 0.1,
+    "niacin": 0.7,
+    "vitaminB6": 0.14,
+    "folate": 33,
+    "vitaminB12": 0,
+    "choline": 15,
+    "phosphorus": 38,
+    "selenium": 0.6,
+    "copper": 0.1,
+    "manganese": 0.2,
+    "caffeine": 0,
+    "water": 90,
+    "monounsaturatedFat": 0,
+    "polyunsaturatedFat": 0.1,
+    "omega3": { "ala": 0.05, "epa": 0, "dha": 0 },
+    "omega6": { "linoleicAcid": 0.06 },
+    "omegaRatio": 1.2,
+    "glycemicIndex": 15,
+    "glycemicLoad": 1,
+    "glycemicCategory": "low",
+    "nutrientDensityScore": 52,
+    "satietyScore": 79,
+    "inflammatoryIndex": -1.8,
+    "novaClass": 1,
+    "oracScore": 1380,
+    "dietaryTags": ["vegan", "gluten_free", "paleo", "whole30", "low_carb"],
+    "allergens": [],
+    "insight": "Crisp, versatile pods delivering excellent vitamin K (43mcg), vitamin C (12mg), and fiber (2.7g) with satisfying crunch for just 31 calories.",
+    "focusGrades": {
+      "balanced": {
+        "grade": "A-",
+        "score": 87,
+        "insight": "Strong nutrient density (52) with excellent vitamin K (43mcg, 54% DV), good vitamin C (12mg, 14% DV), vitamin A (690IU), and balanced fiber (2.7g) for minimal calories (31).",
+        "pros": ["Excellent vitamin K (54% DV)", "Good vitamin C and A", "Balanced fiber (2.7g)", "Low calorie density"],
+        "cons": ["Moderate protein (1.8g)", "Lower iron than other legumes"]
+      },
+      "heart_health": {
+        "grade": "A-",
+        "score": 88,
+        "insight": "Excellent vitamin K (43mcg) prevents arterial calcification, good potassium (211mg) regulates blood pressure, fiber lowers cholesterol, and zero sodium/saturated fat.",
+        "pros": ["Vitamin K protects arteries", "Good potassium-to-sodium ratio (35:1)", "Fiber reduces LDL cholesterol", "Anti-inflammatory flavonoids", "Zero cholesterol"],
+        "cons": ["Lower potassium than some vegetables", "Minimal omega-3"]
+      },
+      "muscle_building": {
+        "grade": "C",
+        "score": 68,
+        "insight": "Modest protein (1.8g) for a legume, though good iron (1mg) supports oxygen delivery. Better as vegetable side than primary protein source.",
+        "pros": ["Decent protein for a vegetable", "Iron supports muscle oxygen", "Low-calorie protein option"],
+        "cons": ["Total protein modest", "Incomplete amino acid profile", "Lower protein than dried legumes"]
+      },
+      "energy": {
+        "grade": "B",
+        "score": 81,
+        "insight": "Good vitamin C (12mg) and iron (1mg) combat fatigue, complex carbs (7g) provide steady energy, and low GI (15) prevents crashes.",
+        "pros": ["Vitamin C enhances iron absorption", "Complex carbs for sustained energy", "Low GI prevents blood sugar spikes", "Hydrating (90% water)"],
+        "cons": ["Low calorie density", "Won't provide quick energy", "Minimal B vitamins"]
+      },
+      "weight_management": {
+        "grade": "A",
+        "score": 93,
+        "insight": "Only 31 calories per cup with high satiety (79) from fiber (2.7g) and satisfying crunch. Volume and water content (90%) create fullness.",
+        "pros": ["Very low calorie density", "High satiety from fiber and crunch", "90% water creates volume", "Near-zero fat"],
+        "cons": ["May need pairing for complete meal"]
+      },
+      "brain_focus": {
+        "grade": "B",
+        "score": 80,
+        "insight": "Good folate (33mcg) supports neurotransmitter synthesis, vitamin K protects brain from oxidative stress, and flavonoids may enhance cognitive function.",
+        "pros": ["Folate supports brain health", "Vitamin K protects neurons", "Flavonoids enhance cognition", "Vitamin C fights oxidative stress"],
+        "cons": ["No omega-3 DHA", "Lower B vitamins than some vegetables"]
+      },
+      "gut_health": {
+        "grade": "A-",
+        "score": 87,
+        "insight": "Good fiber (2.7g) supports regularity and feeds beneficial bacteria, anti-inflammatory compounds heal gut lining, and easy to digest when cooked.",
+        "pros": ["Good fiber supports microbiome", "Anti-inflammatory for gut health", "Easy to digest", "Prebiotic properties"],
+        "cons": ["Lower fiber than some vegetables", "May cause gas in sensitive individuals"]
+      },
+      "blood_sugar": {
+        "grade": "A",
+        "score": 92,
+        "insight": "Excellent GI of 15 with balanced carbs (7g) and good fiber (2.7g). Chlorogenic acid may improve insulin sensitivity and glucose metabolism.",
+        "pros": ["Very low GI (15) and GL (1)", "Fiber slows glucose absorption", "Chlorogenic acid aids insulin sensitivity", "Moderate sugar (3.3g)"],
+        "cons": ["Slightly higher carbs than some vegetables"]
+      },
+      "bone_joint": {
+        "grade": "B+",
+        "score": 84,
+        "insight": "Excellent vitamin K (43mcg, 54% DV) essential for bone mineralization, good calcium (37mg) and magnesium (25mg), anti-inflammatory for joints.",
+        "pros": ["Outstanding vitamin K for bone density", "Good calcium and magnesium balance", "Anti-inflammatory for joint health", "Silicon content supports collagen"],
+        "cons": ["Lower calcium than dairy", "Moderate vitamin K compared to leafy greens"]
+      },
+      "anti_inflammatory": {
+        "grade": "A-",
+        "score": 86,
+        "insight": "Strong anti-inflammatory index (-1.8) from quercetin, kaempferol, and catechins. Good ORAC score (1380) with solid antioxidant capacity.",
+        "pros": ["Quercetin reduces inflammation", "Kaempferol fights oxidative stress", "Good ORAC score (1380)", "Vitamin C and K anti-inflammatory"],
+        "cons": ["Lower than some colorful vegetables in polyphenols"]
+      }
+    },
+    "bioavailability": {
+      "vitaminK": "Fat-soluble, sauté with oil for absorption",
+      "iron": "Non-heme iron, pair with vitamin C foods",
+      "carotenoids": "Light cooking enhances vitamin A absorption"
+    },
+    "pairWith": [
+      { "food": "almonds", "reason": "Healthy fats enhance vitamin K absorption and add protein" },
+      { "food": "lemon", "reason": "Vitamin C boosts iron absorption" },
+      { "food": "garlic", "reason": "Enhances flavor and adds anti-inflammatory compounds" }
+    ],
+    "avoidWith": [
+      { "food": "blood_thinners", "reason": "Vitamin K may interfere with warfarin" }
+    ],
+    "bestTiming": {
+      "preWorkout": false,
+      "postWorkout": false,
+      "morning": true,
+      "beforeBed": true
+    },
+    "digestionTime": "medium",
+    "portionVisual": "1 cup raw or handful of beans",
+    "cookingTips": "Steam 5-7 minutes for crisp-tender; blanch then shock in ice water to preserve color; sauté with garlic for flavor; avoid overcooking to maintain nutrients and crunch",
+    "storageHints": "Store unwashed in perforated bag in crisper; use within 5-7 days; trim ends just before cooking",
+    "sustainabilityScore": 85,
+    "seasonality": ["summer", "fall"],
+    "commonPrep": ["steamed", "sautéed", "blanched", "roasted"],
+    "culturalSignificance": "Thanksgiving casserole staple in America; enjoyed fresh in Mediterranean and Asian cuisines"
+  },
+  "corn": {
+    "name": "Corn, sweet, yellow, raw",
+    "fdcId": "169998",
+    "quantity": 1,
+    "unit": "cup (145g)",
+    "mealType": "any",
+    "foodGroups": ["vegetable", "grain"],
+    "subCategory": "starchy_vegetable",
+    "calories": 125,
+    "protein": 4.7,
+    "carbs": 27,
+    "fat": 1.9,
+    "fiber": 3.2,
+    "sugar": 9.1,
+    "sodium": 23,
+    "saturatedFat": 0.3,
+    "transFat": 0,
+    "cholesterol": 0,
+    "potassium": 392,
+    "calcium": 3,
+    "iron": 0.8,
+    "magnesium": 54,
+    "zinc": 0.7,
+    "vitaminA": 281,
+    "vitaminC": 9.4,
+    "vitaminD": 0,
+    "vitaminE": 0.1,
+    "vitaminK": 0.4,
+    "thiamin": 0.28,
+    "riboflavin": 0.09,
+    "niacin": 2.5,
+    "vitaminB6": 0.09,
+    "folate": 64,
+    "vitaminB12": 0,
+    "choline": 33,
+    "phosphorus": 123,
+    "selenium": 0.9,
+    "copper": 0.1,
+    "manganese": 0.2,
+    "caffeine": 0,
+    "water": 110,
+    "monounsaturatedFat": 0.5,
+    "polyunsaturatedFat": 0.9,
+    "omega3": { "ala": 0.03, "epa": 0, "dha": 0 },
+    "omega6": { "linoleicAcid": 0.85 },
+    "omegaRatio": 28,
+    "glycemicIndex": 52,
+    "glycemicLoad": 15,
+    "glycemicCategory": "medium",
+    "nutrientDensityScore": 38,
+    "satietyScore": 75,
+    "inflammatoryIndex": -0.5,
+    "novaClass": 1,
+    "oracScore": 728,
+    "dietaryTags": ["vegan", "gluten_free"],
+    "allergens": [],
+    "insight": "Summer's golden grain-vegetable hybrid delivering substantial calories (125), good fiber (3.2g), and powerful antioxidants lutein and zeaxanthin for eye health.",
+    "focusGrades": {
+      "balanced": {
+        "grade": "B",
+        "score": 78,
+        "insight": "Moderate nutrient density (38) with good thiamin (0.28mg, 23% DV), folate (64mcg), magnesium (54mg), and fiber (3.2g), but higher calories (125) and sugar (9.1g) than most vegetables.",
+        "pros": ["Good thiamin for metabolism", "Excellent folate (16% DV)", "Good magnesium (13% DV)", "Decent fiber (3.2g)"],
+        "cons": ["Higher calories than vegetables", "High sugar content (9.1g)", "Medium GI may spike blood sugar"]
+      },
+      "heart_health": {
+        "grade": "B+",
+        "score": 83,
+        "insight": "Good folate (64mcg) lowers homocysteine, excellent potassium (392mg) regulates blood pressure, fiber lowers cholesterol, and virtually zero sodium/cholesterol.",
+        "pros": ["Folate reduces heart disease risk", "Excellent potassium (392mg, 11% DV)", "Fiber reduces LDL cholesterol", "Antioxidants protect heart tissue", "Low sodium"],
+        "cons": ["Higher omega-6 to omega-3 ratio (28:1)", "Medium GI may impact triglycerides"]
+      },
+      "muscle_building": {
+        "grade": "B-",
+        "score": 75,
+        "insight": "Decent protein (4.7g) for a vegetable with good magnesium (54mg) for muscle function. Better as carb source for energy than primary protein.",
+        "pros": ["Good protein for a vegetable", "Magnesium supports muscle contraction", "Carbs fuel workouts", "Thiamin aids muscle metabolism"],
+        "cons": ["Incomplete amino acid profile", "Not a primary protein source", "Minimal BCAAs"]
+      },
+      "energy": {
+        "grade": "A-",
+        "score": 87,
+        "insight": "Excellent thiamin (0.28mg, 23% DV) converts carbs to energy, substantial carbs (27g) fuel activity, and magnesium (54mg) supports energy production.",
+        "pros": ["Outstanding thiamin for energy metabolism", "Complex carbs provide sustained fuel", "Magnesium supports ATP production", "Good for pre-workout energy"],
+        "cons": ["Higher calories may be excessive for sedentary", "Medium GI may cause some energy fluctuation"]
+      },
+      "weight_management": {
+        "grade": "C+",
+        "score": 71,
+        "insight": "Higher calories (125) and sugar (9.1g) than most vegetables, though good fiber (3.2g) provides moderate satiety (75). Portion control essential.",
+        "pros": ["Good fiber creates fullness", "Satisfying starchy texture", "76% water provides volume"],
+        "cons": ["Higher calorie density", "High sugar may trigger cravings", "Medium GI affects appetite"]
+      },
+      "brain_focus": {
+        "grade": "B+",
+        "score": 84,
+        "insight": "Exceptional thiamin (0.28mg, 23% DV) critical for neurotransmitter synthesis, lutein and zeaxanthin protect brain cells, and choline supports memory.",
+        "pros": ["Thiamin essential for brain function", "Lutein and zeaxanthin neuroprotective", "Choline supports acetylcholine", "Folate for cognitive health"],
+        "cons": ["No omega-3 DHA", "Higher omega-6 may be pro-inflammatory"]
+      },
+      "gut_health": {
+        "grade": "B+",
+        "score": 82,
+        "insight": "Good fiber (3.2g) supports regularity and feeds beneficial bacteria, resistant starch acts as prebiotic when cooled, and antioxidants heal gut lining.",
+        "pros": ["Good fiber supports microbiome", "Resistant starch is prebiotic when cooled", "Antioxidants protect gut lining", "Easy to digest when cooked"],
+        "cons": ["May cause bloating in sensitive individuals", "Harder to digest raw"]
+      },
+      "blood_sugar": {
+        "grade": "C",
+        "score": 67,
+        "insight": "Medium GI (52) with substantial carbs (27g) and sugar (9.1g) create moderate blood sugar impact. Fiber (3.2g) helps but insufficient to prevent spike.",
+        "pros": ["Fiber slows glucose absorption", "Resistant starch when cooled lowers GI", "Lower GI than white rice"],
+        "cons": ["Medium GI (52) and GL (15)", "High sugar content (9.1g)", "Substantial carbs (27g)"]
+      },
+      "bone_joint": {
+        "grade": "C+",
+        "score": 72,
+        "insight": "Good magnesium (54mg, 13% DV) and phosphorus (123mg) support bone density, but very low calcium (3mg) and vitamin K (0.4mcg) limit bone benefits.",
+        "pros": ["Good magnesium for bone health", "Phosphorus supports bone structure", "Anti-inflammatory carotenoids for joints"],
+        "cons": ["Very low calcium (3mg)", "Minimal vitamin K", "Lower bone benefits than leafy greens"]
+      },
+      "anti_inflammatory": {
+        "grade": "B",
+        "score": 80,
+        "insight": "Moderate anti-inflammatory index (-0.5) from lutein, zeaxanthin, and ferulic acid. Decent ORAC score (728) with good antioxidant capacity.",
+        "pros": ["Lutein and zeaxanthin fight inflammation", "Ferulic acid potent antioxidant", "Carotenoids reduce oxidative stress", "Anthocyanins in purple varieties"],
+        "cons": ["Lower ORAC than berries", "Higher omega-6 may be pro-inflammatory", "Medium GI sugar may counteract"]
+      }
+    },
+    "bioavailability": {
+      "lutein": "Fat-soluble, cook with butter or oil for absorption",
+      "carotenoids": "Cooking increases bioavailability",
+      "resistantStarch": "Forms when corn is cooled after cooking"
+    },
+    "pairWith": [
+      { "food": "butter", "reason": "Fat enhances lutein and carotenoid absorption" },
+      { "food": "black_beans", "reason": "Complete protein pairing with complementary amino acids" },
+      { "food": "lime", "reason": "Vitamin C enhances iron absorption and brightens flavor" }
+    ],
+    "avoidWith": [
+      { "food": "other_high_carb_foods", "reason": "Compounds blood sugar impact" }
+    ],
+    "bestTiming": {
+      "preWorkout": true,
+      "postWorkout": true,
+      "morning": true,
+      "beforeBed": false
+    },
+    "digestionTime": "medium",
+    "portionVisual": "1 medium ear or 1 cup kernels",
+    "cookingTips": "Boil 4-6 minutes to preserve sweetness; grill in husk for smoky flavor; roast at 400°F for caramelization; avoid overcooking which makes kernels tough",
+    "storageHints": "Keep husked in fridge, use within 2-3 days for peak sweetness; sugar converts to starch over time; freeze for long-term storage",
+    "sustainabilityScore": 70,
+    "seasonality": ["summer", "fall"],
+    "commonPrep": ["boiled", "grilled", "roasted", "steamed"],
+    "culturalSignificance": "Sacred crop in Native American cultures; staple grain worldwide; summer BBQ essential"
+  }
+}

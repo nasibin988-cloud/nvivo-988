@@ -6,6 +6,8 @@
 import OpenAI from 'openai';
 import { defineSecret } from 'firebase-functions/params';
 import { OPENAI_CONFIG } from '../../config/openai';
+import { getFoodIntelligence } from '../nutrition/foodIntelligenceLookup';
+import type { FoodIntelligence } from './foodAnalysis';
 
 // Define OpenAI API key as a secret (for production)
 const openaiApiKey = defineSecret('OPENAI_API_KEY');
@@ -35,6 +37,8 @@ export interface MenuItem {
   sodium?: number;
   isSelected: boolean;
   confidence: number;
+  /** Food intelligence data with focus-specific grades */
+  intelligence?: FoodIntelligence;
 }
 
 export interface DetectedRestaurant {
@@ -171,22 +175,29 @@ export async function scanMenuPhoto(imageBase64: string): Promise<MenuScanResult
       cuisine: parsed.restaurant?.cuisine || undefined,
     };
 
-    // Validate and transform menu items
-    const menuItems: MenuItem[] = (parsed.menuItems || []).map((item: Record<string, unknown>) => ({
-      id: generateId(),
-      name: String(item.name || 'Unknown item'),
-      description: item.description ? String(item.description) : undefined,
-      price: item.price ? String(item.price) : undefined,
-      calories: Math.round(Number(item.calories) || 0),
-      protein: Math.round(Number(item.protein) || 0),
-      carbs: Math.round(Number(item.carbs) || 0),
-      fat: Math.round(Number(item.fat) || 0),
-      fiber: item.fiber ? Math.round(Number(item.fiber)) : undefined,
-      sugar: item.sugar ? Math.round(Number(item.sugar)) : undefined,
-      sodium: item.sodium ? Math.round(Number(item.sodium)) : undefined,
-      isSelected: false,
-      confidence: Math.min(1, Math.max(0, Number(item.confidence) || 0.5)),
-    }));
+    // Validate and transform menu items with intelligence enrichment
+    const menuItems: MenuItem[] = (parsed.menuItems || []).map((item: Record<string, unknown>) => {
+      const name = String(item.name || 'Unknown item');
+      // Enrich with food intelligence data (includes focus grades, GI, satiety, etc.)
+      const intelligence = getFoodIntelligence(name);
+
+      return {
+        id: generateId(),
+        name,
+        description: item.description ? String(item.description) : undefined,
+        price: item.price ? String(item.price) : undefined,
+        calories: Math.round(Number(item.calories) || 0),
+        protein: Math.round(Number(item.protein) || 0),
+        carbs: Math.round(Number(item.carbs) || 0),
+        fat: Math.round(Number(item.fat) || 0),
+        fiber: item.fiber ? Math.round(Number(item.fiber)) : undefined,
+        sugar: item.sugar ? Math.round(Number(item.sugar)) : undefined,
+        sodium: item.sodium ? Math.round(Number(item.sodium)) : undefined,
+        isSelected: false,
+        confidence: Math.min(1, Math.max(0, Number(item.confidence) || 0.5)),
+        ...(intelligence && { intelligence }),
+      };
+    });
 
     return {
       restaurant,

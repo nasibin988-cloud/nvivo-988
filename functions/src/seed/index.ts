@@ -11,6 +11,7 @@ import { TEST_PATIENT_PROFILE, TEST_CLINICIAN_ID, TEST_CLINICIAN_PROFILE, TEST_P
 import { seedMicroWins, clearMicroWins } from './seedMicroWins';
 import { seedCareData, clearCareData } from './seedCareData';
 import { seedCardiacHealth, clearCardiacHealth } from './seedCardiacHealth';
+import { seedCognitiveHealth, clearCognitiveHealth } from './seedCognitiveHealth';
 import { seedHealthTrends, clearHealthTrends } from './seedHealthTrends';
 import { seedNutritionTargets, clearNutritionTargets } from './seedNutritionTargets';
 // Re-export seedArticles for convenience
@@ -48,7 +49,7 @@ export async function seedTestPatient(): Promise<{ success: boolean; patientId: 
     const patientId = authUser.uid;
 
     // 2. Create patient profile with Auth UID as document ID
-    console.log('Creating patient profile...');
+    console.log('Creating patient profile with ID:', patientId);
     await db.collection('patients').doc(patientId).set({
       ...TEST_PATIENT_PROFILE,
       id: patientId,
@@ -83,11 +84,15 @@ export async function seedTestPatient(): Promise<{ success: boolean; patientId: 
     console.log('Seeding cardiac health data...');
     await seedCardiacHealth({ patientId });
 
-    // 9. Seed comprehensive health trends (365 days of metrics)
+    // 9. Seed cognitive health data (brain MRI, assessments, mental health)
+    console.log('Seeding cognitive health data...');
+    await seedCognitiveHealth({ patientId });
+
+    // 10. Seed comprehensive health trends (365 days of metrics)
     console.log('Seeding health trends data...');
     await seedHealthTrends({ patientId, daysToSeed: 365 });
 
-    // 10. Seed personalized nutrition targets (DRI-based)
+    // 11. Seed personalized nutrition targets (DRI-based)
     console.log('Seeding nutrition targets...');
     await seedNutritionTargets({
       patientId,
@@ -139,6 +144,9 @@ export async function deleteTestPatient(): Promise<{ success: boolean }> {
 
     // Clear cardiac health data
     await clearCardiacHealth(patientId);
+
+    // Clear cognitive health data
+    await clearCognitiveHealth(patientId);
 
     // Clear health trends
     await clearHealthTrends(patientId);
@@ -207,6 +215,7 @@ async function seedWellnessLogs(patientId: string): Promise<void> {
   const batch = db.batch();
 
   // Create wellness logs for the past 7 days
+  // App expects: mood (1-10), energy (1-10), stress (1-10), sleepQuality (1-10)
   for (let daysAgo = 7; daysAgo >= 0; daysAgo--) {
     const date = new Date();
     date.setDate(date.getDate() - daysAgo);
@@ -217,12 +226,13 @@ async function seedWellnessLogs(patientId: string): Promise<void> {
 
     batch.set(docRef, {
       date: dateStr,
-      mood: getRandomMood(),
-      energy: getRandomEnergy(),
-      sleep: {
-        hours: 5 + Math.random() * 4, // 5-9 hours
-        quality: Math.floor(Math.random() * 3) + 3, // 3-5 rating
-      },
+      mood: getRandomScore(6, 9),           // 1-10, weighted towards positive
+      energy: getRandomScore(5, 8),         // 1-10
+      stress: getRandomScore(2, 5),         // 1-10, lower is better
+      sleepQuality: getRandomScore(6, 9),   // 1-10
+      sleepHours: Math.round((5 + Math.random() * 4) * 10) / 10, // 5-9 hours
+      symptoms: [],
+      tags: [],
       notes: daysAgo === 0 ? 'Feeling good today!' : null,
       createdAt: date,
       updatedAt: date,
@@ -240,26 +250,7 @@ function formatDate(date: Date): string {
   return `${year}-${month}-${day}`;
 }
 
-function getRandomMood(): string {
-  const moods = ['great', 'good', 'okay', 'low', 'bad'];
-  const weights = [0.15, 0.35, 0.30, 0.15, 0.05]; // Weighted towards positive
-  const random = Math.random();
-  let cumulative = 0;
-  for (let i = 0; i < moods.length; i++) {
-    cumulative += weights[i];
-    if (random < cumulative) return moods[i];
-  }
-  return 'okay';
-}
-
-function getRandomEnergy(): string {
-  const levels = ['high', 'moderate', 'low'];
-  const weights = [0.25, 0.50, 0.25];
-  const random = Math.random();
-  let cumulative = 0;
-  for (let i = 0; i < levels.length; i++) {
-    cumulative += weights[i];
-    if (random < cumulative) return levels[i];
-  }
-  return 'moderate';
+// Get random score with some variance around a center value
+function getRandomScore(min: number, max: number): number {
+  return Math.floor(Math.random() * (max - min + 1)) + min;
 }

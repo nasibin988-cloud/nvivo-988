@@ -1,0 +1,1628 @@
+{
+  "lemon": {
+    "foodId": "lemon",
+    "name": "Lemon",
+    "category": "fruits",
+    "servingSize": {
+      "amount": 58,
+      "unit": "g",
+      "description": "1 medium lemon"
+    },
+    "nutrients": {
+      "calories": 17,
+      "protein": 0.64,
+      "carbohydrates": 5.41,
+      "fiber": 1.6,
+      "sugars": 1.45,
+      "addedSugars": 0,
+      "sugarAlcohols": 0,
+      "fat": 0.17,
+      "saturatedFat": 0.021,
+      "transFat": 0,
+      "monounsaturatedFat": 0.007,
+      "polyunsaturatedFat": 0.052,
+      "omega3": 0.029,
+      "omega6": 0.023,
+      "cholesterol": 0,
+      "sodium": 1,
+      "potassium": 80,
+      "calcium": 15,
+      "iron": 0.35,
+      "magnesium": 5,
+      "phosphorus": 9,
+      "zinc": 0.03,
+      "copper": 0.021,
+      "manganese": 0.017,
+      "selenium": 0.2,
+      "vitaminA": 1,
+      "vitaminC": 30.7,
+      "vitaminD": 0,
+      "vitaminE": 0.087,
+      "vitaminK": 0,
+      "vitaminB6": 0.046,
+      "vitaminB12": 0,
+      "thiamin": 0.023,
+      "riboflavin": 0.012,
+      "niacin": 0.058,
+      "folate": 6,
+      "pantothenicAcid": 0.109,
+      "choline": 3.0,
+      "betaine": 0.2,
+      "caffeine": 0,
+      "alcohol": 0,
+      "water": 51.61
+    },
+    "derivedScores": {
+      "nutrientDensity": 82,
+      "proteinQuality": 15,
+      "glycemicImpact": 8,
+      "inflamScore": 92,
+      "diversityBonus": 78
+    },
+    "focusGrades": {
+      "balanced": {
+        "grade": "B+",
+        "score": 85,
+        "insight": "Exceptionally high vitamin C with very low calories and minimal sugar make lemon an excellent nutrient-dense addition.",
+        "pros": [
+          "Extremely high vitamin C (51% DV per lemon)",
+          "Very low calorie (17 kcal)",
+          "Good fiber content for weight",
+          "Zero cholesterol and minimal fat"
+        ],
+        "cons": [
+          "Very low protein content",
+          "Minimal fat-soluble vitamins",
+          "Not calorie-dense for energy needs"
+        ]
+      },
+      "heart_health": {
+        "grade": "A",
+        "score": 92,
+        "insight": "Zero cholesterol, minimal sodium, and excellent vitamin C support cardiovascular health and vessel integrity.",
+        "pros": [
+          "Zero cholesterol and trans fats",
+          "Very low sodium (1mg)",
+          "Vitamin C supports collagen in blood vessels",
+          "Potassium supports blood pressure"
+        ],
+        "cons": [
+          "Low omega-3 content",
+          "Minimal magnesium for heart rhythm",
+          "No vitamin K for clotting regulation"
+        ]
+      },
+      "muscle_building": {
+        "grade": "D",
+        "score": 25,
+        "insight": "Minimal protein and lack of essential amino acids make lemon unsuitable for muscle building as a primary food.",
+        "pros": [
+          "Vitamin C supports collagen synthesis",
+          "Hydrating with high water content",
+          "Low calorie for lean muscle goals"
+        ],
+        "cons": [
+          "Extremely low protein (0.64g)",
+          "Lacks leucine and BCAAs",
+          "Insufficient calories for muscle growth",
+          "No vitamin D or significant minerals"
+        ]
+      },
+      "energy": {
+        "grade": "C",
+        "score": 58,
+        "insight": "Low calorie and low sugar provide gentle sustained energy without spikes, but not a primary energy source.",
+        "pros": [
+          "Low glycemic impact prevents crashes",
+          "Vitamin C supports iron absorption",
+          "Natural citric acid for metabolic support",
+          "Hydrating water content"
+        ],
+        "cons": [
+          "Very low calorie density (17 kcal)",
+          "Minimal carbohydrates for quick energy",
+          "No B-complex vitamins for energy metabolism",
+          "Lacks protein and fat for sustained fuel"
+        ]
+      },
+      "weight_management": {
+        "grade": "A+",
+        "score": 98,
+        "insight": "Among the best foods for weight management with extreme low calorie density, minimal sugar, and high satiety from fiber.",
+        "pros": [
+          "Extremely low calorie (17 kcal)",
+          "High water content for satiety",
+          "Good fiber (1.6g) aids fullness",
+          "Minimal natural sugars (1.45g)",
+          "Enhances flavor without calories"
+        ],
+        "cons": [
+          "Not filling as standalone food",
+          "Acidic nature may irritate on empty stomach"
+        ]
+      },
+      "brain_focus": {
+        "grade": "B-",
+        "score": 72,
+        "insight": "Vitamin C provides antioxidant protection for neurons, but lacks key brain-building fats and B-vitamins.",
+        "pros": [
+          "High vitamin C protects brain cells",
+          "Low glycemic prevents brain fog",
+          "Hydration supports cognitive function",
+          "Flavonoids support neuroprotection"
+        ],
+        "cons": [
+          "No omega-3 DHA for brain structure",
+          "Lacks B-vitamins for neurotransmitters",
+          "Minimal choline for acetylcholine",
+          "No vitamin E for cognitive protection"
+        ]
+      },
+      "gut_health": {
+        "grade": "B+",
+        "score": 86,
+        "insight": "Good fiber content and natural citric acid support digestive health and nutrient absorption.",
+        "pros": [
+          "Good fiber content (1.6g) for regularity",
+          "Citric acid stimulates digestive enzymes",
+          "Pectin in peel supports gut lining",
+          "Natural antimicrobial properties"
+        ],
+        "cons": [
+          "No prebiotics or resistant starch",
+          "Acidic may irritate sensitive stomachs",
+          "Lacks diverse polyphenols"
+        ]
+      },
+      "blood_sugar": {
+        "grade": "A+",
+        "score": 96,
+        "insight": "Exceptional blood sugar management with very low sugar, low glycemic impact, and fiber that slows absorption.",
+        "pros": [
+          "Very low natural sugars (1.45g)",
+          "Zero added sugars",
+          "Low glycemic index (~20)",
+          "Fiber slows glucose absorption",
+          "Citric acid may improve insulin sensitivity"
+        ],
+        "cons": [
+          "Minimal chromium for glucose metabolism",
+          "No magnesium for insulin function"
+        ]
+      },
+      "bone_joint": {
+        "grade": "C+",
+        "score": 65,
+        "insight": "Vitamin C supports collagen synthesis for joint health, but lacks calcium, vitamin D, and key minerals for bone density.",
+        "pros": [
+          "High vitamin C for collagen production",
+          "Some calcium (15mg) present",
+          "Anti-inflammatory citrus flavonoids",
+          "Alkalizing effect on body pH"
+        ],
+        "cons": [
+          "Low calcium relative to needs",
+          "No vitamin D for calcium absorption",
+          "Minimal vitamin K for bone protein",
+          "Low magnesium and phosphorus",
+          "Minimal trace minerals"
+        ]
+      },
+      "anti_inflammatory": {
+        "grade": "A",
+        "score": 91,
+        "insight": "Exceptional anti-inflammatory profile with high vitamin C, citrus bioflavonoids, and low inflammatory markers.",
+        "pros": [
+          "Very high vitamin C antioxidant",
+          "Rich in anti-inflammatory flavonoids (hesperidin, eriocitrin)",
+          "Limonene in peel reduces inflammation",
+          "Zero pro-inflammatory fats or sugars",
+          "Alkalizing minerals"
+        ],
+        "cons": [
+          "Low omega-3 anti-inflammatory fats",
+          "Minimal polyphenol diversity",
+          "Citric acid may irritate inflamed tissues"
+        ]
+      }
+    }
+  },
+  "lemons": {
+    "foodId": "lemons",
+    "name": "Lemons",
+    "category": "fruits",
+    "servingSize": {
+      "amount": 58,
+      "unit": "g",
+      "description": "1 medium lemon"
+    },
+    "nutrients": {
+      "calories": 17,
+      "protein": 0.64,
+      "carbohydrates": 5.41,
+      "fiber": 1.6,
+      "sugars": 1.45,
+      "addedSugars": 0,
+      "sugarAlcohols": 0,
+      "fat": 0.17,
+      "saturatedFat": 0.021,
+      "transFat": 0,
+      "monounsaturatedFat": 0.007,
+      "polyunsaturatedFat": 0.052,
+      "omega3": 0.029,
+      "omega6": 0.023,
+      "cholesterol": 0,
+      "sodium": 1,
+      "potassium": 80,
+      "calcium": 15,
+      "iron": 0.35,
+      "magnesium": 5,
+      "phosphorus": 9,
+      "zinc": 0.03,
+      "copper": 0.021,
+      "manganese": 0.017,
+      "selenium": 0.2,
+      "vitaminA": 1,
+      "vitaminC": 30.7,
+      "vitaminD": 0,
+      "vitaminE": 0.087,
+      "vitaminK": 0,
+      "vitaminB6": 0.046,
+      "vitaminB12": 0,
+      "thiamin": 0.023,
+      "riboflavin": 0.012,
+      "niacin": 0.058,
+      "folate": 6,
+      "pantothenicAcid": 0.109,
+      "choline": 3.0,
+      "betaine": 0.2,
+      "caffeine": 0,
+      "alcohol": 0,
+      "water": 51.61
+    },
+    "derivedScores": {
+      "nutrientDensity": 82,
+      "proteinQuality": 15,
+      "glycemicImpact": 8,
+      "inflamScore": 92,
+      "diversityBonus": 78
+    },
+    "focusGrades": {
+      "balanced": {
+        "grade": "B+",
+        "score": 85,
+        "insight": "Exceptionally high vitamin C with very low calories and minimal sugar make lemon an excellent nutrient-dense addition.",
+        "pros": [
+          "Extremely high vitamin C (51% DV per lemon)",
+          "Very low calorie (17 kcal)",
+          "Good fiber content for weight",
+          "Zero cholesterol and minimal fat"
+        ],
+        "cons": [
+          "Very low protein content",
+          "Minimal fat-soluble vitamins",
+          "Not calorie-dense for energy needs"
+        ]
+      },
+      "heart_health": {
+        "grade": "A",
+        "score": 92,
+        "insight": "Zero cholesterol, minimal sodium, and excellent vitamin C support cardiovascular health and vessel integrity.",
+        "pros": [
+          "Zero cholesterol and trans fats",
+          "Very low sodium (1mg)",
+          "Vitamin C supports collagen in blood vessels",
+          "Potassium supports blood pressure"
+        ],
+        "cons": [
+          "Low omega-3 content",
+          "Minimal magnesium for heart rhythm",
+          "No vitamin K for clotting regulation"
+        ]
+      },
+      "muscle_building": {
+        "grade": "D",
+        "score": 25,
+        "insight": "Minimal protein and lack of essential amino acids make lemon unsuitable for muscle building as a primary food.",
+        "pros": [
+          "Vitamin C supports collagen synthesis",
+          "Hydrating with high water content",
+          "Low calorie for lean muscle goals"
+        ],
+        "cons": [
+          "Extremely low protein (0.64g)",
+          "Lacks leucine and BCAAs",
+          "Insufficient calories for muscle growth",
+          "No vitamin D or significant minerals"
+        ]
+      },
+      "energy": {
+        "grade": "C",
+        "score": 58,
+        "insight": "Low calorie and low sugar provide gentle sustained energy without spikes, but not a primary energy source.",
+        "pros": [
+          "Low glycemic impact prevents crashes",
+          "Vitamin C supports iron absorption",
+          "Natural citric acid for metabolic support",
+          "Hydrating water content"
+        ],
+        "cons": [
+          "Very low calorie density (17 kcal)",
+          "Minimal carbohydrates for quick energy",
+          "No B-complex vitamins for energy metabolism",
+          "Lacks protein and fat for sustained fuel"
+        ]
+      },
+      "weight_management": {
+        "grade": "A+",
+        "score": 98,
+        "insight": "Among the best foods for weight management with extreme low calorie density, minimal sugar, and high satiety from fiber.",
+        "pros": [
+          "Extremely low calorie (17 kcal)",
+          "High water content for satiety",
+          "Good fiber (1.6g) aids fullness",
+          "Minimal natural sugars (1.45g)",
+          "Enhances flavor without calories"
+        ],
+        "cons": [
+          "Not filling as standalone food",
+          "Acidic nature may irritate on empty stomach"
+        ]
+      },
+      "brain_focus": {
+        "grade": "B-",
+        "score": 72,
+        "insight": "Vitamin C provides antioxidant protection for neurons, but lacks key brain-building fats and B-vitamins.",
+        "pros": [
+          "High vitamin C protects brain cells",
+          "Low glycemic prevents brain fog",
+          "Hydration supports cognitive function",
+          "Flavonoids support neuroprotection"
+        ],
+        "cons": [
+          "No omega-3 DHA for brain structure",
+          "Lacks B-vitamins for neurotransmitters",
+          "Minimal choline for acetylcholine",
+          "No vitamin E for cognitive protection"
+        ]
+      },
+      "gut_health": {
+        "grade": "B+",
+        "score": 86,
+        "insight": "Good fiber content and natural citric acid support digestive health and nutrient absorption.",
+        "pros": [
+          "Good fiber content (1.6g) for regularity",
+          "Citric acid stimulates digestive enzymes",
+          "Pectin in peel supports gut lining",
+          "Natural antimicrobial properties"
+        ],
+        "cons": [
+          "No prebiotics or resistant starch",
+          "Acidic may irritate sensitive stomachs",
+          "Lacks diverse polyphenols"
+        ]
+      },
+      "blood_sugar": {
+        "grade": "A+",
+        "score": 96,
+        "insight": "Exceptional blood sugar management with very low sugar, low glycemic impact, and fiber that slows absorption.",
+        "pros": [
+          "Very low natural sugars (1.45g)",
+          "Zero added sugars",
+          "Low glycemic index (~20)",
+          "Fiber slows glucose absorption",
+          "Citric acid may improve insulin sensitivity"
+        ],
+        "cons": [
+          "Minimal chromium for glucose metabolism",
+          "No magnesium for insulin function"
+        ]
+      },
+      "bone_joint": {
+        "grade": "C+",
+        "score": 65,
+        "insight": "Vitamin C supports collagen synthesis for joint health, but lacks calcium, vitamin D, and key minerals for bone density.",
+        "pros": [
+          "High vitamin C for collagen production",
+          "Some calcium (15mg) present",
+          "Anti-inflammatory citrus flavonoids",
+          "Alkalizing effect on body pH"
+        ],
+        "cons": [
+          "Low calcium relative to needs",
+          "No vitamin D for calcium absorption",
+          "Minimal vitamin K for bone protein",
+          "Low magnesium and phosphorus",
+          "Minimal trace minerals"
+        ]
+      },
+      "anti_inflammatory": {
+        "grade": "A",
+        "score": 91,
+        "insight": "Exceptional anti-inflammatory profile with high vitamin C, citrus bioflavonoids, and low inflammatory markers.",
+        "pros": [
+          "Very high vitamin C antioxidant",
+          "Rich in anti-inflammatory flavonoids (hesperidin, eriocitrin)",
+          "Limonene in peel reduces inflammation",
+          "Zero pro-inflammatory fats or sugars",
+          "Alkalizing minerals"
+        ],
+        "cons": [
+          "Low omega-3 anti-inflammatory fats",
+          "Minimal polyphenol diversity",
+          "Citric acid may irritate inflamed tissues"
+        ]
+      }
+    }
+  },
+  "lime": {
+    "foodId": "lime",
+    "name": "Lime",
+    "category": "fruits",
+    "servingSize": {
+      "amount": 67,
+      "unit": "g",
+      "description": "1 medium lime"
+    },
+    "nutrients": {
+      "calories": 20,
+      "protein": 0.47,
+      "carbohydrates": 7.06,
+      "fiber": 1.9,
+      "sugars": 1.13,
+      "addedSugars": 0,
+      "sugarAlcohols": 0,
+      "fat": 0.13,
+      "saturatedFat": 0.015,
+      "transFat": 0,
+      "monounsaturatedFat": 0.011,
+      "polyunsaturatedFat": 0.036,
+      "omega3": 0.021,
+      "omega6": 0.015,
+      "cholesterol": 0,
+      "sodium": 1,
+      "potassium": 68,
+      "calcium": 22,
+      "iron": 0.4,
+      "magnesium": 4,
+      "phosphorus": 12,
+      "zinc": 0.07,
+      "copper": 0.045,
+      "manganese": 0.005,
+      "selenium": 0.3,
+      "vitaminA": 3,
+      "vitaminC": 19.5,
+      "vitaminD": 0,
+      "vitaminE": 0.15,
+      "vitaminK": 0.4,
+      "vitaminB6": 0.03,
+      "vitaminB12": 0,
+      "thiamin": 0.02,
+      "riboflavin": 0.013,
+      "niacin": 0.134,
+      "folate": 5,
+      "pantothenicAcid": 0.145,
+      "choline": 3.4,
+      "betaine": 0.1,
+      "caffeine": 0,
+      "alcohol": 0,
+      "water": 58.9
+    },
+    "derivedScores": {
+      "nutrientDensity": 80,
+      "proteinQuality": 12,
+      "glycemicImpact": 9,
+      "inflamScore": 90,
+      "diversityBonus": 76
+    },
+    "focusGrades": {
+      "balanced": {
+        "grade": "B+",
+        "score": 84,
+        "insight": "High vitamin C with minimal calories and sugar makes lime an excellent low-calorie nutrient booster.",
+        "pros": [
+          "High vitamin C (32% DV per lime)",
+          "Very low calorie (20 kcal)",
+          "Good fiber relative to weight",
+          "Zero cholesterol and minimal fat"
+        ],
+        "cons": [
+          "Very low protein content",
+          "Minimal fat-soluble vitamins",
+          "Limited mineral diversity"
+        ]
+      },
+      "heart_health": {
+        "grade": "A-",
+        "score": 90,
+        "insight": "Zero cholesterol, minimal sodium, and good vitamin C support cardiovascular health effectively.",
+        "pros": [
+          "Zero cholesterol and trans fats",
+          "Very low sodium (1mg)",
+          "Vitamin C protects arterial walls",
+          "Potassium aids blood pressure regulation"
+        ],
+        "cons": [
+          "Low omega-3 content",
+          "Minimal magnesium for heart function",
+          "Limited vitamin K for vascular health"
+        ]
+      },
+      "muscle_building": {
+        "grade": "D",
+        "score": 22,
+        "insight": "Insufficient protein and amino acids make lime unsuitable as a muscle-building food.",
+        "pros": [
+          "Vitamin C supports collagen for tendons",
+          "Hydrating with high water content",
+          "Low calorie for cutting phases"
+        ],
+        "cons": [
+          "Extremely low protein (0.47g)",
+          "No complete amino acids",
+          "Insufficient calories for anabolism",
+          "Lacks vitamin D and key minerals"
+        ]
+      },
+      "energy": {
+        "grade": "C",
+        "score": 56,
+        "insight": "Minimal calories and low sugar provide stable energy without spikes, but not an energy-dense food.",
+        "pros": [
+          "Low glycemic impact prevents crashes",
+          "Vitamin C supports iron absorption for energy",
+          "Natural acids support citric acid cycle",
+          "Hydrating for cellular function"
+        ],
+        "cons": [
+          "Very low calorie density (20 kcal)",
+          "Minimal carbohydrates for fuel",
+          "Lacks B-vitamins for energy metabolism",
+          "No protein or fat for sustained energy"
+        ]
+      },
+      "weight_management": {
+        "grade": "A+",
+        "score": 97,
+        "insight": "Outstanding for weight management with extreme low calorie density, minimal sugar, and good fiber satiety.",
+        "pros": [
+          "Extremely low calorie (20 kcal)",
+          "High water content (88%) for satiety",
+          "Good fiber (1.9g) promotes fullness",
+          "Very low natural sugars (1.13g)",
+          "Adds zesty flavor without calories"
+        ],
+        "cons": [
+          "Not satiating as standalone food",
+          "Acidic nature may increase hunger in some"
+        ]
+      },
+      "brain_focus": {
+        "grade": "B-",
+        "score": 70,
+        "insight": "Vitamin C offers neuroprotection, but lacks essential brain fats and cognitive-supporting nutrients.",
+        "pros": [
+          "Vitamin C protects neurons from oxidative stress",
+          "Low glycemic prevents mental fog",
+          "Hydration supports brain function",
+          "Citrus flavonoids support cognition"
+        ],
+        "cons": [
+          "No omega-3 DHA for brain membranes",
+          "Lacks B-vitamins for neurotransmitters",
+          "Very low choline for memory",
+          "No vitamin E for cognitive protection"
+        ]
+      },
+      "gut_health": {
+        "grade": "B+",
+        "score": 85,
+        "insight": "Good fiber and natural citric acid support digestive enzyme activity and gut motility.",
+        "pros": [
+          "Good fiber content (1.9g) for regularity",
+          "Citric acid stimulates digestive secretions",
+          "Pectin supports beneficial gut bacteria",
+          "Natural antimicrobial properties"
+        ],
+        "cons": [
+          "No resistant starch or prebiotics",
+          "Acidic may irritate sensitive digestive tracts",
+          "Limited polyphenol diversity"
+        ]
+      },
+      "blood_sugar": {
+        "grade": "A+",
+        "score": 95,
+        "insight": "Excellent blood sugar control with very low sugar content, low glycemic load, and fiber that slows absorption.",
+        "pros": [
+          "Very low natural sugars (1.13g)",
+          "Zero added sugars",
+          "Low glycemic index (~24)",
+          "Fiber moderates glucose absorption",
+          "May improve insulin sensitivity"
+        ],
+        "cons": [
+          "Minimal chromium for glucose regulation",
+          "Low magnesium for insulin signaling"
+        ]
+      },
+      "bone_joint": {
+        "grade": "C+",
+        "score": 66,
+        "insight": "Vitamin C supports joint collagen, but insufficient calcium, vitamin D, and bone-building minerals.",
+        "pros": [
+          "Vitamin C for collagen and cartilage",
+          "Some calcium (22mg) present",
+          "Anti-inflammatory flavonoids",
+          "Alkalizing minerals support bone pH"
+        ],
+        "cons": [
+          "Low calcium relative to daily needs",
+          "No vitamin D for calcium absorption",
+          "Minimal vitamin K for bone matrix",
+          "Low magnesium and phosphorus",
+          "Insufficient trace minerals"
+        ]
+      },
+      "anti_inflammatory": {
+        "grade": "A-",
+        "score": 89,
+        "insight": "Strong anti-inflammatory effects from vitamin C, citrus bioflavonoids, and absence of pro-inflammatory compounds.",
+        "pros": [
+          "High vitamin C antioxidant (32% DV)",
+          "Rich in anti-inflammatory flavonoids (hesperidin)",
+          "Limonene in peel reduces inflammation",
+          "Zero inflammatory fats or added sugars",
+          "Alkalizing effect on body"
+        ],
+        "cons": [
+          "Low omega-3 anti-inflammatory fats",
+          "Moderate polyphenol content",
+          "Citric acid may irritate inflamed tissues"
+        ]
+      }
+    }
+  },
+  "limes": {
+    "foodId": "limes",
+    "name": "Limes",
+    "category": "fruits",
+    "servingSize": {
+      "amount": 67,
+      "unit": "g",
+      "description": "1 medium lime"
+    },
+    "nutrients": {
+      "calories": 20,
+      "protein": 0.47,
+      "carbohydrates": 7.06,
+      "fiber": 1.9,
+      "sugars": 1.13,
+      "addedSugars": 0,
+      "sugarAlcohols": 0,
+      "fat": 0.13,
+      "saturatedFat": 0.015,
+      "transFat": 0,
+      "monounsaturatedFat": 0.011,
+      "polyunsaturatedFat": 0.036,
+      "omega3": 0.021,
+      "omega6": 0.015,
+      "cholesterol": 0,
+      "sodium": 1,
+      "potassium": 68,
+      "calcium": 22,
+      "iron": 0.4,
+      "magnesium": 4,
+      "phosphorus": 12,
+      "zinc": 0.07,
+      "copper": 0.045,
+      "manganese": 0.005,
+      "selenium": 0.3,
+      "vitaminA": 3,
+      "vitaminC": 19.5,
+      "vitaminD": 0,
+      "vitaminE": 0.15,
+      "vitaminK": 0.4,
+      "vitaminB6": 0.03,
+      "vitaminB12": 0,
+      "thiamin": 0.02,
+      "riboflavin": 0.013,
+      "niacin": 0.134,
+      "folate": 5,
+      "pantothenicAcid": 0.145,
+      "choline": 3.4,
+      "betaine": 0.1,
+      "caffeine": 0,
+      "alcohol": 0,
+      "water": 58.9
+    },
+    "derivedScores": {
+      "nutrientDensity": 80,
+      "proteinQuality": 12,
+      "glycemicImpact": 9,
+      "inflamScore": 90,
+      "diversityBonus": 76
+    },
+    "focusGrades": {
+      "balanced": {
+        "grade": "B+",
+        "score": 84,
+        "insight": "High vitamin C with minimal calories and sugar makes lime an excellent low-calorie nutrient booster.",
+        "pros": [
+          "High vitamin C (32% DV per lime)",
+          "Very low calorie (20 kcal)",
+          "Good fiber relative to weight",
+          "Zero cholesterol and minimal fat"
+        ],
+        "cons": [
+          "Very low protein content",
+          "Minimal fat-soluble vitamins",
+          "Limited mineral diversity"
+        ]
+      },
+      "heart_health": {
+        "grade": "A-",
+        "score": 90,
+        "insight": "Zero cholesterol, minimal sodium, and good vitamin C support cardiovascular health effectively.",
+        "pros": [
+          "Zero cholesterol and trans fats",
+          "Very low sodium (1mg)",
+          "Vitamin C protects arterial walls",
+          "Potassium aids blood pressure regulation"
+        ],
+        "cons": [
+          "Low omega-3 content",
+          "Minimal magnesium for heart function",
+          "Limited vitamin K for vascular health"
+        ]
+      },
+      "muscle_building": {
+        "grade": "D",
+        "score": 22,
+        "insight": "Insufficient protein and amino acids make lime unsuitable as a muscle-building food.",
+        "pros": [
+          "Vitamin C supports collagen for tendons",
+          "Hydrating with high water content",
+          "Low calorie for cutting phases"
+        ],
+        "cons": [
+          "Extremely low protein (0.47g)",
+          "No complete amino acids",
+          "Insufficient calories for anabolism",
+          "Lacks vitamin D and key minerals"
+        ]
+      },
+      "energy": {
+        "grade": "C",
+        "score": 56,
+        "insight": "Minimal calories and low sugar provide stable energy without spikes, but not an energy-dense food.",
+        "pros": [
+          "Low glycemic impact prevents crashes",
+          "Vitamin C supports iron absorption for energy",
+          "Natural acids support citric acid cycle",
+          "Hydrating for cellular function"
+        ],
+        "cons": [
+          "Very low calorie density (20 kcal)",
+          "Minimal carbohydrates for fuel",
+          "Lacks B-vitamins for energy metabolism",
+          "No protein or fat for sustained energy"
+        ]
+      },
+      "weight_management": {
+        "grade": "A+",
+        "score": 97,
+        "insight": "Outstanding for weight management with extreme low calorie density, minimal sugar, and good fiber satiety.",
+        "pros": [
+          "Extremely low calorie (20 kcal)",
+          "High water content (88%) for satiety",
+          "Good fiber (1.9g) promotes fullness",
+          "Very low natural sugars (1.13g)",
+          "Adds zesty flavor without calories"
+        ],
+        "cons": [
+          "Not satiating as standalone food",
+          "Acidic nature may increase hunger in some"
+        ]
+      },
+      "brain_focus": {
+        "grade": "B-",
+        "score": 70,
+        "insight": "Vitamin C offers neuroprotection, but lacks essential brain fats and cognitive-supporting nutrients.",
+        "pros": [
+          "Vitamin C protects neurons from oxidative stress",
+          "Low glycemic prevents mental fog",
+          "Hydration supports brain function",
+          "Citrus flavonoids support cognition"
+        ],
+        "cons": [
+          "No omega-3 DHA for brain membranes",
+          "Lacks B-vitamins for neurotransmitters",
+          "Very low choline for memory",
+          "No vitamin E for cognitive protection"
+        ]
+      },
+      "gut_health": {
+        "grade": "B+",
+        "score": 85,
+        "insight": "Good fiber and natural citric acid support digestive enzyme activity and gut motility.",
+        "pros": [
+          "Good fiber content (1.9g) for regularity",
+          "Citric acid stimulates digestive secretions",
+          "Pectin supports beneficial gut bacteria",
+          "Natural antimicrobial properties"
+        ],
+        "cons": [
+          "No resistant starch or prebiotics",
+          "Acidic may irritate sensitive digestive tracts",
+          "Limited polyphenol diversity"
+        ]
+      },
+      "blood_sugar": {
+        "grade": "A+",
+        "score": 95,
+        "insight": "Excellent blood sugar control with very low sugar content, low glycemic load, and fiber that slows absorption.",
+        "pros": [
+          "Very low natural sugars (1.13g)",
+          "Zero added sugars",
+          "Low glycemic index (~24)",
+          "Fiber moderates glucose absorption",
+          "May improve insulin sensitivity"
+        ],
+        "cons": [
+          "Minimal chromium for glucose regulation",
+          "Low magnesium for insulin signaling"
+        ]
+      },
+      "bone_joint": {
+        "grade": "C+",
+        "score": 66,
+        "insight": "Vitamin C supports joint collagen, but insufficient calcium, vitamin D, and bone-building minerals.",
+        "pros": [
+          "Vitamin C for collagen and cartilage",
+          "Some calcium (22mg) present",
+          "Anti-inflammatory flavonoids",
+          "Alkalizing minerals support bone pH"
+        ],
+        "cons": [
+          "Low calcium relative to daily needs",
+          "No vitamin D for calcium absorption",
+          "Minimal vitamin K for bone matrix",
+          "Low magnesium and phosphorus",
+          "Insufficient trace minerals"
+        ]
+      },
+      "anti_inflammatory": {
+        "grade": "A-",
+        "score": 89,
+        "insight": "Strong anti-inflammatory effects from vitamin C, citrus bioflavonoids, and absence of pro-inflammatory compounds.",
+        "pros": [
+          "High vitamin C antioxidant (32% DV)",
+          "Rich in anti-inflammatory flavonoids (hesperidin)",
+          "Limonene in peel reduces inflammation",
+          "Zero inflammatory fats or added sugars",
+          "Alkalizing effect on body"
+        ],
+        "cons": [
+          "Low omega-3 anti-inflammatory fats",
+          "Moderate polyphenol content",
+          "Citric acid may irritate inflamed tissues"
+        ]
+      }
+    }
+  },
+  "plum": {
+    "foodId": "plum",
+    "name": "Plum",
+    "category": "fruits",
+    "servingSize": {
+      "amount": 66,
+      "unit": "g",
+      "description": "1 medium plum"
+    },
+    "nutrients": {
+      "calories": 30,
+      "protein": 0.46,
+      "carbohydrates": 7.54,
+      "fiber": 0.9,
+      "sugars": 6.55,
+      "addedSugars": 0,
+      "sugarAlcohols": 0,
+      "fat": 0.19,
+      "saturatedFat": 0.012,
+      "transFat": 0,
+      "monounsaturatedFat": 0.093,
+      "polyunsaturatedFat": 0.044,
+      "omega3": 0.015,
+      "omega6": 0.028,
+      "cholesterol": 0,
+      "sodium": 0,
+      "potassium": 104,
+      "calcium": 4,
+      "iron": 0.11,
+      "magnesium": 5,
+      "phosphorus": 11,
+      "zinc": 0.07,
+      "copper": 0.038,
+      "manganese": 0.035,
+      "selenium": 0,
+      "vitaminA": 23,
+      "vitaminC": 6.3,
+      "vitaminD": 0,
+      "vitaminE": 0.17,
+      "vitaminK": 4.2,
+      "vitaminB6": 0.019,
+      "vitaminB12": 0,
+      "thiamin": 0.019,
+      "riboflavin": 0.018,
+      "niacin": 0.278,
+      "folate": 3,
+      "pantothenicAcid": 0.089,
+      "choline": 1.3,
+      "betaine": 0.1,
+      "caffeine": 0,
+      "alcohol": 0,
+      "water": 57.2
+    },
+    "derivedScores": {
+      "nutrientDensity": 68,
+      "proteinQuality": 10,
+      "glycemicImpact": 28,
+      "inflamScore": 85,
+      "diversityBonus": 72
+    },
+    "focusGrades": {
+      "balanced": {
+        "grade": "B",
+        "score": 78,
+        "insight": "Low calorie stone fruit with good potassium and antioxidants, though moderate in natural sugars.",
+        "pros": [
+          "Low calorie (30 kcal)",
+          "Good potassium (104mg)",
+          "Contains vitamin K for bone health",
+          "Rich in antioxidants (anthocyanins)"
+        ],
+        "cons": [
+          "Low protein content",
+          "Moderate sugar content (6.55g)",
+          "Limited vitamin C compared to citrus",
+          "Low fiber relative to other fruits"
+        ]
+      },
+      "heart_health": {
+        "grade": "B+",
+        "score": 83,
+        "insight": "Zero cholesterol, good potassium, and antioxidant polyphenols support cardiovascular function.",
+        "pros": [
+          "Zero cholesterol and sodium",
+          "Good potassium for blood pressure",
+          "Vitamin K supports vascular health",
+          "Anthocyanins reduce oxidative stress"
+        ],
+        "cons": [
+          "Low omega-3 content",
+          "Minimal magnesium for heart rhythm",
+          "Limited vitamin C for vessel integrity",
+          "Moderate natural sugars"
+        ]
+      },
+      "muscle_building": {
+        "grade": "D",
+        "score": 20,
+        "insight": "Insufficient protein and amino acids make plum unsuitable for muscle building purposes.",
+        "pros": [
+          "Low calorie for cutting phases",
+          "Some vitamin C for collagen",
+          "Hydrating with good water content"
+        ],
+        "cons": [
+          "Extremely low protein (0.46g)",
+          "No complete amino acids",
+          "Insufficient calories for muscle growth",
+          "Lacks vitamin D and key minerals",
+          "No leucine or BCAAs"
+        ]
+      },
+      "energy": {
+        "grade": "C+",
+        "score": 62,
+        "insight": "Natural fruit sugars provide quick energy, but low calorie density limits sustained fuel.",
+        "pros": [
+          "Natural sugars for quick energy boost",
+          "Easy to digest carbohydrates",
+          "Hydrating for cellular function",
+          "Potassium supports muscle function"
+        ],
+        "cons": [
+          "Low calorie density (30 kcal)",
+          "Moderate glycemic impact from sugars",
+          "Lacks B-vitamins for energy metabolism",
+          "No protein or fat for sustained energy"
+        ]
+      },
+      "weight_management": {
+        "grade": "A-",
+        "score": 88,
+        "insight": "Low calorie with good water content, though moderate sugars require portion awareness.",
+        "pros": [
+          "Low calorie (30 kcal)",
+          "High water content (87%) for satiety",
+          "Naturally sweet satisfies cravings",
+          "Zero added sugars or fats"
+        ],
+        "cons": [
+          "Moderate natural sugars (6.55g)",
+          "Low fiber limits satiety",
+          "Easy to overconsume multiple plums",
+          "Not as filling as higher-fiber fruits"
+        ]
+      },
+      "brain_focus": {
+        "grade": "B",
+        "score": 75,
+        "insight": "Anthocyanins and vitamin K support brain health, but lacks omega-3s and B-vitamins for optimal cognition.",
+        "pros": [
+          "Anthocyanins protect brain cells",
+          "Vitamin K supports cognitive function",
+          "Natural sugars fuel brain glucose needs",
+          "Antioxidants reduce neuroinflammation"
+        ],
+        "cons": [
+          "No omega-3 DHA for brain structure",
+          "Lacks B-vitamins for neurotransmitters",
+          "Very low choline for memory",
+          "Limited vitamin C for neuroprotection"
+        ]
+      },
+      "gut_health": {
+        "grade": "B-",
+        "score": 73,
+        "insight": "Moderate fiber and sorbitol support digestive regularity, though not as fiber-rich as other fruits.",
+        "pros": [
+          "Fiber supports bowel regularity",
+          "Sorbitol has mild laxative effect",
+          "Polyphenols support gut microbiome",
+          "Pectin feeds beneficial bacteria"
+        ],
+        "cons": [
+          "Lower fiber than many fruits (0.9g)",
+          "No resistant starch",
+          "Limited prebiotic content",
+          "Sorbitol may cause discomfort in excess"
+        ]
+      },
+      "blood_sugar": {
+        "grade": "B-",
+        "score": 72,
+        "insight": "Low glycemic index but moderate sugar content requires mindful portions for blood sugar management.",
+        "pros": [
+          "Low glycemic index (~40)",
+          "Zero added sugars",
+          "Fiber moderates glucose absorption",
+          "Antioxidants may improve insulin sensitivity"
+        ],
+        "cons": [
+          "Moderate natural sugars (6.55g)",
+          "Low fiber reduces glycemic benefit",
+          "No chromium for glucose metabolism",
+          "Minimal magnesium for insulin function"
+        ]
+      },
+      "bone_joint": {
+        "grade": "C+",
+        "score": 64,
+        "insight": "Vitamin K and anthocyanins support joint health, but insufficient calcium and bone-building minerals.",
+        "pros": [
+          "Vitamin K for bone protein synthesis",
+          "Anthocyanins reduce joint inflammation",
+          "Some vitamin C for collagen",
+          "Low acidity compared to citrus"
+        ],
+        "cons": [
+          "Very low calcium (4mg)",
+          "No vitamin D for calcium absorption",
+          "Low magnesium and phosphorus",
+          "Minimal trace minerals",
+          "Insufficient bone-building nutrients"
+        ]
+      },
+      "anti_inflammatory": {
+        "grade": "A-",
+        "score": 87,
+        "insight": "Excellent anthocyanin and polyphenol content provide strong anti-inflammatory effects.",
+        "pros": [
+          "Rich in anti-inflammatory anthocyanins",
+          "Polyphenols reduce oxidative stress",
+          "Vitamin K regulates inflammation",
+          "Zero pro-inflammatory fats",
+          "Low glycemic impact reduces inflammation"
+        ],
+        "cons": [
+          "Low omega-3 anti-inflammatory fats",
+          "Moderate sugar may promote inflammation if excessive",
+          "Limited vitamin C antioxidant",
+          "Lower polyphenol diversity than berries"
+        ]
+      }
+    }
+  },
+  "plums": {
+    "foodId": "plums",
+    "name": "Plums",
+    "category": "fruits",
+    "servingSize": {
+      "amount": 66,
+      "unit": "g",
+      "description": "1 medium plum"
+    },
+    "nutrients": {
+      "calories": 30,
+      "protein": 0.46,
+      "carbohydrates": 7.54,
+      "fiber": 0.9,
+      "sugars": 6.55,
+      "addedSugars": 0,
+      "sugarAlcohols": 0,
+      "fat": 0.19,
+      "saturatedFat": 0.012,
+      "transFat": 0,
+      "monounsaturatedFat": 0.093,
+      "polyunsaturatedFat": 0.044,
+      "omega3": 0.015,
+      "omega6": 0.028,
+      "cholesterol": 0,
+      "sodium": 0,
+      "potassium": 104,
+      "calcium": 4,
+      "iron": 0.11,
+      "magnesium": 5,
+      "phosphorus": 11,
+      "zinc": 0.07,
+      "copper": 0.038,
+      "manganese": 0.035,
+      "selenium": 0,
+      "vitaminA": 23,
+      "vitaminC": 6.3,
+      "vitaminD": 0,
+      "vitaminE": 0.17,
+      "vitaminK": 4.2,
+      "vitaminB6": 0.019,
+      "vitaminB12": 0,
+      "thiamin": 0.019,
+      "riboflavin": 0.018,
+      "niacin": 0.278,
+      "folate": 3,
+      "pantothenicAcid": 0.089,
+      "choline": 1.3,
+      "betaine": 0.1,
+      "caffeine": 0,
+      "alcohol": 0,
+      "water": 57.2
+    },
+    "derivedScores": {
+      "nutrientDensity": 68,
+      "proteinQuality": 10,
+      "glycemicImpact": 28,
+      "inflamScore": 85,
+      "diversityBonus": 72
+    },
+    "focusGrades": {
+      "balanced": {
+        "grade": "B",
+        "score": 78,
+        "insight": "Low calorie stone fruit with good potassium and antioxidants, though moderate in natural sugars.",
+        "pros": [
+          "Low calorie (30 kcal)",
+          "Good potassium (104mg)",
+          "Contains vitamin K for bone health",
+          "Rich in antioxidants (anthocyanins)"
+        ],
+        "cons": [
+          "Low protein content",
+          "Moderate sugar content (6.55g)",
+          "Limited vitamin C compared to citrus",
+          "Low fiber relative to other fruits"
+        ]
+      },
+      "heart_health": {
+        "grade": "B+",
+        "score": 83,
+        "insight": "Zero cholesterol, good potassium, and antioxidant polyphenols support cardiovascular function.",
+        "pros": [
+          "Zero cholesterol and sodium",
+          "Good potassium for blood pressure",
+          "Vitamin K supports vascular health",
+          "Anthocyanins reduce oxidative stress"
+        ],
+        "cons": [
+          "Low omega-3 content",
+          "Minimal magnesium for heart rhythm",
+          "Limited vitamin C for vessel integrity",
+          "Moderate natural sugars"
+        ]
+      },
+      "muscle_building": {
+        "grade": "D",
+        "score": 20,
+        "insight": "Insufficient protein and amino acids make plum unsuitable for muscle building purposes.",
+        "pros": [
+          "Low calorie for cutting phases",
+          "Some vitamin C for collagen",
+          "Hydrating with good water content"
+        ],
+        "cons": [
+          "Extremely low protein (0.46g)",
+          "No complete amino acids",
+          "Insufficient calories for muscle growth",
+          "Lacks vitamin D and key minerals",
+          "No leucine or BCAAs"
+        ]
+      },
+      "energy": {
+        "grade": "C+",
+        "score": 62,
+        "insight": "Natural fruit sugars provide quick energy, but low calorie density limits sustained fuel.",
+        "pros": [
+          "Natural sugars for quick energy boost",
+          "Easy to digest carbohydrates",
+          "Hydrating for cellular function",
+          "Potassium supports muscle function"
+        ],
+        "cons": [
+          "Low calorie density (30 kcal)",
+          "Moderate glycemic impact from sugars",
+          "Lacks B-vitamins for energy metabolism",
+          "No protein or fat for sustained energy"
+        ]
+      },
+      "weight_management": {
+        "grade": "A-",
+        "score": 88,
+        "insight": "Low calorie with good water content, though moderate sugars require portion awareness.",
+        "pros": [
+          "Low calorie (30 kcal)",
+          "High water content (87%) for satiety",
+          "Naturally sweet satisfies cravings",
+          "Zero added sugars or fats"
+        ],
+        "cons": [
+          "Moderate natural sugars (6.55g)",
+          "Low fiber limits satiety",
+          "Easy to overconsume multiple plums",
+          "Not as filling as higher-fiber fruits"
+        ]
+      },
+      "brain_focus": {
+        "grade": "B",
+        "score": 75,
+        "insight": "Anthocyanins and vitamin K support brain health, but lacks omega-3s and B-vitamins for optimal cognition.",
+        "pros": [
+          "Anthocyanins protect brain cells",
+          "Vitamin K supports cognitive function",
+          "Natural sugars fuel brain glucose needs",
+          "Antioxidants reduce neuroinflammation"
+        ],
+        "cons": [
+          "No omega-3 DHA for brain structure",
+          "Lacks B-vitamins for neurotransmitters",
+          "Very low choline for memory",
+          "Limited vitamin C for neuroprotection"
+        ]
+      },
+      "gut_health": {
+        "grade": "B-",
+        "score": 73,
+        "insight": "Moderate fiber and sorbitol support digestive regularity, though not as fiber-rich as other fruits.",
+        "pros": [
+          "Fiber supports bowel regularity",
+          "Sorbitol has mild laxative effect",
+          "Polyphenols support gut microbiome",
+          "Pectin feeds beneficial bacteria"
+        ],
+        "cons": [
+          "Lower fiber than many fruits (0.9g)",
+          "No resistant starch",
+          "Limited prebiotic content",
+          "Sorbitol may cause discomfort in excess"
+        ]
+      },
+      "blood_sugar": {
+        "grade": "B-",
+        "score": 72,
+        "insight": "Low glycemic index but moderate sugar content requires mindful portions for blood sugar management.",
+        "pros": [
+          "Low glycemic index (~40)",
+          "Zero added sugars",
+          "Fiber moderates glucose absorption",
+          "Antioxidants may improve insulin sensitivity"
+        ],
+        "cons": [
+          "Moderate natural sugars (6.55g)",
+          "Low fiber reduces glycemic benefit",
+          "No chromium for glucose metabolism",
+          "Minimal magnesium for insulin function"
+        ]
+      },
+      "bone_joint": {
+        "grade": "C+",
+        "score": 64,
+        "insight": "Vitamin K and anthocyanins support joint health, but insufficient calcium and bone-building minerals.",
+        "pros": [
+          "Vitamin K for bone protein synthesis",
+          "Anthocyanins reduce joint inflammation",
+          "Some vitamin C for collagen",
+          "Low acidity compared to citrus"
+        ],
+        "cons": [
+          "Very low calcium (4mg)",
+          "No vitamin D for calcium absorption",
+          "Low magnesium and phosphorus",
+          "Minimal trace minerals",
+          "Insufficient bone-building nutrients"
+        ]
+      },
+      "anti_inflammatory": {
+        "grade": "A-",
+        "score": 87,
+        "insight": "Excellent anthocyanin and polyphenol content provide strong anti-inflammatory effects.",
+        "pros": [
+          "Rich in anti-inflammatory anthocyanins",
+          "Polyphenols reduce oxidative stress",
+          "Vitamin K regulates inflammation",
+          "Zero pro-inflammatory fats",
+          "Low glycemic impact reduces inflammation"
+        ],
+        "cons": [
+          "Low omega-3 anti-inflammatory fats",
+          "Moderate sugar may promote inflammation if excessive",
+          "Limited vitamin C antioxidant",
+          "Lower polyphenol diversity than berries"
+        ]
+      }
+    }
+  },
+  "coconut": {
+    "foodId": "coconut",
+    "name": "Coconut",
+    "category": "fruits",
+    "servingSize": {
+      "amount": 80,
+      "unit": "g",
+      "description": "1 piece (2\" x 2\" x 1/2\")"
+    },
+    "nutrients": {
+      "calories": 283,
+      "protein": 2.66,
+      "carbohydrates": 12.18,
+      "fiber": 7.2,
+      "sugars": 4.98,
+      "addedSugars": 0,
+      "sugarAlcohols": 0,
+      "fat": 26.79,
+      "saturatedFat": 23.76,
+      "transFat": 0,
+      "monounsaturatedFat": 1.14,
+      "polyunsaturatedFat": 0.3,
+      "omega3": 0,
+      "omega6": 0.29,
+      "cholesterol": 0,
+      "sodium": 16,
+      "potassium": 285,
+      "calcium": 11,
+      "iron": 1.94,
+      "magnesium": 26,
+      "phosphorus": 90,
+      "zinc": 0.88,
+      "copper": 0.348,
+      "manganese": 1.2,
+      "selenium": 8.1,
+      "vitaminA": 0,
+      "vitaminC": 2.6,
+      "vitaminD": 0,
+      "vitaminE": 0.19,
+      "vitaminK": 0.2,
+      "vitaminB6": 0.043,
+      "vitaminB12": 0,
+      "thiamin": 0.053,
+      "riboflavin": 0.016,
+      "niacin": 0.432,
+      "folate": 21,
+      "pantothenicAcid": 0.245,
+      "choline": 9.9,
+      "betaine": 0.4,
+      "caffeine": 0,
+      "alcohol": 0,
+      "water": 37.0
+    },
+    "derivedScores": {
+      "nutrientDensity": 72,
+      "proteinQuality": 35,
+      "glycemicImpact": 15,
+      "inflamScore": 68,
+      "diversityBonus": 80
+    },
+    "focusGrades": {
+      "balanced": {
+        "grade": "B-",
+        "score": 71,
+        "insight": "High in beneficial MCTs and fiber, but very high in saturated fat requires moderation in balanced diets.",
+        "pros": [
+          "Excellent fiber content (7.2g)",
+          "Rich in minerals (iron, manganese, copper)",
+          "MCT fats for quick energy",
+          "Good potassium content"
+        ],
+        "cons": [
+          "Very high saturated fat (23.76g, 119% DV)",
+          "High calorie density (283 kcal)",
+          "Low in vitamins A, C, D",
+          "Limited protein quality"
+        ]
+      },
+      "heart_health": {
+        "grade": "C",
+        "score": 55,
+        "insight": "Controversial for heart health: MCTs may have benefits, but extremely high saturated fat raises concerns.",
+        "pros": [
+          "Zero cholesterol",
+          "Good potassium for blood pressure",
+          "MCTs may increase HDL cholesterol",
+          "Fiber supports cholesterol reduction"
+        ],
+        "cons": [
+          "Extremely high saturated fat (119% DV)",
+          "May raise LDL cholesterol in some individuals",
+          "Low omega-3 fatty acids",
+          "Minimal magnesium for heart rhythm",
+          "High calorie density"
+        ]
+      },
+      "muscle_building": {
+        "grade": "C+",
+        "score": 67,
+        "insight": "Moderate protein with excellent MCTs for energy, but not a complete protein source for optimal muscle building.",
+        "pros": [
+          "MCT fats provide quick energy for workouts",
+          "Good mineral profile (iron, zinc, manganese)",
+          "Calorie-dense for bulking phases",
+          "Some protein content (2.66g)"
+        ],
+        "cons": [
+          "Incomplete protein profile",
+          "Lacks leucine and BCAAs",
+          "No vitamin D for muscle function",
+          "High fat may slow digestion post-workout",
+          "Not ideal protein-to-calorie ratio"
+        ]
+      },
+      "energy": {
+        "grade": "A-",
+        "score": 88,
+        "insight": "Excellent energy source from MCT fats that provide quick, sustained fuel without blood sugar spikes.",
+        "pros": [
+          "High calorie density (283 kcal)",
+          "MCTs rapidly converted to ketones for energy",
+          "Sustained energy without crashes",
+          "Good iron for oxygen transport",
+          "Fiber provides steady glucose release"
+        ],
+        "cons": [
+          "High fat may feel heavy for some",
+          "Limited B-vitamins for energy metabolism",
+          "No quick-acting simple carbohydrates",
+          "May take time to digest"
+        ]
+      },
+      "weight_management": {
+        "grade": "C+",
+        "score": 64,
+        "insight": "MCTs may support satiety and metabolism, but extreme calorie density requires careful portion control.",
+        "pros": [
+          "High fiber (7.2g) promotes fullness",
+          "MCTs may increase metabolic rate",
+          "Supports ketogenic diets",
+          "Satisfying fat content reduces cravings"
+        ],
+        "cons": [
+          "Very high calorie density (283 kcal)",
+          "Easy to overconsume calories",
+          "High saturated fat limits portions",
+          "Not as satiating per calorie as protein",
+          "Requires mindful portion control"
+        ]
+      },
+      "brain_focus": {
+        "grade": "B+",
+        "score": 82,
+        "insight": "MCT fats provide ketones as alternative brain fuel, supporting mental clarity and focus.",
+        "pros": [
+          "MCTs convert to ketones for brain energy",
+          "Supports cognitive function on low-carb diets",
+          "Good iron for oxygen delivery to brain",
+          "Manganese supports neurotransmitter production",
+          "Low glycemic prevents brain fog"
+        ],
+        "cons": [
+          "No omega-3 DHA for brain structure",
+          "Lacks B-vitamins for neurotransmitters",
+          "Low choline for memory",
+          "No vitamin E for neuroprotection",
+          "Limited antioxidant vitamins"
+        ]
+      },
+      "gut_health": {
+        "grade": "A-",
+        "score": 87,
+        "insight": "Excellent fiber content and MCTs support gut health, microbiome diversity, and digestive function.",
+        "pros": [
+          "High fiber (7.2g) for regularity",
+          "MCTs have antimicrobial properties",
+          "Supports beneficial gut bacteria",
+          "May reduce gut inflammation",
+          "Good magnesium for bowel function"
+        ],
+        "cons": [
+          "High fat may cause digestive upset in sensitive individuals",
+          "No resistant starch",
+          "Limited prebiotic diversity",
+          "May be hard to digest for some"
+        ]
+      },
+      "blood_sugar": {
+        "grade": "A",
+        "score": 90,
+        "insight": "Excellent blood sugar management with low glycemic impact, high fiber, and MCTs that don't spike glucose.",
+        "pros": [
+          "Very low glycemic index (~45)",
+          "High fiber slows glucose absorption",
+          "MCT fats stabilize blood sugar",
+          "Zero added sugars",
+          "Low net carbs (5g after fiber)",
+          "Supports ketogenic blood sugar control"
+        ],
+        "cons": [
+          "Minimal chromium for glucose metabolism",
+          "Low magnesium relative to needs",
+          "No polyphenols for insulin sensitivity"
+        ]
+      },
+      "bone_joint": {
+        "grade": "C+",
+        "score": 66,
+        "insight": "Good manganese and copper support connective tissue, but lacks calcium, vitamin D, and vitamin K for bones.",
+        "pros": [
+          "Excellent manganese (52% DV) for bone formation",
+          "Good copper for collagen cross-linking",
+          "Phosphorus supports bone matrix",
+          "Anti-inflammatory MCTs may reduce joint pain"
+        ],
+        "cons": [
+          "Low calcium (11mg, 1% DV)",
+          "No vitamin D for calcium absorption",
+          "Minimal vitamin K for bone protein",
+          "Low magnesium relative to needs",
+          "High saturated fat may increase inflammation"
+        ]
+      },
+      "anti_inflammatory": {
+        "grade": "B",
+        "score": 76,
+        "insight": "MCTs and polyphenols provide anti-inflammatory benefits, but high saturated fat is a mixed signal.",
+        "pros": [
+          "MCTs reduce inflammatory cytokines",
+          "Lauric acid has antimicrobial properties",
+          "Polyphenols in coconut meat",
+          "Zero trans fats or oxidized fats",
+          "Low glycemic reduces inflammation"
+        ],
+        "cons": [
+          "Very high saturated fat may promote inflammation in excess",
+          "Low omega-3 anti-inflammatory fats",
+          "High omega-6 to omega-3 ratio",
+          "Limited antioxidant vitamins",
+          "Controversial evidence on inflammation"
+        ]
+      }
+    }
+  }
+}

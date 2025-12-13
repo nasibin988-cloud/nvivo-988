@@ -1,0 +1,980 @@
+{
+    "salmon": {
+        "basicInfo": {
+            "name": "Salmon",
+            "category": "protein",
+            "subCategory": "seafood",
+            "servingSize": 100,
+            "servingUnit": "g",
+            "calories": 206,
+            "defaultUnit": "oz"
+        },
+        "macronutrients": {
+            "protein": 22.1,
+            "carbs": 0,
+            "fiber": 0,
+            "sugars": 0,
+            "fat": 12.4,
+            "saturatedFat": 2.5,
+            "monounsaturatedFat": 4.9,
+            "polyunsaturatedFat": 3.9,
+            "omega3": 2.5,
+            "omega6": 0.17,
+            "transFat": 0
+        },
+        "micronutrients": {
+            "vitamins": {
+                "vitaminA": 40,
+                "vitaminC": 0,
+                "vitaminD": 11.0,
+                "vitaminE": 1.1,
+                "vitaminK": 0.5,
+                "thiamin": 0.23,
+                "riboflavin": 0.15,
+                "niacin": 9.4,
+                "vitaminB6": 0.94,
+                "folate": 25,
+                "vitaminB12": 3.2,
+                "pantothenicAcid": 1.6,
+                "choline": 95
+            },
+            "minerals": {
+                "calcium": 9,
+                "iron": 0.34,
+                "magnesium": 29,
+                "phosphorus": 240,
+                "potassium": 490,
+                "sodium": 59,
+                "zinc": 0.64,
+                "copper": 0.25,
+                "manganese": 0.02,
+                "selenium": 36.5
+            }
+        },
+        "healthMetrics": {
+            "glycemicIndex": 0,
+            "glycemicLoad": 0,
+            "inflammationScore": -8,
+            "antioxidantScore": 6,
+            "nutrientDensity": 92,
+            "proteinQuality": 1.0,
+            "omega3Content": "exceptional",
+            "omega6to3ratio": 0.07
+        },
+        "tags": ["high-protein", "omega-3-rich", "low-carb", "keto-friendly", "heart-healthy", "brain-food", "vitamin-d", "selenium-rich"],
+        "allergens": ["fish"],
+        "certifications": [],
+        "shelfLife": "2-3 days fresh, 3-6 months frozen",
+        "preparation": ["grilled", "baked", "pan-seared", "poached", "smoked"],
+        "seasonality": "year-round",
+        "sustainabilityScore": 7,
+        "pricePerServing": 4.5,
+        "bioactiveCompounds": [
+            {
+                "name": "EPA (Eicosapentaenoic Acid)",
+                "amount": 0.86,
+                "unit": "g",
+                "benefits": ["Reduces inflammation", "Supports heart health", "Improves mood"]
+            },
+            {
+                "name": "DHA (Docosahexaenoic Acid)",
+                "amount": 1.43,
+                "unit": "g",
+                "benefits": ["Brain development", "Cognitive function", "Eye health"]
+            },
+            {
+                "name": "Astaxanthin",
+                "amount": 5,
+                "unit": "mg",
+                "benefits": ["Powerful antioxidant", "Skin health", "Anti-inflammatory"]
+            }
+        ],
+        "focusGrades": {
+            "weight_loss": {
+                "grade": "A",
+                "score": 90,
+                "insight": "High-quality protein and omega-3s promote satiety and preserve lean muscle during calorie deficit",
+                "pros": ["High protein (22g)", "Thermogenic effect", "Satiating fats", "Zero carbs"],
+                "cons": ["Moderate calorie density from healthy fats"]
+            },
+            "heart_health": {
+                "grade": "A+",
+                "score": 98,
+                "insight": "Exceptional omega-3 content reduces triglycerides, inflammation, and cardiovascular disease risk",
+                "pros": ["2.5g omega-3 per serving", "Lowers blood pressure", "Improves cholesterol ratio", "Anti-inflammatory"],
+                "cons": []
+            },
+            "diabetes_management": {
+                "grade": "A",
+                "score": 92,
+                "insight": "Zero carbs with high protein and healthy fats stabilize blood sugar and improve insulin sensitivity",
+                "pros": ["No impact on blood glucose", "Improves insulin sensitivity", "Reduces inflammation"],
+                "cons": ["None for blood sugar control"]
+            },
+            "muscle_gain": {
+                "grade": "A",
+                "score": 93,
+                "insight": "Complete high-quality protein with anti-inflammatory omega-3s supports muscle growth and recovery",
+                "pros": ["22g complete protein", "Leucine-rich", "Reduces exercise inflammation", "Vitamin D for strength"],
+                "cons": ["Not as protein-dense as chicken breast"]
+            },
+            "energy_boost": {
+                "grade": "B+",
+                "score": 85,
+                "insight": "B vitamins and quality protein provide sustained energy without blood sugar spikes",
+                "pros": ["B12 for energy metabolism", "Sustained energy from protein", "No sugar crash", "Niacin for ATP production"],
+                "cons": ["Not an immediate energy source", "Lower carbs for quick fuel"]
+            },
+            "digestive_health": {
+                "grade": "B",
+                "score": 78,
+                "insight": "Easily digestible protein with anti-inflammatory benefits for gut health",
+                "pros": ["Low in FODMAPs", "Anti-inflammatory omega-3s", "Easy to digest"],
+                "cons": ["No fiber", "No prebiotics", "Requires proper cooking"]
+            },
+            "immune_support": {
+                "grade": "A-",
+                "score": 88,
+                "insight": "Rich in selenium, vitamin D, and omega-3s that strengthen immune function",
+                "pros": ["High selenium (36.5mcg)", "Vitamin D for immunity", "Zinc content", "Anti-inflammatory fats"],
+                "cons": ["Could be higher in vitamin C and zinc"]
+            },
+            "bone_health": {
+                "grade": "A-",
+                "score": 87,
+                "insight": "Excellent vitamin D and protein with calcium for bone density",
+                "pros": ["11mcg vitamin D", "22g bone-building protein", "Phosphorus for bone matrix", "Omega-3s reduce bone loss"],
+                "cons": ["Lower calcium than dairy", "Moderate magnesium"]
+            },
+            "brain_focus": {
+                "grade": "A+",
+                "score": 97,
+                "insight": "DHA-rich omega-3s are essential for brain structure, cognitive function, and mental clarity",
+                "pros": ["1.43g DHA for brain health", "B12 for neurotransmitters", "Choline for memory", "Reduces brain inflammation"],
+                "cons": []
+            },
+            "skin_health": {
+                "grade": "A",
+                "score": 91,
+                "insight": "Astaxanthin and omega-3s protect against UV damage and promote skin elasticity",
+                "pros": ["Astaxanthin antioxidant", "Omega-3s reduce inflammation", "Vitamin E for skin repair", "Protein for collagen"],
+                "cons": ["Lower vitamin C for collagen synthesis"]
+            }
+        }
+    },
+    "salmon_fillet": {
+        "basicInfo": {
+            "name": "Salmon Fillet",
+            "category": "protein",
+            "subCategory": "seafood",
+            "servingSize": 100,
+            "servingUnit": "g",
+            "calories": 208,
+            "defaultUnit": "oz"
+        },
+        "macronutrients": {
+            "protein": 22.5,
+            "carbs": 0,
+            "fiber": 0,
+            "sugars": 0,
+            "fat": 12.8,
+            "saturatedFat": 2.6,
+            "monounsaturatedFat": 5.1,
+            "polyunsaturatedFat": 4.0,
+            "omega3": 2.6,
+            "omega6": 0.18,
+            "transFat": 0
+        },
+        "micronutrients": {
+            "vitamins": {
+                "vitaminA": 42,
+                "vitaminC": 0,
+                "vitaminD": 11.3,
+                "vitaminE": 1.2,
+                "vitaminK": 0.5,
+                "thiamin": 0.24,
+                "riboflavin": 0.16,
+                "niacin": 9.6,
+                "vitaminB6": 0.96,
+                "folate": 26,
+                "vitaminB12": 3.3,
+                "pantothenicAcid": 1.65,
+                "choline": 97
+            },
+            "minerals": {
+                "calcium": 10,
+                "iron": 0.36,
+                "magnesium": 30,
+                "phosphorus": 245,
+                "potassium": 495,
+                "sodium": 61,
+                "zinc": 0.66,
+                "copper": 0.26,
+                "manganese": 0.02,
+                "selenium": 37.2
+            }
+        },
+        "healthMetrics": {
+            "glycemicIndex": 0,
+            "glycemicLoad": 0,
+            "inflammationScore": -8,
+            "antioxidantScore": 6,
+            "nutrientDensity": 93,
+            "proteinQuality": 1.0,
+            "omega3Content": "exceptional",
+            "omega6to3ratio": 0.07
+        },
+        "tags": ["high-protein", "omega-3-rich", "low-carb", "keto-friendly", "heart-healthy", "brain-food", "vitamin-d", "boneless"],
+        "allergens": ["fish"],
+        "certifications": [],
+        "shelfLife": "2-3 days fresh, 3-6 months frozen",
+        "preparation": ["grilled", "baked", "pan-seared", "poached", "cedar-plank"],
+        "seasonality": "year-round",
+        "sustainabilityScore": 7,
+        "pricePerServing": 4.8,
+        "bioactiveCompounds": [
+            {
+                "name": "EPA (Eicosapentaenoic Acid)",
+                "amount": 0.89,
+                "unit": "g",
+                "benefits": ["Cardiovascular protection", "Anti-inflammatory", "Mood regulation"]
+            },
+            {
+                "name": "DHA (Docosahexaenoic Acid)",
+                "amount": 1.47,
+                "unit": "g",
+                "benefits": ["Neurological development", "Cognitive performance", "Retinal health"]
+            },
+            {
+                "name": "Astaxanthin",
+                "amount": 5.2,
+                "unit": "mg",
+                "benefits": ["Antioxidant protection", "Reduces oxidative stress", "Improves skin elasticity"]
+            }
+        ],
+        "focusGrades": {
+            "weight_loss": {
+                "grade": "A",
+                "score": 91,
+                "insight": "Premium protein source with satiating omega-3s helps maintain muscle during weight loss",
+                "pros": ["22.5g protein per 100g", "High satiety index", "Thermogenic protein", "Zero sugar"],
+                "cons": ["Calorie-dense from healthy fats"]
+            },
+            "heart_health": {
+                "grade": "A+",
+                "score": 98,
+                "insight": "Gold standard for cardiovascular health with exceptional EPA and DHA content",
+                "pros": ["2.6g omega-3 fatty acids", "Lowers triglycerides 30%", "Reduces arrhythmia risk", "Optimal omega-6:3 ratio"],
+                "cons": []
+            },
+            "diabetes_management": {
+                "grade": "A",
+                "score": 93,
+                "insight": "Perfect for diabetes with zero glycemic impact and insulin-sensitizing omega-3s",
+                "pros": ["Zero carbohydrates", "Improves insulin sensitivity", "Stabilizes blood sugar", "Anti-inflammatory"],
+                "cons": []
+            },
+            "muscle_gain": {
+                "grade": "A",
+                "score": 94,
+                "insight": "High-quality complete protein with anti-catabolic omega-3s for muscle preservation",
+                "pros": ["Complete amino acid profile", "3.2g leucine per serving", "Reduces muscle inflammation", "Vitamin D for strength"],
+                "cons": ["Slightly lower protein than white fish"]
+            },
+            "energy_boost": {
+                "grade": "B+",
+                "score": 86,
+                "insight": "B-vitamin complex supports energy metabolism with stable, long-lasting fuel",
+                "pros": ["B12 for cellular energy", "Niacin for NAD+ production", "Sustained energy release", "No glycemic spike"],
+                "cons": ["Not a rapid energy source", "Requires digestion time"]
+            },
+            "digestive_health": {
+                "grade": "B",
+                "score": 79,
+                "insight": "Gentle on digestion with anti-inflammatory properties that support gut lining",
+                "pros": ["Highly digestible protein", "Omega-3s reduce gut inflammation", "Low FODMAP", "Easy to cook tender"],
+                "cons": ["No fiber content", "No probiotic benefits", "Potential mercury concerns in large quantities"]
+            },
+            "immune_support": {
+                "grade": "A-",
+                "score": 89,
+                "insight": "Selenium and vitamin D powerhouse that strengthens immune response",
+                "pros": ["37mcg selenium (67% DV)", "Vitamin D for immune cells", "Zinc for T-cell function", "Anti-inflammatory omega-3s"],
+                "cons": ["Could provide more vitamin C and E"]
+            },
+            "bone_health": {
+                "grade": "A-",
+                "score": 88,
+                "insight": "Vitamin D and protein combination essential for calcium absorption and bone strength",
+                "pros": ["11.3mcg vitamin D (57% DV)", "Phosphorus for bone matrix", "Protein for bone structure", "Omega-3s reduce bone resorption"],
+                "cons": ["Low calcium content", "Needs pairing with calcium sources"]
+            },
+            "brain_focus": {
+                "grade": "A+",
+                "score": 98,
+                "insight": "Premium brain food with DHA that comprises 40% of brain's fatty acids",
+                "pros": ["1.47g DHA for neuroplasticity", "Choline for acetylcholine", "B6 and B12 for neurotransmitters", "Improves memory and focus"],
+                "cons": []
+            },
+            "skin_health": {
+                "grade": "A",
+                "score": 92,
+                "insight": "Astaxanthin and omega-3s provide powerful anti-aging and UV protection",
+                "pros": ["5.2mg astaxanthin (potent antioxidant)", "Omega-3s improve skin barrier", "Protein for collagen production", "Reduces UV damage"],
+                "cons": ["Limited vitamin C for collagen synthesis"]
+            }
+        }
+    },
+    "tuna": {
+        "basicInfo": {
+            "name": "Tuna",
+            "category": "protein",
+            "subCategory": "seafood",
+            "servingSize": 100,
+            "servingUnit": "g",
+            "calories": 144,
+            "defaultUnit": "oz"
+        },
+        "macronutrients": {
+            "protein": 23.3,
+            "carbs": 0,
+            "fiber": 0,
+            "sugars": 0,
+            "fat": 4.9,
+            "saturatedFat": 1.3,
+            "monounsaturatedFat": 1.6,
+            "polyunsaturatedFat": 1.6,
+            "omega3": 1.3,
+            "omega6": 0.04,
+            "transFat": 0
+        },
+        "micronutrients": {
+            "vitamins": {
+                "vitaminA": 16,
+                "vitaminC": 0,
+                "vitaminD": 3.8,
+                "vitaminE": 0.24,
+                "vitaminK": 0,
+                "thiamin": 0.24,
+                "riboflavin": 0.25,
+                "niacin": 18.5,
+                "vitaminB6": 0.93,
+                "folate": 2,
+                "vitaminB12": 9.4,
+                "pantothenicAcid": 0.19,
+                "choline": 65
+            },
+            "minerals": {
+                "calcium": 8,
+                "iron": 1.02,
+                "magnesium": 50,
+                "phosphorus": 254,
+                "potassium": 441,
+                "sodium": 39,
+                "zinc": 0.77,
+                "copper": 0.09,
+                "manganese": 0.01,
+                "selenium": 90.6
+            }
+        },
+        "healthMetrics": {
+            "glycemicIndex": 0,
+            "glycemicLoad": 0,
+            "inflammationScore": -7,
+            "antioxidantScore": 5,
+            "nutrientDensity": 89,
+            "proteinQuality": 1.0,
+            "omega3Content": "high",
+            "omega6to3ratio": 0.03
+        },
+        "tags": ["high-protein", "omega-3", "low-carb", "low-fat", "keto-friendly", "lean-protein", "selenium-rich", "vitamin-b12"],
+        "allergens": ["fish"],
+        "certifications": [],
+        "shelfLife": "1-2 days fresh, 3-4 months frozen",
+        "preparation": ["grilled", "seared", "sashimi", "poke", "canned"],
+        "seasonality": "year-round",
+        "sustainabilityScore": 6,
+        "pricePerServing": 3.8,
+        "bioactiveCompounds": [
+            {
+                "name": "EPA (Eicosapentaenoic Acid)",
+                "amount": 0.28,
+                "unit": "g",
+                "benefits": ["Heart health", "Reduces inflammation", "Mood support"]
+            },
+            {
+                "name": "DHA (Docosahexaenoic Acid)",
+                "amount": 0.89,
+                "unit": "g",
+                "benefits": ["Brain function", "Eye health", "Cognitive performance"]
+            },
+            {
+                "name": "Selenium",
+                "amount": 90.6,
+                "unit": "mcg",
+                "benefits": ["Thyroid function", "Antioxidant defense", "Immune support"]
+            }
+        ],
+        "focusGrades": {
+            "weight_loss": {
+                "grade": "A+",
+                "score": 95,
+                "insight": "Extremely lean protein with high satiety and minimal calories makes it ideal for weight loss",
+                "pros": ["Very low calorie (144 cal/100g)", "23.3g protein", "High satiety:calorie ratio", "Minimal fat"],
+                "cons": ["May be less satiating than fattier fish"]
+            },
+            "heart_health": {
+                "grade": "A",
+                "score": 94,
+                "insight": "Strong omega-3 content with exceptional selenium supports cardiovascular function",
+                "pros": ["1.3g omega-3 fatty acids", "Very low saturated fat", "Reduces blood pressure", "90mcg selenium protects heart"],
+                "cons": ["Lower omega-3 than salmon", "Mercury concerns in large species"]
+            },
+            "diabetes_management": {
+                "grade": "A",
+                "score": 94,
+                "insight": "Zero carb lean protein perfect for blood sugar control and insulin sensitivity",
+                "pros": ["No blood glucose impact", "High protein stabilizes appetite", "Omega-3s improve insulin function", "Low calorie density"],
+                "cons": []
+            },
+            "muscle_gain": {
+                "grade": "A+",
+                "score": 96,
+                "insight": "Exceptional lean protein source with optimal amino acid profile for muscle synthesis",
+                "pros": ["23.3g protein per 100g", "High leucine content", "Low fat allows protein focus", "B12 for recovery"],
+                "cons": ["Lower calories may require larger portions"]
+            },
+            "energy_boost": {
+                "grade": "A-",
+                "score": 87,
+                "insight": "Outstanding B12 and niacin content fuels cellular energy production",
+                "pros": ["9.4mcg B12 (156% DV)", "18.5mg niacin for NAD+", "Magnesium for ATP", "Iron for oxygen transport"],
+                "cons": ["No carbs for immediate energy", "Lower fat for sustained fuel"]
+            },
+            "digestive_health": {
+                "grade": "B",
+                "score": 77,
+                "insight": "Very digestible lean protein with low inflammatory potential",
+                "pros": ["Easy to digest", "Low fat reduces GI load", "Omega-3s calm gut inflammation", "Low FODMAP"],
+                "cons": ["No fiber or prebiotics", "No digestive enzymes", "Mercury may affect gut microbiome"]
+            },
+            "immune_support": {
+                "grade": "A+",
+                "score": 95,
+                "insight": "Exceptional selenium content provides powerful antioxidant and immune defense",
+                "pros": ["90mcg selenium (164% DV)", "Vitamin D for immune cells", "Zinc supports T-cells", "Omega-3s reduce autoimmunity"],
+                "cons": []
+            },
+            "bone_health": {
+                "grade": "B+",
+                "score": 82,
+                "insight": "Good protein and phosphorus with moderate vitamin D for bone maintenance",
+                "pros": ["23g bone-building protein", "Phosphorus for mineralization", "Vitamin D aids calcium absorption", "Magnesium for bone density"],
+                "cons": ["Lower vitamin D than salmon", "Minimal calcium", "Needs calcium pairing"]
+            },
+            "brain_focus": {
+                "grade": "A",
+                "score": 93,
+                "insight": "Rich DHA content and extraordinary B12 levels optimize cognitive performance",
+                "pros": ["0.89g DHA for brain structure", "9.4mcg B12 for neurotransmitters", "Niacin for brain energy", "Low mercury in skipjack"],
+                "cons": ["Less DHA than salmon", "Mercury concerns in albacore/bluefin"]
+            },
+            "skin_health": {
+                "grade": "B+",
+                "score": 84,
+                "insight": "Protein and selenium support skin repair with omega-3 anti-inflammatory benefits",
+                "pros": ["Selenium protects from UV damage", "Protein for collagen", "Omega-3s reduce acne inflammation", "Niacin improves skin barrier"],
+                "cons": ["Low fat limits skin lipid support", "Minimal vitamin E and C", "Less astaxanthin than salmon"]
+            }
+        }
+    },
+    "canned_tuna": {
+        "basicInfo": {
+            "name": "Canned Tuna",
+            "category": "protein",
+            "subCategory": "seafood",
+            "servingSize": 100,
+            "servingUnit": "g",
+            "calories": 116,
+            "defaultUnit": "oz"
+        },
+        "macronutrients": {
+            "protein": 25.5,
+            "carbs": 0,
+            "fiber": 0,
+            "sugars": 0,
+            "fat": 0.8,
+            "saturatedFat": 0.2,
+            "monounsaturatedFat": 0.1,
+            "polyunsaturatedFat": 0.3,
+            "omega3": 0.24,
+            "omega6": 0.02,
+            "transFat": 0
+        },
+        "micronutrients": {
+            "vitamins": {
+                "vitaminA": 17,
+                "vitaminC": 0,
+                "vitaminD": 2.7,
+                "vitaminE": 0.2,
+                "vitaminK": 0,
+                "thiamin": 0.04,
+                "riboflavin": 0.08,
+                "niacin": 11.9,
+                "vitaminB6": 0.18,
+                "folate": 4,
+                "vitaminB12": 2.5,
+                "pantothenicAcid": 0.14,
+                "choline": 42
+            },
+            "minerals": {
+                "calcium": 11,
+                "iron": 1.4,
+                "magnesium": 27,
+                "phosphorus": 217,
+                "potassium": 237,
+                "sodium": 320,
+                "zinc": 0.82,
+                "copper": 0.04,
+                "manganese": 0.01,
+                "selenium": 76.2
+            }
+        },
+        "healthMetrics": {
+            "glycemicIndex": 0,
+            "glycemicLoad": 0,
+            "inflammationScore": -5,
+            "antioxidantScore": 4,
+            "nutrientDensity": 83,
+            "proteinQuality": 1.0,
+            "omega3Content": "moderate",
+            "omega6to3ratio": 0.08
+        },
+        "tags": ["high-protein", "ultra-lean", "low-carb", "shelf-stable", "convenient", "budget-friendly", "selenium", "low-fat"],
+        "allergens": ["fish"],
+        "certifications": [],
+        "shelfLife": "3-5 years unopened, 3-4 days opened (refrigerated)",
+        "preparation": ["ready-to-eat", "salad", "sandwich", "casserole", "mixed-dishes"],
+        "seasonality": "year-round",
+        "sustainabilityScore": 7,
+        "pricePerServing": 1.2,
+        "bioactiveCompounds": [
+            {
+                "name": "EPA (Eicosapentaenoic Acid)",
+                "amount": 0.05,
+                "unit": "g",
+                "benefits": ["Cardiovascular support", "Anti-inflammatory"]
+            },
+            {
+                "name": "DHA (Docosahexaenoic Acid)",
+                "amount": 0.18,
+                "unit": "g",
+                "benefits": ["Brain health", "Cognitive function"]
+            },
+            {
+                "name": "Selenium",
+                "amount": 76.2,
+                "unit": "mcg",
+                "benefits": ["Antioxidant protection", "Thyroid health", "Immune function"]
+            }
+        ],
+        "focusGrades": {
+            "weight_loss": {
+                "grade": "A+",
+                "score": 97,
+                "insight": "Ultra-lean protein with exceptional protein-to-calorie ratio, ideal for aggressive fat loss",
+                "pros": ["Only 116 calories per 100g", "25.5g protein (highest)", "Extremely filling", "0.8g fat only", "Convenient portion control"],
+                "cons": ["Higher sodium (320mg) may cause water retention"]
+            },
+            "heart_health": {
+                "grade": "B+",
+                "score": 82,
+                "insight": "Good lean protein with selenium, but lower omega-3s and higher sodium than fresh",
+                "pros": ["Very low saturated fat", "Selenium for heart protection", "Some omega-3 content", "Lean protein"],
+                "cons": ["Lower omega-3 (0.24g vs 1.3g fresh)", "High sodium (320mg)", "Processing reduces nutrients"]
+            },
+            "diabetes_management": {
+                "grade": "A",
+                "score": 91,
+                "insight": "Perfect zero-carb protein for blood sugar stability, though sodium requires monitoring",
+                "pros": ["Zero glycemic impact", "High protein regulates appetite", "Low calorie density", "Convenient for meal prep"],
+                "cons": ["Sodium may affect blood pressure in diabetics", "Lower omega-3 for insulin sensitivity"]
+            },
+            "muscle_gain": {
+                "grade": "A+",
+                "score": 97,
+                "insight": "Highest protein content per gram with complete amino acids, bodybuilding staple",
+                "pros": ["25.5g protein per 100g (highest)", "Complete amino acid profile", "3.5g leucine per serving", "Ultra-low fat allows protein focus", "Budget-friendly for bulking"],
+                "cons": ["Lower calories require larger portions", "Less omega-3 for recovery"]
+            },
+            "energy_boost": {
+                "grade": "B",
+                "score": 79,
+                "insight": "Moderate B-vitamin content provides steady energy but processing reduces potency",
+                "pros": ["Niacin for energy metabolism", "B12 for cellular function", "Protein for sustained fuel", "Iron for oxygen delivery"],
+                "cons": ["Lower B-vitamins than fresh", "Minimal fat for lasting energy", "No carbs for quick fuel", "Processing depletes nutrients"]
+            },
+            "digestive_health": {
+                "grade": "B-",
+                "score": 74,
+                "insight": "Very easy to digest but high sodium and lack of fiber are concerns",
+                "pros": ["Soft texture, easy digestion", "Low fat reduces GI burden", "Pre-cooked convenience", "Low FODMAP"],
+                "cons": ["No fiber", "High sodium may irritate sensitive guts", "Mercury in some varieties", "Processing removes beneficial compounds"]
+            },
+            "immune_support": {
+                "grade": "A-",
+                "score": 86,
+                "insight": "Strong selenium and zinc content support immunity despite processing losses",
+                "pros": ["76mcg selenium (138% DV)", "Zinc for immune cells", "Protein for antibodies", "Iron for immune function"],
+                "cons": ["Lower vitamin D than fresh", "Processing reduces antioxidants", "Fewer omega-3s for immune modulation"]
+            },
+            "bone_health": {
+                "grade": "B",
+                "score": 78,
+                "insight": "Good protein with some minerals, but lower vitamin D and calcium than fresh",
+                "pros": ["25g bone-building protein", "Phosphorus for bone matrix", "Some vitamin D remaining", "Iron for bone marrow"],
+                "cons": ["Lower vitamin D (2.7mcg vs 3.8mcg)", "Minimal calcium", "Processing depletes nutrients", "High sodium may increase calcium loss"]
+            },
+            "brain_focus": {
+                "grade": "B+",
+                "score": 81,
+                "insight": "Decent DHA and B12 but significantly lower omega-3s than fresh tuna limit cognitive benefits",
+                "pros": ["0.18g DHA for brain health", "B12 for neurotransmitters", "Selenium protects neurons", "Convenient brain-healthy snack"],
+                "cons": ["90% less omega-3 than fresh", "Mercury concerns affect cognition", "Lower choline (42mg vs 65mg)", "Processing oxidizes fats"]
+            },
+            "skin_health": {
+                "grade": "B-",
+                "score": 73,
+                "insight": "Protein and selenium offer basic skin support but lack of healthy fats limits benefits",
+                "pros": ["Protein for collagen synthesis", "Selenium protects from oxidative damage", "Zinc for wound healing", "Low-calorie skin-friendly protein"],
+                "cons": ["Ultra-low fat (0.8g) limits skin lipid health", "Minimal omega-3s for inflammation", "Low vitamin E and C", "Processing removes antioxidants"]
+            }
+        }
+    },
+    "tuna_fish": {
+        "basicInfo": {
+            "name": "Tuna Fish",
+            "category": "protein",
+            "subCategory": "seafood",
+            "servingSize": 100,
+            "servingUnit": "g",
+            "calories": 142,
+            "defaultUnit": "oz"
+        },
+        "macronutrients": {
+            "protein": 23.6,
+            "carbs": 0,
+            "fiber": 0,
+            "sugars": 0,
+            "fat": 4.6,
+            "saturatedFat": 1.2,
+            "monounsaturatedFat": 1.5,
+            "polyunsaturatedFat": 1.5,
+            "omega3": 1.25,
+            "omega6": 0.04,
+            "transFat": 0
+        },
+        "micronutrients": {
+            "vitamins": {
+                "vitaminA": 15,
+                "vitaminC": 0,
+                "vitaminD": 3.6,
+                "vitaminE": 0.23,
+                "vitaminK": 0,
+                "thiamin": 0.23,
+                "riboflavin": 0.24,
+                "niacin": 18.1,
+                "vitaminB6": 0.91,
+                "folate": 2,
+                "vitaminB12": 9.2,
+                "pantothenicAcid": 0.18,
+                "choline": 63
+            },
+            "minerals": {
+                "calcium": 8,
+                "iron": 1.0,
+                "magnesium": 49,
+                "phosphorus": 252,
+                "potassium": 435,
+                "sodium": 38,
+                "zinc": 0.75,
+                "copper": 0.09,
+                "manganese": 0.01,
+                "selenium": 88.4
+            }
+        },
+        "healthMetrics": {
+            "glycemicIndex": 0,
+            "glycemicLoad": 0,
+            "inflammationScore": -7,
+            "antioxidantScore": 5,
+            "nutrientDensity": 88,
+            "proteinQuality": 1.0,
+            "omega3Content": "high",
+            "omega6to3ratio": 0.03
+        },
+        "tags": ["high-protein", "omega-3", "low-carb", "lean-fish", "keto-friendly", "selenium-rich", "b12-rich", "low-sodium"],
+        "allergens": ["fish"],
+        "certifications": [],
+        "shelfLife": "1-2 days fresh, 3-4 months frozen",
+        "preparation": ["grilled", "seared", "sashimi", "poke", "salad", "steaks"],
+        "seasonality": "year-round",
+        "sustainabilityScore": 6,
+        "pricePerServing": 3.5,
+        "bioactiveCompounds": [
+            {
+                "name": "EPA (Eicosapentaenoic Acid)",
+                "amount": 0.27,
+                "unit": "g",
+                "benefits": ["Cardiovascular health", "Inflammation reduction", "Mood support"]
+            },
+            {
+                "name": "DHA (Docosahexaenoic Acid)",
+                "amount": 0.86,
+                "unit": "g",
+                "benefits": ["Neurological health", "Cognitive enhancement", "Visual acuity"]
+            },
+            {
+                "name": "Selenium",
+                "amount": 88.4,
+                "unit": "mcg",
+                "benefits": ["Thyroid regulation", "Antioxidant enzyme production", "DNA synthesis"]
+            }
+        ],
+        "focusGrades": {
+            "weight_loss": {
+                "grade": "A+",
+                "score": 95,
+                "insight": "Low-calorie lean protein with omega-3s provides satiety without excess calories",
+                "pros": ["Only 142 calories", "23.6g high-quality protein", "Omega-3s enhance fat burning", "High satiety index"],
+                "cons": ["May need portion control due to taste appeal"]
+            },
+            "heart_health": {
+                "grade": "A",
+                "score": 93,
+                "insight": "Excellent omega-3 and selenium combination protects cardiovascular system",
+                "pros": ["1.25g omega-3 fatty acids", "88mcg selenium for heart protection", "Low saturated fat (1.2g)", "Reduces triglycerides and blood pressure"],
+                "cons": ["Lower omega-3 than salmon", "Mercury in large species"]
+            },
+            "diabetes_management": {
+                "grade": "A",
+                "score": 93,
+                "insight": "Zero carb protein with omega-3s that improve insulin sensitivity and glycemic control",
+                "pros": ["No blood sugar impact", "Omega-3s improve insulin function", "High protein stabilizes appetite", "Low calorie density"],
+                "cons": []
+            },
+            "muscle_gain": {
+                "grade": "A+",
+                "score": 96,
+                "insight": "Premium lean protein with optimal leucine content for muscle protein synthesis",
+                "pros": ["23.6g complete protein", "3.4g leucine per serving", "Low fat maximizes protein efficiency", "B12 for recovery", "Easy to consume large quantities"],
+                "cons": ["Lower calories require larger portions for bulking"]
+            },
+            "energy_boost": {
+                "grade": "A-",
+                "score": 87,
+                "insight": "Exceptional B12 and niacin levels fuel energy production and reduce fatigue",
+                "pros": ["9.2mcg B12 (153% DV)", "18.1mg niacin for NAD+", "Magnesium for ATP synthesis", "Iron for oxygen transport"],
+                "cons": ["No carbs for immediate energy", "Lower fat for sustained fuel"]
+            },
+            "digestive_health": {
+                "grade": "B",
+                "score": 76,
+                "insight": "Lean, easily digestible protein with anti-inflammatory omega-3s for gut health",
+                "pros": ["Easy to digest", "Low fat reduces digestive load", "Omega-3s calm gut inflammation", "Low FODMAP"],
+                "cons": ["No fiber or prebiotics", "Mercury may disrupt microbiome", "No digestive enzymes"]
+            },
+            "immune_support": {
+                "grade": "A+",
+                "score": 94,
+                "insight": "Outstanding selenium content with vitamin D and omega-3s strengthen immune defense",
+                "pros": ["88mcg selenium (160% DV)", "Vitamin D for immune modulation", "Zinc for T-cell function", "Omega-3s reduce autoimmune inflammation"],
+                "cons": []
+            },
+            "bone_health": {
+                "grade": "B+",
+                "score": 82,
+                "insight": "Quality protein and phosphorus with moderate vitamin D support bone density",
+                "pros": ["23.6g bone-building protein", "Phosphorus for mineralization", "Vitamin D for calcium absorption", "Magnesium for bone matrix"],
+                "cons": ["Lower vitamin D than salmon", "Minimal calcium (8mg)", "Needs calcium-rich pairings"]
+            },
+            "brain_focus": {
+                "grade": "A",
+                "score": 92,
+                "insight": "Strong DHA and extraordinary B12 levels optimize brain function and mental clarity",
+                "pros": ["0.86g DHA for brain structure", "9.2mcg B12 for neurotransmitters", "Niacin for cerebral energy", "Choline for memory"],
+                "cons": ["Less DHA than salmon", "Mercury concerns in albacore/bluefin", "Lower omega-3 than fatty fish"]
+            },
+            "skin_health": {
+                "grade": "B+",
+                "score": 83,
+                "insight": "Protein and selenium support skin repair with omega-3 anti-inflammatory benefits",
+                "pros": ["Selenium protects from UV oxidative damage", "Protein for collagen synthesis", "Omega-3s reduce inflammatory acne", "Niacin improves skin barrier"],
+                "cons": ["Lower fat limits skin lipid support", "Minimal vitamin E and C", "Less astaxanthin than salmon"]
+            }
+        }
+    },
+    "shrimp": {
+        "basicInfo": {
+            "name": "Shrimp",
+            "category": "protein",
+            "subCategory": "seafood",
+            "servingSize": 100,
+            "servingUnit": "g",
+            "calories": 99,
+            "defaultUnit": "oz"
+        },
+        "macronutrients": {
+            "protein": 24.0,
+            "carbs": 0.2,
+            "fiber": 0,
+            "sugars": 0,
+            "fat": 0.3,
+            "saturatedFat": 0.1,
+            "monounsaturatedFat": 0.05,
+            "polyunsaturatedFat": 0.11,
+            "omega3": 0.48,
+            "omega6": 0.02,
+            "transFat": 0
+        },
+        "micronutrients": {
+            "vitamins": {
+                "vitaminA": 54,
+                "vitaminC": 0,
+                "vitaminD": 0,
+                "vitaminE": 1.1,
+                "vitaminK": 0,
+                "thiamin": 0.03,
+                "riboflavin": 0.03,
+                "niacin": 2.8,
+                "vitaminB6": 0.16,
+                "folate": 3,
+                "vitaminB12": 1.1,
+                "pantothenicAcid": 0.33,
+                "choline": 80
+            },
+            "minerals": {
+                "calcium": 70,
+                "iron": 0.51,
+                "magnesium": 39,
+                "phosphorus": 237,
+                "potassium": 259,
+                "sodium": 111,
+                "zinc": 1.64,
+                "copper": 0.26,
+                "manganese": 0.05,
+                "selenium": 48.0
+            }
+        },
+        "healthMetrics": {
+            "glycemicIndex": 0,
+            "glycemicLoad": 0,
+            "inflammationScore": -4,
+            "antioxidantScore": 7,
+            "nutrientDensity": 85,
+            "proteinQuality": 0.98,
+            "omega3Content": "moderate",
+            "omega6to3ratio": 0.04
+        },
+        "tags": ["high-protein", "ultra-lean", "low-carb", "low-calorie", "keto-friendly", "astaxanthin", "zinc-rich", "quick-cooking"],
+        "allergens": ["shellfish"],
+        "certifications": [],
+        "shelfLife": "1-2 days fresh, 3-6 months frozen",
+        "preparation": ["grilled", "sauteed", "steamed", "boiled", "stir-fried", "cocktail"],
+        "seasonality": "year-round (farmed), spring-fall (wild)",
+        "sustainabilityScore": 5,
+        "pricePerServing": 2.8,
+        "bioactiveCompounds": [
+            {
+                "name": "Astaxanthin",
+                "amount": 1.2,
+                "unit": "mg",
+                "benefits": ["Powerful antioxidant", "Skin protection", "Eye health", "Anti-inflammatory"]
+            },
+            {
+                "name": "EPA + DHA",
+                "amount": 0.48,
+                "unit": "g",
+                "benefits": ["Heart health", "Brain function", "Reduced inflammation"]
+            },
+            {
+                "name": "Chitosan (from shells)",
+                "amount": 0,
+                "unit": "g",
+                "benefits": ["Cholesterol reduction", "Weight management"]
+            }
+        ],
+        "focusGrades": {
+            "weight_loss": {
+                "grade": "A+",
+                "score": 98,
+                "insight": "Ultra-low calorie with highest protein density makes shrimp the ultimate weight loss protein",
+                "pros": ["Only 99 calories per 100g (lowest)", "24g protein (highest density)", "0.3g fat (ultra-lean)", "Extremely filling", "Versatile for meal prep"],
+                "cons": ["Cholesterol content (189mg) - minimal concern for most people"]
+            },
+            "heart_health": {
+                "grade": "B+",
+                "score": 84,
+                "insight": "Good omega-3 and ultra-low saturated fat, though cholesterol requires monitoring",
+                "pros": ["Very low saturated fat (0.1g)", "Omega-3s for cardiovascular health", "Selenium protects arteries", "Low calorie"],
+                "cons": ["Higher cholesterol (189mg)", "Lower omega-3 than fish (0.48g)", "Moderate sodium (111mg)"]
+            },
+            "diabetes_management": {
+                "grade": "A",
+                "score": 92,
+                "insight": "Near-zero carbs with lean protein perfect for blood sugar stability",
+                "pros": ["Only 0.2g carbs", "High protein regulates glucose", "Low calorie density", "Omega-3s improve insulin sensitivity"],
+                "cons": ["Cholesterol may be a concern for some diabetics", "Sodium requires monitoring"]
+            },
+            "muscle_gain": {
+                "grade": "A+",
+                "score": 94,
+                "insight": "Exceptional protein-to-calorie ratio with complete amino acids ideal for lean muscle growth",
+                "pros": ["24g protein per 100g (highest)", "Complete amino acid profile", "3.3g leucine per serving", "Ultra-low fat preserves protein focus", "Easy to eat in large quantities"],
+                "cons": ["Very low calories require large portions", "Minimal fat for hormone production"]
+            },
+            "energy_boost": {
+                "grade": "B-",
+                "score": 72,
+                "insight": "Moderate B-vitamins and minerals provide steady energy but lower than fish",
+                "pros": ["Iron for oxygen delivery", "Magnesium for ATP", "Phosphorus for energy metabolism", "Protein for sustained fuel"],
+                "cons": ["Lower B12 than fish (1.1mcg vs 9mcg)", "Minimal niacin (2.8mg)", "Very low fat limits energy density"]
+            },
+            "digestive_health": {
+                "grade": "B",
+                "score": 75,
+                "insight": "Easy to digest lean protein but lacks fiber and has moderate sodium",
+                "pros": ["Very easy to digest", "Low fat reduces GI burden", "Quick-cooking preserves nutrients", "Low FODMAP"],
+                "cons": ["No fiber", "Shellfish allergen concerns", "Sodium may irritate sensitive guts", "Potential contamination in farmed varieties"]
+            },
+            "immune_support": {
+                "grade": "A-",
+                "score": 88,
+                "insight": "Excellent zinc and selenium with astaxanthin provide strong immune defense",
+                "pros": ["1.64mg zinc (15% DV) for immune cells", "48mcg selenium for antioxidant defense", "Astaxanthin boosts immunity", "Copper for white blood cells"],
+                "cons": ["Lower vitamin D than fish", "Minimal vitamin C"]
+            },
+            "bone_health": {
+                "grade": "B+",
+                "score": 84,
+                "insight": "Good calcium and phosphorus with protein for bone structure",
+                "pros": ["70mg calcium (better than fish)", "Phosphorus for bone matrix", "24g bone-building protein", "Magnesium for density"],
+                "cons": ["No vitamin D (0mcg)", "Lower than dairy for calcium", "Needs vitamin D pairing"]
+            },
+            "brain_focus": {
+                "grade": "B+",
+                "score": 83,
+                "insight": "Decent omega-3 and choline with astaxanthin for neuroprotection",
+                "pros": ["0.48g omega-3 for brain health", "80mg choline for acetylcholine", "Astaxanthin crosses blood-brain barrier", "Selenium protects neurons"],
+                "cons": ["Lower omega-3 than fish", "Minimal B12 (1.1mcg vs 9mcg)", "Less DHA for brain structure"]
+            },
+            "skin_health": {
+                "grade": "A-",
+                "score": 89,
+                "insight": "Astaxanthin provides exceptional antioxidant protection with protein for collagen",
+                "pros": ["1.2mg astaxanthin (potent antioxidant)", "Zinc for wound healing and acne", "Vitamin E for skin repair", "Protein for collagen synthesis", "Copper for elastin"],
+                "cons": ["Ultra-low fat (0.3g) limits skin lipid health", "Minimal vitamin C for collagen"]
+            }
+        }
+    }
+}

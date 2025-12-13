@@ -1,0 +1,584 @@
+{
+  "churro": {
+    "name": "Churro",
+    "calories": 312,
+    "protein": 4.2,
+    "carbs": 42,
+    "fat": 14,
+    "fiber": 1.8,
+    "sugar": 18,
+    "sodium": 280,
+    "saturatedFat": 6.5,
+    "cholesterol": 28,
+    "potassium": 85,
+    "calcium": 45,
+    "iron": 1.8,
+    "magnesium": 18,
+    "vitaminA": 120,
+    "vitaminC": 0.2,
+    "vitaminD": 0.3,
+    "vitaminB12": 0.15,
+    "glycemicIndex": 72,
+    "glycemicLoad": 30,
+    "allergens": ["wheat", "eggs", "milk"],
+    "servingSize": 100,
+    "servingUnit": "g",
+    "focusGrades": {
+      "balanced": {
+        "grade": "D+",
+        "score": 45,
+        "insight": "High in refined carbs and saturated fat with minimal nutritional benefits beyond quick energy",
+        "pros": ["Provides quick energy", "Contains some iron from fortified flour"],
+        "cons": ["Very high in added sugar (18g)", "High saturated fat content", "Low fiber and protein", "Minimal micronutrients"]
+      },
+      "heart_health": {
+        "grade": "D-",
+        "score": 35,
+        "insight": "Poor choice for cardiovascular health due to high saturated fat, refined carbs, and sodium",
+        "pros": ["Low cholesterol compared to some fried foods"],
+        "cons": ["High saturated fat (6.5g)", "280mg sodium per 100g", "Promotes LDL cholesterol with trans fats from frying", "High glycemic impact"]
+      },
+      "muscle_building": {
+        "grade": "D",
+        "score": 38,
+        "insight": "Very low protein content makes this ineffective for muscle building or recovery",
+        "pros": ["Provides quick carbohydrates for pre-workout energy"],
+        "cons": ["Only 4.2g protein per 100g", "Lacks essential amino acids", "Empty calories from sugar", "No leucine content"]
+      },
+      "energy": {
+        "grade": "C",
+        "score": 65,
+        "insight": "Provides rapid energy spike from sugar and refined carbs, followed by likely crash",
+        "pros": ["High calorie density (312 kcal)", "Quick glucose delivery", "Immediate energy boost"],
+        "cons": ["Energy crash likely within 1-2 hours", "No sustained energy from complex carbs", "Low B-vitamins for energy metabolism"]
+      },
+      "weight_management": {
+        "grade": "F",
+        "score": 25,
+        "insight": "Extremely calorie-dense with minimal satiety - promotes weight gain and cravings",
+        "pros": ["None for weight management"],
+        "cons": ["312 calories per 100g", "High sugar triggers insulin response", "Very low fiber (1.8g)", "High fat content", "Low satiety index"]
+      },
+      "brain_focus": {
+        "grade": "D",
+        "score": 42,
+        "insight": "Sugar rush may provide brief mental alertness but leads to brain fog and reduced focus",
+        "pros": ["Initial glucose spike may improve alertness temporarily"],
+        "cons": ["Blood sugar crash impairs cognition", "Lacks omega-3 fatty acids", "Minimal B-vitamins for neurotransmitters", "High GI causes focus fluctuations"]
+      },
+      "gut_health": {
+        "grade": "D-",
+        "score": 35,
+        "insight": "Lacks fiber and beneficial nutrients needed for healthy gut microbiome",
+        "pros": ["Contains trace amounts of resistant starch when cooled"],
+        "cons": ["Very low fiber (1.8g)", "Refined flour damages gut lining", "Sugar feeds harmful bacteria", "No prebiotics or probiotics"]
+      },
+      "blood_sugar": {
+        "grade": "F",
+        "score": 20,
+        "insight": "Extremely high glycemic impact causes rapid blood sugar spikes - avoid for diabetes management",
+        "pros": ["None for blood sugar control"],
+        "cons": ["Very high GI of 72", "Glycemic load of 30", "18g added sugar", "Refined carbs spike insulin", "No fiber to slow absorption"]
+      },
+      "bone_joint": {
+        "grade": "D",
+        "score": 40,
+        "insight": "Minimal bone-building nutrients and high sugar may promote inflammation",
+        "pros": ["Contains small amount of calcium (45mg)"],
+        "cons": ["Low calcium and vitamin D", "No vitamin K", "Sugar promotes inflammatory response", "Minimal magnesium for bone density"]
+      },
+      "anti_inflammatory": {
+        "grade": "F",
+        "score": 22,
+        "insight": "Highly inflammatory due to refined carbs, sugar, and fried preparation",
+        "pros": ["Contains trace cinnamon which has mild anti-inflammatory properties"],
+        "cons": ["High sugar promotes inflammation", "Trans fats from frying", "Advanced glycation end products (AGEs)", "No omega-3 fatty acids", "Refined flour triggers inflammatory response"]
+      }
+    }
+  },
+  "fried_rice": {
+    "name": "Fried Rice",
+    "calories": 163,
+    "protein": 4.8,
+    "carbs": 28,
+    "fat": 3.8,
+    "fiber": 1.2,
+    "sugar": 1.5,
+    "sodium": 420,
+    "saturatedFat": 0.8,
+    "cholesterol": 42,
+    "potassium": 95,
+    "calcium": 18,
+    "iron": 0.9,
+    "magnesium": 22,
+    "vitaminA": 85,
+    "vitaminC": 2.5,
+    "vitaminD": 0.4,
+    "vitaminB12": 0.2,
+    "glycemicIndex": 68,
+    "glycemicLoad": 19,
+    "allergens": ["eggs", "soy"],
+    "servingSize": 100,
+    "servingUnit": "g",
+    "focusGrades": {
+      "balanced": {
+        "grade": "C+",
+        "score": 62,
+        "insight": "Moderate nutritional balance with decent carbs and protein but high sodium and low fiber",
+        "pros": ["Balanced macros for mixed meal", "Contains vegetables for vitamins", "Lower fat than many takeout items"],
+        "cons": ["Very high sodium (420mg)", "Low fiber content", "White rice lacks whole grain benefits", "Minimal micronutrient density"]
+      },
+      "heart_health": {
+        "grade": "C-",
+        "score": 55,
+        "insight": "Sodium content is concerning for heart health, though saturated fat is relatively low",
+        "pros": ["Low saturated fat (0.8g)", "Contains heart-healthy vegetables", "Moderate cholesterol"],
+        "cons": ["Very high sodium (420mg = 18% DV)", "Refined white rice", "Lacks omega-3 fatty acids", "Limited potassium for blood pressure"]
+      },
+      "muscle_building": {
+        "grade": "C",
+        "score": 60,
+        "insight": "Provides moderate protein from eggs but needs supplementation for optimal muscle building",
+        "pros": ["Contains complete protein from eggs", "Carbs support glycogen replenishment", "Decent calorie density"],
+        "cons": ["Only 4.8g protein per 100g (too low)", "Lacks leucine-rich protein sources", "Would need 400g+ for 20g protein target"]
+      },
+      "energy": {
+        "grade": "B-",
+        "score": 73,
+        "insight": "Good source of sustained energy from complex carbs, though white rice digests quickly",
+        "pros": ["28g carbs for fuel", "Moderate calories (163)", "Fat slows digestion for steadier energy", "B-vitamins from enriched rice"],
+        "cons": ["White rice causes faster energy dip than brown rice", "Low fiber reduces satiety", "High sodium may cause bloating"]
+      },
+      "weight_management": {
+        "grade": "C+",
+        "score": 63,
+        "insight": "Moderate calorie density but low fiber and high sodium can hinder weight loss goals",
+        "pros": ["Moderate calories per serving", "Protein aids satiety", "Can be portion-controlled"],
+        "cons": ["Low fiber (1.2g) = poor satiety", "High sodium causes water retention", "Refined carbs spike hunger", "Easy to overeat"]
+      },
+      "brain_focus": {
+        "grade": "C+",
+        "score": 64,
+        "insight": "Provides steady glucose for brain function but lacks key nutrients for optimal cognition",
+        "pros": ["Carbs fuel brain glucose needs", "Eggs provide choline for neurotransmitters", "B-vitamins support mental clarity"],
+        "cons": ["High sodium may impair focus", "Lacks omega-3 DHA for cognitive function", "Refined rice causes blood sugar fluctuations", "Minimal antioxidants"]
+      },
+      "gut_health": {
+        "grade": "D+",
+        "score": 48,
+        "insight": "Low fiber and minimal prebiotics make this poor for gut microbiome health",
+        "pros": ["Cooked and cooled rice forms some resistant starch", "Vegetables provide small amounts of prebiotics"],
+        "cons": ["Very low fiber (1.2g)", "Refined rice lacks gut-healthy bran", "High sodium disrupts gut bacteria", "No fermented ingredients for probiotics"]
+      },
+      "blood_sugar": {
+        "grade": "D+",
+        "score": 50,
+        "insight": "White rice has high glycemic impact - brown rice version would be significantly better",
+        "pros": ["Fat and protein slow glucose absorption slightly", "Lower glycemic load than plain white rice"],
+        "cons": ["High GI of 68", "Refined carbs spike blood sugar", "Low fiber can't slow absorption", "Not suitable for diabetics without portion control"]
+      },
+      "bone_joint": {
+        "grade": "D",
+        "score": 42,
+        "insight": "Lacks key bone-building nutrients and high sodium may increase calcium excretion",
+        "pros": ["Small amounts of calcium and magnesium"],
+        "cons": ["Very low calcium (18mg)", "High sodium increases calcium loss in urine", "Minimal vitamin D and K", "Lacks collagen or joint-supporting compounds"]
+      },
+      "anti_inflammatory": {
+        "grade": "C",
+        "score": 58,
+        "insight": "Mixed inflammatory profile - vegetables help but refined carbs and sodium promote inflammation",
+        "pros": ["Vegetables contain antioxidants", "Garlic and onions have anti-inflammatory compounds", "Low saturated fat"],
+        "cons": ["Refined white rice is pro-inflammatory", "High sodium promotes inflammation", "Lacks omega-3 fatty acids", "Frying creates AGEs"]
+      }
+    }
+  },
+  "lo_mein": {
+    "name": "Lo Mein",
+    "calories": 154,
+    "protein": 5.2,
+    "carbs": 24,
+    "fat": 4.5,
+    "fiber": 2.1,
+    "sugar": 3.2,
+    "sodium": 480,
+    "saturatedFat": 0.7,
+    "cholesterol": 8,
+    "potassium": 125,
+    "calcium": 22,
+    "iron": 1.4,
+    "magnesium": 28,
+    "vitaminA": 110,
+    "vitaminC": 8,
+    "vitaminD": 0.1,
+    "vitaminB12": 0.05,
+    "glycemicIndex": 52,
+    "glycemicLoad": 12,
+    "allergens": ["wheat", "soy", "eggs"],
+    "servingSize": 100,
+    "servingUnit": "g",
+    "focusGrades": {
+      "balanced": {
+        "grade": "C+",
+        "score": 64,
+        "insight": "Reasonable macro balance with vegetables but extremely high sodium undermines nutritional value",
+        "pros": ["Balanced macros (24g carbs, 5.2g protein, 4.5g fat)", "Contains vegetables for fiber and vitamins", "Moderate calorie density"],
+        "cons": ["Extremely high sodium (480mg = 21% DV)", "Refined wheat noodles", "Low protein for main dish", "Limited micronutrient variety"]
+      },
+      "heart_health": {
+        "grade": "D+",
+        "score": 48,
+        "insight": "Very high sodium is major concern for cardiovascular health despite low saturated fat",
+        "pros": ["Very low saturated fat (0.7g)", "Low cholesterol (8mg)", "Contains heart-healthy vegetables"],
+        "cons": ["Extremely high sodium (480mg per 100g)", "Refined carbs negatively impact lipid profile", "Lacks omega-3s", "Minimal potassium to counter sodium"]
+      },
+      "muscle_building": {
+        "grade": "C-",
+        "score": 56,
+        "insight": "Provides some protein but insufficient for muscle building without additional protein sources",
+        "pros": ["Contains protein from wheat and eggs", "Carbs support muscle glycogen", "Includes some vegetables with nutrients"],
+        "cons": ["Only 5.2g protein per 100g (very low)", "Incomplete amino acid profile", "High sodium may cause water retention", "Needs protein supplementation"]
+      },
+      "energy": {
+        "grade": "B",
+        "score": 77,
+        "insight": "Good sustained energy from wheat noodles with moderate glycemic index and balanced macros",
+        "pros": ["Complex carbs provide steady energy", "Lower GI (52) than white rice", "Fat slows digestion for sustained release", "Moderate calories (154)"],
+        "cons": ["Refined flour lacks B-vitamins", "High sodium may cause fatigue", "Could benefit from whole wheat noodles"]
+      },
+      "weight_management": {
+        "grade": "C+",
+        "score": 65,
+        "insight": "Moderate calorie density and decent fiber, but high sodium causes water retention",
+        "pros": ["Moderate calories per serving", "Better fiber than fried rice (2.1g)", "Vegetables add volume and satiety"],
+        "cons": ["High sodium causes water weight gain", "Refined noodles lack fullness factor", "Easy to consume large portions", "Limited protein for satiety"]
+      },
+      "brain_focus": {
+        "grade": "C+",
+        "score": 66,
+        "insight": "Moderate glycemic index supports stable brain glucose but lacks key cognitive nutrients",
+        "pros": ["Lower GI provides stable brain fuel", "Complex carbs prevent energy crashes", "Some B-vitamins from enriched flour", "Vegetables provide antioxidants"],
+        "cons": ["High sodium may impair concentration", "Lacks omega-3 DHA for brain health", "Minimal choline", "Refined grains lack neuroprotective compounds"]
+      },
+      "gut_health": {
+        "grade": "C",
+        "score": 60,
+        "insight": "Better fiber than white rice but still lacks diversity of prebiotics and gut-healthy nutrients",
+        "pros": ["Moderate fiber content (2.1g)", "Vegetables provide prebiotics", "Cooked vegetables easier to digest"],
+        "cons": ["Refined wheat lacks beneficial bran", "High sodium disrupts gut microbiome", "No fermented ingredients", "Lacks resistant starch"]
+      },
+      "blood_sugar": {
+        "grade": "C+",
+        "score": 67,
+        "insight": "Moderate glycemic index and load make this better choice than rice-based dishes for blood sugar",
+        "pros": ["Moderate GI of 52", "Glycemic load of 12 is acceptable", "Fat and protein slow glucose absorption", "Better than white rice alternatives"],
+        "cons": ["Still made with refined flour", "Sugar content (3.2g) adds to glycemic impact", "Lacks fiber to stabilize blood sugar", "Not ideal for diabetics"]
+      },
+      "bone_joint": {
+        "grade": "D+",
+        "score": 46,
+        "insight": "Minimal bone-supporting nutrients and very high sodium may increase calcium loss",
+        "pros": ["Contains some magnesium (28mg)", "Vegetables provide vitamin K"],
+        "cons": ["Very low calcium (22mg)", "High sodium increases calcium excretion", "Minimal vitamin D", "Lacks collagen or glucosamine"]
+      },
+      "anti_inflammatory": {
+        "grade": "C",
+        "score": 61,
+        "insight": "Mixed profile with anti-inflammatory vegetables offset by pro-inflammatory refined carbs and sodium",
+        "pros": ["Vegetables contain antioxidants", "Garlic and ginger have anti-inflammatory properties", "Low saturated fat", "Includes vitamin C (8mg)"],
+        "cons": ["Very high sodium promotes inflammation", "Refined wheat triggers inflammatory response", "Lacks omega-3 fatty acids", "Frying process creates inflammatory compounds"]
+      }
+    }
+  },
+  "egg_roll": {
+    "name": "Egg Roll",
+    "calories": 242,
+    "protein": 7.5,
+    "carbs": 25,
+    "fat": 12,
+    "fiber": 2.8,
+    "sugar": 2.5,
+    "sodium": 410,
+    "saturatedFat": 2.8,
+    "cholesterol": 38,
+    "potassium": 180,
+    "calcium": 35,
+    "iron": 1.6,
+    "magnesium": 24,
+    "vitaminA": 145,
+    "vitaminC": 12,
+    "vitaminD": 0.2,
+    "vitaminB12": 0.15,
+    "glycemicIndex": 55,
+    "glycemicLoad": 14,
+    "allergens": ["wheat", "soy", "eggs"],
+    "servingSize": 100,
+    "servingUnit": "g",
+    "focusGrades": {
+      "balanced": {
+        "grade": "C",
+        "score": 58,
+        "insight": "Provides vegetables and protein but high fat and sodium from deep frying reduce nutritional quality",
+        "pros": ["Contains protein from pork/shrimp and vegetables", "Good fiber content (2.8g)", "Includes vitamins A and C from cabbage"],
+        "cons": ["High in fat from deep frying (12g)", "Very high sodium (410mg)", "Saturated fat elevated", "Calorie-dense (242 kcal)"]
+      },
+      "heart_health": {
+        "grade": "D",
+        "score": 42,
+        "insight": "Deep frying creates trans fats and sodium content is concerning for cardiovascular health",
+        "pros": ["Contains vegetables with heart-healthy fiber", "Moderate cholesterol (38mg)", "Some vitamin C as antioxidant"],
+        "cons": ["High sodium (410mg = 18% DV)", "Trans fats from deep frying", "Saturated fat (2.8g)", "Fried foods increase heart disease risk"]
+      },
+      "muscle_building": {
+        "grade": "C",
+        "score": 62,
+        "insight": "Decent protein content from meat and eggs but high fat ratio reduces protein efficiency",
+        "pros": ["7.5g protein per 100g from quality sources", "Complete amino acid profile", "Carbs support muscle recovery"],
+        "cons": ["Protein-to-calorie ratio suboptimal", "High fat content", "Would need large portion for 20g+ protein", "High sodium causes water retention"]
+      },
+      "energy": {
+        "grade": "C+",
+        "score": 68,
+        "insight": "Provides sustained energy from balanced macros but deep frying may cause sluggishness",
+        "pros": ["Balanced carbs and fats for energy", "Moderate GI (55) prevents spikes", "Decent calorie density", "Protein slows digestion"],
+        "cons": ["Heavy, fried food may reduce energy levels", "High fat slows gastric emptying", "Not ideal pre-workout fuel"]
+      },
+      "weight_management": {
+        "grade": "D+",
+        "score": 47,
+        "insight": "High calorie density from frying makes portion control difficult for weight management",
+        "pros": ["Good fiber content (2.8g) aids satiety", "Protein helps control hunger"],
+        "cons": ["High calories (242 per 100g)", "12g fat from frying", "Easy to overconsume", "High sodium causes water retention", "Low satiety per calorie"]
+      },
+      "brain_focus": {
+        "grade": "C",
+        "score": 61,
+        "insight": "Moderate glycemic index supports brain function but heavy, fried nature may impair alertness",
+        "pros": ["Steady glucose from moderate GI", "Vitamins A and C support cognition", "B-vitamins from enriched flour"],
+        "cons": ["Heavy meal may cause post-meal drowsiness", "High sodium impairs focus", "Lacks omega-3s for brain health", "Trans fats damage neurological function"]
+      },
+      "gut_health": {
+        "grade": "C-",
+        "score": 54,
+        "insight": "Contains beneficial vegetables for fiber but fried preparation damages gut microbiome",
+        "pros": ["Good fiber content (2.8g)", "Cabbage provides prebiotics", "Fermented wrapper (if traditional) has probiotics"],
+        "cons": ["Deep frying creates harmful compounds", "High fat slows digestion", "High sodium disrupts gut bacteria", "Trans fats damage intestinal lining"]
+      },
+      "blood_sugar": {
+        "grade": "C+",
+        "score": 66,
+        "insight": "Moderate glycemic impact due to fat and protein slowing carb absorption",
+        "pros": ["Moderate GI of 55", "Low glycemic load (14)", "Fat significantly slows glucose absorption", "Good fiber content"],
+        "cons": ["Still made with refined flour", "Trans fats impair insulin sensitivity", "Not suitable for frequent consumption with diabetes"]
+      },
+      "bone_joint": {
+        "grade": "D+",
+        "score": 48,
+        "insight": "Minimal bone-building nutrients and inflammatory frying process may harm joint health",
+        "pros": ["Contains some calcium (35mg)", "Vitamin C supports collagen formation", "Magnesium present"],
+        "cons": ["Low calcium and vitamin D", "High sodium increases calcium loss", "Trans fats promote inflammation", "AGEs from frying damage joints"]
+      },
+      "anti_inflammatory": {
+        "grade": "D",
+        "score": 40,
+        "insight": "Deep frying creates inflammatory compounds that outweigh anti-inflammatory benefits of vegetables",
+        "pros": ["Cabbage contains anti-inflammatory compounds", "Vitamin C acts as antioxidant", "Ginger may reduce inflammation"],
+        "cons": ["Deep frying creates inflammatory AGEs", "Trans fats highly pro-inflammatory", "High sodium promotes inflammation", "Omega-6 oils without omega-3 balance"]
+      }
+    }
+  },
+  "orange_chicken": {
+    "name": "Orange Chicken",
+    "calories": 279,
+    "protein": 15,
+    "carbs": 28,
+    "fat": 11,
+    "fiber": 1.5,
+    "sugar": 14,
+    "sodium": 520,
+    "saturatedFat": 2.2,
+    "cholesterol": 65,
+    "potassium": 220,
+    "calcium": 28,
+    "iron": 1.2,
+    "magnesium": 26,
+    "vitaminA": 95,
+    "vitaminC": 18,
+    "vitaminD": 0.3,
+    "vitaminB12": 0.25,
+    "glycemicIndex": 66,
+    "glycemicLoad": 18,
+    "allergens": ["wheat", "soy"],
+    "servingSize": 100,
+    "servingUnit": "g",
+    "focusGrades": {
+      "balanced": {
+        "grade": "C-",
+        "score": 52,
+        "insight": "High protein is positive but excessive sugar and sodium from sweet sauce reduces overall quality",
+        "pros": ["Good protein content (15g)", "Decent vitamin C from orange sauce", "Balanced macronutrient ratios"],
+        "cons": ["Very high sugar (14g)", "Extremely high sodium (520mg = 23% DV)", "Deep fried preparation", "Low fiber (1.5g)"]
+      },
+      "heart_health": {
+        "grade": "D-",
+        "score": 38,
+        "insight": "Extremely high sodium and sugar make this poor choice for cardiovascular health",
+        "pros": ["Moderate saturated fat (2.2g)", "Contains vitamin C as antioxidant"],
+        "cons": ["Extremely high sodium (520mg)", "High sugar (14g) damages blood vessels", "Deep fried in inflammatory oils", "Elevated cholesterol (65mg)"]
+      },
+      "muscle_building": {
+        "grade": "B-",
+        "score": 72,
+        "insight": "Good protein content from chicken supports muscle building but sugar and sodium are drawbacks",
+        "pros": ["Solid 15g protein per 100g", "Complete amino acid profile from chicken", "Contains leucine for muscle synthesis", "Carbs support recovery"],
+        "cons": ["High sugar spikes insulin unnecessarily", "Sodium causes water retention", "Breading reduces protein density", "Fried preparation adds empty calories"]
+      },
+      "energy": {
+        "grade": "C+",
+        "score": 67,
+        "insight": "Provides quick energy from sugar but likely followed by crash; not ideal for sustained performance",
+        "pros": ["High calorie density (279)", "Quick energy from 14g sugar", "Protein provides sustained energy", "Moderate carbs"],
+        "cons": ["High sugar causes energy crash", "High GI (66) creates blood sugar rollercoaster", "Heavy meal may reduce alertness", "Not optimal pre-workout"]
+      },
+      "weight_management": {
+        "grade": "D",
+        "score": 43,
+        "insight": "High in calories, sugar, and sodium - promotes weight gain and water retention",
+        "pros": ["High protein aids satiety", "Contains some lean chicken meat"],
+        "cons": ["Calorie-dense (279 kcal)", "14g added sugar triggers cravings", "Low fiber (1.5g)", "High sodium causes bloating", "Fried coating adds excess calories"]
+      },
+      "brain_focus": {
+        "grade": "C-",
+        "score": 54,
+        "insight": "Sugar provides brief mental boost but subsequent crash impairs focus and concentration",
+        "pros": ["Protein supports neurotransmitter production", "Vitamin C protects brain cells", "Initial glucose boost"],
+        "cons": ["High sugar causes focus crashes", "High sodium may impair cognition", "Lacks omega-3s for brain health", "Blood sugar fluctuations reduce concentration"]
+      },
+      "gut_health": {
+        "grade": "D",
+        "score": 44,
+        "insight": "Low fiber and high sugar damage gut microbiome while fried preparation adds inflammatory stress",
+        "pros": ["Contains trace amounts of beneficial compounds from orange peel"],
+        "cons": ["Very low fiber (1.5g)", "High sugar feeds harmful gut bacteria", "Fried foods damage intestinal lining", "No prebiotics or probiotics", "High sodium disrupts microbiome"]
+      },
+      "blood_sugar": {
+        "grade": "D-",
+        "score": 36,
+        "insight": "High sugar and moderate GI create significant blood sugar spike - avoid for diabetes management",
+        "pros": ["Protein slows sugar absorption slightly", "Fat reduces glycemic impact minimally"],
+        "cons": ["14g added sugar", "High GI of 66", "Glycemic load of 18", "Breading adds refined carbs", "Not suitable for diabetics"]
+      },
+      "bone_joint": {
+        "grade": "D+",
+        "score": 46,
+        "insight": "Minimal bone-supporting nutrients and inflammatory preparation may harm joint health",
+        "pros": ["Contains vitamin C for collagen synthesis (18mg)", "Chicken provides some protein for bone matrix"],
+        "cons": ["Very low calcium (28mg)", "High sodium increases calcium loss", "Sugar promotes inflammation in joints", "Lacks vitamin D and K", "Fried foods create inflammatory AGEs"]
+      },
+      "anti_inflammatory": {
+        "grade": "D-",
+        "score": 34,
+        "insight": "Highly inflammatory due to sugar, fried preparation, and refined ingredients despite vitamin C content",
+        "pros": ["Vitamin C has antioxidant properties (18mg)", "Orange peel contains flavonoids"],
+        "cons": ["High sugar extremely pro-inflammatory", "Deep frying creates AGEs", "Refined breading triggers inflammation", "Very high sodium", "Lacks omega-3 fatty acids", "Vegetable oil omega-6 imbalance"]
+      }
+    }
+  },
+  "kung_pao_chicken": {
+    "name": "Kung Pao Chicken",
+    "calories": 185,
+    "protein": 16,
+    "carbs": 12,
+    "fat": 9,
+    "fiber": 2.5,
+    "sugar": 5,
+    "sodium": 580,
+    "saturatedFat": 1.4,
+    "cholesterol": 55,
+    "potassium": 280,
+    "calcium": 32,
+    "iron": 1.8,
+    "magnesium": 45,
+    "vitaminA": 125,
+    "vitaminC": 22,
+    "vitaminD": 0.2,
+    "vitaminB12": 0.3,
+    "glycemicIndex": 48,
+    "glycemicLoad": 6,
+    "allergens": ["peanuts", "soy"],
+    "servingSize": 100,
+    "servingUnit": "g",
+    "focusGrades": {
+      "balanced": {
+        "grade": "C+",
+        "score": 66,
+        "insight": "Well-balanced macros with good protein and healthy fats from peanuts, but sodium is excessive",
+        "pros": ["Excellent protein content (16g)", "Healthy fats from peanuts", "Good fiber (2.5g)", "Rich in vitamins A and C", "Lower calories than other Chinese dishes"],
+        "cons": ["Extremely high sodium (580mg = 25% DV)", "Still contains added sugar", "High in soy sauce", "Calorie-dense from stir-frying"]
+      },
+      "heart_health": {
+        "grade": "D",
+        "score": 45,
+        "insight": "Peanuts provide heart-healthy fats but extremely high sodium negatively impacts cardiovascular health",
+        "pros": ["Very low saturated fat (1.4g)", "Peanuts contain monounsaturated fats", "Good vitamin C (22mg)", "Contains heart-healthy vegetables"],
+        "cons": ["Extremely high sodium (580mg)", "Sodium increases blood pressure", "Lacks omega-3 fatty acids", "High sodium-to-potassium ratio"]
+      },
+      "muscle_building": {
+        "grade": "B+",
+        "score": 83,
+        "insight": "Excellent protein content from chicken with complete amino acids makes this great for muscle building",
+        "pros": ["High-quality 16g protein per 100g", "Complete amino acid profile", "Contains leucine for muscle synthesis", "Lower fat than breaded options", "Good protein-to-calorie ratio"],
+        "cons": ["High sodium may cause water retention masking gains", "Could benefit from more carbs post-workout"]
+      },
+      "energy": {
+        "grade": "B",
+        "score": 78,
+        "insight": "Balanced macros with low GI provide excellent sustained energy without crashes",
+        "pros": ["Low GI of 48 prevents spikes", "Protein provides sustained energy", "Healthy fats from peanuts", "Moderate calories (185)", "Lower sugar than orange chicken"],
+        "cons": ["Very high sodium may cause fatigue", "Could use more complex carbs for endurance activities"]
+      },
+      "weight_management": {
+        "grade": "B-",
+        "score": 71,
+        "insight": "Good protein and fiber content support satiety but sodium causes water retention",
+        "pros": ["High protein (16g) increases satiety", "Good fiber (2.5g)", "Moderate calories", "Peanuts provide healthy fats", "Lower calorie than fried options"],
+        "cons": ["High sodium causes water weight gain", "Peanuts calorie-dense if overeaten", "Stir-fry oil adds calories", "Easy to consume large portions"]
+      },
+      "brain_focus": {
+        "grade": "B",
+        "score": 76,
+        "insight": "Low glycemic index and nutrients from peanuts support stable brain function and focus",
+        "pros": ["Low GI provides stable brain glucose", "Peanuts contain niacin for brain health", "Vitamin B12 supports cognition", "Chili peppers may enhance alertness", "Good magnesium content (45mg)"],
+        "cons": ["Very high sodium may impair concentration", "Lacks omega-3 DHA", "Could benefit from more complex carbs"]
+      },
+      "gut_health": {
+        "grade": "C+",
+        "score": 64,
+        "insight": "Good fiber content and fermented soy help gut health but sodium disrupts microbiome",
+        "pros": ["Good fiber content (2.5g)", "Vegetables provide prebiotics", "Garlic and ginger support gut health", "Peanuts contain prebiotic fiber"],
+        "cons": ["Very high sodium disrupts gut bacteria", "High oil content may slow digestion", "Lacks fermented vegetables", "Spicy peppers may irritate sensitive guts"]
+      },
+      "blood_sugar": {
+        "grade": "B+",
+        "score": 82,
+        "insight": "Excellent glycemic profile with low GI and GL make this suitable for blood sugar management",
+        "pros": ["Low GI of 48", "Very low glycemic load (6)", "High protein stabilizes blood sugar", "Good fiber content", "Healthy fats slow glucose absorption"],
+        "cons": ["Contains 5g sugar from sauce", "Cornstarch thickener adds refined carbs"]
+      },
+      "bone_joint": {
+        "grade": "C",
+        "score": 58,
+        "insight": "Provides some bone nutrients and anti-inflammatory compounds but high sodium increases calcium loss",
+        "pros": ["Good magnesium content (45mg)", "Vitamin C supports collagen (22mg)", "Peanuts contain bone-healthy minerals", "Anti-inflammatory compounds from peppers"],
+        "cons": ["Very high sodium increases calcium excretion", "Low calcium (32mg)", "Minimal vitamin D and K"]
+      },
+      "anti_inflammatory": {
+        "grade": "B-",
+        "score": 71,
+        "insight": "Contains powerful anti-inflammatory compounds from peppers and garlic, offset by high sodium",
+        "pros": ["Chili peppers contain capsaicin (anti-inflammatory)", "Garlic has strong anti-inflammatory properties", "Ginger reduces inflammation", "Peanuts contain resveratrol", "Good vitamin C content"],
+        "cons": ["Very high sodium promotes inflammation", "Lacks omega-3 fatty acids", "High heat cooking may create some AGEs", "Omega-6 from cooking oil"]
+      }
+    }
+  }
+}

@@ -318,48 +318,76 @@ async function seedCarePlanGoals(patientId) {
 }
 /**
  * Seed appointments
+ * Format expected by app: date (YYYY-MM-DD string), time (HH:MM string)
  */
 async function seedAppointments(patientId) {
     const db = (0, firestore_1.getFirestore)();
     const batch = db.batch();
     const appointmentsRef = db.collection('patients').doc(patientId).collection('appointments');
     const today = new Date();
+    // Helper to format date as YYYY-MM-DD
+    const formatDate = (d) => d.toISOString().split('T')[0];
+    // Helper to format time as HH:MM
+    const formatTime = (hours, minutes = 0) => `${hours.toString().padStart(2, '0')}:${minutes.toString().padStart(2, '0')}`;
+    // Create future dates
+    const in3Days = new Date(today.getTime() + 3 * 24 * 60 * 60 * 1000);
+    const in7Days = new Date(today.getTime() + 7 * 24 * 60 * 60 * 1000);
+    const in10Days = new Date(today.getTime() + 10 * 24 * 60 * 60 * 1000);
     const appointments = [
         {
             providerId: 'dr-emily-chen',
             providerName: 'Dr. Emily Chen',
-            providerTitle: 'Primary Care Physician',
+            providerPhoto: 'https://images.unsplash.com/photo-1559839734-2b71ea197ec2?w=150&h=150&fit=crop',
+            specialty: 'Primary Care',
             type: 'telehealth',
             reason: 'Quarterly check-up and medication review',
-            dateTime: new Date(today.getTime() + 3 * 24 * 60 * 60 * 1000 + 10 * 60 * 60 * 1000), // 3 days, 10am
+            date: formatDate(in3Days),
+            time: formatTime(10, 0),
             duration: 30,
             status: 'confirmed',
-            videoUrl: 'https://nvivo.health/video/abc123',
+            location: null,
+            videoCallUrl: 'https://nvivo.health/video/abc123',
             notes: 'Please have your recent blood pressure readings ready.',
+            prepInstructions: 'Have your blood pressure readings from the past week ready to discuss.',
         },
         {
             providerId: 'dr-michael-roberts',
             providerName: 'Dr. Michael Roberts',
-            providerTitle: 'Cardiologist',
+            providerPhoto: 'https://images.unsplash.com/photo-1612349317150-e413f6a5b16d?w=150&h=150&fit=crop',
+            specialty: 'Cardiology',
             type: 'in-person',
             reason: 'Cardiac follow-up and stress test review',
-            dateTime: new Date(today.getTime() + 10 * 24 * 60 * 60 * 1000 + 14 * 60 * 60 * 1000), // 10 days, 2pm
+            date: formatDate(in10Days),
+            time: formatTime(14, 0),
             duration: 45,
             status: 'scheduled',
-            location: 'Nvivo Heart Center, Suite 301',
+            location: {
+                name: 'Nvivo Heart Center',
+                address: '456 Medical Plaza, Suite 301',
+                city: 'San Francisco',
+                state: 'CA',
+                zip: '94102',
+                coordinates: { lat: 37.7749, lng: -122.4194 },
+            },
+            videoCallUrl: null,
             notes: 'Bring insurance card and list of current medications.',
+            prepInstructions: 'Wear comfortable clothing. Avoid caffeine 24 hours before.',
         },
         {
             providerId: 'dr-lisa-park',
             providerName: 'Dr. Lisa Park',
-            providerTitle: 'Nutritionist',
+            providerPhoto: 'https://images.unsplash.com/photo-1594824476967-48c8b964273f?w=150&h=150&fit=crop',
+            specialty: 'Nutrition',
             type: 'telehealth',
             reason: 'Nutrition plan review and adjustment',
-            dateTime: new Date(today.getTime() + 7 * 24 * 60 * 60 * 1000 + 11 * 60 * 60 * 1000), // 7 days, 11am
+            date: formatDate(in7Days),
+            time: formatTime(11, 0),
             duration: 30,
             status: 'confirmed',
-            videoUrl: 'https://nvivo.health/video/def456',
+            location: null,
+            videoCallUrl: 'https://nvivo.health/video/def456',
             notes: 'Please complete your food journal entries before the appointment.',
+            prepInstructions: 'Log all meals for the past 3 days in the app.',
         },
     ];
     appointments.forEach((apt) => {

@@ -11,6 +11,7 @@
  */
 
 import type { FoodAnalysisResult, AnalyzedFood } from '../ai/foodAnalysis';
+import { getFoodIntelligence } from './foodIntelligenceLookup';
 
 // Import common foods data
 import commonFoodsData from './data/common_foods.json';
@@ -156,6 +157,9 @@ function generateVariations(name: string): string[] {
  * Convert a common food entry to FoodAnalysisResult
  */
 function convertToFoodAnalysisResult(entry: CommonFoodEntry): FoodAnalysisResult {
+  // Try to enrich with intelligence data
+  const intelligence = getFoodIntelligence(entry.name);
+
   const item: AnalyzedFood = {
     name: entry.name,
     quantity: entry.quantity,
@@ -195,6 +199,7 @@ function convertToFoodAnalysisResult(entry: CommonFoodEntry): FoodAnalysisResult
     water: entry.water,
     confidence: 1.0, // USDA data is highly accurate
     servingMultiplier: 1,
+    ...(intelligence && { intelligence }),
   };
 
   return {

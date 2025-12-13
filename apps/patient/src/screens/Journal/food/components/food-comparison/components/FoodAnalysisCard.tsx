@@ -7,15 +7,19 @@ import type { FoodHealthProfile } from '../types';
 import { HealthGradeBadge } from './HealthGradeBadge';
 import { NutrientScoreBar } from './NutrientScoreBar';
 import { ConditionImpactCard } from './ConditionImpactCard';
+import FoodIntelligencePanel from '../../shared/FoodIntelligencePanel';
 
 interface FoodAnalysisCardProps {
   profile: FoodHealthProfile;
   showAlternatives?: boolean;
+  /** User's wellness focus for intelligence display */
+  userFocus?: string;
 }
 
 export function FoodAnalysisCard({
   profile,
   showAlternatives = true,
+  userFocus = 'balanced',
 }: FoodAnalysisCardProps): React.ReactElement {
   return (
     <div className="space-y-4">
@@ -42,6 +46,14 @@ export function FoodAnalysisCard({
             <p className="text-xs text-text-secondary">{profile.aiRecommendation}</p>
           </div>
         </div>
+      )}
+
+      {/* Food Intelligence Panel */}
+      {profile.intelligence && (
+        <FoodIntelligencePanel
+          intelligence={profile.intelligence}
+          userFocus={userFocus}
+        />
       )}
 
       {/* Nutrient Scores */}

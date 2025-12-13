@@ -1,0 +1,1055 @@
+{
+  "black_beans": {
+    "foodId": "black_beans",
+    "name": "Black Beans",
+    "category": "legumes",
+    "emoji": "\ud83d\udda4",
+    "servingSize": "1 cup cooked",
+    "servingSizeGrams": 172,
+    "servingSizeML": null,
+    "calories": 227,
+    "macros": {
+      "protein": 15.2,
+      "carbs": 40.8,
+      "fiber": 15.0,
+      "sugar": 0.3,
+      "totalFat": 0.9,
+      "saturatedFat": 0.2,
+      "unsaturatedFat": 0.5
+    },
+    "micros": {
+      "potassium": 611,
+      "magnesium": 120,
+      "calcium": 46,
+      "iron": 3.6,
+      "vitaminC": 0,
+      "vitaminD": 0,
+      "vitaminB6": 0.12,
+      "vitaminB12": 0,
+      "folate": 256,
+      "omega3": 0.18
+    },
+    "glycemicIndex": 30,
+    "glycemicLoad": 12,
+    "inflammationScore": -8,
+    "tags": [
+      "high-fiber",
+      "high-protein",
+      "plant-based",
+      "gluten-free",
+      "low-fat",
+      "budget-friendly",
+      "meal-prep",
+      "vegan",
+      "anti-inflammatory"
+    ],
+    "allergens": [],
+    "dietaryFlags": {
+      "vegan": true,
+      "vegetarian": true,
+      "glutenFree": true,
+      "dairyFree": true,
+      "nutFree": true,
+      "lowCarb": false,
+      "keto": false,
+      "paleo": false,
+      "whole30": true
+    },
+    "healthBenefits": [
+      "Excellent source of fiber for digestive health",
+      "High in folate for cell growth and DNA synthesis",
+      "Rich in plant-based protein",
+      "Good source of iron for oxygen transport",
+      "Supports heart health with potassium and magnesium",
+      "Low glycemic index for stable blood sugar",
+      "Anti-inflammatory antioxidants"
+    ],
+    "preparationTips": [
+      "Rinse canned beans to reduce sodium by 40%",
+      "Soak dried beans overnight to reduce cooking time",
+      "Add bay leaf and cumin while cooking for flavor",
+      "Pressure cook for 25-30 minutes if using dried",
+      "Store cooked beans in fridge for up to 5 days"
+    ],
+    "pairingsSuggestions": [
+      "Rice for complete protein profile",
+      "Lime and cilantro for Mexican dishes",
+      "Tomatoes and peppers for chili",
+      "Avocado for healthy fats",
+      "Corn for succotash"
+    ],
+    "focusGrades": {
+      "heart_health": {
+        "grade": "A+",
+        "score": 95,
+        "reasoning": "Exceptional fiber (15g), potassium (611mg), and magnesium (120mg) support cardiovascular function. Zero cholesterol and minimal saturated fat. High folate reduces homocysteine levels."
+      },
+      "blood_sugar": {
+        "grade": "A",
+        "score": 92,
+        "reasoning": "Very low glycemic index (30) and glycemic load (12) with 15g fiber slows glucose absorption. High protein and complex carbs provide sustained energy without spikes."
+      },
+      "gut_health": {
+        "grade": "A+",
+        "score": 98,
+        "reasoning": "Outstanding fiber content (15g per cup) feeds beneficial gut bacteria. Resistant starch acts as prebiotic. Supports regular bowel movements and microbiome diversity."
+      },
+      "anti_inflammatory": {
+        "grade": "A",
+        "score": 90,
+        "reasoning": "Inflammation score of -8 indicates strong anti-inflammatory properties. Rich in antioxidants including anthocyanins. Magnesium and omega-3 reduce inflammatory markers."
+      },
+      "brain_health": {
+        "grade": "B+",
+        "score": 85,
+        "reasoning": "High folate (256mcg) supports neurotransmitter synthesis. Magnesium and iron support cognitive function. Complex carbs provide steady glucose for brain energy."
+      },
+      "bone_health": {
+        "grade": "B",
+        "score": 82,
+        "reasoning": "Good magnesium (120mg) and calcium (46mg) content. Iron (3.6mg) supports bone matrix. Adequate protein for bone structure maintenance."
+      },
+      "immune_support": {
+        "grade": "B+",
+        "score": 88,
+        "reasoning": "Rich in zinc and iron for immune cell function. High fiber supports gut immunity. Folate essential for immune cell production. Antioxidants combat oxidative stress."
+      },
+      "energy_vitality": {
+        "grade": "A",
+        "score": 90,
+        "reasoning": "Excellent iron (3.6mg) for oxygen transport. Complex carbs and protein provide sustained energy. B vitamins support energy metabolism. Low GI prevents energy crashes."
+      },
+      "weight_management": {
+        "grade": "A",
+        "score": 93,
+        "reasoning": "High fiber (15g) and protein (15.2g) promote satiety with only 227 calories. Low fat (0.9g) and sugar (0.3g). High nutrient density supports healthy weight loss."
+      },
+      "longevity": {
+        "grade": "A",
+        "score": 91,
+        "reasoning": "Associated with reduced mortality in Blue Zone diets. High antioxidants combat cellular aging. Fiber supports longevity markers. Anti-inflammatory properties reduce chronic disease risk."
+      }
+    },
+    "notableNutrients": [
+      {
+        "name": "Fiber",
+        "amount": 15.0,
+        "unit": "g",
+        "dvPercent": 54,
+        "benefit": "Promotes digestive health and stable blood sugar"
+      },
+      {
+        "name": "Folate",
+        "amount": 256,
+        "unit": "mcg",
+        "dvPercent": 64,
+        "benefit": "Essential for DNA synthesis and cell division"
+      },
+      {
+        "name": "Iron",
+        "amount": 3.6,
+        "unit": "mg",
+        "dvPercent": 20,
+        "benefit": "Supports oxygen transport and energy production"
+      },
+      {
+        "name": "Magnesium",
+        "amount": 120,
+        "unit": "mg",
+        "dvPercent": 29,
+        "benefit": "Supports muscle, nerve, and heart function"
+      },
+      {
+        "name": "Potassium",
+        "amount": 611,
+        "unit": "mg",
+        "dvPercent": 13,
+        "benefit": "Regulates blood pressure and fluid balance"
+      }
+    ],
+    "warnings": [
+      "May cause gas or bloating if not accustomed to high fiber",
+      "Rinse canned beans to reduce sodium content",
+      "Pair with vitamin C to enhance iron absorption"
+    ]
+  },
+  "beans": {
+    "foodId": "beans",
+    "name": "Pinto Beans",
+    "category": "legumes",
+    "emoji": "\ud83e\uded8",
+    "servingSize": "1 cup cooked",
+    "servingSizeGrams": 171,
+    "servingSizeML": null,
+    "calories": 245,
+    "macros": {
+      "protein": 15.4,
+      "carbs": 44.8,
+      "fiber": 15.4,
+      "sugar": 0.6,
+      "totalFat": 1.1,
+      "saturatedFat": 0.2,
+      "unsaturatedFat": 0.7
+    },
+    "micros": {
+      "potassium": 746,
+      "magnesium": 86,
+      "calcium": 79,
+      "iron": 3.6,
+      "vitaminC": 1.8,
+      "vitaminD": 0,
+      "vitaminB6": 0.21,
+      "vitaminB12": 0,
+      "folate": 294,
+      "omega3": 0.3
+    },
+    "glycemicIndex": 39,
+    "glycemicLoad": 17,
+    "inflammationScore": -7,
+    "tags": [
+      "high-fiber",
+      "high-protein",
+      "plant-based",
+      "gluten-free",
+      "low-fat",
+      "budget-friendly",
+      "meal-prep",
+      "vegan",
+      "anti-inflammatory"
+    ],
+    "allergens": [],
+    "dietaryFlags": {
+      "vegan": true,
+      "vegetarian": true,
+      "glutenFree": true,
+      "dairyFree": true,
+      "nutFree": true,
+      "lowCarb": false,
+      "keto": false,
+      "paleo": false,
+      "whole30": true
+    },
+    "healthBenefits": [
+      "Exceptional fiber for digestive and heart health",
+      "High folate content supports pregnancy and cell health",
+      "Rich plant-based protein for muscle maintenance",
+      "Potassium supports healthy blood pressure",
+      "Low glycemic impact for blood sugar control",
+      "Iron supports energy and immune function",
+      "Anti-inflammatory antioxidants protect cells"
+    ],
+    "preparationTips": [
+      "Soak dried beans 8-12 hours to reduce cooking time",
+      "Add kombu seaweed while cooking to reduce gas",
+      "Season with garlic, onion, and cumin for flavor",
+      "Pressure cook for 30-35 minutes if using dried",
+      "Mash partially for creamy refried beans"
+    ],
+    "pairingsSuggestions": [
+      "Brown rice for complete amino acid profile",
+      "Cheese and tortillas for burritos",
+      "Salsa and avocado for taco filling",
+      "Peppers and onions for fajitas",
+      "Lime and cilantro for Mexican flavors"
+    ],
+    "focusGrades": {
+      "heart_health": {
+        "grade": "A+",
+        "score": 96,
+        "reasoning": "Outstanding fiber (15.4g) lowers cholesterol. Exceptional potassium (746mg) regulates blood pressure. Magnesium supports heart rhythm. Zero cholesterol and minimal saturated fat."
+      },
+      "blood_sugar": {
+        "grade": "A",
+        "score": 90,
+        "reasoning": "Low glycemic index (39) and moderate glycemic load (17) with 15.4g fiber prevents blood sugar spikes. High protein and complex carbs provide steady energy."
+      },
+      "gut_health": {
+        "grade": "A+",
+        "score": 97,
+        "reasoning": "Exceptional fiber content (15.4g) promotes beneficial bacteria and regular bowel movements. Resistant starch acts as powerful prebiotic. Supports diverse microbiome."
+      },
+      "anti_inflammatory": {
+        "grade": "A-",
+        "score": 88,
+        "reasoning": "Inflammation score of -7 indicates strong anti-inflammatory effects. Rich in antioxidants and polyphenols. Magnesium and omega-3 reduce inflammatory markers."
+      },
+      "brain_health": {
+        "grade": "A-",
+        "score": 87,
+        "reasoning": "Very high folate (294mcg) supports neurotransmitter production. B6 (0.21mg) aids cognitive function. Iron and magnesium support brain health. Complex carbs fuel brain energy."
+      },
+      "bone_health": {
+        "grade": "B+",
+        "score": 85,
+        "reasoning": "Good magnesium (86mg) and calcium (79mg) for bone density. Iron (3.6mg) supports bone matrix. Protein essential for bone structure. Potassium reduces calcium loss."
+      },
+      "immune_support": {
+        "grade": "B+",
+        "score": 86,
+        "reasoning": "Good iron and zinc for immune cell function. High fiber supports gut-associated immune system. Folate essential for white blood cell production. Antioxidants boost immunity."
+      },
+      "energy_vitality": {
+        "grade": "A",
+        "score": 91,
+        "reasoning": "Excellent iron (3.6mg) combats fatigue. B6 supports energy metabolism. Complex carbs and protein provide sustained energy. Low GI prevents energy crashes throughout day."
+      },
+      "weight_management": {
+        "grade": "A",
+        "score": 92,
+        "reasoning": "High fiber (15.4g) and protein (15.4g) create strong satiety with 245 calories. Very low fat (1.1g) and sugar (0.6g). Nutrient-dense for healthy weight management."
+      },
+      "longevity": {
+        "grade": "A",
+        "score": 90,
+        "reasoning": "Staple in longevity-promoting diets worldwide. High antioxidants protect against cellular damage. Fiber associated with reduced mortality. Anti-inflammatory properties support healthy aging."
+      }
+    },
+    "notableNutrients": [
+      {
+        "name": "Fiber",
+        "amount": 15.4,
+        "unit": "g",
+        "dvPercent": 55,
+        "benefit": "Promotes digestive health and cholesterol reduction"
+      },
+      {
+        "name": "Folate",
+        "amount": 294,
+        "unit": "mcg",
+        "dvPercent": 74,
+        "benefit": "Critical for DNA synthesis and fetal development"
+      },
+      {
+        "name": "Potassium",
+        "amount": 746,
+        "unit": "mg",
+        "dvPercent": 16,
+        "benefit": "Regulates blood pressure and heart function"
+      },
+      {
+        "name": "Iron",
+        "amount": 3.6,
+        "unit": "mg",
+        "dvPercent": 20,
+        "benefit": "Essential for oxygen transport and energy"
+      },
+      {
+        "name": "Protein",
+        "amount": 15.4,
+        "unit": "g",
+        "dvPercent": 31,
+        "benefit": "Plant-based protein for muscle maintenance"
+      }
+    ],
+    "warnings": [
+      "Gradually increase intake to avoid digestive discomfort",
+      "Rinse canned beans to reduce sodium by 40%",
+      "Pair with vitamin C-rich foods to boost iron absorption"
+    ]
+  },
+  "kidney_beans": {
+    "foodId": "kidney_beans",
+    "name": "Kidney Beans",
+    "category": "legumes",
+    "emoji": "\ud83e\uded8",
+    "servingSize": "1 cup cooked",
+    "servingSizeGrams": 177,
+    "servingSizeML": null,
+    "calories": 225,
+    "macros": {
+      "protein": 15.3,
+      "carbs": 40.4,
+      "fiber": 13.1,
+      "sugar": 0.6,
+      "totalFat": 0.9,
+      "saturatedFat": 0.1,
+      "unsaturatedFat": 0.6
+    },
+    "micros": {
+      "potassium": 713,
+      "magnesium": 74,
+      "calcium": 62,
+      "iron": 5.2,
+      "vitaminC": 2.3,
+      "vitaminD": 0,
+      "vitaminB6": 0.21,
+      "vitaminB12": 0,
+      "folate": 230,
+      "omega3": 0.3
+    },
+    "glycemicIndex": 24,
+    "glycemicLoad": 10,
+    "inflammationScore": -7,
+    "tags": [
+      "high-fiber",
+      "high-protein",
+      "plant-based",
+      "gluten-free",
+      "low-fat",
+      "budget-friendly",
+      "meal-prep",
+      "vegan",
+      "anti-inflammatory",
+      "low-glycemic"
+    ],
+    "allergens": [],
+    "dietaryFlags": {
+      "vegan": true,
+      "vegetarian": true,
+      "glutenFree": true,
+      "dairyFree": true,
+      "nutFree": true,
+      "lowCarb": false,
+      "keto": false,
+      "paleo": false,
+      "whole30": true
+    },
+    "healthBenefits": [
+      "Very low glycemic index for excellent blood sugar control",
+      "Highest iron content among common beans",
+      "Rich fiber supports heart and digestive health",
+      "High potassium for blood pressure regulation",
+      "Folate supports cell growth and pregnancy health",
+      "Plant-based protein for muscle maintenance",
+      "Antioxidants reduce inflammation and oxidative stress"
+    ],
+    "preparationTips": [
+      "CRITICAL: Never eat raw - contains toxic lectin phytohaemagglutinin",
+      "Boil dried beans vigorously for 10 minutes before simmering",
+      "Soak overnight and discard soaking water before cooking",
+      "Canned beans are fully cooked and safe to eat",
+      "Pressure cook dried beans for 25-30 minutes at high pressure"
+    ],
+    "pairingsSuggestions": [
+      "Rice for protein complementarity",
+      "Tomatoes and peppers for chili",
+      "Corn and vegetables for three-bean salad",
+      "Onions and spices for rajma curry",
+      "Greens and vinaigrette for salads"
+    ],
+    "focusGrades": {
+      "heart_health": {
+        "grade": "A+",
+        "score": 94,
+        "reasoning": "Excellent fiber (13.1g) reduces LDL cholesterol. Very high potassium (713mg) supports healthy blood pressure. Minimal saturated fat (0.1g). Folate reduces homocysteine levels."
+      },
+      "blood_sugar": {
+        "grade": "A+",
+        "score": 96,
+        "reasoning": "Exceptionally low glycemic index (24) and glycemic load (10) among all foods. High fiber (13.1g) slows glucose absorption. Ideal for diabetes management and blood sugar stability."
+      },
+      "gut_health": {
+        "grade": "A+",
+        "score": 95,
+        "reasoning": "High fiber content (13.1g) feeds beneficial bacteria and promotes regularity. Resistant starch acts as prebiotic. Supports healthy microbiome diversity and intestinal barrier function."
+      },
+      "anti_inflammatory": {
+        "grade": "A-",
+        "score": 88,
+        "reasoning": "Inflammation score of -7 shows strong anti-inflammatory properties. Rich in polyphenols and antioxidants. Magnesium and omega-3 reduce inflammatory cytokines."
+      },
+      "brain_health": {
+        "grade": "A-",
+        "score": 87,
+        "reasoning": "High folate (230mcg) supports neurotransmitter synthesis. Excellent iron (5.2mg) for oxygen delivery to brain. B6 aids cognitive function. Steady glucose prevents mental fatigue."
+      },
+      "bone_health": {
+        "grade": "B+",
+        "score": 84,
+        "reasoning": "Good magnesium (74mg) and calcium (62mg) for bone mineralization. High iron (5.2mg) supports bone matrix. Protein maintains bone structure. Potassium reduces calcium excretion."
+      },
+      "immune_support": {
+        "grade": "A-",
+        "score": 88,
+        "reasoning": "Excellent iron (5.2mg) and zinc support immune cell production. High fiber enhances gut immunity. Folate essential for white blood cell formation. Antioxidants strengthen immune response."
+      },
+      "energy_vitality": {
+        "grade": "A+",
+        "score": 93,
+        "reasoning": "Highest iron content (5.2mg) among common beans combats fatigue. B vitamins support energy metabolism. Complex carbs provide sustained energy. Low GI prevents energy crashes."
+      },
+      "weight_management": {
+        "grade": "A",
+        "score": 93,
+        "reasoning": "High fiber (13.1g) and protein (15.3g) promote fullness with only 225 calories. Very low fat (0.9g) and sugar (0.6g). Extremely low GI supports appetite control."
+      },
+      "longevity": {
+        "grade": "A",
+        "score": 91,
+        "reasoning": "Associated with reduced mortality in population studies. High antioxidants protect against cellular aging. Fiber linked to longevity. Low GI reduces chronic disease risk."
+      }
+    },
+    "notableNutrients": [
+      {
+        "name": "Iron",
+        "amount": 5.2,
+        "unit": "mg",
+        "dvPercent": 29,
+        "benefit": "Highest among beans - supports oxygen transport and energy"
+      },
+      {
+        "name": "Fiber",
+        "amount": 13.1,
+        "unit": "g",
+        "dvPercent": 47,
+        "benefit": "Promotes digestive health and blood sugar control"
+      },
+      {
+        "name": "Potassium",
+        "amount": 713,
+        "unit": "mg",
+        "dvPercent": 15,
+        "benefit": "Regulates blood pressure and heart rhythm"
+      },
+      {
+        "name": "Folate",
+        "amount": 230,
+        "unit": "mcg",
+        "dvPercent": 58,
+        "benefit": "Essential for DNA synthesis and cell division"
+      },
+      {
+        "name": "Protein",
+        "amount": 15.3,
+        "unit": "g",
+        "dvPercent": 31,
+        "benefit": "Plant-based complete protein when paired with grains"
+      }
+    ],
+    "warnings": [
+      "NEVER eat raw or undercooked - contains toxic lectin",
+      "Must boil vigorously for 10+ minutes to destroy toxins",
+      "Canned beans are pre-cooked and safe",
+      "May cause gas - start with small portions"
+    ]
+  },
+  "garbanzo_beans": {
+    "foodId": "garbanzo_beans",
+    "name": "Garbanzo Beans (Chickpeas)",
+    "category": "legumes",
+    "emoji": "\ud83e\uddc6",
+    "servingSize": "1 cup cooked",
+    "servingSizeGrams": 164,
+    "servingSizeML": null,
+    "calories": 269,
+    "macros": {
+      "protein": 14.5,
+      "carbs": 45.0,
+      "fiber": 12.5,
+      "sugar": 7.9,
+      "totalFat": 4.2,
+      "saturatedFat": 0.4,
+      "unsaturatedFat": 3.5
+    },
+    "micros": {
+      "potassium": 477,
+      "magnesium": 79,
+      "calcium": 80,
+      "iron": 4.7,
+      "vitaminC": 2.1,
+      "vitaminD": 0,
+      "vitaminB6": 0.23,
+      "vitaminB12": 0,
+      "folate": 282,
+      "omega3": 0.08
+    },
+    "glycemicIndex": 28,
+    "glycemicLoad": 13,
+    "inflammationScore": -7,
+    "tags": [
+      "high-fiber",
+      "high-protein",
+      "plant-based",
+      "gluten-free",
+      "budget-friendly",
+      "meal-prep",
+      "vegan",
+      "anti-inflammatory",
+      "mediterranean",
+      "versatile"
+    ],
+    "allergens": [],
+    "dietaryFlags": {
+      "vegan": true,
+      "vegetarian": true,
+      "glutenFree": true,
+      "dairyFree": true,
+      "nutFree": true,
+      "lowCarb": false,
+      "keto": false,
+      "paleo": false,
+      "whole30": false
+    },
+    "healthBenefits": [
+      "Rich in plant-based protein and fiber",
+      "High folate supports pregnancy and cell health",
+      "Excellent iron for energy and immune function",
+      "Low glycemic index for blood sugar control",
+      "Healthy fats including omega-3 fatty acids",
+      "Calcium and magnesium for bone health",
+      "Versatile for hummus, salads, and curries"
+    ],
+    "preparationTips": [
+      "Soak dried chickpeas 8-12 hours before cooking",
+      "Add baking soda to soaking water to soften skins",
+      "Pressure cook for 35-40 minutes if using dried",
+      "Save aquafaba (cooking liquid) as egg substitute",
+      "Roast for crispy snack at 400\u00b0F for 30 minutes"
+    ],
+    "pairingsSuggestions": [
+      "Tahini and lemon for hummus",
+      "Curry spices for chana masala",
+      "Olive oil and herbs for roasted chickpeas",
+      "Vegetables for grain bowls",
+      "Tomatoes and spinach for stews"
+    ],
+    "focusGrades": {
+      "heart_health": {
+        "grade": "A",
+        "score": 92,
+        "reasoning": "High fiber (12.5g) lowers cholesterol. Good potassium (477mg) supports blood pressure. Healthy unsaturated fats (3.5g). Folate reduces cardiovascular risk. Low saturated fat."
+      },
+      "blood_sugar": {
+        "grade": "A",
+        "score": 91,
+        "reasoning": "Low glycemic index (28) and moderate glycemic load (13) with 12.5g fiber prevent blood sugar spikes. High protein and complex carbs provide sustained energy release."
+      },
+      "gut_health": {
+        "grade": "A+",
+        "score": 94,
+        "reasoning": "Excellent fiber content (12.5g) promotes beneficial bacteria and digestive health. Resistant starch feeds microbiome. Supports regular bowel movements and gut barrier integrity."
+      },
+      "anti_inflammatory": {
+        "grade": "A-",
+        "score": 87,
+        "reasoning": "Inflammation score of -7 shows anti-inflammatory benefits. Rich in antioxidants and polyphenols. Magnesium and omega-3 reduce inflammatory markers. Mediterranean diet staple."
+      },
+      "brain_health": {
+        "grade": "A",
+        "score": 89,
+        "reasoning": "Very high folate (282mcg) supports neurotransmitter production. Excellent B6 (0.23mg) for cognitive function. Iron (4.7mg) ensures oxygen delivery. Healthy fats support brain structure."
+      },
+      "bone_health": {
+        "grade": "B+",
+        "score": 86,
+        "reasoning": "Good calcium (80mg) and magnesium (79mg) for bone density. High iron (4.7mg) supports bone matrix. Protein maintains bone structure. Moderate phosphorus content."
+      },
+      "immune_support": {
+        "grade": "A-",
+        "score": 88,
+        "reasoning": "Excellent iron (4.7mg) and zinc for immune cell function. High fiber supports gut-associated immunity. Folate essential for white blood cell production. Antioxidants boost defenses."
+      },
+      "energy_vitality": {
+        "grade": "A",
+        "score": 90,
+        "reasoning": "High iron (4.7mg) combats fatigue and supports oxygen transport. B vitamins aid energy metabolism. Complex carbs and protein provide sustained energy. Moderate healthy fats."
+      },
+      "weight_management": {
+        "grade": "A-",
+        "score": 89,
+        "reasoning": "High fiber (12.5g) and protein (14.5g) promote satiety. Moderate calories (269) with nutrient density. Low GI supports appetite control. Versatile for healthy meal preparation."
+      },
+      "longevity": {
+        "grade": "A",
+        "score": 92,
+        "reasoning": "Central to Mediterranean diet associated with longevity. High antioxidants protect against cellular damage. Fiber linked to reduced mortality. Anti-inflammatory properties support healthy aging."
+      }
+    },
+    "notableNutrients": [
+      {
+        "name": "Folate",
+        "amount": 282,
+        "unit": "mcg",
+        "dvPercent": 71,
+        "benefit": "Critical for DNA synthesis and fetal development"
+      },
+      {
+        "name": "Fiber",
+        "amount": 12.5,
+        "unit": "g",
+        "dvPercent": 45,
+        "benefit": "Promotes digestive health and satiety"
+      },
+      {
+        "name": "Iron",
+        "amount": 4.7,
+        "unit": "mg",
+        "dvPercent": 26,
+        "benefit": "Supports oxygen transport and energy levels"
+      },
+      {
+        "name": "Protein",
+        "amount": 14.5,
+        "unit": "g",
+        "dvPercent": 29,
+        "benefit": "Plant-based protein for muscle maintenance"
+      },
+      {
+        "name": "Manganese",
+        "amount": 1.7,
+        "unit": "mg",
+        "dvPercent": 74,
+        "benefit": "Supports bone health and metabolism"
+      }
+    ],
+    "warnings": [
+      "Higher in calories and fat than other beans",
+      "May cause gas - introduce gradually",
+      "Rinse canned chickpeas to reduce sodium",
+      "Not Whole30 compliant due to legume classification"
+    ]
+  },
+  "lentils": {
+    "foodId": "lentils",
+    "name": "Lentils",
+    "category": "legumes",
+    "emoji": "\ud83c\udf5b",
+    "servingSize": "1 cup cooked",
+    "servingSizeGrams": 198,
+    "servingSizeML": null,
+    "calories": 230,
+    "macros": {
+      "protein": 17.9,
+      "carbs": 39.9,
+      "fiber": 15.6,
+      "sugar": 3.6,
+      "totalFat": 0.8,
+      "saturatedFat": 0.1,
+      "unsaturatedFat": 0.5
+    },
+    "micros": {
+      "potassium": 731,
+      "magnesium": 71,
+      "calcium": 38,
+      "iron": 6.6,
+      "vitaminC": 3.0,
+      "vitaminD": 0,
+      "vitaminB6": 0.35,
+      "vitaminB12": 0,
+      "folate": 358,
+      "omega3": 0.07
+    },
+    "glycemicIndex": 32,
+    "glycemicLoad": 13,
+    "inflammationScore": -8,
+    "tags": [
+      "high-fiber",
+      "high-protein",
+      "plant-based",
+      "gluten-free",
+      "low-fat",
+      "budget-friendly",
+      "quick-cooking",
+      "vegan",
+      "anti-inflammatory",
+      "superfood"
+    ],
+    "allergens": [],
+    "dietaryFlags": {
+      "vegan": true,
+      "vegetarian": true,
+      "glutenFree": true,
+      "dairyFree": true,
+      "nutFree": true,
+      "lowCarb": false,
+      "keto": false,
+      "paleo": false,
+      "whole30": false
+    },
+    "healthBenefits": [
+      "Highest protein content among legumes (17.9g)",
+      "Exceptional folate - highest among all beans",
+      "Excellent iron source for plant-based diets",
+      "Outstanding fiber for digestive and heart health",
+      "Quick-cooking compared to other legumes",
+      "Very high in potassium for heart health",
+      "Low glycemic index for blood sugar stability"
+    ],
+    "preparationTips": [
+      "No soaking required - ready in 15-30 minutes",
+      "Red lentils cook fastest (10-15 minutes)",
+      "Green/brown lentils hold shape best for salads",
+      "Add aromatics and spices while cooking",
+      "Rinse before cooking to remove debris",
+      "Use 3:1 water to lentil ratio"
+    ],
+    "pairingsSuggestions": [
+      "Rice for complete protein (dal and rice)",
+      "Curry spices for Indian dal",
+      "Tomatoes and vegetables for soup",
+      "Lemon and herbs for Mediterranean salads",
+      "Coconut milk for creamy curries"
+    ],
+    "focusGrades": {
+      "heart_health": {
+        "grade": "A+",
+        "score": 96,
+        "reasoning": "Exceptional fiber (15.6g) significantly lowers cholesterol. Very high potassium (731mg) regulates blood pressure. Virtually no saturated fat. Folate reduces homocysteine and cardiovascular risk."
+      },
+      "blood_sugar": {
+        "grade": "A",
+        "score": 91,
+        "reasoning": "Low glycemic index (32) and moderate glycemic load (13) with 15.6g fiber prevents blood sugar spikes. High protein (17.9g) slows glucose absorption. Excellent for diabetes management."
+      },
+      "gut_health": {
+        "grade": "A+",
+        "score": 98,
+        "reasoning": "Outstanding fiber content (15.6g) promotes beneficial bacteria and optimal digestive function. Resistant starch acts as powerful prebiotic. Supports microbiome diversity and intestinal health."
+      },
+      "anti_inflammatory": {
+        "grade": "A",
+        "score": 90,
+        "reasoning": "Inflammation score of -8 indicates strong anti-inflammatory properties. Rich in polyphenols and antioxidants. High magnesium and omega-3 reduce inflammatory cytokines and oxidative stress."
+      },
+      "brain_health": {
+        "grade": "A+",
+        "score": 92,
+        "reasoning": "Exceptional folate (358mcg - highest among beans) supports neurotransmitter synthesis. Excellent B6 (0.35mg) for cognitive function. High iron (6.6mg) ensures brain oxygen delivery."
+      },
+      "bone_health": {
+        "grade": "B+",
+        "score": 84,
+        "reasoning": "Good magnesium (71mg) for bone mineralization. Moderate calcium (38mg). Excellent iron (6.6mg) supports bone matrix. High protein maintains bone structure and density."
+      },
+      "immune_support": {
+        "grade": "A",
+        "score": 90,
+        "reasoning": "Exceptional iron (6.6mg) and zinc support immune cell production and function. High fiber enhances gut-associated immunity. Record folate essential for white blood cell formation."
+      },
+      "energy_vitality": {
+        "grade": "A+",
+        "score": 95,
+        "reasoning": "Highest iron content (6.6mg) among legumes combats fatigue powerfully. Exceptional B6 supports energy metabolism. High protein and complex carbs provide sustained energy without crashes."
+      },
+      "weight_management": {
+        "grade": "A+",
+        "score": 95,
+        "reasoning": "Highest protein (17.9g) and fiber (15.6g) among beans create exceptional satiety with only 230 calories. Minimal fat (0.8g). Low GI supports appetite control. Nutrient-dense superfood."
+      },
+      "longevity": {
+        "grade": "A+",
+        "score": 93,
+        "reasoning": "Associated with longevity in Mediterranean and Indian diets. Highest antioxidant levels protect against cellular aging. Exceptional fiber linked to reduced mortality. Strong anti-inflammatory properties."
+      }
+    },
+    "notableNutrients": [
+      {
+        "name": "Folate",
+        "amount": 358,
+        "unit": "mcg",
+        "dvPercent": 90,
+        "benefit": "Highest among beans - critical for DNA synthesis and pregnancy"
+      },
+      {
+        "name": "Iron",
+        "amount": 6.6,
+        "unit": "mg",
+        "dvPercent": 37,
+        "benefit": "Exceptional plant-based iron for energy and immunity"
+      },
+      {
+        "name": "Protein",
+        "amount": 17.9,
+        "unit": "g",
+        "dvPercent": 36,
+        "benefit": "Highest protein among legumes for muscle health"
+      },
+      {
+        "name": "Fiber",
+        "amount": 15.6,
+        "unit": "g",
+        "dvPercent": 56,
+        "benefit": "Outstanding fiber for digestive and heart health"
+      },
+      {
+        "name": "Potassium",
+        "amount": 731,
+        "unit": "mg",
+        "dvPercent": 16,
+        "benefit": "Regulates blood pressure and heart function"
+      }
+    ],
+    "warnings": [
+      "May cause gas if not accustomed to high fiber",
+      "Pair with vitamin C to enhance iron absorption",
+      "Not Whole30 compliant",
+      "Red lentils lose shape when cooked - best for soups"
+    ]
+  },
+  "chickpeas": {
+    "foodId": "chickpeas",
+    "name": "Chickpeas",
+    "category": "legumes",
+    "emoji": "\ud83e\uddc6",
+    "servingSize": "1 cup cooked",
+    "servingSizeGrams": 164,
+    "servingSizeML": null,
+    "calories": 269,
+    "macros": {
+      "protein": 14.5,
+      "carbs": 45.0,
+      "fiber": 12.5,
+      "sugar": 7.9,
+      "totalFat": 4.2,
+      "saturatedFat": 0.4,
+      "unsaturatedFat": 3.5
+    },
+    "micros": {
+      "potassium": 477,
+      "magnesium": 79,
+      "calcium": 80,
+      "iron": 4.7,
+      "vitaminC": 2.1,
+      "vitaminD": 0,
+      "vitaminB6": 0.23,
+      "vitaminB12": 0,
+      "folate": 282,
+      "omega3": 0.08
+    },
+    "glycemicIndex": 28,
+    "glycemicLoad": 13,
+    "inflammationScore": -7,
+    "tags": [
+      "high-fiber",
+      "high-protein",
+      "plant-based",
+      "gluten-free",
+      "budget-friendly",
+      "meal-prep",
+      "vegan",
+      "anti-inflammatory",
+      "mediterranean",
+      "versatile"
+    ],
+    "allergens": [],
+    "dietaryFlags": {
+      "vegan": true,
+      "vegetarian": true,
+      "glutenFree": true,
+      "dairyFree": true,
+      "nutFree": true,
+      "lowCarb": false,
+      "keto": false,
+      "paleo": false,
+      "whole30": false
+    },
+    "healthBenefits": [
+      "Rich in plant-based protein and fiber",
+      "High folate supports pregnancy and cell health",
+      "Excellent iron for energy and immune function",
+      "Low glycemic index for blood sugar control",
+      "Healthy fats including omega-3 fatty acids",
+      "Calcium and magnesium for bone health",
+      "Versatile for hummus, falafel, and curries"
+    ],
+    "preparationTips": [
+      "Soak dried chickpeas 8-12 hours before cooking",
+      "Add baking soda to soaking water to soften skins",
+      "Pressure cook for 35-40 minutes if using dried",
+      "Save aquafaba (cooking liquid) as vegan egg substitute",
+      "Roast at 400\u00b0F for 30 minutes for crunchy snack"
+    ],
+    "pairingsSuggestions": [
+      "Tahini and lemon for classic hummus",
+      "Curry spices for chana masala",
+      "Olive oil and herbs for roasted chickpeas",
+      "Vegetables and grains for Buddha bowls",
+      "Tomatoes and spinach for Mediterranean stews"
+    ],
+    "focusGrades": {
+      "heart_health": {
+        "grade": "A",
+        "score": 92,
+        "reasoning": "High fiber (12.5g) lowers LDL cholesterol effectively. Good potassium (477mg) supports healthy blood pressure. Healthy unsaturated fats (3.5g). Folate reduces cardiovascular risk."
+      },
+      "blood_sugar": {
+        "grade": "A",
+        "score": 91,
+        "reasoning": "Low glycemic index (28) and moderate glycemic load (13) with 12.5g fiber prevent blood sugar spikes. High protein and complex carbs provide sustained, stable energy release."
+      },
+      "gut_health": {
+        "grade": "A+",
+        "score": 94,
+        "reasoning": "Excellent fiber content (12.5g) promotes beneficial bacteria growth and digestive regularity. Resistant starch acts as prebiotic. Supports healthy microbiome diversity and gut barrier."
+      },
+      "anti_inflammatory": {
+        "grade": "A-",
+        "score": 87,
+        "reasoning": "Inflammation score of -7 shows strong anti-inflammatory benefits. Rich in antioxidants and polyphenols. Magnesium and omega-3 reduce inflammatory markers. Mediterranean diet staple."
+      },
+      "brain_health": {
+        "grade": "A",
+        "score": 89,
+        "reasoning": "Very high folate (282mcg) supports neurotransmitter production and cognitive health. Excellent B6 (0.23mg) for brain function. Iron (4.7mg) ensures oxygen delivery. Healthy fats support structure."
+      },
+      "bone_health": {
+        "grade": "B+",
+        "score": 86,
+        "reasoning": "Good calcium (80mg) and magnesium (79mg) support bone density. High iron (4.7mg) supports bone matrix formation. Adequate protein maintains bone structure. Moderate phosphorus."
+      },
+      "immune_support": {
+        "grade": "A-",
+        "score": 88,
+        "reasoning": "Excellent iron (4.7mg) and zinc strengthen immune cell function. High fiber supports gut-associated immune system. Folate essential for white blood cell production. Antioxidants boost defenses."
+      },
+      "energy_vitality": {
+        "grade": "A",
+        "score": 90,
+        "reasoning": "High iron (4.7mg) combats fatigue and supports oxygen transport. B vitamins aid energy metabolism efficiently. Complex carbs and protein provide sustained energy. Moderate healthy fats."
+      },
+      "weight_management": {
+        "grade": "A-",
+        "score": 89,
+        "reasoning": "High fiber (12.5g) and protein (14.5g) promote strong satiety. Moderate calories (269) with excellent nutrient density. Low GI supports appetite control. Versatile for healthy meals."
+      },
+      "longevity": {
+        "grade": "A",
+        "score": 92,
+        "reasoning": "Central to Mediterranean diet strongly associated with longevity. High antioxidants protect against cellular damage and aging. Fiber linked to reduced mortality. Anti-inflammatory properties support healthy aging."
+      }
+    },
+    "notableNutrients": [
+      {
+        "name": "Folate",
+        "amount": 282,
+        "unit": "mcg",
+        "dvPercent": 71,
+        "benefit": "Critical for DNA synthesis and pregnancy health"
+      },
+      {
+        "name": "Fiber",
+        "amount": 12.5,
+        "unit": "g",
+        "dvPercent": 45,
+        "benefit": "Promotes digestive health and cholesterol reduction"
+      },
+      {
+        "name": "Iron",
+        "amount": 4.7,
+        "unit": "mg",
+        "dvPercent": 26,
+        "benefit": "Supports oxygen transport and energy production"
+      },
+      {
+        "name": "Protein",
+        "amount": 14.5,
+        "unit": "g",
+        "dvPercent": 29,
+        "benefit": "Plant-based protein for muscle maintenance"
+      },
+      {
+        "name": "Manganese",
+        "amount": 1.7,
+        "unit": "mg",
+        "dvPercent": 74,
+        "benefit": "Supports bone health and antioxidant function"
+      }
+    ],
+    "warnings": [
+      "Higher in calories and fat than other beans",
+      "May cause gas - introduce gradually to diet",
+      "Rinse canned chickpeas to reduce sodium content",
+      "Not Whole30 compliant due to legume classification"
+    ]
+  }
+}

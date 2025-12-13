@@ -1,0 +1,2044 @@
+{
+  "coffee_black": {
+    "name": "Coffee, brewed, black",
+    "fdcId": "171890",
+    "quantity": 1,
+    "unit": "cup (240ml)",
+    "mealType": "beverage",
+    "foodGroups": ["beverage"],
+    "subCategory": "hot_beverage",
+
+    "calories": 2,
+    "protein": 0.3,
+    "carbs": 0,
+    "fat": 0,
+    "fiber": 0,
+    "sugar": 0,
+    "sodium": 5,
+    "saturatedFat": 0,
+    "transFat": 0,
+    "cholesterol": 0,
+    "potassium": 116,
+    "calcium": 5,
+    "iron": 0,
+    "magnesium": 7,
+    "zinc": 0,
+    "vitaminA": 0,
+    "vitaminC": 0,
+    "vitaminD": 0,
+    "vitaminE": 0,
+    "vitaminK": 0.2,
+    "thiamin": 0,
+    "riboflavin": 0.2,
+    "niacin": 0.5,
+    "vitaminB6": 0,
+    "folate": 5,
+    "vitaminB12": 0,
+    "choline": 6,
+    "phosphorus": 7,
+    "selenium": 0,
+    "copper": 0,
+    "manganese": 0.1,
+    "caffeine": 95,
+    "water": 237,
+    "monounsaturatedFat": 0,
+    "polyunsaturatedFat": 0,
+
+    "omega3": { "ala": 0, "epa": 0, "dha": 0 },
+    "omega6": { "linoleicAcid": 0 },
+    "omegaRatio": 0,
+
+    "glycemicIndex": 0,
+    "glycemicLoad": 0,
+    "glycemicCategory": "none",
+    "nutrientDensityScore": 7.2,
+    "satietyScore": 15,
+    "inflammatoryIndex": -1.5,
+    "novaClass": 1,
+    "oracScore": 2780,
+
+    "dietaryTags": ["vegan", "gluten_free", "keto", "paleo", "whole30"],
+    "allergens": [],
+
+    "insight": "Nearly zero calories with powerful antioxidants and 95mg caffeine. America's #1 source of antioxidants.",
+
+    "focusGrades": {
+      "balanced": {
+        "grade": "A-",
+        "score": 88,
+        "insight": "Essentially calorie-free with beneficial polyphenols and caffeine. Excellent for daily consumption.",
+        "pros": ["Near-zero calories", "High antioxidants (chlorogenic acid)", "Minimal sodium"],
+        "cons": ["No macronutrients", "Caffeine sensitivity varies"]
+      },
+      "heart_health": {
+        "grade": "A",
+        "score": 90,
+        "insight": "Chlorogenic acid and caffeic acid reduce blood pressure and inflammation. 3-5 cups daily linked to 15% lower heart disease risk.",
+        "pros": ["Lowers blood pressure", "Reduces inflammation", "Improves endothelial function"],
+        "cons": ["Excess caffeine can raise heart rate temporarily"]
+      },
+      "muscle_building": {
+        "grade": "C+",
+        "score": 74,
+        "insight": "Caffeine enhances performance and reduces perceived exertion. But zero protein/calories.",
+        "pros": ["Pre-workout performance boost", "Reduces muscle pain perception"],
+        "cons": ["Zero protein", "Zero calories"]
+      },
+      "energy": {
+        "grade": "A",
+        "score": 92,
+        "insight": "95mg caffeine blocks adenosine receptors, increasing alertness for 3-5 hours. Peak effect at 45 minutes.",
+        "pros": ["Immediate energy boost", "Improves focus", "Increases metabolic rate 3-11%"],
+        "cons": ["Can cause jitters if sensitive", "Afternoon intake disrupts sleep"]
+      },
+      "weight_management": {
+        "grade": "A+",
+        "score": 96,
+        "insight": "2 calories per cup, boosts metabolism, suppresses appetite. Black coffee is a weight loss ally.",
+        "pros": ["Nearly zero calories", "Increases fat oxidation", "Mild appetite suppressant"],
+        "cons": ["Adding cream/sugar ruins benefits"]
+      },
+      "brain_focus": {
+        "grade": "A+",
+        "score": 95,
+        "insight": "Caffeine + antioxidants enhance cognition, memory, and reaction time. May reduce Alzheimer's risk long-term.",
+        "pros": ["Immediate focus enhancement", "Blocks adenosine (drowsiness)", "Neuroprotective polyphenols"],
+        "cons": ["Tolerance builds with daily use", "Can impair sleep if consumed late"]
+      },
+      "gut_health": {
+        "grade": "B",
+        "score": 80,
+        "insight": "Stimulates bowel movements and increases gut motility. Polyphenols support beneficial bacteria.",
+        "pros": ["Natural laxative effect", "Prebiotic-like polyphenols", "Increases gastric acid"],
+        "cons": ["Can worsen acid reflux", "May irritate sensitive stomachs"]
+      },
+      "blood_sugar": {
+        "grade": "A",
+        "score": 91,
+        "insight": "Zero carbs, lowers type 2 diabetes risk by 7% per daily cup. Chlorogenic acid slows glucose absorption.",
+        "pros": ["No glycemic impact", "Improves insulin sensitivity long-term", "Reduces diabetes risk"],
+        "cons": ["Caffeine can slightly raise glucose acutely in some people"]
+      },
+      "bone_joint": {
+        "grade": "C",
+        "score": 72,
+        "insight": "Minimal calcium. High intake (4+ cups) may increase calcium excretion slightly.",
+        "pros": ["Anti-inflammatory antioxidants"],
+        "cons": ["No bone-building nutrients", "Excess intake may reduce calcium absorption"]
+      },
+      "anti_inflammatory": {
+        "grade": "A",
+        "score": 90,
+        "insight": "Chlorogenic acid and caffeic acid are potent anti-inflammatory compounds. Reduces C-reactive protein.",
+        "pros": ["High polyphenol content", "Reduces inflammatory markers", "Protects cells from oxidative stress"],
+        "cons": ["Quality varies—choose high-quality beans"]
+      }
+    },
+
+    "bioavailability": {
+      "caffeine": { "absorption": "high", "tip": "Peak blood levels in 45-60 minutes; half-life 3-5 hours" },
+      "chlorogenicAcid": { "absorption": "moderate", "tip": "Better absorbed from lighter roasts" }
+    },
+
+    "pairWith": [
+      { "food": "breakfast", "reason": "Classic pairing—caffeine jumpstarts metabolism" },
+      { "food": "pre-workout", "reason": "Caffeine enhances performance 30-60 minutes later" }
+    ],
+    "avoidWith": [
+      { "food": "calcium-rich foods", "reason": "May slightly reduce calcium absorption if consumed together" }
+    ],
+
+    "bestTiming": {
+      "preWorkout": true,
+      "postWorkout": false,
+      "morning": true,
+      "beforeBed": false
+    },
+    "digestionTime": "fast",
+
+    "portionVisual": "1 cup = standard coffee mug",
+    "tips": {
+      "storage": "Whole beans in airtight container; grind fresh for max antioxidants",
+      "cooking": "Brew between 195-205°F for optimal extraction",
+      "prepTip": "Light to medium roast has more chlorogenic acid than dark roast"
+    },
+    "commonMistakes": [
+      "Adding sugar/cream (turns zero-calorie into 100+ calorie drink)",
+      "Drinking after 2pm (disrupts sleep)",
+      "Drinking on empty stomach (can cause jitters/acid reflux)"
+    ],
+
+    "cautions": {
+      "pregnancy": "Limit to 200mg caffeine/day (about 2 cups)",
+      "anxiety": "Can worsen anxiety or trigger panic in sensitive individuals",
+      "heartburn": "Increases gastric acid—avoid if GERD"
+    },
+    "pregnancySafe": true,
+    "pregnancyNotes": "Limit to 200mg caffeine daily (12oz). Excessive intake linked to miscarriage risk.",
+    "drugInteractions": [
+      "Stimulants (additive effects)",
+      "Blood thinners (vitamin K interaction minimal but note)",
+      "Certain antidepressants (MAOIs)"
+    ],
+    "pediatric": {
+      "ageAppropriate": "Not recommended <12 years",
+      "chokingRisk": "none",
+      "commonAllergen": false
+    }
+  },
+
+  "tea_black": {
+    "name": "Tea, black, brewed",
+    "fdcId": "171926",
+    "quantity": 1,
+    "unit": "cup (240ml)",
+    "mealType": "beverage",
+    "foodGroups": ["beverage"],
+    "subCategory": "hot_beverage",
+
+    "calories": 2,
+    "protein": 0,
+    "carbs": 0.7,
+    "fat": 0,
+    "fiber": 0,
+    "sugar": 0,
+    "sodium": 7,
+    "saturatedFat": 0,
+    "transFat": 0,
+    "cholesterol": 0,
+    "potassium": 88,
+    "calcium": 0,
+    "iron": 0,
+    "magnesium": 7,
+    "zinc": 0,
+    "vitaminA": 0,
+    "vitaminC": 0,
+    "vitaminD": 0,
+    "vitaminE": 0,
+    "vitaminK": 0,
+    "thiamin": 0,
+    "riboflavin": 0,
+    "niacin": 0,
+    "vitaminB6": 0,
+    "folate": 12,
+    "vitaminB12": 0,
+    "choline": 0,
+    "phosphorus": 2,
+    "selenium": 0,
+    "copper": 0,
+    "manganese": 0.5,
+    "caffeine": 47,
+    "water": 237,
+    "monounsaturatedFat": 0,
+    "polyunsaturatedFat": 0,
+
+    "omega3": { "ala": 0, "epa": 0, "dha": 0 },
+    "omega6": { "linoleicAcid": 0 },
+    "omegaRatio": 0,
+
+    "glycemicIndex": 0,
+    "glycemicLoad": 0,
+    "glycemicCategory": "none",
+    "nutrientDensityScore": 7.5,
+    "satietyScore": 12,
+    "inflammatoryIndex": -2.1,
+    "novaClass": 1,
+    "oracScore": 1640,
+
+    "dietaryTags": ["vegan", "gluten_free", "keto", "paleo", "whole30"],
+    "allergens": [],
+
+    "insight": "Theaflavins and L-theanine provide calm alertness. Half the caffeine of coffee with unique heart benefits.",
+
+    "focusGrades": {
+      "balanced": {
+        "grade": "A-",
+        "score": 89,
+        "insight": "Virtually calorie-free with theaflavins (unique to black tea) that support cardiovascular health.",
+        "pros": ["Near-zero calories", "Theaflavins + catechins", "Moderate caffeine"],
+        "cons": ["No macronutrients"]
+      },
+      "heart_health": {
+        "grade": "A",
+        "score": 93,
+        "insight": "Theaflavins lower LDL cholesterol and improve blood vessel function. 3+ cups daily reduces heart attack risk 11%.",
+        "pros": ["Lowers LDL cholesterol", "Improves arterial flexibility", "Reduces blood pressure"],
+        "cons": []
+      },
+      "muscle_building": {
+        "grade": "C",
+        "score": 71,
+        "insight": "Moderate caffeine boost for workouts, but zero protein. Catechins may reduce muscle damage.",
+        "pros": ["Pre-workout energy", "Antioxidants reduce exercise-induced inflammation"],
+        "cons": ["Zero protein", "Zero calories"]
+      },
+      "energy": {
+        "grade": "A-",
+        "score": 88,
+        "insight": "47mg caffeine + L-theanine = calm, focused energy without coffee jitters. Smoother energy curve.",
+        "pros": ["Sustained energy", "L-theanine reduces jitters", "Improves alertness"],
+        "cons": ["Half the caffeine of coffee (less intense boost)"]
+      },
+      "weight_management": {
+        "grade": "A+",
+        "score": 95,
+        "insight": "2 calories, catechins increase fat oxidation by 16%. EGCG remnants from processing still boost metabolism.",
+        "pros": ["Nearly zero calories", "Increases fat burning", "Mild appetite suppressant"],
+        "cons": []
+      },
+      "brain_focus": {
+        "grade": "A",
+        "score": 92,
+        "insight": "L-theanine + caffeine synergy improves focus and cognition better than caffeine alone. Calm alertness.",
+        "pros": ["Unique L-theanine calming effect", "Enhances alpha brain waves", "Improves attention"],
+        "cons": ["Lower caffeine than coffee (less intense if you need strong boost)"]
+      },
+      "gut_health": {
+        "grade": "B+",
+        "score": 85,
+        "insight": "Polyphenols act as prebiotics, feeding beneficial gut bacteria. Tannins have mild antimicrobial effects.",
+        "pros": ["Supports beneficial bacteria", "Polyphenols are prebiotic", "Gentle on stomach"],
+        "cons": ["Tannins can reduce iron absorption if consumed with meals"]
+      },
+      "blood_sugar": {
+        "grade": "A",
+        "score": 90,
+        "insight": "Zero sugar, theaflavins improve insulin sensitivity. May lower type 2 diabetes risk.",
+        "pros": ["No glycemic impact", "Improves glucose metabolism", "Insulin-sensitizing polyphenols"],
+        "cons": []
+      },
+      "bone_joint": {
+        "grade": "B-",
+        "score": 78,
+        "insight": "Phytochemicals may support bone density. Fluoride content varies by source (can be pro or con).",
+        "pros": ["Some bone-protective polyphenols", "Fluoride (if from fluoridated water)"],
+        "cons": ["No calcium", "Excessive fluoride can be harmful"]
+      },
+      "anti_inflammatory": {
+        "grade": "A-",
+        "score": 89,
+        "insight": "Theaflavins and catechins reduce inflammatory markers. Less potent than green tea but still excellent.",
+        "pros": ["Theaflavins reduce inflammation", "Lowers C-reactive protein", "Antioxidant-rich"],
+        "cons": ["Green tea has more catechins overall"]
+      }
+    },
+
+    "bioavailability": {
+      "caffeine": { "absorption": "high", "tip": "Absorbed more slowly than coffee—steadier release" },
+      "theaflavins": { "absorption": "moderate", "tip": "Best absorbed between meals" }
+    },
+
+    "pairWith": [
+      { "food": "breakfast", "reason": "Gentle on stomach, provides calm energy" },
+      { "food": "afternoon snack", "reason": "Lower caffeine won't disrupt sleep as much as coffee" }
+    ],
+    "avoidWith": [
+      { "food": "iron-rich meals", "reason": "Tannins reduce non-heme iron absorption—wait 1 hour" }
+    ],
+
+    "bestTiming": {
+      "preWorkout": false,
+      "postWorkout": false,
+      "morning": true,
+      "beforeBed": false
+    },
+    "digestionTime": "fast",
+
+    "portionVisual": "1 cup = standard tea mug",
+    "tips": {
+      "storage": "Airtight container away from light, moisture, strong odors",
+      "cooking": "Steep 3-5 minutes in 200-212°F water for optimal flavor",
+      "prepTip": "Longer steeping = more caffeine and tannins (can be bitter)"
+    },
+    "commonMistakes": [
+      "Adding sugar (ruins zero-calorie benefit)",
+      "Over-steeping (makes it bitter and astringent)",
+      "Drinking with iron-rich meals (reduces iron absorption)"
+    ],
+
+    "cautions": {
+      "anemia": "Tannins reduce iron absorption—drink between meals",
+      "pregnancy": "Moderate caffeine—limit total intake to 200mg/day"
+    },
+    "pregnancySafe": true,
+    "pregnancyNotes": "Safe in moderation (1-2 cups/day). Contributes to caffeine limit.",
+    "drugInteractions": [
+      "Blood thinners (vitamin K minimal but note)",
+      "Stimulants (additive caffeine effects)"
+    ],
+    "pediatric": {
+      "ageAppropriate": "Safe for children in small amounts (low caffeine)",
+      "chokingRisk": "none",
+      "commonAllergen": false
+    }
+  },
+
+  "green_tea": {
+    "name": "Tea, green, brewed",
+    "fdcId": "171927",
+    "quantity": 1,
+    "unit": "cup (240ml)",
+    "mealType": "beverage",
+    "foodGroups": ["beverage"],
+    "subCategory": "hot_beverage",
+
+    "calories": 2,
+    "protein": 0.5,
+    "carbs": 0,
+    "fat": 0,
+    "fiber": 0,
+    "sugar": 0,
+    "sodium": 2,
+    "saturatedFat": 0,
+    "transFat": 0,
+    "cholesterol": 0,
+    "potassium": 19,
+    "calcium": 2,
+    "iron": 0,
+    "magnesium": 2,
+    "zinc": 0,
+    "vitaminA": 0,
+    "vitaminC": 0,
+    "vitaminD": 0,
+    "vitaminE": 0,
+    "vitaminK": 0,
+    "thiamin": 0,
+    "riboflavin": 0.1,
+    "niacin": 0,
+    "vitaminB6": 0,
+    "folate": 12,
+    "vitaminB12": 0,
+    "choline": 0,
+    "phosphorus": 2,
+    "selenium": 0,
+    "copper": 0,
+    "manganese": 0.4,
+    "caffeine": 28,
+    "water": 237,
+    "monounsaturatedFat": 0,
+    "polyunsaturatedFat": 0,
+
+    "omega3": { "ala": 0, "epa": 0, "dha": 0 },
+    "omega6": { "linoleicAcid": 0 },
+    "omegaRatio": 0,
+
+    "glycemicIndex": 0,
+    "glycemicLoad": 0,
+    "glycemicCategory": "none",
+    "nutrientDensityScore": 8.1,
+    "satietyScore": 10,
+    "inflammatoryIndex": -2.8,
+    "novaClass": 1,
+    "oracScore": 1520,
+
+    "dietaryTags": ["vegan", "gluten_free", "keto", "paleo", "whole30"],
+    "allergens": [],
+
+    "insight": "EGCG catechin powerhouse—boosts metabolism, brain function, and longevity. Minimal caffeine.",
+
+    "focusGrades": {
+      "balanced": {
+        "grade": "A",
+        "score": 91,
+        "insight": "Virtually zero calories with exceptional EGCG content. World's healthiest beverage according to many studies.",
+        "pros": ["Near-zero calories", "Highest EGCG of any tea", "Minimal caffeine"],
+        "cons": ["No macronutrients"]
+      },
+      "heart_health": {
+        "grade": "A+",
+        "score": 95,
+        "insight": "EGCG lowers LDL, raises HDL, improves endothelial function. Daily drinkers have 31% lower heart disease risk.",
+        "pros": ["Powerful EGCG catechin", "Lowers blood pressure", "Reduces LDL oxidation"],
+        "cons": []
+      },
+      "muscle_building": {
+        "grade": "C",
+        "score": 70,
+        "insight": "Zero protein, minimal caffeine. EGCG may reduce muscle damage from exercise slightly.",
+        "pros": ["Antioxidants reduce exercise inflammation"],
+        "cons": ["Zero protein", "Very low caffeine"]
+      },
+      "energy": {
+        "grade": "B",
+        "score": 82,
+        "insight": "Only 28mg caffeine but L-theanine provides calm focus. Gentle, sustained energy without crash.",
+        "pros": ["L-theanine + caffeine synergy", "No jitters", "Calm alertness"],
+        "cons": ["Low caffeine—won't give strong boost like coffee"]
+      },
+      "weight_management": {
+        "grade": "A+",
+        "score": 97,
+        "insight": "2 calories, EGCG increases fat oxidation by 17% and boosts metabolic rate. Weight loss superstar.",
+        "pros": ["Nearly zero calories", "EGCG burns fat", "Increases metabolism 4%", "Targets belly fat"],
+        "cons": []
+      },
+      "brain_focus": {
+        "grade": "A",
+        "score": 93,
+        "insight": "L-theanine + caffeine improve working memory and attention. EGCG crosses blood-brain barrier for neuroprotection.",
+        "pros": ["Enhances cognition", "L-theanine calms without sedation", "May reduce Alzheimer's risk"],
+        "cons": ["Lower caffeine—less intense focus than coffee"]
+      },
+      "gut_health": {
+        "grade": "A-",
+        "score": 87,
+        "insight": "Catechins act as prebiotics, promoting beneficial bacteria. EGCG has antimicrobial effects against harmful bacteria.",
+        "pros": ["Feeds good gut bacteria", "Reduces harmful bacteria", "Anti-inflammatory for gut lining"],
+        "cons": ["High intake on empty stomach can cause nausea in some"]
+      },
+      "blood_sugar": {
+        "grade": "A",
+        "score": 92,
+        "insight": "Zero sugar, EGCG improves insulin sensitivity by 13%. Lowers type 2 diabetes risk significantly.",
+        "pros": ["No glycemic impact", "Improves insulin function", "Reduces glucose spikes from meals"],
+        "cons": []
+      },
+      "bone_joint": {
+        "grade": "B",
+        "score": 81,
+        "insight": "EGCG may support bone formation and reduce bone loss. Some fluoride content supports dental/bone health.",
+        "pros": ["EGCG supports bone cells", "Anti-inflammatory for joints"],
+        "cons": ["No calcium", "Excess fluoride can be harmful"]
+      },
+      "anti_inflammatory": {
+        "grade": "A+",
+        "score": 96,
+        "insight": "EGCG is one of nature's most potent anti-inflammatory compounds. Reduces all major inflammatory markers.",
+        "pros": ["Exceptional EGCG content", "Lowers C-reactive protein", "Reduces oxidative stress"],
+        "cons": []
+      }
+    },
+
+    "bioavailability": {
+      "EGCG": { "absorption": "moderate", "tip": "Add lemon juice (vitamin C) to increase absorption by 6x" },
+      "caffeine": { "absorption": "high", "tip": "Lower caffeine than black tea—absorbed gradually" }
+    },
+
+    "pairWith": [
+      { "food": "lemon", "reason": "Vitamin C increases EGCG absorption dramatically" },
+      { "food": "morning routine", "reason": "Metabolism boost + calm energy to start day" }
+    ],
+    "avoidWith": [
+      { "food": "iron-rich meals", "reason": "Catechins reduce iron absorption—drink between meals" },
+      { "food": "milk", "reason": "Casein protein binds catechins, reducing benefits" }
+    ],
+
+    "bestTiming": {
+      "preWorkout": false,
+      "postWorkout": false,
+      "morning": true,
+      "beforeBed": false
+    },
+    "digestionTime": "fast",
+
+    "portionVisual": "1 cup = standard tea cup",
+    "tips": {
+      "storage": "Refrigerate or freeze green tea for maximum catechin preservation",
+      "cooking": "Steep in 160-180°F water (not boiling!) for 2-3 minutes",
+      "prepTip": "Add lemon for 6x more EGCG absorption; don't add milk"
+    },
+    "commonMistakes": [
+      "Using boiling water (destroys catechins, makes it bitter)",
+      "Adding milk (blocks catechin absorption)",
+      "Steeping too long (bitter and astringent)"
+    ],
+
+    "cautions": {
+      "liver": "Very high intake (8+ cups) on empty stomach may stress liver in rare cases",
+      "anemia": "Drink between meals to avoid iron absorption interference"
+    },
+    "pregnancySafe": true,
+    "pregnancyNotes": "Safe in moderation (1-2 cups/day). Low caffeine but still counts toward 200mg limit.",
+    "drugInteractions": [
+      "Blood thinners (vitamin K minimal)",
+      "Beta-blockers (catechins may interact)",
+      "Stimulants (additive caffeine)"
+    ],
+    "pediatric": {
+      "ageAppropriate": "Safe for children (very low caffeine)",
+      "chokingRisk": "none",
+      "commonAllergen": false
+    }
+  },
+
+  "orange_juice": {
+    "name": "Orange juice, raw",
+    "fdcId": "746771",
+    "quantity": 1,
+    "unit": "cup (240ml)",
+    "mealType": "beverage",
+    "foodGroups": ["fruit"],
+    "subCategory": "juice",
+
+    "calories": 112,
+    "protein": 1.7,
+    "carbs": 25.8,
+    "fat": 0.5,
+    "fiber": 0.5,
+    "sugar": 20.8,
+    "sodium": 2,
+    "saturatedFat": 0.1,
+    "transFat": 0,
+    "cholesterol": 0,
+    "potassium": 496,
+    "calcium": 27,
+    "iron": 0.5,
+    "magnesium": 27,
+    "zinc": 0.1,
+    "vitaminA": 12,
+    "vitaminC": 124,
+    "vitaminD": 0,
+    "vitaminE": 0.1,
+    "vitaminK": 0.2,
+    "thiamin": 0.2,
+    "riboflavin": 0.1,
+    "niacin": 1,
+    "vitaminB6": 0.1,
+    "folate": 74,
+    "vitaminB12": 0,
+    "choline": 12,
+    "phosphorus": 42,
+    "selenium": 0.2,
+    "copper": 0.1,
+    "manganese": 0,
+    "caffeine": 0,
+    "water": 213,
+    "monounsaturatedFat": 0.1,
+    "polyunsaturatedFat": 0.1,
+
+    "omega3": { "ala": 0.02, "epa": 0, "dha": 0 },
+    "omega6": { "linoleicAcid": 0.06 },
+    "omegaRatio": 3,
+
+    "glycemicIndex": 50,
+    "glycemicLoad": 13,
+    "glycemicCategory": "medium",
+    "nutrientDensityScore": 6.8,
+    "satietyScore": 25,
+    "inflammatoryIndex": -0.5,
+    "novaClass": 1,
+    "oracScore": 1820,
+
+    "dietaryTags": ["vegan", "gluten_free"],
+    "allergens": [],
+
+    "insight": "Vitamin C powerhouse but 21g sugar per cup. Whole oranges are better—fiber slows sugar absorption.",
+
+    "focusGrades": {
+      "balanced": {
+        "grade": "C+",
+        "score": 76,
+        "insight": "Excellent vitamin C and folate, but 21g natural sugar with minimal fiber. Drinking whole fruit is better.",
+        "pros": ["138% DV vitamin C", "High potassium (496mg)", "Folate-rich"],
+        "cons": ["21g sugar", "Low fiber (0.5g)", "Easy to overconsume calories"]
+      },
+      "heart_health": {
+        "grade": "B",
+        "score": 82,
+        "insight": "Hesperidin flavonoid lowers blood pressure. High potassium supports heart, but sugar content is a concern.",
+        "pros": ["Hesperidin improves blood flow", "High potassium", "Reduces LDL oxidation"],
+        "cons": ["High sugar can raise triglycerides if overconsumed"]
+      },
+      "muscle_building": {
+        "grade": "D+",
+        "score": 65,
+        "insight": "Only 1.7g protein. Quick carbs for post-workout glycogen replenishment, but better options exist.",
+        "pros": ["Quick carbs post-workout", "Vitamin C supports collagen"],
+        "cons": ["Very low protein", "High sugar without protein"]
+      },
+      "energy": {
+        "grade": "C+",
+        "score": 75,
+        "insight": "25g simple carbs provide quick energy but no sustained fuel. Blood sugar spike and crash likely.",
+        "pros": ["Immediate energy from sugar", "B vitamins support metabolism"],
+        "cons": ["Sugar crash after 1-2 hours", "No protein/fat to sustain energy"]
+      },
+      "weight_management": {
+        "grade": "D",
+        "score": 63,
+        "insight": "112 calories and 21g sugar in liquid form—doesn't trigger satiety like whole fruit. Easy to overconsume.",
+        "pros": ["Some filling from volume"],
+        "cons": ["Liquid calories don't satisfy", "21g sugar", "Low fiber", "Easy to drink multiple cups"]
+      },
+      "brain_focus": {
+        "grade": "C+",
+        "score": 74,
+        "insight": "Flavonoids and vitamin C support brain health, but sugar spike can impair focus after initial boost.",
+        "pros": ["Hesperidin improves blood flow to brain", "Vitamin C antioxidant"],
+        "cons": ["Sugar spike then crash impairs sustained focus"]
+      },
+      "gut_health": {
+        "grade": "C-",
+        "score": 68,
+        "insight": "Minimal fiber (0.5g vs. 3g in whole orange). High sugar without fiber can disrupt gut bacteria balance.",
+        "pros": ["Some vitamin C"],
+        "cons": ["Very low fiber", "High sugar", "Acidic (can worsen reflux)"]
+      },
+      "blood_sugar": {
+        "grade": "D",
+        "score": 62,
+        "insight": "21g sugar with minimal fiber causes blood sugar spike. GI=50, GL=13. Whole oranges far better.",
+        "pros": ["Natural sugar (not added)"],
+        "cons": ["Spikes blood sugar", "Minimal fiber", "Can worsen insulin resistance if consumed frequently"]
+      },
+      "bone_joint": {
+        "grade": "C+",
+        "score": 73,
+        "insight": "Vitamin C supports collagen synthesis. Minimal calcium. Hesperidin may reduce joint inflammation.",
+        "pros": ["Vitamin C for collagen", "Hesperidin anti-inflammatory"],
+        "cons": ["Low calcium (27mg)", "Acidic (may worsen inflammatory conditions in some)"]
+      },
+      "anti_inflammatory": {
+        "grade": "B-",
+        "score": 79,
+        "insight": "Hesperidin and vitamin C reduce inflammation, but high sugar can be pro-inflammatory if consumed excessively.",
+        "pros": ["Hesperidin flavonoid", "Vitamin C antioxidant", "Reduces C-reactive protein"],
+        "cons": ["High sugar can promote inflammation"]
+      }
+    },
+
+    "bioavailability": {
+      "vitaminC": { "absorption": "high", "tip": "Best absorbed on empty stomach" },
+      "hesperidin": { "absorption": "moderate", "tip": "Fat enhances absorption slightly" }
+    },
+
+    "pairWith": [
+      { "food": "protein/fat", "reason": "Slows sugar absorption—add to breakfast with eggs/nuts" },
+      { "food": "iron-rich foods", "reason": "Vitamin C enhances non-heme iron absorption" }
+    ],
+    "avoidWith": [
+      { "food": "empty stomach if prone to reflux", "reason": "Acidic—can trigger heartburn" }
+    ],
+
+    "bestTiming": {
+      "preWorkout": false,
+      "postWorkout": true,
+      "morning": true,
+      "beforeBed": false
+    },
+    "digestionTime": "fast",
+
+    "portionVisual": "1 cup = small glass (8oz)",
+    "tips": {
+      "storage": "Refrigerate; consume within 7 days of opening",
+      "cooking": "Freshly squeezed retains more vitamin C than store-bought",
+      "prepTip": "Eat whole oranges instead—3x more fiber, more filling, slower sugar release"
+    },
+    "commonMistakes": [
+      "Drinking large amounts (easy to consume 3 oranges' worth of sugar quickly)",
+      "Choosing from concentrate over fresh (lower nutrient density)",
+      "Drinking on empty stomach if prone to acid reflux"
+    ],
+
+    "cautions": {
+      "diabetes": "Monitor portions—21g sugar per cup",
+      "GERD": "Acidic—may trigger reflux",
+      "kidney_stones": "High oxalates—limit if prone to calcium oxalate stones"
+    },
+    "pregnancySafe": true,
+    "pregnancyNotes": "Excellent folate source (74mcg per cup) for fetal development. Watch sugar intake.",
+    "drugInteractions": [
+      "Certain medications (can increase drug absorption—consult pharmacist)"
+    ],
+    "pediatric": {
+      "ageAppropriate": "6+ months (dilute for babies)",
+      "chokingRisk": "none",
+      "commonAllergen": false
+    }
+  },
+
+  "cola": {
+    "name": "Cola, regular",
+    "fdcId": "174851",
+    "quantity": 1,
+    "unit": "can (355ml)",
+    "mealType": "beverage",
+    "foodGroups": ["beverage"],
+    "subCategory": "soda",
+
+    "calories": 140,
+    "protein": 0,
+    "carbs": 39,
+    "fat": 0,
+    "fiber": 0,
+    "sugar": 39,
+    "sodium": 45,
+    "saturatedFat": 0,
+    "transFat": 0,
+    "cholesterol": 0,
+    "potassium": 5,
+    "calcium": 7,
+    "iron": 0.1,
+    "magnesium": 4,
+    "zinc": 0,
+    "vitaminA": 0,
+    "vitaminC": 0,
+    "vitaminD": 0,
+    "vitaminE": 0,
+    "vitaminK": 0,
+    "thiamin": 0,
+    "riboflavin": 0,
+    "niacin": 0,
+    "vitaminB6": 0,
+    "folate": 0,
+    "vitaminB12": 0,
+    "choline": 0,
+    "phosphorus": 41,
+    "selenium": 0,
+    "copper": 0,
+    "manganese": 0,
+    "caffeine": 34,
+    "water": 313,
+    "monounsaturatedFat": 0,
+    "polyunsaturatedFat": 0,
+
+    "omega3": { "ala": 0, "epa": 0, "dha": 0 },
+    "omega6": { "linoleicAcid": 0 },
+    "omegaRatio": 0,
+
+    "glycemicIndex": 63,
+    "glycemicLoad": 25,
+    "glycemicCategory": "high",
+    "nutrientDensityScore": 1.2,
+    "satietyScore": 5,
+    "inflammatoryIndex": 3.5,
+    "novaClass": 4,
+    "oracScore": 12,
+
+    "dietaryTags": ["vegan"],
+    "allergens": [],
+
+    "insight": "Empty calories incarnate—39g sugar (10 teaspoons) with zero nutrients. One of the worst beverages for health.",
+
+    "focusGrades": {
+      "balanced": {
+        "grade": "F",
+        "score": 15,
+        "insight": "140 liquid calories from pure sugar. Zero vitamins, minerals, protein, or fiber. Nutritionally bankrupt.",
+        "pros": [],
+        "cons": ["39g added sugar (78% DV)", "Zero nutrients", "Phosphoric acid leaches calcium", "Caramel coloring concerns"]
+      },
+      "heart_health": {
+        "grade": "F",
+        "score": 12,
+        "insight": "High sugar intake linked to heart disease, high triglycerides, and increased blood pressure. Avoid.",
+        "pros": [],
+        "cons": ["Raises triglycerides", "Increases LDL", "Linked to hypertension", "Daily consumption = 29% higher heart disease risk"]
+      },
+      "muscle_building": {
+        "grade": "F",
+        "score": 20,
+        "insight": "Zero protein, zero nutrients. Sugar spikes insulin but provides no muscle-building support.",
+        "pros": ["Quick carbs if desperate post-workout (still terrible choice)"],
+        "cons": ["Zero protein", "Empty calories", "Sugar crash"]
+      },
+      "energy": {
+        "grade": "D-",
+        "score": 40,
+        "insight": "Caffeine (34mg) + sugar gives 20-minute boost, then severe crash. Not sustainable energy.",
+        "pros": ["Brief sugar rush", "Mild caffeine kick"],
+        "cons": ["Severe energy crash after 30-60 minutes", "Insulin spike causes fatigue", "Not sustained energy"]
+      },
+      "weight_management": {
+        "grade": "F",
+        "score": 8,
+        "insight": "140 empty liquid calories that don't satiate. One daily can = 15 lbs weight gain per year. Obesity driver.",
+        "pros": [],
+        "cons": ["Liquid calories don't trigger fullness", "39g sugar", "Easy to consume multiple cans", "Linked to belly fat"]
+      },
+      "brain_focus": {
+        "grade": "D-",
+        "score": 35,
+        "insight": "Sugar spike impairs focus after initial 15-minute boost. Minimal caffeine. Net negative for cognition.",
+        "pros": ["Very brief mental boost from sugar/caffeine"],
+        "cons": ["Sugar crash impairs focus", "Linked to depression/anxiety", "Low caffeine"]
+      },
+      "gut_health": {
+        "grade": "F",
+        "score": 18,
+        "insight": "High sugar feeds harmful bacteria, disrupts microbiome. Phosphoric acid irritates gut lining. Destroys gut health.",
+        "pros": [],
+        "cons": ["Feeds bad bacteria", "Disrupts microbiome balance", "Acidic (erodes tooth enamel)", "Zero fiber"]
+      },
+      "blood_sugar": {
+        "grade": "F",
+        "score": 5,
+        "insight": "39g pure sugar causes massive blood sugar spike (GL=25). Worst beverage for blood sugar control.",
+        "pros": [],
+        "cons": ["Massive glucose spike", "Insulin resistance with regular intake", "GI=63, GL=25", "Doubles diabetes risk with daily consumption"]
+      },
+      "bone_joint": {
+        "grade": "F",
+        "score": 22,
+        "insight": "Phosphoric acid leaches calcium from bones. Regular consumption linked to lower bone density and fractures.",
+        "pros": [],
+        "cons": ["Phosphoric acid reduces calcium absorption", "Minimal calcium", "Linked to osteoporosis", "Inflammation worsens joint health"]
+      },
+      "anti_inflammatory": {
+        "grade": "F",
+        "score": 10,
+        "insight": "High sugar is powerfully pro-inflammatory. Raises inflammatory markers significantly. Avoid entirely.",
+        "pros": [],
+        "cons": ["Sugar highly inflammatory", "Raises C-reactive protein", "AGEs formation", "Promotes chronic inflammation"]
+      }
+    },
+
+    "bioavailability": {
+      "sugar": { "absorption": "instant", "tip": "Absorbed immediately—spikes blood sugar within minutes" }
+    },
+
+    "pairWith": [],
+    "avoidWith": [
+      { "food": "all meals", "reason": "Provides no nutritional value and harms health" }
+    ],
+
+    "bestTiming": {
+      "preWorkout": false,
+      "postWorkout": false,
+      "morning": false,
+      "beforeBed": false
+    },
+    "digestionTime": "fast",
+
+    "portionVisual": "1 can = 12oz (avoid entirely)",
+    "tips": {
+      "storage": "N/A",
+      "cooking": "N/A",
+      "prepTip": "Replace with sparkling water + lemon, or iced tea"
+    },
+    "commonMistakes": [
+      "Thinking 'just one can' is harmless (39g sugar is massive)",
+      "Pairing with meals (displaces nutritious beverages)",
+      "Giving to children (sets up sugar addiction)"
+    ],
+
+    "cautions": {
+      "diabetes": "Absolutely avoid—spikes blood sugar dramatically",
+      "obesity": "Major contributor to weight gain",
+      "dental": "Extremely erosive to tooth enamel",
+      "kidney": "Phosphoric acid may increase kidney stone risk"
+    },
+    "pregnancySafe": false,
+    "pregnancyNotes": "Avoid—high sugar linked to gestational diabetes, excessive weight gain, and poor fetal outcomes.",
+    "drugInteractions": [],
+    "pediatric": {
+      "ageAppropriate": "Not recommended at any age",
+      "chokingRisk": "none",
+      "commonAllergen": false
+    }
+  },
+
+  "beer": {
+    "name": "Beer, regular",
+    "fdcId": "173213",
+    "quantity": 1,
+    "unit": "can (355ml, 12oz)",
+    "mealType": "beverage",
+    "foodGroups": ["alcohol"],
+    "subCategory": "alcoholic_beverage",
+
+    "calories": 153,
+    "protein": 1.6,
+    "carbs": 12.6,
+    "fat": 0,
+    "fiber": 0,
+    "sugar": 0,
+    "sodium": 14,
+    "saturatedFat": 0,
+    "transFat": 0,
+    "cholesterol": 0,
+    "potassium": 96,
+    "calcium": 14,
+    "iron": 0.1,
+    "magnesium": 21,
+    "zinc": 0,
+    "vitaminA": 0,
+    "vitaminC": 0,
+    "vitaminD": 0,
+    "vitaminE": 0,
+    "vitaminK": 0,
+    "thiamin": 0,
+    "riboflavin": 0.1,
+    "niacin": 1.8,
+    "vitaminB6": 0.2,
+    "folate": 21,
+    "vitaminB12": 0.1,
+    "choline": 18,
+    "phosphorus": 50,
+    "selenium": 2,
+    "copper": 0,
+    "manganese": 0.1,
+    "caffeine": 0,
+    "water": 327,
+    "monounsaturatedFat": 0,
+    "polyunsaturatedFat": 0,
+
+    "omega3": { "ala": 0, "epa": 0, "dha": 0 },
+    "omega6": { "linoleicAcid": 0 },
+    "omegaRatio": 0,
+
+    "glycemicIndex": 66,
+    "glycemicLoad": 8,
+    "glycemicCategory": "medium",
+
+    "nutrientDensityScore": 3.1,
+    "satietyScore": 18,
+    "inflammatoryIndex": 1.2,
+    "novaClass": 4,
+    "oracScore": 180,
+
+    "dietaryTags": ["vegan"],
+    "allergens": ["gluten"],
+
+    "insight": "153 empty calories per can, 5% alcohol. Moderate consumption (1/day men, 1/2 for women) may have heart benefits; excess is harmful.",
+
+    "focusGrades": {
+      "balanced": {
+        "grade": "D+",
+        "score": 65,
+        "insight": "Alcohol calories (7 cal/g) with minimal nutrition. B vitamins present but alcohol depletes them. Net loss.",
+        "pros": ["Some B vitamins", "Folate (21mcg)", "Minimal protein"],
+        "cons": ["Empty alcohol calories", "Alcohol impairs nutrient absorption", "Gluten content"]
+      },
+      "heart_health": {
+        "grade": "C",
+        "score": 72,
+        "insight": "Moderate intake (1/day) may raise HDL and reduce clot risk. Heavy drinking (3+) damages heart. Thin line.",
+        "pros": ["May raise HDL slightly", "Polyphenols in hops", "May reduce blood clot risk"],
+        "cons": ["Excess intake raises blood pressure", "Increases triglycerides", "Cardiomyopathy with chronic use"]
+      },
+      "muscle_building": {
+        "grade": "F",
+        "score": 25,
+        "insight": "Alcohol inhibits protein synthesis by 30%+ and lowers testosterone. Destroys muscle-building efforts.",
+        "pros": [],
+        "cons": ["Blocks protein synthesis", "Lowers testosterone", "Impairs recovery", "Dehydrates muscles"]
+      },
+      "energy": {
+        "grade": "D-",
+        "score": 38,
+        "insight": "Alcohol is a depressant—slows CNS, impairs mitochondria. Any 'buzz' is followed by fatigue and poor sleep.",
+        "pros": ["Brief initial stimulation (misleading)"],
+        "cons": ["Depressant effect", "Impairs sleep quality", "Disrupts blood sugar", "Dehydration causes fatigue"]
+      },
+      "weight_management": {
+        "grade": "D",
+        "score": 60,
+        "insight": "153 liquid calories that don't satiate. Lowers inhibitions (leads to overeating). 'Beer belly' is real.",
+        "pros": [],
+        "cons": ["153 empty calories", "Alcohol metabolism prioritized (fat burning stops)", "Increases appetite", "Visceral fat accumulation"]
+      },
+      "brain_focus": {
+        "grade": "F",
+        "score": 18,
+        "insight": "Alcohol impairs cognition, memory, reaction time immediately. Chronic use shrinks brain and causes dementia.",
+        "pros": [],
+        "cons": ["Impairs judgment and reaction time", "Disrupts neurotransmitters", "Kills brain cells", "Chronic use = dementia risk"]
+      },
+      "gut_health": {
+        "grade": "D-",
+        "score": 40,
+        "insight": "Alcohol irritates gut lining, increases intestinal permeability (leaky gut), and disrupts microbiome.",
+        "pros": ["Some probiotic yeasts (minimal benefit)"],
+        "cons": ["Irritates gut lining", "Increases permeability", "Disrupts microbiome", "Gluten can worsen for sensitive individuals"]
+      },
+      "blood_sugar": {
+        "grade": "D+",
+        "score": 64,
+        "insight": "Alcohol blocks liver glucose production—can cause hypoglycemia. Also contains carbs that raise sugar. Chaotic.",
+        "pros": [],
+        "cons": ["Can cause hypoglycemia", "Impairs glucose regulation", "Carbs raise blood sugar", "Dangerous for diabetics"]
+      },
+      "bone_joint": {
+        "grade": "D",
+        "score": 61,
+        "insight": "Alcohol interferes with calcium absorption and bone formation. Heavy use increases fracture risk.",
+        "pros": ["Minimal silicon (may support bone density slightly)"],
+        "cons": ["Reduces calcium absorption", "Impairs bone formation", "Increases fracture risk", "Inflammation"]
+      },
+      "anti_inflammatory": {
+        "grade": "D",
+        "score": 62,
+        "insight": "Small amounts may reduce some inflammatory markers, but overall alcohol is pro-inflammatory. Net negative.",
+        "pros": ["Hops have some anti-inflammatory polyphenols"],
+        "cons": ["Alcohol increases gut inflammation", "Raises C-reactive protein with excess", "Triggers inflammatory pathways"]
+      }
+    },
+
+    "bioavailability": {
+      "alcohol": { "absorption": "high", "tip": "Absorbed quickly on empty stomach—eat food to slow absorption" }
+    },
+
+    "pairWith": [
+      { "food": "food", "reason": "Slows alcohol absorption and reduces gut irritation" }
+    ],
+    "avoidWith": [
+      { "food": "medications", "reason": "Many drug interactions—consult doctor" }
+    ],
+
+    "bestTiming": {
+      "preWorkout": false,
+      "postWorkout": false,
+      "morning": false,
+      "beforeBed": false
+    },
+    "digestionTime": "fast",
+
+    "portionVisual": "1 can = 12oz standard beer",
+    "tips": {
+      "storage": "Cool, dark place; refrigerate for best quality",
+      "cooking": "N/A",
+      "prepTip": "If drinking, limit to 1/day max for men, 1/2 for women. Alternate with water."
+    },
+    "commonMistakes": [
+      "Thinking 'just a couple beers' is harmless (3+ = heavy drinking)",
+      "Drinking post-workout (blocks muscle recovery)",
+      "Driving after even one drink (impairs reaction time)"
+    ],
+
+    "cautions": {
+      "pregnancy": "ABSOLUTELY AVOID—no safe amount during pregnancy",
+      "liver_disease": "Avoid entirely",
+      "diabetes": "Can cause dangerous hypoglycemia",
+      "medication": "Many interactions—consult doctor"
+    },
+    "pregnancySafe": false,
+    "pregnancyNotes": "AVOID ENTIRELY. Alcohol causes fetal alcohol syndrome and developmental issues. No safe amount.",
+    "drugInteractions": [
+      "Antibiotics",
+      "Antidepressants",
+      "Diabetes medications (dangerous hypoglycemia)",
+      "Blood thinners",
+      "Pain medications"
+    ],
+    "pediatric": {
+      "ageAppropriate": "NEVER—illegal and harmful for developing brains",
+      "chokingRisk": "none",
+      "commonAllergen": "gluten"
+    }
+  },
+
+  "red_wine": {
+    "name": "Wine, red",
+    "fdcId": "173218",
+    "quantity": 1,
+    "unit": "glass (150ml, 5oz)",
+    "mealType": "beverage",
+    "foodGroups": ["alcohol"],
+    "subCategory": "alcoholic_beverage",
+
+    "calories": 125,
+    "protein": 0.1,
+    "carbs": 3.8,
+    "fat": 0,
+    "fiber": 0,
+    "sugar": 0.9,
+    "sodium": 6,
+    "saturatedFat": 0,
+    "transFat": 0,
+    "cholesterol": 0,
+    "potassium": 187,
+    "calcium": 12,
+    "iron": 0.7,
+    "magnesium": 18,
+    "zinc": 0.2,
+    "vitaminA": 0,
+    "vitaminC": 0,
+    "vitaminD": 0,
+    "vitaminE": 0,
+    "vitaminK": 0,
+    "thiamin": 0,
+    "riboflavin": 0,
+    "niacin": 0.3,
+    "vitaminB6": 0.1,
+    "folate": 2,
+    "vitaminB12": 0,
+    "choline": 8,
+    "phosphorus": 34,
+    "selenium": 0.3,
+    "copper": 0,
+    "manganese": 0.2,
+    "caffeine": 0,
+    "water": 143,
+    "monounsaturatedFat": 0,
+    "polyunsaturatedFat": 0,
+
+    "omega3": { "ala": 0, "epa": 0, "dha": 0 },
+    "omega6": { "linoleicAcid": 0 },
+    "omegaRatio": 0,
+
+    "glycemicIndex": 0,
+    "glycemicLoad": 0,
+    "glycemicCategory": "none",
+    "nutrientDensityScore": 4.2,
+    "satietyScore": 10,
+    "inflammatoryIndex": -0.8,
+    "novaClass": 1,
+    "oracScore": 3873,
+
+    "dietaryTags": ["vegan", "gluten_free"],
+    "allergens": ["sulfites"],
+
+    "insight": "Resveratrol and polyphenols offer heart benefits, but alcohol is still alcohol. 1 glass max/day for women, 2 for men.",
+
+    "focusGrades": {
+      "balanced": {
+        "grade": "C",
+        "score": 70,
+        "insight": "Resveratrol and polyphenols provide antioxidants, but alcohol negates many benefits. Moderate at best.",
+        "pros": ["Resveratrol antioxidant", "Polyphenols (quercetin, catechins)", "Potassium (187mg)"],
+        "cons": ["Alcohol calories (7 cal/g)", "Impairs nutrient absorption", "Easy to overconsume"]
+      },
+      "heart_health": {
+        "grade": "B",
+        "score": 80,
+        "insight": "Resveratrol raises HDL, improves endothelial function. 1 glass/day linked to 30% lower heart disease. More = harmful.",
+        "pros": ["Resveratrol protects arteries", "Raises HDL cholesterol", "Reduces LDL oxidation", "Anti-clotting effects"],
+        "cons": ["Excess (2+ glasses) raises blood pressure", "Increases triglycerides", "Alcohol is still a toxin"]
+      },
+      "muscle_building": {
+        "grade": "F",
+        "score": 22,
+        "insight": "Alcohol blocks protein synthesis and lowers testosterone. Resveratrol doesn't offset these negatives.",
+        "pros": [],
+        "cons": ["Inhibits protein synthesis 30%+", "Lowers testosterone", "Impairs recovery", "Dehydrates"]
+      },
+      "energy": {
+        "grade": "D",
+        "score": 60,
+        "insight": "Alcohol is a CNS depressant. Initial 'relaxation' is followed by poor sleep quality and next-day fatigue.",
+        "pros": ["May help relaxation (social context)"],
+        "cons": ["Depressant effect", "Disrupts REM sleep", "Dehydration causes fatigue", "Impairs mitochondria"]
+      },
+      "weight_management": {
+        "grade": "D+",
+        "score": 66,
+        "insight": "125 calories that don't satiate. Alcohol metabolism stops fat burning. Lowers inhibitions → overeating.",
+        "pros": ["Lower calories than beer"],
+        "cons": ["Stops fat burning while metabolizing alcohol", "Increases appetite", "Liquid calories", "Visceral fat with excess"]
+      },
+      "brain_focus": {
+        "grade": "D+",
+        "score": 64,
+        "insight": "Resveratrol may protect brain long-term, but acute alcohol impairs cognition, memory, and reaction time.",
+        "pros": ["Resveratrol neuroprotective (long-term)", "May reduce dementia risk with very moderate intake"],
+        "cons": ["Immediate cognitive impairment", "Disrupts neurotransmitters", "Chronic excess = brain damage"]
+      },
+      "gut_health": {
+        "grade": "D+",
+        "score": 67,
+        "insight": "Polyphenols support gut bacteria, but alcohol irritates gut lining and increases permeability.",
+        "pros": ["Polyphenols are prebiotic", "Some antimicrobial benefits"],
+        "cons": ["Alcohol irritates gut lining", "Increases intestinal permeability", "Can worsen IBS"]
+      },
+      "blood_sugar": {
+        "grade": "C-",
+        "score": 69,
+        "insight": "Low carbs (3.8g), but alcohol blocks liver glucose output—can cause hypoglycemia, especially for diabetics.",
+        "pros": ["Low sugar", "Resveratrol may improve insulin sensitivity"],
+        "cons": ["Alcohol blocks glucose production", "Risk of hypoglycemia", "Impairs glucose regulation"]
+      },
+      "bone_joint": {
+        "grade": "C",
+        "score": 70,
+        "insight": "Resveratrol may support bone health in small amounts, but alcohol impairs calcium absorption overall.",
+        "pros": ["Resveratrol may support bone formation", "Some silicon content"],
+        "cons": ["Alcohol reduces calcium absorption", "Excess increases fracture risk"]
+      },
+      "anti_inflammatory": {
+        "grade": "B-",
+        "score": 78,
+        "insight": "Resveratrol and quercetin are anti-inflammatory, but alcohol itself promotes inflammation. Net benefit only if very moderate.",
+        "pros": ["Resveratrol reduces inflammation", "Quercetin antioxidant", "Lowers C-reactive protein (moderate intake)"],
+        "cons": ["Alcohol is pro-inflammatory in excess", "Gut inflammation"]
+      }
+    },
+
+    "bioavailability": {
+      "resveratrol": { "absorption": "moderate", "tip": "Better absorbed with food (fat enhances absorption)" },
+      "alcohol": { "absorption": "high", "tip": "Absorbed quickly—food slows absorption" }
+    },
+
+    "pairWith": [
+      { "food": "Mediterranean meal", "reason": "Food slows alcohol absorption; classic pairing with healthy fats" },
+      { "food": "cheese/nuts", "reason": "Fat enhances resveratrol absorption" }
+    ],
+    "avoidWith": [
+      { "food": "medications", "reason": "Many interactions—consult doctor" }
+    ],
+
+    "bestTiming": {
+      "preWorkout": false,
+      "postWorkout": false,
+      "morning": false,
+      "beforeBed": false
+    },
+    "digestionTime": "fast",
+
+    "portionVisual": "1 glass = 5oz (smaller than typical wine glass pour)",
+    "tips": {
+      "storage": "Cool, dark place; recork opened bottles and refrigerate",
+      "cooking": "N/A",
+      "prepTip": "Measure 5oz—standard pours are often 7-9oz. Max 1 glass/day women, 2 for men."
+    },
+    "commonMistakes": [
+      "Pouring 8-10oz and calling it 'one glass' (it's 2 servings)",
+      "Thinking 'it's healthy' justifies daily drinking (benefits are marginal)",
+      "Drinking post-workout (blocks recovery)"
+    ],
+
+    "cautions": {
+      "pregnancy": "ABSOLUTELY AVOID—no safe amount",
+      "liver_disease": "Avoid entirely",
+      "breast_cancer_risk": "Even moderate alcohol increases risk—discuss with doctor",
+      "medications": "Many interactions"
+    },
+    "pregnancySafe": false,
+    "pregnancyNotes": "AVOID ENTIRELY. Alcohol causes fetal alcohol syndrome. No safe amount during pregnancy.",
+    "drugInteractions": [
+      "Antibiotics",
+      "Antidepressants",
+      "Diabetes medications",
+      "Blood thinners",
+      "Pain medications"
+    ],
+    "pediatric": {
+      "ageAppropriate": "NEVER—illegal and harmful",
+      "chokingRisk": "none",
+      "commonAllergen": "sulfites"
+    }
+  },
+
+  "dark_chocolate": {
+    "name": "Chocolate, dark, 70-85% cacao",
+    "fdcId": "170273",
+    "quantity": 1,
+    "unit": "ounce (28g, ~3 squares)",
+    "mealType": "snack",
+    "foodGroups": ["sweets"],
+    "subCategory": "chocolate",
+
+    "calories": 170,
+    "protein": 2.2,
+    "carbs": 13,
+    "fat": 12,
+    "fiber": 3.1,
+    "sugar": 6.8,
+    "sodium": 6,
+    "saturatedFat": 7,
+    "transFat": 0,
+    "cholesterol": 2,
+    "potassium": 200,
+    "calcium": 21,
+    "iron": 3.4,
+    "magnesium": 64,
+    "zinc": 0.9,
+    "vitaminA": 1,
+    "vitaminC": 0,
+    "vitaminD": 0,
+    "vitaminE": 0.2,
+    "vitaminK": 2.5,
+    "thiamin": 0,
+    "riboflavin": 0,
+    "niacin": 0.3,
+    "vitaminB6": 0,
+    "folate": 8,
+    "vitaminB12": 0.1,
+    "choline": 14,
+    "phosphorus": 87,
+    "selenium": 1.9,
+    "copper": 0.5,
+    "manganese": 0.6,
+    "caffeine": 23,
+    "water": 1,
+    "monounsaturatedFat": 3.6,
+    "polyunsaturatedFat": 0.4,
+
+    "omega3": { "ala": 0.04, "epa": 0, "dha": 0 },
+    "omega6": { "linoleicAcid": 0.35 },
+    "omegaRatio": 8.8,
+
+    "glycemicIndex": 23,
+    "glycemicLoad": 3,
+    "glycemicCategory": "low",
+    "nutrientDensityScore": 7.8,
+    "satietyScore": 68,
+    "inflammatoryIndex": -1.9,
+    "novaClass": 3,
+    "oracScore": 13120,
+
+    "dietaryTags": ["vegetarian", "gluten_free"],
+    "allergens": ["milk_trace"],
+
+    "insight": "Flavanol-rich superfood with 64mg magnesium and exceptional antioxidants. Choose 70%+ cacao and limit to 1oz daily.",
+
+    "focusGrades": {
+      "balanced": {
+        "grade": "B",
+        "score": 82,
+        "insight": "High in healthy fats, magnesium, iron, and fiber. Moderate calories and sugar if limited to 1oz. Quality matters.",
+        "pros": ["64mg magnesium (16% DV)", "3.4mg iron (19% DV)", "3g fiber", "Flavanols"],
+        "cons": ["170 calories/oz", "7g saturated fat", "Easy to overconsume"]
+      },
+      "heart_health": {
+        "grade": "A-",
+        "score": 88,
+        "insight": "Flavanols lower blood pressure, improve blood flow, and reduce LDL oxidation. 1oz daily linked to 30% lower heart disease risk.",
+        "pros": ["Flavanols improve endothelial function", "Lowers blood pressure", "Reduces LDL oxidation", "Increases HDL"],
+        "cons": ["Saturated fat (mostly neutral stearic acid)", "Calories add up"]
+      },
+      "muscle_building": {
+        "grade": "C",
+        "score": 71,
+        "insight": "Minimal protein (2g). Magnesium supports muscle function, but not a muscle-building food.",
+        "pros": ["Magnesium for muscle contraction", "Some flavanols reduce exercise inflammation"],
+        "cons": ["Only 2g protein", "High fat/calories"]
+      },
+      "energy": {
+        "grade": "B",
+        "score": 81,
+        "insight": "Theobromine (mild stimulant) + 23mg caffeine + magnesium provide sustained, calm energy. Fat slows digestion.",
+        "pros": ["Theobromine provides gentle, long-lasting energy", "Magnesium supports energy production", "Low glycemic (no crash)"],
+        "cons": ["Not immediate energy", "Moderate calories"]
+      },
+      "weight_management": {
+        "grade": "C+",
+        "score": 75,
+        "insight": "170 calories/oz dense but satiating. Flavanols may boost metabolism slightly. Portion control essential.",
+        "pros": ["High satiety from fiber + fat", "May reduce cravings for sweets", "Flavanols boost metabolism slightly"],
+        "cons": ["Calorie-dense (easy to eat 3oz = 510 calories)", "Still a treat"]
+      },
+      "brain_focus": {
+        "grade": "A-",
+        "score": 87,
+        "insight": "Flavanols increase cerebral blood flow, improving cognition and memory. Theobromine and caffeine enhance focus.",
+        "pros": ["Increases brain blood flow", "Improves cognitive function", "Neuroprotective flavanols", "Theobromine + caffeine synergy"],
+        "cons": ["Effect is moderate (not as strong as coffee)"]
+      },
+      "gut_health": {
+        "grade": "B+",
+        "score": 84,
+        "insight": "3g fiber and polyphenols act as prebiotics, feeding beneficial bacteria. Cocoa is a gut microbiome superstar.",
+        "pros": ["Prebiotic polyphenols", "3g fiber", "Feeds Lactobacillus and Bifidobacteria"],
+        "cons": ["Some people sensitive to theobromine (GI upset)"]
+      },
+      "blood_sugar": {
+        "grade": "B+",
+        "score": 85,
+        "insight": "Low GI (23), low GL (3). Fiber and fat slow sugar absorption. Flavanols improve insulin sensitivity.",
+        "pros": ["Low glycemic impact", "Improves insulin sensitivity", "3g fiber slows sugar absorption"],
+        "cons": ["Still contains 7g sugar"]
+      },
+      "bone_joint": {
+        "grade": "B",
+        "score": 80,
+        "insight": "Magnesium (64mg) and flavanols support bone health. Anti-inflammatory for joints.",
+        "pros": ["Magnesium for bone formation", "Flavanols reduce inflammation", "Some calcium"],
+        "cons": ["Not a primary bone food"]
+      },
+      "anti_inflammatory": {
+        "grade": "A",
+        "score": 90,
+        "insight": "Exceptionally high in anti-inflammatory flavanols. Reduces C-reactive protein and oxidative stress significantly.",
+        "pros": ["Very high flavanol content", "Reduces inflammatory markers", "ORAC score 13,120", "Polyphenol-rich"],
+        "cons": ["Choose high % cacao (70%+) for max benefits"]
+      }
+    },
+
+    "bioavailability": {
+      "flavanols": { "absorption": "moderate", "tip": "Absorbed better without milk (milk binds flavanols)" },
+      "magnesium": { "absorption": "moderate", "tip": "Well absorbed from chocolate" },
+      "iron": { "absorption": "low", "tip": "Non-heme iron—pair with vitamin C for better absorption" }
+    },
+
+    "pairWith": [
+      { "food": "berries", "reason": "Amplifies antioxidant benefits" },
+      { "food": "nuts", "reason": "Adds protein and healthy fats for balanced snack" }
+    ],
+    "avoidWith": [
+      { "food": "milk", "reason": "Casein protein reduces flavanol absorption" }
+    ],
+
+    "bestTiming": {
+      "preWorkout": false,
+      "postWorkout": false,
+      "morning": false,
+      "beforeBed": false
+    },
+    "digestionTime": "moderate",
+
+    "portionVisual": "1oz = about 3 small squares (size of your thumb)",
+    "tips": {
+      "storage": "Cool, dry place (NOT fridge—causes bloom). 60-70°F ideal.",
+      "cooking": "Choose 70-85% cacao for max flavanols; 90%+ can be too bitter",
+      "prepTip": "Let melt on tongue slowly to savor and prevent overconsumption"
+    },
+    "commonMistakes": [
+      "Eating 3-4oz thinking it's healthy (510-680 calories!)",
+      "Choosing milk chocolate (much less flavanols, more sugar)",
+      "Eating with milk (blocks flavanol absorption)"
+    ],
+
+    "cautions": {
+      "migraines": "Theobromine and caffeine can trigger migraines in sensitive individuals",
+      "kidney_stones": "High oxalates—limit if prone to calcium oxalate stones",
+      "pets": "Toxic to dogs and cats (theobromine)"
+    },
+    "pregnancySafe": true,
+    "pregnancyNotes": "Safe in moderation (1oz/day). Limit caffeine intake overall to 200mg/day.",
+    "drugInteractions": [
+      "Stimulants (additive caffeine effects)",
+      "MAOIs (tyramine content)"
+    ],
+    "pediatric": {
+      "ageAppropriate": "1+ year (small amounts)",
+      "chokingRisk": "low (can be choking hazard if large pieces)",
+      "commonAllergen": "milk (trace amounts from processing)"
+    }
+  },
+
+  "olive_oil": {
+    "name": "Olive Oil, extra virgin",
+    "fdcId": "171413",
+    "quantity": 1,
+    "unit": "tablespoon (14g)",
+    "mealType": "condiment",
+    "foodGroups": ["fat"],
+    "subCategory": "healthy_oil",
+
+    "calories": 119,
+    "protein": 0,
+    "carbs": 0,
+    "fat": 13.5,
+    "fiber": 0,
+    "sugar": 0,
+    "sodium": 0,
+    "saturatedFat": 1.9,
+    "transFat": 0,
+    "cholesterol": 0,
+    "potassium": 0,
+    "calcium": 0,
+    "iron": 0.1,
+    "magnesium": 0,
+    "zinc": 0,
+    "vitaminA": 0,
+    "vitaminC": 0,
+    "vitaminD": 0,
+    "vitaminE": 1.9,
+    "vitaminK": 8.1,
+    "thiamin": 0,
+    "riboflavin": 0,
+    "niacin": 0,
+    "vitaminB6": 0,
+    "folate": 0,
+    "vitaminB12": 0,
+    "choline": 0,
+    "phosphorus": 0,
+    "selenium": 0,
+    "copper": 0,
+    "manganese": 0,
+    "caffeine": 0,
+    "water": 0,
+    "monounsaturatedFat": 9.9,
+    "polyunsaturatedFat": 1.4,
+
+    "omega3": { "ala": 0.1, "epa": 0, "dha": 0 },
+    "omega6": { "linoleicAcid": 1.3 },
+    "omegaRatio": 13,
+
+    "glycemicIndex": 0,
+    "glycemicLoad": 0,
+    "glycemicCategory": "none",
+    "nutrientDensityScore": 8.5,
+    "satietyScore": 35,
+    "inflammatoryIndex": -2.8,
+    "novaClass": 2,
+    "oracScore": 372,
+
+    "dietaryTags": ["vegan", "gluten_free", "keto", "paleo", "whole30", "mediterranean"],
+    "allergens": [],
+
+    "insight": "Liquid gold of the Mediterranean diet—rich in heart-healthy monounsaturated fats and antioxidants. Use for cooking and dressings.",
+
+    "focusGrades": {
+      "balanced": {
+        "grade": "B",
+        "score": 80,
+        "insight": "Pure fat with beneficial monounsaturated fatty acids and vitamin E. Essential but use in moderation.",
+        "pros": ["High in healthy MUFA", "Vitamin E antioxidant", "Vitamin K"],
+        "cons": ["Pure calories with no protein/fiber", "Easy to overconsume"]
+      },
+      "heart_health": {
+        "grade": "A",
+        "score": 92,
+        "insight": "73% monounsaturated fat (oleic acid) raises HDL and lowers LDL. Core of Mediterranean diet's heart benefits.",
+        "pros": ["Exceptional MUFA content", "Lowers LDL cholesterol", "Raises HDL"],
+        "cons": ["Still calorie-dense"]
+      },
+      "muscle_building": {
+        "grade": "D",
+        "score": 62,
+        "insight": "Zero protein. Useful only for adding calories during bulking or for cooking protein sources.",
+        "pros": ["Calorie-dense for bulking"],
+        "cons": ["Zero protein", "Doesn't support muscle directly"]
+      },
+      "energy": {
+        "grade": "C+",
+        "score": 74,
+        "insight": "High calories but fat provides slow-burning energy. No B-vitamins or quick fuel.",
+        "pros": ["Sustained energy from fat"],
+        "cons": ["No quick energy", "No B-vitamins"]
+      },
+      "weight_management": {
+        "grade": "C",
+        "score": 70,
+        "insight": "119 calories per tablespoon adds up fast. Healthy but calorie-dense—measure carefully.",
+        "pros": ["Adds satiety to meals"],
+        "cons": ["Very calorie-dense", "Easy to overuse"]
+      },
+      "brain_focus": {
+        "grade": "B+",
+        "score": 84,
+        "insight": "Polyphenols and vitamin E protect brain cells. MUFA supports cell membrane integrity.",
+        "pros": ["Brain-protective polyphenols", "Vitamin E antioxidant"],
+        "cons": ["No omega-3 DHA"]
+      },
+      "gut_health": {
+        "grade": "C+",
+        "score": 75,
+        "insight": "No fiber, but polyphenols may support gut microbiome. Can ease constipation.",
+        "pros": ["Polyphenols support microbiome", "Lubricates digestion"],
+        "cons": ["No fiber"]
+      },
+      "blood_sugar": {
+        "grade": "A",
+        "score": 93,
+        "insight": "Zero carbs, zero glycemic impact. Adding to meals slows glucose absorption from carbs.",
+        "pros": ["No glycemic impact", "Slows carb absorption when combined"],
+        "cons": []
+      },
+      "bone_joint": {
+        "grade": "C",
+        "score": 70,
+        "insight": "Vitamin K (8.1mcg) provides modest bone support. No calcium or vitamin D.",
+        "pros": ["Some vitamin K"],
+        "cons": ["No calcium", "No vitamin D"]
+      },
+      "anti_inflammatory": {
+        "grade": "A",
+        "score": 91,
+        "insight": "Oleocanthal compound has ibuprofen-like anti-inflammatory effects. High polyphenol EVOO is medicinal.",
+        "pros": ["Oleocanthal anti-inflammatory", "Polyphenol antioxidants"],
+        "cons": ["Choose extra virgin for max benefits"]
+      }
+    },
+
+    "bioavailability": {
+      "vitaminE": { "absorption": "high", "tip": "Fat-soluble—absorbs well in oil matrix" },
+      "vitaminK": { "absorption": "high", "tip": "Fat-soluble—absorbs well" }
+    },
+
+    "pairWith": [
+      { "food": "vegetables", "reason": "Fat helps absorb fat-soluble vitamins A, D, E, K from veggies" },
+      { "food": "tomatoes", "reason": "Increases lycopene absorption" },
+      { "food": "salad", "reason": "Classic Mediterranean pairing" }
+    ],
+    "avoidWith": [],
+
+    "bestTiming": {
+      "preWorkout": false,
+      "postWorkout": false,
+      "morning": true,
+      "beforeBed": true
+    },
+    "digestionTime": "slow",
+
+    "portionVisual": "1 tablespoon = about the size of your thumb tip",
+    "tips": {
+      "storage": "Cool, dark place; use within 2 months of opening",
+      "cooking": "EVOO up to 375°F; use regular olive oil for high heat",
+      "prepTip": "Look for harvest date, not just expiration—fresher = more polyphenols"
+    },
+    "commonMistakes": [
+      "Using too much (measure with a spoon)",
+      "Buying refined olive oil thinking it's the same (EVOO has more polyphenols)"
+    ],
+
+    "cautions": {
+      "gallbladder": "High fat—may trigger symptoms if gallbladder issues",
+      "weight_loss": "Measure portions—easy to add 500+ calories unknowingly"
+    },
+    "pregnancySafe": true,
+    "pregnancyNotes": "Excellent during pregnancy—healthy fats support fetal brain development",
+    "drugInteractions": [],
+    "pediatric": {
+      "ageAppropriate": "6+ months (add to foods)",
+      "chokingRisk": "none",
+      "commonAllergen": false
+    }
+  },
+
+  "pizza_cheese": {
+    "name": "Pizza, cheese, regular crust",
+    "fdcId": "173420",
+    "quantity": 1,
+    "unit": "slice (107g, 1/8 of 14-inch pizza)",
+    "mealType": "meal",
+    "foodGroups": ["grain", "dairy", "vegetable"],
+    "subCategory": "fast_food",
+
+    "calories": 272,
+    "protein": 12.2,
+    "carbs": 33.6,
+    "fat": 9.8,
+    "fiber": 1.9,
+    "sugar": 3.8,
+    "sodium": 551,
+    "saturatedFat": 4.1,
+    "transFat": 0.2,
+    "cholesterol": 18,
+    "potassium": 184,
+    "calcium": 220,
+    "iron": 2.5,
+    "magnesium": 25,
+    "zinc": 1.4,
+    "vitaminA": 75,
+    "vitaminC": 1.2,
+    "vitaminD": 0.2,
+    "vitaminE": 0.6,
+    "vitaminK": 5.4,
+    "thiamin": 0.3,
+    "riboflavin": 0.3,
+    "niacin": 3.8,
+    "vitaminB6": 0.1,
+    "folate": 85,
+    "vitaminB12": 0.5,
+    "choline": 23,
+    "phosphorus": 230,
+    "selenium": 21,
+    "copper": 0.1,
+    "manganese": 0.4,
+    "caffeine": 0,
+    "water": 52,
+    "monounsaturatedFat": 3.2,
+    "polyunsaturatedFat": 1.8,
+
+    "omega3": { "ala": 0.2, "epa": 0, "dha": 0 },
+    "omega6": { "linoleicAcid": 1.5 },
+    "omegaRatio": 7.5,
+
+    "glycemicIndex": 60,
+    "glycemicLoad": 20,
+    "glycemicCategory": "medium",
+    "nutrientDensityScore": 5.2,
+    "satietyScore": 55,
+    "inflammatoryIndex": 1.8,
+    "novaClass": 4,
+    "oracScore": 240,
+
+    "dietaryTags": ["vegetarian"],
+    "allergens": ["gluten", "dairy"],
+
+    "insight": "Comfort food with 551mg sodium per slice and moderate calories. Occasional treat—not a regular meal.",
+
+    "focusGrades": {
+      "balanced": {
+        "grade": "D+",
+        "score": 66,
+        "insight": "Has protein, calcium, and iron, but high in sodium, refined carbs, and saturated fat. Ultra-processed.",
+        "pros": ["12g protein", "220mg calcium (22% DV)", "2.5mg iron"],
+        "cons": ["551mg sodium (24% DV)", "Refined white flour", "Low fiber (1.9g)", "Ultra-processed (NOVA 4)"]
+      },
+      "heart_health": {
+        "grade": "D",
+        "score": 60,
+        "insight": "High sodium raises blood pressure. Saturated fat and trans fat negatively impact cholesterol.",
+        "pros": ["Some lycopene from tomato sauce"],
+        "cons": ["551mg sodium per slice", "Saturated fat", "Trans fat (0.2g)", "Contributes to hypertension"]
+      },
+      "muscle_building": {
+        "grade": "C",
+        "score": 72,
+        "insight": "12g protein is decent but comes with excess sodium and refined carbs. Not optimal for muscle building.",
+        "pros": ["12g protein from cheese", "Iron for oxygen transport"],
+        "cons": ["Incomplete protein profile", "High sodium causes water retention", "Refined carbs"]
+      },
+      "energy": {
+        "grade": "D+",
+        "score": 64,
+        "insight": "Refined carbs provide quick energy spike followed by crash. Not sustained fuel.",
+        "pros": ["Immediate energy from carbs", "B vitamins (enriched flour)"],
+        "cons": ["Blood sugar spike and crash", "Low fiber", "Heavy digestion drains energy"]
+      },
+      "weight_management": {
+        "grade": "D-",
+        "score": 58,
+        "insight": "272 calories per slice, and who eats just one? 2-3 slices = 544-816 calories. Easy to overconsume.",
+        "pros": ["Moderate protein adds some satiety"],
+        "cons": ["Easy to eat multiple slices", "Refined carbs don't satisfy", "High calorie density", "Triggers overeating"]
+      },
+      "brain_focus": {
+        "grade": "D",
+        "score": 61,
+        "insight": "Refined carbs spike blood sugar, causing mental fog after initial boost. High sodium can impair cognition.",
+        "pros": ["Brief glucose boost to brain"],
+        "cons": ["Blood sugar crash impairs focus", "Heavy meal diverts blood to digestion", "Sodium can cause brain fog"]
+      },
+      "gut_health": {
+        "grade": "D",
+        "score": 63,
+        "insight": "Low fiber (1.9g), refined flour, and high fat slow digestion. Ultra-processed ingredients disrupt microbiome.",
+        "pros": ["Some tomato sauce (lycopene)"],
+        "cons": ["Low fiber", "Refined grains", "High fat slows digestion", "Ultra-processed"]
+      },
+      "blood_sugar": {
+        "grade": "D",
+        "score": 62,
+        "insight": "Refined white crust spikes blood sugar (GI=60, GL=20). Fat and protein help slightly but still poor.",
+        "pros": ["Fat and protein slow sugar absorption somewhat"],
+        "cons": ["Refined carbs", "High glycemic load (20)", "Low fiber"]
+      },
+      "bone_joint": {
+        "grade": "C+",
+        "score": 73,
+        "insight": "220mg calcium (22% DV) is excellent, but high sodium can increase calcium excretion.",
+        "pros": ["High calcium from cheese", "Vitamin D (minimal)", "Phosphorus"],
+        "cons": ["High sodium reduces calcium retention", "Saturated fat can promote inflammation"]
+      },
+      "anti_inflammatory": {
+        "grade": "D",
+        "score": 63,
+        "insight": "Refined carbs, saturated fat, and trans fat are pro-inflammatory. Lycopene helps slightly but not enough.",
+        "pros": ["Lycopene from tomato sauce"],
+        "cons": ["Refined carbs inflammatory", "Saturated fat", "Trans fat", "High omega-6:omega-3 ratio"]
+      }
+    },
+
+    "bioavailability": {
+      "calcium": { "absorption": "high", "tip": "Cheese is excellent calcium source" },
+      "lycopene": { "absorption": "high", "tip": "Cooked tomato sauce with fat enhances lycopene absorption" }
+    },
+
+    "pairWith": [
+      { "food": "side salad", "reason": "Adds fiber, vitamins, and balances the meal" }
+    ],
+    "avoidWith": [
+      { "food": "more pizza", "reason": "Easy to overconsume—stick to 1-2 slices" }
+    ],
+
+    "bestTiming": {
+      "preWorkout": false,
+      "postWorkout": false,
+      "morning": false,
+      "beforeBed": false
+    },
+    "digestionTime": "slow",
+
+    "portionVisual": "1 slice = 1/8 of large pizza (palm-sized triangle)",
+    "tips": {
+      "storage": "Refrigerate within 2 hours; reheat in oven for best texture",
+      "cooking": "N/A (typically purchased)",
+      "prepTip": "Choose thin crust and load with vegetables to improve nutrition. Limit to 2 slices."
+    },
+    "commonMistakes": [
+      "Eating 3-4 slices in one sitting (816-1088 calories!)",
+      "Choosing thick crust or stuffed crust (doubles calories)",
+      "Skipping vegetables (no fiber, vitamins)"
+    ],
+
+    "cautions": {
+      "hypertension": "551mg sodium per slice—avoid or limit strictly",
+      "gluten_sensitivity": "Contains wheat—choose gluten-free crust if needed",
+      "lactose_intolerance": "High dairy content"
+    },
+    "pregnancySafe": true,
+    "pregnancyNotes": "Safe if fully cooked and pasteurized cheese. Watch sodium and portion size.",
+    "drugInteractions": [],
+    "pediatric": {
+      "ageAppropriate": "12+ months (small amounts)",
+      "chokingRisk": "moderate (stringy cheese can be hazard for young children)",
+      "commonAllergen": "gluten, dairy"
+    }
+  },
+
+  "french_fries": {
+    "name": "French fries, fast food",
+    "fdcId": "173432",
+    "quantity": 1,
+    "unit": "medium serving (117g)",
+    "mealType": "side",
+    "foodGroups": ["vegetable", "fat"],
+    "subCategory": "fast_food",
+
+    "calories": 365,
+    "protein": 3.8,
+    "carbs": 48,
+    "fat": 17,
+    "fiber": 4.2,
+    "sugar": 0.3,
+    "sodium": 246,
+    "saturatedFat": 3.1,
+    "transFat": 0.1,
+    "cholesterol": 0,
+    "potassium": 572,
+    "calcium": 16,
+    "iron": 0.8,
+    "magnesium": 36,
+    "zinc": 0.5,
+    "vitaminA": 0,
+    "vitaminC": 4.2,
+    "vitaminD": 0,
+    "vitaminE": 2.1,
+    "vitaminK": 7.8,
+    "thiamin": 0.2,
+    "riboflavin": 0,
+    "niacin": 3.3,
+    "vitaminB6": 0.3,
+    "folate": 28,
+    "vitaminB12": 0,
+    "choline": 13,
+    "phosphorus": 135,
+    "selenium": 2,
+    "copper": 0.1,
+    "manganese": 0.2,
+    "caffeine": 0,
+    "water": 47,
+    "monounsaturatedFat": 8.3,
+    "polyunsaturatedFat": 4.7,
+
+    "omega3": { "ala": 0.7, "epa": 0, "dha": 0 },
+    "omega6": { "linoleicAcid": 4 },
+    "omegaRatio": 5.7,
+
+    "glycemicIndex": 75,
+    "glycemicLoad": 36,
+    "glycemicCategory": "high",
+    "nutrientDensityScore": 3.8,
+    "satietyScore": 45,
+    "inflammatoryIndex": 2.9,
+    "novaClass": 4,
+    "oracScore": 680,
+
+    "dietaryTags": ["vegan"],
+    "allergens": [],
+
+    "insight": "Deep-fried starch bombs—365 calories, high glycemic load, and inflammatory oils. Occasional indulgence only.",
+
+    "focusGrades": {
+      "balanced": {
+        "grade": "F",
+        "score": 38,
+        "insight": "High calories, refined carbs, and inflammatory oils with minimal nutritional value. Potassium is only redeeming quality.",
+        "pros": ["572mg potassium", "4g fiber", "Some vitamin B6"],
+        "cons": ["365 calories from oil + starch", "High omega-6 oils", "Refined carbs", "Ultra-processed", "Trans fats"]
+      },
+      "heart_health": {
+        "grade": "F",
+        "score": 28,
+        "insight": "Deep-fried in inflammatory oils. High GL spikes triglycerides. Trans fats damage arteries. Terrible for heart.",
+        "pros": ["Potassium (but not enough to offset negatives)"],
+        "cons": ["Trans fats", "High omega-6 inflammatory oils", "Oxidized fats from frying", "Raises triglycerides"]
+      },
+      "muscle_building": {
+        "grade": "D-",
+        "score": 42,
+        "insight": "Minimal protein (4g). Just empty carbs and fat. Post-workout carb option in desperate times but terrible choice.",
+        "pros": ["High carbs for glycogen (if post-workout)"],
+        "cons": ["Only 4g protein", "Inflammatory oils impair recovery", "Poor nutrient quality"]
+      },
+      "energy": {
+        "grade": "D",
+        "score": 62,
+        "insight": "High GI (75) causes blood sugar spike then crash. Heavy fat content slows digestion, causing fatigue.",
+        "pros": ["Immediate energy from high GI carbs"],
+        "cons": ["Severe energy crash", "Heavy digestion drains energy", "No sustained fuel"]
+      },
+      "weight_management": {
+        "grade": "F",
+        "score": 15,
+        "insight": "365 calories of refined carbs and oil with minimal satiety. Contributes directly to weight gain and belly fat.",
+        "pros": [],
+        "cons": ["Very calorie-dense", "Doesn't satisfy hunger", "Easy to overeat", "Triggers cravings", "Promotes visceral fat"]
+      },
+      "brain_focus": {
+        "grade": "F",
+        "score": 35,
+        "insight": "Blood sugar spike impairs focus after 30 minutes. Trans fats linked to cognitive decline.",
+        "pros": ["Brief glucose boost"],
+        "cons": ["Blood sugar crash", "Trans fats harm brain", "Brain fog from heavy digestion", "Inflammatory oils"]
+      },
+      "gut_health": {
+        "grade": "D-",
+        "score": 44,
+        "insight": "High fat slows digestion. Inflammatory oils and acrylamides (from high-heat frying) disrupt gut microbiome.",
+        "pros": ["4g fiber (from potato skin if present)"],
+        "cons": ["Inflammatory oils", "Acrylamides from frying", "High fat slows transit", "Ultra-processed"]
+      },
+      "blood_sugar": {
+        "grade": "F",
+        "score": 18,
+        "insight": "Massive glycemic load (36)—one of the worst foods for blood sugar. Causes severe spike then crash.",
+        "pros": [],
+        "cons": ["GI=75, GL=36 (extremely high)", "Refined starch", "Causes insulin spike", "Promotes insulin resistance"]
+      },
+      "bone_joint": {
+        "grade": "D",
+        "score": 63,
+        "insight": "Minimal calcium. Inflammatory oils worsen joint pain. Trans fats contribute to inflammation.",
+        "pros": ["Some potassium", "Vitamin K (minimal)"],
+        "cons": ["No calcium", "Inflammatory oils", "Trans fats", "AGEs from frying damage collagen"]
+      },
+      "anti_inflammatory": {
+        "grade": "F",
+        "score": 20,
+        "insight": "Highly inflammatory—omega-6 oils, trans fats, acrylamides, AGEs. One of the worst foods for inflammation.",
+        "pros": [],
+        "cons": ["High omega-6:omega-3 ratio", "Trans fats", "Acrylamides (carcinogenic)", "AGEs from high heat", "Oxidized fats"]
+      }
+    },
+
+    "bioavailability": {
+      "potassium": { "absorption": "high", "tip": "Well absorbed but negatives outweigh this benefit" }
+    },
+
+    "pairWith": [],
+    "avoidWith": [
+      { "food": "regularly", "reason": "Save for rare occasions (monthly at most)" }
+    ],
+
+    "bestTiming": {
+      "preWorkout": false,
+      "postWorkout": false,
+      "morning": false,
+      "beforeBed": false
+    },
+    "digestionTime": "slow",
+
+    "portionVisual": "Medium = about 1 cup (117g)",
+    "tips": {
+      "storage": "Best eaten fresh—soggy when reheated",
+      "cooking": "If making at home: bake in oven with minimal oil instead of deep frying",
+      "prepTip": "Better option: roasted sweet potato wedges with olive oil"
+    },
+    "commonMistakes": [
+      "Ordering large (doubles calories to 730)",
+      "Eating regularly (weekly or more)",
+      "Pairing with burger and soda (1500+ calorie meal)"
+    ],
+
+    "cautions": {
+      "diabetes": "Avoid—massive blood sugar spike",
+      "heart_disease": "Avoid—trans fats and inflammatory oils",
+      "weight_loss": "Avoid entirely",
+      "acne": "Fried foods can trigger breakouts"
+    },
+    "pregnancySafe": true,
+    "pregnancyNotes": "Safe occasionally but offers no nutritional value. Choose nutrient-dense foods instead.",
+    "drugInteractions": [],
+    "pediatric": {
+      "ageAppropriate": "Avoid for young children; occasional treat for older kids",
+      "chokingRisk": "low",
+      "commonAllergen": false
+    }
+  }
+}

@@ -139,7 +139,7 @@ export function MacroOrbDRI({
       <div className="mt-2 text-center">
         <span className="text-[10px] text-text-muted uppercase tracking-wider block">{label}</span>
         <span className="text-[9px] text-text-muted/60">
-          {isLimitNutrient ? 'limit' : '/'} {target}{unit}
+          {isLimitNutrient ? 'Limit' : '/'} {target}{unit}
         </span>
 
         {/* Status badges */}

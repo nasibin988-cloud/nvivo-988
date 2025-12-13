@@ -1,0 +1,659 @@
+{
+  "spaghetti": {
+    "foodId": "spaghetti",
+    "displayName": "Spaghetti (cooked)",
+    "category": "grains",
+    "perServing": {
+      "servingSize": "1 cup",
+      "servingSizeGrams": 140,
+      "calories": 220,
+      "protein": 8.1,
+      "carbs": 43.2,
+      "fiber": 2.5,
+      "sugar": 0.8,
+      "fat": 1.3,
+      "saturatedFat": 0.2,
+      "sodium": 1,
+      "potassium": 62,
+      "cholesterol": 0,
+      "vitaminA": 0,
+      "vitaminC": 0,
+      "calcium": 10,
+      "iron": 1.8
+    },
+    "per100g": {
+      "calories": 157,
+      "protein": 5.8,
+      "carbs": 30.9,
+      "fiber": 1.8,
+      "sugar": 0.6,
+      "fat": 0.9,
+      "saturatedFat": 0.2,
+      "sodium": 1,
+      "potassium": 44,
+      "cholesterol": 0,
+      "vitaminA": 0,
+      "vitaminC": 0,
+      "calcium": 7,
+      "iron": 1.3
+    },
+    "usdaData": {
+      "fdcId": 169738,
+      "dataType": "SR Legacy",
+      "description": "Pasta, cooked, enriched, without added salt"
+    },
+    "glycemicIndex": 58,
+    "glycemicLoad": 25,
+    "isOrganic": false,
+    "isWholeFood": false,
+    "commonAllergens": [
+      "gluten",
+      "wheat"
+    ],
+    "tags": [
+      "pasta",
+      "grain",
+      "refined",
+      "enriched"
+    ],
+    "focusGrades": {
+      "weightManagement": {
+        "grade": "C",
+        "score": 70,
+        "reasoning": "Moderate calorie density (157 kcal/100g). Low in fiber (1.8g/100g) and protein (5.8g/100g). Refined grain with moderate GI (58) provides quick energy but limited satiety. Better with protein and vegetables."
+      },
+      "diabetesManagement": {
+        "grade": "C",
+        "score": 65,
+        "reasoning": "Moderate glycemic index (58) and high glycemic load (25). Refined grain lacks fiber (1.8g/100g) for blood sugar control. Enriched with B vitamins but spikes glucose faster than whole grain alternatives. Portion control essential."
+      },
+      "cardiovascularHealth": {
+        "grade": "B",
+        "score": 80,
+        "reasoning": "Very low in sodium (1mg/100g), no cholesterol, minimal saturated fat (0.2g/100g). Enriched with folate and iron. Lacks heart-healthy omega-3s and fiber. Good base for heart-healthy Mediterranean-style meals with vegetables and olive oil."
+      },
+      "metabolicHealth": {
+        "grade": "C",
+        "score": 68,
+        "reasoning": "Refined grain with moderate GI (58) impacts insulin response. Low fiber (1.8g) and minimal micronutrients beyond enrichment. Provides quick energy but lacks nutrients for optimal metabolic function. Whole grain pasta is superior."
+      },
+      "inflammationReduction": {
+        "grade": "C",
+        "score": 65,
+        "reasoning": "Refined grain product with minimal anti-inflammatory compounds. Low in antioxidants, omega-3s, and phytonutrients. Moderate GI can contribute to inflammation. Neutral food that needs anti-inflammatory pairings (tomatoes, garlic, olive oil)."
+      },
+      "gutHealth": {
+        "grade": "C",
+        "score": 60,
+        "reasoning": "Low fiber content (1.8g/100g) provides minimal prebiotic benefit. Refined processing removes beneficial bran and germ. May feed less diverse gut bacteria than whole grains. No resistant starch. Lacks digestive enzymes."
+      },
+      "energyVitality": {
+        "grade": "B",
+        "score": 78,
+        "reasoning": "Excellent source of quick-release carbohydrates (30.9g/100g) for immediate energy. Enriched with B vitamins (thiamin, riboflavin, niacin) for energy metabolism. Popular pre-workout meal. Lacks sustained energy from fiber and protein."
+      },
+      "mentalClarity": {
+        "grade": "C",
+        "score": 70,
+        "reasoning": "Enriched with B vitamins supporting neurotransmitter synthesis. Moderate GI may cause energy fluctuations affecting focus. Low in brain-supporting nutrients (omega-3s, antioxidants, magnesium). Stable carb source but not optimal for cognitive function."
+      },
+      "longevityAntiAging": {
+        "grade": "C",
+        "score": 62,
+        "reasoning": "Minimal antioxidants and phytonutrients. Refined grain lacks protective compounds found in whole wheat. Enriched with iron and folate but missing selenium, vitamin E. Not associated with longevity in Blue Zone research (whole grains are)."
+      },
+      "athleticPerformance": {
+        "grade": "B+",
+        "score": 85,
+        "reasoning": "Excellent carb-loading food (30.9g/100g) for endurance athletes. Moderate GI (58) provides sustained energy during exercise. Low fat (0.9g) for quick digestion. Popular pre-race meal. Enriched with iron for oxygen transport. Add protein for recovery."
+      }
+    }
+  },
+  "porridge": {
+    "foodId": "porridge",
+    "displayName": "Porridge (oatmeal, cooked)",
+    "category": "grains",
+    "perServing": {
+      "servingSize": "1 cup",
+      "servingSizeGrams": 234,
+      "calories": 166,
+      "protein": 5.9,
+      "carbs": 28.1,
+      "fiber": 4.0,
+      "sugar": 0.6,
+      "fat": 3.6,
+      "saturatedFat": 0.6,
+      "sodium": 9,
+      "potassium": 143,
+      "cholesterol": 0,
+      "vitaminA": 0,
+      "vitaminC": 0,
+      "calcium": 21,
+      "iron": 2.1
+    },
+    "per100g": {
+      "calories": 71,
+      "protein": 2.5,
+      "carbs": 12.0,
+      "fiber": 1.7,
+      "sugar": 0.3,
+      "fat": 1.5,
+      "saturatedFat": 0.3,
+      "sodium": 4,
+      "potassium": 61,
+      "cholesterol": 0,
+      "vitaminA": 0,
+      "vitaminC": 0,
+      "calcium": 9,
+      "iron": 0.9
+    },
+    "usdaData": {
+      "fdcId": 173904,
+      "dataType": "SR Legacy",
+      "description": "Oatmeal, cooked with water, no salt"
+    },
+    "glycemicIndex": 55,
+    "glycemicLoad": 11,
+    "isOrganic": false,
+    "isWholeFood": true,
+    "commonAllergens": [],
+    "tags": [
+      "oats",
+      "whole_grain",
+      "breakfast",
+      "hot_cereal",
+      "heart_healthy"
+    ],
+    "focusGrades": {
+      "weightManagement": {
+        "grade": "A-",
+        "score": 90,
+        "reasoning": "Low calorie density (71 kcal/100g) with high water content. Excellent fiber (1.7g/100g, 4g per serving) and beta-glucan for satiety. Slow-digesting whole grain keeps you full. Low GI (55) prevents cravings. Popular weight loss breakfast."
+      },
+      "diabetesManagement": {
+        "grade": "A",
+        "score": 92,
+        "reasoning": "Low glycemic index (55) and moderate glycemic load (11). Beta-glucan soluble fiber (4g/serving) slows glucose absorption and improves insulin sensitivity. Whole grain with intact bran. Studies show reduced diabetes risk. Add cinnamon for extra benefit."
+      },
+      "cardiovascularHealth": {
+        "grade": "A+",
+        "score": 95,
+        "reasoning": "FDA-approved heart health claim. Beta-glucan fiber (3-4g/day) lowers LDL cholesterol by 5-10%. No cholesterol, very low sodium (4mg/100g), minimal saturated fat (0.3g). Rich in avenanthramides (antioxidants). Supports healthy blood pressure."
+      },
+      "metabolicHealth": {
+        "grade": "A",
+        "score": 93,
+        "reasoning": "Beta-glucan improves insulin sensitivity and glucose metabolism. Low GI (55) supports stable blood sugar. Contains magnesium, phosphorus for metabolic enzymes. Whole grain supports healthy gut microbiome and metabolic function. Anti-inflammatory properties."
+      },
+      "inflammationReduction": {
+        "grade": "A-",
+        "score": 88,
+        "reasoning": "Rich in avenanthramides\u2014unique antioxidants with anti-inflammatory properties. Beta-glucan reduces inflammatory markers (CRP, IL-6). Whole grain with phytonutrients. Low GI prevents inflammation spikes. Contains phenolic acids. Add berries for synergy."
+      },
+      "gutHealth": {
+        "grade": "A",
+        "score": 94,
+        "reasoning": "Excellent source of beta-glucan soluble fiber (prebiotic). Feeds beneficial Bifidobacteria and Lactobacilli. Produces short-chain fatty acids (butyrate) for colon health. Improves gut barrier function. Supports diverse microbiome. Gentle on digestion."
+      },
+      "energyVitality": {
+        "grade": "B+",
+        "score": 85,
+        "reasoning": "Slow-release complex carbohydrates (12g/100g) provide sustained energy. B vitamins (thiamin, riboflavin) support energy production. Low GI (55) prevents energy crashes. Iron (0.9mg/100g) for oxygen transport. Magnesium for ATP production. Great breakfast fuel."
+      },
+      "mentalClarity": {
+        "grade": "B+",
+        "score": 86,
+        "reasoning": "Beta-glucan stabilizes blood sugar for consistent brain glucose. B vitamins support neurotransmitter synthesis. Low GI (55) prevents focus fluctuations. Contains tryptophan for serotonin production. Iron supports cognitive function. Studies show improved memory in children."
+      },
+      "longevityAntiAging": {
+        "grade": "A-",
+        "score": 89,
+        "reasoning": "Whole grain associated with reduced all-cause mortality. Avenanthramides have anti-aging antioxidant properties. Beta-glucan supports healthy aging through cholesterol reduction and immune function. Protective against chronic diseases. Blue Zone-aligned food."
+      },
+      "athleticPerformance": {
+        "grade": "B+",
+        "score": 84,
+        "reasoning": "Popular pre-workout meal providing sustained energy from complex carbs (12g/100g). Low GI (55) for endurance. Beta-glucan may improve VO2 max. Easy to digest. Good iron content (0.9mg/100g). Add protein powder and banana for complete pre-training meal."
+      }
+    }
+  },
+  "saltines": {
+    "foodId": "saltines",
+    "displayName": "Saltine Crackers",
+    "category": "grains",
+    "perServing": {
+      "servingSize": "5 crackers",
+      "servingSizeGrams": 15,
+      "calories": 64,
+      "protein": 1.4,
+      "carbs": 10.6,
+      "fiber": 0.4,
+      "sugar": 0.2,
+      "fat": 1.7,
+      "saturatedFat": 0.4,
+      "sodium": 135,
+      "potassium": 17,
+      "cholesterol": 0,
+      "vitaminA": 0,
+      "vitaminC": 0,
+      "calcium": 14,
+      "iron": 0.9
+    },
+    "per100g": {
+      "calories": 421,
+      "protein": 9.0,
+      "carbs": 71.5,
+      "fiber": 2.7,
+      "sugar": 1.3,
+      "fat": 11.0,
+      "saturatedFat": 2.7,
+      "sodium": 903,
+      "potassium": 116,
+      "cholesterol": 0,
+      "vitaminA": 0,
+      "vitaminC": 0,
+      "calcium": 91,
+      "iron": 5.8
+    },
+    "usdaData": {
+      "fdcId": 174883,
+      "dataType": "SR Legacy",
+      "description": "Crackers, saltines (includes oyster, soda, soup)"
+    },
+    "glycemicIndex": 74,
+    "glycemicLoad": 14,
+    "isOrganic": false,
+    "isWholeFood": false,
+    "commonAllergens": [
+      "gluten",
+      "wheat"
+    ],
+    "tags": [
+      "crackers",
+      "refined_grain",
+      "salty_snack",
+      "processed"
+    ],
+    "focusGrades": {
+      "weightManagement": {
+        "grade": "D",
+        "score": 55,
+        "reasoning": "High calorie density (421 kcal/100g). Very low fiber (2.7g/100g) provides minimal satiety. High GI (74) causes rapid blood sugar spike and subsequent hunger. Refined grain easy to overeat. Small serving (5 crackers = 64 cal) can lead to overconsumption."
+      },
+      "diabetesManagement": {
+        "grade": "D",
+        "score": 50,
+        "reasoning": "High glycemic index (74) causes rapid glucose spike. Refined white flour lacks fiber (0.4g/serving) to slow absorption. Moderate glycemic load (14) in small serving but easy to exceed. No nutrients to support insulin sensitivity. Poor choice for blood sugar control."
+      },
+      "cardiovascularHealth": {
+        "grade": "D",
+        "score": 52,
+        "reasoning": "Very high sodium (903mg/100g, 135mg per 5 crackers). Name 'saltines' reflects high salt content. Refined grain with no heart-protective fiber or nutrients. Some brands contain partially hydrogenated oils (trans fats). Not supportive of blood pressure or cholesterol management."
+      },
+      "metabolicHealth": {
+        "grade": "D",
+        "score": 48,
+        "reasoning": "High GI (74) and refined grain negatively impact insulin sensitivity. High sodium (903mg/100g) affects fluid balance and metabolism. Minimal micronutrients for metabolic function. Processed food with potential additives. Poor nutritional density."
+      },
+      "inflammationReduction": {
+        "grade": "D",
+        "score": 45,
+        "reasoning": "Refined grain product with no anti-inflammatory compounds. High GI (74) promotes inflammatory response. High sodium (903mg/100g) may increase inflammation. Lacks antioxidants, omega-3s, phytonutrients. Some brands use inflammatory seed oils. Avoid for anti-inflammatory diet."
+      },
+      "gutHealth": {
+        "grade": "D",
+        "score": 50,
+        "reasoning": "Very low fiber (2.7g/100g, only 0.4g per serving). Refined grain offers no prebiotic benefit. May contain additives that disrupt microbiome. High sodium can alter gut bacteria balance. No resistant starch or fermentable fiber. Poor choice for gut health."
+      },
+      "energyVitality": {
+        "grade": "C-",
+        "score": 62,
+        "reasoning": "Provides quick energy from refined carbs (71.5g/100g) but no sustained vitality. High GI (74) causes energy spike followed by crash. Minimal B vitamins or minerals for energy production. May cause fatigue after initial boost. Better for acute nausea than energy."
+      },
+      "mentalClarity": {
+        "grade": "D+",
+        "score": 58,
+        "reasoning": "High GI (74) causes blood sugar fluctuations affecting focus and mood. Refined grain lacks B vitamins for brain function. High sodium may affect cognitive performance. No omega-3s or antioxidants for brain health. Traditional remedy for nausea, not mental performance."
+      },
+      "longevityAntiAging": {
+        "grade": "D",
+        "score": 42,
+        "reasoning": "Highly processed refined grain with minimal nutrients. No antioxidants or anti-aging compounds. High sodium and GI associated with accelerated aging. Refined grains linked to shorter lifespan in studies. Opposite of longevity-promoting whole foods. Occasional use only."
+      },
+      "athleticPerformance": {
+        "grade": "C",
+        "score": 68,
+        "reasoning": "Quick-digesting carbs (71.5g/100g) for immediate energy. High GI (74) beneficial during endurance events for rapid glucose. Low fiber (0.4g/serving) prevents GI distress during exercise. But high sodium (135mg/5 crackers) without potassium balance. Better options exist."
+      }
+    }
+  },
+  "trail_mix": {
+    "foodId": "trail_mix",
+    "displayName": "Trail Mix",
+    "category": "snacks",
+    "perServing": {
+      "servingSize": "1/4 cup",
+      "servingSizeGrams": 38,
+      "calories": 173,
+      "protein": 5.2,
+      "carbs": 16.8,
+      "fiber": 2.0,
+      "sugar": 11.0,
+      "fat": 11.0,
+      "saturatedFat": 2.1,
+      "sodium": 57,
+      "potassium": 257,
+      "cholesterol": 0,
+      "vitaminA": 2,
+      "vitaminC": 0.4,
+      "calcium": 31,
+      "iron": 1.0
+    },
+    "per100g": {
+      "calories": 462,
+      "protein": 13.8,
+      "carbs": 44.9,
+      "fiber": 5.3,
+      "sugar": 29.3,
+      "fat": 29.3,
+      "saturatedFat": 5.6,
+      "sodium": 152,
+      "potassium": 685,
+      "cholesterol": 0,
+      "vitaminA": 5,
+      "vitaminC": 1.1,
+      "calcium": 82,
+      "iron": 2.7
+    },
+    "usdaData": {
+      "fdcId": 170582,
+      "dataType": "SR Legacy",
+      "description": "Trail mix, regular, with chocolate chips, unsalted nuts and seeds"
+    },
+    "glycemicIndex": 42,
+    "glycemicLoad": 9,
+    "isOrganic": false,
+    "isWholeFood": false,
+    "commonAllergens": [
+      "tree_nuts",
+      "peanuts"
+    ],
+    "tags": [
+      "snack",
+      "nuts",
+      "dried_fruit",
+      "portable",
+      "energy_dense"
+    ],
+    "focusGrades": {
+      "weightManagement": {
+        "grade": "C+",
+        "score": 72,
+        "reasoning": "Very high calorie density (462 kcal/100g) makes portion control critical. Small 1/4 cup = 173 calories. Good protein (5.2g) and fiber (2g) for satiety but high sugar (11g/serving). Healthy fats from nuts promote fullness. Easy to overeat. Pre-portion for success."
+      },
+      "diabetesManagement": {
+        "grade": "B-",
+        "score": 75,
+        "reasoning": "Low glycemic index (42) despite sugar content\u2014nuts and fat slow absorption. Moderate sugar (29.3g/100g) from dried fruit. Protein (13.8g/100g) and healthy fats buffer glucose response. Fiber (5.3g/100g) helps. Portion control essential due to calorie density."
+      },
+      "cardiovascularHealth": {
+        "grade": "B+",
+        "score": 83,
+        "reasoning": "Nuts provide heart-healthy unsaturated fats, vitamin E, and plant sterols. Moderate sodium (152mg/100g) for unsalted nuts version. High potassium (685mg/100g) supports blood pressure. Fiber (5.3g/100g) lowers cholesterol. Watch added sugar and chocolate. Choose raw/dry roasted nuts."
+      },
+      "metabolicHealth": {
+        "grade": "B",
+        "score": 78,
+        "reasoning": "Nuts provide magnesium, healthy fats supporting insulin sensitivity. Low GI (42) despite sugar. Protein (13.8g/100g) supports metabolic rate. High sugar (29.3g/100g) is concern. Antioxidants from nuts and dried fruit. Better with less sugar, more nuts."
+      },
+      "inflammationReduction": {
+        "grade": "B",
+        "score": 80,
+        "reasoning": "Nuts rich in anti-inflammatory omega-3s (walnuts), vitamin E, polyphenols. Low GI (42) prevents inflammation spikes. Dried fruit provides antioxidants. But added sugar (29.3g/100g) and chocolate can promote inflammation. Choose versions with minimal added sugar."
+      },
+      "gutHealth": {
+        "grade": "B",
+        "score": 79,
+        "reasoning": "Good fiber content (5.3g/100g) from nuts and dried fruit. Nuts provide prebiotic fiber and polyphenols feeding beneficial bacteria. Dried fruit has natural prebiotics. Diverse ingredients support microbiome diversity. High sugar may feed less desirable bacteria. Choose no-sugar-added versions."
+      },
+      "energyVitality": {
+        "grade": "A-",
+        "score": 88,
+        "reasoning": "Excellent energy density (462 kcal/100g) for endurance activities. Balance of quick carbs (dried fruit, sugar) and sustained energy (nuts, fat). B vitamins, magnesium, iron for energy production. Popular hiking fuel. Prevents energy crashes. Perfect portable snack."
+      },
+      "mentalClarity": {
+        "grade": "B+",
+        "score": 82,
+        "reasoning": "Nuts provide omega-3s (especially walnuts), vitamin E, magnesium for brain health. Balanced macros prevent blood sugar crashes. Low GI (42) supports stable energy. Natural sugars from fruit provide quick glucose. Protein supports neurotransmitters. Great study/work snack."
+      },
+      "longevityAntiAging": {
+        "grade": "B+",
+        "score": 84,
+        "reasoning": "Nuts associated with increased lifespan in multiple studies. Rich in vitamin E, polyphenols, healthy fats with antioxidant properties. Dried fruit provides flavonoids. BUT added sugar (29.3g/100g) is anti-longevity. Make your own with raw nuts, seeds, unsweetened fruit."
+      },
+      "athleticPerformance": {
+        "grade": "A-",
+        "score": 90,
+        "reasoning": "Ideal endurance fuel combining quick carbs (44.9g/100g) and sustained energy from healthy fats (29.3g/100g). Portable, shelf-stable, calorie-dense. Electrolytes from sodium/potassium. Protein (13.8g) for recovery. Popular with hikers, cyclists, climbers. Perfect for long activities."
+      }
+    }
+  },
+  "pepitas": {
+    "foodId": "pepitas",
+    "displayName": "Pepitas (pumpkin seeds, shelled)",
+    "category": "nuts_seeds",
+    "perServing": {
+      "servingSize": "1 oz (1/4 cup)",
+      "servingSizeGrams": 28,
+      "calories": 151,
+      "protein": 6.9,
+      "carbs": 5.0,
+      "fiber": 1.1,
+      "sugar": 0.4,
+      "fat": 12.4,
+      "saturatedFat": 2.3,
+      "sodium": 5,
+      "potassium": 226,
+      "cholesterol": 0,
+      "vitaminA": 0,
+      "vitaminC": 0.5,
+      "calcium": 12,
+      "iron": 2.3
+    },
+    "per100g": {
+      "calories": 541,
+      "protein": 24.5,
+      "carbs": 17.8,
+      "fiber": 3.9,
+      "sugar": 1.4,
+      "fat": 44.3,
+      "saturatedFat": 8.4,
+      "sodium": 18,
+      "potassium": 807,
+      "cholesterol": 0,
+      "vitaminA": 0,
+      "vitaminC": 1.7,
+      "calcium": 43,
+      "iron": 8.1
+    },
+    "usdaData": {
+      "fdcId": 170188,
+      "dataType": "SR Legacy",
+      "description": "Seeds, pumpkin and squash seed kernels, dried"
+    },
+    "glycemicIndex": 25,
+    "glycemicLoad": 3,
+    "isOrganic": false,
+    "isWholeFood": true,
+    "commonAllergens": [],
+    "tags": [
+      "seeds",
+      "protein",
+      "iron",
+      "magnesium",
+      "zinc",
+      "superfood"
+    ],
+    "focusGrades": {
+      "weightManagement": {
+        "grade": "B+",
+        "score": 82,
+        "reasoning": "High calorie density (541 kcal/100g) requires portion control. Excellent protein (24.5g/100g) and fiber (3.9g/100g) for satiety. Very low GI (25) prevents cravings. Healthy fats (44.3g) promote fullness. Small portions satisfy. Rich, filling snack when pre-portioned."
+      },
+      "diabetesManagement": {
+        "grade": "A",
+        "score": 92,
+        "reasoning": "Extremely low glycemic index (25) and glycemic load (3). High protein (24.5g/100g) and healthy fats stabilize blood sugar. Magnesium (592mg/100g) improves insulin sensitivity. Studies show pumpkin seeds reduce fasting glucose. Excellent diabetes-friendly snack."
+      },
+      "cardiovascularHealth": {
+        "grade": "A",
+        "score": 93,
+        "reasoning": "Rich in heart-healthy unsaturated fats, magnesium (592mg/100g), potassium (807mg/100g), zinc. Phytosterols lower LDL cholesterol. Antioxidants (vitamin E, carotenoids) protect vessels. Very low sodium (18mg/100g). Studies show reduced heart disease risk. No cholesterol."
+      },
+      "metabolicHealth": {
+        "grade": "A",
+        "score": 94,
+        "reasoning": "Exceptional magnesium content (592mg/100g, 150% DV) critical for 300+ metabolic enzymes. Zinc supports insulin function. High protein (24.5g) boosts metabolism. Very low GI (25). Healthy fats improve metabolic markers. Anti-inflammatory properties support metabolic health."
+      },
+      "inflammationReduction": {
+        "grade": "A-",
+        "score": 88,
+        "reasoning": "Rich in anti-inflammatory compounds: vitamin E, carotenoids, omega-3 ALA. Zinc and magnesium reduce inflammatory markers. Phytoestrogens have anti-inflammatory effects. Studies show reduced CRP levels. Very low GI (25) prevents inflammation spikes. Powerful anti-inflammatory seed."
+      },
+      "gutHealth": {
+        "grade": "B+",
+        "score": 83,
+        "reasoning": "Good fiber content (3.9g/100g) supports regularity. Zinc crucial for gut barrier integrity. Magnesium supports gut motility. Antimicrobial properties may balance harmful bacteria. Prebiotic compounds feed beneficial microbes. Traditional remedy for parasites. Supports diverse microbiome."
+      },
+      "energyVitality": {
+        "grade": "A-",
+        "score": 88,
+        "reasoning": "Excellent iron content (8.1mg/100g, 45% DV) prevents fatigue and supports oxygen transport. Magnesium (592mg) crucial for ATP energy production. B vitamins support energy metabolism. Protein (24.5g) provides sustained energy. Zinc supports adrenal function. Energy-boosting superfood."
+      },
+      "mentalClarity": {
+        "grade": "A-",
+        "score": 87,
+        "reasoning": "Rich in brain-supporting nutrients: magnesium (592mg/100g) for neurotransmitters, zinc for cognitive function, iron for oxygen delivery. Tryptophan supports serotonin production. Omega-3 ALA for brain structure. Studies show improved memory and learning. Supports mental clarity."
+      },
+      "longevityAntiAging": {
+        "grade": "A",
+        "score": 91,
+        "reasoning": "Exceptional antioxidant profile: vitamin E, carotenoids, phenolic compounds. High zinc (7.8mg/100g) supports immune function and DNA repair. Magnesium linked to longevity. Anti-inflammatory properties slow aging. Phytosterols protect cells. Associated with reduced chronic disease risk."
+      },
+      "athleticPerformance": {
+        "grade": "A-",
+        "score": 89,
+        "reasoning": "Outstanding magnesium (592mg/100g) prevents cramps and supports muscle function. High protein (24.5g) aids recovery. Iron (8.1mg) improves oxygen delivery and VO2 max. Zinc supports testosterone and healing. Potassium (807mg) for electrolyte balance. Perfect post-workout snack."
+      }
+    }
+  },
+  "pumpkin_seeds": {
+    "foodId": "pumpkin_seeds",
+    "displayName": "Pumpkin Seeds (roasted, salted)",
+    "category": "nuts_seeds",
+    "perServing": {
+      "servingSize": "1 oz",
+      "servingSizeGrams": 28,
+      "calories": 163,
+      "protein": 8.5,
+      "carbs": 4.2,
+      "fiber": 1.8,
+      "sugar": 0.4,
+      "fat": 13.9,
+      "saturatedFat": 2.6,
+      "sodium": 163,
+      "potassium": 229,
+      "cholesterol": 0,
+      "vitaminA": 12,
+      "vitaminC": 0.3,
+      "calcium": 15,
+      "iron": 4.2
+    },
+    "per100g": {
+      "calories": 574,
+      "protein": 29.8,
+      "carbs": 14.7,
+      "fiber": 6.5,
+      "sugar": 1.4,
+      "fat": 49.1,
+      "saturatedFat": 9.2,
+      "sodium": 576,
+      "potassium": 809,
+      "cholesterol": 0,
+      "vitaminA": 43,
+      "vitaminC": 1.0,
+      "calcium": 52,
+      "iron": 14.9
+    },
+    "usdaData": {
+      "fdcId": 170562,
+      "dataType": "SR Legacy",
+      "description": "Seeds, pumpkin and squash seed kernels, roasted, with salt added"
+    },
+    "glycemicIndex": 25,
+    "glycemicLoad": 2,
+    "isOrganic": false,
+    "isWholeFood": true,
+    "commonAllergens": [],
+    "tags": [
+      "seeds",
+      "roasted",
+      "salted",
+      "protein",
+      "iron",
+      "snack"
+    ],
+    "focusGrades": {
+      "weightManagement": {
+        "grade": "B",
+        "score": 78,
+        "reasoning": "Very high calorie density (574 kcal/100g). Exceptional protein (29.8g/100g, highest of any seed) promotes satiety. Good fiber (6.5g/100g). Very low GI (25). Healthy fats increase fullness. Salt may cause water retention. Pre-portion 1 oz servings (163 cal) for snacking."
+      },
+      "diabetesManagement": {
+        "grade": "A",
+        "score": 91,
+        "reasoning": "Extremely low glycemic index (25) and glycemic load (2). Very high protein (29.8g/100g) stabilizes blood sugar. Healthy fats slow glucose absorption. Magnesium improves insulin sensitivity. Fiber (6.5g/100g) helps. Studies show blood sugar benefits. Salt doesn't affect glucose."
+      },
+      "cardiovascularHealth": {
+        "grade": "B",
+        "score": 79,
+        "reasoning": "Rich in heart-healthy unsaturated fats, magnesium, potassium (809mg/100g). Phytosterols lower cholesterol. Antioxidants protect vessels. BUT high sodium (576mg/100g) is major concern for blood pressure and heart health. Choose unsalted version for A grade. No cholesterol."
+      },
+      "metabolicHealth": {
+        "grade": "A-",
+        "score": 90,
+        "reasoning": "Outstanding magnesium content supports metabolic enzymes. Zinc crucial for insulin function. Very high protein (29.8g) boosts metabolism. Very low GI (25). Healthy fats improve metabolic markers. High sodium (576mg/100g) slightly reduces score. Otherwise exceptional for metabolism."
+      },
+      "inflammationReduction": {
+        "grade": "B+",
+        "score": 82,
+        "reasoning": "Rich in anti-inflammatory vitamin E, carotenoids, omega-3 ALA. Zinc and magnesium reduce inflammatory markers. Very low GI (25). BUT high sodium (576mg/100g) may increase inflammation in sensitive individuals. Roasting preserves most antioxidants. Choose low-sodium version for better grade."
+      },
+      "gutHealth": {
+        "grade": "B+",
+        "score": 84,
+        "reasoning": "Excellent fiber (6.5g/100g, higher than raw due to concentration). Zinc supports gut barrier. Prebiotic compounds feed beneficial bacteria. Antimicrobial properties. BUT high sodium (576mg/100g) may alter gut microbiome balance. Magnesium supports motility. Choose unsalted for gut health."
+      },
+      "energyVitality": {
+        "grade": "A",
+        "score": 92,
+        "reasoning": "Exceptional iron (14.9mg/100g, 83% DV)\u2014among highest of any food! Prevents fatigue, supports oxygen transport. Outstanding magnesium for ATP production. Very high protein (29.8g) for sustained energy. B vitamins. Zinc for adrenal function. Powerhouse energy food."
+      },
+      "mentalClarity": {
+        "grade": "A-",
+        "score": 86,
+        "reasoning": "Excellent magnesium for neurotransmitter function. Zinc supports cognitive performance and memory. Outstanding iron (14.9mg/100g) for brain oxygen delivery. Tryptophan for serotonin. Omega-3 ALA. High sodium (576mg) may affect some people. Great brain food overall."
+      },
+      "longevityAntiAging": {
+        "grade": "A-",
+        "score": 87,
+        "reasoning": "Exceptional antioxidants: vitamin E, carotenoids (higher in roasted). Outstanding zinc (7.9mg/100g) for immune function, DNA repair. Magnesium linked to longevity. Anti-inflammatory properties. BUT high sodium (576mg/100g) associated with shorter lifespan. Choose unsalted for optimal aging."
+      },
+      "athleticPerformance": {
+        "grade": "A",
+        "score": 93,
+        "reasoning": "Elite athlete food. Outstanding iron (14.9mg/100g) improves VO2 max and endurance. Exceptional magnesium prevents cramps. Very high protein (29.8g) for recovery. Zinc supports testosterone. Sodium (576mg) beneficial for electrolyte replacement during/after exercise. Potassium balance. Perfect post-workout."
+      }
+    }
+  }
+}

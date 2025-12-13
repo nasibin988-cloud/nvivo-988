@@ -1,0 +1,207 @@
+{
+  "baklava": {
+    "name": "Baklava",
+    "calories": 428,
+    "protein": 5.8,
+    "carbs": 51.2,
+    "fat": 22.4,
+    "fiber": 2.1,
+    "sugar": 32.5,
+    "sodium": 185,
+    "saturatedFat": 4.8,
+    "cholesterol": 18,
+    "potassium": 145,
+    "calcium": 48,
+    "iron": 1.4,
+    "magnesium": 28,
+    "vitaminA": 42,
+    "vitaminC": 0.3,
+    "vitaminD": 0.1,
+    "vitaminB12": 0.02,
+    "glycemicIndex": 67,
+    "glycemicLoad": 34,
+    "allergens": ["gluten", "nuts", "eggs"],
+    "servingSize": 100,
+    "servingUnit": "g",
+    "focusGrades": {
+      "balanced": {
+        "grade": "D",
+        "score": 58,
+        "insight": "Baklava is nutritionally imbalanced with 76% of calories from sugar and fat, minimal protein, and very low micronutrient density despite nuts",
+        "pros": [
+          "Contains heart-healthy unsaturated fats from nuts (walnuts/pistachios)",
+          "Provides quick energy from simple carbohydrates",
+          "Small amounts of minerals like magnesium and iron from nuts"
+        ],
+        "cons": [
+          "Extremely high in added sugar (32.5g per 100g) from honey syrup",
+          "Very high calorie density (428 cal/100g) with poor satiety",
+          "Low protein content (5.8g) inadequate for balanced nutrition",
+          "Minimal fiber despite nut content due to refined phyllo dough"
+        ]
+      },
+      "heart_health": {
+        "grade": "D+",
+        "score": 62,
+        "insight": "Mixed cardiovascular impact - beneficial unsaturated fats from nuts are overshadowed by excessive sugar and refined carbs that spike triglycerides",
+        "pros": [
+          "Nuts provide omega-3 ALA, magnesium, and vitamin E for heart health",
+          "Unsaturated fats (14-16g) help maintain HDL cholesterol",
+          "Low in saturated fat (4.8g) compared to other pastries"
+        ],
+        "cons": [
+          "Excessive sugar (32.5g) raises triglycerides and inflammation",
+          "High glycemic load (34) causes blood sugar spikes linked to CVD",
+          "Refined phyllo dough lacks whole grain benefits",
+          "High calorie density promotes weight gain and metabolic syndrome"
+        ]
+      },
+      "muscle_building": {
+        "grade": "F",
+        "score": 45,
+        "insight": "Extremely poor for muscle building with only 5.8g protein per 100g (13 calories from protein vs 415 from fat/carbs) and no essential amino acids",
+        "pros": [
+          "Provides quick energy for post-workout glycogen replenishment",
+          "Small amounts of magnesium support muscle function",
+          "Calories could support bulking phase if protein needs met elsewhere"
+        ],
+        "cons": [
+          "Critically low protein (5.8g) - need 20-30g for muscle protein synthesis",
+          "Eggs in phyllo provide incomplete protein lacking leucine threshold",
+          "High sugar causes insulin spike without amino acids to utilize it",
+          "No branched-chain amino acids (BCAAs) for muscle recovery",
+          "Fat and sugar crowd out protein in calorie budget"
+        ]
+      },
+      "energy": {
+        "grade": "C+",
+        "score": 72,
+        "insight": "Provides rapid energy spike from honey and refined carbs, but causes crash within 1-2 hours due to high glycemic load and lack of sustained fuel",
+        "pros": [
+          "Very high calorie density (428 cal/100g) for quick energy",
+          "Simple sugars (32.5g) absorbed rapidly for immediate glucose",
+          "Fats provide 9 cal/g for sustained energy release",
+          "Small amount of iron supports oxygen transport"
+        ],
+        "cons": [
+          "High glycemic index (67) causes blood sugar rollercoaster and energy crash",
+          "Low fiber (2.1g) means no sustained release of glucose",
+          "Sugar rush followed by insulin spike leads to hypoglycemia and fatigue",
+          "Lacks B vitamins needed for efficient energy metabolism",
+          "No complex carbs for steady energy during physical activity"
+        ]
+      },
+      "weight_management": {
+        "grade": "F",
+        "score": 32,
+        "insight": "Catastrophic for weight management - extremely calorie-dense (428 cal/100g), low satiety, high sugar triggers cravings, and typical serving is 75-100g",
+        "pros": [
+          "Small portion (20-30g) could fit into flexible dieting approach",
+          "Nuts provide some satiety from fat and minimal protein"
+        ],
+        "cons": [
+          "Exceptionally high calorie density - 2 small pieces (100g) = 428 calories",
+          "Very high glycemic load (34) triggers insulin resistance and fat storage",
+          "Sugar (32.5g) triggers dopamine response leading to overconsumption",
+          "Low protein (5.8g) and fiber (2.1g) provide minimal satiety",
+          "Liquid honey coating makes it easy to consume excess calories quickly",
+          "Refined carbs and sugar disrupt leptin signaling (hunger hormones)",
+          "High fat + high sugar combination is most obesogenic nutrient profile"
+        ]
+      },
+      "brain_focus": {
+        "grade": "D",
+        "score": 58,
+        "insight": "Initially boosts alertness from glucose but high glycemic load causes reactive hypoglycemia leading to brain fog, irritability, and impaired cognition within 90 minutes",
+        "pros": [
+          "Glucose from honey provides immediate fuel for brain (20% of body's energy)",
+          "Small amounts of magnesium support neurotransmitter function",
+          "Nuts contain vitamin E which may protect against cognitive decline"
+        ],
+        "cons": [
+          "High glycemic index (67) causes blood sugar spike then crash affecting focus",
+          "Sugar crash leads to impaired memory, concentration, and decision-making",
+          "Lacks omega-3 DHA critical for brain cell membranes and synaptic function",
+          "No B vitamins (especially B12, folate) needed for neurotransmitter synthesis",
+          "High sugar triggers inflammation that impairs blood-brain barrier",
+          "Refined carbs linked to increased risk of depression and anxiety"
+        ]
+      },
+      "gut_health": {
+        "grade": "D-",
+        "score": 55,
+        "insight": "Poor for gut health due to low fiber, high sugar feeds harmful bacteria, refined flour disrupts microbiome diversity, though nuts offer minimal prebiotic benefit",
+        "pros": [
+          "Nuts contain small amounts of prebiotic fiber for beneficial bacteria",
+          "Honey has trace antimicrobial compounds (though destroyed by heat in syrup)",
+          "Minimal amounts of polyphenols from nuts support gut lining"
+        ],
+        "cons": [
+          "Very low fiber (2.1g) - need 25-35g daily for healthy gut microbiome",
+          "High sugar (32.5g) feeds pathogenic bacteria like Candida and E. coli",
+          "Refined phyllo dough depleted of whole grain prebiotics and resistant starch",
+          "Sugar disrupts gut barrier integrity leading to increased permeability",
+          "Lacks fermented ingredients or probiotics for microbiome diversity",
+          "High glycemic foods linked to inflammatory bowel conditions"
+        ]
+      },
+      "blood_sugar": {
+        "grade": "F",
+        "score": 28,
+        "insight": "Disastrous for blood sugar control with glycemic load of 34 (very high), 32.5g sugar, and 51g refined carbs causing severe glucose spike and insulin resistance",
+        "pros": [
+          "Small portion size (15-20g) could minimize glycemic impact if paired with protein"
+        ],
+        "cons": [
+          "Extremely high glycemic index (67) causes rapid glucose spike to 180+ mg/dL",
+          "Very high glycemic load (34) - anything over 20 is considered very high",
+          "Honey is 80% simple sugars (glucose + fructose) absorbed within 15-30 minutes",
+          "Refined phyllo dough lacks fiber to slow glucose absorption",
+          "High sugar load exhausts pancreatic beta cells increasing diabetes risk",
+          "Fructose in honey bypasses insulin regulation contributing to metabolic syndrome",
+          "No protein or fat to blunt the glycemic response",
+          "Regular consumption strongly linked to insulin resistance and type 2 diabetes"
+        ]
+      },
+      "bone_joint": {
+        "grade": "D+",
+        "score": 63,
+        "insight": "Minimal bone/joint benefits from small amounts of calcium and magnesium in nuts, but high sugar promotes inflammation and calcium excretion undermining skeletal health",
+        "pros": [
+          "Nuts provide magnesium (28mg) needed for bone mineralization and vitamin D activation",
+          "Small amounts of calcium (48mg) support bone density",
+          "Phosphorus from nuts works with calcium for bone structure",
+          "Vitamin E from nuts has anti-inflammatory effects for joint health"
+        ],
+        "cons": [
+          "High sugar (32.5g) increases urinary calcium excretion weakening bones",
+          "Refined carbs trigger inflammatory cascade (IL-6, TNF-α) aggravating arthritis",
+          "Lacks vitamin D (0.1mcg) critical for calcium absorption",
+          "Low protein (5.8g) inadequate for collagen synthesis in joints and bones",
+          "Sugar promotes AGE formation (advanced glycation end products) damaging cartilage",
+          "Omega-6 to omega-3 ratio may be inflammatory for joints"
+        ]
+      },
+      "anti_inflammatory": {
+        "grade": "D",
+        "score": 60,
+        "insight": "Net inflammatory effect despite anti-inflammatory compounds in nuts - excessive sugar and refined carbs drive oxidative stress and inflammatory cytokine production",
+        "pros": [
+          "Nuts contain polyphenols, vitamin E, and healthy fats with anti-inflammatory properties",
+          "Unsaturated fats from walnuts include omega-3 ALA which reduces inflammation",
+          "Magnesium helps regulate inflammatory response",
+          "Small amounts of antioxidants from nuts combat free radicals"
+        ],
+        "cons": [
+          "High sugar (32.5g) triggers NF-κB pathway activating inflammatory genes",
+          "Refined carbs increase C-reactive protein (CRP) and other inflammatory markers",
+          "High glycemic load promotes oxidative stress and mitochondrial dysfunction",
+          "Sugar feeds inflammatory gut bacteria producing lipopolysaccharides (LPS)",
+          "Advanced glycation end products (AGEs) from baking trigger inflammation",
+          "Omega-6 fats from phyllo dough may promote inflammatory prostaglandins",
+          "Lack of omega-3 EPA/DHA means no resolution of inflammation"
+        ]
+      }
+    }
+  }
+}

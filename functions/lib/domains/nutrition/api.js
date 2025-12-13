@@ -4,17 +4,25 @@
  *
  * Cloud Functions for nutrition evaluation and insights.
  * These functions are exposed as Firebase Callable Functions.
+ *
+ * V1 endpoints: Legacy scoring system
+ * V2 endpoints: Advanced MAR-based scoring with focus modes
  */
 Object.defineProperty(exports, "__esModule", { value: true });
-exports.evaluateNutritionWeek = exports.getNutrientInfo = exports.getNutritionTargets = exports.evaluateNutritionDay = void 0;
+exports.getNutritionFocusOptions = exports.evaluateNutritionWeekV2 = exports.evaluateNutritionDayV2 = exports.evaluateNutritionWeek = exports.getNutrientInfo = exports.getNutritionTargets = exports.evaluateNutritionDay = void 0;
 exports.handleEvaluateDay = handleEvaluateDay;
 exports.handleGetTargets = handleGetTargets;
 exports.handleGetNutrientInfo = handleGetNutrientInfo;
 exports.handleEvaluateWeek = handleEvaluateWeek;
+exports.handleEvaluateDayV2 = handleEvaluateDayV2;
+exports.handleEvaluateWeekV2 = handleEvaluateWeekV2;
+exports.handleGetFocusOptions = handleGetFocusOptions;
 const v2_1 = require("firebase-functions/v2");
 const data_1 = require("./data");
 const targets_1 = require("./targets");
 const evaluation_1 = require("./evaluation");
+const evaluation_2 = require("./evaluation");
+const focus_1 = require("./focus");
 const insights_1 = require("./insights");
 // Preload all nutrition data on cold start
 (0, data_1.preloadAllData)();
@@ -59,6 +67,16 @@ function validateIntake(intake) {
         throw new v2_1.https.HttpsError('invalid-argument', 'Intake.foods must be an array');
     }
     return intake;
+}
+function validateFocusId(focusId) {
+    const validFocuses = (0, focus_1.getAllFocusIds)();
+    if (focusId === undefined || focusId === null) {
+        return 'balanced'; // Default
+    }
+    if (typeof focusId !== 'string' || !validFocuses.includes(focusId)) {
+        throw new v2_1.https.HttpsError('invalid-argument', `Invalid focusId. Must be one of: ${validFocuses.join(', ')}`);
+    }
+    return focusId;
 }
 // =============================================================================
 // CALLABLE FUNCTION HANDLERS
@@ -166,6 +184,60 @@ async function handleEvaluateWeek(data) {
     };
 }
 // =============================================================================
+// V2 HANDLERS (Advanced MAR-based scoring)
+// =============================================================================
+/**
+ * Handler for evaluateNutritionDayV2 callable function
+ */
+async function handleEvaluateDayV2(data) {
+    const profile = validateProfile(data.profile);
+    const intake = validateIntake(data.intake);
+    const focusId = validateFocusId(data.focusId);
+    const evaluation = (0, evaluation_2.evaluateDayV2)(profile, intake, focusId);
+    return {
+        success: true,
+        evaluation,
+    };
+}
+/**
+ * Handler for evaluateNutritionWeekV2 callable function
+ */
+async function handleEvaluateWeekV2(data) {
+    const profile = validateProfile(data.profile);
+    const focusId = validateFocusId(data.focusId);
+    if (!data.intakes || !Array.isArray(data.intakes)) {
+        throw new v2_1.https.HttpsError('invalid-argument', 'Intakes array is required');
+    }
+    if (data.intakes.length === 0) {
+        throw new v2_1.https.HttpsError('invalid-argument', 'At least one day of intake is required');
+    }
+    if (data.intakes.length > 14) {
+        throw new v2_1.https.HttpsError('invalid-argument', 'Maximum 14 days of intake data allowed');
+    }
+    // Validate all intakes
+    const validatedIntakes = data.intakes.map(validateIntake);
+    // Compute targets once for efficiency
+    const targets = (0, targets_1.computeUserTargets)(profile);
+    // Evaluate each day
+    const dailyEvaluations = validatedIntakes.map((intake) => (0, evaluation_2.evaluateDayWithTargetsV2)(intake, targets, focusId));
+    // Evaluate the week
+    const weekEvaluation = (0, evaluation_2.evaluateWeekV2)(profile, validatedIntakes, focusId);
+    return {
+        success: true,
+        weekEvaluation,
+        dailyEvaluations,
+    };
+}
+/**
+ * Handler for getFocusOptions callable function
+ */
+async function handleGetFocusOptions() {
+    return {
+        success: true,
+        focuses: (0, focus_1.getFocusDisplayInfo)(),
+    };
+}
+// =============================================================================
 // FIREBASE CALLABLE FUNCTIONS
 // =============================================================================
 /**
@@ -209,5 +281,40 @@ exports.getNutrientInfo = v2_1.https.onCall({ cors: true }, async (request) => {
 exports.evaluateNutritionWeek = v2_1.https.onCall({ cors: true }, async (request) => {
     const data = request.data;
     return handleEvaluateWeek(data);
+});
+// =============================================================================
+// V2 FIREBASE CALLABLE FUNCTIONS (Advanced MAR-based scoring)
+// =============================================================================
+/**
+ * Evaluate a single day's nutrition intake with advanced MAR-based scoring
+ *
+ * @param profile - User's nutrition profile (age, sex, activity, goal)
+ * @param intake - Day's food intake with nutrient totals
+ * @param focusId - Optional nutrition focus (e.g., 'heart_health', 'muscle_building')
+ * @returns Full evaluation with MAR, breakdown, fat quality, glycemic impact, highlights, gaps
+ */
+exports.evaluateNutritionDayV2 = v2_1.https.onCall({ cors: true }, async (request) => {
+    const data = request.data;
+    return handleEvaluateDayV2(data);
+});
+/**
+ * Evaluate multiple days with advanced MAR-based scoring
+ *
+ * @param profile - User's nutrition profile
+ * @param intakes - Array of daily intake data (max 14 days)
+ * @param focusId - Optional nutrition focus
+ * @returns Week evaluation with cumulative MAR, trend, consistency, and daily breakdowns
+ */
+exports.evaluateNutritionWeekV2 = v2_1.https.onCall({ cors: true }, async (request) => {
+    const data = request.data;
+    return handleEvaluateWeekV2(data);
+});
+/**
+ * Get available nutrition focus options
+ *
+ * @returns List of all 10 nutrition focuses with names and descriptions
+ */
+exports.getNutritionFocusOptions = v2_1.https.onCall({ cors: true }, async () => {
+    return handleGetFocusOptions();
 });
 //# sourceMappingURL=api.js.map

@@ -1,0 +1,945 @@
+{
+  "rainbow_trout": {
+    "basicInfo": {
+      "name": "Rainbow Trout",
+      "category": "protein",
+      "subCategory": "seafood",
+      "servingSize": 100,
+      "servingUnit": "g",
+      "calories": 141,
+      "defaultUnit": "oz"
+    },
+    "macronutrients": {
+      "protein": 20.5,
+      "carbs": 0,
+      "fiber": 0,
+      "sugars": 0,
+      "fat": 6.2,
+      "saturatedFat": 1.8,
+      "monounsaturatedFat": 1.9,
+      "polyunsaturatedFat": 2.0,
+      "omega3": 0.98,
+      "omega6": 0.24,
+      "transFat": 0
+    },
+    "micronutrients": {
+      "vitamins": {
+        "vitaminA": 62,
+        "vitaminC": 0,
+        "vitaminD": 16.2,
+        "vitaminE": 2.8,
+        "vitaminK": 0.1,
+        "thiamin": 0.09,
+        "riboflavin": 0.11,
+        "niacin": 7.2,
+        "vitaminB6": 0.41,
+        "folate": 12,
+        "vitaminB12": 5.4,
+        "pantothenicAcid": 1.7,
+        "choline": 65
+      },
+      "minerals": {
+        "calcium": 67,
+        "iron": 0.7,
+        "magnesium": 31,
+        "phosphorus": 271,
+        "potassium": 481,
+        "sodium": 52,
+        "zinc": 1.0,
+        "copper": 0.19,
+        "manganese": 0.95,
+        "selenium": 12.6
+      }
+    },
+    "healthMetrics": {
+      "glycemicIndex": 0,
+      "glycemicLoad": 0,
+      "inflammationScore": -7,
+      "antioxidantScore": 7,
+      "nutrientDensity": 88,
+      "proteinQuality": 1.0,
+      "omega3Content": "excellent",
+      "omega6to3ratio": 0.24
+    },
+    "tags": ["high-protein", "omega-3-rich", "low-carb", "keto-friendly", "vitamin-d-rich", "sustainable-seafood"],
+    "allergens": ["fish"],
+    "certifications": [],
+    "shelfLife": "2-3 days fresh, 3-6 months frozen",
+    "preparation": ["grilled", "baked", "pan-fried", "smoked", "poached"],
+    "seasonality": "spring-summer peak",
+    "sustainabilityScore": 8,
+    "pricePerServing": 3.5,
+    "bioactiveCompounds": [
+      {
+        "name": "EPA (Eicosapentaenoic Acid)",
+        "amount": 0.25,
+        "unit": "g",
+        "benefits": ["Reduces inflammation", "Supports heart health", "Improves mood"]
+      },
+      {
+        "name": "DHA (Docosahexaenoic Acid)",
+        "amount": 0.73,
+        "unit": "g",
+        "benefits": ["Brain development", "Cognitive function", "Eye health"]
+      }
+    ],
+    "focusGrades": {
+      "weight_loss": {
+        "grade": "A",
+        "score": 92,
+        "insight": "High-quality lean protein with omega-3s promotes satiety while supporting muscle preservation during weight loss",
+        "pros": ["High protein (20.5g)", "Low calorie density", "Omega-3s boost metabolism", "Zero carbs"],
+        "cons": ["None significant"]
+      },
+      "heart_health": {
+        "grade": "A+",
+        "score": 96,
+        "insight": "Excellent omega-3 content with low saturated fat reduces cardiovascular disease risk and improves cholesterol profile",
+        "pros": ["0.98g omega-3 fatty acids", "Low sodium (52mg)", "Potassium-rich (481mg)", "Reduces triglycerides"],
+        "cons": []
+      },
+      "diabetes_management": {
+        "grade": "A",
+        "score": 94,
+        "insight": "Zero-carb protein with omega-3s improves insulin sensitivity and provides stable energy without blood sugar impact",
+        "pros": ["No carbohydrates", "Improves insulin sensitivity", "High-quality protein stabilizes glucose", "Anti-inflammatory"],
+        "cons": []
+      },
+      "muscle_gain": {
+        "grade": "A-",
+        "score": 89,
+        "insight": "Complete protein with excellent amino acid profile supports muscle synthesis and reduces exercise-induced inflammation",
+        "pros": ["20.5g complete protein", "Leucine-rich", "Anti-inflammatory omega-3s aid recovery", "Vitamin D for strength"],
+        "cons": ["Lower protein density than chicken breast"]
+      },
+      "energy_boost": {
+        "grade": "B+",
+        "score": 84,
+        "insight": "B vitamins and quality protein provide sustained energy metabolism without crashes",
+        "pros": ["B12 for energy production", "Niacin supports ATP synthesis", "Sustained energy from protein", "Phosphorus for energy"],
+        "cons": ["No quick carbs for immediate energy"]
+      },
+      "digestive_health": {
+        "grade": "B",
+        "score": 76,
+        "insight": "Easily digestible lean protein with omega-3s that reduce gut inflammation",
+        "pros": ["Low in FODMAPs", "Anti-inflammatory omega-3s", "Easily digestible", "Gentle on stomach"],
+        "cons": ["No fiber", "No prebiotics", "No digestive enzymes"]
+      },
+      "immune_support": {
+        "grade": "A-",
+        "score": 87,
+        "insight": "Rich in vitamin D, selenium, and zinc with omega-3s that modulate immune response",
+        "pros": ["Exceptional vitamin D (16.2mcg)", "Selenium (12.6mcg)", "Zinc (1mg)", "Omega-3s reduce inflammation"],
+        "cons": ["No vitamin C"]
+      },
+      "bone_health": {
+        "grade": "A",
+        "score": 90,
+        "insight": "Outstanding vitamin D content with calcium, phosphorus, and protein for bone strength",
+        "pros": ["16.2mcg vitamin D", "Calcium (67mg)", "Phosphorus (271mg)", "Protein for bone matrix"],
+        "cons": ["Could have more magnesium"]
+      },
+      "brain_focus": {
+        "grade": "A+",
+        "score": 95,
+        "insight": "DHA-rich omega-3s support cognitive function, memory, and mental clarity with B12 for neurotransmitters",
+        "pros": ["0.73g DHA for brain health", "B12 (5.4mcg) for neurons", "Choline for memory", "Reduces neuroinflammation"],
+        "cons": []
+      },
+      "skin_health": {
+        "grade": "A-",
+        "score": 88,
+        "insight": "Omega-3s and vitamin E protect against oxidative damage and promote skin elasticity",
+        "pros": ["Omega-3s reduce inflammation", "Vitamin E (2.8mg) antioxidant", "Protein for collagen", "Healthy fats for skin barrier"],
+        "cons": ["No vitamin C for collagen synthesis"]
+      }
+    }
+  },
+  "cheddar": {
+    "basicInfo": {
+      "name": "Cheddar Cheese",
+      "category": "dairy",
+      "subCategory": "cheese",
+      "servingSize": 100,
+      "servingUnit": "g",
+      "calories": 403,
+      "defaultUnit": "oz"
+    },
+    "macronutrients": {
+      "protein": 24.9,
+      "carbs": 1.3,
+      "fiber": 0,
+      "sugars": 0.5,
+      "fat": 33.1,
+      "saturatedFat": 18.8,
+      "monounsaturatedFat": 9.4,
+      "polyunsaturatedFat": 0.9,
+      "omega3": 0.16,
+      "omega6": 0.65,
+      "transFat": 1.1
+    },
+    "micronutrients": {
+      "vitamins": {
+        "vitaminA": 330,
+        "vitaminC": 0,
+        "vitaminD": 0.6,
+        "vitaminE": 0.7,
+        "vitaminK": 2.4,
+        "thiamin": 0.03,
+        "riboflavin": 0.38,
+        "niacin": 0.06,
+        "vitaminB6": 0.07,
+        "folate": 27,
+        "vitaminB12": 1.1,
+        "pantothenicAcid": 0.4,
+        "choline": 15.4
+      },
+      "minerals": {
+        "calcium": 721,
+        "iron": 0.14,
+        "magnesium": 28,
+        "phosphorus": 512,
+        "potassium": 98,
+        "sodium": 621,
+        "zinc": 3.1,
+        "copper": 0.03,
+        "manganese": 0.01,
+        "selenium": 14.5
+      }
+    },
+    "healthMetrics": {
+      "glycemicIndex": 0,
+      "glycemicLoad": 0,
+      "inflammationScore": 2,
+      "antioxidantScore": 4,
+      "nutrientDensity": 72,
+      "proteinQuality": 1.0,
+      "omega3Content": "low",
+      "omega6to3ratio": 4.1
+    },
+    "tags": ["high-protein", "high-calcium", "fermented", "keto-friendly", "low-carb", "vitamin-k2"],
+    "allergens": ["dairy", "lactose"],
+    "certifications": [],
+    "shelfLife": "1-2 months refrigerated",
+    "preparation": ["sliced", "shredded", "melted", "cubed"],
+    "seasonality": "year-round",
+    "sustainabilityScore": 4,
+    "pricePerServing": 1.8,
+    "bioactiveCompounds": [
+      {
+        "name": "Vitamin K2 (MK-4)",
+        "amount": 2.4,
+        "unit": "mcg",
+        "benefits": ["Bone health", "Cardiovascular protection", "Calcium regulation"]
+      },
+      {
+        "name": "Conjugated Linoleic Acid (CLA)",
+        "amount": 0.44,
+        "unit": "g",
+        "benefits": ["May support fat loss", "Anti-inflammatory properties", "Immune support"]
+      },
+      {
+        "name": "Butyrate (from fermentation)",
+        "amount": 0.3,
+        "unit": "g",
+        "benefits": ["Gut health", "Anti-inflammatory", "Colon cell energy"]
+      }
+    ],
+    "focusGrades": {
+      "weight_loss": {
+        "grade": "C+",
+        "score": 58,
+        "insight": "High in protein and satiating fats but very calorie-dense, requiring careful portion control for weight loss",
+        "pros": ["High protein (24.9g) promotes satiety", "Low carbs", "CLA may support fat metabolism", "Keeps you full"],
+        "cons": ["Very high calories (403)", "High saturated fat (18.8g)", "Easy to overconsume", "Calorie-dense"]
+      },
+      "heart_health": {
+        "grade": "C-",
+        "score": 52,
+        "insight": "High saturated fat and sodium content may increase cardiovascular risk despite beneficial nutrients",
+        "pros": ["Vitamin K2 for arterial health", "Some omega-3s", "Calcium for blood pressure"],
+        "cons": ["High saturated fat (18.8g)", "High sodium (621mg)", "Trans fats (1.1g)", "May raise LDL cholesterol"]
+      },
+      "diabetes_management": {
+        "grade": "B+",
+        "score": 82,
+        "insight": "Very low carbs with high protein and fat provide stable blood sugar, though saturated fat may impact insulin sensitivity",
+        "pros": ["Low carbs (1.3g)", "No blood sugar spike", "High protein stabilizes glucose", "Satiating"],
+        "cons": ["High saturated fat may reduce insulin sensitivity", "High calories"]
+      },
+      "muscle_gain": {
+        "grade": "A-",
+        "score": 87,
+        "insight": "Excellent complete protein with leucine and calcium supports muscle growth and strength",
+        "pros": ["High protein (24.9g)", "Complete amino acids", "Leucine-rich", "Calcium for muscle contraction", "Zinc for testosterone"],
+        "cons": ["High calories require tracking", "Not as lean as other protein sources"]
+      },
+      "energy_boost": {
+        "grade": "B-",
+        "score": 70,
+        "insight": "High fat and protein provide sustained energy but no quick boost; B vitamins support metabolism",
+        "pros": ["Sustained energy from fat", "B12 for energy metabolism", "Riboflavin for ATP", "Prevents energy crashes"],
+        "cons": ["No quick energy", "No carbs for immediate fuel", "Heavy feeling if consumed in large amounts"]
+      },
+      "digestive_health": {
+        "grade": "C+",
+        "score": 62,
+        "insight": "Fermented cheese provides probiotics but lactose and lack of fiber limit digestive benefits",
+        "pros": ["Fermentation provides probiotics", "Easier to digest than milk", "Butyrate for colon health", "Lower lactose than fresh dairy"],
+        "cons": ["No fiber", "Can cause constipation", "Lactose intolerance issues", "High fat may slow digestion"]
+      },
+      "immune_support": {
+        "grade": "B",
+        "score": 76,
+        "insight": "Zinc, selenium, and vitamin A support immune function though high saturated fat may promote inflammation",
+        "pros": ["Zinc (3.1mg) for immunity", "Vitamin A (330mcg)", "Selenium (14.5mcg)", "Probiotics from fermentation"],
+        "cons": ["High saturated fat may increase inflammation", "No vitamin C or D"]
+      },
+      "bone_health": {
+        "grade": "A+",
+        "score": 98,
+        "insight": "Exceptional calcium, phosphorus, protein, and vitamin K2 make cheddar outstanding for bone density",
+        "pros": ["Very high calcium (721mg)", "Phosphorus (512mg)", "Vitamin K2 for calcium regulation", "Protein for bone matrix", "Zinc for bone formation"],
+        "cons": []
+      },
+      "brain_focus": {
+        "grade": "B",
+        "score": 75,
+        "insight": "B vitamins and healthy fats support brain function but lacks omega-3s for optimal cognitive health",
+        "pros": ["B12 for neurotransmitters", "Choline for memory", "Fat for brain cell membranes", "Zinc for cognition"],
+        "cons": ["Low omega-3s", "High saturated fat may impair cognition long-term", "No DHA"]
+      },
+      "skin_health": {
+        "grade": "B-",
+        "score": 72,
+        "insight": "Vitamin A and zinc support skin health but high saturated fat may promote inflammation",
+        "pros": ["Vitamin A (330mcg) for skin repair", "Zinc for wound healing", "Protein for collagen", "Vitamin E antioxidant"],
+        "cons": ["High saturated fat may worsen acne", "No vitamin C", "May trigger inflammation"]
+      }
+    }
+  },
+  "mozzarella": {
+    "basicInfo": {
+      "name": "Mozzarella Cheese",
+      "category": "dairy",
+      "subCategory": "cheese",
+      "servingSize": 100,
+      "servingUnit": "g",
+      "calories": 280,
+      "defaultUnit": "oz"
+    },
+    "macronutrients": {
+      "protein": 21.6,
+      "carbs": 2.2,
+      "fiber": 0,
+      "sugars": 1.2,
+      "fat": 21.6,
+      "saturatedFat": 13.2,
+      "monounsaturatedFat": 6.6,
+      "polyunsaturatedFat": 0.6,
+      "omega3": 0.12,
+      "omega6": 0.42,
+      "transFat": 0.9
+    },
+    "micronutrients": {
+      "vitamins": {
+        "vitaminA": 179,
+        "vitaminC": 0,
+        "vitaminD": 0.4,
+        "vitaminE": 0.2,
+        "vitaminK": 2.3,
+        "thiamin": 0.04,
+        "riboflavin": 0.28,
+        "niacin": 0.10,
+        "vitaminB6": 0.04,
+        "folate": 7,
+        "vitaminB12": 2.3,
+        "pantothenicAcid": 0.14,
+        "choline": 15.4
+      },
+      "minerals": {
+        "calcium": 505,
+        "iron": 0.16,
+        "magnesium": 20,
+        "phosphorus": 354,
+        "potassium": 76,
+        "sodium": 373,
+        "zinc": 2.9,
+        "copper": 0.01,
+        "manganese": 0.03,
+        "selenium": 17.0
+      }
+    },
+    "healthMetrics": {
+      "glycemicIndex": 0,
+      "glycemicLoad": 0,
+      "inflammationScore": 1,
+      "antioxidantScore": 3,
+      "nutrientDensity": 68,
+      "proteinQuality": 1.0,
+      "omega3Content": "low",
+      "omega6to3ratio": 3.5
+    },
+    "tags": ["high-protein", "high-calcium", "fresh-cheese", "low-carb", "pizza-cheese", "stretchy"],
+    "allergens": ["dairy", "lactose"],
+    "certifications": [],
+    "shelfLife": "5-7 days fresh, 1 month in brine",
+    "preparation": ["fresh", "melted", "baked", "sliced"],
+    "seasonality": "year-round",
+    "sustainabilityScore": 4,
+    "pricePerServing": 2.2,
+    "bioactiveCompounds": [
+      {
+        "name": "Vitamin K2",
+        "amount": 2.3,
+        "unit": "mcg",
+        "benefits": ["Bone mineralization", "Cardiovascular health", "Calcium metabolism"]
+      },
+      {
+        "name": "Conjugated Linoleic Acid (CLA)",
+        "amount": 0.32,
+        "unit": "g",
+        "benefits": ["May support weight management", "Anti-inflammatory", "Immune function"]
+      }
+    ],
+    "focusGrades": {
+      "weight_loss": {
+        "grade": "C+",
+        "score": 62,
+        "insight": "Good protein content for satiety but calorie-dense; portion control is essential for weight loss",
+        "pros": ["High protein (21.6g)", "Low carbs (2.2g)", "Satiating", "CLA may aid fat loss"],
+        "cons": ["High calories (280)", "High fat (21.6g)", "Easy to overconsume on pizza", "Moderate saturated fat"]
+      },
+      "heart_health": {
+        "grade": "C",
+        "score": 56,
+        "insight": "Lower in saturated fat than cheddar but still high sodium and fat may impact cardiovascular health",
+        "pros": ["Lower saturated fat than aged cheese", "Calcium for blood pressure", "Vitamin K2 for arteries", "Some potassium"],
+        "cons": ["High saturated fat (13.2g)", "High sodium (373mg)", "Trans fats (0.9g)", "May raise cholesterol"]
+      },
+      "diabetes_management": {
+        "grade": "B+",
+        "score": 84,
+        "insight": "Low carbohydrate content with high protein helps stabilize blood sugar effectively",
+        "pros": ["Low carbs (2.2g)", "High protein stabilizes glucose", "No blood sugar spike", "Moderate fat slows digestion"],
+        "cons": ["Saturated fat may affect insulin sensitivity", "Calories add up quickly"]
+      },
+      "muscle_gain": {
+        "grade": "A-",
+        "score": 88,
+        "insight": "Excellent complete protein with calcium and phosphorus supports muscle growth and recovery",
+        "pros": ["High protein (21.6g)", "Complete amino acids", "Calcium for muscle contraction", "Leucine-rich", "Easy to add to meals"],
+        "cons": ["Less protein-dense than lean meats", "Higher fat content"]
+      },
+      "energy_boost": {
+        "grade": "C+",
+        "score": 68,
+        "insight": "Provides sustained energy from fat and protein but no quick boost; moderate B vitamins",
+        "pros": ["Sustained energy from fat", "Protein prevents crashes", "B12 for metabolism", "Filling"],
+        "cons": ["No quick energy source", "Low in B vitamins", "Heavy on digestion", "No carbs for immediate fuel"]
+      },
+      "digestive_health": {
+        "grade": "C",
+        "score": 60,
+        "insight": "Fresh cheese is easier to digest than aged but still lacks fiber and may cause issues for lactose intolerant",
+        "pros": ["Fresher than aged cheese", "Lower lactose than milk", "Soft texture", "Easier to digest"],
+        "cons": ["No fiber", "Can cause constipation", "Lactose may cause issues", "No prebiotics or probiotics"]
+      },
+      "immune_support": {
+        "grade": "B",
+        "score": 78,
+        "insight": "Zinc, selenium, and vitamin B12 support immune function with quality protein",
+        "pros": ["Zinc (2.9mg)", "Selenium (17mcg)", "B12 (2.3mcg) for immune cells", "Vitamin A for immunity"],
+        "cons": ["No vitamin C or D", "Saturated fat may promote inflammation"]
+      },
+      "bone_health": {
+        "grade": "A+",
+        "score": 96,
+        "insight": "Outstanding calcium and phosphorus with vitamin K2 make mozzarella excellent for bone strength",
+        "pros": ["Very high calcium (505mg)", "Phosphorus (354mg)", "Vitamin K2 for bone mineralization", "Protein for bone matrix", "Magnesium for bone density"],
+        "cons": []
+      },
+      "brain_focus": {
+        "grade": "B",
+        "score": 74,
+        "insight": "B12 and healthy fats support brain function but lacks omega-3s for optimal cognition",
+        "pros": ["B12 (2.3mcg) for neurotransmitters", "Choline for memory", "Protein for brain structure", "Zinc for cognition"],
+        "cons": ["Very low omega-3s", "Low DHA", "Saturated fat may impair long-term cognition"]
+      },
+      "skin_health": {
+        "grade": "B-",
+        "score": 70,
+        "insight": "Vitamin A and zinc benefit skin but high saturated fat may promote inflammation and acne",
+        "pros": ["Vitamin A (179mcg)", "Zinc (2.9mg) for healing", "Protein for collagen", "Selenium antioxidant"],
+        "cons": ["May trigger acne in sensitive individuals", "No vitamin C", "High saturated fat", "Low antioxidants"]
+      }
+    }
+  },
+  "parmesan": {
+    "basicInfo": {
+      "name": "Parmesan Cheese",
+      "category": "dairy",
+      "subCategory": "cheese",
+      "servingSize": 100,
+      "servingUnit": "g",
+      "calories": 431,
+      "defaultUnit": "oz"
+    },
+    "macronutrients": {
+      "protein": 38.5,
+      "carbs": 3.2,
+      "fiber": 0,
+      "sugars": 0.8,
+      "fat": 28.6,
+      "saturatedFat": 18.1,
+      "monounsaturatedFat": 8.4,
+      "polyunsaturatedFat": 0.7,
+      "omega3": 0.18,
+      "omega6": 0.48,
+      "transFat": 1.2
+    },
+    "micronutrients": {
+      "vitamins": {
+        "vitaminA": 207,
+        "vitaminC": 0,
+        "vitaminD": 0.5,
+        "vitaminE": 0.2,
+        "vitaminK": 1.7,
+        "thiamin": 0.04,
+        "riboflavin": 0.33,
+        "niacin": 0.27,
+        "vitaminB6": 0.09,
+        "folate": 7,
+        "vitaminB12": 1.2,
+        "pantothenicAcid": 0.45,
+        "choline": 15.4
+      },
+      "minerals": {
+        "calcium": 1184,
+        "iron": 0.82,
+        "magnesium": 44,
+        "phosphorus": 694,
+        "potassium": 125,
+        "sodium": 1529,
+        "zinc": 2.8,
+        "copper": 0.03,
+        "manganese": 0.02,
+        "selenium": 22.5
+      }
+    },
+    "healthMetrics": {
+      "glycemicIndex": 0,
+      "glycemicLoad": 0,
+      "inflammationScore": 2,
+      "antioxidantScore": 4,
+      "nutrientDensity": 78,
+      "proteinQuality": 1.0,
+      "omega3Content": "low",
+      "omega6to3ratio": 2.7
+    },
+    "tags": ["very-high-protein", "very-high-calcium", "aged-cheese", "umami", "keto-friendly", "low-carb", "lactose-free"],
+    "allergens": ["dairy"],
+    "certifications": [],
+    "shelfLife": "6-12 months refrigerated",
+    "preparation": ["grated", "shaved", "cubed"],
+    "seasonality": "year-round",
+    "sustainabilityScore": 4,
+    "pricePerServing": 3.5,
+    "bioactiveCompounds": [
+      {
+        "name": "Vitamin K2 (MK-4)",
+        "amount": 1.7,
+        "unit": "mcg",
+        "benefits": ["Bone health", "Cardiovascular protection", "Calcium regulation"]
+      },
+      {
+        "name": "Tyrosine (free amino acid)",
+        "amount": 1.56,
+        "unit": "g",
+        "benefits": ["Neurotransmitter production", "Mental alertness", "Stress response"]
+      },
+      {
+        "name": "Conjugated Linoleic Acid (CLA)",
+        "amount": 0.52,
+        "unit": "g",
+        "benefits": ["May support fat metabolism", "Anti-inflammatory", "Immune support"]
+      }
+    ],
+    "focusGrades": {
+      "weight_loss": {
+        "grade": "C",
+        "score": 54,
+        "insight": "Highest protein of all cheeses aids satiety but extremely calorie and fat dense requiring strict portion control",
+        "pros": ["Very high protein (38.5g)", "Minimal carbs (3.2g)", "Very satiating", "Small amounts go far due to strong flavor"],
+        "cons": ["Very high calories (431)", "High saturated fat (18.1g)", "Very high sodium (1529mg)", "Easy to overconsume"]
+      },
+      "heart_health": {
+        "grade": "D+",
+        "score": 48,
+        "insight": "Very high sodium and saturated fat significantly increase cardiovascular risk despite beneficial nutrients",
+        "pros": ["Vitamin K2 for arterial health", "Calcium may help blood pressure", "Some omega-3s"],
+        "cons": ["Very high sodium (1529mg)", "High saturated fat (18.1g)", "Trans fats (1.2g)", "May significantly raise LDL cholesterol", "Increases blood pressure risk"]
+      },
+      "diabetes_management": {
+        "grade": "B+",
+        "score": 83,
+        "insight": "Very low carbs with exceptional protein stabilizes blood sugar though high saturated fat may impact insulin",
+        "pros": ["Very low carbs (3.2g)", "Highest protein of all cheese", "No blood sugar impact", "Lactose-free from aging"],
+        "cons": ["High saturated fat may reduce insulin sensitivity", "Very high calories"]
+      },
+      "muscle_gain": {
+        "grade": "A+",
+        "score": 95,
+        "insight": "Exceptional protein density with complete amino acids and calcium makes parmesan outstanding for muscle building",
+        "pros": ["Very high protein (38.5g)", "Complete amino acid profile", "Rich in leucine", "Calcium for muscle contraction", "Easy to add to meals", "Zinc for testosterone"],
+        "cons": ["High calories require tracking"]
+      },
+      "energy_boost": {
+        "grade": "B-",
+        "score": 71,
+        "insight": "High fat and protein provide sustained energy with tyrosine for mental alertness but no quick fuel",
+        "pros": ["Sustained energy from fat and protein", "Tyrosine for alertness", "B vitamins for metabolism", "Prevents crashes"],
+        "cons": ["No quick energy", "No carbs", "Very heavy on digestion", "High sodium may cause fatigue"]
+      },
+      "digestive_health": {
+        "grade": "C-",
+        "score": 58,
+        "insight": "Aged cheese is lactose-free but very high sodium and lack of fiber limit digestive benefits",
+        "pros": ["Lactose-free from aging", "Easier to digest than fresh cheese", "Small portions due to flavor", "Hard texture"],
+        "cons": ["No fiber", "Can cause severe constipation", "Very high sodium", "No prebiotics", "May cause bloating"]
+      },
+      "immune_support": {
+        "grade": "B",
+        "score": 77,
+        "insight": "Good zinc and selenium with protein support immunity but high saturated fat and sodium may promote inflammation",
+        "pros": ["Zinc (2.8mg)", "Selenium (22.5mcg)", "High protein for immune cells", "Vitamin A for immunity"],
+        "cons": ["Very high sodium may impair immunity", "No vitamin C or D", "Saturated fat may increase inflammation"]
+      },
+      "bone_health": {
+        "grade": "A++",
+        "score": 100,
+        "insight": "Absolute highest calcium content of any food with exceptional phosphorus and protein makes parmesan the ultimate bone food",
+        "pros": ["Exceptional calcium (1184mg)", "Very high phosphorus (694mg)", "Highest protein (38.5g)", "Vitamin K2 for calcium deposition", "Magnesium for bone density"],
+        "cons": []
+      },
+      "brain_focus": {
+        "grade": "B+",
+        "score": 80,
+        "insight": "High tyrosine for neurotransmitters and B vitamins support focus but lacks omega-3s for long-term brain health",
+        "pros": ["Tyrosine (1.56g) for dopamine", "B12 for neurotransmitters", "Protein for brain structure", "Zinc for cognition", "Mental alertness boost"],
+        "cons": ["Very low omega-3s", "No DHA", "High saturated fat long-term may impair cognition"]
+      },
+      "skin_health": {
+        "grade": "C+",
+        "score": 64,
+        "insight": "Zinc and vitamin A support skin repair but high saturated fat and sodium may worsen skin conditions",
+        "pros": ["Zinc (2.8mg) for wound healing", "Vitamin A for skin health", "Protein for collagen", "Selenium antioxidant"],
+        "cons": ["May worsen acne", "High sodium causes water retention", "No vitamin C", "High saturated fat promotes inflammation"]
+      }
+    }
+  },
+  "fried_rice": {
+    "basicInfo": {
+      "name": "Fried Rice",
+      "category": "grains",
+      "subCategory": "prepared",
+      "servingSize": 100,
+      "servingUnit": "g",
+      "calories": 163,
+      "defaultUnit": "cup"
+    },
+    "macronutrients": {
+      "protein": 4.3,
+      "carbs": 27.3,
+      "fiber": 0.9,
+      "sugars": 0.6,
+      "fat": 4.2,
+      "saturatedFat": 0.9,
+      "monounsaturatedFat": 1.6,
+      "polyunsaturatedFat": 1.4,
+      "omega3": 0.08,
+      "omega6": 1.2,
+      "transFat": 0
+    },
+    "micronutrients": {
+      "vitamins": {
+        "vitaminA": 42,
+        "vitaminC": 1.2,
+        "vitaminD": 0.2,
+        "vitaminE": 0.5,
+        "vitaminK": 3.2,
+        "thiamin": 0.14,
+        "riboflavin": 0.06,
+        "niacin": 1.8,
+        "vitaminB6": 0.12,
+        "folate": 23,
+        "vitaminB12": 0.1,
+        "pantothenicAcid": 0.4,
+        "choline": 22
+      },
+      "minerals": {
+        "calcium": 18,
+        "iron": 0.7,
+        "magnesium": 16,
+        "phosphorus": 71,
+        "potassium": 86,
+        "sodium": 387,
+        "zinc": 0.6,
+        "copper": 0.09,
+        "manganese": 0.45,
+        "selenium": 12.1
+      }
+    },
+    "healthMetrics": {
+      "glycemicIndex": 73,
+      "glycemicLoad": 20,
+      "inflammationScore": 1,
+      "antioxidantScore": 3,
+      "nutrientDensity": 42,
+      "proteinQuality": 0.65,
+      "omega3Content": "low",
+      "omega6to3ratio": 15.0
+    },
+    "tags": ["comfort-food", "takeout", "asian-cuisine", "leftover-rice", "quick-meal"],
+    "allergens": ["eggs", "soy"],
+    "certifications": [],
+    "shelfLife": "3-4 days refrigerated",
+    "preparation": ["stir-fried", "wok-cooked", "reheated"],
+    "seasonality": "year-round",
+    "sustainabilityScore": 6,
+    "pricePerServing": 2.5,
+    "bioactiveCompounds": [
+      {
+        "name": "Resistant Starch (from cooled rice)",
+        "amount": 1.2,
+        "unit": "g",
+        "benefits": ["Feeds beneficial gut bacteria", "Improves insulin sensitivity", "Lower glycemic response"]
+      }
+    ],
+    "focusGrades": {
+      "weight_loss": {
+        "grade": "D+",
+        "score": 45,
+        "insight": "High glycemic index with moderate calories and low fiber makes portion control difficult for weight loss",
+        "pros": ["Moderate calories (163)", "Some protein (4.3g)", "Filling in the moment", "Can use brown rice for better version"],
+        "cons": ["High glycemic index (73)", "Low fiber (0.9g)", "High sodium (387mg)", "Easy to overconsume", "Blood sugar spike leads to cravings"]
+      },
+      "heart_health": {
+        "grade": "D",
+        "score": 42,
+        "insight": "High sodium and refined carbs with minimal fiber increase cardiovascular risk",
+        "pros": ["Low saturated fat (0.9g)", "Some omega-3s from oil", "Moderate potassium"],
+        "cons": ["High sodium (387mg)", "Refined white rice", "High glycemic load", "Low fiber", "May raise blood pressure"]
+      },
+      "diabetes_management": {
+        "grade": "D",
+        "score": 38,
+        "insight": "High glycemic index causes rapid blood sugar spikes making it poor for diabetes management",
+        "pros": ["Some protein helps moderate spike", "Resistant starch if using day-old rice", "Can be made with brown rice"],
+        "cons": ["High glycemic index (73)", "High glycemic load (20)", "Rapid blood sugar spike", "Low fiber (0.9g)", "Refined carbs"]
+      },
+      "muscle_gain": {
+        "grade": "C",
+        "score": 58,
+        "insight": "Provides quick carbs for post-workout glycogen but low protein limits muscle building benefits",
+        "pros": ["Quick-digesting carbs (27.3g)", "Good post-workout refuel", "Some protein (4.3g)", "Easy to eat"],
+        "cons": ["Low protein for muscle building", "Incomplete protein", "High sodium", "Not nutrient-dense"]
+      },
+      "energy_boost": {
+        "grade": "C+",
+        "score": 65,
+        "insight": "High glycemic index provides quick energy boost but leads to crash within 1-2 hours",
+        "pros": ["Quick energy from refined carbs", "High glycemic index for immediate boost", "B vitamins for metabolism", "Easy to digest"],
+        "cons": ["Energy crash after 1-2 hours", "Blood sugar roller coaster", "Low fiber means no sustained energy", "May cause fatigue"]
+      },
+      "digestive_health": {
+        "grade": "D+",
+        "score": 44,
+        "insight": "Low fiber with high sodium and refined carbs provides minimal digestive benefits",
+        "pros": ["Easy to digest", "Soft texture", "Some resistant starch if cooled", "Selenium for gut health"],
+        "cons": ["Very low fiber (0.9g)", "Refined grains", "High sodium", "No prebiotics", "May cause constipation"]
+      },
+      "immune_support": {
+        "grade": "D+",
+        "score": 46,
+        "insight": "Minimal immune-supporting nutrients with refined carbs that may impair immune function",
+        "pros": ["Some selenium (12.1mcg)", "Vitamin A from vegetables", "Zinc from eggs", "Easy to eat when sick"],
+        "cons": ["Refined carbs may impair immunity", "Low antioxidants", "High sodium", "Minimal vitamins", "Blood sugar spikes weaken immunity"]
+      },
+      "bone_health": {
+        "grade": "D",
+        "score": 40,
+        "insight": "Very low calcium and vitamin D with high sodium that may increase calcium excretion",
+        "pros": ["Some magnesium (16mg)", "Phosphorus (71mg)", "Manganese for bone formation"],
+        "cons": ["Very low calcium (18mg)", "Almost no vitamin D", "High sodium increases calcium loss", "Low protein", "Minimal vitamin K"]
+      },
+      "brain_focus": {
+        "grade": "C-",
+        "score": 50,
+        "insight": "Quick glucose for short-term focus but blood sugar crash impairs cognition within hours",
+        "pros": ["Quick glucose for brain fuel", "Choline from eggs", "B vitamins for neurotransmitters", "Thiamin for nerve function"],
+        "cons": ["Blood sugar crash hurts focus", "Low omega-3s", "Refined carbs impair long-term cognition", "Brain fog after crash"]
+      },
+      "skin_health": {
+        "grade": "D+",
+        "score": 43,
+        "insight": "High glycemic index and low antioxidants with sodium retention negatively impact skin health",
+        "pros": ["Some vitamin A (42mcg)", "Selenium antioxidant", "Vitamin E from oil"],
+        "cons": ["High glycemic may worsen acne", "Low antioxidants", "High sodium causes puffiness", "Minimal vitamin C", "Refined carbs promote inflammation"]
+      }
+    }
+  },
+  "nuggets": {
+    "basicInfo": {
+      "name": "Chicken Nuggets (Breaded, Fried)",
+      "category": "protein",
+      "subCategory": "processed",
+      "servingSize": 100,
+      "servingUnit": "g",
+      "calories": 296,
+      "defaultUnit": "piece"
+    },
+    "macronutrients": {
+      "protein": 15.3,
+      "carbs": 18.1,
+      "fiber": 1.2,
+      "sugars": 0.4,
+      "fat": 18.7,
+      "saturatedFat": 3.8,
+      "monounsaturatedFat": 8.9,
+      "polyunsaturatedFat": 4.9,
+      "omega3": 0.24,
+      "omega6": 4.5,
+      "transFat": 0.2
+    },
+    "micronutrients": {
+      "vitamins": {
+        "vitaminA": 8,
+        "vitaminC": 0.2,
+        "vitaminD": 0.1,
+        "vitaminE": 1.4,
+        "vitaminK": 4.8,
+        "thiamin": 0.13,
+        "riboflavin": 0.12,
+        "niacin": 6.8,
+        "vitaminB6": 0.22,
+        "folate": 28,
+        "vitaminB12": 0.3,
+        "pantothenicAcid": 0.8,
+        "choline": 42
+      },
+      "minerals": {
+        "calcium": 23,
+        "iron": 1.1,
+        "magnesium": 22,
+        "phosphorus": 174,
+        "potassium": 223,
+        "sodium": 543,
+        "zinc": 0.9,
+        "copper": 0.08,
+        "manganese": 0.21,
+        "selenium": 18.4
+      }
+    },
+    "healthMetrics": {
+      "glycemicIndex": 46,
+      "glycemicLoad": 8,
+      "inflammationScore": 5,
+      "antioxidantScore": 2,
+      "nutrientDensity": 38,
+      "proteinQuality": 0.85,
+      "omega3Content": "low",
+      "omega6to3ratio": 18.8
+    },
+    "tags": ["fast-food", "processed", "fried", "kids-meal", "comfort-food", "convenient"],
+    "allergens": ["wheat", "gluten", "soy"],
+    "certifications": [],
+    "shelfLife": "1-2 days fresh, 3 months frozen",
+    "preparation": ["deep-fried", "oven-baked", "air-fried", "microwaved"],
+    "seasonality": "year-round",
+    "sustainabilityScore": 3,
+    "pricePerServing": 2.0,
+    "bioactiveCompounds": [
+      {
+        "name": "Advanced Glycation End Products (AGEs)",
+        "amount": 7000,
+        "unit": "kU/100g",
+        "benefits": [],
+        "warnings": ["Promote inflammation", "Accelerate aging", "Linked to chronic disease"]
+      }
+    ],
+    "focusGrades": {
+      "weight_loss": {
+        "grade": "D-",
+        "score": 35,
+        "insight": "High calorie and fat density with refined carbs and low satiety makes nuggets very poor for weight loss",
+        "pros": ["Moderate protein (15.3g)", "Can be baked instead of fried for improvement"],
+        "cons": ["Very high calories (296)", "High fat (18.7g)", "Refined breading", "Low satiety", "Easy to overconsume", "High sodium (543mg)"]
+      },
+      "heart_health": {
+        "grade": "D-",
+        "score": 32,
+        "insight": "High sodium, inflammatory omega-6 fats, and trans fats significantly increase cardiovascular disease risk",
+        "pros": ["Some niacin for cholesterol"],
+        "cons": ["Very high sodium (543mg)", "High omega-6 to omega-3 ratio (18.8)", "Trans fats (0.2g)", "Fried in inflammatory oils", "May raise blood pressure", "Increases LDL cholesterol"]
+      },
+      "diabetes_management": {
+        "grade": "D",
+        "score": 40,
+        "insight": "Refined carbs with high fat content impairs blood sugar control and insulin sensitivity",
+        "pros": ["Moderate glycemic index (46)", "Some protein helps moderate spike", "Lower GI than expected"],
+        "cons": ["Refined breading spikes blood sugar", "High fat slows insulin response", "Low fiber (1.2g)", "High sodium", "Inflammatory oils worsen insulin resistance"]
+      },
+      "muscle_gain": {
+        "grade": "C-",
+        "score": 52,
+        "insight": "Moderate protein content but high calories from poor-quality fats and carbs limit muscle-building benefits",
+        "pros": ["15.3g protein per serving", "Complete amino acids from chicken", "Niacin for muscle metabolism", "Convenient"],
+        "cons": ["High calories from fat and carbs", "Inflammatory omega-6 fats impair recovery", "Lower protein density than whole chicken", "Processed meat quality"]
+      },
+      "energy_boost": {
+        "grade": "C-",
+        "score": 48,
+        "insight": "Provides quick energy from carbs and fat but leads to sluggishness and inflammation",
+        "pros": ["Quick energy from refined carbs", "B vitamins for metabolism", "Fat for sustained energy", "Niacin for ATP"],
+        "cons": ["Heavy feeling from fried fat", "Energy crash after digestion", "Inflammatory oils cause fatigue", "High sodium causes bloating"]
+      },
+      "digestive_health": {
+        "grade": "D",
+        "score": 36,
+        "insight": "Low fiber with inflammatory fried fats and high sodium negatively impact gut health",
+        "pros": ["Easy to chew", "Some protein for gut repair"],
+        "cons": ["Very low fiber (1.2g)", "Fried fats hard to digest", "High sodium", "No prebiotics", "May cause stomach upset", "Inflammatory oils damage gut lining"]
+      },
+      "immune_support": {
+        "grade": "D+",
+        "score": 42,
+        "insight": "Minimal immune nutrients with inflammatory fats and refined carbs that may impair immune function",
+        "pros": ["Selenium (18.4mcg)", "Zinc (0.9mg)", "Niacin for immune cells", "Some vitamin B6"],
+        "cons": ["Inflammatory omega-6 fats", "Refined carbs weaken immunity", "Very high sodium", "Low antioxidants", "Trans fats impair immune cells"]
+      },
+      "bone_health": {
+        "grade": "D",
+        "score": 38,
+        "insight": "Minimal calcium and vitamin D with high sodium that increases calcium excretion from bones",
+        "pros": ["Phosphorus (174mg)", "Some magnesium (22mg)", "Protein for bone matrix"],
+        "cons": ["Very low calcium (23mg)", "Almost no vitamin D", "High sodium increases calcium loss", "Inflammatory fats may harm bones", "No vitamin K"]
+      },
+      "brain_focus": {
+        "grade": "D+",
+        "score": 44,
+        "insight": "Provides quick glucose but inflammatory fats and blood sugar fluctuation impair cognitive function",
+        "pros": ["Choline (42mg) for memory", "Niacin for brain energy", "B vitamins for neurotransmitters", "Quick glucose"],
+        "cons": ["Inflammatory omega-6 fats harm brain", "Blood sugar fluctuations hurt focus", "Very low omega-3s", "Trans fats damage neurons", "Brain fog after eating"]
+      },
+      "skin_health": {
+        "grade": "D-",
+        "score": 34,
+        "insight": "Deep frying creates AGEs and inflammatory compounds that accelerate skin aging and worsen acne",
+        "pros": ["Some vitamin E (1.4mg)", "Selenium antioxidant"],
+        "cons": ["AGEs accelerate skin aging", "Inflammatory oils worsen acne", "High sodium causes puffiness", "Trans fats damage collagen", "Very low antioxidants", "May trigger breakouts"]
+      }
+    }
+  }
+}

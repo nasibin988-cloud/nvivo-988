@@ -1,0 +1,934 @@
+{
+  "grapes": {
+    "name": "Grapes, red or green, raw",
+    "fdcId": "174682",
+    "quantity": 1,
+    "unit": "cup (151g)",
+    "mealType": "snack",
+    "foodGroups": ["fruit"],
+    "subCategory": "berry",
+    "calories": 104,
+    "protein": 1.1,
+    "carbs": 27.3,
+    "fat": 0.2,
+    "fiber": 1.4,
+    "sugar": 23.4,
+    "sodium": 3,
+    "saturatedFat": 0.1,
+    "transFat": 0,
+    "cholesterol": 0,
+    "potassium": 288,
+    "calcium": 15,
+    "iron": 0.5,
+    "magnesium": 11,
+    "zinc": 0.1,
+    "vitaminA": 5,
+    "vitaminC": 16.3,
+    "vitaminD": 0,
+    "vitaminE": 0.3,
+    "vitaminK": 22,
+    "thiamin": 0.1,
+    "riboflavin": 0.1,
+    "niacin": 0.3,
+    "vitaminB6": 0.13,
+    "folate": 3,
+    "vitaminB12": 0,
+    "choline": 8.5,
+    "phosphorus": 30,
+    "selenium": 0.2,
+    "copper": 0.2,
+    "manganese": 0.1,
+    "caffeine": 0,
+    "water": 121,
+    "monounsaturatedFat": 0,
+    "polyunsaturatedFat": 0.1,
+    "omega3": { "ala": 0.02, "epa": 0, "dha": 0 },
+    "omega6": { "linoleicAcid": 0.04 },
+    "omegaRatio": 2,
+    "glycemicIndex": 59,
+    "glycemicLoad": 11,
+    "glycemicCategory": "medium",
+    "nutrientDensityScore": 12.5,
+    "satietyScore": 55,
+    "inflammatoryIndex": -0.8,
+    "novaClass": 1,
+    "oracScore": 1837,
+    "dietaryTags": ["vegan", "gluten_free", "paleo", "whole30", "raw"],
+    "allergens": [],
+    "insight": "Tiny powerhouses of resveratrol and polyphenols with exceptional antioxidant scores, but their high sugar-to-fiber ratio demands portion awareness.",
+    "focusGrades": {
+      "balanced": {
+        "grade": "B-",
+        "score": 76,
+        "insight": "Excellent antioxidants and vitamin K (22mcg), but very low fiber (1.4g) relative to high sugar (23.4g) creates nutritional imbalance.",
+        "pros": ["Exceptional antioxidants (ORAC 1837)", "Good vitamin K and C", "High water content (80%)"],
+        "cons": ["High sugar-to-fiber ratio (17:1)", "Low satiety", "Very low protein"]
+      },
+      "heart_health": {
+        "grade": "A-",
+        "score": 88,
+        "insight": "Resveratrol and polyphenols protect cardiovascular health, vitamin K (22mcg) supports arterial health, and virtually no sodium with good potassium.",
+        "pros": ["Resveratrol for heart protection", "Excellent vitamin K for arterial health", "Zero saturated fat and cholesterol"],
+        "cons": ["Sugar content may impact triglycerides"]
+      },
+      "muscle_building": {
+        "grade": "D+",
+        "score": 60,
+        "insight": "Minimal protein (1.1g) and low fiber won't support muscle growth. Quick carbs could help post-workout glycogen but pair with protein source.",
+        "pros": ["Fast-digesting carbs for glycogen", "Hydrating (80% water)"],
+        "cons": ["Very low protein", "Won't build muscle alone", "Low satiety"]
+      },
+      "energy": {
+        "grade": "B",
+        "score": 81,
+        "insight": "Natural sugars provide immediate energy and high water content (80%) aids hydration. However, low fiber means energy spike may be short-lived.",
+        "pros": ["Quick energy from natural sugars", "Excellent hydration", "Portable snack"],
+        "cons": ["May cause energy crash", "Low sustained energy from minimal fiber"]
+      },
+      "weight_management": {
+        "grade": "C+",
+        "score": 72,
+        "insight": "104 calories seems reasonable, but very high sugar (23.4g) and minimal fiber (1.4g) create poor satiety—easy to overeat this snackable fruit.",
+        "pros": ["Moderate calorie density", "High water content creates volume"],
+        "cons": ["Very low satiety score", "High sugar triggers cravings", "Easy to overconsume"]
+      },
+      "brain_focus": {
+        "grade": "B+",
+        "score": 84,
+        "insight": "Resveratrol shows neuroprotective benefits and polyphenols may enhance cognitive function. Quick glucose fuels brain, though briefly.",
+        "pros": ["Resveratrol for brain health", "Polyphenols support cognition", "Quick brain fuel"],
+        "cons": ["Sugar crash may impair focus", "No omega-3 or B vitamins"]
+      },
+      "gut_health": {
+        "grade": "C",
+        "score": 68,
+        "insight": "Low fiber (1.4g per cup) won't meaningfully support gut microbiome. High sugar-to-fiber ratio could feed problematic bacteria.",
+        "pros": ["Some polyphenols benefit gut bacteria", "High water content"],
+        "cons": ["Very low fiber (1.4g)", "High sugar may disrupt microbiome", "Minimal prebiotic value"]
+      },
+      "blood_sugar": {
+        "grade": "C-",
+        "score": 65,
+        "insight": "Medium GI (59) plus very high sugar (23.4g) with minimal fiber (1.4g) creates rapid blood sugar spike. Problematic for insulin resistance.",
+        "pros": ["Lower GI than many fruits", "Some polyphenols may aid insulin sensitivity"],
+        "cons": ["High sugar content (23.4g)", "Very low fiber won't slow absorption", "Easy to overeat"]
+      },
+      "bone_joint": {
+        "grade": "B",
+        "score": 80,
+        "insight": "Excellent vitamin K (22mcg, 27% DV) is critical for bone mineralization and calcium regulation. Copper and manganese provide modest support.",
+        "pros": ["Excellent vitamin K for bone health", "Copper supports collagen", "Anti-inflammatory polyphenols"],
+        "cons": ["Low calcium (15mg)", "Minimal magnesium"]
+      },
+      "anti_inflammatory": {
+        "grade": "A",
+        "score": 92,
+        "insight": "Exceptional antioxidant profile (ORAC 1837) with resveratrol, quercetin, and anthocyanins deliver powerful anti-inflammatory benefits.",
+        "pros": ["Resveratrol fights inflammation", "Exceptional ORAC score", "Polyphenols reduce oxidative stress"],
+        "cons": ["High sugar may counteract some benefits"]
+      }
+    },
+    "bioavailability": {
+      "resveratrol": "Enhanced when consumed with healthy fats",
+      "vitaminK": "Fat-soluble, pair with nuts or cheese"
+    },
+    "pairWith": [
+      { "food": "cheese", "reason": "Fat enhances resveratrol absorption and creates balanced snack" },
+      { "food": "almonds", "reason": "Adds protein and healthy fats for satiety and nutrient absorption" },
+      { "food": "greek_yogurt", "reason": "Protein balances sugar and creates complete snack" }
+    ],
+    "avoidWith": [
+      { "food": "other_high_sugar_fruits", "reason": "Compounds blood sugar spike" }
+    ],
+    "bestTiming": {
+      "preWorkout": true,
+      "postWorkout": true,
+      "morning": true,
+      "beforeBed": false
+    },
+    "digestionTime": "fast",
+    "portionVisual": "Size of a tennis ball or 1 closed fist",
+    "tips": {
+      "storage": "Store unwashed in perforated bag in crisper; wash just before eating to prevent mold",
+      "selection": "Choose firm grapes firmly attached to green, pliable stems; avoid brown or dry stems",
+      "preparation": "Freeze for healthy 'candy' snack or roast with olive oil to concentrate flavors"
+    }
+  },
+  "grape": {
+    "name": "Grapes, red or green, raw",
+    "fdcId": "174682",
+    "quantity": 10,
+    "unit": "grapes (49g)",
+    "mealType": "snack",
+    "foodGroups": ["fruit"],
+    "subCategory": "berry",
+    "calories": 34,
+    "protein": 0.4,
+    "carbs": 8.9,
+    "fat": 0.1,
+    "fiber": 0.5,
+    "sugar": 7.6,
+    "sodium": 1,
+    "saturatedFat": 0,
+    "transFat": 0,
+    "cholesterol": 0,
+    "potassium": 94,
+    "calcium": 5,
+    "iron": 0.2,
+    "magnesium": 4,
+    "zinc": 0,
+    "vitaminA": 2,
+    "vitaminC": 5.3,
+    "vitaminD": 0,
+    "vitaminE": 0.1,
+    "vitaminK": 7.2,
+    "thiamin": 0.03,
+    "riboflavin": 0.03,
+    "niacin": 0.1,
+    "vitaminB6": 0.04,
+    "folate": 1,
+    "vitaminB12": 0,
+    "choline": 2.8,
+    "phosphorus": 10,
+    "selenium": 0.1,
+    "copper": 0.06,
+    "manganese": 0.03,
+    "caffeine": 0,
+    "water": 39.4,
+    "monounsaturatedFat": 0,
+    "polyunsaturatedFat": 0.03,
+    "omega3": { "ala": 0.01, "epa": 0, "dha": 0 },
+    "omega6": { "linoleicAcid": 0.01 },
+    "omegaRatio": 1,
+    "glycemicIndex": 59,
+    "glycemicLoad": 4,
+    "glycemicCategory": "low",
+    "nutrientDensityScore": 12.5,
+    "satietyScore": 45,
+    "inflammatoryIndex": -0.8,
+    "novaClass": 1,
+    "oracScore": 597,
+    "dietaryTags": ["vegan", "gluten_free", "paleo", "whole30", "raw"],
+    "allergens": [],
+    "insight": "Ten grapes deliver concentrated antioxidants and resveratrol in a perfectly portioned 34-calorie snack, though minimal fiber means limited satiety.",
+    "focusGrades": {
+      "balanced": {
+        "grade": "B",
+        "score": 78,
+        "insight": "Perfectly portioned at just 34 calories with good antioxidants, but virtually no fiber (0.5g) or protein creates nutritional gaps.",
+        "pros": ["Portion-controlled", "Good antioxidants per calorie", "Vitamin K (7mcg)"],
+        "cons": ["Minimal fiber", "High sugar relative to portion", "No protein"]
+      },
+      "heart_health": {
+        "grade": "A-",
+        "score": 87,
+        "insight": "Small serving still delivers cardiovascular benefits from resveratrol and polyphenols. Zero saturated fat with favorable potassium-sodium ratio.",
+        "pros": ["Resveratrol for heart protection", "Zero saturated fat", "Good potassium-to-sodium ratio"],
+        "cons": ["Smaller polyphenol dose than full cup"]
+      },
+      "muscle_building": {
+        "grade": "D",
+        "score": 58,
+        "insight": "Only 0.4g protein makes this irrelevant for muscle building. Small carb dose (9g) won't meaningfully replenish glycogen post-workout.",
+        "pros": ["Very low calorie", "Some quick energy"],
+        "cons": ["Negligible protein", "Too small for post-workout", "Zero muscle-building value"]
+      },
+      "energy": {
+        "grade": "B-",
+        "score": 77,
+        "insight": "Natural sugars (7.6g) provide quick energy boost but small portion means brief duration. Good for quick pick-me-up between meals.",
+        "pros": ["Fast energy from natural sugars", "Portable and convenient", "Hydrating"],
+        "cons": ["Energy boost will be brief", "No sustained energy", "May increase cravings"]
+      },
+      "weight_management": {
+        "grade": "B+",
+        "score": 85,
+        "insight": "Only 34 calories makes this excellent for portion control. Perfect size to satisfy sweet cravings without derailing calorie goals.",
+        "pros": ["Very low calorie (34)", "Portion-controlled", "Satisfies sweet cravings"],
+        "cons": ["Minimal satiety", "Easy to eat many portions", "No fullness factor"]
+      },
+      "brain_focus": {
+        "grade": "B",
+        "score": 79,
+        "insight": "Resveratrol and polyphenols support brain health even in small amounts. Quick glucose provides brief mental clarity boost.",
+        "pros": ["Resveratrol neuroprotection", "Quick brain fuel", "Antioxidants fight cognitive decline"],
+        "cons": ["Small dose of beneficial compounds", "Brief focus boost", "No omega-3 or B vitamins"]
+      },
+      "gut_health": {
+        "grade": "C-",
+        "score": 64,
+        "insight": "Only 0.5g fiber provides virtually no gut benefit. Small polyphenol dose has minimal impact on microbiome diversity.",
+        "pros": ["Some polyphenols for gut bacteria", "Hydrating"],
+        "cons": ["Negligible fiber", "High sugar-to-fiber ratio", "Minimal prebiotic value"]
+      },
+      "blood_sugar": {
+        "grade": "B-",
+        "score": 75,
+        "insight": "Small portion keeps glycemic load low (4) despite medium GI. Sugar content (7.6g) is manageable but minimal fiber won't slow absorption.",
+        "pros": ["Low glycemic load (4)", "Portion-controlled sugar", "Won't spike blood sugar dramatically"],
+        "cons": ["Minimal fiber", "May trigger sweet cravings", "Easy to eat multiple portions"]
+      },
+      "bone_joint": {
+        "grade": "B-",
+        "score": 76,
+        "insight": "Vitamin K (7.2mcg) supports bone health even in small portions. Modest copper and antioxidants provide some joint protection.",
+        "pros": ["Vitamin K for bones", "Anti-inflammatory polyphenols", "Copper for collagen"],
+        "cons": ["Very low calcium and magnesium", "Small dose of beneficial compounds"]
+      },
+      "anti_inflammatory": {
+        "grade": "A-",
+        "score": 88,
+        "insight": "Even a small portion delivers concentrated resveratrol, quercetin, and anthocyanins with powerful anti-inflammatory properties.",
+        "pros": ["Concentrated resveratrol", "Strong ORAC score per calorie", "Polyphenols reduce inflammation"],
+        "cons": ["Smaller total polyphenol dose", "Sugar may partially offset benefits"]
+      }
+    },
+    "bioavailability": {
+      "resveratrol": "Enhanced when consumed with healthy fats",
+      "vitaminK": "Fat-soluble, pair with nuts or cheese"
+    },
+    "pairWith": [
+      { "food": "cheese", "reason": "Creates balanced appetizer and enhances resveratrol absorption" },
+      { "food": "nuts", "reason": "Adds protein and healthy fats for complete snack" }
+    ],
+    "avoidWith": [
+      { "food": "candy", "reason": "Compounds sugar intake without nutritional benefit" }
+    ],
+    "bestTiming": {
+      "preWorkout": false,
+      "postWorkout": false,
+      "morning": true,
+      "beforeBed": false
+    },
+    "digestionTime": "fast",
+    "portionVisual": "10 grapes fit in cupped palm",
+    "tips": {
+      "storage": "Store unwashed in perforated bag in crisper; wash just before eating to prevent mold",
+      "selection": "Choose firm grapes firmly attached to green, pliable stems; avoid brown or dry stems",
+      "preparation": "Freeze for a refreshing low-calorie dessert or pair with cheese for balanced snack"
+    }
+  },
+  "watermelon": {
+    "name": "Watermelon, raw",
+    "fdcId": "167765",
+    "quantity": 1,
+    "unit": "cup diced (152g)",
+    "mealType": "snack",
+    "foodGroups": ["fruit"],
+    "subCategory": "melon",
+    "calories": 46,
+    "protein": 0.9,
+    "carbs": 11.5,
+    "fat": 0.2,
+    "fiber": 0.6,
+    "sugar": 9.4,
+    "sodium": 2,
+    "saturatedFat": 0,
+    "transFat": 0,
+    "cholesterol": 0,
+    "potassium": 170,
+    "calcium": 11,
+    "iron": 0.4,
+    "magnesium": 15,
+    "zinc": 0.2,
+    "vitaminA": 43,
+    "vitaminC": 12.3,
+    "vitaminD": 0,
+    "vitaminE": 0.1,
+    "vitaminK": 0.2,
+    "thiamin": 0.05,
+    "riboflavin": 0.03,
+    "niacin": 0.3,
+    "vitaminB6": 0.07,
+    "folate": 5,
+    "vitaminB12": 0,
+    "choline": 6.3,
+    "phosphorus": 17,
+    "selenium": 0.6,
+    "copper": 0.06,
+    "manganese": 0.06,
+    "caffeine": 0,
+    "water": 139,
+    "monounsaturatedFat": 0.04,
+    "polyunsaturatedFat": 0.05,
+    "omega3": { "ala": 0, "epa": 0, "dha": 0 },
+    "omega6": { "linoleicAcid": 0.05 },
+    "omegaRatio": 0,
+    "glycemicIndex": 72,
+    "glycemicLoad": 4,
+    "glycemicCategory": "low",
+    "nutrientDensityScore": 15.8,
+    "satietyScore": 58,
+    "inflammatoryIndex": -1.5,
+    "novaClass": 1,
+    "oracScore": 142,
+    "dietaryTags": ["vegan", "gluten_free", "paleo", "whole30", "raw", "keto_friendly"],
+    "allergens": [],
+    "insight": "The ultimate hydration fruit at 92% water with lycopene and citrulline for heart and muscle recovery, yet surprisingly low in fiber and nutrients per volume.",
+    "focusGrades": {
+      "balanced": {
+        "grade": "B",
+        "score": 79,
+        "insight": "Exceptional hydration (92% water) and low calories (46) with unique lycopene and citrulline, but minimal fiber (0.6g) and protein create nutritional limitations.",
+        "pros": ["Exceptional hydration (92% water)", "Very low calorie density", "Unique lycopene and citrulline"],
+        "cons": ["Very low fiber (0.6g)", "Minimal protein", "Few concentrated nutrients"]
+      },
+      "heart_health": {
+        "grade": "A",
+        "score": 91,
+        "insight": "Lycopene (4.5mg per cup) protects cardiovascular health, citrulline improves blood flow and lowers blood pressure, plus zero saturated fat.",
+        "pros": ["Lycopene for heart protection", "Citrulline improves blood flow", "Zero saturated fat and cholesterol", "Good potassium"],
+        "cons": []
+      },
+      "muscle_building": {
+        "grade": "C+",
+        "score": 73,
+        "insight": "L-citrulline (250mg) converts to arginine to enhance blood flow and reduce muscle soreness. Minimal protein (0.9g) but valuable for recovery.",
+        "pros": ["L-citrulline reduces muscle soreness", "Improves blood flow to muscles", "Excellent hydration for recovery"],
+        "cons": ["Very low protein (0.9g)", "Won't build muscle alone", "Needs protein pairing"]
+      },
+      "energy": {
+        "grade": "B+",
+        "score": 83,
+        "insight": "Natural sugars (9.4g) provide quick energy while exceptional hydration (92% water) fights fatigue. Citrulline may reduce exercise fatigue.",
+        "pros": ["Quick natural energy", "Exceptional hydration fights fatigue", "Citrulline reduces exercise fatigue"],
+        "cons": ["Very low fiber means brief energy", "No sustained fuel"]
+      },
+      "weight_management": {
+        "grade": "A-",
+        "score": 89,
+        "insight": "Only 46 calories per cup with 92% water creates exceptional volume-to-calorie ratio. Satisfies sweet cravings with minimal caloric impact.",
+        "pros": ["Very low calorie density (46 per cup)", "High water content creates volume", "Satisfies sweet cravings"],
+        "cons": ["Low satiety from minimal fiber", "Easy to overeat", "No fullness factor"]
+      },
+      "brain_focus": {
+        "grade": "B",
+        "score": 80,
+        "insight": "Lycopene shows neuroprotective properties and hydration directly impacts cognitive function. Citrulline improves blood flow to brain.",
+        "pros": ["Hydration crucial for brain function", "Lycopene neuroprotection", "Citrulline improves cerebral blood flow"],
+        "cons": ["No omega-3 or B vitamins", "Sugar may affect focus", "Limited brain-specific nutrients"]
+      },
+      "gut_health": {
+        "grade": "C",
+        "score": 67,
+        "insight": "Very low fiber (0.6g per cup) provides minimal gut benefit. High water content aids digestion but won't feed beneficial bacteria.",
+        "pros": ["High water supports digestion", "Easy to digest", "Hydrates digestive tract"],
+        "cons": ["Very low fiber (0.6g)", "Minimal prebiotic value", "Won't support microbiome diversity"]
+      },
+      "blood_sugar": {
+        "grade": "B",
+        "score": 81,
+        "insight": "Despite high GI (72), low glycemic load (4) from small carb content (11.5g) means minimal blood sugar impact. Volume creates satisfaction.",
+        "pros": ["Low glycemic load (4)", "Large volume creates satisfaction", "Moderate sugar (9.4g)"],
+        "cons": ["High GI (72)", "Very low fiber won't slow absorption", "May trigger cravings"]
+      },
+      "bone_joint": {
+        "grade": "B+",
+        "score": 84,
+        "insight": "Lycopene shows strong anti-inflammatory effects beneficial for joint health. Hydration supports joint lubrication and cartilage health.",
+        "pros": ["Lycopene reduces joint inflammation", "Hydration lubricates joints", "Vitamin A supports cartilage (43mcg)"],
+        "cons": ["Low calcium and magnesium", "Minimal bone-building minerals"]
+      },
+      "anti_inflammatory": {
+        "grade": "A-",
+        "score": 88,
+        "insight": "Lycopene is one of nature's most powerful anti-inflammatory compounds. Citrulline and vitamin C provide additional antioxidant protection.",
+        "pros": ["Exceptional lycopene content", "Citrulline reduces oxidative stress", "Vitamin C antioxidant support"],
+        "cons": ["Lower total antioxidants than berries", "ORAC score modest (142)"]
+      }
+    },
+    "bioavailability": {
+      "lycopene": "Enhanced when consumed with small amount of fat; absorption increases with ripeness",
+      "citrulline": "Better absorbed when consumed 30-60 minutes before exercise"
+    },
+    "pairWith": [
+      { "food": "feta_cheese", "reason": "Traditional pairing adds protein, fat enhances lycopene absorption" },
+      { "food": "mint", "reason": "Refreshing combination with additional digestive benefits" },
+      { "food": "lime", "reason": "Vitamin C enhances iron absorption and adds flavor complexity" }
+    ],
+    "avoidWith": [
+      { "food": "alcohol", "reason": "Both are diuretic, compounds dehydration risk" }
+    ],
+    "bestTiming": {
+      "preWorkout": true,
+      "postWorkout": true,
+      "morning": true,
+      "beforeBed": false
+    },
+    "digestionTime": "fast",
+    "portionVisual": "1 cup diced equals size of a baseball",
+    "tips": {
+      "storage": "Whole watermelon lasts 1 week at room temp, 2 weeks refrigerated; cut pieces 3-4 days in airtight container",
+      "selection": "Look for symmetrical shape, yellow ground spot, and hollow sound when tapped; should feel heavy for size",
+      "preparation": "Grill slices for caramelized flavor, blend for instant agua fresca, or cube and freeze for smoothies"
+    }
+  },
+  "mango": {
+    "name": "Mango, raw",
+    "fdcId": "169910",
+    "quantity": 1,
+    "unit": "cup sliced (165g)",
+    "mealType": "snack",
+    "foodGroups": ["fruit"],
+    "subCategory": "tropical_fruit",
+    "calories": 99,
+    "protein": 1.4,
+    "carbs": 24.7,
+    "fat": 0.6,
+    "fiber": 2.6,
+    "sugar": 22.5,
+    "sodium": 3,
+    "saturatedFat": 0.1,
+    "transFat": 0,
+    "cholesterol": 0,
+    "potassium": 277,
+    "calcium": 18,
+    "iron": 0.3,
+    "magnesium": 16,
+    "zinc": 0.1,
+    "vitaminA": 89,
+    "vitaminC": 60.1,
+    "vitaminD": 0,
+    "vitaminE": 1.5,
+    "vitaminK": 6.9,
+    "thiamin": 0.09,
+    "riboflavin": 0.09,
+    "niacin": 1.1,
+    "vitaminB6": 0.2,
+    "folate": 71,
+    "vitaminB12": 0,
+    "choline": 12.8,
+    "phosphorus": 23,
+    "selenium": 1,
+    "copper": 0.18,
+    "manganese": 0.09,
+    "caffeine": 0,
+    "water": 138,
+    "monounsaturatedFat": 0.2,
+    "polyunsaturatedFat": 0.1,
+    "omega3": { "ala": 0.06, "epa": 0, "dha": 0 },
+    "omega6": { "linoleicAcid": 0.02 },
+    "omegaRatio": 0.3,
+    "glycemicIndex": 51,
+    "glycemicLoad": 8,
+    "glycemicCategory": "low",
+    "nutrientDensityScore": 28.5,
+    "satietyScore": 68,
+    "inflammatoryIndex": -2.1,
+    "novaClass": 1,
+    "oracScore": 1002,
+    "dietaryTags": ["vegan", "gluten_free", "paleo", "whole30", "raw"],
+    "allergens": ["tree_pollen_cross_reactivity"],
+    "insight": "A vitamin powerhouse delivering 100% DV of vitamin C and exceptional vitamin A, with unique mangiferin compound showing powerful anti-diabetic and anti-cancer properties.",
+    "focusGrades": {
+      "balanced": {
+        "grade": "A-",
+        "score": 88,
+        "insight": "Outstanding micronutrient profile—100% DV vitamin C (60mg), vitamin A (89mcg), and exceptional folate (71mcg). Good fiber (2.6g) balances natural sugars.",
+        "pros": ["Exceptional vitamin C (100% DV)", "Outstanding vitamin A", "Excellent folate (71mcg)", "Good fiber (2.6g)"],
+        "cons": ["High natural sugar (22.5g)", "Low protein"]
+      },
+      "heart_health": {
+        "grade": "A",
+        "score": 92,
+        "insight": "Mangiferin compound shows cardioprotective effects, exceptional vitamin C aids collagen in arterial walls, fiber helps cholesterol, and zero saturated fat.",
+        "pros": ["Mangiferin protects cardiovascular system", "Exceptional vitamin C for arterial health", "Fiber aids cholesterol reduction", "Zero saturated fat"],
+        "cons": []
+      },
+      "muscle_building": {
+        "grade": "C+",
+        "score": 71,
+        "insight": "Low protein (1.4g) won't build muscle, but exceptional vitamin C (60mg) is critical for collagen synthesis in muscle tissue. Good post-workout carb source.",
+        "pros": ["Vitamin C for collagen in muscle tissue", "Quick carbs for glycogen replenishment", "Good hydration (84% water)"],
+        "cons": ["Low protein (1.4g)", "Won't build muscle alone", "Must pair with protein source"]
+      },
+      "energy": {
+        "grade": "A-",
+        "score": 87,
+        "insight": "Natural sugars with good fiber (2.6g) provide sustained energy release. B vitamins (B6, niacin) support energy metabolism. Exceptional hydration.",
+        "pros": ["Balanced sugar-to-fiber ratio", "B vitamins for energy metabolism", "Hydrating (84% water)", "Sustained energy release"],
+        "cons": ["May cause energy dip if eaten alone"]
+      },
+      "weight_management": {
+        "grade": "B",
+        "score": 80,
+        "insight": "99 calories is reasonable, and good fiber (2.6g) creates better satiety than many fruits. However, high sugar (22.5g) may trigger cravings.",
+        "pros": ["Moderate calories (99)", "Good fiber creates satiety", "High volume and water content"],
+        "cons": ["High sugar content (22.5g)", "Sweet taste may trigger cravings", "Easy to overeat when ripe"]
+      },
+      "brain_focus": {
+        "grade": "A-",
+        "score": 86,
+        "insight": "Mangiferin shows neuroprotective effects and may enhance memory. Exceptional vitamin C supports neurotransmitter synthesis. B6 aids cognitive function.",
+        "pros": ["Mangiferin for brain protection", "Exceptional vitamin C for neurotransmitters", "Vitamin B6 supports cognition", "Folate (71mcg) aids brain health"],
+        "cons": ["No omega-3 fatty acids", "Sugar may affect sustained focus"]
+      },
+      "gut_health": {
+        "grade": "B+",
+        "score": 83,
+        "insight": "Good fiber (2.6g) supports gut motility and feeds beneficial bacteria. Prebiotic compounds and enzymes aid digestion. Polyphenols benefit microbiome.",
+        "pros": ["Good fiber (2.6g)", "Digestive enzymes aid breakdown", "Polyphenols support microbiome", "Prebiotic compounds"],
+        "cons": ["Not as high in fiber as some fruits", "May cause digestive upset in large amounts"]
+      },
+      "blood_sugar": {
+        "grade": "B",
+        "score": 79,
+        "insight": "Low GI (51) and moderate glycemic load (8) from good fiber content. Mangiferin shows anti-diabetic properties. Still, high sugar (22.5g) requires moderation.",
+        "pros": ["Low glycemic index (51)", "Mangiferin improves insulin sensitivity", "Fiber slows sugar absorption (2.6g)"],
+        "cons": ["High total sugar (22.5g)", "Easy to overeat when ripe", "Portion control important"]
+      },
+      "bone_joint": {
+        "grade": "A-",
+        "score": 87,
+        "insight": "Exceptional vitamin C (60mg) is critical for collagen synthesis in bones and cartilage. Vitamin K and mangiferin provide additional bone and joint support.",
+        "pros": ["Exceptional vitamin C for collagen", "Vitamin K supports bone health", "Anti-inflammatory mangiferin protects joints", "Copper aids collagen formation"],
+        "cons": ["Modest calcium content (18mg)"]
+      },
+      "anti_inflammatory": {
+        "grade": "A",
+        "score": 93,
+        "insight": "Mangiferin is a powerhouse anti-inflammatory compound with demonstrated effects. Exceptional vitamin C and polyphenols provide additional antioxidant protection.",
+        "pros": ["Mangiferin shows exceptional anti-inflammatory effects", "Outstanding vitamin C antioxidant", "Strong ORAC score (1002)", "Multiple polyphenols"],
+        "cons": []
+      }
+    },
+    "bioavailability": {
+      "vitaminA": "Beta-carotene absorption enhanced with small amount of fat",
+      "mangiferin": "Better absorbed from ripe mangoes; enhanced with black pepper"
+    },
+    "pairWith": [
+      { "food": "greek_yogurt", "reason": "Protein balances sugar, fat enhances vitamin A absorption" },
+      { "food": "chili_powder", "reason": "Traditional pairing; capsaicin may enhance metabolic benefits" },
+      { "food": "coconut", "reason": "Healthy fats enhance nutrient absorption and create balanced tropical snack" },
+      { "food": "lime", "reason": "Adds vitamin C and creates balanced sweet-tart flavor" }
+    ],
+    "avoidWith": [
+      { "food": "milk", "reason": "Some people experience digestive upset from this combination" }
+    ],
+    "bestTiming": {
+      "preWorkout": true,
+      "postWorkout": true,
+      "morning": true,
+      "beforeBed": false
+    },
+    "digestionTime": "medium",
+    "portionVisual": "1 cup sliced equals size of a baseball or 1 closed fist",
+    "tips": {
+      "storage": "Ripen at room temp, then refrigerate for up to 5 days; cut mango lasts 3-4 days in airtight container",
+      "selection": "Squeeze gently—should yield slightly; smell stem end for sweet aroma; color varies by variety so not reliable",
+      "preparation": "Score flesh in grid while still in skin, flip inside out; or use glass rim to separate flesh from skin easily"
+    }
+  },
+  "mangos": {
+    "name": "Mango, raw",
+    "fdcId": "169910",
+    "quantity": 1,
+    "unit": "cup sliced (165g)",
+    "mealType": "snack",
+    "foodGroups": ["fruit"],
+    "subCategory": "tropical_fruit",
+    "calories": 99,
+    "protein": 1.4,
+    "carbs": 24.7,
+    "fat": 0.6,
+    "fiber": 2.6,
+    "sugar": 22.5,
+    "sodium": 3,
+    "saturatedFat": 0.1,
+    "transFat": 0,
+    "cholesterol": 0,
+    "potassium": 277,
+    "calcium": 18,
+    "iron": 0.3,
+    "magnesium": 16,
+    "zinc": 0.1,
+    "vitaminA": 89,
+    "vitaminC": 60.1,
+    "vitaminD": 0,
+    "vitaminE": 1.5,
+    "vitaminK": 6.9,
+    "thiamin": 0.09,
+    "riboflavin": 0.09,
+    "niacin": 1.1,
+    "vitaminB6": 0.2,
+    "folate": 71,
+    "vitaminB12": 0,
+    "choline": 12.8,
+    "phosphorus": 23,
+    "selenium": 1,
+    "copper": 0.18,
+    "manganese": 0.09,
+    "caffeine": 0,
+    "water": 138,
+    "monounsaturatedFat": 0.2,
+    "polyunsaturatedFat": 0.1,
+    "omega3": { "ala": 0.06, "epa": 0, "dha": 0 },
+    "omega6": { "linoleicAcid": 0.02 },
+    "omegaRatio": 0.3,
+    "glycemicIndex": 51,
+    "glycemicLoad": 8,
+    "glycemicCategory": "low",
+    "nutrientDensityScore": 28.5,
+    "satietyScore": 68,
+    "inflammatoryIndex": -2.1,
+    "novaClass": 1,
+    "oracScore": 1002,
+    "dietaryTags": ["vegan", "gluten_free", "paleo", "whole30", "raw"],
+    "allergens": ["tree_pollen_cross_reactivity"],
+    "insight": "A vitamin powerhouse delivering 100% DV of vitamin C and exceptional vitamin A, with unique mangiferin compound showing powerful anti-diabetic and anti-cancer properties.",
+    "focusGrades": {
+      "balanced": {
+        "grade": "A-",
+        "score": 88,
+        "insight": "Outstanding micronutrient profile—100% DV vitamin C (60mg), vitamin A (89mcg), and exceptional folate (71mcg). Good fiber (2.6g) balances natural sugars.",
+        "pros": ["Exceptional vitamin C (100% DV)", "Outstanding vitamin A", "Excellent folate (71mcg)", "Good fiber (2.6g)"],
+        "cons": ["High natural sugar (22.5g)", "Low protein"]
+      },
+      "heart_health": {
+        "grade": "A",
+        "score": 92,
+        "insight": "Mangiferin compound shows cardioprotective effects, exceptional vitamin C aids collagen in arterial walls, fiber helps cholesterol, and zero saturated fat.",
+        "pros": ["Mangiferin protects cardiovascular system", "Exceptional vitamin C for arterial health", "Fiber aids cholesterol reduction", "Zero saturated fat"],
+        "cons": []
+      },
+      "muscle_building": {
+        "grade": "C+",
+        "score": 71,
+        "insight": "Low protein (1.4g) won't build muscle, but exceptional vitamin C (60mg) is critical for collagen synthesis in muscle tissue. Good post-workout carb source.",
+        "pros": ["Vitamin C for collagen in muscle tissue", "Quick carbs for glycogen replenishment", "Good hydration (84% water)"],
+        "cons": ["Low protein (1.4g)", "Won't build muscle alone", "Must pair with protein source"]
+      },
+      "energy": {
+        "grade": "A-",
+        "score": 87,
+        "insight": "Natural sugars with good fiber (2.6g) provide sustained energy release. B vitamins (B6, niacin) support energy metabolism. Exceptional hydration.",
+        "pros": ["Balanced sugar-to-fiber ratio", "B vitamins for energy metabolism", "Hydrating (84% water)", "Sustained energy release"],
+        "cons": ["May cause energy dip if eaten alone"]
+      },
+      "weight_management": {
+        "grade": "B",
+        "score": 80,
+        "insight": "99 calories is reasonable, and good fiber (2.6g) creates better satiety than many fruits. However, high sugar (22.5g) may trigger cravings.",
+        "pros": ["Moderate calories (99)", "Good fiber creates satiety", "High volume and water content"],
+        "cons": ["High sugar content (22.5g)", "Sweet taste may trigger cravings", "Easy to overeat when ripe"]
+      },
+      "brain_focus": {
+        "grade": "A-",
+        "score": 86,
+        "insight": "Mangiferin shows neuroprotective effects and may enhance memory. Exceptional vitamin C supports neurotransmitter synthesis. B6 aids cognitive function.",
+        "pros": ["Mangiferin for brain protection", "Exceptional vitamin C for neurotransmitters", "Vitamin B6 supports cognition", "Folate (71mcg) aids brain health"],
+        "cons": ["No omega-3 fatty acids", "Sugar may affect sustained focus"]
+      },
+      "gut_health": {
+        "grade": "B+",
+        "score": 83,
+        "insight": "Good fiber (2.6g) supports gut motility and feeds beneficial bacteria. Prebiotic compounds and enzymes aid digestion. Polyphenols benefit microbiome.",
+        "pros": ["Good fiber (2.6g)", "Digestive enzymes aid breakdown", "Polyphenols support microbiome", "Prebiotic compounds"],
+        "cons": ["Not as high in fiber as some fruits", "May cause digestive upset in large amounts"]
+      },
+      "blood_sugar": {
+        "grade": "B",
+        "score": 79,
+        "insight": "Low GI (51) and moderate glycemic load (8) from good fiber content. Mangiferin shows anti-diabetic properties. Still, high sugar (22.5g) requires moderation.",
+        "pros": ["Low glycemic index (51)", "Mangiferin improves insulin sensitivity", "Fiber slows sugar absorption (2.6g)"],
+        "cons": ["High total sugar (22.5g)", "Easy to overeat when ripe", "Portion control important"]
+      },
+      "bone_joint": {
+        "grade": "A-",
+        "score": 87,
+        "insight": "Exceptional vitamin C (60mg) is critical for collagen synthesis in bones and cartilage. Vitamin K and mangiferin provide additional bone and joint support.",
+        "pros": ["Exceptional vitamin C for collagen", "Vitamin K supports bone health", "Anti-inflammatory mangiferin protects joints", "Copper aids collagen formation"],
+        "cons": ["Modest calcium content (18mg)"]
+      },
+      "anti_inflammatory": {
+        "grade": "A",
+        "score": 93,
+        "insight": "Mangiferin is a powerhouse anti-inflammatory compound with demonstrated effects. Exceptional vitamin C and polyphenols provide additional antioxidant protection.",
+        "pros": ["Mangiferin shows exceptional anti-inflammatory effects", "Outstanding vitamin C antioxidant", "Strong ORAC score (1002)", "Multiple polyphenols"],
+        "cons": []
+      }
+    },
+    "bioavailability": {
+      "vitaminA": "Beta-carotene absorption enhanced with small amount of fat",
+      "mangiferin": "Better absorbed from ripe mangoes; enhanced with black pepper"
+    },
+    "pairWith": [
+      { "food": "greek_yogurt", "reason": "Protein balances sugar, fat enhances vitamin A absorption" },
+      { "food": "chili_powder", "reason": "Traditional pairing; capsaicin may enhance metabolic benefits" },
+      { "food": "coconut", "reason": "Healthy fats enhance nutrient absorption and create balanced tropical snack" },
+      { "food": "lime", "reason": "Adds vitamin C and creates balanced sweet-tart flavor" }
+    ],
+    "avoidWith": [
+      { "food": "milk", "reason": "Some people experience digestive upset from this combination" }
+    ],
+    "bestTiming": {
+      "preWorkout": true,
+      "postWorkout": true,
+      "morning": true,
+      "beforeBed": false
+    },
+    "digestionTime": "medium",
+    "portionVisual": "1 cup sliced equals size of a baseball or 1 closed fist",
+    "tips": {
+      "storage": "Ripen at room temp, then refrigerate for up to 5 days; cut mango lasts 3-4 days in airtight container",
+      "selection": "Squeeze gently—should yield slightly; smell stem end for sweet aroma; color varies by variety so not reliable",
+      "preparation": "Score flesh in grid while still in skin, flip inside out; or use glass rim to separate flesh from skin easily"
+    }
+  },
+  "mangoes": {
+    "name": "Mango, raw",
+    "fdcId": "169910",
+    "quantity": 1,
+    "unit": "cup sliced (165g)",
+    "mealType": "snack",
+    "foodGroups": ["fruit"],
+    "subCategory": "tropical_fruit",
+    "calories": 99,
+    "protein": 1.4,
+    "carbs": 24.7,
+    "fat": 0.6,
+    "fiber": 2.6,
+    "sugar": 22.5,
+    "sodium": 3,
+    "saturatedFat": 0.1,
+    "transFat": 0,
+    "cholesterol": 0,
+    "potassium": 277,
+    "calcium": 18,
+    "iron": 0.3,
+    "magnesium": 16,
+    "zinc": 0.1,
+    "vitaminA": 89,
+    "vitaminC": 60.1,
+    "vitaminD": 0,
+    "vitaminE": 1.5,
+    "vitaminK": 6.9,
+    "thiamin": 0.09,
+    "riboflavin": 0.09,
+    "niacin": 1.1,
+    "vitaminB6": 0.2,
+    "folate": 71,
+    "vitaminB12": 0,
+    "choline": 12.8,
+    "phosphorus": 23,
+    "selenium": 1,
+    "copper": 0.18,
+    "manganese": 0.09,
+    "caffeine": 0,
+    "water": 138,
+    "monounsaturatedFat": 0.2,
+    "polyunsaturatedFat": 0.1,
+    "omega3": { "ala": 0.06, "epa": 0, "dha": 0 },
+    "omega6": { "linoleicAcid": 0.02 },
+    "omegaRatio": 0.3,
+    "glycemicIndex": 51,
+    "glycemicLoad": 8,
+    "glycemicCategory": "low",
+    "nutrientDensityScore": 28.5,
+    "satietyScore": 68,
+    "inflammatoryIndex": -2.1,
+    "novaClass": 1,
+    "oracScore": 1002,
+    "dietaryTags": ["vegan", "gluten_free", "paleo", "whole30", "raw"],
+    "allergens": ["tree_pollen_cross_reactivity"],
+    "insight": "A vitamin powerhouse delivering 100% DV of vitamin C and exceptional vitamin A, with unique mangiferin compound showing powerful anti-diabetic and anti-cancer properties.",
+    "focusGrades": {
+      "balanced": {
+        "grade": "A-",
+        "score": 88,
+        "insight": "Outstanding micronutrient profile—100% DV vitamin C (60mg), vitamin A (89mcg), and exceptional folate (71mcg). Good fiber (2.6g) balances natural sugars.",
+        "pros": ["Exceptional vitamin C (100% DV)", "Outstanding vitamin A", "Excellent folate (71mcg)", "Good fiber (2.6g)"],
+        "cons": ["High natural sugar (22.5g)", "Low protein"]
+      },
+      "heart_health": {
+        "grade": "A",
+        "score": 92,
+        "insight": "Mangiferin compound shows cardioprotective effects, exceptional vitamin C aids collagen in arterial walls, fiber helps cholesterol, and zero saturated fat.",
+        "pros": ["Mangiferin protects cardiovascular system", "Exceptional vitamin C for arterial health", "Fiber aids cholesterol reduction", "Zero saturated fat"],
+        "cons": []
+      },
+      "muscle_building": {
+        "grade": "C+",
+        "score": 71,
+        "insight": "Low protein (1.4g) won't build muscle, but exceptional vitamin C (60mg) is critical for collagen synthesis in muscle tissue. Good post-workout carb source.",
+        "pros": ["Vitamin C for collagen in muscle tissue", "Quick carbs for glycogen replenishment", "Good hydration (84% water)"],
+        "cons": ["Low protein (1.4g)", "Won't build muscle alone", "Must pair with protein source"]
+      },
+      "energy": {
+        "grade": "A-",
+        "score": 87,
+        "insight": "Natural sugars with good fiber (2.6g) provide sustained energy release. B vitamins (B6, niacin) support energy metabolism. Exceptional hydration.",
+        "pros": ["Balanced sugar-to-fiber ratio", "B vitamins for energy metabolism", "Hydrating (84% water)", "Sustained energy release"],
+        "cons": ["May cause energy dip if eaten alone"]
+      },
+      "weight_management": {
+        "grade": "B",
+        "score": 80,
+        "insight": "99 calories is reasonable, and good fiber (2.6g) creates better satiety than many fruits. However, high sugar (22.5g) may trigger cravings.",
+        "pros": ["Moderate calories (99)", "Good fiber creates satiety", "High volume and water content"],
+        "cons": ["High sugar content (22.5g)", "Sweet taste may trigger cravings", "Easy to overeat when ripe"]
+      },
+      "brain_focus": {
+        "grade": "A-",
+        "score": 86,
+        "insight": "Mangiferin shows neuroprotective effects and may enhance memory. Exceptional vitamin C supports neurotransmitter synthesis. B6 aids cognitive function.",
+        "pros": ["Mangiferin for brain protection", "Exceptional vitamin C for neurotransmitters", "Vitamin B6 supports cognition", "Folate (71mcg) aids brain health"],
+        "cons": ["No omega-3 fatty acids", "Sugar may affect sustained focus"]
+      },
+      "gut_health": {
+        "grade": "B+",
+        "score": 83,
+        "insight": "Good fiber (2.6g) supports gut motility and feeds beneficial bacteria. Prebiotic compounds and enzymes aid digestion. Polyphenols benefit microbiome.",
+        "pros": ["Good fiber (2.6g)", "Digestive enzymes aid breakdown", "Polyphenols support microbiome", "Prebiotic compounds"],
+        "cons": ["Not as high in fiber as some fruits", "May cause digestive upset in large amounts"]
+      },
+      "blood_sugar": {
+        "grade": "B",
+        "score": 79,
+        "insight": "Low GI (51) and moderate glycemic load (8) from good fiber content. Mangiferin shows anti-diabetic properties. Still, high sugar (22.5g) requires moderation.",
+        "pros": ["Low glycemic index (51)", "Mangiferin improves insulin sensitivity", "Fiber slows sugar absorption (2.6g)"],
+        "cons": ["High total sugar (22.5g)", "Easy to overeat when ripe", "Portion control important"]
+      },
+      "bone_joint": {
+        "grade": "A-",
+        "score": 87,
+        "insight": "Exceptional vitamin C (60mg) is critical for collagen synthesis in bones and cartilage. Vitamin K and mangiferin provide additional bone and joint support.",
+        "pros": ["Exceptional vitamin C for collagen", "Vitamin K supports bone health", "Anti-inflammatory mangiferin protects joints", "Copper aids collagen formation"],
+        "cons": ["Modest calcium content (18mg)"]
+      },
+      "anti_inflammatory": {
+        "grade": "A",
+        "score": 93,
+        "insight": "Mangiferin is a powerhouse anti-inflammatory compound with demonstrated effects. Exceptional vitamin C and polyphenols provide additional antioxidant protection.",
+        "pros": ["Mangiferin shows exceptional anti-inflammatory effects", "Outstanding vitamin C antioxidant", "Strong ORAC score (1002)", "Multiple polyphenols"],
+        "cons": []
+      }
+    },
+    "bioavailability": {
+      "vitaminA": "Beta-carotene absorption enhanced with small amount of fat",
+      "mangiferin": "Better absorbed from ripe mangoes; enhanced with black pepper"
+    },
+    "pairWith": [
+      { "food": "greek_yogurt", "reason": "Protein balances sugar, fat enhances vitamin A absorption" },
+      { "food": "chili_powder", "reason": "Traditional pairing; capsaicin may enhance metabolic benefits" },
+      { "food": "coconut", "reason": "Healthy fats enhance nutrient absorption and create balanced tropical snack" },
+      { "food": "lime", "reason": "Adds vitamin C and creates balanced sweet-tart flavor" }
+    ],
+    "avoidWith": [
+      { "food": "milk", "reason": "Some people experience digestive upset from this combination" }
+    ],
+    "bestTiming": {
+      "preWorkout": true,
+      "postWorkout": true,
+      "morning": true,
+      "beforeBed": false
+    },
+    "digestionTime": "medium",
+    "portionVisual": "1 cup sliced equals size of a baseball or 1 closed fist",
+    "tips": {
+      "storage": "Ripen at room temp, then refrigerate for up to 5 days; cut mango lasts 3-4 days in airtight container",
+      "selection": "Squeeze gently—should yield slightly; smell stem end for sweet aroma; color varies by variety so not reliable",
+      "preparation": "Score flesh in grid while still in skin, flip inside out; or use glass rim to separate flesh from skin easily"
+    }
+  }
+}

@@ -1,0 +1,584 @@
+{
+  "chicken_pot_pie": {
+    "name": "Chicken Pot Pie",
+    "calories": 210,
+    "protein": 8,
+    "carbs": 22,
+    "fat": 10,
+    "fiber": 2,
+    "sugar": 3,
+    "sodium": 420,
+    "saturatedFat": 4,
+    "cholesterol": 25,
+    "potassium": 180,
+    "calcium": 25,
+    "iron": 1.2,
+    "magnesium": 15,
+    "vitaminA": 120,
+    "vitaminC": 4,
+    "vitaminD": 0.3,
+    "vitaminB12": 0.2,
+    "glycemicIndex": 55,
+    "glycemicLoad": 12,
+    "allergens": ["gluten", "dairy", "eggs"],
+    "servingSize": 100,
+    "servingUnit": "g",
+    "focusGrades": {
+      "balanced": {
+        "grade": "C+",
+        "score": 72,
+        "insight": "Classic comfort food with moderate protein and carbs, but high in sodium and saturated fat from pastry crust",
+        "pros": ["Complete meal with protein, vegetables, and carbs", "Contains vitamin A from carrots and peas", "Provides iron and B vitamins"],
+        "cons": ["High sodium content (420mg per 100g)", "Pastry crust adds saturated fat", "Moderate calorie density"]
+      },
+      "heart_health": {
+        "grade": "D+",
+        "score": 62,
+        "insight": "High sodium and saturated fat from pastry crust pose cardiovascular concerns",
+        "pros": ["Contains some potassium from vegetables", "Lean chicken provides protein without excess fat", "Small amount of fiber from vegetables"],
+        "cons": ["Very high sodium (420mg)", "Saturated fat from butter in crust", "Cholesterol content from chicken and pastry"]
+      },
+      "muscle_building": {
+        "grade": "C",
+        "score": 70,
+        "insight": "Moderate protein from chicken, but not optimal for muscle building due to high fat and carb ratio",
+        "pros": ["8g protein per 100g from chicken", "Contains B vitamins for energy metabolism", "Provides some iron for oxygen transport"],
+        "cons": ["Protein-to-calorie ratio could be better", "High fat content dilutes protein density", "Limited essential amino acid profile compared to pure chicken"]
+      },
+      "energy": {
+        "grade": "B-",
+        "score": 75,
+        "insight": "Good sustained energy from balanced macros, though carbs are mostly refined from pastry",
+        "pros": ["Balanced mix of protein, fat, and carbs", "Moderate glycemic load provides steady energy", "Fat content helps slow carb absorption"],
+        "cons": ["Refined carbs from pastry crust", "High sodium may cause water retention", "Not ideal for pre-workout fuel"]
+      },
+      "weight_management": {
+        "grade": "D",
+        "score": 60,
+        "insight": "High calorie density and sodium make this challenging for weight management",
+        "pros": ["Contains some protein for satiety", "Small amount of fiber from vegetables", "Can be portion-controlled"],
+        "cons": ["210 calories per 100g is high density", "High sodium causes water retention", "Fat from pastry adds empty calories"]
+      },
+      "brain_focus": {
+        "grade": "C+",
+        "score": 72,
+        "insight": "Moderate carbs provide glucose for brain function, but refined carbs cause energy fluctuations",
+        "pros": ["B vitamins support cognitive function", "Moderate protein provides amino acids", "Fat supports brain cell membranes"],
+        "cons": ["Refined carbs may cause energy crashes", "High sodium can affect hydration and focus", "Limited omega-3 fatty acids"]
+      },
+      "gut_health": {
+        "grade": "C-",
+        "score": 68,
+        "insight": "Low fiber content and processed ingredients don't support optimal gut health",
+        "pros": ["Contains some vegetables with prebiotic fiber", "Chicken provides easily digestible protein", "Some resistant starch from cooked and cooled potatoes"],
+        "cons": ["Only 2g fiber per 100g", "High sodium can affect gut microbiome", "Processed pastry lacks beneficial nutrients"]
+      },
+      "blood_sugar": {
+        "grade": "C+",
+        "score": 73,
+        "insight": "Moderate glycemic impact due to fat and protein balancing refined carbs",
+        "pros": ["Fat and protein slow carb absorption", "Moderate glycemic index (55)", "Glycemic load of 12 is manageable"],
+        "cons": ["Refined flour in crust spikes blood sugar", "Limited fiber to slow glucose release", "Sugar content from vegetables and crust"]
+      },
+      "bone_joint": {
+        "grade": "C",
+        "score": 70,
+        "insight": "Minimal calcium and vitamin D, but provides some protein for bone maintenance",
+        "pros": ["Protein supports bone matrix", "Contains some calcium from dairy in filling", "Magnesium aids calcium absorption"],
+        "cons": ["Very low calcium (25mg)", "Minimal vitamin D (0.3mcg)", "High sodium may increase calcium excretion"]
+      },
+      "anti_inflammatory": {
+        "grade": "D+",
+        "score": 63,
+        "insight": "Saturated fat and refined carbs promote inflammation, though vegetables provide some antioxidants",
+        "pros": ["Vitamin A from carrots has antioxidant properties", "Some vitamin C from vegetables", "Chicken provides anti-inflammatory amino acids"],
+        "cons": ["Saturated fat triggers inflammatory pathways", "Refined carbs increase inflammation markers", "High sodium promotes systemic inflammation"]
+      }
+    }
+  },
+  "beef_stew": {
+    "name": "Beef Stew",
+    "calories": 95,
+    "protein": 10,
+    "carbs": 8,
+    "fat": 3,
+    "fiber": 1.5,
+    "sugar": 2,
+    "sodium": 320,
+    "saturatedFat": 1.2,
+    "cholesterol": 28,
+    "potassium": 350,
+    "calcium": 18,
+    "iron": 1.8,
+    "magnesium": 22,
+    "vitaminA": 180,
+    "vitaminC": 8,
+    "vitaminD": 0.1,
+    "vitaminB12": 1.2,
+    "glycemicIndex": 48,
+    "glycemicLoad": 4,
+    "allergens": [],
+    "servingSize": 100,
+    "servingUnit": "g",
+    "focusGrades": {
+      "balanced": {
+        "grade": "B+",
+        "score": 85,
+        "insight": "Excellent nutrient-dense comfort food with high protein, moderate carbs, and rich in vitamins and minerals",
+        "pros": ["High protein-to-calorie ratio", "Rich in vegetables providing vitamins A and C", "Good source of iron and B12", "Relatively low calorie density"],
+        "cons": ["Moderate sodium content", "Could be higher in fiber", "Cholesterol from beef"]
+      },
+      "heart_health": {
+        "grade": "B-",
+        "score": 78,
+        "insight": "Good potassium content and lean protein, but sodium and cholesterol require moderation",
+        "pros": ["High potassium (350mg) supports blood pressure", "Relatively low saturated fat", "Iron supports healthy blood cells", "Low glycemic load"],
+        "cons": ["Sodium at 320mg is moderate-high", "Contains 28mg cholesterol", "Limited omega-3 fatty acids"]
+      },
+      "muscle_building": {
+        "grade": "A-",
+        "score": 88,
+        "insight": "Excellent protein source with complete amino acid profile from beef, ideal for muscle recovery",
+        "pros": ["10g high-quality protein per 100g", "Rich in B12 for protein metabolism", "Iron supports oxygen delivery to muscles", "Contains creatine from beef"],
+        "cons": ["Could have higher protein concentration", "Moderate fat content", "Not as protein-dense as pure beef"]
+      },
+      "energy": {
+        "grade": "B+",
+        "score": 84,
+        "insight": "Sustained energy from protein and complex carbs with low glycemic impact",
+        "pros": ["Low glycemic load (4) prevents energy crashes", "Protein provides lasting energy", "B vitamins support energy metabolism", "Iron prevents fatigue"],
+        "cons": ["Lower carb content for high-intensity activities", "Not ideal for quick energy needs", "Moderate calorie density"]
+      },
+      "weight_management": {
+        "grade": "A-",
+        "score": 90,
+        "insight": "Excellent choice for weight management with low calories, high protein, and good satiety",
+        "pros": ["Only 95 calories per 100g", "High protein promotes satiety", "Low calorie density allows large portions", "Fiber from vegetables aids fullness"],
+        "cons": ["Sodium may cause temporary water retention", "Portion sizes can be deceiving", "Needs portion control with bread"]
+      },
+      "brain_focus": {
+        "grade": "B+",
+        "score": 83,
+        "insight": "B12 and iron support cognitive function, with stable blood sugar from low glycemic load",
+        "pros": ["High B12 (1.2mcg) essential for brain health", "Iron prevents cognitive fatigue", "Stable energy from low GI carbs", "Amino acids support neurotransmitters"],
+        "cons": ["Limited omega-3 for brain cell membranes", "Could have more choline", "Moderate fat content"]
+      },
+      "gut_health": {
+        "grade": "B-",
+        "score": 76,
+        "insight": "Vegetables provide some fiber and nutrients, but overall fiber content could be higher",
+        "pros": ["Vegetables provide prebiotic fiber", "Easily digestible protein", "Contains resistant starch from potatoes", "Broth aids hydration"],
+        "cons": ["Only 1.5g fiber per 100g", "Limited probiotic content", "Sodium can affect gut microbiome"]
+      },
+      "blood_sugar": {
+        "grade": "A-",
+        "score": 88,
+        "insight": "Excellent blood sugar control with low glycemic index and minimal sugar content",
+        "pros": ["Very low glycemic load (4)", "High protein slows glucose absorption", "Low sugar content (2g)", "Fat and fiber moderate blood sugar"],
+        "cons": ["Some starch from potatoes and carrots", "Broth may contain added sugars", "Portion size matters"]
+      },
+      "bone_joint": {
+        "grade": "B",
+        "score": 80,
+        "insight": "Good protein and minerals for bone health, plus collagen from slow-cooked beef",
+        "pros": ["Protein supports bone matrix", "Collagen from beef connective tissue", "Magnesium aids bone mineralization", "Vitamin A supports bone remodeling"],
+        "cons": ["Low calcium content (18mg)", "Minimal vitamin D", "High sodium may increase calcium excretion"]
+      },
+      "anti_inflammatory": {
+        "grade": "B",
+        "score": 80,
+        "insight": "Antioxidants from vegetables and omega-3 from grass-fed beef provide anti-inflammatory benefits",
+        "pros": ["Vitamin A (180mcg) reduces inflammation", "Vitamin C supports immune function", "Lean beef has lower inflammatory fat", "Vegetables contain phytonutrients"],
+        "cons": ["Some saturated fat from beef", "Sodium can promote inflammation", "Limited omega-3 unless grass-fed beef"]
+      }
+    }
+  },
+  "meatloaf": {
+    "name": "Meatloaf",
+    "calories": 180,
+    "protein": 14,
+    "carbs": 10,
+    "fat": 10,
+    "fiber": 1,
+    "sugar": 3,
+    "sodium": 380,
+    "saturatedFat": 4,
+    "cholesterol": 55,
+    "potassium": 280,
+    "calcium": 30,
+    "iron": 1.5,
+    "magnesium": 18,
+    "vitaminA": 45,
+    "vitaminC": 3,
+    "vitaminD": 0.4,
+    "vitaminB12": 1.5,
+    "glycemicIndex": 52,
+    "glycemicLoad": 5,
+    "allergens": ["gluten", "eggs"],
+    "servingSize": 100,
+    "servingUnit": "g",
+    "focusGrades": {
+      "balanced": {
+        "grade": "B-",
+        "score": 76,
+        "insight": "Good protein source with moderate macros, but higher in sodium and saturated fat from ground beef",
+        "pros": ["14g protein per 100g", "Balanced macronutrient profile", "Rich in B12 and iron", "Contains vegetables in mix"],
+        "cons": ["High sodium (380mg)", "Saturated fat from beef and eggs", "Cholesterol at 55mg per 100g"]
+      },
+      "heart_health": {
+        "grade": "C",
+        "score": 70,
+        "insight": "Moderate cardiovascular impact due to saturated fat and cholesterol, though potassium helps",
+        "pros": ["Contains potassium for blood pressure", "Iron supports healthy circulation", "Can be made with lean ground beef", "Moderate overall fat content"],
+        "cons": ["High sodium (380mg)", "Saturated fat (4g) is significant", "Cholesterol (55mg) from beef and eggs"]
+      },
+      "muscle_building": {
+        "grade": "B+",
+        "score": 84,
+        "insight": "High-quality protein with complete amino acid profile from beef and eggs",
+        "pros": ["14g complete protein per 100g", "Excellent B12 (1.5mcg) for muscle metabolism", "Iron supports oxygen delivery", "Eggs provide leucine for muscle synthesis"],
+        "cons": ["Fat content dilutes protein density", "Not as protein-dense as pure meat", "Breadcrumbs add non-protein calories"]
+      },
+      "energy": {
+        "grade": "B",
+        "score": 80,
+        "insight": "Good sustained energy from protein and moderate carbs with low glycemic impact",
+        "pros": ["Protein provides lasting satiety and energy", "Low glycemic load (5)", "B vitamins support energy production", "Balanced macros prevent crashes"],
+        "cons": ["Higher fat may slow digestion", "Not ideal for quick pre-workout energy", "Breadcrumbs are refined carbs"]
+      },
+      "weight_management": {
+        "grade": "C+",
+        "score": 72,
+        "insight": "Moderate calorie density and good protein, but fat and sodium are challenges",
+        "pros": ["High protein promotes satiety", "Moderate portion sizes manageable", "Iron supports metabolism", "Can be made with lean meat"],
+        "cons": ["180 calories per 100g is moderate-high", "Fat content adds calorie density", "Sodium causes water retention"]
+      },
+      "brain_focus": {
+        "grade": "B+",
+        "score": 82,
+        "insight": "Excellent B12 and iron support cognitive function with stable energy from low GI",
+        "pros": ["Very high B12 (1.5mcg) for neurotransmitters", "Iron prevents mental fatigue", "Eggs provide choline for memory", "Stable blood sugar from low GI"],
+        "cons": ["Limited omega-3 fatty acids", "Sodium can affect hydration", "Saturated fat may impair cognition"]
+      },
+      "gut_health": {
+        "grade": "C",
+        "score": 68,
+        "insight": "Low fiber and processed ingredients don't optimally support gut microbiome",
+        "pros": ["Protein supports gut lining repair", "Onions provide prebiotic fiber", "Easily digestible when cooked well", "Eggs contain beneficial nutrients"],
+        "cons": ["Only 1g fiber per 100g", "Breadcrumbs are refined", "High sodium affects gut bacteria", "Limited prebiotic content"]
+      },
+      "blood_sugar": {
+        "grade": "B+",
+        "score": 82,
+        "insight": "Good blood sugar control from high protein and low glycemic load",
+        "pros": ["Very low glycemic load (5)", "High protein slows glucose absorption", "Low sugar content (3g)", "Fat moderates blood sugar response"],
+        "cons": ["Breadcrumbs contain refined carbs", "Ketchup glaze adds sugar", "Some recipes use added sugars"]
+      },
+      "bone_joint": {
+        "grade": "C+",
+        "score": 73,
+        "insight": "Protein supports bone structure, but limited calcium and vitamin D",
+        "pros": ["High protein for bone matrix", "Magnesium aids bone mineralization", "Eggs provide vitamin D", "Phosphorus from meat supports bones"],
+        "cons": ["Low calcium (30mg)", "Minimal vitamin D (0.4mcg)", "High sodium increases calcium excretion", "Saturated fat may affect bone density"]
+      },
+      "anti_inflammatory": {
+        "grade": "C",
+        "score": 68,
+        "insight": "Saturated fat and refined carbs promote inflammation, limited antioxidant content",
+        "pros": ["Onions contain anti-inflammatory compounds", "B vitamins reduce homocysteine", "Can add anti-inflammatory herbs", "Tomato glaze provides lycopene"],
+        "cons": ["Saturated fat (4g) triggers inflammation", "High sodium promotes inflammation", "Refined breadcrumbs increase inflammation", "Limited antioxidant content"]
+      }
+    }
+  },
+  "pulled_pork": {
+    "name": "Pulled Pork",
+    "calories": 240,
+    "protein": 20,
+    "carbs": 8,
+    "fat": 14,
+    "fiber": 0.5,
+    "sugar": 6,
+    "sodium": 480,
+    "saturatedFat": 5,
+    "cholesterol": 70,
+    "potassium": 320,
+    "calcium": 22,
+    "iron": 1.2,
+    "magnesium": 24,
+    "vitaminA": 8,
+    "vitaminC": 2,
+    "vitaminD": 0.8,
+    "vitaminB12": 0.6,
+    "glycemicIndex": 40,
+    "glycemicLoad": 3,
+    "allergens": [],
+    "servingSize": 100,
+    "servingUnit": "g",
+    "focusGrades": {
+      "balanced": {
+        "grade": "C+",
+        "score": 72,
+        "insight": "High protein content is excellent, but elevated fat, sodium, and sugar from BBQ sauce are concerns",
+        "pros": ["Excellent protein content (20g)", "Rich, satisfying flavor", "Contains B vitamins and minerals", "Low carb relative to protein"],
+        "cons": ["Very high sodium (480mg)", "High saturated fat (5g)", "Sugar from BBQ sauce (6g)", "High calorie density"]
+      },
+      "heart_health": {
+        "grade": "D+",
+        "score": 64,
+        "insight": "High sodium, saturated fat, and cholesterol pose cardiovascular risks",
+        "pros": ["Good potassium (320mg) for blood pressure", "Contains some B vitamins", "Iron supports circulation", "Can be made with leaner cuts"],
+        "cons": ["Very high sodium (480mg)", "Significant saturated fat (5g)", "High cholesterol (70mg)", "Fat-to-protein ratio not ideal"]
+      },
+      "muscle_building": {
+        "grade": "A-",
+        "score": 88,
+        "insight": "Excellent high-quality protein from pork, ideal for muscle growth and recovery",
+        "pros": ["20g complete protein per 100g", "Rich in branched-chain amino acids", "Contains creatine from pork", "B vitamins support protein metabolism"],
+        "cons": ["High fat dilutes protein efficiency", "Sodium may cause water retention", "Sugar from sauce adds empty calories"]
+      },
+      "energy": {
+        "grade": "B",
+        "score": 78,
+        "insight": "High protein and fat provide sustained energy, but low carbs limit intense activity fuel",
+        "pros": ["High protein for lasting satiety", "Fat provides dense calorie source", "Very low glycemic load (3)", "B vitamins aid energy metabolism"],
+        "cons": ["Low carbs for high-intensity exercise", "High fat may slow digestion", "Sugar from sauce causes minor spikes"]
+      },
+      "weight_management": {
+        "grade": "D",
+        "score": 62,
+        "insight": "High calorie and fat density make portion control critical for weight management",
+        "pros": ["Very high protein promotes satiety", "Low glycemic load prevents cravings", "Can be portioned with vegetables", "Protein boosts metabolism"],
+        "cons": ["240 calories per 100g is high", "Fat adds significant calorie density", "Sodium causes water weight gain", "BBQ sauce adds hidden calories"]
+      },
+      "brain_focus": {
+        "grade": "B-",
+        "score": 75,
+        "insight": "B vitamins and protein support cognition, but high fat and sodium have drawbacks",
+        "pros": ["B vitamins support neurotransmitter production", "Protein provides amino acids for brain function", "Low glycemic impact prevents crashes", "Iron prevents cognitive fatigue"],
+        "cons": ["High saturated fat may impair cognition", "Sodium can affect mental clarity", "Limited omega-3 fatty acids", "Sugar causes minor energy fluctuations"]
+      },
+      "gut_health": {
+        "grade": "C-",
+        "score": 65,
+        "insight": "Very low fiber and high sodium don't support optimal gut health",
+        "pros": ["Protein supports gut lining repair", "Slow-cooked collagen aids digestion", "Can be paired with fiber-rich sides", "Some B vitamins support gut bacteria"],
+        "cons": ["Minimal fiber (0.5g)", "Very high sodium disrupts microbiome", "High fat may slow digestion", "Sugar from sauce feeds harmful bacteria"]
+      },
+      "blood_sugar": {
+        "grade": "A-",
+        "score": 86,
+        "insight": "Excellent blood sugar control from high protein and minimal carbs, despite sugar in sauce",
+        "pros": ["Very low glycemic load (3)", "High protein stabilizes blood sugar", "Low glycemic index (40)", "Fat slows any glucose absorption"],
+        "cons": ["Sugar from BBQ sauce (6g)", "Some sauces add high-fructose corn syrup", "Carb content varies by sauce"]
+      },
+      "bone_joint": {
+        "grade": "C+",
+        "score": 71,
+        "insight": "Collagen from slow-cooked pork helps joints, but limited calcium and high sodium are concerns",
+        "pros": ["Collagen from connective tissue supports joints", "Protein maintains bone mass", "Magnesium aids bone health", "Vitamin D from pork"],
+        "cons": ["Very low calcium (22mg)", "High sodium increases calcium loss", "Saturated fat may affect bone density", "Limited vitamin K"]
+      },
+      "anti_inflammatory": {
+        "grade": "D+",
+        "score": 63,
+        "insight": "High saturated fat and sodium promote inflammation, with minimal anti-inflammatory nutrients",
+        "pros": ["Can be seasoned with anti-inflammatory spices", "Some B vitamins reduce inflammation markers", "Omega-3 in heritage pork breeds", "Collagen may reduce joint inflammation"],
+        "cons": ["High saturated fat (5g) triggers inflammation", "Very high sodium promotes systemic inflammation", "Sugar feeds inflammatory processes", "Limited antioxidants"]
+      }
+    }
+  },
+  "coleslaw": {
+    "name": "Coleslaw",
+    "calories": 85,
+    "protein": 1,
+    "carbs": 10,
+    "fat": 5,
+    "fiber": 2,
+    "sugar": 7,
+    "sodium": 180,
+    "saturatedFat": 0.8,
+    "cholesterol": 5,
+    "potassium": 170,
+    "calcium": 35,
+    "iron": 0.4,
+    "magnesium": 12,
+    "vitaminA": 95,
+    "vitaminC": 30,
+    "vitaminD": 0,
+    "vitaminB12": 0,
+    "glycemicIndex": 45,
+    "glycemicLoad": 4,
+    "allergens": ["eggs"],
+    "servingSize": 100,
+    "servingUnit": "g",
+    "focusGrades": {
+      "balanced": {
+        "grade": "B-",
+        "score": 76,
+        "insight": "Nutrient-rich vegetables with excellent vitamin C, but mayo adds fat and sugar lowers nutritional value",
+        "pros": ["Very high vitamin C (30mg)", "Low calorie density", "Good fiber from cabbage", "Vitamin A from carrots"],
+        "cons": ["High sugar content (7g)", "Added fat from mayonnaise", "Low protein content", "Moderate sodium"]
+      },
+      "heart_health": {
+        "grade": "B-",
+        "score": 77,
+        "insight": "Cruciferous vegetables support heart health, but mayo and sugar are drawbacks",
+        "pros": ["Cruciferous vegetables reduce heart disease risk", "Fiber supports cholesterol management", "Potassium aids blood pressure", "Low saturated fat (0.8g)"],
+        "cons": ["Moderate sodium (180mg)", "Sugar content (7g)", "Cholesterol from mayo (5mg)", "Can be made with healthier dressing"]
+      },
+      "muscle_building": {
+        "grade": "D",
+        "score": 58,
+        "insight": "Minimal protein makes this a poor choice for muscle building, best as a side dish",
+        "pros": ["Vitamin C supports collagen synthesis", "Low calorie allows pairing with protein", "Some minerals for muscle function", "Cruciferous compounds may aid recovery"],
+        "cons": ["Only 1g protein per 100g", "High sugar-to-protein ratio", "Fat is mostly from mayo, not beneficial", "Limited amino acids"]
+      },
+      "energy": {
+        "grade": "C+",
+        "score": 71,
+        "insight": "Quick energy from sugar, but lacks sustained fuel from protein and complex carbs",
+        "pros": ["Low glycemic load (4)", "Vitamin C supports energy metabolism", "Easy to digest", "Refreshing and hydrating"],
+        "cons": ["High sugar (7g) causes quick spikes", "Minimal protein for sustained energy", "Low calorie density", "Fat from mayo slows digestion"]
+      },
+      "weight_management": {
+        "grade": "B",
+        "score": 80,
+        "insight": "Low calorie and high fiber support weight management, but sugar and portion sizes matter",
+        "pros": ["Only 85 calories per 100g", "Fiber promotes satiety", "High water content fills stomach", "Volume eating friendly"],
+        "cons": ["Sugar (7g) can trigger cravings", "Mayo adds calorie density", "Easy to overeat as side dish", "Sodium causes water retention"]
+      },
+      "brain_focus": {
+        "grade": "C+",
+        "score": 72,
+        "insight": "Vitamin C and antioxidants support brain health, but sugar causes energy fluctuations",
+        "pros": ["High vitamin C protects brain cells", "Cruciferous compounds support cognition", "Antioxidants reduce oxidative stress", "Low glycemic load prevents major crashes"],
+        "cons": ["High sugar (7g) causes focus fluctuations", "Minimal B vitamins", "No omega-3 fatty acids", "Low protein"]
+      },
+      "gut_health": {
+        "grade": "B+",
+        "score": 83,
+        "insight": "Excellent prebiotic fiber from cabbage and fermentable carbs support gut microbiome",
+        "pros": ["Cabbage provides prebiotic fiber", "Cruciferous vegetables feed beneficial bacteria", "Fiber aids regularity (2g)", "Raw vegetables contain enzymes"],
+        "cons": ["Sugar feeds harmful bacteria", "Mayo lacks probiotic content", "Some may find cabbage hard to digest", "Processed dressing reduces benefits"]
+      },
+      "blood_sugar": {
+        "grade": "C+",
+        "score": 74,
+        "insight": "Moderate blood sugar impact due to fiber, but high sugar content is a concern",
+        "pros": ["Low glycemic load (4)", "Fiber slows sugar absorption", "Low glycemic index (45)", "Fat from mayo moderates response"],
+        "cons": ["High sugar content (7g)", "Refined sugar in dressing", "Carrots add natural sugars", "Lacks protein to stabilize glucose"]
+      },
+      "bone_joint": {
+        "grade": "B-",
+        "score": 75,
+        "insight": "Vitamin C and K from cabbage support collagen and bone health, but calcium is limited",
+        "pros": ["Vitamin C essential for collagen synthesis", "Vitamin K from cabbage supports bone density", "Anti-inflammatory cruciferous compounds", "Some calcium (35mg)"],
+        "cons": ["Low calcium compared to dairy", "No vitamin D", "Minimal magnesium", "Sodium may increase calcium loss"]
+      },
+      "anti_inflammatory": {
+        "grade": "B+",
+        "score": 84,
+        "insight": "Cruciferous vegetables are powerfully anti-inflammatory, though sugar and processed ingredients detract",
+        "pros": ["Cruciferous compounds reduce inflammation", "Very high vitamin C (30mg) is antioxidant", "Vitamin A from carrots", "Polyphenols in cabbage"],
+        "cons": ["Sugar promotes inflammation", "Processed mayo may contain pro-inflammatory oils", "Sodium can increase inflammation", "Omega-6 from vegetable oil"]
+      }
+    }
+  },
+  "potato_salad": {
+    "name": "Potato Salad",
+    "calories": 145,
+    "protein": 2,
+    "carbs": 18,
+    "fat": 7,
+    "fiber": 2,
+    "sugar": 3,
+    "sodium": 360,
+    "saturatedFat": 1.2,
+    "cholesterol": 15,
+    "potassium": 310,
+    "calcium": 20,
+    "iron": 0.6,
+    "magnesium": 18,
+    "vitaminA": 30,
+    "vitaminC": 12,
+    "vitaminD": 0.2,
+    "vitaminB12": 0.1,
+    "glycemicIndex": 58,
+    "glycemicLoad": 10,
+    "allergens": ["eggs"],
+    "servingSize": 100,
+    "servingUnit": "g",
+    "focusGrades": {
+      "balanced": {
+        "grade": "C+",
+        "score": 71,
+        "insight": "Carb-focused side dish with moderate calories, but high sodium and limited protein",
+        "pros": ["Good potassium from potatoes (310mg)", "Vitamin C from potatoes and celery", "Moderate calorie density", "Contains some fiber"],
+        "cons": ["Very high sodium (360mg)", "Low protein (2g)", "High carb-to-protein ratio", "Fat from mayonnaise"]
+      },
+      "heart_health": {
+        "grade": "C",
+        "score": 68,
+        "insight": "Potassium supports heart health, but high sodium and cholesterol are concerns",
+        "pros": ["High potassium (310mg) balances sodium", "Relatively low saturated fat (1.2g)", "Resistant starch from cooled potatoes", "Some vitamin C"],
+        "cons": ["Very high sodium (360mg)", "Cholesterol from eggs and mayo (15mg)", "Can be made with healthier dressing", "Limited omega-3"]
+      },
+      "muscle_building": {
+        "grade": "D",
+        "score": 60,
+        "insight": "Very low protein makes this unsuitable for muscle building, primarily a carb source",
+        "pros": ["Potassium supports muscle function", "Carbs provide energy for workouts", "Can be paired with protein sources", "Easy to digest"],
+        "cons": ["Only 2g protein per 100g", "High carb-to-protein ratio", "Fat is not beneficial for muscle", "Limited amino acids"]
+      },
+      "energy": {
+        "grade": "B-",
+        "score": 76,
+        "insight": "Good carb source for energy, resistant starch provides sustained fuel",
+        "pros": ["Carbs provide readily available energy", "Resistant starch from cooled potatoes", "Moderate glycemic load (10)", "Potassium prevents muscle fatigue"],
+        "cons": ["Moderate-high glycemic index (58)", "Low protein limits sustained energy", "Fat from mayo slows digestion", "Not ideal for quick pre-workout fuel"]
+      },
+      "weight_management": {
+        "grade": "C",
+        "score": 68,
+        "insight": "Moderate calorie density and high sodium make portion control important",
+        "pros": ["Moderate calories (145 per 100g)", "Fiber aids satiety (2g)", "Resistant starch reduces calorie absorption", "Potassium reduces water retention"],
+        "cons": ["Very high sodium causes bloating", "Easy to overeat as side dish", "Fat from mayo adds density", "Often served in large portions"]
+      },
+      "brain_focus": {
+        "grade": "C+",
+        "score": 73,
+        "insight": "Carbs provide glucose for brain, but refined starches and low protein limit benefits",
+        "pros": ["Carbs provide brain fuel", "Vitamin C protects brain cells", "Potassium supports nerve function", "Resistant starch feeds gut-brain axis"],
+        "cons": ["Moderate-high GI may cause energy swings", "Very low protein and B vitamins", "High sodium affects hydration", "No omega-3 fatty acids"]
+      },
+      "gut_health": {
+        "grade": "B",
+        "score": 78,
+        "insight": "Resistant starch from cooled potatoes is excellent for gut bacteria",
+        "pros": ["Resistant starch feeds beneficial bacteria", "Fiber supports regularity (2g)", "Prebiotic content from potatoes", "Fermentable carbs"],
+        "cons": ["High sodium disrupts microbiome balance", "Mayo lacks probiotic content", "Processed ingredients", "Some find eggs hard to digest"]
+      },
+      "blood_sugar": {
+        "grade": "C+",
+        "score": 72,
+        "insight": "Moderate glycemic impact, resistant starch helps but still primarily refined carbs",
+        "pros": ["Resistant starch lowers glycemic response", "Fat from mayo slows absorption", "Moderate glycemic load (10)", "Fiber helps somewhat"],
+        "cons": ["Moderate-high glycemic index (58)", "Primarily refined starch", "Low protein doesn't stabilize glucose", "Sugar in some dressings"]
+      },
+      "bone_joint": {
+        "grade": "C",
+        "score": 68,
+        "insight": "Limited bone-building nutrients, though potassium may help reduce calcium loss",
+        "pros": ["Potassium reduces calcium excretion", "Vitamin C supports collagen", "Magnesium aids bone health", "Some calcium from eggs"],
+        "cons": ["Very low calcium (20mg)", "Minimal vitamin D (0.2mcg)", "High sodium increases calcium loss", "Low protein for bone matrix"]
+      },
+      "anti_inflammatory": {
+        "grade": "C",
+        "score": 69,
+        "insight": "Resistant starch has anti-inflammatory properties, but sodium and refined carbs detract",
+        "pros": ["Resistant starch reduces inflammation markers", "Vitamin C is antioxidant (12mg)", "Potassium reduces systemic inflammation", "Can add anti-inflammatory herbs"],
+        "cons": ["High sodium promotes inflammation", "Refined starches increase inflammation", "Mayo may contain pro-inflammatory oils", "Limited antioxidants overall"]
+      }
+    }
+  }
+}

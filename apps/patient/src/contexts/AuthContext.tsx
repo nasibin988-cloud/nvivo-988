@@ -7,9 +7,6 @@ import {
 } from 'firebase/auth';
 import { getAuthInstance } from '@nvivo/shared';
 
-// Test user email and patientId for development
-const TEST_EMAIL = 'sarah.mitchell@test.nvivo.health';
-const TEST_PATIENT_ID = 'sarah-mitchell-test';
 
 interface AuthContextType {
   user: User | null;
@@ -45,10 +42,8 @@ export function AuthProvider({ children }: { children: ReactNode }) {
     await firebaseSignOut(auth);
   };
 
-  // patientId: use TEST_PATIENT_ID for test user, otherwise user.uid
-  const patientId = user
-    ? (user.email === TEST_EMAIL ? TEST_PATIENT_ID : user.uid)
-    : null;
+  // patientId is always the user's Auth UID
+  const patientId = user?.uid ?? null;
 
   return (
     <AuthContext.Provider value={{ user, patientId, loading, signIn, signOut }}>

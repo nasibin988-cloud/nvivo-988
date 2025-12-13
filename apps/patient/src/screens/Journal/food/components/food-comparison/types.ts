@@ -3,6 +3,8 @@
  * Type definitions for food health grades and wellness focus impacts
  */
 
+import type { FoodIntelligence } from '../photo-analysis/types';
+
 export type HealthGrade = 'A' | 'B' | 'C' | 'D' | 'F';
 
 // ============================================
@@ -161,6 +163,8 @@ export interface FoodHealthProfile extends ExtendedNutritionData {
   conditionImpacts: ConditionImpact[];
   aiRecommendation?: string;
   alternatives?: FoodAlternative[];
+  /** Food intelligence data for contextual insights */
+  intelligence?: FoodIntelligence;
 }
 
 export interface FoodAlternative {

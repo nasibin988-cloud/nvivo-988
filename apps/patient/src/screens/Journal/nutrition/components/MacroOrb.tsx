@@ -121,7 +121,7 @@ export function MacroOrb({
       {/* Label with goal */}
       <div className="mt-2 text-center">
         <span className="text-[10px] text-text-muted uppercase tracking-wider block">{label}</span>
-        <span className="text-[9px] text-text-muted/60">{invertProgress ? 'limit' : '/'} {target}{unit}</span>
+        <span className="text-[9px] text-text-muted/60">{invertProgress ? 'Limit' : '/'} {target}{unit}</span>
         {isOverGoal && (
           <span
             className="text-[9px] font-bold px-1.5 py-0.5 rounded-full mt-0.5 block"

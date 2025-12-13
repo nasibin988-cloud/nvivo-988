@@ -1,0 +1,1010 @@
+{
+  "grapefruit": {
+    "foodId": "grapefruit",
+    "name": "Grapefruit",
+    "category": "fruits",
+    "subcategory": "citrus_fruits",
+    "description": "Raw pink and red grapefruit, all areas",
+    "servingSize": {
+      "amount": 123,
+      "unit": "g",
+      "household": "1/2 medium grapefruit"
+    },
+    "nutrients": {
+      "calories": 52,
+      "protein": 0.91,
+      "totalFat": 0.17,
+      "saturatedFat": 0.021,
+      "transFat": 0,
+      "polyunsaturatedFat": 0.044,
+      "monounsaturatedFat": 0.021,
+      "cholesterol": 0,
+      "totalCarbohydrates": 13.11,
+      "dietaryFiber": 1.6,
+      "totalSugars": 8.54,
+      "addedSugars": 0,
+      "sugarAlcohols": 0,
+      "sodium": 0,
+      "potassium": 166,
+      "calcium": 27,
+      "iron": 0.1,
+      "magnesium": 11,
+      "phosphorus": 18,
+      "zinc": 0.09,
+      "copper": 0.062,
+      "manganese": 0.025,
+      "selenium": 0.1,
+      "vitaminA": 1414,
+      "vitaminARae": 71,
+      "betaCarotene": 843,
+      "vitaminC": 38.4,
+      "vitaminD": 0,
+      "vitaminE": 0.16,
+      "vitaminK": 0,
+      "thiamin": 0.052,
+      "riboflavin": 0.04,
+      "niacin": 0.269,
+      "pantothenicAcid": 0.283,
+      "vitaminB6": 0.056,
+      "folate": 13,
+      "vitaminB12": 0,
+      "choline": 7.8,
+      "omega3": 0.011,
+      "omega6": 0.033,
+      "caffeine": 0,
+      "alcohol": 0,
+      "water": 108.41
+    },
+    "glycemicIndex": 25,
+    "glycemicLoad": 3,
+    "inflammatoryScore": -2.8,
+    "antioxidantScore": 88,
+    "microbiomeScore": 82,
+    "nutrientDensity": 86,
+    "metabolicScore": 89,
+    "bioavailabilityFactors": {
+      "vitaminCEnhancer": true,
+      "fatSolubleLimited": true,
+      "fiberBenefit": true,
+      "organicAcidsPresent": true
+    },
+    "allergens": [],
+    "tags": [
+      "citrus",
+      "low_calorie",
+      "vitamin_c_rich",
+      "antioxidant",
+      "hydrating",
+      "low_glycemic",
+      "heart_healthy"
+    ],
+    "healthBenefits": [
+      "Rich in vitamin C for immune support",
+      "Contains lycopene and beta-carotene antioxidants",
+      "May help reduce insulin resistance",
+      "Supports cardiovascular health",
+      "Low glycemic index for blood sugar control",
+      "Hydrating with high water content"
+    ],
+    "concerns": [
+      "May interact with certain medications (statins, blood pressure drugs)",
+      "High acidity may irritate sensitive stomachs",
+      "Can affect drug metabolism via CYP3A4 enzyme"
+    ],
+    "preparationTips": [
+      "Cut in half and eat with a spoon",
+      "Add to fruit salads",
+      "Juice fresh for breakfast",
+      "Segment for green salads",
+      "Best consumed fresh and raw"
+    ],
+    "sustainabilityScore": 72,
+    "carbonFootprint": 0.4,
+    "waterFootprint": 280,
+    "seasonality": {
+      "peak": ["November", "December", "January", "February", "March", "April"],
+      "available": ["October", "November", "December", "January", "February", "March", "April", "May"]
+    },
+    "storageGuidance": {
+      "roomTemp": "5-7 days",
+      "refrigerated": "2-3 weeks",
+      "frozen": "Not recommended"
+    },
+    "focusGrades": {
+      "heart_health": {
+        "grade": "A",
+        "score": 92,
+        "reasoning": "Excellent for heart health with high vitamin C, potassium, fiber, and lycopene. Zero cholesterol and very low fat. May help lower LDL cholesterol and blood pressure."
+      },
+      "metabolic_health": {
+        "grade": "A",
+        "score": 94,
+        "reasoning": "Outstanding metabolic benefits with very low glycemic index (25), high fiber, and compounds that improve insulin sensitivity. May aid weight management and blood sugar control."
+      },
+      "inflammation": {
+        "grade": "A",
+        "score": 90,
+        "reasoning": "Strong anti-inflammatory properties from vitamin C, lycopene, beta-carotene, and flavonoids. Negative inflammatory score indicates inflammation reduction."
+      },
+      "gut_health": {
+        "grade": "B+",
+        "score": 85,
+        "reasoning": "Good fiber content (1.6g) and high water content support digestive health. Contains pectin and prebiotic compounds that feed beneficial gut bacteria."
+      },
+      "brain_health": {
+        "grade": "B",
+        "score": 82,
+        "reasoning": "Antioxidants (vitamin C, lycopene) protect brain cells from oxidative stress. Flavonoids may support cognitive function and memory."
+      },
+      "immune_support": {
+        "grade": "A",
+        "score": 95,
+        "reasoning": "Exceptional vitamin C content (38.4mg = 43% DV) plus vitamin A and antioxidants provide robust immune system support."
+      },
+      "energy": {
+        "grade": "B",
+        "score": 80,
+        "reasoning": "Provides steady energy from natural sugars with low glycemic impact. B vitamins support energy metabolism. Hydrating properties help maintain energy levels."
+      },
+      "bone_health": {
+        "grade": "C+",
+        "score": 68,
+        "reasoning": "Modest calcium (27mg) and vitamin C for collagen synthesis. Limited vitamin K and vitamin D. Not a primary bone-building food."
+      },
+      "skin_health": {
+        "grade": "A-",
+        "score": 88,
+        "reasoning": "Excellent vitamin C for collagen production, vitamin A for skin cell turnover, and antioxidants for UV protection. High water content promotes hydration."
+      },
+      "longevity": {
+        "grade": "A-",
+        "score": 89,
+        "reasoning": "Rich in antioxidants and phytochemicals linked to reduced disease risk. Low calorie density supports healthy weight. May reduce oxidative stress and cellular aging."
+      }
+    },
+    "usdaDataSource": "SR Legacy 09123",
+    "lastUpdated": "2025-12-12"
+  },
+  "orange_juice": {
+    "foodId": "orange_juice",
+    "name": "Orange Juice",
+    "category": "beverages",
+    "subcategory": "fruit_juices",
+    "description": "Orange juice, raw (not from concentrate)",
+    "servingSize": {
+      "amount": 248,
+      "unit": "g",
+      "household": "1 cup (8 fl oz)"
+    },
+    "nutrients": {
+      "calories": 112,
+      "protein": 1.74,
+      "totalFat": 0.5,
+      "saturatedFat": 0.059,
+      "transFat": 0,
+      "polyunsaturatedFat": 0.099,
+      "monounsaturatedFat": 0.094,
+      "cholesterol": 0,
+      "totalCarbohydrates": 25.79,
+      "dietaryFiber": 0.5,
+      "totalSugars": 20.83,
+      "addedSugars": 0,
+      "sugarAlcohols": 0,
+      "sodium": 2,
+      "potassium": 496,
+      "calcium": 27,
+      "iron": 0.5,
+      "magnesium": 27,
+      "phosphorus": 42,
+      "zinc": 0.12,
+      "copper": 0.104,
+      "manganese": 0.05,
+      "selenium": 0.2,
+      "vitaminA": 496,
+      "vitaminARae": 25,
+      "betaCarotene": 149,
+      "vitaminC": 124,
+      "vitaminD": 0,
+      "vitaminE": 0.12,
+      "vitaminK": 0.2,
+      "thiamin": 0.223,
+      "riboflavin": 0.074,
+      "niacin": 0.992,
+      "pantothenicAcid": 0.471,
+      "vitaminB6": 0.099,
+      "folate": 74,
+      "vitaminB12": 0,
+      "choline": 20.6,
+      "omega3": 0.025,
+      "omega6": 0.074,
+      "caffeine": 0,
+      "alcohol": 0,
+      "water": 219.65
+    },
+    "glycemicIndex": 50,
+    "glycemicLoad": 12,
+    "inflammatoryScore": -1.2,
+    "antioxidantScore": 75,
+    "microbiomeScore": 45,
+    "nutrientDensity": 78,
+    "metabolicScore": 65,
+    "bioavailabilityFactors": {
+      "vitaminCEnhancer": true,
+      "rapidAbsorption": true,
+      "fiberRemoved": true,
+      "concentratedSugars": true
+    },
+    "allergens": [],
+    "tags": [
+      "citrus",
+      "vitamin_c_rich",
+      "breakfast_beverage",
+      "antioxidant",
+      "folate_source",
+      "potassium_rich"
+    ],
+    "healthBenefits": [
+      "Exceptionally high in vitamin C (124mg = 138% DV)",
+      "Rich in folate for cellular health",
+      "High potassium supports heart health",
+      "Contains flavonoids with antioxidant properties",
+      "Thiamin supports energy metabolism",
+      "May reduce inflammation"
+    ],
+    "concerns": [
+      "High in natural sugars without fiber buffering",
+      "Moderate glycemic load can spike blood sugar",
+      "Acidic - may erode tooth enamel with frequent consumption",
+      "Calories can add up quickly",
+      "May interact with certain medications",
+      "Less filling than whole fruit"
+    ],
+    "preparationTips": [
+      "Drink immediately after juicing for maximum nutrients",
+      "Consume with a meal containing fat for better vitamin absorption",
+      "Dilute with water if watching sugar intake",
+      "Use a straw to minimize tooth enamel contact",
+      "Pair with protein or fiber to slow sugar absorption"
+    ],
+    "sustainabilityScore": 68,
+    "carbonFootprint": 0.5,
+    "waterFootprint": 850,
+    "seasonality": {
+      "peak": ["December", "January", "February", "March", "April"],
+      "available": ["year-round"]
+    },
+    "storageGuidance": {
+      "roomTemp": "Do not store at room temp",
+      "refrigerated": "7-10 days (fresh squeezed), per label (store-bought)",
+      "frozen": "8-12 months"
+    },
+    "focusGrades": {
+      "heart_health": {
+        "grade": "B+",
+        "score": 85,
+        "reasoning": "High potassium (496mg) supports healthy blood pressure. Folate and vitamin C benefit cardiovascular health. However, sugar content without fiber is a concern."
+      },
+      "metabolic_health": {
+        "grade": "C+",
+        "score": 68,
+        "reasoning": "Moderate glycemic load (12) and concentrated sugars without fiber can impact blood sugar. Lacks the metabolic benefits of whole fruit. Best consumed in moderation."
+      },
+      "inflammation": {
+        "grade": "B+",
+        "score": 84,
+        "reasoning": "Vitamin C, flavonoids, and hesperidin provide anti-inflammatory benefits. However, sugar content may promote inflammation in excess."
+      },
+      "gut_health": {
+        "grade": "C",
+        "score": 50,
+        "reasoning": "Very low fiber (0.5g) compared to whole oranges. Lacks the prebiotic benefits and bulk that support gut health. Sugars without fiber may feed less beneficial bacteria."
+      },
+      "brain_health": {
+        "grade": "B",
+        "score": 80,
+        "reasoning": "High folate supports neurotransmitter synthesis. Vitamin C and flavonoids protect brain cells. Thiamin supports cognitive function."
+      },
+      "immune_support": {
+        "grade": "A",
+        "score": 96,
+        "reasoning": "Outstanding vitamin C content (124mg = 138% DV) provides exceptional immune support. Folate and other antioxidants enhance immune function."
+      },
+      "energy": {
+        "grade": "B-",
+        "score": 75,
+        "reasoning": "Provides quick energy from natural sugars and B vitamins. However, rapid absorption without fiber may lead to energy spike and crash."
+      },
+      "bone_health": {
+        "grade": "C+",
+        "score": 65,
+        "reasoning": "Some calcium (27mg) and vitamin C for collagen. Many brands are fortified with calcium and vitamin D (not reflected here for raw juice). Modest bone benefits."
+      },
+      "skin_health": {
+        "grade": "A-",
+        "score": 88,
+        "reasoning": "Very high vitamin C (124mg) supports collagen synthesis. Antioxidants protect against UV damage. Hydrating properties benefit skin."
+      },
+      "longevity": {
+        "grade": "B",
+        "score": 78,
+        "reasoning": "Antioxidants and vitamins support cellular health, but concentrated sugars without fiber are a concern for long-term metabolic health. Whole fruit is superior."
+      }
+    },
+    "usdaDataSource": "SR Legacy 09206",
+    "lastUpdated": "2025-12-12"
+  },
+  "apple_juice": {
+    "foodId": "apple_juice",
+    "name": "Apple Juice",
+    "category": "beverages",
+    "subcategory": "fruit_juices",
+    "description": "Apple juice, unsweetened, without added ascorbic acid",
+    "servingSize": {
+      "amount": 248,
+      "unit": "g",
+      "household": "1 cup (8 fl oz)"
+    },
+    "nutrients": {
+      "calories": 117,
+      "protein": 0.15,
+      "totalFat": 0.27,
+      "saturatedFat": 0.045,
+      "transFat": 0,
+      "polyunsaturatedFat": 0.08,
+      "monounsaturatedFat": 0.011,
+      "cholesterol": 0,
+      "totalCarbohydrates": 28.97,
+      "dietaryFiber": 0.2,
+      "totalSugars": 24.23,
+      "addedSugars": 0,
+      "sugarAlcohols": 0,
+      "sodium": 10,
+      "potassium": 250,
+      "calcium": 20,
+      "iron": 0.3,
+      "magnesium": 12,
+      "phosphorus": 17,
+      "zinc": 0.07,
+      "copper": 0.014,
+      "manganese": 0.084,
+      "selenium": 0.1,
+      "vitaminA": 5,
+      "vitaminARae": 0,
+      "betaCarotene": 5,
+      "vitaminC": 2.2,
+      "vitaminD": 0,
+      "vitaminE": 0.02,
+      "vitaminK": 0.5,
+      "thiamin": 0.025,
+      "riboflavin": 0.025,
+      "niacin": 0.099,
+      "pantothenicAcid": 0.074,
+      "vitaminB6": 0.03,
+      "folate": 0,
+      "vitaminB12": 0,
+      "choline": 4.5,
+      "omega3": 0.025,
+      "omega6": 0.055,
+      "caffeine": 0,
+      "alcohol": 0,
+      "water": 218.28
+    },
+    "glycemicIndex": 41,
+    "glycemicLoad": 12,
+    "inflammatoryScore": 0.5,
+    "antioxidantScore": 52,
+    "microbiomeScore": 35,
+    "nutrientDensity": 42,
+    "metabolicScore": 58,
+    "bioavailabilityFactors": {
+      "rapidAbsorption": true,
+      "fiberRemoved": true,
+      "concentratedSugars": true,
+      "lowMicronutrients": true
+    },
+    "allergens": [],
+    "tags": [
+      "fruit_juice",
+      "low_vitamin",
+      "high_sugar",
+      "hydrating",
+      "mild_flavor"
+    ],
+    "healthBenefits": [
+      "Hydrating beverage",
+      "Contains some potassium for electrolyte balance",
+      "Polyphenols may provide modest antioxidant benefits",
+      "Easy to digest for most people",
+      "May help with hydration during illness"
+    ],
+    "concerns": [
+      "Very high in natural sugars (24g) without fiber",
+      "Minimal vitamins compared to whole apples",
+      "Can contribute to tooth decay due to sugars and acidity",
+      "May spike blood sugar in diabetics",
+      "High calorie beverage with low nutrient density",
+      "Frequent consumption linked to weight gain in children"
+    ],
+    "preparationTips": [
+      "Dilute with water to reduce sugar concentration",
+      "Choose 100% juice without added sugars",
+      "Consume in small portions (4 oz for children)",
+      "Pair with protein or fiber-rich foods",
+      "Consider whole apples instead for better nutrition"
+    ],
+    "sustainabilityScore": 64,
+    "carbonFootprint": 0.6,
+    "waterFootprint": 950,
+    "seasonality": {
+      "peak": ["year-round"],
+      "available": ["year-round"]
+    },
+    "storageGuidance": {
+      "roomTemp": "Do not store at room temp (opened)",
+      "refrigerated": "7-10 days after opening",
+      "frozen": "8-12 months"
+    },
+    "focusGrades": {
+      "heart_health": {
+        "grade": "C",
+        "score": 62,
+        "reasoning": "Moderate potassium (250mg) provides some cardiovascular benefit. However, high sugar content without fiber is concerning for heart health. Polyphenols offer modest benefits."
+      },
+      "metabolic_health": {
+        "grade": "D+",
+        "score": 58,
+        "reasoning": "Moderate glycemic load (12) with concentrated sugars and virtually no fiber (0.2g). Can contribute to blood sugar spikes and weight gain. Poor choice for metabolic health."
+      },
+      "inflammation": {
+        "grade": "C",
+        "score": 60,
+        "reasoning": "Some polyphenols provide antioxidant benefits, but high sugar content may promote inflammation. Minimal anti-inflammatory nutrients. Slightly pro-inflammatory overall."
+      },
+      "gut_health": {
+        "grade": "D",
+        "score": 40,
+        "reasoning": "Extremely low fiber (0.2g) provides minimal gut health benefits. Lacks prebiotics found in whole apples. High sugar without fiber may negatively impact gut microbiome."
+      },
+      "brain_health": {
+        "grade": "C-",
+        "score": 65,
+        "reasoning": "Some polyphenols may protect brain cells, but very low in key brain nutrients. Excess sugar consumption linked to cognitive decline. Whole apples are far superior."
+      },
+      "immune_support": {
+        "grade": "D",
+        "score": 55,
+        "reasoning": "Very low vitamin C (2.2mg) and minimal other immune-supporting nutrients. High sugar may actually suppress immune function. Poor choice for immune support."
+      },
+      "energy": {
+        "grade": "C",
+        "score": 68,
+        "reasoning": "Provides quick energy from sugars, but without fiber leads to rapid spike and crash. Minimal B vitamins. Not a sustained energy source."
+      },
+      "bone_health": {
+        "grade": "D+",
+        "score": 50,
+        "reasoning": "Low calcium (20mg), no vitamin D, minimal vitamin K. Provides little bone health support unless fortified."
+      },
+      "skin_health": {
+        "grade": "D+",
+        "score": 52,
+        "reasoning": "Very low vitamin C (2.2mg) and antioxidants. High sugar content may contribute to glycation and skin aging. Hydration is the only significant benefit."
+      },
+      "longevity": {
+        "grade": "C-",
+        "score": 58,
+        "reasoning": "High sugar content without compensating nutrients is concerning for long-term health. Minimal antioxidants. Regular consumption may increase metabolic disease risk."
+      }
+    },
+    "usdaDataSource": "SR Legacy 09016",
+    "lastUpdated": "2025-12-12"
+  },
+  "lemonade": {
+    "foodId": "lemonade",
+    "name": "Lemonade",
+    "category": "beverages",
+    "subcategory": "fruit_drinks",
+    "description": "Lemonade, homemade style (water, lemon juice, sugar)",
+    "servingSize": {
+      "amount": 248,
+      "unit": "g",
+      "household": "1 cup (8 fl oz)"
+    },
+    "nutrients": {
+      "calories": 99,
+      "protein": 0.15,
+      "totalFat": 0.12,
+      "saturatedFat": 0.015,
+      "transFat": 0,
+      "polyunsaturatedFat": 0.035,
+      "monounsaturatedFat": 0.01,
+      "cholesterol": 0,
+      "totalCarbohydrates": 25.92,
+      "dietaryFiber": 0.1,
+      "totalSugars": 24.8,
+      "addedSugars": 20.0,
+      "sugarAlcohols": 0,
+      "sodium": 7,
+      "potassium": 37,
+      "calcium": 10,
+      "iron": 0.07,
+      "magnesium": 5,
+      "phosphorus": 5,
+      "zinc": 0.02,
+      "copper": 0.012,
+      "manganese": 0.01,
+      "selenium": 0.1,
+      "vitaminA": 2,
+      "vitaminARae": 0,
+      "betaCarotene": 2,
+      "vitaminC": 9.6,
+      "vitaminD": 0,
+      "vitaminE": 0.02,
+      "vitaminK": 0,
+      "thiamin": 0.01,
+      "riboflavin": 0.005,
+      "niacin": 0.025,
+      "pantothenicAcid": 0.025,
+      "vitaminB6": 0.012,
+      "folate": 2,
+      "vitaminB12": 0,
+      "choline": 1.2,
+      "omega3": 0.01,
+      "omega6": 0.025,
+      "caffeine": 0,
+      "alcohol": 0,
+      "water": 221.31
+    },
+    "glycemicIndex": 66,
+    "glycemicLoad": 17,
+    "inflammatoryScore": 2.2,
+    "antioxidantScore": 28,
+    "microbiomeScore": 22,
+    "nutrientDensity": 18,
+    "metabolicScore": 35,
+    "bioavailabilityFactors": {
+      "rapidAbsorption": true,
+      "addedSugars": true,
+      "lowNutrients": true,
+      "acidic": true
+    },
+    "allergens": [],
+    "tags": [
+      "sweetened_beverage",
+      "high_added_sugar",
+      "refreshing",
+      "acidic",
+      "low_nutrient"
+    ],
+    "healthBenefits": [
+      "Hydrating on hot days",
+      "Some vitamin C from lemon juice",
+      "Refreshing and thirst-quenching",
+      "May aid digestion due to acidity"
+    ],
+    "concerns": [
+      "Very high in added sugars (20g per cup)",
+      "High glycemic load can spike blood sugar rapidly",
+      "Acidic - can erode tooth enamel",
+      "Minimal nutritional value beyond hydration",
+      "May contribute to weight gain and metabolic issues",
+      "Can increase inflammation with regular consumption"
+    ],
+    "preparationTips": [
+      "Reduce sugar by half and use stevia or monk fruit",
+      "Add fresh mint or berries for flavor without sugar",
+      "Dilute with sparkling water",
+      "Use as occasional treat, not daily beverage",
+      "Make with real lemons, not concentrate",
+      "Add a pinch of salt for electrolyte balance"
+    ],
+    "sustainabilityScore": 70,
+    "carbonFootprint": 0.3,
+    "waterFootprint": 320,
+    "seasonality": {
+      "peak": ["year-round"],
+      "available": ["year-round"]
+    },
+    "storageGuidance": {
+      "roomTemp": "2-4 hours (with ice)",
+      "refrigerated": "3-4 days",
+      "frozen": "Not recommended"
+    },
+    "focusGrades": {
+      "heart_health": {
+        "grade": "D",
+        "score": 40,
+        "reasoning": "High added sugar (20g) is detrimental to heart health. Very low potassium and other heart-protective nutrients. Regular consumption may increase cardiovascular risk."
+      },
+      "metabolic_health": {
+        "grade": "D-",
+        "score": 35,
+        "reasoning": "High glycemic load (17) and added sugars cause rapid blood sugar spikes. Virtually no fiber or protein to slow absorption. Poor choice for metabolic health."
+      },
+      "inflammation": {
+        "grade": "D",
+        "score": 42,
+        "reasoning": "Added sugars promote systemic inflammation. Minimal anti-inflammatory nutrients. Positive inflammatory score indicates pro-inflammatory effects."
+      },
+      "gut_health": {
+        "grade": "D",
+        "score": 38,
+        "reasoning": "Virtually no fiber (0.1g) or prebiotics. High sugar may negatively impact gut microbiome diversity. Acidity may irritate sensitive digestive systems."
+      },
+      "brain_health": {
+        "grade": "D",
+        "score": 45,
+        "reasoning": "Excess sugar linked to cognitive decline and poor memory. Minimal brain-supporting nutrients. May contribute to brain inflammation over time."
+      },
+      "immune_support": {
+        "grade": "D+",
+        "score": 48,
+        "reasoning": "Some vitamin C (9.6mg = 11% DV) from lemon juice provides modest immune support. However, high sugar may suppress immune function."
+      },
+      "energy": {
+        "grade": "D",
+        "score": 50,
+        "reasoning": "Provides rapid energy spike from sugar followed by crash. No sustained energy from complex carbs or B vitamins. Poor energy source."
+      },
+      "bone_health": {
+        "grade": "D",
+        "score": 35,
+        "reasoning": "Minimal calcium (10mg), no vitamin D or K. Acidity may actually leach calcium from bones. Provides no bone health benefits."
+      },
+      "skin_health": {
+        "grade": "D",
+        "score": 44,
+        "reasoning": "High sugar contributes to glycation and accelerated skin aging. Minimal vitamin C and antioxidants. Hydration is only benefit."
+      },
+      "longevity": {
+        "grade": "D-",
+        "score": 38,
+        "reasoning": "High added sugar consumption linked to increased risk of chronic diseases, obesity, and reduced lifespan. Minimal protective nutrients. Should be occasional treat only."
+      }
+    },
+    "usdaDataSource": "SR Legacy 14431",
+    "lastUpdated": "2025-12-12"
+  },
+  "coconut_water": {
+    "foodId": "coconut_water",
+    "name": "Coconut Water",
+    "category": "beverages",
+    "subcategory": "plant_waters",
+    "description": "Coconut water, unsweetened, from young green coconuts",
+    "servingSize": {
+      "amount": 240,
+      "unit": "g",
+      "household": "1 cup (8 fl oz)"
+    },
+    "nutrients": {
+      "calories": 46,
+      "protein": 1.73,
+      "totalFat": 0.48,
+      "saturatedFat": 0.415,
+      "transFat": 0,
+      "polyunsaturatedFat": 0.005,
+      "monounsaturatedFat": 0.017,
+      "cholesterol": 0,
+      "totalCarbohydrates": 8.9,
+      "dietaryFiber": 2.6,
+      "totalSugars": 6.26,
+      "addedSugars": 0,
+      "sugarAlcohols": 0,
+      "sodium": 252,
+      "potassium": 600,
+      "calcium": 58,
+      "iron": 0.72,
+      "magnesium": 60,
+      "phosphorus": 48,
+      "zinc": 0.24,
+      "copper": 0.096,
+      "manganese": 0.336,
+      "selenium": 2.4,
+      "vitaminA": 0,
+      "vitaminARae": 0,
+      "betaCarotene": 0,
+      "vitaminC": 5.8,
+      "vitaminD": 0,
+      "vitaminE": 0,
+      "vitaminK": 0,
+      "thiamin": 0.072,
+      "riboflavin": 0.144,
+      "niacin": 0.192,
+      "pantothenicAcid": 0.52,
+      "vitaminB6": 0.08,
+      "folate": 7,
+      "vitaminB12": 0,
+      "choline": 3.8,
+      "omega3": 0,
+      "omega6": 0.005,
+      "caffeine": 0,
+      "alcohol": 0,
+      "water": 228.02
+    },
+    "glycemicIndex": 54,
+    "glycemicLoad": 3,
+    "inflammatoryScore": -0.8,
+    "antioxidantScore": 58,
+    "microbiomeScore": 70,
+    "nutrientDensity": 72,
+    "metabolicScore": 78,
+    "bioavailabilityFactors": {
+      "electrolytesPresent": true,
+      "rapidHydration": true,
+      "naturallyOccurringSugars": true,
+      "mineralRich": true
+    },
+    "allergens": [
+      "tree_nut (coconut classified as tree nut by FDA)"
+    ],
+    "tags": [
+      "electrolyte_drink",
+      "natural_sports_drink",
+      "hydrating",
+      "potassium_rich",
+      "low_calorie",
+      "tropical"
+    ],
+    "healthBenefits": [
+      "Excellent natural electrolyte source (potassium, sodium, magnesium)",
+      "Superior hydration for exercise recovery",
+      "Supports heart health with high potassium (600mg)",
+      "May help lower blood pressure",
+      "Contains cytokinins with anti-aging properties",
+      "Good source of manganese for bone health",
+      "Low glycemic load despite natural sugars"
+    ],
+    "concerns": [
+      "Higher sodium (252mg) than other fruit beverages",
+      "May cause digestive upset in large quantities",
+      "Expensive compared to water",
+      "Some brands add sugar - check labels",
+      "Coconut allergy possible (rare)"
+    ],
+    "preparationTips": [
+      "Drink chilled for best flavor",
+      "Consume after intense exercise for electrolyte replenishment",
+      "Use as base for smoothies",
+      "Freeze into ice cubes for flavored water",
+      "Choose unsweetened varieties only",
+      "Best consumed fresh from young coconuts when possible"
+    ],
+    "sustainabilityScore": 58,
+    "carbonFootprint": 1.2,
+    "waterFootprint": 2500,
+    "seasonality": {
+      "peak": ["year-round (tropical)"],
+      "available": ["year-round"]
+    },
+    "storageGuidance": {
+      "roomTemp": "Do not store at room temp (opened)",
+      "refrigerated": "7-10 days after opening",
+      "frozen": "6-8 months"
+    },
+    "focusGrades": {
+      "heart_health": {
+        "grade": "A-",
+        "score": 88,
+        "reasoning": "Outstanding potassium content (600mg = 13% DV) helps regulate blood pressure. Magnesium and low sodium-to-potassium ratio support cardiovascular health."
+      },
+      "metabolic_health": {
+        "grade": "B+",
+        "score": 85,
+        "reasoning": "Low glycemic load (3) despite natural sugars. Good fiber (2.6g) and electrolytes support metabolic function. Low calorie hydration option."
+      },
+      "inflammation": {
+        "grade": "B+",
+        "score": 84,
+        "reasoning": "Contains anti-inflammatory cytokinins and antioxidants. Magnesium and potassium help reduce inflammation. Slightly negative inflammatory score."
+      },
+      "gut_health": {
+        "grade": "B+",
+        "score": 86,
+        "reasoning": "Good fiber content (2.6g) for a beverage. Contains enzymes that may aid digestion. Supports gut health better than most beverages."
+      },
+      "brain_health": {
+        "grade": "B",
+        "score": 78,
+        "reasoning": "Electrolytes support neural function. B vitamins aid neurotransmitter production. Cytokinins may have neuroprotective effects."
+      },
+      "immune_support": {
+        "grade": "B-",
+        "score": 72,
+        "reasoning": "Contains lauric acid with antimicrobial properties. Minerals support immune function. Modest vitamin C content. Good but not exceptional."
+      },
+      "energy": {
+        "grade": "B+",
+        "score": 85,
+        "reasoning": "Excellent for hydration and electrolyte replenishment during/after exercise. Natural sugars with fiber prevent crashes. B vitamins support energy metabolism."
+      },
+      "bone_health": {
+        "grade": "B",
+        "score": 80,
+        "reasoning": "Good calcium (58mg), magnesium (60mg), and excellent manganese (0.336mg = 15% DV). Supports bone mineralization and strength."
+      },
+      "skin_health": {
+        "grade": "B+",
+        "score": 82,
+        "reasoning": "Cytokinins have anti-aging properties. Excellent hydration supports skin moisture. Minerals and vitamin C support collagen production."
+      },
+      "longevity": {
+        "grade": "B+",
+        "score": 83,
+        "reasoning": "Low calorie, nutrient-dense beverage. Cytokinins linked to cellular anti-aging. Electrolytes and minerals support overall health. Good longevity beverage."
+      }
+    },
+    "usdaDataSource": "SR Legacy 12119",
+    "lastUpdated": "2025-12-12"
+  },
+  "raspberries": {
+    "foodId": "raspberries",
+    "name": "Raspberries",
+    "category": "fruits",
+    "subcategory": "berries",
+    "description": "Raspberries, raw, red",
+    "servingSize": {
+      "amount": 123,
+      "unit": "g",
+      "household": "1 cup"
+    },
+    "nutrients": {
+      "calories": 64,
+      "protein": 1.48,
+      "totalFat": 0.8,
+      "saturatedFat": 0.025,
+      "transFat": 0,
+      "polyunsaturatedFat": 0.467,
+      "monounsaturatedFat": 0.083,
+      "cholesterol": 0,
+      "totalCarbohydrates": 14.69,
+      "dietaryFiber": 8.0,
+      "totalSugars": 5.44,
+      "addedSugars": 0,
+      "sugarAlcohols": 0,
+      "sodium": 1,
+      "potassium": 186,
+      "calcium": 31,
+      "iron": 0.85,
+      "magnesium": 27,
+      "phosphorus": 36,
+      "zinc": 0.52,
+      "copper": 0.111,
+      "manganese": 0.824,
+      "selenium": 0.2,
+      "vitaminA": 41,
+      "vitaminARae": 2,
+      "betaCarotene": 15,
+      "vitaminC": 32.2,
+      "vitaminD": 0,
+      "vitaminE": 1.07,
+      "vitaminK": 9.6,
+      "thiamin": 0.039,
+      "riboflavin": 0.047,
+      "niacin": 0.736,
+      "pantothenicAcid": 0.405,
+      "vitaminB6": 0.068,
+      "folate": 26,
+      "vitaminB12": 0,
+      "choline": 15.4,
+      "omega3": 0.162,
+      "omega6": 0.305,
+      "caffeine": 0,
+      "alcohol": 0,
+      "water": 106.06
+    },
+    "glycemicIndex": 25,
+    "glycemicLoad": 2,
+    "inflammatoryScore": -3.5,
+    "antioxidantScore": 96,
+    "microbiomeScore": 94,
+    "nutrientDensity": 92,
+    "metabolicScore": 94,
+    "bioavailabilityFactors": {
+      "highFiber": true,
+      "polyphenolsPresent": true,
+      "vitaminCEnhancer": true,
+      "antioxidantRich": true
+    },
+    "allergens": [],
+    "tags": [
+      "superfood",
+      "high_fiber",
+      "antioxidant_rich",
+      "low_calorie",
+      "low_glycemic",
+      "anti_inflammatory",
+      "heart_healthy",
+      "brain_food"
+    ],
+    "healthBenefits": [
+      "Exceptionally high fiber (8g = 32% DV) for gut and heart health",
+      "Rich in ellagic acid and anthocyanins with cancer-fighting properties",
+      "Very low glycemic load supports blood sugar control",
+      "Strong anti-inflammatory effects from polyphenols",
+      "Supports brain health and cognitive function",
+      "May reduce risk of chronic diseases",
+      "Excellent for weight management (low calorie, high satiety)",
+      "High manganese for bone health and metabolism"
+    ],
+    "concerns": [
+      "Highly perishable - molds quickly",
+      "May cause digestive discomfort if consumed in excess (high fiber)",
+      "Can be expensive when not in season",
+      "Pesticide residue concerns (choose organic when possible)"
+    ],
+    "preparationTips": [
+      "Rinse gently just before eating to prevent mold",
+      "Add to yogurt, oatmeal, or smoothies",
+      "Freeze for long-term storage and smoothies",
+      "Eat fresh for maximum nutrient content",
+      "Pair with protein or healthy fats for balanced snack",
+      "Store unwashed in refrigerator in original container"
+    ],
+    "sustainabilityScore": 75,
+    "carbonFootprint": 0.9,
+    "waterFootprint": 420,
+    "seasonality": {
+      "peak": ["June", "July", "August", "September"],
+      "available": ["May", "June", "July", "August", "September", "October"]
+    },
+    "storageGuidance": {
+      "roomTemp": "2-4 hours (very perishable)",
+      "refrigerated": "2-3 days (best quality), up to 5-7 days",
+      "frozen": "10-12 months"
+    },
+    "focusGrades": {
+      "heart_health": {
+        "grade": "A+",
+        "score": 97,
+        "reasoning": "Outstanding fiber (8g), potassium, and anthocyanins support cardiovascular health. Studies show regular raspberry consumption reduces heart disease risk. Zero cholesterol and very low fat."
+      },
+      "metabolic_health": {
+        "grade": "A+",
+        "score": 98,
+        "reasoning": "Exceptional metabolic benefits: very low glycemic load (2), high fiber (8g), low sugar (5.4g). Improves insulin sensitivity and supports healthy weight. Ellagic acid boosts metabolism."
+      },
+      "inflammation": {
+        "grade": "A+",
+        "score": 95,
+        "reasoning": "Among the most anti-inflammatory foods. Rich in ellagic acid, anthocyanins, and quercetin. Strong negative inflammatory score. May reduce markers of chronic inflammation."
+      },
+      "gut_health": {
+        "grade": "A+",
+        "score": 96,
+        "reasoning": "Exceptional fiber content (8g = 32% DV) feeds beneficial gut bacteria. Contains prebiotics and polyphenols that enhance microbiome diversity. Supports regular digestion."
+      },
+      "brain_health": {
+        "grade": "A",
+        "score": 92,
+        "reasoning": "Anthocyanins and flavonoids cross blood-brain barrier and protect neurons. Studies link berry consumption to reduced cognitive decline. Vitamin K supports brain function."
+      },
+      "immune_support": {
+        "grade": "A",
+        "score": 90,
+        "reasoning": "High vitamin C (32.2mg = 36% DV), ellagic acid, and polyphenols support immune function. Antioxidants protect immune cells from damage."
+      },
+      "energy": {
+        "grade": "B+",
+        "score": 85,
+        "reasoning": "Provides steady energy from low glycemic carbs and fiber. Manganese (0.824mg = 36% DV) supports energy metabolism. Prevents blood sugar crashes."
+      },
+      "bone_health": {
+        "grade": "A-",
+        "score": 88,
+        "reasoning": "Excellent manganese (0.824mg = 36% DV) for bone formation. Good vitamin K (9.6mcg) for calcium regulation. Calcium, magnesium, and vitamin C support bone matrix."
+      },
+      "skin_health": {
+        "grade": "A",
+        "score": 91,
+        "reasoning": "High vitamin C (32.2mg) supports collagen synthesis. Vitamin E and polyphenols protect against UV damage and aging. Ellagic acid may prevent wrinkles."
+      },
+      "longevity": {
+        "grade": "A+",
+        "score": 95,
+        "reasoning": "Among the best longevity foods. High in polyphenols, antioxidants, and fiber linked to reduced all-cause mortality. May protect against cancer, heart disease, and neurodegeneration."
+      }
+    },
+    "usdaDataSource": "SR Legacy 09302",
+    "lastUpdated": "2025-12-12"
+  }
+}

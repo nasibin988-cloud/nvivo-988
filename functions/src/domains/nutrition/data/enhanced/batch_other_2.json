@@ -1,0 +1,1229 @@
+{
+  "guacamole": {
+    "name": "Guacamole",
+    "category": "condiments_sauces",
+    "baseNutrition": {
+      "calories": 150,
+      "protein": 2.0,
+      "carbs": 8.0,
+      "fat": 14.0,
+      "fiber": 6.0,
+      "sugar": 0.5,
+      "sodium": 260,
+      "saturatedFat": 2.0,
+      "cholesterol": 0,
+      "potassium": 485,
+      "calcium": 15,
+      "iron": 0.6,
+      "vitaminA": 150,
+      "vitaminC": 10,
+      "vitaminD": 0,
+      "vitaminE": 2.1,
+      "vitaminK": 21,
+      "thiamin": 0.1,
+      "riboflavin": 0.13,
+      "niacin": 1.7,
+      "vitaminB6": 0.26,
+      "folate": 81,
+      "vitaminB12": 0,
+      "pantothenicAcid": 1.4,
+      "phosphorus": 52,
+      "magnesium": 29,
+      "zinc": 0.6,
+      "selenium": 0.4,
+      "copper": 0.19,
+      "manganese": 0.14,
+      "omega3": 0.11,
+      "omega6": 1.67,
+      "transFat": 0,
+      "addedSugar": 0
+    },
+    "servingSize": {
+      "amount": 100,
+      "unit": "g",
+      "commonMeasures": [
+        { "amount": 30, "unit": "g", "description": "2 tablespoons" },
+        { "amount": 60, "unit": "g", "description": "1/4 cup" }
+      ]
+    },
+    "focusGrades": {
+      "heart_health": {
+        "grade": "A",
+        "score": 92,
+        "reasons": [
+          "Rich in heart-healthy monounsaturated fats from avocado",
+          "High potassium supports blood pressure regulation",
+          "Zero cholesterol and low saturated fat",
+          "Good source of fiber for cardiovascular health"
+        ],
+        "concerns": [
+          "Moderate sodium content (use low-sodium versions if needed)"
+        ]
+      },
+      "diabetes": {
+        "grade": "A-",
+        "score": 88,
+        "reasons": [
+          "Very low sugar content (0.5g per serving)",
+          "High fiber content aids blood sugar control",
+          "Healthy fats slow glucose absorption",
+          "Low glycemic impact food"
+        ],
+        "concerns": [
+          "Watch portion sizes due to calorie density"
+        ]
+      },
+      "weight_loss": {
+        "grade": "B+",
+        "score": 82,
+        "reasons": [
+          "High fiber promotes satiety and fullness",
+          "Healthy fats support appetite regulation",
+          "Nutrient-dense whole food option",
+          "Low added sugar content"
+        ],
+        "concerns": [
+          "Calorie-dense (150 cal per 100g)",
+          "Easy to overconsume - measure portions carefully"
+        ]
+      },
+      "inflammation": {
+        "grade": "A",
+        "score": 93,
+        "reasons": [
+          "Avocado rich in anti-inflammatory compounds",
+          "Contains phytosterols and carotenoids",
+          "Good omega-3 to omega-6 ratio from avocado",
+          "Vitamin E acts as antioxidant"
+        ],
+        "concerns": []
+      },
+      "gut_health": {
+        "grade": "A",
+        "score": 90,
+        "reasons": [
+          "Excellent fiber content (6g per serving)",
+          "Prebiotic fibers feed beneficial gut bacteria",
+          "Contains healthy fats for nutrient absorption",
+          "Fresh ingredients with enzymes"
+        ],
+        "concerns": []
+      },
+      "mental_health": {
+        "grade": "A-",
+        "score": 86,
+        "reasons": [
+          "Healthy fats support brain cell structure",
+          "Folate important for neurotransmitter synthesis",
+          "B-vitamins support cognitive function",
+          "Potassium aids nerve signal transmission"
+        ],
+        "concerns": []
+      },
+      "athletic_performance": {
+        "grade": "B+",
+        "score": 84,
+        "reasons": [
+          "Potassium helps prevent muscle cramps",
+          "Healthy fats provide sustained energy",
+          "Anti-inflammatory properties aid recovery",
+          "B-vitamins support energy metabolism"
+        ],
+        "concerns": [
+          "Lower protein content than ideal for athletes",
+          "May feel heavy before intense exercise"
+        ]
+      },
+      "longevity": {
+        "grade": "A",
+        "score": 91,
+        "reasons": [
+          "Rich in antioxidants (vitamins C, E, carotenoids)",
+          "Anti-inflammatory Mediterranean-style food",
+          "Supports cardiovascular health long-term",
+          "Nutrient-dense whole food profile"
+        ],
+        "concerns": []
+      },
+      "immune_support": {
+        "grade": "B+",
+        "score": 83,
+        "reasons": [
+          "Vitamin C supports immune cell function",
+          "Vitamin E acts as antioxidant protection",
+          "Healthy fats enhance nutrient absorption",
+          "Contains zinc and folate for immune health"
+        ],
+        "concerns": [
+          "Moderate vitamin C compared to citrus fruits"
+        ]
+      },
+      "general_wellness": {
+        "grade": "A",
+        "score": 90,
+        "reasons": [
+          "Whole food with minimal processing",
+          "Excellent source of healthy fats",
+          "Rich in fiber and essential nutrients",
+          "Versatile and nutritious condiment choice"
+        ],
+        "concerns": [
+          "Watch sodium in commercial varieties"
+        ]
+      }
+    },
+    "healthFlags": {
+      "isOrganic": false,
+      "isGlutenFree": true,
+      "isDairyFree": true,
+      "isVegan": true,
+      "isKeto": true,
+      "isPaleo": true,
+      "isLowFODMAP": false,
+      "isWholeFoodPlantBased": true
+    },
+    "allergens": [],
+    "tags": ["condiment", "avocado", "healthy_fats", "high_fiber", "mexican", "dip"],
+    "glycemicIndex": 15,
+    "glycemicLoad": 1,
+    "inflammatoryScore": -8,
+    "processingLevel": "minimally_processed"
+  },
+  "guac": {
+    "name": "Guacamole (Guac)",
+    "category": "condiments_sauces",
+    "baseNutrition": {
+      "calories": 150,
+      "protein": 2.0,
+      "carbs": 8.0,
+      "fat": 14.0,
+      "fiber": 6.0,
+      "sugar": 0.5,
+      "sodium": 260,
+      "saturatedFat": 2.0,
+      "cholesterol": 0,
+      "potassium": 485,
+      "calcium": 15,
+      "iron": 0.6,
+      "vitaminA": 150,
+      "vitaminC": 10,
+      "vitaminD": 0,
+      "vitaminE": 2.1,
+      "vitaminK": 21,
+      "thiamin": 0.1,
+      "riboflavin": 0.13,
+      "niacin": 1.7,
+      "vitaminB6": 0.26,
+      "folate": 81,
+      "vitaminB12": 0,
+      "pantothenicAcid": 1.4,
+      "phosphorus": 52,
+      "magnesium": 29,
+      "zinc": 0.6,
+      "selenium": 0.4,
+      "copper": 0.19,
+      "manganese": 0.14,
+      "omega3": 0.11,
+      "omega6": 1.67,
+      "transFat": 0,
+      "addedSugar": 0
+    },
+    "servingSize": {
+      "amount": 100,
+      "unit": "g",
+      "commonMeasures": [
+        { "amount": 30, "unit": "g", "description": "2 tablespoons" },
+        { "amount": 60, "unit": "g", "description": "1/4 cup" }
+      ]
+    },
+    "focusGrades": {
+      "heart_health": {
+        "grade": "A",
+        "score": 92,
+        "reasons": [
+          "Rich in heart-healthy monounsaturated fats from avocado",
+          "High potassium supports blood pressure regulation",
+          "Zero cholesterol and low saturated fat",
+          "Good source of fiber for cardiovascular health"
+        ],
+        "concerns": [
+          "Moderate sodium content (use low-sodium versions if needed)"
+        ]
+      },
+      "diabetes": {
+        "grade": "A-",
+        "score": 88,
+        "reasons": [
+          "Very low sugar content (0.5g per serving)",
+          "High fiber content aids blood sugar control",
+          "Healthy fats slow glucose absorption",
+          "Low glycemic impact food"
+        ],
+        "concerns": [
+          "Watch portion sizes due to calorie density"
+        ]
+      },
+      "weight_loss": {
+        "grade": "B+",
+        "score": 82,
+        "reasons": [
+          "High fiber promotes satiety and fullness",
+          "Healthy fats support appetite regulation",
+          "Nutrient-dense whole food option",
+          "Low added sugar content"
+        ],
+        "concerns": [
+          "Calorie-dense (150 cal per 100g)",
+          "Easy to overconsume - measure portions carefully"
+        ]
+      },
+      "inflammation": {
+        "grade": "A",
+        "score": 93,
+        "reasons": [
+          "Avocado rich in anti-inflammatory compounds",
+          "Contains phytosterols and carotenoids",
+          "Good omega-3 to omega-6 ratio from avocado",
+          "Vitamin E acts as antioxidant"
+        ],
+        "concerns": []
+      },
+      "gut_health": {
+        "grade": "A",
+        "score": 90,
+        "reasons": [
+          "Excellent fiber content (6g per serving)",
+          "Prebiotic fibers feed beneficial gut bacteria",
+          "Contains healthy fats for nutrient absorption",
+          "Fresh ingredients with enzymes"
+        ],
+        "concerns": []
+      },
+      "mental_health": {
+        "grade": "A-",
+        "score": 86,
+        "reasons": [
+          "Healthy fats support brain cell structure",
+          "Folate important for neurotransmitter synthesis",
+          "B-vitamins support cognitive function",
+          "Potassium aids nerve signal transmission"
+        ],
+        "concerns": []
+      },
+      "athletic_performance": {
+        "grade": "B+",
+        "score": 84,
+        "reasons": [
+          "Potassium helps prevent muscle cramps",
+          "Healthy fats provide sustained energy",
+          "Anti-inflammatory properties aid recovery",
+          "B-vitamins support energy metabolism"
+        ],
+        "concerns": [
+          "Lower protein content than ideal for athletes",
+          "May feel heavy before intense exercise"
+        ]
+      },
+      "longevity": {
+        "grade": "A",
+        "score": 91,
+        "reasons": [
+          "Rich in antioxidants (vitamins C, E, carotenoids)",
+          "Anti-inflammatory Mediterranean-style food",
+          "Supports cardiovascular health long-term",
+          "Nutrient-dense whole food profile"
+        ],
+        "concerns": []
+      },
+      "immune_support": {
+        "grade": "B+",
+        "score": 83,
+        "reasons": [
+          "Vitamin C supports immune cell function",
+          "Vitamin E acts as antioxidant protection",
+          "Healthy fats enhance nutrient absorption",
+          "Contains zinc and folate for immune health"
+        ],
+        "concerns": [
+          "Moderate vitamin C compared to citrus fruits"
+        ]
+      },
+      "general_wellness": {
+        "grade": "A",
+        "score": 90,
+        "reasons": [
+          "Whole food with minimal processing",
+          "Excellent source of healthy fats",
+          "Rich in fiber and essential nutrients",
+          "Versatile and nutritious condiment choice"
+        ],
+        "concerns": [
+          "Watch sodium in commercial varieties"
+        ]
+      }
+    },
+    "healthFlags": {
+      "isOrganic": false,
+      "isGlutenFree": true,
+      "isDairyFree": true,
+      "isVegan": true,
+      "isKeto": true,
+      "isPaleo": true,
+      "isLowFODMAP": false,
+      "isWholeFoodPlantBased": true
+    },
+    "allergens": [],
+    "tags": ["condiment", "avocado", "healthy_fats", "high_fiber", "mexican", "dip"],
+    "glycemicIndex": 15,
+    "glycemicLoad": 1,
+    "inflammatoryScore": -8,
+    "processingLevel": "minimally_processed"
+  },
+  "teriyaki_sauce": {
+    "name": "Teriyaki Sauce",
+    "category": "condiments_sauces",
+    "baseNutrition": {
+      "calories": 89,
+      "protein": 5.9,
+      "carbs": 15.6,
+      "fat": 0.1,
+      "fiber": 0.4,
+      "sugar": 11.0,
+      "sodium": 3660,
+      "saturatedFat": 0.02,
+      "cholesterol": 0,
+      "potassium": 236,
+      "calcium": 17,
+      "iron": 1.2,
+      "vitaminA": 0,
+      "vitaminC": 0,
+      "vitaminD": 0,
+      "vitaminE": 0.01,
+      "vitaminK": 0,
+      "thiamin": 0.04,
+      "riboflavin": 0.13,
+      "niacin": 2.1,
+      "vitaminB6": 0.15,
+      "folate": 12,
+      "vitaminB12": 0,
+      "pantothenicAcid": 0.3,
+      "phosphorus": 110,
+      "magnesium": 65,
+      "zinc": 0.5,
+      "selenium": 1.8,
+      "copper": 0.11,
+      "manganese": 0.45,
+      "omega3": 0.01,
+      "omega6": 0.04,
+      "transFat": 0,
+      "addedSugar": 9.0
+    },
+    "servingSize": {
+      "amount": 100,
+      "unit": "g",
+      "commonMeasures": [
+        { "amount": 18, "unit": "g", "description": "1 tablespoon" },
+        { "amount": 36, "unit": "g", "description": "2 tablespoons" }
+      ]
+    },
+    "focusGrades": {
+      "heart_health": {
+        "grade": "D",
+        "score": 35,
+        "reasons": [
+          "Very low in fat and cholesterol-free",
+          "Contains some potassium from soy sauce"
+        ],
+        "concerns": [
+          "Extremely high sodium (3660mg per 100g = 159% DV)",
+          "Can significantly raise blood pressure",
+          "High sodium increases cardiovascular disease risk",
+          "One tablespoon contains 660mg sodium"
+        ]
+      },
+      "diabetes": {
+        "grade": "D+",
+        "score": 38,
+        "reasons": [
+          "Moderate protein from soy sauce",
+          "Low fat content"
+        ],
+        "concerns": [
+          "High sugar content (11g per 100g, mostly added)",
+          "Can cause blood glucose spikes",
+          "Low fiber provides no glucose buffering",
+          "High glycemic impact despite small serving sizes"
+        ]
+      },
+      "weight_loss": {
+        "grade": "C-",
+        "score": 45,
+        "reasons": [
+          "Low calorie density (89 cal per 100g)",
+          "Fat-free helps reduce calorie intake",
+          "Adds flavor without many calories in small amounts"
+        ],
+        "concerns": [
+          "High sodium causes water retention and bloating",
+          "Added sugar provides empty calories",
+          "May increase appetite and cravings",
+          "Easy to use too much when cooking"
+        ]
+      },
+      "inflammation": {
+        "grade": "C",
+        "score": 50,
+        "reasons": [
+          "Soy provides some isoflavones with anti-inflammatory properties",
+          "Low in saturated fat"
+        ],
+        "concerns": [
+          "Extremely high sodium is pro-inflammatory",
+          "Added sugar promotes inflammation",
+          "Processed ingredients lack antioxidants",
+          "May contain MSG in some brands (inflammatory for some)"
+        ]
+      },
+      "gut_health": {
+        "grade": "C-",
+        "score": 42,
+        "reasons": [
+          "Fermented soy sauce may contain beneficial compounds",
+          "Low fat doesn't disrupt digestion"
+        ],
+        "concerns": [
+          "Very low fiber (0.4g) provides no prebiotic benefit",
+          "High sodium can disrupt gut microbiome balance",
+          "Added sugar feeds harmful bacteria",
+          "May contain preservatives in commercial varieties"
+        ]
+      },
+      "mental_health": {
+        "grade": "D+",
+        "score": 39,
+        "reasons": [
+          "Contains B-vitamins from soy (niacin, B6)",
+          "Moderate protein provides amino acids"
+        ],
+        "concerns": [
+          "High sodium linked to mood disturbances",
+          "Sugar crashes can affect mental clarity",
+          "Excessive salt intake may impair cognitive function",
+          "Lacks omega-3s for brain health"
+        ]
+      },
+      "athletic_performance": {
+        "grade": "C+",
+        "score": 58,
+        "reasons": [
+          "Sodium helps with electrolyte replacement after exercise",
+          "Quick carbs from sugar for rapid energy",
+          "Low fat allows fast digestion",
+          "Potassium aids muscle function"
+        ],
+        "concerns": [
+          "Excessive sodium can cause dehydration",
+          "Sugar provides quick but unsustained energy",
+          "Low protein for muscle recovery",
+          "Better electrolyte sources available"
+        ]
+      },
+      "longevity": {
+        "grade": "D",
+        "score": 33,
+        "reasons": [
+          "Soy isoflavones may have longevity benefits",
+          "Low in saturated fat"
+        ],
+        "concerns": [
+          "High sodium strongly linked to shorter lifespan",
+          "Increases risk of hypertension and stroke",
+          "Added sugar accelerates aging processes",
+          "Highly processed with minimal nutrients"
+        ]
+      },
+      "immune_support": {
+        "grade": "D+",
+        "score": 37,
+        "reasons": [
+          "Contains zinc and selenium (trace amounts)",
+          "Soy provides some plant compounds"
+        ],
+        "concerns": [
+          "High sodium suppresses immune function",
+          "Added sugar impairs white blood cell activity",
+          "Lacks vitamin C and other key immune nutrients",
+          "Processing destroys many beneficial compounds"
+        ]
+      },
+      "general_wellness": {
+        "grade": "D+",
+        "score": 40,
+        "reasons": [
+          "Adds flavor to healthy dishes (vegetables, lean protein)",
+          "Low calorie option for flavoring",
+          "Can make nutritious foods more palatable"
+        ],
+        "concerns": [
+          "Extremely high sodium is major health concern",
+          "High added sugar content",
+          "Highly processed with minimal nutritional value",
+          "Best used very sparingly as occasional flavoring"
+        ]
+      }
+    },
+    "healthFlags": {
+      "isOrganic": false,
+      "isGlutenFree": false,
+      "isDairyFree": true,
+      "isVegan": true,
+      "isKeto": false,
+      "isPaleo": false,
+      "isLowFODMAP": false,
+      "isWholeFoodPlantBased": false
+    },
+    "allergens": ["soy", "wheat"],
+    "tags": ["condiment", "sauce", "asian", "high_sodium", "high_sugar", "processed"],
+    "glycemicIndex": 55,
+    "glycemicLoad": 9,
+    "inflammatoryScore": 6,
+    "processingLevel": "highly_processed"
+  },
+  "teriyaki": {
+    "name": "Teriyaki Sauce",
+    "category": "condiments_sauces",
+    "baseNutrition": {
+      "calories": 89,
+      "protein": 5.9,
+      "carbs": 15.6,
+      "fat": 0.1,
+      "fiber": 0.4,
+      "sugar": 11.0,
+      "sodium": 3660,
+      "saturatedFat": 0.02,
+      "cholesterol": 0,
+      "potassium": 236,
+      "calcium": 17,
+      "iron": 1.2,
+      "vitaminA": 0,
+      "vitaminC": 0,
+      "vitaminD": 0,
+      "vitaminE": 0.01,
+      "vitaminK": 0,
+      "thiamin": 0.04,
+      "riboflavin": 0.13,
+      "niacin": 2.1,
+      "vitaminB6": 0.15,
+      "folate": 12,
+      "vitaminB12": 0,
+      "pantothenicAcid": 0.3,
+      "phosphorus": 110,
+      "magnesium": 65,
+      "zinc": 0.5,
+      "selenium": 1.8,
+      "copper": 0.11,
+      "manganese": 0.45,
+      "omega3": 0.01,
+      "omega6": 0.04,
+      "transFat": 0,
+      "addedSugar": 9.0
+    },
+    "servingSize": {
+      "amount": 100,
+      "unit": "g",
+      "commonMeasures": [
+        { "amount": 18, "unit": "g", "description": "1 tablespoon" },
+        { "amount": 36, "unit": "g", "description": "2 tablespoons" }
+      ]
+    },
+    "focusGrades": {
+      "heart_health": {
+        "grade": "D",
+        "score": 35,
+        "reasons": [
+          "Very low in fat and cholesterol-free",
+          "Contains some potassium from soy sauce"
+        ],
+        "concerns": [
+          "Extremely high sodium (3660mg per 100g = 159% DV)",
+          "Can significantly raise blood pressure",
+          "High sodium increases cardiovascular disease risk",
+          "One tablespoon contains 660mg sodium"
+        ]
+      },
+      "diabetes": {
+        "grade": "D+",
+        "score": 38,
+        "reasons": [
+          "Moderate protein from soy sauce",
+          "Low fat content"
+        ],
+        "concerns": [
+          "High sugar content (11g per 100g, mostly added)",
+          "Can cause blood glucose spikes",
+          "Low fiber provides no glucose buffering",
+          "High glycemic impact despite small serving sizes"
+        ]
+      },
+      "weight_loss": {
+        "grade": "C-",
+        "score": 45,
+        "reasons": [
+          "Low calorie density (89 cal per 100g)",
+          "Fat-free helps reduce calorie intake",
+          "Adds flavor without many calories in small amounts"
+        ],
+        "concerns": [
+          "High sodium causes water retention and bloating",
+          "Added sugar provides empty calories",
+          "May increase appetite and cravings",
+          "Easy to use too much when cooking"
+        ]
+      },
+      "inflammation": {
+        "grade": "C",
+        "score": 50,
+        "reasons": [
+          "Soy provides some isoflavones with anti-inflammatory properties",
+          "Low in saturated fat"
+        ],
+        "concerns": [
+          "Extremely high sodium is pro-inflammatory",
+          "Added sugar promotes inflammation",
+          "Processed ingredients lack antioxidants",
+          "May contain MSG in some brands (inflammatory for some)"
+        ]
+      },
+      "gut_health": {
+        "grade": "C-",
+        "score": 42,
+        "reasons": [
+          "Fermented soy sauce may contain beneficial compounds",
+          "Low fat doesn't disrupt digestion"
+        ],
+        "concerns": [
+          "Very low fiber (0.4g) provides no prebiotic benefit",
+          "High sodium can disrupt gut microbiome balance",
+          "Added sugar feeds harmful bacteria",
+          "May contain preservatives in commercial varieties"
+        ]
+      },
+      "mental_health": {
+        "grade": "D+",
+        "score": 39,
+        "reasons": [
+          "Contains B-vitamins from soy (niacin, B6)",
+          "Moderate protein provides amino acids"
+        ],
+        "concerns": [
+          "High sodium linked to mood disturbances",
+          "Sugar crashes can affect mental clarity",
+          "Excessive salt intake may impair cognitive function",
+          "Lacks omega-3s for brain health"
+        ]
+      },
+      "athletic_performance": {
+        "grade": "C+",
+        "score": 58,
+        "reasons": [
+          "Sodium helps with electrolyte replacement after exercise",
+          "Quick carbs from sugar for rapid energy",
+          "Low fat allows fast digestion",
+          "Potassium aids muscle function"
+        ],
+        "concerns": [
+          "Excessive sodium can cause dehydration",
+          "Sugar provides quick but unsustained energy",
+          "Low protein for muscle recovery",
+          "Better electrolyte sources available"
+        ]
+      },
+      "longevity": {
+        "grade": "D",
+        "score": 33,
+        "reasons": [
+          "Soy isoflavones may have longevity benefits",
+          "Low in saturated fat"
+        ],
+        "concerns": [
+          "High sodium strongly linked to shorter lifespan",
+          "Increases risk of hypertension and stroke",
+          "Added sugar accelerates aging processes",
+          "Highly processed with minimal nutrients"
+        ]
+      },
+      "immune_support": {
+        "grade": "D+",
+        "score": 37,
+        "reasons": [
+          "Contains zinc and selenium (trace amounts)",
+          "Soy provides some plant compounds"
+        ],
+        "concerns": [
+          "High sodium suppresses immune function",
+          "Added sugar impairs white blood cell activity",
+          "Lacks vitamin C and other key immune nutrients",
+          "Processing destroys many beneficial compounds"
+        ]
+      },
+      "general_wellness": {
+        "grade": "D+",
+        "score": 40,
+        "reasons": [
+          "Adds flavor to healthy dishes (vegetables, lean protein)",
+          "Low calorie option for flavoring",
+          "Can make nutritious foods more palatable"
+        ],
+        "concerns": [
+          "Extremely high sodium is major health concern",
+          "High added sugar content",
+          "Highly processed with minimal nutritional value",
+          "Best used very sparingly as occasional flavoring"
+        ]
+      }
+    },
+    "healthFlags": {
+      "isOrganic": false,
+      "isGlutenFree": false,
+      "isDairyFree": true,
+      "isVegan": true,
+      "isKeto": false,
+      "isPaleo": false,
+      "isLowFODMAP": false,
+      "isWholeFoodPlantBased": false
+    },
+    "allergens": ["soy", "wheat"],
+    "tags": ["condiment", "sauce", "asian", "high_sodium", "high_sugar", "processed"],
+    "glycemicIndex": 55,
+    "glycemicLoad": 9,
+    "inflammatoryScore": 6,
+    "processingLevel": "highly_processed"
+  },
+  "marinara": {
+    "name": "Marinara Sauce",
+    "category": "condiments_sauces",
+    "baseNutrition": {
+      "calories": 66,
+      "protein": 2.0,
+      "carbs": 10.5,
+      "fat": 2.1,
+      "fiber": 2.4,
+      "sugar": 6.5,
+      "sodium": 430,
+      "saturatedFat": 0.3,
+      "cholesterol": 0,
+      "potassium": 400,
+      "calcium": 28,
+      "iron": 1.3,
+      "vitaminA": 420,
+      "vitaminC": 12,
+      "vitaminD": 0,
+      "vitaminE": 2.5,
+      "vitaminK": 8,
+      "thiamin": 0.06,
+      "riboflavin": 0.08,
+      "niacin": 1.4,
+      "vitaminB6": 0.2,
+      "folate": 15,
+      "vitaminB12": 0,
+      "pantothenicAcid": 0.3,
+      "phosphorus": 40,
+      "magnesium": 22,
+      "zinc": 0.3,
+      "selenium": 0.5,
+      "copper": 0.14,
+      "manganese": 0.18,
+      "omega3": 0.02,
+      "omega6": 0.24,
+      "transFat": 0,
+      "addedSugar": 2.0
+    },
+    "servingSize": {
+      "amount": 100,
+      "unit": "g",
+      "commonMeasures": [
+        { "amount": 125, "unit": "g", "description": "1/2 cup" },
+        { "amount": 250, "unit": "g", "description": "1 cup" }
+      ]
+    },
+    "focusGrades": {
+      "heart_health": {
+        "grade": "B+",
+        "score": 82,
+        "reasons": [
+          "Rich in lycopene (powerful antioxidant for heart health)",
+          "Good potassium content supports blood pressure",
+          "Low saturated fat and cholesterol-free",
+          "Tomatoes linked to reduced cardiovascular disease risk"
+        ],
+        "concerns": [
+          "Moderate sodium (430mg per 100g)",
+          "Choose low-sodium versions when possible"
+        ]
+      },
+      "diabetes": {
+        "grade": "B",
+        "score": 78,
+        "reasons": [
+          "Good fiber content (2.4g) helps regulate blood sugar",
+          "Tomatoes have low glycemic index",
+          "Natural sugars from tomatoes with nutrients",
+          "Moderate carbohydrate content"
+        ],
+        "concerns": [
+          "Contains some added sugar (2g per 100g)",
+          "Watch portion sizes with pasta",
+          "Some brands add more sugar - check labels"
+        ]
+      },
+      "weight_loss": {
+        "grade": "A-",
+        "score": 85,
+        "reasons": [
+          "Low calorie density (66 cal per 100g)",
+          "High water content increases satiety",
+          "Good fiber promotes fullness",
+          "Adds flavor without excessive calories"
+        ],
+        "concerns": [
+          "Moderate sodium may cause water retention",
+          "Watch serving sizes with high-calorie pasta"
+        ]
+      },
+      "inflammation": {
+        "grade": "A",
+        "score": 88,
+        "reasons": [
+          "Lycopene is potent anti-inflammatory compound",
+          "Tomatoes rich in antioxidants (vitamins A, C, E)",
+          "Garlic and herbs have anti-inflammatory properties",
+          "Cooking tomatoes increases lycopene bioavailability"
+        ],
+        "concerns": [
+          "Some added oils may be pro-inflammatory (check quality)"
+        ]
+      },
+      "gut_health": {
+        "grade": "B+",
+        "score": 81,
+        "reasons": [
+          "Good fiber content feeds beneficial bacteria",
+          "Tomatoes contain prebiotic compounds",
+          "Garlic and onions support gut microbiome",
+          "Antioxidants protect gut lining"
+        ],
+        "concerns": [
+          "Acidic nature may irritate sensitive stomachs",
+          "Some people sensitive to nightshades"
+        ]
+      },
+      "mental_health": {
+        "grade": "B",
+        "score": 75,
+        "reasons": [
+          "Lycopene may protect against cognitive decline",
+          "B-vitamins support neurotransmitter production",
+          "Vitamin C reduces oxidative stress in brain",
+          "Potassium aids nerve function"
+        ],
+        "concerns": [
+          "Moderate nutrient density for brain health",
+          "Could benefit from added omega-3 sources"
+        ]
+      },
+      "athletic_performance": {
+        "grade": "B",
+        "score": 76,
+        "reasons": [
+          "Potassium helps prevent muscle cramps",
+          "Carbs provide energy for workouts",
+          "Lycopene may reduce exercise-induced oxidative stress",
+          "Low fat allows quick digestion"
+        ],
+        "concerns": [
+          "Low protein for muscle recovery",
+          "Moderate calories need pairing with protein",
+          "Acidic nature may bother some during intense exercise"
+        ]
+      },
+      "longevity": {
+        "grade": "A-",
+        "score": 87,
+        "reasons": [
+          "Lycopene strongly linked to reduced cancer risk",
+          "Mediterranean diet staple associated with longevity",
+          "Rich antioxidant profile fights cellular aging",
+          "Regular tomato consumption linked to lower mortality"
+        ],
+        "concerns": [
+          "Sodium content should be monitored long-term"
+        ]
+      },
+      "immune_support": {
+        "grade": "B+",
+        "score": 80,
+        "reasons": [
+          "Vitamin C supports immune cell function",
+          "Vitamin A important for mucosal immunity",
+          "Lycopene and antioxidants boost immune response",
+          "Garlic has antimicrobial properties"
+        ],
+        "concerns": [
+          "Cooking reduces some vitamin C content",
+          "Could be higher in immune-boosting nutrients"
+        ]
+      },
+      "general_wellness": {
+        "grade": "A-",
+        "score": 84,
+        "reasons": [
+          "Whole food base with minimal processing",
+          "Rich in beneficial plant compounds",
+          "Versatile healthy cooking staple",
+          "Good source of multiple vitamins and minerals"
+        ],
+        "concerns": [
+          "Watch sodium in commercial varieties",
+          "Check labels for added sugars and oils"
+        ]
+      }
+    },
+    "healthFlags": {
+      "isOrganic": false,
+      "isGlutenFree": true,
+      "isDairyFree": true,
+      "isVegan": true,
+      "isKeto": false,
+      "isPaleo": true,
+      "isLowFODMAP": false,
+      "isWholeFoodPlantBased": true
+    },
+    "allergens": [],
+    "tags": ["sauce", "italian", "tomato", "lycopene", "antioxidant", "vegetable_based"],
+    "glycemicIndex": 35,
+    "glycemicLoad": 4,
+    "inflammatoryScore": -6,
+    "processingLevel": "minimally_processed"
+  },
+  "soy_sauce": {
+    "name": "Soy Sauce",
+    "category": "condiments_sauces",
+    "baseNutrition": {
+      "calories": 53,
+      "protein": 8.1,
+      "carbs": 4.9,
+      "fat": 0.1,
+      "fiber": 0.8,
+      "sugar": 0.4,
+      "sodium": 5637,
+      "saturatedFat": 0.01,
+      "cholesterol": 0,
+      "potassium": 217,
+      "calcium": 20,
+      "iron": 2.2,
+      "vitaminA": 0,
+      "vitaminC": 0,
+      "vitaminD": 0,
+      "vitaminE": 0.02,
+      "vitaminK": 0,
+      "thiamin": 0.05,
+      "riboflavin": 0.18,
+      "niacin": 3.6,
+      "vitaminB6": 0.15,
+      "folate": 18,
+      "vitaminB12": 0,
+      "pantothenicAcid": 0.25,
+      "phosphorus": 130,
+      "magnesium": 40,
+      "zinc": 0.4,
+      "selenium": 0.6,
+      "copper": 0.04,
+      "manganese": 0.42,
+      "omega3": 0.01,
+      "omega6": 0.04,
+      "transFat": 0,
+      "addedSugar": 0
+    },
+    "servingSize": {
+      "amount": 100,
+      "unit": "g",
+      "commonMeasures": [
+        { "amount": 16, "unit": "g", "description": "1 tablespoon" },
+        { "amount": 6, "unit": "g", "description": "1 teaspoon" }
+      ]
+    },
+    "focusGrades": {
+      "heart_health": {
+        "grade": "D-",
+        "score": 28,
+        "reasons": [
+          "Very low in fat and cholesterol-free",
+          "Contains some potassium",
+          "Fermented soy may have cardiovascular benefits"
+        ],
+        "concerns": [
+          "Extremely high sodium (5637mg per 100g = 245% DV)",
+          "One tablespoon contains 900mg sodium (39% DV)",
+          "Major risk factor for high blood pressure",
+          "Significantly increases cardiovascular disease risk",
+          "Can cause acute blood pressure spikes"
+        ]
+      },
+      "diabetes": {
+        "grade": "C",
+        "score": 55,
+        "reasons": [
+          "Very low sugar content (0.4g)",
+          "Low carbohydrate content overall",
+          "High protein relative to carbs",
+          "Minimal impact on blood glucose in small amounts"
+        ],
+        "concerns": [
+          "Extremely high sodium can worsen diabetes complications",
+          "May affect insulin sensitivity long-term",
+          "Small serving sizes required"
+        ]
+      },
+      "weight_loss": {
+        "grade": "C",
+        "score": 52,
+        "reasons": [
+          "Very low calorie (53 cal per 100g)",
+          "Fat-free option for flavoring",
+          "Adds savory umami flavor without calories",
+          "Small amounts go a long way"
+        ],
+        "concerns": [
+          "Extreme sodium causes significant water retention",
+          "Bloating can mask weight loss progress",
+          "May increase thirst and fluid intake",
+          "Can trigger salt cravings and overeating"
+        ]
+      },
+      "inflammation": {
+        "grade": "D+",
+        "score": 40,
+        "reasons": [
+          "Fermented soy contains beneficial isoflavones",
+          "Some bioactive peptides from fermentation",
+          "Very low in pro-inflammatory saturated fat"
+        ],
+        "concerns": [
+          "Extremely high sodium is strongly pro-inflammatory",
+          "Can increase inflammatory markers in blood",
+          "Excessive salt linked to chronic inflammation",
+          "May worsen inflammatory conditions"
+        ]
+      },
+      "gut_health": {
+        "grade": "C-",
+        "score": 48,
+        "reasons": [
+          "Fermented product contains beneficial compounds",
+          "Traditional brewing creates bioactive peptides",
+          "May contain trace probiotics in unpasteurized versions"
+        ],
+        "concerns": [
+          "Extreme sodium disrupts gut microbiome balance",
+          "Very low fiber (0.8g) provides minimal prebiotic benefit",
+          "High salt concentration can damage gut lining",
+          "Most commercial versions are heavily processed"
+        ]
+      },
+      "mental_health": {
+        "grade": "D",
+        "score": 35,
+        "reasons": [
+          "Contains B-vitamins (niacin, riboflavin, B6)",
+          "Moderate protein provides amino acids",
+          "Umami flavor may improve meal satisfaction"
+        ],
+        "concerns": [
+          "Excessive sodium linked to cognitive impairment",
+          "High salt intake associated with mood disorders",
+          "Can cause headaches in sensitive individuals",
+          "May disrupt sleep quality due to thirst"
+        ]
+      },
+      "athletic_performance": {
+        "grade": "C",
+        "score": 54,
+        "reasons": [
+          "Sodium helps replace electrolytes lost in sweat",
+          "Can aid hydration when used appropriately",
+          "Quick umami flavor for post-workout meals",
+          "Potassium contributes to electrolyte balance"
+        ],
+        "concerns": [
+          "Excessive sodium can cause dehydration",
+          "May lead to muscle cramps from electrolyte imbalance",
+          "Better balanced electrolyte sources available",
+          "Can interfere with recovery hydration"
+        ]
+      },
+      "longevity": {
+        "grade": "D-",
+        "score": 30,
+        "reasons": [
+          "Fermented soy linked to longevity in some studies",
+          "Isoflavones may have anti-aging properties",
+          "Very low calorie density"
+        ],
+        "concerns": [
+          "High sodium strongly associated with shorter lifespan",
+          "Increases risk of stroke, heart disease, kidney disease",
+          "Chronic high salt intake accelerates aging",
+          "Linked to increased mortality in population studies"
+        ]
+      },
+      "immune_support": {
+        "grade": "D+",
+        "score": 38,
+        "reasons": [
+          "Contains zinc and selenium (trace amounts)",
+          "Fermentation produces immune-supporting compounds",
+          "Iron content supports immune cell production"
+        ],
+        "concerns": [
+          "High sodium suppresses immune system function",
+          "Excessive salt impairs white blood cell activity",
+          "Can increase susceptibility to infections",
+          "Lacks key immune vitamins (C, D, A)"
+        ]
+      },
+      "general_wellness": {
+        "grade": "D",
+        "score": 36,
+        "reasons": [
+          "Adds umami flavor to healthy foods",
+          "Traditional fermented food with cultural value",
+          "Can make vegetables and whole foods more palatable",
+          "Very low calorie way to add flavor"
+        ],
+        "concerns": [
+          "Extremely high sodium is severe health concern",
+          "Must be used very sparingly (teaspoon amounts)",
+          "Regular use linked to multiple health problems",
+          "Low-sodium versions still contain significant salt",
+          "Better to use alternative seasonings for daily cooking"
+        ]
+      }
+    },
+    "healthFlags": {
+      "isOrganic": false,
+      "isGlutenFree": false,
+      "isDairyFree": true,
+      "isVegan": true,
+      "isKeto": true,
+      "isPaleo": false,
+      "isLowFODMAP": false,
+      "isWholeFoodPlantBased": false
+    },
+    "allergens": ["soy", "wheat"],
+    "tags": ["condiment", "sauce", "asian", "fermented", "extremely_high_sodium", "umami"],
+    "glycemicIndex": 20,
+    "glycemicLoad": 1,
+    "inflammatoryScore": 8,
+    "processingLevel": "highly_processed"
+  }
+}

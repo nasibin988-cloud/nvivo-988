@@ -24,7 +24,7 @@ export {
 
 export { useWaterStreak } from './useWaterStreak';
 
-// NEW: Server-side DRI-based nutrition evaluation system
+// NEW: Server-side DRI-based nutrition evaluation system (V2 MAR-based scoring)
 export {
   useNutritionDayEvaluation,
   useEvaluateNutrition,
@@ -36,6 +36,7 @@ export {
   type ScoreBreakdown,
   type NutritionUserProfile,
   type DailyIntake,
+  type NutritionFocusId,
 } from './useNutritionEvaluation';
 
 export {
@@ -82,3 +83,11 @@ export {
   type DVConfig,
   type PersonalizedDVs,
 } from './usePersonalizedDV';
+
+// Nutrition Focus selection
+export {
+  useNutritionFocus,
+  getFocusInfo,
+  FOCUS_OPTIONS,
+  type FocusInfo,
+} from './useNutritionFocus';

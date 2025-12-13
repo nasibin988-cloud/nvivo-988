@@ -1,0 +1,845 @@
+{
+  "pizza": {
+    "foodKey": "pizza",
+    "name": "Pizza",
+    "category": "prepared_foods",
+    "brandedInfo": {
+      "isBranded": false,
+      "isGeneric": true
+    },
+    "nutrition": {
+      "servingSize": "1 slice (107g)",
+      "servingSizeGrams": 107,
+      "calories": 285,
+      "macros": {
+        "protein": 12.2,
+        "carbs": 35.7,
+        "fat": 10.4,
+        "fiber": 2.3,
+        "sugar": 3.8,
+        "saturatedFat": 4.8,
+        "transFat": 0.2,
+        "cholesterol": 21,
+        "sodium": 640
+      },
+      "micros": {
+        "vitaminA": 268,
+        "vitaminC": 1.3,
+        "vitaminD": 0.3,
+        "vitaminE": 0.9,
+        "vitaminK": 8.4,
+        "thiamin": 0.3,
+        "riboflavin": 0.3,
+        "niacin": 3.8,
+        "vitaminB6": 0.1,
+        "folate": 90,
+        "vitaminB12": 0.6,
+        "calcium": 220,
+        "iron": 2.7,
+        "magnesium": 25,
+        "phosphorus": 230,
+        "potassium": 184,
+        "zinc": 1.5,
+        "selenium": 20.4
+      }
+    },
+    "healthMetrics": {
+      "glycemicIndex": 80,
+      "glycemicLoad": 22,
+      "inflammatoryScore": 2,
+      "nutrientDensity": 4.2,
+      "processingLevel": "ultra_processed",
+      "allergens": [
+        "wheat",
+        "milk",
+        "soy"
+      ],
+      "dietaryFlags": {
+        "isVegetarian": true,
+        "isVegan": false,
+        "isGlutenFree": false,
+        "isDairyFree": false,
+        "isKeto": false,
+        "isPaleo": false,
+        "isWholeFoodPlantBased": false
+      }
+    },
+    "focusGrades": {
+      "general": {
+        "grade": "C",
+        "score": 52,
+        "reasoning": "Moderate calories and protein, but high in refined carbs, saturated fat, and sodium. Limited micronutrient density."
+      },
+      "diabetes": {
+        "grade": "D",
+        "score": 38,
+        "reasoning": "High glycemic index (80) and glycemic load (22) cause rapid blood sugar spikes. High refined carbs with minimal fiber relative to carb content."
+      },
+      "hypertension": {
+        "grade": "D",
+        "score": 35,
+        "reasoning": "Very high sodium (640mg per slice, 28% DV). Saturated fat content also contributes to cardiovascular stress."
+      },
+      "heart_health": {
+        "grade": "D",
+        "score": 40,
+        "reasoning": "High saturated fat (4.8g), cholesterol (21mg), and sodium (640mg). Low in heart-healthy omega-3s and fiber."
+      },
+      "weight_loss": {
+        "grade": "D",
+        "score": 42,
+        "reasoning": "Calorie-dense (285 cal/slice) with high refined carbs and low satiety. Easy to overconsume multiple slices."
+      },
+      "kidney_health": {
+        "grade": "D",
+        "score": 36,
+        "reasoning": "High sodium (640mg) and phosphorus (230mg) burden kidney function. Processed meats on many pizzas add more sodium."
+      },
+      "gut_health": {
+        "grade": "C",
+        "score": 48,
+        "reasoning": "Low fiber (2.3g). Ultra-processed with additives. Some probiotic potential from cheese, but overall gut microbiome impact is negative."
+      },
+      "inflammation": {
+        "grade": "D",
+        "score": 38,
+        "reasoning": "Inflammatory score of 2. High omega-6 from vegetable oils, refined grains, and processed cheese contribute to inflammation."
+      },
+      "bone_health": {
+        "grade": "B",
+        "score": 68,
+        "reasoning": "Good calcium (220mg, 17% DV) from cheese. Contains vitamin D, vitamin K, and phosphorus for bone support."
+      },
+      "energy": {
+        "grade": "C",
+        "score": 55,
+        "reasoning": "Provides quick energy from carbs but leads to crashes due to high GI. Moderate protein helps somewhat with sustained energy."
+      }
+    },
+    "tags": [
+      "fast_food",
+      "comfort_food",
+      "high_sodium",
+      "processed",
+      "italian"
+    ],
+    "commonPortions": [
+      {
+        "description": "1 slice (medium pizza)",
+        "gramsPerPortion": 107,
+        "isDefault": true
+      },
+      {
+        "description": "2 slices",
+        "gramsPerPortion": 214,
+        "isDefault": false
+      },
+      {
+        "description": "1 personal pizza",
+        "gramsPerPortion": 350,
+        "isDefault": false
+      }
+    ]
+  },
+  "cheese_pizza": {
+    "foodKey": "cheese_pizza",
+    "name": "Cheese Pizza",
+    "category": "prepared_foods",
+    "brandedInfo": {
+      "isBranded": false,
+      "isGeneric": true
+    },
+    "nutrition": {
+      "servingSize": "1 slice (63g)",
+      "servingSizeGrams": 63,
+      "calories": 168,
+      "macros": {
+        "protein": 7.7,
+        "carbs": 21.7,
+        "fat": 5.4,
+        "fiber": 1.3,
+        "sugar": 2.1,
+        "saturatedFat": 2.5,
+        "transFat": 0.1,
+        "cholesterol": 11,
+        "sodium": 336
+      },
+      "micros": {
+        "vitaminA": 142,
+        "vitaminC": 0.8,
+        "vitaminD": 0.2,
+        "vitaminE": 0.5,
+        "vitaminK": 4.2,
+        "thiamin": 0.2,
+        "riboflavin": 0.2,
+        "niacin": 2.1,
+        "vitaminB6": 0.05,
+        "folate": 52,
+        "vitaminB12": 0.3,
+        "calcium": 117,
+        "iron": 1.5,
+        "magnesium": 14,
+        "phosphorus": 128,
+        "potassium": 92,
+        "zinc": 0.8,
+        "selenium": 11.2
+      }
+    },
+    "healthMetrics": {
+      "glycemicIndex": 80,
+      "glycemicLoad": 16,
+      "inflammatoryScore": 1,
+      "nutrientDensity": 4.5,
+      "processingLevel": "ultra_processed",
+      "allergens": [
+        "wheat",
+        "milk"
+      ],
+      "dietaryFlags": {
+        "isVegetarian": true,
+        "isVegan": false,
+        "isGlutenFree": false,
+        "isDairyFree": false,
+        "isKeto": false,
+        "isPaleo": false,
+        "isWholeFoodPlantBased": false
+      }
+    },
+    "focusGrades": {
+      "general": {
+        "grade": "C",
+        "score": 54,
+        "reasoning": "Simple cheese pizza has fewer calories and less fat than meat pizzas. Still high in refined carbs and sodium."
+      },
+      "diabetes": {
+        "grade": "D",
+        "score": 40,
+        "reasoning": "High glycemic index (80) with low fiber (1.3g). Refined crust causes rapid glucose spikes despite lower glycemic load than meat pizza."
+      },
+      "hypertension": {
+        "grade": "D",
+        "score": 42,
+        "reasoning": "High sodium (336mg per slice, 15% DV). Lower than meat pizza but still problematic for blood pressure control."
+      },
+      "heart_health": {
+        "grade": "C",
+        "score": 48,
+        "reasoning": "Lower saturated fat (2.5g) and cholesterol (11mg) than meat pizza. Still has high sodium and refined carbs."
+      },
+      "weight_loss": {
+        "grade": "C",
+        "score": 50,
+        "reasoning": "Moderate calories (168 per slice) but low satiety due to refined carbs and low fiber. Easy to overeat multiple slices."
+      },
+      "kidney_health": {
+        "grade": "D",
+        "score": 44,
+        "reasoning": "Moderate sodium (336mg) and phosphorus (128mg). Better than meat pizza but still burdens kidneys."
+      },
+      "gut_health": {
+        "grade": "C",
+        "score": 50,
+        "reasoning": "Low fiber (1.3g). Refined flour and processed cheese. Some probiotic benefit from cheese cultures."
+      },
+      "inflammation": {
+        "grade": "C",
+        "score": 52,
+        "reasoning": "Lower inflammatory score (1) than meat pizza. Still contains refined grains and vegetable oils that promote inflammation."
+      },
+      "bone_health": {
+        "grade": "B",
+        "score": 70,
+        "reasoning": "Good calcium source (117mg, 9% DV) from cheese. Contains vitamin D, vitamin K, and phosphorus for bone health."
+      },
+      "energy": {
+        "grade": "C",
+        "score": 56,
+        "reasoning": "Quick energy from refined carbs leads to blood sugar crashes. Moderate protein helps stabilize energy somewhat."
+      }
+    },
+    "tags": [
+      "vegetarian",
+      "fast_food",
+      "comfort_food",
+      "processed",
+      "italian"
+    ],
+    "commonPortions": [
+      {
+        "description": "1 slice (medium pizza)",
+        "gramsPerPortion": 63,
+        "isDefault": true
+      },
+      {
+        "description": "2 slices",
+        "gramsPerPortion": 126,
+        "isDefault": false
+      },
+      {
+        "description": "3 slices",
+        "gramsPerPortion": 189,
+        "isDefault": false
+      }
+    ]
+  },
+  "french_fries": {
+    "foodKey": "french_fries",
+    "name": "French Fries",
+    "category": "prepared_foods",
+    "brandedInfo": {
+      "isBranded": false,
+      "isGeneric": true
+    },
+    "nutrition": {
+      "servingSize": "1 medium order (117g)",
+      "servingSizeGrams": 117,
+      "calories": 365,
+      "macros": {
+        "protein": 4.3,
+        "carbs": 48.0,
+        "fat": 17.5,
+        "fiber": 4.2,
+        "sugar": 0.3,
+        "saturatedFat": 3.1,
+        "transFat": 0.5,
+        "cholesterol": 0,
+        "sodium": 246
+      },
+      "micros": {
+        "vitaminA": 0,
+        "vitaminC": 7.8,
+        "vitaminD": 0,
+        "vitaminE": 2.1,
+        "vitaminK": 8.2,
+        "thiamin": 0.2,
+        "riboflavin": 0.04,
+        "niacin": 2.8,
+        "vitaminB6": 0.3,
+        "folate": 28,
+        "vitaminB12": 0,
+        "calcium": 14,
+        "iron": 0.8,
+        "magnesium": 32,
+        "phosphorus": 108,
+        "potassium": 572,
+        "zinc": 0.5,
+        "selenium": 1.2
+      }
+    },
+    "healthMetrics": {
+      "glycemicIndex": 75,
+      "glycemicLoad": 33,
+      "inflammatoryScore": 3,
+      "nutrientDensity": 3.2,
+      "processingLevel": "ultra_processed",
+      "allergens": [],
+      "dietaryFlags": {
+        "isVegetarian": true,
+        "isVegan": true,
+        "isGlutenFree": true,
+        "isDairyFree": true,
+        "isKeto": false,
+        "isPaleo": false,
+        "isWholeFoodPlantBased": false
+      }
+    },
+    "focusGrades": {
+      "general": {
+        "grade": "D",
+        "score": 35,
+        "reasoning": "High in calories, fat, and refined carbs with minimal protein. Deep-fried in inflammatory oils. Very low nutrient density."
+      },
+      "diabetes": {
+        "grade": "D",
+        "score": 28,
+        "reasoning": "High glycemic index (75) and very high glycemic load (33). Rapidly spikes blood sugar despite being from potatoes."
+      },
+      "hypertension": {
+        "grade": "C",
+        "score": 58,
+        "reasoning": "Moderate sodium (246mg, 11% DV) - lower than expected. Good potassium (572mg) helps balance. Trans fats are concerning."
+      },
+      "heart_health": {
+        "grade": "D",
+        "score": 32,
+        "reasoning": "Deep-fried in inflammatory oils. Contains trans fats (0.5g). High in calories and oxidized fats that damage arteries."
+      },
+      "weight_loss": {
+        "grade": "D",
+        "score": 30,
+        "reasoning": "Very calorie-dense (365 cal per medium order). High fat and refined carbs. Low satiety leads to overeating."
+      },
+      "kidney_health": {
+        "grade": "C",
+        "score": 55,
+        "reasoning": "Moderate sodium (246mg) and phosphorus (108mg). High potassium (572mg) may be concerning for advanced kidney disease."
+      },
+      "gut_health": {
+        "grade": "C",
+        "score": 52,
+        "reasoning": "Moderate fiber (4.2g) from potato skin. Deep-frying creates acrylamide and damages gut lining. No prebiotics."
+      },
+      "inflammation": {
+        "grade": "D",
+        "score": 25,
+        "reasoning": "High inflammatory score (3). Deep-fried in omega-6 rich oils. Acrylamide formation at high heat increases inflammation."
+      },
+      "bone_health": {
+        "grade": "D",
+        "score": 40,
+        "reasoning": "Very low calcium (14mg). Minimal vitamin D and vitamin K. High sodium and phosphorus can impair calcium absorption."
+      },
+      "energy": {
+        "grade": "D",
+        "score": 45,
+        "reasoning": "High glycemic load causes rapid energy spike followed by crash. Heavy fat content slows digestion and causes sluggishness."
+      }
+    },
+    "tags": [
+      "fast_food",
+      "fried",
+      "comfort_food",
+      "high_fat",
+      "vegan"
+    ],
+    "commonPortions": [
+      {
+        "description": "Small (71g)",
+        "gramsPerPortion": 71,
+        "isDefault": false
+      },
+      {
+        "description": "Medium (117g)",
+        "gramsPerPortion": 117,
+        "isDefault": true
+      },
+      {
+        "description": "Large (154g)",
+        "gramsPerPortion": 154,
+        "isDefault": false
+      }
+    ]
+  },
+  "fries": {
+    "foodKey": "fries",
+    "name": "Fries",
+    "category": "prepared_foods",
+    "brandedInfo": {
+      "isBranded": false,
+      "isGeneric": true
+    },
+    "nutrition": {
+      "servingSize": "1 medium order (117g)",
+      "servingSizeGrams": 117,
+      "calories": 365,
+      "macros": {
+        "protein": 4.3,
+        "carbs": 48.0,
+        "fat": 17.5,
+        "fiber": 4.2,
+        "sugar": 0.3,
+        "saturatedFat": 3.1,
+        "transFat": 0.5,
+        "cholesterol": 0,
+        "sodium": 246
+      },
+      "micros": {
+        "vitaminA": 0,
+        "vitaminC": 7.8,
+        "vitaminD": 0,
+        "vitaminE": 2.1,
+        "vitaminK": 8.2,
+        "thiamin": 0.2,
+        "riboflavin": 0.04,
+        "niacin": 2.8,
+        "vitaminB6": 0.3,
+        "folate": 28,
+        "vitaminB12": 0,
+        "calcium": 14,
+        "iron": 0.8,
+        "magnesium": 32,
+        "phosphorus": 108,
+        "potassium": 572,
+        "zinc": 0.5,
+        "selenium": 1.2
+      }
+    },
+    "healthMetrics": {
+      "glycemicIndex": 75,
+      "glycemicLoad": 33,
+      "inflammatoryScore": 3,
+      "nutrientDensity": 3.2,
+      "processingLevel": "ultra_processed",
+      "allergens": [],
+      "dietaryFlags": {
+        "isVegetarian": true,
+        "isVegan": true,
+        "isGlutenFree": true,
+        "isDairyFree": true,
+        "isKeto": false,
+        "isPaleo": false,
+        "isWholeFoodPlantBased": false
+      }
+    },
+    "focusGrades": {
+      "general": {
+        "grade": "D",
+        "score": 35,
+        "reasoning": "High in calories, fat, and refined carbs with minimal protein. Deep-fried in inflammatory oils. Very low nutrient density."
+      },
+      "diabetes": {
+        "grade": "D",
+        "score": 28,
+        "reasoning": "High glycemic index (75) and very high glycemic load (33). Rapidly spikes blood sugar despite being from potatoes."
+      },
+      "hypertension": {
+        "grade": "C",
+        "score": 58,
+        "reasoning": "Moderate sodium (246mg, 11% DV) - lower than expected. Good potassium (572mg) helps balance. Trans fats are concerning."
+      },
+      "heart_health": {
+        "grade": "D",
+        "score": 32,
+        "reasoning": "Deep-fried in inflammatory oils. Contains trans fats (0.5g). High in calories and oxidized fats that damage arteries."
+      },
+      "weight_loss": {
+        "grade": "D",
+        "score": 30,
+        "reasoning": "Very calorie-dense (365 cal per medium order). High fat and refined carbs. Low satiety leads to overeating."
+      },
+      "kidney_health": {
+        "grade": "C",
+        "score": 55,
+        "reasoning": "Moderate sodium (246mg) and phosphorus (108mg). High potassium (572mg) may be concerning for advanced kidney disease."
+      },
+      "gut_health": {
+        "grade": "C",
+        "score": 52,
+        "reasoning": "Moderate fiber (4.2g) from potato skin. Deep-frying creates acrylamide and damages gut lining. No prebiotics."
+      },
+      "inflammation": {
+        "grade": "D",
+        "score": 25,
+        "reasoning": "High inflammatory score (3). Deep-fried in omega-6 rich oils. Acrylamide formation at high heat increases inflammation."
+      },
+      "bone_health": {
+        "grade": "D",
+        "score": 40,
+        "reasoning": "Very low calcium (14mg). Minimal vitamin D and vitamin K. High sodium and phosphorus can impair calcium absorption."
+      },
+      "energy": {
+        "grade": "D",
+        "score": 45,
+        "reasoning": "High glycemic load causes rapid energy spike followed by crash. Heavy fat content slows digestion and causes sluggishness."
+      }
+    },
+    "tags": [
+      "fast_food",
+      "fried",
+      "comfort_food",
+      "high_fat",
+      "vegan"
+    ],
+    "commonPortions": [
+      {
+        "description": "Small (71g)",
+        "gramsPerPortion": 71,
+        "isDefault": false
+      },
+      {
+        "description": "Medium (117g)",
+        "gramsPerPortion": 117,
+        "isDefault": true
+      },
+      {
+        "description": "Large (154g)",
+        "gramsPerPortion": 154,
+        "isDefault": false
+      }
+    ]
+  },
+  "burrito": {
+    "foodKey": "burrito",
+    "name": "Burrito",
+    "category": "prepared_foods",
+    "brandedInfo": {
+      "isBranded": false,
+      "isGeneric": true
+    },
+    "nutrition": {
+      "servingSize": "1 burrito (198g)",
+      "servingSizeGrams": 198,
+      "calories": 424,
+      "macros": {
+        "protein": 16.8,
+        "carbs": 51.2,
+        "fat": 15.8,
+        "fiber": 5.9,
+        "sugar": 2.4,
+        "saturatedFat": 5.9,
+        "transFat": 0.3,
+        "cholesterol": 37,
+        "sodium": 894
+      },
+      "micros": {
+        "vitaminA": 186,
+        "vitaminC": 5.2,
+        "vitaminD": 0.4,
+        "vitaminE": 1.4,
+        "vitaminK": 12.3,
+        "thiamin": 0.4,
+        "riboflavin": 0.3,
+        "niacin": 5.2,
+        "vitaminB6": 0.3,
+        "folate": 98,
+        "vitaminB12": 0.9,
+        "calcium": 168,
+        "iron": 3.6,
+        "magnesium": 58,
+        "phosphorus": 252,
+        "potassium": 382,
+        "zinc": 2.8,
+        "selenium": 24.3
+      }
+    },
+    "healthMetrics": {
+      "glycemicIndex": 65,
+      "glycemicLoad": 30,
+      "inflammatoryScore": 2,
+      "nutrientDensity": 5.8,
+      "processingLevel": "processed",
+      "allergens": [
+        "wheat",
+        "milk",
+        "soy"
+      ],
+      "dietaryFlags": {
+        "isVegetarian": false,
+        "isVegan": false,
+        "isGlutenFree": false,
+        "isDairyFree": false,
+        "isKeto": false,
+        "isPaleo": false,
+        "isWholeFoodPlantBased": false
+      }
+    },
+    "focusGrades": {
+      "general": {
+        "grade": "C",
+        "score": 56,
+        "reasoning": "Balanced macros with good protein (16.8g) and fiber (5.9g). High in calories and sodium. Nutrient density varies by ingredients."
+      },
+      "diabetes": {
+        "grade": "C",
+        "score": 48,
+        "reasoning": "Moderate glycemic index (65) and high glycemic load (30). Better fiber content (5.9g) and protein help slow glucose absorption."
+      },
+      "hypertension": {
+        "grade": "D",
+        "score": 25,
+        "reasoning": "Very high sodium (894mg, 39% DV). Single burrito provides nearly 40% of daily sodium limit. Major concern for blood pressure."
+      },
+      "heart_health": {
+        "grade": "D",
+        "score": 42,
+        "reasoning": "High saturated fat (5.9g) and sodium (894mg). Some heart-healthy ingredients like beans, but overall profile is concerning."
+      },
+      "weight_loss": {
+        "grade": "C",
+        "score": 52,
+        "reasoning": "High calories (424) but good satiety from protein (16.8g) and fiber (5.9g). Portion control is challenging."
+      },
+      "kidney_health": {
+        "grade": "D",
+        "score": 30,
+        "reasoning": "Very high sodium (894mg) and phosphorus (252mg). Protein content (16.8g) may be concerning for advanced CKD."
+      },
+      "gut_health": {
+        "grade": "B",
+        "score": 65,
+        "reasoning": "Good fiber (5.9g) from beans and vegetables. Beans provide prebiotics. May contain processed ingredients that are less ideal."
+      },
+      "inflammation": {
+        "grade": "C",
+        "score": 50,
+        "reasoning": "Inflammatory score of 2. Contains anti-inflammatory ingredients (beans, vegetables) but also refined flour and saturated fat."
+      },
+      "bone_health": {
+        "grade": "B",
+        "score": 68,
+        "reasoning": "Good calcium (168mg, 13% DV) from cheese and tortilla. Contains vitamin K, vitamin D, phosphorus, and magnesium for bone health."
+      },
+      "energy": {
+        "grade": "B",
+        "score": 65,
+        "reasoning": "Balanced macros provide sustained energy. Good protein and fiber prevent crashes. Can be heavy and cause sluggishness."
+      }
+    },
+    "tags": [
+      "mexican",
+      "fast_food",
+      "high_sodium",
+      "high_protein",
+      "filling"
+    ],
+    "commonPortions": [
+      {
+        "description": "1 burrito (regular)",
+        "gramsPerPortion": 198,
+        "isDefault": true
+      },
+      {
+        "description": "1 burrito (large)",
+        "gramsPerPortion": 280,
+        "isDefault": false
+      },
+      {
+        "description": "Half burrito",
+        "gramsPerPortion": 99,
+        "isDefault": false
+      }
+    ]
+  },
+  "taco": {
+    "foodKey": "taco",
+    "name": "Taco",
+    "category": "prepared_foods",
+    "brandedInfo": {
+      "isBranded": false,
+      "isGeneric": true
+    },
+    "nutrition": {
+      "servingSize": "1 taco (102g)",
+      "servingSizeGrams": 102,
+      "calories": 226,
+      "macros": {
+        "protein": 11.4,
+        "carbs": 18.2,
+        "fat": 11.6,
+        "fiber": 2.8,
+        "sugar": 1.8,
+        "saturatedFat": 4.3,
+        "transFat": 0.2,
+        "cholesterol": 36,
+        "sodium": 368
+      },
+      "micros": {
+        "vitaminA": 168,
+        "vitaminC": 3.8,
+        "vitaminD": 0.2,
+        "vitaminE": 0.8,
+        "vitaminK": 7.2,
+        "thiamin": 0.1,
+        "riboflavin": 0.2,
+        "niacin": 3.2,
+        "vitaminB6": 0.2,
+        "folate": 42,
+        "vitaminB12": 0.8,
+        "calcium": 94,
+        "iron": 1.8,
+        "magnesium": 28,
+        "phosphorus": 148,
+        "potassium": 228,
+        "zinc": 2.1,
+        "selenium": 14.8
+      }
+    },
+    "healthMetrics": {
+      "glycemicIndex": 55,
+      "glycemicLoad": 9,
+      "inflammatoryScore": 1,
+      "nutrientDensity": 6.2,
+      "processingLevel": "moderately_processed",
+      "allergens": [
+        "wheat",
+        "milk",
+        "soy"
+      ],
+      "dietaryFlags": {
+        "isVegetarian": false,
+        "isVegan": false,
+        "isGlutenFree": false,
+        "isDairyFree": false,
+        "isKeto": false,
+        "isPaleo": false,
+        "isWholeFoodPlantBased": false
+      }
+    },
+    "focusGrades": {
+      "general": {
+        "grade": "B",
+        "score": 68,
+        "reasoning": "Balanced macros with good protein (11.4g). Moderate calories and decent nutrient density. Better portion control than burrito."
+      },
+      "diabetes": {
+        "grade": "B",
+        "score": 72,
+        "reasoning": "Lower glycemic index (55) and low glycemic load (9). Good protein and fiber help stabilize blood sugar. Better than most fast food."
+      },
+      "hypertension": {
+        "grade": "C",
+        "score": 52,
+        "reasoning": "Moderate-high sodium (368mg, 16% DV). Better than burrito but still significant. Multiple tacos add up quickly."
+      },
+      "heart_health": {
+        "grade": "C",
+        "score": 55,
+        "reasoning": "Moderate saturated fat (4.3g) and cholesterol (36mg). Sodium is concerning. Lean meat and vegetable toppings improve profile."
+      },
+      "weight_loss": {
+        "grade": "B",
+        "score": 66,
+        "reasoning": "Reasonable calories (226 per taco). Good protein (11.4g) and fiber (2.8g) for satiety. Portion control is easier than burritos."
+      },
+      "kidney_health": {
+        "grade": "C",
+        "score": 50,
+        "reasoning": "Moderate sodium (368mg) and phosphorus (148mg). Protein content (11.4g) is manageable. Multiple tacos increase burden."
+      },
+      "gut_health": {
+        "grade": "B",
+        "score": 62,
+        "reasoning": "Moderate fiber (2.8g) from beans, lettuce, and corn tortilla. Fresh vegetables provide prebiotics and nutrients."
+      },
+      "inflammation": {
+        "grade": "B",
+        "score": 65,
+        "reasoning": "Low inflammatory score (1). Contains anti-inflammatory ingredients like fresh vegetables, cilantro, lime. Whole ingredients."
+      },
+      "bone_health": {
+        "grade": "B",
+        "score": 64,
+        "reasoning": "Moderate calcium (94mg, 7% DV) from cheese. Contains vitamin K, phosphorus, and magnesium for bone support."
+      },
+      "energy": {
+        "grade": "B",
+        "score": 70,
+        "reasoning": "Balanced macros provide steady energy. Low glycemic load prevents crashes. Good protein-to-carb ratio sustains energy."
+      }
+    },
+    "tags": [
+      "mexican",
+      "fast_food",
+      "balanced",
+      "high_protein",
+      "portion_friendly"
+    ],
+    "commonPortions": [
+      {
+        "description": "1 taco",
+        "gramsPerPortion": 102,
+        "isDefault": true
+      },
+      {
+        "description": "2 tacos",
+        "gramsPerPortion": 204,
+        "isDefault": false
+      },
+      {
+        "description": "3 tacos",
+        "gramsPerPortion": 306,
+        "isDefault": false
+      }
+    ]
+  }
+}

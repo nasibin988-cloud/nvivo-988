@@ -1,0 +1,584 @@
+{
+  "tom_yum_soup": {
+    "name": "Tom Yum Soup",
+    "calories": 45,
+    "protein": 3.5,
+    "carbs": 6,
+    "fat": 1.5,
+    "fiber": 1.2,
+    "sugar": 2.5,
+    "sodium": 580,
+    "saturatedFat": 0.3,
+    "cholesterol": 15,
+    "potassium": 180,
+    "calcium": 25,
+    "iron": 0.8,
+    "magnesium": 18,
+    "vitaminA": 120,
+    "vitaminC": 15,
+    "vitaminD": 0,
+    "vitaminB12": 0.3,
+    "glycemicIndex": 35,
+    "glycemicLoad": 2,
+    "allergens": ["shellfish", "fish"],
+    "servingSize": 100,
+    "servingUnit": "g",
+    "focusGrades": {
+      "balanced": {
+        "grade": "A-",
+        "score": 88,
+        "insight": "Excellent low-calorie, nutrient-dense soup with aromatic herbs and minimal fat",
+        "pros": ["Very low in calories and fat", "Good protein content from seafood", "Rich in antioxidants from lemongrass and galangal"],
+        "cons": ["High sodium content", "Limited fiber"]
+      },
+      "heart_health": {
+        "grade": "B",
+        "score": 82,
+        "insight": "Low saturated fat and cholesterol, but sodium is a concern",
+        "pros": ["Minimal saturated fat", "Anti-inflammatory herbs", "Low cholesterol"],
+        "cons": ["High sodium can raise blood pressure", "Could benefit from more omega-3s"]
+      },
+      "muscle_building": {
+        "grade": "C+",
+        "score": 72,
+        "insight": "Modest protein content, would need supplementation for muscle goals",
+        "pros": ["Complete protein from seafood", "Very low in fat"],
+        "cons": ["Relatively low protein per serving", "Minimal calories for energy"]
+      },
+      "energy": {
+        "grade": "B-",
+        "score": 78,
+        "insight": "Light and energizing without heaviness, but limited sustained energy",
+        "pros": ["Quick-digesting carbs", "Spices may boost metabolism", "Won't cause post-meal fatigue"],
+        "cons": ["Low calorie density", "Limited complex carbohydrates"]
+      },
+      "weight_management": {
+        "grade": "A",
+        "score": 92,
+        "insight": "Outstanding choice for weight loss with minimal calories and satisfying warmth",
+        "pros": ["Very low calorie density", "Spicy broth increases satiety", "High water content"],
+        "cons": ["Sodium may cause water retention", "May need to watch portion of accompanying rice"]
+      },
+      "brain_focus": {
+        "grade": "B",
+        "score": 80,
+        "insight": "Aromatic compounds and stable blood sugar support cognition",
+        "pros": ["Low glycemic load prevents crashes", "Galangal has neuroprotective properties", "Lemongrass may reduce stress"],
+        "cons": ["Limited B vitamins", "Could use more omega-3 fatty acids"]
+      },
+      "gut_health": {
+        "grade": "B+",
+        "score": 85,
+        "insight": "Fermented fish sauce and aromatic herbs support digestive health",
+        "pros": ["Probiotic potential from fish sauce", "Anti-inflammatory herbs soothe digestion", "Easy to digest"],
+        "cons": ["Low fiber content", "High sodium may affect gut microbiome"]
+      },
+      "blood_sugar": {
+        "grade": "A",
+        "score": 93,
+        "insight": "Exceptional for blood sugar control with very low glycemic impact",
+        "pros": ["Extremely low glycemic load", "Minimal simple sugars", "Won't spike insulin"],
+        "cons": ["May need to monitor rice if served as side", "Limited sustained glucose"]
+      },
+      "bone_joint": {
+        "grade": "B-",
+        "score": 75,
+        "insight": "Anti-inflammatory herbs benefit joints, but limited bone-building nutrients",
+        "pros": ["Galangal and lemongrass reduce inflammation", "Some calcium from seafood", "Low acidity"],
+        "cons": ["Limited calcium and vitamin D", "Modest magnesium content"]
+      },
+      "anti_inflammatory": {
+        "grade": "A",
+        "score": 94,
+        "insight": "Powerhouse of anti-inflammatory herbs and spices",
+        "pros": ["Galangal has potent anti-inflammatory compounds", "Lemongrass reduces oxidative stress", "Chili peppers contain capsaicin"],
+        "cons": ["May be too spicy for sensitive stomachs", "Effects depend on herb concentration"]
+      }
+    }
+  },
+  "mac_and_cheese": {
+    "name": "Mac and Cheese",
+    "calories": 165,
+    "protein": 6.5,
+    "carbs": 18,
+    "fat": 7,
+    "fiber": 1,
+    "sugar": 2,
+    "sodium": 380,
+    "saturatedFat": 4,
+    "cholesterol": 20,
+    "potassium": 95,
+    "calcium": 140,
+    "iron": 0.6,
+    "magnesium": 15,
+    "vitaminA": 180,
+    "vitaminC": 0,
+    "vitaminD": 0.3,
+    "vitaminB12": 0.4,
+    "glycemicIndex": 64,
+    "glycemicLoad": 12,
+    "allergens": ["milk", "wheat", "gluten"],
+    "servingSize": 100,
+    "servingUnit": "g",
+    "focusGrades": {
+      "balanced": {
+        "grade": "C+",
+        "score": 72,
+        "insight": "Comfort food with decent protein and calcium, but high in refined carbs and saturated fat",
+        "pros": ["Good calcium content from cheese", "Moderate protein", "Provides quick energy"],
+        "cons": ["High saturated fat", "Refined pasta lacks fiber", "High sodium"]
+      },
+      "heart_health": {
+        "grade": "D+",
+        "score": 62,
+        "insight": "High saturated fat and sodium make this challenging for cardiovascular health",
+        "pros": ["Contains some calcium for blood pressure", "Moderate cholesterol"],
+        "cons": ["High saturated fat raises LDL", "Significant sodium content", "Limited heart-protective nutrients"]
+      },
+      "muscle_building": {
+        "grade": "C",
+        "score": 70,
+        "insight": "Decent protein and calories for muscle recovery, but not optimal protein quality",
+        "pros": ["Moderate protein from cheese", "Good calorie density", "Contains leucine from dairy"],
+        "cons": ["Lower protein than ideal", "High fat may slow protein absorption", "Limited amino acid profile"]
+      },
+      "energy": {
+        "grade": "B",
+        "score": 80,
+        "insight": "Provides quick energy from carbs, though may cause afternoon slump",
+        "pros": ["Good calorie density", "Carbs provide immediate fuel", "Satisfying and filling"],
+        "cons": ["High glycemic load may cause crash", "Heavy feeling after eating", "Limited B vitamins"]
+      },
+      "weight_management": {
+        "grade": "D",
+        "score": 60,
+        "insight": "Calorie-dense comfort food that's easy to overconsume",
+        "pros": ["Provides satiety from fat and protein", "Can fit into flexible diet in moderation"],
+        "cons": ["High calorie density", "Easy to eat large portions", "Limited fiber for fullness"]
+      },
+      "brain_focus": {
+        "grade": "C",
+        "score": 68,
+        "insight": "Blood sugar spike and crash pattern may impair sustained concentration",
+        "pros": ["Quick glucose for immediate focus", "Some B12 from cheese"],
+        "cons": ["High glycemic load causes energy crashes", "May induce food coma", "Limited neuroprotective nutrients"]
+      },
+      "gut_health": {
+        "grade": "C-",
+        "score": 65,
+        "insight": "Low fiber and high fat may slow digestion and affect microbiome",
+        "pros": ["Cheese provides some probiotics if aged", "Easy to digest for most"],
+        "cons": ["Very low fiber content", "High fat slows gut transit", "Lactose may cause issues for some"]
+      },
+      "blood_sugar": {
+        "grade": "C-",
+        "score": 65,
+        "insight": "Moderate-high glycemic impact from refined pasta and added sugars",
+        "pros": ["Fat and protein slow glucose absorption somewhat", "Not as bad as pure pasta"],
+        "cons": ["Moderate-high glycemic load", "Refined carbs spike insulin", "Limited fiber to slow absorption"]
+      },
+      "bone_joint": {
+        "grade": "B",
+        "score": 80,
+        "insight": "Excellent calcium content supports bone health, though inflammation is a concern",
+        "pros": ["High calcium from cheese", "Contains vitamin D", "Phosphorus from dairy"],
+        "cons": ["Saturated fat may promote inflammation", "High sodium can increase calcium loss", "Limited magnesium"]
+      },
+      "anti_inflammatory": {
+        "grade": "D",
+        "score": 58,
+        "insight": "High saturated fat and refined carbs promote inflammatory pathways",
+        "pros": ["Some anti-inflammatory potential from dairy calcium"],
+        "cons": ["Saturated fat triggers inflammation", "Refined carbs spike inflammatory markers", "Lacks antioxidants"]
+      }
+    }
+  },
+  "grilled_cheese": {
+    "name": "Grilled Cheese Sandwich",
+    "calories": 290,
+    "protein": 11,
+    "carbs": 28,
+    "fat": 14,
+    "fiber": 1.5,
+    "sugar": 3,
+    "sodium": 520,
+    "saturatedFat": 7,
+    "cholesterol": 35,
+    "potassium": 110,
+    "calcium": 240,
+    "iron": 1.8,
+    "magnesium": 22,
+    "vitaminA": 280,
+    "vitaminC": 0,
+    "vitaminD": 0.4,
+    "vitaminB12": 0.6,
+    "glycemicIndex": 70,
+    "glycemicLoad": 20,
+    "allergens": ["milk", "wheat", "gluten"],
+    "servingSize": 100,
+    "servingUnit": "g",
+    "focusGrades": {
+      "balanced": {
+        "grade": "C",
+        "score": 68,
+        "insight": "Classic comfort food with decent protein and calcium, but high in saturated fat and refined carbs",
+        "pros": ["Good protein content", "Excellent calcium from cheese", "Satisfying and filling"],
+        "cons": ["High saturated fat from butter and cheese", "Refined white bread", "High sodium"]
+      },
+      "heart_health": {
+        "grade": "D",
+        "score": 58,
+        "insight": "High saturated fat and sodium make this challenging for cardiovascular health",
+        "pros": ["Contains calcium which may help blood pressure", "Moderate cholesterol per serving"],
+        "cons": ["Very high saturated fat", "Significant sodium content", "Trans fats possible from butter cooking"]
+      },
+      "muscle_building": {
+        "grade": "B-",
+        "score": 75,
+        "insight": "Decent protein and calories for recovery, though not optimal protein-to-fat ratio",
+        "pros": ["Good protein from cheese", "High calorie density", "Complete amino acid profile"],
+        "cons": ["High fat may slow protein absorption", "Suboptimal protein-to-calorie ratio", "Limited leucine"]
+      },
+      "energy": {
+        "grade": "C+",
+        "score": 72,
+        "insight": "Provides substantial energy but may cause sluggishness from heavy fat content",
+        "pros": ["High calorie density", "Quick energy from refined carbs", "Sustained release from fat"],
+        "cons": ["High glycemic load causes crashes", "Heavy, greasy feeling", "May induce afternoon fatigue"]
+      },
+      "weight_management": {
+        "grade": "D-",
+        "score": 55,
+        "insight": "Very calorie-dense with minimal satiety-promoting nutrients",
+        "pros": ["Fat and protein provide some satiety", "Can fit occasionally in flexible diet"],
+        "cons": ["Very high calorie density", "Low fiber offers minimal fullness", "Easy to overconsume"]
+      },
+      "brain_focus": {
+        "grade": "C-",
+        "score": 65,
+        "insight": "Blood sugar spike followed by crash impairs sustained cognitive performance",
+        "pros": ["Initial glucose boost for focus", "Some B12 from cheese"],
+        "cons": ["High glycemic load causes mental fog", "Heavy fat content reduces alertness", "Food coma effect"]
+      },
+      "gut_health": {
+        "grade": "D+",
+        "score": 62,
+        "insight": "Low fiber and high fat slow digestion and may negatively impact microbiome",
+        "pros": ["Aged cheese may contain probiotics", "Generally well-tolerated"],
+        "cons": ["Very low fiber", "High fat slows gut transit", "Lactose issues for sensitive individuals"]
+      },
+      "blood_sugar": {
+        "grade": "D+",
+        "score": 62,
+        "insight": "High glycemic load from white bread causes significant blood sugar spike",
+        "pros": ["Fat and protein moderate glucose rise slightly"],
+        "cons": ["High glycemic load", "Refined white bread spikes insulin", "Minimal fiber to slow absorption"]
+      },
+      "bone_joint": {
+        "grade": "B+",
+        "score": 85,
+        "insight": "Excellent calcium content strongly supports bone health",
+        "pros": ["Very high calcium from cheese", "Good vitamin D content", "Contains phosphorus"],
+        "cons": ["Saturated fat may promote joint inflammation", "High sodium increases calcium excretion"]
+      },
+      "anti_inflammatory": {
+        "grade": "D",
+        "score": 55,
+        "insight": "High saturated fat and refined carbs significantly promote inflammation",
+        "pros": ["Minimal anti-inflammatory benefit from dairy calcium"],
+        "cons": ["High saturated fat activates inflammatory pathways", "Refined bread spikes inflammatory markers", "Lacks antioxidants completely"]
+      }
+    }
+  },
+  "pbj_sandwich": {
+    "name": "Peanut Butter & Jelly Sandwich",
+    "calories": 280,
+    "protein": 9,
+    "carbs": 40,
+    "fat": 10,
+    "fiber": 3,
+    "sugar": 15,
+    "sodium": 320,
+    "saturatedFat": 2,
+    "cholesterol": 0,
+    "potassium": 180,
+    "calcium": 60,
+    "iron": 1.5,
+    "magnesium": 45,
+    "vitaminA": 5,
+    "vitaminC": 2,
+    "vitaminD": 0,
+    "vitaminB12": 0,
+    "glycemicIndex": 68,
+    "glycemicLoad": 27,
+    "allergens": ["peanuts", "wheat", "gluten"],
+    "servingSize": 100,
+    "servingUnit": "g",
+    "focusGrades": {
+      "balanced": {
+        "grade": "C+",
+        "score": 72,
+        "insight": "Nostalgic classic with decent protein and healthy fats, but very high in added sugars",
+        "pros": ["Good plant-based protein", "Healthy monounsaturated fats from peanut butter", "Moderate fiber"],
+        "cons": ["Very high sugar content from jelly", "Refined white bread", "High glycemic load"]
+      },
+      "heart_health": {
+        "grade": "B-",
+        "score": 75,
+        "insight": "Heart-healthy fats from peanuts offset by high sugar and refined carbs",
+        "pros": ["Low saturated fat", "No cholesterol", "Monounsaturated fats support heart health", "Contains resveratrol from peanuts"],
+        "cons": ["High sugar may raise triglycerides", "Refined bread lacks fiber", "High glycemic load"]
+      },
+      "muscle_building": {
+        "grade": "C+",
+        "score": 72,
+        "insight": "Decent protein and calories for recovery, though incomplete amino acid profile",
+        "pros": ["Good plant protein content", "Calorie-dense for muscle fuel", "Post-workout carbs for glycogen"],
+        "cons": ["Incomplete protein lacks some amino acids", "High sugar not ideal for body composition", "Lower protein than animal sources"]
+      },
+      "energy": {
+        "grade": "B-",
+        "score": 78,
+        "insight": "Provides quick energy from sugars with some sustained release from fats",
+        "pros": ["High carb content for immediate fuel", "Healthy fats provide sustained energy", "Good pre-workout snack"],
+        "cons": ["High glycemic load may cause crash", "Sugar spike followed by slump", "May feel heavy"]
+      },
+      "weight_management": {
+        "grade": "D+",
+        "score": 62,
+        "insight": "Calorie-dense with high sugar content makes portion control challenging",
+        "pros": ["Protein and fat provide satiety", "Fiber helps with fullness", "Nostalgic comfort"],
+        "cons": ["High calorie density", "Very high sugar promotes cravings", "Easy to overconsume"]
+      },
+      "brain_focus": {
+        "grade": "C",
+        "score": 68,
+        "insight": "Initial sugar rush followed by crash impairs sustained concentration",
+        "pros": ["Quick glucose for immediate mental boost", "Healthy fats support brain function", "Magnesium aids cognition"],
+        "cons": ["Very high glycemic load causes crashes", "Sugar spike impairs focus long-term", "May cause food coma"]
+      },
+      "gut_health": {
+        "grade": "C",
+        "score": 70,
+        "insight": "Moderate fiber from peanut butter helps, but sugar feeds harmful bacteria",
+        "pros": ["Decent fiber from peanuts", "Peanut skins contain prebiotics", "Generally easy to digest"],
+        "cons": ["High sugar disrupts microbiome balance", "Refined bread lacks fiber", "May cause bloating in some"]
+      },
+      "blood_sugar": {
+        "grade": "D+",
+        "score": 62,
+        "insight": "Very high sugar and glycemic load cause significant blood sugar spikes",
+        "pros": ["Peanut butter fat moderates glucose rise slightly", "Some fiber slows absorption"],
+        "cons": ["Very high glycemic load", "Jelly is pure sugar", "Refined bread spikes insulin rapidly"]
+      },
+      "bone_joint": {
+        "grade": "C+",
+        "score": 72,
+        "insight": "Good magnesium and resveratrol support joints, but limited calcium",
+        "pros": ["Magnesium supports bone density", "Resveratrol has anti-inflammatory effects", "No inflammatory dairy"],
+        "cons": ["Low calcium content", "High sugar may promote inflammation", "Limited vitamin D"]
+      },
+      "anti_inflammatory": {
+        "grade": "C-",
+        "score": 65,
+        "insight": "Resveratrol from peanuts provides benefits, but high sugar promotes inflammation",
+        "pros": ["Resveratrol has anti-inflammatory properties", "Vitamin E from peanuts", "No saturated fat"],
+        "cons": ["High sugar activates inflammatory pathways", "Refined bread spikes inflammation markers", "Omega-6 fats in peanuts"]
+      }
+    }
+  },
+  "blt_sandwich": {
+    "name": "BLT Sandwich",
+    "calories": 240,
+    "protein": 12,
+    "carbs": 22,
+    "fat": 12,
+    "fiber": 2,
+    "sugar": 3,
+    "sodium": 620,
+    "saturatedFat": 3.5,
+    "cholesterol": 25,
+    "potassium": 220,
+    "calcium": 65,
+    "iron": 1.8,
+    "magnesium": 28,
+    "vitaminA": 180,
+    "vitaminC": 8,
+    "vitaminD": 0.2,
+    "vitaminB12": 0.5,
+    "glycemicIndex": 65,
+    "glycemicLoad": 14,
+    "allergens": ["wheat", "gluten"],
+    "servingSize": 100,
+    "servingUnit": "g",
+    "focusGrades": {
+      "balanced": {
+        "grade": "C+",
+        "score": 73,
+        "insight": "Classic sandwich with good protein and vegetables, but very high sodium from bacon",
+        "pros": ["Good protein from bacon", "Fresh vegetables add nutrients", "Moderate calorie density"],
+        "cons": ["Very high sodium content", "Saturated fat from bacon", "Processed meat concerns"]
+      },
+      "heart_health": {
+        "grade": "D",
+        "score": 58,
+        "insight": "High sodium and processed meat significantly challenge cardiovascular health",
+        "pros": ["Tomatoes provide lycopene", "Lettuce adds potassium", "Moderate saturated fat"],
+        "cons": ["Very high sodium raises blood pressure", "Processed bacon linked to heart disease", "Nitrates/nitrites in bacon"]
+      },
+      "muscle_building": {
+        "grade": "B-",
+        "score": 78,
+        "insight": "Solid protein content from bacon supports muscle recovery",
+        "pros": ["Good complete protein from bacon", "Moderate calorie density", "Contains leucine for muscle synthesis"],
+        "cons": ["Saturated fat may not be ideal", "Could use more protein per calorie", "Sodium may cause water retention"]
+      },
+      "energy": {
+        "grade": "B",
+        "score": 80,
+        "insight": "Balanced macros provide steady energy without heavy feeling",
+        "pros": ["Good balance of protein, fat, and carbs", "Won't cause major crash", "Satisfying without being too heavy"],
+        "cons": ["Moderate glycemic load", "Bacon fat may slow digestion", "Not ideal for pre-workout"]
+      },
+      "weight_management": {
+        "grade": "C",
+        "score": 70,
+        "insight": "Moderate calorie density with decent satiety, but sodium causes water retention",
+        "pros": ["Good protein for satiety", "Vegetables add volume", "Not excessively caloric"],
+        "cons": ["Sodium causes bloating", "Bacon is calorie-dense", "Easy to add extra mayo"]
+      },
+      "brain_focus": {
+        "grade": "B-",
+        "score": 75,
+        "insight": "Balanced macros support steady focus, though sodium may cause issues",
+        "pros": ["Moderate glycemic load prevents crashes", "Protein stabilizes blood sugar", "B vitamins from bacon"],
+        "cons": ["High sodium may cause brain fog in sensitive people", "Not optimized for cognition", "Limited omega-3s"]
+      },
+      "gut_health": {
+        "grade": "C",
+        "score": 68,
+        "insight": "Fresh vegetables help, but processed bacon may disrupt microbiome",
+        "pros": ["Fiber from lettuce and tomato", "Fresh vegetables provide prebiotics", "Generally well-tolerated"],
+        "cons": ["Low overall fiber", "Processed meat linked to gut issues", "Nitrates may harm beneficial bacteria"]
+      },
+      "blood_sugar": {
+        "grade": "B-",
+        "score": 78,
+        "insight": "Moderate glycemic impact with protein and fat helping stabilize glucose",
+        "pros": ["Moderate glycemic load", "Protein and fat slow glucose absorption", "Won't cause major spike"],
+        "cons": ["White bread still raises blood sugar", "Could use more fiber", "Not optimized for diabetics"]
+      },
+      "bone_joint": {
+        "grade": "C+",
+        "score": 72,
+        "insight": "Lycopene from tomatoes benefits joints, but high sodium leaches calcium",
+        "pros": ["Lycopene has anti-inflammatory effects", "Some calcium from ingredients", "Moderate magnesium"],
+        "cons": ["Very high sodium increases calcium loss", "Limited calcium overall", "Processed meat may promote inflammation"]
+      },
+      "anti_inflammatory": {
+        "grade": "C-",
+        "score": 65,
+        "insight": "Lycopene from tomatoes offset by inflammatory processed bacon",
+        "pros": ["Tomatoes rich in lycopene", "Lettuce provides antioxidants", "Not excessive in saturated fat"],
+        "cons": ["Processed meat promotes inflammation", "Nitrates/nitrites inflammatory", "High sodium triggers inflammation"]
+      }
+    }
+  },
+  "club_sandwich": {
+    "name": "Club Sandwich",
+    "calories": 220,
+    "protein": 15,
+    "carbs": 20,
+    "fat": 9,
+    "fiber": 2,
+    "sugar": 3,
+    "sodium": 580,
+    "saturatedFat": 2.5,
+    "cholesterol": 40,
+    "potassium": 240,
+    "calcium": 60,
+    "iron": 1.6,
+    "magnesium": 30,
+    "vitaminA": 150,
+    "vitaminC": 6,
+    "vitaminD": 0.3,
+    "vitaminB12": 0.4,
+    "glycemicIndex": 62,
+    "glycemicLoad": 12,
+    "allergens": ["wheat", "gluten", "egg"],
+    "servingSize": 100,
+    "servingUnit": "g",
+    "focusGrades": {
+      "balanced": {
+        "grade": "B-",
+        "score": 78,
+        "insight": "Well-rounded sandwich with lean protein and vegetables, though high in sodium",
+        "pros": ["High protein from turkey and bacon", "Fresh vegetables add nutrients", "Moderate calorie density", "Good macro balance"],
+        "cons": ["High sodium from processed meats", "Refined white bread", "Mayo adds saturated fat"]
+      },
+      "heart_health": {
+        "grade": "C+",
+        "score": 72,
+        "insight": "Lean turkey is heart-friendly, but bacon and sodium are concerns",
+        "pros": ["Lean turkey breast is low in saturated fat", "Tomatoes provide lycopene", "Moderate cholesterol"],
+        "cons": ["High sodium from bacon and turkey", "Processed meats linked to heart issues", "Mayo adds saturated fat"]
+      },
+      "muscle_building": {
+        "grade": "B+",
+        "score": 85,
+        "insight": "Excellent protein content from lean turkey makes this great for muscle recovery",
+        "pros": ["High complete protein from turkey and bacon", "Good calorie-to-protein ratio", "Contains leucine for muscle synthesis", "Low fat won't slow absorption"],
+        "cons": ["Could use even more protein", "Sodium may cause water retention", "Refined carbs not ideal"]
+      },
+      "energy": {
+        "grade": "B+",
+        "score": 83,
+        "insight": "Excellent macro balance provides sustained energy without heaviness",
+        "pros": ["Good protein-to-carb ratio", "Moderate fat prevents crashes", "Won't cause afternoon slump", "Triple-decker provides substance"],
+        "cons": ["Moderate glycemic load", "Not ideal pre-workout fuel", "May be too filling for some"]
+      },
+      "weight_management": {
+        "grade": "B",
+        "score": 80,
+        "insight": "High protein and moderate calories make this supportive of weight goals",
+        "pros": ["High protein increases satiety", "Moderate calorie density", "Vegetables add volume", "Keeps you full longer"],
+        "cons": ["Sodium causes water retention", "Easy to add extra mayo", "Portion sizes often large"]
+      },
+      "brain_focus": {
+        "grade": "B",
+        "score": 80,
+        "insight": "High protein and balanced macros support steady cognitive performance",
+        "pros": ["Protein stabilizes blood sugar", "Moderate glycemic load", "B vitamins from turkey", "Won't cause food coma"],
+        "cons": ["Could use more omega-3s", "Limited neuroprotective nutrients", "Sodium may affect some"]
+      },
+      "gut_health": {
+        "grade": "C+",
+        "score": 72,
+        "insight": "Fresh vegetables provide fiber, but processed meats may disrupt microbiome",
+        "pros": ["Fiber from lettuce and tomato", "Vegetables provide prebiotics", "Generally well-tolerated"],
+        "cons": ["Low overall fiber from white bread", "Processed meats linked to gut issues", "Mayo may slow digestion"]
+      },
+      "blood_sugar": {
+        "grade": "B",
+        "score": 82,
+        "insight": "High protein content helps stabilize blood sugar response effectively",
+        "pros": ["High protein slows glucose absorption", "Moderate glycemic load", "Fat from mayo further moderates spike", "Good for diabetics in moderation"],
+        "cons": ["White bread still raises blood sugar", "Could use whole grain bread", "Limited fiber"]
+      },
+      "bone_joint": {
+        "grade": "C+",
+        "score": 73,
+        "insight": "Lean protein supports joints, but high sodium and processed meats are concerns",
+        "pros": ["Protein supports collagen production", "Lycopene from tomatoes", "Some calcium from ingredients"],
+        "cons": ["High sodium increases calcium loss", "Processed bacon may promote inflammation", "Limited calcium and vitamin D"]
+      },
+      "anti_inflammatory": {
+        "grade": "C",
+        "score": 68,
+        "insight": "Fresh vegetables provide antioxidants, but processed meats promote inflammation",
+        "pros": ["Tomatoes rich in lycopene", "Lettuce provides antioxidants", "Lower saturated fat than other sandwiches"],
+        "cons": ["Processed meats inflammatory", "High sodium triggers inflammation", "Lacks omega-3 fatty acids"]
+      }
+    }
+  }
+}

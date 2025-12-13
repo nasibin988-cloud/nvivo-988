@@ -9,8 +9,206 @@
 import { useState, useCallback } from 'react';
 import { httpsCallable } from 'firebase/functions';
 import { getFunctions } from '@nvivo/shared';
-import type { AnalysisResult, AnalyzedFood, MealType, AnalysisStep, NutritionDetailLevel } from '../types';
-import type { WellnessFocus } from '../../food-comparison/types';
+import type {
+  AnalysisResult,
+  AnalyzedFood,
+  MealType,
+  AnalysisStep,
+  NutritionDetailLevel,
+  WellnessFocus,
+  GradingResult,
+  FoodInsight,
+  GIResult,
+} from '../types';
+
+/**
+ * V2 API response structure from analyzeFoodPhotoV2
+ */
+interface V2AnalyzedItem {
+  id: string;
+  name: string;
+  quantity: number;
+  unit: string;
+  estimatedGrams: number;
+  foodType: 'whole_food' | 'branded' | 'restaurant' | 'homemade';
+  nutrition: {
+    calories: number;
+    protein: number;
+    carbs: number;
+    fat: number;
+    fiber: number;
+    sugar: number;
+    sodium: number;
+    saturatedFat: number;
+    transFat: number;
+    monounsaturatedFat: number;
+    polyunsaturatedFat: number;
+    cholesterol: number;
+    potassium: number;
+    calcium: number;
+    iron: number;
+    magnesium: number;
+    zinc: number;
+    phosphorus: number;
+    vitaminA: number;
+    vitaminD: number;
+    vitaminE: number;
+    vitaminK: number;
+    vitaminC: number;
+    thiamin: number;
+    riboflavin: number;
+    niacin: number;
+    vitaminB6: number;
+    folate: number;
+    vitaminB12: number;
+    gi?: number;
+    gl?: number;
+    giBand?: 'low' | 'medium' | 'high';
+    glBand?: 'low' | 'medium' | 'high';
+  };
+  nutritionSource: 'usda' | 'branded' | 'recipe' | 'ai_estimated';
+  nutritionConfidence: number;
+  gi?: GIResult;
+  grading: GradingResult;
+  insight?: FoodInsight;
+}
+
+interface V2AnalysisResponse {
+  items: V2AnalyzedItem[];
+  mealType: 'breakfast' | 'lunch' | 'dinner' | 'snack' | 'unknown';
+  totals: {
+    calories: number;
+    protein: number;
+    carbs: number;
+    fat: number;
+    fiber: number;
+    sugar: number;
+    sodium: number;
+    saturatedFat: number;
+    transFat: number;
+    monounsaturatedFat: number;
+    polyunsaturatedFat: number;
+    cholesterol: number;
+    potassium: number;
+    calcium: number;
+    iron: number;
+    magnesium: number;
+    zinc: number;
+    phosphorus: number;
+    vitaminA: number;
+    vitaminD: number;
+    vitaminE: number;
+    vitaminK: number;
+    vitaminC: number;
+    thiamin: number;
+    riboflavin: number;
+    niacin: number;
+    vitaminB6: number;
+    folate: number;
+    vitaminB12: number;
+  };
+  totalGI?: GIResult;
+  userFocus: WellnessFocus;
+  analyzedAt: string;
+  version: string;
+}
+
+/**
+ * Map V2 API response to our AnalysisResult format
+ */
+function mapV2ResponseToAnalysisResult(v2Response: V2AnalysisResponse, userFocus: WellnessFocus): AnalysisResult {
+  const items: AnalyzedFood[] = v2Response.items.map((item) => ({
+    name: item.name,
+    quantity: item.quantity,
+    unit: item.unit,
+    confidence: item.nutritionConfidence,
+    // Flatten nutrition object
+    calories: item.nutrition.calories,
+    protein: item.nutrition.protein,
+    carbs: item.nutrition.carbs,
+    fat: item.nutrition.fat,
+    fiber: item.nutrition.fiber,
+    sugar: item.nutrition.sugar,
+    sodium: item.nutrition.sodium,
+    saturatedFat: item.nutrition.saturatedFat,
+    transFat: item.nutrition.transFat,
+    monounsaturatedFat: item.nutrition.monounsaturatedFat,
+    polyunsaturatedFat: item.nutrition.polyunsaturatedFat,
+    cholesterol: item.nutrition.cholesterol,
+    potassium: item.nutrition.potassium,
+    calcium: item.nutrition.calcium,
+    iron: item.nutrition.iron,
+    magnesium: item.nutrition.magnesium,
+    zinc: item.nutrition.zinc,
+    phosphorus: item.nutrition.phosphorus,
+    vitaminA: item.nutrition.vitaminA,
+    vitaminD: item.nutrition.vitaminD,
+    vitaminE: item.nutrition.vitaminE,
+    vitaminK: item.nutrition.vitaminK,
+    vitaminC: item.nutrition.vitaminC,
+    thiamin: item.nutrition.thiamin,
+    riboflavin: item.nutrition.riboflavin,
+    niacin: item.nutrition.niacin,
+    vitaminB6: item.nutrition.vitaminB6,
+    folate: item.nutrition.folate,
+    vitaminB12: item.nutrition.vitaminB12,
+    // GI data from enriched nutrition
+    glycemicIndex: item.nutrition.gi,
+    glycemicLoad: item.nutrition.gl,
+    // V2-specific fields
+    grading: item.grading,
+    insight: item.insight,
+    estimatedGrams: item.estimatedGrams,
+    foodType: item.foodType,
+    nutritionSource: item.nutritionSource,
+    nutritionConfidence: item.nutritionConfidence,
+  }));
+
+  return {
+    items,
+    detailLevel: 'complete', // V2 always returns complete data
+    // Macro totals
+    totalCalories: v2Response.totals.calories,
+    totalProtein: v2Response.totals.protein,
+    totalCarbs: v2Response.totals.carbs,
+    totalFat: v2Response.totals.fat,
+    totalFiber: v2Response.totals.fiber,
+    totalSugar: v2Response.totals.sugar,
+    totalSodium: v2Response.totals.sodium,
+    // Fat breakdown
+    totalSaturatedFat: v2Response.totals.saturatedFat,
+    totalTransFat: v2Response.totals.transFat,
+    totalMonounsaturatedFat: v2Response.totals.monounsaturatedFat,
+    totalPolyunsaturatedFat: v2Response.totals.polyunsaturatedFat,
+    totalCholesterol: v2Response.totals.cholesterol,
+    // Minerals
+    totalPotassium: v2Response.totals.potassium,
+    totalCalcium: v2Response.totals.calcium,
+    totalIron: v2Response.totals.iron,
+    totalMagnesium: v2Response.totals.magnesium,
+    totalZinc: v2Response.totals.zinc,
+    totalPhosphorus: v2Response.totals.phosphorus,
+    // Vitamins
+    totalVitaminA: v2Response.totals.vitaminA,
+    totalVitaminD: v2Response.totals.vitaminD,
+    totalVitaminE: v2Response.totals.vitaminE,
+    totalVitaminK: v2Response.totals.vitaminK,
+    totalVitaminC: v2Response.totals.vitaminC,
+    totalThiamin: v2Response.totals.thiamin,
+    totalRiboflavin: v2Response.totals.riboflavin,
+    totalNiacin: v2Response.totals.niacin,
+    totalVitaminB6: v2Response.totals.vitaminB6,
+    totalFolate: v2Response.totals.folate,
+    totalVitaminB12: v2Response.totals.vitaminB12,
+    // Meal metadata
+    mealType: v2Response.mealType,
+    // V2 fields
+    userFocus,
+    totalGI: v2Response.totalGI,
+    version: v2Response.version,
+    analyzedAt: v2Response.analyzedAt,
+  };
+}
 
 interface UsePhotoAnalysisReturn {
   step: AnalysisStep;
@@ -166,22 +364,27 @@ export function usePhotoAnalysis(): UsePhotoAnalysisReturn {
 
     try {
       const functions = getFunctions();
+      // Use V2 endpoint with user focus and AI insights
       const analyzeFn = httpsCallable<
-        { imageBase64: string },
-        AnalysisResult
-      >(functions, 'analyzeFoodPhoto');
+        { imageBase64: string; userFocus: WellnessFocus; generateInsights: boolean },
+        V2AnalysisResponse
+      >(functions, 'analyzeFoodPhotoV2');
 
       const imageContent = base64.split(',')[1];
       // Note: Analysis always returns complete nutrition data (35+ nutrients)
       // The displayLevel only controls what the UI shows after analysis
       const response = await analyzeFn({
         imageBase64: imageContent,
+        userFocus: selectedFocus,
+        generateInsights: true,
       });
 
-      setResult(response.data);
+      // Map v2 response to our AnalysisResult format
+      const mappedResult = mapV2ResponseToAnalysisResult(response.data, selectedFocus);
+      setResult(mappedResult);
 
-      if (response.data.mealType && response.data.mealType !== 'unknown') {
-        setSelectedMealType(response.data.mealType as MealType);
+      if (mappedResult.mealType && mappedResult.mealType !== 'unknown') {
+        setSelectedMealType(mappedResult.mealType as MealType);
       }
       setStep('review');
     } catch (err) {
@@ -209,7 +412,7 @@ export function usePhotoAnalysis(): UsePhotoAnalysisReturn {
     } finally {
       setIsAnalyzing(false);
     }
-  }, []);
+  }, [selectedFocus]);
 
   const handleRetry = useCallback(() => {
     setImageData(null);
